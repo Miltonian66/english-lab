@@ -1,0 +1,1684 @@
+{
+  "items": [
+    {
+      "id": "c2_v_perfunctory",
+      "level": "C2",
+      "word": "perfunctory",
+      "pos": "adjective",
+      "ipa_us": "/pɚˈfʌŋktəri/",
+      "translation_ru": "поверхностный, формальный, небрежный",
+      "example_en": "The security audit was so perfunctory that nobody bothered to read the findings.",
+      "collocations": [
+        "a perfunctory nod",
+        "a perfunctory review"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "c2_v_egregious",
+      "level": "C2",
+      "word": "egregious",
+      "pos": "adjective",
+      "ipa_us": "/ɪˈgridʒəs/",
+      "translation_ru": "вопиющий, грубейший",
+      "example_en": "Leaking the credentials in a public repo was an egregious lapse in judgment.",
+      "collocations": [
+        "an egregious error",
+        "egregious misconduct"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "c2_v_onerous",
+      "level": "C2",
+      "word": "onerous",
+      "pos": "adjective",
+      "ipa_us": "/ˈɑnɚəs/",
+      "translation_ru": "обременительный, тягостный",
+      "example_en": "The compliance paperwork is onerous, but skipping it is not an option.",
+      "collocations": [
+        "an onerous obligation",
+        "onerous terms"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "c2_v_throw_someone_under_the_bus",
+      "level": "C2",
+      "word": "throw someone under the bus",
+      "pos": "phrase",
+      "ipa_us": "/ˌθroʊ ˈsʌmwʌn ˌʌndɚ ðə ˈbʌs/",
+      "translation_ru": "подставить, свалить вину на другого",
+      "example_en": "He threw the whole QA team under the bus to protect his own reputation.",
+      "collocations": [
+        "throw a colleague under the bus",
+        "get thrown under the bus"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "c2_v_eschew",
+      "level": "C2",
+      "word": "eschew",
+      "pos": "verb",
+      "ipa_us": "/ɛsˈtʃu/",
+      "translation_ru": "избегать, воздерживаться от",
+      "example_en": "Our team deliberately eschews long status meetings in favor of written updates.",
+      "collocations": [
+        "eschew publicity",
+        "eschew violence"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "c2_v_ostensibly",
+      "level": "C2",
+      "word": "ostensibly",
+      "pos": "adverb",
+      "ipa_us": "/ɑˈstɛnsəbli/",
+      "translation_ru": "якобы, для виду, формально",
+      "example_en": "The reorganization was ostensibly about efficiency, but everyone knew it was about cost.",
+      "collocations": [
+        "ostensibly neutral",
+        "ostensibly independent"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "c2_v_ascertain",
+      "level": "C2",
+      "word": "ascertain",
+      "pos": "verb",
+      "ipa_us": "/ˌæsɚˈteɪn/",
+      "translation_ru": "выяснить, установить, удостовериться",
+      "example_en": "We still need to ascertain whether the outage affected paying customers.",
+      "collocations": [
+        "ascertain the facts",
+        "ascertain the cause"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "c2_v_expedite",
+      "level": "C2",
+      "word": "expedite",
+      "pos": "verb",
+      "ipa_us": "/ˈɛkspəˌdaɪt/",
+      "translation_ru": "ускорить, форсировать",
+      "example_en": "Legal agreed to expedite the review so we can ship before the quarter closes.",
+      "collocations": [
+        "expedite the process",
+        "expedite delivery"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "c2_v_stipulate",
+      "level": "C2",
+      "word": "stipulate",
+      "pos": "verb",
+      "ipa_us": "/ˈstɪpjəˌleɪt/",
+      "translation_ru": "оговаривать, предусматривать, обусловливать",
+      "example_en": "The contract stipulates that all data must stay within the region.",
+      "collocations": [
+        "the contract stipulates",
+        "stipulate a condition"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "c2_v_relinquish",
+      "level": "C2",
+      "word": "relinquish",
+      "pos": "verb",
+      "ipa_us": "/rɪˈlɪŋkwɪʃ/",
+      "translation_ru": "уступать, отказываться от, слагать с себя",
+      "example_en": "He refused to relinquish control of the deployment keys until the handover was complete.",
+      "collocations": [
+        "relinquish control",
+        "relinquish a claim"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "c2_v_purview",
+      "level": "C2",
+      "word": "purview",
+      "pos": "noun",
+      "ipa_us": "/ˈpɝvju/",
+      "translation_ru": "компетенция, сфера ведения, круг полномочий",
+      "example_en": "Vendor contracts fall outside the purview of our team.",
+      "collocations": [
+        "within the purview of",
+        "beyond somebody's purview"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "c2_v_caveat",
+      "level": "C2",
+      "word": "caveat",
+      "pos": "noun",
+      "ipa_us": "/ˈkæviˌæt/",
+      "translation_ru": "оговорка, предостережение",
+      "example_en": "The benchmark looks impressive, with one caveat: it was run on a warm cache.",
+      "collocations": [
+        "with one caveat",
+        "add a caveat"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "c2_v_attrition",
+      "level": "C2",
+      "word": "attrition",
+      "pos": "noun",
+      "ipa_us": "/əˈtrɪʃən/",
+      "translation_ru": "текучесть кадров, отток, изнурение",
+      "example_en": "Attrition on the platform team doubled after the reorganization.",
+      "collocations": [
+        "staff attrition",
+        "a war of attrition"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "c2_v_disgruntled",
+      "level": "C2",
+      "word": "disgruntled",
+      "pos": "adjective",
+      "ipa_us": "/dɪsˈgrʌntəld/",
+      "translation_ru": "недовольный, обиженный, раздосадованный",
+      "example_en": "A disgruntled contractor left a rather pointed comment in the source code.",
+      "collocations": [
+        "a disgruntled employee",
+        "disgruntled customers"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "c2_v_terse",
+      "level": "C2",
+      "word": "terse",
+      "pos": "adjective",
+      "ipa_us": "/tɝs/",
+      "translation_ru": "лаконичный, сухой, отрывистый",
+      "example_en": "His review comments are terse to the point of sounding rude.",
+      "collocations": [
+        "a terse reply",
+        "a terse statement"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "c2_v_tenure",
+      "level": "C2",
+      "word": "tenure",
+      "pos": "noun",
+      "ipa_us": "/ˈtɛnjɚ/",
+      "translation_ru": "срок пребывания в должности, стаж",
+      "example_en": "During her tenure as CTO the company migrated everything to the cloud.",
+      "collocations": [
+        "during somebody's tenure",
+        "a short tenure"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "c2_v_prerogative",
+      "level": "C2",
+      "word": "prerogative",
+      "pos": "noun",
+      "ipa_us": "/prɪˈrɑgətɪv/",
+      "translation_ru": "прерогатива, исключительное право",
+      "example_en": "Rejecting a design proposal is the architect's prerogative, not mine.",
+      "collocations": [
+        "somebody's prerogative",
+        "the royal prerogative"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "c2_v_quibble",
+      "level": "C2",
+      "word": "quibble",
+      "pos": "verb",
+      "ipa_us": "/ˈkwɪbəl/",
+      "translation_ru": "придираться, спорить по мелочам",
+      "example_en": "Let's not quibble over variable names while the build is still broken.",
+      "collocations": [
+        "quibble over details",
+        "quibble about the wording"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "c2_v_red_tape",
+      "level": "C2",
+      "word": "red tape",
+      "pos": "phrase",
+      "ipa_us": "/ˌrɛd ˈteɪp/",
+      "translation_ru": "бюрократия, волокита, канцелярщина",
+      "example_en": "Getting a test server approved involves an absurd amount of red tape.",
+      "collocations": [
+        "cut through red tape",
+        "bureaucratic red tape"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "c2_v_hash_out",
+      "level": "C2",
+      "word": "hash out",
+      "pos": "phrasal verb",
+      "ipa_us": "/ˌhæʃ ˈaʊt/",
+      "translation_ru": "утрясти, обговорить, выработать сообща",
+      "example_en": "We spent the whole afternoon hashing out the migration plan.",
+      "collocations": [
+        "hash out the details",
+        "hash out a compromise"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "c2_v_gloss_over",
+      "level": "C2",
+      "word": "gloss over",
+      "pos": "phrasal verb",
+      "ipa_us": "/ˌglɔs ˈoʊvɚ/",
+      "translation_ru": "замалчивать, обходить стороной, сглаживать",
+      "example_en": "The postmortem glossed over the fact that nobody was watching the alerts.",
+      "collocations": [
+        "gloss over a problem",
+        "gloss over the differences"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "c2_v_par_for_the_course",
+      "level": "C2",
+      "word": "par for the course",
+      "pos": "phrase",
+      "ipa_us": "/ˌpɑr fɚ ðə ˈkɔrs/",
+      "translation_ru": "обычное дело, в порядке вещей",
+      "example_en": "A three-week delay on hardware orders is par for the course around here.",
+      "collocations": [
+        "pretty much par for the course",
+        "that's par for the course"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "c2_v_ubiquitous",
+      "level": "C2",
+      "word": "ubiquitous",
+      "pos": "adjective",
+      "ipa_us": "/juˈbɪkwətəs/",
+      "translation_ru": "вездесущий, повсеместный",
+      "example_en": "Containers have become so ubiquitous that nobody argues about them anymore.",
+      "collocations": [
+        "ubiquitous computing",
+        "almost ubiquitous"
+      ],
+      "topic": "tech"
+    },
+    {
+      "id": "c2_v_obfuscate",
+      "level": "C2",
+      "word": "obfuscate",
+      "pos": "verb",
+      "ipa_us": "/ˈɑbfəˌskeɪt/",
+      "translation_ru": "запутывать, затемнять смысл, обфусцировать",
+      "example_en": "Renaming everything to single letters obfuscates the code without protecting it.",
+      "collocations": [
+        "obfuscate the code",
+        "obfuscate the issue"
+      ],
+      "topic": "tech"
+    },
+    {
+      "id": "c2_v_verbose",
+      "level": "C2",
+      "word": "verbose",
+      "pos": "adjective",
+      "ipa_us": "/vɚˈboʊs/",
+      "translation_ru": "многословный, излишне подробный",
+      "example_en": "The proposal is so verbose that the actual plan is buried on page four.",
+      "collocations": [
+        "a verbose style",
+        "verbose output"
+      ],
+      "topic": "tech"
+    },
+    {
+      "id": "c2_v_convoluted",
+      "level": "C2",
+      "word": "convoluted",
+      "pos": "adjective",
+      "ipa_us": "/ˈkɑnvəˌlutəd/",
+      "translation_ru": "запутанный, замысловатый, витиеватый",
+      "example_en": "The permission logic is so convoluted that nobody dares to touch it.",
+      "collocations": [
+        "a convoluted argument",
+        "convoluted logic"
+      ],
+      "topic": "tech"
+    },
+    {
+      "id": "c2_v_arcane",
+      "level": "C2",
+      "word": "arcane",
+      "pos": "adjective",
+      "ipa_us": "/ɑrˈkeɪn/",
+      "translation_ru": "малопонятный, тёмный, эзотерический",
+      "example_en": "Half our deployment relies on arcane shell scripts written a decade ago.",
+      "collocations": [
+        "arcane rules",
+        "arcane knowledge"
+      ],
+      "topic": "tech"
+    },
+    {
+      "id": "c2_v_opaque",
+      "level": "C2",
+      "word": "opaque",
+      "pos": "adjective",
+      "ipa_us": "/oʊˈpeɪk/",
+      "translation_ru": "непрозрачный, невразумительный",
+      "example_en": "The error message is completely opaque and mentions no file at all.",
+      "collocations": [
+        "an opaque process",
+        "opaque pricing"
+      ],
+      "topic": "tech"
+    },
+    {
+      "id": "c2_v_supersede",
+      "level": "C2",
+      "word": "supersede",
+      "pos": "verb",
+      "ipa_us": "/ˌsupɚˈsid/",
+      "translation_ru": "вытеснять, заменять, приходить на смену",
+      "example_en": "This document supersedes the setup guide we wrote last spring.",
+      "collocations": [
+        "supersede an earlier version",
+        "be superseded by"
+      ],
+      "topic": "tech"
+    },
+    {
+      "id": "c2_v_deprecate",
+      "level": "C2",
+      "word": "deprecate",
+      "pos": "verb",
+      "ipa_us": "/ˈdɛprəˌkeɪt/",
+      "translation_ru": "объявлять устаревшим, выводить из употребления; порицать, выражать неодобрение",
+      "example_en": "We plan to deprecate the old endpoint once every client has migrated.",
+      "collocations": [
+        "deprecate an API",
+        "a deprecated method"
+      ],
+      "topic": "tech"
+    },
+    {
+      "id": "c2_v_circumvent",
+      "level": "C2",
+      "word": "circumvent",
+      "pos": "verb",
+      "ipa_us": "/ˌsɝkəmˈvɛnt/",
+      "translation_ru": "обходить, обойти стороной",
+      "example_en": "Someone found a way to circumvent the rate limit with a second token.",
+      "collocations": [
+        "circumvent the rules",
+        "circumvent a restriction"
+      ],
+      "topic": "tech"
+    },
+    {
+      "id": "c2_v_proliferate",
+      "level": "C2",
+      "word": "proliferate",
+      "pos": "verb",
+      "ipa_us": "/prəˈlɪfəˌreɪt/",
+      "translation_ru": "разрастаться, множиться, плодиться",
+      "example_en": "Config files proliferate quickly when every service brings its own defaults.",
+      "collocations": [
+        "rapidly proliferate",
+        "proliferate unchecked"
+      ],
+      "topic": "tech"
+    },
+    {
+      "id": "c2_v_spurious",
+      "level": "C2",
+      "word": "spurious",
+      "pos": "adjective",
+      "ipa_us": "/ˈspjʊriəs/",
+      "translation_ru": "ложный, мнимый, не подкреплённый фактами",
+      "example_en": "Half the alerts are spurious and everyone has learned to ignore them.",
+      "collocations": [
+        "a spurious correlation",
+        "spurious claims"
+      ],
+      "topic": "tech"
+    },
+    {
+      "id": "c2_v_brittle",
+      "level": "C2",
+      "word": "brittle",
+      "pos": "adjective",
+      "ipa_us": "/ˈbrɪtəl/",
+      "translation_ru": "хрупкий, ломкий, ненадёжный",
+      "example_en": "These tests are brittle: renaming a single button breaks a dozen of them.",
+      "collocations": [
+        "brittle tests",
+        "a brittle system"
+      ],
+      "topic": "tech"
+    },
+    {
+      "id": "c2_v_innocuous",
+      "level": "C2",
+      "word": "innocuous",
+      "pos": "adjective",
+      "ipa_us": "/ɪˈnɑkjuəs/",
+      "translation_ru": "безобидный, безвредный, невинный на вид",
+      "example_en": "An innocuous-looking config change took the whole cluster down.",
+      "collocations": [
+        "a seemingly innocuous change",
+        "an innocuous remark"
+      ],
+      "topic": "tech"
+    },
+    {
+      "id": "c2_v_intermittent",
+      "level": "C2",
+      "word": "intermittent",
+      "pos": "adjective",
+      "ipa_us": "/ˌɪntɚˈmɪtənt/",
+      "translation_ru": "перемежающийся, прерывистый, эпизодический",
+      "example_en": "The failure is intermittent, which makes it far harder to reproduce.",
+      "collocations": [
+        "an intermittent fault",
+        "intermittent connectivity"
+      ],
+      "topic": "tech"
+    },
+    {
+      "id": "c2_v_idiosyncrasy",
+      "level": "C2",
+      "word": "idiosyncrasy",
+      "pos": "noun",
+      "ipa_us": "/ˌɪdiəˈsɪŋkrəsi/",
+      "translation_ru": "причуда, особенность, странность",
+      "example_en": "Every legacy system has its idiosyncrasies, and this one has more than most.",
+      "collocations": [
+        "a personal idiosyncrasy",
+        "the idiosyncrasies of"
+      ],
+      "topic": "people"
+    },
+    {
+      "id": "c2_v_laconic",
+      "level": "C2",
+      "word": "laconic",
+      "pos": "adjective",
+      "ipa_us": "/ləˈkɑnɪk/",
+      "translation_ru": "немногословный, лаконичный, скупой на слова",
+      "example_en": "She gave a laconic answer and went straight back to her screen.",
+      "collocations": [
+        "a laconic reply",
+        "laconic humor"
+      ],
+      "topic": "people"
+    },
+    {
+      "id": "c2_v_demeanor",
+      "level": "C2",
+      "word": "demeanor",
+      "pos": "noun",
+      "ipa_us": "/dɪˈminɚ/",
+      "translation_ru": "манера держаться, поведение, вид",
+      "example_en": "Her calm demeanor during the incident kept everyone else steady.",
+      "collocations": [
+        "a calm demeanor",
+        "a professional demeanor"
+      ],
+      "topic": "people"
+    },
+    {
+      "id": "c2_v_astute",
+      "level": "C2",
+      "word": "astute",
+      "pos": "adjective",
+      "ipa_us": "/əˈstut/",
+      "translation_ru": "проницательный, прозорливый, дальновидный",
+      "example_en": "That was an astute observation about where the bottleneck really is.",
+      "collocations": [
+        "an astute observer",
+        "a politically astute move"
+      ],
+      "topic": "people"
+    },
+    {
+      "id": "c2_v_pedantic",
+      "level": "C2",
+      "word": "pedantic",
+      "pos": "adjective",
+      "ipa_us": "/pəˈdæntɪk/",
+      "translation_ru": "буквоедский, придирчивый к мелочам, занудно-дотошный",
+      "example_en": "At the risk of sounding pedantic, the two terms mean different things.",
+      "collocations": [
+        "overly pedantic",
+        "a pedantic distinction"
+      ],
+      "topic": "people"
+    },
+    {
+      "id": "c2_v_sanctimonious",
+      "level": "C2",
+      "word": "sanctimonious",
+      "pos": "adjective",
+      "ipa_us": "/ˌsæŋktəˈmoʊniəs/",
+      "translation_ru": "ханжеский, лицемерно-праведный",
+      "example_en": "Nobody enjoys a sanctimonious lecture about code quality from someone who never reviews anything.",
+      "collocations": [
+        "a sanctimonious tone",
+        "sound sanctimonious"
+      ],
+      "topic": "people"
+    },
+    {
+      "id": "c2_v_condescending",
+      "level": "C2",
+      "word": "condescending",
+      "pos": "adjective",
+      "ipa_us": "/ˌkɑndəˈsɛndɪŋ/",
+      "translation_ru": "снисходительный, покровительственный",
+      "example_en": "He explained the basics in a condescending tone that annoyed the whole room.",
+      "collocations": [
+        "a condescending tone",
+        "come across as condescending"
+      ],
+      "topic": "people"
+    },
+    {
+      "id": "c2_v_brusque",
+      "level": "C2",
+      "word": "brusque",
+      "pos": "adjective",
+      "ipa_us": "/brʌsk/",
+      "translation_ru": "резкий, бесцеремонный, грубоватый",
+      "example_en": "Her manner is brusque, but she is genuinely helpful once you ask.",
+      "collocations": [
+        "a brusque manner",
+        "brusque to the point of rudeness"
+      ],
+      "topic": "people"
+    },
+    {
+      "id": "c2_v_candid",
+      "level": "C2",
+      "word": "candid",
+      "pos": "adjective",
+      "ipa_us": "/ˈkændəd/",
+      "translation_ru": "откровенный, честный, прямой",
+      "example_en": "Let me be candid: the deadline was never realistic.",
+      "collocations": [
+        "a candid conversation",
+        "brutally candid"
+      ],
+      "topic": "people"
+    },
+    {
+      "id": "c2_v_rapport",
+      "level": "C2",
+      "word": "rapport",
+      "pos": "noun",
+      "ipa_us": "/ræˈpɔr/",
+      "translation_ru": "взаимопонимание, доверительный контакт",
+      "example_en": "She built a rapport with the client that no amount of slides could have bought.",
+      "collocations": [
+        "build a rapport with",
+        "an instant rapport"
+      ],
+      "topic": "people"
+    },
+    {
+      "id": "c2_v_reticent",
+      "level": "C2",
+      "word": "reticent",
+      "pos": "adjective",
+      "ipa_us": "/ˈrɛtəsənt/",
+      "translation_ru": "сдержанный, неразговорчивый, скрытный",
+      "example_en": "He remains reticent about why he actually left the company.",
+      "collocations": [
+        "reticent about something",
+        "strangely reticent"
+      ],
+      "topic": "people"
+    },
+    {
+      "id": "c2_v_banter",
+      "level": "C2",
+      "word": "banter",
+      "pos": "noun",
+      "ipa_us": "/ˈbæntɚ/",
+      "translation_ru": "подтрунивание, шутливая перепалка",
+      "example_en": "The channel is mostly work, with a bit of banter after every release.",
+      "collocations": [
+        "friendly banter",
+        "lighthearted banter"
+      ],
+      "topic": "people"
+    },
+    {
+      "id": "c2_v_affable",
+      "level": "C2",
+      "word": "affable",
+      "pos": "adjective",
+      "ipa_us": "/ˈæfəbəl/",
+      "translation_ru": "приветливый, добродушный, обходительный",
+      "example_en": "Their lead engineer is an affable man who never makes you feel stupid.",
+      "collocations": [
+        "an affable manner",
+        "affable and approachable"
+      ],
+      "topic": "people"
+    },
+    {
+      "id": "c2_v_gregarious",
+      "level": "C2",
+      "word": "gregarious",
+      "pos": "adjective",
+      "ipa_us": "/grɪˈgɛriəs/",
+      "translation_ru": "общительный, компанейский",
+      "example_en": "You would not expect someone so gregarious to enjoy working alone at night.",
+      "collocations": [
+        "a gregarious personality",
+        "naturally gregarious"
+      ],
+      "topic": "people"
+    },
+    {
+      "id": "c2_v_berate",
+      "level": "C2",
+      "word": "berate",
+      "pos": "verb",
+      "ipa_us": "/bɪˈreɪt/",
+      "translation_ru": "отчитывать, распекать, бранить",
+      "example_en": "Berating a junior in a public channel helps absolutely nobody.",
+      "collocations": [
+        "berate somebody for something",
+        "publicly berate"
+      ],
+      "topic": "people"
+    },
+    {
+      "id": "c2_v_propensity",
+      "level": "C2",
+      "word": "propensity",
+      "pos": "noun",
+      "ipa_us": "/prəˈpɛnsəti/",
+      "translation_ru": "склонность, предрасположенность",
+      "example_en": "She has a propensity to rewrite anything she did not build herself.",
+      "collocations": [
+        "a propensity for",
+        "a propensity to do something"
+      ],
+      "topic": "people"
+    },
+    {
+      "id": "c2_v_serendipity",
+      "level": "C2",
+      "word": "serendipity",
+      "pos": "noun",
+      "ipa_us": "/ˌsɛrənˈdɪpəti/",
+      "translation_ru": "счастливая случайность, удачное совпадение",
+      "example_en": "Finding the bug that afternoon was pure serendipity.",
+      "collocations": [
+        "a moment of serendipity",
+        "by serendipity"
+      ],
+      "topic": "feelings"
+    },
+    {
+      "id": "c2_v_wince",
+      "level": "C2",
+      "word": "wince",
+      "pos": "verb",
+      "ipa_us": "/wɪns/",
+      "translation_ru": "морщиться, вздрагивать, кривиться",
+      "example_en": "I winced when I saw how many exceptions we were silently swallowing.",
+      "collocations": [
+        "wince at something",
+        "wince in pain"
+      ],
+      "topic": "feelings"
+    },
+    {
+      "id": "c2_v_cringe",
+      "level": "C2",
+      "word": "cringe",
+      "pos": "verb",
+      "ipa_us": "/krɪndʒ/",
+      "translation_ru": "внутренне съёживаться, испытывать неловкость",
+      "example_en": "I still cringe when I remember that demo freezing in front of the client.",
+      "collocations": [
+        "cringe at the memory",
+        "make somebody cringe"
+      ],
+      "topic": "feelings"
+    },
+    {
+      "id": "c2_v_seethe",
+      "level": "C2",
+      "word": "seethe",
+      "pos": "verb",
+      "ipa_us": "/sið/",
+      "translation_ru": "кипеть от злости, негодовать",
+      "example_en": "She said nothing in the meeting but was quietly seething afterwards.",
+      "collocations": [
+        "seethe with anger",
+        "seething with resentment"
+      ],
+      "topic": "feelings"
+    },
+    {
+      "id": "c2_v_gloat",
+      "level": "C2",
+      "word": "gloat",
+      "pos": "verb",
+      "ipa_us": "/gloʊt/",
+      "translation_ru": "злорадствовать, торжествовать",
+      "example_en": "It is bad form to gloat when a rival team's release goes wrong.",
+      "collocations": [
+        "gloat over something",
+        "gloat about a victory"
+      ],
+      "topic": "feelings"
+    },
+    {
+      "id": "c2_v_petulant",
+      "level": "C2",
+      "word": "petulant",
+      "pos": "adjective",
+      "ipa_us": "/ˈpɛtʃələnt/",
+      "translation_ru": "капризный, обидчивый, раздражительный",
+      "example_en": "His petulant reply to a routine question surprised everyone on the thread.",
+      "collocations": [
+        "a petulant tone",
+        "sound petulant"
+      ],
+      "topic": "feelings"
+    },
+    {
+      "id": "c2_v_irascible",
+      "level": "C2",
+      "word": "irascible",
+      "pos": "adjective",
+      "ipa_us": "/ɪˈræsəbəl/",
+      "translation_ru": "вспыльчивый, гневливый",
+      "example_en": "The team lead is brilliant but irascible before his second coffee.",
+      "collocations": [
+        "an irascible temper",
+        "an irascible old man"
+      ],
+      "topic": "feelings"
+    },
+    {
+      "id": "c2_v_placate",
+      "level": "C2",
+      "word": "placate",
+      "pos": "verb",
+      "ipa_us": "/ˈpleɪˌkeɪt/",
+      "translation_ru": "успокаивать, умиротворять, задабривать",
+      "example_en": "We shipped a small fix mainly to placate the loudest customers.",
+      "collocations": [
+        "placate somebody",
+        "an attempt to placate"
+      ],
+      "topic": "feelings"
+    },
+    {
+      "id": "c2_v_assuage",
+      "level": "C2",
+      "word": "assuage",
+      "pos": "verb",
+      "ipa_us": "/əˈsweɪdʒ/",
+      "translation_ru": "смягчать, унимать, утолять",
+      "example_en": "Nothing in that statement did much to assuage their concerns.",
+      "collocations": [
+        "assuage fears",
+        "assuage guilt"
+      ],
+      "topic": "feelings"
+    },
+    {
+      "id": "c2_v_exasperated",
+      "level": "C2",
+      "word": "exasperated",
+      "pos": "adjective",
+      "ipa_us": "/ɪgˈzæspəˌreɪtəd/",
+      "translation_ru": "выведенный из себя, донельзя раздражённый",
+      "example_en": "By the fourth rollback she sounded thoroughly exasperated.",
+      "collocations": [
+        "an exasperated sigh",
+        "exasperated by the delays"
+      ],
+      "topic": "feelings"
+    },
+    {
+      "id": "c2_v_harrowing",
+      "level": "C2",
+      "word": "harrowing",
+      "pos": "adjective",
+      "ipa_us": "/ˈhɛroʊɪŋ/",
+      "translation_ru": "душераздирающий, мучительный",
+      "example_en": "He gave a harrowing account of the night the database was lost.",
+      "collocations": [
+        "a harrowing experience",
+        "a harrowing account"
+      ],
+      "topic": "feelings"
+    },
+    {
+      "id": "c2_v_banal",
+      "level": "C2",
+      "word": "banal",
+      "pos": "adjective",
+      "ipa_us": "/bəˈnæl/",
+      "translation_ru": "банальный, избитый, пошлый",
+      "example_en": "The keynote was full of banal advice about believing in yourself.",
+      "collocations": [
+        "banal remarks",
+        "utterly banal"
+      ],
+      "topic": "feelings"
+    },
+    {
+      "id": "c2_v_dearth",
+      "level": "C2",
+      "word": "dearth",
+      "pos": "noun",
+      "ipa_us": "/dɝθ/",
+      "translation_ru": "нехватка, дефицит, скудость",
+      "example_en": "There is no dearth of ideas here, only a dearth of people to build them.",
+      "collocations": [
+        "a dearth of talent",
+        "a dearth of information"
+      ],
+      "topic": "money"
+    },
+    {
+      "id": "c2_v_parsimonious",
+      "level": "C2",
+      "word": "parsimonious",
+      "pos": "adjective",
+      "ipa_us": "/ˌpɑrsəˈmoʊniəs/",
+      "translation_ru": "скупой, прижимистый, крайне экономный",
+      "example_en": "Management is parsimonious with hardware but generous with slogans.",
+      "collocations": [
+        "parsimonious with praise",
+        "a parsimonious budget"
+      ],
+      "topic": "money"
+    },
+    {
+      "id": "c2_v_splurge",
+      "level": "C2",
+      "word": "splurge",
+      "pos": "verb",
+      "ipa_us": "/splɝdʒ/",
+      "translation_ru": "потратиться, шикануть, раскошелиться",
+      "example_en": "We splurged on decent chairs and nobody has regretted it since.",
+      "collocations": [
+        "splurge on something",
+        "splurge a little"
+      ],
+      "topic": "money"
+    },
+    {
+      "id": "c2_v_exorbitant",
+      "level": "C2",
+      "word": "exorbitant",
+      "pos": "adjective",
+      "ipa_us": "/ɪgˈzɔrbətənt/",
+      "translation_ru": "непомерный, заоблачный, чрезмерный",
+      "example_en": "They quoted an exorbitant price for a license we barely use.",
+      "collocations": [
+        "exorbitant prices",
+        "an exorbitant fee"
+      ],
+      "topic": "money"
+    },
+    {
+      "id": "c2_v_paltry",
+      "level": "C2",
+      "word": "paltry",
+      "pos": "adjective",
+      "ipa_us": "/ˈpɔltri/",
+      "translation_ru": "жалкий, ничтожный, мизерный",
+      "example_en": "A paltry raise after two record quarters felt almost insulting.",
+      "collocations": [
+        "a paltry sum",
+        "a paltry amount"
+      ],
+      "topic": "money"
+    },
+    {
+      "id": "c2_v_lucrative",
+      "level": "C2",
+      "word": "lucrative",
+      "pos": "adjective",
+      "ipa_us": "/ˈlukrətɪv/",
+      "translation_ru": "прибыльный, доходный, выгодный",
+      "example_en": "Support contracts turned out to be more lucrative than the product itself.",
+      "collocations": [
+        "a lucrative contract",
+        "a lucrative market"
+      ],
+      "topic": "money"
+    },
+    {
+      "id": "c2_v_windfall",
+      "level": "C2",
+      "word": "windfall",
+      "pos": "noun",
+      "ipa_us": "/ˈwɪndˌfɔl/",
+      "translation_ru": "непредвиденная прибыль, неожиданный доход",
+      "example_en": "The tax refund was a windfall nobody had budgeted for.",
+      "collocations": [
+        "a financial windfall",
+        "an unexpected windfall"
+      ],
+      "topic": "money"
+    },
+    {
+      "id": "c2_v_squander",
+      "level": "C2",
+      "word": "squander",
+      "pos": "verb",
+      "ipa_us": "/ˈskwɑndɚ/",
+      "translation_ru": "растрачивать, проматывать, упускать",
+      "example_en": "We squandered two months arguing about a framework we never used.",
+      "collocations": [
+        "squander an opportunity",
+        "squander money"
+      ],
+      "topic": "money"
+    },
+    {
+      "id": "c2_v_haggle",
+      "level": "C2",
+      "word": "haggle",
+      "pos": "verb",
+      "ipa_us": "/ˈhægəl/",
+      "translation_ru": "торговаться, препираться о цене",
+      "example_en": "He spent an hour haggling with the vendor over a discount of two percent.",
+      "collocations": [
+        "haggle over the price",
+        "haggle with a seller"
+      ],
+      "topic": "money"
+    },
+    {
+      "id": "c2_v_procure",
+      "level": "C2",
+      "word": "procure",
+      "pos": "verb",
+      "ipa_us": "/proʊˈkjʊr/",
+      "translation_ru": "закупать, приобретать, добывать",
+      "example_en": "It took a full quarter to procure the servers we had already paid for.",
+      "collocations": [
+        "procure equipment",
+        "procure funding"
+      ],
+      "topic": "money"
+    },
+    {
+      "id": "c2_v_exacerbate",
+      "level": "C2",
+      "word": "exacerbate",
+      "pos": "verb",
+      "ipa_us": "/ɪgˈzæsɚˌbeɪt/",
+      "translation_ru": "усугублять, обострять, ухудшать",
+      "example_en": "Skipping sleep before the release only exacerbated his back pain.",
+      "collocations": [
+        "exacerbate the problem",
+        "exacerbate tensions"
+      ],
+      "topic": "health"
+    },
+    {
+      "id": "c2_v_debilitating",
+      "level": "C2",
+      "word": "debilitating",
+      "pos": "adjective",
+      "ipa_us": "/dɪˈbɪləˌteɪtɪŋ/",
+      "translation_ru": "изнуряющий, подрывающий силы",
+      "example_en": "She has been off work with debilitating migraines for a month.",
+      "collocations": [
+        "a debilitating illness",
+        "debilitating pain"
+      ],
+      "topic": "health"
+    },
+    {
+      "id": "c2_v_malaise",
+      "level": "C2",
+      "word": "malaise",
+      "pos": "noun",
+      "ipa_us": "/məˈleɪz/",
+      "translation_ru": "недомогание, вялость, упадок",
+      "example_en": "A vague malaise had settled over the team long before anyone named it.",
+      "collocations": [
+        "a general malaise",
+        "a sense of malaise"
+      ],
+      "topic": "health"
+    },
+    {
+      "id": "c2_v_queasy",
+      "level": "C2",
+      "word": "queasy",
+      "pos": "adjective",
+      "ipa_us": "/ˈkwizi/",
+      "translation_ru": "тошнит, мутит; не по себе",
+      "example_en": "The coffee on an empty stomach left me feeling queasy all morning.",
+      "collocations": [
+        "feel queasy",
+        "a queasy stomach"
+      ],
+      "topic": "health"
+    },
+    {
+      "id": "c2_v_sedentary",
+      "level": "C2",
+      "word": "sedentary",
+      "pos": "adjective",
+      "ipa_us": "/ˈsɛdənˌtɛri/",
+      "translation_ru": "сидячий, малоподвижный",
+      "example_en": "A sedentary job means you have to build movement into the day deliberately.",
+      "collocations": [
+        "a sedentary lifestyle",
+        "sedentary work"
+      ],
+      "topic": "health"
+    },
+    {
+      "id": "c2_v_ailment",
+      "level": "C2",
+      "word": "ailment",
+      "pos": "noun",
+      "ipa_us": "/ˈeɪlmənt/",
+      "translation_ru": "недуг, хворь, недомогание",
+      "example_en": "The clinic handles minor ailments without an appointment.",
+      "collocations": [
+        "a minor ailment",
+        "a chronic ailment"
+      ],
+      "topic": "health"
+    },
+    {
+      "id": "c2_v_savor",
+      "level": "C2",
+      "word": "savor",
+      "pos": "verb",
+      "ipa_us": "/ˈseɪvɚ/",
+      "translation_ru": "смаковать, наслаждаться вкусом",
+      "example_en": "Slow down and savor it; you have been waiting for this all week.",
+      "collocations": [
+        "savor every bite",
+        "savor the moment"
+      ],
+      "topic": "food"
+    },
+    {
+      "id": "c2_v_devour",
+      "level": "C2",
+      "word": "devour",
+      "pos": "verb",
+      "ipa_us": "/dɪˈvaʊr/",
+      "translation_ru": "поглощать, пожирать, проглатывать",
+      "example_en": "He devoured the entire pizza before anyone else reached the table.",
+      "collocations": [
+        "devour a meal",
+        "devour a book"
+      ],
+      "topic": "food"
+    },
+    {
+      "id": "c2_v_pungent",
+      "level": "C2",
+      "word": "pungent",
+      "pos": "adjective",
+      "ipa_us": "/ˈpʌndʒənt/",
+      "translation_ru": "острый, едкий, резкий",
+      "example_en": "The cheese has a pungent smell that clears out the whole kitchen.",
+      "collocations": [
+        "a pungent smell",
+        "a pungent flavor"
+      ],
+      "topic": "food"
+    },
+    {
+      "id": "c2_v_rancid",
+      "level": "C2",
+      "word": "rancid",
+      "pos": "adjective",
+      "ipa_us": "/ˈrænsəd/",
+      "translation_ru": "прогорклый, испорченный",
+      "example_en": "The oil had gone rancid in the back of the cupboard.",
+      "collocations": [
+        "rancid butter",
+        "go rancid"
+      ],
+      "topic": "food"
+    },
+    {
+      "id": "c2_v_ravenous",
+      "level": "C2",
+      "word": "ravenous",
+      "pos": "adjective",
+      "ipa_us": "/ˈrævənəs/",
+      "translation_ru": "голодный как волк, ненасытный",
+      "example_en": "After a full day of interviews we were absolutely ravenous.",
+      "collocations": [
+        "a ravenous appetite",
+        "absolutely ravenous"
+      ],
+      "topic": "food"
+    },
+    {
+      "id": "c2_v_morsel",
+      "level": "C2",
+      "word": "morsel",
+      "pos": "noun",
+      "ipa_us": "/ˈmɔrsəl/",
+      "translation_ru": "кусочек, крошка",
+      "example_en": "He finished every last morsel and asked what was in the sauce.",
+      "collocations": [
+        "a tasty morsel",
+        "every last morsel"
+      ],
+      "topic": "food"
+    },
+    {
+      "id": "c2_v_connoisseur",
+      "level": "C2",
+      "word": "connoisseur",
+      "pos": "noun",
+      "ipa_us": "/ˌkɑnəˈsɝ/",
+      "translation_ru": "знаток, ценитель",
+      "example_en": "You do not need to be a connoisseur to notice how good this coffee is.",
+      "collocations": [
+        "a wine connoisseur",
+        "a connoisseur of"
+      ],
+      "topic": "food"
+    },
+    {
+      "id": "c2_v_quaint",
+      "level": "C2",
+      "word": "quaint",
+      "pos": "adjective",
+      "ipa_us": "/kweɪnt/",
+      "translation_ru": "причудливый, старомодно-милый",
+      "example_en": "We stayed in a quaint little town where nothing opened before ten.",
+      "collocations": [
+        "a quaint village",
+        "quaint old houses"
+      ],
+      "topic": "travel"
+    },
+    {
+      "id": "c2_v_secluded",
+      "level": "C2",
+      "word": "secluded",
+      "pos": "adjective",
+      "ipa_us": "/sɪˈkludəd/",
+      "translation_ru": "уединённый, укромный, изолированный",
+      "example_en": "The hotel sits on a secluded beach half an hour from the nearest road.",
+      "collocations": [
+        "a secluded spot",
+        "a secluded beach"
+      ],
+      "topic": "travel"
+    },
+    {
+      "id": "c2_v_bustling",
+      "level": "C2",
+      "word": "bustling",
+      "pos": "adjective",
+      "ipa_us": "/ˈbʌsəlɪŋ/",
+      "translation_ru": "оживлённый, кипящий жизнью, шумный",
+      "example_en": "By eight the market square is bustling with people.",
+      "collocations": [
+        "a bustling city",
+        "bustling with life"
+      ],
+      "topic": "travel"
+    },
+    {
+      "id": "c2_v_meander",
+      "level": "C2",
+      "word": "meander",
+      "pos": "verb",
+      "ipa_us": "/miˈændɚ/",
+      "translation_ru": "петлять, извиваться, бродить без цели",
+      "example_en": "The river meanders through the valley for another twenty miles.",
+      "collocations": [
+        "meander through",
+        "meander slowly"
+      ],
+      "topic": "travel"
+    },
+    {
+      "id": "c2_v_throng",
+      "level": "C2",
+      "word": "throng",
+      "pos": "noun",
+      "ipa_us": "/θrɔŋ/",
+      "translation_ru": "толпа, скопление людей",
+      "example_en": "A throng of passengers had already formed at the gate.",
+      "collocations": [
+        "a throng of people",
+        "push through the throng"
+      ],
+      "topic": "travel"
+    },
+    {
+      "id": "c2_v_picturesque",
+      "level": "C2",
+      "word": "picturesque",
+      "pos": "adjective",
+      "ipa_us": "/ˌpɪktʃəˈrɛsk/",
+      "translation_ru": "живописный, колоритный",
+      "example_en": "The route back was longer but far more picturesque.",
+      "collocations": [
+        "a picturesque village",
+        "picturesque scenery"
+      ],
+      "topic": "travel"
+    },
+    {
+      "id": "c2_v_off_the_beaten_path",
+      "level": "C2",
+      "word": "off the beaten path",
+      "pos": "phrase",
+      "ipa_us": "/ˌɔf ðə ˌbitən ˈpæθ/",
+      "translation_ru": "вдали от туристических маршрутов, в глуши",
+      "example_en": "We wanted something off the beaten path, so we drove north for three hours.",
+      "collocations": [
+        "get off the beaten path",
+        "somewhere off the beaten path"
+      ],
+      "topic": "travel"
+    },
+    {
+      "id": "c2_v_arid",
+      "level": "C2",
+      "word": "arid",
+      "pos": "adjective",
+      "ipa_us": "/ˈɛrəd/",
+      "translation_ru": "засушливый, безводный, сухой",
+      "example_en": "Nothing grows here without irrigation; the soil is simply too arid.",
+      "collocations": [
+        "an arid climate",
+        "arid land"
+      ],
+      "topic": "nature"
+    },
+    {
+      "id": "c2_v_lush",
+      "level": "C2",
+      "word": "lush",
+      "pos": "adjective",
+      "ipa_us": "/lʌʃ/",
+      "translation_ru": "пышный, буйный, сочный",
+      "example_en": "After the rains the whole valley turns lush and green.",
+      "collocations": [
+        "lush vegetation",
+        "lush green hills"
+      ],
+      "topic": "nature"
+    },
+    {
+      "id": "c2_v_rugged",
+      "level": "C2",
+      "word": "rugged",
+      "pos": "adjective",
+      "ipa_us": "/ˈrʌgəd/",
+      "translation_ru": "суровый, скалистый, изрезанный",
+      "example_en": "The rugged coastline makes the drive slow but spectacular.",
+      "collocations": [
+        "a rugged coastline",
+        "rugged terrain"
+      ],
+      "topic": "nature"
+    },
+    {
+      "id": "c2_v_dwindle",
+      "level": "C2",
+      "word": "dwindle",
+      "pos": "verb",
+      "ipa_us": "/ˈdwɪndəl/",
+      "translation_ru": "сокращаться, убывать, иссякать",
+      "example_en": "The glacier has been dwindling steadily for the last forty years.",
+      "collocations": [
+        "dwindle away",
+        "dwindling resources"
+      ],
+      "topic": "nature"
+    },
+    {
+      "id": "c2_v_downpour",
+      "level": "C2",
+      "word": "downpour",
+      "pos": "noun",
+      "ipa_us": "/ˈdaʊnˌpɔr/",
+      "translation_ru": "ливень, проливной дождь",
+      "example_en": "A sudden downpour flooded the road within twenty minutes.",
+      "collocations": [
+        "a sudden downpour",
+        "a heavy downpour"
+      ],
+      "topic": "nature"
+    },
+    {
+      "id": "c2_v_pristine",
+      "level": "C2",
+      "word": "pristine",
+      "pos": "adjective",
+      "ipa_us": "/prɪsˈtin/",
+      "translation_ru": "нетронутый, первозданный, безупречно чистый",
+      "example_en": "The lake is still pristine because access is deliberately restricted.",
+      "collocations": [
+        "pristine condition",
+        "a pristine environment"
+      ],
+      "topic": "nature"
+    },
+    {
+      "id": "c2_v_amenities",
+      "level": "C2",
+      "word": "amenities",
+      "pos": "noun",
+      "ipa_us": "/əˈmɛnətiz/",
+      "translation_ru": "удобства, инфраструктура, блага",
+      "example_en": "The building is old, but the amenities are surprisingly good.",
+      "collocations": [
+        "basic amenities",
+        "modern amenities"
+      ],
+      "topic": "home"
+    },
+    {
+      "id": "c2_v_cluttered",
+      "level": "C2",
+      "word": "cluttered",
+      "pos": "adjective",
+      "ipa_us": "/ˈklʌtɚd/",
+      "translation_ru": "захламлённый, заставленный, загромождённый",
+      "example_en": "His desk is so cluttered that the keyboard is barely visible.",
+      "collocations": [
+        "a cluttered desk",
+        "a cluttered room"
+      ],
+      "topic": "home"
+    },
+    {
+      "id": "c2_v_dilapidated",
+      "level": "C2",
+      "word": "dilapidated",
+      "pos": "adjective",
+      "ipa_us": "/dəˈlæpəˌdeɪtəd/",
+      "translation_ru": "ветхий, полуразрушенный, обшарпанный",
+      "example_en": "They bought a dilapidated house and spent two years fixing it.",
+      "collocations": [
+        "a dilapidated building",
+        "in a dilapidated state"
+      ],
+      "topic": "home"
+    },
+    {
+      "id": "c2_v_refurbish",
+      "level": "C2",
+      "word": "refurbish",
+      "pos": "verb",
+      "ipa_us": "/riˈfɝbɪʃ/",
+      "translation_ru": "обновлять, приводить в порядок, реставрировать",
+      "example_en": "The landlord promised to refurbish the kitchen before we moved in.",
+      "collocations": [
+        "refurbish an apartment",
+        "a refurbished laptop"
+      ],
+      "topic": "home"
+    },
+    {
+      "id": "c2_v_snug",
+      "level": "C2",
+      "word": "snug",
+      "pos": "adjective",
+      "ipa_us": "/snʌg/",
+      "translation_ru": "уютный, тёплый, плотно сидящий",
+      "example_en": "The attic room is small but snug once the heating is on.",
+      "collocations": [
+        "snug and warm",
+        "a snug fit"
+      ],
+      "topic": "home"
+    },
+    {
+      "id": "c2_v_makeshift",
+      "level": "C2",
+      "word": "makeshift",
+      "pos": "adjective",
+      "ipa_us": "/ˈmeɪkˌʃɪft/",
+      "translation_ru": "самодельный, временный, наспех сооружённый",
+      "example_en": "He built a makeshift standing desk out of two boxes and a board.",
+      "collocations": [
+        "a makeshift solution",
+        "a makeshift shelter"
+      ],
+      "topic": "home"
+    },
+    {
+      "id": "c2_v_juxtaposition",
+      "level": "C2",
+      "word": "juxtaposition",
+      "pos": "noun",
+      "ipa_us": "/ˌdʒʌkstəpəˈzɪʃən/",
+      "translation_ru": "сопоставление, соседство, противопоставление",
+      "example_en": "The juxtaposition of the two charts makes the trend obvious.",
+      "collocations": [
+        "a strange juxtaposition",
+        "the juxtaposition of"
+      ],
+      "topic": "study"
+    },
+    {
+      "id": "c2_v_glean",
+      "level": "C2",
+      "word": "glean",
+      "pos": "verb",
+      "ipa_us": "/glin/",
+      "translation_ru": "почерпнуть, выудить, извлечь",
+      "example_en": "That is all we could glean from the documentation.",
+      "collocations": [
+        "glean information",
+        "glean insights from"
+      ],
+      "topic": "study"
+    },
+    {
+      "id": "c2_v_substantiate",
+      "level": "C2",
+      "word": "substantiate",
+      "pos": "verb",
+      "ipa_us": "/səbˈstænʃiˌeɪt/",
+      "translation_ru": "подкреплять доказательствами, обосновывать",
+      "example_en": "The claim is interesting, but nothing in the report substantiates it.",
+      "collocations": [
+        "substantiate a claim",
+        "fail to substantiate"
+      ],
+      "topic": "study"
+    },
+    {
+      "id": "c2_v_refute",
+      "level": "C2",
+      "word": "refute",
+      "pos": "verb",
+      "ipa_us": "/rɪˈfjut/",
+      "translation_ru": "опровергать, оспаривать",
+      "example_en": "A single counterexample was enough to refute the whole assumption.",
+      "collocations": [
+        "refute an argument",
+        "refute the allegations"
+      ],
+      "topic": "study"
+    },
+    {
+      "id": "c2_v_fallacy",
+      "level": "C2",
+      "word": "fallacy",
+      "pos": "noun",
+      "ipa_us": "/ˈfæləsi/",
+      "translation_ru": "заблуждение, логическая ошибка, софизм",
+      "example_en": "It is a common fallacy that more engineers always mean faster delivery.",
+      "collocations": [
+        "a logical fallacy",
+        "a common fallacy"
+      ],
+      "topic": "study"
+    },
+    {
+      "id": "c2_v_empirical",
+      "level": "C2",
+      "word": "empirical",
+      "pos": "adjective",
+      "ipa_us": "/ɪmˈpɪrɪkəl/",
+      "translation_ru": "эмпирический, опытный, основанный на данных",
+      "example_en": "We need empirical evidence, not a shared feeling that it is slower.",
+      "collocations": [
+        "empirical evidence",
+        "empirical research"
+      ],
+      "topic": "study"
+    },
+    {
+      "id": "c2_v_seminal",
+      "level": "C2",
+      "word": "seminal",
+      "pos": "adjective",
+      "ipa_us": "/ˈsɛmənəl/",
+      "translation_ru": "основополагающий, знаковый, этапный",
+      "example_en": "That seminal paper still shapes how we think about distributed systems.",
+      "collocations": [
+        "a seminal work",
+        "a seminal study"
+      ],
+      "topic": "study"
+    },
+    {
+      "id": "c2_v_albeit",
+      "level": "C2",
+      "word": "albeit",
+      "pos": "conjunction",
+      "ipa_us": "/ɔlˈbiɪt/",
+      "translation_ru": "хотя и, пусть и, хоть и",
+      "example_en": "The fix works, albeit at the cost of a slower startup.",
+      "collocations": [
+        "albeit briefly",
+        "albeit reluctantly"
+      ],
+      "topic": "study"
+    },
+    {
+      "id": "c2_v_notwithstanding",
+      "level": "C2",
+      "word": "notwithstanding",
+      "pos": "preposition",
+      "ipa_us": "/ˌnɑtwɪθˈstændɪŋ/",
+      "translation_ru": "несмотря на, невзирая на",
+      "example_en": "Notwithstanding the delays, the project came in under budget.",
+      "collocations": [
+        "notwithstanding the fact that",
+        "this notwithstanding"
+      ],
+      "topic": "study"
+    },
+    {
+      "id": "c2_v_hiatus",
+      "level": "C2",
+      "word": "hiatus",
+      "pos": "noun",
+      "ipa_us": "/haɪˈeɪtəs/",
+      "translation_ru": "перерыв, пауза, затишье",
+      "example_en": "The project resumed after a six-month hiatus.",
+      "collocations": [
+        "a brief hiatus",
+        "after a long hiatus"
+      ],
+      "topic": "time"
+    },
+    {
+      "id": "c2_v_at_the_eleventh_hour",
+      "level": "C2",
+      "word": "at the eleventh hour",
+      "pos": "phrase",
+      "ipa_us": "/ət ði ɪˈlɛvənθ ˈaʊr/",
+      "translation_ru": "в последнюю минуту, в самый последний момент",
+      "example_en": "The sponsor pulled out at the eleventh hour and the launch was postponed.",
+      "collocations": [
+        "arrive at the eleventh hour",
+        "an eleventh-hour decision"
+      ],
+      "topic": "time"
+    },
+    {
+      "id": "c2_v_protracted",
+      "level": "C2",
+      "word": "protracted",
+      "pos": "adjective",
+      "ipa_us": "/proʊˈtræktəd/",
+      "translation_ru": "затяжной, растянутый, долгий",
+      "example_en": "After a protracted debate we simply flipped a coin.",
+      "collocations": [
+        "a protracted dispute",
+        "protracted negotiations"
+      ],
+      "topic": "time"
+    },
+    {
+      "id": "c2_v_fleeting",
+      "level": "C2",
+      "word": "fleeting",
+      "pos": "adjective",
+      "ipa_us": "/ˈflitɪŋ/",
+      "translation_ru": "мимолётный, быстротечный, скоротечный",
+      "example_en": "There was a fleeting moment when the whole pipeline was actually green.",
+      "collocations": [
+        "a fleeting glimpse",
+        "a fleeting moment"
+      ],
+      "topic": "time"
+    },
+    {
+      "id": "c2_v_sporadic",
+      "level": "C2",
+      "word": "sporadic",
+      "pos": "adjective",
+      "ipa_us": "/spəˈrædɪk/",
+      "translation_ru": "эпизодический, нерегулярный, редкий",
+      "example_en": "Reports were sporadic at first, then arrived every few minutes.",
+      "collocations": [
+        "sporadic outbreaks",
+        "sporadic reports"
+      ],
+      "topic": "time"
+    }
+  ]
+}

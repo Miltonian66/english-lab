@@ -1,0 +1,639 @@
+{
+ "chunk": "a2_part4",
+ "points": [
+  {
+   "id": "a2_stative_vs_dynamic_verbs_or_non_action_vs_action_verbs",
+   "level": "A2",
+   "band": "A2",
+   "topic": "Tenses",
+   "title_en": "Stative vs dynamic verbs (or non-action vs action verbs)",
+   "source_slug": "stative-vs-dynamic-verbs-or-non-action-vs-action-verbs",
+   "title_ru": "Глаголы состояния и глаголы действия",
+   "summary_ru": "Английские глаголы делятся на глаголы действия (dynamic) и глаголы состояния (stative). Глаголы состояния описывают знание, чувства, желания и принадлежность: know, understand, want, need, like, love, hate, believe, remember, mean, belong, own, cost. Такие глаголы обычно не ставятся в Continuous, даже когда речь идёт о моменте речи, поэтому используется Present Simple. Глаголы действия описывают процесс и свободно употребляются в Continuous: work, write, test, read, run, wait. Несколько глаголов меняют значение: think как состояние значит «считать», а как действие — «обдумывать»; have как состояние значит «иметь», а как действие — «есть, проводить». Глаголы восприятия look, taste, smell, sound в значении «выглядеть, быть на вкус» тоже остаются в Simple. Проверка простая: если глагол описывает не процесс, а положение дел, выбирайте Present Simple.",
+   "forms": [
+    "state verb + Present Simple: I know / She wants",
+    "action verb + Present Continuous: I am testing / He is waiting",
+    "NOT: I am knowing, I am wanting, I am liking",
+    "think: I think it is a good plan (state) / I am thinking about it (action)",
+    "have: I have a laptop (state) / I am having lunch (action)"
+   ],
+   "examples": [
+    "I know the answer.",
+    "She wants a new laptop.",
+    "We are testing the new build right now.",
+    "I think this plan is good.",
+    "Sorry, I am thinking about your question.",
+    "He is having lunch with the team."
+   ],
+   "ru_interference": "Русскоязычные механически связывают слово «сейчас» с Continuous и переносят это на глаголы состояния: неверно «I am wanting a coffee now», «I am understanding you now» → верно «I want a coffee now», «I understand you now».",
+   "prerequisites": [
+    "a1_present_simple",
+    "a1_present_continuous",
+    "a1_present_simple_present_continuous"
+   ],
+   "exercises": [
+    {
+     "id": "a2_stative_vs_dynamic_verbs_or_non_action_vs_action_verbs_01",
+     "kind": "choice",
+     "prompt": "I ___ what you mean.",
+     "options": [
+      "am knowing",
+      "know",
+      "knows",
+      "am know"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Know — глагол состояния, он не ставится в Continuous, а с подлежащим I форма идёт без -s.",
+     "difficulty": 1
+    },
+    {
+     "id": "a2_stative_vs_dynamic_verbs_or_non_action_vs_action_verbs_02",
+     "kind": "choice",
+     "prompt": "Don't call him now. He ___ lunch with a client at the moment.",
+     "options": [
+      "has",
+      "is having",
+      "have",
+      "is have"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Have lunch — это действие, и слова at the moment требуют Present Continuous is having.",
+     "difficulty": 1
+    },
+    {
+     "id": "a2_stative_vs_dynamic_verbs_or_non_action_vs_action_verbs_03",
+     "kind": "choice",
+     "prompt": "This coffee ___ great.",
+     "options": [
+      "is tasting",
+      "tastes",
+      "taste",
+      "is taste"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Taste в значении «быть на вкус» — состояние, поэтому только Present Simple, и с this coffee нужна форма на -s.",
+     "difficulty": 1
+    },
+    {
+     "id": "a2_stative_vs_dynamic_verbs_or_non_action_vs_action_verbs_04",
+     "kind": "choice",
+     "prompt": "Sorry, I can't talk now. I ___ about a difficult bug.",
+     "options": [
+      "think",
+      "am thinking",
+      "thinks",
+      "am think"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Здесь think значит «обдумывать», то есть процесс прямо сейчас, поэтому нужен Present Continuous.",
+     "difficulty": 2
+    },
+    {
+     "id": "a2_stative_vs_dynamic_verbs_or_non_action_vs_action_verbs_05",
+     "kind": "gap",
+     "prompt": "I ___ (not / understand) this error message.",
+     "answer": "don't understand",
+     "accept": [
+      "do not understand"
+     ],
+     "explanation_ru": "Understand — глагол состояния, поэтому отрицание строится в Present Simple, а не через am not understanding.",
+     "difficulty": 2
+    },
+    {
+     "id": "a2_stative_vs_dynamic_verbs_or_non_action_vs_action_verbs_06",
+     "kind": "gap",
+     "prompt": "Can you call me back later? I ___ (have) a quick meeting with my manager.",
+     "answer": "am having",
+     "accept": [
+      "'m having"
+     ],
+     "explanation_ru": "Have a meeting — это действие, которое идёт прямо сейчас, поэтому нужен Present Continuous.",
+     "difficulty": 2
+    },
+    {
+     "id": "a2_stative_vs_dynamic_verbs_or_non_action_vs_action_verbs_07",
+     "kind": "correct",
+     "prompt": "I am knowing this tool very well, and I am thinking it is the best one.",
+     "answer": "I know this tool very well, and I think it is the best one.",
+     "accept": [
+      "I know this tool very well, and I think it's the best one."
+     ],
+     "explanation_ru": "Know всегда состояние, а think здесь значит «считать», то есть тоже состояние; обе формы идут в Present Simple.",
+     "difficulty": 3
+    },
+    {
+     "id": "a2_stative_vs_dynamic_verbs_or_non_action_vs_action_verbs_08",
+     "kind": "order",
+     "prompt": "anything / this / does / to / mean / not / me",
+     "answer": "This does not mean anything to me.",
+     "accept": [
+      "This doesn't mean anything to me."
+     ],
+     "explanation_ru": "Mean — глагол состояния, поэтому отрицание строится через does not в Present Simple, без Continuous.",
+     "difficulty": 3
+    }
+   ]
+  },
+  {
+   "id": "a2_used_to",
+   "level": "A2",
+   "band": "A2",
+   "topic": "Tenses",
+   "title_en": "Used to, didn't use to: Past habits and states",
+   "source_slug": "used-to",
+   "title_ru": "Used to: привычки и состояния в прошлом",
+   "summary_ru": "Конструкция used to + начальная форма глагола описывает то, что регулярно происходило или было правдой в прошлом, но сейчас уже не так. Она подходит и для привычек (I used to smoke), и для состояний (I used to have long hair). Отрицание и вопрос строятся через did, и тогда used теряет -d: didn't use to, Did you use to...? После used to всегда идёт начальная форма глагола: used to work, used to be. Если действие произошло один раз или указано точное время, нужен обычный Past Simple: I worked there in 2019. Для настоящего времени used to не используют, там говорят usually. Не путайте used to + инфинитив с be used to + форма на -ing («быть привыкшим к чему-то») и get used to + -ing («привыкать»).",
+   "forms": [
+    "used to + V1: I used to work here",
+    "didn't use to + V1: I didn't use to like tea",
+    "Did + subject + use to + V1?: Did you use to live there?",
+    "There used to be + noun: There used to be a shop here",
+    "Past Simple for one finished action: I worked there in 2019"
+   ],
+   "examples": [
+    "I used to work in a small company.",
+    "She used to have long hair.",
+    "We didn't use to write tests.",
+    "Did you use to play football at school?",
+    "There used to be a coffee machine on this floor."
+   ],
+   "ru_interference": "Русское «раньше я работал в банке» переводят обычным прошедшим со словом before или earlier: неверно «Before I worked in a bank» → верно «I used to work in a bank». Из-за слова «обычно» used to переносят и в настоящее время, хотя там нужно usually.",
+   "prerequisites": [
+    "a1_past_simple_regular_irregular",
+    "a1_past_simple_negatives_questions"
+   ],
+   "exercises": [
+    {
+     "id": "a2_used_to_01",
+     "kind": "choice",
+     "prompt": "When I was a child, I ___ a lot of milk.",
+     "options": [
+      "use to drink",
+      "used to drink",
+      "used to drinking",
+      "was used to drink"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "В утверждении форма всегда used to, а после неё идёт начальная форма глагола drink.",
+     "difficulty": 1
+    },
+    {
+     "id": "a2_used_to_02",
+     "kind": "choice",
+     "prompt": "I ___ like coffee, but now I drink it every day.",
+     "options": [
+      "didn't used to",
+      "didn't use to",
+      "not used to",
+      "don't use to"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "В отрицании прошедшее время показывает did, поэтому used теряет -d: didn't use to.",
+     "difficulty": 1
+    },
+    {
+     "id": "a2_used_to_03",
+     "kind": "choice",
+     "prompt": "___ your team use to work at the office?",
+     "options": [
+      "Did",
+      "Do",
+      "Was",
+      "Were"
+     ],
+     "correct_index": 0,
+     "explanation_ru": "Вопрос с use to строится через вспомогательный глагол did, потому что речь о прошлом.",
+     "difficulty": 1
+    },
+    {
+     "id": "a2_used_to_04",
+     "kind": "choice",
+     "prompt": "There ___ a small kitchen on this floor, but they removed it last year.",
+     "options": [
+      "used to be",
+      "used to being",
+      "use to be",
+      "was used to be"
+     ],
+     "correct_index": 0,
+     "explanation_ru": "There used to be — стандартная форма для того, что раньше существовало, а сейчас нет.",
+     "difficulty": 2
+    },
+    {
+     "id": "a2_used_to_05",
+     "kind": "gap",
+     "prompt": "My father ___ (used to / work) as a driver, but now he is retired.",
+     "answer": "used to work",
+     "accept": [],
+     "explanation_ru": "Речь о постоянной работе в прошлом, которой больше нет, поэтому used to + начальная форма work.",
+     "difficulty": 2
+    },
+    {
+     "id": "a2_used_to_06",
+     "kind": "gap",
+     "prompt": "I ___ (not / used to / like) this framework, but now it is my favorite.",
+     "answer": "didn't use to like",
+     "accept": [
+      "did not use to like"
+     ],
+     "explanation_ru": "Отрицание образуется как didn't use to, и глагол use остаётся без -d.",
+     "difficulty": 2
+    },
+    {
+     "id": "a2_used_to_07",
+     "kind": "correct",
+     "prompt": "Did you used to have a car?",
+     "answer": "Did you use to have a car?",
+     "accept": [],
+     "explanation_ru": "После вспомогательного did глагол стоит в начальной форме, поэтому used превращается в use.",
+     "difficulty": 3
+    },
+    {
+     "id": "a2_used_to_08",
+     "kind": "order",
+     "prompt": "used / we / to / meet / every / Friday",
+     "answer": "We used to meet every Friday.",
+     "accept": [],
+     "explanation_ru": "Порядок обычный: подлежащее, used to, начальная форма глагола и обстоятельство времени в конце.",
+     "difficulty": 3
+    }
+   ]
+  },
+  {
+   "id": "a2_infinitives_and_gerunds",
+   "level": "A2",
+   "band": "A2",
+   "topic": "Verb patterns",
+   "title_en": "Infinitives and gerunds: Verb patterns",
+   "source_slug": "infinitives-and-gerunds",
+   "title_ru": "Инфинитив и герундий после глаголов",
+   "summary_ru": "После одних английских глаголов идёт инфинитив с to, после других — форма с -ing (герундий). С to + инфинитив употребляются want, need, decide, hope, plan, promise, learn, try, agree, would like. С формой на -ing употребляются enjoy, finish, mind, suggest, avoid, practice, keep. Есть отдельная группа с дополнением: ask, tell, want, would like кого-то что-то сделать — ask me to call, want you to help. После любого предлога всегда стоит -ing: good at fixing, before starting, instead of waiting. Глаголы start, begin, continue, like допускают обе формы почти без разницы в смысле. Списки лучше запоминать целыми фразами, потому что жёсткой логики в выборе нет.",
+   "forms": [
+    "want / need / decide / hope / promise / agree + to + V1",
+    "enjoy / finish / mind / suggest / avoid / keep + V-ing",
+    "ask / tell / want + object + to + V1: ask me to call",
+    "preposition + V-ing: good at fixing, before starting",
+    "start / begin / continue / like + to + V1 = + V-ing"
+   ],
+   "examples": [
+    "I want to learn Python.",
+    "She enjoys working from home.",
+    "We decided to change the plan.",
+    "He finished writing the report.",
+    "My boss asked me to call the client.",
+    "I am good at fixing bugs."
+   ],
+   "ru_interference": "В русском после большинства глаголов идёт инфинитив, поэтому герундий заменяют инфинитивом: неверно «I enjoy to work here» → верно «I enjoy working here».",
+   "prerequisites": [
+    "a1_verbs_infinitive_verbs_ing"
+   ],
+   "exercises": [
+    {
+     "id": "a2_infinitives_and_gerunds_01",
+     "kind": "choice",
+     "prompt": "I enjoy ___ new languages.",
+     "options": [
+      "to learn",
+      "learning",
+      "learn",
+      "to learning"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "После enjoy всегда идёт форма с -ing, инфинитив здесь невозможен.",
+     "difficulty": 1
+    },
+    {
+     "id": "a2_infinitives_and_gerunds_02",
+     "kind": "choice",
+     "prompt": "We decided ___ the plan.",
+     "options": [
+      "changing",
+      "to change",
+      "change",
+      "to changing"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Глагол decide входит в группу с инфинитивом: decide to do something.",
+     "difficulty": 1
+    },
+    {
+     "id": "a2_infinitives_and_gerunds_03",
+     "kind": "choice",
+     "prompt": "She is good at ___ problems quickly.",
+     "options": [
+      "solve",
+      "to solve",
+      "solving",
+      "solved"
+     ],
+     "correct_index": 2,
+     "explanation_ru": "At — предлог, а после любого предлога ставится форма с -ing.",
+     "difficulty": 1
+    },
+    {
+     "id": "a2_infinitives_and_gerunds_04",
+     "kind": "choice",
+     "prompt": "My manager asked me ___ the report today.",
+     "options": [
+      "send",
+      "sending",
+      "to send",
+      "to sending"
+     ],
+     "correct_index": 2,
+     "explanation_ru": "Схема ask somebody to do something требует инфинитива с to после дополнения me.",
+     "difficulty": 2
+    },
+    {
+     "id": "a2_infinitives_and_gerunds_05",
+     "kind": "gap",
+     "prompt": "Would you mind ___ (open) the window?",
+     "answer": "opening",
+     "accept": [],
+     "explanation_ru": "После mind используется только форма с -ing, поэтому opening.",
+     "difficulty": 2
+    },
+    {
+     "id": "a2_infinitives_and_gerunds_06",
+     "kind": "gap",
+     "prompt": "They agreed ___ (help) us with the new project.",
+     "answer": "to help",
+     "accept": [],
+     "explanation_ru": "Agree относится к глаголам с инфинитивом: agree to do something.",
+     "difficulty": 2
+    },
+    {
+     "id": "a2_infinitives_and_gerunds_07",
+     "kind": "correct",
+     "prompt": "I want that you call me tomorrow.",
+     "answer": "I want you to call me tomorrow.",
+     "accept": [],
+     "explanation_ru": "После want в английском нет придаточного с that: нужна схема want somebody to do something.",
+     "difficulty": 3
+    },
+    {
+     "id": "a2_infinitives_and_gerunds_08",
+     "kind": "order",
+     "prompt": "to / long / I / avoid / try / meetings",
+     "answer": "I try to avoid long meetings.",
+     "accept": [],
+     "explanation_ru": "После try идёт инфинитив с to: try to do something. Дополнение long meetings стоит сразу после avoid.",
+     "difficulty": 3
+    }
+   ]
+  },
+  {
+   "id": "a2_verbs_with_two_objects",
+   "level": "A2",
+   "band": "A2",
+   "topic": "Verb patterns",
+   "title_en": "Verbs with two objects",
+   "source_slug": "verbs-with-two-objects",
+   "title_ru": "Глаголы с двумя дополнениями",
+   "summary_ru": "Некоторые английские глаголы принимают сразу два дополнения: лицо (кому) и предмет (что). Это give, send, show, tell, offer, lend, bring, buy, make, cook, get. Возможны два порядка слов: без предлога лицо идёт первым — He gave me the file; с предлогом первым идёт предмет — He gave the file to me. С give, send, show, tell, lend, bring используется предлог to, а с buy, make, cook, get, find — предлог for. Если предмет выражен местоимением it или them, почти всегда выбирают вариант с предлогом: Give it to me. Глаголы explain, describe, say, suggest, repeat не берут лицо сразу после себя: только explain the task to me. Выбор порядка зависит от того, что новее в разговоре: новая информация ставится в конец.",
+   "forms": [
+    "verb + person + thing: He gave me the file",
+    "give / send / show / tell / lend + thing + to + person: He gave the file to me",
+    "buy / make / cook / get + thing + for + person: I bought a coffee for her",
+    "explain / describe / say + thing + to + person (only with a preposition)",
+    "Give it to me (better than: Give me it)"
+   ],
+   "examples": [
+    "She sent me an email.",
+    "She sent an email to me.",
+    "Can you show me the code?",
+    "I bought a coffee for my colleague.",
+    "He explained the problem to the team.",
+    "Please give it to Anna."
+   ],
+   "ru_interference": "После explain, say, describe лицо ставят сразу за глаголом, как в русском «объясни мне»: неверно «Explain me this task» → верно «Explain this task to me».",
+   "prerequisites": [
+    "a1_object_pronouns",
+    "a1_basic_word_order_in_english"
+   ],
+   "exercises": [
+    {
+     "id": "a2_verbs_with_two_objects_01",
+     "kind": "choice",
+     "prompt": "Can you send ___ the link, please?",
+     "options": [
+      "to me",
+      "me",
+      "for me",
+      "my"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Если лицо стоит сразу после глагола, предлог не нужен: send me the link.",
+     "difficulty": 1
+    },
+    {
+     "id": "a2_verbs_with_two_objects_02",
+     "kind": "choice",
+     "prompt": "She gave the keys ___ her brother.",
+     "options": [
+      "to",
+      "for",
+      "at",
+      "of"
+     ],
+     "correct_index": 0,
+     "explanation_ru": "С глаголом give, когда предмет идёт первым, лицо вводится предлогом to.",
+     "difficulty": 1
+    },
+    {
+     "id": "a2_verbs_with_two_objects_03",
+     "kind": "choice",
+     "prompt": "I bought a small present ___ my sister.",
+     "options": [
+      "to",
+      "for",
+      "at",
+      "on"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Глагол buy требует предлога for, а не to.",
+     "difficulty": 1
+    },
+    {
+     "id": "a2_verbs_with_two_objects_04",
+     "kind": "choice",
+     "prompt": "Anna showed ___ yesterday.",
+     "options": [
+      "us her new laptop",
+      "her new laptop us",
+      "to us her new laptop",
+      "us to her new laptop"
+     ],
+     "correct_index": 0,
+     "explanation_ru": "Без предлога порядок строгий: сначала лицо us, потом предмет her new laptop.",
+     "difficulty": 2
+    },
+    {
+     "id": "a2_verbs_with_two_objects_05",
+     "kind": "gap",
+     "prompt": "My wife made a cake ___ (I) last weekend.",
+     "answer": "for me",
+     "accept": [],
+     "explanation_ru": "Make в значении «приготовить для кого-то» требует for, а местоимение I меняется на объектное me.",
+     "difficulty": 2
+    },
+    {
+     "id": "a2_verbs_with_two_objects_06",
+     "kind": "gap",
+     "prompt": "I lent my charger ___ (Tom) yesterday.",
+     "answer": "to Tom",
+     "accept": [],
+     "explanation_ru": "Lend входит в группу с предлогом to, когда предмет стоит перед лицом.",
+     "difficulty": 2
+    },
+    {
+     "id": "a2_verbs_with_two_objects_07",
+     "kind": "correct",
+     "prompt": "Explain me this error, please.",
+     "answer": "Explain this error to me, please.",
+     "accept": [
+      "Please explain this error to me."
+     ],
+     "explanation_ru": "Explain не берёт лицо сразу после глагола: правильно explain something to somebody.",
+     "difficulty": 3
+    },
+    {
+     "id": "a2_verbs_with_two_objects_08",
+     "kind": "transform",
+     "prompt": "Rewrite without a preposition: He sent an email to the client.",
+     "answer": "He sent the client an email.",
+     "accept": [],
+     "explanation_ru": "Во втором варианте лицо the client идёт сразу после глагола, а предмет an email уходит в конец.",
+     "difficulty": 3
+    }
+   ]
+  },
+  {
+   "id": "a2_so_neither",
+   "level": "A2",
+   "band": "A2",
+   "topic": "Word order & emphasis",
+   "title_en": "So, neither: So am I, neither do I, etc.",
+   "source_slug": "so-neither",
+   "title_ru": "So am I, neither do I: короткое согласие",
+   "summary_ru": "Чтобы коротко согласиться с положительным высказыванием, говорят So + вспомогательный глагол + подлежащее: I am tired. - So am I. Для согласия с отрицательным высказыванием используют Neither (или Nor) + вспомогательный глагол + подлежащее: I don't smoke. - Neither do I. Вспомогательный глагол повторяет время и форму первой реплики: am - So am I, can - So can I, have - So have I, was - So was I. Если в первой реплике нет вспомогательного глагола (Present или Past Simple), берут do, does или did: I like tea. - So do I. Порядок слов обратный, как в вопросе: сначала вспомогательный глагол, потом подлежащее. После neither второе отрицание не ставится, потому что само слово уже отрицательное. В неформальной речи то же самое говорят короче: Me too и Me neither.",
+   "forms": [
+    "So + auxiliary + subject: So am I / So do I / So did we",
+    "Neither (Nor) + auxiliary + subject: Neither do I / Neither have I",
+    "Present or Past Simple takes do / does / did: I like it. - So do I.",
+    "The auxiliary repeats the first sentence: can - So can I, was - So was I",
+    "NOT: So I am, Neither I do, Neither don't I"
+   ],
+   "examples": [
+    "I am hungry. - So am I.",
+    "She can drive. - So can he.",
+    "We went home early. - So did they.",
+    "I don't like long meetings. - Neither do I.",
+    "He hasn't finished. - Neither have I.",
+    "I couldn't sleep. - Neither could I."
+   ],
+   "ru_interference": "Русское «я тоже» переводят с прямым порядком слов или с двойным отрицанием: неверно «Neither I do» и «Neither don't I» → верно «Neither do I».",
+   "prerequisites": [
+    "a1_present_simple",
+    "a1_past_simple_negatives_questions",
+    "a1_can_cant"
+   ],
+   "exercises": [
+    {
+     "id": "a2_so_neither_01",
+     "kind": "choice",
+     "prompt": "I like this tool. - ___",
+     "options": [
+      "So do I.",
+      "So am I.",
+      "So I like.",
+      "So like I."
+     ],
+     "correct_index": 0,
+     "explanation_ru": "В первой реплике Present Simple без вспомогательного глагола, поэтому берут do, и после so идёт обратный порядок.",
+     "difficulty": 1
+    },
+    {
+     "id": "a2_so_neither_02",
+     "kind": "choice",
+     "prompt": "She can't come tomorrow. - ___",
+     "options": [
+      "Neither can I.",
+      "Neither can't I.",
+      "So can I.",
+      "Neither I can."
+     ],
+     "correct_index": 0,
+     "explanation_ru": "Реплика отрицательная, поэтому нужен neither, второе отрицание не ставится, а порядок слов обратный.",
+     "difficulty": 1
+    },
+    {
+     "id": "a2_so_neither_03",
+     "kind": "choice",
+     "prompt": "We were late this morning. - ___",
+     "options": [
+      "So was I.",
+      "So were I.",
+      "So did I.",
+      "So am I."
+     ],
+     "correct_index": 0,
+     "explanation_ru": "Вспомогательный глагол повторяет время первой реплики, а с подлежащим I форма was.",
+     "difficulty": 1
+    },
+    {
+     "id": "a2_so_neither_04",
+     "kind": "choice",
+     "prompt": "I have never been to London. - ___",
+     "options": [
+      "Neither have I.",
+      "Neither did I.",
+      "So have I.",
+      "Neither I have."
+     ],
+     "correct_index": 0,
+     "explanation_ru": "Слово never делает фразу отрицательной, поэтому нужен neither, и повторяется вспомогательный have.",
+     "difficulty": 2
+    },
+    {
+     "id": "a2_so_neither_05",
+     "kind": "gap",
+     "prompt": "A: I didn't like the film. B: Neither ___ (I).",
+     "answer": "did I",
+     "accept": [],
+     "explanation_ru": "В первой реплике Past Simple с didn't, поэтому после neither повторяется did, а затем подлежащее.",
+     "difficulty": 2
+    },
+    {
+     "id": "a2_so_neither_06",
+     "kind": "gap",
+     "prompt": "A: I am really tired. B: So ___ (I).",
+     "answer": "am I",
+     "accept": [],
+     "explanation_ru": "Повторяется глагол am из первой реплики, и после so порядок обратный: am I.",
+     "difficulty": 2
+    },
+    {
+     "id": "a2_so_neither_07",
+     "kind": "correct",
+     "prompt": "My brother likes football and so I do.",
+     "answer": "My brother likes football and so do I.",
+     "accept": [
+      "My brother likes football, and so do I."
+     ],
+     "explanation_ru": "После so нужен обратный порядок слов: сначала вспомогательный do, потом подлежащее I.",
+     "difficulty": 3
+    },
+    {
+     "id": "a2_so_neither_08",
+     "kind": "order",
+     "prompt": "and / so / do / I / my / colleagues / like / remote / work",
+     "answer": "My colleagues like remote work and so do I.",
+     "accept": [],
+     "explanation_ru": "Первая часть в Present Simple без вспомогательного глагола, поэтому в короткой части появляется do с обратным порядком.",
+     "difficulty": 3
+    }
+   ]
+  }
+ ]
+}

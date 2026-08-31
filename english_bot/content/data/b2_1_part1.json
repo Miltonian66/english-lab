@@ -1,0 +1,444 @@
+{
+ "chunk": "b2_1_part1",
+ "points": [
+  {
+   "id": "b2_adjective_order",
+   "level": "B2",
+   "band": "B2.1",
+   "topic": "Adjectives & adverbs",
+   "title_en": "Adjective order",
+   "source_slug": "adjective-order",
+   "title_ru": "Порядок прилагательных перед существительным",
+   "summary_ru": "В английском несколько прилагательных перед существительным стоят в фиксированном порядке. Обычная последовательность такая: оценка, размер, возраст, форма, цвет, происхождение, материал, назначение. Например: a nice big old round brown Italian wooden dining table. На практике подряд редко идёт больше трёх прилагательных, поэтому важно помнить не всю цепочку, а относительный порядок пар. Определитель (a, the, my, this) всегда стоит перед всей цепочкой прилагательных. Прилагательные одной группы соединяются союзом and или запятой: a black and white photo. Порядок грамматический, а не смысловой: он не зависит от того, что важнее для говорящего.",
+   "forms": [
+    "определитель + оценка + размер + возраст + форма + цвет + происхождение + материал + назначение + существительное",
+    "a nice big old wooden table",
+    "прилагательные одной группы: red and white / red, white",
+    "определитель всегда первый: my new black laptop"
+   ],
+   "examples": [
+    "We bought a nice small wooden desk.",
+    "She works on a big old black laptop.",
+    "He has a long black metal cable.",
+    "They opened a beautiful modern glass office.",
+    "It was a cheap round plastic table."
+   ],
+   "ru_interference": "В русском порядок прилагательных свободный, и студенты переносят его в английский: старый большой стол становится an old big table. Неверно: an old big table. Верно: a big old table.",
+   "prerequisites": ["a1_adjectives"],
+   "exercises": [
+    {"id":"b2_adjective_order_01","kind":"choice","prompt":"We ordered a ___ table for the new office.","options":["wooden round large","large round wooden","round large wooden","large wooden round"],"correct_index":1,"explanation_ru":"Размер идёт раньше формы, а материал ставится последним: large, потом round, потом wooden.","difficulty":1},
+    {"id":"b2_adjective_order_02","kind":"choice","prompt":"My colleague drives a ___ car.","options":["red little Italian","Italian little red","little red Italian","red Italian little"],"correct_index":2,"explanation_ru":"Сначала размер (little), потом цвет (red), потом происхождение (Italian).","difficulty":1},
+    {"id":"b2_adjective_order_03","kind":"choice","prompt":"They gave me a ___ keyboard.","options":["black nice small","nice small black","small nice black","black small nice"],"correct_index":1,"explanation_ru":"Оценка (nice) всегда впереди, затем размер (small), затем цвет (black).","difficulty":2},
+    {"id":"b2_adjective_order_04","kind":"choice","prompt":"He showed us some ___ photos.","options":["old amazing family","family amazing old","amazing old family","old family amazing"],"correct_index":2,"explanation_ru":"Оценка (amazing), затем возраст (old), а существительное-определение family стоит вплотную к главному слову.","difficulty":2},
+    {"id":"b2_adjective_order_05","kind":"gap","prompt":"Put the adjectives in the right order: I bought a ___ (leather / black / new) bag.","answer":"new black leather","accept":[],"explanation_ru":"Возраст (new) идёт раньше цвета (black), а материал (leather) стоит ближе всего к существительному.","difficulty":2},
+    {"id":"b2_adjective_order_06","kind":"gap","prompt":"Put the adjectives in the right order: We stayed in a ___ (Spanish / small / lovely) hotel.","answer":"lovely small Spanish","accept":[],"explanation_ru":"Оценка (lovely) первая, затем размер (small), затем происхождение (Spanish).","difficulty":3},
+    {"id":"b2_adjective_order_07","kind":"correct","prompt":"She has a Chinese beautiful old vase.","answer":"She has a beautiful old Chinese vase.","accept":[],"explanation_ru":"Происхождение (Chinese) не может стоять перед оценкой и возрастом, его место ближе к существительному.","difficulty":3},
+    {"id":"b2_adjective_order_08","kind":"order","prompt":"a / bought / she / silk / long / dress","answer":"She bought a long silk dress.","accept":[],"explanation_ru":"Размер (long) идёт перед материалом (silk), а артикль открывает всю группу.","difficulty":1}
+   ]
+  },
+  {
+   "id": "b2_adjectives_without_noun",
+   "level": "B2",
+   "band": "B2.1",
+   "topic": "Adjectives & adverbs",
+   "title_en": "Adjectives without noun",
+   "source_slug": "adjectives-without-noun",
+   "title_ru": "Прилагательные без существительного",
+   "summary_ru": "Прилагательное может использоваться без существительного, если из контекста ясно, о ком или о чём речь. Конструкция the плюс прилагательное обозначает всю группу людей и требует глагола во множественном числе: the rich are, the unemployed need. Так же работают названия наций на -ch, -sh, -ese, -ss: the French, the British, the Chinese, the Swiss. Остальные нации требуют существительного во множественном числе: the Germans, the Russians, the Americans. Прилагательное в превосходной степени тоже обходится без существительного: this one is the cheapest. Чтобы не повторять исчисляемое существительное, используют one или ones: I want the blue one. Абстрактные понятия строятся по той же модели: the impossible, the unknown.",
+   "forms": [
+    "the + прилагательное = группа людей, глагол во множественном числе",
+    "the + French / British / Chinese / Swiss = нация целиком",
+    "the + Germans / Russians / Americans (существительное во множественном числе)",
+    "the + превосходная степень без существительного",
+    "one / ones вместо повторяемого исчисляемого существительного"
+   ],
+   "examples": [
+    "The rich are getting richer every year.",
+    "The government should help the unemployed.",
+    "The French are proud of their food.",
+    "The Germans build good cars.",
+    "This laptop is the cheapest, but that one is faster.",
+    "She always tries to do the impossible."
+   ],
+   "ru_interference": "В русском группа людей называется просто прилагательным во множественном числе, без артикля: богатые, безработные. Неверно: Rich get richer. Верно: The rich get richer.",
+   "prerequisites": ["a1_adjectives", "b1_an_the_no_article"],
+   "exercises": [
+    {"id":"b2_adjectives_without_noun_01","kind":"choice","prompt":"The government has promised to build more homes for ___.","options":["the homeless","homeless","a homeless","the homelesses"],"correct_index":0,"explanation_ru":"Группа людей обозначается через the плюс прилагательное, форма множественного числа у прилагательного не образуется.","difficulty":1},
+    {"id":"b2_adjectives_without_noun_02","kind":"choice","prompt":"The rich ___ getting richer.","options":["is","are","was","has"],"correct_index":1,"explanation_ru":"The rich значит все богатые люди, поэтому глагол стоит во множественном числе.","difficulty":1},
+    {"id":"b2_adjectives_without_noun_03","kind":"choice","prompt":"___ are famous for their cheese.","options":["The French","The Frenchs","A French","French"],"correct_index":0,"explanation_ru":"Нации на -ch употребляются как the плюс прилагательное, без окончания -s и без артикля a.","difficulty":2},
+    {"id":"b2_adjectives_without_noun_04","kind":"choice","prompt":"I tried three keyboards and bought ___.","options":["cheapest","the cheaper","the cheapest","a cheapest"],"correct_index":2,"explanation_ru":"При трёх предметах нужна превосходная степень с артиклем the, а существительное можно не повторять.","difficulty":2},
+    {"id":"b2_adjectives_without_noun_05","kind":"gap","prompt":"Complete the sentence: The charity collects money for ___ (blind).","answer":"the blind","accept":[],"explanation_ru":"Слепые как группа людей передаются формулой the плюс прилагательное.","difficulty":1},
+    {"id":"b2_adjectives_without_noun_06","kind":"gap","prompt":"Complete the sentence: ___ (Chinese) are the largest group of tourists here.","answer":"The Chinese","accept":[],"explanation_ru":"Нации на -ese не получают окончания -s и требуют артикля the.","difficulty":2},
+    {"id":"b2_adjectives_without_noun_07","kind":"correct","prompt":"The young often has different opinions.","answer":"The young often have different opinions.","accept":[],"explanation_ru":"The young обозначает всех молодых людей, поэтому глагол должен стоять во множественном числе.","difficulty":3},
+    {"id":"b2_adjectives_without_noun_08","kind":"transform","prompt":"Rewrite using the + adjective: Poor people need more support.","answer":"The poor need more support.","accept":[],"explanation_ru":"Poor people заменяется на the poor, а глагол остаётся во множественном числе.","difficulty":3}
+   ]
+  },
+  {
+   "id": "b2_position_of_adverbs",
+   "level": "B2",
+   "band": "B2.1",
+   "topic": "Adjectives & adverbs",
+   "title_en": "Position of adverbs and adverb phrases",
+   "source_slug": "position-of-adverbs",
+   "title_ru": "Место наречия в предложении",
+   "summary_ru": "У наречия в английском три возможные позиции: в начале предложения, в середине и в конце. В середине наречие стоит после вспомогательного глагола или после глагола be, но перед основным глаголом: he has never seen it, she is always late. В конце стоят наречия образа действия, места и времени, причём именно в этом порядке. Главный запрет: наречие нельзя ставить между глаголом и его прямым дополнением. В начало выносят наречия, которые оценивают всё предложение или связывают его с предыдущим: unfortunately, suddenly, however. Наречия частотности почти всегда занимают среднюю позицию. Наречия степени вроде very или quite стоят прямо перед тем словом, к которому относятся.",
+   "forms": [
+    "начало: Suddenly, the server crashed.",
+    "середина: подлежащее + вспомогательный глагол + наречие + основной глагол",
+    "с to be: подлежащее + be + наречие",
+    "конец: глагол + дополнение + образ действия + место + время",
+    "запрещено: глагол + наречие + прямое дополнение"
+   ],
+   "examples": [
+    "She quickly closed the laptop.",
+    "He has never worked with that framework.",
+    "They are always late for the daily call.",
+    "We finished the report quickly at the office last night.",
+    "Suddenly, the whole system stopped.",
+    "I speak English well."
+   ],
+   "ru_interference": "В русском наречие спокойно встаёт между глаголом и дополнением: он знает хорошо английский язык. Неверно: I speak well English. Верно: I speak English well.",
+   "prerequisites": ["a1_adverbs_manner", "a1_adverbs_frequency", "a1_basic_word_order_in_english"],
+   "exercises": [
+    {"id":"b2_position_of_adverbs_01","kind":"order","prompt":"yesterday / quickly / we / the task / finished","answer":"We finished the task quickly yesterday.","accept":["We quickly finished the task yesterday."],"explanation_ru":"Наречие образа действия стоит после дополнения, а время идёт в самом конце.","difficulty":2},
+    {"id":"b2_position_of_adverbs_02","kind":"choice","prompt":"He ___ late for the stand-up.","options":["always is","is always","is being always","always be"],"correct_index":1,"explanation_ru":"После глагола be наречие частотности ставится сразу за ним, а не перед ним.","difficulty":1},
+    {"id":"b2_position_of_adverbs_03","kind":"choice","prompt":"She ___ her password.","options":["forgets often","often forgets","often forget","is often forget"],"correct_index":1,"explanation_ru":"Наречие частотности стоит перед основным глаголом, а между глаголом и дополнением его ставить нельзя.","difficulty":1},
+    {"id":"b2_position_of_adverbs_04","kind":"choice","prompt":"He drives ___.","options":["the carefully car","carefully the car","the car carefully","carefully car"],"correct_index":2,"explanation_ru":"Наречие образа действия идёт после прямого дополнения, а не перед ним.","difficulty":1},
+    {"id":"b2_position_of_adverbs_05","kind":"choice","prompt":"The engineers worked ___.","options":["in Berlin hard last year","in Berlin last year hard","hard in Berlin last year","last year hard in Berlin"],"correct_index":2,"explanation_ru":"В конце предложения порядок такой: образ действия, потом место, потом время.","difficulty":3},
+    {"id":"b2_position_of_adverbs_06","kind":"transform","prompt":"Put the adverb in the right place: (carefully) She checked the code.","answer":"She checked the code carefully.","accept":["She carefully checked the code."],"explanation_ru":"Наречие образа действия ставится либо в конец, либо перед основным глаголом, но не между глаголом и дополнением.","difficulty":2},
+    {"id":"b2_position_of_adverbs_07","kind":"transform","prompt":"Put the adverb in the right place: (always) He is late for meetings.","answer":"He is always late for meetings.","accept":[],"explanation_ru":"С глаголом be наречие частотности встаёт сразу после него.","difficulty":2},
+    {"id":"b2_position_of_adverbs_08","kind":"correct","prompt":"I like very much this article.","answer":"I like this article very much.","accept":["I very much like this article."],"explanation_ru":"Между глаголом и прямым дополнением наречие стоять не может, поэтому very much уходит в конец.","difficulty":3}
+   ]
+  },
+  {
+   "id": "b2_pretty_rather_quite_fairly_intensifiers",
+   "level": "B2",
+   "band": "B2.1",
+   "topic": "Adjectives & adverbs",
+   "title_en": "Pretty, rather, quite, fairly: Adverbs of degree",
+   "source_slug": "pretty-rather-quite-fairly-intensifiers",
+   "title_ru": "Fairly, quite, rather, pretty: степень признака",
+   "summary_ru": "Эти наречия степени показывают, насколько сильно выражен признак, и различаются по силе. Fairly самое слабое и звучит нейтрально или чуть снисходительно. Quite сильнее, чем fairly, а rather ещё сильнее и часто добавляет оттенок неожиданности или лёгкого недовольства. Pretty по силе близко к quite и rather, но это разговорное слово. С неградуируемыми прилагательными quite означает не довольно, а полностью: quite right, quite impossible. Важен порядок слов: quite и rather ставятся перед артиклем, а fairly и pretty после него. Вариант a rather long meeting тоже правилен, а a quite long meeting нет.",
+   "forms": [
+    "fairly / quite / rather / pretty + прилагательное или наречие",
+    "quite + a/an + прилагательное + существительное",
+    "rather + a/an + прилагательное + существительное = a + rather + прилагательное + существительное",
+    "a fairly / a pretty + прилагательное + существительное",
+    "quite + неградуируемое прилагательное = полностью"
+   ],
+   "examples": [
+    "The test was fairly easy, but the second part was hard.",
+    "It is quite a good solution, but not perfect.",
+    "The meeting was rather long and nobody said much.",
+    "The new build is pretty fast.",
+    "You are quite right about the bug.",
+    "It was a rather strange answer."
+   ],
+   "ru_interference": "Русское довольно покрывает сразу fairly, quite и rather, а достаточно тянет за собой enough в неправильном месте. Неверно: It was enough good; a quite good idea. Верно: It was good enough; quite a good idea.",
+   "prerequisites": ["a1_adjectives", "a2_too_too_much_too_many_enough"],
+   "exercises": [
+    {"id":"b2_pretty_rather_quite_fairly_intensifiers_01","kind":"choice","prompt":"It is ___ good idea, but we need more data.","options":["a quite","quite a","quite","a quite a"],"correct_index":1,"explanation_ru":"Quite ставится перед артиклем, а без артикля исчисляемое существительное в единственном числе стоять не может.","difficulty":2},
+    {"id":"b2_pretty_rather_quite_fairly_intensifiers_02","kind":"choice","prompt":"The office is ___ small, but it is big enough for six people.","options":["fairly","a fairly","fairly a","the fairly"],"correct_index":0,"explanation_ru":"Перед прилагательным без существительного артикль не нужен, здесь работает только само наречие fairly.","difficulty":1},
+    {"id":"b2_pretty_rather_quite_fairly_intensifiers_03","kind":"choice","prompt":"You are ___ right; the config file was missing.","options":["very much","quite","fairly a","the quite"],"correct_index":1,"explanation_ru":"С неградуируемым right используется quite в значении полностью, а very much с прилагательным не сочетается.","difficulty":1},
+    {"id":"b2_pretty_rather_quite_fairly_intensifiers_04","kind":"choice","prompt":"It was ___ long meeting.","options":["a rather","rather","quite","pretty"],"correct_index":0,"explanation_ru":"Rather может стоять после артикля, а варианты без артикля перед исчисляемым существительным в единственном числе невозможны.","difficulty":2},
+    {"id":"b2_pretty_rather_quite_fairly_intensifiers_05","kind":"choice","prompt":"I ___ like the new interface.","options":["fairly","much","quite","a quite"],"correct_index":2,"explanation_ru":"Quite употребляется перед глаголом в значении в целом, довольно; fairly и much так с like не работают.","difficulty":3},
+    {"id":"b2_pretty_rather_quite_fairly_intensifiers_06","kind":"gap","prompt":"Put the words in the right order: It was ___ (a / quite / difficult) task.","answer":"quite a difficult","accept":[],"explanation_ru":"Quite всегда стоит перед артиклем, а прилагательное после него.","difficulty":1},
+    {"id":"b2_pretty_rather_quite_fairly_intensifiers_07","kind":"gap","prompt":"Put the words in the right order: We had ___ (long / rather / a) discussion.","answer":"a rather long","accept":["rather a long"],"explanation_ru":"С rather допустимы оба порядка: и a rather long, и rather a long.","difficulty":2},
+    {"id":"b2_pretty_rather_quite_fairly_intensifiers_08","kind":"correct","prompt":"It was a quite good presentation.","answer":"It was quite a good presentation.","accept":[],"explanation_ru":"Quite не может стоять после артикля, поэтому оно выносится перед a.","difficulty":3}
+   ]
+  },
+  {
+   "id": "b2_so_such_a_so_much_so_many",
+   "level": "B2",
+   "band": "B2.1",
+   "topic": "Adjectives & adverbs",
+   "title_en": "So, such (a), so much, so many",
+   "source_slug": "so-such-a-so-much-so-many",
+   "title_ru": "So, such (a), so much, so many",
+   "summary_ru": "So и such усиливают признак, но сочетаются с разными частями речи. So ставится перед прилагательным или наречием, за которым нет существительного: so slow, so quickly. Such ставится перед существительным, с прилагательным или без него: such a problem, such good news. С исчисляемым существительным в единственном числе обязателен артикль: such a long meeting. Перед множественным числом и неисчисляемыми артикль не нужен: such interesting people, such bad weather. Для количества используются so much и so little с неисчисляемыми, so many и so few с множественным числом. Обе конструкции часто продолжаются придаточным результата с that: it was so cold that we went home.",
+   "forms": [
+    "so + прилагательное или наречие",
+    "such + a/an + (прилагательное) + исчисляемое существительное в единственном числе",
+    "such + (прилагательное) + множественное число или неисчисляемое",
+    "so much / so little + неисчисляемое; so many / so few + множественное число",
+    "so / such ... that + результат"
+   ],
+   "examples": [
+    "The build is so slow that nobody uses it.",
+    "It was such a useful meeting.",
+    "They gave us such good advice.",
+    "We had so much work last week.",
+    "There were so many bugs in that release.",
+    "He speaks so quickly that I understand nothing."
+   ],
+   "ru_interference": "Русское такой покрывает и so, и such, а много не различает much и many. Неверно: It was so interesting film and there were so much people. Верно: It was such an interesting film and there were so many people.",
+   "prerequisites": ["b1_so_such_such_a_so_much_so_many", "a2_much_many_little_few_some_any"],
+   "exercises": [
+    {"id":"b2_so_such_a_so_much_so_many_01","kind":"choice","prompt":"It was ___ interesting talk that I stayed until the end.","options":["so","such","so an","such an"],"correct_index":3,"explanation_ru":"Перед исчисляемым существительным в единственном числе нужно such плюс артикль, а so с существительным не сочетается.","difficulty":1},
+    {"id":"b2_so_such_a_so_much_so_many_02","kind":"choice","prompt":"There were ___ people at the conference.","options":["so much","such many","such a many","so many"],"correct_index":3,"explanation_ru":"People это множественное число, поэтому нужно so many, а не so much.","difficulty":1},
+    {"id":"b2_so_such_a_so_much_so_many_03","kind":"choice","prompt":"The task was ___ difficult that we asked for help.","options":["such","so","such a","so a"],"correct_index":1,"explanation_ru":"После глагола идёт только прилагательное без существительного, поэтому нужно so.","difficulty":2},
+    {"id":"b2_so_such_a_so_much_so_many_04","kind":"choice","prompt":"They gave us ___ advice.","options":["such a good","so good","such goods","such good"],"correct_index":3,"explanation_ru":"Advice неисчисляемое, поэтому артикль не нужен и множественного числа у него нет.","difficulty":2},
+    {"id":"b2_so_such_a_so_much_so_many_05","kind":"order","prompt":"such / it / a / was / long / meeting","answer":"It was such a long meeting.","accept":[],"explanation_ru":"Such идёт перед артиклем, затем прилагательное и существительное.","difficulty":1},
+    {"id":"b2_so_such_a_so_much_so_many_06","kind":"gap","prompt":"Complete with so, such or such a: It was ___ boring film that we left early.","answer":"such a","accept":[],"explanation_ru":"Film это исчисляемое существительное в единственном числе, значит нужен вариант such a.","difficulty":2},
+    {"id":"b2_so_such_a_so_much_so_many_07","kind":"gap","prompt":"Complete with so, such, so much or so many: He has ___ experience that we hired him immediately.","answer":"so much","accept":[],"explanation_ru":"Experience здесь неисчисляемое, поэтому количество усиливается через so much.","difficulty":3},
+    {"id":"b2_so_such_a_so_much_so_many_08","kind":"correct","prompt":"It was so a difficult exam that half of the students failed.","answer":"It was such a difficult exam that half of the students failed.","accept":[],"explanation_ru":"Перед сочетанием артикль плюс прилагательное плюс существительное употребляется such, а не so.","difficulty":3}
+   ]
+  },
+  {
+   "id": "b2_the_the_comparatives",
+   "level": "B2",
+   "band": "B2.1",
+   "topic": "Adjectives & adverbs",
+   "title_en": "The ... the ... comparatives",
+   "source_slug": "the-the-comparatives",
+   "title_ru": "Конструкция the ... the ... со сравнительной степенью",
+   "summary_ru": "Конструкция the плюс сравнительная степень, the плюс сравнительная степень выражает параллельное изменение двух величин и соответствует русскому чем ..., тем ... Артикль the обязателен в обеих частях, в том числе перед more, less и better. После сравнительной формы идёт обычный порядок слов: сначала подлежащее, потом сказуемое. Если сравнивается количество, используется the more или the less плюс существительное. Глагол be часто опускается: the bigger the team, the harder the planning. Есть короткие устойчивые формулы вообще без глагола: the sooner, the better. Первая часть задаёт условие, вторая часть называет следствие.",
+   "forms": [
+    "The + сравнительная степень + подлежащее + сказуемое, the + сравнительная степень + подлежащее + сказуемое",
+    "The more / the less + существительное + подлежащее + сказуемое",
+    "The + сравнительная степень + существительное, the + сравнительная степень + существительное (без глагола)",
+    "The sooner, the better"
+   ],
+   "examples": [
+    "The more you practice, the faster you learn.",
+    "The bigger the team, the harder the planning.",
+    "The sooner we start, the better.",
+    "The more code you write, the more bugs you find.",
+    "The less he sleeps, the worse he works."
+   ],
+   "ru_interference": "В русском конструкция чем ..., тем ... не содержит артикля, и студенты его теряют. Неверно: More you practice, better you speak. Верно: The more you practice, the better you speak.",
+   "prerequisites": ["a2_comparative_superlative_adjectives_adverbs", "b1_comparative_superlative_adjectives_adverbs"],
+   "exercises": [
+    {"id":"b2_the_the_comparatives_01","kind":"choice","prompt":"___ you start, the sooner you finish.","options":["Earlier","The more early","The earlier","More early"],"correct_index":2,"explanation_ru":"Нужен артикль the и правильная сравнительная форма earlier, а не more early.","difficulty":1},
+    {"id":"b2_the_the_comparatives_02","kind":"choice","prompt":"The more we test, ___ bugs we find.","options":["more","the most","the more","the much"],"correct_index":2,"explanation_ru":"Во второй части тоже нужен the плюс сравнительная степень, превосходная здесь невозможна.","difficulty":1},
+    {"id":"b2_the_the_comparatives_03","kind":"choice","prompt":"The longer the meeting, ___.","options":["the less people listen","less people listen","the least people listen","people listen the less"],"correct_index":0,"explanation_ru":"Вторая часть начинается с the плюс сравнительная степень, после которых идёт обычный порядок слов.","difficulty":2},
+    {"id":"b2_the_the_comparatives_04","kind":"choice","prompt":"The harder he works, ___ he becomes.","options":["more tired","the most tired","the tireder","the more tired"],"correct_index":3,"explanation_ru":"Tired образует сравнительную степень через more, и перед ней нужен артикль the.","difficulty":2},
+    {"id":"b2_the_the_comparatives_05","kind":"order","prompt":"sooner / the / we / better / the / start","answer":"The sooner we start, the better.","accept":[],"explanation_ru":"Первая часть содержит подлежащее и сказуемое, вторая сокращается до the better.","difficulty":1},
+    {"id":"b2_the_the_comparatives_06","kind":"gap","prompt":"Complete the sentence: The more you read, ___ (good) your English becomes.","answer":"the better","accept":[],"explanation_ru":"Good образует сравнительную степень не по правилу: better; артикль the перед ней обязателен.","difficulty":2},
+    {"id":"b2_the_the_comparatives_07","kind":"gap","prompt":"Complete the sentence: ___ (big) the screen, the easier the work.","answer":"The bigger","accept":[],"explanation_ru":"Первая часть тоже начинается с the плюс сравнительная степень, глагол be здесь опущен.","difficulty":3},
+    {"id":"b2_the_the_comparatives_08","kind":"correct","prompt":"More you sleep, better you feel.","answer":"The more you sleep, the better you feel.","accept":[],"explanation_ru":"В этой конструкции артикль the нужен перед обеими сравнительными формами.","difficulty":3}
+   ]
+  },
+  {
+   "id": "b2_second_third_conditionals",
+   "level": "B2",
+   "band": "B2.1",
+   "topic": "Conditionals",
+   "title_en": "Second and third conditionals: Unreal conditionals",
+   "source_slug": "second-third-conditionals",
+   "title_ru": "Второй и третий типы условных предложений",
+   "summary_ru": "Второе и третье условные предложения описывают нереальные ситуации. Второй тип относится к настоящему или будущему: if плюс past simple в придаточном и would плюс инфинитив в главном. Третий тип относится к прошлому, которое уже нельзя изменить: if плюс past perfect и would have плюс третья форма глагола. Вместо would можно использовать could и might, если нужен оттенок возможности. В придаточном с if форма would не употребляется. С глаголом be во втором типе для всех лиц предпочтителен вариант were: if I were you. Возможен смешанный тип: условие в прошлом, а следствие в настоящем: if I had taken that job, I would live in Berlin now.",
+   "forms": [
+    "If + past simple, ... would / could / might + инфинитив",
+    "If + past perfect, ... would / could / might have + третья форма глагола",
+    "If I were you, I would ...",
+    "смешанный тип: If + past perfect, ... would + инфинитив",
+    "would никогда не ставится в части с if"
+   ],
+   "examples": [
+    "If I had more time, I would rewrite the whole module.",
+    "If I were you, I would talk to the manager.",
+    "If we had tested it earlier, we would have found the bug.",
+    "She would have come if you had invited her.",
+    "If he had learned English at school, he would speak it now."
+   ],
+   "ru_interference": "В русском одна частица бы обслуживает и настоящее, и прошлое, поэтому бы попадает в обе части. Неверно: If I would have time, I would help you. Верно: If I had time, I would help you.",
+   "prerequisites": ["a2_second_conditional", "b1_second_conditional_unreal_situations", "b1_third_conditional_past_unreal_situations"],
+   "exercises": [
+    {"id":"b2_second_third_conditionals_01","kind":"choice","prompt":"If I ___ more money, I would buy a new laptop.","options":["have","had","would have","had had"],"correct_index":1,"explanation_ru":"Второй тип требует past simple после if, а would в части с if невозможно.","difficulty":1},
+    {"id":"b2_second_third_conditionals_02","kind":"choice","prompt":"If she ___ the email, she would have replied.","options":["saw","would see","had seen","has seen"],"correct_index":2,"explanation_ru":"Главная часть с would have плюс третья форма указывает на третий тип, значит после if нужен past perfect.","difficulty":1},
+    {"id":"b2_second_third_conditionals_03","kind":"choice","prompt":"We ___ the deadline last month if we had started earlier.","options":["would meet","had met","will meet","would have met"],"correct_index":3,"explanation_ru":"Past perfect после if задаёт третий тип, поэтому в главной части нужно would have met.","difficulty":2},
+    {"id":"b2_second_third_conditionals_04","kind":"choice","prompt":"If I ___ you, I would take the job.","options":["am","were","was being","would be"],"correct_index":1,"explanation_ru":"В устойчивом обороте о нереальной ситуации используется were для всех лиц.","difficulty":1},
+    {"id":"b2_second_third_conditionals_05","kind":"transform","prompt":"Rewrite as a third conditional: I didn't know about the meeting, so I didn't come.","answer":"If I had known about the meeting, I would have come.","accept":["If I had known about the meeting, I would have come to it.","If I'd known about the meeting, I would have come.","I would have come if I had known about the meeting."],"explanation_ru":"Оба факта в прошлом, поэтому условие идёт в past perfect, а следствие с would have плюс третья форма.","difficulty":3},
+    {"id":"b2_second_third_conditionals_06","kind":"gap","prompt":"If we ___ (not/be) so busy, we would join the meeting.","answer":"weren't","accept":["were not"],"explanation_ru":"Второй тип, подлежащее we, поэтому нужна форма past simple weren't.","difficulty":2},
+    {"id":"b2_second_third_conditionals_07","kind":"gap","prompt":"If you ___ (tell) me earlier, I would have changed the plan.","answer":"had told","accept":["'d told"],"explanation_ru":"Would have changed в главной части требует past perfect после if.","difficulty":2},
+    {"id":"b2_second_third_conditionals_08","kind":"correct","prompt":"If I would know the answer, I would tell you.","answer":"If I knew the answer, I would tell you.","accept":[],"explanation_ru":"В придаточном с if would не используется, там ставится past simple.","difficulty":3}
+   ]
+  },
+  {
+   "id": "b2_wishes_regrets",
+   "level": "B2",
+   "band": "B2.1",
+   "topic": "Conditionals",
+   "title_en": "Wishes and regrets: I wish/if only",
+   "source_slug": "wishes-regrets",
+   "title_ru": "Сожаления и желания: I wish, if only",
+   "summary_ru": "Конструкции I wish и if only выражают сожаление о том, что реальность отличается от желаемого. О настоящем говорят с past simple: I wish I had more time, хотя времени нет именно сейчас. О прошлом говорят с past perfect: I wish I had studied harder. Форма wish плюс would используется как жалоба на чужое поведение или просьба изменить ситуацию: I wish he would stop shouting. О себе так сказать нельзя, вместо этого берут could: I wish I could help. С глаголом be в строгой норме для всех лиц используется were: I wish I were younger. If only эмоциональнее, чем I wish, но грамматика у них одинаковая.",
+   "forms": [
+    "I wish / if only + past simple (о настоящем)",
+    "I wish / if only + past perfect (о прошлом)",
+    "I wish + подлежащее + would + инфинитив (жалоба, просьба об изменении)",
+    "I wish I could + инфинитив",
+    "I wish I were (для всех лиц)"
+   ],
+   "examples": [
+    "I wish I had more free time.",
+    "I wish I were taller.",
+    "I wish I had studied English at school.",
+    "If only we had started the project earlier.",
+    "I wish he would stop talking about it.",
+    "I wish I could help you."
+   ],
+   "ru_interference": "Русское жаль, что и хотелось бы строятся с настоящим временем, и студенты переносят его в английский. Неверно: I wish I have more time. Верно: I wish I had more time.",
+   "prerequisites": ["b1_second_conditional_unreal_situations", "b1_third_conditional_past_unreal_situations", "a2_past_perfect"],
+   "exercises": [
+    {"id":"b2_wishes_regrets_01","kind":"choice","prompt":"I wish I ___ more free time.","options":["have","will have","had","would have"],"correct_index":2,"explanation_ru":"Сожаление о настоящем строится через past simple, поэтому нужно had.","difficulty":1},
+    {"id":"b2_wishes_regrets_02","kind":"choice","prompt":"I wish I ___ harder for the exam last year.","options":["would study","have studied","had studied","was studying"],"correct_index":2,"explanation_ru":"Речь о законченном прошлом, значит после wish нужен past perfect.","difficulty":2},
+    {"id":"b2_wishes_regrets_03","kind":"choice","prompt":"I wish I ___ speak Chinese.","options":["can","could","would can","am able"],"correct_index":1,"explanation_ru":"О собственной способности говорят через could, форма can после wish невозможна.","difficulty":1},
+    {"id":"b2_wishes_regrets_04","kind":"choice","prompt":"I wish I ___ younger.","options":["am","would be","am being","were"],"correct_index":3,"explanation_ru":"После wish о самом себе используется форма were, а would о себе не употребляется.","difficulty":2},
+    {"id":"b2_wishes_regrets_05","kind":"choice","prompt":"If only we ___ the tickets earlier, we would be at the concert now.","options":["booked","would book","have booked","had booked"],"correct_index":3,"explanation_ru":"Действие относится к прошлому, поэтому нужен past perfect, хотя следствие описывает настоящее.","difficulty":3},
+    {"id":"b2_wishes_regrets_06","kind":"gap","prompt":"I wish I ___ (know) the answer.","answer":"knew","accept":[],"explanation_ru":"Сожаление о настоящем моменте требует past simple knew.","difficulty":1},
+    {"id":"b2_wishes_regrets_07","kind":"gap","prompt":"If only he ___ (not/delete) the file yesterday.","answer":"hadn't deleted","accept":["had not deleted"],"explanation_ru":"Слово yesterday указывает на прошлое, поэтому нужен отрицательный past perfect.","difficulty":2},
+    {"id":"b2_wishes_regrets_08","kind":"correct","prompt":"I wish I would know the answer to this question.","answer":"I wish I knew the answer to this question.","accept":[],"explanation_ru":"Would после wish не используется, когда речь идёт о самом говорящем и о состоянии.","difficulty":3}
+   ]
+  },
+  {
+   "id": "b2_already_still_yet_whats_the_difference",
+   "level": "B2",
+   "band": "B2.1",
+   "topic": "Connectors & discourse",
+   "title_en": "Already, still, yet: What's the difference?",
+   "source_slug": "already-still-yet-whats-the-difference",
+   "title_ru": "Already, still, yet: в чём разница",
+   "summary_ru": "Эти три наречия говорят о том, произошло ли событие к текущему моменту. Already означает, что действие уже случилось, часто раньше ожидаемого, и стоит в середине предложения: I have already sent it. Yet используется в отрицаниях и вопросах в значении пока нет или уже и ставится в конце: have you finished yet, we haven't started yet. Still показывает, что ситуация продолжается: he is still waiting. В отрицательном предложении still ставится перед вспомогательным глаголом и передаёт нетерпение: she still hasn't replied. Пары not yet и still not описывают одно и то же положение дел, но still not эмоциональнее. Already в утверждении и yet в отрицании нельзя менять местами.",
+   "forms": [
+    "have / has + already + третья форма глагола",
+    "haven't / hasn't + третья форма глагола + yet",
+    "Have you + третья форма глагола ... yet?",
+    "подлежащее + be + still; подлежащее + still + основной глагол",
+    "подлежащее + still + haven't / hasn't + третья форма глагола"
+   ],
+   "examples": [
+    "I have already sent the report.",
+    "Have you fixed the bug yet?",
+    "We haven't received the invoice yet.",
+    "He is still waiting for an answer.",
+    "She still hasn't replied to my email.",
+    "Are you still working on that ticket?"
+   ],
+   "ru_interference": "Русскому уже отвечает и already, и yet в вопросе, поэтому already попадает в отрицание, где нужно yet. Неверно: I have not finished it already. Верно: I haven't finished it yet.",
+   "prerequisites": ["a2_present_perfect", "b1_past_simple_present_perfect", "a1_adverbs_frequency"],
+   "exercises": [
+    {"id":"b2_already_still_yet_whats_the_difference_01","kind":"choice","prompt":"We haven't received your answer ___.","options":["already","ever","yet","still"],"correct_index":2,"explanation_ru":"В отрицании в конце предложения используется yet, а already и still там стоять не могут.","difficulty":1},
+    {"id":"b2_already_still_yet_whats_the_difference_02","kind":"choice","prompt":"I have ___ read that article, so you don't need to send it.","options":["yet","already","still","ever"],"correct_index":1,"explanation_ru":"Утвердительное предложение о завершённом действии требует already в средней позиции.","difficulty":1},
+    {"id":"b2_already_still_yet_whats_the_difference_03","kind":"choice","prompt":"She ___ hasn't sent the file.","options":["yet","already","still","ever"],"correct_index":2,"explanation_ru":"Перед отрицательным вспомогательным глаголом ставится still, оно подчёркивает затянувшееся ожидание.","difficulty":2},
+    {"id":"b2_already_still_yet_whats_the_difference_04","kind":"choice","prompt":"Has the client paid the invoice ___?","options":["still","ever","yet","no longer"],"correct_index":2,"explanation_ru":"В вопросе о том, случилось ли действие к этому моменту, в конце ставится yet.","difficulty":1},
+    {"id":"b2_already_still_yet_whats_the_difference_05","kind":"choice","prompt":"The train is ___ here, ten minutes early.","options":["yet","still","already","ever"],"correct_index":2,"explanation_ru":"Поезд пришёл раньше ожидаемого, а именно этот смысл передаёт already.","difficulty":2},
+    {"id":"b2_already_still_yet_whats_the_difference_06","kind":"gap","prompt":"Complete with already, still or yet: I ___ haven't found a solution.","answer":"still","accept":[],"explanation_ru":"Позиция перед haven't возможна только у still, yet стояло бы в конце предложения.","difficulty":3},
+    {"id":"b2_already_still_yet_whats_the_difference_07","kind":"gap","prompt":"Complete with already, still or yet: Don't worry, I have ___ booked the room.","answer":"already","accept":[],"explanation_ru":"Утверждение о выполненном действии между вспомогательным и основным глаголом требует already.","difficulty":2},
+    {"id":"b2_already_still_yet_whats_the_difference_08","kind":"correct","prompt":"I have not finished my work already.","answer":"I have not finished my work yet.","accept":["I haven't finished my work yet."],"explanation_ru":"В отрицательном предложении вместо already используется yet в конце.","difficulty":3}
+   ]
+  },
+  {
+   "id": "b2_clauses_contrast_purpose",
+   "level": "B2",
+   "band": "B2.1",
+   "topic": "Connectors & discourse",
+   "title_en": "Clauses of contrast and purpose",
+   "source_slug": "clauses-contrast-purpose",
+   "title_ru": "Придаточные уступки и цели",
+   "summary_ru": "Уступительные и целевые придаточные оформляются разными группами связок, и главное различие в том, что стоит после связки. После although, though и even though идёт целое предложение с подлежащим и сказуемым. После despite и in spite of идёт существительное или форма на -ing, а чтобы поставить целое предложение, добавляют the fact that. However и nevertheless ничего не соединяют, они начинают новое предложение и отделяются запятой. Цель выражается через to, in order to и so as to плюс инфинитив, когда подлежащее в обеих частях одно. Если подлежащие разные, нужен so that плюс новое подлежащее, чаще всего с can, could, will или would. Отрицательная цель строится как so as not to или in order not to.",
+   "forms": [
+    "although / though / even though + подлежащее + сказуемое",
+    "despite / in spite of + существительное или форма на -ing",
+    "despite / in spite of the fact that + подлежащее + сказуемое",
+    "to / in order to / so as to + инфинитив (одно подлежащее)",
+    "so that + подлежащее + сказуемое, обычно с can / could / will / would (разные подлежащие)"
+   ],
+   "examples": [
+    "Although the server was slow, we finished on time.",
+    "Despite the delay, the client was happy.",
+    "In spite of working all night, they missed the deadline.",
+    "The design is simple; however, it works well.",
+    "We rewrote the module in order to make it faster.",
+    "I sent the link so that everyone could read the document."
+   ],
+   "ru_interference": "Русское несмотря на то что переводится дословно, и после despite появляется целое предложение. Неверно: Despite the weather was bad, we went out. Верно: Despite the bad weather, we went out.",
+   "prerequisites": ["a2_however_although_time_connectors", "a2_purpose_to_for", "b1_clauses_contrast_purpose_reason"],
+   "exercises": [
+    {"id":"b2_clauses_contrast_purpose_01","kind":"choice","prompt":"___ the heavy rain, the team arrived on time.","options":["Although","Even though","Despite","However"],"correct_index":2,"explanation_ru":"После связки идёт существительное, а с существительным работает только despite.","difficulty":1},
+    {"id":"b2_clauses_contrast_purpose_02","kind":"choice","prompt":"___ it was raining, we went out.","options":["Despite","In spite of","Although","Because of"],"correct_index":2,"explanation_ru":"Дальше стоит целое предложение, поэтому нужна связка although.","difficulty":1},
+    {"id":"b2_clauses_contrast_purpose_03","kind":"choice","prompt":"I stayed late ___ finish the report.","options":["for","for to","so that","in order to"],"correct_index":3,"explanation_ru":"Подлежащее в обеих частях одно, поэтому цель выражается инфинитивом с in order to.","difficulty":1},
+    {"id":"b2_clauses_contrast_purpose_04","kind":"choice","prompt":"She spoke slowly ___ everyone could understand her.","options":["to","in order to","despite","so that"],"correct_index":3,"explanation_ru":"Подлежащие разные, а дальше идёт предложение с could, поэтому нужен so that.","difficulty":2},
+    {"id":"b2_clauses_contrast_purpose_05","kind":"choice","prompt":"The app is quite old. ___, it is still popular.","options":["Although","Despite","However","In spite of"],"correct_index":2,"explanation_ru":"Это новое предложение с запятой после связки, а так ведёт себя только however.","difficulty":2},
+    {"id":"b2_clauses_contrast_purpose_06","kind":"gap","prompt":"Complete with although or despite: ___ the bad weather, the flight left on time.","answer":"Despite","accept":[],"explanation_ru":"После связки идёт словосочетание с существительным, а не предложение, поэтому despite.","difficulty":2},
+    {"id":"b2_clauses_contrast_purpose_07","kind":"gap","prompt":"Complete with so that or in order to: We use a checklist ___ nothing is forgotten.","answer":"so that","accept":[],"explanation_ru":"Дальше идёт предложение со своим подлежащим nothing, поэтому инфинитивная конструкция не подходит.","difficulty":3},
+    {"id":"b2_clauses_contrast_purpose_08","kind":"correct","prompt":"Despite the traffic was bad, we arrived early.","answer":"Despite the bad traffic, we arrived early.","accept":["Although the traffic was bad, we arrived early.","In spite of the bad traffic, we arrived early.","Despite the fact that the traffic was bad, we arrived early."],"explanation_ru":"После despite не может стоять предложение с глаголом, нужно существительное или оборот the fact that.","difficulty":3}
+   ]
+  },
+  {
+   "id": "b2_double_negatives_in_english",
+   "level": "B2",
+   "band": "B2.1",
+   "topic": "Connectors & discourse",
+   "title_en": "Double negatives in English",
+   "source_slug": "double-negatives-in-english",
+   "title_ru": "Двойное отрицание в английском",
+   "summary_ru": "В стандартном английском в одном предложении допустимо только одно отрицание. Если отрицание уже выражено в глаголе, дальше используются слова с any: I don't know anything, we didn't go anywhere. Если используется отрицательное слово nobody, nothing, never или nowhere, то глагол остаётся утвердительным: nobody knows, I saw nothing. Наречия hardly, barely и scarcely сами по себе отрицательные, поэтому глагол при них не отрицается: I can hardly hear you. Сочетание neither ... nor тоже не требует второго отрицания. Двойное отрицание встречается в песнях и в отдельных диалектах, но в рабочей переписке считается ошибкой. Отдельно стоит осознанный приём вроде I don't disagree, где два отрицания дают смягчённое утверждение.",
+   "forms": [
+    "not + any / anybody / anything / anywhere / ever",
+    "no / nobody / nothing / never / nowhere + утвердительный глагол",
+    "hardly / barely / scarcely + утвердительный глагол",
+    "neither ... nor + утвердительный глагол",
+    "not ... either вместо neither в конце предложения"
+   ],
+   "examples": [
+    "I didn't say anything.",
+    "Nobody knows the password.",
+    "We hardly ever use that server.",
+    "She never tells anyone about her plans.",
+    "There isn't anybody in the office.",
+    "He can hardly walk after the accident."
+   ],
+   "ru_interference": "Русский требует двойного отрицания: я ничего не знаю, он никогда никому не говорит. Неверно: I don't know nothing. Верно: I don't know anything.",
+   "prerequisites": ["a2_something_anything_nothing_etc", "b1_any_no_none", "a1_adverbs_frequency"],
+   "exercises": [
+    {"id":"b2_double_negatives_in_english_01","kind":"choice","prompt":"I didn't tell ___ about the meeting.","options":["nobody","anybody","not anybody","none"],"correct_index":1,"explanation_ru":"Отрицание уже стоит в глаголе didn't, поэтому дальше нужно слово с any.","difficulty":1},
+    {"id":"b2_double_negatives_in_english_02","kind":"choice","prompt":"She ___ anything about the problem.","options":["doesn't know","knows nothing","don't know","knows not"],"correct_index":0,"explanation_ru":"Слово anything требует отрицательного глагола, а форма don't не согласуется с she.","difficulty":1},
+    {"id":"b2_double_negatives_in_english_03","kind":"choice","prompt":"___ knows why the server crashed.","options":["Nobody","Anybody","Not anybody","Nothing"],"correct_index":0,"explanation_ru":"Подлежащее выражает отрицание само по себе, и слово с any в этой позиции невозможно.","difficulty":1},
+    {"id":"b2_double_negatives_in_english_04","kind":"choice","prompt":"We ___ ever go to that restaurant.","options":["don't hardly","hardly","not hardly","haven't hardly"],"correct_index":1,"explanation_ru":"Hardly уже несёт отрицание, поэтому вспомогательный глагол не отрицается.","difficulty":2},
+    {"id":"b2_double_negatives_in_english_05","kind":"order","prompt":"anything / never / anyone / he / tells","answer":"He never tells anyone anything.","accept":[],"explanation_ru":"Отрицание выражено словом never, а остальные слова берутся в форме с any.","difficulty":2},
+    {"id":"b2_double_negatives_in_english_06","kind":"gap","prompt":"Complete with anything or nothing: I don't want ___ from him.","answer":"anything","accept":[],"explanation_ru":"Глагол уже отрицательный, второе отрицание невозможно.","difficulty":2},
+    {"id":"b2_double_negatives_in_english_07","kind":"gap","prompt":"Complete with anywhere or nowhere: We went ___ last weekend; we stayed at home.","answer":"nowhere","accept":[],"explanation_ru":"Глагол утвердительный, поэтому отрицание должно быть выражено самим словом nowhere.","difficulty":3},
+    {"id":"b2_double_negatives_in_english_08","kind":"correct","prompt":"I don't know nothing about this project.","answer":"I don't know anything about this project.","accept":["I know nothing about this project."],"explanation_ru":"Два отрицания в одном предложении недопустимы: либо отрицательный глагол и anything, либо утвердительный глагол и nothing.","difficulty":3}
+   ]
+  },
+  {
+   "id": "b2_likely_unlikely_bound_definitely_probably",
+   "level": "B2",
+   "band": "B2.1",
+   "topic": "Modals",
+   "title_en": "Likely, unlikely, bound, definitely, probably: Probability",
+   "source_slug": "likely-unlikely-bound-definitely-probably",
+   "title_ru": "Вероятность: likely, unlikely, bound, definitely, probably",
+   "summary_ru": "Вероятность события выражается прилагательными likely, unlikely, bound и наречиями definitely, probably, possibly. После likely и unlikely идёт to плюс инфинитив: the release is likely to be delayed. Тот же смысл передаёт безличная конструкция it is likely that плюс предложение. Оборот be bound to означает почти стопроцентную уверенность в том, что событие произойдёт. Наречия definitely и probably в утверждении стоят после will, а в отрицании перед won't: he will probably call, he probably won't call. Порядок will not probably считается ошибкой. Likely в британском стандарте не работает как самостоятельное наречие, хотя в американском варианте сочетание he will likely call встречается.",
+   "forms": [
+    "подлежащее + be + likely / unlikely + to + инфинитив",
+    "It is likely / unlikely that + подлежащее + сказуемое",
+    "подлежащее + be + bound to + инфинитив",
+    "подлежащее + will + definitely / probably + инфинитив",
+    "подлежащее + definitely / probably + won't + инфинитив"
+   ],
+   "examples": [
+    "The release is likely to be delayed.",
+    "It is unlikely that they will accept the offer.",
+    "If you work like that, you are bound to make mistakes.",
+    "He will probably call you tomorrow.",
+    "She probably won't come to the party.",
+    "We will definitely finish before Friday."
+   ],
+   "ru_interference": "Русское вероятно, он не согласится переносится дословно и даёт неправильный порядок слов. Неверно: He will not probably agree. Верно: He probably won't agree.",
+   "prerequisites": ["a1_will_and_shall", "a2_may_and_might_whats_the_difference", "b1_modal_verbs_of_deduction"],
+   "exercises": [
+    {"id":"b2_likely_unlikely_bound_definitely_probably_01","kind":"choice","prompt":"The meeting ___ to start late again.","options":["is likely","likely is","is like","will likely"],"correct_index":0,"explanation_ru":"Конструкция строится как be likely плюс to плюс инфинитив, а вариант will likely to невозможен.","difficulty":1},
+    {"id":"b2_likely_unlikely_bound_definitely_probably_02","kind":"choice","prompt":"It is ___ that the client will sign today.","options":["likely","like","bound","likely to"],"correct_index":0,"explanation_ru":"В безличной конструкции it is ... that используется likely, а bound бывает только в обороте be bound to с инфинитивом.","difficulty":1},
+    {"id":"b2_likely_unlikely_bound_definitely_probably_03","kind":"choice","prompt":"If you don't get enough sleep, you ___ make mistakes.","options":["are bound to","are bound","bound to","are likely"],"correct_index":0,"explanation_ru":"Нужен полный оборот be bound to с инфинитивом: без to и без глагола be конструкция не работает.","difficulty":2},
+    {"id":"b2_likely_unlikely_bound_definitely_probably_04","kind":"choice","prompt":"He ___ come tonight; he has a lot of work.","options":["won't probably","probably won't","doesn't probably","probably not will"],"correct_index":1,"explanation_ru":"В отрицании наречие probably ставится перед won't, а не после него.","difficulty":2},
+    {"id":"b2_likely_unlikely_bound_definitely_probably_05","kind":"choice","prompt":"The project is ___ to be finished on time; there are too many problems.","options":["likely","unlikely","probably","maybe"],"correct_index":1,"explanation_ru":"Контекст говорит о низкой вероятности, а probably и maybe не сочетаются с последующим to.","difficulty":1},
+    {"id":"b2_likely_unlikely_bound_definitely_probably_06","kind":"gap","prompt":"Complete with one word: It is ___ that we will finish today, because we have only two hours left.","answer":"unlikely","accept":[],"explanation_ru":"Двух часов мало, поэтому вероятность низкая и нужна форма unlikely.","difficulty":2},
+    {"id":"b2_likely_unlikely_bound_definitely_probably_07","kind":"gap","prompt":"He ___ (probably / not / come) to the office tomorrow.","answer":"probably won't come","accept":["probably will not come"],"explanation_ru":"В отрицательном предложении probably стоит перед вспомогательным глаголом.","difficulty":3},
+    {"id":"b2_likely_unlikely_bound_definitely_probably_08","kind":"correct","prompt":"He will not probably agree with this plan.","answer":"He probably won't agree with this plan.","accept":["He probably will not agree with this plan."],"explanation_ru":"Порядок will not probably нарушает норму: наречие должно предшествовать отрицательной форме глагола.","difficulty":3}
+   ]
+  }
+ ]
+}

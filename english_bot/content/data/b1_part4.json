@@ -1,0 +1,652 @@
+{
+ "chunk": "b1_part4",
+ "points": [
+  {
+   "id": "b1_present_simple_present_continuous",
+   "level": "B1",
+   "band": "B1",
+   "topic": "Tenses",
+   "title_en": "Present simple or present continuous",
+   "source_slug": "present-simple-present-continuous",
+   "title_ru": "Present simple или present continuous",
+   "summary_ru": "Present simple описывает то, что происходит регулярно, вообще или всегда: привычки, факты, расписания, инструкции. Present continuous описывает действие в момент речи, временную ситуацию этого периода или договорённость на ближайшее будущее. Типичные маркеры present simple: usually, always, every day, on Mondays, twice a week. Типичные маркеры present continuous: now, right now, at the moment, today, this week. Глаголы состояния (know, understand, want, need, believe, belong, mean) обычно не ставятся в continuous, даже если речь о текущем моменте. Один глагол может менять смысл: I think it works означает я считаю, а I am thinking about it означает я обдумываю. В вопросах и отрицаниях present simple опирается на do и does, а present continuous на формы be.",
+   "forms": [
+    "V / V-s — present simple: We deploy on Fridays.",
+    "do/does + not + V — I don't agree.",
+    "am/is/are + V-ing — present continuous: She is testing the build.",
+    "am/is/are + not + V-ing — They aren't waiting.",
+    "Do/Does + подлежащее + V? / Am-Is-Are + подлежащее + V-ing?"
+   ],
+   "examples": [
+    "Our team releases a new version every two weeks.",
+    "Sorry, I can't talk now, I am reviewing a pull request.",
+    "She usually works from home, but this week she is working in the office.",
+    "I don't understand this error message.",
+    "What are you doing tomorrow at ten?"
+   ],
+   "ru_interference": "В русском нет длительного времени, поэтому фразу Сейчас я пишу отчёт переводят через present simple: неверно I write the report now, верно I am writing the report now. Обратная ошибка — continuous с глаголом состояния: неверно I am knowing the answer, верно I know the answer.",
+   "prerequisites": [
+    "a1_present_simple",
+    "a1_present_continuous",
+    "a2_present_simple_continuous",
+    "a2_stative_vs_dynamic_verbs_or_non_action_vs_action_verbs"
+   ],
+   "exercises": [
+    {
+     "id": "b1_present_simple_present_continuous_01",
+     "kind": "choice",
+     "prompt": "Sorry, I ___ what you mean. Can you explain it again?",
+     "options": [
+      "am not understanding",
+      "don't understand",
+      "not understand",
+      "doesn't understand"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Understand — глагол состояния и не употребляется в continuous, а подлежащее I требует don't.",
+     "difficulty": 1
+    },
+    {
+     "id": "b1_present_simple_present_continuous_02",
+     "kind": "choice",
+     "prompt": "Be quiet, please. I ___ to a client right now.",
+     "options": [
+      "talk",
+      "am talking",
+      "talks",
+      "am talk"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Right now указывает на момент речи, поэтому нужен present continuous: am + talking.",
+     "difficulty": 1
+    },
+    {
+     "id": "b1_present_simple_present_continuous_03",
+     "kind": "choice",
+     "prompt": "Why ___ that branch? We still need it.",
+     "options": [
+      "do you delete",
+      "are you deleting",
+      "you are deleting",
+      "are you delete"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Действие происходит прямо сейчас, поэтому нужен present continuous; в вопросе форма be стоит перед подлежащим.",
+     "difficulty": 2
+    },
+    {
+     "id": "b1_present_simple_present_continuous_04",
+     "kind": "choice",
+     "prompt": "She ___ three programming languages.",
+     "options": [
+      "is knowing",
+      "knows",
+      "know",
+      "is know"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Know — глагол состояния, только present simple, и с she нужна форма knows.",
+     "difficulty": 1
+    },
+    {
+     "id": "b1_present_simple_present_continuous_05",
+     "kind": "gap",
+     "prompt": "Look! The server ___ (restart) again.",
+     "answer": "is restarting",
+     "accept": [
+      "'s restarting"
+     ],
+     "explanation_ru": "Слово Look показывает, что действие происходит прямо сейчас, поэтому present continuous.",
+     "difficulty": 2
+    },
+    {
+     "id": "b1_present_simple_present_continuous_06",
+     "kind": "gap",
+     "prompt": "I ___ (not/believe) that this bug is still open.",
+     "answer": "don't believe",
+     "accept": [
+      "do not believe"
+     ],
+     "explanation_ru": "Believe — глагол состояния, отрицание строится через don't, а не через am not believing.",
+     "difficulty": 2
+    },
+    {
+     "id": "b1_present_simple_present_continuous_07",
+     "kind": "correct",
+     "prompt": "I am knowing the answer to this question.",
+     "answer": "I know the answer to this question.",
+     "accept": [],
+     "explanation_ru": "Know не употребляется в continuous, нужна простая форма know в present simple.",
+     "difficulty": 3
+    },
+    {
+     "id": "b1_present_simple_present_continuous_08",
+     "kind": "order",
+     "prompt": "are / at / we / the / moment / testing / the / new / API",
+     "answer": "At the moment we are testing the new API.",
+     "accept": [
+      "We are testing the new API at the moment.",
+      "At the moment we're testing the new API.",
+      "We're testing the new API at the moment."
+     ],
+     "explanation_ru": "Сказуемое — are testing, а обстоятельство at the moment стоит в начале или в конце предложения.",
+     "difficulty": 3
+    }
+   ]
+  },
+  {
+   "id": "b1_review_verb_tenses_b1",
+   "level": "B1",
+   "band": "B1",
+   "topic": "Tenses",
+   "title_en": "Review of all intermediate verb tenses (CEFR B1)",
+   "source_slug": "review-verb-tenses-b1",
+   "title_ru": "Обзор времён уровня B1",
+   "summary_ru": "На уровне B1 нужно уверенно различать основные времена и выбирать их по контексту. Present simple и present continuous отвечают за регулярное и за происходящее сейчас. Past simple описывает законченное действие в законченном прошлом: yesterday, last week, in 2020. Past continuous даёт длительный фон для более короткого действия: I was working when he called. Present perfect связывает прошлое с настоящим и не сочетается с точным прошедшим моментом; его маркеры — ever, never, just, already, yet, since, for. Past perfect показывает, что одно прошедшее действие произошло раньше другого. Будущее выражают will для решений и прогнозов, be going to для планов и очевидных признаков, present continuous для договорённостей.",
+   "forms": [
+    "V / V-s и am/is/are + V-ing — настоящее время",
+    "V2, а в вопросах и отрицаниях did + V — past simple",
+    "was/were + V-ing — past continuous",
+    "have/has + V3 — present perfect",
+    "had + V3 — past perfect",
+    "will + V, be going to + V, am/is/are + V-ing — будущее"
+   ],
+   "examples": [
+    "We released the new version last Friday.",
+    "I have worked at this company since 2019.",
+    "She was writing the report when the power went off.",
+    "When we arrived, the meeting had already started.",
+    "I am meeting the client at four tomorrow."
+   ],
+   "ru_interference": "В русском три времени, поэтому present perfect заменяют настоящим или прошедшим: неверно I work here since 2019, верно I have worked here since 2019. И наоборот: неверно I have seen him yesterday, верно I saw him yesterday.",
+   "prerequisites": [
+    "a2_review_verb_tenses_a2",
+    "a2_present_perfect_or_past_simple",
+    "a2_past_perfect",
+    "a2_past_continuous_past_simple"
+   ],
+   "exercises": [
+    {
+     "id": "b1_review_verb_tenses_b1_01",
+     "kind": "choice",
+     "prompt": "I ___ my laptop yesterday, so today I am using a spare one.",
+     "options": [
+      "have broken",
+      "broke",
+      "break",
+      "was breaking"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Yesterday указывает на завершённый момент в прошлом, поэтому нужен past simple: с такой меткой present perfect невозможен.",
+     "difficulty": 1
+    },
+    {
+     "id": "b1_review_verb_tenses_b1_02",
+     "kind": "choice",
+     "prompt": "We ___ in this office since 2019.",
+     "options": [
+      "work",
+      "are working",
+      "have worked",
+      "worked"
+     ],
+     "correct_index": 2,
+     "explanation_ru": "Since с точкой отсчёта требует present perfect: действие началось в прошлом и продолжается сейчас.",
+     "difficulty": 2
+    },
+    {
+     "id": "b1_review_verb_tenses_b1_03",
+     "kind": "choice",
+     "prompt": "When I got to the office, the meeting ___.",
+     "options": [
+      "already starts",
+      "has already started",
+      "had already started",
+      "is already starting"
+     ],
+     "correct_index": 2,
+     "explanation_ru": "Собрание началось раньше другого прошедшего действия, а более раннее прошлое выражает past perfect.",
+     "difficulty": 2
+    },
+    {
+     "id": "b1_review_verb_tenses_b1_04",
+     "kind": "choice",
+     "prompt": "___ you finished the migration yet?",
+     "options": [
+      "Did",
+      "Have",
+      "Are",
+      "Do"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Finished здесь третья форма глагола, поэтому вопрос строится со вспомогательным have.",
+     "difficulty": 1
+    },
+    {
+     "id": "b1_review_verb_tenses_b1_05",
+     "kind": "gap",
+     "prompt": "I ___ (never/see) this error before.",
+     "answer": "have never seen",
+     "accept": [
+      "'ve never seen"
+     ],
+     "explanation_ru": "Опыт до настоящего момента без указания даты — present perfect, never стоит между have и третьей формой.",
+     "difficulty": 2
+    },
+    {
+     "id": "b1_review_verb_tenses_b1_06",
+     "kind": "gap",
+     "prompt": "While she ___ (write) the release notes, the build failed.",
+     "answer": "was writing",
+     "accept": [],
+     "explanation_ru": "While вводит длительное действие-фон в прошлом, поэтому нужен past continuous.",
+     "difficulty": 1
+    },
+    {
+     "id": "b1_review_verb_tenses_b1_07",
+     "kind": "correct",
+     "prompt": "I have seen this client yesterday.",
+     "answer": "I saw this client yesterday.",
+     "accept": [],
+     "explanation_ru": "Yesterday относит действие к завершённому прошлому, поэтому present perfect меняется на past simple.",
+     "difficulty": 3
+    },
+    {
+     "id": "b1_review_verb_tenses_b1_08",
+     "kind": "transform",
+     "prompt": "Rewrite with the past perfect: She finished the report and then she went home.",
+     "answer": "When she had finished the report, she went home.",
+     "accept": [
+      "After she had finished the report, she went home.",
+      "She went home when she had finished the report.",
+      "She went home after she had finished the report.",
+      "She had finished the report before she went home."
+     ],
+     "explanation_ru": "Более раннее действие ставится в past perfect, а последующее остаётся в past simple.",
+     "difficulty": 3
+    }
+   ]
+  },
+  {
+   "id": "b1_usually_used_to_be_used_to_get_used_to",
+   "level": "B1",
+   "band": "B1",
+   "topic": "Tenses",
+   "title_en": "Usually, used to, be used to, get used to",
+   "source_slug": "usually-used-to-be-used-to-get-used-to",
+   "title_ru": "Usually, used to, be used to, get used to",
+   "summary_ru": "Usually с present simple описывает текущую привычку: I usually start work at nine. Used to с инфинитивом описывает то, что было регулярным или верным в прошлом, но сейчас не так: I used to work in a bank. В вопросах и отрицаниях после did остаётся форма use to: Did you use to smoke? I didn't use to like tea. Be used to означает быть привыкшим, это состояние, и после to идёт существительное или форма на -ing: I am used to working late. Get used to означает процесс привыкания: It took me a month to get used to the new system. Главное различие: used to всегда о прошлом, а be used to и get used to возможны в любом времени. После be used to и get used to никогда не бывает голого инфинитива.",
+   "forms": [
+    "usually + V — present simple",
+    "used to + V — I used to work here.",
+    "didn't use to + V / Did ... use to + V?",
+    "be (am/is/are/was) + used to + V-ing или существительное",
+    "get (get/got/getting) + used to + V-ing или существительное"
+   ],
+   "examples": [
+    "I usually check my email before the standup.",
+    "We used to have a daily meeting at nine.",
+    "She didn't use to like remote work.",
+    "I am used to working with legacy code.",
+    "It took him two weeks to get used to the new laptop."
+   ],
+   "ru_interference": "Русское привык переводят через used to: неверно Я привык работать поздно — I used to work late, верно I am used to working late. Вторая ошибка — инфинитив после оборота: неверно I am used to work here, верно I am used to working here.",
+   "prerequisites": [
+    "a2_used_to",
+    "a1_adverbs_frequency",
+    "a2_infinitives_and_gerunds"
+   ],
+   "exercises": [
+    {
+     "id": "b1_usually_used_to_be_used_to_get_used_to_01",
+     "kind": "choice",
+     "prompt": "When I was a student, I ___ a lot of coffee, but now I drink only tea.",
+     "options": [
+      "use to drink",
+      "used to drink",
+      "am used to drinking",
+      "usually drink"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Прошлая привычка, которой больше нет; в утверждении возможна только форма used to с инфинитивом.",
+     "difficulty": 1
+    },
+    {
+     "id": "b1_usually_used_to_be_used_to_get_used_to_02",
+     "kind": "choice",
+     "prompt": "The first week was hard, but now I ___ working from home.",
+     "options": [
+      "used to",
+      "am used to",
+      "use to",
+      "get used"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Слово now указывает на нынешнее состояние привычности, а это be used to с формой на -ing.",
+     "difficulty": 2
+    },
+    {
+     "id": "b1_usually_used_to_be_used_to_get_used_to_03",
+     "kind": "choice",
+     "prompt": "I ___ up at six every morning; it is part of my routine.",
+     "options": [
+      "used to get",
+      "am used to get",
+      "usually get",
+      "am usually getting"
+     ],
+     "correct_index": 2,
+     "explanation_ru": "Регулярное действие в настоящем передаёт usually с present simple, а не оборот про прошлое.",
+     "difficulty": 2
+    },
+    {
+     "id": "b1_usually_used_to_be_used_to_get_used_to_04",
+     "kind": "choice",
+     "prompt": "She didn't ___ like spicy food, but now she loves it.",
+     "options": [
+      "used to",
+      "use to",
+      "uses to",
+      "using to"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "После вспомогательного did остаётся базовая форма use to без окончания.",
+     "difficulty": 1
+    },
+    {
+     "id": "b1_usually_used_to_be_used_to_get_used_to_05",
+     "kind": "gap",
+     "prompt": "The office was very noisy at first, but I soon ___ (get used to) it.",
+     "answer": "got used to",
+     "accept": [],
+     "explanation_ru": "Речь о процессе привыкания, который завершился в прошлом, поэтому get принимает форму got.",
+     "difficulty": 2
+    },
+    {
+     "id": "b1_usually_used_to_be_used_to_get_used_to_06",
+     "kind": "gap",
+     "prompt": "We ___ (use to) have a standup at nine, but now we don't.",
+     "answer": "used to",
+     "accept": [],
+     "explanation_ru": "В утвердительном предложении прошлая привычка выражается формой used to.",
+     "difficulty": 1
+    },
+    {
+     "id": "b1_usually_used_to_be_used_to_get_used_to_07",
+     "kind": "correct",
+     "prompt": "I am used to work with legacy code.",
+     "answer": "I am used to working with legacy code.",
+     "accept": [],
+     "explanation_ru": "В обороте be used to слово to является предлогом, поэтому после него нужна форма working.",
+     "difficulty": 3
+    },
+    {
+     "id": "b1_usually_used_to_be_used_to_get_used_to_08",
+     "kind": "transform",
+     "prompt": "Rewrite with used to: We worked in the office five days a week, but we don't now.",
+     "answer": "We used to work in the office five days a week.",
+     "accept": [
+      "We used to work in the office five days a week, but we don't now.",
+      "We used to work five days a week in the office."
+     ],
+     "explanation_ru": "Used to само показывает, что действие относится только к прошлому, поэтому вторая часть необязательна.",
+     "difficulty": 3
+    }
+   ]
+  },
+  {
+   "id": "b1_gerund_or_infinitive_do_to_do_doing",
+   "level": "B1",
+   "band": "B1",
+   "topic": "Verb patterns",
+   "title_en": "Gerund or infinitive: Do, to do, doing",
+   "source_slug": "gerund-or-infinitive-do-to-do-doing",
+   "title_ru": "Герундий или инфинитив: do, to do, doing",
+   "summary_ru": "После одних глаголов идёт to с инфинитивом, после других форма на -ing, после третьих голый инфинитив. To с инфинитивом требуют want, decide, hope, plan, need, promise, agree, refuse, learn, manage, offer, expect. Форму на -ing требуют enjoy, avoid, finish, mind, suggest, keep, practice, consider, miss, can't stand. Голый инфинитив стоит после модальных глаголов и после make и let с дополнением: My boss made me rewrite it. После любого предлога всегда идёт форма на -ing: good at fixing bugs, before leaving, think about moving. С like, love, hate, start, begin разница между двумя формами почти незаметна. У stop, remember, forget и try формы дают разный смысл: stop smoking значит бросить, а stop to smoke значит остановиться, чтобы покурить.",
+   "forms": [
+    "verb + to + V — want to go, decide to stay",
+    "verb + V-ing — enjoy reading, avoid making",
+    "make / let + дополнение + V — my boss made me rewrite it",
+    "предлог + V-ing — before leaving, good at fixing",
+    "stop / remember / forget + to V или + V-ing с разным значением"
+   ],
+   "examples": [
+    "I enjoy learning new tools.",
+    "She decided to accept the offer.",
+    "My manager made me rewrite the whole report.",
+    "We are thinking about moving to a new framework.",
+    "Remember to send the invoice before Friday.",
+    "I will never forget seeing that error in production."
+   ],
+   "ru_interference": "Русский инфинитив подставляют вместо герундия: неверно I enjoy to code и I suggest to start, верно I enjoy coding и I suggest starting. Та же ошибка после предлога: неверно I look forward to hear from you, верно I look forward to hearing from you.",
+   "prerequisites": [
+    "a1_verbs_infinitive_verbs_ing",
+    "a2_infinitives_and_gerunds"
+   ],
+   "exercises": [
+    {
+     "id": "b1_gerund_or_infinitive_do_to_do_doing_01",
+     "kind": "choice",
+     "prompt": "I enjoy ___ new tools.",
+     "options": [
+      "to learn",
+      "learn",
+      "learning",
+      "learned"
+     ],
+     "correct_index": 2,
+     "explanation_ru": "После enjoy всегда идёт только форма на -ing.",
+     "difficulty": 1
+    },
+    {
+     "id": "b1_gerund_or_infinitive_do_to_do_doing_02",
+     "kind": "choice",
+     "prompt": "She decided ___ the offer.",
+     "options": [
+      "accepting",
+      "to accept",
+      "accept",
+      "accepts"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Decide входит в группу глаголов, после которых стоит to с инфинитивом.",
+     "difficulty": 1
+    },
+    {
+     "id": "b1_gerund_or_infinitive_do_to_do_doing_03",
+     "kind": "choice",
+     "prompt": "My manager made me ___ the whole report again.",
+     "options": [
+      "to rewrite",
+      "rewriting",
+      "rewrite",
+      "rewrote"
+     ],
+     "correct_index": 2,
+     "explanation_ru": "После make с дополнением употребляется голый инфинитив без частицы to.",
+     "difficulty": 2
+    },
+    {
+     "id": "b1_gerund_or_infinitive_do_to_do_doing_04",
+     "kind": "choice",
+     "prompt": "We are thinking about ___ to a new framework.",
+     "options": [
+      "to move",
+      "move",
+      "moving",
+      "moved"
+     ],
+     "correct_index": 2,
+     "explanation_ru": "About здесь предлог, а после предлога возможна только форма на -ing.",
+     "difficulty": 2
+    },
+    {
+     "id": "b1_gerund_or_infinitive_do_to_do_doing_05",
+     "kind": "gap",
+     "prompt": "I will never forget ___ (see) that error in production.",
+     "answer": "seeing",
+     "accept": [],
+     "explanation_ru": "Forget с формой на -ing означает помнить о том, что уже случилось; forget to see значило бы забыть посмотреть.",
+     "difficulty": 3
+    },
+    {
+     "id": "b1_gerund_or_infinitive_do_to_do_doing_06",
+     "kind": "gap",
+     "prompt": "He promised ___ (send) the file today.",
+     "answer": "to send",
+     "accept": [],
+     "explanation_ru": "Promise относится к глаголам, после которых идёт to с инфинитивом.",
+     "difficulty": 1
+    },
+    {
+     "id": "b1_gerund_or_infinitive_do_to_do_doing_07",
+     "kind": "correct",
+     "prompt": "I suggest to start with the database.",
+     "answer": "I suggest starting with the database.",
+     "accept": [
+      "I suggest that we start with the database.",
+      "I suggest we start with the database."
+     ],
+     "explanation_ru": "После suggest не бывает to с инфинитивом: нужна форма на -ing или придаточное с that.",
+     "difficulty": 2
+    },
+    {
+     "id": "b1_gerund_or_infinitive_do_to_do_doing_08",
+     "kind": "order",
+     "prompt": "stand / can't / I / early / up / getting",
+     "answer": "I can't stand getting up early.",
+     "accept": [
+      "I cannot stand getting up early."
+     ],
+     "explanation_ru": "После can't stand идёт герундий, а фразовый глагол сохраняет порядок get up.",
+     "difficulty": 3
+    }
+   ]
+  },
+  {
+   "id": "b1_verb_preposition",
+   "level": "B1",
+   "band": "B1",
+   "topic": "Verb patterns",
+   "title_en": "Verb + preposition: Dependent prepositions",
+   "source_slug": "verb-preposition",
+   "title_ru": "Глагол плюс предлог: устойчивое управление",
+   "summary_ru": "Многие английские глаголы требуют строго определённого предлога, и его нельзя вывести из русского перевода. Запоминать нужно связку целиком: listen to, wait for, look for, look after, depend on, rely on, focus on, insist on, apologize for, pay for, ask for, apply for, complain about, worry about, belong to, agree with, deal with, consist of. Если после предлога стоит глагол, он принимает форму на -ing: insist on testing, apologize for being late. Часть глаголов, наоборот, идёт без предлога, хотя в русском предлог есть: discuss, enter, answer, call, marry, approach. Некоторые глаголы меняют смысл вместе с предлогом: look for значит искать, look after значит присматривать, look at значит смотреть. В вопросе предлог обычно остаётся в конце: Who does this account belong to? В пассиве предлог тоже сохраняется: This bug was dealt with yesterday.",
+   "forms": [
+    "verb + предлог + существительное — depend on the budget",
+    "verb + предлог + V-ing — insist on checking",
+    "verb + дополнение + предлог + дополнение — apologize to him for the delay",
+    "вопрос с предлогом в конце — What are you waiting for?",
+    "без предлога: discuss, enter, answer, call, marry"
+   ],
+   "examples": [
+    "The release date depends on the client.",
+    "We are still waiting for their answer.",
+    "He apologized for being late.",
+    "She insisted on checking the logs twice.",
+    "We discussed the new pricing at the meeting.",
+    "Who does this laptop belong to?"
+   ],
+   "ru_interference": "Русское управление переносят на английский: неверно wait the answer, верно wait for the answer; неверно listen music, верно listen to music; неверно depend from the budget, верно depend on the budget. Обратная ошибка — лишний предлог: неверно discuss about the plan, верно discuss the plan.",
+   "prerequisites": [
+    "a1_at_in_on_prepositions_of_place",
+    "a2_infinitives_and_gerunds",
+    "a2_subject_questions_questions_preposition"
+   ],
+   "exercises": [
+    {
+     "id": "b1_verb_preposition_01",
+     "kind": "choice",
+     "prompt": "Sorry, I can't hear you. I am ___ music with headphones.",
+     "options": [
+      "listening",
+      "listening to",
+      "listening on",
+      "hearing to"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Listen всегда требует предлога to перед дополнением.",
+     "difficulty": 1
+    },
+    {
+     "id": "b1_verb_preposition_02",
+     "kind": "choice",
+     "prompt": "The release date depends ___ the client.",
+     "options": [
+      "from",
+      "of",
+      "on",
+      "to"
+     ],
+     "correct_index": 2,
+     "explanation_ru": "Depend сочетается только с on, русское зависеть от не переводится словом from.",
+     "difficulty": 1
+    },
+    {
+     "id": "b1_verb_preposition_03",
+     "kind": "choice",
+     "prompt": "We ___ the new pricing at yesterday's meeting.",
+     "options": [
+      "discussed about",
+      "discussed",
+      "discussed on",
+      "discussed of"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Discuss — переходный глагол без предлога, в отличие от русского обсуждать о чём-то.",
+     "difficulty": 2
+    },
+    {
+     "id": "b1_verb_preposition_04",
+     "kind": "choice",
+     "prompt": "She apologized ___ being late.",
+     "options": [
+      "for",
+      "with",
+      "of",
+      "to"
+     ],
+     "correct_index": 0,
+     "explanation_ru": "Причина извинения вводится предлогом for, а to ставится только перед человеком.",
+     "difficulty": 2
+    },
+    {
+     "id": "b1_verb_preposition_05",
+     "kind": "gap",
+     "prompt": "Who does this account belong ___?",
+     "answer": "to",
+     "accept": [],
+     "explanation_ru": "Belong to — устойчивая пара, и в вопросе предлог остаётся в конце предложения.",
+     "difficulty": 1
+    },
+    {
+     "id": "b1_verb_preposition_06",
+     "kind": "gap",
+     "prompt": "He insisted ___ (check) the logs twice.",
+     "answer": "on checking",
+     "accept": [],
+     "explanation_ru": "Insist управляет предлогом on, а после предлога глагол принимает форму на -ing.",
+     "difficulty": 2
+    },
+    {
+     "id": "b1_verb_preposition_07",
+     "kind": "correct",
+     "prompt": "The team is looking forward to meet you.",
+     "answer": "The team is looking forward to meeting you.",
+     "accept": [],
+     "explanation_ru": "В обороте look forward to слово to является предлогом, поэтому нужна форма meeting.",
+     "difficulty": 3
+    },
+    {
+     "id": "b1_verb_preposition_08",
+     "kind": "order",
+     "prompt": "on / focus / we / should / the / most / important / bugs",
+     "answer": "We should focus on the most important bugs.",
+     "accept": [],
+     "explanation_ru": "Focus управляет предлогом on, который стоит сразу после глагола перед дополнением.",
+     "difficulty": 3
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,742 @@
+{
+  "patterns": [
+    {
+      "id": "agree_with_be",
+      "category": "grammar",
+      "label_ru": "I am agree вместо I agree",
+      "what_ru": "К глаголу agree приставляют am, is или are, как будто это прилагательное.",
+      "trigger_ru": "В русском «я согласен» — прилагательное со скрытой связкой «есть», и эту связку машинально переносят в английский.",
+      "fix_ru": "Agree уже сам по себе значит «согласен». Говори I agree, I don't agree или I disagree.",
+      "wrong_en": "I am agree with you.",
+      "right_en": "I agree with you.",
+      "levels": [
+        "A1",
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "id": "third_person_s_missing",
+      "category": "grammar",
+      "label_ru": "Пропущено -s в третьем лице",
+      "what_ru": "После he, she, it или имени глагол в настоящем времени стоит без окончания -s.",
+      "trigger_ru": "В русском окончание меняется у каждого лица подряд — работаю, работаешь, работает, — поэтому одинокое английское -s у одного только he, she, it кажется случайным и теряется.",
+      "fix_ru": "He, she, it — добавляй -s. Со всеми остальными глагол остаётся голым.",
+      "wrong_en": "She work in the support team.",
+      "right_en": "She works in the support team.",
+      "levels": [
+        "A1",
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "id": "aux_dont_instead_doesnt",
+      "category": "grammar",
+      "label_ru": "He don't вместо He doesn't",
+      "what_ru": "В отрицании с he, she или it стоит don't вместо doesn't.",
+      "trigger_ru": "В русском отрицание — одно слово «не» перед глаголом, оно не меняется по лицам, поэтому don't ставят подряд со всеми.",
+      "fix_ru": "Окончание -s уезжает во вспомогательный глагол: he doesn't know. Дважды его не ставят.",
+      "wrong_en": "He don't know the password.",
+      "right_en": "He doesn't know the password.",
+      "levels": [
+        "A1",
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "id": "question_without_auxiliary",
+      "category": "grammar",
+      "label_ru": "Вопрос без do, does или did",
+      "what_ru": "Вопрос строится порядком слов обычного утверждения, вспомогательного глагола нет.",
+      "trigger_ru": "В русском вопрос делается одной интонацией, никаких служебных глаголов для этого не нужно.",
+      "fix_ru": "В английском вопросе почти всегда есть помощник: do, does, did, am, is, are или модальный. Без него это не вопрос.",
+      "wrong_en": "Where you work?",
+      "right_en": "Where do you work?",
+      "levels": [
+        "A1",
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "id": "present_perfect_with_past_time",
+      "category": "grammar",
+      "label_ru": "Perfect рядом с точной датой",
+      "what_ru": "Present Perfect стоит вместе с yesterday, last week или другим конкретным моментом.",
+      "trigger_ru": "В русском нет Perfect, разницу между «сходил вчера» и «уже сходил» язык не размечает, и Perfect лепят к дате наугад.",
+      "fix_ru": "Есть точный момент в прошлом — Past Simple. Present Perfect только когда момент неважен.",
+      "wrong_en": "Yesterday I have been to the office.",
+      "right_en": "Yesterday I went to the office.",
+      "levels": [
+        "A2",
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "id": "perfect_missing_duration",
+      "category": "grammar",
+      "label_ru": "Настоящее вместо Present Perfect",
+      "what_ru": "О действии, которое началось раньше и тянется до сих пор, говорят простым настоящим.",
+      "trigger_ru": "В русском «работаю здесь три года» — настоящее время, а Perfect в языке отсутствует, поэтому подсказки взять неоткуда.",
+      "fix_ru": "Началось в прошлом и длится до сейчас — have или has плюс третья форма, обычно с for или since.",
+      "wrong_en": "I work here for three years.",
+      "right_en": "I have worked here for three years.",
+      "levels": [
+        "A2",
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "id": "present_simple_instead_continuous",
+      "category": "grammar",
+      "label_ru": "Simple вместо Continuous о текущем моменте",
+      "what_ru": "О том, что происходит прямо сейчас, говорят в Present Simple.",
+      "trigger_ru": "В русском работает вид, а не время: «читаю» одинаково годится и для привычки, и для этой самой минуты, поэтому деление на Simple и Continuous не срабатывает.",
+      "fix_ru": "Прямо сейчас, в процессе — am, is или are плюс -ing. Simple оставь для привычек и общих фактов.",
+      "wrong_en": "I read the release notes right now.",
+      "right_en": "I am reading the release notes right now.",
+      "levels": [
+        "A1",
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "id": "past_form_after_did",
+      "category": "grammar",
+      "label_ru": "Did вместе с прошедшей формой",
+      "what_ru": "После did глагол стоит в прошедшем времени, хотя должен быть в начальной форме.",
+      "trigger_ru": "В русском прошедшее время помечено прямо в глаголе, и это окончание дублируют даже там, где did уже всё сказал.",
+      "fix_ru": "Did уже несёт прошедшее время, дальше идёт голый глагол: did you go, he didn't work.",
+      "wrong_en": "Did you went to the standup?",
+      "right_en": "Did you go to the standup?",
+      "levels": [
+        "A1",
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "id": "future_after_when",
+      "category": "grammar",
+      "label_ru": "Will после when и if",
+      "what_ru": "После when, if, before, until или as soon as ставят will.",
+      "trigger_ru": "В русском в такой части предложения стоит будущее время — «когда закончу», — и его переносят дословно.",
+      "fix_ru": "После when, if, as soon as, until будущее выражается настоящим: I'll call you when I finish.",
+      "wrong_en": "I will call you when I will finish the deploy.",
+      "right_en": "I will call you when I finish the deploy.",
+      "levels": [
+        "A2",
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "id": "double_comparative",
+      "category": "grammar",
+      "label_ru": "more better и похожее",
+      "what_ru": "Сравнительная степень получает сразу и more, и окончание -er.",
+      "trigger_ru": "В русском «более быстрый» и «быстрее» — две разные схемы для одного смысла, и в английском они накладываются друг на друга.",
+      "fix_ru": "Или окончание -er, или more, но никогда вместе: better, faster, more interesting.",
+      "wrong_en": "This solution is more better.",
+      "right_en": "This solution is better.",
+      "levels": [
+        "A1",
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "id": "uncountable_informations",
+      "category": "grammar",
+      "label_ru": "informations вместо information",
+      "what_ru": "К information добавляют -s или ставят перед ним an.",
+      "trigger_ru": "В русском «информация» спокойно даёт множественное число, поэтому английское слово тоже кажется исчисляемым.",
+      "fix_ru": "Information всегда в единственном. Нужно посчитать — говори two pieces of information или details.",
+      "wrong_en": "I need more informations about the incident.",
+      "right_en": "I need more information about the incident.",
+      "levels": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "id": "uncountable_advices",
+      "category": "grammar",
+      "label_ru": "advices вместо advice",
+      "what_ru": "К advice добавляют -s или ставят перед ним артикль an.",
+      "trigger_ru": "В русском «советы» — обычное множественное число, и калька тянет за собой английское -s.",
+      "fix_ru": "Advice не считается. Один совет — a piece of advice, много — просто advice.",
+      "wrong_en": "Thanks for your advices.",
+      "right_en": "Thanks for your advice.",
+      "levels": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "id": "double_negative",
+      "category": "grammar",
+      "label_ru": "Двойное отрицание",
+      "what_ru": "В одном предложении стоят и отрицательный глагол, и nothing, nobody или never.",
+      "trigger_ru": "В русском двойное отрицание — норма: «я ничего не знаю» без обоих отрицаний просто не звучит.",
+      "fix_ru": "Одно отрицание на предложение. Либо I don't know anything, либо I know nothing.",
+      "wrong_en": "I don't know nothing about this ticket.",
+      "right_en": "I don't know anything about this ticket.",
+      "levels": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "id": "article_missing_a",
+      "category": "article",
+      "label_ru": "Пропущен артикль a или an",
+      "what_ru": "Перед исчисляемым существительным в единственном числе нет артикля.",
+      "trigger_ru": "В русском артиклей нет вообще, поэтому слот перед словом просто не заполняется.",
+      "fix_ru": "Исчисляемое в единственном числе почти всегда требует a, an или the. Вводишь новое — ставь a или an.",
+      "wrong_en": "I have cat.",
+      "right_en": "I have a cat.",
+      "levels": [
+        "A1",
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "id": "article_missing_the",
+      "category": "article",
+      "label_ru": "Пропущен артикль the",
+      "what_ru": "Перед конкретным предметом, который собеседник уже знает, нет the.",
+      "trigger_ru": "В русском определённость передаётся порядком слов и контекстом, отдельного слова для неё не существует.",
+      "fix_ru": "Оба понимаете, о каком именно предмете речь — ставь the.",
+      "wrong_en": "Open file I sent you yesterday.",
+      "right_en": "Open the file I sent you yesterday.",
+      "levels": [
+        "A1",
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "id": "article_missing_profession",
+      "category": "article",
+      "label_ru": "Профессия без артикля",
+      "what_ru": "После I am или he is название профессии стоит без a или an.",
+      "trigger_ru": "Русское «я разработчик» обходится совсем без служебных слов, и фраза переносится один в один.",
+      "fix_ru": "Кем работаешь — всегда с a или an: I'm a developer, she's an analyst.",
+      "wrong_en": "I am developer.",
+      "right_en": "I am a developer.",
+      "levels": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "id": "article_second_mention_the",
+      "category": "article",
+      "label_ru": "a вместо the при повторном упоминании",
+      "what_ru": "Предмет уже назвали, но во второй раз перед ним снова стоит a или an.",
+      "trigger_ru": "В русском первое и второе упоминание оформляются одинаково, поэтому переключение с a на the не происходит.",
+      "fix_ru": "Первый раз — a или an, дальше про тот же самый предмет — the.",
+      "wrong_en": "I bought a laptop. A laptop is really fast.",
+      "right_en": "I bought a laptop. The laptop is really fast.",
+      "levels": [
+        "A1",
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "id": "article_extra_generic_plural",
+      "category": "article",
+      "label_ru": "Лишний the при обобщении",
+      "what_ru": "The стоит перед множественным числом там, где речь о явлении вообще.",
+      "trigger_ru": "В русском определённость словом не выражается, поэтому чувства, где артикль лишний, взять неоткуда: вспомнив про артикли, их ставят подряд.",
+      "fix_ru": "Говоришь обо всех сразу, а не о конкретных — артикль не нужен: Developers like clear specs.",
+      "wrong_en": "In general, the developers like clear specs.",
+      "right_en": "In general, developers like clear specs.",
+      "levels": [
+        "A2",
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "id": "article_extra_fixed_phrase",
+      "category": "article",
+      "label_ru": "Лишний the в устойчивых оборотах",
+      "what_ru": "The появляется в go to work, at home, in bed и похожих сочетаниях.",
+      "trigger_ru": "Артикль ставят по общему правилу, а подсказки, что это исключение, нет: в русском go to work и at home ничем не отличаются от остальных фраз.",
+      "fix_ru": "Go to work, go home, at home, in bed, at school идут без артикля. Это список для запоминания.",
+      "wrong_en": "I go to the work at nine.",
+      "right_en": "I go to work at nine.",
+      "levels": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "id": "on_the_picture",
+      "category": "preposition",
+      "label_ru": "on the picture вместо in the picture",
+      "what_ru": "О том, что изображено внутри картинки, говорят с предлогом on.",
+      "trigger_ru": "Русское «на картинке» тянет за собой on, хотя английский видит картинку как пространство внутри.",
+      "fix_ru": "Что нарисовано внутри — in the picture. On остаётся для предметов, которые лежат поверх бумаги.",
+      "wrong_en": "On the picture you can see our office.",
+      "right_en": "In the picture you can see our office.",
+      "levels": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "id": "at_the_photo",
+      "category": "preposition",
+      "label_ru": "at the photo вместо in the photo",
+      "what_ru": "С фотографией используют at, хотя речь о том, что на ней изображено.",
+      "trigger_ru": "У русского «на фото» прямой пары нет, зато из школьного look at the photo намертво запомнился at, и его ставят везде.",
+      "fix_ru": "In the photo — что изображено. Look at the photo — куда смотришь. Это разные вещи.",
+      "wrong_en": "At the photo he is wearing a suit.",
+      "right_en": "In the photo he is wearing a suit.",
+      "levels": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "id": "in_monday",
+      "category": "preposition",
+      "label_ru": "in Monday вместо on Monday",
+      "what_ru": "С днями недели и датами ставят in вместо on.",
+      "trigger_ru": "Русское «в понедельник» подсказывает in, а в английском у дней свой отдельный предлог.",
+      "fix_ru": "Дни и даты — on. Месяцы, годы и времена года — in. Часы — at.",
+      "wrong_en": "The release is in Monday.",
+      "right_en": "The release is on Monday.",
+      "levels": [
+        "A1",
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "id": "different_of",
+      "category": "preposition",
+      "label_ru": "different of вместо different from",
+      "what_ru": "После different ставят of.",
+      "trigger_ru": "Русское «отличается от» переводят пословно, а «от» вспоминается как of.",
+      "fix_ru": "Different from — так говорят всегда. В США встречается ещё different than, а different of не бывает.",
+      "wrong_en": "This case is different of the previous one.",
+      "right_en": "This case is different from the previous one.",
+      "levels": [
+        "A2",
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "id": "depend_from",
+      "category": "preposition",
+      "label_ru": "depend from вместо depend on",
+      "what_ru": "После depend стоит предлог from.",
+      "trigger_ru": "Русское «зависит от» переносится буквально, и «от» превращается во from.",
+      "fix_ru": "Depend on, всегда. И само по себе — it depends, без всякого предлога.",
+      "wrong_en": "The deadline depends from the client.",
+      "right_en": "The deadline depends on the client.",
+      "levels": [
+        "A2",
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "id": "married_with",
+      "category": "preposition",
+      "label_ru": "married with вместо married to",
+      "what_ru": "После married ставят with.",
+      "trigger_ru": "Русские «женат на» и «в браке с» подсказывают with, а нужного to в родном языке взять негде.",
+      "fix_ru": "Married to somebody. With годится только в обороте married with two kids — это про детей, а не про супруга.",
+      "wrong_en": "She is married with a designer.",
+      "right_en": "She is married to a designer.",
+      "levels": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "id": "listen_music",
+      "category": "preposition",
+      "label_ru": "listen music без to",
+      "what_ru": "После listen пропущен предлог to.",
+      "trigger_ru": "Русское «слушать музыку» идёт без предлога, дополнение стоит прямо за глаголом, и to выпадает.",
+      "fix_ru": "Назвал, что слушаешь, — ставь to: listen to music, listen to me. Без предлога идёт hear: I hear you.",
+      "wrong_en": "I listen music while I code.",
+      "right_en": "I listen to music while I code.",
+      "levels": [
+        "A1",
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "id": "explain_me",
+      "category": "preposition",
+      "label_ru": "explain me вместо explain to me",
+      "what_ru": "После explain сразу идёт человек, без предлога to.",
+      "trigger_ru": "В русском адресат стоит в дательном падеже без предлога — «объясни мне», — и в английском предлог теряется.",
+      "fix_ru": "Explain something to somebody. Так же с say, describe и suggest: say it to me, а не say me.",
+      "wrong_en": "Can you explain me this error?",
+      "right_en": "Can you explain this error to me?",
+      "levels": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "id": "adverb_very_before_verb",
+      "category": "word_order",
+      "label_ru": "I very like it",
+      "what_ru": "Very стоит перед глаголом и усиливает его.",
+      "trigger_ru": "Русское «очень нравится» ставит «очень» прямо перед глаголом, и порядок переносится дословно.",
+      "fix_ru": "Very усиливает только прилагательные и наречия. Глагол усиливай через really или a lot.",
+      "wrong_en": "I very like this approach.",
+      "right_en": "I really like this approach.",
+      "levels": [
+        "A1",
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "id": "missing_dummy_subject",
+      "category": "word_order",
+      "label_ru": "Предложение без подлежащего",
+      "what_ru": "Фраза начинается с обстоятельства или глагола, а подлежащего в ней нет вообще.",
+      "trigger_ru": "В русском полно безличных конструкций без подлежащего: «холодно», «вчера было совещание».",
+      "fix_ru": "В английском подлежащее обязательно. Если по смыслу его нет, ставь пустое it или there.",
+      "wrong_en": "Yesterday was a meeting about the incident.",
+      "right_en": "There was a meeting about the incident yesterday.",
+      "levels": [
+        "A1",
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "id": "indirect_question_order",
+      "category": "word_order",
+      "label_ru": "Вопросительный порядок внутри предложения",
+      "what_ru": "После I don't know или Can you tell me сохраняется порядок слов прямого вопроса.",
+      "trigger_ru": "В русском порядок слов свободный, и вложенная часть звучит так же, как отдельный вопрос.",
+      "fix_ru": "Внутри предложения порядок обычный: I don't know where he is, а не where is he.",
+      "wrong_en": "I don't know where is the config file.",
+      "right_en": "I don't know where the config file is.",
+      "levels": [
+        "A2",
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "id": "adverb_between_verb_object",
+      "category": "word_order",
+      "label_ru": "Наречие между глаголом и дополнением",
+      "what_ru": "Наречие вклинивается между глаголом и тем, на что направлено действие.",
+      "trigger_ru": "В русском порядок слов свободный, «хорошо знаю английский» звучит нормально, и его переносят как есть.",
+      "fix_ru": "Глагол и его дополнение не разлучай, наречие уходит в конец: I speak English well.",
+      "wrong_en": "I speak well English.",
+      "right_en": "I speak English well.",
+      "levels": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "id": "object_fronting",
+      "category": "word_order",
+      "label_ru": "Дополнение вынесено в начало",
+      "what_ru": "Предложение начинается с дополнения, а подлежащее идёт после него.",
+      "trigger_ru": "В русском свободный порядок слов служит для смысловых акцентов, а в английском он держит роли слов в предложении.",
+      "fix_ru": "Держись схемы кто — что делает — что. Нужно выделить дополнение — не двигай его, а начни с As for coffee, I don't drink it.",
+      "wrong_en": "Coffee I don't drink.",
+      "right_en": "I don't drink coffee.",
+      "levels": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "id": "make_photo",
+      "category": "word_choice",
+      "label_ru": "make a photo вместо take a photo",
+      "what_ru": "С фотографией используют глагол make.",
+      "trigger_ru": "Русское «сделать фото» переводят дословно, а деления на make и do в русском нет.",
+      "fix_ru": "Фото, скриншоты и заметки take. Make — про то, что создаёшь с нуля.",
+      "wrong_en": "Can you make a photo of the screen?",
+      "right_en": "Can you take a photo of the screen?",
+      "levels": [
+        "A1",
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "id": "actual_vs_current",
+      "category": "word_choice",
+      "label_ru": "actual вместо current",
+      "what_ru": "Actual используют в значении «актуальный, свежий».",
+      "trigger_ru": "Классический ложный друг: русское «актуальный» и английское actual выглядят почти одинаково, а значат разное.",
+      "fix_ru": "Actual значит «реальный, фактический». Свежая версия — current или up to date.",
+      "wrong_en": "Please send me the actual version of the doc.",
+      "right_en": "Please send me the current version of the doc.",
+      "levels": [
+        "A2",
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "id": "normal_vs_fine",
+      "category": "word_choice",
+      "label_ru": "normal вместо fine",
+      "what_ru": "На вопрос как дела или про качество работы отвечают normal.",
+      "trigger_ru": "Русское «нормально» значит «хорошо», а английское normal — «обычный, без отклонений».",
+      "fix_ru": "Как дела — fine, good, all right. Normal звучит как «психически здоровый» или «типовой».",
+      "wrong_en": "How are you? Normal, thanks.",
+      "right_en": "How are you? I'm fine, thanks.",
+      "levels": [
+        "A1",
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "id": "how_do_you_call_it",
+      "category": "word_choice",
+      "label_ru": "How do you call it вместо What",
+      "what_ru": "Вопрос о названии предмета начинают со слова how.",
+      "trigger_ru": "Русское «как это называется» начинается с «как», и его переводят словом how.",
+      "fix_ru": "Спрашиваешь про название или мнение — начинай с what: What do you call it, What do you think.",
+      "wrong_en": "How do you call it in English?",
+      "right_en": "What do you call it in English?",
+      "levels": [
+        "A1",
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "id": "realize_vs_implement",
+      "category": "word_choice",
+      "label_ru": "realize вместо implement",
+      "what_ru": "Про написанную функциональность говорят realize.",
+      "trigger_ru": "Ложный друг: русское «реализовать фичу» тянет за собой realize, хотя в английском это «вдруг осознать».",
+      "fix_ru": "Код и фичи implement, build или ship. Realize оставь для «до меня дошло».",
+      "wrong_en": "We realized this feature last sprint.",
+      "right_en": "We implemented this feature last sprint.",
+      "levels": [
+        "B1",
+        "B2",
+        "C1"
+      ]
+    },
+    {
+      "id": "say_vs_tell",
+      "category": "word_choice",
+      "label_ru": "say me вместо tell me",
+      "what_ru": "После say сразу идёт человек, которому говорят.",
+      "trigger_ru": "В русском «сказать» одно на все случаи, а английский делит его между say и tell по тому, назван ли адресат.",
+      "fix_ru": "Есть адресат — tell: tell me, tell the team. Say идёт без адресата или через to.",
+      "wrong_en": "He said me the build is broken.",
+      "right_en": "He told me the build is broken.",
+      "levels": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "id": "learn_vs_teach",
+      "category": "word_choice",
+      "label_ru": "learn вместо teach",
+      "what_ru": "Про обучение других людей используют глагол learn.",
+      "trigger_ru": "Русское «учить» покрывает и «учиться самому», и «учить кого-то», а в английском это два разных глагола.",
+      "fix_ru": "Сам учишься — learn. Учишь других — teach.",
+      "wrong_en": "She learns us how to write tests.",
+      "right_en": "She teaches us how to write tests.",
+      "levels": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "id": "th_as_s_or_z",
+      "category": "pronunciation",
+      "label_ru": "th звучит как с или з",
+      "what_ru": "Межзубные звуки в think и this заменяются на с, з, ф или т.",
+      "trigger_ru": "В русском нет межзубных согласных, и артикуляция автоматически подменяется ближайшим привычным звуком.",
+      "fix_ru": "Кончик языка между зубами, воздух идёт поверх него. В think без голоса, в this с голосом.",
+      "wrong_en": "I sink zis is fine.",
+      "right_en": "I think this is fine.",
+      "levels": [
+        "A1",
+        "A2",
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "id": "short_i_vs_long_ee",
+      "category": "pronunciation",
+      "label_ru": "live и leave звучат одинаково",
+      "what_ru": "Краткий звук в live, ship и bit тянут как русское и, и слово превращается в другое.",
+      "trigger_ru": "В русском нет краткого расслабленного звука между и и э, поэтому оба английских гласных сходятся в одно долгое и.",
+      "fix_ru": "Короткий не тяни и губы не растягивай: it, ship, live, fill. Долгий только в парах к ним: eat, sheep, leave, feel.",
+      "wrong_en": "I leave in Moscow.",
+      "right_en": "I live in Moscow.",
+      "levels": [
+        "A1",
+        "A2",
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "id": "w_as_v",
+      "category": "pronunciation",
+      "label_ru": "w произносится как русское в",
+      "what_ru": "В словах work, we и what вместо губного w звучит русское в.",
+      "trigger_ru": "В русском звука w нет, есть только в, и он подставляется сам собой.",
+      "fix_ru": "Округли губы тугим кружком, как перед у, и только потом переходи к гласной. Верхние зубы нижнюю губу не трогают: тронут — выйдет v.",
+      "wrong_en": "Vee vill fix it.",
+      "right_en": "We will fix it.",
+      "levels": [
+        "A1",
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "id": "final_devoicing",
+      "category": "pronunciation",
+      "label_ru": "Оглушение звонких в конце слова",
+      "what_ru": "Звонкие b, d, g, z и v в конце слова звучат глухо, и bad превращается в bat.",
+      "trigger_ru": "В русском конечные звонкие оглушаются всегда, и эта привычка переносится на английский, где она меняет само слово.",
+      "fix_ru": "Держи голос до самого конца и чуть тяни гласную перед звонким: bad, log, code.",
+      "wrong_en": "He hat a bat day.",
+      "right_en": "He had a bad day.",
+      "levels": [
+        "A2",
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "id": "ed_ending_syllable",
+      "category": "pronunciation",
+      "label_ru": "Лишний слог в окончании -ed",
+      "what_ru": "Окончание -ed в worked, asked и fixed произносят отдельным слогом эд.",
+      "trigger_ru": "В русском написанное и произнесённое почти совпадают, поэтому буквы e и d просят себе отдельный звук, хотя чаще всего его там нет.",
+      "fix_ru": "Отдельный слог только после t и d: wanted, needed. В остальных случаях это просто t или d в конце.",
+      "wrong_en": "We fix-ed and deploy-ed it.",
+      "right_en": "We fixed and deployed it.",
+      "levels": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "id": "feel_myself",
+      "category": "expression",
+      "label_ru": "I feel myself вместо I feel",
+      "what_ru": "После feel добавляют myself, yourself и другие возвратные слова.",
+      "trigger_ru": "Русское «чувствую себя» содержит возвратное «себя», и оно переводится дословно.",
+      "fix_ru": "Про самочувствие говорят без себя: I feel good, I feel tired. С myself фраза звучит как про ощупывание.",
+      "wrong_en": "I feel myself good today.",
+      "right_en": "I feel good today.",
+      "levels": [
+        "A1",
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "id": "in_the_last_time",
+      "category": "expression",
+      "label_ru": "in the last time вместо lately",
+      "what_ru": "Оборот «в последнее время» переводят пословно как in the last time.",
+      "trigger_ru": "Русское устойчивое выражение собирают из английских слов по частям, а такого оборота в английском просто нет.",
+      "fix_ru": "Говори lately или recently. The last time значит «в прошлый раз».",
+      "wrong_en": "In the last time we get a lot of tickets.",
+      "right_en": "Lately we have been getting a lot of tickets.",
+      "levels": [
+        "A2",
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "id": "bare_imperative_rude",
+      "category": "expression",
+      "label_ru": "Голый императив вместо просьбы",
+      "what_ru": "Просьбу к коллеге формулируют как прямую команду.",
+      "trigger_ru": "В русском повелительное наклонение с «пожалуйста» звучит вежливо, а тот же императив в английском читается как приказ.",
+      "fix_ru": "Просьбу заворачивай в вопрос: Could you send it, Would you mind checking. Одно please голый императив не спасает.",
+      "wrong_en": "Send me the report.",
+      "right_en": "Could you send me the report?",
+      "levels": [
+        "B1",
+        "B2",
+        "C1"
+      ]
+    },
+    {
+      "id": "double_consonants",
+      "category": "spelling",
+      "label_ru": "Двойные согласные не на месте",
+      "what_ru": "В address, message, necessary и recommend вторая согласная теряется, а в tomorrow, наоборот, дописывают лишнюю m.",
+      "trigger_ru": "В русских аналогах вроде «адрес» удвоения нет, и написание переносится из знакомого слова.",
+      "fix_ru": "Запомни слова-ловушки списком: address, message, necessary, occurred, recommend, а tomorrow с одной m.",
+      "wrong_en": "I sent you the adress in the mesage.",
+      "right_en": "I sent you the address in the message.",
+      "levels": [
+        "A2",
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "id": "capitals_days_languages",
+      "category": "spelling",
+      "label_ru": "Строчная в днях, месяцах и языках",
+      "what_ru": "Monday, July, English и Russian пишут с маленькой буквы.",
+      "trigger_ru": "В русском дни недели, месяцы, языки и национальности пишутся со строчной, и правило переносится вместе со словами.",
+      "fix_ru": "Дни, месяцы, языки, национальности и местоимение I всегда с большой буквы.",
+      "wrong_en": "on monday i speak english with the team.",
+      "right_en": "On Monday I speak English with the team.",
+      "levels": [
+        "A1",
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "id": "comma_before_that",
+      "category": "punctuation",
+      "label_ru": "Запятая перед that",
+      "what_ru": "Перед that в придаточной части ставят запятую.",
+      "trigger_ru": "В русском запятая перед «что» обязательна, и правило автоматически переезжает в английский.",
+      "fix_ru": "Перед that запятая не нужна: I think that it works. То же самое с because и if.",
+      "wrong_en": "I think, that the build is fine.",
+      "right_en": "I think that the build is fine.",
+      "levels": [
+        "A2",
+        "B1",
+        "B2"
+      ]
+    }
+  ]
+}

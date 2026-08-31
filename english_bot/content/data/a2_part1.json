@@ -1,0 +1,1519 @@
+{
+ "chunk": "a2_part1",
+ "points": [
+  {
+   "id": "a2_comparative_superlative_adjectives_adverbs",
+   "level": "A2",
+   "band": "A2",
+   "topic": "Adjectives & adverbs",
+   "title_en": "Comparative and superlative adjectives and adverbs",
+   "source_slug": "comparative-superlative-adjectives-adverbs",
+   "title_ru": "Сравнительная и превосходная степень",
+   "summary_ru": "Сравнительная степень сравнивает два предмета или человека, превосходная выделяет один из группы. Короткие прилагательные и наречия берут окончания -er и -est: fast, faster, the fastest. Длинные слова и почти все наречия на -ly берут more и the most: carefully, more carefully, the most carefully. Перед превосходной степенью почти всегда стоит the. После сравнительной степени идёт than: cheaper than this one. Есть неправильные формы: good, better, the best; bad, worse, the worst; far, further, the furthest. Одновременно ставить more и -er нельзя. Равенство выражают конструкцией as fast as: Our new server is as fast as the old one.",
+   "forms": [
+    "short adjective + -er (+ than)",
+    "the + short adjective + -est",
+    "more + long adjective/adverb (+ than)",
+    "the most + long adjective/adverb",
+    "good/better/the best, bad/worse/the worst"
+   ],
+   "examples": [
+    "This laptop is faster than my old one.",
+    "It was the worst bug of the year.",
+    "She works more carefully than her colleagues.",
+    "Our new office is the biggest in the city.",
+    "He speaks English better than his manager."
+   ],
+   "ru_interference": "Русское сравнение всегда допускает слово более, поэтому появляется двойная степень: неверно This phone is more faster. Верно: This phone is faster. Ещё одна ошибка - потерянный артикль: неверно He is best in the team, верно He is the best in the team.",
+   "prerequisites": [
+    "a1_comparative_adjectives",
+    "a1_superlative_adjectives",
+    "a1_adverbs_manner"
+   ],
+   "exercises": [
+    {
+     "id": "a2_comparative_superlative_adjectives_adverbs_01",
+     "kind": "choice",
+     "prompt": "My new phone is ___ than the old one.",
+     "options": [
+      "more fast",
+      "faster",
+      "fastest",
+      "the fastest"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Fast - короткое слово, сравнительная степень образуется через -er; more с ним не ставится, а формы с fastest не сочетаются с than.",
+     "difficulty": 1
+    },
+    {
+     "id": "a2_comparative_superlative_adjectives_adverbs_02",
+     "kind": "choice",
+     "prompt": "It was ___ day of the year.",
+     "options": [
+      "the hotter",
+      "hotter",
+      "the hottest",
+      "most hot"
+     ],
+     "correct_index": 2,
+     "explanation_ru": "Превосходная степень короткого прилагательного: the + hottest с удвоением согласной.",
+     "difficulty": 1
+    },
+    {
+     "id": "a2_comparative_superlative_adjectives_adverbs_03",
+     "kind": "choice",
+     "prompt": "She works ___ than her colleagues.",
+     "options": [
+      "careful",
+      "more careful",
+      "more carefully",
+      "the most carefully"
+     ],
+     "correct_index": 2,
+     "explanation_ru": "Слово описывает глагол works, поэтому нужно наречие carefully, а длинные наречия сравниваются через more.",
+     "difficulty": 2
+    },
+    {
+     "id": "a2_comparative_superlative_adjectives_adverbs_04",
+     "kind": "choice",
+     "prompt": "The weather today is ___ than yesterday.",
+     "options": [
+      "bad",
+      "worse",
+      "worst",
+      "more bad"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "У bad неправильная сравнительная форма worse; worst - превосходная и требует the.",
+     "difficulty": 2
+    },
+    {
+     "id": "a2_comparative_superlative_adjectives_adverbs_05",
+     "kind": "gap",
+     "prompt": "This road is ___ (long) than that one.",
+     "answer": "longer",
+     "accept": [],
+     "explanation_ru": "Long - короткое прилагательное, поэтому просто добавляем -er.",
+     "difficulty": 1
+    },
+    {
+     "id": "a2_comparative_superlative_adjectives_adverbs_06",
+     "kind": "gap",
+     "prompt": "It is ___ (expensive) restaurant in the city.",
+     "answer": "the most expensive",
+     "accept": [],
+     "explanation_ru": "Expensive - длинное прилагательное: the most expensive, артикль обязателен.",
+     "difficulty": 2
+    },
+    {
+     "id": "a2_comparative_superlative_adjectives_adverbs_07",
+     "kind": "correct",
+     "prompt": "This is the more expensive laptop in the shop.",
+     "answer": "This is the most expensive laptop in the shop.",
+     "accept": [],
+     "explanation_ru": "Значение здесь - один из всех в магазине, значит нужна превосходная степень the most, а не сравнительная more.",
+     "difficulty": 3
+    },
+    {
+     "id": "a2_comparative_superlative_adjectives_adverbs_08",
+     "kind": "order",
+     "prompt": "oldest / this / the / is / building / in the city",
+     "answer": "This is the oldest building in the city.",
+     "accept": [],
+     "explanation_ru": "Порядок такой: подлежащее, глагол, the + превосходная степень, существительное, затем обстоятельство места.",
+     "difficulty": 3
+    }
+   ]
+  },
+  {
+   "id": "a2_second_conditional",
+   "level": "A2",
+   "band": "A2",
+   "topic": "Conditionals",
+   "title_en": "Second conditional",
+   "source_slug": "second-conditional",
+   "title_ru": "Второе условное предложение",
+   "summary_ru": "Второе условное описывает нереальную или маловероятную ситуацию в настоящем и будущем. В части с if стоит past simple, в главной части - would и глагол без to. Прошедшее время здесь не про прошлое, а про нереальность. Части можно менять местами: если if идёт первым, между частями ставится запятая. Отрицание: wouldn't и didn't. С глаголом be в советах принята форма were: If I were you, I would wait. Would никогда не ставится в часть с if. Вопрос строится как What would you do if ...?",
+   "forms": [
+    "If + subject + past simple, subject + would + V1",
+    "subject + would + V1 + if + subject + past simple",
+    "If I were you, I would + V1",
+    "subject + wouldn't + V1",
+    "What would + subject + V1 + if + past simple?"
+   ],
+   "examples": [
+    "If I had more time, I would learn Python.",
+    "I would buy a new laptop if it was cheaper.",
+    "If I were you, I would ask the manager.",
+    "What would you do if you lost your job?",
+    "She wouldn't stay here if she had another offer."
+   ],
+   "ru_interference": "Русское бы стоит в обеих частях, поэтому would переносят и в условие: неверно If I would have time, I would help you. Верно: If I had time, I would help you.",
+   "prerequisites": [
+    "a1_past_simple_regular_irregular",
+    "a1_will_and_shall"
+   ],
+   "exercises": [
+    {
+     "id": "a2_second_conditional_01",
+     "kind": "choice",
+     "prompt": "If I ___ more money, I would buy a car.",
+     "options": [
+      "have",
+      "will have",
+      "had",
+      "would have"
+     ],
+     "correct_index": 2,
+     "explanation_ru": "После if во втором условном стоит past simple, а would остаётся только в главной части.",
+     "difficulty": 1
+    },
+    {
+     "id": "a2_second_conditional_02",
+     "kind": "choice",
+     "prompt": "If she asked me, I ___ help her.",
+     "options": [
+      "will",
+      "would",
+      "am",
+      "did"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Главная часть второго условного строится как would + глагол без to.",
+     "difficulty": 1
+    },
+    {
+     "id": "a2_second_conditional_03",
+     "kind": "choice",
+     "prompt": "What would you do if you ___ your phone?",
+     "options": [
+      "lose",
+      "will lose",
+      "lost",
+      "would lose"
+     ],
+     "correct_index": 2,
+     "explanation_ru": "Would уже стоит в вопросе, значит в части с if нужен past simple lost.",
+     "difficulty": 2
+    },
+    {
+     "id": "a2_second_conditional_04",
+     "kind": "choice",
+     "prompt": "He wouldn't be so tired if he ___ earlier.",
+     "options": [
+      "go to bed",
+      "goes to bed",
+      "went to bed",
+      "would go to bed"
+     ],
+     "correct_index": 2,
+     "explanation_ru": "После if нужен past simple went; настоящее время и would здесь невозможны.",
+     "difficulty": 2
+    },
+    {
+     "id": "a2_second_conditional_05",
+     "kind": "gap",
+     "prompt": "If we ___ (have) more people, we would finish today.",
+     "answer": "had",
+     "accept": [],
+     "explanation_ru": "В части с if ставим past simple от have - had.",
+     "difficulty": 1
+    },
+    {
+     "id": "a2_second_conditional_06",
+     "kind": "gap",
+     "prompt": "I ___ (not/buy) that car if I were you.",
+     "answer": "wouldn't buy",
+     "accept": [
+      "would not buy"
+     ],
+     "explanation_ru": "Главная часть: would + not + глагол без to, сокращение wouldn't.",
+     "difficulty": 2
+    },
+    {
+     "id": "a2_second_conditional_07",
+     "kind": "correct",
+     "prompt": "If I would know the answer, I would tell you.",
+     "answer": "If I knew the answer, I would tell you.",
+     "accept": [
+      "If I knew the answer, I'd tell you."
+     ],
+     "explanation_ru": "После if would не ставится: нужен past simple knew.",
+     "difficulty": 3
+    },
+    {
+     "id": "a2_second_conditional_08",
+     "kind": "transform",
+     "prompt": "Rewrite the advice with 'If I were you': My advice is to call him.",
+     "answer": "If I were you, I would call him.",
+     "accept": [
+      "If I were you, I'd call him."
+     ],
+     "explanation_ru": "Совет через второе условное: устойчивая формула If I were you + would + глагол.",
+     "difficulty": 3
+    }
+   ]
+  },
+  {
+   "id": "a2_purpose_to_for",
+   "level": "A2",
+   "band": "A2",
+   "topic": "Connectors & discourse",
+   "title_en": "Expressing purpose with 'to' and 'for'",
+   "source_slug": "purpose-to-for",
+   "title_ru": "Цель действия: to и for",
+   "summary_ru": "Чтобы назвать цель действия, чаще всего используют to и глагол без изменений: I called to ask a question. Перед существительным ставится for: I called for help. Когда речь о назначении предмета, используют for и форму на -ing: This app is for sharing files. После for нельзя ставить инфинитив с to. В более официальной речи вместо to используют in order to. Отвечает такая конструкция на вопрос Why? Ошибка появляется, когда цель действия человека выражают через for и -ing вместо простого to.",
+   "forms": [
+    "verb + to + V1 (purpose of an action)",
+    "verb + for + noun",
+    "noun + is for + V-ing (function of a thing)",
+    "in order to + V1 (formal)",
+    "never: for + to + V1"
+   ],
+   "examples": [
+    "I went to the office to meet the new team.",
+    "She called the office for information.",
+    "This button is for restarting the router.",
+    "We use this app to share files.",
+    "He stopped to ask for directions."
+   ],
+   "ru_interference": "Русское для того чтобы даёт кальку for to: неверно I came here for to learn English. Верно: I came here to learn English. Ещё одна ошибка - for и инфинитив: неверно This tool is for check the code, верно This tool is for checking the code.",
+   "prerequisites": [
+    "a1_verbs_infinitive_verbs_ing"
+   ],
+   "exercises": [
+    {
+     "id": "a2_purpose_to_for_01",
+     "kind": "choice",
+     "prompt": "I went to the store ___ some bread.",
+     "options": [
+      "for buy",
+      "to buy",
+      "for buying",
+      "for to buy"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Цель действия человека выражается через to и глагол; сочетания for buy и for to buy в английском невозможны.",
+     "difficulty": 1
+    },
+    {
+     "id": "a2_purpose_to_for_02",
+     "kind": "choice",
+     "prompt": "She called the office ___ information.",
+     "options": [
+      "for",
+      "to",
+      "of",
+      "by"
+     ],
+     "correct_index": 0,
+     "explanation_ru": "Перед существительным information цель вводится предлогом for.",
+     "difficulty": 1
+    },
+    {
+     "id": "a2_purpose_to_for_03",
+     "kind": "choice",
+     "prompt": "This app is ___ photos.",
+     "options": [
+      "for edit",
+      "to editing",
+      "for editing",
+      "for to edit"
+     ],
+     "correct_index": 2,
+     "explanation_ru": "Назначение предмета описывается через for и форму на -ing.",
+     "difficulty": 2
+    },
+    {
+     "id": "a2_purpose_to_for_04",
+     "kind": "choice",
+     "prompt": "We stopped ___ a short break.",
+     "options": [
+      "to have",
+      "for have",
+      "for having",
+      "to having"
+     ],
+     "correct_index": 0,
+     "explanation_ru": "После to идёт глагол без изменений: to have; после for глагол в такой конструкции не ставится.",
+     "difficulty": 2
+    },
+    {
+     "id": "a2_purpose_to_for_05",
+     "kind": "gap",
+     "prompt": "He is saving money ___ buy a new laptop.",
+     "answer": "to",
+     "accept": [
+      "in order to"
+     ],
+     "explanation_ru": "Перед глаголом buy цель вводится через to.",
+     "difficulty": 1
+    },
+    {
+     "id": "a2_purpose_to_for_06",
+     "kind": "gap",
+     "prompt": "I use this website ___ (learn) English.",
+     "answer": "to learn",
+     "accept": [
+      "for learning"
+     ],
+     "explanation_ru": "Возможны два варианта: to и глагол или for и форма на -ing; смешивать их нельзя.",
+     "difficulty": 2
+    },
+    {
+     "id": "a2_purpose_to_for_07",
+     "kind": "correct",
+     "prompt": "I came to London for to study English.",
+     "answer": "I came to London to study English.",
+     "accept": [
+      "I came to London in order to study English."
+     ],
+     "explanation_ru": "For и to вместе не употребляются: остаётся только to перед глаголом.",
+     "difficulty": 3
+    },
+    {
+     "id": "a2_purpose_to_for_08",
+     "kind": "order",
+     "prompt": "to / I / the manager / ask / called / a question",
+     "answer": "I called the manager to ask a question.",
+     "accept": [],
+     "explanation_ru": "Сначала подлежащее и сказуемое с дополнением, затем цель через to и глагол.",
+     "difficulty": 3
+    }
+   ]
+  },
+  {
+   "id": "a2_however_although_time_connectors",
+   "level": "A2",
+   "band": "A2",
+   "topic": "Connectors & discourse",
+   "title_en": "However, although, because, so, and time connectors",
+   "source_slug": "however-although-time-connectors",
+   "title_ru": "Связки: however, although, because, so и время",
+   "summary_ru": "Because вводит причину и стоит перед целым предложением: We stayed at home because it was raining. So вводит следствие: It was raining, so we stayed at home. Although вводит уступку внутри одного предложения и не требует but во второй части. However - это связка между двумя отдельными предложениями, после неё ставится запятая. Because of и despite ставятся только перед существительным, а не перед предложением. Временные связки when, while, before, after, as soon as, until присоединяют придаточное с подлежащим и глаголом. После as soon as, when и until о будущем говорят в настоящем времени: I will call you when I arrive.",
+   "forms": [
+    "because + subject + verb (reason)",
+    "..., so + subject + verb (result)",
+    "Although + subject + verb, main clause",
+    "Sentence. However, + sentence",
+    "when / while / before / after / as soon as / until + subject + verb"
+   ],
+   "examples": [
+    "We stayed at home because it was raining.",
+    "It was raining, so we stayed at home.",
+    "Although it was late, we finished the report.",
+    "The hotel was cheap. However, it was very clean.",
+    "I will call you as soon as I finish the report."
+   ],
+   "ru_interference": "Русская пара хотя ..., но ... даёт лишнее but: неверно Although the price was high, but we bought it. Верно: Although the price was high, we bought it. Также however не соединяет части одного предложения через запятую.",
+   "prerequisites": [
+    "a1_basic_word_order_in_english"
+   ],
+   "exercises": [
+    {
+     "id": "a2_however_although_time_connectors_01",
+     "kind": "choice",
+     "prompt": "___ it was raining, we went to the park.",
+     "options": [
+      "Because of",
+      "Although",
+      "However",
+      "So"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Здесь два противопоставленных предложения, значит нужна уступка although; because of ставится только перед существительным, а however и so так предложения не соединяют.",
+     "difficulty": 1
+    },
+    {
+     "id": "a2_however_although_time_connectors_02",
+     "kind": "choice",
+     "prompt": "The room was small. ___, it was very comfortable.",
+     "options": [
+      "Although",
+      "Because",
+      "However",
+      "Despite"
+     ],
+     "correct_index": 2,
+     "explanation_ru": "После точки противопоставление вводит однословная связка however с запятой; although, because и despite в этой позиции невозможны.",
+     "difficulty": 1
+    },
+    {
+     "id": "a2_however_although_time_connectors_03",
+     "kind": "choice",
+     "prompt": "Wait for me here ___ I come back.",
+     "options": [
+      "during",
+      "until",
+      "while",
+      "for"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Until задаёт границу во времени - до момента возвращения; while означало бы одновременность, а during и for не присоединяют предложение с подлежащим.",
+     "difficulty": 2
+    },
+    {
+     "id": "a2_however_although_time_connectors_04",
+     "kind": "choice",
+     "prompt": "I will send the file ___ I get to the office.",
+     "options": [
+      "as soon",
+      "as soon as",
+      "as soon that",
+      "as long"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Целая связка выглядит как as soon as; усечённых вариантов as soon и as soon that не существует.",
+     "difficulty": 2
+    },
+    {
+     "id": "a2_however_although_time_connectors_05",
+     "kind": "gap",
+     "prompt": "___ it was very cold, we went for a walk.",
+     "answer": "Although",
+     "accept": [
+      "Though",
+      "Even though"
+     ],
+     "explanation_ru": "Нужна уступительная связка перед целым предложением.",
+     "difficulty": 1
+    },
+    {
+     "id": "a2_however_although_time_connectors_06",
+     "kind": "gap",
+     "prompt": "The bus was late, ___ I missed the meeting.",
+     "answer": "so",
+     "accept": [],
+     "explanation_ru": "Вторая часть - следствие первой, поэтому нужна связка so.",
+     "difficulty": 2
+    },
+    {
+     "id": "a2_however_although_time_connectors_07",
+     "kind": "correct",
+     "prompt": "Although the price was high, but we bought it.",
+     "answer": "Although the price was high, we bought it.",
+     "accept": [
+      "The price was high, but we bought it."
+     ],
+     "explanation_ru": "Although и but выражают одно и то же противопоставление, поэтому вместе не ставятся.",
+     "difficulty": 3
+    },
+    {
+     "id": "a2_however_although_time_connectors_08",
+     "kind": "correct",
+     "prompt": "The movie was long, however we enjoyed it.",
+     "answer": "The movie was long. However, we enjoyed it.",
+     "accept": [
+      "The movie was long; however, we enjoyed it."
+     ],
+     "explanation_ru": "However не соединяет два предложения запятой: перед ним нужна точка или точка с запятой, а после - запятая.",
+     "difficulty": 3
+    }
+   ]
+  },
+  {
+   "id": "a2_no_longer_any_longer_anymore",
+   "level": "A2",
+   "band": "A2",
+   "topic": "Connectors & discourse",
+   "title_en": "No longer, any longer, anymore",
+   "source_slug": "no-longer-any-longer-anymore",
+   "title_ru": "No longer, any longer, anymore",
+   "summary_ru": "Все три выражения означают, что ситуация была раньше, а сейчас закончилась. No longer стоит в середине предложения: перед основным глаголом и после be. С no longer глагол остаётся утвердительным, потому что отрицание уже внутри самого выражения. Any longer и anymore стоят в конце предложения и требуют отрицательной формы глагола: don't, doesn't, isn't. В американском варианте anymore пишется одним словом. Два отрицания в одном предложении недопустимы. No longer звучит немного строже и чаще встречается в письменной речи.",
+   "forms": [
+    "subject + no longer + main verb",
+    "subject + be + no longer + ...",
+    "subject + negative verb + ... + any longer",
+    "subject + negative verb + ... + anymore",
+    "never: negative verb + no longer"
+   ],
+   "examples": [
+    "I no longer use that app.",
+    "She doesn't live in Moscow anymore.",
+    "We don't need this server any longer.",
+    "He is no longer on our team.",
+    "They don't send paper letters anymore."
+   ],
+   "ru_interference": "Русское больше не переносят целиком и получают двойное отрицание: неверно He doesn't work here no longer. Верно: He doesn't work here any longer или He no longer works here.",
+   "prerequisites": [
+    "a1_present_simple",
+    "a1_adverbs_frequency"
+   ],
+   "exercises": [
+    {
+     "id": "a2_no_longer_any_longer_anymore_01",
+     "kind": "choice",
+     "prompt": "She ___ works in our department.",
+     "options": [
+      "no longer",
+      "not longer",
+      "any longer",
+      "anymore"
+     ],
+     "correct_index": 0,
+     "explanation_ru": "В середине предложения перед глаголом ставится только no longer; any longer и anymore идут в конец и требуют отрицательной формы.",
+     "difficulty": 1
+    },
+    {
+     "id": "a2_no_longer_any_longer_anymore_02",
+     "kind": "choice",
+     "prompt": "They don't sell that model ___.",
+     "options": [
+      "no longer",
+      "any longer",
+      "longer",
+      "since"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Глагол уже отрицательный, поэтому в конце ставится any longer, а не no longer.",
+     "difficulty": 1
+    },
+    {
+     "id": "a2_no_longer_any_longer_anymore_03",
+     "kind": "choice",
+     "prompt": "Tom isn't a student ___.",
+     "options": [
+      "no longer",
+      "anymore",
+      "not anymore",
+      "any more longer"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Isn't уже даёт отрицание, значит в конце нужно anymore; вариант с no longer создал бы второе отрицание.",
+     "difficulty": 2
+    },
+    {
+     "id": "a2_no_longer_any_longer_anymore_04",
+     "kind": "choice",
+     "prompt": "She ___ here anymore.",
+     "options": [
+      "works",
+      "doesn't work",
+      "no longer works",
+      "not work"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Anymore в конце предложения работает только с отрицательной формой глагола; вариант no longer works дал бы второй показатель отрицания рядом с anymore.",
+     "difficulty": 2
+    },
+    {
+     "id": "a2_no_longer_any_longer_anymore_05",
+     "kind": "gap",
+     "prompt": "I don't use that program ___.",
+     "answer": "anymore",
+     "accept": [
+      "any longer",
+      "any more"
+     ],
+     "explanation_ru": "Отрицание уже есть в don't, поэтому в конце нужно anymore или any longer.",
+     "difficulty": 1
+    },
+    {
+     "id": "a2_no_longer_any_longer_anymore_06",
+     "kind": "gap",
+     "prompt": "They ___ (not/need) our help anymore.",
+     "answer": "don't need",
+     "accept": [
+      "do not need"
+     ],
+     "explanation_ru": "Anymore требует отрицательной формы: don't need.",
+     "difficulty": 2
+    },
+    {
+     "id": "a2_no_longer_any_longer_anymore_07",
+     "kind": "correct",
+     "prompt": "He doesn't work here no longer.",
+     "answer": "He doesn't work here any longer.",
+     "accept": [
+      "He doesn't work here anymore.",
+      "He no longer works here."
+     ],
+     "explanation_ru": "В предложении два отрицания сразу; нужно оставить одно.",
+     "difficulty": 3
+    },
+    {
+     "id": "a2_no_longer_any_longer_anymore_08",
+     "kind": "transform",
+     "prompt": "Rewrite with 'no longer': She doesn't live in Berlin anymore.",
+     "answer": "She no longer lives in Berlin.",
+     "accept": [],
+     "explanation_ru": "No longer уходит в середину предложения, а глагол становится утвердительным: lives.",
+     "difficulty": 3
+    }
+   ]
+  },
+  {
+   "id": "a2_have_to_dont_have_to_must_mustnt",
+   "level": "A2",
+   "band": "A2",
+   "topic": "Modals",
+   "title_en": "Have to, don't have to, must, mustn't",
+   "source_slug": "have-to-dont-have-to-must-mustnt",
+   "title_ru": "Have to, don't have to, must, mustn't",
+   "summary_ru": "Have to описывает обязанность, которая идёт извне: правила, работа, расписание. В третьем лице используется has to, в прошедшем - had to для всех лиц. Must описывает сильную необходимость с точки зрения говорящего и не меняется по лицам. После must и mustn't глагол стоит без to. Mustn't - это запрет: делать нельзя. Don't have to - отсутствие необходимости: можно не делать. Вопрос с have to строится через do: Do I have to sign this? У must нет формы прошедшего времени, вместо неё используют had to.",
+   "forms": [
+    "subject + have/has to + V1",
+    "subject + don't/doesn't have to + V1",
+    "subject + must + V1 (no to)",
+    "subject + mustn't + V1 (prohibition)",
+    "Do/Does/Did + subject + have to + V1?"
+   ],
+   "examples": [
+    "I have to finish this report today.",
+    "She has to work on Saturday.",
+    "You don't have to come to the meeting.",
+    "You must save your work every hour.",
+    "You mustn't share your password."
+   ],
+   "ru_interference": "Русское не должен покрывает и запрет, и отсутствие обязанности, поэтому mustn't ставят вместо don't have to: неверно You mustn't come if you are busy в значении можно не приходить. Верно: You don't have to come if you are busy.",
+   "prerequisites": [
+    "a1_can_cant",
+    "a1_present_simple"
+   ],
+   "exercises": [
+    {
+     "id": "a2_have_to_dont_have_to_must_mustnt_01",
+     "kind": "choice",
+     "prompt": "You ___ use your phone during the exam. It is not allowed.",
+     "options": [
+      "mustn't",
+      "don't have to",
+      "must",
+      "not must"
+     ],
+     "correct_index": 0,
+     "explanation_ru": "Вторая фраза говорит о запрете, а запрет передаёт только mustn't; don't have to означало бы, что телефоном можно не пользоваться.",
+     "difficulty": 1
+    },
+    {
+     "id": "a2_have_to_dont_have_to_must_mustnt_02",
+     "kind": "choice",
+     "prompt": "He ___ get up early tomorrow. His first meeting is at 7 a.m.",
+     "options": [
+      "have to",
+      "has to",
+      "must to",
+      "haven't to"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "После he нужна форма has to; must to и haven't to в английском не существуют.",
+     "difficulty": 1
+    },
+    {
+     "id": "a2_have_to_dont_have_to_must_mustnt_03",
+     "kind": "choice",
+     "prompt": "___ you have to work last Saturday?",
+     "options": [
+      "Do",
+      "Did",
+      "Are",
+      "Have"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Речь о прошлом (last Saturday), поэтому вопрос строится через did.",
+     "difficulty": 2
+    },
+    {
+     "id": "a2_have_to_dont_have_to_must_mustnt_04",
+     "kind": "choice",
+     "prompt": "The course is free, so you ___ pay anything.",
+     "options": [
+      "mustn't",
+      "don't have to",
+      "don't must",
+      "haven't to"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Бесплатный курс означает отсутствие обязанности платить, а не запрет, поэтому нужно don't have to.",
+     "difficulty": 2
+    },
+    {
+     "id": "a2_have_to_dont_have_to_must_mustnt_05",
+     "kind": "gap",
+     "prompt": "I ___ (not/have to) get up early on Sundays.",
+     "answer": "don't have to",
+     "accept": [
+      "do not have to"
+     ],
+     "explanation_ru": "Отсутствие необходимости передаётся формой don't have to.",
+     "difficulty": 1
+    },
+    {
+     "id": "a2_have_to_dont_have_to_must_mustnt_06",
+     "kind": "gap",
+     "prompt": "Yesterday she ___ (have to) stay late at work.",
+     "answer": "had to",
+     "accept": [],
+     "explanation_ru": "В прошедшем времени для всех лиц используется had to.",
+     "difficulty": 2
+    },
+    {
+     "id": "a2_have_to_dont_have_to_must_mustnt_07",
+     "kind": "correct",
+     "prompt": "You must to wear a helmet in this area.",
+     "answer": "You must wear a helmet in this area.",
+     "accept": [],
+     "explanation_ru": "После must глагол ставится без частицы to.",
+     "difficulty": 3
+    },
+    {
+     "id": "a2_have_to_dont_have_to_must_mustnt_08",
+     "kind": "correct",
+     "prompt": "It is a holiday, so I mustn't go to the office.",
+     "answer": "It is a holiday, so I don't have to go to the office.",
+     "accept": [
+      "It is a holiday, so I do not have to go to the office."
+     ],
+     "explanation_ru": "Праздник снимает обязанность, а не вводит запрет, поэтому нужно don't have to.",
+     "difficulty": 3
+    }
+   ]
+  },
+  {
+   "id": "a2_may_and_might_whats_the_difference",
+   "level": "A2",
+   "band": "A2",
+   "topic": "Modals",
+   "title_en": "May and might: What's the difference?",
+   "source_slug": "may-and-might-whats-the-difference",
+   "title_ru": "May и might: в чём разница",
+   "summary_ru": "May и might говорят о возможности: что-то, вероятно, произойдёт или уже так обстоит. После обоих слов глагол стоит без to и без окончания -s. May звучит чуть увереннее, might - чуть осторожнее, но в обычной речи они почти взаимозаменяемы. Отрицание: may not и might not; сокращения mayn't не существует, а mightn't в американском варианте редкость. May используется в вежливой просьбе о разрешении: May I use your phone? Для разрешения might почти не употребляется. Возможное действие прямо сейчас передаётся через may или might и be с формой на -ing.",
+   "forms": [
+    "subject + may/might + V1",
+    "subject + may not / might not + V1",
+    "May I + V1? (polite permission)",
+    "subject + may/might + be + V-ing",
+    "never: may to, mays, mayn't"
+   ],
+   "examples": [
+    "It may rain later, so take an umbrella.",
+    "I might be late for the meeting.",
+    "She may not know about the change.",
+    "May I use your charger?",
+    "They might be working from home today."
+   ],
+   "ru_interference": "Русское может быть переводят наречием maybe или добавляют to: неверно He maybe come tomorrow и He may to come tomorrow. Верно: He may come tomorrow.",
+   "prerequisites": [
+    "a1_can_cant",
+    "a1_will_and_shall"
+   ],
+   "exercises": [
+    {
+     "id": "a2_may_and_might_whats_the_difference_01",
+     "kind": "choice",
+     "prompt": "Take an umbrella. It ___ rain this evening.",
+     "options": [
+      "may",
+      "may to",
+      "mays",
+      "maybe"
+     ],
+     "correct_index": 0,
+     "explanation_ru": "После may глагол идёт без to и без -s, а maybe - это наречие и место сказуемого не занимает.",
+     "difficulty": 1
+    },
+    {
+     "id": "a2_may_and_might_whats_the_difference_02",
+     "kind": "choice",
+     "prompt": "He ___ come to the party; he has a lot of work.",
+     "options": [
+      "may not",
+      "mayn't",
+      "not may",
+      "may not to"
+     ],
+     "correct_index": 0,
+     "explanation_ru": "Отрицание строится как may not; сокращения mayn't в английском нет.",
+     "difficulty": 1
+    },
+    {
+     "id": "a2_may_and_might_whats_the_difference_03",
+     "kind": "choice",
+     "prompt": "___ I use your pen for a moment?",
+     "options": [
+      "May",
+      "Might not",
+      "Do I may",
+      "May to"
+     ],
+     "correct_index": 0,
+     "explanation_ru": "Вежливая просьба о разрешении начинается с May I; вспомогательный do с may не используется.",
+     "difficulty": 2
+    },
+    {
+     "id": "a2_may_and_might_whats_the_difference_04",
+     "kind": "choice",
+     "prompt": "The meeting ___ start at 10, but nobody has confirmed it yet.",
+     "options": [
+      "might",
+      "must",
+      "cannot",
+      "may to"
+     ],
+     "correct_index": 0,
+     "explanation_ru": "Вторая часть говорит о неуверенности, поэтому подходит только might; must и cannot выражают уверенность.",
+     "difficulty": 2
+    },
+    {
+     "id": "a2_may_and_might_whats_the_difference_05",
+     "kind": "gap",
+     "prompt": "It is cloudy. It ___ (might/rain) later.",
+     "answer": "might rain",
+     "accept": [],
+     "explanation_ru": "После might глагол ставится без to и без окончания.",
+     "difficulty": 1
+    },
+    {
+     "id": "a2_may_and_might_whats_the_difference_06",
+     "kind": "gap",
+     "prompt": "She ___ (may/not/come) to the meeting; she is ill.",
+     "answer": "may not come",
+     "accept": [
+      "might not come"
+     ],
+     "explanation_ru": "Отрицательная возможность: may not и глагол без to.",
+     "difficulty": 2
+    },
+    {
+     "id": "a2_may_and_might_whats_the_difference_07",
+     "kind": "correct",
+     "prompt": "He may to call you tomorrow.",
+     "answer": "He may call you tomorrow.",
+     "accept": [],
+     "explanation_ru": "После may частица to не ставится.",
+     "difficulty": 3
+    },
+    {
+     "id": "a2_may_and_might_whats_the_difference_08",
+     "kind": "transform",
+     "prompt": "Rewrite using 'might': Perhaps she is at home.",
+     "answer": "She might be at home.",
+     "accept": [],
+     "explanation_ru": "Наречие perhaps заменяется на might, а глагол is становится инфинитивом be.",
+     "difficulty": 3
+    }
+   ]
+  },
+  {
+   "id": "a2_might_might_not",
+   "level": "A2",
+   "band": "A2",
+   "topic": "Modals",
+   "title_en": "Might, might not: Possibility",
+   "source_slug": "might-might-not",
+   "title_ru": "Might и might not: возможность",
+   "summary_ru": "Might говорит, что событие возможно, но говорящий не уверен. Форма одинакова для всех лиц: нет -s, нет to, нет вспомогательного do. Отрицание - might not, и оно стоит именно в таком порядке: might not be, а не might be not. Might часто описывает планы, в которых человек ещё сомневается: I might go to the gym. Возможное действие в данный момент передаётся через might be и форму на -ing. Вопросы с might почти не задают: вместо них говорят Do you think ... will ...? Might слабее, чем will: will говорит об уверенности, а might - примерно о равных шансах.",
+   "forms": [
+    "subject + might + V1",
+    "subject + might not + V1",
+    "subject + might be + adjective/noun",
+    "subject + might be + V-ing",
+    "Do you think + subject + will + V1? (instead of a might question)"
+   ],
+   "examples": [
+    "I might go to the gym after work.",
+    "We might not finish the project this week.",
+    "He might be in a meeting right now.",
+    "The shop might be closed on Sunday.",
+    "They might not like the new design."
+   ],
+   "ru_interference": "В русском глагол меняется по лицам, а после модального слова идёт инфинитив, поэтому появляются лишние -s и to: неверно She mights go и He might to go. Верно: She might go и He might go. Отрицание тоже переносят по русскому порядку: неверно He might be not at home, верно He might not be at home.",
+   "prerequisites": [
+    "a1_can_cant",
+    "a1_be_going_to_plans_predictions"
+   ],
+   "exercises": [
+    {
+     "id": "a2_might_might_not_01",
+     "kind": "choice",
+     "prompt": "She ___ answer now; she is driving.",
+     "options": [
+      "might not",
+      "might no",
+      "not might",
+      "mightn't to"
+     ],
+     "correct_index": 0,
+     "explanation_ru": "Отрицание образуется как might not перед глаголом без to.",
+     "difficulty": 1
+    },
+    {
+     "id": "a2_might_might_not_02",
+     "kind": "choice",
+     "prompt": "Where is Tom? He ___ be having lunch.",
+     "options": [
+      "might",
+      "might to",
+      "might is",
+      "mights"
+     ],
+     "correct_index": 0,
+     "explanation_ru": "После might идёт be без to и без изменений по лицам.",
+     "difficulty": 1
+    },
+    {
+     "id": "a2_might_might_not_03",
+     "kind": "choice",
+     "prompt": "Take a jacket. It ___ get cold in the evening.",
+     "options": [
+      "might",
+      "might to",
+      "is might",
+      "might be"
+     ],
+     "correct_index": 0,
+     "explanation_ru": "Смысловой глагол get идёт сразу после might; лишние be и to здесь не нужны.",
+     "difficulty": 2
+    },
+    {
+     "id": "a2_might_might_not_04",
+     "kind": "choice",
+     "prompt": "The train ___ on time because of the snow.",
+     "options": [
+      "might not be",
+      "might be not",
+      "might not to be",
+      "not might be"
+     ],
+     "correct_index": 0,
+     "explanation_ru": "Not ставится сразу после might, а be идёт последним: might not be.",
+     "difficulty": 2
+    },
+    {
+     "id": "a2_might_might_not_05",
+     "kind": "gap",
+     "prompt": "I am not sure. I ___ (might/take) a taxi.",
+     "answer": "might take",
+     "accept": [],
+     "explanation_ru": "После might глагол сохраняет начальную форму без to.",
+     "difficulty": 1
+    },
+    {
+     "id": "a2_might_might_not_06",
+     "kind": "gap",
+     "prompt": "They ___ (might/not/agree) with our plan.",
+     "answer": "might not agree",
+     "accept": [
+      "mightn't agree"
+     ],
+     "explanation_ru": "Порядок слов в отрицании: might not и затем глагол.",
+     "difficulty": 2
+    },
+    {
+     "id": "a2_might_might_not_07",
+     "kind": "correct",
+     "prompt": "He mights be at home now.",
+     "answer": "He might be at home now.",
+     "accept": [],
+     "explanation_ru": "Might не принимает окончание -s ни в одном лице.",
+     "difficulty": 3
+    },
+    {
+     "id": "a2_might_might_not_08",
+     "kind": "transform",
+     "prompt": "Rewrite using 'might not': Perhaps they will not come tomorrow.",
+     "answer": "They might not come tomorrow.",
+     "accept": [],
+     "explanation_ru": "Perhaps и will not заменяются одним might not, после которого глагол стоит без to.",
+     "difficulty": 3
+    }
+   ]
+  },
+  {
+   "id": "a2_should_shouldnt",
+   "level": "A2",
+   "band": "A2",
+   "topic": "Modals",
+   "title_en": "Should, shouldn't",
+   "source_slug": "should-shouldnt",
+   "title_ru": "Should и shouldn't: советы",
+   "summary_ru": "Should даёт совет или рекомендацию: так будет правильно и разумно. После should глагол стоит без to и без окончания -s. Отрицание shouldn't означает, что делать так не стоит. Вопрос строится без do: Should I call him? Часто совет смягчают формулой I think you should ... или I don't think you should ... Should слабее, чем must и have to: это рекомендация, а не обязанность. Should также говорит об ожидании: The bus should be here at six.",
+   "forms": [
+    "subject + should + V1",
+    "subject + shouldn't (should not) + V1",
+    "Should + subject + V1?",
+    "I think + subject + should + V1",
+    "I don't think + subject + should + V1"
+   ],
+   "examples": [
+    "You should drink more water.",
+    "He shouldn't work so late every day.",
+    "Should I call her now?",
+    "I think you should talk to your manager.",
+    "We shouldn't send the report without checking it."
+   ],
+   "ru_interference": "Русское должен подталкивает к must, а вопрос строят через do и добавляют to: неверно Do I should call him? и You should to rest. Верно: Should I call him? и You should rest.",
+   "prerequisites": [
+    "a1_can_cant",
+    "a1_questions"
+   ],
+   "exercises": [
+    {
+     "id": "a2_should_shouldnt_01",
+     "kind": "choice",
+     "prompt": "You look tired. You ___ go to bed early.",
+     "options": [
+      "should",
+      "should to",
+      "shoulds",
+      "are should"
+     ],
+     "correct_index": 0,
+     "explanation_ru": "После should глагол идёт без to, а сам should не меняется по лицам.",
+     "difficulty": 1
+    },
+    {
+     "id": "a2_should_shouldnt_02",
+     "kind": "choice",
+     "prompt": "___ I open the window?",
+     "options": [
+      "Should",
+      "Do should",
+      "Should to",
+      "Am I should"
+     ],
+     "correct_index": 0,
+     "explanation_ru": "Вопрос с should строится без вспомогательного do: Should I ...?",
+     "difficulty": 1
+    },
+    {
+     "id": "a2_should_shouldnt_03",
+     "kind": "choice",
+     "prompt": "He ___ eat so much sugar.",
+     "options": [
+      "shouldn't",
+      "doesn't should",
+      "shouldn't to",
+      "not should"
+     ],
+     "correct_index": 0,
+     "explanation_ru": "Отрицание образуется прямо от should: shouldn't, без do и без to.",
+     "difficulty": 2
+    },
+    {
+     "id": "a2_should_shouldnt_04",
+     "kind": "choice",
+     "prompt": "This email looks strange. You ___ open it.",
+     "options": [
+      "shouldn't",
+      "should",
+      "have to",
+      "must"
+     ],
+     "correct_index": 0,
+     "explanation_ru": "Подозрительное письмо - причина отговорить, поэтому нужен отрицательный совет shouldn't.",
+     "difficulty": 2
+    },
+    {
+     "id": "a2_should_shouldnt_05",
+     "kind": "gap",
+     "prompt": "You ___ (should/not/drive) so fast.",
+     "answer": "shouldn't drive",
+     "accept": [
+      "should not drive"
+     ],
+     "explanation_ru": "Совет с отрицанием: shouldn't и глагол без to.",
+     "difficulty": 1
+    },
+    {
+     "id": "a2_should_shouldnt_06",
+     "kind": "gap",
+     "prompt": "I think you ___ (should/talk) to your manager about it.",
+     "answer": "should talk",
+     "accept": [],
+     "explanation_ru": "После should глагол сохраняет начальную форму.",
+     "difficulty": 2
+    },
+    {
+     "id": "a2_should_shouldnt_07",
+     "kind": "correct",
+     "prompt": "You should to check the file before sending.",
+     "answer": "You should check the file before sending.",
+     "accept": [],
+     "explanation_ru": "После should частица to не ставится.",
+     "difficulty": 3
+    },
+    {
+     "id": "a2_should_shouldnt_08",
+     "kind": "correct",
+     "prompt": "Do I should call him now?",
+     "answer": "Should I call him now?",
+     "accept": [],
+     "explanation_ru": "В вопросе should сам выходит на первое место, вспомогательный do не нужен.",
+     "difficulty": 3
+    }
+   ]
+  },
+  {
+   "id": "a2_subject_pronouns_object_pronouns_possessive_pronouns_possessive_adj",
+   "level": "A2",
+   "band": "A2",
+   "topic": "Nouns & articles",
+   "title_en": "Subject and object pronouns, possessive pronouns and adjectives",
+   "source_slug": "subject-pronouns-object-pronouns-possessive-pronouns-possessive-adjectives",
+   "title_ru": "Личные и притяжательные местоимения",
+   "summary_ru": "Местоимения-подлежащие I, you, he, she, it, we, they стоят перед глаголом. Местоимения-дополнения me, you, him, her, it, us, them стоят после глагола и после предлога. Притяжательные прилагательные my, your, his, her, its, our, their всегда стоят перед существительным. Притяжательные местоимения mine, yours, his, hers, ours, theirs существительное заменяют и стоят одни. Артикль вместе с притяжательным словом не ставится: не the my laptop, а my laptop. Its - притяжательная форма, а it's - сокращение от it is; на письме их различает апостроф. У hers, ours, yours и theirs апострофа нет.",
+   "forms": [
+    "subject pronoun + verb: She works here.",
+    "verb / preposition + object pronoun: I called her.",
+    "possessive adjective + noun: my laptop",
+    "possessive pronoun without a noun: This laptop is mine.",
+    "its = possessive, it's = it is"
+   ],
+   "examples": [
+    "She sent me the file.",
+    "We work with them every day.",
+    "This is my desk and that one is hers.",
+    "Their office is on the third floor.",
+    "The company changed its name last year."
+   ],
+   "ru_interference": "В русском притяжательное слово выглядит одинаково и перед существительным, и вместо него - мой ноутбук, ноутбук мой, поэтому появляется неверное This book is my. Верно: This book is mine. Ещё одна ошибка - пропуск притяжательного там, где русский обходится без него: неверно She washed hands, верно She washed her hands.",
+   "prerequisites": [
+    "a1_object_pronouns",
+    "a1_possessive_adjectives",
+    "a1_whose_possessive_s"
+   ],
+   "exercises": [
+    {
+     "id": "a2_subject_pronouns_object_pronouns_possessive_pronouns_possessive_adj_01",
+     "kind": "choice",
+     "prompt": "This is not my bag. ___ is black.",
+     "options": [
+      "My",
+      "Mine",
+      "Me",
+      "My one"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Существительного после местоимения нет, поэтому нужна самостоятельная форма mine.",
+     "difficulty": 1
+    },
+    {
+     "id": "a2_subject_pronouns_object_pronouns_possessive_pronouns_possessive_adj_02",
+     "kind": "choice",
+     "prompt": "I saw Anna yesterday and I gave ___ the documents.",
+     "options": [
+      "she",
+      "her",
+      "hers",
+      "herself"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "После глагола gave стоит дополнение, а значит форма her.",
+     "difficulty": 1
+    },
+    {
+     "id": "a2_subject_pronouns_object_pronouns_possessive_pronouns_possessive_adj_03",
+     "kind": "choice",
+     "prompt": "___ office is on the second floor.",
+     "options": [
+      "Their",
+      "They",
+      "Theirs",
+      "Them"
+     ],
+     "correct_index": 0,
+     "explanation_ru": "Перед существительным office нужна притяжательная форма their.",
+     "difficulty": 2
+    },
+    {
+     "id": "a2_subject_pronouns_object_pronouns_possessive_pronouns_possessive_adj_04",
+     "kind": "choice",
+     "prompt": "The car is old, but ___ engine is new.",
+     "options": [
+      "it's",
+      "its",
+      "it",
+      "him"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Здесь принадлежность, поэтому пишем its без апострофа; it's означало бы it is.",
+     "difficulty": 2
+    },
+    {
+     "id": "a2_subject_pronouns_object_pronouns_possessive_pronouns_possessive_adj_05",
+     "kind": "gap",
+     "prompt": "This is Anna's coat. It is ___.",
+     "answer": "hers",
+     "accept": [],
+     "explanation_ru": "Существительное не повторяется, значит нужна самостоятельная форма hers без апострофа.",
+     "difficulty": 1
+    },
+    {
+     "id": "a2_subject_pronouns_object_pronouns_possessive_pronouns_possessive_adj_06",
+     "kind": "gap",
+     "prompt": "I do not know these people. Do you know ___?",
+     "answer": "them",
+     "accept": [],
+     "explanation_ru": "После глагола know стоит дополнение them.",
+     "difficulty": 2
+    },
+    {
+     "id": "a2_subject_pronouns_object_pronouns_possessive_pronouns_possessive_adj_07",
+     "kind": "correct",
+     "prompt": "This car is my.",
+     "answer": "This car is mine.",
+     "accept": [],
+     "explanation_ru": "Без существительного после местоимения используется форма mine.",
+     "difficulty": 3
+    },
+    {
+     "id": "a2_subject_pronouns_object_pronouns_possessive_pronouns_possessive_adj_08",
+     "kind": "correct",
+     "prompt": "She showed we her new office.",
+     "answer": "She showed us her new office.",
+     "accept": [],
+     "explanation_ru": "После глагола showed нужна форма дополнения us, а не подлежащего we.",
+     "difficulty": 3
+    }
+   ]
+  },
+  {
+   "id": "a2_do_vs_make_difference",
+   "level": "A2",
+   "band": "A2",
+   "topic": "Phrasal verbs & lexis",
+   "title_en": "Do vs Make: What's the difference?",
+   "source_slug": "do-vs-make-difference",
+   "title_ru": "Do и make: в чём разница",
+   "summary_ru": "Do обычно относится к работе, заданиям и действиям вообще: do homework, do the dishes, do a job, do exercise. Make относится к созданию результата: make a cake, make coffee, make a plan. Make используется с решениями и словами: make a decision, make a mistake, make a call, make a promise. Do стоит перед неопределёнными словами: do something, do nothing, do anything. Устойчиво: do someone a favor, но make someone happy. Многие сочетания просто заучиваются как готовые пары. В прошедшем времени формы неправильные: did и made.",
+   "forms": [
+    "do + work / task: do homework, do the dishes",
+    "do + something / nothing / anything",
+    "make + result: make a cake, make coffee",
+    "make + a decision / a mistake / a call / a plan",
+    "do someone a favor"
+   ],
+   "examples": [
+    "I have to do my homework tonight.",
+    "He made a mistake in the report.",
+    "We make plans every Monday morning.",
+    "Could you do me a favor?",
+    "She made a phone call to the client."
+   ],
+   "ru_interference": "В русском один глагол делать, поэтому сочетания смешивают: неверно I did a mistake и make homework. Верно: I made a mistake и do homework.",
+   "prerequisites": [
+    "a1_present_simple",
+    "a1_past_simple_regular_irregular"
+   ],
+   "exercises": [
+    {
+     "id": "a2_do_vs_make_difference_01",
+     "kind": "choice",
+     "prompt": "Sorry, I think I ___ a mistake.",
+     "options": [
+      "did",
+      "made",
+      "took",
+      "gave"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "С существительным mistake устойчиво сочетается только make, в прошедшем времени made.",
+     "difficulty": 1
+    },
+    {
+     "id": "a2_do_vs_make_difference_02",
+     "kind": "choice",
+     "prompt": "I have to ___ my homework tonight.",
+     "options": [
+      "make",
+      "do",
+      "take",
+      "give"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Homework - это задание и работа, поэтому используется do.",
+     "difficulty": 1
+    },
+    {
+     "id": "a2_do_vs_make_difference_03",
+     "kind": "choice",
+     "prompt": "We need to ___ a decision before Friday.",
+     "options": [
+      "do",
+      "make",
+      "give",
+      "put"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Устойчивое сочетание - make a decision.",
+     "difficulty": 2
+    },
+    {
+     "id": "a2_do_vs_make_difference_04",
+     "kind": "choice",
+     "prompt": "Could you ___ me a favor?",
+     "options": [
+      "make",
+      "do",
+      "give",
+      "put"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Просьба об услуге всегда звучит как do someone a favor.",
+     "difficulty": 2
+    },
+    {
+     "id": "a2_do_vs_make_difference_05",
+     "kind": "gap",
+     "prompt": "Please do not ___ (do/make) so much noise.",
+     "answer": "make",
+     "accept": [],
+     "explanation_ru": "Noise относится к тому, что создаётся, поэтому нужен make.",
+     "difficulty": 1
+    },
+    {
+     "id": "a2_do_vs_make_difference_06",
+     "kind": "gap",
+     "prompt": "He ___ (do/make) the dishes after dinner yesterday.",
+     "answer": "did",
+     "accept": [],
+     "explanation_ru": "Do the dishes - работа по дому; в прошедшем времени форма did.",
+     "difficulty": 2
+    },
+    {
+     "id": "a2_do_vs_make_difference_07",
+     "kind": "correct",
+     "prompt": "I did a mistake in the last email.",
+     "answer": "I made a mistake in the last email.",
+     "accept": [],
+     "explanation_ru": "С mistake употребляется make, значит нужна форма made.",
+     "difficulty": 3
+    },
+    {
+     "id": "a2_do_vs_make_difference_08",
+     "kind": "correct",
+     "prompt": "She makes her homework every evening.",
+     "answer": "She does her homework every evening.",
+     "accept": [],
+     "explanation_ru": "Homework сочетается с do, а в третьем лице форма does.",
+     "difficulty": 3
+    }
+   ]
+  },
+  {
+   "id": "a2_use_verb_go_english",
+   "level": "A2",
+   "band": "A2",
+   "topic": "Phrasal verbs & lexis",
+   "title_en": "How to use the verb 'go' in English",
+   "source_slug": "use-verb-go-english",
+   "title_ru": "Как использовать глагол go",
+   "summary_ru": "Go означает движение из одного места в другое, а место назначения вводится предлогом to: go to the office. Со словами home, there, here, abroad и upstairs предлог to не ставится: go home. Свободное время и спорт описываются формой go и глаголом на -ing: go shopping, go swimming, go running. С существительным используется go for: go for a walk, go for a swim. Способ передвижения вводится через by: go by bus, go by train, но пешком - on foot. Формы неправильные: go, went, gone. Go out значит провести время вне дома.",
+   "forms": [
+    "go to + place: go to the office",
+    "go home / go there (no to)",
+    "go + V-ing: go shopping, go swimming",
+    "go for a + noun: go for a walk",
+    "go by + transport, but: on foot"
+   ],
+   "examples": [
+    "I go to the office three days a week.",
+    "She went home early yesterday.",
+    "We often go shopping on Saturday.",
+    "Let's go for a walk after lunch.",
+    "He goes to work by train."
+   ],
+   "ru_interference": "Русское домой воспринимают как место с предлогом, а поход за покупками - как движение в место: неверно I go to home after work и We go to shopping. Верно: I go home after work и We go shopping.",
+   "prerequisites": [
+    "a1_present_simple",
+    "a1_at_in_on_prepositions_of_place",
+    "a1_be_going_to_plans_predictions"
+   ],
+   "exercises": [
+    {
+     "id": "a2_use_verb_go_english_01",
+     "kind": "choice",
+     "prompt": "After the meeting I usually go ___.",
+     "options": [
+      "to home",
+      "home",
+      "at home",
+      "in home"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Со словом home предлог не ставится вообще: go home.",
+     "difficulty": 1
+    },
+    {
+     "id": "a2_use_verb_go_english_02",
+     "kind": "choice",
+     "prompt": "We often go ___ on Saturday morning.",
+     "options": [
+      "shopping",
+      "to shopping",
+      "for shopping",
+      "shop"
+     ],
+     "correct_index": 0,
+     "explanation_ru": "Занятие после go выражается формой на -ing без предлога.",
+     "difficulty": 1
+    },
+    {
+     "id": "a2_use_verb_go_english_03",
+     "kind": "choice",
+     "prompt": "He goes to work ___ bus.",
+     "options": [
+      "by",
+      "on",
+      "with",
+      "in"
+     ],
+     "correct_index": 0,
+     "explanation_ru": "Способ передвижения вводится предлогом by и существительным без артикля.",
+     "difficulty": 2
+    },
+    {
+     "id": "a2_use_verb_go_english_04",
+     "kind": "choice",
+     "prompt": "Let's go ___ a swim after work.",
+     "options": [
+      "for",
+      "to",
+      "on",
+      "at"
+     ],
+     "correct_index": 0,
+     "explanation_ru": "Перед существительным цель похода вводится сочетанием go for.",
+     "difficulty": 2
+    },
+    {
+     "id": "a2_use_verb_go_english_05",
+     "kind": "gap",
+     "prompt": "She ___ (go) to the gym every Monday.",
+     "answer": "goes",
+     "accept": [],
+     "explanation_ru": "Настоящее простое время, третье лицо: goes.",
+     "difficulty": 1
+    },
+    {
+     "id": "a2_use_verb_go_english_06",
+     "kind": "gap",
+     "prompt": "Last summer we ___ (go) swimming every day.",
+     "answer": "went",
+     "accept": [],
+     "explanation_ru": "Прошедшее время от go - неправильная форма went.",
+     "difficulty": 2
+    },
+    {
+     "id": "a2_use_verb_go_english_07",
+     "kind": "correct",
+     "prompt": "I go to home at six every day.",
+     "answer": "I go home at six every day.",
+     "accept": [],
+     "explanation_ru": "Home здесь наречие, поэтому предлог to лишний.",
+     "difficulty": 3
+    },
+    {
+     "id": "a2_use_verb_go_english_08",
+     "kind": "correct",
+     "prompt": "Yesterday they went to fishing.",
+     "answer": "Yesterday they went fishing.",
+     "accept": [],
+     "explanation_ru": "После go занятие идёт в форме на -ing без предлога.",
+     "difficulty": 3
+    }
+   ]
+  }
+ ]
+}

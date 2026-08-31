@@ -1,0 +1,1687 @@
+{
+  "items": [
+    {
+      "id": "b1_v_schedule",
+      "level": "B1",
+      "word": "schedule",
+      "pos": "noun",
+      "ipa_us": "/ˈskɛdʒul/",
+      "translation_ru": "расписание, график",
+      "example_en": "The whole project is now two weeks behind schedule.",
+      "collocations": [
+        "a tight schedule",
+        "ahead of schedule",
+        "behind schedule"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "b1_v_deadline",
+      "level": "B1",
+      "word": "deadline",
+      "pos": "noun",
+      "ipa_us": "/ˈdɛdˌlaɪn/",
+      "translation_ru": "срок, дедлайн",
+      "example_en": "We have to finish the tests before the deadline on Friday.",
+      "collocations": [
+        "meet a deadline",
+        "miss a deadline",
+        "a tight deadline"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "b1_v_colleague",
+      "level": "B1",
+      "word": "colleague",
+      "pos": "noun",
+      "ipa_us": "/ˈkɑlig/",
+      "translation_ru": "коллега, сослуживец",
+      "example_en": "I asked a colleague to check my code before I sent it.",
+      "collocations": [
+        "a close colleague",
+        "a former colleague"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "b1_v_process",
+      "level": "B1",
+      "word": "process",
+      "pos": "noun",
+      "ipa_us": "/ˈprɑˌsɛs/",
+      "translation_ru": "процесс, порядок действий",
+      "example_en": "The whole process takes about three days from start to finish.",
+      "collocations": [
+        "a long process",
+        "speed up the process"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "b1_v_agreement",
+      "level": "B1",
+      "word": "agreement",
+      "pos": "noun",
+      "ipa_us": "/əˈgrimənt/",
+      "translation_ru": "соглашение, договорённость",
+      "example_en": "We reached an agreement about the price after two meetings.",
+      "collocations": [
+        "reach an agreement",
+        "sign an agreement"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "b1_v_report",
+      "level": "B1",
+      "word": "report",
+      "pos": "noun",
+      "ipa_us": "/rɪˈpɔrt/",
+      "translation_ru": "отчёт, доклад",
+      "example_en": "She sent the monthly report to her manager on Monday morning.",
+      "collocations": [
+        "write a report",
+        "a detailed report"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "b1_v_client",
+      "level": "B1",
+      "word": "client",
+      "pos": "noun",
+      "ipa_us": "/ˈklaɪənt/",
+      "translation_ru": "клиент, заказчик",
+      "example_en": "The client asked for a demo before the end of the month.",
+      "collocations": [
+        "a regular client",
+        "meet a client"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "b1_v_budget",
+      "level": "B1",
+      "word": "budget",
+      "pos": "noun",
+      "ipa_us": "/ˈbʌdʒɪt/",
+      "translation_ru": "бюджет, смета",
+      "example_en": "We cannot buy new laptops because the budget is too small.",
+      "collocations": [
+        "a tight budget",
+        "stay within budget"
+      ],
+      "topic": "money"
+    },
+    {
+      "id": "b1_v_salary",
+      "level": "B1",
+      "word": "salary",
+      "pos": "noun",
+      "ipa_us": "/ˈsæləri/",
+      "translation_ru": "зарплата, оклад",
+      "example_en": "He changed jobs because the salary was much better.",
+      "collocations": [
+        "a high salary",
+        "a monthly salary"
+      ],
+      "topic": "money"
+    },
+    {
+      "id": "b1_v_staff",
+      "level": "B1",
+      "word": "staff",
+      "pos": "noun",
+      "ipa_us": "/stæf/",
+      "translation_ru": "персонал, сотрудники",
+      "example_en": "The whole staff has to take a security course this year.",
+      "collocations": [
+        "train the staff",
+        "a staff member"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "b1_v_department",
+      "level": "B1",
+      "word": "department",
+      "pos": "noun",
+      "ipa_us": "/dɪˈpɑrtmənt/",
+      "translation_ru": "отдел, подразделение",
+      "example_en": "The IT department fixed the network in about two hours.",
+      "collocations": [
+        "the sales department",
+        "head of department"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "b1_v_contract",
+      "level": "B1",
+      "word": "contract",
+      "pos": "noun",
+      "ipa_us": "/ˈkɑnˌtrækt/",
+      "translation_ru": "договор, контракт",
+      "example_en": "We signed the contract for another twelve months.",
+      "collocations": [
+        "sign a contract",
+        "a short-term contract"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "b1_v_skill",
+      "level": "B1",
+      "word": "skill",
+      "pos": "noun",
+      "ipa_us": "/skɪl/",
+      "translation_ru": "навык, умение",
+      "example_en": "Writing clear emails is a useful skill in our job.",
+      "collocations": [
+        "a useful skill",
+        "develop a skill"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "b1_v_experience",
+      "level": "B1",
+      "word": "experience",
+      "pos": "noun",
+      "ipa_us": "/ɪkˈspɪriəns/",
+      "translation_ru": "опыт",
+      "example_en": "She has five years of experience in software testing.",
+      "collocations": [
+        "work experience",
+        "years of experience"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "b1_v_responsibility",
+      "level": "B1",
+      "word": "responsibility",
+      "pos": "noun",
+      "ipa_us": "/rɪˌspɑnsəˈbɪləti/",
+      "translation_ru": "ответственность, обязанность",
+      "example_en": "Checking the backups is my responsibility every Friday.",
+      "collocations": [
+        "take responsibility",
+        "share responsibility"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "b1_v_progress",
+      "level": "B1",
+      "word": "progress",
+      "pos": "noun",
+      "ipa_us": "/ˈprɑgrəs/",
+      "translation_ru": "прогресс, продвижение",
+      "example_en": "We make good progress when nobody interrupts us.",
+      "collocations": [
+        "make progress",
+        "slow progress"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "b1_v_issue",
+      "level": "B1",
+      "word": "issue",
+      "pos": "noun",
+      "ipa_us": "/ˈɪʃu/",
+      "translation_ru": "проблема, вопрос",
+      "example_en": "There is a small issue with the login page on old phones.",
+      "collocations": [
+        "raise an issue",
+        "fix an issue"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "b1_v_solution",
+      "level": "B1",
+      "word": "solution",
+      "pos": "noun",
+      "ipa_us": "/səˈluʃən/",
+      "translation_ru": "решение, выход",
+      "example_en": "The simplest solution was to restart the service every night.",
+      "collocations": [
+        "find a solution",
+        "a simple solution"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "b1_v_training",
+      "level": "B1",
+      "word": "training",
+      "pos": "noun",
+      "ipa_us": "/ˈtreɪnɪŋ/",
+      "translation_ru": "обучение, подготовка",
+      "example_en": "New employees get two weeks of training before they start.",
+      "collocations": [
+        "staff training",
+        "a training course"
+      ],
+      "topic": "study"
+    },
+    {
+      "id": "b1_v_interview",
+      "level": "B1",
+      "word": "interview",
+      "pos": "noun",
+      "ipa_us": "/ˈɪntɚˌvju/",
+      "translation_ru": "собеседование, интервью",
+      "example_en": "My interview for the developer job is on Thursday.",
+      "collocations": [
+        "a job interview",
+        "have an interview"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "b1_v_feedback",
+      "level": "B1",
+      "word": "feedback",
+      "pos": "noun",
+      "ipa_us": "/ˈfidˌbæk/",
+      "translation_ru": "обратная связь, отзывы",
+      "example_en": "Our manager gives useful feedback after every release.",
+      "collocations": [
+        "give feedback",
+        "honest feedback"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "b1_v_appointment",
+      "level": "B1",
+      "word": "appointment",
+      "pos": "noun",
+      "ipa_us": "/əˈpɔɪntmənt/",
+      "translation_ru": "встреча, приём",
+      "example_en": "I have an appointment with the dentist at six o'clock.",
+      "collocations": [
+        "make an appointment",
+        "cancel an appointment"
+      ],
+      "topic": "time"
+    },
+    {
+      "id": "b1_v_opportunity",
+      "level": "B1",
+      "word": "opportunity",
+      "pos": "noun",
+      "ipa_us": "/ˌɑpɚˈtunəti/",
+      "translation_ru": "возможность, шанс",
+      "example_en": "This job is a great opportunity to learn new tools.",
+      "collocations": [
+        "a great opportunity",
+        "miss an opportunity"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "b1_v_goal",
+      "level": "B1",
+      "word": "goal",
+      "pos": "noun",
+      "ipa_us": "/goʊl/",
+      "translation_ru": "цель",
+      "example_en": "Our main goal this year is to make the app faster.",
+      "collocations": [
+        "set a goal",
+        "reach a goal"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "b1_v_priority",
+      "level": "B1",
+      "word": "priority",
+      "pos": "noun",
+      "ipa_us": "/praɪˈɔrəti/",
+      "translation_ru": "приоритет",
+      "example_en": "Security is our top priority in every release.",
+      "collocations": [
+        "a top priority",
+        "set priorities"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "b1_v_delay",
+      "level": "B1",
+      "word": "delay",
+      "pos": "noun",
+      "ipa_us": "/dɪˈleɪ/",
+      "translation_ru": "задержка, опоздание",
+      "example_en": "There was a short delay because the server was down.",
+      "collocations": [
+        "a long delay",
+        "without delay"
+      ],
+      "topic": "time"
+    },
+    {
+      "id": "b1_v_decision",
+      "level": "B1",
+      "word": "decision",
+      "pos": "noun",
+      "ipa_us": "/dɪˈsɪʒən/",
+      "translation_ru": "решение",
+      "example_en": "It was a hard decision, but we chose the cheaper option.",
+      "collocations": [
+        "make a decision",
+        "a final decision"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "b1_v_quality",
+      "level": "B1",
+      "word": "quality",
+      "pos": "noun",
+      "ipa_us": "/ˈkwɑləti/",
+      "translation_ru": "качество",
+      "example_en": "The quality of the translation was better than we expected.",
+      "collocations": [
+        "high quality",
+        "improve the quality"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "b1_v_risk",
+      "level": "B1",
+      "word": "risk",
+      "pos": "noun",
+      "ipa_us": "/rɪsk/",
+      "translation_ru": "риск",
+      "example_en": "There is a small risk that the update will break the site.",
+      "collocations": [
+        "take a risk",
+        "a serious risk"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "b1_v_effort",
+      "level": "B1",
+      "word": "effort",
+      "pos": "noun",
+      "ipa_us": "/ˈɛfɚt/",
+      "translation_ru": "усилие, старание",
+      "example_en": "It takes a lot of effort to keep the documents up to date.",
+      "collocations": [
+        "make an effort",
+        "a big effort"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "b1_v_result",
+      "level": "B1",
+      "word": "result",
+      "pos": "noun",
+      "ipa_us": "/rɪˈzʌlt/",
+      "translation_ru": "результат",
+      "example_en": "The results of the test surprised everyone in the office.",
+      "collocations": [
+        "get a result",
+        "as a result"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "b1_v_reason",
+      "level": "B1",
+      "word": "reason",
+      "pos": "noun",
+      "ipa_us": "/ˈrizən/",
+      "translation_ru": "причина, довод",
+      "example_en": "The main reason for the delay was a missing file.",
+      "collocations": [
+        "the main reason",
+        "for this reason"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "b1_v_advantage",
+      "level": "B1",
+      "word": "advantage",
+      "pos": "noun",
+      "ipa_us": "/ədˈvæntɪdʒ/",
+      "translation_ru": "преимущество, плюс",
+      "example_en": "The main advantage of this tool is that it is free.",
+      "collocations": [
+        "a big advantage",
+        "take advantage of"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "b1_v_opinion",
+      "level": "B1",
+      "word": "opinion",
+      "pos": "noun",
+      "ipa_us": "/əˈpɪnjən/",
+      "translation_ru": "мнение, взгляд",
+      "example_en": "Everyone in the team had a different opinion about the design.",
+      "collocations": [
+        "a strong opinion",
+        "change your opinion"
+      ],
+      "topic": "feelings"
+    },
+    {
+      "id": "b1_v_confidence",
+      "level": "B1",
+      "word": "confidence",
+      "pos": "noun",
+      "ipa_us": "/ˈkɑnfədəns/",
+      "translation_ru": "уверенность (в себе)",
+      "example_en": "He speaks with confidence when he knows the topic well.",
+      "collocations": [
+        "lose confidence",
+        "full of confidence"
+      ],
+      "topic": "feelings"
+    },
+    {
+      "id": "b1_v_stress",
+      "level": "B1",
+      "word": "stress",
+      "pos": "noun",
+      "ipa_us": "/strɛs/",
+      "translation_ru": "стресс, напряжение",
+      "example_en": "Too much stress at work makes it hard to sleep.",
+      "collocations": [
+        "under stress",
+        "deal with stress"
+      ],
+      "topic": "health"
+    },
+    {
+      "id": "b1_v_pressure",
+      "level": "B1",
+      "word": "pressure",
+      "pos": "noun",
+      "ipa_us": "/ˈprɛʃɚ/",
+      "translation_ru": "давление, нагрузка",
+      "example_en": "I don't work well under pressure late in the evening.",
+      "collocations": [
+        "under pressure",
+        "put pressure on someone"
+      ],
+      "topic": "feelings"
+    },
+    {
+      "id": "b1_v_mood",
+      "level": "B1",
+      "word": "mood",
+      "pos": "noun",
+      "ipa_us": "/mud/",
+      "translation_ru": "настроение",
+      "example_en": "She is in a good mood because the release went well.",
+      "collocations": [
+        "in a good mood",
+        "a bad mood"
+      ],
+      "topic": "feelings"
+    },
+    {
+      "id": "b1_v_advice",
+      "level": "B1",
+      "word": "advice",
+      "pos": "noun",
+      "ipa_us": "/ədˈvaɪs/",
+      "translation_ru": "совет, советы",
+      "example_en": "She gave me good advice about my presentation.",
+      "collocations": [
+        "give advice",
+        "a piece of advice"
+      ],
+      "topic": "people"
+    },
+    {
+      "id": "b1_v_device",
+      "level": "B1",
+      "word": "device",
+      "pos": "noun",
+      "ipa_us": "/dɪˈvaɪs/",
+      "translation_ru": "устройство, прибор",
+      "example_en": "The app has to work on every device, not only on phones.",
+      "collocations": [
+        "a mobile device",
+        "a smart device"
+      ],
+      "topic": "tech"
+    },
+    {
+      "id": "b1_v_software",
+      "level": "B1",
+      "word": "software",
+      "pos": "noun",
+      "ipa_us": "/ˈsɔftˌwɛr/",
+      "translation_ru": "программное обеспечение",
+      "example_en": "We use free software for most of our internal tools.",
+      "collocations": [
+        "install software",
+        "software development"
+      ],
+      "topic": "tech"
+    },
+    {
+      "id": "b1_v_data",
+      "level": "B1",
+      "word": "data",
+      "pos": "noun",
+      "ipa_us": "/ˈdeɪtə/",
+      "translation_ru": "данные",
+      "example_en": "The report is based on data from the last three months.",
+      "collocations": [
+        "collect data",
+        "personal data"
+      ],
+      "topic": "tech"
+    },
+    {
+      "id": "b1_v_access",
+      "level": "B1",
+      "word": "access",
+      "pos": "noun",
+      "ipa_us": "/ˈækˌsɛs/",
+      "translation_ru": "доступ",
+      "example_en": "New employees get access to the system on their first day.",
+      "collocations": [
+        "have access to something",
+        "give someone access"
+      ],
+      "topic": "tech"
+    },
+    {
+      "id": "b1_v_feature",
+      "level": "B1",
+      "word": "feature",
+      "pos": "noun",
+      "ipa_us": "/ˈfitʃɚ/",
+      "translation_ru": "функция, особенность",
+      "example_en": "The new feature lets users search by date.",
+      "collocations": [
+        "a new feature",
+        "a useful feature"
+      ],
+      "topic": "tech"
+    },
+    {
+      "id": "b1_v_cost",
+      "level": "B1",
+      "word": "cost",
+      "pos": "noun",
+      "ipa_us": "/kɔst/",
+      "translation_ru": "стоимость, затраты",
+      "example_en": "The cost of the new license is higher than we expected.",
+      "collocations": [
+        "the total cost",
+        "cut costs"
+      ],
+      "topic": "money"
+    },
+    {
+      "id": "b1_v_manage",
+      "level": "B1",
+      "word": "manage",
+      "pos": "verb",
+      "ipa_us": "/ˈmænɪdʒ/",
+      "translation_ru": "управлять, справляться",
+      "example_en": "She manages a small team of five developers.",
+      "collocations": [
+        "manage a team",
+        "manage to do something"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "b1_v_organize",
+      "level": "B1",
+      "word": "organize",
+      "pos": "verb",
+      "ipa_us": "/ˈɔrgəˌnaɪz/",
+      "translation_ru": "организовывать, устраивать",
+      "example_en": "Could you organize a short call with the client tomorrow?",
+      "collocations": [
+        "organize a meeting",
+        "organize your time"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "b1_v_attend",
+      "level": "B1",
+      "word": "attend",
+      "pos": "verb",
+      "ipa_us": "/əˈtɛnd/",
+      "translation_ru": "посещать, присутствовать",
+      "example_en": "Everyone in the team has to attend the planning meeting.",
+      "collocations": [
+        "attend a meeting",
+        "attend a course"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "b1_v_apply",
+      "level": "B1",
+      "word": "apply",
+      "pos": "verb",
+      "ipa_us": "/əˈplaɪ/",
+      "translation_ru": "подавать заявку, применять",
+      "example_en": "He applied for a job in another department.",
+      "collocations": [
+        "apply for a job",
+        "apply the rules"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "b1_v_hire",
+      "level": "B1",
+      "word": "hire",
+      "pos": "verb",
+      "ipa_us": "/ˈhaɪɚ/",
+      "translation_ru": "нанимать",
+      "example_en": "The company is going to hire three more testers.",
+      "collocations": [
+        "hire staff",
+        "hire a specialist"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "b1_v_improve",
+      "level": "B1",
+      "word": "improve",
+      "pos": "verb",
+      "ipa_us": "/ɪmˈpruv/",
+      "translation_ru": "улучшать, совершенствовать",
+      "example_en": "We want to improve the speed of the main page.",
+      "collocations": [
+        "improve the quality",
+        "improve your English"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "b1_v_provide",
+      "level": "B1",
+      "word": "provide",
+      "pos": "verb",
+      "ipa_us": "/prəˈvaɪd/",
+      "translation_ru": "предоставлять, обеспечивать",
+      "example_en": "The company provides a laptop for every new employee.",
+      "collocations": [
+        "provide support",
+        "provide information"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "b1_v_reduce",
+      "level": "B1",
+      "word": "reduce",
+      "pos": "verb",
+      "ipa_us": "/rɪˈdus/",
+      "translation_ru": "сокращать, снижать",
+      "example_en": "We reduced the number of meetings to two a week.",
+      "collocations": [
+        "reduce costs",
+        "reduce the risk"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "b1_v_achieve",
+      "level": "B1",
+      "word": "achieve",
+      "pos": "verb",
+      "ipa_us": "/əˈtʃiv/",
+      "translation_ru": "достигать, добиваться",
+      "example_en": "We achieved all our goals in the first half of the year.",
+      "collocations": [
+        "achieve a goal",
+        "achieve a result"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "b1_v_avoid",
+      "level": "B1",
+      "word": "avoid",
+      "pos": "verb",
+      "ipa_us": "/əˈvɔɪd/",
+      "translation_ru": "избегать",
+      "example_en": "Write short emails to avoid problems later.",
+      "collocations": [
+        "avoid a problem",
+        "avoid mistakes"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "b1_v_suggest",
+      "level": "B1",
+      "word": "suggest",
+      "pos": "verb",
+      "ipa_us": "/səgˈdʒɛst/",
+      "translation_ru": "предлагать, советовать",
+      "example_en": "I suggest we start the meeting without him.",
+      "collocations": [
+        "suggest an idea",
+        "suggest doing something"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "b1_v_discuss",
+      "level": "B1",
+      "word": "discuss",
+      "pos": "verb",
+      "ipa_us": "/dɪˈskʌs/",
+      "translation_ru": "обсуждать",
+      "example_en": "Let's discuss the new design after lunch.",
+      "collocations": [
+        "discuss a problem",
+        "discuss the details"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "b1_v_explain",
+      "level": "B1",
+      "word": "explain",
+      "pos": "verb",
+      "ipa_us": "/ɪkˈspleɪn/",
+      "translation_ru": "объяснять",
+      "example_en": "He explained the problem in simple words.",
+      "collocations": [
+        "explain a rule",
+        "explain clearly"
+      ],
+      "topic": "study"
+    },
+    {
+      "id": "b1_v_consider",
+      "level": "B1",
+      "word": "consider",
+      "pos": "verb",
+      "ipa_us": "/kənˈsɪdɚ/",
+      "translation_ru": "рассматривать, обдумывать",
+      "example_en": "We are considering two different tools for this task.",
+      "collocations": [
+        "consider an option",
+        "carefully consider"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "b1_v_solve",
+      "level": "B1",
+      "word": "solve",
+      "pos": "verb",
+      "ipa_us": "/sɑlv/",
+      "translation_ru": "решать, устранять",
+      "example_en": "It took us a day to solve the problem with the database.",
+      "collocations": [
+        "solve a problem",
+        "solve an issue"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "b1_v_handle",
+      "level": "B1",
+      "word": "handle",
+      "pos": "verb",
+      "ipa_us": "/ˈhændəl/",
+      "translation_ru": "справляться, заниматься",
+      "example_en": "She handles all the questions from our biggest client.",
+      "collocations": [
+        "handle a situation",
+        "handle a request"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "b1_v_confirm",
+      "level": "B1",
+      "word": "confirm",
+      "pos": "verb",
+      "ipa_us": "/kənˈfɝm/",
+      "translation_ru": "подтверждать",
+      "example_en": "Please confirm the time of the call by email.",
+      "collocations": [
+        "confirm a booking",
+        "confirm the details"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "b1_v_arrange",
+      "level": "B1",
+      "word": "arrange",
+      "pos": "verb",
+      "ipa_us": "/əˈreɪndʒ/",
+      "translation_ru": "организовывать, договариваться",
+      "example_en": "I will arrange a meeting with the support team.",
+      "collocations": [
+        "arrange a meeting",
+        "arrange a visit"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "b1_v_replace",
+      "level": "B1",
+      "word": "replace",
+      "pos": "verb",
+      "ipa_us": "/rɪˈpleɪs/",
+      "translation_ru": "заменять",
+      "example_en": "We need to replace the old router before winter.",
+      "collocations": [
+        "replace a part",
+        "replace someone"
+      ],
+      "topic": "tech"
+    },
+    {
+      "id": "b1_v_prevent",
+      "level": "B1",
+      "word": "prevent",
+      "pos": "verb",
+      "ipa_us": "/prɪˈvɛnt/",
+      "translation_ru": "предотвращать, мешать",
+      "example_en": "Regular backups prevent serious problems later.",
+      "collocations": [
+        "prevent a problem",
+        "prevent someone from doing something"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "b1_v_require",
+      "level": "B1",
+      "word": "require",
+      "pos": "verb",
+      "ipa_us": "/rɪˈkwaɪɚ/",
+      "translation_ru": "требовать, нуждаться",
+      "example_en": "This task requires a lot of attention.",
+      "collocations": [
+        "require attention",
+        "require experience"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "b1_v_affect",
+      "level": "B1",
+      "word": "affect",
+      "pos": "verb",
+      "ipa_us": "/əˈfɛkt/",
+      "translation_ru": "влиять, воздействовать",
+      "example_en": "The new rules affect everyone in our department.",
+      "collocations": [
+        "affect the result",
+        "seriously affect"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "b1_v_depend",
+      "level": "B1",
+      "word": "depend",
+      "pos": "verb",
+      "ipa_us": "/dɪˈpɛnd/",
+      "translation_ru": "зависеть",
+      "example_en": "The date of the release depends on the test results.",
+      "collocations": [
+        "depend on someone",
+        "it depends"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "b1_v_realize",
+      "level": "B1",
+      "word": "realize",
+      "pos": "verb",
+      "ipa_us": "/ˈriəˌlaɪz/",
+      "translation_ru": "осознавать, понимать",
+      "example_en": "I did not realize how long the process would take.",
+      "collocations": [
+        "realize your mistake",
+        "suddenly realize"
+      ],
+      "topic": "feelings"
+    },
+    {
+      "id": "b1_v_expect",
+      "level": "B1",
+      "word": "expect",
+      "pos": "verb",
+      "ipa_us": "/ɪkˈspɛkt/",
+      "translation_ru": "ожидать, рассчитывать",
+      "example_en": "We expect an answer from the client this week.",
+      "collocations": [
+        "expect a reply",
+        "as expected"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "b1_v_admit",
+      "level": "B1",
+      "word": "admit",
+      "pos": "verb",
+      "ipa_us": "/ədˈmɪt/",
+      "translation_ru": "признавать",
+      "example_en": "He admitted that the mistake was his.",
+      "collocations": [
+        "admit a mistake",
+        "admit the truth"
+      ],
+      "topic": "people"
+    },
+    {
+      "id": "b1_v_complain",
+      "level": "B1",
+      "word": "complain",
+      "pos": "verb",
+      "ipa_us": "/kəmˈpleɪn/",
+      "translation_ru": "жаловаться",
+      "example_en": "Users often complain about the slow search.",
+      "collocations": [
+        "complain about something",
+        "complain to a manager"
+      ],
+      "topic": "people"
+    },
+    {
+      "id": "b1_v_recommend",
+      "level": "B1",
+      "word": "recommend",
+      "pos": "verb",
+      "ipa_us": "/ˌrɛkəˈmɛnd/",
+      "translation_ru": "рекомендовать, советовать",
+      "example_en": "I recommend this book to anyone who writes code.",
+      "collocations": [
+        "strongly recommend",
+        "recommend a place"
+      ],
+      "topic": "people"
+    },
+    {
+      "id": "b1_v_notice",
+      "level": "B1",
+      "word": "notice",
+      "pos": "verb",
+      "ipa_us": "/ˈnoʊtəs/",
+      "translation_ru": "замечать",
+      "example_en": "Nobody noticed the error until the client called.",
+      "collocations": [
+        "notice a difference",
+        "hardly notice"
+      ],
+      "topic": "people"
+    },
+    {
+      "id": "b1_v_focus",
+      "level": "B1",
+      "word": "focus",
+      "pos": "verb",
+      "ipa_us": "/ˈfoʊkəs/",
+      "translation_ru": "сосредоточиваться, концентрироваться",
+      "example_en": "Let's focus on the most important tasks first.",
+      "collocations": [
+        "focus on something",
+        "focus your attention"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "b1_v_confident",
+      "level": "B1",
+      "word": "confident",
+      "pos": "adjective",
+      "ipa_us": "/ˈkɑnfədənt/",
+      "translation_ru": "уверенный",
+      "example_en": "She feels confident about the presentation because she prepared well.",
+      "collocations": [
+        "confident about something",
+        "a confident answer"
+      ],
+      "topic": "feelings"
+    },
+    {
+      "id": "b1_v_nervous",
+      "level": "B1",
+      "word": "nervous",
+      "pos": "adjective",
+      "ipa_us": "/ˈnɝvəs/",
+      "translation_ru": "нервный, взволнованный",
+      "example_en": "I always feel nervous before I speak to a large group.",
+      "collocations": [
+        "feel nervous",
+        "get nervous"
+      ],
+      "topic": "feelings"
+    },
+    {
+      "id": "b1_v_upset",
+      "level": "B1",
+      "word": "upset",
+      "pos": "adjective",
+      "ipa_us": "/ˌʌpˈsɛt/",
+      "translation_ru": "расстроенный, огорчённый",
+      "example_en": "He was upset when nobody listened to his idea.",
+      "collocations": [
+        "get upset",
+        "upset about something"
+      ],
+      "topic": "feelings"
+    },
+    {
+      "id": "b1_v_annoyed",
+      "level": "B1",
+      "word": "annoyed",
+      "pos": "adjective",
+      "ipa_us": "/əˈnɔɪd/",
+      "translation_ru": "раздражённый, недовольный",
+      "example_en": "I was annoyed because the meeting started twenty minutes late.",
+      "collocations": [
+        "annoyed with someone",
+        "annoyed about something"
+      ],
+      "topic": "feelings"
+    },
+    {
+      "id": "b1_v_disappointed",
+      "level": "B1",
+      "word": "disappointed",
+      "pos": "adjective",
+      "ipa_us": "/ˌdɪsəˈpɔɪntɪd/",
+      "translation_ru": "разочарованный",
+      "example_en": "We were disappointed with the results of the first test.",
+      "collocations": [
+        "disappointed with something",
+        "deeply disappointed"
+      ],
+      "topic": "feelings"
+    },
+    {
+      "id": "b1_v_confused",
+      "level": "B1",
+      "word": "confused",
+      "pos": "adjective",
+      "ipa_us": "/kənˈfjuzd/",
+      "translation_ru": "сбитый с толку, растерянный",
+      "example_en": "New users are confused by the long menu.",
+      "collocations": [
+        "get confused",
+        "confused about something"
+      ],
+      "topic": "feelings"
+    },
+    {
+      "id": "b1_v_proud",
+      "level": "B1",
+      "word": "proud",
+      "pos": "adjective",
+      "ipa_us": "/praʊd/",
+      "translation_ru": "гордый, довольный",
+      "example_en": "The team is proud of the work it did this year.",
+      "collocations": [
+        "proud of someone",
+        "proud of something"
+      ],
+      "topic": "feelings"
+    },
+    {
+      "id": "b1_v_satisfied",
+      "level": "B1",
+      "word": "satisfied",
+      "pos": "adjective",
+      "ipa_us": "/ˈsætɪsˌfaɪd/",
+      "translation_ru": "довольный, удовлетворённый",
+      "example_en": "The client was satisfied with our answer and closed the ticket.",
+      "collocations": [
+        "satisfied with something",
+        "a satisfied customer"
+      ],
+      "topic": "feelings"
+    },
+    {
+      "id": "b1_v_stressed",
+      "level": "B1",
+      "word": "stressed",
+      "pos": "adjective",
+      "ipa_us": "/strɛst/",
+      "translation_ru": "напряжённый, в стрессе",
+      "example_en": "Everyone is stressed a few days before the release.",
+      "collocations": [
+        "feel stressed",
+        "get stressed"
+      ],
+      "topic": "health"
+    },
+    {
+      "id": "b1_v_reliable",
+      "level": "B1",
+      "word": "reliable",
+      "pos": "adjective",
+      "ipa_us": "/rɪˈlaɪəbəl/",
+      "translation_ru": "надёжный",
+      "example_en": "We need a reliable server that never goes down at night.",
+      "collocations": [
+        "a reliable person",
+        "a reliable source"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "b1_v_flexible",
+      "level": "B1",
+      "word": "flexible",
+      "pos": "adjective",
+      "ipa_us": "/ˈflɛksəbəl/",
+      "translation_ru": "гибкий",
+      "example_en": "Our working hours are flexible, so I start at ten.",
+      "collocations": [
+        "flexible hours",
+        "a flexible approach"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "b1_v_responsible",
+      "level": "B1",
+      "word": "responsible",
+      "pos": "adjective",
+      "ipa_us": "/rɪˈspɑnsəbəl/",
+      "translation_ru": "ответственный",
+      "example_en": "Who is responsible for the documents in this project?",
+      "collocations": [
+        "responsible for something",
+        "a responsible person"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "b1_v_available",
+      "level": "B1",
+      "word": "available",
+      "pos": "adjective",
+      "ipa_us": "/əˈveɪləbəl/",
+      "translation_ru": "доступный, свободный",
+      "example_en": "I am available for a call after three o'clock.",
+      "collocations": [
+        "available for something",
+        "widely available"
+      ],
+      "topic": "time"
+    },
+    {
+      "id": "b1_v_urgent",
+      "level": "B1",
+      "word": "urgent",
+      "pos": "adjective",
+      "ipa_us": "/ˈɝdʒənt/",
+      "translation_ru": "срочный",
+      "example_en": "This is not urgent, so you can look at it tomorrow.",
+      "collocations": [
+        "an urgent request",
+        "an urgent matter"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "b1_v_complicated",
+      "level": "B1",
+      "word": "complicated",
+      "pos": "adjective",
+      "ipa_us": "/ˈkɑmpləˌkeɪtɪd/",
+      "translation_ru": "сложный, запутанный",
+      "example_en": "The rules are complicated, and new people often get lost.",
+      "collocations": [
+        "a complicated problem",
+        "too complicated"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "b1_v_probably",
+      "level": "B1",
+      "word": "probably",
+      "pos": "adverb",
+      "ipa_us": "/ˈprɑbəbli/",
+      "translation_ru": "вероятно, наверное",
+      "example_en": "The meeting will probably finish before lunch.",
+      "collocations": [
+        "will probably",
+        "probably not"
+      ],
+      "topic": "time"
+    },
+    {
+      "id": "b1_v_actually",
+      "level": "B1",
+      "word": "actually",
+      "pos": "adverb",
+      "ipa_us": "/ˈæktʃuəli/",
+      "translation_ru": "на самом деле, вообще-то",
+      "example_en": "It looks difficult, but it is actually quite simple.",
+      "collocations": [
+        "actually, I think",
+        "not actually"
+      ],
+      "topic": "people"
+    },
+    {
+      "id": "b1_v_recently",
+      "level": "B1",
+      "word": "recently",
+      "pos": "adverb",
+      "ipa_us": "/ˈrisəntli/",
+      "translation_ru": "недавно, в последнее время",
+      "example_en": "We recently moved all our files to a new system.",
+      "collocations": [
+        "until recently",
+        "recently changed"
+      ],
+      "topic": "time"
+    },
+    {
+      "id": "b1_v_immediately",
+      "level": "B1",
+      "word": "immediately",
+      "pos": "adverb",
+      "ipa_us": "/ɪˈmidiətli/",
+      "translation_ru": "немедленно, сразу",
+      "example_en": "Please call me immediately if the site goes down.",
+      "collocations": [
+        "almost immediately",
+        "immediately after"
+      ],
+      "topic": "time"
+    },
+    {
+      "id": "b1_v_especially",
+      "level": "B1",
+      "word": "especially",
+      "pos": "adverb",
+      "ipa_us": "/ɪˈspɛʃəli/",
+      "translation_ru": "особенно",
+      "example_en": "I like this tool, especially the search function.",
+      "collocations": [
+        "especially useful",
+        "especially important"
+      ],
+      "topic": "people"
+    },
+    {
+      "id": "b1_v_unfortunately",
+      "level": "B1",
+      "word": "unfortunately",
+      "pos": "adverb",
+      "ipa_us": "/ʌnˈfɔrtʃənətli/",
+      "translation_ru": "к сожалению",
+      "example_en": "Unfortunately, we cannot finish the task this week.",
+      "collocations": [
+        "unfortunately not",
+        "unfortunately for us"
+      ],
+      "topic": "feelings"
+    },
+    {
+      "id": "b1_v_exactly",
+      "level": "B1",
+      "word": "exactly",
+      "pos": "adverb",
+      "ipa_us": "/ɪgˈzæktli/",
+      "translation_ru": "точно, именно",
+      "example_en": "That is exactly what the client asked for.",
+      "collocations": [
+        "exactly the same",
+        "not exactly"
+      ],
+      "topic": "people"
+    },
+    {
+      "id": "b1_v_properly",
+      "level": "B1",
+      "word": "properly",
+      "pos": "adverb",
+      "ipa_us": "/ˈprɑpɚli/",
+      "translation_ru": "правильно, как следует",
+      "example_en": "The report was not written properly, so we did it again.",
+      "collocations": [
+        "work properly",
+        "do something properly"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "b1_v_however",
+      "level": "B1",
+      "word": "however",
+      "pos": "adverb",
+      "ipa_us": "/haʊˈɛvɚ/",
+      "translation_ru": "однако, тем не менее",
+      "example_en": "The idea is good; however, we have no time for it.",
+      "collocations": [
+        "however much",
+        "however difficult"
+      ],
+      "topic": "people"
+    },
+    {
+      "id": "b1_v_deal_with",
+      "level": "B1",
+      "word": "deal with",
+      "pos": "phrasal verb",
+      "ipa_us": "/ˈdil wɪð/",
+      "translation_ru": "справляться с, заниматься",
+      "example_en": "Our support team deals with about fifty tickets a day.",
+      "collocations": [
+        "deal with a problem",
+        "deal with a client"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "b1_v_find_out",
+      "level": "B1",
+      "word": "find out",
+      "pos": "phrasal verb",
+      "ipa_us": "/ˌfaɪnd ˈaʊt/",
+      "translation_ru": "выяснять, узнавать",
+      "example_en": "I will find out who changed the settings yesterday.",
+      "collocations": [
+        "find out the truth",
+        "find out what happened"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "b1_v_look_after",
+      "level": "B1",
+      "word": "look after",
+      "pos": "phrasal verb",
+      "ipa_us": "/ˌlʊk ˈæftɚ/",
+      "translation_ru": "присматривать за, отвечать за",
+      "example_en": "Who will look after the new client while you are away?",
+      "collocations": [
+        "look after someone",
+        "look after a client"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "b1_v_set_up",
+      "level": "B1",
+      "word": "set up",
+      "pos": "phrasal verb",
+      "ipa_us": "/ˌsɛt ˈʌp/",
+      "translation_ru": "настраивать, организовывать",
+      "example_en": "It takes ten minutes to set up a new laptop.",
+      "collocations": [
+        "set up a meeting",
+        "set up a system"
+      ],
+      "topic": "tech"
+    },
+    {
+      "id": "b1_v_turn_down",
+      "level": "B1",
+      "word": "turn down",
+      "pos": "phrasal verb",
+      "ipa_us": "/ˌtɝn ˈdaʊn/",
+      "translation_ru": "отклонять, отказываться от",
+      "example_en": "She turned down the offer because of the low salary.",
+      "collocations": [
+        "turn down an offer",
+        "turn down a request"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "b1_v_put_off",
+      "level": "B1",
+      "word": "put off",
+      "pos": "phrasal verb",
+      "ipa_us": "/ˌpʊt ˈɔf/",
+      "translation_ru": "откладывать, переносить",
+      "example_en": "We put off the meeting until next Monday.",
+      "collocations": [
+        "put off a meeting",
+        "put off a decision"
+      ],
+      "topic": "time"
+    },
+    {
+      "id": "b1_v_come_up_with",
+      "level": "B1",
+      "word": "come up with",
+      "pos": "phrasal verb",
+      "ipa_us": "/ˌkʌm ˈʌp wɪð/",
+      "translation_ru": "придумывать, предлагать",
+      "example_en": "He came up with a simple idea that saved us a week.",
+      "collocations": [
+        "come up with an idea",
+        "come up with a plan"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "b1_v_work_out",
+      "level": "B1",
+      "word": "work out",
+      "pos": "phrasal verb",
+      "ipa_us": "/ˌwɝk ˈaʊt/",
+      "translation_ru": "получаться, находить решение",
+      "example_en": "The new schedule worked out well for everyone.",
+      "collocations": [
+        "work out well",
+        "work out a solution"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "b1_v_give_up",
+      "level": "B1",
+      "word": "give up",
+      "pos": "phrasal verb",
+      "ipa_us": "/ˌgɪv ˈʌp/",
+      "translation_ru": "сдаваться, бросать",
+      "example_en": "Do not give up if the first solution does not work.",
+      "collocations": [
+        "give up easily",
+        "never give up"
+      ],
+      "topic": "feelings"
+    },
+    {
+      "id": "b1_v_look_forward_to",
+      "level": "B1",
+      "word": "look forward to",
+      "pos": "phrasal verb",
+      "ipa_us": "/ˌlʊk ˈfɔrwɚd tə/",
+      "translation_ru": "с нетерпением ждать, ждать с интересом",
+      "example_en": "I look forward to hearing from you next week.",
+      "collocations": [
+        "look forward to seeing you",
+        "look forward to a reply"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "b1_v_catch_up",
+      "level": "B1",
+      "word": "catch up",
+      "pos": "phrasal verb",
+      "ipa_us": "/ˌkætʃ ˈʌp/",
+      "translation_ru": "догонять, наверстать",
+      "example_en": "I stayed late to catch up on the emails I missed.",
+      "collocations": [
+        "catch up with work",
+        "catch up on email"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "b1_v_figure_out",
+      "level": "B1",
+      "word": "figure out",
+      "pos": "phrasal verb",
+      "ipa_us": "/ˌfɪgjɚ ˈaʊt/",
+      "translation_ru": "разобраться, понять",
+      "example_en": "I cannot figure out why the report is empty.",
+      "collocations": [
+        "figure out the answer",
+        "figure out how to do something"
+      ],
+      "topic": "tech"
+    },
+    {
+      "id": "b1_v_run_out_of",
+      "level": "B1",
+      "word": "run out of",
+      "pos": "phrasal verb",
+      "ipa_us": "/ˌrʌn ˈaʊt əv/",
+      "translation_ru": "заканчиваться (о запасе), остаться без",
+      "example_en": "We ran out of time and had to finish the demo quickly.",
+      "collocations": [
+        "run out of time",
+        "run out of money"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "b1_v_point_out",
+      "level": "B1",
+      "word": "point out",
+      "pos": "phrasal verb",
+      "ipa_us": "/ˌpɔɪnt ˈaʊt/",
+      "translation_ru": "указывать, отмечать",
+      "example_en": "She pointed out a mistake in the second table.",
+      "collocations": [
+        "point out a mistake",
+        "point out that"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "b1_v_in_my_opinion",
+      "level": "B1",
+      "word": "in my opinion",
+      "pos": "phrase",
+      "ipa_us": "/ɪn maɪ əˈpɪnjən/",
+      "translation_ru": "по-моему, на мой взгляд",
+      "example_en": "In my opinion, we should test the feature one more time.",
+      "collocations": [
+        "in my opinion, we should",
+        "in my honest opinion"
+      ],
+      "topic": "feelings"
+    },
+    {
+      "id": "b1_v_on_the_other_hand",
+      "level": "B1",
+      "word": "on the other hand",
+      "pos": "phrase",
+      "ipa_us": "/ˌɑn ði ˈʌðɚ ˌhænd/",
+      "translation_ru": "с другой стороны",
+      "example_en": "The tool is fast; on the other hand, it costs a lot.",
+      "collocations": [
+        "on the one hand",
+        "but on the other hand"
+      ],
+      "topic": "people"
+    },
+    {
+      "id": "b1_v_make_sense",
+      "level": "B1",
+      "word": "make sense",
+      "pos": "phrase",
+      "ipa_us": "/ˌmeɪk ˈsɛns/",
+      "translation_ru": "иметь смысл, быть логичным",
+      "example_en": "Your plan makes sense, but we need more people.",
+      "collocations": [
+        "that makes sense",
+        "it makes no sense"
+      ],
+      "topic": "people"
+    },
+    {
+      "id": "b1_v_in_advance",
+      "level": "B1",
+      "word": "in advance",
+      "pos": "phrase",
+      "ipa_us": "/ɪn ədˈvæns/",
+      "translation_ru": "заранее, авансом",
+      "example_en": "Please send the questions in advance so we can prepare.",
+      "collocations": [
+        "book in advance",
+        "pay in advance",
+        "a week in advance"
+      ],
+      "topic": "time"
+    },
+    {
+      "id": "b1_v_although",
+      "level": "B1",
+      "word": "although",
+      "pos": "conjunction",
+      "ipa_us": "/ɔlˈðoʊ/",
+      "translation_ru": "хотя, несмотря на то что",
+      "example_en": "Although the task was difficult, we finished it on time.",
+      "collocations": [
+        "although it was late",
+        "although we tried"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "b1_v_unless",
+      "level": "B1",
+      "word": "unless",
+      "pos": "conjunction",
+      "ipa_us": "/ənˈlɛs/",
+      "translation_ru": "если не, если только не",
+      "example_en": "We cannot start unless the client confirms the budget.",
+      "collocations": [
+        "unless you tell me",
+        "unless something changes"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "b1_v_despite",
+      "level": "B1",
+      "word": "despite",
+      "pos": "preposition",
+      "ipa_us": "/dɪˈspaɪt/",
+      "translation_ru": "несмотря на",
+      "example_en": "Despite the delay, the client was happy with the result.",
+      "collocations": [
+        "despite the fact that",
+        "despite the problems"
+      ],
+      "topic": "work"
+    }
+  ]
+}

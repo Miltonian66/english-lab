@@ -1,0 +1,484 @@
+{
+  "tasks": [
+    {
+      "id": "a1_wr_team_intro",
+      "level": "A1",
+      "title_ru": "Знакомство в командном чате",
+      "prompt_en": "You just joined the IT team. Write a short message in the team chat: your name, your role, the city you work from, and one thing you like doing after work.",
+      "guidance_ru": "Четыре коротких предложения по порядку: имя, должность, город, любимое дело после работы. Всегда ставь глагол: I am a tester, а не I tester.",
+      "words_min": 30,
+      "words_max": 50,
+      "focus": [
+        "present simple",
+        "verb to be"
+      ]
+    },
+    {
+      "id": "a1_wr_day_status",
+      "level": "A1",
+      "title_ru": "Статус за день",
+      "prompt_en": "Write a short end-of-day status for your team chat: what you finished today, what is still open, and what you plan to do tomorrow.",
+      "guidance_ru": "Три предложения. Что сделал сегодня — past simple: I fixed two bugs. Что не готово — The report is not ready. Что завтра — Tomorrow I will finish the report. Никаких длинных объяснений.",
+      "words_min": 30,
+      "words_max": 50,
+      "focus": [
+        "past simple",
+        "will for plans"
+      ]
+    },
+    {
+      "id": "a1_wr_help_request",
+      "level": "A1",
+      "title_ru": "Просьба о помощи",
+      "prompt_en": "Write a message to a teammate. You cannot open the test server and you need help. Say what the problem is, what you already tried, and ask for help.",
+      "guidance_ru": "Начни с Hi и имени. Дальше: проблема — I cannot open the test server. Что уже пробовал — I tried a different browser. Просьба в конце — Can you help me? Вопрос заканчивай вопросительным знаком.",
+      "words_min": 30,
+      "words_max": 50,
+      "focus": [
+        "can and cannot",
+        "questions"
+      ]
+    },
+    {
+      "id": "a1_wr_bug_ticket",
+      "level": "A1",
+      "title_ru": "Короткий баг-репорт",
+      "prompt_en": "Write a short bug report for the tracker. The mobile app closes when a user opens the payment page. Say what you did, what happened, and what you expected.",
+      "guidance_ru": "Три части по одному предложению: что сделал — I opened the payment page. Что случилось — The app closed. Чего ждал — I expected to see the price. Всё в past simple.",
+      "words_min": 30,
+      "words_max": 50,
+      "focus": [
+        "past simple",
+        "word order"
+      ]
+    },
+    {
+      "id": "a1_wr_desk_setup",
+      "level": "A1",
+      "title_ru": "Рабочее место",
+      "prompt_en": "Describe your workplace to a new colleague: what is on your desk, what computer you use, and where you usually work.",
+      "guidance_ru": "Начни с There is и There are про вещи на столе. Потом одно предложение про компьютер и одно про место работы. Следи за артиклями a и the — в русском их нет, здесь нужны.",
+      "words_min": 30,
+      "words_max": 50,
+      "focus": [
+        "there is and there are",
+        "prepositions of place"
+      ]
+    },
+    {
+      "id": "a1_wr_weekend_plan",
+      "level": "A1",
+      "title_ru": "Планы на выходные",
+      "prompt_en": "Write a short message to a friend about your weekend: where you are going, who you are going with, and what you want to do there.",
+      "guidance_ru": "Три предложения: куда едешь и с кем — present continuous (I am going to the lake with my brother), что там будешь делать — be going to (I am going to swim). В конце спроси друга о его планах: What are you going to do?",
+      "words_min": 30,
+      "words_max": 50,
+      "focus": [
+        "be going to",
+        "present continuous"
+      ]
+    },
+    {
+      "id": "a2_wr_standup_update",
+      "level": "A2",
+      "title_ru": "Письменный стендап",
+      "prompt_en": "Write your daily standup update for the team channel: what you did yesterday, what you are working on today, and anything that is blocking you.",
+      "guidance_ru": "Три блока по два предложения. Вчера — past simple. Сегодня — present continuous: I am testing the login form. Блокер — I am waiting for access to the test database. Называй конкретную задачу, а не общие слова вроде some tasks.",
+      "words_min": 50,
+      "words_max": 80,
+      "focus": [
+        "past simple",
+        "present continuous"
+      ]
+    },
+    {
+      "id": "a2_wr_vacation_email",
+      "level": "A2",
+      "title_ru": "Письмо о днях отпуска",
+      "prompt_en": "Write an email to your manager. You want to take three days off next month. Give the exact dates, explain why you need them, and say who can cover your tasks.",
+      "guidance_ru": "Пять-шесть предложений: приветствие, просьба через I would like to take, точные даты, короткая причина, кто подхватит задачи, вежливое закрытие. Не пиши I want to take — для письма руководителю это слишком прямо.",
+      "words_min": 50,
+      "words_max": 80,
+      "focus": [
+        "would like to",
+        "future with will"
+      ]
+    },
+    {
+      "id": "a2_wr_task_description",
+      "level": "A2",
+      "title_ru": "Описание задачи в трекере",
+      "prompt_en": "Write a task description for the tracker: the search on the help page is too slow. Explain the problem, why it matters for users, and what needs to change.",
+      "guidance_ru": "Один абзац из пяти-шести предложений: как работает сейчас, чем это мешает людям, что надо сделать — We need to. Зачем это нужно, объясняй через to: We need to cache the results to make the search faster. Одно предложение — одна мысль, не склеивай всё через and.",
+      "words_min": 50,
+      "words_max": 80,
+      "focus": [
+        "need to",
+        "infinitive of purpose"
+      ]
+    },
+    {
+      "id": "a2_wr_meeting_invite",
+      "level": "A2",
+      "title_ru": "Приглашение на встречу",
+      "prompt_en": "Write a message to two colleagues. You need thirty minutes to discuss the new release plan. Propose a time, say what you will discuss, and ask them to confirm.",
+      "guidance_ru": "Четыре-пять предложений: зачем встреча, предложение времени — Could we meet on Tuesday at 11? Что обсудим, просьба подтвердить. Дни недели с on, время с at.",
+      "words_min": 50,
+      "words_max": 80,
+      "focus": [
+        "could for polite requests",
+        "prepositions of time"
+      ]
+    },
+    {
+      "id": "a2_wr_new_tool",
+      "level": "A2",
+      "title_ru": "Впечатление от нового инструмента",
+      "prompt_en": "Your team started using a new chat tool last month. Write a short post: what you like about it, what is worse than the old tool, and your advice for the team.",
+      "guidance_ru": "Три части: что нравится, что хуже прежнего инструмента, совет команде. Для сравнения бери faster than, easier than, more useful than — после than идёт то, с чем сравниваешь. Совет давай через should: We should turn off email notifications.",
+      "words_min": 50,
+      "words_max": 80,
+      "focus": [
+        "comparative adjectives",
+        "should for advice"
+      ]
+    },
+    {
+      "id": "a2_wr_learning_post",
+      "level": "A2",
+      "title_ru": "Пост о новом навыке",
+      "prompt_en": "Write a short post for the team channel about something you learned recently outside work: what it is, how you started, and how often you practice.",
+      "guidance_ru": "Пять-шесть предложений: что за навык, как начал — past simple, как часто занимаешься — twice a week, usually. Наречие частоты ставь перед смысловым глаголом: I usually practice.",
+      "words_min": 50,
+      "words_max": 80,
+      "focus": [
+        "adverbs of frequency",
+        "past simple"
+      ]
+    },
+    {
+      "id": "b1_wr_incident_note",
+      "level": "B1",
+      "title_ru": "Заметка об инциденте",
+      "prompt_en": "Write a short internal note about a bug that reached production: what happened, what the impact was, and what you changed.",
+      "guidance_ru": "Три абзаца: что случилось, на что повлияло, что сделали. Past simple для событий, present perfect для результата.",
+      "words_min": 80,
+      "words_max": 120,
+      "focus": [
+        "past simple",
+        "present perfect"
+      ]
+    },
+    {
+      "id": "b1_wr_pr_comment",
+      "level": "B1",
+      "title_ru": "Комментарий к пул-реквесту",
+      "prompt_en": "Write a review comment on a teammate's pull request. Say what works well, point out two things you would change, and explain why each change matters.",
+      "guidance_ru": "Начни с того, что сделано хорошо. Дальше два замечания, каждое с причиной через because или so that. Формулируй как предложение, а не приказ: I would rename this, It might be better to. В конце задай автору вопрос.",
+      "words_min": 80,
+      "words_max": 120,
+      "focus": [
+        "would for suggestions",
+        "linking words"
+      ]
+    },
+    {
+      "id": "b1_wr_onboarding_note",
+      "level": "B1",
+      "title_ru": "Заметка для нового коллеги",
+      "prompt_en": "A new developer joins your team on Monday. Write a note explaining how to set up the project locally, what to read first, and who to ask when something breaks.",
+      "guidance_ru": "Три абзаца: шаги установки по порядку через First, Then, After that; что почитать; к кому идти с вопросами. Шаги пиши командой — Clone the repo. Советы через should и can.",
+      "words_min": 80,
+      "words_max": 120,
+      "focus": [
+        "imperatives",
+        "should and can"
+      ]
+    },
+    {
+      "id": "b1_wr_deadline_email",
+      "level": "B1",
+      "title_ru": "Письмо о переносе срока",
+      "prompt_en": "Write an email to a project manager. Your feature will be one week late. Explain the reason, describe the new plan, and say how you will avoid the same problem next time.",
+      "guidance_ru": "Четыре части: главное в первом предложении — The feature will be ready a week later than planned. Потом причина, новый план с датой, что изменишь на будущее. Только факты, без оправданий на полстраницы.",
+      "words_min": 80,
+      "words_max": 120,
+      "focus": [
+        "future with will",
+        "because and so"
+      ]
+    },
+    {
+      "id": "b1_wr_tool_choice",
+      "level": "B1",
+      "title_ru": "Выбор между двумя инструментами",
+      "prompt_en": "Your team must choose between two libraries that do the same job. Write a short message comparing them and recommend one, with reasons.",
+      "guidance_ru": "Абзац про первый вариант, абзац про второй, короткий вывод. Сравнивай по одним и тем же признакам: faster, more stable, easier to learn. Вариантов два, поэтому нужна сравнительная степень, а не превосходная: the faster option, не the fastest. В выводе бери I would go with — звучит мягче, чем We must use.",
+      "words_min": 80,
+      "words_max": 120,
+      "focus": [
+        "comparative structures",
+        "expressing opinion"
+      ]
+    },
+    {
+      "id": "b1_wr_remote_opinion",
+      "level": "B1",
+      "title_ru": "Мнение про удалённую работу",
+      "prompt_en": "Write a post for the company blog about working from home: two real advantages, one honest problem, and what helps you stay productive.",
+      "guidance_ru": "Четыре коротких абзаца: твоя позиция, два плюса с примерами из своей практики, честный минус, вывод с советом. Связки: However, In my experience, а On the one hand ставь только в паре с On the other hand.",
+      "words_min": 80,
+      "words_max": 120,
+      "focus": [
+        "expressing opinion",
+        "contrast linkers"
+      ]
+    },
+    {
+      "id": "b2_wr_postmortem",
+      "level": "B2",
+      "title_ru": "Постмортем после сбоя",
+      "prompt_en": "Write a postmortem summary for an outage that took the payment service down for forty minutes. Cover the timeline, the root cause, the customer impact, and the actions you committed to.",
+      "guidance_ru": "Четыре коротких блока сплошным текстом, без заголовков: хронология, корневая причина, влияние на клиентов, что делаем дальше. Что случилось до сбоя — past perfect: the job had been failing since Monday. Пассив там, где важен факт, а не автор: The service was restored at 14:20. Про людей пиши нейтрально, без поиска виноватых.",
+      "words_min": 120,
+      "words_max": 180,
+      "focus": [
+        "passive voice",
+        "past perfect"
+      ]
+    },
+    {
+      "id": "b2_wr_tech_proposal",
+      "level": "B2",
+      "title_ru": "Предложение по рефакторингу",
+      "prompt_en": "Write a proposal to your team lead: the reporting module should be rewritten. Explain the current pain, what you suggest, what it will cost in time, and what could go wrong.",
+      "guidance_ru": "Четыре абзаца: что болит сейчас, что предлагаешь, оценка сроков, риски и как их снизить. Риски через условные: If we postpone this, the cost will grow. Оценку смягчай: it would take roughly three weeks.",
+      "words_min": 120,
+      "words_max": 180,
+      "focus": [
+        "first conditional",
+        "modals of possibility"
+      ]
+    },
+    {
+      "id": "b2_wr_review_disagreement",
+      "level": "B2",
+      "title_ru": "Вежливое несогласие в ревью",
+      "prompt_en": "A reviewer asked you to change an approach you believe is correct. Write a reply that acknowledges their point, explains your reasoning with evidence, and proposes a way to settle the question.",
+      "guidance_ru": "Три части: признать сильную сторону замечания, спокойно объяснить свою логику с цифрами или примером, предложить способ договориться. Смягчай: I see your point, I may be missing something, would it make sense to. Не защищайся и не переходи на личности.",
+      "words_min": 120,
+      "words_max": 180,
+      "focus": [
+        "hedging language",
+        "concession clauses"
+      ]
+    },
+    {
+      "id": "b2_wr_release_notes",
+      "level": "B2",
+      "title_ru": "Заметки к релизу для бизнеса",
+      "prompt_en": "Write release notes for a non-technical audience: three changes shipped this month, what each one means for the user, and one known limitation.",
+      "guidance_ru": "Вступление в одно-два предложения и три коротких блока по изменениям. Каждое изменение объясняй через пользу для человека, а не через технику: a new filter that shows only failed exports. Ограничение назови честно и укажи срок, когда его исправите.",
+      "words_min": 120,
+      "words_max": 180,
+      "focus": [
+        "relative clauses",
+        "purpose and result linkers"
+      ]
+    },
+    {
+      "id": "b2_wr_client_apology",
+      "level": "B2",
+      "title_ru": "Письмо клиенту о сбое",
+      "prompt_en": "Write an email to a client whose data export failed twice this week. Apologize, explain what happened without technical jargon, say what you have already fixed, and offer a concrete next step.",
+      "guidance_ru": "Четыре абзаца: извинение сразу, что произошло простыми словами, что уже исправлено — present perfect, конкретный следующий шаг с датой. Тон спокойный и уверенный, без sorry в каждой строке.",
+      "words_min": 120,
+      "words_max": 180,
+      "focus": [
+        "present perfect",
+        "formal register"
+      ]
+    },
+    {
+      "id": "b2_wr_conference_report",
+      "level": "B2",
+      "title_ru": "Отчёт после конференции",
+      "prompt_en": "You attended a two-day tech conference. Write a report for your colleagues: the most useful talk, what you disagreed with, and two ideas the team could try.",
+      "guidance_ru": "Четыре абзаца: зачем ездил, самый полезный доклад с конкретным выводом, с чем не согласен и почему, две идеи для команды. Чужие мысли передавай косвенной речью: The speaker argued that the approach did not scale.",
+      "words_min": 120,
+      "words_max": 180,
+      "focus": [
+        "reported speech",
+        "past simple and past perfect"
+      ]
+    },
+    {
+      "id": "c1_wr_architecture_rfc",
+      "level": "C1",
+      "title_ru": "Раздел проектного документа",
+      "prompt_en": "Write the decision section of a design document: the problem you are solving, two options you considered, the trade-offs of each, and the option you recommend with your reasoning.",
+      "guidance_ru": "Пять абзацев: проблема, вариант А, вариант Б, сравнение по одним и тем же критериям, рекомендация. Пиши для того, кто придёт через год и спросит, почему решили так. Вместо общих слов вроде better называй, что именно лучше и на сколько. Ключевые мысли сворачивай в именные группы: the main trade-off is operational cost.",
+      "words_min": 180,
+      "words_max": 250,
+      "focus": [
+        "nominalization",
+        "comparative structures",
+        "cautious language"
+      ]
+    },
+    {
+      "id": "c1_wr_tech_debt_memo",
+      "level": "C1",
+      "title_ru": "Служебная записка о техдолге",
+      "prompt_en": "Write a memo to leadership arguing that the team needs one quarter to pay down technical debt. Quantify the current cost, describe what you would do, and answer the objection that feature work will stop.",
+      "guidance_ru": "Вывод в первом абзаце, доказательства после него. Переводи техдолг в понятные бизнесу единицы: время, деньги, риск. Отдельный абзац на возражение и ответ. В финале конкретная просьба, а не общее пожелание.",
+      "words_min": 180,
+      "words_max": 250,
+      "focus": [
+        "persuasive structure",
+        "concession and rebuttal",
+        "conditional forms"
+      ]
+    },
+    {
+      "id": "c1_wr_interview_feedback",
+      "level": "C1",
+      "title_ru": "Обратная связь после собеседования",
+      "prompt_en": "Write structured feedback after a technical interview: what the candidate did well, where they struggled, how they responded to hints, and your hiring recommendation with a confidence level.",
+      "guidance_ru": "Четыре части: сильные стороны с примерами из задачи, слабые места, реакция на подсказки, рекомендация с уровнем уверенности. Описывай поведение, а не личность: что кандидат сделал, а не какой он. Где данных мало, так и пиши.",
+      "words_min": 180,
+      "words_max": 250,
+      "focus": [
+        "evidence-based description",
+        "hedging",
+        "participle clauses"
+      ]
+    },
+    {
+      "id": "c1_wr_process_critique",
+      "level": "C1",
+      "title_ru": "Критика процесса и предложение",
+      "prompt_en": "Your team's code review process has become a bottleneck. Write a message that diagnoses why, acknowledges what the process was designed to protect, and proposes a change that keeps those protections.",
+      "guidance_ru": "Пять абзацев: симптом с цифрами, разбор причин, признание того, что процесс защищал не зря, предложение, способ проверить результат через месяц. Разбирай устройство процесса, а не людей. Один раз усиль главный вывод инверсией: Not only has review time doubled, but it has also delayed two releases.",
+      "words_min": 180,
+      "words_max": 250,
+      "focus": [
+        "cause and effect linkers",
+        "concession",
+        "inversion for emphasis"
+      ]
+    },
+    {
+      "id": "c1_wr_incident_comms",
+      "level": "C1",
+      "title_ru": "Публичное сообщение о крупном сбое",
+      "prompt_en": "Write a public status update after a six-hour outage that affected all customers: what happened, what data was and was not affected, what you have done, and what you commit to next.",
+      "guidance_ru": "Четыре абзаца строго по порядку: факты, границы ущерба, выполненные действия, обязательства со сроками. Отдельным предложением скажи, что не пострадало. Никаких размытых формул вроде some users may have experienced issues. Текст должен одинаково читаться юристом и инженером.",
+      "words_min": 180,
+      "words_max": 250,
+      "focus": [
+        "passive voice",
+        "precise quantification",
+        "commitment language"
+      ]
+    },
+    {
+      "id": "c1_wr_ai_impact_essay",
+      "level": "C1",
+      "title_ru": "Эссе о влиянии ИИ на профессию",
+      "prompt_en": "Write an essay about how AI coding tools are changing what a software engineer is actually paid for. Take a clear position, support it, and deal seriously with the strongest counterargument.",
+      "guidance_ru": "Тезис в конце первого абзаца, два-три аргумента с примерами, сильный контраргумент и ответ на него, вывод без дословного повтора тезиса. Избегай штампов вроде in today's fast-changing world.",
+      "words_min": 180,
+      "words_max": 250,
+      "focus": [
+        "thesis-driven argument",
+        "counterargument handling",
+        "advanced linkers"
+      ]
+    },
+    {
+      "id": "c2_wr_platform_strategy",
+      "level": "C2",
+      "title_ru": "Стратегический документ по платформе",
+      "prompt_en": "Write a strategy paper arguing whether your company should build an internal developer platform or keep letting each team choose its own tooling. Argue one side, model the costs of both, and define what would make you change your mind.",
+      "guidance_ru": "Пять-шесть абзацев: позиция, экономика обоих путей, что показывает отраслевой опыт, сильнейшее возражение и разбор, условия пересмотра решения. Держи один регистр от начала до конца, не срывайся в разговорные обороты.",
+      "words_min": 250,
+      "words_max": 350,
+      "focus": [
+        "argumentative register",
+        "conditional reasoning",
+        "cohesion across paragraphs"
+      ]
+    },
+    {
+      "id": "c2_wr_blameless_essay",
+      "level": "C2",
+      "title_ru": "Эссе о культуре разбора инцидентов",
+      "prompt_en": "Write an argumentative essay on blameless postmortems: whether removing individual blame genuinely improves reliability or quietly shields incompetence. Defend a nuanced position rather than a slogan.",
+      "guidance_ru": "Не скатывайся в лозунг. Раздели ответственность и обвинение, покажи, где принцип работает, а где ломается. Уступку формулируй сильно: сначала изложи чужой довод в лучшем виде, потом отвечай. В финале рабочий критерий, а не призыв.",
+      "words_min": 250,
+      "words_max": 350,
+      "focus": [
+        "nuanced argumentation",
+        "steelmanning",
+        "abstract nominal style"
+      ]
+    },
+    {
+      "id": "c2_wr_build_vs_buy",
+      "level": "C2",
+      "title_ru": "Анализ: строить или покупать",
+      "prompt_en": "Write a critical analysis of a build-versus-buy decision for your authentication stack. Weigh cost, control, security, hiring, and exit risk, then reach a recommendation you can defend.",
+      "guidance_ru": "Разбери пять критериев по одной схеме, чтобы их можно было сравнить. Отдельно назови, чего ты не знаешь и как проверить это дешевле всего. Рекомендация должна следовать из анализа, а не из вкуса. Вместо probably и maybe давай точные оговорки.",
+      "words_min": 250,
+      "words_max": 350,
+      "focus": [
+        "evaluative language",
+        "precision and qualification",
+        "complex noun phrases"
+      ]
+    },
+    {
+      "id": "c2_wr_policy_response",
+      "level": "C2",
+      "title_ru": "Ответ на предложенную политику",
+      "prompt_en": "Management has proposed a new rule: all AI-generated code must be reviewed by two senior engineers. Write a persuasive response: engage with the real risk behind the policy, show where the rule backfires, and propose a better one.",
+      "guidance_ru": "Сначала покажи, что понял настоящий страх за политикой, иначе тебя не услышат. Дальше — где правило даст обратный эффект, с механизмом, а не с эмоцией. Предложи альтернативу, которую можно ввести в понедельник. Тон уверенный, но без высокомерия.",
+      "words_min": 250,
+      "words_max": 350,
+      "focus": [
+        "persuasion and diplomacy",
+        "cleft sentences",
+        "modal nuance"
+      ]
+    },
+    {
+      "id": "c2_wr_data_ethics",
+      "level": "C2",
+      "title_ru": "Эссе об этике продуктовой аналитики",
+      "prompt_en": "Write an essay on where product analytics stops being useful measurement and starts being surveillance. Draw a line you can defend, then test it against a hard case where it nearly breaks.",
+      "guidance_ru": "Проведи границу и сразу проверь её на неудобном примере, где твой критерий трещит. Держи разницу между тем, что законно, и тем, что правильно. Абстрактную лексику используй точно, без философского тумана.",
+      "words_min": 250,
+      "words_max": 350,
+      "focus": [
+        "abstract argumentation",
+        "hypothetical structures",
+        "register control"
+      ]
+    },
+    {
+      "id": "c2_wr_exec_briefing",
+      "level": "C2",
+      "title_ru": "Брифинг для совета директоров",
+      "prompt_en": "Write a briefing for the board on your security posture after a competitor suffered a major breach: your real exposure, what you are doing, what you have deliberately chosen not to do, and what you need from the board.",
+      "guidance_ru": "Первый абзац должен работать, даже если дальше не прочитают. Без технического жаргона, но и без упрощений, которые искажают суть. Отдельно объясни осознанные отказы: почему часть мер вы намеренно не берёте. Заканчивай конкретным запросом: деньги, люди, решение.",
+      "words_min": 250,
+      "words_max": 350,
+      "focus": [
+        "executive register",
+        "concision under complexity",
+        "impersonal constructions"
+      ]
+    }
+  ]
+}

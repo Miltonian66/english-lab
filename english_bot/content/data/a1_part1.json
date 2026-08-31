@@ -1,0 +1,1478 @@
+{
+ "chunk": "a1_part1",
+ "points": [
+  {
+   "id": "a1_adjectives",
+   "level": "A1",
+   "band": "A1",
+   "topic": "Adjectives & adverbs",
+   "title_en": "Adjectives: Old, interesting, expensive, etc.",
+   "source_slug": "adjectives",
+   "title_ru": "Прилагательные: old, interesting, expensive",
+   "summary_ru": "Прилагательное называет признак предмета: old, new, expensive, interesting. В английском оно почти всегда стоит перед существительным: a new laptop, an interesting task. Второе возможное место — после глагола be и близких к нему look и seem: The laptop is new. Форма прилагательного не меняется ни по числу, ни по роду: a new laptop, two new laptops. Окончание -s к прилагательному не добавляется никогда. Артикль a или an выбирается по первому звуку следующего слова, то есть по прилагательному: an old computer. Усилители very и really ставятся перед прилагательным: a very good idea.",
+   "forms": [
+    "adjective + noun: a new laptop",
+    "be + adjective: The laptop is new",
+    "one form for singular and plural: new laptops",
+    "very / really + adjective: a very slow computer",
+    "a / an + adjective + noun: an old printer"
+   ],
+   "examples": [
+    "We have a new laptop in the office.",
+    "The meeting room is big.",
+    "These tasks are difficult.",
+    "He is a good developer.",
+    "It is an interesting project."
+   ],
+   "ru_interference": "Русское прилагательное согласуется с существительным, поэтому появляется лишнее -s и меняется порядок слов: неверно 'They are goods developers' и 'She has a computer new' → верно 'They are good developers.' и 'She has a new computer.'",
+   "prerequisites": [],
+   "exercises": [
+    {
+     "id": "a1_adjectives_01",
+     "kind": "choice",
+     "prompt": "We bought two ___ computers for the team.",
+     "options": [
+      "news",
+      "new",
+      "newly",
+      "newing"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Прилагательное не получает окончания -s даже перед существительным во множественном числе.",
+     "difficulty": 1
+    },
+    {
+     "id": "a1_adjectives_02",
+     "kind": "choice",
+     "prompt": "This is ___ project for our department.",
+     "options": [
+      "a interesting",
+      "an interesting",
+      "interesting an",
+      "an interested"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Перед гласным звуком в слове interesting нужен an; interested описывает человека, а не проект.",
+     "difficulty": 2
+    },
+    {
+     "id": "a1_adjectives_03",
+     "kind": "choice",
+     "prompt": "She has ___ in her office.",
+     "options": [
+      "a computer new",
+      "a new computer",
+      "new a computer",
+      "computer a new"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Прилагательное стоит между артиклем и существительным, а не после него.",
+     "difficulty": 1
+    },
+    {
+     "id": "a1_adjectives_04",
+     "kind": "choice",
+     "prompt": "Those laptops are very ___.",
+     "options": [
+      "expensives",
+      "expensive",
+      "expensively",
+      "expensived"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "После be нужна простая форма прилагательного без окончаний.",
+     "difficulty": 2
+    },
+    {
+     "id": "a1_adjectives_05",
+     "kind": "gap",
+     "prompt": "My two brothers are very ___ (tall).",
+     "answer": "tall",
+     "accept": [],
+     "explanation_ru": "Прилагательное одинаково для одного и для нескольких предметов, форма talls не существует.",
+     "difficulty": 1
+    },
+    {
+     "id": "a1_adjectives_06",
+     "kind": "gap",
+     "prompt": "We have ___ (a / an) old printer in the office.",
+     "answer": "an",
+     "accept": [],
+     "explanation_ru": "Артикль выбирается по первому звуку слова old, которое идёт сразу после него.",
+     "difficulty": 2
+    },
+    {
+     "id": "a1_adjectives_07",
+     "kind": "correct",
+     "prompt": "We have three olds computers.",
+     "answer": "We have three old computers.",
+     "accept": [],
+     "explanation_ru": "Ошибка в прилагательном: olds не бывает, число показывает только существительное.",
+     "difficulty": 3
+    },
+    {
+     "id": "a1_adjectives_08",
+     "kind": "order",
+     "prompt": "very / is / new / laptop / My",
+     "answer": "My laptop is very new.",
+     "accept": [],
+     "explanation_ru": "После be идёт very и затем прилагательное; притяжательное местоимение открывает предложение.",
+     "difficulty": 3
+    }
+   ]
+  },
+  {
+   "id": "a1_adverbs_manner",
+   "level": "A1",
+   "band": "A1",
+   "topic": "Adjectives & adverbs",
+   "title_en": "Adverbs of manner (slowly) or adjectives (slow)?",
+   "source_slug": "adverbs-manner",
+   "title_ru": "Наречия образа действия или прилагательные",
+   "summary_ru": "Прилагательное отвечает на вопрос «какой» и описывает существительное: a slow computer. Наречие образа действия отвечает на вопрос «как» и описывает действие: He works slowly. Большинство наречий образуется прибавлением -ly: quick — quickly, careful — carefully. Если прилагательное кончается на согласную и -y, пишем -ily: easy — easily. Исключения нужно запомнить: good — well, fast — fast, hard — hard. После глагола be, а также после look и seem, нужно прилагательное, а не наречие: The office is quiet. Наречие обычно стоит после глагола, а если у глагола есть дополнение — после дополнения: She speaks English well.",
+   "forms": [
+    "adjective + -ly: slow → slowly",
+    "consonant + y → -ily: easy → easily",
+    "irregular: good → well, fast → fast, hard → hard",
+    "verb + object + adverb: He reads the report carefully",
+    "be + adjective: The office is quiet"
+   ],
+   "examples": [
+    "He works slowly.",
+    "This is a slow computer.",
+    "She speaks English well.",
+    "The team finished the task quickly.",
+    "Our internet is fast.",
+    "Please read the message carefully."
+   ],
+   "ru_interference": "В русском наречие свободно встаёт между глаголом и дополнением, а «хорошо» переносят как good: неверно 'He speaks well English' и 'He works good' → верно 'He speaks English well.' и 'He works well.'",
+   "prerequisites": [],
+   "exercises": [
+    {
+     "id": "a1_adverbs_manner_01",
+     "kind": "choice",
+     "prompt": "Please drive ___.",
+     "options": [
+      "careful",
+      "carefully",
+      "care",
+      "caring"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Слово описывает действие drive, поэтому нужно наречие с -ly.",
+     "difficulty": 1
+    },
+    {
+     "id": "a1_adverbs_manner_02",
+     "kind": "choice",
+     "prompt": "He is a ___ worker.",
+     "options": [
+      "slow",
+      "slowly",
+      "slowness",
+      "slows"
+     ],
+     "correct_index": 0,
+     "explanation_ru": "Перед существительным worker нужно прилагательное, а не наречие.",
+     "difficulty": 1
+    },
+    {
+     "id": "a1_adverbs_manner_03",
+     "kind": "choice",
+     "prompt": "She writes emails very ___.",
+     "options": [
+      "quick",
+      "quickly",
+      "quicker",
+      "quickness"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Слово описывает, как она пишет, значит нужно наречие; very с формой quicker не сочетается.",
+     "difficulty": 2
+    },
+    {
+     "id": "a1_adverbs_manner_04",
+     "kind": "choice",
+     "prompt": "Sorry, my English is not very ___.",
+     "options": [
+      "well",
+      "good",
+      "goodly",
+      "gooder"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "После be описываем предмет, а не действие, поэтому нужно прилагательное good; well относилось бы к действию.",
+     "difficulty": 2
+    },
+    {
+     "id": "a1_adverbs_manner_05",
+     "kind": "gap",
+     "prompt": "He speaks Spanish ___ (good).",
+     "answer": "well",
+     "accept": [],
+     "explanation_ru": "У прилагательного good наречие well, форма goodly не используется.",
+     "difficulty": 1
+    },
+    {
+     "id": "a1_adverbs_manner_06",
+     "kind": "gap",
+     "prompt": "The developers finished the task ___ (easy).",
+     "answer": "easily",
+     "accept": [],
+     "explanation_ru": "Конечная -y после согласной меняется на -ily.",
+     "difficulty": 2
+    },
+    {
+     "id": "a1_adverbs_manner_07",
+     "kind": "correct",
+     "prompt": "She speaks to clients very polite.",
+     "answer": "She speaks to clients very politely.",
+     "accept": [],
+     "explanation_ru": "Слово относится к действию speaks, поэтому нужно наречие politely, а не прилагательное polite.",
+     "difficulty": 3
+    },
+    {
+     "id": "a1_adverbs_manner_08",
+     "kind": "order",
+     "prompt": "carefully / documents / the / reads / He",
+     "answer": "He reads the documents carefully.",
+     "accept": [
+      "He carefully reads the documents."
+     ],
+     "explanation_ru": "Наречие ставится после дополнения the documents, вариант перед глаголом тоже возможен.",
+     "difficulty": 3
+    }
+   ]
+  },
+  {
+   "id": "a1_comparative_adjectives",
+   "level": "A1",
+   "band": "A1",
+   "topic": "Adjectives & adverbs",
+   "title_en": "Comparative adjectives: Older than, more important than, etc.",
+   "source_slug": "comparative-adjectives",
+   "title_ru": "Сравнительная степень прилагательных",
+   "summary_ru": "Сравнительная степень показывает, что у одного предмета признак выражен сильнее, чем у другого. Короткие прилагательные в один слог получают -er: old — older, cheap — cheaper. Конечная согласная после короткого гласного удваивается: big — bigger. Если слово кончается на согласную и -y, пишем -ier: easy — easier. Остальные прилагательные из двух слогов и длиннее образуют сравнение через more: more important, more difficult. Формы better (good), worse (bad) и further (far) надо запомнить. Второй участник сравнения вводится словом than, а не that: This laptop is cheaper than mine. Одновременно more и -er не используются.",
+   "forms": [
+    "short adjective + -er + than: older than",
+    "consonant + y → -ier + than: easier than",
+    "double consonant: big → bigger than",
+    "more + long adjective + than: more important than",
+    "good → better, bad → worse"
+   ],
+   "examples": [
+    "This laptop is cheaper than mine.",
+    "Python is easier than C++.",
+    "The new office is bigger than the old one.",
+    "This bug is more difficult than the last one.",
+    "My internet is better than yours."
+   ],
+   "ru_interference": "Русское «дешевле, чем» подталкивает удваивать сравнение и путать than с that: неверно 'This phone is more cheaper that mine' → верно 'This phone is cheaper than mine.'",
+   "prerequisites": [],
+   "exercises": [
+    {
+     "id": "a1_comparative_adjectives_01",
+     "kind": "choice",
+     "prompt": "My new computer is ___ than the old one.",
+     "options": [
+      "fast",
+      "faster",
+      "more fast",
+      "fastest"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Короткое прилагательное получает -er, форма more fast не существует.",
+     "difficulty": 1
+    },
+    {
+     "id": "a1_comparative_adjectives_02",
+     "kind": "choice",
+     "prompt": "This task is ___ than the last one.",
+     "options": [
+      "more difficult",
+      "difficulter",
+      "most difficult",
+      "more difficulter"
+     ],
+     "correct_index": 0,
+     "explanation_ru": "Difficult длинное, поэтому сравнение строится через more без окончания -er.",
+     "difficulty": 1
+    },
+    {
+     "id": "a1_comparative_adjectives_03",
+     "kind": "choice",
+     "prompt": "Her code is ___ than mine.",
+     "options": [
+      "gooder",
+      "better",
+      "more good",
+      "best"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "У good неправильная форма сравнения better.",
+     "difficulty": 1
+    },
+    {
+     "id": "a1_comparative_adjectives_04",
+     "kind": "choice",
+     "prompt": "The meeting room is ___ than my office.",
+     "options": [
+      "bigger",
+      "biger",
+      "more big",
+      "biggest"
+     ],
+     "correct_index": 0,
+     "explanation_ru": "После короткого гласного согласная удваивается: big — bigger.",
+     "difficulty": 2
+    },
+    {
+     "id": "a1_comparative_adjectives_05",
+     "kind": "gap",
+     "prompt": "This bug is ___ (bad) than the first one.",
+     "answer": "worse",
+     "accept": [],
+     "explanation_ru": "У bad неправильная форма worse, варианта badder нет.",
+     "difficulty": 2
+    },
+    {
+     "id": "a1_comparative_adjectives_06",
+     "kind": "gap",
+     "prompt": "Learning Python is ___ (easy) than learning C++.",
+     "answer": "easier",
+     "accept": [],
+     "explanation_ru": "Конечная -y после согласной переходит в -ier.",
+     "difficulty": 2
+    },
+    {
+     "id": "a1_comparative_adjectives_07",
+     "kind": "correct",
+     "prompt": "Our new server is more faster than the old server.",
+     "answer": "Our new server is faster than the old server.",
+     "accept": [],
+     "explanation_ru": "More и -er вместе не употребляются, достаточно формы faster.",
+     "difficulty": 3
+    },
+    {
+     "id": "a1_comparative_adjectives_08",
+     "kind": "order",
+     "prompt": "than / me / is / older / my / manager",
+     "answer": "My manager is older than me.",
+     "accept": [],
+     "explanation_ru": "Сравнение строится по схеме подлежащее + be + прилагательное с -er + than.",
+     "difficulty": 3
+    }
+   ]
+  },
+  {
+   "id": "a1_superlative_adjectives",
+   "level": "A1",
+   "band": "A1",
+   "topic": "Adjectives & adverbs",
+   "title_en": "Superlative adjectives: The oldest, the most important, etc.",
+   "source_slug": "superlative-adjectives",
+   "title_ru": "Превосходная степень прилагательных",
+   "summary_ru": "Превосходная степень выделяет один предмет из группы: самый быстрый, самый дорогой. Перед ней почти всегда стоит артикль the. Короткие прилагательные получают -est: old — the oldest, big — the biggest, easy — the easiest. Длинные прилагательные образуют степень через the most: the most important, the most expensive. Формы the best (good) и the worst (bad) нужно запомнить. Группа сравнения вводится предлогом in для мест и коллективов и предлогом of для отрезков времени и множеств: the fastest laptop in the office, the best day of the week. Сочетать the most с окончанием -est нельзя.",
+   "forms": [
+    "the + short adjective + -est: the oldest",
+    "the most + long adjective: the most important",
+    "consonant + y → the -iest: the easiest",
+    "good → the best, bad → the worst",
+    "the ... in a place or group / of a period: the best in the company"
+   ],
+   "examples": [
+    "This is the cheapest laptop in the store.",
+    "It was the most important meeting of the year.",
+    "Anna is the best developer on our team.",
+    "Monday is the worst day of the week for me.",
+    "That is the biggest office in the building."
+   ],
+   "ru_interference": "Русское «самый» превращается в лишнее most, а артикль теряется: неверно 'He is most fast programmer on our team' → верно 'He is the fastest programmer on our team.'",
+   "prerequisites": [],
+   "exercises": [
+    {
+     "id": "a1_superlative_adjectives_01",
+     "kind": "choice",
+     "prompt": "This is ___ laptop in the store.",
+     "options": [
+      "the cheapest",
+      "cheapest",
+      "the most cheap",
+      "the more cheap"
+     ],
+     "correct_index": 0,
+     "explanation_ru": "Короткое прилагательное берёт -est, и артикль the обязателен.",
+     "difficulty": 1
+    },
+    {
+     "id": "a1_superlative_adjectives_02",
+     "kind": "choice",
+     "prompt": "It was ___ meeting of the year.",
+     "options": [
+      "the importantest",
+      "the most important",
+      "most important",
+      "more important"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Длинное прилагательное образует превосходную степень через the most.",
+     "difficulty": 1
+    },
+    {
+     "id": "a1_superlative_adjectives_03",
+     "kind": "choice",
+     "prompt": "Anna is ___ developer on our team.",
+     "options": [
+      "the best",
+      "the goodest",
+      "the most good",
+      "the better"
+     ],
+     "correct_index": 0,
+     "explanation_ru": "У good превосходная форма the best.",
+     "difficulty": 1
+    },
+    {
+     "id": "a1_superlative_adjectives_04",
+     "kind": "choice",
+     "prompt": "Monday is ___ day of the week for me.",
+     "options": [
+      "the worse",
+      "the worst",
+      "the baddest",
+      "worst"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Из всей недели выделяется один день, поэтому нужна превосходная форма the worst.",
+     "difficulty": 2
+    },
+    {
+     "id": "a1_superlative_adjectives_05",
+     "kind": "gap",
+     "prompt": "This is ___ (easy) task on the list.",
+     "answer": "the easiest",
+     "accept": [],
+     "explanation_ru": "Перед превосходной степенью нужен артикль the, а -y переходит в -iest.",
+     "difficulty": 2
+    },
+    {
+     "id": "a1_superlative_adjectives_06",
+     "kind": "gap",
+     "prompt": "He is ___ (young) person in the office.",
+     "answer": "the youngest",
+     "accept": [],
+     "explanation_ru": "Короткое прилагательное получает -est и артикль the.",
+     "difficulty": 2
+    },
+    {
+     "id": "a1_superlative_adjectives_07",
+     "kind": "correct",
+     "prompt": "This is the most biggest office in the building.",
+     "answer": "This is the biggest office in the building.",
+     "accept": [],
+     "explanation_ru": "The most и окончание -est одновременно не употребляются.",
+     "difficulty": 3
+    },
+    {
+     "id": "a1_superlative_adjectives_08",
+     "kind": "order",
+     "prompt": "company / the / is / she / in / fastest / the",
+     "answer": "She is the fastest in the company.",
+     "accept": [],
+     "explanation_ru": "После превосходной степени группа сравнения вводится предлогом in.",
+     "difficulty": 3
+    }
+   ]
+  },
+  {
+   "id": "a1_can_cant",
+   "level": "A1",
+   "band": "A1",
+   "topic": "Modals",
+   "title_en": "Can, can't: Ability, possibility, permission",
+   "source_slug": "can-cant",
+   "title_ru": "Can и can't: умение, возможность, разрешение",
+   "summary_ru": "Can выражает умение, физическую возможность, разрешение и вежливую просьбу. После can всегда идёт голая форма глагола: без to и без окончания -s. Сама форма can одинакова для всех лиц, форм cans или canning не существует. Отрицание образуется словом can't, полный вариант — cannot; вспомогательный do при этом не нужен. Вопрос строится перестановкой can перед подлежащим: Can you help me? Краткие ответы: Yes, I can. No, I can't. С другими глаголами can не сочетается: нет форм am can или will can.",
+   "forms": [
+    "can + base verb: I can help you",
+    "can't / cannot + base verb: I can't open the file",
+    "Can + subject + base verb ...?: Can you help me?",
+    "short answers: Yes, I can. / No, I can't.",
+    "no -s and no to: He can work on Monday"
+   ],
+   "examples": [
+    "She can speak three languages.",
+    "I can't open this file.",
+    "Can you help me with the printer?",
+    "We can finish the report today.",
+    "He can't come to the meeting."
+   ],
+   "ru_interference": "Русское «мочь» требует инфинитива, поэтому появляется лишнее to и окончание -s: неверно 'He can to opens the file' → верно 'He can open the file.'",
+   "prerequisites": [],
+   "exercises": [
+    {
+     "id": "a1_can_cant_01",
+     "kind": "choice",
+     "prompt": "She ___ speak three languages.",
+     "options": [
+      "can to",
+      "cans",
+      "can",
+      "is can"
+     ],
+     "correct_index": 2,
+     "explanation_ru": "После подлежащего идёт простая форма can без to и без окончания -s.",
+     "difficulty": 1
+    },
+    {
+     "id": "a1_can_cant_02",
+     "kind": "choice",
+     "prompt": "I am sorry, I ___ come to the meeting tomorrow.",
+     "options": [
+      "can't",
+      "don't can",
+      "no can",
+      "not can"
+     ],
+     "correct_index": 0,
+     "explanation_ru": "Отрицание модального глагола строится без do: can + not, то есть can't.",
+     "difficulty": 1
+    },
+    {
+     "id": "a1_can_cant_03",
+     "kind": "choice",
+     "prompt": "Can he ___ the server tonight?",
+     "options": [
+      "restarts",
+      "restart",
+      "to restart",
+      "restarting"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "После can идёт начальная форма глагола без окончаний и без to.",
+     "difficulty": 1
+    },
+    {
+     "id": "a1_can_cant_04",
+     "kind": "choice",
+     "prompt": "We ___ finish the project this week because there is too much work.",
+     "options": [
+      "can",
+      "can't",
+      "don't can",
+      "cannot to"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Вторая часть предложения объясняет невозможность, поэтому нужна отрицательная форма.",
+     "difficulty": 2
+    },
+    {
+     "id": "a1_can_cant_05",
+     "kind": "gap",
+     "prompt": "___ (can / you) open this file on your computer?",
+     "answer": "Can you",
+     "accept": [],
+     "explanation_ru": "В вопросе can выходит на первое место перед подлежащим.",
+     "difficulty": 2
+    },
+    {
+     "id": "a1_can_cant_06",
+     "kind": "gap",
+     "prompt": "He ___ (not / can) work on Friday.",
+     "answer": "can't",
+     "accept": [
+      "cannot",
+      "can not"
+     ],
+     "explanation_ru": "Отрицательная форма can — can't или полное cannot, вспомогательный глагол не нужен.",
+     "difficulty": 2
+    },
+    {
+     "id": "a1_can_cant_07",
+     "kind": "correct",
+     "prompt": "I can to send you the report today.",
+     "answer": "I can send you the report today.",
+     "accept": [],
+     "explanation_ru": "После модального can частица to не ставится.",
+     "difficulty": 3
+    },
+    {
+     "id": "a1_can_cant_08",
+     "kind": "order",
+     "prompt": "can't / the / I / password / remember",
+     "answer": "I can't remember the password.",
+     "accept": [
+      "I cannot remember the password."
+     ],
+     "explanation_ru": "Порядок слов: подлежащее, модальный глагол с отрицанием, смысловой глагол, дополнение.",
+     "difficulty": 3
+    }
+   ]
+  },
+  {
+   "id": "a1_a_an_plurals",
+   "level": "A1",
+   "band": "A1",
+   "topic": "Nouns & articles",
+   "title_en": "A/an, plurals: Singular and plural forms",
+   "source_slug": "a-an-plurals",
+   "title_ru": "A/an и множественное число существительных",
+   "summary_ru": "Перед исчисляемым существительным в единственном числе нужен артикль a или an. Выбор зависит от первого звука следующего слова, а не от буквы: a file, an email, an hour, a university. Множественное число обычно образуется окончанием -s: file — files. После -s, -ss, -sh, -ch и -x пишется -es: box — boxes, watch — watches. Если слово кончается на согласную и -y, получается -ies: company — companies. Часть форм нужно запомнить: man — men, woman — women, child — children, person — people. С формой множественного числа артикли a и an не употребляются.",
+   "forms": [
+    "a + consonant sound: a file, a university",
+    "an + vowel sound: an email, an hour",
+    "noun + -s: file → files",
+    "-s, -ss, -sh, -ch, -x + -es: box → boxes",
+    "consonant + y → -ies: company → companies"
+   ],
+   "examples": [
+    "I have an interview at ten.",
+    "She works at a university in Boston.",
+    "We have three boxes in the meeting room.",
+    "Our client has offices in two countries.",
+    "There are two men in the room."
+   ],
+   "ru_interference": "В русском нет артиклей, поэтому существительное в единственном числе остаётся без a или an: неверно 'I have question about the task' → верно 'I have a question about the task.'",
+   "prerequisites": [],
+   "exercises": [
+    {
+     "id": "a1_a_an_plurals_01",
+     "kind": "choice",
+     "prompt": "I have ___ interview at ten o'clock.",
+     "options": [
+      "a",
+      "an",
+      "many",
+      "two"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Слово interview начинается с гласного звука, поэтому нужен an; many и two требуют множественного числа.",
+     "difficulty": 1
+    },
+    {
+     "id": "a1_a_an_plurals_02",
+     "kind": "choice",
+     "prompt": "She works at ___ university in Boston.",
+     "options": [
+      "a",
+      "an",
+      "two",
+      "many"
+     ],
+     "correct_index": 0,
+     "explanation_ru": "University начинается со звука [j], то есть согласного, поэтому нужен артикль a.",
+     "difficulty": 2
+    },
+    {
+     "id": "a1_a_an_plurals_03",
+     "kind": "choice",
+     "prompt": "We have three ___ in the meeting room.",
+     "options": [
+      "box",
+      "boxs",
+      "boxes",
+      "boxies"
+     ],
+     "correct_index": 2,
+     "explanation_ru": "После -x множественное число образуется окончанием -es.",
+     "difficulty": 1
+    },
+    {
+     "id": "a1_a_an_plurals_04",
+     "kind": "choice",
+     "prompt": "Our client has three ___ in Europe.",
+     "options": [
+      "companys",
+      "companies",
+      "companyes",
+      "company"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Конечная -y после согласной переходит в -ies.",
+     "difficulty": 2
+    },
+    {
+     "id": "a1_a_an_plurals_05",
+     "kind": "gap",
+     "prompt": "There are two ___ (man) in the room.",
+     "answer": "men",
+     "accept": [],
+     "explanation_ru": "У слова man неправильная форма множественного числа men.",
+     "difficulty": 1
+    },
+    {
+     "id": "a1_a_an_plurals_06",
+     "kind": "gap",
+     "prompt": "This is ___ (a / an) old computer.",
+     "answer": "an",
+     "accept": [],
+     "explanation_ru": "Слово old начинается с гласного звука, поэтому нужен an.",
+     "difficulty": 2
+    },
+    {
+     "id": "a1_a_an_plurals_07",
+     "kind": "correct",
+     "prompt": "She has two childs and a dog.",
+     "answer": "She has two children and a dog.",
+     "accept": [],
+     "explanation_ru": "У child неправильная форма множественного числа children.",
+     "difficulty": 3
+    },
+    {
+     "id": "a1_a_an_plurals_08",
+     "kind": "order",
+     "prompt": "an / I / have / hour / for / lunch",
+     "answer": "I have an hour for lunch.",
+     "accept": [],
+     "explanation_ru": "В слове hour первая буква не читается, слово начинается с гласного звука, поэтому нужен an.",
+     "difficulty": 3
+    }
+   ]
+  },
+  {
+   "id": "a1_a_an_the_no_article",
+   "level": "A1",
+   "band": "A1",
+   "topic": "Nouns & articles",
+   "title_en": "A/an, the, no article: The use of articles in English",
+   "source_slug": "a-an-the-no-article",
+   "title_ru": "A/an, the и нулевой артикль",
+   "summary_ru": "Артикль a или an ставится перед исчисляемым существительным в единственном числе, когда предмет назван впервые или когда речь идёт о любом предмете такого рода: I bought a laptop. Артикль the ставится, когда собеседник понимает, о каком именно предмете идёт речь: при повторном упоминании или когда предмет один в этой ситуации: The laptop is very fast. С уникальными объектами тоже нужен the: the sun, the internet, the first floor. Артикль не нужен перед существительными во множественном числе и перед неисчисляемыми, когда говорят о явлении в целом: Computers are expensive. Названия стран, городов и людей идут без артикля: He works in Germany. Профессия называется с артиклем a или an: She is a developer.",
+   "forms": [
+    "a / an + singular countable, first mention: I bought a laptop",
+    "the + known or second mention: The laptop is fast",
+    "the + unique things: the sun, the internet",
+    "no article + general plural or uncountable: Computers are expensive",
+    "no article + countries, cities, names: He works in Germany"
+   ],
+   "examples": [
+    "I bought a new laptop. The laptop is very fast.",
+    "My brother is a programmer.",
+    "Computers are very useful for our work.",
+    "She lives in Germany.",
+    "The internet is very slow today."
+   ],
+   "ru_interference": "В русском нет артиклей, поэтому the появляется там, где говорят об общем, и пропадает там, где предмет уже известен: неверно 'I like the computers' в общем смысле → верно 'I like computers.'",
+   "prerequisites": [],
+   "exercises": [
+    {
+     "id": "a1_a_an_the_no_article_01",
+     "kind": "choice",
+     "prompt": "I bought a new laptop yesterday. ___ laptop is very fast.",
+     "options": [
+      "A",
+      "An",
+      "The",
+      "Some"
+     ],
+     "correct_index": 2,
+     "explanation_ru": "Ноутбук уже назван в первом предложении, поэтому во втором нужен the.",
+     "difficulty": 1
+    },
+    {
+     "id": "a1_a_an_the_no_article_02",
+     "kind": "choice",
+     "prompt": "My brother is ___ programmer.",
+     "options": [
+      "a",
+      "an",
+      "any",
+      "two"
+     ],
+     "correct_index": 0,
+     "explanation_ru": "Название профессии в единственном числе требует a перед согласным звуком.",
+     "difficulty": 1
+    },
+    {
+     "id": "a1_a_an_the_no_article_03",
+     "kind": "choice",
+     "prompt": "___ are very useful for our work.",
+     "options": [
+      "Computer",
+      "A computers",
+      "Computers",
+      "The computer"
+     ],
+     "correct_index": 2,
+     "explanation_ru": "Речь о компьютерах вообще, поэтому нужна форма множественного числа без артикля; сказуемое are это подтверждает.",
+     "difficulty": 2
+    },
+    {
+     "id": "a1_a_an_the_no_article_04",
+     "kind": "choice",
+     "prompt": "She lives in ___ Germany.",
+     "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+     ],
+     "correct_index": 3,
+     "explanation_ru": "Названия большинства стран идут без артикля; the остаётся только у составных и множественных названий вроде the USA и the Netherlands.",
+     "difficulty": 2
+    },
+    {
+     "id": "a1_a_an_the_no_article_05",
+     "kind": "gap",
+     "prompt": "She has ___ (a / an) interesting job.",
+     "answer": "an",
+     "accept": [],
+     "explanation_ru": "Артикль выбирается по звуку следующего слова interesting, оно начинается с гласного.",
+     "difficulty": 1
+    },
+    {
+     "id": "a1_a_an_the_no_article_06",
+     "kind": "gap",
+     "prompt": "___ (a / an / the) internet is very slow today.",
+     "answer": "The",
+     "accept": [],
+     "explanation_ru": "Интернет один, это уникальный объект, поэтому нужен the.",
+     "difficulty": 2
+    },
+    {
+     "id": "a1_a_an_the_no_article_07",
+     "kind": "correct",
+     "prompt": "She works in the Spain.",
+     "answer": "She works in Spain.",
+     "accept": [],
+     "explanation_ru": "Перед названием страны Spain артикль не нужен.",
+     "difficulty": 3
+    },
+    {
+     "id": "a1_a_an_the_no_article_08",
+     "kind": "order",
+     "prompt": "a / I / need / new / keyboard",
+     "answer": "I need a new keyboard.",
+     "accept": [],
+     "explanation_ru": "Клавиатура упоминается впервые и стоит в единственном числе, поэтому нужен a перед прилагательным.",
+     "difficulty": 3
+    }
+   ]
+  },
+  {
+   "id": "a1_possessive_adjectives",
+   "level": "A1",
+   "band": "A1",
+   "topic": "Nouns & articles",
+   "title_en": "Possessive adjectives and subject pronouns (I/my, you/your, etc.)",
+   "source_slug": "possessive-adjectives",
+   "title_ru": "Личные и притяжательные местоимения",
+   "summary_ru": "Личные местоимения в роли подлежащего: I, you, he, she, it, we, they. Английское подлежащее нельзя опустить, даже если оно понятно из контекста. Каждому из них соответствует притяжательное местоимение: my, your, his, her, its, our, their. Притяжательное местоимение стоит перед существительным и заменяет собой артикль: my laptop, а не a my laptop. Его форма зависит только от владельца и не меняется по числу и роду предмета: his sister, his brothers. Выбор his или her определяется полом владельца, а не свойствами предмета. Форма its пишется без апострофа, а it's — это сокращение от it is.",
+   "forms": [
+    "I - my, you - your, he - his, she - her, it - its",
+    "we - our, they - their",
+    "possessive adjective + noun: my laptop",
+    "one form for singular and plural: our laptops",
+    "its (possessive) vs it's (= it is)"
+   ],
+   "examples": [
+    "This is my laptop.",
+    "Anna is a designer. She works in our office.",
+    "Tom and Alex are here. Their office is on the third floor.",
+    "The program is new, but its interface is very simple.",
+    "Peter can't find his phone."
+   ],
+   "ru_interference": "В русском подлежащее-местоимение легко опускается, а притяжательное часто не нужно: неверно 'Forgot password again' → верно 'I forgot my password again.'",
+   "prerequisites": [],
+   "exercises": [
+    {
+     "id": "a1_possessive_adjectives_01",
+     "kind": "choice",
+     "prompt": "This is ___ laptop. I bought it last week.",
+     "options": [
+      "I",
+      "me",
+      "my",
+      "mine"
+     ],
+     "correct_index": 2,
+     "explanation_ru": "Перед существительным laptop нужна притяжательная форма my; mine употребляется без существительного.",
+     "difficulty": 1
+    },
+    {
+     "id": "a1_possessive_adjectives_02",
+     "kind": "choice",
+     "prompt": "Anna is a designer. ___ works in our office.",
+     "options": [
+      "Her",
+      "She",
+      "Hers",
+      "She's"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Здесь нужно подлежащее, то есть личное местоимение she.",
+     "difficulty": 1
+    },
+    {
+     "id": "a1_possessive_adjectives_03",
+     "kind": "choice",
+     "prompt": "Tom and Alex are here. ___ office is on the third floor.",
+     "options": [
+      "They",
+      "Their",
+      "Them",
+      "They're"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Перед существительным office нужна притяжательная форма their.",
+     "difficulty": 2
+    },
+    {
+     "id": "a1_possessive_adjectives_04",
+     "kind": "choice",
+     "prompt": "This program is new, but ___ interface is very simple.",
+     "options": [
+      "it's",
+      "its",
+      "his",
+      "her"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Программа не человек, поэтому нужна форма its без апострофа; it's означает it is.",
+     "difficulty": 2
+    },
+    {
+     "id": "a1_possessive_adjectives_05",
+     "kind": "gap",
+     "prompt": "We like ___ (we) new office.",
+     "answer": "our",
+     "accept": [],
+     "explanation_ru": "Личному местоимению we соответствует притяжательное our.",
+     "difficulty": 1
+    },
+    {
+     "id": "a1_possessive_adjectives_06",
+     "kind": "gap",
+     "prompt": "Peter can't find ___ (he) phone.",
+     "answer": "his",
+     "accept": [],
+     "explanation_ru": "Владелец мужского пола, поэтому нужна форма his.",
+     "difficulty": 2
+    },
+    {
+     "id": "a1_possessive_adjectives_07",
+     "kind": "correct",
+     "prompt": "This is she laptop.",
+     "answer": "This is her laptop.",
+     "accept": [],
+     "explanation_ru": "Перед существительным нужна притяжательная форма her, а не подлежащее she.",
+     "difficulty": 3
+    },
+    {
+     "id": "a1_possessive_adjectives_08",
+     "kind": "order",
+     "prompt": "our / is / new / this / manager",
+     "answer": "This is our new manager.",
+     "accept": [],
+     "explanation_ru": "Притяжательное местоимение стоит перед прилагательным и существительным и заменяет артикль.",
+     "difficulty": 3
+    }
+   ]
+  },
+  {
+   "id": "a1_whose_possessive_s",
+   "level": "A1",
+   "band": "A1",
+   "topic": "Nouns & articles",
+   "title_en": "Whose, possessive 's: Whose is this? It's Mike's",
+   "source_slug": "whose-possessive-s",
+   "title_ru": "Whose и притяжательная форма с 's",
+   "summary_ru": "Принадлежность чаще всего выражается формой с 's, которая ставится после имени владельца: Mike's laptop. Порядок слов обратный русскому: сначала владелец, потом предмет. Если владельцев несколько и слово уже кончается на -s, добавляется только апостроф: my parents' house. У неправильных форм множественного числа сохраняется полное 's: the children's room. Вопрос о владельце задаётся словом whose: Whose phone is this? Не путайте whose с who's, то есть с сокращением от who is. Для неодушевлённых предметов чаще используют конструкцию с of или два существительных подряд: the name of the file, the office door.",
+   "forms": [
+    "name or singular noun + 's: Mike's laptop",
+    "plural noun in -s + apostrophe: my parents' house",
+    "irregular plural + 's: the children's room",
+    "Whose + noun + is / are ...?: Whose phone is this?",
+    "the + noun + of + thing: the name of the file"
+   ],
+   "examples": [
+    "This is Anna's office.",
+    "Whose laptop is this?",
+    "Where is Tom's desk?",
+    "It's my sister's birthday tomorrow.",
+    "This is my parents' house."
+   ],
+   "ru_interference": "Русский родительный падеж «телефон Майка» переносят в обратном порядке или через of: неверно 'This is the phone of Mike' → верно 'This is Mike's phone.'",
+   "prerequisites": [],
+   "exercises": [
+    {
+     "id": "a1_whose_possessive_s_01",
+     "kind": "choice",
+     "prompt": "This is ___ office. She works here.",
+     "options": [
+      "Anna",
+      "Annas",
+      "Anna's",
+      "Annas'"
+     ],
+     "correct_index": 2,
+     "explanation_ru": "Владелец в единственном числе получает апостроф и -s.",
+     "difficulty": 1
+    },
+    {
+     "id": "a1_whose_possessive_s_02",
+     "kind": "choice",
+     "prompt": "___ laptop is this?",
+     "options": [
+      "Who",
+      "Who's",
+      "Whose",
+      "Whom"
+     ],
+     "correct_index": 2,
+     "explanation_ru": "Вопрос о владельце задаётся словом whose; who's это сокращение от who is.",
+     "difficulty": 1
+    },
+    {
+     "id": "a1_whose_possessive_s_03",
+     "kind": "choice",
+     "prompt": "___ are these keys?",
+     "options": [
+      "Who",
+      "Whose",
+      "Who's",
+      "Which of"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Спрашиваем о владельце ключей, поэтому нужно whose.",
+     "difficulty": 2
+    },
+    {
+     "id": "a1_whose_possessive_s_04",
+     "kind": "choice",
+     "prompt": "It's ___ birthday today. She is thirty.",
+     "options": [
+      "my sister",
+      "my sisters",
+      "my sister's",
+      "my sisters'"
+     ],
+     "correct_index": 2,
+     "explanation_ru": "Сестра одна, что видно по she, поэтому нужна форма единственного числа с 's.",
+     "difficulty": 2
+    },
+    {
+     "id": "a1_whose_possessive_s_05",
+     "kind": "gap",
+     "prompt": "This is ___ (Mike) laptop.",
+     "answer": "Mike's",
+     "accept": [],
+     "explanation_ru": "К имени владельца добавляется апостроф с -s.",
+     "difficulty": 1
+    },
+    {
+     "id": "a1_whose_possessive_s_06",
+     "kind": "gap",
+     "prompt": "___ (who) car is in front of the office?",
+     "answer": "Whose",
+     "accept": [],
+     "explanation_ru": "Вопрос о владельце машины требует формы whose.",
+     "difficulty": 2
+    },
+    {
+     "id": "a1_whose_possessive_s_07",
+     "kind": "correct",
+     "prompt": "This is my parents house.",
+     "answer": "This is my parents' house.",
+     "accept": [],
+     "explanation_ru": "Множественное число parents уже кончается на -s, поэтому добавляется только апостроф.",
+     "difficulty": 3
+    },
+    {
+     "id": "a1_whose_possessive_s_08",
+     "kind": "order",
+     "prompt": "is / whose / this / phone",
+     "answer": "Whose phone is this?",
+     "accept": [
+      "Whose phone is this",
+      "Whose is this phone?",
+      "Whose is this phone"
+     ],
+     "explanation_ru": "Whose открывает вопрос, дальше идёт существительное и глагол be перед подлежащим.",
+     "difficulty": 3
+    }
+   ]
+  },
+  {
+   "id": "a1_be_going_to_plans_predictions",
+   "level": "A1",
+   "band": "A1",
+   "topic": "Other structures",
+   "title_en": "Be going to: Plans and predictions",
+   "source_slug": "be-going-to-plans-predictions",
+   "title_ru": "Be going to: планы и предсказания",
+   "summary_ru": "Конструкция be going to описывает намерение или план, о котором решили заранее: I am going to call the client tomorrow. Она же выражает предсказание, основанное на том, что видно сейчас: Look at those clouds. It's going to rain. Глагол be меняется по лицам: am, is, are, а смысловой глагол остаётся в начальной форме без окончаний. Отрицание строится частицей not после be: He isn't going to come. Вопрос образуется перестановкой be вперёд: Are you going to work on Friday? Вспомогательный do в этой конструкции не используется. Типичные спутники: tomorrow, tonight, next week, in May.",
+   "forms": [
+    "am / is / are + going to + base verb: I am going to call him",
+    "negative: is not going to / isn't going to",
+    "question: Are you going to work tomorrow?",
+    "short answers: Yes, I am. / No, I'm not.",
+    "prediction from evidence: It's going to rain"
+   ],
+   "examples": [
+    "I am going to call the client tomorrow.",
+    "She is going to test the new version tonight.",
+    "Look at those clouds! It is going to rain.",
+    "Are you going to join the meeting?",
+    "They are not going to come to the office today."
+   ],
+   "ru_interference": "Русское «собираюсь сделать» не содержит глагола-связки, поэтому be теряется, а смысловой глагол получает окончание: неверно 'I going to sends the report' → верно 'I am going to send the report.'",
+   "prerequisites": [],
+   "exercises": [
+    {
+     "id": "a1_be_going_to_plans_predictions_01",
+     "kind": "choice",
+     "prompt": "I ___ going to call the client tomorrow.",
+     "options": [
+      "am",
+      "is",
+      "are",
+      "be"
+     ],
+     "correct_index": 0,
+     "explanation_ru": "С подлежащим I форма глагола be только am.",
+     "difficulty": 1
+    },
+    {
+     "id": "a1_be_going_to_plans_predictions_02",
+     "kind": "choice",
+     "prompt": "She is going to ___ the new version tonight.",
+     "options": [
+      "tests",
+      "test",
+      "testing",
+      "tested"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "После going to идёт начальная форма глагола без окончаний.",
+     "difficulty": 1
+    },
+    {
+     "id": "a1_be_going_to_plans_predictions_03",
+     "kind": "choice",
+     "prompt": "Look at those clouds! It ___ rain in ten minutes.",
+     "options": [
+      "is going to",
+      "are going to",
+      "going to",
+      "is go to"
+     ],
+     "correct_index": 0,
+     "explanation_ru": "Предсказание по видимым признакам строится через be going to, с подлежащим it нужна форма is.",
+     "difficulty": 2
+    },
+    {
+     "id": "a1_be_going_to_plans_predictions_04",
+     "kind": "choice",
+     "prompt": "___ you going to join the meeting?",
+     "options": [
+      "Do",
+      "Are",
+      "Is",
+      "Be"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Вопрос образует глагол be, а не do; с подлежащим you нужна форма are.",
+     "difficulty": 2
+    },
+    {
+     "id": "a1_be_going_to_plans_predictions_05",
+     "kind": "gap",
+     "prompt": "We ___ (be going to / start) a new project in May.",
+     "answer": "are going to start",
+     "accept": [
+      "'re going to start"
+     ],
+     "explanation_ru": "С подлежащим we нужна форма are, а смысловой глагол остаётся в начальной форме.",
+     "difficulty": 1
+    },
+    {
+     "id": "a1_be_going_to_plans_predictions_06",
+     "kind": "gap",
+     "prompt": "They ___ (not / be going to / come) to the office today.",
+     "answer": "are not going to come",
+     "accept": [
+      "aren't going to come",
+      "'re not going to come"
+     ],
+     "explanation_ru": "Отрицание ставится сразу после глагола be, перед going to.",
+     "difficulty": 2
+    },
+    {
+     "id": "a1_be_going_to_plans_predictions_07",
+     "kind": "correct",
+     "prompt": "I going to fix the bug this evening.",
+     "answer": "I am going to fix the bug this evening.",
+     "accept": [
+      "I'm going to fix the bug this evening."
+     ],
+     "explanation_ru": "Пропущен глагол be: без am конструкция не работает.",
+     "difficulty": 3
+    },
+    {
+     "id": "a1_be_going_to_plans_predictions_08",
+     "kind": "order",
+     "prompt": "going / we / to / are / buy / a / new / server",
+     "answer": "We are going to buy a new server.",
+     "accept": [
+      "We're going to buy a new server."
+     ],
+     "explanation_ru": "Порядок такой: подлежащее, форма be, going to и начальная форма глагола.",
+     "difficulty": 3
+    }
+   ]
+  },
+  {
+   "id": "a1_have_got",
+   "level": "A1",
+   "band": "A1",
+   "topic": "Other structures",
+   "title_en": "Have got",
+   "source_slug": "have-got",
+   "title_ru": "Have got: обладание и наличие",
+   "summary_ru": "Have got означает «иметь» и употребляется в разговорной речи о вещах, родственниках, внешности и болезнях: I have got a new laptop. Форма зависит от лица: I, you, we, they have got; he, she, it has got. В речи почти всегда используются сокращения: I've got, she's got. Отрицание и вопрос строятся без вспомогательного do: I haven't got time. Have you got a minute? После have got идёт существительное, а не другой глагол. В американском варианте в вопросах и отрицаниях чаще звучит have с do: Do you have a minute? В прошедшем времени эта конструкция не используется, остаётся только had.",
+   "forms": [
+    "I / you / we / they + have got: I have got a laptop",
+    "he / she / it + has got: She has got a car",
+    "short forms: I've got, he's got",
+    "negative: haven't got / hasn't got",
+    "question: Have you got a minute?"
+   ],
+   "examples": [
+    "I have got a new laptop.",
+    "She has got two monitors on her desk.",
+    "We haven't got enough time today.",
+    "Have you got a minute?",
+    "They have got a printer in their office."
+   ],
+   "ru_interference": "Русское «у меня есть» обходится без глагола, поэтому have теряется или не согласуется с лицом: неверно 'He have got two monitors' → верно 'He has got two monitors.'",
+   "prerequisites": [],
+   "exercises": [
+    {
+     "id": "a1_have_got_01",
+     "kind": "choice",
+     "prompt": "She ___ got two monitors on her desk.",
+     "options": [
+      "have",
+      "has",
+      "is",
+      "does"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "С подлежащим she нужна форма has.",
+     "difficulty": 1
+    },
+    {
+     "id": "a1_have_got_02",
+     "kind": "choice",
+     "prompt": "We ___ got enough time to finish this today.",
+     "options": [
+      "hasn't",
+      "haven't",
+      "don't",
+      "aren't"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "С подлежащим we отрицание строится формой haven't, вспомогательный do не нужен.",
+     "difficulty": 1
+    },
+    {
+     "id": "a1_have_got_03",
+     "kind": "choice",
+     "prompt": "___ you got a minute?",
+     "options": [
+      "Do",
+      "Are",
+      "Have",
+      "Has"
+     ],
+     "correct_index": 2,
+     "explanation_ru": "Вопрос с have got начинается с have, которое здесь само работает как вспомогательный глагол.",
+     "difficulty": 2
+    },
+    {
+     "id": "a1_have_got_04",
+     "kind": "choice",
+     "prompt": "I've ___ a new phone.",
+     "options": [
+      "get",
+      "got",
+      "gets",
+      "getting"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "В конструкции всегда третья форма got, она не меняется.",
+     "difficulty": 2
+    },
+    {
+     "id": "a1_have_got_05",
+     "kind": "gap",
+     "prompt": "He ___ (have got) a new car.",
+     "answer": "has got",
+     "accept": [
+      "'s got"
+     ],
+     "explanation_ru": "Третье лицо единственного числа требует формы has got.",
+     "difficulty": 1
+    },
+    {
+     "id": "a1_have_got_06",
+     "kind": "gap",
+     "prompt": "They ___ (not / have got) a printer in their office.",
+     "answer": "haven't got",
+     "accept": [
+      "have not got"
+     ],
+     "explanation_ru": "Отрицание ставится между have и got, без do.",
+     "difficulty": 2
+    },
+    {
+     "id": "a1_have_got_07",
+     "kind": "correct",
+     "prompt": "Do you have got a pen?",
+     "answer": "Have you got a pen?",
+     "accept": [
+      "Do you have a pen?",
+      "Do you have a pen",
+      "Have you got a pen"
+     ],
+     "explanation_ru": "С have got вспомогательный do не нужен; можно также перестроить вопрос через do you have.",
+     "difficulty": 3
+    },
+    {
+     "id": "a1_have_got_08",
+     "kind": "order",
+     "prompt": "got / I / have / an / idea",
+     "answer": "I have got an idea.",
+     "accept": [
+      "I've got an idea."
+     ],
+     "explanation_ru": "Порядок: подлежащее, have, got и существительное.",
+     "difficulty": 3
+    }
+   ]
+  },
+  {
+   "id": "a1_the_difference_between_this_and_it",
+   "level": "A1",
+   "band": "A1",
+   "topic": "Other structures",
+   "title_en": "The difference between 'this' and 'it'",
+   "source_slug": "the-difference-between-this-and-it",
+   "title_ru": "Разница между this и it",
+   "summary_ru": "Русское «это» соответствует и this, и it, поэтому их постоянно путают. Слово this указывает на предмет рядом и вводит его в разговор впервые: This is my new laptop. Слово it заменяет то, что уже названо и понятно обоим собеседникам: It is very light. Поэтому первое предложение обычно строится с this, а следующее — с it. На вопрос What's this? отвечают It's a scanner, а не This is a scanner. Множественное число this — these, а множественное число it — they. Представляясь по телефону, говорят Hello, this is Anna. Слово it также работает формальным подлежащим для погоды и времени: It's raining.",
+   "forms": [
+    "This is + new or near thing: This is my new laptop",
+    "It is + thing already known: It is very light",
+    "What is this? - It is a scanner",
+    "these (plural of this) / they (plural of it)",
+    "it as a formal subject: It is raining"
+   ],
+   "examples": [
+    "This is my new laptop. It is very light.",
+    "What's this? It's a scanner.",
+    "Look, these are my new headphones!",
+    "Hello, this is Anna from the IT department.",
+    "It is raining today, so the meeting is online."
+   ],
+   "ru_interference": "Одно русское «это» переносят на оба предложения подряд: неверно 'This is my new laptop. This is very light' → верно 'This is my new laptop. It is very light.'",
+   "prerequisites": [],
+   "exercises": [
+    {
+     "id": "a1_the_difference_between_this_and_it_01",
+     "kind": "choice",
+     "prompt": "What's this? - ___ my new phone.",
+     "options": [
+      "It's",
+      "This's",
+      "It are",
+      "Its'"
+     ],
+     "correct_index": 0,
+     "explanation_ru": "В ответе предмет уже известен из вопроса, поэтому используется it; формы This's и Its' не существуют.",
+     "difficulty": 1
+    },
+    {
+     "id": "a1_the_difference_between_this_and_it_02",
+     "kind": "choice",
+     "prompt": "Look, ___ are my new headphones!",
+     "options": [
+      "it",
+      "this",
+      "these",
+      "that"
+     ],
+     "correct_index": 2,
+     "explanation_ru": "Предмет во множественном числе и рядом с говорящим, поэтому нужно these; остальные формы не сочетаются с are.",
+     "difficulty": 2
+    },
+    {
+     "id": "a1_the_difference_between_this_and_it_03",
+     "kind": "choice",
+     "prompt": "What are these? - ___ new keyboards.",
+     "options": [
+      "It's",
+      "They're",
+      "This is",
+      "That's"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Предметы уже названы в вопросе и стоят во множественном числе, поэтому нужно they are.",
+     "difficulty": 2
+    },
+    {
+     "id": "a1_the_difference_between_this_and_it_04",
+     "kind": "choice",
+     "prompt": "___ is raining today, so the meeting is online.",
+     "options": [
+      "This",
+      "It",
+      "That",
+      "These"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "О погоде говорят только с формальным подлежащим it.",
+     "difficulty": 1
+    },
+    {
+     "id": "a1_the_difference_between_this_and_it_05",
+     "kind": "gap",
+     "prompt": "I bought a new phone yesterday. ___ (this / it) is very light.",
+     "answer": "It",
+     "accept": [],
+     "explanation_ru": "Телефон уже назван в первом предложении, поэтому во втором нужно it.",
+     "difficulty": 1
+    },
+    {
+     "id": "a1_the_difference_between_this_and_it_06",
+     "kind": "gap",
+     "prompt": "Hello, ___ (this / it) is Anna from the IT department.",
+     "answer": "This",
+     "accept": [],
+     "explanation_ru": "Представляясь по телефону, себя называют через this is.",
+     "difficulty": 2
+    },
+    {
+     "id": "a1_the_difference_between_this_and_it_07",
+     "kind": "correct",
+     "prompt": "This is my new tablet. This is very light.",
+     "answer": "This is my new tablet. It is very light.",
+     "accept": [
+      "This is my new tablet. It's very light."
+     ],
+     "explanation_ru": "Во втором предложении предмет уже известен, поэтому нужно it, а не повторное this.",
+     "difficulty": 3
+    },
+    {
+     "id": "a1_the_difference_between_this_and_it_08",
+     "kind": "order",
+     "prompt": "new / this / my / is / colleague",
+     "answer": "This is my new colleague.",
+     "accept": [],
+     "explanation_ru": "Человека представляют впервые, поэтому предложение начинается с this is.",
+     "difficulty": 3
+    }
+   ]
+  }
+ ]
+}

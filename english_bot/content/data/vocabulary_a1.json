@@ -1,0 +1,1682 @@
+{
+  "items": [
+    {
+      "id": "a1_v_be",
+      "level": "A1",
+      "word": "be",
+      "pos": "verb",
+      "ipa_us": "/bi/",
+      "translation_ru": "быть, являться",
+      "example_en": "I am a student and my sister is a doctor.",
+      "collocations": [
+        "be at home",
+        "be late"
+      ],
+      "topic": "people"
+    },
+    {
+      "id": "a1_v_have",
+      "level": "A1",
+      "word": "have",
+      "pos": "verb",
+      "ipa_us": "/hæv/",
+      "translation_ru": "иметь, есть у",
+      "example_en": "We have a big kitchen in our new house.",
+      "collocations": [
+        "have breakfast",
+        "have time"
+      ],
+      "topic": "home"
+    },
+    {
+      "id": "a1_v_do",
+      "level": "A1",
+      "word": "do",
+      "pos": "verb",
+      "ipa_us": "/du/",
+      "translation_ru": "делать, выполнять",
+      "example_en": "I do my homework after dinner every day.",
+      "collocations": [
+        "do homework",
+        "do the dishes"
+      ],
+      "topic": "study"
+    },
+    {
+      "id": "a1_v_go",
+      "level": "A1",
+      "word": "go",
+      "pos": "verb",
+      "ipa_us": "/goʊ/",
+      "translation_ru": "идти, ехать, ходить",
+      "example_en": "We go to work by bus in the morning.",
+      "collocations": [
+        "go home",
+        "go to school"
+      ],
+      "topic": "travel"
+    },
+    {
+      "id": "a1_v_come",
+      "level": "A1",
+      "word": "come",
+      "pos": "verb",
+      "ipa_us": "/kʌm/",
+      "translation_ru": "приходить, приезжать",
+      "example_en": "My friends come to my house every week.",
+      "collocations": [
+        "come home",
+        "come back"
+      ],
+      "topic": "travel"
+    },
+    {
+      "id": "a1_v_make",
+      "level": "A1",
+      "word": "make",
+      "pos": "verb",
+      "ipa_us": "/meɪk/",
+      "translation_ru": "делать, готовить",
+      "example_en": "My mother makes very good coffee.",
+      "collocations": [
+        "make dinner",
+        "make a call"
+      ],
+      "topic": "food"
+    },
+    {
+      "id": "a1_v_take",
+      "level": "A1",
+      "word": "take",
+      "pos": "verb",
+      "ipa_us": "/teɪk/",
+      "translation_ru": "брать, взять; ездить (на автобусе, такси)",
+      "example_en": "I take the bus to school every day.",
+      "collocations": [
+        "take a bus",
+        "take a photo"
+      ],
+      "topic": "travel"
+    },
+    {
+      "id": "a1_v_get",
+      "level": "A1",
+      "word": "get",
+      "pos": "verb",
+      "ipa_us": "/gɛt/",
+      "translation_ru": "получать, доставать",
+      "example_en": "I get a lot of emails at work.",
+      "collocations": [
+        "get a job",
+        "get home"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "a1_v_see",
+      "level": "A1",
+      "word": "see",
+      "pos": "verb",
+      "ipa_us": "/si/",
+      "translation_ru": "видеть, увидеть",
+      "example_en": "I see my friends at school every day.",
+      "collocations": [
+        "see a doctor",
+        "see a movie"
+      ],
+      "topic": "people"
+    },
+    {
+      "id": "a1_v_know",
+      "level": "A1",
+      "word": "know",
+      "pos": "verb",
+      "ipa_us": "/noʊ/",
+      "translation_ru": "знать",
+      "example_en": "I know his name but I do not know his phone number.",
+      "collocations": [
+        "know the answer",
+        "know the way"
+      ],
+      "topic": "study"
+    },
+    {
+      "id": "a1_v_want",
+      "level": "A1",
+      "word": "want",
+      "pos": "verb",
+      "ipa_us": "/wɑnt/",
+      "translation_ru": "хотеть, желать",
+      "example_en": "I want a cup of tea after work.",
+      "collocations": [
+        "want to go",
+        "want more"
+      ],
+      "topic": "feelings"
+    },
+    {
+      "id": "a1_v_like",
+      "level": "A1",
+      "word": "like",
+      "pos": "verb",
+      "ipa_us": "/laɪk/",
+      "translation_ru": "нравиться, любить",
+      "example_en": "I like my new job very much.",
+      "collocations": [
+        "like music",
+        "like coffee"
+      ],
+      "topic": "feelings"
+    },
+    {
+      "id": "a1_v_eat",
+      "level": "A1",
+      "word": "eat",
+      "pos": "verb",
+      "ipa_us": "/it/",
+      "translation_ru": "есть, кушать",
+      "example_en": "We eat dinner at seven in the evening.",
+      "collocations": [
+        "eat breakfast",
+        "eat out"
+      ],
+      "topic": "food"
+    },
+    {
+      "id": "a1_v_drink",
+      "level": "A1",
+      "word": "drink",
+      "pos": "verb",
+      "ipa_us": "/drɪŋk/",
+      "translation_ru": "пить",
+      "example_en": "I drink coffee every morning at work.",
+      "collocations": [
+        "drink water",
+        "drink tea"
+      ],
+      "topic": "food"
+    },
+    {
+      "id": "a1_v_sleep",
+      "level": "A1",
+      "word": "sleep",
+      "pos": "verb",
+      "ipa_us": "/slip/",
+      "translation_ru": "спать",
+      "example_en": "My son sleeps eight hours every night.",
+      "collocations": [
+        "sleep well",
+        "sleep late"
+      ],
+      "topic": "health"
+    },
+    {
+      "id": "a1_v_work",
+      "level": "A1",
+      "word": "work",
+      "pos": "verb",
+      "ipa_us": "/wɝk/",
+      "translation_ru": "работать",
+      "example_en": "I work in a small office in the city.",
+      "collocations": [
+        "work hard",
+        "work from home"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "a1_v_live",
+      "level": "A1",
+      "word": "live",
+      "pos": "verb",
+      "ipa_us": "/lɪv/",
+      "translation_ru": "жить, проживать",
+      "example_en": "My family lives in a small house near the park.",
+      "collocations": [
+        "live in a city",
+        "live with friends"
+      ],
+      "topic": "home"
+    },
+    {
+      "id": "a1_v_read",
+      "level": "A1",
+      "word": "read",
+      "pos": "verb",
+      "ipa_us": "/rid/",
+      "translation_ru": "читать",
+      "example_en": "I read a book before I go to sleep.",
+      "collocations": [
+        "read a book",
+        "read the news"
+      ],
+      "topic": "study"
+    },
+    {
+      "id": "a1_v_write",
+      "level": "A1",
+      "word": "write",
+      "pos": "verb",
+      "ipa_us": "/raɪt/",
+      "translation_ru": "писать",
+      "example_en": "Please write your name and phone number here.",
+      "collocations": [
+        "write a letter",
+        "write an email"
+      ],
+      "topic": "study"
+    },
+    {
+      "id": "a1_v_speak",
+      "level": "A1",
+      "word": "speak",
+      "pos": "verb",
+      "ipa_us": "/spik/",
+      "translation_ru": "говорить, разговаривать",
+      "example_en": "I speak English and Russian at work.",
+      "collocations": [
+        "speak English",
+        "speak slowly"
+      ],
+      "topic": "study"
+    },
+    {
+      "id": "a1_v_listen",
+      "level": "A1",
+      "word": "listen",
+      "pos": "verb",
+      "ipa_us": "/ˈlɪsən/",
+      "translation_ru": "слушать",
+      "example_en": "I listen to music when I work.",
+      "collocations": [
+        "listen to music",
+        "listen carefully"
+      ],
+      "topic": "study"
+    },
+    {
+      "id": "a1_v_watch",
+      "level": "A1",
+      "word": "watch",
+      "pos": "verb",
+      "ipa_us": "/wɑtʃ/",
+      "translation_ru": "смотреть, наблюдать",
+      "example_en": "We watch a movie at home in the evening.",
+      "collocations": [
+        "watch TV",
+        "watch a movie"
+      ],
+      "topic": "home"
+    },
+    {
+      "id": "a1_v_play",
+      "level": "A1",
+      "word": "play",
+      "pos": "verb",
+      "ipa_us": "/pleɪ/",
+      "translation_ru": "играть",
+      "example_en": "The children play in the park after school.",
+      "collocations": [
+        "play football",
+        "play a game"
+      ],
+      "topic": "people"
+    },
+    {
+      "id": "a1_v_help",
+      "level": "A1",
+      "word": "help",
+      "pos": "verb",
+      "ipa_us": "/hɛlp/",
+      "translation_ru": "помогать",
+      "example_en": "Can you help me with this computer?",
+      "collocations": [
+        "help a friend",
+        "help with work"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "a1_v_open",
+      "level": "A1",
+      "word": "open",
+      "pos": "verb",
+      "ipa_us": "/ˈoʊpən/",
+      "translation_ru": "открывать",
+      "example_en": "Please open the window, it is very hot here.",
+      "collocations": [
+        "open a door",
+        "open a file"
+      ],
+      "topic": "home"
+    },
+    {
+      "id": "a1_v_close",
+      "level": "A1",
+      "word": "close",
+      "pos": "verb",
+      "ipa_us": "/kloʊz/",
+      "translation_ru": "закрывать",
+      "example_en": "Close the door, please, the baby is asleep.",
+      "collocations": [
+        "close a door",
+        "close a window"
+      ],
+      "topic": "home"
+    },
+    {
+      "id": "a1_v_buy",
+      "level": "A1",
+      "word": "buy",
+      "pos": "verb",
+      "ipa_us": "/baɪ/",
+      "translation_ru": "покупать",
+      "example_en": "I buy bread and milk in the shop near my house.",
+      "collocations": [
+        "buy food",
+        "buy a ticket"
+      ],
+      "topic": "money"
+    },
+    {
+      "id": "a1_v_give",
+      "level": "A1",
+      "word": "give",
+      "pos": "verb",
+      "ipa_us": "/gɪv/",
+      "translation_ru": "давать, дарить",
+      "example_en": "Give me your phone number, please.",
+      "collocations": [
+        "give money",
+        "give a book"
+      ],
+      "topic": "people"
+    },
+    {
+      "id": "a1_v_walk",
+      "level": "A1",
+      "word": "walk",
+      "pos": "verb",
+      "ipa_us": "/wɔk/",
+      "translation_ru": "идти пешком, гулять",
+      "example_en": "I walk to work when the weather is good.",
+      "collocations": [
+        "walk home",
+        "walk fast"
+      ],
+      "topic": "travel"
+    },
+    {
+      "id": "a1_v_run",
+      "level": "A1",
+      "word": "run",
+      "pos": "verb",
+      "ipa_us": "/rʌn/",
+      "translation_ru": "бежать, бегать",
+      "example_en": "I run in the park every morning.",
+      "collocations": [
+        "run fast",
+        "run every day"
+      ],
+      "topic": "health"
+    },
+    {
+      "id": "a1_v_sit",
+      "level": "A1",
+      "word": "sit",
+      "pos": "verb",
+      "ipa_us": "/sɪt/",
+      "translation_ru": "сидеть, садиться",
+      "example_en": "We sit at the table and eat dinner together.",
+      "collocations": [
+        "sit at a table",
+        "sit here"
+      ],
+      "topic": "home"
+    },
+    {
+      "id": "a1_v_stand",
+      "level": "A1",
+      "word": "stand",
+      "pos": "verb",
+      "ipa_us": "/stænd/",
+      "translation_ru": "стоять",
+      "example_en": "I stand on the bus every morning.",
+      "collocations": [
+        "stand here",
+        "stand in line"
+      ],
+      "topic": "travel"
+    },
+    {
+      "id": "a1_v_wait",
+      "level": "A1",
+      "word": "wait",
+      "pos": "verb",
+      "ipa_us": "/weɪt/",
+      "translation_ru": "ждать",
+      "example_en": "I wait for the bus every morning at eight.",
+      "collocations": [
+        "wait for a bus",
+        "wait a minute"
+      ],
+      "topic": "time"
+    },
+    {
+      "id": "a1_v_ask",
+      "level": "A1",
+      "word": "ask",
+      "pos": "verb",
+      "ipa_us": "/æsk/",
+      "translation_ru": "спрашивать, просить",
+      "example_en": "Ask your teacher if you do not know the answer.",
+      "collocations": [
+        "ask a question",
+        "ask for help"
+      ],
+      "topic": "study"
+    },
+    {
+      "id": "a1_v_learn",
+      "level": "A1",
+      "word": "learn",
+      "pos": "verb",
+      "ipa_us": "/lɝn/",
+      "translation_ru": "учить, изучать",
+      "example_en": "I learn ten new English words every day.",
+      "collocations": [
+        "learn English",
+        "learn fast"
+      ],
+      "topic": "study"
+    },
+    {
+      "id": "a1_v_call",
+      "level": "A1",
+      "word": "call",
+      "pos": "verb",
+      "ipa_us": "/kɔl/",
+      "translation_ru": "звонить, называть",
+      "example_en": "Call me tomorrow morning, please.",
+      "collocations": [
+        "call a friend",
+        "call back"
+      ],
+      "topic": "tech"
+    },
+    {
+      "id": "a1_v_need",
+      "level": "A1",
+      "word": "need",
+      "pos": "verb",
+      "ipa_us": "/nid/",
+      "translation_ru": "нуждаться, требоваться",
+      "example_en": "I need a new computer for my work.",
+      "collocations": [
+        "need help",
+        "need time"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "a1_v_say",
+      "level": "A1",
+      "word": "say",
+      "pos": "verb",
+      "ipa_us": "/seɪ/",
+      "translation_ru": "сказать, говорить",
+      "example_en": "Say your name slowly, please.",
+      "collocations": [
+        "say yes",
+        "say hello"
+      ],
+      "topic": "people"
+    },
+    {
+      "id": "a1_v_think",
+      "level": "A1",
+      "word": "think",
+      "pos": "verb",
+      "ipa_us": "/θɪŋk/",
+      "translation_ru": "думать, считать",
+      "example_en": "I think this book is very good.",
+      "collocations": [
+        "think about",
+        "think so"
+      ],
+      "topic": "feelings"
+    },
+    {
+      "id": "a1_v_use",
+      "level": "A1",
+      "word": "use",
+      "pos": "verb",
+      "ipa_us": "/juz/",
+      "translation_ru": "использовать, пользоваться",
+      "example_en": "I use my phone to read the news.",
+      "collocations": [
+        "use a computer",
+        "use a phone"
+      ],
+      "topic": "tech"
+    },
+    {
+      "id": "a1_v_start",
+      "level": "A1",
+      "word": "start",
+      "pos": "verb",
+      "ipa_us": "/stɑrt/",
+      "translation_ru": "начинать, начинаться",
+      "example_en": "My work day starts at nine in the morning.",
+      "collocations": [
+        "start work",
+        "start a car"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "a1_v_stop",
+      "level": "A1",
+      "word": "stop",
+      "pos": "verb",
+      "ipa_us": "/stɑp/",
+      "translation_ru": "останавливать(ся), прекращать",
+      "example_en": "The bus stops near my house.",
+      "collocations": [
+        "stop working",
+        "stop here"
+      ],
+      "topic": "travel"
+    },
+    {
+      "id": "a1_v_family",
+      "level": "A1",
+      "word": "family",
+      "pos": "noun",
+      "ipa_us": "/ˈfæməli/",
+      "translation_ru": "семья",
+      "example_en": "My family is big: I have two sisters and one brother.",
+      "collocations": [
+        "a big family",
+        "family time"
+      ],
+      "topic": "people"
+    },
+    {
+      "id": "a1_v_mother",
+      "level": "A1",
+      "word": "mother",
+      "pos": "noun",
+      "ipa_us": "/ˈmʌðɚ/",
+      "translation_ru": "мать, мама",
+      "example_en": "My mother makes very good bread.",
+      "collocations": [
+        "a young mother",
+        "mother and father"
+      ],
+      "topic": "people"
+    },
+    {
+      "id": "a1_v_father",
+      "level": "A1",
+      "word": "father",
+      "pos": "noun",
+      "ipa_us": "/ˈfɑðɚ/",
+      "translation_ru": "отец, папа",
+      "example_en": "My father works in a shop in the city.",
+      "collocations": [
+        "a good father",
+        "father and son"
+      ],
+      "topic": "people"
+    },
+    {
+      "id": "a1_v_friend",
+      "level": "A1",
+      "word": "friend",
+      "pos": "noun",
+      "ipa_us": "/frɛnd/",
+      "translation_ru": "друг, подруга",
+      "example_en": "My friend lives on the next street.",
+      "collocations": [
+        "a good friend",
+        "an old friend"
+      ],
+      "topic": "people"
+    },
+    {
+      "id": "a1_v_people",
+      "level": "A1",
+      "word": "people",
+      "pos": "noun",
+      "ipa_us": "/ˈpipəl/",
+      "translation_ru": "люди, народ",
+      "example_en": "A lot of people work in this office.",
+      "collocations": [
+        "young people",
+        "a lot of people"
+      ],
+      "topic": "people"
+    },
+    {
+      "id": "a1_v_child",
+      "level": "A1",
+      "word": "child",
+      "pos": "noun",
+      "ipa_us": "/tʃaɪld/",
+      "translation_ru": "ребёнок",
+      "example_en": "The child is happy with the new book.",
+      "collocations": [
+        "a small child",
+        "a happy child"
+      ],
+      "topic": "people"
+    },
+    {
+      "id": "a1_v_house",
+      "level": "A1",
+      "word": "house",
+      "pos": "noun",
+      "ipa_us": "/haʊs/",
+      "translation_ru": "дом",
+      "example_en": "We live in a small house near the school.",
+      "collocations": [
+        "a big house",
+        "buy a house"
+      ],
+      "topic": "home"
+    },
+    {
+      "id": "a1_v_room",
+      "level": "A1",
+      "word": "room",
+      "pos": "noun",
+      "ipa_us": "/rum/",
+      "translation_ru": "комната",
+      "example_en": "My room is small but very nice.",
+      "collocations": [
+        "a big room",
+        "a living room"
+      ],
+      "topic": "home"
+    },
+    {
+      "id": "a1_v_door",
+      "level": "A1",
+      "word": "door",
+      "pos": "noun",
+      "ipa_us": "/dɔr/",
+      "translation_ru": "дверь",
+      "example_en": "Please close the door when you go out.",
+      "collocations": [
+        "open the door",
+        "the front door"
+      ],
+      "topic": "home"
+    },
+    {
+      "id": "a1_v_table",
+      "level": "A1",
+      "word": "table",
+      "pos": "noun",
+      "ipa_us": "/ˈteɪbəl/",
+      "translation_ru": "стол",
+      "example_en": "We eat breakfast at the kitchen table.",
+      "collocations": [
+        "a big table",
+        "at the table"
+      ],
+      "topic": "home"
+    },
+    {
+      "id": "a1_v_water",
+      "level": "A1",
+      "word": "water",
+      "pos": "noun",
+      "ipa_us": "/ˈwɔtɚ/",
+      "translation_ru": "вода",
+      "example_en": "I drink a lot of water every day.",
+      "collocations": [
+        "cold water",
+        "hot water"
+      ],
+      "topic": "food"
+    },
+    {
+      "id": "a1_v_bread",
+      "level": "A1",
+      "word": "bread",
+      "pos": "noun",
+      "ipa_us": "/brɛd/",
+      "translation_ru": "хлеб",
+      "example_en": "I buy fresh bread in the shop every morning.",
+      "collocations": [
+        "fresh bread",
+        "white bread"
+      ],
+      "topic": "food"
+    },
+    {
+      "id": "a1_v_apple",
+      "level": "A1",
+      "word": "apple",
+      "pos": "noun",
+      "ipa_us": "/ˈæpəl/",
+      "translation_ru": "яблоко",
+      "example_en": "I eat an apple for lunch every day.",
+      "collocations": [
+        "a red apple",
+        "a green apple"
+      ],
+      "topic": "food"
+    },
+    {
+      "id": "a1_v_coffee",
+      "level": "A1",
+      "word": "coffee",
+      "pos": "noun",
+      "ipa_us": "/ˈkɔfi/",
+      "translation_ru": "кофе",
+      "example_en": "I drink two cups of coffee in the morning.",
+      "collocations": [
+        "black coffee",
+        "a cup of coffee"
+      ],
+      "topic": "food"
+    },
+    {
+      "id": "a1_v_food",
+      "level": "A1",
+      "word": "food",
+      "pos": "noun",
+      "ipa_us": "/fud/",
+      "translation_ru": "еда, пища",
+      "example_en": "The food in this small shop is very good.",
+      "collocations": [
+        "good food",
+        "fast food"
+      ],
+      "topic": "food"
+    },
+    {
+      "id": "a1_v_breakfast",
+      "level": "A1",
+      "word": "breakfast",
+      "pos": "noun",
+      "ipa_us": "/ˈbrɛkfəst/",
+      "translation_ru": "завтрак",
+      "example_en": "I have breakfast at seven every morning.",
+      "collocations": [
+        "have breakfast",
+        "a big breakfast"
+      ],
+      "topic": "food"
+    },
+    {
+      "id": "a1_v_dinner",
+      "level": "A1",
+      "word": "dinner",
+      "pos": "noun",
+      "ipa_us": "/ˈdɪnɚ/",
+      "translation_ru": "ужин",
+      "example_en": "We have dinner together at home.",
+      "collocations": [
+        "have dinner",
+        "make dinner"
+      ],
+      "topic": "food"
+    },
+    {
+      "id": "a1_v_day",
+      "level": "A1",
+      "word": "day",
+      "pos": "noun",
+      "ipa_us": "/deɪ/",
+      "translation_ru": "день, сутки",
+      "example_en": "I work eight hours a day.",
+      "collocations": [
+        "every day",
+        "a good day"
+      ],
+      "topic": "time"
+    },
+    {
+      "id": "a1_v_week",
+      "level": "A1",
+      "word": "week",
+      "pos": "noun",
+      "ipa_us": "/wik/",
+      "translation_ru": "неделя",
+      "example_en": "I go to the shop twice a week.",
+      "collocations": [
+        "last week",
+        "next week"
+      ],
+      "topic": "time"
+    },
+    {
+      "id": "a1_v_year",
+      "level": "A1",
+      "word": "year",
+      "pos": "noun",
+      "ipa_us": "/jɪr/",
+      "translation_ru": "год",
+      "example_en": "My brother is ten years old.",
+      "collocations": [
+        "last year",
+        "next year"
+      ],
+      "topic": "time"
+    },
+    {
+      "id": "a1_v_morning",
+      "level": "A1",
+      "word": "morning",
+      "pos": "noun",
+      "ipa_us": "/ˈmɔrnɪŋ/",
+      "translation_ru": "утро",
+      "example_en": "I run in the park in the morning.",
+      "collocations": [
+        "in the morning",
+        "every morning"
+      ],
+      "topic": "time"
+    },
+    {
+      "id": "a1_v_night",
+      "level": "A1",
+      "word": "night",
+      "pos": "noun",
+      "ipa_us": "/naɪt/",
+      "translation_ru": "ночь",
+      "example_en": "I read a book at night before I sleep.",
+      "collocations": [
+        "at night",
+        "a long night"
+      ],
+      "topic": "time"
+    },
+    {
+      "id": "a1_v_time",
+      "level": "A1",
+      "word": "time",
+      "pos": "noun",
+      "ipa_us": "/taɪm/",
+      "translation_ru": "время, раз",
+      "example_en": "I do not have time for breakfast today.",
+      "collocations": [
+        "a lot of time",
+        "the first time"
+      ],
+      "topic": "time"
+    },
+    {
+      "id": "a1_v_money",
+      "level": "A1",
+      "word": "money",
+      "pos": "noun",
+      "ipa_us": "/ˈmʌni/",
+      "translation_ru": "деньги",
+      "example_en": "I do not have money for a new car.",
+      "collocations": [
+        "a lot of money",
+        "make money"
+      ],
+      "topic": "money"
+    },
+    {
+      "id": "a1_v_shop",
+      "level": "A1",
+      "word": "shop",
+      "pos": "noun",
+      "ipa_us": "/ʃɑp/",
+      "translation_ru": "магазин",
+      "example_en": "The shop near my house is open every day.",
+      "collocations": [
+        "a small shop",
+        "go to the shop"
+      ],
+      "topic": "money"
+    },
+    {
+      "id": "a1_v_street",
+      "level": "A1",
+      "word": "street",
+      "pos": "noun",
+      "ipa_us": "/strit/",
+      "translation_ru": "улица",
+      "example_en": "My friend lives on this street.",
+      "collocations": [
+        "a long street",
+        "on the street"
+      ],
+      "topic": "travel"
+    },
+    {
+      "id": "a1_v_city",
+      "level": "A1",
+      "word": "city",
+      "pos": "noun",
+      "ipa_us": "/ˈsɪti/",
+      "translation_ru": "город",
+      "example_en": "I live in a big city with my family.",
+      "collocations": [
+        "a big city",
+        "in the city"
+      ],
+      "topic": "travel"
+    },
+    {
+      "id": "a1_v_car",
+      "level": "A1",
+      "word": "car",
+      "pos": "noun",
+      "ipa_us": "/kɑr/",
+      "translation_ru": "машина, автомобиль",
+      "example_en": "My father has an old car.",
+      "collocations": [
+        "a new car",
+        "by car"
+      ],
+      "topic": "travel"
+    },
+    {
+      "id": "a1_v_bus",
+      "level": "A1",
+      "word": "bus",
+      "pos": "noun",
+      "ipa_us": "/bʌs/",
+      "translation_ru": "автобус",
+      "example_en": "I take the bus to work every morning.",
+      "collocations": [
+        "by bus",
+        "a bus stop"
+      ],
+      "topic": "travel"
+    },
+    {
+      "id": "a1_v_school",
+      "level": "A1",
+      "word": "school",
+      "pos": "noun",
+      "ipa_us": "/skul/",
+      "translation_ru": "школа",
+      "example_en": "My children go to school near our house.",
+      "collocations": [
+        "go to school",
+        "at school"
+      ],
+      "topic": "study"
+    },
+    {
+      "id": "a1_v_book",
+      "level": "A1",
+      "word": "book",
+      "pos": "noun",
+      "ipa_us": "/bʊk/",
+      "translation_ru": "книга",
+      "example_en": "This book is very easy to read.",
+      "collocations": [
+        "read a book",
+        "a good book"
+      ],
+      "topic": "study"
+    },
+    {
+      "id": "a1_v_phone",
+      "level": "A1",
+      "word": "phone",
+      "pos": "noun",
+      "ipa_us": "/foʊn/",
+      "translation_ru": "телефон",
+      "example_en": "My new phone is very small.",
+      "collocations": [
+        "a cell phone",
+        "on the phone"
+      ],
+      "topic": "tech"
+    },
+    {
+      "id": "a1_v_computer",
+      "level": "A1",
+      "word": "computer",
+      "pos": "noun",
+      "ipa_us": "/kəmˈpjutɚ/",
+      "translation_ru": "компьютер",
+      "example_en": "I work on my computer all day.",
+      "collocations": [
+        "a new computer",
+        "work on a computer"
+      ],
+      "topic": "tech"
+    },
+    {
+      "id": "a1_v_name",
+      "level": "A1",
+      "word": "name",
+      "pos": "noun",
+      "ipa_us": "/neɪm/",
+      "translation_ru": "имя, название",
+      "example_en": "What is your name, please?",
+      "collocations": [
+        "a first name",
+        "a last name"
+      ],
+      "topic": "people"
+    },
+    {
+      "id": "a1_v_number",
+      "level": "A1",
+      "word": "number",
+      "pos": "noun",
+      "ipa_us": "/ˈnʌmbɚ/",
+      "translation_ru": "номер, число",
+      "example_en": "My house number is fifteen.",
+      "collocations": [
+        "a phone number",
+        "a room number"
+      ],
+      "topic": "tech"
+    },
+    {
+      "id": "a1_v_good",
+      "level": "A1",
+      "word": "good",
+      "pos": "adjective",
+      "ipa_us": "/gʊd/",
+      "translation_ru": "хороший, добрый",
+      "example_en": "This is a very good book for children.",
+      "collocations": [
+        "a good day",
+        "a good friend"
+      ],
+      "topic": "feelings"
+    },
+    {
+      "id": "a1_v_bad",
+      "level": "A1",
+      "word": "bad",
+      "pos": "adjective",
+      "ipa_us": "/bæd/",
+      "translation_ru": "плохой",
+      "example_en": "The coffee in this shop is very bad.",
+      "collocations": [
+        "a bad day",
+        "bad news"
+      ],
+      "topic": "feelings"
+    },
+    {
+      "id": "a1_v_big",
+      "level": "A1",
+      "word": "big",
+      "pos": "adjective",
+      "ipa_us": "/bɪg/",
+      "translation_ru": "большой",
+      "example_en": "They live in a big house near the city.",
+      "collocations": [
+        "a big house",
+        "a big family"
+      ],
+      "topic": "home"
+    },
+    {
+      "id": "a1_v_small",
+      "level": "A1",
+      "word": "small",
+      "pos": "adjective",
+      "ipa_us": "/smɔl/",
+      "translation_ru": "маленький, небольшой",
+      "example_en": "I work in a small office with four people.",
+      "collocations": [
+        "a small room",
+        "a small city"
+      ],
+      "topic": "home"
+    },
+    {
+      "id": "a1_v_new",
+      "level": "A1",
+      "word": "new",
+      "pos": "adjective",
+      "ipa_us": "/nu/",
+      "translation_ru": "новый",
+      "example_en": "I have a new phone and a new computer.",
+      "collocations": [
+        "a new job",
+        "a new car"
+      ],
+      "topic": "tech"
+    },
+    {
+      "id": "a1_v_old",
+      "level": "A1",
+      "word": "old",
+      "pos": "adjective",
+      "ipa_us": "/oʊld/",
+      "translation_ru": "старый; (о возрасте) ... лет",
+      "example_en": "My car is old but it works well.",
+      "collocations": [
+        "an old house",
+        "ten years old"
+      ],
+      "topic": "time"
+    },
+    {
+      "id": "a1_v_happy",
+      "level": "A1",
+      "word": "happy",
+      "pos": "adjective",
+      "ipa_us": "/ˈhæpi/",
+      "translation_ru": "счастливый, радостный",
+      "example_en": "My sister is happy with her new job.",
+      "collocations": [
+        "a happy day",
+        "very happy"
+      ],
+      "topic": "feelings"
+    },
+    {
+      "id": "a1_v_hot",
+      "level": "A1",
+      "word": "hot",
+      "pos": "adjective",
+      "ipa_us": "/hɑt/",
+      "translation_ru": "горячий, жаркий",
+      "example_en": "The water is very hot, please wait.",
+      "collocations": [
+        "hot water",
+        "a hot day"
+      ],
+      "topic": "nature"
+    },
+    {
+      "id": "a1_v_cold",
+      "level": "A1",
+      "word": "cold",
+      "pos": "adjective",
+      "ipa_us": "/koʊld/",
+      "translation_ru": "холодный",
+      "example_en": "I drink cold water after I run.",
+      "collocations": [
+        "cold water",
+        "a cold day"
+      ],
+      "topic": "nature"
+    },
+    {
+      "id": "a1_v_easy",
+      "level": "A1",
+      "word": "easy",
+      "pos": "adjective",
+      "ipa_us": "/ˈizi/",
+      "translation_ru": "лёгкий, простой",
+      "example_en": "This book is easy to read in English.",
+      "collocations": [
+        "an easy job",
+        "very easy"
+      ],
+      "topic": "study"
+    },
+    {
+      "id": "a1_v_nice",
+      "level": "A1",
+      "word": "nice",
+      "pos": "adjective",
+      "ipa_us": "/naɪs/",
+      "translation_ru": "приятный, милый",
+      "example_en": "My new friends are very nice people.",
+      "collocations": [
+        "a nice day",
+        "a nice person"
+      ],
+      "topic": "feelings"
+    },
+    {
+      "id": "a1_v_red",
+      "level": "A1",
+      "word": "red",
+      "pos": "adjective",
+      "ipa_us": "/rɛd/",
+      "translation_ru": "красный",
+      "example_en": "I want the red car, not the black one.",
+      "collocations": [
+        "a red apple",
+        "a red door"
+      ],
+      "topic": "nature"
+    },
+    {
+      "id": "a1_v_young",
+      "level": "A1",
+      "word": "young",
+      "pos": "adjective",
+      "ipa_us": "/jʌŋ/",
+      "translation_ru": "молодой",
+      "example_en": "My brother is young: he is only five.",
+      "collocations": [
+        "a young man",
+        "young people"
+      ],
+      "topic": "people"
+    },
+    {
+      "id": "a1_v_tired",
+      "level": "A1",
+      "word": "tired",
+      "pos": "adjective",
+      "ipa_us": "/ˈtaɪɚd/",
+      "translation_ru": "усталый",
+      "example_en": "I am very tired after a long day at work.",
+      "collocations": [
+        "very tired",
+        "get tired"
+      ],
+      "topic": "health"
+    },
+    {
+      "id": "a1_v_hungry",
+      "level": "A1",
+      "word": "hungry",
+      "pos": "adjective",
+      "ipa_us": "/ˈhʌŋgri/",
+      "translation_ru": "голодный",
+      "example_en": "I am hungry, let's eat something now.",
+      "collocations": [
+        "very hungry",
+        "get hungry"
+      ],
+      "topic": "food"
+    },
+    {
+      "id": "a1_v_long",
+      "level": "A1",
+      "word": "long",
+      "pos": "adjective",
+      "ipa_us": "/lɔŋ/",
+      "translation_ru": "длинный, долгий",
+      "example_en": "It is a long day: I work from eight to eight.",
+      "collocations": [
+        "a long day",
+        "a long time"
+      ],
+      "topic": "time"
+    },
+    {
+      "id": "a1_v_first",
+      "level": "A1",
+      "word": "first",
+      "pos": "adjective",
+      "ipa_us": "/fɝst/",
+      "translation_ru": "первый",
+      "example_en": "This is my first day in the new office.",
+      "collocations": [
+        "the first time",
+        "the first day"
+      ],
+      "topic": "time"
+    },
+    {
+      "id": "a1_v_two",
+      "level": "A1",
+      "word": "two",
+      "pos": "adjective",
+      "ipa_us": "/tu/",
+      "translation_ru": "два, две",
+      "example_en": "I have two brothers and one sister.",
+      "collocations": [
+        "two days",
+        "two people"
+      ],
+      "topic": "people"
+    },
+    {
+      "id": "a1_v_now",
+      "level": "A1",
+      "word": "now",
+      "pos": "adverb",
+      "ipa_us": "/naʊ/",
+      "translation_ru": "сейчас, теперь",
+      "example_en": "I am at work now, call me later.",
+      "collocations": [
+        "right now",
+        "not now"
+      ],
+      "topic": "time"
+    },
+    {
+      "id": "a1_v_today",
+      "level": "A1",
+      "word": "today",
+      "pos": "adverb",
+      "ipa_us": "/təˈdeɪ/",
+      "translation_ru": "сегодня",
+      "example_en": "Today is a very good day.",
+      "collocations": [
+        "later today",
+        "not today"
+      ],
+      "topic": "time"
+    },
+    {
+      "id": "a1_v_tomorrow",
+      "level": "A1",
+      "word": "tomorrow",
+      "pos": "adverb",
+      "ipa_us": "/təˈmɑroʊ/",
+      "translation_ru": "завтра",
+      "example_en": "I go to the doctor tomorrow morning.",
+      "collocations": [
+        "see you tomorrow",
+        "tomorrow morning"
+      ],
+      "topic": "time"
+    },
+    {
+      "id": "a1_v_here",
+      "level": "A1",
+      "word": "here",
+      "pos": "adverb",
+      "ipa_us": "/hɪr/",
+      "translation_ru": "здесь, сюда",
+      "example_en": "Please sit here and wait five minutes.",
+      "collocations": [
+        "come here",
+        "over here"
+      ],
+      "topic": "home"
+    },
+    {
+      "id": "a1_v_very",
+      "level": "A1",
+      "word": "very",
+      "pos": "adverb",
+      "ipa_us": "/ˈvɛri/",
+      "translation_ru": "очень",
+      "example_en": "My new job is very good.",
+      "collocations": [
+        "very good",
+        "very big"
+      ],
+      "topic": "feelings"
+    },
+    {
+      "id": "a1_v_always",
+      "level": "A1",
+      "word": "always",
+      "pos": "adverb",
+      "ipa_us": "/ˈɔlweɪz/",
+      "translation_ru": "всегда",
+      "example_en": "I always drink coffee in the morning.",
+      "collocations": [
+        "always late",
+        "always here"
+      ],
+      "topic": "time"
+    },
+    {
+      "id": "a1_v_never",
+      "level": "A1",
+      "word": "never",
+      "pos": "adverb",
+      "ipa_us": "/ˈnɛvɚ/",
+      "translation_ru": "никогда",
+      "example_en": "I never eat bread in the evening.",
+      "collocations": [
+        "never late",
+        "never again"
+      ],
+      "topic": "time"
+    },
+    {
+      "id": "a1_v_often",
+      "level": "A1",
+      "word": "often",
+      "pos": "adverb",
+      "ipa_us": "/ˈɔfən/",
+      "translation_ru": "часто",
+      "example_en": "We often walk to work together.",
+      "collocations": [
+        "how often",
+        "very often"
+      ],
+      "topic": "time"
+    },
+    {
+      "id": "a1_v_well",
+      "level": "A1",
+      "word": "well",
+      "pos": "adverb",
+      "ipa_us": "/wɛl/",
+      "translation_ru": "хорошо",
+      "example_en": "My old car works well.",
+      "collocations": [
+        "work well",
+        "sleep well"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "a1_v_in",
+      "level": "A1",
+      "word": "in",
+      "pos": "preposition",
+      "ipa_us": "/ɪn/",
+      "translation_ru": "в, внутри",
+      "example_en": "My mother is in the kitchen now.",
+      "collocations": [
+        "in the room",
+        "in the morning"
+      ],
+      "topic": "home"
+    },
+    {
+      "id": "a1_v_on",
+      "level": "A1",
+      "word": "on",
+      "pos": "preposition",
+      "ipa_us": "/ɑn/",
+      "translation_ru": "на, по",
+      "example_en": "Your book is on the table.",
+      "collocations": [
+        "on the table",
+        "on the phone"
+      ],
+      "topic": "home"
+    },
+    {
+      "id": "a1_v_at",
+      "level": "A1",
+      "word": "at",
+      "pos": "preposition",
+      "ipa_us": "/æt/",
+      "translation_ru": "в, у, на",
+      "example_en": "I am at home now.",
+      "collocations": [
+        "at home",
+        "at work"
+      ],
+      "topic": "home"
+    },
+    {
+      "id": "a1_v_with",
+      "level": "A1",
+      "word": "with",
+      "pos": "preposition",
+      "ipa_us": "/wɪð/",
+      "translation_ru": "с, вместе с",
+      "example_en": "I live with my family in a small house.",
+      "collocations": [
+        "with me",
+        "with friends"
+      ],
+      "topic": "people"
+    },
+    {
+      "id": "a1_v_from",
+      "level": "A1",
+      "word": "from",
+      "pos": "preposition",
+      "ipa_us": "/frʌm/",
+      "translation_ru": "из, от, с",
+      "example_en": "I work from nine to six.",
+      "collocations": [
+        "from home",
+        "from work"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "a1_v_near",
+      "level": "A1",
+      "word": "near",
+      "pos": "preposition",
+      "ipa_us": "/nɪr/",
+      "translation_ru": "около, рядом с",
+      "example_en": "The shop is near my house.",
+      "collocations": [
+        "near here",
+        "near the door"
+      ],
+      "topic": "travel"
+    },
+    {
+      "id": "a1_v_and",
+      "level": "A1",
+      "word": "and",
+      "pos": "conjunction",
+      "ipa_us": "/ænd/",
+      "translation_ru": "и, а",
+      "example_en": "I have a brother and a sister.",
+      "collocations": [
+        "you and me",
+        "bread and butter"
+      ],
+      "topic": "people"
+    },
+    {
+      "id": "a1_v_but",
+      "level": "A1",
+      "word": "but",
+      "pos": "conjunction",
+      "ipa_us": "/bʌt/",
+      "translation_ru": "но, а",
+      "example_en": "I like coffee, but I do not drink it at night.",
+      "collocations": [
+        "small but good",
+        "old but nice"
+      ],
+      "topic": "feelings"
+    },
+    {
+      "id": "a1_v_because",
+      "level": "A1",
+      "word": "because",
+      "pos": "conjunction",
+      "ipa_us": "/bɪˈkʌz/",
+      "translation_ru": "потому что, так как",
+      "example_en": "I am tired because I work a lot.",
+      "collocations": [
+        "because of",
+        "because it is late"
+      ],
+      "topic": "feelings"
+    },
+    {
+      "id": "a1_v_get_up",
+      "level": "A1",
+      "word": "get up",
+      "pos": "phrasal verb",
+      "ipa_us": "/ˌgɛt ˈʌp/",
+      "translation_ru": "вставать, подниматься",
+      "example_en": "I get up at six every morning.",
+      "collocations": [
+        "get up early",
+        "get up late"
+      ],
+      "topic": "home"
+    },
+    {
+      "id": "a1_v_go_out",
+      "level": "A1",
+      "word": "go out",
+      "pos": "phrasal verb",
+      "ipa_us": "/ˌgoʊ ˈaʊt/",
+      "translation_ru": "выходить, идти гулять",
+      "example_en": "We go out with friends after work.",
+      "collocations": [
+        "go out for dinner",
+        "go out with friends"
+      ],
+      "topic": "people"
+    },
+    {
+      "id": "a1_v_turn_on",
+      "level": "A1",
+      "word": "turn on",
+      "pos": "phrasal verb",
+      "ipa_us": "/ˌtɝn ˈɑn/",
+      "translation_ru": "включать",
+      "example_en": "Turn on the computer, please.",
+      "collocations": [
+        "turn on the light",
+        "turn on the TV"
+      ],
+      "topic": "tech"
+    },
+    {
+      "id": "a1_v_sit_down",
+      "level": "A1",
+      "word": "sit down",
+      "pos": "phrasal verb",
+      "ipa_us": "/ˌsɪt ˈdaʊn/",
+      "translation_ru": "садиться, присесть",
+      "example_en": "Please sit down and wait here.",
+      "collocations": [
+        "sit down at the table",
+        "sit down here"
+      ],
+      "topic": "home"
+    },
+    {
+      "id": "a1_v_thank_you",
+      "level": "A1",
+      "word": "thank you",
+      "pos": "phrase",
+      "ipa_us": "/ˈθæŋk ju/",
+      "translation_ru": "спасибо, благодарю",
+      "example_en": "Thank you for your help.",
+      "collocations": [
+        "thank you very much",
+        "thank you for"
+      ],
+      "topic": "people"
+    },
+    {
+      "id": "a1_v_excuse_me",
+      "level": "A1",
+      "word": "excuse me",
+      "pos": "phrase",
+      "ipa_us": "/ɪkˈskjuz mi/",
+      "translation_ru": "извините, простите",
+      "example_en": "Excuse me, where is the bus stop?",
+      "collocations": [
+        "excuse me, please"
+      ],
+      "topic": "people"
+    },
+    {
+      "id": "a1_v_good_morning",
+      "level": "A1",
+      "word": "good morning",
+      "pos": "phrase",
+      "ipa_us": "/ˌgʊd ˈmɔrnɪŋ/",
+      "translation_ru": "доброе утро",
+      "example_en": "Good morning! How are you today?",
+      "collocations": [
+        "say good morning"
+      ],
+      "topic": "people"
+    }
+  ]
+}

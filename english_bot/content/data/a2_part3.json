@@ -1,0 +1,1558 @@
+{
+ "chunk": "a2_part3",
+ "points": [
+  {
+   "id": "a2_will_vs_be_going_to",
+   "level": "A2",
+   "band": "A2",
+   "topic": "Tenses",
+   "title_en": "'Will' vs 'be going to': Future forms",
+   "source_slug": "will-vs-be-going-to",
+   "title_ru": "Will и be going to: формы будущего",
+   "summary_ru": "В английском о будущем говорят разными формами, и выбор зависит от того, когда принято решение. Will берут, когда решение появилось прямо сейчас, во время разговора: обещание, предложение помощи, быстрое согласие. Will также используют для мнения и прогноза без видимых доказательств, часто со словами I think, maybe, probably. Be going to берут, когда план был придуман заранее, до разговора: билеты куплены, дата назначена, задача уже поставлена. Be going to также нужен, когда прямо сейчас видно причину будущего события: тёмные тучи, низкий заряд батареи, человек падает. После will идёт голый инфинитив без to, а в конструкции be going to меняется только глагол be: am, is, are. Отрицание: won't и am/is/are not going to. Вопрос: Will you help? и Are you going to help?",
+   "forms": [
+    "will + V1 (I will send it)",
+    "won't + V1 (I won't be late)",
+    "am/is/are going to + V1",
+    "am/is/are not going to + V1",
+    "Will you + V1? / Are you going to + V1?"
+   ],
+   "examples": [
+    "I'll help you with that file.",
+    "We're going to release the new version on Friday.",
+    "Look at those clouds. It's going to rain.",
+    "I think the meeting will be short.",
+    "She isn't going to change her phone this year."
+   ],
+   "ru_interference": "В русском одна форма будущего, поэтому про заранее готовый план говорят через will: неверно We will move the office next month, we signed the papers last week -> верно We are going to move the office next month. Вторая частая ошибка - потерянный глагол be: неверно I going to call him -> верно I'm going to call him.",
+   "prerequisites": [
+    "a1_will_and_shall",
+    "a1_be_going_to_plans_predictions"
+   ],
+   "exercises": [
+    {
+     "id": "a2_will_vs_be_going_to_01",
+     "kind": "choice",
+     "prompt": "Careful! That box ___ fall.",
+     "options": [
+      "is going to",
+      "will going to",
+      "is go to",
+      "goes to"
+     ],
+     "correct_index": 0,
+     "explanation_ru": "Причину видно прямо сейчас, поэтому нужен be going to; остальные три сочетания будущего не образуют.",
+     "difficulty": 1
+    },
+    {
+     "id": "a2_will_vs_be_going_to_02",
+     "kind": "choice",
+     "prompt": "A: The printer is broken again. B: Don't worry, I ___ fix it.",
+     "options": [
+      "will",
+      "am will",
+      "going to",
+      "will to"
+     ],
+     "correct_index": 0,
+     "explanation_ru": "Решение помочь принято прямо в момент разговора, поэтому will + голый инфинитив; варианты am will, going to без be и will to грамматически невозможны.",
+     "difficulty": 1
+    },
+    {
+     "id": "a2_will_vs_be_going_to_03",
+     "kind": "choice",
+     "prompt": "___ you going to book the tickets tonight?",
+     "options": [
+      "Do",
+      "Are",
+      "Will",
+      "Have"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "В вопросе с going to на первое место выходит форма глагола be, а не do, will или have.",
+     "difficulty": 2
+    },
+    {
+     "id": "a2_will_vs_be_going_to_04",
+     "kind": "choice",
+     "prompt": "It's very cold today. I think it ___ snow tonight.",
+     "options": [
+      "will",
+      "is going",
+      "goes",
+      "will be"
+     ],
+     "correct_index": 0,
+     "explanation_ru": "После I think идёт прогноз-мнение, поэтому will + snow. Форма is going работает только в связке is going to, а goes и will be с глаголом snow не сочетаются.",
+     "difficulty": 2
+    },
+    {
+     "id": "a2_will_vs_be_going_to_05",
+     "kind": "gap",
+     "prompt": "Use 'be going to'. Sara ___ (start) a new job on Monday.",
+     "answer": "is going to start",
+     "accept": [
+      "'s going to start"
+     ],
+     "explanation_ru": "План известен заранее, третье лицо единственного числа даёт is going to, а смысловой глагол остаётся в начальной форме.",
+     "difficulty": 1
+    },
+    {
+     "id": "a2_will_vs_be_going_to_06",
+     "kind": "gap",
+     "prompt": "Use 'will'. A: This box is really heavy. B: I ___ (help) you.",
+     "answer": "will help",
+     "accept": [
+      "'ll help"
+     ],
+     "explanation_ru": "Предложение помощи возникает в момент разговора, поэтому will help или короткая форма 'll help.",
+     "difficulty": 2
+    },
+    {
+     "id": "a2_will_vs_be_going_to_07",
+     "kind": "correct",
+     "prompt": "I going to send you the file tonight.",
+     "answer": "I'm going to send you the file tonight.",
+     "accept": [
+      "I am going to send you the file tonight."
+     ],
+     "explanation_ru": "В конструкции going to обязателен глагол be, здесь am или короткая форма 'm.",
+     "difficulty": 3
+    },
+    {
+     "id": "a2_will_vs_be_going_to_08",
+     "kind": "transform",
+     "prompt": "They made this plan last month. Rewrite with 'be going to': They will move the office to Berlin next year.",
+     "answer": "They are going to move the office to Berlin next year.",
+     "accept": [
+      "They're going to move the office to Berlin next year."
+     ],
+     "explanation_ru": "Решение принято заранее, поэтому will меняется на are going to, а глагол move остаётся без изменений.",
+     "difficulty": 3
+    }
+   ]
+  },
+  {
+   "id": "a2_auxiliary_verbs_do_be_and_have",
+   "level": "A2",
+   "band": "A2",
+   "topic": "Tenses",
+   "title_en": "Auxiliary verbs: do, be and have",
+   "source_slug": "auxiliary-verbs-do-be-and-have",
+   "title_ru": "Вспомогательные глаголы do, be и have",
+   "summary_ru": "Вспомогательный глагол не переводится, но именно он строит вопрос, отрицание и короткий ответ. Do, does и did работают в Present Simple и Past Simple: они забирают время и лицо, а смысловой глагол остаётся в начальной форме. Be (am, is, are, was, were) стоит перед формой на -ing во временах группы Continuous и перед третьей формой в пассиве. Have и has держат Present Perfect и всегда идут с третьей формой глагола. В одном сказуемом время показывает только вспомогательный глагол, поэтому после did и didn't смысловой глагол не меняется. В коротких ответах повторяют именно вспомогательный глагол: Yes, I do. No, she hasn't. Глаголы do и have бывают и смысловыми: I do my homework, I have a car - тогда им самим нужен вспомогательный do.",
+   "forms": [
+    "do/does/did + subject + V1 (questions)",
+    "don't/doesn't/didn't + V1 (negatives)",
+    "am/is/are/was/were + V-ing",
+    "have/has + V3",
+    "Yes, I do. / No, she hasn't."
+   ],
+   "examples": [
+    "Do you work on weekends?",
+    "She doesn't use Windows at work.",
+    "We were testing the app all morning.",
+    "They have finished the report.",
+    "A: Has he called you? B: No, he hasn't."
+   ],
+   "ru_interference": "В русском вопрос строится интонацией, поэтому вспомогательный do пропадает: неверно You know the password? и Where you work? -> верно Do you know the password? и Where do you work? Второй типичный сбой - двойное прошедшее: неверно I didn't saw him -> верно I didn't see him.",
+   "prerequisites": [
+    "a1_questions",
+    "a1_past_simple_negatives_questions",
+    "a1_present_simple"
+   ],
+   "exercises": [
+    {
+     "id": "a2_auxiliary_verbs_do_be_and_have_01",
+     "kind": "choice",
+     "prompt": "___ she work in the support team?",
+     "options": [
+      "Do",
+      "Does",
+      "Is",
+      "Has"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Present Simple, третье лицо единственного числа, смысловой глагол в начальной форме - значит вопрос открывает does.",
+     "difficulty": 1
+    },
+    {
+     "id": "a2_auxiliary_verbs_do_be_and_have_02",
+     "kind": "choice",
+     "prompt": "They ___ not finished the migration.",
+     "options": [
+      "do",
+      "are",
+      "have",
+      "did"
+     ],
+     "correct_index": 2,
+     "explanation_ru": "Третья форма finished требует have, потому что это Present Perfect, а не Simple или Continuous.",
+     "difficulty": 1
+    },
+    {
+     "id": "a2_auxiliary_verbs_do_be_and_have_03",
+     "kind": "choice",
+     "prompt": "Where ___ you go last weekend?",
+     "options": [
+      "did",
+      "do",
+      "were",
+      "have"
+     ],
+     "correct_index": 0,
+     "explanation_ru": "Прошедшее время с last weekend строится через did, а смысловой глагол go остаётся в начальной форме.",
+     "difficulty": 2
+    },
+    {
+     "id": "a2_auxiliary_verbs_do_be_and_have_04",
+     "kind": "choice",
+     "prompt": "A: Do you use Linux at home? B: Yes, I ___.",
+     "options": [
+      "am",
+      "do",
+      "have",
+      "did"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "В коротком ответе повторяют тот же вспомогательный глагол, что и в вопросе, то есть do.",
+     "difficulty": 2
+    },
+    {
+     "id": "a2_auxiliary_verbs_do_be_and_have_05",
+     "kind": "gap",
+     "prompt": "___ (be) they testing the app at ten o'clock yesterday?",
+     "answer": "Were",
+     "accept": [],
+     "explanation_ru": "Форма на -ing и прошедшее время во множественном числе дают вспомогательный were в начале вопроса.",
+     "difficulty": 1
+    },
+    {
+     "id": "a2_auxiliary_verbs_do_be_and_have_06",
+     "kind": "gap",
+     "prompt": "She ___ (not/have) lunch with us yesterday.",
+     "answer": "didn't have",
+     "accept": [
+      "did not have"
+     ],
+     "explanation_ru": "Здесь have - смысловой глагол, поэтому отрицание строит didn't, а сам have не меняется.",
+     "difficulty": 2
+    },
+    {
+     "id": "a2_auxiliary_verbs_do_be_and_have_07",
+     "kind": "correct",
+     "prompt": "I didn't saw the message.",
+     "answer": "I didn't see the message.",
+     "accept": [
+      "I did not see the message."
+     ],
+     "explanation_ru": "Прошедшее время уже показано в didn't, поэтому смысловой глагол возвращается в начальную форму see.",
+     "difficulty": 3
+    },
+    {
+     "id": "a2_auxiliary_verbs_do_be_and_have_08",
+     "kind": "order",
+     "prompt": "you / changed / Have / the / password",
+     "answer": "Have you changed the password?",
+     "accept": [
+      "Have you changed the password"
+     ],
+     "explanation_ru": "В вопросе Present Perfect вспомогательный have выходит перед подлежащим, а третья форма changed остаётся после него.",
+     "difficulty": 3
+    }
+   ]
+  },
+  {
+   "id": "a2_first_conditional_future_time_clauses",
+   "level": "A2",
+   "band": "A2",
+   "topic": "Tenses",
+   "title_en": "First conditional and future time clauses",
+   "source_slug": "first-conditional-future-time-clauses",
+   "title_ru": "Первый тип условия и придаточные времени",
+   "summary_ru": "Первый тип условия описывает реальное будущее: одно событие зависит от другого. Условие вводит if, а результат стоит с will, won't, can или в повелительном наклонении. Главное правило формы: в части с if будущего времени нет, там стоит Present Simple. Так же ведут себя придаточные времени с when, as soon as, before, after, until и while, когда речь о будущем. Порядок частей свободный: If it rains, we will stay at home или We will stay at home if it rains. Запятая нужна только тогда, когда придаточная часть стоит первой. Отрицание в условии строится обычным don't или doesn't.",
+   "forms": [
+    "If + Present Simple, will + V1",
+    "will + V1 + if + Present Simple",
+    "when/as soon as/before/after/until + Present Simple",
+    "If + Present Simple, imperative",
+    "If + Present Simple, can + V1"
+   ],
+   "examples": [
+    "If the server goes down, we will lose the data.",
+    "I'll call you when I get home.",
+    "We won't start until everyone is here.",
+    "If you don't back up your files, you can lose them.",
+    "As soon as the build finishes, I'll send you the link."
+   ],
+   "ru_interference": "В русском будущее стоит в обеих частях, поэтому появляется лишний will после if и when: неверно If you will come early, we will start и When I will get home, I'll call you -> верно If you come early, we will start и When I get home, I'll call you.",
+   "prerequisites": [
+    "a1_present_simple",
+    "a1_will_and_shall"
+   ],
+   "exercises": [
+    {
+     "id": "a2_first_conditional_future_time_clauses_01",
+     "kind": "choice",
+     "prompt": "If it ___ tomorrow, we will stay at home.",
+     "options": [
+      "will rain",
+      "rains",
+      "rain",
+      "will rains"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "После if будущего времени не ставят: нужен Present Simple, а подлежащее it требует окончания -s.",
+     "difficulty": 1
+    },
+    {
+     "id": "a2_first_conditional_future_time_clauses_02",
+     "kind": "choice",
+     "prompt": "I'll send you the file as soon as I ___ it.",
+     "options": [
+      "will find",
+      "find",
+      "found",
+      "am finding"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "As soon as вводит придаточное времени о будущем, поэтому там стоит Present Simple find.",
+     "difficulty": 1
+    },
+    {
+     "id": "a2_first_conditional_future_time_clauses_03",
+     "kind": "choice",
+     "prompt": "If we don't fix this bug today, the client ___ angry.",
+     "options": [
+      "will be",
+      "will being",
+      "will is",
+      "be"
+     ],
+     "correct_index": 0,
+     "explanation_ru": "Условие уже стоит в Present Simple, значит результат идёт с will плюс начальная форма be; остальные сочетания форм не существуют.",
+     "difficulty": 2
+    },
+    {
+     "id": "a2_first_conditional_future_time_clauses_04",
+     "kind": "choice",
+     "prompt": "If the tests ___, we won't deploy today.",
+     "options": [
+      "will fail",
+      "fail",
+      "fails",
+      "to fail"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Подлежащее tests во множественном числе, поэтому Present Simple без -s: fail; will после if не ставят, а fails и to fail не подходят по форме.",
+     "difficulty": 2
+    },
+    {
+     "id": "a2_first_conditional_future_time_clauses_05",
+     "kind": "gap",
+     "prompt": "If you ___ (need) help, call me.",
+     "answer": "need",
+     "accept": [],
+     "explanation_ru": "Часть с if всегда в Present Simple, а результат здесь выражен повелительным наклонением call.",
+     "difficulty": 1
+    },
+    {
+     "id": "a2_first_conditional_future_time_clauses_06",
+     "kind": "gap",
+     "prompt": "I ___ (call) you as soon as the meeting ends.",
+     "answer": "will call",
+     "accept": [
+      "'ll call"
+     ],
+     "explanation_ru": "Будущее ставится в главной части, а не после as soon as, поэтому will call.",
+     "difficulty": 2
+    },
+    {
+     "id": "a2_first_conditional_future_time_clauses_07",
+     "kind": "correct",
+     "prompt": "If you will come early, we will start at eight.",
+     "answer": "If you come early, we will start at eight.",
+     "accept": [
+      "If you come early, we'll start at eight."
+     ],
+     "explanation_ru": "В условной части will не ставят: остаётся Present Simple come, а will сохраняется только в результате.",
+     "difficulty": 3
+    },
+    {
+     "id": "a2_first_conditional_future_time_clauses_08",
+     "kind": "order",
+     "prompt": "when / call / I'll / home / you / I / get",
+     "answer": "I'll call you when I get home.",
+     "accept": [
+      "When I get home, I'll call you."
+     ],
+     "explanation_ru": "Будущее will стоит в главной части, а после when идёт Present Simple get; порядок частей можно поменять местами.",
+     "difficulty": 3
+    }
+   ]
+  },
+  {
+   "id": "a2_past_continuous_past_simple",
+   "level": "A2",
+   "band": "A2",
+   "topic": "Tenses",
+   "title_en": "Past continuous and past simple",
+   "source_slug": "past-continuous-past-simple",
+   "title_ru": "Past Continuous и Past Simple",
+   "summary_ru": "Past Continuous показывает длинное действие в процессе в прошлом, а Past Simple - короткое законченное действие или факт. Форма Past Continuous: was или were плюс глагол с окончанием -ing. Was идёт с I, he, she, it, а were - с you, we, they. Очень часто два времени работают в паре: длинный фон стоит в Past Continuous, а короткое событие, которое его прерывает, - в Past Simple. Слово when обычно вводит короткое действие, а while - длинный фон. Past Continuous также описывает обстановку в конкретный момент: At six o'clock we were still working. Если действия шли одно за другим, оба стоят в Past Simple.",
+   "forms": [
+    "was/were + V-ing",
+    "wasn't/weren't + V-ing",
+    "Was/Were + subject + V-ing?",
+    "was/were + V-ing + when + Past Simple",
+    "While + was/were + V-ing, + Past Simple"
+   ],
+   "examples": [
+    "I was working when the power went out.",
+    "While she was driving home, it started to rain.",
+    "They weren't listening to the manager.",
+    "What were you doing at ten last night?",
+    "The server crashed while we were running the tests."
+   ],
+   "ru_interference": "В русском вид глагола передаёт процесс, а вспомогательный глагол не нужен, поэтому появляется два сбоя: неверно I working when he came -> верно I was working when he came; и фон в простом прошедшем: неверно When I called him, he cooked dinner -> верно When I called him, he was cooking dinner.",
+   "prerequisites": [
+    "a1_past_simple_regular_irregular",
+    "a1_was_were",
+    "a1_present_continuous"
+   ],
+   "exercises": [
+    {
+     "id": "a2_past_continuous_past_simple_01",
+     "kind": "choice",
+     "prompt": "While we ___ the new version, the power went out.",
+     "options": [
+      "was testing",
+      "were testing",
+      "were tested",
+      "are testing"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Длинный фон после while стоит в Past Continuous, а подлежащее we требует were; were tested - это пассив, он не может иметь дополнение the new version.",
+     "difficulty": 1
+    },
+    {
+     "id": "a2_past_continuous_past_simple_02",
+     "kind": "choice",
+     "prompt": "___ you sleeping when I called?",
+     "options": [
+      "Did",
+      "Were",
+      "Was",
+      "Are"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Вопрос в Past Continuous открывает форма глагола be, и с you это всегда were.",
+     "difficulty": 1
+    },
+    {
+     "id": "a2_past_continuous_past_simple_03",
+     "kind": "choice",
+     "prompt": "She ___ working at eleven last night; she was already in bed.",
+     "options": [
+      "didn't",
+      "wasn't",
+      "weren't",
+      "isn't"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Отрицание в Past Continuous строится через was not, а she требует именно wasn't.",
+     "difficulty": 2
+    },
+    {
+     "id": "a2_past_continuous_past_simple_04",
+     "kind": "choice",
+     "prompt": "I ___ my keys while I was walking to the office.",
+     "options": [
+      "lost",
+      "was losing",
+      "were losing",
+      "lose"
+     ],
+     "correct_index": 0,
+     "explanation_ru": "Потерять ключи - мгновенное законченное действие внутри длинного фона, поэтому Past Simple lost.",
+     "difficulty": 2
+    },
+    {
+     "id": "a2_past_continuous_past_simple_05",
+     "kind": "gap",
+     "prompt": "What ___ (you/do) at six o'clock yesterday?",
+     "answer": "were you doing",
+     "accept": [],
+     "explanation_ru": "Речь о конкретном моменте в прошлом, поэтому Past Continuous, а в вопросе were стоит перед подлежащим.",
+     "difficulty": 1
+    },
+    {
+     "id": "a2_past_continuous_past_simple_06",
+     "kind": "gap",
+     "prompt": "The manager came in at ten. At that moment we ___ (talk) about the project.",
+     "answer": "were talking",
+     "accept": [],
+     "explanation_ru": "В момент, когда вошёл менеджер, разговор уже шёл, значит это длинный фон в Past Continuous.",
+     "difficulty": 2
+    },
+    {
+     "id": "a2_past_continuous_past_simple_07",
+     "kind": "correct",
+     "prompt": "While she was driving home, the engine was stopping.",
+     "answer": "While she was driving home, the engine stopped.",
+     "accept": [],
+     "explanation_ru": "Короткое событие, прервавшее фон, ставится в Past Simple: stopped, а не was stopping.",
+     "difficulty": 3
+    },
+    {
+     "id": "a2_past_continuous_past_simple_08",
+     "kind": "order",
+     "prompt": "raining / when / it / arrived / was / we",
+     "answer": "It was raining when we arrived.",
+     "accept": [
+      "When we arrived, it was raining."
+     ],
+     "explanation_ru": "Длинная погода идёт в Past Continuous, а короткое действие после when - в Past Simple; части можно поменять местами.",
+     "difficulty": 3
+    }
+   ]
+  },
+  {
+   "id": "a2_past_perfect",
+   "level": "A2",
+   "band": "A2",
+   "topic": "Tenses",
+   "title_en": "Past perfect",
+   "source_slug": "past-perfect",
+   "title_ru": "Past Perfect: прошедшее до прошедшего",
+   "summary_ru": "Past Perfect показывает действие, которое случилось раньше другого действия в прошлом. Форма одна для всех лиц: had плюс третья форма глагола, в речи часто звучит короткое 'd. Отрицание - hadn't плюс третья форма, вопрос - Had you finished? Обычно в предложении есть второе прошедшее время: то, что случилось раньше, стоит в Past Perfect, а более позднее - в Past Simple. Часто рядом стоят слова already, just, never, before, by the time и after. Если события идут по порядку и это ясно из текста, Past Perfect не нужен, хватает Past Simple. Вопрос строится без did: did в Past Perfect не бывает.",
+   "forms": [
+    "had + V3",
+    "hadn't + V3",
+    "Had + subject + V3?",
+    "'d + V3 (short form)",
+    "Past Simple + because/when + had + V3"
+   ],
+   "examples": [
+    "When I got to the office, the meeting had already started.",
+    "She had never used a Mac before that job.",
+    "They couldn't log in because they had forgotten the password.",
+    "I didn't know that he had left the company.",
+    "By eight o'clock we had finished the tests."
+   ],
+   "ru_interference": "В русском нет предпрошедшего времени, поэтому оба действия ставят в простое прошедшее: неверно When I came, the train already left -> верно When I came, the train had already left. Ещё одна ошибка - вопрос через did: неверно Did you had finished? -> верно Had you finished?",
+   "prerequisites": [
+    "a1_past_simple_regular_irregular",
+    "a1_past_simple_negatives_questions"
+   ],
+   "exercises": [
+    {
+     "id": "a2_past_perfect_01",
+     "kind": "choice",
+     "prompt": "When we got to the theater, the movie ___ already started.",
+     "options": [
+      "has",
+      "had",
+      "was",
+      "did"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Фильм начался раньше нашего прихода, а весь рассказ в прошлом, поэтому had started.",
+     "difficulty": 1
+    },
+    {
+     "id": "a2_past_perfect_02",
+     "kind": "choice",
+     "prompt": "She couldn't pay because she ___ her wallet at home.",
+     "options": [
+      "had left",
+      "has left",
+      "was left",
+      "had leave"
+     ],
+     "correct_index": 0,
+     "explanation_ru": "Кошелёк остался дома до момента оплаты, значит нужен Past Perfect had + третья форма left.",
+     "difficulty": 1
+    },
+    {
+     "id": "a2_past_perfect_03",
+     "kind": "choice",
+     "prompt": "___ you ever visited London before you moved there?",
+     "options": [
+      "Did",
+      "Have",
+      "Had",
+      "Were"
+     ],
+     "correct_index": 2,
+     "explanation_ru": "Точка отсчёта в прошлом (before you moved there), поэтому вопрос открывает had, а не have или did.",
+     "difficulty": 2
+    },
+    {
+     "id": "a2_past_perfect_04",
+     "kind": "choice",
+     "prompt": "By the time the technician came, we ___ the problem ourselves.",
+     "options": [
+      "had fixed",
+      "have fixed",
+      "had fix",
+      "was fixed"
+     ],
+     "correct_index": 0,
+     "explanation_ru": "By the time задаёт более позднюю точку в прошлом, а раннее действие стоит в Past Perfect had fixed.",
+     "difficulty": 2
+    },
+    {
+     "id": "a2_past_perfect_05",
+     "kind": "gap",
+     "prompt": "The office was empty. Everyone ___ (go) home.",
+     "answer": "had gone",
+     "accept": [
+      "'d gone"
+     ],
+     "explanation_ru": "Люди ушли раньше, чем мы увидели пустой офис, поэтому Past Perfect с третьей формой gone.",
+     "difficulty": 1
+    },
+    {
+     "id": "a2_past_perfect_06",
+     "kind": "gap",
+     "prompt": "He didn't come with us because he ___ (not/finish) his work.",
+     "answer": "hadn't finished",
+     "accept": [
+      "had not finished"
+     ],
+     "explanation_ru": "Причина возникла раньше главного действия, а отрицание в Past Perfect строится через hadn't.",
+     "difficulty": 2
+    },
+    {
+     "id": "a2_past_perfect_07",
+     "kind": "correct",
+     "prompt": "When I opened the door, I saw that someone has broken the window.",
+     "answer": "When I opened the door, I saw that someone had broken the window.",
+     "accept": [],
+     "explanation_ru": "Весь рассказ в прошлом, поэтому has меняется на had: окно разбили до того, как я открыл дверь.",
+     "difficulty": 3
+    },
+    {
+     "id": "a2_past_perfect_08",
+     "kind": "transform",
+     "prompt": "Rewrite with 'because' and the past perfect: She lost her keys, so she couldn't open the door.",
+     "answer": "She couldn't open the door because she had lost her keys.",
+     "accept": [
+      "She couldn't open the door because she'd lost her keys."
+     ],
+     "explanation_ru": "Раннее действие (потеря ключей) уходит в Past Perfect, а следствие остаётся в Past Simple.",
+     "difficulty": 3
+    }
+   ]
+  },
+  {
+   "id": "a2_past_simple_form_use",
+   "level": "A2",
+   "band": "A2",
+   "topic": "Tenses",
+   "title_en": "Past simple: Form and use",
+   "source_slug": "past-simple-form-use",
+   "title_ru": "Past Simple: форма и употребление",
+   "summary_ru": "Past Simple описывает законченное действие в прошлом, когда время уже прошло: yesterday, last week, in 2019, two days ago. У правильных глаголов форма одна для всех лиц: основа плюс -ed. Неправильные глаголы нужно учить списком: go - went, see - saw, take - took. В отрицании и вопросе время показывает вспомогательный did, а смысловой глагол возвращается в начальную форму: didn't go, Did you go? Глагол be ведёт себя отдельно: was, were, wasn't, weren't, Was he...? Past Simple также используют для цепочки событий и для регулярных действий в прошлом.",
+   "forms": [
+    "V-ed (regular): worked, opened",
+    "irregular V2: went, saw, took",
+    "didn't + V1",
+    "Did + subject + V1?",
+    "was/were (+ not)"
+   ],
+   "examples": [
+    "We finished the project last Friday.",
+    "She went to Berlin in May.",
+    "I didn't get your message.",
+    "Did you call the client yesterday?",
+    "The meeting was very long."
+   ],
+   "ru_interference": "После did и didn't русскоязычные оставляют прошедшую форму, потому что в русском время всегда на самом глаголе: неверно Did you saw the email? и I didn't went there -> верно Did you see the email? и I didn't go there.",
+   "prerequisites": [
+    "a1_past_simple_regular_irregular",
+    "a1_past_simple_negatives_questions",
+    "a1_was_were"
+   ],
+   "exercises": [
+    {
+     "id": "a2_past_simple_form_use_01",
+     "kind": "choice",
+     "prompt": "We ___ the report yesterday.",
+     "options": [
+      "finish",
+      "finished",
+      "are finishing",
+      "have finished"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Yesterday - законченное время, поэтому нужна вторая форма finished; настоящее и Present Perfect с yesterday невозможны.",
+     "difficulty": 1
+    },
+    {
+     "id": "a2_past_simple_form_use_02",
+     "kind": "choice",
+     "prompt": "___ she call you last night?",
+     "options": [
+      "Did",
+      "Do",
+      "Was",
+      "Has"
+     ],
+     "correct_index": 0,
+     "explanation_ru": "Вопрос в Past Simple со смысловым глаголом в начальной форме строится через did.",
+     "difficulty": 1
+    },
+    {
+     "id": "a2_past_simple_form_use_03",
+     "kind": "choice",
+     "prompt": "I ___ to the gym last week.",
+     "options": [
+      "didn't went",
+      "didn't go",
+      "don't go",
+      "not went"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Прошедшее время уже в didn't, поэтому смысловой глагол остаётся в начальной форме go.",
+     "difficulty": 2
+    },
+    {
+     "id": "a2_past_simple_form_use_04",
+     "kind": "choice",
+     "prompt": "They ___ at the airport at six o'clock yesterday morning.",
+     "options": [
+      "was",
+      "were",
+      "did",
+      "are"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Глагол be в прошедшем времени с they даёт were; did и are здесь не подходят по форме и по времени.",
+     "difficulty": 2
+    },
+    {
+     "id": "a2_past_simple_form_use_05",
+     "kind": "gap",
+     "prompt": "She ___ (buy) a new laptop last month.",
+     "answer": "bought",
+     "accept": [],
+     "explanation_ru": "Buy - неправильный глагол, его вторая форма bought, окончание -ed здесь невозможно.",
+     "difficulty": 1
+    },
+    {
+     "id": "a2_past_simple_form_use_06",
+     "kind": "gap",
+     "prompt": "We ___ (not/see) the email until Monday.",
+     "answer": "didn't see",
+     "accept": [
+      "did not see"
+     ],
+     "explanation_ru": "Отрицание в прошедшем времени строится через didn't, а глагол остаётся в форме see.",
+     "difficulty": 2
+    },
+    {
+     "id": "a2_past_simple_form_use_07",
+     "kind": "correct",
+     "prompt": "Did you went to the conference last year?",
+     "answer": "Did you go to the conference last year?",
+     "accept": [],
+     "explanation_ru": "После did смысловой глагол всегда в начальной форме: go, а не went.",
+     "difficulty": 3
+    },
+    {
+     "id": "a2_past_simple_form_use_08",
+     "kind": "order",
+     "prompt": "password / I / remember / didn't / the",
+     "answer": "I didn't remember the password.",
+     "accept": [
+      "I did not remember the password."
+     ],
+     "explanation_ru": "Порядок в отрицании: подлежащее, didn't, глагол в начальной форме, дополнение.",
+     "difficulty": 3
+    }
+   ]
+  },
+  {
+   "id": "a2_present_past_simple_passive",
+   "level": "A2",
+   "band": "A2",
+   "topic": "Tenses",
+   "title_en": "Present and past simple passive: 'be' + past participle",
+   "source_slug": "present-past-simple-passive",
+   "title_ru": "Пассив в Present и Past Simple",
+   "summary_ru": "Пассив нужен, когда важно само действие и его объект, а не исполнитель. Формула короткая: форма глагола be плюс третья форма смыслового глагола. В настоящем это am, is, are, в прошедшем - was, were. Число и лицо показывает только be, третья форма никогда не меняется. Отрицание ставится после be: isn't sent, weren't checked. Вопрос начинается с be: Is the report sent? Were the files deleted? Исполнителя добавляют через by, но чаще его вообще не называют, потому что он неизвестен или неважен.",
+   "forms": [
+    "am/is/are + V3 (present passive)",
+    "was/were + V3 (past passive)",
+    "isn't/aren't/wasn't/weren't + V3",
+    "Is/Are/Was/Were + subject + V3?",
+    "... + by + agent"
+   ],
+   "examples": [
+    "The backups are made every night.",
+    "This app was written in Python.",
+    "The bug was found by a user.",
+    "These files aren't stored on our server.",
+    "Was the invoice sent yesterday?"
+   ],
+   "ru_interference": "В русском пассив часто передаётся глаголом на -ся или формой без подлежащего, поэтому глагол be выпадает: неверно The report sent yesterday и The house built in 1990 -> верно The report was sent yesterday и The house was built in 1990.",
+   "prerequisites": [
+    "a1_present_simple_forms_of_to_be",
+    "a1_was_were",
+    "a1_past_simple_regular_irregular"
+   ],
+   "exercises": [
+    {
+     "id": "a2_present_past_simple_passive_01",
+     "kind": "choice",
+     "prompt": "This app ___ written in Python.",
+     "options": [
+      "was",
+      "were",
+      "has",
+      "are"
+     ],
+     "correct_index": 0,
+     "explanation_ru": "Подлежащее this app в единственном числе, действие в прошлом, поэтому was + третья форма written.",
+     "difficulty": 1
+    },
+    {
+     "id": "a2_present_past_simple_passive_02",
+     "kind": "choice",
+     "prompt": "The files ___ saved on the server every night.",
+     "options": [
+      "is",
+      "are",
+      "has",
+      "does"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Множественное число the files и настоящее время дают форму are перед третьей формой saved.",
+     "difficulty": 1
+    },
+    {
+     "id": "a2_present_past_simple_passive_03",
+     "kind": "choice",
+     "prompt": "The bug ___ by one of our users last week.",
+     "options": [
+      "found",
+      "was found",
+      "was find",
+      "were found"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Ошибку нашли, а не она нашла, поэтому нужен пассив was found; find - не третья форма, а were не подходит по числу.",
+     "difficulty": 2
+    },
+    {
+     "id": "a2_present_past_simple_passive_04",
+     "kind": "choice",
+     "prompt": "___ the invoice sent yesterday?",
+     "options": [
+      "Did",
+      "Was",
+      "Were",
+      "Has"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Вопрос в пассиве открывает be: единственное число и прошедшее время дают was.",
+     "difficulty": 2
+    },
+    {
+     "id": "a2_present_past_simple_passive_05",
+     "kind": "gap",
+     "prompt": "The report ___ (write) by Anna last Friday.",
+     "answer": "was written",
+     "accept": [],
+     "explanation_ru": "Прошедший пассив: was плюс третья форма written, потому что отчёт написали.",
+     "difficulty": 1
+    },
+    {
+     "id": "a2_present_past_simple_passive_06",
+     "kind": "gap",
+     "prompt": "These old servers ___ (not/use) anymore.",
+     "answer": "aren't used",
+     "accept": [
+      "are not used"
+     ],
+     "explanation_ru": "Отрицание ставится сразу после be: are not used, третья форма при этом не меняется.",
+     "difficulty": 2
+    },
+    {
+     "id": "a2_present_past_simple_passive_07",
+     "kind": "correct",
+     "prompt": "The letters sent last week.",
+     "answer": "The letters were sent last week.",
+     "accept": [],
+     "explanation_ru": "Без глагола be в предложении нет сказуемого; пассив требует were перед третьей формой sent.",
+     "difficulty": 3
+    },
+    {
+     "id": "a2_present_past_simple_passive_08",
+     "kind": "transform",
+     "prompt": "Rewrite in the passive: They deleted the old files yesterday.",
+     "answer": "The old files were deleted yesterday.",
+     "accept": [
+      "The old files were deleted by them yesterday.",
+      "The old files were deleted yesterday by them."
+     ],
+     "explanation_ru": "Дополнение становится подлежащим во множественном числе, поэтому were deleted; исполнителя можно опустить.",
+     "difficulty": 3
+    }
+   ]
+  },
+  {
+   "id": "a2_present_continuous_future_arrangements",
+   "level": "A2",
+   "band": "A2",
+   "topic": "Tenses",
+   "title_en": "Present continuous for future arrangements",
+   "source_slug": "present-continuous-future-arrangements",
+   "title_ru": "Present Continuous о будущих договорённостях",
+   "summary_ru": "Форма Present Continuous говорит не только о настоящем моменте: она же выражает будущее, когда встреча уже назначена. Речь идёт о договорённости с другим человеком, о записи в календаре, о купленных билетах. В предложении почти всегда есть слово о будущем: tomorrow, tonight, on Monday, at three, next week. Форма обычная: am, is или are плюс глагол с -ing. Отрицание: I'm not meeting him tomorrow. Вопрос: Are you working on Friday? Такой формой удобно спрашивать о планах собеседника: What are you doing this weekend?",
+   "forms": [
+    "am/is/are + V-ing + future time",
+    "am/is/are not + V-ing + future time",
+    "Are/Is + subject + V-ing + tomorrow?",
+    "What are you doing + time?"
+   ],
+   "examples": [
+    "I'm meeting the client at three tomorrow.",
+    "We're flying to Berlin on Monday.",
+    "She isn't coming to the party tonight.",
+    "What are you doing this weekend?",
+    "They're having a demo on Friday at ten."
+   ],
+   "ru_interference": "Русское настоящее время не умеет выражать назначенную встречу, поэтому вместо договорённости берут will или теряют глагол be: неверно I will meet the client at three tomorrow (встреча уже назначена) и I meeting him tomorrow -> верно I'm meeting the client at three tomorrow.",
+   "prerequisites": [
+    "a1_present_continuous",
+    "a1_at_in_on_prepositions_time"
+   ],
+   "exercises": [
+    {
+     "id": "a2_present_continuous_future_arrangements_01",
+     "kind": "choice",
+     "prompt": "I ___ the dentist at four tomorrow.",
+     "options": [
+      "am seeing",
+      "sees",
+      "will seeing",
+      "am see"
+     ],
+     "correct_index": 0,
+     "explanation_ru": "Визит назначен заранее, поэтому am + seeing; sees не согласуется с I, а will seeing и am see невозможны.",
+     "difficulty": 1
+    },
+    {
+     "id": "a2_present_continuous_future_arrangements_02",
+     "kind": "choice",
+     "prompt": "What ___ you doing on Saturday?",
+     "options": [
+      "are",
+      "do",
+      "will",
+      "is"
+     ],
+     "correct_index": 0,
+     "explanation_ru": "Вопрос о планах в Present Continuous открывает форма be, и с you это are.",
+     "difficulty": 1
+    },
+    {
+     "id": "a2_present_continuous_future_arrangements_03",
+     "kind": "choice",
+     "prompt": "She ___ coming to the meeting tomorrow; she is on vacation.",
+     "options": [
+      "doesn't",
+      "isn't",
+      "won't",
+      "not"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Отрицание при форме на -ing строится через be: isn't coming; won't и doesn't требуют начальной формы глагола.",
+     "difficulty": 2
+    },
+    {
+     "id": "a2_present_continuous_future_arrangements_04",
+     "kind": "choice",
+     "prompt": "We ___ to Berlin on Monday. We booked the tickets last week.",
+     "options": [
+      "flies",
+      "are flying",
+      "will flying",
+      "are fly"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Билеты куплены, значит договорённость: are flying; flies не согласуется с we, остальные формы невозможны.",
+     "difficulty": 2
+    },
+    {
+     "id": "a2_present_continuous_future_arrangements_05",
+     "kind": "gap",
+     "prompt": "___ (you/come) to the office tomorrow?",
+     "answer": "Are you coming",
+     "accept": [],
+     "explanation_ru": "Вопрос о договорённости на завтра: are перед подлежащим и глагол с окончанием -ing.",
+     "difficulty": 1
+    },
+    {
+     "id": "a2_present_continuous_future_arrangements_06",
+     "kind": "gap",
+     "prompt": "I can't meet you on Friday. I ___ (fly) to Prague.",
+     "answer": "am flying",
+     "accept": [
+      "'m flying"
+     ],
+     "explanation_ru": "Билет уже есть, поэтому назначенное будущее выражается формой am flying, а не will fly.",
+     "difficulty": 2
+    },
+    {
+     "id": "a2_present_continuous_future_arrangements_07",
+     "kind": "correct",
+     "prompt": "I meeting my manager at ten tomorrow.",
+     "answer": "I'm meeting my manager at ten tomorrow.",
+     "accept": [
+      "I am meeting my manager at ten tomorrow."
+     ],
+     "explanation_ru": "Форма на -ing не работает без глагола be: нужен am или короткое 'm.",
+     "difficulty": 3
+    },
+    {
+     "id": "a2_present_continuous_future_arrangements_08",
+     "kind": "order",
+     "prompt": "starting / at / we / tomorrow / are / eight",
+     "answer": "We are starting at eight tomorrow.",
+     "accept": [
+      "We're starting at eight tomorrow.",
+      "Tomorrow we are starting at eight.",
+      "Tomorrow we're starting at eight."
+     ],
+     "explanation_ru": "Порядок: подлежащее, форма be, глагол с -ing, затем время; договорённость на завтра уже зафиксирована.",
+     "difficulty": 3
+    }
+   ]
+  },
+  {
+   "id": "a2_present_perfect_or_past_simple",
+   "level": "A2",
+   "band": "A2",
+   "topic": "Tenses",
+   "title_en": "Present perfect or past simple?",
+   "source_slug": "present-perfect-or-past-simple",
+   "title_ru": "Present Perfect или Past Simple",
+   "summary_ru": "Выбор между двумя временами зависит от времени действия, а не от самого действия. Past Simple нужен, когда момент в прошлом назван или понятен: yesterday, last week, in 2019, two hours ago, when I was a student. Present Perfect нужен, когда точное время не названо, важен результат сейчас или период ещё не закончился: today, this week, so far. Со словами ever, never, just, already, yet обычно стоит Present Perfect. Вопрос со словом When всегда идёт в Past Simple, потому что он спрашивает о конкретном моменте. Часто разговор начинается с Present Perfect, а продолжается в Past Simple с деталями: I've been to Rome. I went there in 2018.",
+   "forms": [
+    "have/has + V3 (no finished time)",
+    "V2 + yesterday / last week / in 2020 / two days ago",
+    "have/has + never/ever/just/already + V3",
+    "When did + subject + V1?",
+    "haven't/hasn't + V3 + yet"
+   ],
+   "examples": [
+    "I have finished the task, so I can go home now.",
+    "I finished the task at six yesterday.",
+    "Have you ever worked with Docker?",
+    "She left the company two years ago.",
+    "We haven't seen him this week."
+   ],
+   "ru_interference": "В русском одно прошедшее время, поэтому к Present Perfect добавляют слова о законченном моменте: неверно I have seen him yesterday -> верно I saw him yesterday. Так же ломается вопрос: неверно When have you come? -> верно When did you come?",
+   "prerequisites": [
+    "a1_past_simple_regular_irregular",
+    "a1_past_simple_negatives_questions"
+   ],
+   "exercises": [
+    {
+     "id": "a2_present_perfect_or_past_simple_01",
+     "kind": "choice",
+     "prompt": "I ___ him yesterday.",
+     "options": [
+      "have seen",
+      "saw",
+      "have saw",
+      "seen"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Yesterday называет законченный момент, поэтому Past Simple saw; Present Perfect с таким словом невозможен.",
+     "difficulty": 1
+    },
+    {
+     "id": "a2_present_perfect_or_past_simple_02",
+     "kind": "choice",
+     "prompt": "___ you ever been to Japan?",
+     "options": [
+      "Did",
+      "Have",
+      "Are",
+      "Were"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Слово ever спрашивает об опыте за всю жизнь без конкретного момента, а форма been требует have.",
+     "difficulty": 1
+    },
+    {
+     "id": "a2_present_perfect_or_past_simple_03",
+     "kind": "choice",
+     "prompt": "She ___ the company in 2019.",
+     "options": [
+      "has left",
+      "left",
+      "has leave",
+      "was left"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Год 2019 - закрытый период, поэтому Past Simple left.",
+     "difficulty": 2
+    },
+    {
+     "id": "a2_present_perfect_or_past_simple_04",
+     "kind": "choice",
+     "prompt": "When ___ you finish the report?",
+     "options": [
+      "have",
+      "did",
+      "has",
+      "are"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Вопрос со словом When спрашивает о конкретном моменте в прошлом, значит нужен did и начальная форма finish.",
+     "difficulty": 2
+    },
+    {
+     "id": "a2_present_perfect_or_past_simple_05",
+     "kind": "gap",
+     "prompt": "We ___ (not/have) any problems so far.",
+     "answer": "haven't had",
+     "accept": [
+      "have not had"
+     ],
+     "explanation_ru": "So far означает период до настоящего момента, поэтому Present Perfect с третьей формой had.",
+     "difficulty": 1
+    },
+    {
+     "id": "a2_present_perfect_or_past_simple_06",
+     "kind": "gap",
+     "prompt": "They ___ (move) to a new office three months ago.",
+     "answer": "moved",
+     "accept": [],
+     "explanation_ru": "Слово ago всегда указывает на закрытый момент в прошлом, поэтому Past Simple moved.",
+     "difficulty": 2
+    },
+    {
+     "id": "a2_present_perfect_or_past_simple_07",
+     "kind": "correct",
+     "prompt": "I have called him two hours ago.",
+     "answer": "I called him two hours ago.",
+     "accept": [],
+     "explanation_ru": "Two hours ago называет законченный момент, и Present Perfect с ним не сочетается.",
+     "difficulty": 3
+    },
+    {
+     "id": "a2_present_perfect_or_past_simple_08",
+     "kind": "transform",
+     "prompt": "Rewrite with 'last week': I have sent the invoice.",
+     "answer": "I sent the invoice last week.",
+     "accept": [
+      "Last week I sent the invoice."
+     ],
+     "explanation_ru": "Появилось указание на закрытый период, поэтому форма меняется на Past Simple sent.",
+     "difficulty": 3
+    }
+   ]
+  },
+  {
+   "id": "a2_present_perfect",
+   "level": "A2",
+   "band": "A2",
+   "topic": "Tenses",
+   "title_en": "Present perfect: Form and use",
+   "source_slug": "present-perfect",
+   "title_ru": "Present Perfect: форма и употребление",
+   "summary_ru": "Present Perfect связывает прошлое действие с настоящим моментом. Форма: have или has плюс третья форма глагола; has идёт с he, she, it. У правильных глаголов третья форма совпадает с прошедшей и оканчивается на -ed, у неправильных её надо учить: see - seen, do - done, be - been. Отрицание: haven't или hasn't плюс третья форма. Вопрос: Have you finished? Это время нужно для опыта (ever, never), для свежего результата (just, already), для незаконченного дела (not yet) и для действия, которое длится до сих пор (for two years, since 2020). Точное время в прошлом с Present Perfect не называют.",
+   "forms": [
+    "have/has + V3",
+    "haven't/hasn't + V3",
+    "Have/Has + subject + V3?",
+    "have/has + just/already/never + V3",
+    "have/has + V3 + for/since ..."
+   ],
+   "examples": [
+    "I have just sent the email.",
+    "She has worked here for five years.",
+    "We haven't finished the tests yet.",
+    "Have you ever lost your phone?",
+    "They have already updated the server."
+   ],
+   "ru_interference": "В русском длительность до сих пор передаётся настоящим временем, поэтому появляется калька: неверно I work here for five years и I am here since Monday -> верно I have worked here for five years и I have been here since Monday.",
+   "prerequisites": [
+    "a1_past_simple_regular_irregular",
+    "a1_present_simple_forms_of_to_be"
+   ],
+   "exercises": [
+    {
+     "id": "a2_present_perfect_01",
+     "kind": "choice",
+     "prompt": "She ___ finished the report.",
+     "options": [
+      "have",
+      "has",
+      "is",
+      "does"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "С she вспомогательный глагол принимает форму has, а третья форма finished остаётся без изменений.",
+     "difficulty": 1
+    },
+    {
+     "id": "a2_present_perfect_02",
+     "kind": "choice",
+     "prompt": "I have ___ this movie three times.",
+     "options": [
+      "see",
+      "saw",
+      "seen",
+      "seeing"
+     ],
+     "correct_index": 2,
+     "explanation_ru": "После have всегда идёт третья форма, у глагола see это seen.",
+     "difficulty": 1
+    },
+    {
+     "id": "a2_present_perfect_03",
+     "kind": "choice",
+     "prompt": "We haven't opened the box ___.",
+     "options": [
+      "yet",
+      "ago",
+      "since",
+      "for"
+     ],
+     "correct_index": 0,
+     "explanation_ru": "В отрицании о незаконченном деле в конце ставят yet; ago, since и for здесь невозможны.",
+     "difficulty": 2
+    },
+    {
+     "id": "a2_present_perfect_04",
+     "kind": "choice",
+     "prompt": "___ they arrived yet?",
+     "options": [
+      "Are",
+      "Have",
+      "Did",
+      "Has"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Форма arrived после вспомогательного глагола требует have, а they - множественное число, поэтому не has.",
+     "difficulty": 2
+    },
+    {
+     "id": "a2_present_perfect_05",
+     "kind": "gap",
+     "prompt": "I ___ (just/send) you the link.",
+     "answer": "have just sent",
+     "accept": [
+      "'ve just sent"
+     ],
+     "explanation_ru": "Just стоит между вспомогательным have и третьей формой sent и показывает свежий результат.",
+     "difficulty": 1
+    },
+    {
+     "id": "a2_present_perfect_06",
+     "kind": "gap",
+     "prompt": "He ___ (work) here since 2020.",
+     "answer": "has worked",
+     "accept": [
+      "has been working",
+      "'s worked"
+     ],
+     "explanation_ru": "Since 2020 показывает период до настоящего момента, поэтому нужен Present Perfect, а не настоящее время.",
+     "difficulty": 2
+    },
+    {
+     "id": "a2_present_perfect_07",
+     "kind": "correct",
+     "prompt": "I live in this city since 2015.",
+     "answer": "I have lived in this city since 2015.",
+     "accept": [
+      "I've lived in this city since 2015.",
+      "I have been living in this city since 2015."
+     ],
+     "explanation_ru": "Действие началось в прошлом и продолжается, поэтому настоящее время меняется на Present Perfect.",
+     "difficulty": 3
+    },
+    {
+     "id": "a2_present_perfect_08",
+     "kind": "order",
+     "prompt": "seen / you / message / Have / the",
+     "answer": "Have you seen the message?",
+     "accept": [
+      "Have you seen the message"
+     ],
+     "explanation_ru": "В вопросе have выходит перед подлежащим, а третья форма seen остаётся сразу за ним.",
+     "difficulty": 3
+    }
+   ]
+  },
+  {
+   "id": "a2_present_simple_continuous",
+   "level": "A2",
+   "band": "A2",
+   "topic": "Tenses",
+   "title_en": "Present simple vs present continuous",
+   "source_slug": "present-simple-continuous",
+   "title_ru": "Present Simple и Present Continuous",
+   "summary_ru": "Present Simple говорит о постоянном и регулярном: работа, привычки, расписание, факты. Его маркеры - always, usually, often, every day, on Mondays. Present Continuous говорит о том, что происходит сейчас или в этот период времени, а также о временной ситуации. Его маркеры - now, right now, at the moment, today, this week. Форма Present Simple: глагол без окончания, а с he, she, it добавляется -s; отрицание и вопрос строит do или does. Форма Present Continuous: am, is, are плюс глагол с -ing. Глаголы состояния - know, want, like, need, understand, have в значении иметь - обычно не используются с -ing.",
+   "forms": [
+    "V1 / V-s (Present Simple)",
+    "am/is/are + V-ing (Present Continuous)",
+    "don't/doesn't + V1",
+    "am/is/are not + V-ing",
+    "state verbs: know, want, like - no -ing"
+   ],
+   "examples": [
+    "I work in the support team.",
+    "I'm working on a new ticket right now.",
+    "She usually takes the bus, but today she is driving.",
+    "Do you know the answer?",
+    "They aren't answering the phone at the moment."
+   ],
+   "ru_interference": "В русском одно настоящее время, поэтому процесс сейчас передают простой формой, а глаголы состояния ставят в -ing: неверно What do you do? в значении сейчас и I am knowing the answer -> верно What are you doing? и I know the answer.",
+   "prerequisites": [
+    "a1_present_simple",
+    "a1_present_continuous",
+    "a1_present_simple_present_continuous"
+   ],
+   "exercises": [
+    {
+     "id": "a2_present_simple_continuous_01",
+     "kind": "choice",
+     "prompt": "Be quiet! The baby ___ right now.",
+     "options": [
+      "sleeps",
+      "is sleeping",
+      "sleep",
+      "are sleeping"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Right now указывает на момент речи, поэтому Present Continuous is sleeping.",
+     "difficulty": 1
+    },
+    {
+     "id": "a2_present_simple_continuous_02",
+     "kind": "choice",
+     "prompt": "She ___ coffee every morning.",
+     "options": [
+      "is drinking",
+      "drinks",
+      "drink",
+      "are drinking"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Every morning - регулярное действие, значит Present Simple с окончанием -s у she.",
+     "difficulty": 1
+    },
+    {
+     "id": "a2_present_simple_continuous_03",
+     "kind": "choice",
+     "prompt": "Sorry, I ___ what you mean.",
+     "options": [
+      "don't understand",
+      "am not understanding",
+      "doesn't understand",
+      "not understand"
+     ],
+     "correct_index": 0,
+     "explanation_ru": "Understand - глагол состояния, он не используется с -ing, а с I отрицание строит don't.",
+     "difficulty": 2
+    },
+    {
+     "id": "a2_present_simple_continuous_04",
+     "kind": "choice",
+     "prompt": "___ you working on the bug report at the moment?",
+     "options": [
+      "Do",
+      "Are",
+      "Is",
+      "Have"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Форма working требует be, а с you это are.",
+     "difficulty": 2
+    },
+    {
+     "id": "a2_present_simple_continuous_05",
+     "kind": "gap",
+     "prompt": "Look! It ___ (rain) again.",
+     "answer": "is raining",
+     "accept": [
+      "'s raining"
+     ],
+     "explanation_ru": "Слово Look! показывает, что действие идёт прямо сейчас, поэтому Present Continuous.",
+     "difficulty": 1
+    },
+    {
+     "id": "a2_present_simple_continuous_06",
+     "kind": "gap",
+     "prompt": "My brother ___ (not/like) video games.",
+     "answer": "doesn't like",
+     "accept": [
+      "does not like"
+     ],
+     "explanation_ru": "Like - глагол состояния и постоянный факт, поэтому Present Simple с doesn't для третьего лица.",
+     "difficulty": 2
+    },
+    {
+     "id": "a2_present_simple_continuous_07",
+     "kind": "correct",
+     "prompt": "I am knowing the answer.",
+     "answer": "I know the answer.",
+     "accept": [],
+     "explanation_ru": "Know - глагол состояния, форма с -ing для него невозможна, нужен Present Simple.",
+     "difficulty": 3
+    },
+    {
+     "id": "a2_present_simple_continuous_08",
+     "kind": "order",
+     "prompt": "usually / He / work / doesn't / Saturdays / on",
+     "answer": "He doesn't usually work on Saturdays.",
+     "accept": [
+      "He usually doesn't work on Saturdays.",
+      "He does not usually work on Saturdays."
+     ],
+     "explanation_ru": "Регулярность передаёт Present Simple, а наречие usually стоит рядом с doesn't перед смысловым глаголом.",
+     "difficulty": 3
+    }
+   ]
+  },
+  {
+   "id": "a2_review_verb_tenses_a2",
+   "level": "A2",
+   "band": "A2",
+   "topic": "Tenses",
+   "title_en": "Review of all pre-intermediate verb tenses (CEFR A2)",
+   "source_slug": "review-verb-tenses-a2",
+   "title_ru": "Повторение всех времён уровня A2",
+   "summary_ru": "На уровне A2 выбор времени почти всегда подсказывают слова-маркеры в предложении. Every day, usually, on Mondays дают Present Simple, а now, at the moment, today - Present Continuous. Yesterday, last week, in 2019, ago требуют Past Simple, а длинный фон в прошлом с when и while - Past Continuous. Just, already, yet, ever, never, for, since указывают на Present Perfect, а более раннее действие в прошлом - на Past Perfect. Для будущего есть три формы: will для решения и прогноза, be going to для плана и видимой причины, Present Continuous для назначенной встречи. Пассив во всех этих временах строится через нужную форму be плюс третью форму глагола. Проверять себя проще всего по двум вопросам: когда произошло действие и закончено ли оно.",
+   "forms": [
+    "V1/V-s vs am/is/are + V-ing",
+    "V2 / didn't + V1 vs was/were + V-ing",
+    "have/has + V3 vs V2 + finished time",
+    "will + V1 / am going to + V1 / am + V-ing",
+    "am/is/are/was/were + V3 (passive)"
+   ],
+   "examples": [
+    "I usually start at nine, but today I'm starting at ten.",
+    "We were testing the app when the server went down.",
+    "She has worked here since March.",
+    "The update was installed last night.",
+    "I'm meeting the client tomorrow, so I'll send you a report after that."
+   ],
+   "ru_interference": "Одна форма прошедшего и одна форма настоящего в русском заставляют смешивать времена: неверно Yesterday I have fixed the bug и Now I go to the office -> верно Yesterday I fixed the bug и Now I'm going to the office.",
+   "prerequisites": [
+    "a1_present_simple_present_continuous",
+    "a1_past_simple_regular_irregular",
+    "a1_will_and_shall"
+   ],
+   "exercises": [
+    {
+     "id": "a2_review_verb_tenses_a2_01",
+     "kind": "choice",
+     "prompt": "Right now I ___ on a new ticket.",
+     "options": [
+      "work",
+      "am working",
+      "was working",
+      "have worked"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Right now указывает на момент речи, поэтому только Present Continuous am working.",
+     "difficulty": 1
+    },
+    {
+     "id": "a2_review_verb_tenses_a2_02",
+     "kind": "choice",
+     "prompt": "We ___ the new version last Friday.",
+     "options": [
+      "have released",
+      "released",
+      "are releasing",
+      "release"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Last Friday - закрытый момент в прошлом, поэтому Past Simple released.",
+     "difficulty": 1
+    },
+    {
+     "id": "a2_review_verb_tenses_a2_03",
+     "kind": "choice",
+     "prompt": "The email ___ sent two hours ago.",
+     "options": [
+      "is",
+      "was",
+      "has",
+      "were"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Пассив в прошлом с единственным числом даёт was sent; ago не сочетается с настоящим временем.",
+     "difficulty": 2
+    },
+    {
+     "id": "a2_review_verb_tenses_a2_04",
+     "kind": "choice",
+     "prompt": "I ___ him since Monday.",
+     "options": [
+      "don't see",
+      "haven't seen",
+      "am not seeing",
+      "hasn't seen"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Since Monday задаёт период до настоящего момента, значит Present Perfect, а с I - haven't.",
+     "difficulty": 2
+    },
+    {
+     "id": "a2_review_verb_tenses_a2_05",
+     "kind": "gap",
+     "prompt": "She ___ (not/work) here anymore; she left in May.",
+     "answer": "doesn't work",
+     "accept": [
+      "does not work"
+     ],
+     "explanation_ru": "Речь о фактическом положении дел сейчас, поэтому Present Simple с doesn't.",
+     "difficulty": 1
+    },
+    {
+     "id": "a2_review_verb_tenses_a2_06",
+     "kind": "gap",
+     "prompt": "While I ___ (drive) home, my phone rang.",
+     "answer": "was driving",
+     "accept": [],
+     "explanation_ru": "While вводит длинный фон в прошлом, а короткое rang стоит в Past Simple.",
+     "difficulty": 2
+    },
+    {
+     "id": "a2_review_verb_tenses_a2_07",
+     "kind": "correct",
+     "prompt": "Yesterday I have fixed two bugs.",
+     "answer": "Yesterday I fixed two bugs.",
+     "accept": [
+      "I fixed two bugs yesterday."
+     ],
+     "explanation_ru": "Слово yesterday называет закрытый момент, поэтому Present Perfect меняется на Past Simple.",
+     "difficulty": 3
+    },
+    {
+     "id": "a2_review_verb_tenses_a2_08",
+     "kind": "transform",
+     "prompt": "Rewrite in the passive: Someone stole my laptop last week.",
+     "answer": "My laptop was stolen last week.",
+     "accept": [
+      "My laptop was stolen last week by someone."
+     ],
+     "explanation_ru": "Исполнитель неизвестен, поэтому дополнение становится подлежащим и берёт форму was stolen.",
+     "difficulty": 3
+    }
+   ]
+  }
+ ]
+}

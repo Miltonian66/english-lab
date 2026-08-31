@@ -1,0 +1,1550 @@
+{
+ "chunk": "b2_1_part3",
+ "points": [
+  {
+   "id": "b2_auxiliary_verbs_different_uses",
+   "level": "B2",
+   "band": "B2.1",
+   "topic": "Tenses",
+   "title_en": "Auxiliary verbs: Different uses",
+   "source_slug": "auxiliary-verbs-different-uses",
+   "title_ru": "Вспомогательные глаголы: разные функции",
+   "summary_ru": "Вспомогательные глаголы be, do и have строят времена, вопросы и отрицания, но в B2 важнее их вторая работа: они заменяют собой целое сказуемое. В коротких ответах повторяется только вспомогательный: Do you use Docker? — Yes, I do. В хвостовых вопросах он же берётся из основной части и меняет знак: You sent it, didn't you? В конструкциях So do I и Neither do I вспомогательный согласуется по времени и лицу с исходной репликой. Чтобы не повторять всё сказуемое, предложение обрывается на вспомогательном: I wasn't invited, but my colleagues were. Ударное do, does, did добавляется перед смысловым глаголом для усиления: I did send the invoice. Если в исходном предложении нет вспомогательного, для всех этих функций берётся do, does или did.",
+   "forms": [
+    "do/does/did + subject + V1 (questions)",
+    "short answers: Yes, I do. / No, she hasn't.",
+    "statement + , + auxiliary (+ n't) + subject? (question tags)",
+    "So + auxiliary + subject / Neither + auxiliary + subject",
+    "do/does/did + V1 (emphasis)"
+   ],
+   "examples": [
+    "I don't work on Fridays, and neither does my manager.",
+    "You've already fixed the bug, haven't you?",
+    "I did tell you about the meeting, but you forgot.",
+    "A: I love this framework. B: So do I.",
+    "She isn't coming, but her colleagues are."
+   ],
+   "ru_interference": "В русском нет вспомогательных глаголов, поэтому в коротких ответах их пропускают или повторяют смысловой глагол. Неверно: Do you use Docker? — Yes, I use. Верно: Do you use Docker? — Yes, I do.",
+   "prerequisites": [
+    "a1_present_simple",
+    "a2_auxiliary_verbs_do_be_and_have"
+   ],
+   "exercises": [
+    {
+     "id": "b2_auxiliary_verbs_different_uses_01",
+     "kind": "choice",
+     "prompt": "You sent the report yesterday, ___?",
+     "options": [
+      "didn't you",
+      "did you",
+      "haven't you",
+      "weren't you"
+     ],
+     "correct_index": 0,
+     "explanation_ru": "Основная часть стоит в past simple и утвердительная, поэтому хвост отрицательный и с did.",
+     "difficulty": 1
+    },
+    {
+     "id": "b2_auxiliary_verbs_different_uses_02",
+     "kind": "choice",
+     "prompt": "A: I have never used Kubernetes. B: ___ I.",
+     "options": [
+      "So have",
+      "Neither have",
+      "Neither did",
+      "So do"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Реплика отрицательная, значит нужен Neither, а вспомогательный повторяется из present perfect: have.",
+     "difficulty": 2
+    },
+    {
+     "id": "b2_auxiliary_verbs_different_uses_03",
+     "kind": "choice",
+     "prompt": "I know you are busy, but I ___ need an answer today.",
+     "options": [
+      "do",
+      "am",
+      "have",
+      "does"
+     ],
+     "correct_index": 0,
+     "explanation_ru": "Для усиления смыслового глагола в present simple перед ним ставится ударное do; am и have здесь не сочетаются с need, а does не согласуется с I.",
+     "difficulty": 2
+    },
+    {
+     "id": "b2_auxiliary_verbs_different_uses_04",
+     "kind": "choice",
+     "prompt": "I wasn't invited to the demo, but my colleagues ___.",
+     "options": [
+      "were",
+      "did",
+      "have",
+      "are"
+     ],
+     "correct_index": 0,
+     "explanation_ru": "Вместо повторения were invited остаётся только вспомогательный were во множественном числе прошедшего времени.",
+     "difficulty": 1
+    },
+    {
+     "id": "b2_auxiliary_verbs_different_uses_05",
+     "kind": "gap",
+     "prompt": "A: I can't reach the server. B: ___ (neither / I).",
+     "answer": "Neither can I",
+     "accept": [
+      "Nor can I"
+     ],
+     "explanation_ru": "После Neither идёт вспомогательный из реплики собеседника (can), а потом подлежащее.",
+     "difficulty": 2
+    },
+    {
+     "id": "b2_auxiliary_verbs_different_uses_06",
+     "kind": "gap",
+     "prompt": "You work in the support team, ___ (question tag)?",
+     "answer": "don't you",
+     "accept": [],
+     "explanation_ru": "В present simple без вспомогательного хвост строится с do; подлежащее you сохраняется.",
+     "difficulty": 1
+    },
+    {
+     "id": "b2_auxiliary_verbs_different_uses_07",
+     "kind": "correct",
+     "prompt": "Do you have finished the migration?",
+     "answer": "Have you finished the migration?",
+     "accept": [],
+     "explanation_ru": "В present perfect вспомогательным уже является have, поэтому do в вопросе лишний.",
+     "difficulty": 3
+    },
+    {
+     "id": "b2_auxiliary_verbs_different_uses_08",
+     "kind": "transform",
+     "prompt": "Add emphasis with an auxiliary: I sent the invoice on Monday.",
+     "answer": "I did send the invoice on Monday.",
+     "accept": [],
+     "explanation_ru": "Усиление в past simple даёт did плюс первая форма глагола, поэтому sent становится send.",
+     "difficulty": 3
+    }
+   ]
+  },
+  {
+   "id": "b2_future_continuous_and_future_perfect",
+   "level": "B2",
+   "band": "B2.1",
+   "topic": "Tenses",
+   "title_en": "Future continuous and future perfect",
+   "source_slug": "future-continuous-and-future-perfect",
+   "title_ru": "Future continuous и future perfect",
+   "summary_ru": "Future continuous (will be doing) показывает действие в процессе в конкретный момент будущего: This time tomorrow I'll be flying to Berlin. Его типичные маркеры — at eight o'clock tomorrow и this time next week. Future perfect (will have done) показывает действие, законченное до момента в будущем, и обычно идёт с by, by the time, before: By Friday we will have finished the migration. Future perfect continuous (will have been doing) подчёркивает длительность к моменту в будущем: By May she'll have been working here for ten years. В придаточных времени с when, by the time, after используется настоящее время, а will остаётся только в главной части. Разница проста: continuous отвечает на вопрос что будет происходить, perfect — что уже будет сделано.",
+   "forms": [
+    "will be + V-ing",
+    "will have + V3",
+    "will have been + V-ing",
+    "won't be + V-ing / won't have + V3",
+    "Will you be + V-ing?"
+   ],
+   "examples": [
+    "This time tomorrow I'll be flying to Berlin.",
+    "By Friday we will have finished the migration.",
+    "Don't call at six; we'll be running the demo.",
+    "By next month she will have been working here for ten years.",
+    "By the time you get back, I will have sent the invoices."
+   ],
+   "ru_interference": "Русский обходится одним будущим временем, поэтому длительность и завершённость теряются. Неверно: By Friday I will finish the report. Верно: By Friday I will have finished the report.",
+   "prerequisites": [
+    "a2_will_vs_be_going_to",
+    "a2_past_perfect",
+    "b1_future_forms"
+   ],
+   "exercises": [
+    {
+     "id": "b2_future_continuous_and_future_perfect_01",
+     "kind": "choice",
+     "prompt": "This time tomorrow I ___ on a plane to Berlin.",
+     "options": [
+      "will sit",
+      "will be sitting",
+      "will have sat",
+      "will have been sitting"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "This time tomorrow задаёт точку в будущем, в которую действие идёт, поэтому нужен future continuous.",
+     "difficulty": 1
+    },
+    {
+     "id": "b2_future_continuous_and_future_perfect_02",
+     "kind": "choice",
+     "prompt": "Hurry up! By the time we get to the theater, the movie ___.",
+     "options": [
+      "will start",
+      "will have started",
+      "has started",
+      "will have been starting"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "By the time требует действия, законченного до момента в будущем, то есть future perfect.",
+     "difficulty": 2
+    },
+    {
+     "id": "b2_future_continuous_and_future_perfect_03",
+     "kind": "choice",
+     "prompt": "When you get back from vacation, the team ___ to the new office.",
+     "options": [
+      "will already move",
+      "will have already moved",
+      "is already moving",
+      "already moves"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Переезд закончится раньше вашего возвращения, поэтому нужен future perfect, а already стоит после will have.",
+     "difficulty": 2
+    },
+    {
+     "id": "b2_future_continuous_and_future_perfect_04",
+     "kind": "choice",
+     "prompt": "By December, I ___ at this company for five years.",
+     "options": [
+      "will be working",
+      "will have been working",
+      "have been working",
+      "will work"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "By December плюс отрезок for five years дают future perfect continuous: длительность к моменту в будущем.",
+     "difficulty": 3
+    },
+    {
+     "id": "b2_future_continuous_and_future_perfect_05",
+     "kind": "gap",
+     "prompt": "This time next Sunday we ___ (fly) to Lisbon.",
+     "answer": "will be flying",
+     "accept": [
+      "'ll be flying"
+     ],
+     "explanation_ru": "This time next Sunday указывает на процесс в конкретный момент, значит will be + V-ing.",
+     "difficulty": 1
+    },
+    {
+     "id": "b2_future_continuous_and_future_perfect_06",
+     "kind": "gap",
+     "prompt": "By the end of the month the developers ___ (fix) all the critical bugs.",
+     "answer": "will have fixed",
+     "accept": [
+      "'ll have fixed"
+     ],
+     "explanation_ru": "By the end of the month показывает границу, к которой работа завершится, поэтому will have + V3.",
+     "difficulty": 1
+    },
+    {
+     "id": "b2_future_continuous_and_future_perfect_07",
+     "kind": "correct",
+     "prompt": "By next summer I will live in this city for ten years.",
+     "answer": "By next summer I will have lived in this city for ten years.",
+     "accept": [
+      "By next summer I will have been living in this city for ten years."
+     ],
+     "explanation_ru": "С предлогом by и отрезком for ten years простое будущее невозможно, нужен future perfect.",
+     "difficulty": 3
+    },
+    {
+     "id": "b2_future_continuous_and_future_perfect_08",
+     "kind": "order",
+     "prompt": "Friday / By / will / they / have / left",
+     "answer": "By Friday they will have left.",
+     "accept": [
+      "They will have left by Friday."
+     ],
+     "explanation_ru": "Обстоятельство By Friday выносится вперёд, дальше идёт подлежащее и цепочка will have + V3.",
+     "difficulty": 2
+    }
+   ]
+  },
+  {
+   "id": "b2_narrative_tenses",
+   "level": "B2",
+   "band": "B2.1",
+   "topic": "Tenses",
+   "title_en": "Narrative tenses: All past tenses",
+   "source_slug": "narrative-tenses",
+   "title_ru": "Времена в рассказе о прошлом",
+   "summary_ru": "В рассказе о прошлом четыре времени делят между собой работу. Past simple двигает сюжет и перечисляет события в том порядке, в котором они произошли. Past continuous даёт фон и длинное действие, которое прерывается коротким: I was walking home when I saw the accident. Past perfect отправляет нас ещё дальше назад и показывает, что случилось до основного момента: When we arrived, the meeting had already started. Past perfect continuous подчёркивает длительность до этого момента и часто объясняет причину: She was tired because she had been working all night. Маркеры подсказывают форму: while и as любят continuous, а already, by the time и before that обычно указывают на past perfect. Ошибка уровня B2 — рассказывать всё в past simple и терять порядок событий.",
+   "forms": [
+    "V2 (past simple)",
+    "was/were + V-ing (past continuous)",
+    "had + V3 (past perfect)",
+    "had been + V-ing (past perfect continuous)",
+    "was/were going to + V1 (future in the past)"
+   ],
+   "examples": [
+    "I was walking home when I saw the accident.",
+    "By the time we arrived, the meeting had already started.",
+    "She was tired because she had been working all night.",
+    "He didn't recognize her because she had changed a lot.",
+    "While the team was testing the app, the server went down."
+   ],
+   "ru_interference": "В русском одно прошедшее время, поэтому предпрошедшее просто выпадает. Неверно: When I arrived, the train already left. Верно: When I arrived, the train had already left.",
+   "prerequisites": [
+    "a2_past_continuous_past_simple",
+    "a2_past_perfect",
+    "b1_past_simple_past_continuous_past_perfect"
+   ],
+   "exercises": [
+    {
+     "id": "b2_narrative_tenses_01",
+     "kind": "choice",
+     "prompt": "By the time we got to the station, the train ___.",
+     "options": [
+      "already left",
+      "had already left",
+      "was already leaving",
+      "has already left"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "By the time требует действия, случившегося раньше другого прошедшего события, то есть past perfect.",
+     "difficulty": 1
+    },
+    {
+     "id": "b2_narrative_tenses_02",
+     "kind": "choice",
+     "prompt": "I recognized the place at once. I ___ there many times as a child.",
+     "options": [
+      "had been",
+      "have been",
+      "was being",
+      "had been being"
+     ],
+     "correct_index": 0,
+     "explanation_ru": "Поездки были раньше момента узнавания в прошлом, поэтому нужен past perfect; present perfect с прошедшим рассказом не сочетается.",
+     "difficulty": 2
+    },
+    {
+     "id": "b2_narrative_tenses_03",
+     "kind": "choice",
+     "prompt": "I didn't go out last night because I ___ my ankle the day before.",
+     "options": [
+      "was hurting",
+      "have hurt",
+      "had hurt",
+      "had been hurting"
+     ],
+     "correct_index": 2,
+     "explanation_ru": "The day before отправляет событие раньше прошлого вечера, а травма — одномоментное действие, поэтому past perfect simple.",
+     "difficulty": 2
+    },
+    {
+     "id": "b2_narrative_tenses_04",
+     "kind": "choice",
+     "prompt": "While we ___ the demo, the power went out.",
+     "options": [
+      "were giving",
+      "had given",
+      "have given",
+      "was giving"
+     ],
+     "correct_index": 0,
+     "explanation_ru": "Длинное фоновое действие после while стоит в past continuous, а с подлежащим we нужна форма were.",
+     "difficulty": 1
+    },
+    {
+     "id": "b2_narrative_tenses_05",
+     "kind": "gap",
+     "prompt": "I ___ (wait) for twenty minutes when she finally called back.",
+     "answer": "had been waiting",
+     "accept": [
+      "'d been waiting",
+      "had waited",
+      "'d waited"
+     ],
+     "explanation_ru": "Отрезок for twenty minutes до момента звонка в прошлом даёт past perfect continuous.",
+     "difficulty": 3
+    },
+    {
+     "id": "b2_narrative_tenses_06",
+     "kind": "gap",
+     "prompt": "When I woke up, it ___ (stop) raining.",
+     "answer": "had stopped",
+     "accept": [
+      "'d stopped"
+     ],
+     "explanation_ru": "Дождь кончился раньше пробуждения, поэтому past perfect.",
+     "difficulty": 1
+    },
+    {
+     "id": "b2_narrative_tenses_07",
+     "kind": "correct",
+     "prompt": "When I came home, my sister already ate all the pizza.",
+     "answer": "When I came home, my sister had already eaten all the pizza.",
+     "accept": [],
+     "explanation_ru": "Пицца исчезла до прихода домой, значит нужен past perfect had eaten, а already стоит между had и причастием.",
+     "difficulty": 3
+    },
+    {
+     "id": "b2_narrative_tenses_08",
+     "kind": "order",
+     "prompt": "had / when / left / arrived / we / already / they",
+     "answer": "When we arrived, they had already left.",
+     "accept": [
+      "They had already left when we arrived."
+     ],
+     "explanation_ru": "Придаточное с when стоит в past simple, а главное действие, случившееся раньше, — в past perfect.",
+     "difficulty": 2
+    }
+   ]
+  },
+  {
+   "id": "b2_present_perfect_simple_continuous",
+   "level": "B2",
+   "band": "B2.1",
+   "topic": "Tenses",
+   "title_en": "Present perfect simple or continuous",
+   "source_slug": "present-perfect-simple-continuous",
+   "title_ru": "Present perfect simple или continuous",
+   "summary_ru": "Оба времени связывают прошлое с настоящим, но смотрят на действие по-разному. Present perfect simple (have done) показывает результат и считает количество: I've written three reports this week. Present perfect continuous (have been doing) показывает процесс и его длительность, часто с видимым следом в настоящем: Sorry about the mess, I've been painting the kitchen. Когда назван результат в количестве — three reports, twice, five times — continuous невозможен, а со статичными глаголами know, be, have (владеть), like употребляется только simple: We've known each other since university. С for и since возможны оба варианта, но для действий, которые всё ещё идут, чаще выбирают continuous. Вопрос о длительности стандартно строится как How long have you been doing this? Если действие закончено и важен его результат, ставится simple; если важен сам процесс, который шёл до этого момента, — continuous.",
+   "forms": [
+    "have/has + V3",
+    "have/has been + V-ing",
+    "How long have/has + subject + been + V-ing?",
+    "haven't/hasn't + V3",
+    "stative verbs: only have/has + V3"
+   ],
+   "examples": [
+    "I've been learning Spanish for two years.",
+    "I've written three reports this week.",
+    "She's tired because she's been fixing the build all morning.",
+    "We've known each other since university.",
+    "How long have you been waiting?"
+   ],
+   "ru_interference": "Русский описывает длящееся действие настоящим временем, и это переносится в английский. Неверно: I work here for five years. Верно: I have been working here for five years.",
+   "prerequisites": [
+    "a2_present_perfect",
+    "b1_present_perfect_simple_present_perfect_continuous"
+   ],
+   "exercises": [
+    {
+     "id": "b2_present_perfect_simple_continuous_01",
+     "kind": "choice",
+     "prompt": "I ___ for this company since 2019.",
+     "options": [
+      "work",
+      "am working",
+      "have been working",
+      "worked"
+     ],
+     "correct_index": 2,
+     "explanation_ru": "Since 2019 связывает прошлое с настоящим, поэтому настоящее и прошедшее простое не подходят.",
+     "difficulty": 1
+    },
+    {
+     "id": "b2_present_perfect_simple_continuous_02",
+     "kind": "choice",
+     "prompt": "I ___ three cups of coffee today.",
+     "options": [
+      "have been drinking",
+      "have drunk",
+      "drink",
+      "am drinking"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "С точным количеством three cups continuous невозможен, нужен present perfect simple.",
+     "difficulty": 2
+    },
+    {
+     "id": "b2_present_perfect_simple_continuous_03",
+     "kind": "choice",
+     "prompt": "We ___ each other since school.",
+     "options": [
+      "have been knowing",
+      "have known",
+      "know",
+      "are knowing"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Know — статичный глагол, он не ставится в continuous, а since требует перфекта.",
+     "difficulty": 2
+    },
+    {
+     "id": "b2_present_perfect_simple_continuous_04",
+     "kind": "choice",
+     "prompt": "How long ___ waiting?",
+     "options": [
+      "have you been",
+      "did you have been",
+      "you have been",
+      "have you being"
+     ],
+     "correct_index": 0,
+     "explanation_ru": "В вопросе о длительности вспомогательный have выносится перед подлежащим, дальше идёт been.",
+     "difficulty": 1
+    },
+    {
+     "id": "b2_present_perfect_simple_continuous_05",
+     "kind": "gap",
+     "prompt": "I ___ (not/finish) the report yet.",
+     "answer": "haven't finished",
+     "accept": [
+      "have not finished"
+     ],
+     "explanation_ru": "Yet требует present perfect simple, потому что важен результат, а не процесс.",
+     "difficulty": 1
+    },
+    {
+     "id": "b2_present_perfect_simple_continuous_06",
+     "kind": "gap",
+     "prompt": "My hands are dirty because I ___ (repair) my bike.",
+     "answer": "have been repairing",
+     "accept": [
+      "'ve been repairing"
+     ],
+     "explanation_ru": "Грязные руки — видимый след процесса, поэтому present perfect continuous.",
+     "difficulty": 2
+    },
+    {
+     "id": "b2_present_perfect_simple_continuous_07",
+     "kind": "correct",
+     "prompt": "I am working here since March.",
+     "answer": "I have been working here since March.",
+     "accept": [
+      "I have worked here since March."
+     ],
+     "explanation_ru": "Since March нельзя сочетать с present continuous: нужен перфект, связывающий прошлое с настоящим.",
+     "difficulty": 3
+    },
+    {
+     "id": "b2_present_perfect_simple_continuous_08",
+     "kind": "transform",
+     "prompt": "Ask about duration with the present perfect continuous: She is studying Japanese.",
+     "answer": "How long has she been studying Japanese?",
+     "accept": [],
+     "explanation_ru": "Вопрос о длительности строится по схеме How long + has + подлежащее + been + V-ing.",
+     "difficulty": 3
+    }
+   ]
+  },
+  {
+   "id": "b2_review_verb_tenses_b1_b2",
+   "level": "B2",
+   "band": "B2.1",
+   "topic": "Tenses",
+   "title_en": "Review of all upper-intermediate verb tenses (CEFR B2.1)",
+   "source_slug": "review-verb-tenses-b1-b2",
+   "title_ru": "Обзор всех времён уровня B2.1",
+   "summary_ru": "На уровне B2.1 выбор времени определяется тремя вопросами: когда произошло действие, закончено ли оно и важен ли процесс. Настоящее: present simple для правил и привычек, present continuous для того, что происходит сейчас или временно. Прошедшее: past simple для законченных событий с указанием времени, past continuous для фона, past perfect для действия раньше другого прошедшего. Связь с настоящим даёт present perfect simple и continuous, а связь с будущим — will, be going to, present continuous для договорённостей, future continuous и future perfect. В придаточных времени и условия после if, when, as soon as, until, before will не ставится. Маркеры времени почти всегда подсказывают форму, поэтому сначала ищите их, а потом выбирайте глагол.",
+   "forms": [
+    "V1 / am-is-are + V-ing (present)",
+    "V2 / was-were + V-ing / had + V3 (past)",
+    "have/has + V3 / have/has been + V-ing (present perfect)",
+    "will + V1 / be going to + V1 / will be + V-ing / will have + V3 (future)",
+    "time clause: when/if + present, main clause + will"
+   ],
+   "examples": [
+    "I usually work from home, but this week I'm working at the office.",
+    "By the time you read this, I will have left.",
+    "She had already gone when I called.",
+    "We've been testing the new feature since Monday.",
+    "I was reading when the lights went out."
+   ],
+   "ru_interference": "Трём русским временам соответствует дюжина английских, и по умолчанию выбирается самое простое. Неверно: I read this book two weeks and I don't finish it. Верно: I have been reading this book for two weeks and I haven't finished it.",
+   "prerequisites": [
+    "a2_review_verb_tenses_a2",
+    "b1_review_verb_tenses_b1"
+   ],
+   "exercises": [
+    {
+     "id": "b2_review_verb_tenses_b1_b2_01",
+     "kind": "choice",
+     "prompt": "Listen! Someone ___ the piano upstairs.",
+     "options": [
+      "plays",
+      "is playing",
+      "has played",
+      "played"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Listen показывает, что действие идёт прямо сейчас, поэтому present continuous.",
+     "difficulty": 1
+    },
+    {
+     "id": "b2_review_verb_tenses_b1_b2_02",
+     "kind": "choice",
+     "prompt": "By the time the technician arrived, I ___ the problem myself.",
+     "options": [
+      "had already solved",
+      "have already solved",
+      "already have solved",
+      "had already solving"
+     ],
+     "correct_index": 0,
+     "explanation_ru": "Действие завершилось раньше другого прошедшего события, значит past perfect had solved.",
+     "difficulty": 2
+    },
+    {
+     "id": "b2_review_verb_tenses_b1_b2_03",
+     "kind": "choice",
+     "prompt": "This is the third time I ___ this error today.",
+     "options": [
+      "see",
+      "have seen",
+      "saw",
+      "am seeing"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "После конструкции This is the first/second/third time всегда идёт present perfect.",
+     "difficulty": 2
+    },
+    {
+     "id": "b2_review_verb_tenses_b1_b2_04",
+     "kind": "choice",
+     "prompt": "I'll email you as soon as I ___ the answer.",
+     "options": [
+      "will get",
+      "get",
+      "will have gotten",
+      "am getting"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "В придаточном времени после as soon as будущее выражается настоящим временем.",
+     "difficulty": 1
+    },
+    {
+     "id": "b2_review_verb_tenses_b1_b2_05",
+     "kind": "gap",
+     "prompt": "While I ___ (drive) home, I saw a fox in the road.",
+     "answer": "was driving",
+     "accept": [],
+     "explanation_ru": "While вводит длинное фоновое действие, которое прерывается коротким событием в past simple.",
+     "difficulty": 1
+    },
+    {
+     "id": "b2_review_verb_tenses_b1_b2_06",
+     "kind": "gap",
+     "prompt": "By the time she left the company, she ___ (work) there for ten years.",
+     "answer": "had worked",
+     "accept": [
+      "had been working",
+      "'d worked",
+      "'d been working"
+     ],
+     "explanation_ru": "Отрезок for ten years закончился к моменту в прошлом, который задан оборотом By the time she left, поэтому нужен past perfect.",
+     "difficulty": 3
+    },
+    {
+     "id": "b2_review_verb_tenses_b1_b2_07",
+     "kind": "correct",
+     "prompt": "I am living in this apartment since 2020.",
+     "answer": "I have lived in this apartment since 2020.",
+     "accept": [
+      "I have been living in this apartment since 2020."
+     ],
+     "explanation_ru": "Since 2020 требует перфекта, а не present continuous.",
+     "difficulty": 3
+    },
+    {
+     "id": "b2_review_verb_tenses_b1_b2_08",
+     "kind": "order",
+     "prompt": "you / will / when / call / arrive / I / I",
+     "answer": "I will call you when I arrive.",
+     "accept": [
+      "I'll call you when I arrive.",
+      "When I arrive, I will call you.",
+      "When I arrive, I'll call you."
+     ],
+     "explanation_ru": "Will стоит только в главной части, а в придаточном с when используется present simple.",
+     "difficulty": 2
+    }
+   ]
+  },
+  {
+   "id": "b2_passive_voice_all_tenses",
+   "level": "B2",
+   "band": "B2.1",
+   "topic": "Tenses",
+   "title_en": "The passive voice: All tenses",
+   "source_slug": "passive-voice-all-tenses",
+   "title_ru": "Пассивный залог во всех временах",
+   "summary_ru": "Пассив строится по одной формуле: глагол be в нужном времени плюс третья форма смыслового глагола. Меняется только be, а причастие остаётся неизменным: is checked, was checked, has been checked, will be checked, is being checked. Пассив выбирают, когда исполнитель неизвестен, неважен или очевиден, а также в отчётах и документации, где важен объект действия. Исполнителя при необходимости добавляют через by: The bug was reported by a client. После модальных глаголов используется схема modal + be + V3: The task must be finished today. В present perfect и past perfect появляется цепочка have/has/had been + V3, а форма being встречается только в continuous.",
+   "forms": [
+    "am/is/are + V3 (present simple passive)",
+    "was/were + V3 (past simple passive)",
+    "is/are being + V3 (present continuous passive)",
+    "have/has/had been + V3 (perfect passive)",
+    "will be + V3 / modal + be + V3"
+   ],
+   "examples": [
+    "The report is checked every Monday.",
+    "The servers were replaced last year.",
+    "Your ticket has been assigned to another team.",
+    "The bug is being investigated right now.",
+    "The results will be published tomorrow."
+   ],
+   "ru_interference": "В русском пассив часто выражается формой на -ся или безличной конструкцией без глагола-связки, и связка be теряется. Неверно: The problem discussed at the meeting. Верно: The problem was discussed at the meeting.",
+   "prerequisites": [
+    "a2_present_past_simple_passive",
+    "b1_active_passive_voice",
+    "b1_passive_verb_forms"
+   ],
+   "exercises": [
+    {
+     "id": "b2_passive_voice_all_tenses_01",
+     "kind": "choice",
+     "prompt": "The road ___ at the moment, so please use the other one.",
+     "options": [
+      "is repairing",
+      "is being repaired",
+      "repairs",
+      "has repaired"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "At the moment требует present continuous, а дорогу ремонтируют, значит нужен пассив is being + V3.",
+     "difficulty": 2
+    },
+    {
+     "id": "b2_passive_voice_all_tenses_02",
+     "kind": "choice",
+     "prompt": "This bridge ___ in 1890.",
+     "options": [
+      "built",
+      "was built",
+      "is built",
+      "has built"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Точная дата в прошлом даёт past simple passive: was плюс третья форма.",
+     "difficulty": 1
+    },
+    {
+     "id": "b2_passive_voice_all_tenses_03",
+     "kind": "choice",
+     "prompt": "The documents ___ to the client yesterday.",
+     "options": [
+      "sent",
+      "were sent",
+      "were send",
+      "have sent"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Документы не отправляют сами себя, поэтому нужен пассив were sent с третьей формой.",
+     "difficulty": 1
+    },
+    {
+     "id": "b2_passive_voice_all_tenses_04",
+     "kind": "choice",
+     "prompt": "The results ___ next week.",
+     "options": [
+      "will announce",
+      "will be announced",
+      "are announcing",
+      "announce"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Будущий пассив строится как will be плюс третья форма.",
+     "difficulty": 1
+    },
+    {
+     "id": "b2_passive_voice_all_tenses_05",
+     "kind": "gap",
+     "prompt": "The email ___ (send) an hour ago.",
+     "answer": "was sent",
+     "accept": [],
+     "explanation_ru": "An hour ago указывает на past simple, а подлежащее — объект действия, значит пассив.",
+     "difficulty": 2
+    },
+    {
+     "id": "b2_passive_voice_all_tenses_06",
+     "kind": "gap",
+     "prompt": "The report ___ (not/finish) yet.",
+     "answer": "hasn't been finished",
+     "accept": [
+      "has not been finished"
+     ],
+     "explanation_ru": "Yet требует present perfect, а пассив в нём выглядит как has been плюс третья форма.",
+     "difficulty": 3
+    },
+    {
+     "id": "b2_passive_voice_all_tenses_07",
+     "kind": "correct",
+     "prompt": "The problem discussed at yesterday's meeting.",
+     "answer": "The problem was discussed at yesterday's meeting.",
+     "accept": [],
+     "explanation_ru": "В пассиве обязательна связка be, без неё предложение остаётся без сказуемого.",
+     "difficulty": 2
+    },
+    {
+     "id": "b2_passive_voice_all_tenses_08",
+     "kind": "transform",
+     "prompt": "Rewrite in the passive: They are building a new terminal at the airport.",
+     "answer": "A new terminal is being built at the airport.",
+     "accept": [],
+     "explanation_ru": "Present continuous в пассиве превращается в is being плюс третью форму, а неопределённое they исчезает.",
+     "difficulty": 3
+    }
+   ]
+  },
+  {
+   "id": "b2_used_to",
+   "level": "B2",
+   "band": "B2.1",
+   "topic": "Tenses",
+   "title_en": "Used to, be used to, get used to",
+   "source_slug": "used-to",
+   "title_ru": "Used to, be used to, get used to",
+   "summary_ru": "Три похожие конструкции означают совершенно разное. Used to плюс первая форма глагола описывает прошлую привычку или состояние, которых больше нет: I used to drink a lot of coffee. Вопрос и отрицание строятся через did: Did you use to smoke? I didn't use to like fish, причём в этих формах пишется use, а не used. Be used to означает привычность в настоящем: для меня это уже нормально. Get used to означает процесс привыкания: постепенно становится нормальным. После be used to и get used to стоит существительное или форма на -ing, потому что to здесь предлог, а не частица инфинитива: She isn't used to driving on the left. Проверить себя просто: если можно заменить на I am accustomed to, нужна форма с -ing.",
+   "forms": [
+    "used to + V1",
+    "didn't use to + V1 / Did you use to + V1?",
+    "be used to + V-ing / noun",
+    "get used to + V-ing / noun",
+    "am/is/are getting used to + V-ing"
+   ],
+   "examples": [
+    "I used to drink a lot of coffee, but I stopped.",
+    "She isn't used to driving on the left.",
+    "You'll soon get used to the new system.",
+    "We didn't use to have a canteen here.",
+    "I'm slowly getting used to working from home."
+   ],
+   "ru_interference": "Русское привык переводят инфинитивом, и после to ставят первую форму глагола. Неверно: I am used to work at night. Верно: I am used to working at night.",
+   "prerequisites": [
+    "a2_used_to",
+    "b1_usually_used_to_be_used_to_get_used_to"
+   ],
+   "exercises": [
+    {
+     "id": "b2_used_to_01",
+     "kind": "choice",
+     "prompt": "When I was a child, I ___ a lot of cartoons.",
+     "options": [
+      "used to watching",
+      "used to watch",
+      "am used to watch",
+      "was used to watch"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Прошлая привычка — used to плюс первая форма глагола, без -ing.",
+     "difficulty": 1
+    },
+    {
+     "id": "b2_used_to_02",
+     "kind": "choice",
+     "prompt": "After six months in London she ___ driving on the left.",
+     "options": [
+      "used to",
+      "is used to",
+      "use to",
+      "used"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Речь о привычности в настоящем, поэтому be used to плюс форма на -ing.",
+     "difficulty": 2
+    },
+    {
+     "id": "b2_used_to_03",
+     "kind": "choice",
+     "prompt": "It was hard at first, but after a month I ___ used to getting up at five.",
+     "options": [
+      "got",
+      "use",
+      "did",
+      "am getting"
+     ],
+     "correct_index": 0,
+     "explanation_ru": "Описан завершившийся процесс привыкания в прошлом, значит get used to в форме past simple.",
+     "difficulty": 2
+    },
+    {
+     "id": "b2_used_to_04",
+     "kind": "choice",
+     "prompt": "We ___ have a printer in the office, but now everything is digital.",
+     "options": [
+      "didn't use to",
+      "didn't used to",
+      "aren't used to",
+      "don't use to"
+     ],
+     "correct_index": 0,
+     "explanation_ru": "В отрицании после did остаётся первая форма use, а не used.",
+     "difficulty": 2
+    },
+    {
+     "id": "b2_used_to_05",
+     "kind": "gap",
+     "prompt": "She isn't used to ___ (work) at night.",
+     "answer": "working",
+     "accept": [],
+     "explanation_ru": "В be used to слово to — предлог, после него ставится форма на -ing.",
+     "difficulty": 1
+    },
+    {
+     "id": "b2_used_to_06",
+     "kind": "gap",
+     "prompt": "When I was younger, I ___ (used to / play) the guitar every day.",
+     "answer": "used to play",
+     "accept": [],
+     "explanation_ru": "Регулярное занятие в прошлом, которого больше нет, передаётся через used to плюс первая форма.",
+     "difficulty": 1
+    },
+    {
+     "id": "b2_used_to_07",
+     "kind": "correct",
+     "prompt": "I am used to get up early.",
+     "answer": "I am used to getting up early.",
+     "accept": [],
+     "explanation_ru": "После am used to нужен герундий, потому что to здесь предлог.",
+     "difficulty": 3
+    },
+    {
+     "id": "b2_used_to_08",
+     "kind": "order",
+     "prompt": "used / not / I / am / to / early / getting / up",
+     "answer": "I am not used to getting up early.",
+     "accept": [
+      "I'm not used to getting up early."
+     ],
+     "explanation_ru": "Отрицание ставится после am, а после to сохраняется форма getting.",
+     "difficulty": 3
+    }
+   ]
+  },
+  {
+   "id": "b2_when_i_do_vs_when_i_have_done",
+   "level": "B2",
+   "band": "B2.1",
+   "topic": "Tenses",
+   "title_en": "When I do vs When I have done: Future time clauses",
+   "source_slug": "when-i-do-vs-when-i-have-done",
+   "title_ru": "Придаточные времени: when I do и when I have done",
+   "summary_ru": "В придаточных времени с when, after, as soon as, until, before и by the time будущее время не используется: will остаётся только в главной части. Present simple выбирают, когда действие мыслится как момент: I'll call you when I get home. Present perfect подчёркивает, что первое действие должно быть полностью закончено до второго: When I've finished this report, I'll send it to you. После until и before особенно часто встречается present perfect в значении завершённости: We can't start until everyone has arrived. Разница между двумя вариантами часто небольшая, но перфект нужен там, где важен именно результат, а не момент. Главная ошибка на этом уровне — поставить will после when или as soon as.",
+   "forms": [
+    "when/as soon as/after + present simple + , + will + V1",
+    "when/after + present perfect + , + will + V1",
+    "until/before + present simple / present perfect",
+    "will + V1 + until + present simple",
+    "not + until + present perfect"
+   ],
+   "examples": [
+    "I'll call you when I get home.",
+    "When I've finished this report, I'll send it to you.",
+    "We can't start until everyone has arrived.",
+    "As soon as the tests pass, we'll deploy.",
+    "I'll wait here until you come back."
+   ],
+   "ru_interference": "В русском после когда стоит будущее время, и его механически переносят в английский. Неверно: I will call you when I will arrive. Верно: I will call you when I arrive.",
+   "prerequisites": [
+    "a2_first_conditional_future_time_clauses",
+    "b1_first_conditional_future_time_clauses"
+   ],
+   "exercises": [
+    {
+     "id": "b2_when_i_do_vs_when_i_have_done_01",
+     "kind": "choice",
+     "prompt": "I'll text you as soon as I ___ at the hotel.",
+     "options": [
+      "will arrive",
+      "arrive",
+      "arrived",
+      "am arriving"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "После as soon as будущее выражается present simple, will в придаточном невозможен.",
+     "difficulty": 1
+    },
+    {
+     "id": "b2_when_i_do_vs_when_i_have_done_02",
+     "kind": "choice",
+     "prompt": "We'll leave as soon as the rain ___.",
+     "options": [
+      "will stop",
+      "stops",
+      "stopped",
+      "is stopping"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Придаточное времени требует настоящего времени, а подлежащее the rain даёт форму stops.",
+     "difficulty": 2
+    },
+    {
+     "id": "b2_when_i_do_vs_when_i_have_done_03",
+     "kind": "choice",
+     "prompt": "I won't say anything until I ___ all the facts.",
+     "options": [
+      "will check",
+      "checked",
+      "have checked",
+      "will have checked"
+     ],
+     "correct_index": 2,
+     "explanation_ru": "Важна завершённость действия до второго события, а will после until недопустим, поэтому present perfect.",
+     "difficulty": 3
+    },
+    {
+     "id": "b2_when_i_do_vs_when_i_have_done_04",
+     "kind": "choice",
+     "prompt": "After she ___ her degree, she wants to work abroad.",
+     "options": [
+      "will finish",
+      "finishes",
+      "will have finished",
+      "is finishing"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "После after в придаточном времени ставится настоящее время, а не будущее.",
+     "difficulty": 2
+    },
+    {
+     "id": "b2_when_i_do_vs_when_i_have_done_05",
+     "kind": "gap",
+     "prompt": "I'll give you the keys when you ___ (sign) the contract.",
+     "answer": "sign",
+     "accept": [
+      "have signed"
+     ],
+     "explanation_ru": "После when используется present simple или present perfect, но не will.",
+     "difficulty": 1
+    },
+    {
+     "id": "b2_when_i_do_vs_when_i_have_done_06",
+     "kind": "gap",
+     "prompt": "Wait here until I ___ (come) back.",
+     "answer": "come",
+     "accept": [],
+     "explanation_ru": "Until вводит придаточное времени, поэтому глагол стоит в present simple.",
+     "difficulty": 1
+    },
+    {
+     "id": "b2_when_i_do_vs_when_i_have_done_07",
+     "kind": "correct",
+     "prompt": "I will call you when I will arrive.",
+     "answer": "I will call you when I arrive.",
+     "accept": [
+      "I'll call you when I arrive."
+     ],
+     "explanation_ru": "Второй will лишний: в придаточном времени будущее передаётся present simple.",
+     "difficulty": 2
+    },
+    {
+     "id": "b2_when_i_do_vs_when_i_have_done_08",
+     "kind": "transform",
+     "prompt": "Join the sentences with 'as soon as': The taxi will arrive. Then we will leave.",
+     "answer": "We will leave as soon as the taxi arrives.",
+     "accept": [
+      "We'll leave as soon as the taxi arrives.",
+      "As soon as the taxi arrives, we will leave.",
+      "As soon as the taxi arrives, we'll leave."
+     ],
+     "explanation_ru": "Will сохраняется только в главной части, а в придаточном с as soon as остаётся arrives.",
+     "difficulty": 3
+    }
+   ]
+  },
+  {
+   "id": "b2_would_and_used_to",
+   "level": "B2",
+   "band": "B2.1",
+   "topic": "Tenses",
+   "title_en": "Would and used to: Past habits and repeated actions",
+   "source_slug": "would-and-used-to",
+   "title_ru": "Would и used to: привычки в прошлом",
+   "summary_ru": "И would, и used to рассказывают о повторяющихся действиях в прошлом, но у них разный охват. Used to подходит и для действий, и для состояний: I used to have a bike, I used to be shy. Would описывает только повторяющиеся действия и не сочетается со статичными глаголами be, have (владеть), know, like, live. Would почти всегда требует явного контекста прошлого или обстоятельства частотности: Every summer we would drive to the coast. В начале рассказа обычно ставят used to, а дальше продолжают с would, чтобы не повторяться. Отрицание и вопрос строятся через did use to, а форма wouldn't в значении привычки почти не встречается. Помните, что would здесь не имеет отношения к сослагательному наклонению.",
+   "forms": [
+    "used to + V1 (actions and states)",
+    "would + V1 (repeated actions only)",
+    "would always/often/usually + V1",
+    "didn't use to + V1",
+    "NOT would + be/have/know/like"
+   ],
+   "examples": [
+    "Every summer we would drive to the coast.",
+    "My grandmother used to have a small farm.",
+    "He would always arrive ten minutes early.",
+    "I used to be afraid of dogs.",
+    "On Sundays my father would cook a big breakfast."
+   ],
+   "ru_interference": "Would читают как русское бы и переносят на состояния. Неверно: When I was a child, I would be very shy. Верно: When I was a child, I used to be very shy.",
+   "prerequisites": [
+    "a2_used_to",
+    "b1_usually_used_to_be_used_to_get_used_to"
+   ],
+   "exercises": [
+    {
+     "id": "b2_would_and_used_to_01",
+     "kind": "choice",
+     "prompt": "When I was a student, I ___ a very old bike.",
+     "options": [
+      "would have",
+      "used to have",
+      "would had",
+      "use to have"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Have в значении владеть — статичный глагол, с would он не употребляется.",
+     "difficulty": 1
+    },
+    {
+     "id": "b2_would_and_used_to_02",
+     "kind": "choice",
+     "prompt": "Every winter my dad ___ us to the mountains.",
+     "options": [
+      "would take",
+      "would took",
+      "used take",
+      "was used to take"
+     ],
+     "correct_index": 0,
+     "explanation_ru": "После would стоит первая форма глагола, а повторяющееся действие с Every winter допускает would.",
+     "difficulty": 1
+    },
+    {
+     "id": "b2_would_and_used_to_03",
+     "kind": "choice",
+     "prompt": "I ___ like coffee, but now I drink it every day.",
+     "options": [
+      "didn't used to",
+      "wouldn't",
+      "didn't use to",
+      "not used to"
+     ],
+     "correct_index": 2,
+     "explanation_ru": "Like — статичный глагол, поэтому нужен used to, а после did пишется use без d.",
+     "difficulty": 2
+    },
+    {
+     "id": "b2_would_and_used_to_04",
+     "kind": "choice",
+     "prompt": "My grandfather ___ a teacher for forty years.",
+     "options": [
+      "would be",
+      "used to be",
+      "would being",
+      "use to be"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Состояние в прошлом передаётся только через used to, would с глаголом be в этом значении невозможен.",
+     "difficulty": 2
+    },
+    {
+     "id": "b2_would_and_used_to_05",
+     "kind": "gap",
+     "prompt": "Every Friday we ___ (go) to the movies together.",
+     "answer": "would go",
+     "accept": [
+      "used to go"
+     ],
+     "explanation_ru": "Повторяющееся действие с Every Friday допускает и would, и used to.",
+     "difficulty": 1
+    },
+    {
+     "id": "b2_would_and_used_to_06",
+     "kind": "gap",
+     "prompt": "There ___ (used to / be) a bakery on this corner, but it closed last year.",
+     "answer": "used to be",
+     "accept": [],
+     "explanation_ru": "Это состояние, а не повторяющееся действие, поэтому would здесь невозможен.",
+     "difficulty": 2
+    },
+    {
+     "id": "b2_would_and_used_to_07",
+     "kind": "correct",
+     "prompt": "When I was young, I would be afraid of the dark.",
+     "answer": "When I was young, I used to be afraid of the dark.",
+     "accept": [],
+     "explanation_ru": "Would не сочетается с глаголом be в значении прошлого состояния.",
+     "difficulty": 3
+    },
+    {
+     "id": "b2_would_and_used_to_08",
+     "kind": "transform",
+     "prompt": "Rewrite with 'would': Every summer my parents took us to the lake.",
+     "answer": "Every summer my parents would take us to the lake.",
+     "accept": [
+      "My parents would take us to the lake every summer."
+     ],
+     "explanation_ru": "После would глагол стоит в первой форме, поэтому took превращается в take.",
+     "difficulty": 3
+    }
+   ]
+  },
+  {
+   "id": "b2_zero_first_conditional_future_time_clauses",
+   "level": "B2",
+   "band": "B2.1",
+   "topic": "Tenses",
+   "title_en": "Zero and first conditional and future time clauses",
+   "source_slug": "zero-first-conditional-future-time-clauses",
+   "title_ru": "Нулевое и первое условие, придаточные времени",
+   "summary_ru": "Нулевое условие описывает всегда истинный результат: обе части стоят в present simple. If you heat water to 100 degrees, it boils. Первое условие описывает реальную возможность в будущем: после if идёт present simple, а в главной части — will плюс первая форма. If it rains tomorrow, we'll stay at home. То же правило действует в придаточных времени с when, as soon as, until, before, after: будущее выражается настоящим временем. Unless означает если не, поэтому после него не ставят второе отрицание. Порядок частей свободный: если условие или придаточное времени стоит первым, после него ставится запятая, а если первой идёт главная часть, запятая не нужна. Главная ошибка русскоязычных — will после if и when.",
+   "forms": [
+    "If + present simple, present simple (zero)",
+    "If + present simple, will + V1 (first)",
+    "when/as soon as/until/before + present simple + will + V1",
+    "Unless + present simple, will + V1",
+    "will + V1 + if + present simple"
+   ],
+   "examples": [
+    "If you heat water to 100 degrees, it boils.",
+    "If it rains tomorrow, we'll stay at home.",
+    "I'll let you know as soon as I hear from them.",
+    "Unless you book now, there won't be any seats.",
+    "The alarm goes off if someone opens the door."
+   ],
+   "ru_interference": "После если и когда русский ставит будущее время, и это переносится в английский. Неверно: If it will rain, we will stay at home. Верно: If it rains, we will stay at home.",
+   "prerequisites": [
+    "a2_first_conditional_future_time_clauses",
+    "b1_first_conditional_future_time_clauses"
+   ],
+   "exercises": [
+    {
+     "id": "b2_zero_first_conditional_future_time_clauses_01",
+     "kind": "choice",
+     "prompt": "If you ___ ice, it melts.",
+     "options": [
+      "will heat",
+      "heat",
+      "heated",
+      "are heating"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Это нулевое условие: обе части стоят в present simple.",
+     "difficulty": 1
+    },
+    {
+     "id": "b2_zero_first_conditional_future_time_clauses_02",
+     "kind": "choice",
+     "prompt": "If we ___ now, we'll catch the last train.",
+     "options": [
+      "will leave",
+      "leave",
+      "would leave",
+      "have left"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "В первом условии после if ставится present simple, а will остаётся в главной части.",
+     "difficulty": 2
+    },
+    {
+     "id": "b2_zero_first_conditional_future_time_clauses_03",
+     "kind": "choice",
+     "prompt": "I'll call you when the results ___ ready.",
+     "options": [
+      "will be",
+      "are",
+      "would be",
+      "have been"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Придаточное времени с when требует настоящего времени, а подлежащее the results даёт форму are.",
+     "difficulty": 2
+    },
+    {
+     "id": "b2_zero_first_conditional_future_time_clauses_04",
+     "kind": "choice",
+     "prompt": "If the client agrees, we ___ the contract next week.",
+     "options": [
+      "will sign",
+      "signed",
+      "would sign",
+      "have signed"
+     ],
+     "correct_index": 0,
+     "explanation_ru": "В главной части первого условия используется will плюс первая форма глагола.",
+     "difficulty": 2
+    },
+    {
+     "id": "b2_zero_first_conditional_future_time_clauses_05",
+     "kind": "gap",
+     "prompt": "If you ___ (not/water) the plants, they die.",
+     "answer": "don't water",
+     "accept": [
+      "do not water"
+     ],
+     "explanation_ru": "Нулевое условие: отрицание строится в present simple через don't.",
+     "difficulty": 1
+    },
+    {
+     "id": "b2_zero_first_conditional_future_time_clauses_06",
+     "kind": "gap",
+     "prompt": "I'll wait here until the taxi ___ (arrive).",
+     "answer": "arrives",
+     "accept": [
+      "has arrived"
+     ],
+     "explanation_ru": "После until будущее время не ставится: нужен present simple arrives, а подлежащее the taxi требует окончания -s; вариант has arrived тоже возможен.",
+     "difficulty": 1
+    },
+    {
+     "id": "b2_zero_first_conditional_future_time_clauses_07",
+     "kind": "correct",
+     "prompt": "If it will be sunny tomorrow, we will go to the beach.",
+     "answer": "If it is sunny tomorrow, we will go to the beach.",
+     "accept": [
+      "If it's sunny tomorrow, we'll go to the beach."
+     ],
+     "explanation_ru": "После if будущее время не ставится, нужен present simple.",
+     "difficulty": 3
+    },
+    {
+     "id": "b2_zero_first_conditional_future_time_clauses_08",
+     "kind": "transform",
+     "prompt": "Rewrite with 'unless': If you don't back up your files, you will lose them.",
+     "answer": "Unless you back up your files, you will lose them.",
+     "accept": [
+      "Unless you back up your files, you'll lose them."
+     ],
+     "explanation_ru": "Unless уже содержит отрицание, поэтому don't убирается.",
+     "difficulty": 3
+    }
+   ]
+  },
+  {
+   "id": "b2_gerund_or_infinitive",
+   "level": "B2",
+   "band": "B2.1",
+   "topic": "Verb patterns",
+   "title_en": "Gerund or infinitive: Verb patterns",
+   "source_slug": "gerund-or-infinitive",
+   "title_ru": "Герундий или инфинитив после глагола",
+   "summary_ru": "Форма второго глагола зависит от первого, и эти сочетания надо запоминать группами. После enjoy, avoid, finish, mind, suggest, practice, keep идёт форма на -ing: I enjoy working with this team. После want, decide, hope, agree, offer, promise, learn, refuse идёт to плюс первая форма: She decided to apply for the job. Группа ask, tell, want, allow, expect требует дополнения перед инфинитивом: They asked me to review the code. После любого предлога, включая to в look forward to и be used to, ставится только -ing. У глаголов stop, remember, forget, try обе формы возможны, но смысл меняется: I stopped smoking означает бросил, а I stopped to smoke — остановился, чтобы покурить. Если сомневаетесь, проверяйте глагол в словаре по образцу verb pattern.",
+   "forms": [
+    "enjoy/avoid/finish/mind/suggest + V-ing",
+    "want/decide/hope/agree/offer + to + V1",
+    "ask/tell/want/allow/expect + object + to + V1",
+    "preposition + V-ing",
+    "stop/remember/forget/try + V-ing or to + V1 (different meaning)"
+   ],
+   "examples": [
+    "I enjoy working with this team.",
+    "She decided to apply for the job.",
+    "They asked me to review the code.",
+    "He's good at solving problems.",
+    "Remember to lock the door when you leave."
+   ],
+   "ru_interference": "В русском после большинства глаголов идёт инфинитив, поэтому герундий пропускают. Неверно: I enjoy to read. Верно: I enjoy reading.",
+   "prerequisites": [
+    "a1_verbs_infinitive_verbs_ing",
+    "a2_infinitives_and_gerunds",
+    "b1_gerund_or_infinitive_do_to_do_doing"
+   ],
+   "exercises": [
+    {
+     "id": "b2_gerund_or_infinitive_01",
+     "kind": "choice",
+     "prompt": "I really enjoy ___ new languages.",
+     "options": [
+      "to learn",
+      "learning",
+      "learn",
+      "to learning"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "После enjoy всегда идёт форма на -ing.",
+     "difficulty": 1
+    },
+    {
+     "id": "b2_gerund_or_infinitive_02",
+     "kind": "choice",
+     "prompt": "She decided ___ the offer.",
+     "options": [
+      "accepting",
+      "to accept",
+      "accept",
+      "to accepting"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Decide входит в группу глаголов, после которых стоит to плюс первая форма.",
+     "difficulty": 1
+    },
+    {
+     "id": "b2_gerund_or_infinitive_03",
+     "kind": "choice",
+     "prompt": "My boss asked me ___ the meeting.",
+     "options": [
+      "postpone",
+      "to postpone",
+      "postponing",
+      "that I postpone"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Ask требует схемы дополнение плюс to плюс первая форма глагола.",
+     "difficulty": 2
+    },
+    {
+     "id": "b2_gerund_or_infinitive_04",
+     "kind": "choice",
+     "prompt": "I'll never forget ___ the Grand Canyon for the first time.",
+     "options": [
+      "seeing",
+      "to see",
+      "see",
+      "to seeing"
+     ],
+     "correct_index": 0,
+     "explanation_ru": "Forget с формой на -ing означает воспоминание о том, что уже произошло.",
+     "difficulty": 2
+    },
+    {
+     "id": "b2_gerund_or_infinitive_05",
+     "kind": "gap",
+     "prompt": "He avoided ___ (answer) my question.",
+     "answer": "answering",
+     "accept": [],
+     "explanation_ru": "После avoid употребляется только форма на -ing.",
+     "difficulty": 1
+    },
+    {
+     "id": "b2_gerund_or_infinitive_06",
+     "kind": "gap",
+     "prompt": "We can't afford ___ (wait) any longer.",
+     "answer": "to wait",
+     "accept": [],
+     "explanation_ru": "Afford относится к глаголам с инфинитивом: to плюс первая форма.",
+     "difficulty": 2
+    },
+    {
+     "id": "b2_gerund_or_infinitive_07",
+     "kind": "correct",
+     "prompt": "I look forward to meet you next week.",
+     "answer": "I look forward to meeting you next week.",
+     "accept": [],
+     "explanation_ru": "В look forward to слово to — предлог, поэтому после него нужна форма на -ing.",
+     "difficulty": 3
+    },
+    {
+     "id": "b2_gerund_or_infinitive_08",
+     "kind": "transform",
+     "prompt": "Rewrite with 'suggest' and an -ing form: 'Why don't we take a break?' he said.",
+     "answer": "He suggested taking a break.",
+     "accept": [
+      "He suggested having a break."
+     ],
+     "explanation_ru": "После suggest ставится форма на -ing, а дополнение с to здесь невозможно.",
+     "difficulty": 3
+    }
+   ]
+  },
+  {
+   "id": "b2_verbs_of_the_senses",
+   "level": "B2",
+   "band": "B2.1",
+   "topic": "Verb patterns",
+   "title_en": "Verbs of the senses: look, sound, feel, etc.",
+   "source_slug": "verbs-of-the-senses",
+   "title_ru": "Глаголы восприятия: look, sound, feel",
+   "summary_ru": "Глаголы look, sound, feel, smell, taste и seem описывают впечатление и ведут себя как связки. После них ставится прилагательное, а не наречие: You look tired, That sounds interesting. Если дальше идёт существительное или местоимение, нужен предлог like: He looks like his father, That sounds like a good plan. Если дальше идёт целое предложение, используется as if, as though или разговорное like: It looks as if the build has failed. Глагол seem дополнительно сочетается с инфинитивом: She seems to know everyone here. Эти глаголы обычно статичные, поэтому в значении впечатления они не ставятся в continuous. Сравните: This coffee tastes strange (впечатление) и He is tasting the soup (действие).",
+   "forms": [
+    "look/sound/feel/smell/taste + adjective",
+    "look/sound/feel + like + noun",
+    "look/sound/feel + as if / as though + clause",
+    "seem + adjective / seem + to + V1",
+    "It looks like + clause (informal)"
+   ],
+   "examples": [
+    "You look tired today.",
+    "That sounds like a good plan.",
+    "This soup tastes strange.",
+    "It looks as if the build has failed.",
+    "She seems to know everyone here."
+   ],
+   "ru_interference": "Русское «звучит интересно» тянет за собой наречие, а сравнение калькируется без предлога. Неверно: This sounds interestingly. He looks his father. Верно: This sounds interesting. He looks like his father.",
+   "prerequisites": [
+    "a1_adverbs_manner",
+    "a2_stative_vs_dynamic_verbs_or_non_action_vs_action_verbs"
+   ],
+   "exercises": [
+    {
+     "id": "b2_verbs_of_the_senses_01",
+     "kind": "choice",
+     "prompt": "Your idea sounds ___.",
+     "options": [
+      "interestingly",
+      "interesting",
+      "like interesting",
+      "as interesting"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "После sound в значении впечатления ставится прилагательное, а не наречие.",
+     "difficulty": 1
+    },
+    {
+     "id": "b2_verbs_of_the_senses_02",
+     "kind": "choice",
+     "prompt": "He looks ___ his father.",
+     "options": [
+      "like",
+      "as",
+      "similar",
+      "same"
+     ],
+     "correct_index": 0,
+     "explanation_ru": "Перед существительным после look нужен предлог like.",
+     "difficulty": 1
+    },
+    {
+     "id": "b2_verbs_of_the_senses_03",
+     "kind": "choice",
+     "prompt": "It looks ___ the server is down again.",
+     "options": [
+      "like",
+      "as",
+      "that",
+      "alike"
+     ],
+     "correct_index": 0,
+     "explanation_ru": "Перед целым предложением возможны as if, as though или разговорное like; отдельное as здесь невозможно.",
+     "difficulty": 2
+    },
+    {
+     "id": "b2_verbs_of_the_senses_04",
+     "kind": "choice",
+     "prompt": "This coffee ___ terrible. Did you use old beans?",
+     "options": [
+      "tastes",
+      "is tasting",
+      "tastes like",
+      "is tasted"
+     ],
+     "correct_index": 0,
+     "explanation_ru": "Перед прилагательным предлог like не нужен, а в значении впечатления глагол не ставится в continuous.",
+     "difficulty": 2
+    },
+    {
+     "id": "b2_verbs_of_the_senses_05",
+     "kind": "gap",
+     "prompt": "It smells ___ something is burning in the kitchen.",
+     "answer": "like",
+     "accept": [
+      "as if",
+      "as though"
+     ],
+     "explanation_ru": "Дальше идёт целое предложение, поэтому нужно like, as if или as though.",
+     "difficulty": 2
+    },
+    {
+     "id": "b2_verbs_of_the_senses_06",
+     "kind": "gap",
+     "prompt": "She ___ (seem) to know the answer.",
+     "answer": "seems",
+     "accept": [],
+     "explanation_ru": "Seem сочетается с инфинитивом, а подлежащее she требует окончания -s.",
+     "difficulty": 1
+    },
+    {
+     "id": "b2_verbs_of_the_senses_07",
+     "kind": "correct",
+     "prompt": "This soup tastes deliciously.",
+     "answer": "This soup tastes delicious.",
+     "accept": [],
+     "explanation_ru": "Taste в значении впечатления требует прилагательного, поэтому наречие deliciously неверно.",
+     "difficulty": 3
+    },
+    {
+     "id": "b2_verbs_of_the_senses_08",
+     "kind": "order",
+     "prompt": "if / as / looks / it / it / rain / going / is / to",
+     "answer": "It looks as if it is going to rain.",
+     "accept": [
+      "It looks as if it's going to rain."
+     ],
+     "explanation_ru": "После as if идёт полное предложение с подлежащим it и конструкцией be going to.",
+     "difficulty": 3
+    }
+   ]
+  }
+ ]
+}

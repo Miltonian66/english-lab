@@ -1,0 +1,1673 @@
+{
+  "items": [
+    {
+      "id": "c1_v_nuance",
+      "level": "C1",
+      "word": "nuance",
+      "pos": "noun",
+      "ipa_us": "/ˈnuˌɑns/",
+      "translation_ru": "нюанс, оттенок смысла",
+      "example_en": "The translation is accurate but it misses the nuance of the original wording.",
+      "collocations": [
+        "a subtle nuance",
+        "capture every nuance"
+      ],
+      "topic": "study"
+    },
+    {
+      "id": "c1_v_discrepancy",
+      "level": "C1",
+      "word": "discrepancy",
+      "pos": "noun",
+      "ipa_us": "/dɪˈskrɛpənsi/",
+      "translation_ru": "расхождение, несоответствие",
+      "example_en": "There is a discrepancy between the reported numbers and what the logs actually show.",
+      "collocations": [
+        "a glaring discrepancy",
+        "explain the discrepancy"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "c1_v_rationale",
+      "level": "C1",
+      "word": "rationale",
+      "pos": "noun",
+      "ipa_us": "/ˌræʃəˈnæl/",
+      "translation_ru": "обоснование, логика решения",
+      "example_en": "Could you walk me through the rationale behind dropping the old API?",
+      "collocations": [
+        "the rationale behind",
+        "provide a rationale"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "c1_v_premise",
+      "level": "C1",
+      "word": "premise",
+      "pos": "noun",
+      "ipa_us": "/ˈprɛmɪs/",
+      "translation_ru": "предпосылка, исходное допущение",
+      "example_en": "The whole plan rests on the premise that traffic will double next year.",
+      "collocations": [
+        "a false premise",
+        "start from the premise"
+      ],
+      "topic": "study"
+    },
+    {
+      "id": "c1_v_reservation",
+      "level": "C1",
+      "word": "reservation",
+      "pos": "noun",
+      "ipa_us": "/ˌrɛzɚˈveɪʃən/",
+      "translation_ru": "сомнение, оговорка (по поводу решения)",
+      "example_en": "I approved the plan, though I still have reservations about the timeline.",
+      "collocations": [
+        "have reservations about",
+        "express serious reservations"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "c1_v_scrutiny",
+      "level": "C1",
+      "word": "scrutiny",
+      "pos": "noun",
+      "ipa_us": "/ˈskrutəni/",
+      "translation_ru": "тщательная проверка, пристальное внимание",
+      "example_en": "The proposal did not hold up under closer scrutiny.",
+      "collocations": [
+        "close scrutiny",
+        "come under scrutiny"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "c1_v_benchmark",
+      "level": "C1",
+      "word": "benchmark",
+      "pos": "noun",
+      "ipa_us": "/ˈbɛntʃˌmɑrk/",
+      "translation_ru": "эталон, контрольный показатель",
+      "example_en": "We use last quarter's response time as a benchmark for the new release.",
+      "collocations": [
+        "set a benchmark",
+        "against the benchmark"
+      ],
+      "topic": "tech"
+    },
+    {
+      "id": "c1_v_counterpart",
+      "level": "C1",
+      "word": "counterpart",
+      "pos": "noun",
+      "ipa_us": "/ˈkaʊntɚˌpɑrt/",
+      "translation_ru": "коллега на аналогичной должности, аналог",
+      "example_en": "Our security lead talks to her counterpart in the Berlin office every week.",
+      "collocations": [
+        "a foreign counterpart",
+        "meet your counterpart"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "c1_v_contingency",
+      "level": "C1",
+      "word": "contingency",
+      "pos": "noun",
+      "ipa_us": "/kənˈtɪndʒənsi/",
+      "translation_ru": "непредвиденный случай, резерв",
+      "example_en": "We built two extra weeks into the plan as a contingency.",
+      "collocations": [
+        "a contingency plan",
+        "contingency budget"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "c1_v_discretion",
+      "level": "C1",
+      "word": "discretion",
+      "pos": "noun",
+      "ipa_us": "/dɪˈskrɛʃən/",
+      "translation_ru": "усмотрение, осмотрительность",
+      "example_en": "Refunds above that amount are granted at the manager's discretion.",
+      "collocations": [
+        "at your discretion",
+        "use your discretion"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "c1_v_consensus",
+      "level": "C1",
+      "word": "consensus",
+      "pos": "noun",
+      "ipa_us": "/kənˈsɛnsəs/",
+      "translation_ru": "консенсус, общее мнение",
+      "example_en": "After an hour of debate the team finally reached a consensus.",
+      "collocations": [
+        "reach a consensus",
+        "broad consensus"
+      ],
+      "topic": "people"
+    },
+    {
+      "id": "c1_v_overhead",
+      "level": "C1",
+      "word": "overhead",
+      "pos": "noun",
+      "ipa_us": "/ˈoʊvɚˌhɛd/",
+      "translation_ru": "накладные издержки, дополнительные затраты",
+      "example_en": "The extra logging adds noticeable overhead on every request.",
+      "collocations": [
+        "administrative overhead",
+        "reduce the overhead"
+      ],
+      "topic": "tech"
+    },
+    {
+      "id": "c1_v_anomaly",
+      "level": "C1",
+      "word": "anomaly",
+      "pos": "noun",
+      "ipa_us": "/əˈnɑməli/",
+      "translation_ru": "аномалия, отклонение от нормы",
+      "example_en": "The monitoring system flagged an anomaly in last night's traffic.",
+      "collocations": [
+        "detect an anomaly",
+        "a statistical anomaly"
+      ],
+      "topic": "tech"
+    },
+    {
+      "id": "c1_v_safeguard",
+      "level": "C1",
+      "word": "safeguard",
+      "pos": "noun",
+      "ipa_us": "/ˈseɪfˌgɑrd/",
+      "translation_ru": "защитная мера, страховка",
+      "example_en": "We added a safeguard so that one bad request cannot take down the whole queue.",
+      "collocations": [
+        "put safeguards in place",
+        "a safeguard against abuse"
+      ],
+      "topic": "tech"
+    },
+    {
+      "id": "c1_v_oversight",
+      "level": "C1",
+      "word": "oversight",
+      "pos": "noun",
+      "ipa_us": "/ˈoʊvɚˌsaɪt/",
+      "translation_ru": "недосмотр, упущение",
+      "example_en": "Leaving that field out of the form was an oversight, not a decision.",
+      "collocations": [
+        "a simple oversight",
+        "due to an oversight"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "c1_v_leeway",
+      "level": "C1",
+      "word": "leeway",
+      "pos": "noun",
+      "ipa_us": "/ˈliˌweɪ/",
+      "translation_ru": "свобода действий, запас",
+      "example_en": "The deadline gives us a bit of leeway if testing takes longer.",
+      "collocations": [
+        "give someone leeway",
+        "a little leeway"
+      ],
+      "topic": "time"
+    },
+    {
+      "id": "c1_v_setback",
+      "level": "C1",
+      "word": "setback",
+      "pos": "noun",
+      "ipa_us": "/ˈsɛtˌbæk/",
+      "translation_ru": "неудача, откат назад",
+      "example_en": "Losing the test environment was a serious setback for the release.",
+      "collocations": [
+        "a major setback",
+        "suffer a setback"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "c1_v_mandate",
+      "level": "C1",
+      "word": "mandate",
+      "pos": "noun",
+      "ipa_us": "/ˈmænˌdeɪt/",
+      "translation_ru": "полномочия, предписание",
+      "example_en": "The team has a clear mandate to rewrite the payment module.",
+      "collocations": [
+        "a clear mandate",
+        "have a mandate to"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "c1_v_compliance",
+      "level": "C1",
+      "word": "compliance",
+      "pos": "noun",
+      "ipa_us": "/kəmˈplaɪəns/",
+      "translation_ru": "соблюдение требований, соответствие нормам",
+      "example_en": "Storing the logs abroad would put us out of compliance.",
+      "collocations": [
+        "in compliance with",
+        "compliance requirements"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "c1_v_accountability",
+      "level": "C1",
+      "word": "accountability",
+      "pos": "noun",
+      "ipa_us": "/əˌkaʊntəˈbɪləti/",
+      "translation_ru": "подотчётность, ответственность",
+      "example_en": "Nobody owns the service, so there is no real accountability when it breaks.",
+      "collocations": [
+        "a lack of accountability",
+        "personal accountability"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "c1_v_outset",
+      "level": "C1",
+      "word": "outset",
+      "pos": "noun",
+      "ipa_us": "/ˈaʊtˌsɛt/",
+      "translation_ru": "начало, старт",
+      "example_en": "We should have agreed on the format at the outset.",
+      "collocations": [
+        "at the outset",
+        "from the outset"
+      ],
+      "topic": "time"
+    },
+    {
+      "id": "c1_v_ramification",
+      "level": "C1",
+      "word": "ramification",
+      "pos": "noun",
+      "ipa_us": "/ˌræməfəˈkeɪʃən/",
+      "translation_ru": "последствие, побочный эффект решения",
+      "example_en": "Nobody thought through the legal ramifications of storing that data.",
+      "collocations": [
+        "far-reaching ramifications",
+        "the ramifications of a decision"
+      ],
+      "topic": "study"
+    },
+    {
+      "id": "c1_v_hurdle",
+      "level": "C1",
+      "word": "hurdle",
+      "pos": "noun",
+      "ipa_us": "/ˈhɝdəl/",
+      "translation_ru": "препятствие, барьер",
+      "example_en": "Getting legal approval is the last hurdle before we can launch.",
+      "collocations": [
+        "clear a hurdle",
+        "the main hurdle"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "c1_v_criterion",
+      "level": "C1",
+      "word": "criterion",
+      "pos": "noun",
+      "ipa_us": "/kraɪˈtɪriən/",
+      "translation_ru": "критерий",
+      "example_en": "Cost was only one criterion; support quality mattered more.",
+      "collocations": [
+        "a key criterion",
+        "meet the criteria"
+      ],
+      "topic": "study"
+    },
+    {
+      "id": "c1_v_paradigm",
+      "level": "C1",
+      "word": "paradigm",
+      "pos": "noun",
+      "ipa_us": "/ˈpærəˌdaɪm/",
+      "translation_ru": "парадигма, модель",
+      "example_en": "Serverless computing represents a completely different paradigm.",
+      "collocations": [
+        "a paradigm shift",
+        "a new paradigm"
+      ],
+      "topic": "tech"
+    },
+    {
+      "id": "c1_v_correlation",
+      "level": "C1",
+      "word": "correlation",
+      "pos": "noun",
+      "ipa_us": "/ˌkɔrəˈleɪʃən/",
+      "translation_ru": "корреляция, взаимосвязь",
+      "example_en": "There is a clear correlation between deploy frequency and the number of incidents.",
+      "collocations": [
+        "a strong correlation",
+        "a correlation between"
+      ],
+      "topic": "study"
+    },
+    {
+      "id": "c1_v_threshold",
+      "level": "C1",
+      "word": "threshold",
+      "pos": "noun",
+      "ipa_us": "/ˈθrɛʃˌhoʊld/",
+      "translation_ru": "порог, предел",
+      "example_en": "The alert fires as soon as memory use crosses the threshold.",
+      "collocations": [
+        "cross a threshold",
+        "a high threshold"
+      ],
+      "topic": "tech"
+    },
+    {
+      "id": "c1_v_pitfall",
+      "level": "C1",
+      "word": "pitfall",
+      "pos": "noun",
+      "ipa_us": "/ˈpɪtˌfɔl/",
+      "translation_ru": "подводный камень, ловушка",
+      "example_en": "The guide lists the common pitfalls of migrating to the new database.",
+      "collocations": [
+        "a common pitfall",
+        "avoid the pitfalls"
+      ],
+      "topic": "study"
+    },
+    {
+      "id": "c1_v_shortcoming",
+      "level": "C1",
+      "word": "shortcoming",
+      "pos": "noun",
+      "ipa_us": "/ˈʃɔrtˌkʌmɪŋ/",
+      "translation_ru": "недостаток, слабое место",
+      "example_en": "The tool is fast, but it has one serious shortcoming: no audit trail.",
+      "collocations": [
+        "a serious shortcoming",
+        "admit your shortcomings"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "c1_v_disparity",
+      "level": "C1",
+      "word": "disparity",
+      "pos": "noun",
+      "ipa_us": "/dɪˈspɛrəti/",
+      "translation_ru": "разрыв, неравенство",
+      "example_en": "The disparity in pay between the two offices is hard to justify.",
+      "collocations": [
+        "a wide disparity",
+        "a disparity between"
+      ],
+      "topic": "money"
+    },
+    {
+      "id": "c1_v_momentum",
+      "level": "C1",
+      "word": "momentum",
+      "pos": "noun",
+      "ipa_us": "/moʊˈmɛntəm/",
+      "translation_ru": "динамика, набранный ход",
+      "example_en": "The project lost momentum after the lead developer left.",
+      "collocations": [
+        "gain momentum",
+        "lose momentum"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "c1_v_precedent",
+      "level": "C1",
+      "word": "precedent",
+      "pos": "noun",
+      "ipa_us": "/ˈprɛsədənt/",
+      "translation_ru": "прецедент",
+      "example_en": "Approving this exception would set a precedent we may regret.",
+      "collocations": [
+        "set a precedent",
+        "without precedent"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "c1_v_underpin",
+      "level": "C1",
+      "word": "underpin",
+      "pos": "verb",
+      "ipa_us": "/ˌʌndɚˈpɪn/",
+      "translation_ru": "лежать в основе, подкреплять",
+      "example_en": "A single shared library underpins all of our internal tools.",
+      "collocations": [
+        "underpin an argument",
+        "underpin a strategy"
+      ],
+      "topic": "tech"
+    },
+    {
+      "id": "c1_v_jeopardize",
+      "level": "C1",
+      "word": "jeopardize",
+      "pos": "verb",
+      "ipa_us": "/ˈdʒɛpɚˌdaɪz/",
+      "translation_ru": "ставить под угрозу, подвергать риску",
+      "example_en": "Missing three deadlines in a row jeopardized the whole contract.",
+      "collocations": [
+        "jeopardize a deal",
+        "jeopardize your reputation"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "c1_v_mitigate",
+      "level": "C1",
+      "word": "mitigate",
+      "pos": "verb",
+      "ipa_us": "/ˈmɪtəˌgeɪt/",
+      "translation_ru": "смягчать, снижать риск",
+      "example_en": "We cannot remove the risk entirely, but we can mitigate it with daily backups.",
+      "collocations": [
+        "mitigate a risk",
+        "mitigate the impact"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "c1_v_compound",
+      "level": "C1",
+      "word": "compound",
+      "pos": "verb",
+      "ipa_us": "/kəmˈpaʊnd/",
+      "translation_ru": "усугублять, усиливать (проблему)",
+      "example_en": "Adding more servers only compounded the problem with the database.",
+      "collocations": [
+        "compound the problem",
+        "compound the damage"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "c1_v_validate",
+      "level": "C1",
+      "word": "validate",
+      "pos": "verb",
+      "ipa_us": "/ˈvæləˌdeɪt/",
+      "translation_ru": "подтверждать, проверять на состоятельность",
+      "example_en": "A second experiment validated the results of the first one.",
+      "collocations": [
+        "validate an assumption",
+        "validate the findings"
+      ],
+      "topic": "study"
+    },
+    {
+      "id": "c1_v_corroborate",
+      "level": "C1",
+      "word": "corroborate",
+      "pos": "verb",
+      "ipa_us": "/kəˈrɑbəˌreɪt/",
+      "translation_ru": "подтверждать, подкреплять",
+      "example_en": "Two independent tests corroborate what the user reported.",
+      "collocations": [
+        "corroborate the evidence",
+        "corroborate a story"
+      ],
+      "topic": "study"
+    },
+    {
+      "id": "c1_v_discern",
+      "level": "C1",
+      "word": "discern",
+      "pos": "verb",
+      "ipa_us": "/dɪˈsɝn/",
+      "translation_ru": "различать, распознавать",
+      "example_en": "It is hard to discern any real pattern in these numbers.",
+      "collocations": [
+        "discern a pattern",
+        "discern a difference"
+      ],
+      "topic": "study"
+    },
+    {
+      "id": "c1_v_contend",
+      "level": "C1",
+      "word": "contend",
+      "pos": "verb",
+      "ipa_us": "/kənˈtɛnd/",
+      "translation_ru": "утверждать, доказывать",
+      "example_en": "The author contends that remote teams communicate more, not less.",
+      "collocations": [
+        "contend that",
+        "strongly contend"
+      ],
+      "topic": "study"
+    },
+    {
+      "id": "c1_v_concede",
+      "level": "C1",
+      "word": "concede",
+      "pos": "verb",
+      "ipa_us": "/kənˈsid/",
+      "translation_ru": "признавать, уступать",
+      "example_en": "I will concede that the older design was easier to explain.",
+      "collocations": [
+        "concede a point",
+        "reluctantly concede"
+      ],
+      "topic": "people"
+    },
+    {
+      "id": "c1_v_dispute",
+      "level": "C1",
+      "word": "dispute",
+      "pos": "verb",
+      "ipa_us": "/dɪˈspjut/",
+      "translation_ru": "оспаривать, ставить под сомнение",
+      "example_en": "Nobody disputes the numbers; we disagree about what they mean.",
+      "collocations": [
+        "dispute a claim",
+        "widely disputed"
+      ],
+      "topic": "study"
+    },
+    {
+      "id": "c1_v_advocate",
+      "level": "C1",
+      "word": "advocate",
+      "pos": "verb",
+      "ipa_us": "/ˈædvəˌkeɪt/",
+      "translation_ru": "выступать за, отстаивать",
+      "example_en": "She has been advocating a slower release cycle for months.",
+      "collocations": [
+        "advocate a change",
+        "strongly advocate"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "c1_v_entail",
+      "level": "C1",
+      "word": "entail",
+      "pos": "verb",
+      "ipa_us": "/ɪnˈteɪl/",
+      "translation_ru": "влечь за собой, предполагать",
+      "example_en": "Moving to the new provider would entail rewriting most of the deployment scripts.",
+      "collocations": [
+        "entail a risk",
+        "entail extra work"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "c1_v_warrant",
+      "level": "C1",
+      "word": "warrant",
+      "pos": "verb",
+      "ipa_us": "/ˈwɔrənt/",
+      "translation_ru": "оправдывать, заслуживать",
+      "example_en": "The bug is annoying, but it hardly warrants a hotfix tonight.",
+      "collocations": [
+        "warrant attention",
+        "warrant further investigation"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "c1_v_downplay",
+      "level": "C1",
+      "word": "downplay",
+      "pos": "verb",
+      "ipa_us": "/ˌdaʊnˈpleɪ/",
+      "translation_ru": "преуменьшать значение, сглаживать",
+      "example_en": "He downplayed the outage in the meeting, and the support team was furious.",
+      "collocations": [
+        "downplay the risk",
+        "downplay the significance"
+      ],
+      "topic": "people"
+    },
+    {
+      "id": "c1_v_infer",
+      "level": "C1",
+      "word": "infer",
+      "pos": "verb",
+      "ipa_us": "/ɪnˈfɝ/",
+      "translation_ru": "делать вывод, заключать",
+      "example_en": "From the logs we can infer that the request never reached the server.",
+      "collocations": [
+        "infer from the data",
+        "reasonably infer"
+      ],
+      "topic": "study"
+    },
+    {
+      "id": "c1_v_assert",
+      "level": "C1",
+      "word": "assert",
+      "pos": "verb",
+      "ipa_us": "/əˈsɝt/",
+      "translation_ru": "утверждать, заявлять",
+      "example_en": "The vendor asserts that the migration takes under an hour.",
+      "collocations": [
+        "assert that",
+        "confidently assert"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "c1_v_underscore",
+      "level": "C1",
+      "word": "underscore",
+      "pos": "verb",
+      "ipa_us": "/ˌʌndɚˈskɔr/",
+      "translation_ru": "подчёркивать, акцентировать",
+      "example_en": "Last week's incident underscores how fragile the old cluster is.",
+      "collocations": [
+        "underscore the need for",
+        "underscore the importance"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "c1_v_elaborate",
+      "level": "C1",
+      "word": "elaborate",
+      "pos": "verb",
+      "ipa_us": "/ɪˈlæbəˌreɪt/",
+      "translation_ru": "подробно излагать, уточнять",
+      "example_en": "Could you elaborate on the second option before we vote?",
+      "collocations": [
+        "elaborate on a point",
+        "refuse to elaborate"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "c1_v_deem",
+      "level": "C1",
+      "word": "deem",
+      "pos": "verb",
+      "ipa_us": "/dim/",
+      "translation_ru": "считать, признавать",
+      "example_en": "Any request without a valid token is deemed invalid.",
+      "collocations": [
+        "deem necessary",
+        "deem appropriate"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "c1_v_gauge",
+      "level": "C1",
+      "word": "gauge",
+      "pos": "verb",
+      "ipa_us": "/geɪdʒ/",
+      "translation_ru": "оценивать, измерять",
+      "example_en": "We ran a short survey to gauge how people feel about the new process.",
+      "collocations": [
+        "gauge the reaction",
+        "hard to gauge"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "c1_v_pinpoint",
+      "level": "C1",
+      "word": "pinpoint",
+      "pos": "verb",
+      "ipa_us": "/ˈpɪnˌpɔɪnt/",
+      "translation_ru": "точно определить, локализовать",
+      "example_en": "It took two days to pinpoint the source of the memory leak.",
+      "collocations": [
+        "pinpoint the cause",
+        "pinpoint the problem"
+      ],
+      "topic": "tech"
+    },
+    {
+      "id": "c1_v_outweigh",
+      "level": "C1",
+      "word": "outweigh",
+      "pos": "verb",
+      "ipa_us": "/ˌaʊtˈweɪ/",
+      "translation_ru": "перевешивать, превосходить",
+      "example_en": "For most teams the benefits outweigh the cost of the migration.",
+      "collocations": [
+        "the benefits outweigh the risks",
+        "far outweigh"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "c1_v_reconcile",
+      "level": "C1",
+      "word": "reconcile",
+      "pos": "verb",
+      "ipa_us": "/ˈrɛkənˌsaɪl/",
+      "translation_ru": "согласовывать, примирять",
+      "example_en": "I cannot reconcile his estimate with what the tracker shows.",
+      "collocations": [
+        "reconcile differences",
+        "hard to reconcile"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "c1_v_offset",
+      "level": "C1",
+      "word": "offset",
+      "pos": "verb",
+      "ipa_us": "/ˌɔfˈsɛt/",
+      "translation_ru": "компенсировать, уравновешивать",
+      "example_en": "Higher license costs are offset by the time we save on support.",
+      "collocations": [
+        "offset the cost",
+        "partly offset"
+      ],
+      "topic": "money"
+    },
+    {
+      "id": "c1_v_hinder",
+      "level": "C1",
+      "word": "hinder",
+      "pos": "verb",
+      "ipa_us": "/ˈhɪndɚ/",
+      "translation_ru": "мешать, затруднять",
+      "example_en": "Constant context switching hinders deep work more than long meetings do.",
+      "collocations": [
+        "hinder progress",
+        "seriously hinder"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "c1_v_facilitate",
+      "level": "C1",
+      "word": "facilitate",
+      "pos": "verb",
+      "ipa_us": "/fəˈsɪləˌteɪt/",
+      "translation_ru": "облегчать, способствовать, содействовать",
+      "example_en": "A shared glossary facilitates communication between the two teams.",
+      "collocations": [
+        "facilitate a discussion",
+        "facilitate access"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "c1_v_foster",
+      "level": "C1",
+      "word": "foster",
+      "pos": "verb",
+      "ipa_us": "/ˈfɑstɚ/",
+      "translation_ru": "развивать, культивировать",
+      "example_en": "Pair programming fosters a sense of shared ownership.",
+      "collocations": [
+        "foster cooperation",
+        "foster growth"
+      ],
+      "topic": "people"
+    },
+    {
+      "id": "c1_v_alleviate",
+      "level": "C1",
+      "word": "alleviate",
+      "pos": "verb",
+      "ipa_us": "/əˈliviˌeɪt/",
+      "translation_ru": "облегчать, смягчать",
+      "example_en": "Caching alleviated the load on the database almost immediately.",
+      "collocations": [
+        "alleviate pressure",
+        "alleviate concerns"
+      ],
+      "topic": "tech"
+    },
+    {
+      "id": "c1_v_leverage",
+      "level": "C1",
+      "word": "leverage",
+      "pos": "verb",
+      "ipa_us": "/ˈlɛvɚɪdʒ/",
+      "translation_ru": "использовать, задействовать",
+      "example_en": "We can leverage the data we already collect instead of building a new pipeline.",
+      "collocations": [
+        "leverage existing tools",
+        "leverage experience"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "c1_v_streamline",
+      "level": "C1",
+      "word": "streamline",
+      "pos": "verb",
+      "ipa_us": "/ˈstrimˌlaɪn/",
+      "translation_ru": "оптимизировать, упрощать",
+      "example_en": "The new form streamlines onboarding from five steps to two.",
+      "collocations": [
+        "streamline a process",
+        "streamline operations"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "c1_v_inherent",
+      "level": "C1",
+      "word": "inherent",
+      "pos": "adjective",
+      "ipa_us": "/ɪnˈhɪrənt/",
+      "translation_ru": "присущий, неотъемлемый",
+      "example_en": "There is an inherent risk in touching code that nobody understands.",
+      "collocations": [
+        "an inherent risk",
+        "inherent in the design"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "c1_v_credible",
+      "level": "C1",
+      "word": "credible",
+      "pos": "adjective",
+      "ipa_us": "/ˈkrɛdəbəl/",
+      "translation_ru": "заслуживающий доверия, достоверный",
+      "example_en": "Without a source, that number is not credible.",
+      "collocations": [
+        "a credible source",
+        "a credible explanation"
+      ],
+      "topic": "study"
+    },
+    {
+      "id": "c1_v_conclusive",
+      "level": "C1",
+      "word": "conclusive",
+      "pos": "adjective",
+      "ipa_us": "/kənˈklusɪv/",
+      "translation_ru": "неопровержимый, окончательный",
+      "example_en": "The tests point in that direction, but they are far from conclusive.",
+      "collocations": [
+        "conclusive evidence",
+        "far from conclusive"
+      ],
+      "topic": "study"
+    },
+    {
+      "id": "c1_v_conducive",
+      "level": "C1",
+      "word": "conducive",
+      "pos": "adjective",
+      "ipa_us": "/kənˈdusɪv/",
+      "translation_ru": "благоприятствующий, способствующий",
+      "example_en": "An open office is not conducive to deep concentration.",
+      "collocations": [
+        "conducive to learning",
+        "hardly conducive to"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "c1_v_viable",
+      "level": "C1",
+      "word": "viable",
+      "pos": "adjective",
+      "ipa_us": "/ˈvaɪəbəl/",
+      "translation_ru": "жизнеспособный, приемлемый",
+      "example_en": "Open source turned out to be the only viable alternative.",
+      "collocations": [
+        "a viable option",
+        "commercially viable"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "c1_v_obsolete",
+      "level": "C1",
+      "word": "obsolete",
+      "pos": "adjective",
+      "ipa_us": "/ˌɑbsəˈlit/",
+      "translation_ru": "устаревший, вышедший из употребления",
+      "example_en": "The old export format became obsolete as soon as the new API shipped.",
+      "collocations": [
+        "become obsolete",
+        "technically obsolete"
+      ],
+      "topic": "tech"
+    },
+    {
+      "id": "c1_v_cumbersome",
+      "level": "C1",
+      "word": "cumbersome",
+      "pos": "adjective",
+      "ipa_us": "/ˈkʌmbɚsəm/",
+      "translation_ru": "громоздкий, неудобный",
+      "example_en": "The approval process is so cumbersome that people quietly avoid it.",
+      "collocations": [
+        "a cumbersome process",
+        "cumbersome to use"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "c1_v_robust",
+      "level": "C1",
+      "word": "robust",
+      "pos": "adjective",
+      "ipa_us": "/roʊˈbʌst/",
+      "translation_ru": "надёжный, устойчивый",
+      "example_en": "We need a more robust solution than a script on someone's laptop.",
+      "collocations": [
+        "a robust system",
+        "robust testing"
+      ],
+      "topic": "tech"
+    },
+    {
+      "id": "c1_v_incremental",
+      "level": "C1",
+      "word": "incremental",
+      "pos": "adjective",
+      "ipa_us": "/ˌɪŋkrəˈmɛntəl/",
+      "translation_ru": "постепенный, пошаговый",
+      "example_en": "Incremental changes are far easier to review than one huge rewrite.",
+      "collocations": [
+        "incremental improvement",
+        "an incremental approach"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "c1_v_pragmatic",
+      "level": "C1",
+      "word": "pragmatic",
+      "pos": "adjective",
+      "ipa_us": "/prægˈmætɪk/",
+      "translation_ru": "прагматичный, практичный",
+      "example_en": "Let's take a pragmatic view and fix the worst cases first.",
+      "collocations": [
+        "a pragmatic approach",
+        "pragmatic about deadlines"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "c1_v_prudent",
+      "level": "C1",
+      "word": "prudent",
+      "pos": "adjective",
+      "ipa_us": "/ˈprudənt/",
+      "translation_ru": "благоразумный, осмотрительный",
+      "example_en": "It would be prudent to keep the old version running for another week.",
+      "collocations": [
+        "a prudent decision",
+        "financially prudent"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "c1_v_meticulous",
+      "level": "C1",
+      "word": "meticulous",
+      "pos": "adjective",
+      "ipa_us": "/məˈtɪkjələs/",
+      "translation_ru": "дотошный, скрупулёзный",
+      "example_en": "Her notes are meticulous, which saved us during the audit.",
+      "collocations": [
+        "meticulous attention to detail",
+        "meticulous records"
+      ],
+      "topic": "people"
+    },
+    {
+      "id": "c1_v_ambiguous",
+      "level": "C1",
+      "word": "ambiguous",
+      "pos": "adjective",
+      "ipa_us": "/æmˈbɪgjuəs/",
+      "translation_ru": "двусмысленный, неоднозначный",
+      "example_en": "The requirement was ambiguous, so two teams built it differently.",
+      "collocations": [
+        "deliberately ambiguous",
+        "an ambiguous answer"
+      ],
+      "topic": "study"
+    },
+    {
+      "id": "c1_v_arbitrary",
+      "level": "C1",
+      "word": "arbitrary",
+      "pos": "adjective",
+      "ipa_us": "/ˈɑrbɪˌtrɛri/",
+      "translation_ru": "произвольный, необоснованный",
+      "example_en": "The limit of ten items looks completely arbitrary to me.",
+      "collocations": [
+        "an arbitrary decision",
+        "arbitrary limits"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "c1_v_coherent",
+      "level": "C1",
+      "word": "coherent",
+      "pos": "adjective",
+      "ipa_us": "/koʊˈhɪrənt/",
+      "translation_ru": "связный, последовательный",
+      "example_en": "We need a coherent strategy, not five teams pulling in different directions.",
+      "collocations": [
+        "a coherent argument",
+        "a coherent plan"
+      ],
+      "topic": "study"
+    },
+    {
+      "id": "c1_v_concise",
+      "level": "C1",
+      "word": "concise",
+      "pos": "adjective",
+      "ipa_us": "/kənˈsaɪs/",
+      "translation_ru": "краткий, лаконичный",
+      "example_en": "Keep the summary concise: three sentences at most.",
+      "collocations": [
+        "clear and concise",
+        "a concise summary"
+      ],
+      "topic": "study"
+    },
+    {
+      "id": "c1_v_explicit",
+      "level": "C1",
+      "word": "explicit",
+      "pos": "adjective",
+      "ipa_us": "/ɪkˈsplɪsɪt/",
+      "translation_ru": "явный, чётко выраженный",
+      "example_en": "Please make the assumptions explicit in the document.",
+      "collocations": [
+        "explicit instructions",
+        "make something explicit"
+      ],
+      "topic": "study"
+    },
+    {
+      "id": "c1_v_implicit",
+      "level": "C1",
+      "word": "implicit",
+      "pos": "adjective",
+      "ipa_us": "/ɪmˈplɪsɪt/",
+      "translation_ru": "неявный, подразумеваемый",
+      "example_en": "There is an implicit assumption here that users read the manual.",
+      "collocations": [
+        "an implicit assumption",
+        "implicit in the wording"
+      ],
+      "topic": "study"
+    },
+    {
+      "id": "c1_v_negligible",
+      "level": "C1",
+      "word": "negligible",
+      "pos": "adjective",
+      "ipa_us": "/ˈnɛglɪdʒəbəl/",
+      "translation_ru": "пренебрежимо малый, незначительный",
+      "example_en": "The speed difference between the two versions is negligible.",
+      "collocations": [
+        "a negligible effect",
+        "negligible difference"
+      ],
+      "topic": "study"
+    },
+    {
+      "id": "c1_v_rigorous",
+      "level": "C1",
+      "word": "rigorous",
+      "pos": "adjective",
+      "ipa_us": "/ˈrɪgɚəs/",
+      "translation_ru": "строгий, тщательный",
+      "example_en": "The library was only approved after rigorous testing.",
+      "collocations": [
+        "rigorous testing",
+        "a rigorous analysis"
+      ],
+      "topic": "study"
+    },
+    {
+      "id": "c1_v_tentative",
+      "level": "C1",
+      "word": "tentative",
+      "pos": "adjective",
+      "ipa_us": "/ˈtɛntətɪv/",
+      "translation_ru": "предварительный, неуверенный",
+      "example_en": "These are tentative numbers, so treat them as a rough guide.",
+      "collocations": [
+        "a tentative agreement",
+        "tentative conclusions"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "c1_v_underlying",
+      "level": "C1",
+      "word": "underlying",
+      "pos": "adjective",
+      "ipa_us": "/ˌʌndɚˈlaɪɪŋ/",
+      "translation_ru": "основополагающий, глубинный",
+      "example_en": "Restarting the service just hides the underlying problem.",
+      "collocations": [
+        "the underlying cause",
+        "an underlying assumption"
+      ],
+      "topic": "tech"
+    },
+    {
+      "id": "c1_v_contentious",
+      "level": "C1",
+      "word": "contentious",
+      "pos": "adjective",
+      "ipa_us": "/kənˈtɛnʃəs/",
+      "translation_ru": "спорный, вызывающий разногласия",
+      "example_en": "Naming conventions are a surprisingly contentious topic in our team.",
+      "collocations": [
+        "a contentious issue",
+        "highly contentious"
+      ],
+      "topic": "people"
+    },
+    {
+      "id": "c1_v_unprecedented",
+      "level": "C1",
+      "word": "unprecedented",
+      "pos": "adjective",
+      "ipa_us": "/ʌnˈprɛsəˌdɛntɪd/",
+      "translation_ru": "беспрецедентный, небывалый",
+      "example_en": "Traffic reached an unprecedented level during the sale.",
+      "collocations": [
+        "unprecedented growth",
+        "on an unprecedented scale"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "c1_v_double_edged_sword",
+      "level": "C1",
+      "word": "a double-edged sword",
+      "pos": "phrase",
+      "ipa_us": "/ə ˈdʌbəl ˌɛdʒd ˈsɔrd/",
+      "translation_ru": "палка о двух концах",
+      "example_en": "Full automation is a double-edged sword: fewer mistakes, but fewer people who understand the system.",
+      "collocations": [
+        "prove to be a double-edged sword"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "c1_v_tip_of_the_iceberg",
+      "level": "C1",
+      "word": "the tip of the iceberg",
+      "pos": "phrase",
+      "ipa_us": "/ðə ˈtɪp əv ði ˈaɪsˌbɝg/",
+      "translation_ru": "вершина айсберга, малая видимая часть",
+      "example_en": "The bugs users report are just the tip of the iceberg.",
+      "collocations": [
+        "just the tip of the iceberg"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "c1_v_steep_learning_curve",
+      "level": "C1",
+      "word": "a steep learning curve",
+      "pos": "phrase",
+      "ipa_us": "/ə ˈstip ˈlɝnɪŋ ˈkɝv/",
+      "translation_ru": "сложное освоение, крутая кривая обучения",
+      "example_en": "The framework is powerful, but there is a steep learning curve.",
+      "collocations": [
+        "face a steep learning curve"
+      ],
+      "topic": "study"
+    },
+    {
+      "id": "c1_v_low_hanging_fruit",
+      "level": "C1",
+      "word": "low-hanging fruit",
+      "pos": "phrase",
+      "ipa_us": "/ˈloʊ ˌhæŋɪŋ ˈfrut/",
+      "translation_ru": "лёгкие победы, самые простые задачи",
+      "example_en": "Let's start with the low-hanging fruit and fix the slowest queries.",
+      "collocations": [
+        "pick the low-hanging fruit"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "c1_v_move_the_needle",
+      "level": "C1",
+      "word": "move the needle",
+      "pos": "phrase",
+      "ipa_us": "/ˈmuv ðə ˈnidəl/",
+      "translation_ru": "заметно повлиять, сдвинуть с места",
+      "example_en": "Redesigning the button will not move the needle on sign-ups.",
+      "collocations": [
+        "move the needle on something"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "c1_v_common_ground",
+      "level": "C1",
+      "word": "common ground",
+      "pos": "phrase",
+      "ipa_us": "/ˈkɑmən ˈgraʊnd/",
+      "translation_ru": "точки соприкосновения, общая позиция",
+      "example_en": "The two teams finally found common ground on the naming rules.",
+      "collocations": [
+        "find common ground",
+        "common ground between"
+      ],
+      "topic": "people"
+    },
+    {
+      "id": "c1_v_in_hindsight",
+      "level": "C1",
+      "word": "in hindsight",
+      "pos": "phrase",
+      "ipa_us": "/ɪn ˈhaɪnˌsaɪt/",
+      "translation_ru": "задним числом, оглядываясь назад",
+      "example_en": "In hindsight, we should have tested the migration on real data.",
+      "collocations": [
+        "in hindsight it is clear"
+      ],
+      "topic": "time"
+    },
+    {
+      "id": "c1_v_at_face_value",
+      "level": "C1",
+      "word": "at face value",
+      "pos": "phrase",
+      "ipa_us": "/æt ˈfeɪs ˈvælju/",
+      "translation_ru": "за чистую монету, без проверки",
+      "example_en": "Do not take vendor benchmarks at face value.",
+      "collocations": [
+        "take something at face value"
+      ],
+      "topic": "study"
+    },
+    {
+      "id": "c1_v_across_the_board",
+      "level": "C1",
+      "word": "across the board",
+      "pos": "phrase",
+      "ipa_us": "/əˈkrɔs ðə ˈbɔrd/",
+      "translation_ru": "повсеместно, по всем направлениям",
+      "example_en": "Response times improved across the board after the upgrade.",
+      "collocations": [
+        "improve across the board",
+        "an across-the-board cut"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "c1_v_on_balance",
+      "level": "C1",
+      "word": "on balance",
+      "pos": "phrase",
+      "ipa_us": "/ɑn ˈbæləns/",
+      "translation_ru": "взвесив всё, в итоге",
+      "example_en": "On balance, staying with the current provider is the safer choice.",
+      "collocations": [
+        "on balance it is better"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "c1_v_case_in_point",
+      "level": "C1",
+      "word": "a case in point",
+      "pos": "phrase",
+      "ipa_us": "/ə ˈkeɪs ɪn ˈpɔɪnt/",
+      "translation_ru": "показательный пример",
+      "example_en": "Last month's outage is a case in point: nobody had ever tested the failover.",
+      "collocations": [
+        "a case in point is"
+      ],
+      "topic": "study"
+    },
+    {
+      "id": "c1_v_food_for_thought",
+      "level": "C1",
+      "word": "food for thought",
+      "pos": "phrase",
+      "ipa_us": "/ˈfud fɚ ˈθɔt/",
+      "translation_ru": "пища для размышлений",
+      "example_en": "Her talk on testing gave us plenty of food for thought.",
+      "collocations": [
+        "give someone food for thought",
+        "plenty of food for thought"
+      ],
+      "topic": "study"
+    },
+    {
+      "id": "c1_v_due_diligence",
+      "level": "C1",
+      "word": "due diligence",
+      "pos": "phrase",
+      "ipa_us": "/ˈdu ˈdɪlədʒəns/",
+      "translation_ru": "должная проверка, тщательный анализ",
+      "example_en": "We did our due diligence before signing with the new vendor.",
+      "collocations": [
+        "do your due diligence",
+        "the due diligence process"
+      ],
+      "topic": "money"
+    },
+    {
+      "id": "c1_v_sticking_point",
+      "level": "C1",
+      "word": "a sticking point",
+      "pos": "phrase",
+      "ipa_us": "/ə ˈstɪkɪŋ ˌpɔɪnt/",
+      "translation_ru": "камень преткновения",
+      "example_en": "Licensing was the only sticking point in the whole negotiation.",
+      "collocations": [
+        "the main sticking point"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "c1_v_hinge_on",
+      "level": "C1",
+      "word": "hinge on",
+      "pos": "phrasal verb",
+      "ipa_us": "/ˈhɪndʒ ɑn/",
+      "translation_ru": "зависеть от, определяться",
+      "example_en": "The whole schedule hinges on when the hardware arrives.",
+      "collocations": [
+        "hinge on a decision",
+        "everything hinges on"
+      ],
+      "topic": "time"
+    },
+    {
+      "id": "c1_v_water_down",
+      "level": "C1",
+      "word": "water down",
+      "pos": "phrasal verb",
+      "ipa_us": "/ˌwɔtɚ ˈdaʊn/",
+      "translation_ru": "смягчать, выхолащивать",
+      "example_en": "The proposal was watered down until it changed almost nothing.",
+      "collocations": [
+        "water down a proposal",
+        "a watered-down version"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "c1_v_flesh_out",
+      "level": "C1",
+      "word": "flesh out",
+      "pos": "phrasal verb",
+      "ipa_us": "/ˌflɛʃ ˈaʊt/",
+      "translation_ru": "детализировать, конкретизировать",
+      "example_en": "The idea is promising, but you need to flesh out the plan.",
+      "collocations": [
+        "flesh out an idea",
+        "flesh out the details"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "c1_v_iron_out",
+      "level": "C1",
+      "word": "iron out",
+      "pos": "phrasal verb",
+      "ipa_us": "/ˌaɪɚn ˈaʊt/",
+      "translation_ru": "устранять, улаживать",
+      "example_en": "We still have a few issues to iron out before the demo.",
+      "collocations": [
+        "iron out the details",
+        "iron out differences"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "c1_v_factor_in",
+      "level": "C1",
+      "word": "factor in",
+      "pos": "phrasal verb",
+      "ipa_us": "/ˈfæktɚ ˌɪn/",
+      "translation_ru": "учитывать, закладывать",
+      "example_en": "Did you factor in the time it takes to review the code?",
+      "collocations": [
+        "factor in the cost",
+        "factor in delays"
+      ],
+      "topic": "time"
+    },
+    {
+      "id": "c1_v_weigh_in",
+      "level": "C1",
+      "word": "weigh in",
+      "pos": "phrasal verb",
+      "ipa_us": "/ˌweɪ ˈɪn/",
+      "translation_ru": "высказаться, вмешаться в обсуждение",
+      "example_en": "Two architects weighed in on the thread and the argument stopped.",
+      "collocations": [
+        "weigh in on a debate",
+        "weigh in with an opinion"
+      ],
+      "topic": "people"
+    },
+    {
+      "id": "c1_v_phase_out",
+      "level": "C1",
+      "word": "phase out",
+      "pos": "phrasal verb",
+      "ipa_us": "/ˌfeɪz ˈaʊt/",
+      "translation_ru": "постепенно сворачивать, выводить из обращения",
+      "example_en": "Support for the old client will be phased out by December.",
+      "collocations": [
+        "phase out a product",
+        "gradually phase out"
+      ],
+      "topic": "tech"
+    },
+    {
+      "id": "c1_v_scale_back",
+      "level": "C1",
+      "word": "scale back",
+      "pos": "phrasal verb",
+      "ipa_us": "/ˌskeɪl ˈbæk/",
+      "translation_ru": "сокращать, урезать",
+      "example_en": "We scaled back the release to a single region.",
+      "collocations": [
+        "scale back plans",
+        "scale back spending"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "c1_v_admittedly",
+      "level": "C1",
+      "word": "admittedly",
+      "pos": "adverb",
+      "ipa_us": "/ədˈmɪtədli/",
+      "translation_ru": "надо признать, следует признать",
+      "example_en": "Admittedly, the first version was slower than we had promised.",
+      "collocations": [
+        "admittedly small",
+        "admittedly difficult"
+      ],
+      "topic": "study"
+    },
+    {
+      "id": "c1_v_predominantly",
+      "level": "C1",
+      "word": "predominantly",
+      "pos": "adverb",
+      "ipa_us": "/prɪˈdɑmənəntli/",
+      "translation_ru": "преимущественно, в основном",
+      "example_en": "Our users are predominantly on mobile, so we test there first.",
+      "collocations": [
+        "predominantly used for",
+        "predominantly remote"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "c1_v_thereby",
+      "level": "C1",
+      "word": "thereby",
+      "pos": "adverb",
+      "ipa_us": "/ˌðɛrˈbaɪ/",
+      "translation_ru": "тем самым, таким образом",
+      "example_en": "The cache stores the result, thereby avoiding a second query.",
+      "collocations": [
+        "thereby reducing",
+        "thereby allowing"
+      ],
+      "topic": "tech"
+    },
+    {
+      "id": "c1_v_accordingly",
+      "level": "C1",
+      "word": "accordingly",
+      "pos": "adverb",
+      "ipa_us": "/əˈkɔrdɪŋli/",
+      "translation_ru": "соответственно, сообразно",
+      "example_en": "The requirements changed, and we adjusted the estimate accordingly.",
+      "collocations": [
+        "act accordingly",
+        "adjust accordingly"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "c1_v_inevitably",
+      "level": "C1",
+      "word": "inevitably",
+      "pos": "adverb",
+      "ipa_us": "/ɪnˈɛvətəbli/",
+      "translation_ru": "неизбежно",
+      "example_en": "Rushing the release inevitably creates work for the support team.",
+      "collocations": [
+        "inevitably lead to",
+        "almost inevitably"
+      ],
+      "topic": "time"
+    },
+    {
+      "id": "c1_v_presumably",
+      "level": "C1",
+      "word": "presumably",
+      "pos": "adverb",
+      "ipa_us": "/prɪˈzuməbli/",
+      "translation_ru": "предположительно, вероятно",
+      "example_en": "The service is down, presumably because of this morning's deploy.",
+      "collocations": [
+        "presumably because",
+        "presumably not"
+      ],
+      "topic": "study"
+    },
+    {
+      "id": "c1_v_invariably",
+      "level": "C1",
+      "word": "invariably",
+      "pos": "adverb",
+      "ipa_us": "/ɪnˈvɛriəbli/",
+      "translation_ru": "неизменно, всегда",
+      "example_en": "Estimates made without the team are invariably too optimistic.",
+      "collocations": [
+        "invariably lead to",
+        "almost invariably"
+      ],
+      "topic": "time"
+    },
+    {
+      "id": "c1_v_conversely",
+      "level": "C1",
+      "word": "conversely",
+      "pos": "adverb",
+      "ipa_us": "/kənˈvɝsli/",
+      "translation_ru": "напротив, наоборот",
+      "example_en": "Remote work suits some people perfectly; conversely, others find it isolating.",
+      "collocations": [
+        "conversely, if"
+      ],
+      "topic": "study"
+    },
+    {
+      "id": "c1_v_much_as",
+      "level": "C1",
+      "word": "much as",
+      "pos": "conjunction",
+      "ipa_us": "/ˈmʌtʃ ˌæz/",
+      "translation_ru": "как ни, при всём уважении к тому что",
+      "example_en": "Much as I respect his experience, I think the estimate is too optimistic.",
+      "collocations": [
+        "much as I would like to",
+        "much as we admire"
+      ],
+      "topic": "study"
+    },
+    {
+      "id": "c1_v_provided_that",
+      "level": "C1",
+      "word": "provided that",
+      "pos": "conjunction",
+      "ipa_us": "/prəˈvaɪdɪd ðət/",
+      "translation_ru": "при условии что",
+      "example_en": "We can ship on Friday, provided that testing finishes on Wednesday.",
+      "collocations": [
+        "provided that you agree",
+        "provided that nothing changes"
+      ],
+      "topic": "study"
+    },
+    {
+      "id": "c1_v_whereby",
+      "level": "C1",
+      "word": "whereby",
+      "pos": "conjunction",
+      "ipa_us": "/wɛrˈbaɪ/",
+      "translation_ru": "при котором, посредством чего",
+      "example_en": "We agreed on a process whereby every change needs two approvals.",
+      "collocations": [
+        "a system whereby",
+        "an arrangement whereby"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "c1_v_in_light_of",
+      "level": "C1",
+      "word": "in light of",
+      "pos": "preposition",
+      "ipa_us": "/ɪn ˈlaɪt əv/",
+      "translation_ru": "в свете, учитывая",
+      "example_en": "In light of the new data, we postponed the launch by a month.",
+      "collocations": [
+        "in light of recent events",
+        "in light of the findings"
+      ],
+      "topic": "work"
+    }
+  ]
+}

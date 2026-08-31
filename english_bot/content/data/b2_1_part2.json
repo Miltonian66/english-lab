@@ -1,0 +1,436 @@
+{
+ "chunk": "b2_1_part2",
+ "points": [
+  {
+   "id": "b2_neednt_dont_need_to_didnt_need_to_neednt_have",
+   "level": "B2",
+   "band": "B2.1",
+   "topic": "Modals",
+   "title_en": "Needn't, don't need to, didn't need to, needn't have",
+   "source_slug": "neednt-dont-need-to-didnt-need-to-neednt-have",
+   "title_ru": "Отсутствие необходимости: needn't и need to",
+   "summary_ru": "Для настоящего и будущего есть два способа сказать, что делать что-то не обязательно: модальное needn't + инфинитив без to и обычный глагол need to с do/does. Модальное needn't не меняется по лицам и не берёт do: You needn't wait. Обычный глагол ведёт себя как все: He doesn't need to wait, Does he need to wait? В прошедшем времени формы расходятся по смыслу. Didn't need to + инфинитив означает, что необходимости не было, и обычно действие не выполнялось: I didn't need to call him. Needn't have + V3 означает, что действие было выполнено, но оказалось лишним: You needn't have called him. В американском английском needn't встречается реже, чем don't need to, но в письменной речи и на экзаменах его нужно понимать и уметь строить.",
+   "forms": [
+    "needn't + V1 (без to)",
+    "don't / doesn't need to + V1",
+    "didn't need to + V1 (необходимости не было)",
+    "needn't have + V3 (сделал, но было не нужно)",
+    "Do / Does / Did + subject + need to + V1?"
+   ],
+   "examples": [
+    "You needn't come to the standup if you are on vacation.",
+    "We don't need to deploy today; the release is next week.",
+    "Does she need to install the new client?",
+    "I didn't need to fix the bug, so I closed the ticket.",
+    "You needn't have rewritten the whole module; only one function was broken."
+   ],
+   "ru_interference": "Русское «не нужно было» покрывает обе прошедшие ситуации, поэтому формы путают: «I needn't have gone, so I stayed at home» → «I didn't need to go, so I stayed at home». И после needn't никогда нет to: «You needn't to worry» → «You needn't worry».",
+   "prerequisites": ["a2_have_to_dont_have_to_must_mustnt", "b1_have_to_must_should"],
+   "exercises": [
+    {"id": "b2_neednt_dont_need_to_didnt_need_to_neednt_have_01", "kind": "choice", "prompt": "You ___ come in early tomorrow: the meeting was moved to Friday.", "options": ["needn't", "needn't to", "not need", "don't need"], "correct_index": 0, "explanation_ru": "Needn't — модальный глагол, после него инфинитив без to и без вспомогательного do; вариант don't need требует to.", "difficulty": 1},
+    {"id": "b2_neednt_dont_need_to_didnt_need_to_neednt_have_02", "kind": "choice", "prompt": "I ___ bought a new charger: an hour later I found my old one in the drawer.", "options": ["needn't have", "didn't need to", "don't need to", "wasn't need to"], "correct_index": 0, "explanation_ru": "Только needn't have сочетается с третьей формой bought; остальные варианты требуют инфинитива buy.", "difficulty": 2},
+    {"id": "b2_neednt_dont_need_to_didnt_need_to_neednt_have_03", "kind": "choice", "prompt": "She ___ go to the office yesterday, so she worked from home all day.", "options": ["didn't need to", "needn't have", "doesn't need to", "needn't to"], "correct_index": 0, "explanation_ru": "Необходимости не было и в офис она не поехала — это didn't need to; needn't have требует V3 и означало бы, что она всё-таки поехала.", "difficulty": 2},
+    {"id": "b2_neednt_dont_need_to_didnt_need_to_neednt_have_04", "kind": "choice", "prompt": "___ we need to update the documentation before the release?", "options": ["Do", "Does", "Are", "Have"], "correct_index": 0, "explanation_ru": "Need to здесь обычный глагол, поэтому вопрос строится с do, а подлежащее we требует именно Do, а не Does.", "difficulty": 1},
+    {"id": "b2_neednt_dont_need_to_didnt_need_to_neednt_have_05", "kind": "gap", "prompt": "We ___ (not / need) to book a room: the call is online.", "answer": "don't need", "accept": ["do not need"], "explanation_ru": "Речь о настоящем, подлежащее we, поэтому отрицание образуется через don't перед need to.", "difficulty": 1},
+    {"id": "b2_neednt_dont_need_to_didnt_need_to_neednt_have_06", "kind": "gap", "prompt": "He ___ (needn't / reinstall) the driver: the problem was just a loose cable.", "answer": "needn't have reinstalled", "accept": ["need not have reinstalled"], "explanation_ru": "Драйвер он переустановил, но проблема была в кабеле: действие оказалось лишним, а это значение передаёт только needn't have + третья форма.", "difficulty": 3},
+    {"id": "b2_neednt_dont_need_to_didnt_need_to_neednt_have_07", "kind": "correct", "prompt": "You needn't to reply to that email.", "answer": "You needn't reply to that email.", "accept": ["You need not reply to that email.", "You don't need to reply to that email."], "explanation_ru": "После модального needn't частица to не ставится.", "difficulty": 2},
+    {"id": "b2_neednt_dont_need_to_didnt_need_to_neednt_have_08", "kind": "transform", "prompt": "Rewrite with 'needn't have': It wasn't necessary for you to print the contract, but you printed it.", "answer": "You needn't have printed the contract.", "accept": ["You need not have printed the contract."], "explanation_ru": "Действие выполнено и было напрасным — это ровно значение needn't have + V3.", "difficulty": 3}
+   ]
+  },
+  {
+   "id": "b2_past_modal_verbs",
+   "level": "B2",
+   "band": "B2.1",
+   "topic": "Modals",
+   "title_en": "Past modal verbs of deduction",
+   "source_slug": "past-modal-verbs",
+   "title_ru": "Догадки о прошлом: must have, can't have, might have",
+   "summary_ru": "Когда мы делаем вывод о прошлом на основании фактов, используется модальный глагол + have + третья форма. Must have + V3 выражает уверенность, что что-то произошло: The build must have failed. Can't have или couldn't have + V3 выражает уверенность, что этого не было. Might have, may have, could have + V3 означают предположение без уверенности. Форма одинакова для всех лиц, окончания -s нет и вспомогательный do не используется. Отрицательная уверенность передаётся через can't have, а не через mustn't have. Отрицательное предположение — might not have или may not have + V3.",
+   "forms": [
+    "must have + V3 (уверенность, что было)",
+    "can't / couldn't have + V3 (уверенность, что не было)",
+    "may / might / could have + V3 (предположение)",
+    "might not / may not have + V3 (предположение с отрицанием)"
+   ],
+   "examples": [
+    "The build must have failed: the server is still on the old version.",
+    "He can't have deleted the branch; he doesn't have access.",
+    "She might have missed the email because it went to spam.",
+    "They may have already fixed it in the last release.",
+    "Someone could have changed the config by mistake."
+   ],
+   "ru_interference": "В русском догадка о прошлом строится наречием плюс прошедшее время («наверное, забыл»), поэтому have + V3 теряется: «He must forgot the password» → «He must have forgotten the password». И для уверенного отрицания берут mustn't: «He mustn't have seen it» → «He can't have seen it».",
+   "prerequisites": ["b1_modal_verbs_of_deduction", "a2_may_and_might_whats_the_difference"],
+   "exercises": [
+    {"id": "b2_past_modal_verbs_01", "kind": "choice", "prompt": "The build failed. Someone ___ the config file.", "options": ["must have changed", "must changed", "must have change", "must be changed"], "correct_index": 0, "explanation_ru": "После must для вывода о прошлом идёт have + третья форма; must be changed сделало бы подлежащее someone объектом действия.", "difficulty": 1},
+    {"id": "b2_past_modal_verbs_02", "kind": "choice", "prompt": "There's no way he saw my message: he was offline all day. He ___ it.", "options": ["can't have seen", "must have seen", "can't see", "mustn't see"], "correct_index": 0, "explanation_ru": "Уверенность, что действия не было в прошлом, передаётся через can't have + V3; must have seen прямо противоречит контексту.", "difficulty": 2},
+    {"id": "b2_past_modal_verbs_03", "kind": "choice", "prompt": "I'm not sure, but she ___ her phone at the office yesterday.", "options": ["might have left", "must have left", "might leave", "might have leaved"], "correct_index": 0, "explanation_ru": "Слова I'm not sure исключают уверенное must, а yesterday исключает форму настоящего; правильная форма третьей формы — left.", "difficulty": 1},
+    {"id": "b2_past_modal_verbs_04", "kind": "choice", "prompt": "The door was locked from the inside, so the thief ___ through the door.", "options": ["can't have come in", "must have come in", "can't come in", "mustn't have come in"], "correct_index": 0, "explanation_ru": "Запертая изнутри дверь делает вход через неё невозможным, а для уверенного отрицания в прошлом употребляется can't have + V3.", "difficulty": 3},
+    {"id": "b2_past_modal_verbs_05", "kind": "gap", "prompt": "The office is empty. Everyone ___ (must / go) home.", "answer": "must have gone", "accept": [], "explanation_ru": "Вывод о прошлом по видимому результату строится как must have + третья форма глагола go.", "difficulty": 1},
+    {"id": "b2_past_modal_verbs_06", "kind": "gap", "prompt": "I can't find my badge. I ___ (may / leave) it in the car.", "answer": "may have left", "accept": [], "explanation_ru": "May показывает предположение, а прошедшее действие требует have + третью форму left.", "difficulty": 2},
+    {"id": "b2_past_modal_verbs_07", "kind": "correct", "prompt": "He must forgot his password again.", "answer": "He must have forgotten his password again.", "accept": [], "explanation_ru": "После must нельзя ставить вторую форму глагола: для прошлого нужно have + forgotten.", "difficulty": 2},
+    {"id": "b2_past_modal_verbs_08", "kind": "correct", "prompt": "She mustn't have received the invoice; it is still in my outbox.", "answer": "She can't have received the invoice; it is still in my outbox.", "accept": ["She couldn't have received the invoice; it is still in my outbox."], "explanation_ru": "Для уверенного вывода о том, что чего-то не произошло, используется can't have, а не mustn't have.", "difficulty": 3}
+   ]
+  },
+  {
+   "id": "b2_would_rather_would_prefer",
+   "level": "B2",
+   "band": "B2.1",
+   "topic": "Modals",
+   "title_en": "Would rather, would prefer: Expressing preference",
+   "source_slug": "would-rather-would-prefer",
+   "title_ru": "Предпочтения: would rather и would prefer",
+   "summary_ru": "Would rather и would prefer выражают предпочтение в конкретной ситуации, но требуют разных дополнений. После would rather идёт голый инфинитив: I'd rather stay here. После would prefer идёт инфинитив с to: I'd prefer to stay here. Отрицание ставится перед инфинитивом: I'd rather not go. Если предпочтение касается другого человека, после would rather ставится подлежащее и глагол в прошедшем времени: I'd rather you sent it today; после would prefer в этом случае употребляется дополнение с to-инфинитивом: I'd prefer you to send it today. Сравнение строится как would rather A than B и would prefer A rather than B. Общее, а не ситуативное предпочтение выражает prefer + существительное или герундий с предлогом to: I prefer writing tests to fixing bugs.",
+   "forms": [
+    "would rather (not) + V1 (без to)",
+    "would rather + subject + V2 (past simple)",
+    "would prefer + to + V1",
+    "would prefer + object + to + V1",
+    "would rather A than B / prefer A to B"
+   ],
+   "examples": [
+    "I'd rather work from home on Fridays.",
+    "I'd rather not join that call.",
+    "I'd rather you sent the report today.",
+    "She'd prefer to review the code tomorrow.",
+    "We'd prefer you to test it on staging first.",
+    "I prefer writing tests to fixing bugs."
+   ],
+   "ru_interference": "Русская конструкция «я бы предпочёл, чтобы ты…» тянет за собой настоящее время в придаточном: «I'd rather you don't call him» → «I'd rather you didn't call him». Второй частый след родного языка — лишнее to: «I would rather to stay» → «I would rather stay».",
+   "prerequisites": ["b1_would_rather_would_sooner", "a2_infinitives_and_gerunds"],
+   "exercises": [
+    {"id": "b2_would_rather_would_prefer_01", "kind": "choice", "prompt": "I'd rather ___ at home tonight.", "options": ["stay", "to stay", "staying", "stayed"], "correct_index": 0, "explanation_ru": "После would rather с тем же подлежащим ставится инфинитив без to.", "difficulty": 1},
+    {"id": "b2_would_rather_would_prefer_02", "kind": "choice", "prompt": "She'd prefer ___ the meeting to Thursday.", "options": ["to move", "move", "that move", "to moving"], "correct_index": 0, "explanation_ru": "Would prefer требует инфинитива с to, поэтому подходит только to move.", "difficulty": 1},
+    {"id": "b2_would_rather_would_prefer_03", "kind": "choice", "prompt": "I'd rather ___ to that meeting: I have a deadline today.", "options": ["not go", "don't go", "not to go", "no go"], "correct_index": 0, "explanation_ru": "Отрицание в конструкции would rather ставится частицей not прямо перед голым инфинитивом, вспомогательный do не нужен.", "difficulty": 2},
+    {"id": "b2_would_rather_would_prefer_04", "kind": "choice", "prompt": "I'd rather take the train ___ fly.", "options": ["than", "that", "then", "as"], "correct_index": 0, "explanation_ru": "Сравнение двух действий после would rather вводится союзом than; предлог to используется только с глаголом prefer.", "difficulty": 2},
+    {"id": "b2_would_rather_would_prefer_05", "kind": "gap", "prompt": "I'd rather you ___ (not / tell) anyone about this yet.", "answer": "didn't tell", "accept": ["did not tell"], "explanation_ru": "Когда после would rather стоит другое подлежащее, глагол ставится в прошедшем времени, хотя речь о настоящем.", "difficulty": 3},
+    {"id": "b2_would_rather_would_prefer_06", "kind": "gap", "prompt": "She'd prefer ___ (work) on a smaller team.", "answer": "to work", "accept": [], "explanation_ru": "После would prefer с тем же подлежащим употребляется инфинитив с to.", "difficulty": 1},
+    {"id": "b2_would_rather_would_prefer_07", "kind": "correct", "prompt": "I would rather to stay in the office today.", "answer": "I would rather stay in the office today.", "accept": ["I'd rather stay in the office today."], "explanation_ru": "Would rather сочетается только с голым инфинитивом, поэтому to лишнее.", "difficulty": 2},
+    {"id": "b2_would_rather_would_prefer_08", "kind": "transform", "prompt": "Rewrite with 'would rather': I'd prefer you to send the invoice tomorrow.", "answer": "I'd rather you sent the invoice tomorrow.", "accept": ["I would rather you sent the invoice tomorrow."], "explanation_ru": "Схема would prefer + object + to + V1 переходит в would rather + подлежащее + глагол в прошедшем времени.", "difficulty": 3}
+   ]
+  },
+  {
+   "id": "b2_have_something_done",
+   "level": "B2",
+   "band": "B2.1",
+   "topic": "Passive",
+   "title_en": "Have something done",
+   "source_slug": "have-something-done",
+   "title_ru": "Каузативная конструкция have something done",
+   "summary_ru": "Конструкция have + дополнение + третья форма глагола означает, что работу для нас делает кто-то другой: We have our servers backed up every night. Важен порядок слов: сначала объект, потом причастие. В разговорной речи вместо have часто используется get: I'm getting my laptop repaired. Have здесь обычный глагол, поэтому меняется по временам и требует do в вопросах и отрицаниях: Did you have your laptop checked? Ту же схему употребляют, когда с человеком случилось что-то неприятное: They had their account blocked. Исполнителя обычно не называют, но при необходимости добавляют by: She had her contract translated by a lawyer.",
+   "forms": [
+    "have + object + V3",
+    "get + object + V3 (разговорный вариант)",
+    "have + object + V3 в любом времени: had, will have, am having",
+    "Do / Did + subject + have + object + V3?"
+   ],
+   "examples": [
+    "We have our servers backed up every night.",
+    "I'm getting my laptop repaired this week.",
+    "She had her contract translated into English.",
+    "They had their account blocked after three failed logins.",
+    "Where did you have your photo taken?"
+   ],
+   "ru_interference": "В русском нет каузатива, и «я починил ноутбук» описывает и самостоятельную работу, и работу сервиса, поэтому появляется «I repaired my laptop at the repair shop» вместо «I had my laptop repaired». Второй след — порядок слов как в Past Perfect: «I had repaired my laptop» → «I had my laptop repaired».",
+   "prerequisites": ["b1_active_passive_voice", "b1_passive_verb_forms"],
+   "exercises": [
+    {"id": "b2_have_something_done_01", "kind": "choice", "prompt": "I'm going to ___ next week.", "options": ["have my laptop repaired", "have repaired my laptop", "be repaired my laptop", "have my laptop repair"], "correct_index": 0, "explanation_ru": "В каузативе объект стоит между have и третьей формой: have my laptop repaired.", "difficulty": 1},
+    {"id": "b2_have_something_done_02", "kind": "choice", "prompt": "We ___ the office cleaned every Friday.", "options": ["have", "are", "make", "do"], "correct_index": 0, "explanation_ru": "Конструкция с причастием cleaned строится именно с глаголом have; make и do в этой схеме не употребляются.", "difficulty": 1},
+    {"id": "b2_have_something_done_03", "kind": "choice", "prompt": "She had her account ___ by the admin.", "options": ["unlocked", "unlock", "unlocking", "to unlock"], "correct_index": 0, "explanation_ru": "После объекта her account нужна третья форма глагола, потому что действие выполнено над объектом.", "difficulty": 1},
+    {"id": "b2_have_something_done_04", "kind": "choice", "prompt": "___ you have your laptop checked yesterday?", "options": ["Did", "Had", "Have", "Were"], "correct_index": 0, "explanation_ru": "Have здесь смысловой глагол, поэтому вопрос в прошедшем времени строится с вспомогательным did.", "difficulty": 2},
+    {"id": "b2_have_something_done_05", "kind": "gap", "prompt": "Last month we ___ (have / the whole system / test) by an external team.", "answer": "had the whole system tested", "accept": [], "explanation_ru": "Порядок фиксированный: had + объект + третья форма tested.", "difficulty": 2},
+    {"id": "b2_have_something_done_06", "kind": "gap", "prompt": "I never fix my own car. I ___ (get / it / service) at the dealership.", "answer": "get it serviced", "accept": [], "explanation_ru": "Get работает как have: после объекта it идёт третья форма serviced.", "difficulty": 2},
+    {"id": "b2_have_something_done_07", "kind": "correct", "prompt": "Yesterday I had repaired my laptop at the repair shop.", "answer": "Yesterday I had my laptop repaired at the repair shop.", "accept": ["Yesterday I got my laptop repaired at the repair shop."], "explanation_ru": "В исходном варианте получается Past Perfect и смысл «починил сам»; в каузативе объект стоит перед причастием.", "difficulty": 3},
+    {"id": "b2_have_something_done_08", "kind": "transform", "prompt": "Rewrite with 'have something done', starting with 'We': An electrician is installing new lights in our office this week.", "answer": "We're having new lights installed in our office this week.", "accept": ["We are having new lights installed in our office this week."], "explanation_ru": "Работу делает электрик, поэтому подлежащее We берёт схему are having + объект + installed.", "difficulty": 3}
+   ]
+  },
+  {
+   "id": "b2_passive_reporting_verbs",
+   "level": "B2",
+   "band": "B2.1",
+   "topic": "Passive",
+   "title_en": "The passive with reporting verbs: It is said that ...",
+   "source_slug": "passive-reporting-verbs",
+   "title_ru": "Пассив с глаголами сообщения: It is said that",
+   "summary_ru": "Когда источник информации неважен или неизвестен, употребляют пассив с глаголами say, believe, think, report, know, expect, consider. Есть две схемы. Безличная: It is said that the company is losing money — подлежащее it, дальше that и полное предложение. Личная: The company is said to be losing money — подлежащее выносится вперёд, а дальше идёт инфинитив с to. Если действие произошло раньше, чем сообщение, в личной схеме используется to have + третья форма: He is said to have written the system alone. Время меняется на глаголе сообщения: It was reported that..., He was thought to be.... Такой стиль типичен для новостей, отчётов и официальных текстов.",
+   "forms": [
+    "It is / was said (believed, reported) that + clause",
+    "Subject + is / was said + to + V1",
+    "Subject + is said + to be + V-ing / adjective",
+    "Subject + is said + to have + V3 (более раннее действие)"
+   ],
+   "examples": [
+    "It is said that the company is planning layoffs.",
+    "The CEO is said to be looking for a buyer.",
+    "It was reported that the servers went down for six hours.",
+    "The bug is thought to have appeared after the last update.",
+    "He is known to work sixteen hours a day."
+   ],
+   "ru_interference": "В русском есть только безличное «говорят, что…», поэтому личная схема разваливается: «He is said that he works for a big bank» → «He is said to work for a big bank». Обратная ошибка тоже частая: «It is said him to be rich» → «It is said that he is rich».",
+   "prerequisites": ["b1_passive_verb_forms", "b1_reported_speech_indirect_speech"],
+   "exercises": [
+    {"id": "b2_passive_reporting_verbs_01", "kind": "choice", "prompt": "It ___ that the new release will be delayed.", "options": ["is said", "is saying", "are said", "has said"], "correct_index": 0, "explanation_ru": "В безличной схеме нужен пассив: it + is + третья форма said; подлежащее it единственного числа, поэтому are said не подходит.", "difficulty": 1},
+    {"id": "b2_passive_reporting_verbs_02", "kind": "choice", "prompt": "The company ___ to be losing money.", "options": ["is believed", "believes", "is believing", "has believed"], "correct_index": 0, "explanation_ru": "Личная схема требует пассивной формы is believed перед инфинитивом с to.", "difficulty": 1},
+    {"id": "b2_passive_reporting_verbs_03", "kind": "choice", "prompt": "He is said ___ the whole system alone back in 2019.", "options": ["to have written", "to write", "that he wrote", "writing"], "correct_index": 0, "explanation_ru": "Действие относится к 2019 году, то есть произошло раньше сообщения, поэтому нужен перфектный инфинитив to have written.", "difficulty": 2},
+    {"id": "b2_passive_reporting_verbs_04", "kind": "choice", "prompt": "It is expected ___ the results will be published in June.", "options": ["that", "to", "what", "which"], "correct_index": 0, "explanation_ru": "После безличного it is expected идёт придаточное с союзом that, а не инфинитив или вопросительное слово.", "difficulty": 2},
+    {"id": "b2_passive_reporting_verbs_05", "kind": "gap", "prompt": "It ___ (say) that the new manager is very strict.", "answer": "is said", "accept": [], "explanation_ru": "Безличная конструкция в настоящем времени: is + третья форма said.", "difficulty": 1},
+    {"id": "b2_passive_reporting_verbs_06", "kind": "gap", "prompt": "People believe that the CEO owns three companies. The CEO ___ (believe) to own three companies.", "answer": "is believed", "accept": [], "explanation_ru": "При переходе к личной схеме подлежащее становится the CEO, а глагол сообщения переходит в пассив is believed.", "difficulty": 2},
+    {"id": "b2_passive_reporting_verbs_07", "kind": "correct", "prompt": "He is said that he works for a big bank.", "answer": "He is said to work for a big bank.", "accept": ["It is said that he works for a big bank."], "explanation_ru": "Две схемы смешаны: либо личная с инфинитивом, либо безличная с it и that.", "difficulty": 3},
+    {"id": "b2_passive_reporting_verbs_08", "kind": "transform", "prompt": "Rewrite starting with 'The virus': It is believed that the virus came from an email attachment.", "answer": "The virus is believed to have come from an email attachment.", "accept": [], "explanation_ru": "Действие в придаточном стоит раньше момента сообщения, поэтому в личной схеме нужен инфинитив to have come.", "difficulty": 3}
+   ]
+  },
+  {
+   "id": "b2_do_or_make_which_is_it",
+   "level": "B2",
+   "band": "B2.1",
+   "topic": "Phrasal verbs & lexis",
+   "title_en": "Do or Make: Which is it?",
+   "source_slug": "do-or-make-which-is-it",
+   "title_ru": "Do или make: как выбрать глагол",
+   "summary_ru": "Оба глагола переводятся как «делать», но сочетаются с разными словами. Do описывает работу, обязанности и неопределённую деятельность: do the work, do a job, do homework, do research, do the dishes, do exercises. Do также используется с неопределёнными местоимениями: do something, do nothing, do anything. Make описывает создание результата: make a decision, make a mistake, make a plan, make progress, make a call, make an appointment, make money, make noise. Отдельно нужно запомнить устойчивое make sure и do someone a favor. Большинство сочетаний устойчивы, поэтому их учат парами, а не выводят логически.",
+   "forms": [
+    "do + work / a job / homework / research / the dishes",
+    "do + something / anything / nothing / everything",
+    "do somebody a favor / do one's best",
+    "make + a decision / a mistake / a plan / progress",
+    "make + a call / an appointment / an effort / money / sure"
+   ],
+   "examples": [
+    "I have a lot of work to do before Friday.",
+    "We made a decision to move to the new framework.",
+    "Can you make a quick call to the client?",
+    "She did some research on the new database.",
+    "Make sure you back up the config file."
+   ],
+   "ru_interference": "Один русский глагол «делать» покрывает оба английских, поэтому выбор становится случайным: «I made a lot of work» → «I did a lot of work», «He did a mistake» → «He made a mistake», «do a decision» → «make a decision».",
+   "prerequisites": ["a2_do_vs_make_difference"],
+   "exercises": [
+    {"id": "b2_do_or_make_which_is_it_01", "kind": "choice", "prompt": "Sorry, I ___ a mistake in the last commit.", "options": ["made", "did", "took", "put"], "correct_index": 0, "explanation_ru": "Mistake входит в устойчивое сочетание с make: make a mistake.", "difficulty": 1},
+    {"id": "b2_do_or_make_which_is_it_02", "kind": "choice", "prompt": "Could you ___ me a favor and review this pull request?", "options": ["do", "make", "give", "put"], "correct_index": 0, "explanation_ru": "Устойчивое выражение — do somebody a favor.", "difficulty": 1},
+    {"id": "b2_do_or_make_which_is_it_03", "kind": "choice", "prompt": "We need to ___ a decision about the deadline today.", "options": ["make", "do", "give", "put"], "correct_index": 0, "explanation_ru": "Decision относится к результату, который создают, поэтому используется make a decision.", "difficulty": 2},
+    {"id": "b2_do_or_make_which_is_it_04", "kind": "choice", "prompt": "The team has ___ a lot of progress this sprint.", "options": ["made", "done", "got", "taken"], "correct_index": 0, "explanation_ru": "Progress всегда сочетается с make: make progress.", "difficulty": 2},
+    {"id": "b2_do_or_make_which_is_it_05", "kind": "gap", "prompt": "Please ___ (make / do) sure the tests pass before you merge.", "answer": "make", "accept": [], "explanation_ru": "Make sure — устойчивое выражение, вариант с do невозможен.", "difficulty": 1},
+    {"id": "b2_do_or_make_which_is_it_06", "kind": "gap", "prompt": "She ___ (do, past simple) her best, but the client still complained.", "answer": "did", "accept": [], "explanation_ru": "Выражение do one's best берёт глагол do, в прошедшем времени — did.", "difficulty": 2},
+    {"id": "b2_do_or_make_which_is_it_07", "kind": "correct", "prompt": "He made a lot of work last week.", "answer": "He did a lot of work last week.", "accept": [], "explanation_ru": "Слово work обозначает деятельность, а не созданный результат, поэтому нужен глагол do.", "difficulty": 3},
+    {"id": "b2_do_or_make_which_is_it_08", "kind": "correct", "prompt": "I need to do an appointment with the dentist.", "answer": "I need to make an appointment with the dentist.", "accept": [], "explanation_ru": "Appointment договариваются, то есть создают, поэтому употребляется make an appointment.", "difficulty": 3}
+   ]
+  },
+  {
+   "id": "b2_whatever_whenever_wherever_whoever_however",
+   "level": "B2",
+   "band": "B2.1",
+   "topic": "Pronouns & determiners",
+   "title_en": "Whatever, whenever, wherever, whoever, however",
+   "source_slug": "whatever-whenever-wherever-whoever-however",
+   "title_ru": "Слова с -ever: whatever, whenever, whoever",
+   "summary_ru": "Слова с суффиксом -ever означают «любой» или «неважно какой» и вводят придаточное предложение. Whoever указывает на человека, whatever на вещь или ситуацию, whenever на время, wherever на место, whichever на выбор из ограниченного набора. Такое придаточное может быть подлежащим или дополнением: Whoever wrote this code forgot the tests. Оно также может быть уступительным: Whatever you do, don't restart the server now. В уступительном значении они заменяются оборотом no matter what, who, when, where, how: Whatever you do = No matter what you do; в роли подлежащего или дополнения такая замена невозможна. However работает иначе: за ним идёт прилагательное или наречие, потом подлежащее и глагол: However hard we try. После whenever и wherever в значении будущего ставится настоящее время, а не will.",
+   "forms": [
+    "whoever / whatever / whichever + clause",
+    "whenever / wherever + clause (настоящее время вместо will)",
+    "however + adjective / adverb + subject + verb",
+    "no matter what / who / when / where / how = -ever в уступительном значении"
+   ],
+   "examples": [
+    "Whoever wrote this script forgot the error handling.",
+    "Call me whenever you need help.",
+    "Whatever you do, don't restart the server now.",
+    "However hard we tried, the bug came back.",
+    "You can sit wherever you like.",
+    "Take whichever laptop is free."
+   ],
+   "ru_interference": "Русские обороты «кто бы ни», «когда бы ни» переводят пословно, а в придаточном времени ставят будущее: «Whenever you will finish, send me the link» → «Whenever you finish, send me the link». Ещё один след родного языка — «как бы мы ни старались» через how: «How hard we try, the tests keep failing» → «However hard we try, the tests keep failing».",
+   "prerequisites": ["a2_defining_relative_clauses_who_which_that_where", "b1_clauses_contrast_purpose_reason"],
+   "exercises": [
+    {"id": "b2_whatever_whenever_wherever_whoever_however_01", "kind": "choice", "prompt": "___ wrote this documentation did a great job.", "options": ["Whoever", "Whatever", "Whenever", "However"], "correct_index": 0, "explanation_ru": "Речь о человеке, который написал документацию, поэтому нужно whoever.", "difficulty": 1},
+    {"id": "b2_whatever_whenever_wherever_whoever_however_02", "kind": "choice", "prompt": "Text me ___ you get to the office.", "options": ["whenever", "whoever", "whatever", "whichever"], "correct_index": 0, "explanation_ru": "Придаточное указывает на время прибытия, значит нужно whenever.", "difficulty": 1},
+    {"id": "b2_whatever_whenever_wherever_whoever_however_03", "kind": "choice", "prompt": "___ hard he tries, he can't reproduce the bug.", "options": ["However", "Whatever", "Whichever", "Whenever"], "correct_index": 0, "explanation_ru": "Только however сочетается с прилагательным или наречием, стоящим сразу после него: however hard.", "difficulty": 2},
+    {"id": "b2_whatever_whenever_wherever_whoever_however_04", "kind": "choice", "prompt": "You can work ___ you want: at home, in the office, or in a cafe.", "options": ["wherever", "whenever", "whoever", "whichever"], "correct_index": 0, "explanation_ru": "Перечислены места, поэтому подходит только wherever.", "difficulty": 2},
+    {"id": "b2_whatever_whenever_wherever_whoever_however_05", "kind": "gap", "prompt": "___ (no matter what) happens, don't push to production on Friday.", "answer": "Whatever", "accept": [], "explanation_ru": "Оборот no matter what в уступительном придаточном заменяется одним словом whatever.", "difficulty": 2},
+    {"id": "b2_whatever_whenever_wherever_whoever_however_06", "kind": "gap", "prompt": "Call me ___ (no matter when) you need help with the deploy.", "answer": "whenever", "accept": [], "explanation_ru": "No matter when соответствует слову whenever.", "difficulty": 1},
+    {"id": "b2_whatever_whenever_wherever_whoever_however_07", "kind": "correct", "prompt": "However hardly we try, the tests keep failing.", "answer": "However hard we try, the tests keep failing.", "accept": [], "explanation_ru": "Hardly значит «едва»; в этой конструкции нужно наречие hard.", "difficulty": 3},
+    {"id": "b2_whatever_whenever_wherever_whoever_however_08", "kind": "correct", "prompt": "Whenever you will finish, send me the link.", "answer": "Whenever you finish, send me the link.", "accept": [], "explanation_ru": "В придаточном времени с whenever будущее выражается формой настоящего времени.", "difficulty": 3}
+   ]
+  },
+  {
+   "id": "b2_quantifiers",
+   "level": "B2",
+   "band": "B2.1",
+   "topic": "Quantifiers",
+   "title_en": "Quantifiers: All, most, both, either, neither, any, no, none",
+   "source_slug": "quantifiers",
+   "title_ru": "Квантификаторы: all, most, both, none",
+   "summary_ru": "Перед существительным в общем значении квантификатор стоит без of: Most developers use Linux. Предлог of появляется только перед определителем the, my, this или перед местоимением: most of the developers, most of us. Both, either и neither описывают ровно два предмета: both означает оба, either один из двух, neither ни один из двух. После either и neither существительное стоит в единственном числе. No — это определитель перед существительным: There is no documentation. None употребляется без существительного или с of: None of the tests passed. В отрицательных предложениях вместо no используется any: I couldn't find any information. Двойное отрицание в английском недопустимо.",
+   "forms": [
+    "all / most / both + существительное (общее значение)",
+    "all of / most of / both of + the, my, this, them",
+    "either / neither + существительное в единственном числе",
+    "no + существительное; none (of) — без существительного",
+    "not ... any = no"
+   ],
+   "examples": [
+    "Most developers in this company use Linux.",
+    "Most of the developers on my team use Linux.",
+    "Both options are fine, but neither is cheap.",
+    "None of the tests passed after the update.",
+    "There is no documentation for this API.",
+    "You can pick either day, Monday or Tuesday."
+   ],
+   "ru_interference": "Русское «большинство людей» переносят с предлогом: «Most of people are online» → «Most people are online». И русское двойное отрицание переносится целиком: «I don't have no time» → «I have no time» или «I don't have any time».",
+   "prerequisites": ["b1_all_both", "b1_any_no_none", "b1_both_either_neither"],
+   "exercises": [
+    {"id": "b2_quantifiers_01", "kind": "choice", "prompt": "___ developers on our team work remotely.", "options": ["Most", "Most of", "The most", "Almost"], "correct_index": 0, "explanation_ru": "Перед существительным без определителя the или my квантификатор most стоит без of.", "difficulty": 1},
+    {"id": "b2_quantifiers_02", "kind": "choice", "prompt": "___ of the tests passed, so we had to rewrite the whole module.", "options": ["None", "No", "Not", "Any"], "correct_index": 0, "explanation_ru": "Перед of the употребляется none, а no ставится только прямо перед существительным.", "difficulty": 1},
+    {"id": "b2_quantifiers_03", "kind": "choice", "prompt": "There is ___ documentation for this internal tool.", "options": ["no", "none", "not", "any"], "correct_index": 0, "explanation_ru": "Прямо перед существительным в утвердительном предложении нужен определитель no; none существительного за собой не берёт.", "difficulty": 2},
+    {"id": "b2_quantifiers_04", "kind": "choice", "prompt": "I couldn't find ___ information about the error code.", "options": ["any", "no", "none", "every"], "correct_index": 0, "explanation_ru": "В предложении уже есть отрицание couldn't, поэтому используется any: двойное отрицание невозможно.", "difficulty": 2},
+    {"id": "b2_quantifiers_05", "kind": "gap", "prompt": "We tried two servers, but ___ (neither / none) of them responded.", "answer": "neither", "accept": [], "explanation_ru": "Серверов ровно два, а для двух объектов используется neither, а не none.", "difficulty": 2},
+    {"id": "b2_quantifiers_06", "kind": "gap", "prompt": "Both ___ (we) work in the same department.", "answer": "of us", "accept": [], "explanation_ru": "Перед местоимением квантификатор требует of, а само местоимение стоит в объектном падеже: both of us.", "difficulty": 1},
+    {"id": "b2_quantifiers_07", "kind": "correct", "prompt": "Most of people prefer to work from home on Fridays.", "answer": "Most people prefer to work from home on Fridays.", "accept": [], "explanation_ru": "Существительное people употреблено в общем значении, без the, поэтому of лишнее.", "difficulty": 3},
+    {"id": "b2_quantifiers_08", "kind": "correct", "prompt": "I don't have no idea how this script works.", "answer": "I have no idea how this script works.", "accept": ["I don't have any idea how this script works."], "explanation_ru": "В английском отрицание одно: либо no с утвердительным глаголом, либо don't и any.", "difficulty": 3}
+   ]
+  },
+  {
+   "id": "b2_questions_different_types",
+   "level": "B2",
+   "band": "B2.1",
+   "topic": "Questions",
+   "title_en": "Questions: Different types",
+   "source_slug": "questions-different-types",
+   "title_ru": "Типы вопросов в английском",
+   "summary_ru": "Если вопросительное слово заменяет подлежащее, вспомогательный глагол не нужен и порядок слов остаётся прямым: Who wrote this? Если вопросительное слово заменяет дополнение, в простых временах появляется do, does или did, а основной глагол стоит в начальной форме: Who did you ask? Если у сказуемого есть свой вспомогательный глагол, do не нужен и работает инверсия: What are you working on? Предлог в английском вопросе почти всегда уходит в конец: What are you looking for? Who does he report to? Отрицательный вопрос выражает удивление или ожидание согласия: Didn't you get my message? Разделительный вопрос повторяет вспомогательный глагол утверждения с противоположным знаком: You've merged it, haven't you? В косвенной речи и в вежливых оборотах инверсия исчезает.",
+   "forms": [
+    "Wh-слово (подлежащее) + V: Who wrote this?",
+    "Wh-слово (дополнение) + do / does / did + subject + V1",
+    "Wh-слово + ... + предлог в конце: What are you looking for?",
+    "Negative question: Didn't you get my message?",
+    "Statement + question tag: You've seen it, haven't you?"
+   ],
+   "examples": [
+    "Who broke the build?",
+    "Who did you ask about the deadline?",
+    "What are you working on right now?",
+    "Which team does he report to?",
+    "Didn't you get my message?",
+    "You've already tested it, haven't you?"
+   ],
+   "ru_interference": "В русском вспомогательного глагола нет, поэтому его добавляют и в вопрос к подлежащему: «Who did write this code?» → «Who wrote this code?». А предлог по русской модели ставят в начало: «About what are you talking?» → «What are you talking about?».",
+   "prerequisites": ["a2_asking_questions_in_english", "a2_subject_questions_questions_preposition", "b1_question_tags"],
+   "exercises": [
+    {"id": "b2_questions_different_types_01", "kind": "choice", "prompt": "___ this ticket? Marina did.", "options": ["Who created", "Who did created", "Who has create", "Whom created"], "correct_index": 0, "explanation_ru": "Who здесь подлежащее, поэтому вспомогательный глагол не нужен и ставится обычная форма прошедшего времени.", "difficulty": 1},
+    {"id": "b2_questions_different_types_02", "kind": "choice", "prompt": "Who did you ___ about the incident?", "options": ["ask", "asked", "asking", "to ask"], "correct_index": 0, "explanation_ru": "После вспомогательного did основной глагол стоит в начальной форме.", "difficulty": 1},
+    {"id": "b2_questions_different_types_03", "kind": "choice", "prompt": "Which team ___ he report to now?", "options": ["does", "is", "do", "did"], "correct_index": 0, "explanation_ru": "Вопрос к дополнению в настоящем времени с подлежащим he требует does; наречие now исключает did.", "difficulty": 2},
+    {"id": "b2_questions_different_types_04", "kind": "choice", "prompt": "You've already merged the branch, ___?", "options": ["haven't you", "didn't you", "have you", "isn't it"], "correct_index": 0, "explanation_ru": "Хвостик повторяет вспомогательный глагол have из утверждения и меняет знак на отрицательный.", "difficulty": 2},
+    {"id": "b2_questions_different_types_05", "kind": "gap", "prompt": "Somebody called you this morning. ___ (who / call) you this morning?", "answer": "Who called", "accept": [], "explanation_ru": "Вопрос к подлежащему строится без did, глагол остаётся в прошедшем времени.", "difficulty": 1},
+    {"id": "b2_questions_different_types_06", "kind": "gap", "prompt": "I'm looking at a strange log entry. What ___ (you / look) at?", "answer": "are you looking", "accept": [], "explanation_ru": "Ответ стоит в Present Continuous, поэтому в вопросе инверсия are you looking, а предлог at остаётся в конце.", "difficulty": 2},
+    {"id": "b2_questions_different_types_07", "kind": "correct", "prompt": "Who did write this function?", "answer": "Who wrote this function?", "accept": [], "explanation_ru": "Who заменяет подлежащее, поэтому вспомогательный did не нужен.", "difficulty": 3},
+    {"id": "b2_questions_different_types_08", "kind": "correct", "prompt": "About what are you talking?", "answer": "What are you talking about?", "accept": [], "explanation_ru": "В английском вопросе предлог обычно стоит в конце предложения.", "difficulty": 3}
+   ]
+  },
+  {
+   "id": "b2_participle_adjectives",
+   "level": "B2",
+   "band": "B2.1",
+   "topic": "Relative & participle clauses",
+   "title_en": "Participles as adjectives: -ed/-ing adjectives",
+   "source_slug": "participle-adjectives",
+   "title_ru": "Прилагательные на -ed и -ing",
+   "summary_ru": "От многих глаголов образуются два прилагательных. Форма на -ing описывает источник чувства: свойство предмета, ситуации или человека, который вызывает эмоцию: The documentation is boring. Форма на -ed описывает того, кто испытывает чувство, обычно человека: I am bored. Обе формы могут стоять и перед существительным: a surprising result и a surprised look. Ошибка в выборе меняет смысл: I am boring значит «я скучный человек», а не «мне скучно». После форм на -ed часто идёт фиксированный предлог: interested in, worried about, excited about, surprised by, confused by, tired of.",
+   "forms": [
+    "-ing прилагательное: источник чувства (a boring meeting)",
+    "-ed прилагательное: состояние человека (I am bored)",
+    "be + -ed + предлог: interested in, worried about, surprised by",
+    "-ing / -ed + существительное: a surprising result / a surprised look"
+   ],
+   "examples": [
+    "The release notes were confusing, so everyone was confused.",
+    "I'm really interested in machine learning.",
+    "It was a shocking report.",
+    "She looked worried about the deadline.",
+    "The training was boring, but the coffee was good."
+   ],
+   "ru_interference": "В русском одно слово «интересный» и безличное «интересно», поэтому формы смешивают: «I am interesting in this project» → «I am interested in this project». Тот же сбой с эмоциями: «I was very boring at the meeting» → «I was very bored at the meeting».",
+   "prerequisites": ["b1_ed_ing_adjectives_adjectives_verbs"],
+   "exercises": [
+    {"id": "b2_participle_adjectives_01", "kind": "choice", "prompt": "I'm really ___ in backend development.", "options": ["interested", "interesting", "interest", "interestingly"], "correct_index": 0, "explanation_ru": "Чувство испытывает человек, поэтому нужна форма на -ed с предлогом in.", "difficulty": 1},
+    {"id": "b2_participle_adjectives_02", "kind": "choice", "prompt": "The documentation is so ___ that nobody reads it.", "options": ["boring", "bored", "bore", "boredom"], "correct_index": 0, "explanation_ru": "Документация вызывает скуку, а не испытывает её, значит нужна форма на -ing.", "difficulty": 1},
+    {"id": "b2_participle_adjectives_03", "kind": "choice", "prompt": "Everyone was ___ by the news about the merger.", "options": ["shocked", "shocking", "shock", "shockingly"], "correct_index": 0, "explanation_ru": "Люди испытывают чувство, а источник назван после by, поэтому нужна форма на -ed.", "difficulty": 2},
+    {"id": "b2_participle_adjectives_04", "kind": "choice", "prompt": "It was a very ___ day: three incidents in a row.", "options": ["tiring", "tired", "tire", "tiredly"], "correct_index": 0, "explanation_ru": "День вызывает усталость, поэтому перед существительным day стоит форма на -ing.", "difficulty": 1},
+    {"id": "b2_participle_adjectives_05", "kind": "gap", "prompt": "The results were ___ (surprise): nobody expected them.", "answer": "surprising", "accept": [], "explanation_ru": "Результаты являются источником удивления, поэтому нужна форма на -ing.", "difficulty": 2},
+    {"id": "b2_participle_adjectives_06", "kind": "gap", "prompt": "She was ___ (confuse) by the new interface.", "answer": "confused", "accept": [], "explanation_ru": "Человек испытывает состояние, а причина введена предлогом by, значит нужна форма на -ed.", "difficulty": 2},
+    {"id": "b2_participle_adjectives_07", "kind": "correct", "prompt": "I was very boring during that meeting: I almost fell asleep.", "answer": "I was very bored during that meeting: I almost fell asleep.", "accept": [], "explanation_ru": "Форма boring означала бы, что скучен сам говорящий; состояние скуки передаёт bored.", "difficulty": 3},
+    {"id": "b2_participle_adjectives_08", "kind": "correct", "prompt": "We are all exciting about the new project.", "answer": "We are all excited about the new project.", "accept": [], "explanation_ru": "Люди испытывают радостное волнение, поэтому нужна форма excited с предлогом about.", "difficulty": 3}
+   ]
+  },
+  {
+   "id": "b2_indirect_questions",
+   "level": "B2",
+   "band": "B2.1",
+   "topic": "Reported speech",
+   "title_en": "Indirect questions",
+   "source_slug": "indirect-questions",
+   "title_ru": "Косвенные вопросы: Could you tell me...",
+   "summary_ru": "Косвенный вопрос звучит вежливее прямого и начинается с оборота Could you tell me, Do you know, I wonder или I'd like to know. После этого оборота порядок слов становится как в утверждении: подлежащее стоит перед сказуемым, инверсии нет. Вспомогательные do, does и did исчезают, а их время переходит на смысловой глагол: Where does he work? превращается в Do you know where he works? Если в прямом вопросе не было вопросительного слова, в косвенном появляется if или whether: Do you know if the server is back up? Знак вопроса ставится только тогда, когда главная часть сама является вопросом; при обороте I wonder предложение заканчивается точкой.",
+   "forms": [
+    "Could you tell me + wh-слово + subject + verb?",
+    "Do you know + if / whether + subject + verb?",
+    "I wonder / I'd like to know + wh-слово + subject + verb.",
+    "Без do / does / did и без инверсии в придаточном"
+   ],
+   "examples": [
+    "Could you tell me where the meeting room is?",
+    "Do you know if the server is back up?",
+    "I wonder why the tests keep failing.",
+    "I'd like to know how much the license costs.",
+    "Can you tell me who I should contact?"
+   ],
+   "ru_interference": "В русском порядок слов в прямом и косвенном вопросе одинаковый, поэтому инверсия сохраняется и в английском: «Do you know where is the office?» → «Do you know where the office is?». Вспомогательный глагол тоже остаётся лишним: «Could you tell me what does it mean?» → «Could you tell me what it means?».",
+   "prerequisites": ["a2_asking_questions_in_english", "b1_reported_speech_indirect_speech"],
+   "exercises": [
+    {"id": "b2_indirect_questions_01", "kind": "choice", "prompt": "Could you tell me where ___?", "options": ["the server room is", "is the server room", "does the server room", "the server room does be"], "correct_index": 0, "explanation_ru": "В косвенном вопросе порядок слов прямой: сначала подлежащее, потом глагол.", "difficulty": 1},
+    {"id": "b2_indirect_questions_02", "kind": "choice", "prompt": "Do you know ___ the release is ready?", "options": ["if", "what", "is", "does"], "correct_index": 0, "explanation_ru": "В прямом вопросе не было вопросительного слова, поэтому косвенный вводится союзом if.", "difficulty": 1},
+    {"id": "b2_indirect_questions_03", "kind": "choice", "prompt": "I wonder why ___ the deployment.", "options": ["they canceled", "did they cancel", "have they canceled", "canceled they"], "correct_index": 0, "explanation_ru": "После I wonder порядок слов прямой: подлежащее перед сказуемым, инверсии нет, а прошедшее время выражает сам глагол.", "difficulty": 2},
+    {"id": "b2_indirect_questions_04", "kind": "choice", "prompt": "Can you tell me how much ___?", "options": ["the license costs", "does the license cost", "costs the license", "the license does cost"], "correct_index": 0, "explanation_ru": "Инверсия снимается, а окончание -s возвращается на смысловой глагол: the license costs.", "difficulty": 2},
+    {"id": "b2_indirect_questions_05", "kind": "gap", "prompt": "Where does he work? Do you know where ___ (he / work)?", "answer": "he works", "accept": [], "explanation_ru": "Does исчезает, а его окончание переходит на смысловой глагол; порядок слов прямой.", "difficulty": 1},
+    {"id": "b2_indirect_questions_06", "kind": "gap", "prompt": "Is the office open on Saturday? Could you tell me ___ (if / the office / be) open on Saturday?", "answer": "if the office is", "accept": ["whether the office is"], "explanation_ru": "Общий вопрос вводится через if или whether, дальше подлежащее и глагол без инверсии.", "difficulty": 2},
+    {"id": "b2_indirect_questions_07", "kind": "correct", "prompt": "Could you tell me what time does the meeting start?", "answer": "Could you tell me what time the meeting starts?", "accept": [], "explanation_ru": "Вспомогательный does в косвенном вопросе не употребляется, окончание -s переходит на глагол start.", "difficulty": 3},
+    {"id": "b2_indirect_questions_08", "kind": "correct", "prompt": "I wonder where did they put the new printer.", "answer": "I wonder where they put the new printer.", "accept": [], "explanation_ru": "После I wonder идёт прямой порядок слов, вспомогательный did лишний.", "difficulty": 3}
+   ]
+  },
+  {
+   "id": "b2_reporting_verbs",
+   "level": "B2",
+   "band": "B2.1",
+   "topic": "Reported speech",
+   "title_en": "Reporting verbs: Admit doing, refuse to do, etc.",
+   "source_slug": "reporting-verbs",
+   "title_ru": "Глаголы передачи речи: admit doing, refuse to do",
+   "summary_ru": "Вместо say и tell в пересказе часто используют глаголы, которые сразу называют речевое действие, но каждый из них требует своей схемы. Refuse, promise, agree, offer, threaten, decide, claim берут инфинитив с to: He refused to sign the contract. Advise, ask, tell, remind, warn, invite, persuade, encourage требуют дополнения и потом инфинитива: They advised us to wait. Admit, deny, suggest, recommend, mention берут герундий: She admitted breaking the build. Отдельная группа требует предлога и герундия: apologize for, insist on, accuse somebody of, blame somebody for, congratulate somebody on, thank somebody for. Отрицание ставится перед инфинитивом или герундием: They warned us not to open the link. Схему нужно запоминать вместе с глаголом.",
+   "forms": [
+    "refuse / promise / agree / offer + to + V1",
+    "advise / remind / warn / persuade + object + to + V1",
+    "admit / deny / suggest / recommend + V-ing",
+    "apologize for / insist on / accuse somebody of + V-ing",
+    "explain / say / claim + (that) + clause"
+   ],
+   "examples": [
+    "He refused to sign the contract.",
+    "She admitted breaking the build.",
+    "They advised us to wait for the next release.",
+    "He apologized for being late.",
+    "The manager suggested moving the deadline.",
+    "She accused him of copying her code."
+   ],
+   "ru_interference": "Русское «предложил сделать» переводят инфинитивом: «He suggested to take a break» → «He suggested taking a break». Из-за русского управления теряется и предлог: «She accused me to copy her slides» → «She accused me of copying her slides».",
+   "prerequisites": ["b1_reported_speech_indirect_speech", "a2_infinitives_and_gerunds"],
+   "exercises": [
+    {"id": "b2_reporting_verbs_01", "kind": "choice", "prompt": "He refused ___ the document.", "options": ["to sign", "signing", "sign", "for signing"], "correct_index": 0, "explanation_ru": "Refuse всегда сочетается с инфинитивом с to.", "difficulty": 1},
+    {"id": "b2_reporting_verbs_02", "kind": "choice", "prompt": "She admitted ___ the wrong file.", "options": ["deleting", "to delete", "delete", "for delete"], "correct_index": 0, "explanation_ru": "После admit употребляется герундий, а не инфинитив.", "difficulty": 1},
+    {"id": "b2_reporting_verbs_03", "kind": "choice", "prompt": "My manager suggested ___ the meeting to Monday.", "options": ["moving", "to move", "move", "for move"], "correct_index": 0, "explanation_ru": "Suggest не сочетается с инфинитивом: после него идёт герундий.", "difficulty": 2},
+    {"id": "b2_reporting_verbs_04", "kind": "choice", "prompt": "They warned us ___ that link.", "options": ["not to open", "not open", "to not opening", "don't open"], "correct_index": 0, "explanation_ru": "Warn требует дополнения и инфинитива, а отрицание not ставится перед to.", "difficulty": 2},
+    {"id": "b2_reporting_verbs_05", "kind": "gap", "prompt": "He apologized ___ (for / be) late for the call.", "answer": "for being", "accept": [], "explanation_ru": "После предлога for глагол принимает форму герундия being.", "difficulty": 2},
+    {"id": "b2_reporting_verbs_06", "kind": "gap", "prompt": "She promised ___ (send) the invoice by Friday.", "answer": "to send", "accept": [], "explanation_ru": "Promise относится к группе глаголов с инфинитивом с to.", "difficulty": 1},
+    {"id": "b2_reporting_verbs_07", "kind": "correct", "prompt": "He suggested to take a short break.", "answer": "He suggested taking a short break.", "accept": ["He suggested that we take a short break."], "explanation_ru": "Suggest не берёт инфинитив: нужен герундий или придаточное с that.", "difficulty": 3},
+    {"id": "b2_reporting_verbs_08", "kind": "correct", "prompt": "She accused me to copy her slides.", "answer": "She accused me of copying her slides.", "accept": [], "explanation_ru": "Accuse требует схемы accuse somebody of + герундий.", "difficulty": 3}
+   ]
+  }
+ ]
+}

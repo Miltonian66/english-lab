@@ -1,0 +1,22 @@
+[Unit]
+Description=English Lab — многопользовательская платформа изучения английского
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/milton/english
+EnvironmentFile=/home/milton/english/.env
+# Python из .venv: там faster-whisper и piper для локальной речи. С системным
+# python3 бот тоже запустится, но голос будет выключен.
+ExecStart=/home/milton/english/.venv/bin/python -m english_bot
+Restart=on-failure
+RestartSec=5
+UMask=0077
+# Контент ~25 МБ, piper ~200 МБ, whisper small.en ~640 МБ; замер пика — 865 МБ.
+MemoryMax=1600M
+# codex exec запускается подпроцессом и держит собственную сессию.
+TimeoutStopSec=30
+
+[Install]
+WantedBy=default.target

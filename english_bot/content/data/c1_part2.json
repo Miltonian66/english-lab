@@ -1,0 +1,1030 @@
+{
+ "chunk": "c1_part2",
+ "points": [
+  {
+   "id": "c1_advanced_relative_clauses_reduced_prepositional_of_which_whom",
+   "level": "C1",
+   "band": "C1",
+   "topic": "Relative & participle clauses",
+   "title_en": "Advanced relative clauses: reduced, prepositional, of which/whom",
+   "source_slug": "",
+   "title_ru": "Продвинутые относительные придаточные",
+   "summary_ru": "На уровне C1 относительное придаточное редко остаётся в полной форме. Активное придаточное сокращается до причастия на -ing, причём и с be, и без него: the team that is working on it и the team that works on it одинаково дают the team working on it. Пассивное придаточное сокращается до третьей формы: the bug that was reported превращается в the bug reported. В формальном стиле предлог ставится перед which или whom, а не в конце: the server on which it runs. После предлога нельзя ставить that и нельзя опускать относительное местоимение. Количество оформляется схемой quantifier + of which/of whom: ten candidates, two of whom had no experience. У неодушевлённых существительных вместо of which часто удобнее whose: a system whose logs nobody reads.",
+   "forms": [
+    "noun + who/which/that + finite verb (полная форма)",
+    "noun + V-ing (активное сокращение: the team working on it)",
+    "noun + V3 (пассивное сокращение: the bug reported yesterday)",
+    "preposition + which/whom + clause (the server on which it runs)",
+    "quantifier + of which/of whom (five servers, two of which are down)"
+   ],
+   "examples": [
+    "The engineer leading the migration is on vacation.",
+    "The tests written last sprint still fail on Windows.",
+    "This is the repository in which we keep the config.",
+    "We interviewed ten candidates, two of whom had never used Git.",
+    "The vendor to whom we sent the invoice has not replied.",
+    "We use a build system whose documentation is completely out of date."
+   ],
+   "ru_interference": "Русское «из которых» переводят как from which: неверно We have five servers, from which two are down. → верно We have five servers, two of which are down.",
+   "prerequisites": [
+    "b2_relative_clauses",
+    "b2_participle_clauses"
+   ],
+   "exercises": [
+    {
+     "id": "c1_advanced_relative_clauses_reduced_prepositional_of_which_whom_01",
+     "kind": "choice",
+     "prompt": "We hired six developers, two ___ whom already know Go.",
+     "options": [
+      "from",
+      "of",
+      "between",
+      "among"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "После количественного слова используется только of whom; from, between и among в этой схеме невозможны.",
+     "difficulty": 1
+    },
+    {
+     "id": "c1_advanced_relative_clauses_reduced_prepositional_of_which_whom_02",
+     "kind": "choice",
+     "prompt": "The report ___ by the auditors last week lists three risks.",
+     "options": [
+      "writing",
+      "wrote",
+      "written",
+      "is written"
+     ],
+     "correct_index": 2,
+     "explanation_ru": "Это сокращённое пассивное придаточное the report which was written, поэтому нужна третья форма без вспомогательного глагола.",
+     "difficulty": 1
+    },
+    {
+     "id": "c1_advanced_relative_clauses_reduced_prepositional_of_which_whom_03",
+     "kind": "choice",
+     "prompt": "This is the tool ___ we build all our images.",
+     "options": [
+      "which",
+      "with which",
+      "that",
+      "with that"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Глагол build требует предлога with, а в относительном придаточном предлог ставится перед which; с that предлог впереди стоять не может.",
+     "difficulty": 1
+    },
+    {
+     "id": "c1_advanced_relative_clauses_reduced_prepositional_of_which_whom_04",
+     "kind": "choice",
+     "prompt": "The team ___ on the payment service is small.",
+     "options": [
+      "works",
+      "worked",
+      "which working",
+      "working"
+     ],
+     "correct_index": 3,
+     "explanation_ru": "Сокращение активного придаточного the team that works даёт причастие на -ing; личная форма создала бы в предложении два сказуемых.",
+     "difficulty": 2
+    },
+    {
+     "id": "c1_advanced_relative_clauses_reduced_prepositional_of_which_whom_05",
+     "kind": "gap",
+     "prompt": "The message ___ (send) at midnight never arrived.",
+     "answer": "sent",
+     "accept": [],
+     "explanation_ru": "Смысл пассивный: сообщение отправили. Сокращённое придаточное which was sent даёт третью форму sent.",
+     "difficulty": 2
+    },
+    {
+     "id": "c1_advanced_relative_clauses_reduced_prepositional_of_which_whom_06",
+     "kind": "gap",
+     "prompt": "We have three servers, two ___ are offline. (of / which)",
+     "answer": "of which",
+     "accept": [],
+     "explanation_ru": "Количество плюс относительное местоимение оформляется как of which; from which здесь невозможно.",
+     "difficulty": 3
+    },
+    {
+     "id": "c1_advanced_relative_clauses_reduced_prepositional_of_which_whom_07",
+     "kind": "correct",
+     "prompt": "We tested five builds, from which two failed.",
+     "answer": "We tested five builds, two of which failed.",
+     "accept": [
+      "We tested five builds, of which two failed."
+     ],
+     "explanation_ru": "Кальку с русского «из которых» надо заменить на английскую схему two of which.",
+     "difficulty": 2
+    },
+    {
+     "id": "c1_advanced_relative_clauses_reduced_prepositional_of_which_whom_08",
+     "kind": "transform",
+     "prompt": "Rewrite using a reduced relative clause: The engineers who are working on the API are in Prague.",
+     "answer": "The engineers working on the API are in Prague.",
+     "accept": [],
+     "explanation_ru": "Who are убирается, остаётся причастие working, которое напрямую определяет engineers.",
+     "difficulty": 3
+    }
+   ]
+  },
+  {
+   "id": "c1_advanced_past_simple_past_continuous_past_perfect",
+   "level": "C1",
+   "band": "C1",
+   "topic": "Tenses",
+   "title_en": "Advanced past simple, past continuous & past perfect",
+   "source_slug": "advanced-past-simple-past-continuous-past-perfect",
+   "title_ru": "Продвинутые прошедшие времена",
+   "summary_ru": "На C1 выбор прошедшего времени определяется не словами-маркерами, а точкой отсчёта в рассказе. Past simple двигает события вперёд, past continuous даёт фон и незаконченное действие в конкретный момент, past perfect отправляет событие назад, до уже названного момента в прошлом. Past perfect continuous подчёркивает длительность до этой точки: she had been debugging for six hours. Past perfect обязателен после it was the first time и в конструкциях несбывшегося намерения: we had hoped to release on Friday. После before и after порядок событий ясен из союза, поэтому past perfect там необязателен. Was going to и was about to описывают планы, которые так и не осуществились.",
+   "forms": [
+    "V2 / did not + V1 (past simple)",
+    "was/were + V-ing (past continuous)",
+    "had + V3 (past perfect)",
+    "had been + V-ing (past perfect continuous)",
+    "was/were going to + V1 (несостоявшийся план)"
+   ],
+   "examples": [
+    "It was the first time I had worked with a remote team.",
+    "By three in the morning we had been chasing the same bug for eight hours.",
+    "We had hoped to release on Friday, but the tests failed.",
+    "I was going to call you, but the meeting ran late.",
+    "At six yesterday evening we were still running the load test.",
+    "By the time we arrived, everyone had left."
+   ],
+   "ru_interference": "В русском одно прошедшее время, поэтому предшествование не маркируют: неверно When I arrived, the meeting already started. → верно When I arrived, the meeting had already started.",
+   "prerequisites": [
+    "b1_past_simple_past_continuous_past_perfect",
+    "b2_narrative_tenses"
+   ],
+   "exercises": [
+    {
+     "id": "c1_advanced_past_simple_past_continuous_past_perfect_01",
+     "kind": "choice",
+     "prompt": "It was the first time I ___ worked with a remote team.",
+     "options": [
+      "have",
+      "was",
+      "had",
+      "did"
+     ],
+     "correct_index": 2,
+     "explanation_ru": "После it was the first time действие уходит в past perfect, поэтому нужен вспомогательный had.",
+     "difficulty": 1
+    },
+    {
+     "id": "c1_advanced_past_simple_past_continuous_past_perfect_02",
+     "kind": "choice",
+     "prompt": "By three in the morning we ___ the same bug for eight hours.",
+     "options": [
+      "chased",
+      "had been chasing",
+      "were chasing",
+      "have been chasing"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "By + момент в прошлом и for + длительность требуют past perfect continuous; остальные формы не показывают отрезок до этой точки.",
+     "difficulty": 2
+    },
+    {
+     "id": "c1_advanced_past_simple_past_continuous_past_perfect_03",
+     "kind": "choice",
+     "prompt": "At six yesterday evening we ___ the load test.",
+     "options": [
+      "still ran",
+      "have still run",
+      "were still running",
+      "had still run"
+     ],
+     "correct_index": 2,
+     "explanation_ru": "Конкретный момент в прошлом плюс still требует past continuous: действие шло в тот момент.",
+     "difficulty": 1
+    },
+    {
+     "id": "c1_advanced_past_simple_past_continuous_past_perfect_04",
+     "kind": "choice",
+     "prompt": "I ___ to call you, but the meeting ran late.",
+     "options": [
+      "am going",
+      "go",
+      "was going",
+      "have gone"
+     ],
+     "correct_index": 2,
+     "explanation_ru": "Несостоявшийся план в прошлом выражается формой was going to; настоящее время рядом с ran невозможно.",
+     "difficulty": 1
+    },
+    {
+     "id": "c1_advanced_past_simple_past_continuous_past_perfect_05",
+     "kind": "gap",
+     "prompt": "When we finally deployed, the client ___ (already / leave) for the day.",
+     "answer": "had already left",
+     "accept": [
+      "had left already"
+     ],
+     "explanation_ru": "Клиент ушёл раньше момента деплоя, поэтому нужен past perfect с already между had и третьей формой.",
+     "difficulty": 2
+    },
+    {
+     "id": "c1_advanced_past_simple_past_continuous_past_perfect_06",
+     "kind": "gap",
+     "prompt": "The server ___ (run) for 400 days before it finally crashed.",
+     "answer": "had been running",
+     "accept": [
+      "had run"
+     ],
+     "explanation_ru": "Действие тянулось до момента в прошлом, поэтому основной ответ — past perfect continuous had been running, который подчёркивает непрерывность; простой past perfect had run здесь тоже принимается.",
+     "difficulty": 3
+    },
+    {
+     "id": "c1_advanced_past_simple_past_continuous_past_perfect_07",
+     "kind": "correct",
+     "prompt": "When I arrived, the meeting already started.",
+     "answer": "When I arrived, the meeting had already started.",
+     "accept": [
+      "When I arrived, the meeting had started already."
+     ],
+     "explanation_ru": "Собрание началось до моего прихода, значит нужен past perfect had already started.",
+     "difficulty": 2
+    },
+    {
+     "id": "c1_advanced_past_simple_past_continuous_past_perfect_08",
+     "kind": "order",
+     "prompt": "had / by / left / arrived / everyone / we / the time",
+     "answer": "By the time we arrived, everyone had left.",
+     "accept": [],
+     "explanation_ru": "By the time вводит придаточное в past simple, а более раннее действие в главной части стоит в past perfect.",
+     "difficulty": 3
+    }
+   ]
+  },
+  {
+   "id": "c1_advanced_present_simple_and_present_continuous",
+   "level": "C1",
+   "band": "C1",
+   "topic": "Tenses",
+   "title_en": "Advanced present simple and present continuous",
+   "source_slug": "advanced-present-simple-and-present-continuous",
+   "title_ru": "Продвинутое настоящее: simple и continuous",
+   "summary_ru": "На C1 выбор между simple и continuous зависит не от времени действия, а от взгляда говорящего. Present simple описывает постоянное положение дел, расписания, инструкции и содержание текста, а также работает в перформативах: I apologize, I promise, I swear, I agree. Present continuous показывает временное, незаконченное или меняющееся положение дел. Статические глаголы получают форму continuous, когда речь идёт о поведении или о процессе: you are being careful, I am seeing a lot of timeouts this week. В деловой переписке первая строка письма стоит в continuous: I am writing to confirm. Always и constantly с continuous добавляют оценку, чаще всего раздражение.",
+   "forms": [
+    "V1 / V1 + s (present simple)",
+    "am/is/are + V-ing (present continuous)",
+    "am/is/are being + adjective (временное поведение)",
+    "I apologize / I promise / I agree (перформативы, только simple)",
+    "am/is/are + always/constantly + V-ing (раздражение)"
+   ],
+   "examples": [
+    "You are being very quiet today.",
+    "I am writing to confirm our meeting on Thursday.",
+    "I swear I have never seen this error before.",
+    "First you clone the repo, then you run the setup script.",
+    "I am seeing a lot of timeouts in the logs this week.",
+    "He is constantly asking for exceptions to the rules."
+   ],
+   "ru_interference": "В русском нет продолженного времени, поэтому в письмах пишут простое: неверно I write to confirm the meeting. → верно I am writing to confirm the meeting.",
+   "prerequisites": [
+    "b1_present_simple_present_continuous",
+    "a2_stative_vs_dynamic_verbs_or_non_action_vs_action_verbs"
+   ],
+   "exercises": [
+    {
+     "id": "c1_advanced_present_simple_and_present_continuous_01",
+     "kind": "choice",
+     "prompt": "You ___ very quiet today. Is everything OK?",
+     "options": [
+      "are been",
+      "are being",
+      "is being",
+      "being"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Речь о временном поведении именно сегодня, поэтому нужна форма are being; остальные варианты грамматически невозможны.",
+     "difficulty": 1
+    },
+    {
+     "id": "c1_advanced_present_simple_and_present_continuous_02",
+     "kind": "choice",
+     "prompt": "I ___ that I have never seen this error before.",
+     "options": [
+      "swear",
+      "am swearing",
+      "was swearing",
+      "have been swearing"
+     ],
+     "correct_index": 0,
+     "explanation_ru": "Глагол swear здесь перформатив: само высказывание и есть действие, поэтому только present simple.",
+     "difficulty": 1
+    },
+    {
+     "id": "c1_advanced_present_simple_and_present_continuous_03",
+     "kind": "choice",
+     "prompt": "Sorry, I can't talk right now — I ___ a candidate.",
+     "options": [
+      "interview",
+      "have interviewed",
+      "am interviewing",
+      "was interviewing"
+     ],
+     "correct_index": 2,
+     "explanation_ru": "Действие происходит прямо сейчас и не закончено, значит present continuous.",
+     "difficulty": 1
+    },
+    {
+     "id": "c1_advanced_present_simple_and_present_continuous_04",
+     "kind": "choice",
+     "prompt": "First you ___ the repo, then you run the setup script.",
+     "options": [
+      "are cloning",
+      "clone",
+      "cloned",
+      "have cloned"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Инструкция описывает всегда одинаковую последовательность шагов, поэтому present simple.",
+     "difficulty": 2
+    },
+    {
+     "id": "c1_advanced_present_simple_and_present_continuous_05",
+     "kind": "gap",
+     "prompt": "Stop it. You ___ (be) childish.",
+     "answer": "are being",
+     "accept": [
+      "'re being"
+     ],
+     "explanation_ru": "Речь не о характере, а о поведении в данный момент, поэтому нужна форма are being.",
+     "difficulty": 2
+    },
+    {
+     "id": "c1_advanced_present_simple_and_present_continuous_06",
+     "kind": "correct",
+     "prompt": "I am agreeing with you that the API is too slow.",
+     "answer": "I agree with you that the API is too slow.",
+     "accept": [],
+     "explanation_ru": "Agree здесь выражает мнение, а не процесс, поэтому используется только present simple.",
+     "difficulty": 2
+    },
+    {
+     "id": "c1_advanced_present_simple_and_present_continuous_07",
+     "kind": "gap",
+     "prompt": "He ___ (constantly / ask) for exceptions to the rules.",
+     "answer": "is constantly asking",
+     "accept": [
+      "'s constantly asking",
+      "constantly asks"
+     ],
+     "explanation_ru": "Constantly с continuous передаёт раздражение; форма present simple с наречием тоже допустима и просто звучит нейтрально.",
+     "difficulty": 3
+    },
+    {
+     "id": "c1_advanced_present_simple_and_present_continuous_08",
+     "kind": "transform",
+     "prompt": "Rewrite as the opening line of a formal email: I write to ask about the invoice.",
+     "answer": "I am writing to ask about the invoice.",
+     "accept": [
+      "I'm writing to ask about the invoice."
+     ],
+     "explanation_ru": "Начало письма описывает то, что происходит в момент написания, поэтому нужен present continuous.",
+     "difficulty": 3
+    }
+   ]
+  },
+  {
+   "id": "c1_the_perfect_tenses_forms_and_uses",
+   "level": "C1",
+   "band": "C1",
+   "topic": "Tenses",
+   "title_en": "The perfect tenses: Forms and uses",
+   "source_slug": "the-perfect-tenses-forms-and-uses",
+   "title_ru": "Перфектные времена: формы и употребление",
+   "summary_ru": "Перфект всегда связывает действие с более поздней точкой отсчёта, а не просто помещает его в прошлое. Present perfect привязан к настоящему, поэтому он несовместим с точной точкой в прошлом (yesterday, in 2018), зато свободно идёт с since Monday, so far, already и never. Present perfect continuous подчёркивает длительность и процесс, а simple — результат и количество. Past perfect отправляет событие в точку до прошлого, future perfect — в точку до будущего момента: by this time next year she will have worked here for a decade. Перфект существует и в неличных формах: to have forgotten, having finished, must have deleted. Эти формы всегда означают, что действие произошло раньше главного глагола.",
+   "forms": [
+    "have/has + V3 (present perfect)",
+    "have/has been + V-ing (present perfect continuous)",
+    "had + V3 / had been + V-ing (past perfect)",
+    "will have + V3 (future perfect)",
+    "to have + V3 / having + V3 (перфектный инфинитив и причастие)"
+   ],
+   "examples": [
+    "By this time next year she will have worked here for a decade.",
+    "I have not seen him since we worked together in 2018.",
+    "Having reviewed the logs, we decided to roll back.",
+    "I have been waiting for their approval since Monday.",
+    "She had never worked with a remote team before she joined us.",
+    "By the time you read this, I will have already left the country."
+   ],
+   "ru_interference": "Русское «работаю здесь с 2019 года» переносят в настоящее время: неверно I work here since 2019. → верно I have worked here since 2019.",
+   "prerequisites": [
+    "a2_past_perfect",
+    "b1_present_perfect_simple_present_perfect_continuous",
+    "b2_future_continuous_and_future_perfect"
+   ],
+   "exercises": [
+    {
+     "id": "c1_the_perfect_tenses_forms_and_uses_01",
+     "kind": "choice",
+     "prompt": "By this time next year, she ___ here for a decade.",
+     "options": [
+      "will work",
+      "works",
+      "will have worked",
+      "has worked"
+     ],
+     "correct_index": 2,
+     "explanation_ru": "Точка отсчёта в будущем плюс for + срок требуют future perfect will have worked.",
+     "difficulty": 1
+    },
+    {
+     "id": "c1_the_perfect_tenses_forms_and_uses_02",
+     "kind": "choice",
+     "prompt": "I ___ him since we worked together in 2018.",
+     "options": [
+      "don't see",
+      "didn't see",
+      "am not seeing",
+      "haven't seen"
+     ],
+     "correct_index": 3,
+     "explanation_ru": "Since задаёт отрезок, который тянется до настоящего момента, поэтому нужен present perfect.",
+     "difficulty": 1
+    },
+    {
+     "id": "c1_the_perfect_tenses_forms_and_uses_03",
+     "kind": "choice",
+     "prompt": "___ reviewed the logs, we decided to roll back.",
+     "options": [
+      "Have",
+      "Having",
+      "To have",
+      "Had"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Перед главным действием стоит более раннее, и это выражается перфектным причастием having + V3.",
+     "difficulty": 2
+    },
+    {
+     "id": "c1_the_perfect_tenses_forms_and_uses_04",
+     "kind": "choice",
+     "prompt": "I ___ for their approval since Monday, and I am still waiting.",
+     "options": [
+      "wait",
+      "waited",
+      "have been waiting",
+      "am waiting"
+     ],
+     "correct_index": 2,
+     "explanation_ru": "Действие началось в прошлом, продолжается сейчас и подчёркнута длительность, поэтому present perfect continuous.",
+     "difficulty": 2
+    },
+    {
+     "id": "c1_the_perfect_tenses_forms_and_uses_05",
+     "kind": "gap",
+     "prompt": "She ___ (never / work) with a remote team before she joined us.",
+     "answer": "had never worked",
+     "accept": [],
+     "explanation_ru": "Действие относится к периоду до другого прошедшего события, значит past perfect с never между had и V3.",
+     "difficulty": 1
+    },
+    {
+     "id": "c1_the_perfect_tenses_forms_and_uses_06",
+     "kind": "correct",
+     "prompt": "I work here since 2019.",
+     "answer": "I have worked here since 2019.",
+     "accept": [
+      "I've worked here since 2019.",
+      "I have been working here since 2019.",
+      "I've been working here since 2019."
+     ],
+     "explanation_ru": "Since требует перфекта: период тянется от 2019 года до настоящего момента.",
+     "difficulty": 2
+    },
+    {
+     "id": "c1_the_perfect_tenses_forms_and_uses_07",
+     "kind": "gap",
+     "prompt": "By the time you read this, I ___ (already / leave) the country.",
+     "answer": "will have already left",
+     "accept": [
+      "will already have left",
+      "'ll have already left",
+      "'ll already have left"
+     ],
+     "explanation_ru": "By the time задаёт будущую точку отсчёта, поэтому нужен future perfect; already стоит внутри формы.",
+     "difficulty": 3
+    },
+    {
+     "id": "c1_the_perfect_tenses_forms_and_uses_08",
+     "kind": "transform",
+     "prompt": "Rewrite with a perfect participle: After we had checked the backups, we started the upgrade.",
+     "answer": "Having checked the backups, we started the upgrade.",
+     "accept": [],
+     "explanation_ru": "Придаточное с одинаковым подлежащим сворачивается в having + V3, а союз и подлежащее исчезают.",
+     "difficulty": 3
+    }
+   ]
+  },
+  {
+   "id": "c1_advanced_inversion_negative_adverbials_and_conditional_inversion",
+   "level": "C1",
+   "band": "C1",
+   "topic": "Word order & emphasis",
+   "title_en": "Advanced inversion: negative adverbials and conditional inversion",
+   "source_slug": "",
+   "title_ru": "Продвинутая инверсия и условная инверсия",
+   "summary_ru": "Если предложение начинается с отрицательного или ограничительного наречия, инверсия обязательна, а не факультативна. После never, rarely, seldom, little, not only, no sooner, hardly, only then, only after сначала идёт вспомогательный глагол, потом подлежащее. Если своего вспомогательного глагола нет, появляется do, does или did: Only then did I understand. No sooner требует than, а hardly и scarcely требуют when. В условных предложениях союз if можно убрать, вынеся вперёд had, were или should: Had we tested the migration, we would have caught the bug. Такая инверсия звучит формально, а отрицание в ней не сокращается: Had we not tested it.",
+   "forms": [
+    "Never/Rarely/Seldom + aux + S + V",
+    "Not only + aux + S + V, but S + also + V",
+    "No sooner + had + S + V3 + than ...",
+    "Hardly/Scarcely + had + S + V3 + when ...",
+    "Had/Were/Should + S + ... (условная инверсия без if)"
+   ],
+   "examples": [
+    "Never have I seen such a strange error message.",
+    "Not only did he miss the deadline, but he also lost the backup.",
+    "No sooner had we deployed than the alerts started.",
+    "Had we known about the bug earlier, we would have delayed the release.",
+    "Should you need anything, just send me a message.",
+    "Only then did I understand the problem."
+   ],
+   "ru_interference": "В русском свободный порядок слов и нет вспомогательного do, поэтому инверсию пропускают: неверно Never I have seen such a bug. → верно Never have I seen such a bug.",
+   "prerequisites": [
+    "b2_inversion_negative_adverbials",
+    "b2_second_third_conditionals",
+    "b2_all_conditionals_mixed_conditionals_alternatives_if_inversion"
+   ],
+   "exercises": [
+    {
+     "id": "c1_advanced_inversion_negative_adverbials_and_conditional_inversion_01",
+     "kind": "choice",
+     "prompt": "Never ___ such a strange error message.",
+     "options": [
+      "I have seen",
+      "have I seen",
+      "have seen I",
+      "did I saw"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "После начального never вспомогательный глагол выходит вперёд подлежащего: have I seen.",
+     "difficulty": 1
+    },
+    {
+     "id": "c1_advanced_inversion_negative_adverbials_and_conditional_inversion_02",
+     "kind": "choice",
+     "prompt": "Not only ___ the deadline, but he also lost the backup.",
+     "options": [
+      "he missed",
+      "did he missed",
+      "did he miss",
+      "missed he"
+     ],
+     "correct_index": 2,
+     "explanation_ru": "Not only в начале требует инверсии, а у смыслового глагола нет вспомогательного, поэтому появляется did.",
+     "difficulty": 1
+    },
+    {
+     "id": "c1_advanced_inversion_negative_adverbials_and_conditional_inversion_03",
+     "kind": "choice",
+     "prompt": "___ we known about the bug earlier, we would have delayed the release.",
+     "options": [
+      "If",
+      "Have",
+      "Had",
+      "Should"
+     ],
+     "correct_index": 2,
+     "explanation_ru": "Это условная инверсия вместо if we had known, поэтому в начале стоит had.",
+     "difficulty": 2
+    },
+    {
+     "id": "c1_advanced_inversion_negative_adverbials_and_conditional_inversion_04",
+     "kind": "choice",
+     "prompt": "No sooner had the site gone live ___ it went down again.",
+     "options": [
+      "when",
+      "that",
+      "than",
+      "then"
+     ],
+     "correct_index": 2,
+     "explanation_ru": "Оборот no sooner соединяется только с than; when используется с hardly и scarcely.",
+     "difficulty": 2
+    },
+    {
+     "id": "c1_advanced_inversion_negative_adverbials_and_conditional_inversion_05",
+     "kind": "gap",
+     "prompt": "Rarely ___ (a project / finish) on time in this company.",
+     "answer": "does a project finish",
+     "accept": [],
+     "explanation_ru": "После rarely в начале нужна инверсия со вспомогательным does, а смысловой глагол остаётся в первой форме.",
+     "difficulty": 2
+    },
+    {
+     "id": "c1_advanced_inversion_negative_adverbials_and_conditional_inversion_06",
+     "kind": "gap",
+     "prompt": "___ (should / you / need) anything, just send me a message.",
+     "answer": "Should you need",
+     "accept": [],
+     "explanation_ru": "Условие без if строится инверсией should + подлежащее + инфинитив без to.",
+     "difficulty": 3
+    },
+    {
+     "id": "c1_advanced_inversion_negative_adverbials_and_conditional_inversion_07",
+     "kind": "correct",
+     "prompt": "Only then I understood the problem.",
+     "answer": "Only then did I understand the problem.",
+     "accept": [],
+     "explanation_ru": "Ограничительное only then в начале требует инверсии, а вспомогательного глагола нет, поэтому вставляется did.",
+     "difficulty": 1
+    },
+    {
+     "id": "c1_advanced_inversion_negative_adverbials_and_conditional_inversion_08",
+     "kind": "order",
+     "prompt": "had / than / no / we / deployed / sooner / the alerts started",
+     "answer": "No sooner had we deployed than the alerts started.",
+     "accept": [],
+     "explanation_ru": "Схема no sooner + had + подлежащее + V3 + than обязательна и не допускает прямого порядка слов.",
+     "difficulty": 3
+    }
+   ]
+  },
+  {
+   "id": "c1_advanced_word_order",
+   "level": "C1",
+   "band": "C1",
+   "topic": "Word order & emphasis",
+   "title_en": "Advanced word order",
+   "source_slug": "advanced-word-order",
+   "title_ru": "Продвинутый порядок слов",
+   "summary_ru": "Английское предложение держится на жёсткой связке подлежащее — глагол — дополнение, и наречие не может встать между глаголом и его прямым дополнением. Наречия частоты и слова never, already, just стоят перед смысловым глаголом, но после глагола be и после первого вспомогательного глагола. Обстоятельства в конце предложения идут в порядке образ действия, место, время. При двух дополнениях короткое и известное идёт первым: I sent the client a summary или I sent a summary to the client. Only, even и just ставятся прямо перед тем словом, к которому относятся, и сдвиг меняет смысл. Длинные и новые по смыслу элементы уходят в конец предложения.",
+   "forms": [
+    "S + V + O (наречие не встаёт между V и O)",
+    "S + aux + adverb + V (have never used)",
+    "S + be + adverb (is always late)",
+    "V + IO + DO / V + DO + to IO (sent me the file / sent the file to me)",
+    "manner + place + time (quietly at home yesterday)"
+   ],
+   "examples": [
+    "Yesterday we quickly updated the documentation.",
+    "We have never used that library in production.",
+    "He gave me the file before the meeting.",
+    "Only the team lead can approve a production deploy.",
+    "She knows the codebase very well.",
+    "I can never remember his surname."
+   ],
+   "ru_interference": "Из русского «мне очень нравится» получается наречие между глаголом и дополнением: неверно I like very much this idea. → верно I like this idea very much.",
+   "prerequisites": [
+    "a1_basic_word_order_in_english",
+    "b2_position_of_adverbs"
+   ],
+   "exercises": [
+    {
+     "id": "c1_advanced_word_order_01",
+     "kind": "choice",
+     "prompt": "Yesterday we ___ the documentation.",
+     "options": [
+      "quickly updated",
+      "updated quickly",
+      "updated quick",
+      "quick updated"
+     ],
+     "correct_index": 0,
+     "explanation_ru": "Наречие не может стоять между глаголом и прямым дополнением, поэтому quickly уходит перед глаголом.",
+     "difficulty": 1
+    },
+    {
+     "id": "c1_advanced_word_order_02",
+     "kind": "choice",
+     "prompt": "He gave ___ before the meeting.",
+     "options": [
+      "to me the file",
+      "the file me",
+      "me the file",
+      "me to the file"
+     ],
+     "correct_index": 2,
+     "explanation_ru": "При двух дополнениях без предлога сначала идёт адресат, потом предмет: gave me the file.",
+     "difficulty": 1
+    },
+    {
+     "id": "c1_advanced_word_order_03",
+     "kind": "choice",
+     "prompt": "___ can approve a production deploy.",
+     "options": [
+      "Only can the team lead",
+      "Only the team lead",
+      "Only does the team lead",
+      "Only is the team lead"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Only относится к подлежащему и ставится прямо перед ним; инверсия после only с существительным здесь не нужна.",
+     "difficulty": 2
+    },
+    {
+     "id": "c1_advanced_word_order_04",
+     "kind": "choice",
+     "prompt": "We ___ that library in production.",
+     "options": [
+      "have used never",
+      "never used have",
+      "have never used",
+      "used have never"
+     ],
+     "correct_index": 2,
+     "explanation_ru": "Never стоит после первого вспомогательного глагола и перед смысловым: have never used.",
+     "difficulty": 2
+    },
+    {
+     "id": "c1_advanced_word_order_05",
+     "kind": "gap",
+     "prompt": "He ___ (always / arrive) late to stand-up.",
+     "answer": "always arrives",
+     "accept": [],
+     "explanation_ru": "Наречие частоты стоит перед смысловым глаголом в present simple, а окончание -s остаётся у глагола.",
+     "difficulty": 1
+    },
+    {
+     "id": "c1_advanced_word_order_06",
+     "kind": "gap",
+     "prompt": "I ___ (can / never / remember) his surname.",
+     "answer": "can never remember",
+     "accept": [],
+     "explanation_ru": "После модального глагола наречие never занимает среднюю позицию, а смысловой глагол идёт без to.",
+     "difficulty": 2
+    },
+    {
+     "id": "c1_advanced_word_order_07",
+     "kind": "correct",
+     "prompt": "I like very much this idea.",
+     "answer": "I like this idea very much.",
+     "accept": [
+      "I very much like this idea."
+     ],
+     "explanation_ru": "Very much нельзя вставлять между глаголом и дополнением: оно уходит в конец предложения.",
+     "difficulty": 3
+    },
+    {
+     "id": "c1_advanced_word_order_08",
+     "kind": "order",
+     "prompt": "well / very / knows / she / the codebase",
+     "answer": "She knows the codebase very well.",
+     "accept": [],
+     "explanation_ru": "Дополнение идёт сразу за глаголом, а оценка степени very well занимает конечную позицию.",
+     "difficulty": 3
+    }
+   ]
+  },
+  {
+   "id": "c1_cleft_sentences_and_fronting_for_information_structure",
+   "level": "C1",
+   "band": "C1",
+   "topic": "Word order & emphasis",
+   "title_en": "Cleft sentences and fronting for information structure",
+   "source_slug": "",
+   "title_ru": "Расщеплённые предложения и фронтинг",
+   "summary_ru": "Расщеплённое предложение позволяет выделить один элемент, не меняя интонацию и не нарушая порядок слов. It-cleft ставит фокус сразу после it is или it was, а остальное уходит в придаточное с that, who или which. Wh-cleft начинается с what, all, the reason или the thing и ставит фокус после is или was. Оборот all I need значит «только это и ничего больше»; относительное местоимение после all опускается или заменяется на that, но what после all невозможно. Схема the reason ... is that в письменной норме требует именно that, а не because. Фронтинг выносит в начало уже известную информацию, чтобы связать предложение с предыдущим. Сильная позиция в английском предложении — конец, и все эти конструкции решают, что туда попадёт.",
+   "forms": [
+    "It + be + focus + that/who/which + clause",
+    "What + S + V + is/was + focus",
+    "All (that) + S + V + is + focus",
+    "The reason (why) + S + V + is that + clause",
+    "Object/Adverbial + S + V (фронтинг)"
+   ],
+   "examples": [
+    "It was the cache, not the database, that caused the outage.",
+    "It was Maria who found the memory leak.",
+    "What we need is a clear owner for each service.",
+    "All I want is a stable build.",
+    "The reason why we missed the deadline is simple.",
+    "This part of the code nobody understands."
+   ],
+   "ru_interference": "Русское «то, что мне нужно» превращается в лишнее that what: неверно That what I need is a stable environment. → верно What I need is a stable environment.",
+   "prerequisites": [
+    "b2_cleft_sentences",
+    "b2_relative_clauses"
+   ],
+   "exercises": [
+    {
+     "id": "c1_cleft_sentences_and_fronting_for_information_structure_01",
+     "kind": "choice",
+     "prompt": "___ we need is a clear owner for each service.",
+     "options": [
+      "That",
+      "What",
+      "It",
+      "Which"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Wh-cleft начинается с what, которое одновременно вводит придаточное и является подлежащим предложения.",
+     "difficulty": 1
+    },
+    {
+     "id": "c1_cleft_sentences_and_fronting_for_information_structure_02",
+     "kind": "choice",
+     "prompt": "It was Maria ___ found the memory leak.",
+     "options": [
+      "which",
+      "what",
+      "who",
+      "whose"
+     ],
+     "correct_index": 2,
+     "explanation_ru": "В it-cleft с человеком в фокусе используется who; which и what здесь невозможны.",
+     "difficulty": 1
+    },
+    {
+     "id": "c1_cleft_sentences_and_fronting_for_information_structure_03",
+     "kind": "choice",
+     "prompt": "All ___ is a stable build.",
+     "options": [
+      "what I want",
+      "I want",
+      "that I want it",
+      "I want it"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "После all относительное местоимение либо опускается, либо становится that, но не what.",
+     "difficulty": 2
+    },
+    {
+     "id": "c1_cleft_sentences_and_fronting_for_information_structure_04",
+     "kind": "choice",
+     "prompt": "The reason ___ we missed the deadline is simple.",
+     "options": [
+      "why",
+      "what",
+      "which",
+      "because"
+     ],
+     "correct_index": 0,
+     "explanation_ru": "После reason в этой схеме стоит why или that, а местоимение можно и опустить; what и голое which в этой позиции невозможны, because вводит причину, а не определение к reason.",
+     "difficulty": 2
+    },
+    {
+     "id": "c1_cleft_sentences_and_fronting_for_information_structure_05",
+     "kind": "gap",
+     "prompt": "We need a rollback plan. Rewrite the beginning: ___ (what / we / need) is a rollback plan.",
+     "answer": "What we need",
+     "accept": [],
+     "explanation_ru": "Wh-cleft строится по схеме what + подлежащее + глагол, и только потом идёт is.",
+     "difficulty": 1
+    },
+    {
+     "id": "c1_cleft_sentences_and_fronting_for_information_structure_06",
+     "kind": "correct",
+     "prompt": "That what I need is a stable environment.",
+     "answer": "What I need is a stable environment.",
+     "accept": [],
+     "explanation_ru": "Слово that здесь лишнее: расщеплённое предложение начинается прямо с what.",
+     "difficulty": 2
+    },
+    {
+     "id": "c1_cleft_sentences_and_fronting_for_information_structure_07",
+     "kind": "gap",
+     "prompt": "He only had to renew the certificate. Rewrite: ___ (all / he / have to do) was renew the certificate.",
+     "answer": "All he had to do",
+     "accept": [],
+     "explanation_ru": "После all глагол ставится в прошедшем времени по контексту, а относительное местоимение опускается.",
+     "difficulty": 3
+    },
+    {
+     "id": "c1_cleft_sentences_and_fronting_for_information_structure_08",
+     "kind": "transform",
+     "prompt": "Rewrite as an it-cleft focusing on the cache: The cache caused the outage.",
+     "answer": "It was the cache that caused the outage.",
+     "accept": [
+      "It was the cache which caused the outage."
+     ],
+     "explanation_ru": "Фокусный элемент ставится после it was, а сказуемое уходит в придаточное с that.",
+     "difficulty": 3
+    }
+   ]
+  },
+  {
+   "id": "c1_emphatic_structures_do_did_what_clauses_it_clefts",
+   "level": "C1",
+   "band": "C1",
+   "topic": "Word order & emphasis",
+   "title_en": "Emphatic structures: do/did, what-clauses, it-clefts",
+   "source_slug": "",
+   "title_ru": "Усилительные конструкции: do/did, what, it",
+   "summary_ru": "В русском нужное слово легко выделить порядком слов, а в английском порядок слов жёсткий, поэтому для эмфазы есть отдельные грамматические средства. Do, does и did перед инфинитивом без to подтверждают факт, в котором собеседник сомневается: I did send the email. После do, does и did смысловой глагол стоит только в первой форме, никогда во второй. Do перед императивом делает просьбу более настойчивой и одновременно более вежливой: Do let me know. What-clause переносит фокус в конец предложения: What I did was restart the cluster. It-cleft выделяет один элемент, а оборот it was not until ... that подчёркивает, что событие произошло позже ожидаемого.",
+   "forms": [
+    "S + do/does/did + V1 (усиление утверждения)",
+    "Do + V1 (усиленный императив)",
+    "What + S + V + is/was + focus",
+    "It + be + focus + that/who + clause",
+    "It + was not until + time + that + clause"
+   ],
+   "examples": [
+    "I did tell him about the meeting, but he forgot anyway.",
+    "She does like the new design; she just hates the colors.",
+    "Do let me know if anything breaks.",
+    "What surprised everyone was the size of the bill.",
+    "It was not until the launch that we realized the risk.",
+    "She did warn us about the deadline."
+   ],
+   "ru_interference": "Русские частицы «же» и «ведь» переносят на did, но глагол оставляют в прошедшем времени: неверно I did understood the problem. → верно I did understand the problem.",
+   "prerequisites": [
+    "a2_auxiliary_verbs_do_be_and_have",
+    "b2_cleft_sentences"
+   ],
+   "exercises": [
+    {
+     "id": "c1_emphatic_structures_do_did_what_clauses_it_clefts_01",
+     "kind": "choice",
+     "prompt": "I ___ tell him about the meeting, but he forgot anyway.",
+     "options": [
+      "do",
+      "did",
+      "did told",
+      "have did"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Усиление в прошедшем времени даёт did, а смысловой глагол остаётся в первой форме.",
+     "difficulty": 1
+    },
+    {
+     "id": "c1_emphatic_structures_do_did_what_clauses_it_clefts_02",
+     "kind": "choice",
+     "prompt": "She ___ like the new design; she just hates the colors.",
+     "options": [
+      "do",
+      "does",
+      "doing",
+      "has"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Усилитель согласуется с подлежащим третьего лица в настоящем времени, поэтому does.",
+     "difficulty": 1
+    },
+    {
+     "id": "c1_emphatic_structures_do_did_what_clauses_it_clefts_03",
+     "kind": "choice",
+     "prompt": "Do ___ me know if anything breaks.",
+     "options": [
+      "lets",
+      "letting",
+      "to let",
+      "let"
+     ],
+     "correct_index": 3,
+     "explanation_ru": "После усилительного do в императиве идёт голый инфинитив без to и без окончаний.",
+     "difficulty": 1
+    },
+    {
+     "id": "c1_emphatic_structures_do_did_what_clauses_it_clefts_04",
+     "kind": "choice",
+     "prompt": "___ surprised everyone was the size of the bill.",
+     "options": [
+      "That",
+      "It",
+      "What",
+      "Which"
+     ],
+     "correct_index": 2,
+     "explanation_ru": "Это wh-cleft: what вводит придаточное подлежащее, а фокус переносится в конец после was.",
+     "difficulty": 2
+    },
+    {
+     "id": "c1_emphatic_structures_do_did_what_clauses_it_clefts_05",
+     "kind": "gap",
+     "prompt": "He says he never got the email, but I ___ (send, emphatic) it twice.",
+     "answer": "did send",
+     "accept": [],
+     "explanation_ru": "Противопоставление требует усилительного did плюс первой формы глагола.",
+     "difficulty": 2
+    },
+    {
+     "id": "c1_emphatic_structures_do_did_what_clauses_it_clefts_06",
+     "kind": "correct",
+     "prompt": "I did understood the problem, but I could not fix it.",
+     "answer": "I did understand the problem, but I could not fix it.",
+     "accept": [
+      "I did understand the problem, but I couldn't fix it."
+     ],
+     "explanation_ru": "После did смысловой глагол не может стоять во второй форме: нужен understand.",
+     "difficulty": 2
+    },
+    {
+     "id": "c1_emphatic_structures_do_did_what_clauses_it_clefts_07",
+     "kind": "gap",
+     "prompt": "We only realized the risk after the launch. Rewrite: It ___ (be / not / until) the launch that we realized the risk.",
+     "answer": "was not until",
+     "accept": [
+      "wasn't until"
+     ],
+     "explanation_ru": "Оборот it was not until ... that подчёркивает позднее осознание; сокращённая форма wasn't тоже верна.",
+     "difficulty": 3
+    },
+    {
+     "id": "c1_emphatic_structures_do_did_what_clauses_it_clefts_08",
+     "kind": "transform",
+     "prompt": "Add emphasis with do or did: She warned us about the deadline.",
+     "answer": "She did warn us about the deadline.",
+     "accept": [],
+     "explanation_ru": "Усилитель did встаёт перед глаголом, а сам глагол теряет показатель прошедшего времени.",
+     "difficulty": 3
+    }
+   ]
+  }
+ ]
+}

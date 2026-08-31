@@ -1,0 +1,1675 @@
+{
+  "items": [
+    {
+      "id": "a2_v_kitchen",
+      "level": "A2",
+      "word": "kitchen",
+      "pos": "noun",
+      "ipa_us": "/ˈkɪtʃən/",
+      "translation_ru": "кухня",
+      "example_en": "We usually have lunch in the office kitchen.",
+      "collocations": [
+        "a small kitchen",
+        "in the kitchen"
+      ],
+      "topic": "home"
+    },
+    {
+      "id": "a2_v_furniture",
+      "level": "A2",
+      "word": "furniture",
+      "pos": "noun",
+      "ipa_us": "/ˈfɝnɪtʃɚ/",
+      "translation_ru": "мебель",
+      "example_en": "The new office furniture arrives on Monday.",
+      "collocations": [
+        "office furniture",
+        "a piece of furniture"
+      ],
+      "topic": "home"
+    },
+    {
+      "id": "a2_v_apartment",
+      "level": "A2",
+      "word": "apartment",
+      "pos": "noun",
+      "ipa_us": "/əˈpɑrtmənt/",
+      "translation_ru": "квартира",
+      "example_en": "They rent a small apartment near the station.",
+      "collocations": [
+        "rent an apartment",
+        "a one-bedroom apartment"
+      ],
+      "topic": "home"
+    },
+    {
+      "id": "a2_v_towel",
+      "level": "A2",
+      "word": "towel",
+      "pos": "noun",
+      "ipa_us": "/ˈtaʊəl/",
+      "translation_ru": "полотенце",
+      "example_en": "Please take a clean towel from the shelf.",
+      "collocations": [
+        "a clean towel",
+        "a beach towel"
+      ],
+      "topic": "home"
+    },
+    {
+      "id": "a2_v_blanket",
+      "level": "A2",
+      "word": "blanket",
+      "pos": "noun",
+      "ipa_us": "/ˈblæŋkɪt/",
+      "translation_ru": "одеяло, плед",
+      "example_en": "It was cold at night, so I took another blanket.",
+      "collocations": [
+        "a warm blanket",
+        "under a blanket"
+      ],
+      "topic": "home"
+    },
+    {
+      "id": "a2_v_shelf",
+      "level": "A2",
+      "word": "shelf",
+      "pos": "noun",
+      "ipa_us": "/ʃɛlf/",
+      "translation_ru": "полка",
+      "example_en": "Put the empty boxes on the top shelf.",
+      "collocations": [
+        "the top shelf",
+        "on the shelf"
+      ],
+      "topic": "home"
+    },
+    {
+      "id": "a2_v_repair",
+      "level": "A2",
+      "word": "repair",
+      "pos": "verb",
+      "ipa_us": "/rɪˈpɛr/",
+      "translation_ru": "чинить, ремонтировать",
+      "example_en": "A man came to repair our washing machine.",
+      "collocations": [
+        "repair a car",
+        "repair a roof"
+      ],
+      "topic": "home"
+    },
+    {
+      "id": "a2_v_tidy",
+      "level": "A2",
+      "word": "tidy",
+      "pos": "adjective",
+      "ipa_us": "/ˈtaɪdi/",
+      "translation_ru": "аккуратный, опрятный",
+      "example_en": "My desk is tidy because I clean it every Friday.",
+      "collocations": [
+        "a tidy room",
+        "keep something tidy"
+      ],
+      "topic": "home"
+    },
+    {
+      "id": "a2_v_noisy",
+      "level": "A2",
+      "word": "noisy",
+      "pos": "adjective",
+      "ipa_us": "/ˈnɔɪzi/",
+      "translation_ru": "шумный",
+      "example_en": "The street is very noisy in the morning.",
+      "collocations": [
+        "a noisy street",
+        "noisy neighbors"
+      ],
+      "topic": "home"
+    },
+    {
+      "id": "a2_v_quiet",
+      "level": "A2",
+      "word": "quiet",
+      "pos": "adjective",
+      "ipa_us": "/ˈkwaɪət/",
+      "translation_ru": "тихий, спокойный",
+      "example_en": "I need a quiet room for the video call.",
+      "collocations": [
+        "a quiet place",
+        "keep quiet"
+      ],
+      "topic": "home"
+    },
+    {
+      "id": "a2_v_comfortable",
+      "level": "A2",
+      "word": "comfortable",
+      "pos": "adjective",
+      "ipa_us": "/ˈkʌmftɚbəl/",
+      "translation_ru": "удобный, комфортный",
+      "example_en": "This chair is comfortable, so I can work all day.",
+      "collocations": [
+        "a comfortable chair",
+        "feel comfortable"
+      ],
+      "topic": "home"
+    },
+    {
+      "id": "a2_v_wash",
+      "level": "A2",
+      "word": "wash",
+      "pos": "verb",
+      "ipa_us": "/wɑʃ/",
+      "translation_ru": "мыть, стирать",
+      "example_en": "I wash the dishes after dinner.",
+      "collocations": [
+        "wash your hands",
+        "wash the dishes"
+      ],
+      "topic": "home"
+    },
+    {
+      "id": "a2_v_office",
+      "level": "A2",
+      "word": "office",
+      "pos": "noun",
+      "ipa_us": "/ˈɔfɪs/",
+      "translation_ru": "офис, кабинет",
+      "example_en": "Our office is on the fifth floor.",
+      "collocations": [
+        "go to the office",
+        "work in an office"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "a2_v_manager",
+      "level": "A2",
+      "word": "manager",
+      "pos": "noun",
+      "ipa_us": "/ˈmænɪdʒɚ/",
+      "translation_ru": "менеджер, руководитель",
+      "example_en": "My manager asked me to send the numbers today.",
+      "collocations": [
+        "a project manager",
+        "talk to the manager"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "a2_v_meeting",
+      "level": "A2",
+      "word": "meeting",
+      "pos": "noun",
+      "ipa_us": "/ˈmitɪŋ/",
+      "translation_ru": "встреча, совещание",
+      "example_en": "The meeting starts at ten and takes an hour.",
+      "collocations": [
+        "have a meeting",
+        "a short meeting"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "a2_v_task",
+      "level": "A2",
+      "word": "task",
+      "pos": "noun",
+      "ipa_us": "/tæsk/",
+      "translation_ru": "задача, задание",
+      "example_en": "This task is easy, but it takes a lot of time.",
+      "collocations": [
+        "a difficult task",
+        "finish a task"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "a2_v_team",
+      "level": "A2",
+      "word": "team",
+      "pos": "noun",
+      "ipa_us": "/tim/",
+      "translation_ru": "команда",
+      "example_en": "There are six people on our team.",
+      "collocations": [
+        "join a team",
+        "work in a team"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "a2_v_company",
+      "level": "A2",
+      "word": "company",
+      "pos": "noun",
+      "ipa_us": "/ˈkʌmpəni/",
+      "translation_ru": "компания, фирма",
+      "example_en": "She works for a big IT company.",
+      "collocations": [
+        "a big company",
+        "work for a company"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "a2_v_interview",
+      "level": "A2",
+      "word": "interview",
+      "pos": "noun",
+      "ipa_us": "/ˈɪntɚˌvju/",
+      "translation_ru": "собеседование, интервью",
+      "example_en": "I have a job interview on Thursday.",
+      "collocations": [
+        "a job interview",
+        "go to an interview"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "a2_v_boss",
+      "level": "A2",
+      "word": "boss",
+      "pos": "noun",
+      "ipa_us": "/bɔs/",
+      "translation_ru": "начальник, шеф",
+      "example_en": "My boss is friendly and always helps us.",
+      "collocations": [
+        "a good boss",
+        "ask your boss"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "a2_v_break",
+      "level": "A2",
+      "word": "break",
+      "pos": "noun",
+      "ipa_us": "/breɪk/",
+      "translation_ru": "перерыв, пауза",
+      "example_en": "Let's take a short break and drink some coffee.",
+      "collocations": [
+        "take a break",
+        "a lunch break"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "a2_v_busy",
+      "level": "A2",
+      "word": "busy",
+      "pos": "adjective",
+      "ipa_us": "/ˈbɪzi/",
+      "translation_ru": "занятой, загруженный",
+      "example_en": "Sorry, I am busy until three o'clock.",
+      "collocations": [
+        "a busy day",
+        "too busy"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "a2_v_useful",
+      "level": "A2",
+      "word": "useful",
+      "pos": "adjective",
+      "ipa_us": "/ˈjusfəl/",
+      "translation_ru": "полезный",
+      "example_en": "Your notes were very useful for the test.",
+      "collocations": [
+        "useful information",
+        "very useful"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "a2_v_project",
+      "level": "A2",
+      "word": "project",
+      "pos": "noun",
+      "ipa_us": "/ˈprɑdʒɛkt/",
+      "translation_ru": "проект",
+      "example_en": "We finished the project two days early.",
+      "collocations": [
+        "work on a project",
+        "a new project"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "a2_v_email",
+      "level": "A2",
+      "word": "email",
+      "pos": "noun",
+      "ipa_us": "/ˈiˌmeɪl/",
+      "translation_ru": "электронное письмо, почта",
+      "example_en": "I sent you an email with the file.",
+      "collocations": [
+        "send an email",
+        "check your email"
+      ],
+      "topic": "tech"
+    },
+    {
+      "id": "a2_v_password",
+      "level": "A2",
+      "word": "password",
+      "pos": "noun",
+      "ipa_us": "/ˈpæsˌwɝd/",
+      "translation_ru": "пароль",
+      "example_en": "Please change your password every month.",
+      "collocations": [
+        "a strong password",
+        "change a password"
+      ],
+      "topic": "tech"
+    },
+    {
+      "id": "a2_v_keyboard",
+      "level": "A2",
+      "word": "keyboard",
+      "pos": "noun",
+      "ipa_us": "/ˈkiˌbɔrd/",
+      "translation_ru": "клавиатура",
+      "example_en": "My keyboard is old and some keys do not work well.",
+      "collocations": [
+        "a new keyboard",
+        "type on a keyboard"
+      ],
+      "topic": "tech"
+    },
+    {
+      "id": "a2_v_screen",
+      "level": "A2",
+      "word": "screen",
+      "pos": "noun",
+      "ipa_us": "/skrin/",
+      "translation_ru": "экран",
+      "example_en": "The text is too small on this screen.",
+      "collocations": [
+        "a big screen",
+        "look at the screen"
+      ],
+      "topic": "tech"
+    },
+    {
+      "id": "a2_v_file",
+      "level": "A2",
+      "word": "file",
+      "pos": "noun",
+      "ipa_us": "/faɪl/",
+      "translation_ru": "файл",
+      "example_en": "Open the file and read the first page.",
+      "collocations": [
+        "open a file",
+        "send a file"
+      ],
+      "topic": "tech"
+    },
+    {
+      "id": "a2_v_printer",
+      "level": "A2",
+      "word": "printer",
+      "pos": "noun",
+      "ipa_us": "/ˈprɪntɚ/",
+      "translation_ru": "принтер",
+      "example_en": "The printer is not working again.",
+      "collocations": [
+        "an office printer",
+        "a color printer"
+      ],
+      "topic": "tech"
+    },
+    {
+      "id": "a2_v_message",
+      "level": "A2",
+      "word": "message",
+      "pos": "noun",
+      "ipa_us": "/ˈmɛsɪdʒ/",
+      "translation_ru": "сообщение",
+      "example_en": "She left a short message for you.",
+      "collocations": [
+        "send a message",
+        "get a message"
+      ],
+      "topic": "tech"
+    },
+    {
+      "id": "a2_v_download",
+      "level": "A2",
+      "word": "download",
+      "pos": "verb",
+      "ipa_us": "/ˈdaʊnˌloʊd/",
+      "translation_ru": "скачивать, загружать",
+      "example_en": "It takes ten minutes to download this video.",
+      "collocations": [
+        "download a file",
+        "download an app"
+      ],
+      "topic": "tech"
+    },
+    {
+      "id": "a2_v_connect",
+      "level": "A2",
+      "word": "connect",
+      "pos": "verb",
+      "ipa_us": "/kəˈnɛkt/",
+      "translation_ru": "соединять, подключать",
+      "example_en": "Connect the laptop to the big screen.",
+      "collocations": [
+        "connect to the internet",
+        "connect a cable"
+      ],
+      "topic": "tech"
+    },
+    {
+      "id": "a2_v_save",
+      "level": "A2",
+      "word": "save",
+      "pos": "verb",
+      "ipa_us": "/seɪv/",
+      "translation_ru": "сохранять, экономить",
+      "example_en": "Save your work before you close the program.",
+      "collocations": [
+        "save a file",
+        "save money"
+      ],
+      "topic": "tech"
+    },
+    {
+      "id": "a2_v_click",
+      "level": "A2",
+      "word": "click",
+      "pos": "verb",
+      "ipa_us": "/klɪk/",
+      "translation_ru": "нажимать, кликать",
+      "example_en": "Click the blue button to send the form.",
+      "collocations": [
+        "click a button",
+        "click here"
+      ],
+      "topic": "tech"
+    },
+    {
+      "id": "a2_v_update",
+      "level": "A2",
+      "word": "update",
+      "pos": "verb",
+      "ipa_us": "/ˌʌpˈdeɪt/",
+      "translation_ru": "обновлять",
+      "example_en": "Please update the app before Monday.",
+      "collocations": [
+        "update a program",
+        "update a list"
+      ],
+      "topic": "tech"
+    },
+    {
+      "id": "a2_v_price",
+      "level": "A2",
+      "word": "price",
+      "pos": "noun",
+      "ipa_us": "/praɪs/",
+      "translation_ru": "цена",
+      "example_en": "The price of the ticket is thirty dollars.",
+      "collocations": [
+        "a good price",
+        "a high price"
+      ],
+      "topic": "money"
+    },
+    {
+      "id": "a2_v_cheap",
+      "level": "A2",
+      "word": "cheap",
+      "pos": "adjective",
+      "ipa_us": "/tʃip/",
+      "translation_ru": "дешёвый",
+      "example_en": "This phone is cheap, but it works well.",
+      "collocations": [
+        "a cheap hotel",
+        "cheap tickets"
+      ],
+      "topic": "money"
+    },
+    {
+      "id": "a2_v_expensive",
+      "level": "A2",
+      "word": "expensive",
+      "pos": "adjective",
+      "ipa_us": "/ɪkˈspɛnsɪv/",
+      "translation_ru": "дорогой",
+      "example_en": "The restaurant near the office is too expensive.",
+      "collocations": [
+        "very expensive",
+        "an expensive car"
+      ],
+      "topic": "money"
+    },
+    {
+      "id": "a2_v_receipt",
+      "level": "A2",
+      "word": "receipt",
+      "pos": "noun",
+      "ipa_us": "/rɪˈsit/",
+      "translation_ru": "чек, квитанция",
+      "example_en": "Keep the receipt if you want to return the shoes.",
+      "collocations": [
+        "keep the receipt",
+        "ask for a receipt"
+      ],
+      "topic": "money"
+    },
+    {
+      "id": "a2_v_discount",
+      "level": "A2",
+      "word": "discount",
+      "pos": "noun",
+      "ipa_us": "/ˈdɪsˌkaʊnt/",
+      "translation_ru": "скидка",
+      "example_en": "Students get a ten percent discount here.",
+      "collocations": [
+        "get a discount",
+        "a big discount"
+      ],
+      "topic": "money"
+    },
+    {
+      "id": "a2_v_cash",
+      "level": "A2",
+      "word": "cash",
+      "pos": "noun",
+      "ipa_us": "/kæʃ/",
+      "translation_ru": "наличные",
+      "example_en": "Can I pay in cash or only by card?",
+      "collocations": [
+        "pay in cash",
+        "have some cash"
+      ],
+      "topic": "money"
+    },
+    {
+      "id": "a2_v_sale",
+      "level": "A2",
+      "word": "sale",
+      "pos": "noun",
+      "ipa_us": "/seɪl/",
+      "translation_ru": "распродажа, продажа",
+      "example_en": "I bought this jacket in a winter sale.",
+      "collocations": [
+        "on sale",
+        "a summer sale"
+      ],
+      "topic": "money"
+    },
+    {
+      "id": "a2_v_customer",
+      "level": "A2",
+      "word": "customer",
+      "pos": "noun",
+      "ipa_us": "/ˈkʌstəmɚ/",
+      "translation_ru": "клиент, покупатель",
+      "example_en": "The customer asked for a bigger size.",
+      "collocations": [
+        "a happy customer",
+        "help a customer"
+      ],
+      "topic": "money"
+    },
+    {
+      "id": "a2_v_salary",
+      "level": "A2",
+      "word": "salary",
+      "pos": "noun",
+      "ipa_us": "/ˈsæləri/",
+      "translation_ru": "зарплата",
+      "example_en": "He gets his salary on the tenth of every month.",
+      "collocations": [
+        "a good salary",
+        "a monthly salary"
+      ],
+      "topic": "money"
+    },
+    {
+      "id": "a2_v_borrow",
+      "level": "A2",
+      "word": "borrow",
+      "pos": "verb",
+      "ipa_us": "/ˈbɑroʊ/",
+      "translation_ru": "брать взаймы, занимать (у кого-то)",
+      "example_en": "Can I borrow your pen for a minute?",
+      "collocations": [
+        "borrow money",
+        "borrow a book"
+      ],
+      "topic": "money"
+    },
+    {
+      "id": "a2_v_spend",
+      "level": "A2",
+      "word": "spend",
+      "pos": "verb",
+      "ipa_us": "/spɛnd/",
+      "translation_ru": "тратить, проводить",
+      "example_en": "We spend too much money on taxis.",
+      "collocations": [
+        "spend money",
+        "spend time"
+      ],
+      "topic": "money"
+    },
+    {
+      "id": "a2_v_cost",
+      "level": "A2",
+      "word": "cost",
+      "pos": "verb",
+      "ipa_us": "/kɔst/",
+      "translation_ru": "стоить",
+      "example_en": "How much does this laptop cost?",
+      "collocations": [
+        "cost a lot",
+        "cost money"
+      ],
+      "topic": "money"
+    },
+    {
+      "id": "a2_v_airport",
+      "level": "A2",
+      "word": "airport",
+      "pos": "noun",
+      "ipa_us": "/ˈɛrˌpɔrt/",
+      "translation_ru": "аэропорт",
+      "example_en": "Our train to the airport leaves at six.",
+      "collocations": [
+        "at the airport",
+        "go to the airport"
+      ],
+      "topic": "travel"
+    },
+    {
+      "id": "a2_v_flight",
+      "level": "A2",
+      "word": "flight",
+      "pos": "noun",
+      "ipa_us": "/flaɪt/",
+      "translation_ru": "рейс, полёт",
+      "example_en": "The flight to Berlin takes three hours.",
+      "collocations": [
+        "a direct flight",
+        "book a flight"
+      ],
+      "topic": "travel"
+    },
+    {
+      "id": "a2_v_luggage",
+      "level": "A2",
+      "word": "luggage",
+      "pos": "noun",
+      "ipa_us": "/ˈlʌgɪdʒ/",
+      "translation_ru": "багаж",
+      "example_en": "I only had one small piece of luggage.",
+      "collocations": [
+        "hand luggage",
+        "lose your luggage"
+      ],
+      "topic": "travel"
+    },
+    {
+      "id": "a2_v_passport",
+      "level": "A2",
+      "word": "passport",
+      "pos": "noun",
+      "ipa_us": "/ˈpæsˌpɔrt/",
+      "translation_ru": "паспорт",
+      "example_en": "Show your passport at the desk, please.",
+      "collocations": [
+        "show a passport",
+        "a new passport"
+      ],
+      "topic": "travel"
+    },
+    {
+      "id": "a2_v_journey",
+      "level": "A2",
+      "word": "journey",
+      "pos": "noun",
+      "ipa_us": "/ˈdʒɝni/",
+      "translation_ru": "поездка, дорога (сам путь)",
+      "example_en": "The journey home was long and slow.",
+      "collocations": [
+        "a long journey",
+        "a safe journey"
+      ],
+      "topic": "travel"
+    },
+    {
+      "id": "a2_v_trip",
+      "level": "A2",
+      "word": "trip",
+      "pos": "noun",
+      "ipa_us": "/trɪp/",
+      "translation_ru": "поездка, выезд (туда и обратно)",
+      "example_en": "We had a great trip to the mountains.",
+      "collocations": [
+        "a business trip",
+        "go on a trip"
+      ],
+      "topic": "travel"
+    },
+    {
+      "id": "a2_v_delay",
+      "level": "A2",
+      "word": "delay",
+      "pos": "noun",
+      "ipa_us": "/dɪˈleɪ/",
+      "translation_ru": "задержка, опоздание",
+      "example_en": "There was a two-hour delay at the airport.",
+      "collocations": [
+        "a long delay",
+        "a short delay"
+      ],
+      "topic": "travel"
+    },
+    {
+      "id": "a2_v_hotel",
+      "level": "A2",
+      "word": "hotel",
+      "pos": "noun",
+      "ipa_us": "/hoʊˈtɛl/",
+      "translation_ru": "отель, гостиница",
+      "example_en": "Our hotel was clean and near the station.",
+      "collocations": [
+        "stay at a hotel",
+        "book a hotel"
+      ],
+      "topic": "travel"
+    },
+    {
+      "id": "a2_v_arrive",
+      "level": "A2",
+      "word": "arrive",
+      "pos": "verb",
+      "ipa_us": "/əˈraɪv/",
+      "translation_ru": "прибывать, приезжать",
+      "example_en": "We arrive in Rome at eight in the evening.",
+      "collocations": [
+        "arrive on time",
+        "arrive late"
+      ],
+      "topic": "travel"
+    },
+    {
+      "id": "a2_v_book",
+      "level": "A2",
+      "word": "book",
+      "pos": "verb",
+      "ipa_us": "/bʊk/",
+      "translation_ru": "бронировать, заказывать",
+      "example_en": "I booked two tickets for Friday.",
+      "collocations": [
+        "book a table",
+        "book a room"
+      ],
+      "topic": "travel"
+    },
+    {
+      "id": "a2_v_abroad",
+      "level": "A2",
+      "word": "abroad",
+      "pos": "adverb",
+      "ipa_us": "/əˈbrɔd/",
+      "translation_ru": "за границей, за границу",
+      "example_en": "She works abroad for six months every year.",
+      "collocations": [
+        "go abroad",
+        "live abroad"
+      ],
+      "topic": "travel"
+    },
+    {
+      "id": "a2_v_crowded",
+      "level": "A2",
+      "word": "crowded",
+      "pos": "adjective",
+      "ipa_us": "/ˈkraʊdɪd/",
+      "translation_ru": "переполненный, людный",
+      "example_en": "The bus was crowded, so we walked.",
+      "collocations": [
+        "a crowded street",
+        "a crowded train"
+      ],
+      "topic": "travel"
+    },
+    {
+      "id": "a2_v_headache",
+      "level": "A2",
+      "word": "headache",
+      "pos": "noun",
+      "ipa_us": "/ˈhɛdˌeɪk/",
+      "translation_ru": "головная боль",
+      "example_en": "I have a headache, so I need some fresh air.",
+      "collocations": [
+        "have a headache",
+        "a bad headache"
+      ],
+      "topic": "health"
+    },
+    {
+      "id": "a2_v_medicine",
+      "level": "A2",
+      "word": "medicine",
+      "pos": "noun",
+      "ipa_us": "/ˈmɛdəsən/",
+      "translation_ru": "лекарство",
+      "example_en": "Take this medicine twice a day.",
+      "collocations": [
+        "take medicine",
+        "cold medicine"
+      ],
+      "topic": "health"
+    },
+    {
+      "id": "a2_v_dentist",
+      "level": "A2",
+      "word": "dentist",
+      "pos": "noun",
+      "ipa_us": "/ˈdɛntɪst/",
+      "translation_ru": "стоматолог, зубной врач",
+      "example_en": "I am going to the dentist after work.",
+      "collocations": [
+        "go to the dentist",
+        "see a dentist"
+      ],
+      "topic": "health"
+    },
+    {
+      "id": "a2_v_appointment",
+      "level": "A2",
+      "word": "appointment",
+      "pos": "noun",
+      "ipa_us": "/əˈpɔɪntmənt/",
+      "translation_ru": "приём, назначенная встреча",
+      "example_en": "I made an appointment with the doctor for Tuesday.",
+      "collocations": [
+        "make an appointment",
+        "a doctor's appointment"
+      ],
+      "topic": "health"
+    },
+    {
+      "id": "a2_v_pain",
+      "level": "A2",
+      "word": "pain",
+      "pos": "noun",
+      "ipa_us": "/peɪn/",
+      "translation_ru": "боль",
+      "example_en": "The pain in my back is better today.",
+      "collocations": [
+        "back pain",
+        "feel pain"
+      ],
+      "topic": "health"
+    },
+    {
+      "id": "a2_v_cough",
+      "level": "A2",
+      "word": "cough",
+      "pos": "noun",
+      "ipa_us": "/kɔf/",
+      "translation_ru": "кашель",
+      "example_en": "He has a cough and a high temperature.",
+      "collocations": [
+        "a bad cough",
+        "have a cough"
+      ],
+      "topic": "health"
+    },
+    {
+      "id": "a2_v_temperature",
+      "level": "A2",
+      "word": "temperature",
+      "pos": "noun",
+      "ipa_us": "/ˈtɛmprətʃɚ/",
+      "translation_ru": "температура",
+      "example_en": "The nurse took my temperature.",
+      "collocations": [
+        "a high temperature",
+        "take your temperature"
+      ],
+      "topic": "health"
+    },
+    {
+      "id": "a2_v_exercise",
+      "level": "A2",
+      "word": "exercise",
+      "pos": "noun",
+      "ipa_us": "/ˈɛksɚˌsaɪz/",
+      "translation_ru": "упражнение, зарядка",
+      "example_en": "Ten minutes of exercise a day is enough to start.",
+      "collocations": [
+        "get some exercise",
+        "light exercise"
+      ],
+      "topic": "health"
+    },
+    {
+      "id": "a2_v_hurt",
+      "level": "A2",
+      "word": "hurt",
+      "pos": "verb",
+      "ipa_us": "/hɝt/",
+      "translation_ru": "болеть, причинять боль",
+      "example_en": "My eyes hurt after eight hours in front of the screen.",
+      "collocations": [
+        "hurt your leg",
+        "it hurts"
+      ],
+      "topic": "health"
+    },
+    {
+      "id": "a2_v_tired",
+      "level": "A2",
+      "word": "tired",
+      "pos": "adjective",
+      "ipa_us": "/ˈtaɪɚd/",
+      "translation_ru": "уставший",
+      "example_en": "I was very tired after the long meeting.",
+      "collocations": [
+        "feel tired",
+        "get tired"
+      ],
+      "topic": "health"
+    },
+    {
+      "id": "a2_v_sick",
+      "level": "A2",
+      "word": "sick",
+      "pos": "adjective",
+      "ipa_us": "/sɪk/",
+      "translation_ru": "больной",
+      "example_en": "She is sick today and stays at home.",
+      "collocations": [
+        "feel sick",
+        "get sick"
+      ],
+      "topic": "health"
+    },
+    {
+      "id": "a2_v_healthy",
+      "level": "A2",
+      "word": "healthy",
+      "pos": "adjective",
+      "ipa_us": "/ˈhɛlθi/",
+      "translation_ru": "здоровый, полезный",
+      "example_en": "Fruit and vegetables are healthy food.",
+      "collocations": [
+        "a healthy diet",
+        "stay healthy"
+      ],
+      "topic": "health"
+    },
+    {
+      "id": "a2_v_cloudy",
+      "level": "A2",
+      "word": "cloudy",
+      "pos": "adjective",
+      "ipa_us": "/ˈklaʊdi/",
+      "translation_ru": "облачный, пасмурный",
+      "example_en": "It was cloudy all day, but it did not rain.",
+      "collocations": [
+        "a cloudy day",
+        "cloudy weather"
+      ],
+      "topic": "nature"
+    },
+    {
+      "id": "a2_v_sunny",
+      "level": "A2",
+      "word": "sunny",
+      "pos": "adjective",
+      "ipa_us": "/ˈsʌni/",
+      "translation_ru": "солнечный",
+      "example_en": "Sunday will be warm and sunny.",
+      "collocations": [
+        "a sunny day",
+        "sunny weather"
+      ],
+      "topic": "nature"
+    },
+    {
+      "id": "a2_v_wind",
+      "level": "A2",
+      "word": "wind",
+      "pos": "noun",
+      "ipa_us": "/wɪnd/",
+      "translation_ru": "ветер",
+      "example_en": "The wind was strong and cold last night.",
+      "collocations": [
+        "a strong wind",
+        "a cold wind"
+      ],
+      "topic": "nature"
+    },
+    {
+      "id": "a2_v_storm",
+      "level": "A2",
+      "word": "storm",
+      "pos": "noun",
+      "ipa_us": "/stɔrm/",
+      "translation_ru": "буря, гроза",
+      "example_en": "A big tree fell down during the storm.",
+      "collocations": [
+        "a big storm",
+        "a storm is coming"
+      ],
+      "topic": "nature"
+    },
+    {
+      "id": "a2_v_fog",
+      "level": "A2",
+      "word": "fog",
+      "pos": "noun",
+      "ipa_us": "/fɑg/",
+      "translation_ru": "туман",
+      "example_en": "There was thick fog on the road this morning.",
+      "collocations": [
+        "thick fog",
+        "heavy fog"
+      ],
+      "topic": "nature"
+    },
+    {
+      "id": "a2_v_wet",
+      "level": "A2",
+      "word": "wet",
+      "pos": "adjective",
+      "ipa_us": "/wɛt/",
+      "translation_ru": "мокрый, влажный",
+      "example_en": "My shoes are wet because of the rain.",
+      "collocations": [
+        "wet clothes",
+        "get wet"
+      ],
+      "topic": "nature"
+    },
+    {
+      "id": "a2_v_dry",
+      "level": "A2",
+      "word": "dry",
+      "pos": "adjective",
+      "ipa_us": "/draɪ/",
+      "translation_ru": "сухой",
+      "example_en": "Keep the box in a dry place.",
+      "collocations": [
+        "dry weather",
+        "dry clothes"
+      ],
+      "topic": "nature"
+    },
+    {
+      "id": "a2_v_warm",
+      "level": "A2",
+      "word": "warm",
+      "pos": "adjective",
+      "ipa_us": "/wɔrm/",
+      "translation_ru": "тёплый",
+      "example_en": "It is warm today, so you do not need a coat.",
+      "collocations": [
+        "warm weather",
+        "a warm jacket"
+      ],
+      "topic": "nature"
+    },
+    {
+      "id": "a2_v_forecast",
+      "level": "A2",
+      "word": "forecast",
+      "pos": "noun",
+      "ipa_us": "/ˈfɔrˌkæst/",
+      "translation_ru": "прогноз",
+      "example_en": "The forecast says it will rain tomorrow.",
+      "collocations": [
+        "the weather forecast",
+        "check the forecast"
+      ],
+      "topic": "nature"
+    },
+    {
+      "id": "a2_v_umbrella",
+      "level": "A2",
+      "word": "umbrella",
+      "pos": "noun",
+      "ipa_us": "/ʌmˈbrɛlə/",
+      "translation_ru": "зонт",
+      "example_en": "Take an umbrella because it is going to rain.",
+      "collocations": [
+        "take an umbrella",
+        "open an umbrella"
+      ],
+      "topic": "nature"
+    },
+    {
+      "id": "a2_v_freeze",
+      "level": "A2",
+      "word": "freeze",
+      "pos": "verb",
+      "ipa_us": "/friz/",
+      "translation_ru": "замерзать, замораживать",
+      "example_en": "Water freezes at zero degrees.",
+      "collocations": [
+        "freeze food",
+        "start to freeze"
+      ],
+      "topic": "nature"
+    },
+    {
+      "id": "a2_v_recipe",
+      "level": "A2",
+      "word": "recipe",
+      "pos": "noun",
+      "ipa_us": "/ˈrɛsəpi/",
+      "translation_ru": "рецепт",
+      "example_en": "This recipe is easy and takes twenty minutes.",
+      "collocations": [
+        "a simple recipe",
+        "follow a recipe"
+      ],
+      "topic": "food"
+    },
+    {
+      "id": "a2_v_delicious",
+      "level": "A2",
+      "word": "delicious",
+      "pos": "adjective",
+      "ipa_us": "/dɪˈlɪʃəs/",
+      "translation_ru": "вкусный",
+      "example_en": "The soup was delicious, thank you.",
+      "collocations": [
+        "look delicious",
+        "taste delicious"
+      ],
+      "topic": "food"
+    },
+    {
+      "id": "a2_v_fresh",
+      "level": "A2",
+      "word": "fresh",
+      "pos": "adjective",
+      "ipa_us": "/frɛʃ/",
+      "translation_ru": "свежий",
+      "example_en": "We bought fresh bread this morning.",
+      "collocations": [
+        "fresh fruit",
+        "fresh air"
+      ],
+      "topic": "food"
+    },
+    {
+      "id": "a2_v_taste",
+      "level": "A2",
+      "word": "taste",
+      "pos": "verb",
+      "ipa_us": "/teɪst/",
+      "translation_ru": "пробовать, иметь вкус",
+      "example_en": "Taste the sauce and tell me if it is good.",
+      "collocations": [
+        "taste good",
+        "taste bad"
+      ],
+      "topic": "food"
+    },
+    {
+      "id": "a2_v_menu",
+      "level": "A2",
+      "word": "menu",
+      "pos": "noun",
+      "ipa_us": "/ˈmɛnju/",
+      "translation_ru": "меню",
+      "example_en": "Can we see the menu, please?",
+      "collocations": [
+        "look at the menu",
+        "on the menu"
+      ],
+      "topic": "food"
+    },
+    {
+      "id": "a2_v_bill",
+      "level": "A2",
+      "word": "bill",
+      "pos": "noun",
+      "ipa_us": "/bɪl/",
+      "translation_ru": "счёт",
+      "example_en": "We paid the bill and left the cafe.",
+      "collocations": [
+        "pay the bill",
+        "ask for the bill"
+      ],
+      "topic": "food"
+    },
+    {
+      "id": "a2_v_hungry",
+      "level": "A2",
+      "word": "hungry",
+      "pos": "adjective",
+      "ipa_us": "/ˈhʌŋgri/",
+      "translation_ru": "голодный",
+      "example_en": "I am hungry, so let's have lunch now.",
+      "collocations": [
+        "feel hungry",
+        "very hungry"
+      ],
+      "topic": "food"
+    },
+    {
+      "id": "a2_v_snack",
+      "level": "A2",
+      "word": "snack",
+      "pos": "noun",
+      "ipa_us": "/snæk/",
+      "translation_ru": "перекус, лёгкая еда между приёмами пищи",
+      "example_en": "I always take a snack to the office.",
+      "collocations": [
+        "a quick snack",
+        "a healthy snack"
+      ],
+      "topic": "food"
+    },
+    {
+      "id": "a2_v_order",
+      "level": "A2",
+      "word": "order",
+      "pos": "verb",
+      "ipa_us": "/ˈɔrdɚ/",
+      "translation_ru": "заказывать",
+      "example_en": "We ordered pizza for the whole team.",
+      "collocations": [
+        "order food",
+        "order online"
+      ],
+      "topic": "food"
+    },
+    {
+      "id": "a2_v_boring",
+      "level": "A2",
+      "word": "boring",
+      "pos": "adjective",
+      "ipa_us": "/ˈbɔrɪŋ/",
+      "translation_ru": "скучный",
+      "example_en": "The film was boring, so we left early.",
+      "collocations": [
+        "a boring film",
+        "a boring job"
+      ],
+      "topic": "feelings"
+    },
+    {
+      "id": "a2_v_excited",
+      "level": "A2",
+      "word": "excited",
+      "pos": "adjective",
+      "ipa_us": "/ɪkˈsaɪtɪd/",
+      "translation_ru": "воодушевлённый, радостно взволнованный",
+      "example_en": "The kids are excited about the trip.",
+      "collocations": [
+        "excited about something",
+        "really excited"
+      ],
+      "topic": "feelings"
+    },
+    {
+      "id": "a2_v_terrible",
+      "level": "A2",
+      "word": "terrible",
+      "pos": "adjective",
+      "ipa_us": "/ˈtɛrəbəl/",
+      "translation_ru": "ужасный, кошмарный",
+      "example_en": "The weather was terrible all weekend.",
+      "collocations": [
+        "a terrible day",
+        "look terrible"
+      ],
+      "topic": "feelings"
+    },
+    {
+      "id": "a2_v_awful",
+      "level": "A2",
+      "word": "awful",
+      "pos": "adjective",
+      "ipa_us": "/ˈɔfəl/",
+      "translation_ru": "ужасный, отвратительный",
+      "example_en": "That coffee tastes awful.",
+      "collocations": [
+        "an awful smell",
+        "feel awful"
+      ],
+      "topic": "feelings"
+    },
+    {
+      "id": "a2_v_worried",
+      "level": "A2",
+      "word": "worried",
+      "pos": "adjective",
+      "ipa_us": "/ˈwɝid/",
+      "translation_ru": "обеспокоенный, встревоженный",
+      "example_en": "She is worried about the exam on Friday.",
+      "collocations": [
+        "worried about something",
+        "look worried"
+      ],
+      "topic": "feelings"
+    },
+    {
+      "id": "a2_v_afraid",
+      "level": "A2",
+      "word": "afraid",
+      "pos": "adjective",
+      "ipa_us": "/əˈfreɪd/",
+      "translation_ru": "испуганный, боящийся",
+      "example_en": "He is afraid of flying, so he takes the train.",
+      "collocations": [
+        "afraid of something",
+        "be afraid to do something"
+      ],
+      "topic": "feelings"
+    },
+    {
+      "id": "a2_v_glad",
+      "level": "A2",
+      "word": "glad",
+      "pos": "adjective",
+      "ipa_us": "/glæd/",
+      "translation_ru": "рад, довольный",
+      "example_en": "I am glad you can come to the party.",
+      "collocations": [
+        "glad to hear it",
+        "glad to help"
+      ],
+      "topic": "feelings"
+    },
+    {
+      "id": "a2_v_surprised",
+      "level": "A2",
+      "word": "surprised",
+      "pos": "adjective",
+      "ipa_us": "/sɚˈpraɪzd/",
+      "translation_ru": "удивлённый",
+      "example_en": "We were surprised by the good news.",
+      "collocations": [
+        "surprised by something",
+        "look surprised"
+      ],
+      "topic": "feelings"
+    },
+    {
+      "id": "a2_v_get_up",
+      "level": "A2",
+      "word": "get up",
+      "pos": "phrasal verb",
+      "ipa_us": "/gɛt ˈʌp/",
+      "translation_ru": "вставать, подниматься",
+      "example_en": "I get up at seven on weekdays.",
+      "collocations": [
+        "get up early",
+        "get up late"
+      ],
+      "topic": "time"
+    },
+    {
+      "id": "a2_v_wake_up",
+      "level": "A2",
+      "word": "wake up",
+      "pos": "phrasal verb",
+      "ipa_us": "/weɪk ˈʌp/",
+      "translation_ru": "просыпаться, будить",
+      "example_en": "I wake up before my alarm on Saturdays.",
+      "collocations": [
+        "wake up early",
+        "wake somebody up"
+      ],
+      "topic": "time"
+    },
+    {
+      "id": "a2_v_turn_on",
+      "level": "A2",
+      "word": "turn on",
+      "pos": "phrasal verb",
+      "ipa_us": "/tɝn ˈɑn/",
+      "translation_ru": "включать",
+      "example_en": "Turn on the light, please.",
+      "collocations": [
+        "turn on the TV",
+        "turn on the light"
+      ],
+      "topic": "tech"
+    },
+    {
+      "id": "a2_v_turn_off",
+      "level": "A2",
+      "word": "turn off",
+      "pos": "phrasal verb",
+      "ipa_us": "/tɝn ˈɔf/",
+      "translation_ru": "выключать",
+      "example_en": "Turn off your phone during the meeting.",
+      "collocations": [
+        "turn off the light",
+        "turn off the computer"
+      ],
+      "topic": "tech"
+    },
+    {
+      "id": "a2_v_look_for",
+      "level": "A2",
+      "word": "look for",
+      "pos": "phrasal verb",
+      "ipa_us": "/ˈlʊk fɔr/",
+      "translation_ru": "искать",
+      "example_en": "I am looking for my keys.",
+      "collocations": [
+        "look for a job",
+        "look for information"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "a2_v_find_out",
+      "level": "A2",
+      "word": "find out",
+      "pos": "phrasal verb",
+      "ipa_us": "/faɪnd ˈaʊt/",
+      "translation_ru": "выяснять, узнавать",
+      "example_en": "I want to find out why the site is slow.",
+      "collocations": [
+        "find out the truth",
+        "find out more"
+      ],
+      "topic": "study"
+    },
+    {
+      "id": "a2_v_give_up",
+      "level": "A2",
+      "word": "give up",
+      "pos": "phrasal verb",
+      "ipa_us": "/gɪv ˈʌp/",
+      "translation_ru": "бросать, сдаваться",
+      "example_en": "Do not give up after the first try.",
+      "collocations": [
+        "give up smoking",
+        "never give up"
+      ],
+      "topic": "feelings"
+    },
+    {
+      "id": "a2_v_put_on",
+      "level": "A2",
+      "word": "put on",
+      "pos": "phrasal verb",
+      "ipa_us": "/pʊt ˈɑn/",
+      "translation_ru": "надевать",
+      "example_en": "Put on your coat because it is cold outside.",
+      "collocations": [
+        "put on a jacket",
+        "put on shoes"
+      ],
+      "topic": "home"
+    },
+    {
+      "id": "a2_v_pick_up",
+      "level": "A2",
+      "word": "pick up",
+      "pos": "phrasal verb",
+      "ipa_us": "/pɪk ˈʌp/",
+      "translation_ru": "забирать, подбирать",
+      "example_en": "Can you pick me up at the station?",
+      "collocations": [
+        "pick up a friend",
+        "pick up the phone"
+      ],
+      "topic": "travel"
+    },
+    {
+      "id": "a2_v_check_in",
+      "level": "A2",
+      "word": "check in",
+      "pos": "phrasal verb",
+      "ipa_us": "/tʃɛk ˈɪn/",
+      "translation_ru": "регистрироваться",
+      "example_en": "We check in at the hotel at two o'clock.",
+      "collocations": [
+        "check in online",
+        "check in at the airport"
+      ],
+      "topic": "travel"
+    },
+    {
+      "id": "a2_v_log_in",
+      "level": "A2",
+      "word": "log in",
+      "pos": "phrasal verb",
+      "ipa_us": "/lɔg ˈɪn/",
+      "translation_ru": "входить в систему",
+      "example_en": "I cannot log in with my old password.",
+      "collocations": [
+        "log in to your account",
+        "log in again"
+      ],
+      "topic": "tech"
+    },
+    {
+      "id": "a2_v_fill_in",
+      "level": "A2",
+      "word": "fill in",
+      "pos": "phrasal verb",
+      "ipa_us": "/fɪl ˈɪn/",
+      "translation_ru": "заполнять",
+      "example_en": "Please fill in this form and sign it.",
+      "collocations": [
+        "fill in a form",
+        "fill in your name"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "a2_v_usually",
+      "level": "A2",
+      "word": "usually",
+      "pos": "adverb",
+      "ipa_us": "/ˈjuʒuəli/",
+      "translation_ru": "обычно",
+      "example_en": "I usually work from home on Fridays.",
+      "collocations": [],
+      "topic": "time"
+    },
+    {
+      "id": "a2_v_already",
+      "level": "A2",
+      "word": "already",
+      "pos": "adverb",
+      "ipa_us": "/ɔlˈrɛdi/",
+      "translation_ru": "уже",
+      "example_en": "I have already sent the report.",
+      "collocations": [],
+      "topic": "time"
+    },
+    {
+      "id": "a2_v_during",
+      "level": "A2",
+      "word": "during",
+      "pos": "preposition",
+      "ipa_us": "/ˈdʊrɪŋ/",
+      "translation_ru": "во время, в течение",
+      "example_en": "We talked about the plan during lunch.",
+      "collocations": [
+        "during the day",
+        "during the week"
+      ],
+      "topic": "time"
+    },
+    {
+      "id": "a2_v_until",
+      "level": "A2",
+      "word": "until",
+      "pos": "preposition",
+      "ipa_us": "/ənˈtɪl/",
+      "translation_ru": "до, пока не",
+      "example_en": "The shop is open until nine in the evening.",
+      "collocations": [
+        "until now",
+        "wait until"
+      ],
+      "topic": "time"
+    },
+    {
+      "id": "a2_v_while",
+      "level": "A2",
+      "word": "while",
+      "pos": "conjunction",
+      "ipa_us": "/waɪl/",
+      "translation_ru": "пока, в то время как",
+      "example_en": "I listen to music while I work.",
+      "collocations": [],
+      "topic": "time"
+    },
+    {
+      "id": "a2_v_on_time",
+      "level": "A2",
+      "word": "on time",
+      "pos": "phrase",
+      "ipa_us": "/ɑn ˈtaɪm/",
+      "translation_ru": "вовремя",
+      "example_en": "The train left on time.",
+      "collocations": [
+        "arrive on time",
+        "finish on time"
+      ],
+      "topic": "time"
+    },
+    {
+      "id": "a2_v_mistake",
+      "level": "A2",
+      "word": "mistake",
+      "pos": "noun",
+      "ipa_us": "/mɪˈsteɪk/",
+      "translation_ru": "ошибка",
+      "example_en": "I made a small mistake in the file name.",
+      "collocations": [
+        "make a mistake",
+        "a big mistake"
+      ],
+      "topic": "study"
+    },
+    {
+      "id": "a2_v_polite",
+      "level": "A2",
+      "word": "polite",
+      "pos": "adjective",
+      "ipa_us": "/pəˈlaɪt/",
+      "translation_ru": "вежливый",
+      "example_en": "He is always polite to customers.",
+      "collocations": [
+        "a polite answer",
+        "be polite to somebody"
+      ],
+      "topic": "people"
+    }
+  ]
+}

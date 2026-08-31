@@ -1,0 +1,518 @@
+{
+ "chunk": "c2_part2",
+ "points": [
+  {
+   "id": "c2_ellipsis_substitution_and_anaphora_across_a_text",
+   "level": "C2",
+   "band": "C2",
+   "topic": "Relative & participle clauses",
+   "title_en": "Ellipsis, substitution and anaphora across a text",
+   "source_slug": "",
+   "title_ru": "Эллипсис, субституция и анафора в тексте",
+   "summary_ru": "Связный английский текст избегает буквальных повторов тремя способами. Эллипсис опускает уже названное: после вспомогательного или модального глагола группа сказуемого просто исчезает (She can, but I can't), а после частицы to остаётся только to (I'd love to). Субституция ставит вместо повтора слово-заместитель: one/ones для существительного, do so / do it / do that для группы сказуемого, so и not для целого придаточного (I think so, I hope not). Анафора — это местоимения и определители (it, they, this, such, the latter), отсылающие к уже упомянутому; на уровне C2 у каждой такой отсылки должен быть один однозначный антецедент. Опустить можно только то, что читатель однозначно восстановит из предыдущей части; сама форма вспомогательного при этом может меняться: I haven't seen it, but I will. Do so предпочтителен для осознанного действия и в более формальном тексте, do it и do that — в разговорном. Слишком плотная цепочка замен делает абзац нечитаемым, поэтому через несколько предложений антецедент повторяют полным существительным.",
+   "forms": [
+    "aux/modal + пропуск группы сказуемого: She can, but I can't.",
+    "to + пропуск инфинитива: I'd love to.",
+    "do so / do it / do that — замена группы сказуемого",
+    "one / ones — замена исчисляемого существительного",
+    "so / not — замена целого придаточного после think, hope, believe, be afraid"
+   ],
+   "examples": [
+    "The build passes on Linux, and the tests do too.",
+    "Nobody wanted to run the release, but Anna agreed to.",
+    "The platform team moved to Postgres last year; our group will do so in June.",
+    "Our old laptops were slow; the new ones are much faster.",
+    "Has the outage been fixed? I believe so.",
+    "Will the client cancel the contract? I hope not."
+   ],
+   "ru_interference": "В русском нет эллипсиса на вспомогательном глаголе и нет заместителей so/not, поэтому русскоязычные переводят «думаю, да» буквально и повторяют весь глагол: неверно «Will it work? I think yes» → верно «I think so»; избыточно «They wanted me to stay, but I couldn't stay» → естественно «They wanted me to stay, but I couldn't».",
+   "prerequisites": [
+    "b2_ellipsis_and_substitution",
+    "c1_ellipsis_and_substitution_in_extended_discourse",
+    "c1_advanced_discourse_markers_and_cohesion"
+   ],
+   "exercises": [
+    {
+     "id": "c2_ellipsis_substitution_and_anaphora_across_a_text_01",
+     "kind": "choice",
+     "prompt": "Are we going to miss the deadline? I hope ___.",
+     "options": [
+      "no",
+      "not",
+      "it",
+      "that"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "После hope, think, believe придаточное заменяется на so или not; отрицательный смысл даёт «I hope not», а «I hope no» в английском невозможно.",
+     "difficulty": 1
+    },
+    {
+     "id": "c2_ellipsis_substitution_and_anaphora_across_a_text_02",
+     "kind": "choice",
+     "prompt": "My monitor is too old, so I'm buying a new ___.",
+     "options": [
+      "it",
+      "that",
+      "one",
+      "some"
+     ],
+     "correct_index": 2,
+     "explanation_ru": "Исчисляемое существительное после прилагательного заменяется на one; it, that и some после артикля a не ставятся.",
+     "difficulty": 1
+    },
+    {
+     "id": "c2_ellipsis_substitution_and_anaphora_across_a_text_03",
+     "kind": "choice",
+     "prompt": "The platform team migrated to Postgres last year, and our group is planning to ___ next quarter.",
+     "options": [
+      "so do",
+      "do so",
+      "make so",
+      "do it so"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Всю группу сказуемого migrate to Postgres заменяет формальное do so; порядок «so do» возможен только в инверсии, а make so и do it so не существуют.",
+     "difficulty": 2
+    },
+    {
+     "id": "c2_ellipsis_substitution_and_anaphora_across_a_text_04",
+     "kind": "choice",
+     "prompt": "Nobody wanted to run the tests manually, but Anna agreed ___.",
+     "options": [
+      "so",
+      "to",
+      "to do",
+      "that"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Повтор инфинитива опускается, остаётся голая частица to; agreed so и agreed that здесь невозможны, а to do требует дополнения.",
+     "difficulty": 2
+    },
+    {
+     "id": "c2_ellipsis_substitution_and_anaphora_across_a_text_05",
+     "kind": "gap",
+     "prompt": "A: Will you join the call at six? B: I'd like ___, but I have another meeting.",
+     "answer": "to",
+     "accept": [],
+     "explanation_ru": "После would like повтор join the call опускается, но частицу to сохраняют — иначе фраза оборвана.",
+     "difficulty": 1
+    },
+    {
+     "id": "c2_ellipsis_substitution_and_anaphora_across_a_text_06",
+     "kind": "gap",
+     "prompt": "The old dashboards were confusing; the new ___ are much clearer.",
+     "answer": "ones",
+     "accept": [],
+     "explanation_ru": "Заместитель существительного во множественном числе — ones; форма one дала бы рассогласование с are.",
+     "difficulty": 2
+    },
+    {
+     "id": "c2_ellipsis_substitution_and_anaphora_across_a_text_07",
+     "kind": "correct",
+     "prompt": "They wanted me to stay longer, but I couldn't to.",
+     "answer": "They wanted me to stay longer, but I couldn't.",
+     "accept": [
+      "They wanted me to stay longer, but I could not."
+     ],
+     "explanation_ru": "После модального глагола группа сказуемого опускается целиком, и частица to не нужна: to остаётся только при эллипсисе после смыслового глагола или would like (I'd love to).",
+     "difficulty": 3
+    },
+    {
+     "id": "c2_ellipsis_substitution_and_anaphora_across_a_text_08",
+     "kind": "transform",
+     "prompt": "Rewrite the second clause with ellipsis: She has finished the task, and he has finished the task too.",
+     "answer": "She has finished the task, and he has too.",
+     "accept": [
+      "She has finished the task, and he has, too.",
+      "She has finished the task, and he has as well.",
+      "She has finished the task, and so has he."
+     ],
+     "explanation_ru": "Вспомогательный has удерживает предложение, а повторяющееся finished the task опускается.",
+     "difficulty": 3
+    }
+   ]
+  },
+  {
+   "id": "c2_subtle_aspect_perfect_continuous_forms_in_narrative_and_argument",
+   "level": "C2",
+   "band": "C2",
+   "topic": "Tenses",
+   "title_en": "Subtle aspect: perfect continuous forms in narrative and argument",
+   "source_slug": "",
+   "title_ru": "Тонкости аспекта: перфектно-длительные формы",
+   "summary_ru": "Перфектно-длительные формы соединяют два значения: связь с точкой отсчёта (перфект) и протяжённость процесса (длительность). Present perfect continuous описывает действие, которое тянется до момента речи или только что закончилось и оставило видимый след: We have been rewriting the payment service since March. Past perfect continuous отматывает то же самое к точке в прошлом и обычно объясняет её причину: The queue had been growing for two hours before the alert fired. Future perfect continuous измеряет длительность к моменту в будущем: Next June I will have been working here for ten years. Простой перфект выбирают, когда важны результат, завершённость и количество (I have filed four reports), а перфектно-длительный — когда важны процесс, длительность и временность (I have been filing reports all day). Глаголы состояния know, belong, own, mean в этих формах не употребляются. В аргументации перфектно-длительная форма подаёт факт как продолжающуюся тенденцию и часто добавляет оценку: усталость, раздражение, упрёк.",
+   "forms": [
+    "have/has been + V-ing — present perfect continuous",
+    "had been + V-ing — past perfect continuous",
+    "will have been + V-ing — future perfect continuous",
+    "have/has + V3 (результат, количество) ↔ have/has been + V-ing (процесс, длительность)"
+   ],
+   "examples": [
+    "We have been rewriting the payment service since March, and it is still not done.",
+    "By the time the alert fired, the queue had been growing for two hours.",
+    "Next June I will have been working here for ten years.",
+    "She has written three reports this week.",
+    "She has been writing reports all week and she is exhausted.",
+    "His eyes were red because he had been staring at the screen all night."
+   ],
+   "ru_interference": "Русский несовершенный вид покрывает и процесс, и длительность, поэтому русскоязычные ставят настоящее или прошедшее время там, где нужен перфект: неверно «I work here since 2019» → верно «I have been working here since 2019»; и наоборот, тянут в continuous глаголы состояния: неверно «I have been knowing him for years» → верно «I have known him for years».",
+   "prerequisites": [
+    "b2_present_perfect_simple_continuous",
+    "b2_narrative_tenses",
+    "c1_the_perfect_tenses_forms_and_uses"
+   ],
+   "exercises": [
+    {
+     "id": "c2_subtle_aspect_perfect_continuous_forms_in_narrative_and_argument_01",
+     "kind": "choice",
+     "prompt": "I ___ for this company since 2019, and I still enjoy it.",
+     "options": [
+      "work",
+      "worked",
+      "have been working",
+      "am working"
+     ],
+     "correct_index": 2,
+     "explanation_ru": "Отрезок «с 2019 года и до сих пор» задаётся перфектом; при таком since в главной части невозможны ни present simple, ни past simple, ни present continuous.",
+     "difficulty": 1
+    },
+    {
+     "id": "c2_subtle_aspect_perfect_continuous_forms_in_narrative_and_argument_02",
+     "kind": "choice",
+     "prompt": "___ him since we were in college.",
+     "options": [
+      "I have been knowing",
+      "I have known",
+      "I know",
+      "I am knowing"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Know — глагол состояния и в continuous не ставится, а since требует перфекта, поэтому единственный вариант — have known.",
+     "difficulty": 1
+    },
+    {
+     "id": "c2_subtle_aspect_perfect_continuous_forms_in_narrative_and_argument_03",
+     "kind": "choice",
+     "prompt": "By the time the manager arrived, we ___ for over an hour.",
+     "options": [
+      "waited",
+      "have waited",
+      "had been waiting",
+      "were waiting"
+     ],
+     "correct_index": 2,
+     "explanation_ru": "Оборот by the time с прошедшим действием требует предпрошедшего, а длительность over an hour даёт именно past perfect continuous.",
+     "difficulty": 2
+    },
+    {
+     "id": "c2_subtle_aspect_perfect_continuous_forms_in_narrative_and_argument_04",
+     "kind": "choice",
+     "prompt": "I ___ four bug reports since lunch, and there are two more to go.",
+     "options": [
+      "have been filing",
+      "have filed",
+      "am filing",
+      "had filed"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Точное количество (four reports) — это результат, поэтому нужен простой перфект; continuous с посчитанным объёмом не употребляется.",
+     "difficulty": 2
+    },
+    {
+     "id": "c2_subtle_aspect_perfect_continuous_forms_in_narrative_and_argument_05",
+     "kind": "gap",
+     "prompt": "How long ___ (you / learn — present perfect continuous) Python?",
+     "answer": "have you been learning",
+     "accept": [],
+     "explanation_ru": "Вопрос о длительности процесса, идущего до сих пор: вспомогательный have выносится перед подлежащим, дальше been + V-ing.",
+     "difficulty": 1
+    },
+    {
+     "id": "c2_subtle_aspect_perfect_continuous_forms_in_narrative_and_argument_06",
+     "kind": "gap",
+     "prompt": "By December, they ___ (work — future perfect continuous) on the migration for a full year.",
+     "answer": "will have been working",
+     "accept": [
+      "'ll have been working"
+     ],
+     "explanation_ru": "К точке в будущем (by December) с указанием длительности ставится will have been + V-ing.",
+     "difficulty": 2
+    },
+    {
+     "id": "c2_subtle_aspect_perfect_continuous_forms_in_narrative_and_argument_07",
+     "kind": "correct",
+     "prompt": "I am working here since 2020.",
+     "answer": "I have been working here since 2020.",
+     "accept": [
+      "I've been working here since 2020.",
+      "I have worked here since 2020.",
+      "I've worked here since 2020."
+     ],
+     "explanation_ru": "Present continuous не сочетается с since: действие началось в прошлом и длится до сих пор, значит нужен перфект.",
+     "difficulty": 3
+    },
+    {
+     "id": "c2_subtle_aspect_perfect_continuous_forms_in_narrative_and_argument_08",
+     "kind": "transform",
+     "prompt": "Rewrite as one sentence in the present perfect continuous: I started fixing this bug three hours ago and I am still fixing it.",
+     "answer": "I have been fixing this bug for three hours.",
+     "accept": [
+      "I've been fixing this bug for three hours."
+     ],
+     "explanation_ru": "Незаконченный процесс с указанием длительности сворачивается в have been + V-ing, а ago меняется на for.",
+     "difficulty": 3
+    }
+   ]
+  },
+  {
+   "id": "c2_verb_patterns_with_contrastive_meaning_remember_regret_stop_try",
+   "level": "C2",
+   "band": "C2",
+   "topic": "Verb patterns",
+   "title_en": "Verb patterns with contrastive meaning: remember/regret/stop/try",
+   "source_slug": "",
+   "title_ru": "Глаголы с двумя значениями: remember, regret, stop, try",
+   "summary_ru": "Некоторые глаголы допускают и герундий, и инфинитив, но смысл при этом меняется полностью. Remember и forget с -ing относятся к воспоминанию о том, что уже произошло, а с инфинитивом — к обязанности, о которой нужно вспомнить заранее. Stop + -ing прекращает само действие, а stop + to V означает прерваться, чтобы сделать что-то другое: это обстоятельство цели, а не дополнение. Try + -ing предлагает способ или эксперимент, а try + to V подчёркивает усилие в чём-то трудном. Regret + -ing — сожаление о прошлом поступке, а regret to inform, regret to say, regret to tell — застывшая формула официального сообщения плохой новости. По той же модели работают go on, mean и need. Выбор здесь смысловой, а не формальный: по структуре предложения его определить нельзя, только по контексту.",
+   "forms": [
+    "remember/forget + V-ing = помнить о прошлом ↔ remember/forget + to V = не забыть сделать",
+    "stop + V-ing = прекратить ↔ stop + to V = остановиться, чтобы сделать",
+    "try + V-ing = попробовать способ ↔ try + to V = приложить усилие",
+    "regret + V-ing = сожалеть о поступке ↔ regret + to inform/say/tell = с сожалением сообщать",
+    "need + V-ing = нуждаться в (пассивный смысл) ↔ need + to V = быть должным"
+   ],
+   "examples": [
+    "I remember pushing that commit on Friday.",
+    "Remember to push your changes before you leave.",
+    "He stopped answering emails after six.",
+    "She stopped to answer a call and lost her train of thought.",
+    "Try restarting the router; that usually helps.",
+    "We regret to inform you that the position has been filled."
+   ],
+   "ru_interference": "В русском обе конструкции передаются одним инфинитивом или отглагольным существительным, поэтому выбор делается наугад: неверно «Please remember sending the invoice» → верно «Please remember to send the invoice»; неверно «She stopped talking to the client» (когда она прервалась, чтобы поговорить с клиентом) → верно «She stopped to talk to the client».",
+   "prerequisites": [
+    "b2_gerund_or_infinitive",
+    "b2_gerunds_infinitives_complex_forms"
+   ],
+   "exercises": [
+    {
+     "id": "c2_verb_patterns_with_contrastive_meaning_remember_regret_stop_try_01",
+     "kind": "choice",
+     "prompt": "Before you leave the office, remember ___ the alarm.",
+     "options": [
+      "setting",
+      "to set",
+      "set",
+      "having set"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Речь о будущей обязанности, а не о воспоминании, поэтому после remember идёт инфинитив с to.",
+     "difficulty": 1
+    },
+    {
+     "id": "c2_verb_patterns_with_contrastive_meaning_remember_regret_stop_try_02",
+     "kind": "choice",
+     "prompt": "I still remember ___ my first line of code when I was twelve.",
+     "options": [
+      "to write",
+      "write",
+      "writing",
+      "to have written"
+     ],
+     "correct_index": 2,
+     "explanation_ru": "Это воспоминание о реальном прошлом событии, значит после remember нужен герундий.",
+     "difficulty": 1
+    },
+    {
+     "id": "c2_verb_patterns_with_contrastive_meaning_remember_regret_stop_try_03",
+     "kind": "choice",
+     "prompt": "If the app freezes, try ___ it and opening it again.",
+     "options": [
+      "to close",
+      "closing",
+      "close",
+      "closed"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Однородный член opening задаёт форму: оба действия — предлагаемый способ решения, поэтому герундий.",
+     "difficulty": 2
+    },
+    {
+     "id": "c2_verb_patterns_with_contrastive_meaning_remember_regret_stop_try_04",
+     "kind": "choice",
+     "prompt": "We regret ___ you that the service will be discontinued next month.",
+     "options": [
+      "informing",
+      "to inform",
+      "inform",
+      "having informed"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Это формула официального сообщения новости в момент речи: regret to inform; герундий означал бы сожаление о ранее сделанном сообщении.",
+     "difficulty": 2
+    },
+    {
+     "id": "c2_verb_patterns_with_contrastive_meaning_remember_regret_stop_try_05",
+     "kind": "gap",
+     "prompt": "Please don't forget ___ (send) the invoice before Friday.",
+     "answer": "to send",
+     "accept": [],
+     "explanation_ru": "Напоминание о будущем деле требует инфинитива: forget to do — не сделать по забывчивости.",
+     "difficulty": 1
+    },
+    {
+     "id": "c2_verb_patterns_with_contrastive_meaning_remember_regret_stop_try_06",
+     "kind": "gap",
+     "prompt": "I clearly remember ___ (lock) the door, so someone else must have opened it.",
+     "answer": "locking",
+     "accept": [],
+     "explanation_ru": "Говорящий вспоминает уже совершённое действие, значит после remember стоит герундий.",
+     "difficulty": 2
+    },
+    {
+     "id": "c2_verb_patterns_with_contrastive_meaning_remember_regret_stop_try_07",
+     "kind": "correct",
+     "prompt": "Correct the sentence so that it means the driver pulled over in order to look at the radiator: The engine was overheating, so the driver stopped checking the radiator.",
+     "answer": "The engine was overheating, so the driver stopped to check the radiator.",
+     "accept": [],
+     "explanation_ru": "По смыслу водитель остановился, чтобы проверить радиатор: это цель, а не прекращение действия.",
+     "difficulty": 3
+    },
+    {
+     "id": "c2_verb_patterns_with_contrastive_meaning_remember_regret_stop_try_08",
+     "kind": "transform",
+     "prompt": "Rewrite with 'need' + -ing: This report has to be rewritten.",
+     "answer": "This report needs rewriting.",
+     "accept": [],
+     "explanation_ru": "Need с герундием передаёт пассивный смысл «нуждается в переделке»: подлежащее — то, над чем совершают действие, поэтому rewriting, а не to rewrite.",
+     "difficulty": 3
+    }
+   ]
+  },
+  {
+   "id": "c2_fronting_and_marked_word_order_for_information_structure",
+   "level": "C2",
+   "band": "C2",
+   "topic": "Word order & emphasis",
+   "title_en": "Fronting and marked word order for information structure",
+   "source_slug": "",
+   "title_ru": "Фронтинг и маркированный порядок слов",
+   "summary_ru": "Обычный порядок слов в английском — SVO, и любое отступление от него читается как сигнал об организации информации. Фронтинг выносит вперёд не-подлежащее (дополнение, обстоятельство, именную часть сказуемого), чтобы связать предложение с уже сказанным, а новое и тяжёлое оставить в конце: принципы end-focus и end-weight. Часть моделей требует инверсии, часть — нет. После обстоятельства места с глаголом положения или движения возможна полная инверсия без вспомогательного: In the corner stood an old server rack; но если подлежащее — местоимение, инверсии нет: In the corner it stood. После отрицательных и ограничительных наречий (never, rarely, seldom, hardly, not only, not until, only after) обязательна инверсия подлежащего и вспомогательного глагола, как в вопросе. Отдельные модели — so и such в начале (So great was the demand that the site went down) и причастие перед be (Attached is the report), а вынесенное вперёд дополнение инверсии не требует: That kind of risk we cannot take. Все эти конструкции эмфатичны и уместны в письменной, публицистической или официальной речи, а не в каждом втором предложении.",
+   "forms": [
+    "Object/Complement + S + V: That kind of risk we cannot take.",
+    "Adverbial of place + V + S (полная инверсия): In the corner stood an old printer.",
+    "Negative adverbial + aux + S + V: Rarely have I seen such a mess.",
+    "So/Such + ... + be + S + that ...: So great was the demand that the site went down.",
+    "Participle/Adjective + be + S: Attached is the updated report."
+   ],
+   "examples": [
+    "The details we can discuss later.",
+    "In the middle of the room stood an old server rack.",
+    "Attached are the log files you asked for.",
+    "Not until the second outage did anyone look at the logs.",
+    "So slow was the response that users started complaining.",
+    "Never before have I seen such a badly written spec."
+   ],
+   "ru_interference": "В русском порядок слов свободный и сам по себе решает задачу актуального членения, поэтому русскоязычные переносят его в английский: то забывают обязательную инверсию — неверно «Never I have seen this» → верно «Never have I seen this»; то калькируют порядок «дополнение — глагол — подлежащее», и предложение меняет смысл: неверно «This bug found our intern» (о том, что баг нашёл стажёр) → верно «Our intern found this bug» или «This bug was found by our intern».",
+   "prerequisites": [
+    "b2_cleft_sentences",
+    "b2_inversion_negative_adverbials",
+    "c1_cleft_sentences_and_fronting_for_information_structure",
+    "c1_advanced_word_order"
+   ],
+   "exercises": [
+    {
+     "id": "c2_fronting_and_marked_word_order_for_information_structure_01",
+     "kind": "choice",
+     "prompt": "Never before ___ so many duplicate tickets in a single day.",
+     "options": [
+      "I have seen",
+      "have I seen",
+      "I saw",
+      "did I saw"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "После вынесенного вперёд отрицательного наречия обязательна инверсия подлежащего и вспомогательного глагола, как в вопросе.",
+     "difficulty": 1
+    },
+    {
+     "id": "c2_fronting_and_marked_word_order_for_information_structure_02",
+     "kind": "choice",
+     "prompt": "In the corner of the lab ___ an old mainframe.",
+     "options": [
+      "stood",
+      "it stood",
+      "stood it",
+      "did stand"
+     ],
+     "correct_index": 0,
+     "explanation_ru": "После обстоятельства места идёт полная инверсия без вспомогательного: глагол, затем подлежащее an old mainframe.",
+     "difficulty": 2
+    },
+    {
+     "id": "c2_fronting_and_marked_word_order_for_information_structure_03",
+     "kind": "choice",
+     "prompt": "Not only ___ the deadline, but they also went over budget.",
+     "options": [
+      "they missed",
+      "did they miss",
+      "they did miss",
+      "missed they"
+     ],
+     "correct_index": 1,
+     "explanation_ru": "Not only в начале предложения требует вспомогательного did перед подлежащим и голого инфинитива после него.",
+     "difficulty": 1
+    },
+    {
+     "id": "c2_fronting_and_marked_word_order_for_information_structure_04",
+     "kind": "choice",
+     "prompt": "___ was the demand that the site went down within minutes.",
+     "options": [
+      "So great",
+      "Such great",
+      "Very great",
+      "Too great"
+     ],
+     "correct_index": 0,
+     "explanation_ru": "Конструкция следствия с прилагательным строится как so + прилагательное + be + подлежащее + that; such требует существительного, а very и too такой инверсии не допускают.",
+     "difficulty": 3
+    },
+    {
+     "id": "c2_fronting_and_marked_word_order_for_information_structure_05",
+     "kind": "gap",
+     "prompt": "Hardly ever ___ (I / take — present simple) a day off.",
+     "answer": "do I take",
+     "accept": [],
+     "explanation_ru": "Hardly ever — ограничительное наречие, поэтому в present simple появляется вспомогательный do перед подлежащим.",
+     "difficulty": 1
+    },
+    {
+     "id": "c2_fronting_and_marked_word_order_for_information_structure_06",
+     "kind": "gap",
+     "prompt": "Attached ___ (be) the two log files you asked for.",
+     "answer": "are",
+     "accept": [],
+     "explanation_ru": "При вынесенном вперёд причастии подлежащее стоит после глагола, и be согласуется с ним: two log files — множественное число.",
+     "difficulty": 2
+    },
+    {
+     "id": "c2_fronting_and_marked_word_order_for_information_structure_07",
+     "kind": "correct",
+     "prompt": "Only after the incident we realized how fragile the system was.",
+     "answer": "Only after the incident did we realize how fragile the system was.",
+     "accept": [],
+     "explanation_ru": "После ограничительного only after нужна инверсия: вспомогательный did перед подлежащим и голый инфинитив realize.",
+     "difficulty": 2
+    },
+    {
+     "id": "c2_fronting_and_marked_word_order_for_information_structure_08",
+     "kind": "transform",
+     "prompt": "Rewrite the sentence starting with 'Not until': We did not understand the risk until the audit.",
+     "answer": "Not until the audit did we understand the risk.",
+     "accept": [],
+     "explanation_ru": "Отрицание переносится в начало вместе с обстоятельством, а в главной части появляется инверсия did we understand.",
+     "difficulty": 3
+    }
+   ]
+  }
+ ]
+}

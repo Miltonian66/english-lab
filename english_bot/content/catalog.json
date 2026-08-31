@@ -1,0 +1,1770 @@
+[
+ {
+  "id": "a1_adjectives",
+  "level": "A1",
+  "band": "A1",
+  "topic": "Adjectives & adverbs",
+  "title_en": "Adjectives: Old, interesting, expensive, etc.",
+  "source_slug": "adjectives"
+ },
+ {
+  "id": "a1_adverbs_manner",
+  "level": "A1",
+  "band": "A1",
+  "topic": "Adjectives & adverbs",
+  "title_en": "Adverbs of manner (slowly) or adjectives (slow)?",
+  "source_slug": "adverbs-manner"
+ },
+ {
+  "id": "a1_comparative_adjectives",
+  "level": "A1",
+  "band": "A1",
+  "topic": "Adjectives & adverbs",
+  "title_en": "Comparative adjectives: Older than, more important than, etc.",
+  "source_slug": "comparative-adjectives"
+ },
+ {
+  "id": "a1_superlative_adjectives",
+  "level": "A1",
+  "band": "A1",
+  "topic": "Adjectives & adverbs",
+  "title_en": "Superlative adjectives: The oldest, the most important, etc.",
+  "source_slug": "superlative-adjectives"
+ },
+ {
+  "id": "a1_can_cant",
+  "level": "A1",
+  "band": "A1",
+  "topic": "Modals",
+  "title_en": "Can, can't: Ability, possibility, permission",
+  "source_slug": "can-cant"
+ },
+ {
+  "id": "a1_a_an_plurals",
+  "level": "A1",
+  "band": "A1",
+  "topic": "Nouns & articles",
+  "title_en": "A/an, plurals: Singular and plural forms",
+  "source_slug": "a-an-plurals"
+ },
+ {
+  "id": "a1_a_an_the_no_article",
+  "level": "A1",
+  "band": "A1",
+  "topic": "Nouns & articles",
+  "title_en": "A/an, the, no article: The use of articles in English",
+  "source_slug": "a-an-the-no-article"
+ },
+ {
+  "id": "a1_possessive_adjectives",
+  "level": "A1",
+  "band": "A1",
+  "topic": "Nouns & articles",
+  "title_en": "Possessive adjectives and subject pronouns (I/my, you/your, etc.)",
+  "source_slug": "possessive-adjectives"
+ },
+ {
+  "id": "a1_whose_possessive_s",
+  "level": "A1",
+  "band": "A1",
+  "topic": "Nouns & articles",
+  "title_en": "Whose, possessive 's: Whose is this? It's Mike's",
+  "source_slug": "whose-possessive-s"
+ },
+ {
+  "id": "a1_be_going_to_plans_predictions",
+  "level": "A1",
+  "band": "A1",
+  "topic": "Other structures",
+  "title_en": "Be going to: Plans and predictions",
+  "source_slug": "be-going-to-plans-predictions"
+ },
+ {
+  "id": "a1_have_got",
+  "level": "A1",
+  "band": "A1",
+  "topic": "Other structures",
+  "title_en": "Have got",
+  "source_slug": "have-got"
+ },
+ {
+  "id": "a1_the_difference_between_this_and_it",
+  "level": "A1",
+  "band": "A1",
+  "topic": "Other structures",
+  "title_en": "The difference between 'this' and 'it'",
+  "source_slug": "the-difference-between-this-and-it"
+ },
+ {
+  "id": "a1_would_like",
+  "level": "A1",
+  "band": "A1",
+  "topic": "Other structures",
+  "title_en": "Would you like...? I'd like...",
+  "source_slug": "would-like"
+ },
+ {
+  "id": "a1_at_in_on_prepositions_of_place",
+  "level": "A1",
+  "band": "A1",
+  "topic": "Prepositions",
+  "title_en": "At, in, on: Prepositions of place",
+  "source_slug": "at-in-on-prepositions-of-place"
+ },
+ {
+  "id": "a1_at_in_on_prepositions_time",
+  "level": "A1",
+  "band": "A1",
+  "topic": "Prepositions",
+  "title_en": "At, in, on: Prepositions of time",
+  "source_slug": "at-in-on-prepositions-time"
+ },
+ {
+  "id": "a1_next_to_under_between_in_front_behind_etc",
+  "level": "A1",
+  "band": "A1",
+  "topic": "Prepositions",
+  "title_en": "Next to, under, between, in front of, behind, over, etc.",
+  "source_slug": "next-to-under-between-in-front-behind-etc"
+ },
+ {
+  "id": "a1_object_pronouns",
+  "level": "A1",
+  "band": "A1",
+  "topic": "Pronouns & determiners",
+  "title_en": "Object pronouns vs subject pronouns: Me or I, she or her?",
+  "source_slug": "object-pronouns"
+ },
+ {
+  "id": "a1_there_is_there_are",
+  "level": "A1",
+  "band": "A1",
+  "topic": "Pronouns & determiners",
+  "title_en": "There is, there are / there was, there were",
+  "source_slug": "there-is-there-are"
+ },
+ {
+  "id": "a1_there_it",
+  "level": "A1",
+  "band": "A1",
+  "topic": "Pronouns & determiners",
+  "title_en": "There or It",
+  "source_slug": "there-it"
+ },
+ {
+  "id": "a1_this_that_these_those",
+  "level": "A1",
+  "band": "A1",
+  "topic": "Pronouns & determiners",
+  "title_en": "This, that, these, those",
+  "source_slug": "this-that-these-those"
+ },
+ {
+  "id": "a1_a_some_any_countable_uncountable",
+  "level": "A1",
+  "band": "A1",
+  "topic": "Quantifiers",
+  "title_en": "A, some, any: Countable and uncountable nouns",
+  "source_slug": "a-some-any-countable-uncountable"
+ },
+ {
+  "id": "a1_much_many_lot_little_few",
+  "level": "A1",
+  "band": "A1",
+  "topic": "Quantifiers",
+  "title_en": "Much, many, a lot of, a little, a few",
+  "source_slug": "much-many-lot-little-few"
+ },
+ {
+  "id": "a1_questions",
+  "level": "A1",
+  "band": "A1",
+  "topic": "Questions",
+  "title_en": "Questions: Word order and question words",
+  "source_slug": "questions"
+ },
+ {
+  "id": "a1_will_and_shall",
+  "level": "A1",
+  "band": "A1",
+  "topic": "Tenses",
+  "title_en": "'Will' and 'shall': Future",
+  "source_slug": "will-and-shall"
+ },
+ {
+  "id": "a1_adverbs_frequency",
+  "level": "A1",
+  "band": "A1",
+  "topic": "Tenses",
+  "title_en": "Adverbs of frequency with present simple",
+  "source_slug": "adverbs-frequency"
+ },
+ {
+  "id": "a1_past_simple_negatives_questions",
+  "level": "A1",
+  "band": "A1",
+  "topic": "Tenses",
+  "title_en": "Past simple: Negatives and questions",
+  "source_slug": "past-simple-negatives-questions"
+ },
+ {
+  "id": "a1_past_simple_regular_irregular",
+  "level": "A1",
+  "band": "A1",
+  "topic": "Tenses",
+  "title_en": "Past simple: Regular/irregular verbs",
+  "source_slug": "past-simple-regular-irregular"
+ },
+ {
+  "id": "a1_present_continuous",
+  "level": "A1",
+  "band": "A1",
+  "topic": "Tenses",
+  "title_en": "Present continuous: I'm doing, I'm not doing, Are you doing?",
+  "source_slug": "present-continuous"
+ },
+ {
+  "id": "a1_present_simple_forms_of_to_be",
+  "level": "A1",
+  "band": "A1",
+  "topic": "Tenses",
+  "title_en": "Present simple forms of 'to be': am/is/are",
+  "source_slug": "present-simple-forms-of-to-be"
+ },
+ {
+  "id": "a1_present_simple_present_continuous",
+  "level": "A1",
+  "band": "A1",
+  "topic": "Tenses",
+  "title_en": "Present simple or present continuous?",
+  "source_slug": "present-simple-present-continuous"
+ },
+ {
+  "id": "a1_present_simple",
+  "level": "A1",
+  "band": "A1",
+  "topic": "Tenses",
+  "title_en": "Present simple: I do, I don't, Do I?",
+  "source_slug": "present-simple"
+ },
+ {
+  "id": "a1_was_were",
+  "level": "A1",
+  "band": "A1",
+  "topic": "Tenses",
+  "title_en": "Was/were: Past simple of 'be'",
+  "source_slug": "was-were"
+ },
+ {
+  "id": "a1_verbs_infinitive_verbs_ing",
+  "level": "A1",
+  "band": "A1",
+  "topic": "Verb patterns",
+  "title_en": "Verbs + to + infinitive and verbs + -ing",
+  "source_slug": "verbs-infinitive-verbs-ing"
+ },
+ {
+  "id": "a1_basic_word_order_in_english",
+  "level": "A1",
+  "band": "A1",
+  "topic": "Word order & emphasis",
+  "title_en": "Basic word order in English",
+  "source_slug": "basic-word-order-in-english"
+ },
+ {
+  "id": "a1_imperative_sit_dont_talk",
+  "level": "A1",
+  "band": "A1",
+  "topic": "Word order & emphasis",
+  "title_en": "The imperative: Sit down! Don’t talk!",
+  "source_slug": "imperative-sit-dont-talk"
+ },
+ {
+  "id": "a2_comparative_superlative_adjectives_adverbs",
+  "level": "A2",
+  "band": "A2",
+  "topic": "Adjectives & adverbs",
+  "title_en": "Comparative and superlative adjectives and adverbs",
+  "source_slug": "comparative-superlative-adjectives-adverbs"
+ },
+ {
+  "id": "a2_second_conditional",
+  "level": "A2",
+  "band": "A2",
+  "topic": "Conditionals",
+  "title_en": "Second conditional",
+  "source_slug": "second-conditional"
+ },
+ {
+  "id": "a2_purpose_to_for",
+  "level": "A2",
+  "band": "A2",
+  "topic": "Connectors & discourse",
+  "title_en": "Expressing purpose with 'to' and 'for'",
+  "source_slug": "purpose-to-for"
+ },
+ {
+  "id": "a2_however_although_time_connectors",
+  "level": "A2",
+  "band": "A2",
+  "topic": "Connectors & discourse",
+  "title_en": "However, although, because, so, and time connectors",
+  "source_slug": "however-although-time-connectors"
+ },
+ {
+  "id": "a2_no_longer_any_longer_anymore",
+  "level": "A2",
+  "band": "A2",
+  "topic": "Connectors & discourse",
+  "title_en": "No longer, any longer, anymore",
+  "source_slug": "no-longer-any-longer-anymore"
+ },
+ {
+  "id": "a2_have_to_dont_have_to_must_mustnt",
+  "level": "A2",
+  "band": "A2",
+  "topic": "Modals",
+  "title_en": "Have to, don't have to, must, mustn't",
+  "source_slug": "have-to-dont-have-to-must-mustnt"
+ },
+ {
+  "id": "a2_may_and_might_whats_the_difference",
+  "level": "A2",
+  "band": "A2",
+  "topic": "Modals",
+  "title_en": "May and might: What's the difference?",
+  "source_slug": "may-and-might-whats-the-difference"
+ },
+ {
+  "id": "a2_might_might_not",
+  "level": "A2",
+  "band": "A2",
+  "topic": "Modals",
+  "title_en": "Might, might not: Possibility",
+  "source_slug": "might-might-not"
+ },
+ {
+  "id": "a2_should_shouldnt",
+  "level": "A2",
+  "band": "A2",
+  "topic": "Modals",
+  "title_en": "Should, shouldn't",
+  "source_slug": "should-shouldnt"
+ },
+ {
+  "id": "a2_subject_pronouns_object_pronouns_possessive_pronouns_possessive_adj",
+  "level": "A2",
+  "band": "A2",
+  "topic": "Nouns & articles",
+  "title_en": "Subject and object pronouns, possessive pronouns and adjectives",
+  "source_slug": "subject-pronouns-object-pronouns-possessive-pronouns-possessive-adjectives"
+ },
+ {
+  "id": "a2_do_vs_make_difference",
+  "level": "A2",
+  "band": "A2",
+  "topic": "Phrasal verbs & lexis",
+  "title_en": "Do vs Make: What's the difference?",
+  "source_slug": "do-vs-make-difference"
+ },
+ {
+  "id": "a2_use_verb_go_english",
+  "level": "A2",
+  "band": "A2",
+  "topic": "Phrasal verbs & lexis",
+  "title_en": "How to use the verb 'go' in English",
+  "source_slug": "use-verb-go-english"
+ },
+ {
+  "id": "a2_phrasal_verbs_transitive_and_intransitive_separable_and_inseparable",
+  "level": "A2",
+  "band": "A2",
+  "topic": "Phrasal verbs & lexis",
+  "title_en": "Phrasal verbs: Transitive / intransitive, separable / inseparable",
+  "source_slug": "phrasal-verbs-transitive-and-intransitive-separable-and-inseparable"
+ },
+ {
+  "id": "a2_the_different_uses_of_the_verb_get",
+  "level": "A2",
+  "band": "A2",
+  "topic": "Phrasal verbs & lexis",
+  "title_en": "The different uses of the verb 'get'",
+  "source_slug": "the-different-uses-of-the-verb-get"
+ },
+ {
+  "id": "a2_on_time_vs_in_time_at_the_end_vs_in_the_end",
+  "level": "A2",
+  "band": "A2",
+  "topic": "Prepositions",
+  "title_en": "On time vs In time, At the end vs In the end",
+  "source_slug": "on-time-vs-in-time-at-the-end-vs-in-the-end"
+ },
+ {
+  "id": "a2_prepositions_of_movement",
+  "level": "A2",
+  "band": "A2",
+  "topic": "Prepositions",
+  "title_en": "Prepositions of movement: Along, across, over, etc.",
+  "source_slug": "prepositions-of-movement"
+ },
+ {
+  "id": "a2_something_anything_nothing_etc",
+  "level": "A2",
+  "band": "A2",
+  "topic": "Pronouns & determiners",
+  "title_en": "Something, anything, nothing, etc.",
+  "source_slug": "something-anything-nothing-etc"
+ },
+ {
+  "id": "a2_most_most_of_the_most",
+  "level": "A2",
+  "band": "A2",
+  "topic": "Quantifiers",
+  "title_en": "Most, most of, the most",
+  "source_slug": "most-most-of-the-most"
+ },
+ {
+  "id": "a2_much_many_little_few_some_any",
+  "level": "A2",
+  "band": "A2",
+  "topic": "Quantifiers",
+  "title_en": "Much, many, little, few, some, any: Quantifiers",
+  "source_slug": "much-many-little-few-some-any"
+ },
+ {
+  "id": "a2_too_too_much_too_many_enough",
+  "level": "A2",
+  "band": "A2",
+  "topic": "Quantifiers",
+  "title_en": "Too, too much, too many, enough",
+  "source_slug": "too-too-much-too-many-enough"
+ },
+ {
+  "id": "a2_asking_questions_in_english",
+  "level": "A2",
+  "band": "A2",
+  "topic": "Questions",
+  "title_en": "Asking questions in English: Question forms",
+  "source_slug": "asking-questions-in-english"
+ },
+ {
+  "id": "a2_subject_questions_questions_preposition",
+  "level": "A2",
+  "band": "A2",
+  "topic": "Questions",
+  "title_en": "Subject questions, questions with preposition",
+  "source_slug": "subject-questions-questions-preposition"
+ },
+ {
+  "id": "a2_defining_relative_clauses_who_which_that_where",
+  "level": "A2",
+  "band": "A2",
+  "topic": "Relative & participle clauses",
+  "title_en": "Defining relative clauses: Who, which, that, where",
+  "source_slug": "defining-relative-clauses-who-which-that-where"
+ },
+ {
+  "id": "a2_reported_speech_indirect_speech",
+  "level": "A2",
+  "band": "A2",
+  "topic": "Reported speech",
+  "title_en": "Reported speech / Indirect speech",
+  "source_slug": "reported-speech-indirect-speech"
+ },
+ {
+  "id": "a2_will_vs_be_going_to",
+  "level": "A2",
+  "band": "A2",
+  "topic": "Tenses",
+  "title_en": "'Will' vs 'be going to': Future forms",
+  "source_slug": "will-vs-be-going-to"
+ },
+ {
+  "id": "a2_auxiliary_verbs_do_be_and_have",
+  "level": "A2",
+  "band": "A2",
+  "topic": "Tenses",
+  "title_en": "Auxiliary verbs: do, be and have",
+  "source_slug": "auxiliary-verbs-do-be-and-have"
+ },
+ {
+  "id": "a2_first_conditional_future_time_clauses",
+  "level": "A2",
+  "band": "A2",
+  "topic": "Tenses",
+  "title_en": "First conditional and future time clauses",
+  "source_slug": "first-conditional-future-time-clauses"
+ },
+ {
+  "id": "a2_past_continuous_past_simple",
+  "level": "A2",
+  "band": "A2",
+  "topic": "Tenses",
+  "title_en": "Past continuous and past simple",
+  "source_slug": "past-continuous-past-simple"
+ },
+ {
+  "id": "a2_past_perfect",
+  "level": "A2",
+  "band": "A2",
+  "topic": "Tenses",
+  "title_en": "Past perfect",
+  "source_slug": "past-perfect"
+ },
+ {
+  "id": "a2_past_simple_form_use",
+  "level": "A2",
+  "band": "A2",
+  "topic": "Tenses",
+  "title_en": "Past simple: Form and use",
+  "source_slug": "past-simple-form-use"
+ },
+ {
+  "id": "a2_present_past_simple_passive",
+  "level": "A2",
+  "band": "A2",
+  "topic": "Tenses",
+  "title_en": "Present and past simple passive: 'be' + past participle",
+  "source_slug": "present-past-simple-passive"
+ },
+ {
+  "id": "a2_present_continuous_future_arrangements",
+  "level": "A2",
+  "band": "A2",
+  "topic": "Tenses",
+  "title_en": "Present continuous for future arrangements",
+  "source_slug": "present-continuous-future-arrangements"
+ },
+ {
+  "id": "a2_present_perfect_or_past_simple",
+  "level": "A2",
+  "band": "A2",
+  "topic": "Tenses",
+  "title_en": "Present perfect or past simple?",
+  "source_slug": "present-perfect-or-past-simple"
+ },
+ {
+  "id": "a2_present_perfect",
+  "level": "A2",
+  "band": "A2",
+  "topic": "Tenses",
+  "title_en": "Present perfect: Form and use",
+  "source_slug": "present-perfect"
+ },
+ {
+  "id": "a2_present_simple_continuous",
+  "level": "A2",
+  "band": "A2",
+  "topic": "Tenses",
+  "title_en": "Present simple vs present continuous",
+  "source_slug": "present-simple-continuous"
+ },
+ {
+  "id": "a2_review_verb_tenses_a2",
+  "level": "A2",
+  "band": "A2",
+  "topic": "Tenses",
+  "title_en": "Review of all pre-intermediate verb tenses (CEFR A2)",
+  "source_slug": "review-verb-tenses-a2"
+ },
+ {
+  "id": "a2_stative_vs_dynamic_verbs_or_non_action_vs_action_verbs",
+  "level": "A2",
+  "band": "A2",
+  "topic": "Tenses",
+  "title_en": "Stative vs dynamic verbs (or non-action vs action verbs)",
+  "source_slug": "stative-vs-dynamic-verbs-or-non-action-vs-action-verbs"
+ },
+ {
+  "id": "a2_used_to",
+  "level": "A2",
+  "band": "A2",
+  "topic": "Tenses",
+  "title_en": "Used to, didn't use to: Past habits and states",
+  "source_slug": "used-to"
+ },
+ {
+  "id": "a2_infinitives_and_gerunds",
+  "level": "A2",
+  "band": "A2",
+  "topic": "Verb patterns",
+  "title_en": "Infinitives and gerunds: Verb patterns",
+  "source_slug": "infinitives-and-gerunds"
+ },
+ {
+  "id": "a2_verbs_with_two_objects",
+  "level": "A2",
+  "band": "A2",
+  "topic": "Verb patterns",
+  "title_en": "Verbs with two objects",
+  "source_slug": "verbs-with-two-objects"
+ },
+ {
+  "id": "a2_so_neither",
+  "level": "A2",
+  "band": "A2",
+  "topic": "Word order & emphasis",
+  "title_en": "So, neither: So am I, neither do I, etc.",
+  "source_slug": "so-neither"
+ },
+ {
+  "id": "b1_ed_ing_adjectives_adjectives_verbs",
+  "level": "B1",
+  "band": "B1",
+  "topic": "Adjectives & adverbs",
+  "title_en": "-Ed/-ing adjectives: Adjectives from verbs",
+  "source_slug": "ed-ing-adjectives-adjectives-verbs"
+ },
+ {
+  "id": "b1_adjective_preposition",
+  "level": "B1",
+  "band": "B1",
+  "topic": "Adjectives & adverbs",
+  "title_en": "Adjective + preposition: Dependent prepositions",
+  "source_slug": "adjective-preposition"
+ },
+ {
+  "id": "b1_comparative_superlative_adjectives_adverbs",
+  "level": "B1",
+  "band": "B1",
+  "topic": "Adjectives & adverbs",
+  "title_en": "Comparative and superlative adjectives and adverbs",
+  "source_slug": "comparative-superlative-adjectives-adverbs"
+ },
+ {
+  "id": "b1_compound_adjectives_with_numbers_a_two_day_trip",
+  "level": "B1",
+  "band": "B1",
+  "topic": "Adjectives & adverbs",
+  "title_en": "Compound adjectives with numbers: 'a two-day trip'",
+  "source_slug": "compound-adjectives-with-numbers-a-two-day-trip"
+ },
+ {
+  "id": "b1_so_such_such_a_so_much_so_many",
+  "level": "B1",
+  "band": "B1",
+  "topic": "Adjectives & adverbs",
+  "title_en": "So, such, such a, so much, so many",
+  "source_slug": "so-such-such-a-so-much-so-many"
+ },
+ {
+  "id": "b1_first_and_second_conditionals",
+  "level": "B1",
+  "band": "B1",
+  "topic": "Conditionals",
+  "title_en": "First and second conditionals",
+  "source_slug": "first-and-second-conditionals"
+ },
+ {
+  "id": "b1_second_conditional_unreal_situations",
+  "level": "B1",
+  "band": "B1",
+  "topic": "Conditionals",
+  "title_en": "Second conditional: Unreal situations",
+  "source_slug": "second-conditional-unreal-situations"
+ },
+ {
+  "id": "b1_third_conditional_past_unreal_situations",
+  "level": "B1",
+  "band": "B1",
+  "topic": "Conditionals",
+  "title_en": "Third conditional: Past unreal situations",
+  "source_slug": "third-conditional-past-unreal-situations"
+ },
+ {
+  "id": "b1_clauses_contrast_purpose_reason",
+  "level": "B1",
+  "band": "B1",
+  "topic": "Connectors & discourse",
+  "title_en": "Clauses of contrast, purpose and reason",
+  "source_slug": "clauses-contrast-purpose-reason"
+ },
+ {
+  "id": "b1_can_could_be_able_to",
+  "level": "B1",
+  "band": "B1",
+  "topic": "Modals",
+  "title_en": "Can, could, be able to: Ability and possibility",
+  "source_slug": "can-could-be-able-to"
+ },
+ {
+  "id": "b1_had_better_its_time",
+  "level": "B1",
+  "band": "B1",
+  "topic": "Modals",
+  "title_en": "Had better... It's time...",
+  "source_slug": "had-better-its-time"
+ },
+ {
+  "id": "b1_have_to_must_should",
+  "level": "B1",
+  "band": "B1",
+  "topic": "Modals",
+  "title_en": "Have to, must, should: Obligation, prohibition, necessity, advice",
+  "source_slug": "have-to-must-should"
+ },
+ {
+  "id": "b1_modal_verbs_of_deduction",
+  "level": "B1",
+  "band": "B1",
+  "topic": "Modals",
+  "title_en": "Modal verbs of deduction: Must, may, might, could, can't",
+  "source_slug": "modal-verbs-of-deduction"
+ },
+ {
+  "id": "b1_would_rather_would_sooner",
+  "level": "B1",
+  "band": "B1",
+  "topic": "Modals",
+  "title_en": "Would rather & Would sooner",
+  "source_slug": "would-rather-would-sooner"
+ },
+ {
+  "id": "b1_an_the_no_article",
+  "level": "B1",
+  "band": "B1",
+  "topic": "Nouns & articles",
+  "title_en": "A(n), the, no article",
+  "source_slug": "an-the-no-article"
+ },
+ {
+  "id": "b1_active_passive_voice",
+  "level": "B1",
+  "band": "B1",
+  "topic": "Passive",
+  "title_en": "Active and passive voice",
+  "source_slug": "active-passive-voice"
+ },
+ {
+  "id": "b1_passive_verb_forms",
+  "level": "B1",
+  "band": "B1",
+  "topic": "Passive",
+  "title_en": "Passive verb forms",
+  "source_slug": "passive-verb-forms"
+ },
+ {
+  "id": "b1_b1_phrasal_verbs_1_exercises_explanation",
+  "level": "B1",
+  "band": "B1",
+  "topic": "Phrasal verbs & lexis",
+  "title_en": "B1 Phrasal verbs 1: Exercises and explanation",
+  "source_slug": "b1-phrasal-verbs-1-exercises-explanation"
+ },
+ {
+  "id": "b1_b1_phrasal_verbs_2_exercises_and_explanation",
+  "level": "B1",
+  "band": "B1",
+  "topic": "Phrasal verbs & lexis",
+  "title_en": "B1 Phrasal verbs 2: Exercises and explanation",
+  "source_slug": "b1-phrasal-verbs-2-exercises-and-explanation"
+ },
+ {
+  "id": "b1_b1_phrasal_verbs_3_exercises_and_explanation",
+  "level": "B1",
+  "band": "B1",
+  "topic": "Phrasal verbs & lexis",
+  "title_en": "B1 Phrasal verbs 3: Exercises and explanation",
+  "source_slug": "b1-phrasal-verbs-3-exercises-and-explanation"
+ },
+ {
+  "id": "b1_during_for_while",
+  "level": "B1",
+  "band": "B1",
+  "topic": "Prepositions",
+  "title_en": "During, for, while",
+  "source_slug": "during-for-while"
+ },
+ {
+  "id": "b1_for_since_from_difference",
+  "level": "B1",
+  "band": "B1",
+  "topic": "Prepositions",
+  "title_en": "For, since, from: What's the difference?",
+  "source_slug": "for-since-from-difference"
+ },
+ {
+  "id": "b1_another_other_others_the_other_the_others",
+  "level": "B1",
+  "band": "B1",
+  "topic": "Pronouns & determiners",
+  "title_en": "Another, other, others, the other, the others",
+  "source_slug": "another-other-others-the-other-the-others"
+ },
+ {
+  "id": "b1_reflexive_pronouns_myself_yourself",
+  "level": "B1",
+  "band": "B1",
+  "topic": "Pronouns & determiners",
+  "title_en": "Reflexive pronouns: Myself, yourself, etc.",
+  "source_slug": "reflexive-pronouns-myself-yourself"
+ },
+ {
+  "id": "b1_all_both",
+  "level": "B1",
+  "band": "B1",
+  "topic": "Quantifiers",
+  "title_en": "All, both: Quantifiers",
+  "source_slug": "all-both"
+ },
+ {
+  "id": "b1_any_no_none",
+  "level": "B1",
+  "band": "B1",
+  "topic": "Quantifiers",
+  "title_en": "Any, no, none: Quantifiers",
+  "source_slug": "any-no-none"
+ },
+ {
+  "id": "b1_both_either_neither",
+  "level": "B1",
+  "band": "B1",
+  "topic": "Quantifiers",
+  "title_en": "Both, either, neither: Quantifiers",
+  "source_slug": "both-either-neither"
+ },
+ {
+  "id": "b1_much_many_lot_little_no",
+  "level": "B1",
+  "band": "B1",
+  "topic": "Quantifiers",
+  "title_en": "Much, many, a lot, little, few, some, any, no: Quantifiers",
+  "source_slug": "much-many-lot-little-no"
+ },
+ {
+  "id": "b1_question_tags",
+  "level": "B1",
+  "band": "B1",
+  "topic": "Questions",
+  "title_en": "Question tags: Aren't you? don't you?",
+  "source_slug": "question-tags"
+ },
+ {
+  "id": "b1_defining_and_non_defining_relative_clauses",
+  "level": "B1",
+  "band": "B1",
+  "topic": "Relative & participle clauses",
+  "title_en": "Defining and non-defining relative clauses",
+  "source_slug": "defining-and-non-defining-relative-clauses"
+ },
+ {
+  "id": "b1_reported_speech_indirect_speech",
+  "level": "B1",
+  "band": "B1",
+  "topic": "Reported speech",
+  "title_en": "Indirect speech / Reported speech",
+  "source_slug": "reported-speech-indirect-speech"
+ },
+ {
+  "id": "b1_first_conditional_future_time_clauses",
+  "level": "B1",
+  "band": "B1",
+  "topic": "Tenses",
+  "title_en": "First conditional, future time clauses",
+  "source_slug": "first-conditional-future-time-clauses"
+ },
+ {
+  "id": "b1_future_forms",
+  "level": "B1",
+  "band": "B1",
+  "topic": "Tenses",
+  "title_en": "Future forms: Will, be going to, present continuous",
+  "source_slug": "future-forms"
+ },
+ {
+  "id": "b1_past_simple_present_perfect",
+  "level": "B1",
+  "band": "B1",
+  "topic": "Tenses",
+  "title_en": "Past simple or present perfect?",
+  "source_slug": "past-simple-present-perfect"
+ },
+ {
+  "id": "b1_past_simple_past_continuous_past_perfect",
+  "level": "B1",
+  "band": "B1",
+  "topic": "Tenses",
+  "title_en": "Past simple, past continuous, past perfect",
+  "source_slug": "past-simple-past-continuous-past-perfect"
+ },
+ {
+  "id": "b1_present_perfect_simple_present_perfect_continuous",
+  "level": "B1",
+  "band": "B1",
+  "topic": "Tenses",
+  "title_en": "Present perfect simple and present perfect continuous",
+  "source_slug": "present-perfect-simple-present-perfect-continuous"
+ },
+ {
+  "id": "b1_present_simple_present_continuous",
+  "level": "B1",
+  "band": "B1",
+  "topic": "Tenses",
+  "title_en": "Present simple or present continuous",
+  "source_slug": "present-simple-present-continuous"
+ },
+ {
+  "id": "b1_review_verb_tenses_b1",
+  "level": "B1",
+  "band": "B1",
+  "topic": "Tenses",
+  "title_en": "Review of all intermediate verb tenses (CEFR B1)",
+  "source_slug": "review-verb-tenses-b1"
+ },
+ {
+  "id": "b1_usually_used_to_be_used_to_get_used_to",
+  "level": "B1",
+  "band": "B1",
+  "topic": "Tenses",
+  "title_en": "Usually, used to, be used to, get used to",
+  "source_slug": "usually-used-to-be-used-to-get-used-to"
+ },
+ {
+  "id": "b1_gerund_or_infinitive_do_to_do_doing",
+  "level": "B1",
+  "band": "B1",
+  "topic": "Verb patterns",
+  "title_en": "Gerund or infinitive: Do, to do, doing",
+  "source_slug": "gerund-or-infinitive-do-to-do-doing"
+ },
+ {
+  "id": "b1_verb_preposition",
+  "level": "B1",
+  "band": "B1",
+  "topic": "Verb patterns",
+  "title_en": "Verb + preposition: Dependent prepositions",
+  "source_slug": "verb-preposition"
+ },
+ {
+  "id": "b2_adjective_order",
+  "level": "B2",
+  "band": "B2.1",
+  "topic": "Adjectives & adverbs",
+  "title_en": "Adjective order",
+  "source_slug": "adjective-order"
+ },
+ {
+  "id": "b2_adjectives_without_noun",
+  "level": "B2",
+  "band": "B2.1",
+  "topic": "Adjectives & adverbs",
+  "title_en": "Adjectives without noun",
+  "source_slug": "adjectives-without-noun"
+ },
+ {
+  "id": "b2_position_of_adverbs",
+  "level": "B2",
+  "band": "B2.1",
+  "topic": "Adjectives & adverbs",
+  "title_en": "Position of adverbs and adverb phrases",
+  "source_slug": "position-of-adverbs"
+ },
+ {
+  "id": "b2_pretty_rather_quite_fairly_intensifiers",
+  "level": "B2",
+  "band": "B2.1",
+  "topic": "Adjectives & adverbs",
+  "title_en": "Pretty, rather, quite, fairly: Adverbs of degree",
+  "source_slug": "pretty-rather-quite-fairly-intensifiers"
+ },
+ {
+  "id": "b2_so_such_a_so_much_so_many",
+  "level": "B2",
+  "band": "B2.1",
+  "topic": "Adjectives & adverbs",
+  "title_en": "So, such (a), so much, so many",
+  "source_slug": "so-such-a-so-much-so-many"
+ },
+ {
+  "id": "b2_the_the_comparatives",
+  "level": "B2",
+  "band": "B2.1",
+  "topic": "Adjectives & adverbs",
+  "title_en": "The ... the ... comparatives",
+  "source_slug": "the-the-comparatives"
+ },
+ {
+  "id": "b2_second_third_conditionals",
+  "level": "B2",
+  "band": "B2.1",
+  "topic": "Conditionals",
+  "title_en": "Second and third conditionals: Unreal conditionals",
+  "source_slug": "second-third-conditionals"
+ },
+ {
+  "id": "b2_wishes_regrets",
+  "level": "B2",
+  "band": "B2.1",
+  "topic": "Conditionals",
+  "title_en": "Wishes and regrets: I wish/if only",
+  "source_slug": "wishes-regrets"
+ },
+ {
+  "id": "b2_already_still_yet_whats_the_difference",
+  "level": "B2",
+  "band": "B2.1",
+  "topic": "Connectors & discourse",
+  "title_en": "Already, still, yet: What's the difference?",
+  "source_slug": "already-still-yet-whats-the-difference"
+ },
+ {
+  "id": "b2_clauses_contrast_purpose",
+  "level": "B2",
+  "band": "B2.1",
+  "topic": "Connectors & discourse",
+  "title_en": "Clauses of contrast and purpose",
+  "source_slug": "clauses-contrast-purpose"
+ },
+ {
+  "id": "b2_double_negatives_in_english",
+  "level": "B2",
+  "band": "B2.1",
+  "topic": "Connectors & discourse",
+  "title_en": "Double negatives in English",
+  "source_slug": "double-negatives-in-english"
+ },
+ {
+  "id": "b2_likely_unlikely_bound_definitely_probably",
+  "level": "B2",
+  "band": "B2.1",
+  "topic": "Modals",
+  "title_en": "Likely, unlikely, bound, definitely, probably: Probability",
+  "source_slug": "likely-unlikely-bound-definitely-probably"
+ },
+ {
+  "id": "b2_neednt_dont_need_to_didnt_need_to_neednt_have",
+  "level": "B2",
+  "band": "B2.1",
+  "topic": "Modals",
+  "title_en": "Needn't, don't need to, didn't need to, needn't have",
+  "source_slug": "neednt-dont-need-to-didnt-need-to-neednt-have"
+ },
+ {
+  "id": "b2_past_modal_verbs",
+  "level": "B2",
+  "band": "B2.1",
+  "topic": "Modals",
+  "title_en": "Past modal verbs of deduction",
+  "source_slug": "past-modal-verbs"
+ },
+ {
+  "id": "b2_would_rather_would_prefer",
+  "level": "B2",
+  "band": "B2.1",
+  "topic": "Modals",
+  "title_en": "Would rather, would prefer: Expressing preference",
+  "source_slug": "would-rather-would-prefer"
+ },
+ {
+  "id": "b2_have_something_done",
+  "level": "B2",
+  "band": "B2.1",
+  "topic": "Passive",
+  "title_en": "Have something done",
+  "source_slug": "have-something-done"
+ },
+ {
+  "id": "b2_passive_reporting_verbs",
+  "level": "B2",
+  "band": "B2.1",
+  "topic": "Passive",
+  "title_en": "The passive with reporting verbs: It is said that ...",
+  "source_slug": "passive-reporting-verbs"
+ },
+ {
+  "id": "b2_do_or_make_which_is_it",
+  "level": "B2",
+  "band": "B2.1",
+  "topic": "Phrasal verbs & lexis",
+  "title_en": "Do or Make: Which is it?",
+  "source_slug": "do-or-make-which-is-it"
+ },
+ {
+  "id": "b2_whatever_whenever_wherever_whoever_however",
+  "level": "B2",
+  "band": "B2.1",
+  "topic": "Pronouns & determiners",
+  "title_en": "Whatever, whenever, wherever, whoever, however",
+  "source_slug": "whatever-whenever-wherever-whoever-however"
+ },
+ {
+  "id": "b2_quantifiers",
+  "level": "B2",
+  "band": "B2.1",
+  "topic": "Quantifiers",
+  "title_en": "Quantifiers: All, most, both, either, neither, any, no, none",
+  "source_slug": "quantifiers"
+ },
+ {
+  "id": "b2_questions_different_types",
+  "level": "B2",
+  "band": "B2.1",
+  "topic": "Questions",
+  "title_en": "Questions: Different types",
+  "source_slug": "questions-different-types"
+ },
+ {
+  "id": "b2_participle_adjectives",
+  "level": "B2",
+  "band": "B2.1",
+  "topic": "Relative & participle clauses",
+  "title_en": "Participles as adjectives: -ed/-ing adjectives",
+  "source_slug": "participle-adjectives"
+ },
+ {
+  "id": "b2_indirect_questions",
+  "level": "B2",
+  "band": "B2.1",
+  "topic": "Reported speech",
+  "title_en": "Indirect questions",
+  "source_slug": "indirect-questions"
+ },
+ {
+  "id": "b2_reporting_verbs",
+  "level": "B2",
+  "band": "B2.1",
+  "topic": "Reported speech",
+  "title_en": "Reporting verbs: Admit doing, refuse to do, etc.",
+  "source_slug": "reporting-verbs"
+ },
+ {
+  "id": "b2_auxiliary_verbs_different_uses",
+  "level": "B2",
+  "band": "B2.1",
+  "topic": "Tenses",
+  "title_en": "Auxiliary verbs: Different uses",
+  "source_slug": "auxiliary-verbs-different-uses"
+ },
+ {
+  "id": "b2_future_continuous_and_future_perfect",
+  "level": "B2",
+  "band": "B2.1",
+  "topic": "Tenses",
+  "title_en": "Future continuous and future perfect",
+  "source_slug": "future-continuous-and-future-perfect"
+ },
+ {
+  "id": "b2_narrative_tenses",
+  "level": "B2",
+  "band": "B2.1",
+  "topic": "Tenses",
+  "title_en": "Narrative tenses: All past tenses",
+  "source_slug": "narrative-tenses"
+ },
+ {
+  "id": "b2_present_perfect_simple_continuous",
+  "level": "B2",
+  "band": "B2.1",
+  "topic": "Tenses",
+  "title_en": "Present perfect simple or continuous",
+  "source_slug": "present-perfect-simple-continuous"
+ },
+ {
+  "id": "b2_review_verb_tenses_b1_b2",
+  "level": "B2",
+  "band": "B2.1",
+  "topic": "Tenses",
+  "title_en": "Review of all upper-intermediate verb tenses (CEFR B2.1)",
+  "source_slug": "review-verb-tenses-b1-b2"
+ },
+ {
+  "id": "b2_passive_voice_all_tenses",
+  "level": "B2",
+  "band": "B2.1",
+  "topic": "Tenses",
+  "title_en": "The passive voice: All tenses",
+  "source_slug": "passive-voice-all-tenses"
+ },
+ {
+  "id": "b2_used_to",
+  "level": "B2",
+  "band": "B2.1",
+  "topic": "Tenses",
+  "title_en": "Used to, be used to, get used to",
+  "source_slug": "used-to"
+ },
+ {
+  "id": "b2_when_i_do_vs_when_i_have_done",
+  "level": "B2",
+  "band": "B2.1",
+  "topic": "Tenses",
+  "title_en": "When I do vs When I have done: Future time clauses",
+  "source_slug": "when-i-do-vs-when-i-have-done"
+ },
+ {
+  "id": "b2_would_and_used_to",
+  "level": "B2",
+  "band": "B2.1",
+  "topic": "Tenses",
+  "title_en": "Would and used to: Past habits and repeated actions",
+  "source_slug": "would-and-used-to"
+ },
+ {
+  "id": "b2_zero_first_conditional_future_time_clauses",
+  "level": "B2",
+  "band": "B2.1",
+  "topic": "Tenses",
+  "title_en": "Zero and first conditional and future time clauses",
+  "source_slug": "zero-first-conditional-future-time-clauses"
+ },
+ {
+  "id": "b2_gerund_or_infinitive",
+  "level": "B2",
+  "band": "B2.1",
+  "topic": "Verb patterns",
+  "title_en": "Gerund or infinitive: Verb patterns",
+  "source_slug": "gerund-or-infinitive"
+ },
+ {
+  "id": "b2_verbs_of_the_senses",
+  "level": "B2",
+  "band": "B2.1",
+  "topic": "Verb patterns",
+  "title_en": "Verbs of the senses: look, sound, feel, etc.",
+  "source_slug": "verbs-of-the-senses"
+ },
+ {
+  "id": "b2_comparative_structures_modifying_comparatives",
+  "level": "B2",
+  "band": "B2.2",
+  "topic": "Adjectives & adverbs",
+  "title_en": "Comparative structures: Modifying comparatives",
+  "source_slug": "comparative-structures-modifying-comparatives"
+ },
+ {
+  "id": "b2_compound_adjectives_in_english",
+  "level": "B2",
+  "band": "B2.2",
+  "topic": "Adjectives & adverbs",
+  "title_en": "Compound adjectives in English",
+  "source_slug": "compound-adjectives-in-english"
+ },
+ {
+  "id": "b2_inversion_negative_adverbials",
+  "level": "B2",
+  "band": "B2.2",
+  "topic": "Adjectives & adverbs",
+  "title_en": "Inversion with negative adverbials: Adding emphasis",
+  "source_slug": "inversion-negative-adverbials"
+ },
+ {
+  "id": "b2_all_conditionals_mixed_conditionals_alternatives_if_inversion",
+  "level": "B2",
+  "band": "B2.2",
+  "topic": "Conditionals",
+  "title_en": "All conditionals: Mixed conditionals, alternatives to 'if', inversion",
+  "source_slug": "all-conditionals-mixed-conditionals-alternatives-if-inversion"
+ },
+ {
+  "id": "b2_mixed_conditionals",
+  "level": "B2",
+  "band": "B2.2",
+  "topic": "Conditionals",
+  "title_en": "Mixed conditionals: If I were you, I wouldn't have done it",
+  "source_slug": "mixed-conditionals"
+ },
+ {
+  "id": "b2_unless_even_if_provided_as_long_conditionals",
+  "level": "B2",
+  "band": "B2.2",
+  "topic": "Conditionals",
+  "title_en": "Unless, even if, provided, as long as, etc.: Other expressions in conditionals",
+  "source_slug": "unless-even-if-provided-as-long-conditionals"
+ },
+ {
+  "id": "b2_clauses_contrast_purpose_reason_result",
+  "level": "B2",
+  "band": "B2.2",
+  "topic": "Connectors & discourse",
+  "title_en": "Clauses of contrast, purpose, reason and result",
+  "source_slug": "clauses-contrast-purpose-reason-result"
+ },
+ {
+  "id": "b2_discourse_markers",
+  "level": "B2",
+  "band": "B2.2",
+  "topic": "Connectors & discourse",
+  "title_en": "Discourse markers: Linking words",
+  "source_slug": "discourse-markers"
+ },
+ {
+  "id": "b2_ellipsis_and_substitution",
+  "level": "B2",
+  "band": "B2.2",
+  "topic": "Connectors & discourse",
+  "title_en": "Ellipsis and substitution: Omitting or replacing words",
+  "source_slug": "ellipsis-and-substitution"
+ },
+ {
+  "id": "b2_modal_verbs_permission_obligation_prohibition_necessity",
+  "level": "B2",
+  "band": "B2.2",
+  "topic": "Modals",
+  "title_en": "Modal verbs: Permission, obligation, prohibition, necessity",
+  "source_slug": "modal-verbs-permission-obligation-prohibition-necessity"
+ },
+ {
+  "id": "b2_speculation_deduction",
+  "level": "B2",
+  "band": "B2.2",
+  "topic": "Modals",
+  "title_en": "Speculation and deduction: Modal verbs and expressions",
+  "source_slug": "speculation-deduction"
+ },
+ {
+  "id": "b2_compound_nouns_possessive_forms",
+  "level": "B2",
+  "band": "B2.2",
+  "topic": "Nouns & articles",
+  "title_en": "Compound nouns and possessive forms",
+  "source_slug": "compound-nouns-possessive-forms"
+ },
+ {
+  "id": "b2_possessive_s_with_time_expressions_two_hours_walk",
+  "level": "B2",
+  "band": "B2.2",
+  "topic": "Nouns & articles",
+  "title_en": "Possessive ’s with time expressions: Two hours’ walk",
+  "source_slug": "possessive-s-with-time-expressions-two-hours-walk"
+ },
+ {
+  "id": "b2_distancing",
+  "level": "B2",
+  "band": "B2.2",
+  "topic": "Passive",
+  "title_en": "Distancing: Expressions and passive of reporting verbs",
+  "source_slug": "distancing"
+ },
+ {
+  "id": "b2_passive_verbs_with_two_objects",
+  "level": "B2",
+  "band": "B2.2",
+  "topic": "Passive",
+  "title_en": "Passive verbs with two objects",
+  "source_slug": "passive-verbs-with-two-objects"
+ },
+ {
+  "id": "b2_get",
+  "level": "B2",
+  "band": "B2.2",
+  "topic": "Phrasal verbs & lexis",
+  "title_en": "Get: Different meanings",
+  "source_slug": "get"
+ },
+ {
+  "id": "b2_50_common_noun_preposition_collocations",
+  "level": "B2",
+  "band": "B2.2",
+  "topic": "Prepositions",
+  "title_en": "50 common Noun + Preposition collocations",
+  "source_slug": "50-common-noun-preposition-collocations"
+ },
+ {
+  "id": "b2_there_and_it",
+  "level": "B2",
+  "band": "B2.2",
+  "topic": "Pronouns & determiners",
+  "title_en": "'There' and 'it': Preparatory subjects",
+  "source_slug": "there-and-it"
+ },
+ {
+  "id": "b2_generic_pronouns",
+  "level": "B2",
+  "band": "B2.2",
+  "topic": "Pronouns & determiners",
+  "title_en": "Generic or common-gender pronouns",
+  "source_slug": "generic-pronouns"
+ },
+ {
+  "id": "b2_reflexive_reciprocal_pronouns",
+  "level": "B2",
+  "band": "B2.2",
+  "topic": "Pronouns & determiners",
+  "title_en": "Reflexive and reciprocal pronouns",
+  "source_slug": "reflexive-reciprocal-pronouns"
+ },
+ {
+  "id": "b2_participle_clauses",
+  "level": "B2",
+  "band": "B2.2",
+  "topic": "Relative & participle clauses",
+  "title_en": "Participle clauses",
+  "source_slug": "participle-clauses"
+ },
+ {
+  "id": "b2_relative_clauses",
+  "level": "B2",
+  "band": "B2.2",
+  "topic": "Relative & participle clauses",
+  "title_en": "Relative clauses: Defining and non-defining",
+  "source_slug": "relative-clauses"
+ },
+ {
+  "id": "b2_future_forms_expressing_future_time",
+  "level": "B2",
+  "band": "B2.2",
+  "topic": "Tenses",
+  "title_en": "Future forms: Expressing future time",
+  "source_slug": "future-forms-expressing-future-time"
+ },
+ {
+  "id": "b2_future_in_the_past",
+  "level": "B2",
+  "band": "B2.2",
+  "topic": "Tenses",
+  "title_en": "Future in the past",
+  "source_slug": "future-in-the-past"
+ },
+ {
+  "id": "b2_have_auxiliary_main_verb",
+  "level": "B2",
+  "band": "B2.2",
+  "topic": "Tenses",
+  "title_en": "Have: Auxiliary or main verb",
+  "source_slug": "have-auxiliary-main-verb"
+ },
+ {
+  "id": "b2_narrative_tenses_used_to_would",
+  "level": "B2",
+  "band": "B2.2",
+  "topic": "Tenses",
+  "title_en": "Narrative tenses, used to, would",
+  "source_slug": "narrative-tenses-used-to-would"
+ },
+ {
+  "id": "b2_ways_express_future",
+  "level": "B2",
+  "band": "B2.2",
+  "topic": "Tenses",
+  "title_en": "Other ways to express future: Be about to, be due to, etc.",
+  "source_slug": "ways-express-future"
+ },
+ {
+  "id": "b2_unreal_uses_past_tenses",
+  "level": "B2",
+  "band": "B2.2",
+  "topic": "Tenses",
+  "title_en": "Wish, rather, if only, it's time: Unreal uses of past tenses",
+  "source_slug": "unreal-uses-past-tenses"
+ },
+ {
+  "id": "b2_gerunds_infinitives_complex_forms",
+  "level": "B2",
+  "band": "B2.2",
+  "topic": "Verb patterns",
+  "title_en": "Gerunds and infinitives: Complex forms",
+  "source_slug": "gerunds-infinitives-complex-forms"
+ },
+ {
+  "id": "b2_reduced_infinitives_omitting_the_infinitive_phrase_after_to",
+  "level": "B2",
+  "band": "B2.2",
+  "topic": "Verb patterns",
+  "title_en": "Reduced infinitives: Omitting the infinitive phrase after 'to'",
+  "source_slug": "reduced-infinitives-omitting-the-infinitive-phrase-after-to"
+ },
+ {
+  "id": "b2_verb_object_infinitive_gerund",
+  "level": "B2",
+  "band": "B2.2",
+  "topic": "Verb patterns",
+  "title_en": "Verb + object + infinitive/gerund: Verb patterns",
+  "source_slug": "verb-object-infinitive-gerund"
+ },
+ {
+  "id": "b2_cleft_sentences",
+  "level": "B2",
+  "band": "B2.2",
+  "topic": "Word order & emphasis",
+  "title_en": "Cleft sentences: Adding emphasis",
+  "source_slug": "cleft-sentences"
+ },
+ {
+  "id": "c1_advanced_conditionals_mixed_inverted_and_alternatives_to_if",
+  "level": "C1",
+  "band": "C1",
+  "topic": "Conditionals",
+  "title_en": "Advanced conditionals: mixed, inverted and alternatives to 'if'",
+  "source_slug": ""
+ },
+ {
+  "id": "c1_the_subjunctive_in_english_present_and_past",
+  "level": "C1",
+  "band": "C1",
+  "topic": "Conditionals",
+  "title_en": "The subjunctive in English: Present and past",
+  "source_slug": "the-subjunctive-in-english-present-and-past"
+ },
+ {
+  "id": "c1_advanced_discourse_markers_and_cohesion",
+  "level": "C1",
+  "band": "C1",
+  "topic": "Connectors & discourse",
+  "title_en": "Advanced discourse markers and cohesion",
+  "source_slug": ""
+ },
+ {
+  "id": "c1_ellipsis_and_substitution_in_extended_discourse",
+  "level": "C1",
+  "band": "C1",
+  "topic": "Connectors & discourse",
+  "title_en": "Ellipsis and substitution in extended discourse",
+  "source_slug": ""
+ },
+ {
+  "id": "c1_advanced_modal_verbs_can_be_able_to_may_might",
+  "level": "C1",
+  "band": "C1",
+  "topic": "Modals",
+  "title_en": "Advanced modal verbs: can / be able to, may / might",
+  "source_slug": "advanced-modal-verbs-can-be-able-to-may-might"
+ },
+ {
+  "id": "c1_advanced_modal_verbs_will_would_and_should",
+  "level": "C1",
+  "band": "C1",
+  "topic": "Modals",
+  "title_en": "Advanced modal verbs: will, would and should",
+  "source_slug": "advanced-modal-verbs-will-would-and-should"
+ },
+ {
+  "id": "c1_hedging_and_tentative_language_softening_claims",
+  "level": "C1",
+  "band": "C1",
+  "topic": "Modals",
+  "title_en": "Hedging and tentative language: softening claims",
+  "source_slug": ""
+ },
+ {
+  "id": "c1_nominalisation_for_formal_and_academic_register",
+  "level": "C1",
+  "band": "C1",
+  "topic": "Nouns & articles",
+  "title_en": "Nominalisation for formal and academic register",
+  "source_slug": ""
+ },
+ {
+  "id": "c1_impersonal_and_complex_passive_reporting_structures",
+  "level": "C1",
+  "band": "C1",
+  "topic": "Passive",
+  "title_en": "Impersonal and complex passive reporting structures",
+  "source_slug": ""
+ },
+ {
+  "id": "c1_collocation_and_register_formal_vs_informal_equivalents",
+  "level": "C1",
+  "band": "C1",
+  "topic": "Phrasal verbs & lexis",
+  "title_en": "Collocation and register: formal vs informal equivalents",
+  "source_slug": ""
+ },
+ {
+  "id": "c1_idiomatic_multi_word_verbs_at_c1",
+  "level": "C1",
+  "band": "C1",
+  "topic": "Phrasal verbs & lexis",
+  "title_en": "Idiomatic multi-word verbs at C1",
+  "source_slug": ""
+ },
+ {
+  "id": "c1_advanced_participle_clauses",
+  "level": "C1",
+  "band": "C1",
+  "topic": "Relative & participle clauses",
+  "title_en": "Advanced participle clauses",
+  "source_slug": "advanced-participle-clauses"
+ },
+ {
+  "id": "c1_advanced_relative_clauses_reduced_prepositional_of_which_whom",
+  "level": "C1",
+  "band": "C1",
+  "topic": "Relative & participle clauses",
+  "title_en": "Advanced relative clauses: reduced, prepositional, of which/whom",
+  "source_slug": ""
+ },
+ {
+  "id": "c1_advanced_past_simple_past_continuous_past_perfect",
+  "level": "C1",
+  "band": "C1",
+  "topic": "Tenses",
+  "title_en": "Advanced past simple, past continuous & past perfect",
+  "source_slug": "advanced-past-simple-past-continuous-past-perfect"
+ },
+ {
+  "id": "c1_advanced_present_simple_and_present_continuous",
+  "level": "C1",
+  "band": "C1",
+  "topic": "Tenses",
+  "title_en": "Advanced present simple and present continuous",
+  "source_slug": "advanced-present-simple-and-present-continuous"
+ },
+ {
+  "id": "c1_the_perfect_tenses_forms_and_uses",
+  "level": "C1",
+  "band": "C1",
+  "topic": "Tenses",
+  "title_en": "The perfect tenses: Forms and uses",
+  "source_slug": "the-perfect-tenses-forms-and-uses"
+ },
+ {
+  "id": "c1_advanced_inversion_negative_adverbials_and_conditional_inversion",
+  "level": "C1",
+  "band": "C1",
+  "topic": "Word order & emphasis",
+  "title_en": "Advanced inversion: negative adverbials and conditional inversion",
+  "source_slug": ""
+ },
+ {
+  "id": "c1_advanced_word_order",
+  "level": "C1",
+  "band": "C1",
+  "topic": "Word order & emphasis",
+  "title_en": "Advanced word order",
+  "source_slug": "advanced-word-order"
+ },
+ {
+  "id": "c1_cleft_sentences_and_fronting_for_information_structure",
+  "level": "C1",
+  "band": "C1",
+  "topic": "Word order & emphasis",
+  "title_en": "Cleft sentences and fronting for information structure",
+  "source_slug": ""
+ },
+ {
+  "id": "c1_emphatic_structures_do_did_what_clauses_it_clefts",
+  "level": "C1",
+  "band": "C1",
+  "topic": "Word order & emphasis",
+  "title_en": "Emphatic structures: do/did, what-clauses, it-clefts",
+  "source_slug": ""
+ },
+ {
+  "id": "c2_the_subjunctive_and_formulaic_remnants_be_that_as_it_may_come_what",
+  "level": "C2",
+  "band": "C2",
+  "topic": "Conditionals",
+  "title_en": "The subjunctive and formulaic remnants: be that as it may, come what may",
+  "source_slug": ""
+ },
+ {
+  "id": "c2_formal_concessive_and_conditional_connectors_albeit_notwithstanding",
+  "level": "C2",
+  "band": "C2",
+  "topic": "Connectors & discourse",
+  "title_en": "Formal concessive and conditional connectors: albeit, notwithstanding, insofar as",
+  "source_slug": ""
+ },
+ {
+  "id": "c2_irony_understatement_and_litotes",
+  "level": "C2",
+  "band": "C2",
+  "topic": "Connectors & discourse",
+  "title_en": "Irony, understatement and litotes",
+  "source_slug": ""
+ },
+ {
+  "id": "c2_punctuation_with_grammatical_consequences",
+  "level": "C2",
+  "band": "C2",
+  "topic": "Connectors & discourse",
+  "title_en": "Punctuation with grammatical consequences",
+  "source_slug": ""
+ },
+ {
+  "id": "c2_thematic_progression_given_and_new_information",
+  "level": "C2",
+  "band": "C2",
+  "topic": "Connectors & discourse",
+  "title_en": "Thematic progression: given and new information",
+  "source_slug": ""
+ },
+ {
+  "id": "c2_advanced_modality_epistemic_and_deontic_nuance",
+  "level": "C2",
+  "band": "C2",
+  "topic": "Modals",
+  "title_en": "Advanced modality: epistemic and deontic nuance",
+  "source_slug": ""
+ },
+ {
+  "id": "c2_pragmatic_force_softening_boosting_and_distancing",
+  "level": "C2",
+  "band": "C2",
+  "topic": "Modals",
+  "title_en": "Pragmatic force: softening, boosting and distancing",
+  "source_slug": ""
+ },
+ {
+  "id": "c2_complex_noun_phrases_and_heavy_premodification",
+  "level": "C2",
+  "band": "C2",
+  "topic": "Nouns & articles",
+  "title_en": "Complex noun phrases and heavy premodification",
+  "source_slug": ""
+ },
+ {
+  "id": "c2_collocational_precision_and_delexical_verbs",
+  "level": "C2",
+  "band": "C2",
+  "topic": "Phrasal verbs & lexis",
+  "title_en": "Collocational precision and delexical verbs",
+  "source_slug": ""
+ },
+ {
+  "id": "c2_figurative_language_and_conventional_metaphor",
+  "level": "C2",
+  "band": "C2",
+  "topic": "Phrasal verbs & lexis",
+  "title_en": "Figurative language and conventional metaphor",
+  "source_slug": ""
+ },
+ {
+  "id": "c2_register_shifting_academic_journalistic_and_colloquial_english",
+  "level": "C2",
+  "band": "C2",
+  "topic": "Phrasal verbs & lexis",
+  "title_en": "Register shifting: academic, journalistic and colloquial English",
+  "source_slug": ""
+ },
+ {
+  "id": "c2_nuanced_quantification_approximation_and_vague_language",
+  "level": "C2",
+  "band": "C2",
+  "topic": "Quantifiers",
+  "title_en": "Nuanced quantification, approximation and vague language",
+  "source_slug": ""
+ },
+ {
+  "id": "c2_ellipsis_substitution_and_anaphora_across_a_text",
+  "level": "C2",
+  "band": "C2",
+  "topic": "Relative & participle clauses",
+  "title_en": "Ellipsis, substitution and anaphora across a text",
+  "source_slug": ""
+ },
+ {
+  "id": "c2_subtle_aspect_perfect_continuous_forms_in_narrative_and_argument",
+  "level": "C2",
+  "band": "C2",
+  "topic": "Tenses",
+  "title_en": "Subtle aspect: perfect continuous forms in narrative and argument",
+  "source_slug": ""
+ },
+ {
+  "id": "c2_verb_patterns_with_contrastive_meaning_remember_regret_stop_try",
+  "level": "C2",
+  "band": "C2",
+  "topic": "Verb patterns",
+  "title_en": "Verb patterns with contrastive meaning: remember/regret/stop/try",
+  "source_slug": ""
+ },
+ {
+  "id": "c2_fronting_and_marked_word_order_for_information_structure",
+  "level": "C2",
+  "band": "C2",
+  "topic": "Word order & emphasis",
+  "title_en": "Fronting and marked word order for information structure",
+  "source_slug": ""
+ }
+]

@@ -12,6 +12,11 @@ from .srs import stars
 
 
 MASTERED = 3
+SKILL_LABELS: dict[str, str] = {
+    "listening": "аудирование",
+    "writing": "письмо",
+    "speaking": "речь",
+}
 
 
 def mastery_map(storage: Storage, user_id: int) -> dict[str, int]:
@@ -73,6 +78,15 @@ def progress_report(storage: Storage, curriculum: Curriculum, user: User) -> str
     lines.append(f"Карточки грамматики: {point_total}, к повторению {point_due}")
     lines.append(f"Карточки лексики: {vocab_total}, к повторению {vocab_due}")
 
+    skills = storage.skills(user.user_id)
+    visible_skills = [name for name in SKILL_LABELS if name in skills]
+    if visible_skills:
+        lines.append("")
+        lines.append("Навыки:")
+        for name in visible_skills:
+            value, minutes = skills[name]
+            lines.append(f"• {SKILL_LABELS[name]}: {stars(value)} · {minutes} мин.")
+
     errors = storage.error_summary(user.user_id, limit=5)
     if errors:
         lines.append("")
@@ -124,6 +138,7 @@ def study_plan(storage: Storage, curriculum: Curriculum, user: User) -> str:
     lines.append("• 4 дня — «🎯 Заниматься», 10–12 заданий по теме дня")
     lines.append("• каждый день — повторение, пока очередь не пуста")
     lines.append("• 2 раза — «🎙 Речь», голосом, без чтения с листа")
+    lines.append("• 2 раза — аудирование, не подглядывая в текст до ответа")
     lines.append("• 1 раз — «✍️ Письмо», потом разбор правок")
     lines.append("• незнакомое слово — /say, чтобы сразу поставить произношение")
     return "\n".join(lines)
@@ -149,6 +164,12 @@ def build_export(storage: Storage, curriculum: Curriculum, user: User) -> str:
             continue
         done = sum(1 for point in points if mastery.get(point.id, 0) >= MASTERED)
         lines.append(f"- {level}: {done}/{len(points)}")
+
+    skills = storage.skills(user.user_id)
+    if skills:
+        lines.extend(["", "## Навыки", ""])
+        for name, (value, minutes) in sorted(skills.items()):
+            lines.append(f"- {name}: {value}/5, {minutes} мин.")
 
     sessions = storage.sessions(user.user_id, limit=15)
     if sessions:
@@ -241,7 +262,7 @@ def team_board(storage: Storage, curriculum: Curriculum) -> str:
     rows = storage.team_stats()
     if not rows:
         return "В отделе пока никого. Пригласи коллег: «📊 Я» → «Пригласить коллегу»."
-    lines = ["Команда English Lab", ""]
+    lines = ["Отдел АБП · English Lab", ""]
     ranked = sorted(rows, key=lambda row: (-(row["attempts"] or 0), row["user_id"]))
     for index, row in enumerate(ranked[:20], 1):
         name = str(row["display_name"] or f"Учащийся {row['user_id'] % 10000}")

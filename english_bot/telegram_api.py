@@ -5,6 +5,8 @@ import http.client
 import json
 import mimetypes
 import secrets
+import threading
+import time
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -17,6 +19,75 @@ MAX_MESSAGE = 3800
 
 class TelegramError(RuntimeError):
     pass
+
+
+class _RateLimiter:
+    """Token bucket: общий лимит Telegram и короткий burst внутри одного чата."""
+
+    def __init__(
+        self,
+        global_rate: float = 28.0,
+        global_burst: float = 28.0,
+        chat_rate: float = 1.0,
+        chat_burst: float = 3.0,
+        *,
+        clock: Any = time.monotonic,
+        sleeper: Any = time.sleep,
+    ) -> None:
+        self.global_rate = global_rate
+        self.global_burst = global_burst
+        self.chat_rate = chat_rate
+        self.chat_burst = chat_burst
+        self._global_tokens = global_burst
+        self._global_updated = clock()
+        self._chats: dict[int, tuple[float, float]] = {}
+        self._clock = clock
+        self._sleep = sleeper
+        self._lock = threading.Lock()
+
+    def acquire(self, chat_id: int) -> None:
+        while True:
+            with self._lock:
+                now = self._clock()
+                elapsed = max(0.0, now - self._global_updated)
+                global_tokens = min(
+                    self.global_burst, self._global_tokens + elapsed * self.global_rate
+                )
+                chat_tokens, chat_updated = self._chats.get(
+                    chat_id, (self.chat_burst, now)
+                )
+                chat_tokens = min(
+                    self.chat_burst,
+                    chat_tokens + max(0.0, now - chat_updated) * self.chat_rate,
+                )
+                if global_tokens >= 1 and chat_tokens >= 1:
+                    self._global_tokens = global_tokens - 1
+                    self._global_updated = now
+                    self._chats[chat_id] = (chat_tokens - 1, now)
+                    if len(self._chats) > 2000:
+                        cutoff = now - 3600
+                        self._chats = {
+                            key: value for key, value in self._chats.items()
+                            if value[1] >= cutoff
+                        }
+                    return
+                global_wait = max(0.0, (1 - global_tokens) / self.global_rate)
+                chat_wait = max(0.0, (1 - chat_tokens) / self.chat_rate)
+                delay = max(global_wait, chat_wait, 0.001)
+                self._global_tokens = global_tokens
+                self._global_updated = now
+                self._chats[chat_id] = (chat_tokens, now)
+            self._sleep(delay)
+
+
+def _retry_after(detail: str) -> int:
+    """Достаёт Telegram ``parameters.retry_after`` из тела ответа 429."""
+    try:
+        payload = json.loads(detail)
+        value = int((payload.get("parameters") or {}).get("retry_after") or 0)
+    except (AttributeError, TypeError, ValueError, json.JSONDecodeError):
+        return 0
+    return max(0, value)
 
 
 def sender_name(sender: dict[str, Any]) -> str:
@@ -67,6 +138,7 @@ class TelegramAPI:
     def __init__(self, token: str):
         self.base_url = f"https://api.telegram.org/bot{token}/"
         self.file_base_url = f"https://api.telegram.org/file/bot{token}/"
+        self._outbound = _RateLimiter()
 
     # ── низкий уровень ───────────────────────────────────────────
 
@@ -93,14 +165,24 @@ class TelegramAPI:
         return self._send(request, timeout)
 
     def _send(self, request: urllib.request.Request, timeout: int) -> Any:
-        try:
-            with urllib.request.urlopen(request, timeout=timeout) as response:
-                result = json.load(response)
-        except urllib.error.HTTPError as exc:
-            detail = exc.read().decode("utf-8", errors="replace")[:400]
-            raise TelegramError(f"Telegram HTTP {exc.code}: {detail}") from exc
-        except (urllib.error.URLError, TimeoutError) as exc:
-            raise TelegramError(f"Telegram request failed: {exc}") from exc
+        result: dict[str, Any] = {}
+        for attempt in range(2):
+            try:
+                with urllib.request.urlopen(request, timeout=timeout) as response:
+                    result = json.load(response)
+                break
+            except urllib.error.HTTPError as exc:
+                try:
+                    detail = exc.read().decode("utf-8", errors="replace")[:400]
+                finally:
+                    exc.close()
+                retry_after = _retry_after(detail) if exc.code == 429 else 0
+                if attempt == 0 and retry_after:
+                    time.sleep(min(60, retry_after))
+                    continue
+                raise TelegramError(f"Telegram HTTP {exc.code}: {detail}") from exc
+            except (urllib.error.URLError, TimeoutError) as exc:
+                raise TelegramError(f"Telegram request failed: {exc}") from exc
         if not result.get("ok"):
             raise TelegramError(result.get("description", "Unknown Telegram API error"))
         return result.get("result")
@@ -132,6 +214,7 @@ class TelegramAPI:
         chunks = _split(text)
         result: dict[str, Any] | None = None
         for index, chunk in enumerate(chunks):
+            self._outbound.acquire(chat_id)
             payload: dict[str, Any] = {"chat_id": chat_id, "text": chunk}
             if parse_mode:
                 payload["parse_mode"] = parse_mode
@@ -169,6 +252,7 @@ class TelegramAPI:
             pass  # просроченный callback — не повод падать
 
     def send_chat_action(self, chat_id: int, action: str = "typing") -> None:
+        self._outbound.acquire(chat_id)
         try:
             self.call("sendChatAction", {"chat_id": chat_id, "action": action}, timeout=10)
         except TelegramError:
@@ -183,6 +267,7 @@ class TelegramAPI:
         reply_markup: dict[str, Any] | None = None,
     ) -> str:
         """Отправляет голосовое и возвращает file_id для повторного использования."""
+        self._outbound.acquire(chat_id)
         fields = {"chat_id": str(chat_id)}
         if caption:
             fields["caption"] = caption[:1000]
@@ -201,6 +286,7 @@ class TelegramAPI:
         parse_mode: str | None = None,
         reply_markup: dict[str, Any] | None = None,
     ) -> None:
+        self._outbound.acquire(chat_id)
         payload: dict[str, Any] = {"chat_id": chat_id, "voice": file_id}
         if caption:
             payload["caption"] = caption[:1000]
@@ -211,6 +297,7 @@ class TelegramAPI:
         self.call("sendVoice", payload)
 
     def send_document(self, chat_id: int, path: Path, caption: str = "") -> None:
+        self._outbound.acquire(chat_id)
         fields = {"chat_id": str(chat_id)}
         if caption:
             fields["caption"] = caption[:1000]

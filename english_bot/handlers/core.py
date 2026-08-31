@@ -38,13 +38,13 @@ COMMANDS: list[tuple[str, str]] = [
 
 HELP_TEXT = "\n".join(
     [
-        "English Lab — платформа отдела для английского.",
+        "English Lab — платформа отдела АБП для английского.",
         "",
         "Всё основное — кнопками внизу экрана:",
         "🎯 Заниматься — сама выбирает, что тебе сегодня полезнее, и запускает",
         "🎙 Речь · ✍️ Письмо — задание и разбор",
         "📚 Курс — уровни, темы, правила",
-        "📊 Я — профиль, прогресс, план, произношение, отдел, выгрузки",
+        "📊 Я — профиль, аудирование, прогресс, план, отдел, выгрузки",
         "",
         "Команды — только то, чего в кнопках нет:",
     ]
@@ -58,7 +58,7 @@ HELP_TEXT = "\n".join(
 WELCOME = (
     "English Lab на связи.\n\n"
     "Курс грамматики A1–C2 по темам, тренажёр с интервальным повторением, "
-    "устная практика с расшифровкой, разбор письма и произношение с озвучкой.\n\n"
+    "аудирование, устная практика с расшифровкой, разбор письма и произношение.\n\n"
     "Внизу экрана — кнопки, команды помнить не нужно. Главная — «🎯 Заниматься»: "
     "она сама решает, что тебе сегодня полезнее, и сразу это запускает."
 )
@@ -217,7 +217,8 @@ def command_admin(ctx: Context, user: User, text: str) -> None:
         f"Неиспользованных приглашений: {unused}",
         "",
         f"Контент: {len(curriculum.points)} тем, {len(curriculum.exercises)} упражнений, "
-        f"{sum(len(rows) for rows in curriculum.vocabulary.values())} слов",
+        f"{sum(len(rows) for rows in curriculum.vocabulary.values())} слов, "
+        f"{sum(len(rows) for rows in curriculum.listening.values())} аудирований",
         f"Ошибок загрузки контента: {len(curriculum.load_errors)}",
         "",
         f"Текстовый ИИ: {'включён (' + ctx.settings.llm_provider + ')' if ctx.llm else 'выключен'}",
@@ -225,6 +226,8 @@ def command_admin(ctx: Context, user: User, text: str) -> None:
         f"{ctx.settings.speech_backend if ctx.transcriber else 'выключено'}",
         f"Синтез речи: {ctx.settings.speech_backend if ctx.speaker else 'выключен'}",
         f"Лимит обращений к ИИ: {ctx.settings.daily_ai_calls} в сутки на человека",
+        f"Пулы: users={ctx.settings.workers}, LLM={ctx.settings.llm_workers}, "
+        f"STT={ctx.settings.stt_workers}, TTS={ctx.settings.tts_workers}",
         "",
         "Люди:",
     ]

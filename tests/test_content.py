@@ -134,6 +134,15 @@ class CallbackCodeTests(unittest.TestCase):
                 code = CURRICULUM.topic_code(level, topic)
                 self.assertEqual(CURRICULUM.topic_by_code(level, code), topic)
 
+    def test_listening_codes_are_unique_short_and_round_trip(self) -> None:
+        tasks = [task for rows in CURRICULUM.listening.values() for task in rows]
+        codes = {CURRICULUM.listening_code(task.id) for task in tasks}
+        self.assertEqual(len(codes), len(tasks))
+        for task in tasks:
+            code = CURRICULUM.listening_code(task.id)
+            self.assertIs(CURRICULUM.listening_by_code(code), task)
+            self.assertLessEqual(len(f"la:{code}:3".encode()), 64)
+
 
 class BankTests(unittest.TestCase):
     def test_vocabulary_covers_all_levels(self) -> None:
@@ -186,6 +195,21 @@ class BankTests(unittest.TestCase):
             with self.subTest(level=level):
                 self.assertGreaterEqual(len(CURRICULUM.speaking_of_level(level)), 5)
                 self.assertGreaterEqual(len(CURRICULUM.writing_of_level(level)), 3)
+
+    def test_listening_covers_every_level_and_comprehension_skill(self) -> None:
+        expected = {"gist", "detail", "inference", "attitude", "sequence"}
+        averages: list[float] = []
+        for level in LEVELS:
+            with self.subTest(level=level):
+                tasks = CURRICULUM.listening_of_level(level)
+                self.assertGreaterEqual(len(tasks), 5)
+                self.assertEqual({task.skill for task in tasks}, expected)
+                averages.append(sum(len(task.script_en.split()) for task in tasks) / len(tasks))
+                for task in tasks:
+                    self.assertEqual(len(task.options), 4)
+                    self.assertEqual(len(set(task.options)), 4)
+                    self.assertIn(task.options[task.correct_index], task.options)
+        self.assertEqual(averages, sorted(averages), "скрипты должны усложняться по CEFR")
 
     def test_error_patterns_explain_russian_interference(self) -> None:
         self.assertGreaterEqual(len(CURRICULUM.error_patterns), 30)

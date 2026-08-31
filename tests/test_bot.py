@@ -147,8 +147,7 @@ class BotTestCase(unittest.TestCase):
         self.bot.initialize()
 
     def tearDown(self) -> None:
-        for lane in self.bot._lanes:
-            lane.shutdown(wait=False)
+        self.bot.close(wait=False)
         for key, value in self._saved.items():
             if value is None:
                 os.environ.pop(key, None)
@@ -631,6 +630,91 @@ class PronunciationTests(BotTestCase):
     def test_say_without_argument_explains_usage(self) -> None:
         self.send(100, "/say")
         self.assertIn("/say schedule", self.telegram.all_text())
+
+
+class ListeningTests(BotTestCase):
+    def setUp(self) -> None:
+        super().setUp()
+        self.claim_owner()
+        self.bot.storage.update_user(100, level="B1", target_level="B2")
+        self.audio = Path(self._dir.name) / "listening.ogg"
+        self.audio.write_bytes(b"fake-ogg")
+
+        class StubSpeaker:
+            def __init__(stub) -> None:
+                stub.calls: list[str] = []
+
+            def synthesize(stub, text: str, slow: bool = False) -> Path:
+                stub.calls.append(text)
+                return self.audio
+
+        self.speaker = StubSpeaker()
+        self.bot.speaker = self.speaker  # type: ignore[assignment]
+
+    def task(self):
+        user = self.bot.storage.user(100)
+        assert user is not None
+        task = self.bot.curriculum.listening_by_code(str(user.state_data["task_code"]))
+        assert task is not None
+        return task
+
+    def test_listening_sends_audio_without_leaking_the_script(self) -> None:
+        self.press(100, "listen")
+        user = self.bot.storage.user(100)
+        assert user is not None
+        self.assertEqual(user.state, "listening")
+        task = self.task()
+        self.assertEqual(len(self.telegram.voices), 1)
+        _, _, caption = self.telegram.voices[-1]
+        self.assertIn(task.question_en, caption)
+        self.assertNotIn(task.script_en, caption)
+        self.assertTrue(any(data.startswith("la:") for data in self.telegram.buttons()))
+        self.assertTrue(any(data.startswith("lr:") for data in self.telegram.buttons()))
+
+    def test_listening_without_synthesis_fails_cleanly(self) -> None:
+        self.bot.speaker = None
+        self.press(100, "listen")
+        user = self.bot.storage.user(100)
+        assert user is not None
+        self.assertEqual(user.state, "idle")
+        self.assertIn("Голос сейчас не настроен", self.telegram.all_text())
+
+    def test_correct_answer_records_progress_and_reveals_the_script(self) -> None:
+        self.press(100, "listen")
+        task = self.task()
+        code = self.bot.curriculum.listening_code(task.id)
+        self.telegram.reset()
+        self.press(100, f"la:{code}:{task.correct_index}")
+
+        user = self.bot.storage.user(100)
+        assert user is not None
+        self.assertEqual(user.state, "idle")
+        self.assertEqual(self.bot.storage.session_totals(100, "listening"), (1, 1))
+        self.assertIn("listening", self.bot.storage.skills(100))
+        self.assertIn(task.script_en, self.telegram.all_text())
+        self.assertIn("✅ Верно", self.telegram.all_text())
+
+    def test_replay_reuses_telegram_file_and_does_not_resynthesize(self) -> None:
+        self.press(100, "listen")
+        task = self.task()
+        code = self.bot.curriculum.listening_code(task.id)
+        self.press(100, f"lr:{code}")
+        self.assertEqual(len(self.speaker.calls), 1)
+        self.assertEqual(len(self.telegram.voices), 2)
+        user = self.bot.storage.user(100)
+        assert user is not None
+        self.assertEqual(user.state_data["plays"], 2)
+
+    def test_old_answer_button_cannot_answer_a_new_task(self) -> None:
+        self.press(100, "listen")
+        first = self.task()
+        first_code = self.bot.curriculum.listening_code(first.id)
+        self.press(100, f"la:{first_code}:{first.correct_index}")
+        self.press(100, "listen")
+        before = self.bot.storage.session_totals(100, "listening")
+        self.press(100, f"la:{first_code}:{first.correct_index}")
+        self.assertEqual(self.bot.storage.session_totals(100, "listening"), before)
+        self.assertIn("уже закрыто", self.telegram.answered[-1])
 
 
 class TeamTests(BotTestCase):

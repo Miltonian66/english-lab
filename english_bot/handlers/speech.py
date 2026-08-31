@@ -92,10 +92,15 @@ def handle_voice(ctx: Context, user: User, message: dict[str, Any]) -> None:
     if ctx.settings.speech_backend == "local":
         from ..ai.local_speech import estimate_seconds
 
+        ahead = int(getattr(ctx.transcriber, "queue_ahead", 0) or 0)
+        queue_note = (
+            f" Перед тобой в очереди: {ahead}." if ahead else ""
+        )
         ctx.say(
             user,
             f"Расшифровываю запись на {duration} с — это займёт около "
-            f"{estimate_seconds(duration)} с. Модель работает прямо на этой машине.",
+            f"{estimate_seconds(duration)} с. Модель работает прямо на этой машине."
+            f"{queue_note}",
         )
     assert ctx.transcriber is not None
     try:

@@ -238,6 +238,15 @@ class SettingsSwitchTests(unittest.TestCase):
         self.assertEqual(settings.whisper_dir.name, "whisper")
         self.assertEqual(settings.piper_dir.parent, settings.models_dir)
 
+    def test_concurrency_defaults_separate_user_and_heavy_pools(self) -> None:
+        for key in ("WORKERS", "LLM_WORKERS", "STT_WORKERS", "TTS_WORKERS"):
+            os.environ.pop(key, None)
+        settings = Settings.from_env()
+        self.assertEqual(
+            (settings.workers, settings.llm_workers, settings.stt_workers, settings.tts_workers),
+            (16, 2, 1, 1),
+        )
+
 
 @unittest.skipUnless(
     whisper_available() and piper_available(),

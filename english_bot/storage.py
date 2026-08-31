@@ -948,6 +948,39 @@ class Storage:
             ).fetchall()
         return [dict(row) for row in rows]
 
+    def completed_session_subjects(self, user_id: int, kind: str) -> set[str]:
+        """Уже выполненные задания данного типа — для ротации банка."""
+        with self.session() as db:
+            rows = db.execute(
+                "SELECT DISTINCT subject FROM sessions WHERE user_id = ? AND kind = ? "
+                "AND finished_at IS NOT NULL AND items > 0",
+                (user_id, kind),
+            ).fetchall()
+        return {str(row["subject"]) for row in rows if row["subject"]}
+
+    def session_totals(self, user_id: int, kind: str) -> tuple[int, int]:
+        """(всего, верно) по завершённым сессиям одного типа."""
+        with self.session() as db:
+            row = db.execute(
+                "SELECT sum(items) AS total, sum(correct) AS correct FROM sessions "
+                "WHERE user_id = ? AND kind = ? AND finished_at IS NOT NULL",
+                (user_id, kind),
+            ).fetchone()
+        return int(row["total"] or 0), int(row["correct"] or 0)
+
+    def days_since_session(self, user_id: int, kind: str) -> int | None:
+        """Дней с последней завершённой сессии типа; None — её ещё не было."""
+        with self.session() as db:
+            row = db.execute(
+                "SELECT max(finished_at) AS last FROM sessions "
+                "WHERE user_id = ? AND kind = ? AND finished_at IS NOT NULL",
+                (user_id, kind),
+            ).fetchone()
+        last = parse_ts(row["last"] if row else None)
+        if last is None:
+            return None
+        return max(0, (datetime.now(UTC) - last).days)
+
     def practiced_today(self, user_id: int) -> bool:
         """Была ли сегодня хоть одна завершённая тренировка или повторение."""
         with self.session() as db:

@@ -19,9 +19,9 @@
   `english_bot/content/data/`, `tests/test_content.py`.
 - Конфигурация, доступ, схема данных, миграции, интеграции, эксплуатация:
   владелец `docs/operations.md`; источники истины — `english_bot/config.py`,
-  `english_bot/storage.py`, `english_bot/telegram_api.py`, `english_bot/ai/`,
-  `english_bot/app.py`, `.env.example`, `deploy/english-tutor-bot.service`,
-  `tests/test_storage.py`.
+  `english_bot/storage.py`, `english_bot/telegram_api.py`, `english_bot/runtime.py`,
+  `english_bot/ai/`, `english_bot/app.py`, `.env.example`,
+  `deploy/english-tutor-bot.service`, `tests/test_storage.py`, `tests/test_runtime.py`.
 - Состав документов, карта проекта и общая проверка: владелец `docs/README.md`.
 
 Каждый долговечный факт имеет одного владельца. В остальных документах — ссылка,
@@ -46,8 +46,9 @@
 и правится там. Инварианты формата закреплены в `english_bot/content/schema.py` и
 `banks.py`; если правило меняется — сначала схема и тест, потом данные.
 
-Имена файлов `vocabulary_*`, `speaking_tasks`, `writing_tasks`, `error_patterns`,
-`sounds` зарезервированы под банки; всё остальное в `data/` считается грамматикой.
+Имена файлов `vocabulary_*`, `speaking_tasks`, `writing_tasks`, `listening_tasks`,
+`error_patterns`, `sounds` зарезервированы под банки; всё остальное в `data/`
+считается грамматикой.
 
 Английский в контенте — General American. Транскрипция без `ɒ`, `ɐ`, `ː` и без
 безэрных окончаний, с обязательным ударением от двух слогов. Русские объяснения
@@ -98,6 +99,11 @@ git diff --check
 
 Пользовательские сообщения не должны называть конкретный ключ или сервис: при
 выключенном ИИ бот говорит, что функция не настроена, и отправляет к владельцу.
+
+LLM, распознавание и синтез выполняются только через отдельные ограниченные пулы
+из `runtime.py`. Нельзя вызывать тяжёлый провайдер прямо из polling-потока или
+возвращать маршрутизацию к фиксированным дорожкам `user_id % WORKERS`: это снова
+создаст блокировку посторонних пользователей.
 
 ## Данные и приватность
 

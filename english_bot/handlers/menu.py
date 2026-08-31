@@ -33,6 +33,7 @@ MAIN_KEYBOARD = reply_keyboard(
 # прерывать движение вперёд ради трёх карточек.
 REVIEW_THRESHOLD = 5
 SPEAKING_GAP_DAYS = 4
+LISTENING_GAP_DAYS = 4
 
 
 def choose_daily(ctx: Context, user: User) -> tuple[str, str]:
@@ -56,15 +57,22 @@ def choose_daily(ctx: Context, user: User) -> tuple[str, str]:
     if due:
         return "review", f"Осталось {due} карточек к повторению — закроем."
 
-    gap = ctx.storage.days_since_speaking(user.user_id)
-    if gap is None or gap >= SPEAKING_GAP_DAYS:
+    speaking_gap = ctx.storage.days_since_speaking(user.user_id)
+    if speaking_gap is None:
         return "speaking", "Норма на сегодня закрыта. Давно не говорил вслух — устное задание."
+    listening_gap = ctx.storage.days_since_session(user.user_id, "listening")
+    if listening_gap is None:
+        return "listening", "Устная практика уже была. Теперь потренируем понимание на слух."
+    if speaking_gap >= SPEAKING_GAP_DAYS or listening_gap >= LISTENING_GAP_DAYS:
+        if listening_gap > speaking_gap:
+            return "listening", "Давно не тренировали понимание на слух — короткое аудирование."
+        return "speaking", "Давно не говорил вслух — устное задание."
     return "practice", "Норма закрыта, но лишний раунд не повредит."
 
 
 def start_daily(ctx: Context, user: User) -> None:
     """Одно нажатие — и человек уже отвечает на первое задание."""
-    from . import dialogue, speech, study
+    from . import dialogue, listening, speech, study
 
     action, reason = choose_daily(ctx, user)
     # У диагностики своё вступление, второй раз объяснять то же самое незачем.
@@ -76,6 +84,8 @@ def start_daily(ctx: Context, user: User) -> None:
         study.command_review(ctx, user, "")
     elif action == "speaking":
         speech.command_speaking(ctx, user, "")
+    elif action == "listening":
+        listening.command_listening(ctx, user)
     elif action == "writing":
         dialogue.command_writing(ctx, user, "")
     else:
@@ -112,8 +122,9 @@ def _extra_keyboard(user: User, due: int = 0) -> dict:
         rows.append([(f"🔁 Повторить ({due})", "startreview")])
     rows += [
         [("Свободный чат", "chat"), ("Ролевой диалог", "roleplayhint")],
-        [("Произношение", "askword"), ("План", "plan")],
-        [("Прогресс", "progress"), ("Отдел", "team")],
+        [("Аудирование", "listen"), ("Произношение", "askword")],
+        [("План", "plan"), ("Прогресс", "progress")],
+        [("Отдел", "team")],
         [("Файл для Anki", "anki"), ("Мои данные", "export")],
         [("Уровень и диагностика", "levelpick"), ("Справка", "help")],
     ]

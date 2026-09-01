@@ -17,6 +17,7 @@ from pathlib import Path
 
 from .banks import (
     ErrorPattern,
+    ListeningTask,
     SoundNote,
     SpeakingTask,
     VocabItem,
@@ -42,6 +43,7 @@ CATALOG_PATH = Path(__file__).resolve().parent / "catalog.json"
 BANK_FILES: dict[str, str] = {
     "speaking_tasks": "speaking_tasks.json",
     "writing_tasks": "writing_tasks.json",
+    "listening_tasks": "listening_tasks.json",
     "error_patterns": "error_patterns.json",
     "sounds": "sounds.json",
 }
@@ -54,6 +56,7 @@ class Curriculum:
     vocabulary: dict[str, list[VocabItem]] = field(default_factory=dict)
     speaking: dict[str, list[SpeakingTask]] = field(default_factory=dict)
     writing: dict[str, list[WritingTask]] = field(default_factory=dict)
+    listening: dict[str, list[ListeningTask]] = field(default_factory=dict)
     error_patterns: dict[str, ErrorPattern] = field(default_factory=dict)
     sounds: list[SoundNote] = field(default_factory=list)
     load_errors: list[str] = field(default_factory=list)
@@ -154,6 +157,19 @@ class Curriculum:
     def writing_of_level(self, level: str) -> list[WritingTask]:
         return self.writing.get(level, [])
 
+    def listening_of_level(self, level: str) -> list[ListeningTask]:
+        return self.listening.get(level, [])
+
+    def listening_code(self, task_id: str) -> str:
+        return hashlib.sha1(task_id.encode()).hexdigest()[:8]
+
+    def listening_by_code(self, code: str) -> ListeningTask | None:
+        for tasks in self.listening.values():
+            for task in tasks:
+                if self.listening_code(task.id) == code:
+                    return task
+        return None
+
     def sound(self, ipa: str) -> SoundNote | None:
         cleaned = ipa.strip().strip("/[]")
         for note in self.sounds:
@@ -171,6 +187,14 @@ class Curriculum:
         pool = [task for task in self.writing_of_level(level) if task.id not in exclude]
         if not pool:
             pool = self.writing_of_level(level)
+        return rng.choice(pool) if pool else None
+
+    def pick_listening(
+        self, level: str, exclude: set[str], rng: random.Random
+    ) -> ListeningTask | None:
+        pool = [task for task in self.listening_of_level(level) if task.id not in exclude]
+        if not pool:
+            pool = self.listening_of_level(level)
         return rng.choice(pool) if pool else None
 
     @property
@@ -228,6 +252,7 @@ def _load_banks(curriculum: Curriculum, directory: Path) -> None:
     simple: dict[str, str] = {
         "speaking_tasks": "speaking",
         "writing_tasks": "writing",
+        "listening_tasks": "listening",
     }
     for bank, attribute in simple.items():
         path = directory / BANK_FILES[bank]

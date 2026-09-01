@@ -7,13 +7,14 @@ Multipart собран руками на `urllib`, поэтому проверя
 from __future__ import annotations
 
 import email
+import io
 import tempfile
 import unittest
 from email.policy import HTTP
 from pathlib import Path
 
 from english_bot.ai.http import extract_json, post_multipart
-from english_bot.telegram_api import _multipart, _split
+from english_bot.telegram_api import TelegramAPI, _multipart, _RateLimiter, _split
 
 
 BINARY = bytes(range(256)) * 40  # содержит \r\n и байты, похожие на границу
@@ -133,6 +134,72 @@ class MessageSplitTests(unittest.TestCase):
         chunks = _split("x" * 9000)
         self.assertTrue(chunks[0])
         self.assertLessEqual(len(chunks[0]), 4096)
+
+
+class TelegramLoadTests(unittest.TestCase):
+    def test_per_chat_limiter_allows_short_burst_then_waits(self) -> None:
+        now = 0.0
+        sleeps: list[float] = []
+
+        def clock() -> float:
+            return now
+
+        def sleep(seconds: float) -> None:
+            nonlocal now
+            sleeps.append(seconds)
+            now += seconds
+
+        limiter = _RateLimiter(clock=clock, sleeper=sleep)
+        for _ in range(3):
+            limiter.acquire(10)
+        self.assertEqual(sleeps, [])
+        limiter.acquire(10)
+        self.assertAlmostEqual(sum(sleeps), 1.0, places=3)
+
+    def test_telegram_429_is_retried_once_after_retry_after(self) -> None:
+        import english_bot.telegram_api as module
+
+        real_urlopen = module.urllib.request.urlopen
+        real_sleep = module.time.sleep
+        calls = 0
+        sleeps: list[float] = []
+
+        class Response:
+            def __enter__(self):
+                return self
+
+            def __exit__(self, *args):
+                return False
+
+            def read(self) -> bytes:
+                return b'{"ok": true, "result": {"message_id": 1}}'
+
+        def fake_urlopen(request, timeout=0):
+            nonlocal calls
+            calls += 1
+            if calls == 1:
+                raise module.urllib.error.HTTPError(
+                    request.full_url,
+                    429,
+                    "Too Many Requests",
+                    {},
+                    io.BytesIO(
+                        b'{"ok":false,"parameters":{"retry_after":2}}'
+                    ),
+                )
+            return Response()
+
+        module.urllib.request.urlopen = fake_urlopen
+        module.time.sleep = sleeps.append
+        try:
+            api = TelegramAPI("test")
+            result = api.call("sendMessage", {"chat_id": 1, "text": "hi"})
+        finally:
+            module.urllib.request.urlopen = real_urlopen
+            module.time.sleep = real_sleep
+        self.assertEqual(result, {"message_id": 1})
+        self.assertEqual(calls, 2)
+        self.assertEqual(sleeps, [2])
 
 
 class JsonExtractionTests(unittest.TestCase):

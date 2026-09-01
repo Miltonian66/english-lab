@@ -13,7 +13,7 @@ ExecStart=/home/milton/english/.venv/bin/python -m english_bot
 Restart=on-failure
 RestartSec=5
 UMask=0077
-# Контент ~25 МБ, piper ~200 МБ, whisper small.en ~640 МБ; замер пика — 865 МБ.
+# Контент и runtime ~81 МБ, с piper и whisper small.en замер пика — 914 МиБ.
 MemoryMax=1600M
 # codex exec запускается подпроцессом и держит собственную сессию.
 TimeoutStopSec=30

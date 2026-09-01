@@ -92,6 +92,16 @@ class Context:
             return False
         return True
 
+    def require_speaker(self, user: User) -> bool:
+        """Синтез нужен и без распознавания — например, для аудирования."""
+        if self.speaker is None:
+            self.say(user, SPEECH_OFF_TEXT)
+            return False
+        if not self.storage.take_ai_call(user.user_id, self.settings.daily_ai_calls):
+            self.say(user, LIMIT_TEXT)
+            return False
+        return True
+
     # ── состояние ────────────────────────────────────────────────
 
     def reload_user(self, user: User) -> User:

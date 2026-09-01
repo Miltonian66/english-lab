@@ -63,6 +63,9 @@ class Settings:
     tts_voice: str
 
     workers: int
+    llm_workers: int
+    stt_workers: int
+    tts_workers: int
     max_voice_seconds: int
     daily_ai_calls: int
     team_open_registration: bool
@@ -144,7 +147,10 @@ class Settings:
             stt_model=os.environ.get("STT_MODEL", "whisper-1").strip(),
             tts_model=os.environ.get("TTS_MODEL", "gpt-4o-mini-tts").strip(),
             tts_voice=os.environ.get("TTS_VOICE", "alloy").strip(),
-            workers=_int_env("WORKERS", 4, 1, 16),
+            workers=_int_env("WORKERS", 16, 1, 64),
+            llm_workers=_int_env("LLM_WORKERS", 2, 1, 8),
+            stt_workers=_int_env("STT_WORKERS", 1, 1, 4),
+            tts_workers=_int_env("TTS_WORKERS", 1, 1, 4),
             max_voice_seconds=_int_env("MAX_VOICE_SECONDS", 300, 30, 900),
             daily_ai_calls=_int_env("DAILY_AI_CALLS", 120, 5, 5000),
             team_open_registration=(

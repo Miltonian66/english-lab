@@ -1,4 +1,4 @@
-"""Схемы вспомогательных банков контента: лексика, speaking, writing, ошибки, произношение.
+"""Схемы вспомогательных банков: лексика, речь, письмо, аудирование и ошибки.
 
 Грамматика описана в `schema.py`; здесь — всё остальное, что платформа выдаёт
 пользователю. Каждый банк лежит отдельным JSON в `content/data/` и проверяется
@@ -18,6 +18,7 @@ PARTS_OF_SPEECH: tuple[str, ...] = (
     "noun", "verb", "adjective", "adverb", "phrase", "phrasal verb", "preposition", "conjunction",
 )
 SPEAKING_MODES: tuple[str, ...] = ("monologue", "roleplay", "opinion", "describe", "interview")
+LISTENING_SKILLS: tuple[str, ...] = ("gist", "detail", "inference", "attitude", "sequence")
 ERROR_CATEGORIES: tuple[str, ...] = (
     "grammar", "word_choice", "article", "preposition", "word_order", "spelling",
     "punctuation", "expression", "pronunciation",
@@ -60,6 +61,19 @@ class WritingTask:
     words_min: int
     words_max: int
     focus: tuple[str, ...] = ()
+
+
+@dataclass(frozen=True)
+class ListeningTask:
+    id: str
+    level: str
+    skill: str
+    title_ru: str
+    script_en: str
+    question_en: str
+    options: tuple[str, ...]
+    correct_index: int
+    explanation_ru: str
 
 
 @dataclass(frozen=True)
@@ -173,6 +187,33 @@ def parse_writing(raw: object, where: str) -> WritingTask:
     )
 
 
+def parse_listening(raw: object, where: str) -> ListeningTask:
+    _require(isinstance(raw, dict), f"{where}: listening-задание должно быть объектом")
+    data = dict(raw)  # type: ignore[arg-type]
+    task_id = _ident(data.get("id"), where)
+    where = f"{where}/{task_id}"
+    skill = _text(data.get("skill"), "skill", where)
+    _require(skill in LISTENING_SKILLS, f"{where}: неизвестный skill {skill!r}")
+    options = _tuple(data.get("options"), "options", where)
+    _require(len(options) == 4, f"{where}: options должен содержать ровно 4 варианта")
+    _require(
+        len({option.casefold() for option in options}) == len(options),
+        f"{where}: варианты ответа повторяются",
+    )
+    correct_index = _int_range(data.get("correct_index"), "correct_index", where, 0, 3)
+    return ListeningTask(
+        id=task_id,
+        level=_level(data.get("level"), where),
+        skill=skill,
+        title_ru=_text(data.get("title_ru"), "title_ru", where, 3),
+        script_en=_text(data.get("script_en"), "script_en", where, 20),
+        question_en=_text(data.get("question_en"), "question_en", where, 8),
+        options=options,
+        correct_index=correct_index,
+        explanation_ru=_text(data.get("explanation_ru"), "explanation_ru", where, 10),
+    )
+
+
 def parse_error(raw: object, where: str) -> ErrorPattern:
     _require(isinstance(raw, dict), f"{where}: паттерн ошибки должен быть объектом")
     data = dict(raw)  # type: ignore[arg-type]
@@ -216,6 +257,7 @@ BANKS: dict[str, tuple[str, object]] = {
     "vocabulary": ("items", parse_vocab),
     "speaking_tasks": ("tasks", parse_speaking),
     "writing_tasks": ("tasks", parse_writing),
+    "listening_tasks": ("tasks", parse_listening),
     "error_patterns": ("patterns", parse_error),
     "sounds": ("sounds", parse_sound),
 }

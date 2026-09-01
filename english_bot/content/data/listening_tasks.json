@@ -1,0 +1,339 @@
+{
+  "tasks": [
+    {
+      "id": "a1_ls_meeting_time",
+      "level": "A1",
+      "skill": "detail",
+      "title_ru": "Время встречи",
+      "script_en": "Hi, Anna. Our English class is not at nine today. It starts at ten thirty in room twelve.",
+      "question_en": "When does the English class start?",
+      "options": ["At 9:00", "At 9:30", "At 10:30", "At 12:00"],
+      "correct_index": 2,
+      "explanation_ru": "Говорящий исправляет первое время: занятие начинается at ten thirty, то есть в 10:30."
+    },
+    {
+      "id": "a1_ls_grocery_plan",
+      "level": "A1",
+      "skill": "gist",
+      "title_ru": "После работы",
+      "script_en": "I need milk, bread, and two apples. I will go to the grocery store after work and then cook dinner.",
+      "question_en": "What is the speaker mainly talking about?",
+      "options": ["Buying food", "Going to a restaurant", "Starting a new job", "Making breakfast"],
+      "correct_index": 0,
+      "explanation_ru": "Главная мысль — покупка продуктов: перечислены milk, bread, apples и поход в grocery store."
+    },
+    {
+      "id": "a1_ls_morning_order",
+      "level": "A1",
+      "skill": "sequence",
+      "title_ru": "Утро перед офисом",
+      "script_en": "Every morning I take a shower, eat some eggs, and walk to the bus stop. I drink coffee at the office.",
+      "question_en": "What does the speaker do after breakfast?",
+      "options": ["Takes a shower", "Walks to the bus stop", "Drinks coffee at home", "Goes back to bed"],
+      "correct_index": 1,
+      "explanation_ru": "После eat some eggs идёт walk to the bus stop; кофе человек пьёт уже в офисе."
+    },
+    {
+      "id": "a1_ls_empty_office",
+      "level": "A1",
+      "skill": "inference",
+      "title_ru": "Пустой офис",
+      "script_en": "The office is dark and the front door is locked. It is seven o'clock on Sunday morning.",
+      "question_en": "Why can the speaker not go inside?",
+      "options": ["The office is closed", "The speaker lost a phone", "The room is full", "The bus is late"],
+      "correct_index": 0,
+      "explanation_ru": "Закрытая дверь, темнота и раннее воскресное утро позволяют понять, что офис ещё закрыт."
+    },
+    {
+      "id": "a1_ls_cafe_reaction",
+      "level": "A1",
+      "skill": "attitude",
+      "title_ru": "Новый кофе",
+      "script_en": "This coffee smells great, but it is much too sweet for me. Next time I will order it without sugar.",
+      "question_en": "How does the speaker feel about the coffee?",
+      "options": ["It is perfect", "It is too sweet", "It is too cold", "It has no smell"],
+      "correct_index": 1,
+      "explanation_ru": "Говорящий хвалит запах, но прямо говорит much too sweet и в следующий раз уберёт сахар."
+    },
+
+    {
+      "id": "a2_ls_train_platform",
+      "level": "A2",
+      "skill": "detail",
+      "title_ru": "Смена платформы",
+      "script_en": "Attention, please. The train to Boston will leave at eleven fifteen from platform six, not platform four. It is running ten minutes late.",
+      "question_en": "Which platform will the train leave from?",
+      "options": ["Platform four", "Platform five", "Platform six", "Platform ten"],
+      "correct_index": 2,
+      "explanation_ru": "Объявление специально противопоставляет from platform six, not platform four."
+    },
+    {
+      "id": "a2_ls_remote_day",
+      "level": "A2",
+      "skill": "gist",
+      "title_ru": "Работа из дома",
+      "script_en": "I usually work at the office, but today I am staying home. A repair person is coming to fix my kitchen sink, so I will join all meetings online.",
+      "question_en": "Why is the speaker working from home?",
+      "options": ["The office is closed", "Someone is coming to make a repair", "The speaker is sick", "There are no meetings"],
+      "correct_index": 1,
+      "explanation_ru": "Человек остаётся дома, потому что repair person должен починить кухонную раковину."
+    },
+    {
+      "id": "a2_ls_release_steps",
+      "level": "A2",
+      "skill": "sequence",
+      "title_ru": "Небольшой релиз",
+      "script_en": "First, check that all the tests are green. Then ask Maria to review the change. After she approves it, you can deploy the new version.",
+      "question_en": "What should happen immediately before deployment?",
+      "options": ["Writing the first test", "Maria's approval", "A customer call", "Restarting the computer"],
+      "correct_index": 1,
+      "explanation_ru": "Последовательность заканчивается так: Maria reviews and approves, затем можно deploy."
+    },
+    {
+      "id": "a2_ls_missing_colleague",
+      "level": "A2",
+      "skill": "inference",
+      "title_ru": "Коллега не на встрече",
+      "script_en": "Leo's chair is empty, and he sent me a photo from the airport this morning. He said he would be back in the office next Monday.",
+      "question_en": "Where is Leo probably going?",
+      "options": ["On a trip", "To another meeting room", "To the cafeteria", "Home for lunch"],
+      "correct_index": 0,
+      "explanation_ru": "Фото из аэропорта и возвращение только в понедельник указывают на поездку."
+    },
+    {
+      "id": "a2_ls_app_update",
+      "level": "A2",
+      "skill": "attitude",
+      "title_ru": "Обновление приложения",
+      "script_en": "The new app looks cleaner, and the search is faster. I still cannot find the settings easily, but overall this update is much better than the old version.",
+      "question_en": "What is the speaker's overall opinion?",
+      "options": ["Mostly positive", "Completely negative", "Not interested", "The old and new versions are identical"],
+      "correct_index": 0,
+      "explanation_ru": "Есть один минус со settings, но overall и much better показывают в целом положительную оценку."
+    },
+
+    {
+      "id": "b1_ls_deadline_change",
+      "level": "B1",
+      "skill": "detail",
+      "title_ru": "Новый срок",
+      "script_en": "We originally promised the report by Thursday afternoon. Since the finance team cannot send its figures until Thursday evening, I have agreed with the client to deliver the final version before noon on Friday.",
+      "question_en": "What is the new deadline for the final report?",
+      "options": ["Thursday morning", "Thursday afternoon", "Thursday evening", "Friday before noon"],
+      "correct_index": 3,
+      "explanation_ru": "Старый срок был Thursday afternoon, а согласованный новый — before noon on Friday."
+    },
+    {
+      "id": "b1_ls_incident_summary",
+      "level": "B1",
+      "skill": "gist",
+      "title_ru": "Короткий разбор сбоя",
+      "script_en": "Yesterday's outage was not caused by the new release. One of our database certificates had expired, so the service could not connect after its scheduled restart. We renewed the certificate and added an automatic warning for next time.",
+      "question_en": "What is the main purpose of this message?",
+      "options": ["To announce a new feature", "To explain an outage and the fix", "To cancel a scheduled restart", "To hire a database engineer"],
+      "correct_index": 1,
+      "explanation_ru": "Сообщение называет причину outage, сделанное исправление и защиту от повторения."
+    },
+    {
+      "id": "b1_ls_customer_followup",
+      "level": "B1",
+      "skill": "sequence",
+      "title_ru": "После звонка с заказчиком",
+      "script_en": "Please write down the two changes the customer requested and send the notes to the team. Once everyone has checked them, create the tickets, but do not estimate the work until tomorrow's planning meeting.",
+      "question_en": "What should the listener do after the team checks the notes?",
+      "options": ["Create the tickets", "Estimate the work", "Call the customer again", "Start coding immediately"],
+      "correct_index": 0,
+      "explanation_ru": "После проверки заметок нужно create the tickets; оценивать работу просят только на завтрашнем planning."
+    },
+    {
+      "id": "b1_ls_quiet_candidate",
+      "level": "B1",
+      "skill": "inference",
+      "title_ru": "После собеседования",
+      "script_en": "Sam did not say much during the first ten minutes, but his answers became detailed when we discussed real production problems. He also asked thoughtful questions about monitoring and support duties.",
+      "question_en": "What can be inferred about Sam?",
+      "options": ["He has no technical experience", "He became more comfortable during the interview", "He dislikes production work", "He did not understand the questions"],
+      "correct_index": 1,
+      "explanation_ru": "Сначала Sam говорил мало, затем стал отвечать подробно и задавать содержательные вопросы — он освоился."
+    },
+    {
+      "id": "b1_ls_process_feedback",
+      "level": "B1",
+      "skill": "attitude",
+      "title_ru": "Новый процесс ревью",
+      "script_en": "I understand why we added a second approval, and it has already caught two serious mistakes. However, waiting a full day for every small documentation change feels unnecessary. I think we should keep the rule only for code changes.",
+      "question_en": "What does the speaker think about the new process?",
+      "options": ["It should be removed completely", "It is useful but applied too broadly", "It never catches mistakes", "It should cover even more types of work"],
+      "correct_index": 1,
+      "explanation_ru": "Говорящий признаёт пользу второго approval, но предлагает ограничить правило изменениями кода."
+    },
+
+    {
+      "id": "b2_ls_budget_numbers",
+      "level": "B2",
+      "skill": "detail",
+      "title_ru": "Бюджет на инфраструктуру",
+      "script_en": "Our cloud bill rose by eighteen percent in the first quarter, mainly because the analytics cluster was running overnight. Turning it off outside business hours should save about twelve thousand dollars a month, while the planned storage change will save another three thousand.",
+      "question_en": "How much should the storage change save each month?",
+      "options": ["Three thousand dollars", "Twelve thousand dollars", "Fifteen thousand dollars", "Eighteen thousand dollars"],
+      "correct_index": 0,
+      "explanation_ru": "Twelve thousand относится к отключению кластера, а storage change даст another three thousand."
+    },
+    {
+      "id": "b2_ls_migration_decision",
+      "level": "B2",
+      "skill": "gist",
+      "title_ru": "Решение о миграции",
+      "script_en": "Moving every customer at once would shorten the project, but a single unnoticed compatibility issue could affect the entire platform. We will therefore start with internal accounts, monitor them for two weeks, and expand the migration only if the error rate remains stable.",
+      "question_en": "Which approach has the team chosen?",
+      "options": ["A gradual migration with monitoring", "An immediate migration of every customer", "Canceling the migration", "Waiting until all old accounts expire"],
+      "correct_index": 0,
+      "explanation_ru": "Команда начнёт с внутренних аккаунтов, понаблюдает две недели и лишь затем расширит миграцию."
+    },
+    {
+      "id": "b2_ls_handover_order",
+      "level": "B2",
+      "skill": "sequence",
+      "title_ru": "Перед отпуском",
+      "script_en": "Before you leave, update the incident guide and walk Nina through the unresolved payment issue. She will take over the support rotation once she has access to the dashboard, so ask security to grant that access before arranging the handover call.",
+      "question_en": "What must happen before the handover call is arranged?",
+      "options": ["The payment issue must be resolved", "Nina must receive dashboard access", "The support rotation must end", "The incident guide must be deleted"],
+      "correct_index": 1,
+      "explanation_ru": "Прямо сказано grant that access before arranging the handover call."
+    },
+    {
+      "id": "b2_ls_delayed_launch",
+      "level": "B2",
+      "skill": "inference",
+      "title_ru": "Осторожный запуск",
+      "script_en": "Marketing has already prepared the announcement, and the feature passed all functional tests. Still, the team lead asked everyone to keep Friday evening free and requested an additional rollback rehearsal on Thursday.",
+      "question_en": "What is the team lead probably concerned about?",
+      "options": ["The marketing text", "Operational problems after launch", "The lack of functional tests", "The feature name"],
+      "correct_index": 1,
+      "explanation_ru": "Свободный вечер запуска и дополнительная репетиция rollback указывают на опасение эксплуатационных проблем."
+    },
+    {
+      "id": "b2_ls_vendor_pitch",
+      "level": "B2",
+      "skill": "attitude",
+      "title_ru": "Предложение поставщика",
+      "script_en": "The demo was polished, and I can see why the sales team liked it. Yet every difficult question was answered with a promise about the next release, while the contract requires a three-year commitment. I would not sign anything until we speak to existing customers.",
+      "question_en": "How does the speaker feel about the vendor?",
+      "options": ["Ready to sign immediately", "Interested but skeptical", "Completely uninterested in the product", "Certain that the product is mature"],
+      "correct_index": 1,
+      "explanation_ru": "Говорящий видит достоинства demo, но сомневается в обещаниях и хочет проверить отзывы клиентов."
+    },
+
+    {
+      "id": "c1_ls_experiment_result",
+      "level": "C1",
+      "skill": "detail",
+      "title_ru": "Результат эксперимента",
+      "script_en": "The shorter signup form increased completed registrations by nine percent, which looks encouraging at first glance. However, the improvement came almost entirely from mobile visitors. Desktop conversion remained unchanged, and the number of people who verified their email actually fell by two percent. We should keep the form but test a clearer verification screen before declaring the experiment successful.",
+      "question_en": "Which metric became worse during the experiment?",
+      "options": ["Mobile registrations", "Desktop conversion", "Email verification", "Completed registrations overall"],
+      "correct_index": 2,
+      "explanation_ru": "Общие регистрации выросли, desktop не изменился, а доля подтвердивших email fell by two percent."
+    },
+    {
+      "id": "c1_ls_architecture_tradeoff",
+      "level": "C1",
+      "skill": "gist",
+      "title_ru": "Архитектурный компромисс",
+      "script_en": "A separate service would give the reporting team independent releases and clearer ownership. It would also introduce another database, deployment pipeline, and on-call responsibility for a component that currently handles modest traffic. Rather than splitting it out now, I suggest defining a strict internal interface and measuring whether the existing module becomes a genuine bottleneck over the next quarter.",
+      "question_en": "What is the speaker recommending?",
+      "options": ["Creating the service immediately", "Deleting the reporting module", "Delaying the split while collecting evidence", "Giving ownership to an external vendor"],
+      "correct_index": 2,
+      "explanation_ru": "Рекомендация — пока задать строгий интерфейс и измерять bottleneck, а не выделять сервис немедленно."
+    },
+    {
+      "id": "c1_ls_escalation_sequence",
+      "level": "C1",
+      "skill": "sequence",
+      "title_ru": "Эскалация инцидента",
+      "script_en": "Confirm that the alert reflects customer impact rather than a monitoring fault. If it does, appoint an incident lead and open the shared timeline before paging the database team. Notify senior management only after the lead has published an initial impact estimate, unless legal or security concerns require immediate escalation.",
+      "question_en": "What normally happens immediately before senior management is notified?",
+      "options": ["The alert is ignored", "An initial impact estimate is published", "The database team closes the incident", "Legal approves the final report"],
+      "correct_index": 1,
+      "explanation_ru": "Обычный порядок требует сначала initial impact estimate; исключение сделано лишь для legal/security concerns."
+    },
+    {
+      "id": "c1_ls_manager_silence",
+      "level": "C1",
+      "skill": "inference",
+      "title_ru": "Необычная тишина",
+      "script_en": "Dana normally challenges every estimate in the planning meeting, but today she accepted the six-week proposal without a single question. She had just come from a budget review, and afterward she asked me to document which features we could drop if the team lost two contractors.",
+      "question_en": "What is Dana probably expecting?",
+      "options": ["The project will receive more funding", "The team may have fewer people", "The deadline will disappear", "The contractors will become managers"],
+      "correct_index": 1,
+      "explanation_ru": "Просьба подготовить вариант при потере двух contractors после budget review указывает на возможное сокращение ресурсов."
+    },
+    {
+      "id": "c1_ls_policy_tone",
+      "level": "C1",
+      "skill": "attitude",
+      "title_ru": "Политика работы из офиса",
+      "script_en": "I appreciate the attempt to make collaboration more deliberate, and two shared office days could help new employees build relationships. What worries me is the blanket requirement for everyone, regardless of role, location, or team performance. A policy with explicit exceptions and a review after three months would be far easier to support.",
+      "question_en": "Which description best matches the speaker's position?",
+      "options": ["Strongly opposed to any office work", "Supportive of the goal but critical of the rigid rule", "Satisfied with the policy as written", "Interested only in reducing office costs"],
+      "correct_index": 1,
+      "explanation_ru": "Цель и два общих дня говорящий допускает, но blanket requirement считает слишком жёстким."
+    },
+
+    {
+      "id": "c2_ls_forecast_caveat",
+      "level": "C2",
+      "skill": "detail",
+      "title_ru": "Оговорка в прогнозе",
+      "script_en": "The headline forecast puts annual growth at seven percent, but that figure assumes the enterprise contract closes in September and is recognized immediately. Under the finance team's more conservative scenario, where revenue is spread across the contract term, reported growth would be closer to four and a half percent. Neither estimate includes a possible acquisition, despite recent speculation in the press.",
+      "question_en": "What growth does the conservative accounting scenario predict?",
+      "options": ["Four and a half percent", "Seven percent", "Nine percent", "The forecast gives no figure"],
+      "correct_index": 0,
+      "explanation_ru": "Seven percent — headline forecast, а conservative scenario даёт closer to four and a half percent."
+    },
+    {
+      "id": "c2_ls_governance_argument",
+      "level": "C2",
+      "skill": "gist",
+      "title_ru": "Спор о стандартизации",
+      "script_en": "Allowing each team to choose its own tools has encouraged experimentation, but it has also left the company maintaining five deployment systems and training engineers repeatedly on local conventions. A central platform must not become a gatekeeper that freezes good ideas. Its mandate should be to provide a well-supported default and transparent extension points, while requiring exceptions to carry their own operational costs.",
+      "question_en": "What balance is the speaker proposing?",
+      "options": ["Ban all tools except one", "Keep complete team autonomy without shared support", "Offer a standard platform while preserving accountable exceptions", "Outsource every deployment system"],
+      "correct_index": 2,
+      "explanation_ru": "Предлагается поддерживаемый default с extension points и исключениями, которые сами несут свои эксплуатационные расходы."
+    },
+    {
+      "id": "c2_ls_negotiation_order",
+      "level": "C2",
+      "skill": "sequence",
+      "title_ru": "Переговоры по контракту",
+      "script_en": "Do not lead with the discount, because that would make price the only reference point. First establish which service guarantees the client genuinely values, then quantify what meeting them costs us. Once the client acknowledges that trade-off, offer the longer contract in exchange for the lower rate. Leave the termination clause until last, after the commercial terms are provisionally settled.",
+      "question_en": "When should the lower rate be offered?",
+      "options": ["At the very start", "After the client accepts the service-cost trade-off", "Only after the termination clause is signed", "Before discussing service guarantees"],
+      "correct_index": 1,
+      "explanation_ru": "Сначала ценность гарантий и их стоимость, затем признание trade-off, и только после этого lower rate за длинный контракт."
+    },
+    {
+      "id": "c2_ls_board_response",
+      "level": "C2",
+      "skill": "inference",
+      "title_ru": "Реакция совета",
+      "script_en": "The board praised the proposal's ambition and asked the team to refine the implementation timeline. At the same time, it postponed the funding decision, requested a scenario requiring half the initial capital, and added the chief risk officer to every future review. No one rejected the strategy outright, but the next presentation has been reduced from an hour to twenty minutes.",
+      "question_en": "What can most reasonably be inferred about the board?",
+      "options": ["It has fully approved the proposal", "It is interested but has serious reservations", "It has permanently rejected the strategy", "It wants a longer and more detailed presentation"],
+      "correct_index": 1,
+      "explanation_ru": "Похвала сочетается с отсрочкой денег, урезанным сценарием и усиленным risk review — интерес есть, уверенности нет."
+    },
+    {
+      "id": "c2_ls_reorg_subtext",
+      "level": "C2",
+      "skill": "attitude",
+      "title_ru": "Подтекст реорганизации",
+      "script_en": "Leadership describes the reorganization as a way to eliminate duplication, which is a legitimate concern. Yet the published chart moves decision-making upward while leaving delivery targets untouched, and the consultation period begins only after the new roles have been announced. Calling that empowerment stretches the word beyond recognition. I would support consolidation if authority moved closer to the teams actually carrying the risk.",
+      "question_en": "What is the speaker's attitude toward the reorganization?",
+      "options": ["Unreservedly enthusiastic", "Critical of the design despite accepting part of the rationale", "Indifferent to how authority is distributed", "Opposed to any reduction in duplication"],
+      "correct_index": 1,
+      "explanation_ru": "Проблему duplication говорящий признаёт, но централизацию и фиктивную consultation резко критикует."
+    }
+  ]
+}

@@ -1,8 +1,8 @@
 """English Lab: многопользовательская платформа изучения английского в Telegram.
 
-Процесс один: long polling складывает апдейты в пул воркеров, а обновления одного
-и того же человека сериализуются его личным замком — иначе два быстрых нажатия
-разъехались бы по состоянию сессии.
+Процесс один: long polling складывает апдейты в общий пул, а отдельная очередь
+каждого человека сохраняет порядок. Codex, Whisper и Piper работают в своих
+ограниченных пулах и не останавливают приём новых обновлений.
 """
 
 from __future__ import annotations
@@ -12,7 +12,6 @@ import random
 import signal
 import sys
 import time
-from concurrent.futures import ThreadPoolExecutor
 from typing import Any, Callable
 
 from .ai.codex_cli import CodexRunner
@@ -22,7 +21,15 @@ from .ai.tts import Speaker
 from .config import Settings
 from .content.registry import load_curriculum
 from .context import Context
-from .handlers import core, dialogue, menu, speech, study
+from .handlers import core, dialogue, listening, menu, speech, study
+from .runtime import (
+    HeavyPools,
+    KeyedExecutor,
+    OverloadedError,
+    ThreadedLLM,
+    ThreadedSpeaker,
+    ThreadedTranscriber,
+)
 from .storage import Storage, User
 from .telegram_api import TelegramAPI, TelegramError, sender_name
 
@@ -83,6 +90,9 @@ CALLBACKS: dict[str, CallbackHandler] = {
     "write": dialogue.callback_writing,
     "endroleplay": dialogue.callback_end_roleplay,
     "speak": speech.callback_speaking,
+    "listen": listening.callback_listening,
+    "la": listening.callback_answer,
+    "lr": listening.callback_replay,
     "say": speech.callback_say,
     "slow": speech.callback_say_slow,
 }
@@ -101,6 +111,8 @@ CALLBACK_STATES: dict[str, str] = {
     "hint": "practice",
     "skip": "practice",
     "endses": "practice",
+    "la": "listening",
+    "lr": "listening",
 }
 STALE_BUTTON = "эта кнопка уже не активна"
 
@@ -191,7 +203,7 @@ NOT_LINKED = (
     "которую дал создатель."
 )
 NEED_INVITE = (
-    "English Lab — платформа отдела, вход по приглашению. "
+    "English Lab — платформа отдела АБП, вход по приглашению. "
     "Попроси у владельца бота ссылку вида t.me/…?start=КОД."
 )
 
@@ -203,16 +215,23 @@ class EnglishLabBot:
         self.telegram = TelegramAPI(settings.telegram_token)
         self.curriculum = load_curriculum()
         self.running = True
-        # По одному однопоточному исполнителю на дорожку: апдейты одного человека
-        # всегда попадают в одну дорожку и обрабатываются строго по порядку.
-        # Общий пул с замком сериализовал бы их, но переставлял местами.
-        self._lanes = [
-            ThreadPoolExecutor(max_workers=1, thread_name_prefix=f"english-lab-{index}")
-            for index in range(settings.workers)
-        ]
+        self._closed = False
+        self._dispatcher = KeyedExecutor(settings.workers)
+        self._heavy = HeavyPools(
+            settings.llm_workers, settings.stt_workers, settings.tts_workers
+        )
 
-        self.llm = _build_llm(settings)
-        self.transcriber, self.speaker = _build_speech(settings)
+        llm = _build_llm(settings)
+        transcriber, speaker = _build_speech(settings)
+        self.llm = ThreadedLLM(llm, self._heavy.llm) if llm is not None else None
+        self.transcriber = (
+            ThreadedTranscriber(transcriber, self._heavy.stt)
+            if transcriber is not None
+            else None
+        )
+        self.speaker = (
+            ThreadedSpeaker(speaker, self._heavy.tts) if speaker is not None else None
+        )
 
     # ── жизненный цикл ───────────────────────────────────────────
 
@@ -257,25 +276,43 @@ class EnglishLabBot:
     def run(self) -> None:
         self.initialize()
         offset: int | None = None
-        while self.running:
-            try:
-                updates = self.telegram.get_updates(offset)
-                for update in updates:
-                    offset = int(update["update_id"]) + 1
-                    self._submit(update)
-            except TelegramError:
-                LOGGER.exception("Ошибка long polling")
-                time.sleep(3)
-            except Exception:
-                LOGGER.exception("Неожиданная ошибка цикла обновлений")
-                time.sleep(1)
-        for lane in self._lanes:
-            lane.shutdown(wait=True, cancel_futures=False)
+        try:
+            while self.running:
+                try:
+                    updates = self.telegram.get_updates(offset)
+                    for update in updates:
+                        offset = int(update["update_id"]) + 1
+                        self._submit(update)
+                except TelegramError:
+                    LOGGER.exception("Ошибка long polling")
+                    time.sleep(3)
+                except Exception:
+                    LOGGER.exception("Неожиданная ошибка цикла обновлений")
+                    time.sleep(1)
+        finally:
+            self.close()
+
+    def close(self, wait: bool = True) -> None:
+        """Останавливает очереди в безопасном порядке; повторный вызов безвреден."""
+        if self._closed:
+            return
+        self._closed = True
+        # Сначала перестаём принимать обновления и даём уже принятым закончить,
+        # затем закрываем пулы, внутри которых они могли ждать тяжёлую работу.
+        self._dispatcher.shutdown(wait=wait)
+        self._heavy.shutdown(wait=wait)
 
     def _submit(self, update: dict[str, Any]) -> None:
         sender = (update.get("message") or update.get("callback_query") or {}).get("from") or {}
         user_id = int(sender.get("id") or 0)
-        self._lanes[user_id % len(self._lanes)].submit(self._safe_handle, update)
+        future = self._dispatcher.submit(user_id, self._safe_handle, update)
+        if future.done():
+            try:
+                future.result()
+            except OverloadedError:
+                # Очереди имеют конечный размер: под флудом сохраняем память и polling,
+                # даже если отдельное уже подтверждённое Telegram-обновление потеряется.
+                LOGGER.warning("Очередь обновлений заполнена, апдейт отклонён")
 
     def _safe_handle(self, update: dict[str, Any]) -> None:
         try:
@@ -331,6 +368,9 @@ class EnglishLabBot:
             self._dispatch_command(ctx, user, text)
             return
         if message.get("voice"):
+            if user.state == "listening":
+                ctx.say(user, "Сейчас слушаем: выбери ответ кнопкой под аудио.")
+                return
             speech.handle_voice(ctx, user, message)
             return
         if not text:
@@ -427,6 +467,9 @@ class EnglishLabBot:
             return
         if user.state == "speaking":
             ctx.say(user, "Жду голосовое по заданию. Или /stop, чтобы выйти.")
+            return
+        if user.state == "listening":
+            ctx.say(user, "Выбери ответ кнопкой A–D под аудио. Или /stop, чтобы выйти.")
             return
         dialogue.handle_free_text(ctx, user, text)
 

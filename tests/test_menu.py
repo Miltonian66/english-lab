@@ -101,7 +101,7 @@ class OneClickTests(BotTestCase):
         self.assertEqual(action, "speaking")
         self.assertIn("вслух", reason)
 
-    def test_recent_speaking_sends_back_to_practice(self) -> None:
+    def test_recent_speaking_rotates_to_listening(self) -> None:
         self.bot.storage.update_user(100, level="B1")
         session = self.bot.storage.start_session(100, "mixed", "B1")
         self.bot.storage.finish_session(session, items=10, correct=7)
@@ -109,6 +109,19 @@ class OneClickTests(BotTestCase):
             user_id=100, telegram_message_id=1, file_id="f", file_unique_id="u",
             duration_seconds=60, local_path=self.settings.voice_dir / "x.ogg", task_id="t",
         )
+        action, _ = menu.choose_daily(self.bot.context(), self.bot.storage.user(100))
+        self.assertEqual(action, "listening")
+
+    def test_recent_speaking_and_listening_send_back_to_practice(self) -> None:
+        self.bot.storage.update_user(100, level="B1")
+        session = self.bot.storage.start_session(100, "mixed", "B1")
+        self.bot.storage.finish_session(session, items=10, correct=7)
+        self.bot.storage.add_voice(
+            user_id=100, telegram_message_id=1, file_id="f", file_unique_id="u",
+            duration_seconds=60, local_path=self.settings.voice_dir / "x.ogg", task_id="t",
+        )
+        listening = self.bot.storage.start_session(100, "listening", "b1_ls")
+        self.bot.storage.finish_session(listening, items=1, correct=1)
         action, _ = menu.choose_daily(self.bot.context(), self.bot.storage.user(100))
         self.assertEqual(action, "practice")
 
@@ -185,7 +198,7 @@ class ProfileScreenTests(BotTestCase):
     def test_extra_actions_are_two_taps_away(self) -> None:
         self.send(100, menu.PROFILE)
         buttons = self.telegram.buttons()
-        for expected in ("chat", "askword", "plan", "team", "anki", "export", "help"):
+        for expected in ("chat", "listen", "askword", "plan", "team", "anki", "export", "help"):
             with self.subTest(button=expected):
                 self.assertIn(expected, buttons)
 

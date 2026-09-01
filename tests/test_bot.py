@@ -8,6 +8,7 @@ import unittest
 from pathlib import Path
 from typing import Any
 
+from english_bot.ai.llm import LLMError
 from english_bot.app import EnglishLabBot
 from english_bot.config import Settings
 from english_bot.handlers import menu
@@ -804,6 +805,80 @@ class GroupChatTests(BotTestCase):
         assert after is not None
         self.assertEqual(after.state, "idle")
         self.assertEqual(after.last_active_at, before.last_active_at)
+
+
+class PlatformHelpTests(BotTestCase):
+    def setUp(self) -> None:
+        super().setUp()
+        self.claim_owner()
+
+        class Stub:
+            provider = "openai"
+
+            def __init__(self) -> None:
+                self.calls: list[tuple[str, list[dict[str, str]], dict[str, object]]] = []
+                self.reply = "Открой «📊 Я» → «Уровень и диагностика»."
+                self.fail = False
+
+            def complete(
+                self, system: str, messages: list[dict[str, str]], **kwargs: object
+            ) -> str:
+                self.calls.append((system, messages, kwargs))
+                if self.fail:
+                    raise LLMError("временный сбой")
+                return self.reply
+
+        self.stub = Stub()
+        self.bot.llm = self.stub  # type: ignore[assignment]
+
+    def test_bare_help_is_static_and_does_not_spend_an_ai_call(self) -> None:
+        self.bot.llm = None
+        self.send(100, "/help")
+        self.assertIn("Всё основное — кнопками", self.telegram.all_text())
+        self.assertIn("/help", self.telegram.all_text())
+
+    def test_question_is_grounded_in_retrieved_knowledge(self) -> None:
+        self.send(100, "/help как пройти диагностику?")
+        self.assertEqual(len(self.stub.calls), 1)
+        system, messages, kwargs = self.stub.calls[0]
+        self.assertIn("Уровень и диагностика", system)
+        self.assertIn("Единственный источник фактов", system)
+        self.assertEqual(messages, [{"role": "user", "content": "как пройти диагностику?"}])
+        self.assertEqual(kwargs["user_id"], 100)
+        self.assertEqual(kwargs["max_tokens"], 500)
+        self.assertEqual(self.telegram.last(), self.stub.reply)
+
+    def test_help_question_does_not_interrupt_an_active_lesson(self) -> None:
+        self.bot.storage.set_state(100, "practice", {"marker": "keep"})
+        self.send(100, "/help где найти аудирование?")
+        user = self.bot.storage.user(100)
+        assert user is not None
+        self.assertEqual(user.state, "practice")
+        self.assertEqual(user.state_data, {"marker": "keep"})
+
+    def test_unrelated_question_is_rejected_without_calling_the_model(self) -> None:
+        self.send(100, "/help сколько варить пельмени?")
+        self.assertEqual(self.stub.calls, [])
+        self.assertIn("только о том, как пользоваться English Lab", self.telegram.last())
+
+    def test_too_long_question_is_rejected_without_calling_the_model(self) -> None:
+        self.send(100, "/help " + "x" * 501)
+        self.assertEqual(self.stub.calls, [])
+        self.assertIn("до 500 символов", self.telegram.last())
+
+    def test_invented_command_is_replaced_with_a_grounded_fallback(self) -> None:
+        self.stub.reply = "Нажми /practice, чтобы запустить аудирование."
+        with self.assertLogs("english_bot.handlers.core", level="WARNING"):
+            self.send(100, "/help как включить аудирование?")
+        self.assertNotIn("/practice", self.telegram.last())
+        self.assertIn("Аудирование", self.telegram.last())
+
+    def test_model_failure_returns_the_nearest_article(self) -> None:
+        self.stub.fail = True
+        with self.assertLogs("english_bot.handlers.core", level="WARNING"):
+            self.send(100, "/help как открыть курс?")
+        self.assertIn("ИИ сейчас не ответил", self.telegram.last())
+        self.assertIn("📚 Курс", self.telegram.last())
 
 
 class SlowProviderFeedbackTests(BotTestCase):

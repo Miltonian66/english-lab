@@ -1,7 +1,7 @@
 # Эксплуатация, данные и интеграции
 
 `scope`: конфигурация, доступ, внешние сервисы, конкурентность, производительность, схема данных, запуск и удаление
-`source_of_truth`: `english_bot/config.py`, `english_bot/storage.py`, `english_bot/telegram_api.py`, `english_bot/runtime.py`, `english_bot/ai/`, `english_bot/app.py`, `.env.example`, `deploy/english-tutor-bot.service`, `tests/test_storage.py`, `tests/test_runtime.py`, `tests/test_http.py`
+`source_of_truth`: `english_bot/config.py`, `english_bot/storage.py`, `english_bot/telegram_api.py`, `english_bot/runtime.py`, `english_bot/platform_help.py`, `english_bot/ai/`, `english_bot/app.py`, `.env.example`, `deploy/english-tutor-bot.service`, `tests/test_storage.py`, `tests/test_runtime.py`, `tests/test_http.py`, `tests/test_platform_help.py`
 
 ## Назначение
 
@@ -82,7 +82,8 @@
 Сборка живёт в `app._build_llm` и `app._build_speech`, остальной код видит один
 интерфейс.
 
-**Текст — `LLM_PROVIDER`.** `codex` запускает `codex exec` подпроцессом и работает
+**Текст — `LLM_PROVIDER`.** Свободный чат, разбор речи и письма, объяснения и
+справочный `/help <вопрос>` используют тот же текстовый контур. `codex` запускает `codex exec` подпроцессом и работает
 по подписке ChatGPT: ключ не нужен, денег не стоит, но ответ занимает 8–12 секунд.
 Агент стартует в пустой временной папке под песочницей `read-only`, промпт идёт
 через stdin, ответ читается из `--output-last-message`. Разовый сбой запуска
@@ -207,6 +208,8 @@ bucket: 28 сообщений/с глобально и burst 3 сообщени�
 - Telegram, включая multipart для голосовых и документов: `english_bot/telegram_api.py`.
 - HTTP к внешним сервисам: `english_bot/ai/http.py`.
 - Текстовая модель: `english_bot/ai/llm.py`; речь: `stt.py`, `tts.py`.
+- Grounded-справка платформы: `english_bot/platform_help.py`,
+  `english_bot/platform_knowledge.json`, prompt в `english_bot/ai/prompts.py`.
 - Маршрутизация, передача в диспетчер, доступ: `english_bot/app.py`.
 - Общий контекст обработчиков и лимиты: `english_bot/context.py`.
 - Deployment: `deploy/english-tutor-bot.service`.
@@ -229,7 +232,7 @@ python3 -c 'from english_bot.config import Settings; from english_bot.telegram_a
 systemctl --user status english-tutor-bot.service --no-pager
 ```
 
-Успех: 225 тестов проходят, компиляция и валидатор контента без ошибок, unit-файл
+Успех: 239 тестов проходят, компиляция и валидатор контента без ошибок, unit-файл
 валиден, `getMe` возвращает username, сервис активен. Из системного `python3` шесть
 тестов локальной речи пропускаются — это ожидаемо, полный набор гоняется через
 `.venv/bin/python -m unittest discover -s tests`.

@@ -236,12 +236,12 @@ class InterfaceSplitTests(BotTestCase):
     """
 
     EXPECTED_COMMANDS = {
-        "/start", "/say", "/learn", "/roleplay",
+        "/start", "/help", "/say", "/learn", "/roleplay",
         "/stop", "/cancel", "/privacy", "/forget", "/admin",
     }
     # Всё это доступно кнопками, поэтому командой быть не должно.
     RETIRED = (
-        "/menu", "/me", "/help", "/test", "/practice", "/review", "/speaking",
+        "/menu", "/me", "/test", "/practice", "/review", "/speaking",
         "/writing", "/chat", "/progress", "/plan", "/team", "/anki", "/export",
         "/invite", "/pron",
     )

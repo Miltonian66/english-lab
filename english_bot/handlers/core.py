@@ -3,8 +3,11 @@
 from __future__ import annotations
 
 import logging
+import re
 from pathlib import Path
 
+from ..ai.llm import LLMError
+from ..ai.prompts import platform_help_system
 from ..content.schema import LEVELS
 from ..context import Context
 from ..learning.placement import next_level
@@ -16,6 +19,7 @@ from ..learning.progress import (
     team_board,
     write_export,
 )
+from ..platform_help import KnowledgeError, find_articles, knowledge_excerpt
 from ..storage import User, utc_now
 from ..telegram_api import inline, inline_grid
 from .menu import MAIN_KEYBOARD
@@ -28,6 +32,7 @@ LOGGER = logging.getLogger(__name__)
 # чем пользоваться. /admin намеренно отсутствует — он не для всех.
 COMMANDS: list[tuple[str, str]] = [
     ("start", "начать заново и вернуть кнопки"),
+    ("help", "вопрос о платформе: /help как пройти диагностику?"),
     ("say", "произношение слова или фразы: /say schedule"),
     ("learn", "найти правило по названию: /learn present perfect"),
     ("roleplay", "диалог по своему сценарию"),
@@ -74,7 +79,52 @@ def command_start(ctx: Context, user: User, text: str) -> None:
 
 
 def command_help(ctx: Context, user: User, text: str) -> None:
-    ctx.say(user, HELP_TEXT)
+    question = text.partition(" ")[2].strip()
+    if not question:
+        ctx.say(user, HELP_TEXT)
+        return
+    if len(question) > 500:
+        ctx.say(user, "Сократи вопрос до 500 символов — так я точнее найду нужную справку.")
+        return
+    try:
+        articles = find_articles(question)
+    except KnowledgeError:
+        LOGGER.exception("Не удалось загрузить базу знаний платформы")
+        ctx.say(user, "Справка временно недоступна. Попробуй позже или обратись к владельцу.")
+        return
+    if not articles:
+        ctx.say(
+            user,
+            "Я отвечаю только о том, как пользоваться English Lab. "
+            "Например: /help как пройти диагностику?",
+        )
+        return
+
+    llm = ctx.require_llm(user)
+    if llm is None:
+        return
+    ctx.working(user, "Ищу ответ в справке платформы, это до минуты.")
+    try:
+        reply = llm.complete(
+            platform_help_system(knowledge_excerpt(articles)),
+            [{"role": "user", "content": question}],
+            user_id=user.user_id,
+            max_tokens=500,
+            temperature=0.1,
+        ).strip()
+    except LLMError as exc:
+        LOGGER.warning("Справочный агент не ответил: %s", exc)
+        ctx.say(user, f"ИИ сейчас не ответил. Вот ближайшая справка:\n\n{articles[0].answer_ru}")
+        return
+
+    allowed_commands = {f"/{name}" for name, _ in COMMANDS} | {"/cancel", "/admin"}
+    mentioned_commands = set(re.findall(r"/[a-z]+", reply.casefold()))
+    invented = mentioned_commands - allowed_commands
+    if not reply or invented:
+        if invented:
+            LOGGER.warning("Справочный агент придумал команды: %s", sorted(invented))
+        reply = articles[0].answer_ru
+    ctx.say(user, reply)
 
 
 def callback_set_level(ctx: Context, user: User, payload: str) -> str:

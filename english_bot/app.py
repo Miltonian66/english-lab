@@ -45,6 +45,7 @@ CallbackHandler = Callable[[Context, User, str], str]
 # намеренно спрятано подальше от случайного нажатия.
 COMMANDS: dict[str, CommandHandler] = {
     "/start": core.command_start,
+    "/help": core.command_help,
     "/say": speech.command_say,
     "/learn": study.command_learn,
     "/roleplay": dialogue.command_roleplay,
@@ -97,9 +98,9 @@ CALLBACKS: dict[str, CallbackHandler] = {
     "slow": speech.callback_say_slow,
 }
 
-# Произношение не прерывает занятие: спросить про слово посреди упражнения —
-# нормальный ход, а не смена вида деятельности.
-STATE_SAFE_COMMANDS = {"/stop", "/cancel", "/say"}
+# Произношение и справочный вопрос не прерывают занятие: спросить про слово или
+# интерфейс посреди упражнения — нормальный ход, а не смена вида деятельности.
+STATE_SAFE_COMMANDS = {"/stop", "/cancel", "/say", "/help"}
 
 # Кнопка действует только внутри своего занятия. Инлайн-клавиатуры Telegram живут
 # в истории вечно, поэтому нажатие из прокрученной вверх переписки обязано быть

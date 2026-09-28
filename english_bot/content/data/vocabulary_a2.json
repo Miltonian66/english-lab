@@ -1,20 +1,6 @@
 {
   "items": [
     {
-      "id": "a2_v_kitchen",
-      "level": "A2",
-      "word": "kitchen",
-      "pos": "noun",
-      "ipa_us": "/ˈkɪtʃən/",
-      "translation_ru": "кухня",
-      "example_en": "We cook dinner together in the kitchen every evening.",
-      "collocations": [
-        "a small kitchen",
-        "in the kitchen"
-      ],
-      "topic": "home"
-    },
-    {
       "id": "a2_v_furniture",
       "level": "A2",
       "word": "furniture",
@@ -25,20 +11,6 @@
       "collocations": [
         "office furniture",
         "a piece of furniture"
-      ],
-      "topic": "home"
-    },
-    {
-      "id": "a2_v_apartment",
-      "level": "A2",
-      "word": "apartment",
-      "pos": "noun",
-      "ipa_us": "/əˈpɑrtmənt/",
-      "translation_ru": "квартира",
-      "example_en": "They rent a small apartment near the station.",
-      "collocations": [
-        "rent an apartment",
-        "a one-bedroom apartment"
       ],
       "topic": "home"
     },
@@ -559,20 +531,6 @@
       "topic": "money"
     },
     {
-      "id": "a2_v_receipt",
-      "level": "A2",
-      "word": "receipt",
-      "pos": "noun",
-      "ipa_us": "/rɪˈsit/",
-      "translation_ru": "чек (из магазина), квитанция",
-      "example_en": "Keep the receipt if you want to return the shoes.",
-      "collocations": [
-        "keep the receipt",
-        "ask for a receipt"
-      ],
-      "topic": "money"
-    },
-    {
       "id": "a2_v_discount",
       "level": "A2",
       "word": "discount",
@@ -768,20 +726,6 @@
       "collocations": [
         "a business trip",
         "go on a trip"
-      ],
-      "topic": "travel"
-    },
-    {
-      "id": "a2_v_delay",
-      "level": "A2",
-      "word": "delay",
-      "pos": "noun",
-      "ipa_us": "/dɪˈleɪ/",
-      "translation_ru": "задержка, опоздание",
-      "example_en": "There was a two-hour delay at the airport.",
-      "collocations": [
-        "a long delay",
-        "a short delay"
       ],
       "topic": "travel"
     },
@@ -1156,20 +1100,6 @@
       "topic": "nature"
     },
     {
-      "id": "a2_v_freeze",
-      "level": "A2",
-      "word": "freeze",
-      "pos": "verb",
-      "ipa_us": "/friz/",
-      "translation_ru": "замерзать, замораживать",
-      "example_en": "Water freezes at zero degrees.",
-      "collocations": [
-        "freeze food",
-        "start to freeze"
-      ],
-      "topic": "nature"
-    },
-    {
       "id": "a2_v_recipe",
       "level": "A2",
       "word": "recipe",
@@ -1285,20 +1215,6 @@
       "topic": "food"
     },
     {
-      "id": "a2_v_boring",
-      "level": "A2",
-      "word": "boring",
-      "pos": "adjective",
-      "ipa_us": "/ˈbɔrɪŋ/",
-      "translation_ru": "скучный",
-      "example_en": "The film was boring, so we left early.",
-      "collocations": [
-        "a boring film",
-        "a boring job"
-      ],
-      "topic": "feelings"
-    },
-    {
       "id": "a2_v_excited",
       "level": "A2",
       "word": "excited",
@@ -1405,20 +1321,6 @@
       "topic": "feelings"
     },
     {
-      "id": "a2_v_wake_up",
-      "level": "A2",
-      "word": "wake up",
-      "pos": "phrasal verb",
-      "ipa_us": "/weɪk ˈʌp/",
-      "translation_ru": "просыпаться, будить",
-      "example_en": "I wake up before my alarm on Saturdays.",
-      "collocations": [
-        "wake up early",
-        "wake somebody up"
-      ],
-      "topic": "time"
-    },
-    {
       "id": "a2_v_turn_off",
       "level": "A2",
       "word": "turn off",
@@ -1467,23 +1369,6 @@
       "topic": "study"
     },
     {
-      "id": "a2_v_give_up",
-      "level": "A2",
-      "word": "give up",
-      "pos": "phrasal verb",
-      "ipa_us": "/gɪv ˈʌp/",
-      "translation_ru": "бросать, сдаваться",
-      "example_en": "Do not give up after the first try.",
-      "collocations": [
-        "give up smoking",
-        "never give up"
-      ],
-      "topic": "feelings",
-      "accept": [
-        "quit"
-      ]
-    },
-    {
       "id": "a2_v_put_on",
       "level": "A2",
       "word": "put on",
@@ -1526,24 +1411,6 @@
       "topic": "travel"
     },
     {
-      "id": "a2_v_log_in",
-      "level": "A2",
-      "word": "log in",
-      "pos": "phrasal verb",
-      "ipa_us": "/lɔg ˈɪn/",
-      "translation_ru": "входить в систему",
-      "example_en": "I cannot log in with my old password.",
-      "collocations": [
-        "log in to your account",
-        "log in again"
-      ],
-      "topic": "tech",
-      "accept": [
-        "sign in",
-        "log on"
-      ]
-    },
-    {
       "id": "a2_v_fill_in",
       "level": "A2",
       "word": "fill in",
@@ -1559,20 +1426,6 @@
       "accept": [
         "fill out"
       ]
-    },
-    {
-      "id": "a2_v_usually",
-      "level": "A2",
-      "word": "usually",
-      "pos": "adverb",
-      "ipa_us": "/ˈjuʒuəli/",
-      "translation_ru": "обычно",
-      "example_en": "I usually work from home on Fridays.",
-      "collocations": [
-        "usually get up early",
-        "not usually"
-      ],
-      "topic": "time"
     },
     {
       "id": "a2_v_already",
@@ -1677,6 +1530,93 @@
         "be polite to somebody"
       ],
       "topic": "people"
+    },
+    {
+      "id": "b1_v_explain",
+      "level": "A2",
+      "word": "explain",
+      "pos": "verb",
+      "ipa_us": "/ɪkˈspleɪn/",
+      "translation_ru": "объяснять",
+      "example_en": "He explained the problem in simple words.",
+      "collocations": [
+        "explain a rule",
+        "explain clearly"
+      ],
+      "topic": "study"
+    },
+    {
+      "id": "b1_v_advice",
+      "level": "A2",
+      "word": "advice",
+      "pos": "noun",
+      "ipa_us": "/ədˈvaɪs/",
+      "translation_ru": "совет, советы",
+      "example_en": "She gave me good advice about my presentation.",
+      "collocations": [
+        "give advice",
+        "a piece of advice"
+      ],
+      "topic": "people"
+    },
+    {
+      "id": "b1_v_reason",
+      "level": "A2",
+      "word": "reason",
+      "pos": "noun",
+      "ipa_us": "/ˈrizən/",
+      "translation_ru": "причина, довод",
+      "example_en": "The main reason for the delay was a missing file.",
+      "collocations": [
+        "the main reason",
+        "for this reason"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "b1_v_probably",
+      "level": "A2",
+      "word": "probably",
+      "pos": "adverb",
+      "ipa_us": "/ˈprɑbəbli/",
+      "translation_ru": "вероятно, наверное",
+      "example_en": "The meeting will probably finish before lunch.",
+      "collocations": [
+        "will probably",
+        "probably not"
+      ],
+      "topic": "time"
+    },
+    {
+      "id": "b1_v_in_my_opinion",
+      "level": "A2",
+      "word": "in my opinion",
+      "pos": "phrase",
+      "ipa_us": "/ɪn maɪ əˈpɪnjən/",
+      "translation_ru": "по-моему, на мой взгляд",
+      "example_en": "In my opinion, we should test the app one more time.",
+      "collocations": [
+        "in my opinion, we should",
+        "in my honest opinion"
+      ],
+      "topic": "feelings"
+    },
+    {
+      "id": "a1_v_turn_on",
+      "level": "A2",
+      "word": "turn on",
+      "pos": "phrasal verb",
+      "ipa_us": "/ˌtɝn ˈɑn/",
+      "translation_ru": "включать",
+      "example_en": "Turn on the computer, please.",
+      "collocations": [
+        "turn on the light",
+        "turn on the TV"
+      ],
+      "topic": "tech",
+      "accept": [
+        "switch on"
+      ]
     }
   ]
 }

@@ -1638,23 +1638,6 @@
       "topic": "people"
     },
     {
-      "id": "a1_v_turn_on",
-      "level": "A1",
-      "word": "turn on",
-      "pos": "phrasal verb",
-      "ipa_us": "/ˌtɝn ˈɑn/",
-      "translation_ru": "включать",
-      "example_en": "Turn on the computer, please.",
-      "collocations": [
-        "turn on the light",
-        "turn on the TV"
-      ],
-      "topic": "tech",
-      "accept": [
-        "switch on"
-      ]
-    },
-    {
       "id": "a1_v_sit_down",
       "level": "A1",
       "word": "sit down",
@@ -1710,6 +1693,76 @@
         "say good morning"
       ],
       "topic": "people"
+    },
+    {
+      "id": "a2_v_kitchen",
+      "level": "A1",
+      "word": "kitchen",
+      "pos": "noun",
+      "ipa_us": "/ˈkɪtʃən/",
+      "translation_ru": "кухня",
+      "example_en": "We cook dinner together in the kitchen every evening.",
+      "collocations": [
+        "a small kitchen",
+        "in the kitchen"
+      ],
+      "topic": "home"
+    },
+    {
+      "id": "a2_v_apartment",
+      "level": "A1",
+      "word": "apartment",
+      "pos": "noun",
+      "ipa_us": "/əˈpɑrtmənt/",
+      "translation_ru": "квартира",
+      "example_en": "They live in a small apartment near the station.",
+      "collocations": [
+        "rent an apartment",
+        "a one-bedroom apartment"
+      ],
+      "topic": "home"
+    },
+    {
+      "id": "a2_v_usually",
+      "level": "A1",
+      "word": "usually",
+      "pos": "adverb",
+      "ipa_us": "/ˈjuʒuəli/",
+      "translation_ru": "обычно",
+      "example_en": "I usually work from home on Fridays.",
+      "collocations": [
+        "usually get up early",
+        "not usually"
+      ],
+      "topic": "time"
+    },
+    {
+      "id": "a2_v_boring",
+      "level": "A1",
+      "word": "boring",
+      "pos": "adjective",
+      "ipa_us": "/ˈbɔrɪŋ/",
+      "translation_ru": "скучный",
+      "example_en": "The film was boring, so we left early.",
+      "collocations": [
+        "a boring film",
+        "a boring job"
+      ],
+      "topic": "feelings"
+    },
+    {
+      "id": "a2_v_wake_up",
+      "level": "A1",
+      "word": "wake up",
+      "pos": "phrasal verb",
+      "ipa_us": "/weɪk ˈʌp/",
+      "translation_ru": "просыпаться, будить",
+      "example_en": "I wake up at seven every day.",
+      "collocations": [
+        "wake up early",
+        "wake somebody up"
+      ],
+      "topic": "time"
     }
   ]
 }

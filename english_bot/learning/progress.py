@@ -29,6 +29,23 @@ def mastery_map(storage: Storage, user_id: int) -> dict[str, int]:
     return {str(row["card_key"]): int(row["mastery"]) for row in rows}
 
 
+def skill_level(storage: Storage, user: User, skill: str) -> str:
+    """Уровень для подбора заданий речи, письма и аудирования.
+
+    Общий уровень измеряется узнаванием грамматики, а говорить и писать человек
+    почти всегда умеет хуже, чем узнавать. Пока по навыку нет данных, берём
+    ступень ниже общего уровня; дальше решает накопленное мастерство навыка.
+    """
+    base = user.level or "A2"
+    index = LEVEL_ORDER.get(base, 1)
+    mastery, minutes = storage.skills(user.user_id).get(skill, (0, 0))
+    if mastery >= MASTERED:
+        return base
+    if mastery <= 1 or (mastery == 0 and minutes == 0):
+        return LEVELS[max(0, index - 1)]
+    return base
+
+
 def unmastered_points(
     curriculum: Curriculum, mastery: dict[str, int], level: str, limit: int = 6
 ) -> list[GrammarPoint]:

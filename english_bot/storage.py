@@ -18,9 +18,13 @@ from pathlib import Path
 from typing import Any
 
 
-SCHEMA_VERSION = 3
+SCHEMA_VERSION = 5
 
 ROLES: tuple[str, ...] = ("owner", "admin", "member")
+# Учебные сессии, которые считаются «занимался сегодня». Аудирование и устная
+# практика — отдельные навыки, дневную норму тренировки они не закрывают.
+PRACTICE_KINDS: tuple[str, ...] = ("mixed", "topic", "point", "review")
+PRACTICE_KINDS_SQL = ", ".join(f"'{kind}'" for kind in PRACTICE_KINDS)
 CARD_TYPES: tuple[str, ...] = ("point", "vocab", "error")
 SKILLS: tuple[str, ...] = ("grammar", "vocabulary", "reading", "listening", "writing", "speaking")
 
@@ -221,7 +225,33 @@ CREATE TABLE IF NOT EXISTS sessions (
     finished_at TEXT
 );
 CREATE INDEX IF NOT EXISTS idx_sessions_user ON sessions(user_id, started_at);
+CREATE TABLE IF NOT EXISTS ux_events (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    user_id INTEGER NOT NULL REFERENCES users(user_id) ON DELETE CASCADE,
+    name TEXT NOT NULL,
+    detail TEXT NOT NULL DEFAULT '',
+    value INTEGER NOT NULL DEFAULT 0,
+    created_at TEXT NOT NULL
+);
+CREATE INDEX IF NOT EXISTS idx_events_name ON ux_events(name, created_at);
+
+-- Журнал попыток входа. Намеренно без внешнего ключа на `users`: ценность этой
+-- таблицы именно в тех, кого НЕ пустили, — их в `users` нет и не будет.
+CREATE TABLE IF NOT EXISTS access_log (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    user_id INTEGER NOT NULL,
+    chat_id INTEGER NOT NULL DEFAULT 0,
+    display_name TEXT NOT NULL DEFAULT '',
+    outcome TEXT NOT NULL,
+    detail TEXT NOT NULL DEFAULT '',
+    created_at TEXT NOT NULL
+);
+CREATE INDEX IF NOT EXISTS idx_access_created ON access_log(created_at);
 """
+
+# Журнал входов не растёт бесконечно: он нужен для разбора «почему не пускает»,
+# а не как архив. Хвост режется при каждой записи.
+ACCESS_LOG_LIMIT = 500
 
 
 class Storage:
@@ -449,6 +479,39 @@ class Storage:
                 (state, json.dumps(data or {}, ensure_ascii=False), user_id),
             )
 
+    def swap_state(
+        self,
+        user_id: int,
+        expected: str,
+        state: str,
+        data: dict[str, Any] | None = None,
+        *,
+        key: str = "",
+        value: str = "",
+    ) -> bool:
+        """Меняет состояние, только если человек всё ещё занят тем же делом.
+
+        Фоновая задача заканчивается через минуту после старта, и за это время
+        человек мог начать другое занятие. Безусловный `set_state` затёр бы его
+        выбор результатом работы, о которой он уже забыл.
+
+        Одного имени состояния мало: разбор устного задания T1 закончится тогда,
+        когда человек уже взял T2, и состояние в обоих случаях `speaking`.
+        Поэтому `key`/`value` сверяют ещё и метку задания в `state_data`. `cast`
+        обязателен: `session_id` лежит в JSON числом и без него со строкой
+        никогда не совпадёт. `False` — состояние чужое, ничего не меняли.
+        """
+        clause = "WHERE user_id = ? AND state = ?"
+        params: list[Any] = [state, json.dumps(data or {}, ensure_ascii=False), user_id, expected]
+        if key:
+            clause += " AND ifnull(cast(json_extract(state_data, '$.' || ?) as text), '') = ?"
+            params.extend([key, value])
+        with self.session() as db:
+            cursor = db.execute(
+                f"UPDATE users SET state = ?, state_data = ? {clause}", params
+            )
+        return cursor.rowcount > 0
+
     def all_users(self) -> list[User]:
         with self.session() as db:
             rows = db.execute("SELECT * FROM users ORDER BY created_at, user_id").fetchall()
@@ -516,6 +579,31 @@ class Storage:
                 (user_id, utc_now(), code),
             )
             return str(row["role"])
+
+    def invite_status(self, code: str) -> str:
+        """`missing`, `used`, `expired` или `ok` — чтобы отказ объяснял причину.
+
+        Один и тот же текст на все три случая заставлял человека гадать, что
+        пошло не так: пересланная ссылка, старый код или чужое приглашение.
+        """
+        with self.session() as db:
+            row = db.execute("SELECT * FROM invites WHERE code = ?", (code.strip(),)).fetchone()
+        if row is None:
+            return "missing"
+        if row["used_by"] is not None:
+            return "used"
+        expires = parse_ts(row["expires_at"])
+        if expires is not None and expires < datetime.now(UTC):
+            return "expired"
+        return "ok"
+
+    def revoke_invite(self, code: str) -> bool:
+        """Гасит неиспользованный код. True — код был живым и теперь не сработает."""
+        with self.session() as db:
+            cursor = db.execute(
+                "DELETE FROM invites WHERE code = ? AND used_by IS NULL", (code.strip(),)
+            )
+            return bool(cursor.rowcount)
 
     def invites(self, created_by: int | None = None) -> list[dict[str, Any]]:
         query = "SELECT * FROM invites"
@@ -680,6 +768,31 @@ class Storage:
                 ),
             )
 
+    def delete_cards(self, user_id: int, card_type: str, keys: list[str]) -> int:
+        """Убирает карточки по ключам: нужно при понижении уровня.
+
+        Иначе материал прежнего уровня возвращается в «Повторение» навсегда, и
+        исправление уровня выглядит кнопкой, которая ничего не сделала.
+        """
+        if not keys:
+            return 0
+        marks = ", ".join("?" for _ in keys)
+        with self.session() as db:
+            cursor = db.execute(
+                f"DELETE FROM srs_cards WHERE user_id = ? AND card_type = ? "
+                f"AND card_key IN ({marks})",
+                (user_id, card_type, *keys),
+            )
+            return int(cursor.rowcount or 0)
+
+    def card_keys(self, user_id: int, card_type: str) -> list[str]:
+        with self.session() as db:
+            rows = db.execute(
+                "SELECT card_key FROM srs_cards WHERE user_id = ? AND card_type = ?",
+                (user_id, card_type),
+            ).fetchall()
+        return [str(row["card_key"]) for row in rows]
+
     def due_cards(self, user_id: int, card_type: str | None = None, limit: int = 40) -> list[Card]:
         query = "SELECT * FROM srs_cards WHERE user_id = ? AND due_at <= ?"
         params: list[Any] = [user_id, utc_now()]
@@ -795,8 +908,13 @@ class Storage:
                     file_unique_id = excluded.file_unique_id,
                     duration_seconds = excluded.duration_seconds,
                     local_path = excluded.local_path,
-                    task_id = excluded.task_id,
-                    created_at = excluded.created_at
+                    -- Повтор апдейта не должен переклеивать задание на запись,
+                    -- по которой разбор уже сделан: от `task_id` зависит зачёт
+                    -- устной практики.
+                    task_id = CASE WHEN voice_messages.feedback = ''
+                                   THEN excluded.task_id ELSE voice_messages.task_id END,
+                    created_at = CASE WHEN voice_messages.feedback = ''
+                                      THEN excluded.created_at ELSE voice_messages.created_at END
                 """,
                 (
                     user_id, telegram_message_id, file_id, file_unique_id,
@@ -804,15 +922,31 @@ class Storage:
                 ),
             )
 
-    def set_voice_result(
-        self, user_id: int, telegram_message_id: int, transcript: str, feedback: str, words: int
+    def set_voice_transcript(
+        self, user_id: int, telegram_message_id: int, transcript: str, words: int
     ) -> None:
+        """Первая половина результата. Колонку `feedback` не трогает.
+
+        Расшифровка готова за секунды, разбор — через минуту. Писать их одним
+        вызовом значило бы либо держать расшифровку в памяти до конца разбора,
+        либо обнулять уже готовый разбор при повторе.
+        """
         with self.session() as db:
             db.execute(
-                "UPDATE voice_messages SET transcript = ?, feedback = ?, words = ? "
+                "UPDATE voice_messages SET transcript = ?, words = ? "
                 "WHERE user_id = ? AND telegram_message_id = ?",
-                (transcript, feedback, words, user_id, telegram_message_id),
+                (transcript, words, user_id, telegram_message_id),
             )
+
+    def set_voice_feedback(self, user_id: int, telegram_message_id: int, feedback: str) -> bool:
+        """Вторая половина. Пишется один раз: непустой разбор не переписывается."""
+        with self.session() as db:
+            cursor = db.execute(
+                "UPDATE voice_messages SET feedback = ? "
+                "WHERE user_id = ? AND telegram_message_id = ? AND feedback = ''",
+                (feedback, user_id, telegram_message_id),
+            )
+        return cursor.rowcount > 0
 
     def voices(self, user_id: int) -> list[dict[str, Any]]:
         with self.session() as db:
@@ -906,11 +1040,14 @@ class Storage:
                 )
                 VALUES (?, ?, ?, ?, ?, ?, ?, ?)
                 ON CONFLICT(word) DO UPDATE SET
-                    display = excluded.display,
-                    ipa = excluded.ipa,
+                    display = CASE WHEN excluded.display != '' THEN excluded.display
+                                   ELSE pronunciations.display END,
+                    ipa = CASE WHEN excluded.ipa != '' THEN excluded.ipa
+                               ELSE pronunciations.ipa END,
                     syllables = CASE WHEN excluded.syllables != '' THEN excluded.syllables
                                      ELSE pronunciations.syllables END,
-                    note = excluded.note,
+                    note = CASE WHEN excluded.note != '' THEN excluded.note
+                                ELSE pronunciations.note END,
                     audio_path = CASE WHEN excluded.audio_path != '' THEN excluded.audio_path
                                       ELSE pronunciations.audio_path END,
                     file_id = CASE WHEN excluded.file_id != '' THEN excluded.file_id
@@ -932,12 +1069,19 @@ class Storage:
             )
             return int(cursor.lastrowid or 0)
 
-    def finish_session(self, session_id: int, items: int, correct: int) -> None:
+    def finish_session(self, session_id: int, items: int, correct: int) -> bool:
+        """Закрывает занятие. `False` — оно уже закрыто, счётчики не трогаем.
+
+        Занятие дня считается по закрытым сессиям, поэтому повторное закрытие
+        нулями стоило бы человеку целого занятия в статистике.
+        """
         with self.session() as db:
-            db.execute(
-                "UPDATE sessions SET items = ?, correct = ?, finished_at = ? WHERE id = ?",
+            cursor = db.execute(
+                "UPDATE sessions SET items = ?, correct = ?, finished_at = ? "
+                "WHERE id = ? AND finished_at IS NULL",
                 (items, correct, utc_now(), session_id),
             )
+        return cursor.rowcount > 0
 
     def sessions(self, user_id: int, limit: int = 20) -> list[dict[str, Any]]:
         with self.session() as db:
@@ -982,26 +1126,84 @@ class Storage:
         return max(0, (datetime.now(UTC) - last).days)
 
     def practiced_today(self, user_id: int) -> bool:
-        """Была ли сегодня хоть одна завершённая тренировка или повторение."""
+        """Была ли сегодня учебная сессия: тренировка или повторение.
+
+        Аудирование сюда не входит намеренно: один вопрос под запись — не
+        дневная норма, а раньше он её закрывал и уводил «🎯 Заниматься» в речь.
+        """
         with self.session() as db:
             row = db.execute(
                 "SELECT 1 FROM sessions WHERE user_id = ? AND finished_at IS NOT NULL "
-                "AND items > 0 AND substr(started_at, 1, 10) = ? LIMIT 1",
+                f"AND items > 0 AND kind IN ({PRACTICE_KINDS_SQL}) "
+                "AND substr(started_at, 1, 10) = ? LIMIT 1",
                 (user_id, today()),
             ).fetchone()
         return row is not None
 
     def days_since_speaking(self, user_id: int) -> int | None:
-        """Сколько дней прошло с последнего голосового. None — их вообще не было."""
+        """Дней с последнего разобранного голосового. None — их вообще не было.
+
+        Считаются только записи с готовым разбором: неудачная попытка (нет
+        расшифровки или нет ИИ) не должна выглядеть как выполненная устная
+        практика и переключать занятие дня.
+        """
         with self.session() as db:
             row = db.execute(
-                "SELECT max(created_at) AS last FROM voice_messages WHERE user_id = ?",
+                "SELECT max(created_at) AS last FROM voice_messages "
+                "WHERE user_id = ? AND feedback <> ''",
                 (user_id,),
             ).fetchone()
         last = parse_ts(row["last"] if row else None)
         if last is None:
             return None
         return max(0, (datetime.now(UTC) - last).days)
+
+    def days_since_writing(self, user_id: int) -> int | None:
+        """Дней с последней разобранной письменной работы. None — их не было."""
+        with self.session() as db:
+            row = db.execute(
+                "SELECT max(created_at) AS last FROM writing_submissions WHERE user_id = ?",
+                (user_id,),
+            ).fetchone()
+        last = parse_ts(row["last"] if row else None)
+        if last is None:
+            return None
+        return max(0, (datetime.now(UTC) - last).days)
+
+    def days_since_practice(self, user_id: int) -> int | None:
+        """Дней с последнего учебного дня; None — занятий ещё не было."""
+        with self.session() as db:
+            row = db.execute(
+                "SELECT last_practice_day FROM users WHERE user_id = ?", (user_id,)
+            ).fetchone()
+        raw = str(row["last_practice_day"] or "") if row else ""
+        if not raw:
+            return None
+        try:
+            last = date.fromisoformat(raw)
+        except ValueError:
+            return None
+        return max(0, (datetime.now(UTC).date() - last).days)
+
+    def effective_streak(self, user_id: int) -> int:
+        """Серия на сегодня: она обнуляется сама, а не при следующем занятии.
+
+        `streak_days` в таблице меняется только в `bump_streak`, поэтому после
+        перерыва профиль показывал бы старое число до первой новой сессии.
+        """
+        with self.session() as db:
+            row = db.execute(
+                "SELECT streak_days, last_practice_day FROM users WHERE user_id = ?",
+                (user_id,),
+            ).fetchone()
+        if row is None:
+            return 0
+        streak = int(row["streak_days"] or 0)
+        last = str(row["last_practice_day"] or "")
+        if not last:
+            return 0
+        yesterday = (datetime.now(UTC) - timedelta(days=1)).date().isoformat()
+        return streak if last >= yesterday else 0
 
     def team_stats(self) -> list[dict[str, Any]]:
         """Сводка по команде: только те, кто не отключил обмен прогрессом."""
@@ -1022,12 +1224,110 @@ class Storage:
 
     # ── удаление ─────────────────────────────────────────────────
 
+    # ── анонимные счётчики интерфейса ────────────────────────────
+
+    # ── журнал входов ────────────────────────────────────────────
+
+    def log_access(
+        self,
+        user_id: int,
+        chat_id: int,
+        display_name: str,
+        outcome: str,
+        detail: str = "",
+    ) -> None:
+        """Записывает исход попытки входа — и допуск, и отказ с причиной.
+
+        Без этого отказанный человек не оставлял следа вообще: `touch` зовётся
+        только после успешной авторизации. Выдать доступ вручную было нечему —
+        Telegram ID взять неоткуда, по username Bot API людей не ищет.
+        """
+        with self.session() as db:
+            db.execute(
+                "INSERT INTO access_log(user_id, chat_id, display_name, outcome, detail, "
+                "created_at) VALUES (?, ?, ?, ?, ?, ?)",
+                (user_id, chat_id, display_name[:40], outcome[:32], detail[:64], utc_now()),
+            )
+            db.execute(
+                "DELETE FROM access_log WHERE id <= "
+                "(SELECT max(id) - ? FROM access_log)",
+                (ACCESS_LOG_LIMIT,),
+            )
+
+    def access_attempts(self, limit: int = 20, outcome: str = "") -> list[dict[str, Any]]:
+        """Последние попытки входа, свежие первыми."""
+        query = "SELECT * FROM access_log"
+        params: tuple[Any, ...] = ()
+        if outcome:
+            query += " WHERE outcome = ?"
+            params = (outcome,)
+        query += " ORDER BY id DESC LIMIT ?"
+        with self.session() as db:
+            rows = db.execute(query, (*params, limit)).fetchall()
+        return [dict(row) for row in rows]
+
+    def access_summary(self, days: int = 7) -> list[dict[str, Any]]:
+        """Сколько каких исходов было за период — чтобы отказы не терялись в шуме."""
+        since = (datetime.now(UTC) - timedelta(days=days)).isoformat(timespec="seconds")
+        with self.session() as db:
+            rows = db.execute(
+                "SELECT outcome, count(*) AS times, count(DISTINCT user_id) AS people "
+                "FROM access_log WHERE created_at >= ? "
+                "GROUP BY outcome ORDER BY times DESC",
+                (since,),
+            ).fetchall()
+        return [dict(row) for row in rows]
+
+    def log_event(self, user_id: int, name: str, detail: str = "", value: int = 0) -> None:
+        """Пишет событие интерфейса: только имя, служебная метка и число.
+
+        Содержимое ответов, тексты заданий и сообщения сюда не попадают — эти
+        счётчики нужны, чтобы приоритезация опиралась на данные, а не на догадки.
+        """
+        with self.session() as db:
+            db.execute(
+                "INSERT INTO ux_events(user_id, name, detail, value, created_at) "
+                "VALUES (?, ?, ?, ?, ?)",
+                (user_id, name[:40], detail[:40], int(value), utc_now()),
+            )
+
+    def event_counts(self, days: int = 14) -> list[dict[str, Any]]:
+        """Сводка событий за период: сколько раз и сколько разных людей."""
+        since = (datetime.now(UTC) - timedelta(days=days)).isoformat(timespec="seconds")
+        with self.session() as db:
+            rows = db.execute(
+                "SELECT name, detail, count(*) AS times, count(DISTINCT user_id) AS people "
+                "FROM ux_events WHERE created_at >= ? GROUP BY name, detail "
+                "ORDER BY times DESC",
+                (since,),
+            ).fetchall()
+        return [dict(row) for row in rows]
+
+    def event_depth(self, days: int = 14) -> tuple[int, int] | None:
+        """Медиана и p90 глубины пути до старта функции; None — данных нет.
+
+        Глубину пишет `Context.log_start` в поле `value` события `start`.
+        """
+        since = (datetime.now(UTC) - timedelta(days=days)).isoformat(timespec="seconds")
+        with self.session() as db:
+            rows = db.execute(
+                "SELECT value FROM ux_events WHERE name = 'start' AND value > 0 "
+                "AND created_at >= ? ORDER BY value",
+                (since,),
+            ).fetchall()
+        values = [int(row["value"]) for row in rows]
+        if not values:
+            return None
+        median = values[len(values) // 2]
+        p90 = values[min(len(values) - 1, int(len(values) * 0.9))]
+        return median, p90
+
     def delete_learning_data(self, user_id: int) -> None:
         """Удаляет учебные данные, но сохраняет саму учётку и её роль."""
         with self.session() as db:
             for table in (
                 "placement_answers", "attempts", "srs_cards", "skill_mastery", "messages",
-                "voice_messages", "error_log", "writing_submissions", "sessions",
+                "voice_messages", "error_log", "writing_submissions", "sessions", "ux_events",
             ):
                 db.execute(f"DELETE FROM {table} WHERE user_id = ?", (user_id,))
             db.execute(

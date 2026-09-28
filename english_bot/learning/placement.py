@@ -16,12 +16,16 @@ from ..content.registry import Curriculum
 from ..content.schema import LEVEL_ORDER, LEVELS, Exercise, GrammarPoint
 
 
-BLOCK_SIZE = 4
-MAX_ITEMS = 28
+# Блок из четырёх заданий с четырьмя вариантами решал уровень разницей в один
+# ответ: пороги «поднять» и «засчитать» совпадали, и три верных из четырёх сразу
+# и поднимали лестницу, и объявляли уровень сданным. Шесть заданий разводят эти
+# пороги и снижают вклад угадывания.
+BLOCK_SIZE = 6
+MAX_ITEMS = 30
 START_LEVEL = "A2"
-UP_THRESHOLD = 0.75
-DOWN_THRESHOLD = 0.34
-PASS_THRESHOLD = 0.6
+UP_THRESHOLD = 0.75     # 5 из 6 (или 9 из 12) — подняться
+DOWN_THRESHOLD = 0.34   # 2 из 6 и ниже — спуститься
+PASS_THRESHOLD = 0.6    # 4 из 6 — уровень засчитан, но выше не пускает
 
 
 @dataclass(frozen=True)
@@ -116,11 +120,16 @@ class PlacementState:
 
 
 def _pool(curriculum: Curriculum, level: str) -> list[tuple[Exercise, GrammarPoint]]:
-    """Задания уровня, пригодные для диагностики: только выбор из вариантов."""
+    """Задания уровня, пригодные для диагностики.
+
+    Кроме формата и сложности учитывается флаг `diagnostic`: часть заданий
+    верхних уровней дословно повторяет материал уровнем ниже, и уровень ими не
+    измерить, хотя как тренировка они остаются на своём месте.
+    """
     rows: list[tuple[Exercise, GrammarPoint]] = []
     for point in curriculum.points_of_level(level):
         for exercise in point.exercises:
-            if exercise.kind == "choice" and exercise.difficulty <= 2:
+            if exercise.kind == "choice" and exercise.difficulty <= 2 and exercise.diagnostic:
                 rows.append((exercise, point))
     return rows
 
@@ -175,23 +184,32 @@ def record(state: PlacementState, exercise: Exercise, point: GrammarPoint, corre
 
 
 def advance(state: PlacementState, curriculum: Curriculum) -> bool:
-    """После полного блока решает, куда идти. False — диагностика окончена."""
+    """После полного блока решает, куда идти. False — диагностика окончена.
+
+    Три правила, которых не было раньше: середина шкалы не обрывает тест, а
+    добирает второй блок на том же уровне; потолок шкалы подтверждается вторым
+    блоком, иначе C2 доставался за то же свидетельство, что на других уровнях
+    значит лишь «идём выше»; уже посещённый уровень тоже даёт добрать блок,
+    вместо того чтобы закончить тест на полпути.
+    """
     levels = available_levels(curriculum)
     if not levels or state.total_asked >= MAX_ITEMS:
         return False
     block = state.results.get(state.level, [])
-    if len(block) < BLOCK_SIZE:
+    if not block or len(block) % BLOCK_SIZE:
         return True
 
     accuracy = sum(block) / len(block)
     index = levels.index(state.level) if state.level in levels else 0
+    blocks_here = len(block) // BLOCK_SIZE
+    at_top = index + 1 >= len(levels)
 
     if accuracy >= UP_THRESHOLD:
-        if index + 1 >= len(levels):
-            return False
+        if at_top:
+            return blocks_here < 2
         target = levels[index + 1]
         if target in state.visited:
-            return False
+            return blocks_here < 2
         state.level = target
         return True
 
@@ -200,11 +218,12 @@ def advance(state: PlacementState, curriculum: Curriculum) -> bool:
             return False
         target = levels[index - 1]
         if target in state.visited:
-            return False
+            return blocks_here < 2
         state.level = target
         return True
 
-    return False
+    # Середина: одного блока мало, чтобы назначить уровень или уйти с него.
+    return blocks_here < 2
 
 
 def finish(state: PlacementState, curriculum: Curriculum) -> PlacementResult:
@@ -213,17 +232,30 @@ def finish(state: PlacementState, curriculum: Curriculum) -> PlacementResult:
         level: (sum(values), len(values)) for level, values in state.results.items() if values
     }
 
-    passed = [
-        level
-        for level, (correct, total) in per_level.items()
-        if total >= 2 and correct / total >= PASS_THRESHOLD
-    ]
+    top_level = levels[-1]
+    passed = []
+    for name, (correct, total) in per_level.items():
+        if total < BLOCK_SIZE:
+            continue  # неполный блок ничего не доказывает
+        share = correct / total
+        # Верх шкалы не с чем сравнить: подтвердить его может только сам уровень,
+        # поэтому там требуется порог подъёма, а не порог зачёта.
+        threshold = UP_THRESHOLD if name == top_level else PASS_THRESHOLD
+        if share >= threshold:
+            passed.append(name)
+
     if passed:
         level = max(passed, key=lambda name: LEVEL_ORDER[name])
     elif per_level:
         lowest_tested = min(per_level, key=lambda name: LEVEL_ORDER[name])
+        correct, total = per_level[lowest_tested]
         index = levels.index(lowest_tested) if lowest_tested in levels else 0
-        level = levels[max(0, index - 1)] if index > 0 else levels[0]
+        # Ступенью ниже — только если нижний проверенный уровень провален; иначе
+        # человек получал A1 за половину верных ответов на A2.
+        if total and correct / total <= DOWN_THRESHOLD and index > 0:
+            level = levels[index - 1]
+        else:
+            level = lowest_tested
     else:
         level = START_LEVEL
 

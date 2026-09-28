@@ -3,16 +3,21 @@
 from __future__ import annotations
 
 import os
+import re
 import tempfile
+import threading
+import time
 import unittest
 from pathlib import Path
 from typing import Any
 
 from english_bot.ai.llm import LLMError
+from english_bot.ai.stt import Transcript
 from english_bot.app import EnglishLabBot
 from english_bot.config import Settings
 from english_bot.handlers import menu
 from english_bot.learning import practice as pr
+from english_bot.runtime import JobRunner
 
 
 CLAIM_CODE = "claim-code-for-tests"
@@ -27,6 +32,8 @@ class FakeTelegram:
         self.voices: list[tuple[int, Path, str]] = []
         self.documents: list[tuple[int, Path]] = []
         self.answered: list[str] = []
+        self.edits: list[tuple[int, int, str]] = []
+        self.actions: list[tuple[int, str]] = []
 
     def get_me(self) -> dict[str, Any]:
         return {"username": "english_lab_test_bot", "id": 1}
@@ -44,8 +51,21 @@ class FakeTelegram:
         self.markups.append(reply_markup)
         return {"message_id": len(self.sent)}
 
+    def edit_message_text(
+        self,
+        chat_id: int,
+        message_id: int,
+        text: str,
+        reply_markup: Any = None,
+        parse_mode: Any = None,
+    ) -> None:
+        """Правка экрана — тоже сообщение для человека: тесты видят её так же."""
+        self.edits.append((chat_id, message_id, text))
+        self.sent.append((chat_id, text))
+        self.markups.append(reply_markup)
+
     def send_chat_action(self, chat_id: int, action: str = "typing") -> None:
-        return None
+        self.actions.append((chat_id, action))
 
     def answer_callback(self, callback_id: str, text: str = "", alert: bool = False) -> None:
         self.answered.append(text)
@@ -114,6 +134,7 @@ class FakeTelegram:
         self.sent.clear()
         self.markups.clear()
         self.answered.clear()
+        self.edits.clear()
 
 
 class BotTestCase(unittest.TestCase):
@@ -136,6 +157,10 @@ class BotTestCase(unittest.TestCase):
             "OPENAI_API_KEY": "",
             "ANTHROPIC_API_KEY": "",
             "WORKERS": "1",
+            # Инлайн-режим: длинные цепочки выполняются в вызывающем потоке.
+            # Сквозные сценарии так остаются пошаговыми и не зависят от гонок;
+            # саму асинхронность проверяет `BackgroundJobTests` с живым раннером.
+            "JOB_WORKERS": "0",
             "DAILY_AI_CALLS": "50",
             "TEAM_OPEN_REGISTRATION": "0",
         }
@@ -234,6 +259,15 @@ class BotTestCase(unittest.TestCase):
         assert user is not None
         return int(user.state_data.get("index", 0))
 
+    def session_tag(self, user_id: int) -> int:
+        """Метка сессии в callback_data: кнопка принадлежит своему занятию."""
+        user = self.bot.storage.user(user_id)
+        assert user is not None
+        return int(user.state_data.get("session_id") or 0) % 1000
+
+    def step_payload(self, user_id: int) -> str:
+        return f"{self.session_tag(user_id)}:{self.step(user_id)}"
+
     def answer_current(self, user_id: int, correctly: bool = True) -> None:
         """Отвечает на текущее задание тем способом, который оно принимает."""
         question = self.current_question(user_id)
@@ -244,7 +278,7 @@ class BotTestCase(unittest.TestCase):
             )
             if not correctly:
                 index = (index + 1) % len(question.options)
-            self.press(user_id, f"an:{self.step(user_id)}:{index}")
+            self.press(user_id, f"an:{self.step_payload(user_id)}:{index}")
         else:
             self.send(user_id, expected if correctly else "definitely wrong answer")
 
@@ -252,14 +286,52 @@ class BotTestCase(unittest.TestCase):
         user = self.bot.storage.user(user_id)
         assert user is not None
         data = user.state_data
+        tag = int(data.get("session_id") or 0) % 1000
         if int(data.get("profile_index", 0)) < 3:
-            self.press(user_id, f"pf:{data.get('profile_index', 0)}:{choice}")
+            self.press(user_id, f"pf:{tag}:{data.get('profile_index', 0)}:{choice}")
         else:
-            self.press(user_id, f"pa:{len(data.get('asked') or [])}:{choice}")
+            self.press(user_id, f"pa:{tag}:{len(data.get('asked') or [])}:{choice}")
 
     def claim_owner(self, user_id: int = 100) -> None:
         self.send(user_id, f"/start {CLAIM_CODE}")
         self.telegram.reset()
+
+    # ── подставные провайдеры ────────────────────────────────────
+
+    def enable_llm(self, reply: str = "Ответ наставника") -> Any:
+        """Включает текстовый контур: без него письмо и диалог теперь не выдаются."""
+
+        class Stub:
+            provider = "openai"
+
+            def __init__(self) -> None:
+                self.calls: list[tuple[str, list[dict[str, str]]]] = []
+                self.reply = reply
+
+            def complete(self, system: str, messages: list[dict[str, str]], **kwargs: object) -> str:
+                self.calls.append((system, messages))
+                return self.reply
+
+            def complete_json(self, *args: object, **kwargs: object) -> dict[str, Any]:
+                return {}
+
+        stub = Stub()
+        self.bot.llm = stub  # type: ignore[assignment]
+        return stub
+
+    def enable_speech(self) -> None:
+        """Включает распознавание и синтез: устная практика проверяет их заранее."""
+
+        class Transcriber:
+            def transcribe(self, *args: object, **kwargs: object) -> Any:
+                raise AssertionError("в тесте расшифровка не вызывается")
+
+        class Speaker:
+            def synthesize(self, *args: object, **kwargs: object) -> Any:
+                raise AssertionError("в тесте синтез не вызывается")
+
+        self.bot.transcriber = Transcriber()  # type: ignore[assignment]
+        self.bot.speaker = Speaker()  # type: ignore[assignment]
 
 
 class AccessTests(BotTestCase):
@@ -295,6 +367,197 @@ class AccessTests(BotTestCase):
         # Код одноразовый: третий человек по нему не пройдёт.
         self.send(300, f"/start {code}")
         self.assertIsNone(self.bot.storage.user(300))
+
+    def test_invite_link_pasted_as_text_still_works(self) -> None:
+        """Открытый диалог не даёт Telegram подставить код: ссылку вставляют руками."""
+        self.claim_owner()
+        self.press(100, "invitenew")
+        code = self.telegram.all_text().split("start=")[-1].split()[0].strip()
+        self.telegram.reset()
+
+        self.send(200, "/start")  # диалог уже начат, дальше deep link молчит
+        self.assertIsNone(self.bot.storage.user(200))
+        self.send(200, f"https://t.me/english_lab_test_bot?start={code}")
+        member = self.bot.storage.user(200)
+        assert member is not None
+        self.assertEqual(member.role, "member")
+
+    def test_bare_invite_code_is_accepted(self) -> None:
+        self.claim_owner()
+        self.press(100, "invitenew")
+        code = self.telegram.all_text().split("start=")[-1].split()[0].strip()
+        self.telegram.reset()
+
+        self.send(200, code)
+        member = self.bot.storage.user(200)
+        assert member is not None
+        self.assertEqual(member.role, "member")
+
+    def test_used_code_pasted_as_a_link_explains_itself(self) -> None:
+        """Отказ обязан назвать причину: раньше вставленная ссылка молчала про неё."""
+        self.claim_owner()
+        self.press(100, "invitenew")
+        code = self.telegram.all_text().split("start=")[-1].split()[0].strip()
+        self.send(200, f"/start {code}")
+        self.telegram.reset()
+
+        self.send(300, f"https://t.me/english_lab_test_bot?start={code}")
+        self.assertIsNone(self.bot.storage.user(300))
+        self.assertIn("уже воспользовались", self.telegram.all_text())
+
+    def test_refusal_tells_how_to_send_the_code_by_hand(self) -> None:
+        self.claim_owner()
+        self.send(200, "/start")
+        self.assertIn("/start КОД", self.telegram.all_text())
+
+    def test_ordinary_text_from_a_stranger_is_not_taken_for_a_code(self) -> None:
+        self.claim_owner()
+        self.send(200, "Здравствуйте, а что это за бот")
+        self.assertIsNone(self.bot.storage.user(200))
+        self.assertIn("по приглашению", self.telegram.all_text())
+
+    def test_refused_attempt_is_recorded_with_the_telegram_id(self) -> None:
+        """Отказ не оставлял следа, и выдать доступ вручную было нечему."""
+        self.claim_owner()
+        self.send(200, "/start", first_name="Гость")
+        rows = self.bot.storage.access_attempts()
+        self.assertEqual(rows[0]["user_id"], 200)
+        self.assertEqual(rows[0]["outcome"], "need_invite")
+        self.assertEqual(rows[0]["display_name"], "Гость")
+
+    def test_every_refusal_reason_is_distinguishable(self) -> None:
+        self.claim_owner()
+        self.press(100, "invitenew")
+        code = self.telegram.all_text().split("start=")[-1].split()[0].strip()
+        self.send(200, f"/start {code}")
+        self.send(300, f"/start {code}")  # код уже сгорел
+        self.send(400, "/start несуществующий")
+        outcomes = [row["outcome"] for row in self.bot.storage.access_attempts()]
+        self.assertIn("invite_used", outcomes)
+        self.assertIn("invite_missing", outcomes)
+        self.assertIn("joined", outcomes)
+
+    def test_one_attempt_leaves_one_record(self) -> None:
+        """Неверный код — это одна попытка, а не две: журнал не должен шуметь."""
+        self.claim_owner()
+        self.send(200, "/start abcdefghij")
+        rows = self.bot.storage.access_attempts()
+        mine = [row for row in rows if row["user_id"] == 200]
+        self.assertEqual(len(mine), 1)
+        self.assertEqual(mine[0]["outcome"], "invite_missing")
+        self.assertEqual(mine[0]["detail"], "abcdefghij")
+
+    def test_free_text_after_start_is_not_written_to_the_log(self) -> None:
+        """`/start` принимает любой хвост, а журнал видят владелец и админы."""
+        self.claim_owner()
+        self.send(200, "/start мой пароль от почты hunter2 и телефон")
+        row = self.bot.storage.access_attempts()[0]
+        self.assertEqual(row["outcome"], "invite_missing")
+        self.assertEqual(row["detail"], "не похоже на код")
+
+    def test_link_pasted_after_the_start_command_works(self) -> None:
+        """Меню команд Telegram подставляет «/start », и ссылку вставляют за ним."""
+        self.claim_owner()
+        self.press(100, "invitenew")
+        code = self.telegram.all_text().split("start=")[-1].split()[0].strip()
+        self.telegram.reset()
+
+        self.send(200, f"/start https://t.me/english_lab_test_bot?start={code}")
+        member = self.bot.storage.user(200)
+        assert member is not None
+        self.assertEqual(member.role, "member")
+
+    def test_code_with_a_trailing_word_still_works(self) -> None:
+        self.claim_owner()
+        self.press(100, "invitenew")
+        code = self.telegram.all_text().split("start=")[-1].split()[0].strip()
+        self.telegram.reset()
+
+        self.send(200, f"/start {code} спасибо")
+        self.assertIsNotNone(self.bot.storage.user(200))
+
+    def test_wrong_code_gets_a_precise_refusal(self) -> None:
+        """Общий отказ здесь врёт: приглашение у человека есть, дело в самом коде."""
+        self.claim_owner()
+        self.send(200, "/start abcdefghij")
+        self.assertIn("Такого кода приглашения нет", self.telegram.all_text())
+
+    def test_stranger_without_a_code_gets_the_general_refusal(self) -> None:
+        self.claim_owner()
+        self.send(200, "Hellothere")
+        self.assertIn("по приглашению", self.telegram.all_text())
+        self.assertNotIn("Такого кода приглашения нет", self.telegram.all_text())
+
+    def test_admin_screen_shows_who_was_refused(self) -> None:
+        self.claim_owner()
+        self.send(200, "/start", first_name="Гость")
+        self.telegram.reset()
+        self.send(100, "/admin")
+        report = self.telegram.all_text()
+        self.assertIn("Последние попытки входа", report)
+        self.assertIn("200", report)
+        self.assertIn("нет кода приглашения", report)
+
+    def test_admin_screen_shows_process_counters(self) -> None:
+        self.claim_owner()
+        self.send(100, "/admin")
+        report = self.telegram.all_text()
+        self.assertIn("Наблюдаемость", report)
+        self.assertIn("Обновлений:", report)
+        self.assertIn("Очередь обновлений:", report)
+
+    def test_counters_reflect_real_traffic(self) -> None:
+        """Боевая проводка счётчиков: экран должен показывать факт, а не ноль."""
+        self.claim_owner()
+        before = self.bot._telemetry.counts()["updates"]
+        self.send(100, "/privacy")
+        self.send(100, "/privacy")
+        self.assertEqual(self.bot._telemetry.counts()["updates"], before + 2)
+        self.telegram.reset()
+        self.send(100, "/admin")
+        self.assertIn(f"Обновлений: {before + 3}", self.telegram.all_text())
+
+    def test_admin_screen_summarises_access_outcomes(self) -> None:
+        self.claim_owner()
+        self.send(200, "/start")
+        self.send(300, "/start")
+        self.telegram.reset()
+        self.send(100, "/admin")
+        report = self.telegram.all_text()
+        self.assertIn("Входы за 7 дней", report)
+        self.assertIn("нет кода приглашения — 2 · 2", report)
+
+    def test_uptime_is_rendered_in_human_units(self) -> None:
+        from english_bot.handlers.core import _duration_ru
+
+        self.assertEqual(_duration_ru(0), "0 с")
+        self.assertEqual(_duration_ru(59), "59 с")
+        self.assertEqual(_duration_ru(60), "1 мин")
+        self.assertEqual(_duration_ru(3599), "59 мин")
+        self.assertEqual(_duration_ru(3660), "1 ч 1 мин")
+        self.assertEqual(_duration_ru(90000), "1 сут 1 ч")
+
+    def test_admin_screen_shows_the_last_failure_without_leaking_text(self) -> None:
+        """Сообщение исключения может нести текст ученика — на экран идёт только тип."""
+        self.claim_owner()
+
+        class Boom:
+            provider = "openai"
+
+            def complete(self, *args: object, **kwargs: object) -> str:
+                raise RuntimeError("секретный текст ученика")
+
+            def complete_json(self, *args: object, **kwargs: object) -> dict[str, Any]:
+                raise RuntimeError("секретный текст ученика")
+
+        self.bot.llm = Boom()  # type: ignore[assignment]
+        self.send(100, "Hello there")
+        self.telegram.reset()
+        self.send(100, "/admin")
+        report = self.telegram.all_text()
+        self.assertIn("Последний сбой", report)
+        self.assertIn("RuntimeError", report)
+        self.assertNotIn("секретный текст ученика", report)
 
     def test_only_admins_create_invites(self) -> None:
         self.claim_owner()
@@ -403,7 +666,7 @@ class PracticeFlowTests(BotTestCase):
             else:
                 self.skipTest("в очереди нет заданий со свободным вводом")
         self.telegram.reset()
-        self.press(100, f"an:{self.step(100)}:0")
+        self.press(100, f"an:{self.step_payload(100)}:0")
         self.assertIn("свободный ответ", " ".join(self.telegram.answered))
 
     def test_hint_shows_the_rule_and_lowers_the_grade(self) -> None:
@@ -411,7 +674,7 @@ class PracticeFlowTests(BotTestCase):
         self.press(100, "startpractice")
         question = self.current_question(100)
         self.telegram.reset()
-        self.press(100, f"hint:{self.step(100)}")
+        self.press(100, f"hint:{self.step_payload(100)}")
 
         user = self.bot.storage.user(100)
         assert user is not None
@@ -431,7 +694,7 @@ class PracticeFlowTests(BotTestCase):
         """Старое «точно не A, C» ничему не учило — его быть не должно."""
         self.press(100, "startpractice")
         self.telegram.reset()
-        self.press(100, f"hint:{self.step(100)}")
+        self.press(100, f"hint:{self.step_payload(100)}")
         text = self.telegram.all_text()
         self.assertNotIn("точно не", text)
         self.assertNotIn("ответ начинается", text)
@@ -446,7 +709,7 @@ class PracticeFlowTests(BotTestCase):
             question = self.current_question(100)
             if question.card_type == "vocab" and not question.is_choice:
                 self.telegram.reset()
-                self.press(100, f"hint:{self.step(100)}")
+                self.press(100, f"hint:{self.step_payload(100)}")
                 self.assertNotIn(question.expected[0], self.telegram.all_text())
                 return
             self.answer_current(100)
@@ -482,7 +745,13 @@ class PracticeFlowTests(BotTestCase):
                 break
             question = self.current_question(100)
             if question.point_id:  # у карточек лексики тема и название совпадают
-                header = self.telegram.last().split("\n")[0]
+                # Вердикт по прошлому ответу идёт тем же сообщением, поэтому
+                # заголовок задания ищем по счётчику, а не по первой строке.
+                header = next(
+                    line
+                    for line in self.telegram.last().split("\n")
+                    if re.match(r"^\d+/\d+ · ", line)
+                )
                 self.assertIn(question.topic, header)
                 self.assertNotIn(question.title_ru, header)
                 checked += 1
@@ -530,8 +799,9 @@ class PracticeFlowTests(BotTestCase):
         assert user is not None
         self.assertEqual(user.state, "idle")
 
-    def test_command_leaves_a_pending_writing_task(self) -> None:
-        """Иначе следующее обычное сообщение уйдёт в разбор письма вместо чата."""
+    def test_settings_command_does_not_close_a_pending_writing_task(self) -> None:
+        """Переключить участие в таблице — не смена занятия: задание должно уцелеть."""
+        self.enable_llm()
         self.send(100, menu.WRITING)
         user = self.bot.storage.user(100)
         assert user is not None
@@ -540,9 +810,19 @@ class PracticeFlowTests(BotTestCase):
         self.send(100, "/privacy")
         user = self.bot.storage.user(100)
         assert user is not None
+        self.assertEqual(user.state, "writing")
+
+    def test_stop_closes_a_pending_writing_task(self) -> None:
+        """Прервать занятие можно намеренно — этим и занимается /stop."""
+        self.enable_llm()
+        self.send(100, menu.WRITING)
+        self.send(100, "/stop")
+        user = self.bot.storage.user(100)
+        assert user is not None
         self.assertEqual(user.state, "idle")
 
     def test_say_does_not_interrupt_a_pending_task(self) -> None:
+        self.enable_llm()
         self.send(100, menu.WRITING)
         item = self.bot.curriculum.vocab_of_level("A1")[0]
         self.send(100, f"/say {item.word}")
@@ -834,7 +1114,7 @@ class PlatformHelpTests(BotTestCase):
     def test_bare_help_is_static_and_does_not_spend_an_ai_call(self) -> None:
         self.bot.llm = None
         self.send(100, "/help")
-        self.assertIn("Всё основное — кнопками", self.telegram.all_text())
+        self.assertIn("Всё ежедневное — кнопками", self.telegram.all_text())
         self.assertIn("/help", self.telegram.all_text())
 
     def test_question_is_grounded_in_retrieved_knowledge(self) -> None:
@@ -901,15 +1181,18 @@ class SlowProviderFeedbackTests(BotTestCase):
         object.__setattr__(self.settings, "llm_provider", "codex")
 
     def test_unknown_word_warns_before_the_model_call(self) -> None:
-        with self.assertRaises(RuntimeError):
-            self.send(100, "/say zzqqxx")
+        self.send(100, "/say zzqqxx")
         self.assertIn("спрашиваю модель", self.telegram.all_text())
 
     def test_unexpected_failure_still_answers_the_user(self) -> None:
-        """Заглушка падает не LLMError, а чем попало — человек всё равно не должен молчать."""
-        with self.assertLogs("english_bot.app", level="ERROR"):
+        """Заглушка падает не LLMError, а чем попало — человек всё равно не должен молчать.
+
+        Отказ теперь ловит обёртка фоновой задачи, а не страховка диспетчера:
+        исключение внутри задачи не всплывает в дорожку обновлений.
+        """
+        with self.assertLogs("english_bot.context", level="ERROR"):
             self.send_guarded(100, "/say zzqqxx")
-        self.assertIn("Что-то пошло не так", self.telegram.all_text())
+        self.assertIn("Не довёл дело до конца", self.telegram.all_text())
 
     def test_known_word_does_not_warn(self) -> None:
         item = self.bot.curriculum.vocab_of_level("A1")[0]
@@ -925,6 +1208,349 @@ class SlowProviderFeedbackTests(BotTestCase):
         object.__setattr__(self.settings, "llm_provider", "openai")
         self.send(100, "Hello again")
         self.assertNotIn("Думаю над ответом", self.telegram.all_text())
+
+
+class BackgroundJobTests(BotTestCase):
+    """Одно голосовое не должно отнимать у человека интерфейс.
+
+    Все обновления идут через `_submit`, то есть через ту самую дорожку, которую
+    раньше занимала расшифровка: только так видно, что она освободилась.
+    """
+
+    def setUp(self) -> None:
+        super().setUp()
+        self.bot._jobs = JobRunner(2, timeout=30.0, pulse_interval=0.05)
+        self.claim_owner()
+        self.holding = threading.Event()
+        self.release = threading.Event()
+        self.transcribed = 0
+        test = self
+
+        class Transcriber:
+            queue_ahead = 0
+
+            def transcribe(self, path: Path, duration: int, *args: object) -> Transcript:
+                test.transcribed += 1
+                test.holding.set()
+                test.release.wait(5)
+                return Transcript(text="I have went to work", words=5, seconds=duration, fillers=0)
+
+        self.bot.transcriber = Transcriber()  # type: ignore[assignment]
+
+    def tearDown(self) -> None:
+        self.release.set()
+        if self.bot._jobs is not None:
+            self.bot._jobs.wait_idle(5)
+        super().tearDown()
+
+    # ── обновления в том виде, в каком их отдаёт Telegram ────────
+
+    def voice_update(self, user_id: int = 100, message_id: int = 7) -> dict[str, Any]:
+        return {
+            "update_id": message_id,
+            "message": {
+                "message_id": message_id,
+                "chat": {"id": user_id, "type": "private"},
+                "from": self.sender(user_id),
+                "voice": {
+                    "file_id": f"file-{message_id}",
+                    "file_unique_id": f"uniq-{message_id}",
+                    "duration": 12,
+                    "file_size": 4096,
+                },
+            },
+        }
+
+    def text_update(self, text: str, user_id: int = 100) -> dict[str, Any]:
+        return {
+            "update_id": 1,
+            "message": {
+                "message_id": 1,
+                "chat": {"id": user_id, "type": "private"},
+                "from": self.sender(user_id),
+                "text": text,
+            },
+        }
+
+    def press_update(self, data: str, user_id: int = 100) -> dict[str, Any]:
+        return {
+            "update_id": 1,
+            "callback_query": {
+                "id": "cb",
+                "data": data,
+                "from": self.sender(user_id),
+                "message": {"message_id": 1, "chat": {"id": user_id, "type": "private"}},
+            },
+        }
+
+    def start_voice(self, message_id: int = 7) -> Any:
+        future = self.bot._submit(self.voice_update(message_id=message_id))
+        self.assertTrue(self.holding.wait(3), "расшифровка так и не началась")
+        return future
+
+    # ── сам симптом ─────────────────────────────────────────────
+
+    def test_voice_does_not_freeze_the_interface(self) -> None:
+        """Прямой тест постановки: при живой расшифровке кнопка обязана ответить."""
+        self.start_voice()
+        pressed = self.bot._submit(self.press_update("progress"))
+        pressed.result(timeout=3)  # до разделения дорожки здесь был бы таймаут
+        self.assertTrue(self.telegram.answered)
+
+    def test_stop_answers_while_the_voice_is_being_transcribed(self) -> None:
+        self.start_voice()
+        self.bot._submit(self.text_update("/stop")).result(timeout=3)
+        self.assertIn("Остановился", self.telegram.all_text())
+
+    def test_stop_cancels_the_running_job(self) -> None:
+        """Отмена кооперативная: этап доработает, но результат уже не придёт."""
+        self.start_voice()
+        self.bot._submit(self.text_update("/stop")).result(timeout=3)
+        self.assertIn("Прервал расшифровку голосового", self.telegram.all_text())
+        self.release.set()
+        self.assertTrue(self.bot._jobs.wait_idle(5))
+        self.assertNotIn("Расшифровка (", self.telegram.all_text())
+
+    def test_second_voice_is_refused_while_the_first_runs(self) -> None:
+        """Очередь из длинных задач одного человека бесполезна: он ждёт первую."""
+        self.start_voice(message_id=7)
+        self.bot._submit(self.voice_update(message_id=8)).result(timeout=3)
+        self.assertIn("Сначала закончу расшифровку голосового", self.telegram.all_text())
+        self.release.set()
+        self.assertTrue(self.bot._jobs.wait_idle(5))
+        self.assertEqual(self.transcribed, 1)
+
+    def test_command_during_a_job_does_not_erase_the_lesson(self) -> None:
+        """Отказ обязан случиться до сброса состояния, а не после."""
+        self.bot.storage.set_state(100, "speaking", {"task_id": "T1"})
+        self.start_voice()
+        self.bot._submit(self.text_update("/anki")).result(timeout=3)
+        self.assertIn("Сначала закончу", self.telegram.all_text())
+        user = self.bot.storage.user(100)
+        assert user is not None
+        self.assertEqual(user.state, "speaking")
+
+    def test_late_report_does_not_erase_a_new_speaking_task(self) -> None:
+        """Разбор задания T1 не имеет права закрыть взятое позже задание T2."""
+        self.bot.storage.set_state(100, "speaking", {"task_id": "T1"})
+        self.start_voice()
+        self.bot.storage.set_state(100, "speaking", {"task_id": "T2"})
+        self.release.set()
+        self.assertTrue(self.bot._jobs.wait_idle(5))
+        user = self.bot.storage.user(100)
+        assert user is not None
+        self.assertEqual(user.state, "speaking")
+        self.assertEqual(user.state_data["task_id"], "T2")
+
+    def test_voice_in_practice_keeps_the_lesson(self) -> None:
+        """Голосовое посреди тренировки раньше молча стирало её безусловным сбросом."""
+        self.bot.storage.set_state(100, "practice", {"index": 3})
+        self.start_voice()
+        self.release.set()
+        self.assertTrue(self.bot._jobs.wait_idle(5))
+        user = self.bot.storage.user(100)
+        assert user is not None
+        self.assertEqual(user.state, "practice")
+        self.assertEqual(user.state_data["index"], 3)
+
+    def test_new_lesson_is_refused_before_the_current_one_is_closed(self) -> None:
+        """Отказ обязан опередить `close_active`: иначе занятие закрыто, а нового нет."""
+        self.bot.storage.set_state(100, "writing", {"task_id": "T1"})
+        self.start_voice()
+        self.bot._submit(self.press_update("sw:daily")).result(timeout=3)
+        self.assertIn("Сначала закончу", self.telegram.all_text())
+        user = self.bot.storage.user(100)
+        assert user is not None
+        self.assertEqual(user.state, "writing")
+        self.assertEqual(user.state_data["task_id"], "T1")
+
+    def test_help_falls_back_to_the_knowledge_base_while_busy(self) -> None:
+        """Вопрос «почему бот молчит» задают как раз во время разбора."""
+        self.enable_llm("ответ модели")
+        self.start_voice()
+        self.bot._submit(self.text_update("/help как пройти диагностику")).result(timeout=3)
+        self.assertIn("Вот ближайшая справка", self.telegram.all_text())
+        self.assertNotIn("ответ модели", self.telegram.all_text())
+
+    def test_course_screen_works_while_the_job_runs(self) -> None:
+        """Занятость — не повод отнимать навигацию."""
+        self.start_voice()
+        self.bot._submit(self.text_update("📚 Курс")).result(timeout=3)
+        self.assertIn("A1", self.telegram.all_text())
+
+    def test_forget_cancels_the_job_and_deletes_data(self) -> None:
+        """`/forget` — единственная команда, которой занятость не мешает."""
+        self.start_voice()
+        self.bot._submit(self.text_update("/forget YES")).result(timeout=3)
+        self.assertIn("Учебные данные удалены", self.telegram.all_text())
+        self.release.set()
+        self.assertTrue(self.bot._jobs.wait_idle(5))
+        self.assertEqual(self.bot.storage.voices(100), [])
+
+    def test_main_button_is_refused_while_the_job_runs(self) -> None:
+        """Кнопка постоянной клавиатуры не должна начинать занятие поверх задачи."""
+        self.start_voice()
+        self.bot._submit(self.text_update(menu.SPEAKING)).result(timeout=3)
+        self.assertIn("Сначала закончу", self.telegram.all_text())
+        user = self.bot.storage.user(100)
+        assert user is not None
+        self.assertEqual(user.state, "idle")
+
+    def test_listening_leaves_no_session_after_stop(self) -> None:
+        """Шов отмены стоит между отправкой аудио и открытием сессии."""
+        holding = threading.Event()
+        release = threading.Event()
+
+        class Speaker:
+            def synthesize(self, *args: object, **kwargs: object) -> Path:
+                holding.set()
+                release.wait(5)
+                return Path(self.__class__.__name__)
+
+        self.bot.speaker = Speaker()  # type: ignore[assignment]
+        self.bot._submit(self.press_update("listen"))
+        self.assertTrue(holding.wait(3))
+        self.bot._submit(self.text_update("/stop")).result(timeout=3)
+        release.set()
+        self.assertTrue(self.bot._jobs.wait_idle(5))
+        user = self.bot.storage.user(100)
+        assert user is not None
+        self.assertEqual(user.state, "idle")
+        self.assertEqual(self.bot.storage.sessions(100), [])
+
+    def test_admin_screen_shows_the_running_job(self) -> None:
+        """Иначе «бот молчит» и «бот занят» снаружи неразличимы."""
+        self.start_voice()
+        self.telegram.reset()
+        self.send(100, "/admin")
+        report = self.telegram.all_text()
+        self.assertIn("Фоновые задачи: сейчас 1", report)
+        self.assertIn("расшифровку голосового", report)
+
+    def test_waiting_indicator_is_refreshed_while_the_job_runs(self) -> None:
+        """Индикатор «печатает» живёт в Telegram секунды, а задача — минуты."""
+        self.start_voice()
+        deadline = time.monotonic() + 3
+        while len(self.telegram.actions) < 2 and time.monotonic() < deadline:
+            time.sleep(0.05)
+        self.assertGreaterEqual(len(self.telegram.actions), 2)
+
+
+class VoiceStageTests(BotTestCase):
+    """Имя этапа в отказе и в `/stop` должно меняться вместе с работой."""
+
+    def setUp(self) -> None:
+        super().setUp()
+        self.bot._jobs = JobRunner(2, timeout=30.0, pulse_interval=0.05)
+        self.claim_owner()
+        self.holding = threading.Event()
+        self.release = threading.Event()
+
+        class Transcriber:
+            queue_ahead = 0
+
+            def transcribe(self, path: Path, duration: int, *args: object) -> Transcript:
+                return Transcript(text="I have went to work", words=5, seconds=duration, fillers=0)
+
+        test = self
+
+        class Stub:
+            provider = "openai"
+
+            def complete(self, *args: object, **kwargs: object) -> str:
+                return "ответ"
+
+            def complete_json(self, *args: object, **kwargs: object) -> dict[str, Any]:
+                test.holding.set()
+                test.release.wait(5)
+                return {}
+
+        self.bot.transcriber = Transcriber()  # type: ignore[assignment]
+        self.bot.llm = Stub()  # type: ignore[assignment]
+
+    def tearDown(self) -> None:
+        self.release.set()
+        if self.bot._jobs is not None:
+            self.bot._jobs.wait_idle(5)
+        super().tearDown()
+
+    def test_refusal_names_the_current_stage_not_the_first_one(self) -> None:
+        self.press(100, "speak")
+        self.telegram.reset()
+        self.bot._submit(
+            {
+                "update_id": 7,
+                "message": {
+                    "message_id": 7,
+                    "chat": {"id": 100, "type": "private"},
+                    "from": self.sender(100),
+                    "voice": {
+                        "file_id": "file-7",
+                        "file_unique_id": "uniq-7",
+                        "duration": 12,
+                        "file_size": 4096,
+                    },
+                },
+            }
+        )
+        self.assertTrue(self.holding.wait(3), "разбор так и не начался")
+        self.bot._submit(
+            {
+                "update_id": 8,
+                "callback_query": {
+                    "id": "cb",
+                    "data": "listen",
+                    "from": self.sender(100),
+                    "message": {"message_id": 1, "chat": {"id": 100, "type": "private"}},
+                },
+            }
+        ).result(timeout=3)
+        self.assertIn("Сначала закончу разбор устного ответа", self.telegram.all_text())
+
+
+class ProductionWiringTests(unittest.TestCase):
+    """Боевая сборка раннера собирается из настроек, а не из тестовой подмены."""
+
+    def test_job_runner_is_built_from_settings(self) -> None:
+        with tempfile.TemporaryDirectory() as name:
+            root = Path(name)
+            env = {
+                "TELEGRAM_BOT_TOKEN": "test",
+                "BOT_CLAIM_CODE": CLAIM_CODE,
+                "DATABASE_PATH": str(root / "db.sqlite3"),
+                "EXPORT_DIR": str(root / "exports"),
+                "VOICE_DIR": str(root / "voices"),
+                "AUDIO_CACHE_DIR": str(root / "audio"),
+                "MODELS_DIR": str(root / "models"),
+                "LLM_PROVIDER": "openai",
+                "SPEECH_BACKEND": "openai",
+                "OPENAI_API_KEY": "",
+                "JOB_WORKERS": "2",
+                "JOB_TIMEOUT": "120",
+            }
+            saved = {key: os.environ.get(key) for key in env}
+            os.environ.update(env)
+            try:
+                bot = EnglishLabBot(Settings.from_env())
+                try:
+                    self.assertIsNotNone(bot._jobs)
+                    self.assertEqual(bot.context().jobs, bot._jobs)
+                    self.assertEqual(bot._jobs._timeout, 120)
+                finally:
+                    bot.close(wait=False)
+
+                os.environ["JOB_WORKERS"] = "0"
+                inline = EnglishLabBot(Settings.from_env())
+                try:
+                    self.assertIsNone(inline._jobs)
+                finally:
+                    inline.close(wait=False)
+            finally:
+                for key, value in saved.items():
+                    if value is None:
+                        os.environ.pop(key, None)
+                    else:
+                        os.environ[key] = value
 
 
 class ClickThroughPlacementTests(BotTestCase):
@@ -971,13 +1597,164 @@ class AiDisabledTests(BotTestCase):
         self.send(100, "Hello, how are you?")
         self.assertIn("не настроен", self.telegram.all_text())
 
-    def test_writing_task_is_offered_but_review_needs_ai(self) -> None:
+    def test_writing_refuses_before_the_text_is_written(self) -> None:
+        """Просить сто слов и отказать после — худший способ потратить время."""
         self.bot.storage.update_user(100, level="A2")
         self.send(100, menu.WRITING)
-        self.assertIn("Объём", self.telegram.all_text())
-        self.telegram.reset()
-        self.send(100, "word " * 60)
         self.assertIn("не настроен", self.telegram.all_text())
+        self.assertNotIn("Объём", self.telegram.all_text())
+        user = self.bot.storage.user(100)
+        assert user is not None
+        self.assertEqual(user.state, "idle")
+
+    def test_speaking_refuses_before_the_voice_is_recorded(self) -> None:
+        self.bot.storage.update_user(100, level="A2")
+        self.send(100, menu.SPEAKING)
+        self.assertIn("не настроен", self.telegram.all_text())
+        user = self.bot.storage.user(100)
+        assert user is not None
+        self.assertEqual(user.state, "idle")
+
+
+class RetentionAndAdminTests(BotTestCase):
+    """Возврат после перерыва, честная серия, счётчики и приглашения."""
+
+    def setUp(self) -> None:
+        super().setUp()
+        self.claim_owner()
+        self.bot.storage.update_user(100, level="B1", target_level="B2")
+
+    def _last_practice(self, days_ago: int) -> None:
+        from datetime import UTC, datetime, timedelta
+
+        day = (datetime.now(UTC) - timedelta(days=days_ago)).date().isoformat()
+        self.bot.storage.update_user(100, streak_days=7, last_practice_day=day)
+
+    def test_streak_expires_by_itself(self) -> None:
+        """Иначе после десяти дней паузы профиль показывает «Серия: 7 дн.»."""
+        self._last_practice(10)
+        self.assertEqual(self.bot.storage.effective_streak(100), 0)
+
+        self._last_practice(1)
+        self.assertEqual(self.bot.storage.effective_streak(100), 7)
+
+    def test_hub_greets_after_a_break(self) -> None:
+        self._last_practice(10)
+        self.send(100, menu.PROFILE)
+        self.assertIn("С возвращением", self.telegram.all_text())
+        self.assertIn("Серия: 0 дн.", self.telegram.all_text())
+
+    def test_interface_events_are_counted_without_content(self) -> None:
+        """Счётчики нужны, чтобы приоритезация опиралась на данные, а не на догадки."""
+        self.press(100, "startpractice")
+        self.answer_current(100)
+        names = {row["name"] for row in self.bot.storage.event_counts(days=1)}
+        self.assertIn("start", names)
+        self.send(100, "/admin")
+        self.assertIn("Интерфейс за 14 дней", self.telegram.all_text())
+
+    def test_used_and_expired_invites_explain_themselves(self) -> None:
+        self.press(100, "invitenew")
+        code = self.bot.storage.invites()[0]["code"]
+        self.bot.storage.redeem_invite(code, 200)
+        self.telegram.reset()
+        self.send(300, f"/start {code}")
+        self.assertIn("уже воспользовались", self.telegram.all_text())
+
+        fresh = self.bot.storage.create_invite(100, role="member")
+        with self.bot.storage.session() as db:
+            db.execute(
+                "UPDATE invites SET expires_at = ? WHERE code = ?",
+                ("2000-01-01T00:00:00+00:00", fresh),
+            )
+        self.telegram.reset()
+        self.send(400, f"/start {fresh}")
+        self.assertIn("Срок этого приглашения истёк", self.telegram.all_text())
+
+    def test_export_and_anki_are_commands_now(self) -> None:
+        self.send(100, "/export")
+        self.assertIn("English Lab", self.telegram.all_text())
+        self.telegram.reset()
+        self.send(100, "/anki")
+        self.assertTrue(self.telegram.all_text() or self.telegram.documents)
+
+
+class LevelSplitTests(BotTestCase):
+    """Уровень должен что-то значить: и в подборе, и после ручной правки."""
+
+    def setUp(self) -> None:
+        super().setUp()
+        self.claim_owner()
+        self.bot.storage.update_user(100, level="C2", target_level="C2")
+
+    def test_lowering_the_level_clears_cards_from_above(self) -> None:
+        """Иначе «Повторение» навсегда остаётся курсом прежнего уровня."""
+        from english_bot.learning.srs import new_card
+
+        high = self.bot.curriculum.points_of_level("C2")[0]
+        low = self.bot.curriculum.points_of_level("B1")[0]
+        for point in (high, low):
+            self.bot.storage.upsert_card(100, new_card("point", point.id))
+
+        self.press(100, "setlvl:B1")
+        keys = set(self.bot.storage.card_keys(100, "point"))
+        self.assertIn(low.id, keys)
+        self.assertNotIn(high.id, keys)
+        self.assertIn("Убрал из повторения", self.telegram.all_text())
+
+    def test_review_never_lifts_material_above_the_level(self) -> None:
+        import random
+
+        from english_bot.learning import practice as pr
+        from english_bot.learning.srs import new_card
+
+        high = self.bot.curriculum.points_of_level("C2")[0]
+        self.bot.storage.upsert_card(100, new_card("point", high.id))
+        self.bot.storage.update_user(100, level="B1")
+        cards = self.bot.storage.due_cards(100, limit=30)
+        refs = pr.queue_for_review(self.bot.curriculum, cards, random.Random(1), 15, level="B1")
+        levels = {
+            q.level
+            for q in (pr.resolve(ref, self.bot.curriculum, random.Random(1)) for ref in refs)
+            if q is not None
+        }
+        self.assertNotIn("C2", levels)
+
+    def test_productive_skills_start_a_level_below(self) -> None:
+        """Узнавание грамматики не доказывает, что человек так же говорит и пишет."""
+        from english_bot.learning.progress import skill_level
+
+        user = self.bot.storage.user(100)
+        assert user is not None
+        self.assertEqual(skill_level(self.bot.storage, user, "speaking"), "C1")
+
+        self.bot.storage.set_skill(100, "speaking", mastery=4, minutes_delta=10)
+        user = self.bot.storage.user(100)
+        assert user is not None
+        self.assertEqual(skill_level(self.bot.storage, user, "speaking"), "C2")
+
+    def test_placement_offers_a_choice_when_it_beats_self_assessment(self) -> None:
+        """Тест меряет узнавание и завышает: разрыв с самооценкой нельзя проглатывать."""
+        from english_bot.learning import placement as pl
+
+        self.bot.storage.update_user(100, level="")
+        state = pl.PlacementState(session_id=1)
+        state.profile["profile_self_index"] = "1"  # самооценка A2
+        state.results = {
+            "B2": [1] * 6,
+            "C1": [1] * 6,
+            "C2": [1, 1, 1, 1, 1, 0],
+        }
+        self.bot.storage.set_state(100, "placement", state.to_dict())
+        user = self.bot.storage.user(100)
+        assert user is not None
+        from english_bot.handlers import study
+
+        study._finish_placement(self.bot.context(), user, state)
+        text = self.telegram.all_text()
+        self.assertIn("оценил себя как A2", text)
+        self.assertIn("setlvl:C2", self.telegram.buttons())
+        self.assertIn("setlvl:B1", self.telegram.buttons())
 
 
 if __name__ == "__main__":

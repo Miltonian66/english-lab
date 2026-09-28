@@ -40,6 +40,11 @@ class Exercise:
     correct_index: int | None = None
     answer: str = ""
     accept: tuple[str, ...] = ()
+    # Пригодно ли задание для диагностики уровня. Ставится в `false`, когда
+    # задание живёт на своём уровне как тренировка, но уровень им не измерить:
+    # оно дублирует материал уровнем ниже или проверяет структуру не своего
+    # уровня. Для тренировки такое задание остаётся полноценным.
+    diagnostic: bool = True
 
     @property
     def expected(self) -> tuple[str, ...]:
@@ -106,6 +111,9 @@ def parse_exercise(raw: object, where: str) -> Exercise:
     difficulty = data.get("difficulty", 2)
     _require(isinstance(difficulty, int) and 1 <= difficulty <= 3, f"{where}: difficulty вне 1..3")
 
+    diagnostic = data.get("diagnostic", True)
+    _require(isinstance(diagnostic, bool), f"{where}: diagnostic должен быть true или false")
+
     options = _tuple(data.get("options"), "options", where)
     correct_index = data.get("correct_index")
     answer = str(data.get("answer") or "").strip()
@@ -133,6 +141,7 @@ def parse_exercise(raw: object, where: str) -> Exercise:
         correct_index=correct_index if kind == "choice" else None,
         answer=answer,
         accept=accept,
+        diagnostic=bool(diagnostic),
     )
 
 

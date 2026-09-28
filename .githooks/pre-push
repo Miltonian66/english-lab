@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# main на GitHub меняется только мержем PR после зелёного CI.
+set -euo pipefail
+while read -r _local_ref _local_sha remote_ref _remote_sha; do
+    if [[ $remote_ref == refs/heads/main ]]; then
+        echo "Push в main запрещён: открой PR (gh pr create)" >&2
+        exit 1
+    fi
+done

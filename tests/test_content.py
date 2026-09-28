@@ -186,6 +186,18 @@ class ListeningBankTests(unittest.TestCase):
                         broken.append(task.id)
         self.assertEqual(broken, [], f"диалог оформлен не целиком: {broken}")
 
+    def test_dialogues_declare_every_speaker_gender(self) -> None:
+        """Голос выбирается по полу: необъявленный говорящий получил бы случайный."""
+        from english_bot.ai.tts import split_dialogue
+
+        for tasks in CURRICULUM.listening.values():
+            for task in tasks:
+                names = {name for name, _ in split_dialogue(task.script_en)}
+                if not names:
+                    continue
+                with self.subTest(task=task.id):
+                    self.assertEqual({name for name, _ in task.speakers}, names)
+
     def test_every_level_covers_all_listening_skills(self) -> None:
         from english_bot.content.banks import LISTENING_SKILLS
 

@@ -50,6 +50,38 @@ def split_dialogue(script: str) -> list[tuple[str, str]]:
     return pairs if len({speaker for speaker, _ in pairs}) >= 2 else []
 
 
+GENDERS = ("female", "male")
+
+
+def assign_voices(
+    order: list[str], genders: dict[str, str], pools: dict[str, list[str]], fallback: str
+) -> dict[str, str]:
+    """Голос каждому говорящему по объявленному полу, разные голоса внутри пола.
+
+    Порядок появления решает только, кому из двух женщин достанется первый
+    женский голос. Пол не объявлен — полы чередуются, чтобы собеседники всё равно
+    звучали по-разному. Пустой пул заменяется голосом по умолчанию.
+    """
+    used = {gender: 0 for gender in GENDERS}
+    voices: dict[str, str] = {}
+    for index, speaker in enumerate(order):
+        gender = genders.get(speaker)
+        if gender not in GENDERS:
+            gender = GENDERS[index % 2]
+        pool = pools.get(gender) or [fallback]
+        voices[speaker] = pool[used[gender] % len(pool)]
+        used[gender] += 1
+    return voices
+
+
+def speaking_order(lines: list[tuple[str, str]]) -> list[str]:
+    order: list[str] = []
+    for speaker, _ in lines:
+        if speaker not in order:
+            order.append(speaker)
+    return order
+
+
 def spoken_text(script: str) -> str:
     """Текст для одного голоса: без имён говорящих, если скрипт — диалог."""
     turns = split_dialogue(script)
@@ -63,12 +95,18 @@ TURN_PAUSE_SECONDS = 0.35
 
 class Speaker:
     def __init__(
-        self, api_key: str, model: str, voice: str, cache_dir: Path, second_voice: str = "onyx"
+        self,
+        api_key: str,
+        model: str,
+        voice: str,
+        cache_dir: Path,
+        female_voices: tuple[str, ...] = ("nova", "shimmer"),
+        male_voices: tuple[str, ...] = ("onyx", "echo"),
     ):
         self.api_key = api_key
         self.model = model
         self.voice = voice
-        self.second_voice = second_voice
+        self.pools = {"female": list(female_voices), "male": list(male_voices)}
         self.cache_dir = cache_dir
 
     def synthesize(self, text: str, slow: bool = False) -> Path:
@@ -117,8 +155,10 @@ class Speaker:
             raise SpeechError("сервис синтеза вернул пустой ответ")
         return audio
 
-    def synthesize_dialogue(self, lines: list[tuple[str, str]]) -> Path:
-        """Реплики по голосам: первый говорящий — `voice`, второй — `second_voice`.
+    def synthesize_dialogue(
+        self, lines: list[tuple[str, str]], genders: dict[str, str] | None = None
+    ) -> Path:
+        """Реплики голосами по полу говорящих (`assign_voices`).
 
         Каждая реплика запрашивается сырым PCM, реплики склеиваются с паузой и
         кодируются в Ogg/Opus тем же PyAV, что и локальный синтез. Без PyAV
@@ -134,19 +174,11 @@ class Speaker:
 
         from .local_speech import pad_wav, wav_to_opus
 
-        order: list[str] = []
-        for speaker, _ in turns:
-            if speaker not in order:
-                order.append(speaker)
-        voices = {
-            speaker: (self.voice if index % 2 == 0 else self.second_voice)
-            for index, speaker in enumerate(order)
-        }
+        voices = assign_voices(speaking_order(turns), genders or {}, self.pools, self.voice)
         script = "\n".join(f"{speaker}: {text}" for speaker, text in turns)
         self.cache_dir.mkdir(parents=True, exist_ok=True)
-        destination = self.cache_dir / cache_name(
-            script, f"openai-dialogue-{self.voice}-{self.second_voice}", False
-        )
+        tag = "openai-dialogue-" + ",".join(f"{name}={voice}" for name, voice in voices.items())
+        destination = self.cache_dir / cache_name(script, tag, False)
         if destination.exists() and destination.stat().st_size > 0:
             return destination
 

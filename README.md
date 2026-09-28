@@ -72,7 +72,7 @@ Anki. В `/admin` видны живые приглашения и анонимн
 ## Запуск
 
 1. Создать `.env` из `.env.example`, заполнить `TELEGRAM_BOT_TOKEN` и `BOT_CLAIM_CODE`.
-2. Проверки: `.venv/bin/python -m unittest discover -s tests -v` и `python3 -m english_bot.content.validate`.
+2. Проверки: `scripts/check.sh`.
 3. Вручную: `set -a; source .env; set +a; .venv/bin/python -m english_bot`.
 
 Постоянная работа через user-service:
@@ -83,6 +83,9 @@ ln -s /home/milton/english/deploy/english-tutor-bot.service ~/.config/systemd/us
 systemctl --user daemon-reload
 systemctl --user enable --now english-tutor-bot.service
 ```
+
+Дальше код на прод попадает только через PR, зелёный CI и `scripts/release.sh deploy` —
+см. [docs/delivery.md](docs/delivery.md).
 
 Первый, кто пришлёт `/start <BOT_CLAIM_CODE>`, становится владельцем. Дальше
 владелец раздаёт коллегам ссылки кнопкой «📊 Я» → «Пригласить коллегу».
@@ -170,3 +173,5 @@ curl -sSL https://bootstrap.pypa.io/get-pip.py | .venv/bin/python -
 ## Документация
 
 Контракты, схема данных и правила пополнения контента: [docs/README.md](docs/README.md).
+Порядок работы для агентов и людей — ветки, рабочие копии, CI, выкладка:
+[AGENTS.md](AGENTS.md) и [docs/delivery.md](docs/delivery.md).

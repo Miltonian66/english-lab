@@ -346,7 +346,10 @@ class DiagnosticPoolTests(unittest.TestCase):
                 options = tuple(sorted(normalize(option) for option in exercise.options))
                 key = (options, normalize(exercise.options[exercise.correct_index or 0]))
                 by_key[key].add(point.level)
-                by_key[re.sub(r"\d+", "#", normalize(exercise.prompt))].add(point.level)
+                # Типовая инструкция без английского текста («В каком предложении
+                # ошибка?») задание не определяет: его определяют варианты.
+                if re.search(r"[a-z]", normalize(exercise.prompt)):
+                    by_key[re.sub(r"\d+", "#", normalize(exercise.prompt))].add(point.level)
         clashes = [key for key, levels in by_key.items() if len(levels) > 1]
         self.assertEqual(clashes, [], f"дубли между уровнями в пуле: {clashes[:3]}")
 

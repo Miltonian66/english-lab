@@ -536,7 +536,7 @@ class PracticeTests(unittest.TestCase):
                 if hint == "Напиши ответ сообщением.":
                     self.assertNotEqual(exercise.kind, "correct")
                     self.assertNotEqual(exercise.kind, "order")
-        self.assertEqual(seen, {"gap", "correct", "order", "transform"})
+        self.assertEqual(seen, {"gap", "correct", "order", "transform", "cloze"})
 
     def test_error_hunting_task_is_announced(self) -> None:
         exercise = next(e for e, _ in CURRICULUM.exercises.values() if e.kind == "correct")

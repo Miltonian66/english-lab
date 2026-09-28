@@ -710,7 +710,13 @@ class PracticeFlowTests(BotTestCase):
             if question.card_type == "vocab" and not question.is_choice:
                 self.telegram.reset()
                 self.press(100, f"hint:{self.step_payload(100)}")
-                self.assertNotIn(question.expected[0], self.telegram.all_text())
+                # Ищем слово целиком: «on» подстрокой сидит в «preposition».
+                word = re.escape(question.expected[0])
+                self.assertIsNone(re.search(
+                    rf"(?<![A-Za-z]){word}(?![A-Za-z])",
+                    self.telegram.all_text(),
+                    re.IGNORECASE,
+                ))
                 return
             self.answer_current(100)
         self.skipTest("в очереди не было карточки лексики на вспоминание")

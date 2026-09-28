@@ -65,8 +65,55 @@ class AnswerKeyTests(unittest.TestCase):
                 if exercise.kind == "choice":
                     continue
                 with self.subTest(exercise=exercise.id):
+                    if exercise.kind == "cloze":
+                        self.assertTrue(all(gap and gap[0].strip() for gap in exercise.gaps))
+                        continue
                     self.assertTrue(exercise.answer.strip())
                     self.assertNotIn("___", exercise.answer)
+
+    def test_every_exercise_accepts_its_own_answers(self) -> None:
+        """Эталон и каждый вариант accept проходят настоящую сверку бота.
+
+        Ловит accept с другим знаком в конце order, опечатку в эталоне и cloze,
+        чьи ответы не соответствуют пропускам.
+        """
+        import random
+
+        from english_bot.learning import practice as pr
+
+        rng = random.Random(1)
+        broken: list[str] = []
+        for point in CURRICULUM.points.values():
+            for exercise in point.exercises:
+                question = pr.resolve(f"ex:{exercise.id}", CURRICULUM, rng)
+                assert question is not None
+                if exercise.kind == "cloze":
+                    answers = ["; ".join(gap[0] for gap in exercise.gaps),
+                               "; ".join(gap[-1] for gap in exercise.gaps)]
+                else:
+                    answers = list(exercise.expected)
+                for answer in answers:
+                    if not pr.check(question, answer).correct:
+                        broken.append(f"{exercise.id}: {answer!r}")
+        self.assertEqual(broken, [], f"ключ не проходит сверку: {broken[:10]}")
+
+    def test_correct_items_really_contain_an_error(self) -> None:
+        """В «исправь ошибку» само условие обязано отклоняться: иначе ошибки нет."""
+        import random
+
+        from english_bot.learning import practice as pr
+
+        rng = random.Random(1)
+        silent: list[str] = []
+        for point in CURRICULUM.points.values():
+            for exercise in point.exercises:
+                if exercise.kind != "correct":
+                    continue
+                question = pr.resolve(f"ex:{exercise.id}", CURRICULUM, rng)
+                assert question is not None
+                if pr.check(question, exercise.prompt).correct:
+                    silent.append(exercise.id)
+        self.assertEqual(silent, [], f"условие засчитывается как ответ: {silent[:10]}")
 
     def test_exercise_ids_are_globally_unique(self) -> None:
         seen: set[str] = set()
@@ -120,6 +167,32 @@ class HintMaterialTests(unittest.TestCase):
                         leaked.append(f"{item.word} → {form}")
                         break
         self.assertEqual(leaked, [], f"слово видно в подсказке: {leaked[:10]}")
+
+
+class ListeningBankTests(unittest.TestCase):
+    def test_dialogue_scripts_are_well_formed(self) -> None:
+        """Строка «Имя: …» в скрипте значит диалог: тогда так оформлены все строки.
+
+        Иначе синтез прочитал бы имена вслух одним голосом.
+        """
+        from english_bot.ai.tts import DIALOGUE_LINE, split_dialogue
+
+        broken: list[str] = []
+        for tasks in CURRICULUM.listening.values():
+            for task in tasks:
+                lines = [line for line in task.script_en.splitlines() if line.strip()]
+                if any(DIALOGUE_LINE.match(line) for line in lines) and len(lines) > 1:
+                    if not split_dialogue(task.script_en):
+                        broken.append(task.id)
+        self.assertEqual(broken, [], f"диалог оформлен не целиком: {broken}")
+
+    def test_every_level_covers_all_listening_skills(self) -> None:
+        from english_bot.content.banks import LISTENING_SKILLS
+
+        for level in LEVELS:
+            skills = {task.skill for task in CURRICULUM.listening.get(level, [])}
+            with self.subTest(level=level):
+                self.assertEqual(skills, set(LISTENING_SKILLS))
 
 
 class CallbackCodeTests(unittest.TestCase):

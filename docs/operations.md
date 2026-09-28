@@ -366,7 +366,7 @@ python3 -c 'from english_bot.config import Settings; from english_bot.telegram_a
 systemctl --user status english-tutor-bot.service --no-pager
 ```
 
-Успех: `check: всё зелёное` (356 тестов вместе с шестью тестами локальной речи из
+Успех: `check: всё зелёное` (весь набор тестов вместе с шестью тестами локальной речи из
 `.venv`, валидатор контента, unit-файл — состав в `docs/delivery.md`), `getMe`
 возвращает username, сервис активен.
 

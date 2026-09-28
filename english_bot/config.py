@@ -69,6 +69,7 @@ class Settings:
     stt_model: str
     tts_model: str
     tts_voice: str
+    tts_second_voice: str
 
     workers: int
     job_workers: int
@@ -169,6 +170,7 @@ class Settings:
             stt_model=os.environ.get("STT_MODEL", "whisper-1").strip(),
             tts_model=os.environ.get("TTS_MODEL", "gpt-4o-mini-tts").strip(),
             tts_voice=os.environ.get("TTS_VOICE", "alloy").strip(),
+            tts_second_voice=os.environ.get("TTS_VOICE_2", "onyx").strip() or "onyx",
             workers=_int_env("WORKERS", 16, 1, 64),
             # 0 — выполнять длинные цепочки прямо в дорожке обновления, как было
             # до фоновых задач. Нужен тестам обработчиков и отладке по шагам.

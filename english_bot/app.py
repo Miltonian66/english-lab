@@ -258,6 +258,7 @@ def _build_speech(settings: Settings) -> tuple[Any, Any]:
             settings.tts_model,
             settings.tts_voice,
             settings.audio_cache_dir,
+            settings.tts_second_voice,
         ),
     )
 

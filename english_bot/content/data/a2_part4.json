@@ -114,12 +114,12 @@
         {
           "id": "a2_stative_vs_dynamic_verbs_or_non_action_vs_action_verbs_07",
           "kind": "correct",
-          "prompt": "I am knowing this tool very well, and I am thinking it is the best one.",
+          "prompt": "I know this tool very well, and I am thinking it is the best one.",
           "answer": "I know this tool very well, and I think it is the best one.",
           "accept": [
             "I know this tool very well, and I think it's the best one."
           ],
-          "explanation_ru": "Know всегда состояние, а think здесь значит «считать», то есть тоже состояние; обе формы идут в Present Simple.",
+          "explanation_ru": "Think здесь значит «считать», то есть состояние, поэтому Present Simple: I think. Форма I am thinking значила бы «обдумываю».",
           "difficulty": 3
         },
         {
@@ -148,7 +148,7 @@
         "used to + V1: I used to work here",
         "didn't use to + V1: I didn't use to like tea",
         "Did + subject + use to + V1?: Did you use to live there?",
-        "There used to be + noun: There used to be a shop here",
+        "There used to be + noun: There used to be a store here",
         "Past Simple for one finished action: I worked there in 2019"
       ],
       "examples": [
@@ -224,7 +224,7 @@
         {
           "id": "a2_used_to_05",
           "kind": "gap",
-          "prompt": "My father ___ (used to / work) as a driver, but now he is retired.",
+          "prompt": "My father ___ ___ ___ (work) as a driver, but now he is retired.",
           "answer": "used to work",
           "accept": [],
           "explanation_ru": "Речь о постоянной работе в прошлом, которой больше нет, поэтому used to + начальная форма work.",
@@ -548,11 +548,11 @@
           "options": [
             "So do I.",
             "So am I.",
-            "So I like.",
-            "So like I."
+            "So I do.",
+            "Neither do I."
           ],
           "correct_index": 0,
-          "explanation_ru": "В первой реплике Present Simple без вспомогательного глагола, поэтому берут do, и после so идёт обратный порядок.",
+          "explanation_ru": "В первой реплике Present Simple без вспомогательного глагола, поэтому берут do, и после so идёт обратный порядок: So do I. В So I do порядок прямой, а neither отвечает только на отрицание.",
           "difficulty": 1
         },
         {
@@ -600,7 +600,7 @@
         {
           "id": "a2_so_neither_05",
           "kind": "gap",
-          "prompt": "A: I didn't like the film. B: Neither ___ (I).",
+          "prompt": "A: I didn't like the movie. B: Neither ___ (I).",
           "answer": "did I",
           "accept": [],
           "explanation_ru": "В первой реплике Past Simple с didn't, поэтому после neither повторяется did, а затем подлежащее.",
@@ -621,7 +621,8 @@
           "prompt": "My brother likes football and so I do.",
           "answer": "My brother likes football and so do I.",
           "accept": [
-            "My brother likes football, and so do I."
+            "My brother likes football, and so do I.",
+            "My brother likes football and I do too."
           ],
           "explanation_ru": "После so нужен обратный порядок слов: сначала вспомогательный do, потом подлежащее I.",
           "difficulty": 3

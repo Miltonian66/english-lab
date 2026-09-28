@@ -24,7 +24,7 @@
     "Our new office is the biggest in the city.",
     "He speaks English better than his manager."
    ],
-   "ru_interference": "Русское сравнение всегда допускает слово более, поэтому появляется двойная степень: неверно This phone is more faster. Верно: This phone is faster. Ещё одна ошибка - потерянный артикль: неверно He is best in the team, верно He is the best in the team.",
+   "ru_interference": "Русское сравнение всегда допускает слово более, поэтому появляется двойная степень: неверно This phone is more faster. Верно: This phone is faster. Ещё одна ошибка - потерянный артикль: неверно He is best on the team, верно He is the best on the team.",
    "prerequisites": [
     "a1_comparative_adjectives",
     "a1_superlative_adjectives",
@@ -99,7 +99,7 @@
     {
      "id": "a2_comparative_superlative_adjectives_adverbs_06",
      "kind": "gap",
-     "prompt": "It is ___ (expensive) restaurant in the city.",
+     "prompt": "It is ___ ___ ___ restaurant in the city. (3 words: expensive)",
      "answer": "the most expensive",
      "accept": [],
      "explanation_ru": "Expensive - длинное прилагательное: the most expensive, артикль обязателен.",
@@ -108,8 +108,8 @@
     {
      "id": "a2_comparative_superlative_adjectives_adverbs_07",
      "kind": "correct",
-     "prompt": "This is the more expensive laptop in the shop.",
-     "answer": "This is the most expensive laptop in the shop.",
+     "prompt": "This is the more expensive laptop in the store.",
+     "answer": "This is the most expensive laptop in the store.",
      "accept": [],
      "explanation_ru": "Значение здесь - один из всех в магазине, значит нужна превосходная степень the most, а не сравнительная more.",
      "difficulty": 3
@@ -247,7 +247,8 @@
      "prompt": "Rewrite the advice with 'If I were you': My advice is to call him.",
      "answer": "If I were you, I would call him.",
      "accept": [
-      "If I were you, I'd call him."
+      "If I were you, I'd call him.",
+      "I would call him if I were you."
      ],
      "explanation_ru": "Совет через второе условное: устойчивая формула If I were you + would + глагол.",
      "difficulty": 3
@@ -376,7 +377,9 @@
      "kind": "order",
      "prompt": "to / I / the manager / ask / called / a question / .",
      "answer": "I called the manager to ask a question.",
-     "accept": [],
+     "accept": [
+      "I called to ask the manager a question."
+     ],
      "explanation_ru": "Сначала подлежащее и сказуемое с дополнением, затем цель через to и глагол.",
      "difficulty": 3
     }
@@ -483,7 +486,9 @@
      "kind": "gap",
      "prompt": "The bus was late, ___ I missed the meeting.",
      "answer": "so",
-     "accept": [],
+     "accept": [
+      "and so"
+     ],
      "explanation_ru": "Вторая часть - следствие первой, поэтому нужна связка so.",
      "difficulty": 2
     },
@@ -504,9 +509,11 @@
      "prompt": "The movie was long, however we enjoyed it.",
      "answer": "The movie was long. However, we enjoyed it.",
      "accept": [
-      "The movie was long; however, we enjoyed it."
+      "The movie was long; however, we enjoyed it.",
+      "The movie was long, but we enjoyed it.",
+      "Although the movie was long, we enjoyed it."
      ],
-     "explanation_ru": "However не соединяет два предложения запятой: перед ним нужна точка или точка с запятой, а после - запятая.",
+     "explanation_ru": "However не соединяет два предложения запятой: перед ним нужна точка или точка с запятой, а после - запятая. Через запятую части связывает but, а although присоединяет уступку внутри одного предложения.",
      "difficulty": 3
     }
    ]
@@ -752,7 +759,9 @@
      "kind": "correct",
      "prompt": "You must to wear a helmet in this area.",
      "answer": "You must wear a helmet in this area.",
-     "accept": [],
+     "accept": [
+      "You have to wear a helmet in this area."
+     ],
      "explanation_ru": "После must глагол ставится без частицы to.",
      "difficulty": 3
     },
@@ -762,7 +771,8 @@
      "prompt": "It is a holiday, so I mustn't go to the office.",
      "answer": "It is a holiday, so I don't have to go to the office.",
      "accept": [
-      "It is a holiday, so I do not have to go to the office."
+      "It is a holiday, so I do not have to go to the office.",
+      "It is a holiday, so I don't need to go to the office."
      ],
      "explanation_ru": "Праздник снимает обязанность, а не вводит запрет, поэтому нужно don't have to.",
      "difficulty": 3
@@ -805,11 +815,11 @@
      "options": [
       "may",
       "may to",
-      "mays",
+      "must",
       "maybe"
      ],
      "correct_index": 0,
-     "explanation_ru": "После may глагол идёт без to и без -s, а maybe - это наречие и место сказуемого не занимает.",
+     "explanation_ru": "Это возможность, а не уверенность: may. Must прозвучал бы как уверенный вывод, после may не ставится to, а maybe — наречие и место сказуемого не занимает.",
      "difficulty": 1
     },
     {
@@ -832,12 +842,12 @@
      "prompt": "___ I use your pen for a moment?",
      "options": [
       "May",
-      "Might not",
-      "Do I may",
-      "May to"
+      "Do",
+      "Will",
+      "Must"
      ],
      "correct_index": 0,
-     "explanation_ru": "Вежливая просьба о разрешении начинается с May I; вспомогательный do с may не используется.",
+     "explanation_ru": "Разрешение вежливо просят через May I (так же Can I или Could I). Do I use...? спрашивает о привычке, Will I use...? - о будущем факте, а Must I use...? - об обязанности, а не о разрешении.",
      "difficulty": 2
     },
     {
@@ -857,21 +867,24 @@
     {
      "id": "a2_may_and_might_whats_the_difference_05",
      "kind": "gap",
-     "prompt": "It is cloudy. It ___ (might/rain) later.",
+     "prompt": "It's cloudy, but I'm not sure. It ___ (rain) later.",
      "answer": "might rain",
-     "accept": [],
-     "explanation_ru": "После might глагол ставится без to и без окончания.",
+     "accept": [
+      "may rain",
+      "could rain"
+     ],
+     "explanation_ru": "Говорящий не уверен, поэтому возможность выражают might или may, а глагол после них стоит без to и без окончания: might rain.",
      "difficulty": 1
     },
     {
      "id": "a2_may_and_might_whats_the_difference_06",
      "kind": "gap",
-     "prompt": "She ___ (may/not/come) to the meeting; she is ill.",
+     "prompt": "Use may or might. She is sick, so she ___ (come) to the meeting.",
      "answer": "may not come",
      "accept": [
       "might not come"
      ],
-     "explanation_ru": "Отрицательная возможность: may not и глагол без to.",
+     "explanation_ru": "Из-за болезни она, скорее всего, не придёт - это отрицательная возможность: may not или might not, затем глагол без to.",
      "difficulty": 2
     },
     {
@@ -879,7 +892,9 @@
      "kind": "correct",
      "prompt": "He may to call you tomorrow.",
      "answer": "He may call you tomorrow.",
-     "accept": [],
+     "accept": [
+      "He might call you tomorrow."
+     ],
      "explanation_ru": "После may частица to не ставится.",
      "difficulty": 3
     },
@@ -914,7 +929,7 @@
     "I might go to the gym after work.",
     "We might not finish the project this week.",
     "He might be in a meeting right now.",
-    "The shop might be closed on Sunday.",
+    "The store might be closed on Sunday.",
     "They might not like the new design."
    ],
    "ru_interference": "В русском глагол меняется по лицам, а после модального слова идёт инфинитив, поэтому появляются лишние -s и to: неверно She mights go и He might to go. Верно: She might go и He might go. Отрицание тоже переносят по русскому порядку: неверно He might be not at home, верно He might not be at home.",
@@ -945,10 +960,10 @@
       "might",
       "might to",
       "might is",
-      "mights"
+      "can"
      ],
      "correct_index": 0,
-     "explanation_ru": "После might идёт be без to и без изменений по лицам.",
+     "explanation_ru": "Предположение о том, что происходит сейчас, — might be. Can здесь калька с «может быть»: can говорит об умении или общей возможности, а не о догадке. После might нет to и формы is.",
      "difficulty": 1
     },
     {
@@ -982,21 +997,21 @@
     {
      "id": "a2_might_might_not_05",
      "kind": "gap",
-     "prompt": "I am not sure. I ___ (might/take) a taxi.",
+     "prompt": "Use might or might not. The bus is very slow, so I ___ (take) a taxi.",
      "answer": "might take",
      "accept": [],
-     "explanation_ru": "После might глагол сохраняет начальную форму без to.",
+     "explanation_ru": "Медленный автобус - довод за такси, но решения ещё нет, поэтому might, а после него глагол в начальной форме без to.",
      "difficulty": 1
     },
     {
      "id": "a2_might_might_not_06",
      "kind": "gap",
-     "prompt": "They ___ (might/not/agree) with our plan.",
+     "prompt": "Use might or might not. They didn't like our last idea, so they ___ (agree) with this plan.",
      "answer": "might not agree",
      "accept": [
       "mightn't agree"
      ],
-     "explanation_ru": "Порядок слов в отрицании: might not и затем глагол.",
+     "explanation_ru": "Прошлая идея им не понравилась, значит вероятнее отказ: might not, и только потом глагол.",
      "difficulty": 2
     },
     {
@@ -1055,26 +1070,27 @@
      "options": [
       "should",
       "should to",
-      "shoulds",
+      "had better to",
       "are should"
      ],
      "correct_index": 0,
-     "explanation_ru": "После should глагол идёт без to, а сам should не меняется по лицам.",
+     "explanation_ru": "Совет — should плюс глагол без to. У had better тоже нет to (had better go), а should не соединяется с are.",
      "difficulty": 1
     },
     {
      "id": "a2_should_shouldnt_02",
      "kind": "choice",
-     "prompt": "___ I open the window?",
+     "prompt": "It's very hot in here. ___ I open the window?",
      "options": [
       "Should",
-      "Do should",
-      "Should to",
-      "Am I should"
+      "Do",
+      "Will",
+      "Must"
      ],
      "correct_index": 0,
-     "explanation_ru": "Вопрос с should строится без вспомогательного do: Should I ...?",
-     "difficulty": 1
+     "explanation_ru": "Предлагая помощь или спрашивая совета, говорят Should I...? без do. Do I open...? спрашивает о привычке, Will I open...? - о будущем факте, а Must I...? - об обязанности.",
+     "difficulty": 1,
+     "diagnostic": false
     },
     {
      "id": "a2_should_shouldnt_03",
@@ -1118,10 +1134,10 @@
     {
      "id": "a2_should_shouldnt_06",
      "kind": "gap",
-     "prompt": "I think you ___ (should/talk) to your manager about it.",
+     "prompt": "Use should or shouldn't. The problem is serious. I think you ___ (talk) to your manager about it.",
      "answer": "should talk",
      "accept": [],
-     "explanation_ru": "После should глагол сохраняет начальную форму.",
+     "explanation_ru": "Проблема серьёзная, поэтому совет утвердительный: should, а глагол после него в начальной форме.",
      "difficulty": 2
     },
     {

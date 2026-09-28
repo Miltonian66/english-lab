@@ -86,10 +86,10 @@
     {
      "id": "a1_adjectives_05",
      "kind": "gap",
-     "prompt": "My two brothers are very ___ (tall).",
+     "prompt": "My two brothers are very ___ (tall / talls).",
      "answer": "tall",
      "accept": [],
-     "explanation_ru": "Прилагательное одинаково для одного и для нескольких предметов, форма talls не существует.",
+     "explanation_ru": "Прилагательное одинаково для одного и для нескольких предметов: число показывает только существительное brothers, а формы talls не существует.",
      "difficulty": 1
     },
     {
@@ -210,7 +210,7 @@
      "prompt": "He speaks Spanish ___ (good).",
      "answer": "well",
      "accept": [],
-     "explanation_ru": "У прилагательного good наречие well, форма goodly не используется.",
+     "explanation_ru": "Как он говорит? Слово описывает действие speaks, поэтому нужно наречие, а у good оно неправильное: well.",
      "difficulty": 1
     },
     {
@@ -219,7 +219,7 @@
      "prompt": "The developers finished the task ___ (easy).",
      "answer": "easily",
      "accept": [],
-     "explanation_ru": "Конечная -y после согласной меняется на -ily.",
+     "explanation_ru": "Слово отвечает на вопрос «как закончили?» и описывает действие finished, поэтому нужно наречие; конечная -y после согласной меняется на -ily: easily.",
      "difficulty": 2
     },
     {
@@ -449,19 +449,19 @@
     {
      "id": "a1_superlative_adjectives_05",
      "kind": "gap",
-     "prompt": "This is ___ (easy) task on the list.",
-     "answer": "the easiest",
+     "prompt": "This is the ___ (easy) task on the list.",
+     "answer": "easiest",
      "accept": [],
-     "explanation_ru": "Перед превосходной степенью нужен артикль the, а -y переходит в -iest.",
+     "explanation_ru": "Задача выделяется из всего списка, поэтому нужна превосходная степень; у easy конечная -y после согласной переходит в -iest: easiest — the уже стоит перед пропуском.",
      "difficulty": 2
     },
     {
      "id": "a1_superlative_adjectives_06",
      "kind": "gap",
-     "prompt": "He is ___ (young) person in the office.",
-     "answer": "the youngest",
+     "prompt": "He is the ___ (young) person in the office.",
+     "answer": "youngest",
      "accept": [],
-     "explanation_ru": "Короткое прилагательное получает -est и артикль the.",
+     "explanation_ru": "Человек выделяется из всех в офисе, поэтому нужна превосходная степень; короткое прилагательное получает -est: youngest — the уже стоит перед пропуском.",
      "difficulty": 2
     },
     {
@@ -642,11 +642,11 @@
      "options": [
       "a",
       "an",
-      "many",
-      "two"
+      "no article",
+      "any"
      ],
      "correct_index": 1,
-     "explanation_ru": "Слово interview начинается с гласного звука, поэтому нужен an; many и two требуют множественного числа.",
+     "explanation_ru": "Interview — исчисляемое в единственном числе, поэтому без артикля нельзя, а слово начинается с гласного звука: an. A ставится перед согласным звуком, а any с единственным числом в утверждении не употребляют.",
      "difficulty": 1
     },
     {
@@ -776,11 +776,11 @@
      "options": [
       "a",
       "an",
-      "any",
-      "two"
+      "the",
+      "no article"
      ],
      "correct_index": 0,
-     "explanation_ru": "Название профессии в единственном числе требует a перед согласным звуком.",
+     "explanation_ru": "Профессию называют с a или an, без артикля нельзя; programmer начинается с согласного звука, поэтому a. The значило бы «тот самый программист», о котором уже шла речь.",
      "difficulty": 1
     },
     {
@@ -1072,10 +1072,10 @@
     {
      "id": "a1_whose_possessive_s_07",
      "kind": "correct",
-     "prompt": "This is my parents house.",
-     "answer": "This is my parents' house.",
+     "prompt": "My mom and dad live here. This is my parents house.",
+     "answer": "My mom and dad live here. This is my parents' house.",
      "accept": [],
-     "explanation_ru": "Множественное число parents уже кончается на -s, поэтому добавляется только апостроф.",
+     "explanation_ru": "Родителей двое, а parents уже кончается на -s, поэтому добавляется только апостроф: my parents' house.",
      "difficulty": 3
     },
     {
@@ -1084,8 +1084,6 @@
      "prompt": "is / whose / this / phone / ?",
      "answer": "Whose phone is this?",
      "accept": [
-      "Whose phone is this?",
-      "Whose is this phone?",
       "Whose is this phone?"
      ],
      "explanation_ru": "Whose открывает вопрос, дальше идёт существительное и глагол be перед подлежащим.",
@@ -1301,7 +1299,7 @@
       "getting"
      ],
      "correct_index": 1,
-     "explanation_ru": "В конструкции всегда третья форма got, она не меняется.",
+     "explanation_ru": "В have got слово got не меняется: это устойчивое выражение со значением «иметь», а не «получать». В американском английском причастие от get — gotten, но в have got всегда got.",
      "difficulty": 2
     },
     {
@@ -1384,26 +1382,26 @@
      "prompt": "What's this? - ___ my new phone.",
      "options": [
       "It's",
-      "This's",
-      "It are",
-      "Its'"
+      "This is",
+      "Its",
+      "It"
      ],
      "correct_index": 0,
-     "explanation_ru": "В ответе предмет уже известен из вопроса, поэтому используется it; формы This's и Its' не существуют.",
+     "explanation_ru": "Предмет уже назван в вопросе, поэтому в ответе it: It's my new phone. This is вводит предмет впервые, its — притяжательное «его», а без is предложению не хватает глагола.",
      "difficulty": 1
     },
     {
      "id": "a1_the_difference_between_this_and_it_02",
      "kind": "choice",
-     "prompt": "Look, ___ are my new headphones!",
+     "prompt": "Look, these are my new headphones! ___ are wireless.",
      "options": [
-      "it",
-      "this",
-      "these",
-      "that"
+      "They",
+      "These",
+      "Them",
+      "It"
      ],
-     "correct_index": 2,
-     "explanation_ru": "Предмет во множественном числе и рядом с говорящим, поэтому нужно these; остальные формы не сочетаются с are.",
+     "correct_index": 0,
+     "explanation_ru": "Наушники уже названы, поэтому дальше их заменяет they — множественное число от it. These снова вводило бы их как новый предмет, them — форма дополнения, а it не сочетается с are.",
      "difficulty": 2
     },
     {
@@ -1446,10 +1444,10 @@
     {
      "id": "a1_the_difference_between_this_and_it_06",
      "kind": "gap",
-     "prompt": "Hello, ___ (this / it) is Anna from the IT department.",
+     "prompt": "On the phone with a new client: 'Hello, ___ (this / it) is Anna from the IT department.'",
      "answer": "This",
      "accept": [],
-     "explanation_ru": "Представляясь по телефону, себя называют через this is.",
+     "explanation_ru": "Незнакомому собеседнику по телефону представляются через this is: Hello, this is Anna. It's Anna говорят тому, кто вас уже знает.",
      "difficulty": 2
     },
     {

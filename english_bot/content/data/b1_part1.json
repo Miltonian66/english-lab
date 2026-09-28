@@ -23,7 +23,7 @@
         "We were surprised by the news.",
         "After ten hours of work I was completely exhausted."
       ],
-      "ru_interference": "Русские «мне скучно» и «я заинтересован» не подсказывают форму, поэтому о себе ошибочно говорят -ing: неверно: I am boring at work. -> верно: I am bored at work. И наоборот о вещи: неверно: The film was bored. -> верно: The film was boring.",
+      "ru_interference": "Русские «мне скучно» и «я заинтересован» не подсказывают форму, поэтому о себе ошибочно говорят -ing: неверно: I am boring at work. -> верно: I am bored at work. И наоборот о вещи: неверно: The movie was bored. -> верно: The movie was boring.",
       "prerequisites": [
         "a1_adjectives"
       ],
@@ -31,7 +31,7 @@
         {
           "id": "b1_ed_ing_adjectives_adjectives_verbs_01",
           "kind": "choice",
-          "prompt": "I don't want to watch this film again. It was really ___.",
+          "prompt": "I don't want to watch this movie again. It was really ___.",
           "options": [
             "bored",
             "boring",
@@ -266,7 +266,7 @@
       "examples": [
         "This test was more difficult than the last one.",
         "He runs faster than anyone else on the team.",
-        "It is the best film I have ever seen.",
+        "It is the best movie I have ever seen.",
         "My new phone works better than my old one.",
         "He drives more carefully than his brother."
       ],
@@ -308,7 +308,7 @@
         {
           "id": "b1_comparative_superlative_adjectives_adverbs_03",
           "kind": "choice",
-          "prompt": "It is ___ film I have ever seen.",
+          "prompt": "It is ___ movie I have ever seen.",
           "options": [
             "a better",
             "the best",
@@ -345,10 +345,10 @@
         {
           "id": "b1_comparative_superlative_adjectives_adverbs_06",
           "kind": "gap",
-          "prompt": "Today is ___ (hot) day of the year.",
-          "answer": "the hottest",
+          "prompt": "Today is the ___ (hot) day of the year.",
+          "answer": "hottest",
           "accept": [],
-          "explanation_ru": "Превосходная степень короткого прилагательного: удвоение согласной, -est и обязательный артикль the.",
+          "explanation_ru": "После the нужна превосходная степень; у короткого hot согласная удваивается и добавляется -est.",
           "difficulty": 2
         },
         {
@@ -356,7 +356,9 @@
           "kind": "correct",
           "prompt": "This task is more easier than the last one.",
           "answer": "This task is easier than the last one.",
-          "accept": [],
+          "accept": [
+            "This task is much easier than the last one."
+          ],
           "explanation_ru": "Нельзя совмещать more и -er: у короткого easy остаётся только форма easier.",
           "difficulty": 3
         },
@@ -367,7 +369,8 @@
           "answer": "Nick is taller than Sam.",
           "accept": [
             "Nick is taller than Sam is.",
-            "Sam is shorter than Nick."
+            "Sam is shorter than Nick.",
+            "Sam is shorter than Nick is."
           ],
           "explanation_ru": "Not as tall as означает, что Ник выше, поэтому в новом предложении меняется подлежащее и ставится сравнительная степень с than.",
           "difficulty": 3
@@ -597,10 +600,10 @@
         {
           "id": "b1_so_such_such_a_so_much_so_many_06",
           "kind": "gap",
-          "prompt": "It was ___ (so / such / such a) boring film that we left early.",
+          "prompt": "It was ___ (so / such / such a) boring movie that we left early.",
           "answer": "such a",
           "accept": [],
-          "explanation_ru": "Перед исчисляемым существительным film в единственном числе нужен such a.",
+          "explanation_ru": "Перед исчисляемым существительным movie в единственном числе нужен such a.",
           "difficulty": 2
         },
         {
@@ -730,7 +733,7 @@
           "accept": [
             "was"
           ],
-          "explanation_ru": "Во втором типе с be для всех лиц используется were.",
+          "explanation_ru": "Во втором типе с be нормой считается were для всех лиц; в разговорной речи допустимо и was, но в обороте If I were you — только were.",
           "difficulty": 2
         },
         {
@@ -750,7 +753,8 @@
           "prompt": "if / I / were / you / I / would / accept / the offer / .",
           "answer": "If I were you, I would accept the offer.",
           "accept": [
-            "If I were you, I'd accept the offer."
+            "If I were you, I'd accept the offer.",
+            "I would accept the offer if I were you."
           ],
           "explanation_ru": "Устойчивый оборот второго типа: were для всех лиц, затем would с инфинитивом.",
           "difficulty": 3
@@ -879,9 +883,12 @@
           "prompt": "Rewrite as a second conditional: I don't have time, so I can't help you.",
           "answer": "If I had time, I would help you.",
           "accept": [
-            "If I had time, I'd help you."
+            "If I had time, I'd help you.",
+            "If I had time, I could help you.",
+            "I would help you if I had time.",
+            "I could help you if I had time."
           ],
-          "explanation_ru": "Реальная ситуация переворачивается в нереальную: настоящее время меняется на past simple, а результат получает would.",
+          "explanation_ru": "Реальная ситуация переворачивается в нереальную: настоящее время меняется на past simple, а результат получает would (или could, раз речь о возможности).",
           "difficulty": 3
         }
       ]
@@ -1005,7 +1012,8 @@
           "prompt": "Rewrite as a third conditional: I didn't check the code, so we lost a day.",
           "answer": "If I had checked the code, we would not have lost a day.",
           "accept": [
-            "If I had checked the code, we wouldn't have lost a day."
+            "If I had checked the code, we wouldn't have lost a day.",
+            "We would not have lost a day if I had checked the code."
           ],
           "explanation_ru": "Реальное прошлое переворачивается: отрицание становится утверждением в had checked, а результат — отрицанием с would have.",
           "difficulty": 3
@@ -1134,7 +1142,9 @@
           "accept": [
             "We cancelled the meeting because of the bad weather.",
             "Because of the bad weather, we canceled the meeting.",
-            "Because of the bad weather, we cancelled the meeting."
+            "Because of the bad weather, we cancelled the meeting.",
+            "We canceled the meeting because of bad weather.",
+            "Because of bad weather, we canceled the meeting."
           ],
           "explanation_ru": "Because of требует существительного, поэтому придаточное the weather was bad превращается в группу the bad weather.",
           "difficulty": 3
@@ -1254,9 +1264,10 @@
           "prompt": "I will can send you the report on Friday.",
           "answer": "I will be able to send you the report on Friday.",
           "accept": [
-            "I'll be able to send you the report on Friday."
+            "I'll be able to send you the report on Friday.",
+            "I can send you the report on Friday."
           ],
-          "explanation_ru": "Два модальных слова подряд невозможны: вместо will can используется will be able to.",
+          "explanation_ru": "Два модальных слова подряд невозможны: у can нет будущего времени, поэтому will can заменяют на will be able to (или просто can, если возможность есть уже сейчас).",
           "difficulty": 3
         },
         {
@@ -1511,7 +1522,9 @@
           "answer": "You don't have to answer this email. It is not important.",
           "accept": [
             "You do not have to answer this email. It is not important.",
-            "You don't have to answer this email, it is not important."
+            "You don't have to answer this email, it is not important.",
+            "You don't need to answer this email. It is not important.",
+            "You don't need to answer this email, it is not important."
           ],
           "explanation_ru": "Mustn't означало бы запрет, а по смыслу письмо просто необязательно, поэтому don't have to.",
           "difficulty": 3

@@ -64,7 +64,7 @@
         {
           "id": "b1_present_simple_present_continuous_03",
           "kind": "choice",
-          "prompt": "Why ___ that branch? We still need it.",
+          "prompt": "Wait! Why ___ that branch? We still need it.",
           "options": [
             "do you delete",
             "are you deleting",
@@ -103,7 +103,7 @@
         {
           "id": "b1_present_simple_present_continuous_06",
           "kind": "gap",
-          "prompt": "I ___ (not/believe) that this bug is still open.",
+          "prompt": "I ___ (not/believe) his estimate. This task will take at least a week.",
           "answer": "don't believe",
           "accept": [
             "do not believe"
@@ -376,8 +376,8 @@
         {
           "id": "b1_usually_used_to_be_used_to_get_used_to_07",
           "kind": "correct",
-          "prompt": "I am used to work with legacy code.",
-          "answer": "I am used to working with legacy code.",
+          "prompt": "I am used to work with legacy code by now.",
+          "answer": "I am used to working with legacy code by now.",
           "accept": [],
           "explanation_ru": "В обороте be used to слово to является предлогом, поэтому после него нужна форма working.",
           "difficulty": 3
@@ -488,7 +488,7 @@
           "prompt": "I will never forget ___ (see) that error in production.",
           "answer": "seeing",
           "accept": [],
-          "explanation_ru": "Forget с формой на -ing означает помнить о том, что уже случилось; forget to see значило бы забыть посмотреть.",
+          "explanation_ru": "Forget + -ing относится к событию, которое уже произошло: never forget seeing — навсегда запомнить, что видел. Forget to see значило бы «забыть посмотреть».",
           "difficulty": 3
         },
         {
@@ -624,7 +624,7 @@
         {
           "id": "b1_verb_preposition_06",
           "kind": "gap",
-          "prompt": "He insisted ___ (check) the logs twice.",
+          "prompt": "He insisted ___ (preposition + check) the logs twice.",
           "answer": "on checking",
           "accept": [],
           "explanation_ru": "Insist управляет предлогом on, а после предлога глагол принимает форму на -ing.",

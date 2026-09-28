@@ -53,10 +53,10 @@
             "took off",
             "took it off",
             "took off it",
-            "took the off"
+            "took up"
           ],
           "correct_index": 0,
-          "explanation_ru": "Take off здесь непереходный: дополнение не нужно, поэтому любые варианты с it неверны.",
+          "explanation_ru": "Take off в значении «взлететь» непереходный: дополнение не нужно, поэтому варианты с it неверны, а took up значит «занял, взялся за», а не «взлетел».",
           "difficulty": 1
         },
         {
@@ -65,12 +65,12 @@
           "prompt": "Who ___ your dog when you are away?",
           "options": [
             "looks after",
-            "looks after for",
-            "looks it after",
-            "after looks"
+            "looks for",
+            "takes after",
+            "looks after for"
           ],
           "correct_index": 0,
-          "explanation_ru": "Look after — неотделяемый глагол: дополнение идёт сразу после частицы, лишний предлог не нужен.",
+          "explanation_ru": "Look after значит «присматривать, заботиться» и не отделяется: дополнение идёт сразу после after. Look for значит «искать», take after - «быть похожим на родственника», а лишний for после after не ставится.",
           "difficulty": 2
         },
         {
@@ -299,7 +299,7 @@
         {
           "id": "a2_on_time_vs_in_time_at_the_end_vs_in_the_end_02",
           "kind": "choice",
-          "prompt": "___ of the film, everybody was crying.",
+          "prompt": "___ of the movie, everybody was crying.",
           "options": [
             "At the end",
             "In the end",
@@ -477,10 +477,10 @@
         {
           "id": "a2_prepositions_of_movement_06",
           "kind": "gap",
-          "prompt": "The train went ___ a long tunnel under the mountains.",
+          "prompt": "It takes the train ten minutes to go ___ the long tunnel under the mountains.",
           "answer": "through",
           "accept": [],
-          "explanation_ru": "Движение внутри замкнутого пространства от входа к выходу — это through.",
+          "explanation_ru": "Поезд идёт по тоннелю насквозь, от входа до выхода, — это through; into описывало бы только въезд, а он не длится десять минут.",
           "difficulty": 2
         },
         {
@@ -489,7 +489,8 @@
           "prompt": "Go on this street and you will see the hotel on the left.",
           "answer": "Go along this street and you will see the hotel on the left.",
           "accept": [
-            "Go down this street and you will see the hotel on the left."
+            "Go down this street and you will see the hotel on the left.",
+            "Go up this street and you will see the hotel on the left."
           ],
           "explanation_ru": "С улицей в значении 'по, вдоль' используется along, а не on.",
           "difficulty": 3
@@ -552,7 +553,7 @@
         {
           "id": "a2_something_anything_nothing_etc_02",
           "kind": "choice",
-          "prompt": "I am sorry, I did not hear ___.",
+          "prompt": "I'm sorry, I didn't hear ___.",
           "options": [
             "anything",
             "nothing",
@@ -560,7 +561,7 @@
             "nobody"
           ],
           "correct_index": 0,
-          "explanation_ru": "В отрицании с did not используется any-, иначе получится двойное отрицание.",
+          "explanation_ru": "В отрицании с didn't используется any-, иначе получится двойное отрицание.",
           "difficulty": 1
         },
         {
@@ -594,19 +595,19 @@
         {
           "id": "a2_something_anything_nothing_etc_05",
           "kind": "gap",
-          "prompt": "I am hungry. Let's eat ___ before the meeting. (some-)",
+          "prompt": "I'm hungry. Let's eat ___ before the meeting. (-thing)",
           "answer": "something",
           "accept": [],
-          "explanation_ru": "Предложение утвердительное, речь о еде вообще, поэтому something.",
+          "explanation_ru": "Let's... - утвердительное предложение, речь о любой еде, поэтому something: any- уходит в вопросы и отрицания, а nothing значило бы «ничего».",
           "difficulty": 1
         },
         {
           "id": "a2_something_anything_nothing_etc_06",
           "kind": "gap",
-          "prompt": "We tested the app again, and ___ works now. (every-)",
+          "prompt": "We fixed all the bugs, and ___ works now. (-thing)",
           "answer": "everything",
           "accept": [],
-          "explanation_ru": "Everything значит 'всё' и требует глагола в единственном числе: works.",
+          "explanation_ru": "Все ошибки исправлены, значит работает всё: everything, и глагол после него в единственном числе: works.",
           "difficulty": 2
         },
         {
@@ -655,7 +656,7 @@
       ],
       "examples": [
         "Most people use a smartphone every day.",
-        "Most of the tickets in this list are old.",
+        "Most of the tickets on this list are old.",
         "Most of us work from home on Friday.",
         "This is the most expensive plan.",
         "Most software has bugs.",
@@ -735,7 +736,7 @@
         {
           "id": "a2_most_most_of_the_most_06",
           "kind": "gap",
-          "prompt": "This is ___ ___ ___ laptop in the shop. (3 words: expensive)",
+          "prompt": "This is ___ ___ ___ laptop in the store. (3 words: expensive)",
           "answer": "the most expensive",
           "accept": [],
           "explanation_ru": "Превосходная степень длинного прилагательного: the most expensive.",
@@ -744,23 +745,23 @@
         {
           "id": "a2_most_most_of_the_most_07",
           "kind": "correct",
-          "prompt": "Most of students use a laptop at work.",
-          "answer": "Most students use a laptop at work.",
+          "prompt": "Most of developers use a laptop at work.",
+          "answer": "Most developers use a laptop at work.",
           "accept": [
-            "Most of the students use a laptop at work."
+            "Most of the developers use a laptop at work."
           ],
-          "explanation_ru": "Без the, my или these предлог of не нужен: most students.",
+          "explanation_ru": "Без the, my или these предлог of не нужен: most developers.",
           "difficulty": 3
         },
         {
           "id": "a2_most_most_of_the_most_08",
           "kind": "transform",
-          "prompt": "Rewrite about this list: Most tickets are closed. (use 'most of the' + tickets in this list)",
-          "answer": "Most of the tickets in this list are closed.",
+          "prompt": "Rewrite with 'most of the': Most tickets on this list are closed.",
+          "answer": "Most of the tickets on this list are closed.",
           "accept": [
-            "Most of the tickets on this list are closed."
+            "Most of the tickets in this list are closed."
           ],
-          "explanation_ru": "Появился определитель the, поэтому нужна форма most of the.",
+          "explanation_ru": "Речь о тикетах из конкретного списка, поэтому перед the нужен of: most of the tickets.",
           "difficulty": 3
         }
       ]
@@ -876,7 +877,9 @@
           "prompt": "We have much work this week.",
           "answer": "We have a lot of work this week.",
           "accept": [
-            "We have lots of work this week."
+            "We have lots of work this week.",
+            "We have so much work this week.",
+            "We have plenty of work this week."
           ],
           "explanation_ru": "В утвердительном предложении much почти не используется, вместо него a lot of.",
           "difficulty": 3
@@ -886,7 +889,10 @@
           "kind": "correct",
           "prompt": "I have a few time before the call.",
           "answer": "I have a little time before the call.",
-          "accept": [],
+          "accept": [
+            "I have some time before the call.",
+            "I have a bit of time before the call."
+          ],
           "explanation_ru": "Time неисчисляемое, поэтому нужно a little; a few идёт только с исчисляемыми во множественном числе.",
           "difficulty": 3
         }
@@ -1110,14 +1116,16 @@
           "kind": "gap",
           "prompt": "___ ___ the meeting start? It is not in my calendar. (when)",
           "answer": "When does",
-          "accept": [],
+          "accept": [
+            "When will"
+          ],
           "explanation_ru": "Вопросительное слово плюс вспомогательный does для третьего лица ед. числа.",
           "difficulty": 1
         },
         {
           "id": "a2_asking_questions_in_english_06",
           "kind": "gap",
-          "prompt": "___ ___ ___ you go to the office? (how often)",
+          "prompt": "___ ___ ___ you go to the office these days? (how often)",
           "answer": "How often do",
           "accept": [],
           "explanation_ru": "Вопросительная группа how often, затем вспомогательный do перед подлежащим you.",
@@ -1128,7 +1136,9 @@
           "kind": "correct",
           "prompt": "Where she works?",
           "answer": "Where does she work?",
-          "accept": [],
+          "accept": [
+            "Where is she working?"
+          ],
           "explanation_ru": "Нужен вспомогательный does, а смысловой глагол теряет окончание -s.",
           "difficulty": 3
         },
@@ -1151,7 +1161,7 @@
       "title_en": "Subject questions, questions with preposition",
       "source_slug": "subject-questions-questions-preposition",
       "title_ru": "Вопросы к подлежащему и вопросы с предлогом",
-      "summary_ru": "Если вопросительное слово who, what или which само является подлежащим, вспомогательный глагол не нужен и порядок слов остаётся прямым: Who wrote this code? What happened? Сравните с вопросом к дополнению, где do, does или did обязательны: Who did you call? В вопросе к подлежащему в настоящем времени глагол стоит в третьем лице единственного числа: Who knows the answer? Who wants coffee? В прошедшем времени просто прошедшая форма: Who called you? Второе правило: если в ответе нужен предлог, в вопросе он уходит в самый конец: Who are you waiting for? What are you talking about? Where does he come from? Ставить предлог перед вопросительным словом в разговорной речи нельзя.",
+      "summary_ru": "Если вопросительное слово who, what или which само является подлежащим, вспомогательный глагол не нужен и порядок слов остаётся прямым: Who wrote this code? What happened? Сравните с вопросом к дополнению, где do, does или did обязательны: Who did you call? В вопросе к подлежащему в настоящем времени глагол стоит в третьем лице единственного числа: Who knows the answer? Who wants coffee? В прошедшем времени просто прошедшая форма: Who called you? Второе правило: если в ответе нужен предлог, в вопросе он уходит в самый конец: Who are you waiting for? What are you talking about? Where does he come from? В разговорной речи предлог перед вопросительным словом не ставят; в официальном стиле так можно только с whom: With whom did you speak?",
       "forms": [
         "Вопрос к подлежащему: Who / What + глагол (без do, does, did)",
         "Who called? / What happened? — прошедшее без did",
@@ -1232,7 +1242,7 @@
         {
           "id": "a2_subject_questions_questions_preposition_05",
           "kind": "gap",
-          "prompt": "Who ___ the key to the server room? (have)",
+          "prompt": "Who ___ the key to the server room now? (have)",
           "answer": "has",
           "accept": [],
           "explanation_ru": "Who — подлежащее, поэтому does не нужен, а глагол стоит в третьем лице ед. числа: has.",
@@ -1255,9 +1265,10 @@
           "prompt": "With who did you go to the conference?",
           "answer": "Who did you go to the conference with?",
           "accept": [
-            "Whom did you go to the conference with?"
+            "Whom did you go to the conference with?",
+            "With whom did you go to the conference?"
           ],
-          "explanation_ru": "Предлог в английском вопросе уходит в конец, а не встаёт перед who.",
+          "explanation_ru": "В разговорной речи предлог уходит в конец вопроса. Перед вопросительным словом он возможен только в официальном With whom...?, а With who так не говорят.",
           "difficulty": 3
         },
         {
@@ -1391,13 +1402,15 @@
         {
           "id": "a2_defining_relative_clauses_who_which_that_where_08",
           "kind": "correct",
-          "prompt": "I like the shop which we bought the laptop.",
-          "answer": "I like the shop where we bought the laptop.",
+          "prompt": "I like the store which we bought the laptop.",
+          "answer": "I like the store where we bought the laptop.",
           "accept": [
-            "I like the shop that we bought the laptop from.",
-            "I like the shop which we bought the laptop from."
+            "I like the store that we bought the laptop from.",
+            "I like the store which we bought the laptop from.",
+            "I like the store we bought the laptop from.",
+            "I like the store in which we bought the laptop."
           ],
-          "explanation_ru": "После shop идёт полное предложение с местом действия, поэтому нужно where.",
+          "explanation_ru": "После store идёт полное предложение с местом действия, поэтому нужно where.",
           "difficulty": 3
         }
       ]
@@ -1424,7 +1437,7 @@
         "He said he would call me later.",
         "They said they could fix it that day.",
         "'We finished the test.' -> She said they had finished the test.",
-        "She told us that the meeting was cancelled."
+        "She told us that the meeting was canceled."
       ],
       "ru_interference": "В русском время в косвенной речи не сдвигается: неверно 'He said he is busy' -> верно 'He said he was busy'.",
       "prerequisites": [
@@ -1492,10 +1505,10 @@
         {
           "id": "a2_reported_speech_indirect_speech_05",
           "kind": "gap",
-          "prompt": "'I work in Berlin,' he said. -> He said he ___ in Berlin. (work)",
+          "prompt": "'I work in Berlin,' he said last year. Now he works in Paris. -> He said he ___ in Berlin. (work)",
           "answer": "worked",
           "accept": [],
-          "explanation_ru": "Present Simple в косвенной речи после said сдвигается в Past Simple.",
+          "explanation_ru": "Present Simple в косвенной речи после said сдвигается в Past Simple; к тому же в Берлине он больше не работает, поэтому оставить works нельзя.",
           "difficulty": 1
         },
         {
@@ -1515,9 +1528,11 @@
           "accept": [
             "He said that he was late.",
             "He said he was late.",
-            "He told me he was late."
+            "He told me he was late.",
+            "He said to me that he was late.",
+            "He said to me he was late."
           ],
-          "explanation_ru": "Say не употребляется с адресатом без to, поэтому здесь нужен told.",
+          "explanation_ru": "Say не берёт адресата без to: либо He told me, либо He said to me.",
           "difficulty": 3
         },
         {

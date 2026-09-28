@@ -279,6 +279,10 @@ class BotTestCase(unittest.TestCase):
             if not correctly:
                 index = (index + 1) % len(question.options)
             self.press(user_id, f"an:{self.step_payload(user_id)}:{index}")
+        elif question.kind == "cloze" and not correctly:
+            # Неверный ответ — по слову на каждый пропуск: иначе бот не поймёт
+            # ответ и попросит нужное число, а не засчитает ошибку.
+            self.send(user_id, "; ".join("definitely wrong" for _ in question.gaps))
         else:
             self.send(user_id, expected if correctly else "definitely wrong answer")
 

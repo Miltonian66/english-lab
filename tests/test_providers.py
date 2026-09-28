@@ -451,6 +451,61 @@ class SettingsSwitchTests(unittest.TestCase):
         os.environ.pop("JOB_WORKERS", None)
 
 
+class HostedDialogueTests(unittest.TestCase):
+    """Диалог через OpenAI: реплики разными голосами, склейка в одно голосовое."""
+
+    def setUp(self) -> None:
+        from english_bot.ai import tts
+
+        self.tts = tts
+        self.calls: list[dict] = []
+        self._dir = tempfile.TemporaryDirectory()
+        self._post = tts.post_binary
+
+        def fake_post(url: str, headers: dict, payload: dict) -> bytes:
+            self.calls.append(payload)
+            return b"\x10\x00" * 2400  # 0.1 с PCM на реплику
+
+        tts.post_binary = fake_post
+        self.speaker = tts.Speaker("key", "gpt-4o-mini-tts", "alloy", Path(self._dir.name), "onyx")
+
+    def tearDown(self) -> None:
+        self.tts.post_binary = self._post
+        self._dir.cleanup()
+
+    def test_each_speaker_gets_own_voice(self) -> None:
+        try:
+            import av  # noqa: F401
+        except ImportError:
+            self.skipTest("склейка диалога требует PyAV из .venv")
+        lines = [("Anna", "Hi."), ("Tom", "Hello."), ("Anna", "Bye.")]
+        path = self.speaker.synthesize_dialogue(lines)
+        self.assertEqual([call["voice"] for call in self.calls], ["alloy", "onyx", "alloy"])
+        self.assertTrue(all(call["response_format"] == "pcm" for call in self.calls))
+        self.assertTrue(path.read_bytes().startswith(b"OggS"))
+        self.speaker.synthesize_dialogue(lines)
+        self.assertEqual(len(self.calls), 3, "повтор берётся из кэша")
+
+    def test_without_pyav_dialogue_is_read_by_one_voice(self) -> None:
+        import builtins
+
+        real_import = builtins.__import__
+
+        def no_av(name: str, *args, **kwargs):
+            if name == "av":
+                raise ImportError("нет PyAV")
+            return real_import(name, *args, **kwargs)
+
+        builtins.__import__ = no_av
+        try:
+            self.speaker.synthesize_dialogue([("Anna", "Hi."), ("Tom", "Hello.")])
+        finally:
+            builtins.__import__ = real_import
+        self.assertEqual(len(self.calls), 1)
+        self.assertEqual(self.calls[0]["input"], "Hi. Hello.")
+        self.assertEqual(self.calls[0]["response_format"], "opus")
+
+
 class DialogueScriptTests(unittest.TestCase):
     def test_dialogue_lines_are_split_by_speaker(self) -> None:
         from english_bot.ai.tts import split_dialogue, spoken_text

@@ -3,9 +3,11 @@
 from __future__ import annotations
 
 import hashlib
+import io
 import os
 import re
 import secrets
+import wave
 from pathlib import Path
 
 from .http import ProviderError, post_binary
@@ -54,11 +56,19 @@ def spoken_text(script: str) -> str:
     return " ".join(text for _, text in turns) if turns else script
 
 
+# Сырые PCM хостингового синтеза: 24 кГц, 16 бит, моно.
+PCM_RATE = 24_000
+TURN_PAUSE_SECONDS = 0.35
+
+
 class Speaker:
-    def __init__(self, api_key: str, model: str, voice: str, cache_dir: Path):
+    def __init__(
+        self, api_key: str, model: str, voice: str, cache_dir: Path, second_voice: str = "onyx"
+    ):
         self.api_key = api_key
         self.model = model
         self.voice = voice
+        self.second_voice = second_voice
         self.cache_dir = cache_dir
 
     def synthesize(self, text: str, slow: bool = False) -> Path:
@@ -74,23 +84,7 @@ class Speaker:
         if destination.exists() and destination.stat().st_size > 0:
             return destination
 
-        payload = {
-            "model": self.model,
-            "voice": self.voice,
-            "input": cleaned,
-            "response_format": "opus",
-            "instructions": US_SLOW_INSTRUCTIONS if slow else US_INSTRUCTIONS,
-        }
-        try:
-            audio = post_binary(
-                "https://api.openai.com/v1/audio/speech",
-                {"Authorization": f"Bearer {self.api_key}"},
-                payload,
-            )
-        except ProviderError as exc:
-            raise SpeechError(str(exc)) from exc
-        if not audio:
-            raise SpeechError("сервис синтеза вернул пустой ответ")
+        audio = self._request(cleaned, self.voice, "opus", slow)
 
         # Кэш общий на всю платформу: имя временного файла обязано быть уникальным,
         # иначе одновременный /say одного слова двумя людьми затрёт файл под ногами.
@@ -103,7 +97,79 @@ class Speaker:
         destination.chmod(0o600)
         return destination
 
+    def _request(self, text: str, voice: str, response_format: str, slow: bool = False) -> bytes:
+        payload = {
+            "model": self.model,
+            "voice": voice,
+            "input": text,
+            "response_format": response_format,
+            "instructions": US_SLOW_INSTRUCTIONS if slow else US_INSTRUCTIONS,
+        }
+        try:
+            audio = post_binary(
+                "https://api.openai.com/v1/audio/speech",
+                {"Authorization": f"Bearer {self.api_key}"},
+                payload,
+            )
+        except ProviderError as exc:
+            raise SpeechError(str(exc)) from exc
+        if not audio:
+            raise SpeechError("сервис синтеза вернул пустой ответ")
+        return audio
+
     def synthesize_dialogue(self, lines: list[tuple[str, str]]) -> Path:
-        """Хостинговый синтез отдаёт готовый Opus, склеить его без PyAV нечем:
-        диалог читается одним голосом, без имён говорящих."""
-        return self.synthesize(" ".join(text for _, text in lines))
+        """Реплики по голосам: первый говорящий — `voice`, второй — `second_voice`.
+
+        Каждая реплика запрашивается сырым PCM, реплики склеиваются с паузой и
+        кодируются в Ogg/Opus тем же PyAV, что и локальный синтез. Без PyAV
+        склеить нечем — тогда диалог читается одним голосом, без имён.
+        """
+        turns = [(speaker, text.strip()[:900]) for speaker, text in lines if text.strip()]
+        if not turns:
+            raise SpeechError("нечего озвучивать")
+        try:
+            import av  # noqa: F401  (проверка, что кодер Opus есть)
+        except ImportError:
+            return self.synthesize(" ".join(text for _, text in turns))
+
+        from .local_speech import pad_wav, wav_to_opus
+
+        order: list[str] = []
+        for speaker, _ in turns:
+            if speaker not in order:
+                order.append(speaker)
+        voices = {
+            speaker: (self.voice if index % 2 == 0 else self.second_voice)
+            for index, speaker in enumerate(order)
+        }
+        script = "\n".join(f"{speaker}: {text}" for speaker, text in turns)
+        self.cache_dir.mkdir(parents=True, exist_ok=True)
+        destination = self.cache_dir / cache_name(
+            script, f"openai-dialogue-{self.voice}-{self.second_voice}", False
+        )
+        if destination.exists() and destination.stat().st_size > 0:
+            return destination
+
+        pause = b"\x00\x00" * int(PCM_RATE * TURN_PAUSE_SECONDS)
+        pieces: list[bytes] = []
+        for index, (speaker, text) in enumerate(turns):
+            if index:
+                pieces.append(pause)
+            pcm = self._request(text, voices[speaker], "pcm")
+            pieces.append(pcm[: len(pcm) - len(pcm) % 2])
+        buffer = io.BytesIO()
+        with wave.open(buffer, "wb") as target:
+            target.setnchannels(1)
+            target.setsampwidth(2)
+            target.setframerate(PCM_RATE)
+            target.writeframes(b"".join(pieces))
+        audio = wav_to_opus(pad_wav(buffer.getvalue()))
+
+        partial = destination.with_suffix(f".{os.getpid()}.{secrets.token_hex(4)}.part")
+        try:
+            partial.write_bytes(audio)
+            partial.replace(destination)
+        finally:
+            partial.unlink(missing_ok=True)
+        destination.chmod(0o600)
+        return destination

@@ -17,14 +17,13 @@
   выключенным голосом.
 - Один процесс: long polling немедленно передаёт апдейты в `KeyedExecutor` на
   `WORKERS` потоков (по умолчанию 16). У каждого человека своя последовательная
-  очередь, а разные люди занимают любой свободный поток. Медленный пользователь
-  больше не блокирует случайных соседей по `user_id % WORKERS`.
+  очередь, а разные люди занимают любой свободный поток. Фиксированных дорожек
+  по `user_id % WORKERS` нет, поэтому медленный пользователь не блокирует соседей.
 - Дорожка обновлений остаётся последовательной, но короткой: длинные цепочки
   (скачивание записи, Whisper, разбор моделью, синтез, загрузка файла) выполняет
   `JobRunner` вне её — по одной задаче на человека, на `JOB_WORKERS` потоков.
   Поэтому во время минутной расшифровки кнопки, экраны и `/stop` продолжают
-  отвечать. Раньше очередь человека держал он сам, и одно голосовое делало бота
-  немым для своего отправителя.
+  отвечать: иначе одно голосовое делало бы бота немым для своего отправителя.
 - Telegram: `getUpdates` с `allowed_updates = [message, callback_query]`,
   `sendMessage`, `answerCallbackQuery`, `sendChatAction`, `sendVoice`,
   `sendDocument`, `setMyCommands`, `getFile`, `deleteWebhook`.
@@ -133,9 +132,9 @@ Telegram id в строках про вход и про фоновые зада�
 
 Дневной лимит `DAILY_AI_CALLS` считает обращения к платным сервисам. При
 `SPEECH_BACKEND=local` расшифровка и синтез его не расходуют: они выполняются на
-этой машине и ничего не стоят, а раньше активный чат «закрывал» аудирование до
-завтра. Расшифровке нужен только распознаватель — отсутствие синтеза больше не
-отключает голосовые (`context.claim_speech`).
+этой машине и ничего не стоят, иначе активный чат «закрывал» бы аудирование до
+завтра. Расшифровке нужен только распознаватель: без синтеза голосовые всё равно
+принимаются (`context.claim_speech`).
 
 Независимо от провайдера фасады `ThreadedLLM`, `ThreadedTranscriber` и
 `ThreadedSpeaker` отправляют работу в отдельные ограниченные пулы. STT и TTS
@@ -201,9 +200,9 @@ Telegram id в строках про вход и про фоновые зада�
 - Каждый исход авторизации пишется в `access_log` и в журнал процесса
   (`app._record_access`): допуск — `INFO`, отказ — `WARNING`, всегда с Telegram
   id. Одна попытка — одна запись. Исходы: `owner`, `joined`, `open`, `no_owner`,
-  `need_invite`, `invite_used`, `invite_expired`, `invite_missing`. До этого
-  отказанный не оставлял следа нигде, и выдать ему доступ вручную было нечему —
-  id взять неоткуда, по username Bot API людей не ищет.
+  `need_invite`, `invite_used`, `invite_expired`, `invite_missing`. Без этой
+  записи отказанному нельзя выдать доступ вручную: id взять неоткуда, а по
+  username Bot API людей не ищет.
 - В `detail` попадает только то, что похоже на код (`app.BARE_INVITE`); всё
   прочее заменяется на «не похоже на код». Хвост после `/start` — произвольный
   текст, а журнал видят владелец и админы.
@@ -297,7 +296,7 @@ bucket: 28 сообщений/с глобально и burst 3 сообщени�
 ### Наблюдаемость
 
 Экран `/admin` показывает не только состав платформы, но и то, что процесс
-делает прямо сейчас. Раньше это было видно только с сервера через `journalctl`.
+делает прямо сейчас, — без доступа к серверу и `journalctl`.
 
 | Что | Откуда | Живёт |
 |---|---|---|
@@ -351,30 +350,25 @@ journalctl --user -u english-tutor-bot.service --since today | grep "Задач�
 - Маршрутизация, передача в диспетчер, доступ: `english_bot/app.py`.
 - Общий контекст обработчиков, `Ticket` и постановка фоновых задач, лимиты:
   `english_bot/context.py`.
-- Deployment: `deploy/english-tutor-bot.service`.
+- Unit-файл: `deploy/english-tutor-bot.service`; выкладка и откат — `docs/delivery.md`.
 
 ## Проверка
 
 ```bash
-python3 -m unittest discover -s tests -v
-python3 -m compileall -q english_bot tests
-python3 -m english_bot.content.validate
-systemd-analyze --user verify deploy/english-tutor-bot.service
-git diff --check
+scripts/check.sh
 ```
 
-Живая проверка связи, без печати секретов:
+Живая проверка связи, без печати секретов (`.env` есть только в боевом каталоге):
 
 ```bash
-set -a; source .env; set +a
+set -a; source /home/milton/english/.env; set +a
 python3 -c 'from english_bot.config import Settings; from english_bot.telegram_api import TelegramAPI; print(TelegramAPI(Settings.from_env().telegram_token).get_me()["username"])'
 systemctl --user status english-tutor-bot.service --no-pager
 ```
 
-Успех: 356 тестов проходят, компиляция и валидатор контента без ошибок, unit-файл
-валиден, `getMe` возвращает username, сервис активен. Из системного `python3` шесть
-тестов локальной речи пропускаются — это ожидаемо, полный набор гоняется через
-`.venv/bin/python -m unittest discover -s tests`.
+Успех: `check: всё зелёное` (356 тестов вместе с шестью тестами локальной речи из
+`.venv`, валидатор контента, unit-файл — состав в `docs/delivery.md`), `getMe`
+возвращает username, сервис активен.
 
 ## Ограничения
 

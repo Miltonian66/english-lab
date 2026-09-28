@@ -1,1037 +1,1717 @@
 {
- "chunk": "b2_2_part3",
- "points": [
-  {
-   "id": "b2_have_auxiliary_main_verb",
-   "level": "B2",
-   "band": "B2.2",
-   "topic": "Tenses",
-   "title_en": "Have: Auxiliary or main verb",
-   "source_slug": "have-auxiliary-main-verb",
-   "title_ru": "Have: вспомогательный или смысловой глагол",
-   "summary_ru": "Have работает в английском в двух разных ролях, и от роли зависит форма вопроса и отрицания. Как вспомогательный глагол have/has/had образует перфект (have finished, had left) и сам переносится в начало вопроса и присоединяет not: Have you finished? I haven't finished. Как смысловой глагол have значит «иметь», «получать», «проводить» и в американском варианте требует do/does/did: Do you have a laptop? I didn't have time. Разговорная форма have got тоже означает обладание, но вопрос строится без do: Have you got a minute? В значении обладания have не ставится в Continuous, а в значениях действия (have lunch, have a meeting, have a shower) — ставится: We're having a call right now. Отдельно существует каузативная конструкция have something done: I had my laptop repaired. Определяйте роль have до того, как выбирать форму вопроса.",
-   "forms": [
-    "have/has/had + V3 (вспомогательный): Have you finished?",
-    "do/does/did + подлежащее + have (смысловой): Do you have a ticket?",
-    "have got / has got (обладание): I've got two monitors.",
-    "be + having + существительное (действие): We're having a meeting.",
-    "have + объект + V3 (каузатив): I had my code reviewed."
-   ],
-   "examples": [
-    "Have you finished the report yet?",
-    "Do you have a spare cable? I don't have one.",
-    "We're having a stand-up at ten, so call me later.",
-    "I've got a meeting with the client at three.",
-    "She had her laptop repaired at the service center."
-   ],
-   "ru_interference": "Русское «У тебя есть ноутбук?» строится без вспомогательного глагола, поэтому пишут «Have you a laptop?» или «You have a laptop?» — неверно; верно «Do you have a laptop?». И наоборот, обладание ставят в Continuous: «I am having a car» → «I have a car».",
-   "prerequisites": [
-    "a2_auxiliary_verbs_do_be_and_have",
-    "b2_auxiliary_verbs_different_uses"
-   ],
-   "exercises": [
+  "chunk": "b2_2_part3",
+  "points": [
     {
-     "id": "b2_have_auxiliary_main_verb_01",
-     "kind": "choice",
-     "prompt": "___ you have a company laptop, or do you use your own?",
-     "options": [
-      "Have",
-      "Do",
-      "Are",
-      "Has"
-     ],
-     "correct_index": 1,
-     "explanation_ru": "Здесь have — смысловой глагол «иметь», поэтому вопрос строится с do; Have/Has/Are перед «you have» невозможны.",
-     "difficulty": 1
+      "id": "b2_have_auxiliary_main_verb",
+      "level": "B2",
+      "band": "B2.2",
+      "topic": "Tenses",
+      "title_en": "Have: Auxiliary or main verb",
+      "source_slug": "have-auxiliary-main-verb",
+      "title_ru": "Have: вспомогательный или смысловой глагол",
+      "summary_ru": "Have работает в английском в двух разных ролях, и от роли зависит форма вопроса и отрицания. Как вспомогательный глагол have/has/had образует перфект (have finished, had left) и сам переносится в начало вопроса и присоединяет not: Have you finished? I haven't finished. Как смысловой глагол have значит «иметь», «получать», «проводить» и в американском варианте требует do/does/did: Do you have a laptop? I didn't have time. Разговорная форма have got тоже означает обладание, но вопрос строится без do: Have you got a minute? В значении обладания have не ставится в Continuous, а в значениях действия (have lunch, have a meeting, have a shower) — ставится: We're having a call right now. Отдельно существует каузативная конструкция have something done: I had my laptop repaired. Определяйте роль have до того, как выбирать форму вопроса.",
+      "forms": [
+        "have/has/had + V3 (вспомогательный): Have you finished?",
+        "do/does/did + подлежащее + have (смысловой): Do you have a ticket?",
+        "have got / has got (обладание): I've got two monitors.",
+        "be + having + существительное (действие): We're having a meeting.",
+        "have + объект + V3 (каузатив): I had my code reviewed."
+      ],
+      "examples": [
+        "Have you finished the report yet?",
+        "Do you have a spare cable? I don't have one.",
+        "We're having a stand-up at ten, so call me later.",
+        "I've got a meeting with the client at three.",
+        "She had her laptop repaired at the service center."
+      ],
+      "ru_interference": "Русское «У тебя есть ноутбук?» строится без вспомогательного глагола, поэтому пишут «Have you a laptop?» или «You have a laptop?» — неверно; верно «Do you have a laptop?». И наоборот, обладание ставят в Continuous: «I am having a car» → «I have a car».",
+      "prerequisites": [
+        "a2_auxiliary_verbs_do_be_and_have",
+        "b2_auxiliary_verbs_different_uses"
+      ],
+      "exercises": [
+        {
+          "id": "b2_have_auxiliary_main_verb_01",
+          "kind": "choice",
+          "prompt": "___ you have a company laptop, or do you use your own?",
+          "options": [
+            "Have",
+            "Do",
+            "Are",
+            "Has"
+          ],
+          "correct_index": 1,
+          "explanation_ru": "Здесь have — смысловой глагол «иметь», поэтому вопрос строится с do; Have/Has/Are перед «you have» невозможны.",
+          "difficulty": 1
+        },
+        {
+          "id": "b2_have_auxiliary_main_verb_02",
+          "kind": "choice",
+          "prompt": "I ___ finished the migration script yet.",
+          "options": [
+            "don't have",
+            "am not having",
+            "haven't",
+            "not have"
+          ],
+          "correct_index": 2,
+          "explanation_ru": "Перед V3 (finished) стоит вспомогательный have, и отрицание образуется прямо от него: haven't finished.",
+          "difficulty": 1
+        },
+        {
+          "id": "b2_have_auxiliary_main_verb_03",
+          "kind": "choice",
+          "prompt": "Don't use meeting room B — the developers ___ a demo there at the moment.",
+          "options": [
+            "having",
+            "are having",
+            "were having",
+            "has"
+          ],
+          "correct_index": 1,
+          "explanation_ru": "Have a demo — это действие, а не обладание, поэтому нужна форма be + having; «at the moment» исключает were having, а has не согласуется с the developers.",
+          "difficulty": 1
+        },
+        {
+          "id": "b2_have_auxiliary_main_verb_04",
+          "kind": "choice",
+          "prompt": "___ your manager approved the pull request?",
+          "options": [
+            "Does",
+            "Has",
+            "Is",
+            "Have"
+          ],
+          "correct_index": 1,
+          "explanation_ru": "Форма approved здесь — причастие в перфекте, поэтому нужен вспомогательный has (подлежащее в единственном числе).",
+          "difficulty": 2,
+          "diagnostic": false
+        },
+        {
+          "id": "b2_have_auxiliary_main_verb_05",
+          "kind": "gap",
+          "prompt": "How long ___ (you/work) here? Since 2019.",
+          "answer": "have you worked",
+          "accept": [
+            "have you been working"
+          ],
+          "explanation_ru": "Вопрос о периоде до настоящего момента: вспомогательный have выносится вперёд подлежащего.",
+          "difficulty": 2
+        },
+        {
+          "id": "b2_have_auxiliary_main_verb_06",
+          "kind": "gap",
+          "prompt": "We ___ (not/have) enough licenses last year, so we bought ten more.",
+          "answer": "didn't have",
+          "accept": [
+            "did not have"
+          ],
+          "explanation_ru": "Have в значении «иметь» — смысловой глагол, поэтому отрицание в прошедшем строится через did not.",
+          "difficulty": 2
+        },
+        {
+          "id": "b2_have_auxiliary_main_verb_07",
+          "kind": "correct",
+          "prompt": "Have you a minute to review my code?",
+          "answer": "Do you have a minute to review my code?",
+          "accept": [
+            "Have you got a minute to review my code?"
+          ],
+          "explanation_ru": "Смысловой have требует do-вопроса; без do допустим только вариант с have got.",
+          "difficulty": 3
+        },
+        {
+          "id": "b2_have_auxiliary_main_verb_08",
+          "kind": "order",
+          "prompt": "meeting / are / we / a / having / now",
+          "answer": "We are having a meeting now.",
+          "accept": [
+            "We're having a meeting now."
+          ],
+          "explanation_ru": "Have a meeting — действие, поэтому нужен вспомогательный be и форма having.",
+          "difficulty": 3
+        }
+      ]
     },
     {
-     "id": "b2_have_auxiliary_main_verb_02",
-     "kind": "choice",
-     "prompt": "I ___ finished the migration script yet.",
-     "options": [
-      "don't have",
-      "am not having",
-      "haven't",
-      "not have"
-     ],
-     "correct_index": 2,
-     "explanation_ru": "Перед V3 (finished) стоит вспомогательный have, и отрицание образуется прямо от него: haven't finished.",
-     "difficulty": 1
+      "id": "b2_narrative_tenses_used_to_would",
+      "level": "B2",
+      "band": "B2.2",
+      "topic": "Tenses",
+      "title_en": "Narrative tenses, used to, would",
+      "source_slug": "narrative-tenses-used-to-would",
+      "title_ru": "Времена рассказа, used to и would",
+      "summary_ru": "В рассказе о прошлом английский распределяет события по четырём формам. Past Simple даёт цепочку основных событий, Past Continuous — фон и незаконченное действие, на которое что-то наложилось, Past Perfect — то, что произошло раньше другого прошедшего момента, Past Perfect Continuous — длительность до этого момента. Для регулярных привычек и состояний в прошлом, которых больше нет, используется used to: I used to work nights. Would тоже описывает повторяющиеся действия в прошлом, но только действия: с глаголами состояния (be, have, know, like) would не употребляется. Поэтому «I would have an old laptop» невозможно, а «I used to have an old laptop» нормально. Отрицание и вопрос от used to строятся через did: didn't use to, did you use to.",
+      "forms": [
+        "Past Simple: I opened the ticket at nine.",
+        "was/were + V-ing: I was testing when it crashed.",
+        "had + V3: The server had crashed before we arrived.",
+        "had been + V-ing: We had been debugging for hours.",
+        "used to / would + инфинитив: We used to deploy on Fridays."
+      ],
+      "examples": [
+        "I was reviewing the code when the build failed.",
+        "By the time I logged in, someone had already fixed the bug.",
+        "She was tired because she had been fixing bugs all morning.",
+        "I used to work night shifts at my first job.",
+        "Every Friday we would order pizza and stay late."
+      ],
+      "ru_interference": "В русском одно прошедшее время, поэтому предпрошедшее теряется: «Когда я пришёл, он уже ушёл» переводят как «When I arrived, he already left» — неверно; верно «When I arrived, he had already left». И «раньше у меня был» передают через would: «I would have an old laptop» → «I used to have an old laptop».",
+      "prerequisites": [
+        "b1_past_simple_past_continuous_past_perfect",
+        "b2_narrative_tenses",
+        "b2_would_and_used_to"
+      ],
+      "exercises": [
+        {
+          "id": "b2_narrative_tenses_used_to_would_01",
+          "kind": "choice",
+          "prompt": "At three o'clock yesterday we ___ the new release.",
+          "options": [
+            "were deploying",
+            "are deploying",
+            "have deployed",
+            "deploy"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Точный момент в прошлом плюс процесс — Past Continuous; остальные формы относятся к настоящему и с «yesterday» невозможны.",
+          "difficulty": 1
+        },
+        {
+          "id": "b2_narrative_tenses_used_to_would_02",
+          "kind": "choice",
+          "prompt": "I couldn't log in because I ___ my password.",
+          "options": [
+            "forget",
+            "have forgotten",
+            "had forgotten",
+            "was forgetting"
+          ],
+          "correct_index": 2,
+          "explanation_ru": "Забыл пароль раньше, чем не смог войти, поэтому более раннее действие идёт в Past Perfect.",
+          "difficulty": 1
+        },
+        {
+          "id": "b2_narrative_tenses_used_to_would_03",
+          "kind": "choice",
+          "prompt": "At my previous company we ___ have a strict dress code, but now nobody cares.",
+          "options": [
+            "used to",
+            "would",
+            "was used to",
+            "use to"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Have здесь — состояние, а с состояниями возможно только used to; would описывает лишь повторяющиеся действия.",
+          "difficulty": 1
+        },
+        {
+          "id": "b2_narrative_tenses_used_to_would_04",
+          "kind": "choice",
+          "prompt": "She was exhausted: she ___ bugs since seven in the morning.",
+          "options": [
+            "had been fixing",
+            "was fixing",
+            "fixed",
+            "has been fixing"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Since задаёт начало периода, а точка отсчёта в прошлом, поэтому нужен Past Perfect Continuous.",
+          "difficulty": 2
+        },
+        {
+          "id": "b2_narrative_tenses_used_to_would_05",
+          "kind": "gap",
+          "prompt": "By the time I moved to QA, I ___ (work) as a support engineer for two years.",
+          "answer": "had worked",
+          "accept": [
+            "had been working"
+          ],
+          "explanation_ru": "Оборот by the time задаёт точку в прошлом, а работа закончилась до неё, поэтому нужен Past Perfect.",
+          "difficulty": 2
+        },
+        {
+          "id": "b2_narrative_tenses_used_to_would_06",
+          "kind": "gap",
+          "prompt": "Every Friday that summer we ___ (order) pizza and stay late to finish the sprint.",
+          "answer": "would order",
+          "accept": [
+            "used to order"
+          ],
+          "explanation_ru": "Повторяющееся действие в прошлом допускает и would, и used to.",
+          "difficulty": 2
+        },
+        {
+          "id": "b2_narrative_tenses_used_to_would_07",
+          "kind": "correct",
+          "prompt": "When I was a junior, I would have a lot of free time.",
+          "answer": "When I was a junior, I used to have a lot of free time.",
+          "accept": [
+            "When I was a junior, I had a lot of free time."
+          ],
+          "explanation_ru": "Have в значении «иметь» — состояние, а would с состояниями не употребляется.",
+          "difficulty": 3
+        },
+        {
+          "id": "b2_narrative_tenses_used_to_would_08",
+          "kind": "order",
+          "prompt": "before / had / everyone / arrived / left / we",
+          "answer": "Everyone had left before we arrived.",
+          "accept": [],
+          "explanation_ru": "Более раннее событие — в Past Perfect, более позднее после before — в Past Simple.",
+          "difficulty": 3
+        }
+      ]
     },
     {
-     "id": "b2_have_auxiliary_main_verb_03",
-     "kind": "choice",
-     "prompt": "Don't use meeting room B — the developers ___ a demo there at the moment.",
-     "options": [
-      "having",
-      "are having",
-      "were having",
-      "has"
-     ],
-     "correct_index": 1,
-     "explanation_ru": "Have a demo — это действие, а не обладание, поэтому нужна форма be + having; «at the moment» исключает were having, а has не согласуется с the developers.",
-     "difficulty": 1
+      "id": "b2_ways_express_future",
+      "level": "B2",
+      "band": "B2.2",
+      "topic": "Tenses",
+      "title_en": "Other ways to express future: Be about to, be due to, etc.",
+      "source_slug": "ways-express-future",
+      "title_ru": "Другие способы говорить о будущем",
+      "summary_ru": "Кроме will, be going to и Present Continuous, у будущего есть несколько специальных конструкций. Be about to + инфинитив означает «вот-вот», действие начнётся через считаные секунды или минуты, поэтому оно не сочетается с указанием даты. Be due to + инфинитив означает «должно произойти по расписанию или плану»: The release is due to ship on Friday. Be to + инфинитив звучит официально и передаёт распоряжение или согласованный план: All staff are to complete the training. Be bound to значит «неизбежно произойдёт», be likely to — «вероятно», be set to — «готово начаться». В прошедшем времени was/were about to описывает то, что почти случилось, но не случилось: I was about to send the email when I noticed the typo. После всех этих оборотов идёт инфинитив с to (to start, to ship), а не форма на -ing.",
+      "forms": [
+        "be about to + инфинитив: The build is about to finish.",
+        "be due to + инфинитив: The release is due to ship on Friday.",
+        "be to + инфинитив (официально): All staff are to sign the policy.",
+        "be bound to / be likely to + инфинитив: It's bound to break.",
+        "was/were about to + инфинитив (несостоявшееся): I was about to call you."
+      ],
+      "examples": [
+        "Don't restart the server — the backup is about to finish.",
+        "The new version is due to be released next Tuesday.",
+        "All employees are to complete the security training by June.",
+        "With no tests at all, this code is bound to break.",
+        "I was about to send the email when I noticed a typo."
+      ],
+      "ru_interference": "Русское «должен» о расписании переводят модальным глаголом: «Поезд должен прибыть в 7:40» → неверно «The train must arrive at 7:40» (звучит как приказ); верно «The train is due to arrive at 7:40». Ещё путают be due to + инфинитив («по плану») и due to + существительное («из-за»): «The delay is due to a bug» — из-за бага, «The bug is due to be fixed» — баг починят по плану.",
+      "prerequisites": [
+        "b1_future_forms",
+        "b2_future_forms_expressing_future_time"
+      ],
+      "exercises": [
+        {
+          "id": "b2_ways_express_future_01",
+          "kind": "choice",
+          "prompt": "Don't close the laptop — the update is about to ___.",
+          "options": [
+            "finishing",
+            "finish",
+            "finished",
+            "finishes"
+          ],
+          "correct_index": 1,
+          "explanation_ru": "После be about to идёт начальная форма глагола: to finish, а не finishing, finished или finishes.",
+          "difficulty": 1
+        },
+        {
+          "id": "b2_ways_express_future_02",
+          "kind": "choice",
+          "prompt": "I ___ send the report when I noticed a mistake in the numbers.",
+          "options": [
+            "was about to",
+            "am about to",
+            "was about",
+            "about to"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Действие почти произошло в прошлом, поэтому нужна прошедшая форма be плюс about to.",
+          "difficulty": 1
+        },
+        {
+          "id": "b2_ways_express_future_03",
+          "kind": "choice",
+          "prompt": "The server migration ___ to take place next weekend.",
+          "options": [
+            "is due",
+            "is about",
+            "is used",
+            "would due"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Речь о запланированном на конкретную дату событии — это be due to; about to означает «через минуту».",
+          "difficulty": 1
+        },
+        {
+          "id": "b2_ways_express_future_04",
+          "kind": "choice",
+          "prompt": "With no tests at all, this code is ___ to break sooner or later.",
+          "options": [
+            "bound",
+            "due",
+            "about",
+            "being"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Be bound to значит «неизбежно случится»; due и about to требуют конкретного расписания или ближайшей минуты.",
+          "difficulty": 2
+        },
+        {
+          "id": "b2_ways_express_future_05",
+          "kind": "gap",
+          "prompt": "Hurry up — the demo ___ (be about to / start) and the client is already online.",
+          "answer": "is about to start",
+          "accept": [
+            "'s about to start"
+          ],
+          "explanation_ru": "Событие начнётся прямо сейчас, поэтому be about to в настоящем времени.",
+          "difficulty": 2
+        },
+        {
+          "id": "b2_ways_express_future_06",
+          "kind": "gap",
+          "prompt": "The report ___ (be due to / be published) at the end of the quarter.",
+          "answer": "is due to be published",
+          "accept": [
+            "'s due to be published"
+          ],
+          "explanation_ru": "Отчёт публикуют, значит после be due to нужен пассивный инфинитив to be published.",
+          "difficulty": 2
+        },
+        {
+          "id": "b2_ways_express_future_07",
+          "kind": "correct",
+          "prompt": "The call is about to starting, so please join now.",
+          "answer": "The call is about to start, so please join now.",
+          "accept": [],
+          "explanation_ru": "После about to стоит инфинитив без -ing.",
+          "difficulty": 3
+        },
+        {
+          "id": "b2_ways_express_future_08",
+          "kind": "transform",
+          "prompt": "Rewrite with 'be due to': The plane arrives at 7:40 according to the timetable.",
+          "answer": "The plane is due to arrive at 7:40 according to the timetable.",
+          "accept": [
+            "The plane is due to arrive at 7:40."
+          ],
+          "explanation_ru": "Расписание передаётся конструкцией be due to + инфинитив.",
+          "difficulty": 3
+        }
+      ]
     },
     {
-     "id": "b2_have_auxiliary_main_verb_04",
-     "kind": "choice",
-     "prompt": "___ your manager approved the pull request?",
-     "options": [
-      "Does",
-      "Has",
-      "Is",
-      "Have"
-     ],
-     "correct_index": 1,
-     "explanation_ru": "Форма approved здесь — причастие в перфекте, поэтому нужен вспомогательный has (подлежащее в единственном числе).",
-     "difficulty": 2
+      "id": "b2_unreal_uses_past_tenses",
+      "level": "B2",
+      "band": "B2.2",
+      "topic": "Tenses",
+      "title_en": "Wish, rather, if only, it's time: Unreal uses of past tenses",
+      "source_slug": "unreal-uses-past-tenses",
+      "title_ru": "Wish, would rather, if only, it's time",
+      "summary_ru": "После wish, if only, would rather и it's time прошедшее время не означает прошлое: оно показывает, что ситуация нереальна или желательна. Wish и if only с Past Simple говорят о недовольстве настоящим: I wish I knew the answer. С Past Perfect они говорят о сожалении о прошлом: If only we had made a backup. Wish плюс would описывает раздражение чужим поведением или желание, чтобы что-то изменилось: I wish he would answer my emails. Would rather с новым подлежащим требует Past Simple: I'd rather you came tomorrow, а с тем же подлежащим — голого инфинитива: I'd rather stay. It's time и it's high time тоже берут Past Simple: It's time we left. Форма were возможна для всех лиц: I wish I were more careful.",
+      "forms": [
+        "wish / if only + Past Simple: I wish I knew.",
+        "wish / if only + Past Perfect: I wish I had known.",
+        "wish / if only + would + инфинитив: I wish he would reply.",
+        "would rather + подлежащее + Past Simple: I'd rather you asked me.",
+        "It's (high) time + подлежащее + Past Simple: It's time we started."
+      ],
+      "examples": [
+        "I wish I knew how this legacy module works.",
+        "If only we had written tests for that function.",
+        "I wish the client would stop changing the requirements.",
+        "I'd rather you didn't push straight to main.",
+        "It's high time we upgraded the database."
+      ],
+      "ru_interference": "Русское «Жаль, что…» переворачивает полярность: «Жаль, что он не пришёл» пишут как «I wish he didn't come» — неверно; верно «I wish he had come». И после wish ставят настоящее или будущее время: «I wish I know English» → «I wish I knew English».",
+      "prerequisites": [
+        "b2_wishes_regrets",
+        "b1_second_conditional_unreal_situations",
+        "b1_third_conditional_past_unreal_situations"
+      ],
+      "exercises": [
+        {
+          "id": "b2_unreal_uses_past_tenses_01",
+          "kind": "choice",
+          "prompt": "I wish I ___ how to use this framework — it would save me hours.",
+          "options": [
+            "know",
+            "knew",
+            "will know",
+            "would know"
+          ],
+          "correct_index": 1,
+          "explanation_ru": "Недовольство настоящим после wish выражается формой Past Simple, а would с тем же подлежащим и глаголом состояния невозможен.",
+          "difficulty": 1
+        },
+        {
+          "id": "b2_unreal_uses_past_tenses_02",
+          "kind": "choice",
+          "prompt": "If only we ___ a backup last night!",
+          "options": [
+            "made",
+            "have made",
+            "had made",
+            "would make"
+          ],
+          "correct_index": 2,
+          "explanation_ru": "Сожаление о конкретном прошлом моменте требует Past Perfect после if only.",
+          "difficulty": 1
+        },
+        {
+          "id": "b2_unreal_uses_past_tenses_03",
+          "kind": "choice",
+          "prompt": "It's high time we ___ this legacy code.",
+          "options": [
+            "rewrote",
+            "to rewrite",
+            "rewriting",
+            "will rewrite"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "После it's high time с подлежащим используется только Past Simple.",
+          "difficulty": 1
+        },
+        {
+          "id": "b2_unreal_uses_past_tenses_04",
+          "kind": "choice",
+          "prompt": "I'd rather you ___ me before you delete a branch.",
+          "options": [
+            "asked",
+            "to ask",
+            "asking",
+            "would ask"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Would rather с новым подлежащим требует Past Simple, а не инфинитива и не would.",
+          "difficulty": 2
+        },
+        {
+          "id": "b2_unreal_uses_past_tenses_05",
+          "kind": "gap",
+          "prompt": "I wish it ___ (stop) raining so we could test the drone outside.",
+          "answer": "would stop",
+          "accept": [
+            "'d stop"
+          ],
+          "explanation_ru": "Речь о желаемом изменении, которое зависит не от говорящего, — здесь нужен wish + would.",
+          "difficulty": 2
+        },
+        {
+          "id": "b2_unreal_uses_past_tenses_06",
+          "kind": "gap",
+          "prompt": "I wish I ___ (not/delete) that file yesterday.",
+          "answer": "hadn't deleted",
+          "accept": [
+            "had not deleted"
+          ],
+          "explanation_ru": "Сожаление о прошлом действии выражается через wish + Past Perfect.",
+          "difficulty": 2
+        },
+        {
+          "id": "b2_unreal_uses_past_tenses_07",
+          "kind": "correct",
+          "prompt": "I wish I have more time to learn Python.",
+          "answer": "I wish I had more time to learn Python.",
+          "accept": [],
+          "explanation_ru": "После wish о нереальном настоящем ставится Past Simple, а не Present Simple.",
+          "difficulty": 3
+        },
+        {
+          "id": "b2_unreal_uses_past_tenses_08",
+          "kind": "transform",
+          "prompt": "Rewrite with 'If only': I'm sorry I didn't back up the database.",
+          "answer": "If only I had backed up the database.",
+          "accept": [
+            "If only I'd backed up the database."
+          ],
+          "explanation_ru": "Сожаление о прошлом после if only передаётся формой Past Perfect.",
+          "difficulty": 3
+        }
+      ]
     },
     {
-     "id": "b2_have_auxiliary_main_verb_05",
-     "kind": "gap",
-     "prompt": "How long ___ (you/work) here? Since 2019.",
-     "answer": "have you worked",
-     "accept": [
-      "have you been working"
-     ],
-     "explanation_ru": "Вопрос о периоде до настоящего момента: вспомогательный have выносится вперёд подлежащего.",
-     "difficulty": 2
+      "id": "b2_gerunds_infinitives_complex_forms",
+      "level": "B2",
+      "band": "B2.2",
+      "topic": "Verb patterns",
+      "title_en": "Gerunds and infinitives: Complex forms",
+      "source_slug": "gerunds-infinitives-complex-forms",
+      "title_ru": "Сложные формы герундия и инфинитива",
+      "summary_ru": "У герундия и инфинитива есть не только простые формы. Перфектный герундий having done показывает, что действие произошло раньше главного: He admitted having copied the code. Пассивный герундий being done показывает, что действие направлено на подлежащее: Nobody likes being told what to do. Перфектный инфинитив to have done тоже отсылает к более раннему моменту: The bug appears to have been fixed. Продолженный инфинитив to be doing описывает процесс в момент речи: She seems to be working. Пассивный инфинитив to be done нужен, когда действие совершают над предметом: This bug needs to be fixed. Отрицание ставится перед всей формой: not having read the docs, not to tell anyone. После предлогов возможен только герундий, инфинитив с to там невозможен.",
+      "forms": [
+        "having + V3 (перфектный герундий): He denied having seen it.",
+        "being + V3 (пассивный герундий): She hates being interrupted.",
+        "having been + V3: After having been tested, it was released.",
+        "to have + V3 (перфектный инфинитив): He seems to have forgotten.",
+        "to be + V3 / to be + V-ing: It needs to be fixed. He seems to be working."
+      ],
+      "examples": [
+        "He admitted having copied the code from a forum.",
+        "Nobody likes being told what to do.",
+        "The bug appears to have been fixed in the last build.",
+        "She seems to be working on the API right now.",
+        "Not having read the documentation, I broke the config."
+      ],
+      "ru_interference": "Русское придаточное с «когда» вытесняет пассивный герундий: «Никто не любит, когда ему указывают» → неверно «Nobody likes when they tell him what to do»; верно «Nobody likes being told what to do». А безличное «Этот баг нужно исправить» даёт активный инфинитив: неверно «This bug needs to fix» → верно «This bug needs to be fixed».",
+      "prerequisites": [
+        "b1_gerund_or_infinitive_do_to_do_doing",
+        "b2_gerund_or_infinitive",
+        "b2_reporting_verbs"
+      ],
+      "exercises": [
+        {
+          "id": "b2_gerunds_infinitives_complex_forms_01",
+          "kind": "choice",
+          "prompt": "Nobody likes ___ what to do.",
+          "options": [
+            "being told",
+            "telling",
+            "to telling",
+            "been told"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Действие направлено на подлежащее, поэтому нужен пассивный герундий being told.",
+          "difficulty": 1
+        },
+        {
+          "id": "b2_gerunds_infinitives_complex_forms_02",
+          "kind": "choice",
+          "prompt": "The database ___ before the next release.",
+          "options": [
+            "needs to update",
+            "needs to be updated",
+            "needs being updated",
+            "needs update"
+          ],
+          "correct_index": 1,
+          "explanation_ru": "Базу обновляют, а не она обновляет, поэтому после needs идёт пассивный инфинитив to be updated.",
+          "difficulty": 1
+        },
+        {
+          "id": "b2_gerunds_infinitives_complex_forms_03",
+          "kind": "choice",
+          "prompt": "He denied ___ the file, but the logs showed his account.",
+          "options": [
+            "having deleted",
+            "to have deleted",
+            "having been deleted",
+            "to delete"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Deny требует герундия, а удаление произошло раньше отрицания — значит перфектный герундий.",
+          "difficulty": 1
+        },
+        {
+          "id": "b2_gerunds_infinitives_complex_forms_04",
+          "kind": "choice",
+          "prompt": "She seems ___ on the migration right now — her status is green.",
+          "options": [
+            "to work",
+            "to be working",
+            "to have worked",
+            "working"
+          ],
+          "correct_index": 1,
+          "explanation_ru": "Right now указывает на процесс в момент речи, поэтому нужен продолженный инфинитив to be working.",
+          "difficulty": 2
+        },
+        {
+          "id": "b2_gerunds_infinitives_complex_forms_05",
+          "kind": "gap",
+          "prompt": "The server appears ___ (crash) during the night; it was already down at 7 a.m.",
+          "answer": "to have crashed",
+          "accept": [],
+          "explanation_ru": "Сбой случился раньше момента наблюдения, поэтому после appears идёт перфектный инфинитив.",
+          "difficulty": 2
+        },
+        {
+          "id": "b2_gerunds_infinitives_complex_forms_06",
+          "kind": "gap",
+          "prompt": "After ___ (be) tested for a month, the feature was finally released.",
+          "answer": "having been",
+          "accept": [
+            "being"
+          ],
+          "explanation_ru": "Функцию тестировали, значит нужна пассивная форма герундия после предлога after.",
+          "difficulty": 2
+        },
+        {
+          "id": "b2_gerunds_infinitives_complex_forms_07",
+          "kind": "correct",
+          "prompt": "This bug needs to fix before Friday.",
+          "answer": "This bug needs to be fixed before Friday.",
+          "accept": [
+            "This bug needs fixing before Friday."
+          ],
+          "explanation_ru": "Баг не чинит сам себя: нужен пассивный инфинитив to be fixed или герундий fixing.",
+          "difficulty": 3
+        },
+        {
+          "id": "b2_gerunds_infinitives_complex_forms_08",
+          "kind": "transform",
+          "prompt": "Rewrite with a perfect gerund: He admitted that he had copied the code.",
+          "answer": "He admitted having copied the code.",
+          "accept": [],
+          "explanation_ru": "Придаточное с более ранним действием сворачивается в форму having + V3.",
+          "difficulty": 3
+        }
+      ]
     },
     {
-     "id": "b2_have_auxiliary_main_verb_06",
-     "kind": "gap",
-     "prompt": "We ___ (not/have) enough licenses last year, so we bought ten more.",
-     "answer": "didn't have",
-     "accept": [
-      "did not have"
-     ],
-     "explanation_ru": "Have в значении «иметь» — смысловой глагол, поэтому отрицание в прошедшем строится через did not.",
-     "difficulty": 2
+      "id": "b2_reduced_infinitives_omitting_the_infinitive_phrase_after_to",
+      "level": "B2",
+      "band": "B2.2",
+      "topic": "Verb patterns",
+      "title_en": "Reduced infinitives: Omitting the infinitive phrase after 'to'",
+      "source_slug": "reduced-infinitives-omitting-the-infinitive-phrase-after-to",
+      "title_ru": "Редуцированный инфинитив: только to",
+      "summary_ru": "Чтобы не повторять уже названный глагол, в английском оставляют одно to и убирают всё остальное: Do you want to join the call? — I'd love to. Так работают want, would like, would love, hope, need, try, forget, promise, have to, ought to, be going to. Само to обязательно остаётся: ответ «I'd love» без to звучит неправильно. Если повторяемый глагол — be или смысловой have, их сохраняют: She isn't a team lead, but she hopes to be. После модальных глаголов can, will, must, should никакого to не нужно: I can't help now, but I will. Отрицание ставится перед to: I told him not to. Такой приём очень частотен в разговоре и в рабочей переписке.",
+      "forms": [
+        "want / hope / need / have + to (глагол опущен): I'd love to.",
+        "not + to: I asked her not to.",
+        "to be сохраняется: He isn't a manager, but he wants to be.",
+        "модальный без to: I can't do it now, but I will.",
+        "be going to: I didn't plan to, but now I'm going to."
+      ],
+      "examples": [
+        "Do you want to join the call? I'd love to.",
+        "I didn't want to rewrite the module, but I had to.",
+        "She isn't a team lead yet, but she hopes to be.",
+        "You don't have to stay late if you don't want to.",
+        "I asked him to review my PR, but he forgot to."
+      ],
+      "ru_interference": "В русском в ответе повторяют глагол или говорят одним словом («Хочу»), поэтому пишут «Yes, I want» без to: неверно «Do you want to test it? — Yes, I want» → верно «Yes, I want to» или «Yes, I'd love to».",
+      "prerequisites": [
+        "a2_infinitives_and_gerunds",
+        "b1_gerund_or_infinitive_do_to_do_doing"
+      ],
+      "exercises": [
+        {
+          "id": "b2_reduced_infinitives_omitting_the_infinitive_phrase_after_to_01",
+          "kind": "choice",
+          "prompt": "Would you like to see the demo? Yes, I'd love ___.",
+          "options": [
+            "to",
+            "to be",
+            "doing",
+            "so"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Повторяемый глагол see опускается, но to остаётся обязательно.",
+          "difficulty": 1
+        },
+        {
+          "id": "b2_reduced_infinitives_omitting_the_infinitive_phrase_after_to_02",
+          "kind": "choice",
+          "prompt": "I didn't want to work last Saturday, but I ___.",
+          "options": [
+            "had to",
+            "had",
+            "must",
+            "have to"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Прошедшее время требует had to, а глагол work не повторяется.",
+          "difficulty": 1
+        },
+        {
+          "id": "b2_reduced_infinitives_omitting_the_infinitive_phrase_after_to_03",
+          "kind": "choice",
+          "prompt": "She isn't a team lead yet, but she wants ___.",
+          "options": [
+            "to be",
+            "to",
+            "be",
+            "to being"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "При сокращении инфинитива глагол be сохраняется, поэтому остаётся to be.",
+          "difficulty": 1
+        },
+        {
+          "id": "b2_reduced_infinitives_omitting_the_infinitive_phrase_after_to_04",
+          "kind": "choice",
+          "prompt": "I asked him to update the docs, but he forgot ___.",
+          "options": [
+            "to",
+            "to updating",
+            "update",
+            "forgetting"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "После forgot остаётся только to, вся остальная часть инфинитива опускается.",
+          "difficulty": 2
+        },
+        {
+          "id": "b2_reduced_infinitives_omitting_the_infinitive_phrase_after_to_05",
+          "kind": "gap",
+          "prompt": "Can you join the call at six? I'd like ___, but I have another meeting.",
+          "answer": "to",
+          "accept": [
+            "to join"
+          ],
+          "explanation_ru": "Глагол join уже назван в вопросе, поэтому в ответе достаточно одного to.",
+          "difficulty": 2
+        },
+        {
+          "id": "b2_reduced_infinitives_omitting_the_infinitive_phrase_after_to_06",
+          "kind": "gap",
+          "prompt": "He isn't the project owner yet, but he'd like ___ (be).",
+          "answer": "to be",
+          "accept": [],
+          "explanation_ru": "Be не опускается при сокращении инфинитива, остаётся форма to be.",
+          "difficulty": 2
+        },
+        {
+          "id": "b2_reduced_infinitives_omitting_the_infinitive_phrase_after_to_07",
+          "kind": "correct",
+          "prompt": "I asked her to help, but she didn't want.",
+          "answer": "I asked her to help, but she didn't want to.",
+          "accept": [],
+          "explanation_ru": "После want обязательно остаётся to, даже если сам глагол опущен.",
+          "difficulty": 3
+        },
+        {
+          "id": "b2_reduced_infinitives_omitting_the_infinitive_phrase_after_to_08",
+          "kind": "transform",
+          "prompt": "Shorten the repetition: He wanted to fix the bug today, but he didn't have time to fix the bug today.",
+          "answer": "He wanted to fix the bug today, but he didn't have time to.",
+          "accept": [
+            "He wanted to fix the bug today, but he didn't have the time to."
+          ],
+          "explanation_ru": "Повторяющийся инфинитив сворачивается до одного to.",
+          "difficulty": 3
+        }
+      ]
     },
     {
-     "id": "b2_have_auxiliary_main_verb_07",
-     "kind": "correct",
-     "prompt": "Have you a minute to review my code?",
-     "answer": "Do you have a minute to review my code?",
-     "accept": [
-      "Have you got a minute to review my code?"
-     ],
-     "explanation_ru": "Смысловой have требует do-вопроса; без do допустим только вариант с have got.",
-     "difficulty": 3
+      "id": "b2_verb_object_infinitive_gerund",
+      "level": "B2",
+      "band": "B2.2",
+      "topic": "Verb patterns",
+      "title_en": "Verb + object + infinitive/gerund: Verb patterns",
+      "source_slug": "verb-object-infinitive-gerund",
+      "title_ru": "Глагол + дополнение + инфинитив или герундий",
+      "summary_ru": "Многие английские глаголы требуют после себя дополнение и только потом вторую форму глагола. С to-инфинитивом идут ask, tell, want, expect, advise, allow, remind, persuade, encourage, teach, warn, force: The manager asked me to lead the demo. С голым инфинитивом идут make, let и каузативный have: They let us leave early. Help допускает оба варианта: help me (to) find it. Глаголы восприятия see, hear, watch берут -ing для процесса и голый инфинитив для законченного действия: I heard someone typing и I saw him leave. В пассиве make возвращает to: I was made to rewrite it. Есть и глаголы, которые дополнение с инфинитивом не берут вовсе: suggest и recommend требуют придаточного или герундия. После prevent и stop используется предлог from и герундий.",
+      "forms": [
+        "глагол + дополнение + to-инфинитив: They asked me to help.",
+        "make / let + дополнение + голый инфинитив: They let us go.",
+        "help + дополнение + (to) инфинитив: He helped me fix it.",
+        "see / hear / watch + дополнение + V-ing или голый инфинитив",
+        "пассив: I was made to rewrite the module."
+      ],
+      "examples": [
+        "The manager asked me to lead the demo.",
+        "They wouldn't let us deploy on Friday.",
+        "The new linter makes everyone follow the same style.",
+        "I saw him leave the office at six.",
+        "The policy prevents users from installing their own software."
+      ],
+      "ru_interference": "Русские модели «предложил мне сделать» и «позволил мне сделать» дают ошибки: неверно «He suggested me to go» и «They let me to go» → верно «He suggested that I go» (или «He suggested going») и «They let me go».",
+      "prerequisites": [
+        "a2_infinitives_and_gerunds",
+        "b2_gerund_or_infinitive",
+        "b2_reporting_verbs"
+      ],
+      "exercises": [
+        {
+          "id": "b2_verb_object_infinitive_gerund_01",
+          "kind": "choice",
+          "prompt": "My manager asked me ___ the release notes.",
+          "options": [
+            "to write",
+            "write",
+            "writing",
+            "that write"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "После ask + дополнение употребляется только to-инфинитив.",
+          "difficulty": 1
+        },
+        {
+          "id": "b2_verb_object_infinitive_gerund_02",
+          "kind": "choice",
+          "prompt": "They didn't let us ___ the server without a ticket.",
+          "options": [
+            "to restart",
+            "restart",
+            "restarting",
+            "restarted"
+          ],
+          "correct_index": 1,
+          "explanation_ru": "Let требует голого инфинитива без to.",
+          "difficulty": 1
+        },
+        {
+          "id": "b2_verb_object_infinitive_gerund_03",
+          "kind": "choice",
+          "prompt": "The new linter makes everyone ___ the same code style.",
+          "options": [
+            "to follow",
+            "follow",
+            "following",
+            "followed"
+          ],
+          "correct_index": 1,
+          "explanation_ru": "Make в активном залоге тоже берёт голый инфинитив.",
+          "difficulty": 1
+        },
+        {
+          "id": "b2_verb_object_infinitive_gerund_04",
+          "kind": "choice",
+          "prompt": "We ___ the whole module because of one missing test.",
+          "options": [
+            "were made rewrite",
+            "were made to rewrite",
+            "made to rewrite",
+            "were make to rewrite"
+          ],
+          "correct_index": 1,
+          "explanation_ru": "В пассиве make восстанавливает to: be made to do something.",
+          "difficulty": 2
+        },
+        {
+          "id": "b2_verb_object_infinitive_gerund_05",
+          "kind": "gap",
+          "prompt": "The team lead reminded us ___ (send) the report before Friday.",
+          "answer": "to send",
+          "accept": [],
+          "explanation_ru": "Remind + дополнение требует to-инфинитива.",
+          "difficulty": 2
+        },
+        {
+          "id": "b2_verb_object_infinitive_gerund_06",
+          "kind": "gap",
+          "prompt": "The security policy prevents users ___ (install) their own software.",
+          "answer": "from installing",
+          "accept": [],
+          "explanation_ru": "После prevent + дополнение идёт предлог from и герундий.",
+          "difficulty": 2
+        },
+        {
+          "id": "b2_verb_object_infinitive_gerund_07",
+          "kind": "correct",
+          "prompt": "He suggested me to use a different library.",
+          "answer": "He suggested that I use a different library.",
+          "accept": [
+            "He suggested using a different library.",
+            "He suggested I use a different library."
+          ],
+          "explanation_ru": "Suggest не берёт дополнение с инфинитивом: нужно придаточное или герундий.",
+          "difficulty": 3
+        },
+        {
+          "id": "b2_verb_object_infinitive_gerund_08",
+          "kind": "order",
+          "prompt": "the / let / us / they / leave / meeting / early",
+          "answer": "They let us leave the meeting early.",
+          "accept": [],
+          "explanation_ru": "После let идёт дополнение и голый инфинитив, затем его собственное дополнение.",
+          "difficulty": 3
+        }
+      ]
     },
     {
-     "id": "b2_have_auxiliary_main_verb_08",
-     "kind": "order",
-     "prompt": "meeting / are / we / a / having / now",
-     "answer": "We are having a meeting now.",
-     "accept": [
-      "We're having a meeting now."
-     ],
-     "explanation_ru": "Have a meeting — действие, поэтому нужен вспомогательный be и форма having.",
-     "difficulty": 3
+      "id": "b2_cleft_sentences",
+      "level": "B2",
+      "band": "B2.2",
+      "topic": "Word order & emphasis",
+      "title_en": "Cleft sentences: Adding emphasis",
+      "source_slug": "cleft-sentences",
+      "title_ru": "Расщеплённые предложения для акцента",
+      "summary_ru": "Английский порядок слов жёсткий, поэтому выделить нужную часть фразы помогают особые конструкции. It-cleft строится по схеме it + be + выделяемая часть + that/who + остальное: It was Anna who found the bug. Выделять можно подлежащее, дополнение, время или место: It was on Monday that we deployed. Связка that или who обязательна, когда в фокусе подлежащее; опустить её можно только при выделении дополнения: It was the logs (that) we checked first. Wh-cleft начинается с what и ставит важное после be: What we need is a rollback plan. Если выделяют действие, используется схема what + подлежащее + do + be: What he did was restart the cluster. Похожие модели дают all, the reason, the thing: All I want is a stable build. Отдельно запомните оборот it wasn't until ... that ...",
+      "forms": [
+        "It + be + фокус + that/who + остальное: It was Anna who called.",
+        "It + be + обстоятельство + that: It was in 2020 that we migrated.",
+        "What + подлежащее + глагол + be + фокус: What we need is time.",
+        "What + подлежащее + do + be + инфинитив: What she did was restart it.",
+        "All (that) + подлежащее + глагол + be: All I want is a clear error."
+      ],
+      "examples": [
+        "It was Anna who wrote the deployment script.",
+        "It wasn't the code that failed; it was the network.",
+        "What I don't understand is why nobody tested it.",
+        "What we did was roll back to the previous version.",
+        "It wasn't until I read the logs that I found the problem."
+      ],
+      "ru_interference": "В русском акцент даётся порядком слов и частицами («Это Анна нашла баг»), поэтому связку выбрасывают: неверно «It was Anna found the bug» → верно «It was Anna who found the bug».",
+      "prerequisites": [
+        "a1_basic_word_order_in_english",
+        "b1_active_passive_voice"
+      ],
+      "exercises": [
+        {
+          "id": "b2_cleft_sentences_01",
+          "kind": "choice",
+          "prompt": "___ was Anna who found the bug in the payment module.",
+          "options": [
+            "It",
+            "That",
+            "This",
+            "She"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "It-cleft начинается с формального подлежащего it; that, this или she на этом месте невозможны.",
+          "difficulty": 1
+        },
+        {
+          "id": "b2_cleft_sentences_02",
+          "kind": "choice",
+          "prompt": "It was the network ___ caused the outage, not the new code.",
+          "options": [
+            "what",
+            "that",
+            "who",
+            "which it"
+          ],
+          "correct_index": 1,
+          "explanation_ru": "После выделенной неодушевлённой части ставится that; who относится только к людям, а what в it-cleft невозможен.",
+          "difficulty": 1
+        },
+        {
+          "id": "b2_cleft_sentences_03",
+          "kind": "choice",
+          "prompt": "___ we need is a proper rollback plan.",
+          "options": [
+            "What",
+            "That",
+            "Which",
+            "It"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Wh-cleft начинается именно с what, которое здесь заменяет «то, что».",
+          "difficulty": 1
+        },
+        {
+          "id": "b2_cleft_sentences_04",
+          "kind": "choice",
+          "prompt": "What he did ___ restart the whole cluster.",
+          "options": [
+            "was",
+            "being",
+            "to be",
+            "been"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "В схеме what + подлежащее + did связка стоит в личной форме прошедшего времени.",
+          "difficulty": 2
+        },
+        {
+          "id": "b2_cleft_sentences_05",
+          "kind": "gap",
+          "prompt": "It wasn't until I read the logs ___ I understood the problem.",
+          "answer": "that",
+          "accept": [],
+          "explanation_ru": "Оборот it wasn't until ... требует связки that перед основной частью.",
+          "difficulty": 2
+        },
+        {
+          "id": "b2_cleft_sentences_06",
+          "kind": "gap",
+          "prompt": "___ I don't understand is why nobody tested this feature.",
+          "answer": "What",
+          "accept": [
+            "The thing that",
+            "The thing"
+          ],
+          "explanation_ru": "Придаточное с what выносит непонятное в фокус и присоединяется к is.",
+          "difficulty": 2
+        },
+        {
+          "id": "b2_cleft_sentences_07",
+          "kind": "correct",
+          "prompt": "It was Anna found the bug.",
+          "answer": "It was Anna who found the bug.",
+          "accept": [
+            "It was Anna that found the bug."
+          ],
+          "explanation_ru": "В it-cleft связка who или that обязательна и не опускается.",
+          "difficulty": 3
+        },
+        {
+          "id": "b2_cleft_sentences_08",
+          "kind": "transform",
+          "prompt": "Emphasize 'the tests' with an it-cleft: The tests saved us from a serious outage.",
+          "answer": "It was the tests that saved us from a serious outage.",
+          "accept": [
+            "It was the tests which saved us from a serious outage."
+          ],
+          "explanation_ru": "Выделяемая часть ставится после it was, остальное присоединяется через that.",
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "c1_impersonal_and_complex_passive_reporting_structures",
+      "level": "B2",
+      "band": "B2.2",
+      "topic": "Passive",
+      "title_en": "Impersonal and complex passive reporting structures",
+      "source_slug": "",
+      "title_ru": "Безличный и сложный пассив в сообщениях",
+      "summary_ru": "Безличные пассивные конструкции позволяют сообщить информацию, не называя источник. Схем две. Первая: It is или It was + said, believed, thought, reported, known, estimated + that + предложение. Вторая: подлежащее придаточного выносится вперёд, а дальше идёт инфинитив: The company is said to be hiring. Если событие произошло раньше, чем сообщение о нём, используется перфектный инфинитив: He is believed to have left the country. Для существования применяется оборот There are thought to be. Прошедшее время сообщения даёт It was reported that и He was thought to be. Эти конструкции типичны для новостей, отчётов и научных текстов, где важна дистанция от утверждения.",
+      "forms": [
+        "It + is / was + said / believed / reported + that + предложение",
+        "подлежащее + is / was + said / believed + to + инфинитив",
+        "подлежащее + is said + to have + V3 (более раннее время)",
+        "There + is / are + thought / believed + to be + существительное",
+        "подлежащее + is expected + to be + V-ing"
+      ],
+      "examples": [
+        "It is believed that the outage started at 3 a.m.",
+        "The company is said to be planning a new office in Berlin.",
+        "He is thought to have written the first version alone.",
+        "It was reported that two servers had been replaced.",
+        "There are believed to be around fifty active users left.",
+        "The release is expected to be delayed by a week."
+      ],
+      "ru_interference": "Русское безличное «считается, что» строится одним способом, поэтому теряется формальное подлежащее it: неверно «Is said that the project is late» → верно «It is said that the project is late». Ещё путают время инфинитива: «He is said to write the code last year» вместо «He is said to have written the code last year».",
+      "prerequisites": [
+        "b2_passive_reporting_verbs",
+        "b2_distancing",
+        "b2_passive_voice_all_tenses"
+      ],
+      "exercises": [
+        {
+          "id": "c1_impersonal_and_complex_passive_reporting_structures_01",
+          "kind": "choice",
+          "prompt": "___ is believed that the fire started in the server room.",
+          "options": [
+            "It",
+            "There",
+            "This",
+            "That"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "В безличной конструкции с придаточным that подлежащим может быть только формальное it.",
+          "difficulty": 1,
+          "diagnostic": false
+        },
+        {
+          "id": "c1_impersonal_and_complex_passive_reporting_structures_02",
+          "kind": "choice",
+          "prompt": "The company ___ to be looking for a new CTO.",
+          "options": [
+            "is said",
+            "says",
+            "is saying",
+            "said"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Перед инфинитивом to be нужна пассивная форма отчётного глагола: the company is said to be.",
+          "difficulty": 1,
+          "diagnostic": false
+        },
+        {
+          "id": "c1_impersonal_and_complex_passive_reporting_structures_03",
+          "kind": "choice",
+          "prompt": "He is thought ___ the database by accident.",
+          "options": [
+            "to have deleted",
+            "to delete",
+            "deleting",
+            "that he deleted"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Действие произошло раньше, чем предположение о нём, поэтому нужен перфектный инфинитив to have deleted.",
+          "difficulty": 2,
+          "diagnostic": false
+        },
+        {
+          "id": "c1_impersonal_and_complex_passive_reporting_structures_04",
+          "kind": "choice",
+          "prompt": "___ are believed to be over a thousand affected accounts.",
+          "options": [
+            "There",
+            "It",
+            "They",
+            "These"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Для сообщения о существовании чего-либо используется оборот there are believed to be.",
+          "difficulty": 2,
+          "diagnostic": false
+        },
+        {
+          "id": "c1_impersonal_and_complex_passive_reporting_structures_05",
+          "kind": "gap",
+          "prompt": "It ___ (report) that the merger will be announced tomorrow.",
+          "answer": "is reported",
+          "accept": [
+            "was reported",
+            "has been reported"
+          ],
+          "explanation_ru": "После формального подлежащего it отчётный глагол стоит в пассиве: is reported that.",
+          "difficulty": 1
+        },
+        {
+          "id": "c1_impersonal_and_complex_passive_reporting_structures_06",
+          "kind": "gap",
+          "prompt": "People say that he owns three companies. -> He ___ (say) to own three companies.",
+          "answer": "is said",
+          "accept": [],
+          "explanation_ru": "При переходе к личной конструкции подлежащее придаточного становится подлежащим, а глагол say ставится в пассив: is said to own.",
+          "difficulty": 2
+        },
+        {
+          "id": "c1_impersonal_and_complex_passive_reporting_structures_07",
+          "kind": "correct",
+          "prompt": "Is said that the new office will open in May.",
+          "answer": "It is said that the new office will open in May.",
+          "accept": [],
+          "explanation_ru": "Английское предложение не бывает без подлежащего: перед is said обязательно нужно формальное it.",
+          "difficulty": 3
+        },
+        {
+          "id": "c1_impersonal_and_complex_passive_reporting_structures_08",
+          "kind": "transform",
+          "prompt": "Rewrite starting with 'The virus': People believe that the virus came from a test server.",
+          "answer": "The virus is believed to have come from a test server.",
+          "accept": [],
+          "explanation_ru": "Подлежащее придаточного выносится вперёд, believe ставится в пассив, а прошедшее came передаётся перфектным инфинитивом to have come.",
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "c1_ellipsis_and_substitution_in_extended_discourse",
+      "level": "B2",
+      "band": "B2.2",
+      "topic": "Connectors & discourse",
+      "title_en": "Ellipsis and substitution in extended discourse",
+      "source_slug": "",
+      "title_ru": "Эллипсис и субституция в связном тексте",
+      "summary_ru": "Эллипсис — это пропуск слов, которые однозначно восстанавливаются из контекста; субституция — замена их короткой формой. Вместо повторения исчисляемого существительного используют one и ones, вместо глагольной группы — do, does, did или более формальное do so. После think, hope, believe, be afraid и suppose ставят so для согласия и not или отрицание глагола для несогласия: I hope not, I don't think so. Согласие через вспомогательный глагол строится как so / neither / nor + вспомогательный + подлежащее, причём вспомогательный берётся из исходной реплики. После частицы to инфинитив можно оборвать: I'd like to, you don't have to. В сочинённых предложениях повторяющееся подлежащее или вспомогательный опускают. Опускать можно только то, что слушатель восстановит без усилий.",
+      "forms": [
+        "so / neither / nor + вспомогательный глагол + подлежащее",
+        "one / ones вместо исчисляемого существительного",
+        "do / does / did / do so вместо всей глагольной группы",
+        "think / hope / believe / be afraid + so или not",
+        "усечённый инфинитив: I'd love to. / You don't have to."
+      ],
+      "examples": [
+        "I finished the review and so did Anna.",
+        "We don't use Docker here, and neither does the mobile team.",
+        "This laptop is old; I need a faster one.",
+        "He promised to update the docs, but he never did.",
+        "Is the build broken again? I'm afraid so.",
+        "You can join the call if you want to."
+      ],
+      "ru_interference": "Русский повторяет глагол целиком или добавляет «тоже», поэтому появляется «I too» и полные повторы: неверно «Anna finished the report and I finished the report too» → верно «Anna finished the report and so did I». Ещё вместо «I don't think so» говорят «I think no».",
+      "prerequisites": [
+        "b2_ellipsis_and_substitution",
+        "b2_auxiliary_verbs_different_uses",
+        "b2_reduced_infinitives_omitting_the_infinitive_phrase_after_to"
+      ],
+      "exercises": [
+        {
+          "id": "c1_ellipsis_and_substitution_in_extended_discourse_01",
+          "kind": "choice",
+          "prompt": "A: I haven't finished the report yet. B: ___ have I.",
+          "options": [
+            "Neither",
+            "Either",
+            "So",
+            "Also"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "После отрицательной реплики согласие вводится словом neither (или nor); so используется только после утвердительной.",
+          "difficulty": 1,
+          "diagnostic": false
+        },
+        {
+          "id": "c1_ellipsis_and_substitution_in_extended_discourse_02",
+          "kind": "choice",
+          "prompt": "Anna works remotely, and ___ her manager.",
+          "options": [
+            "so does",
+            "so is",
+            "so do",
+            "also does"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Вспомогательный глагол повторяет время и лицо исходной формы works, поэтому нужен does, а порядок слов — so + вспомогательный + подлежащее.",
+          "difficulty": 1,
+          "diagnostic": false
+        },
+        {
+          "id": "c1_ellipsis_and_substitution_in_extended_discourse_03",
+          "kind": "choice",
+          "prompt": "These headphones are broken. I'll buy new ___.",
+          "options": [
+            "ones",
+            "one",
+            "them",
+            "some"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Headphones — множественное число, поэтому после прилагательного new нужна форма ones.",
+          "difficulty": 2,
+          "diagnostic": false
+        },
+        {
+          "id": "c1_ellipsis_and_substitution_in_extended_discourse_04",
+          "kind": "choice",
+          "prompt": "A: Do you think the release will slip? B: I hope ___.",
+          "options": [
+            "not",
+            "no",
+            "don't",
+            "it not"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "После hope отрицательный ответ передаётся словом not, которое заменяет всё придаточное.",
+          "difficulty": 2,
+          "diagnostic": false
+        },
+        {
+          "id": "c1_ellipsis_and_substitution_in_extended_discourse_05",
+          "kind": "gap",
+          "prompt": "She said she would call the client, but she never ___ (replace the verb phrase).",
+          "answer": "did",
+          "accept": [],
+          "explanation_ru": "Вся группа called the client заменяется вспомогательным did, потому что действие относится к прошлому.",
+          "difficulty": 1
+        },
+        {
+          "id": "c1_ellipsis_and_substitution_in_extended_discourse_06",
+          "kind": "gap",
+          "prompt": "A: I have never used Kotlin. B: ___ (neither / I).",
+          "answer": "Neither have I",
+          "accept": [
+            "Nor have I",
+            "Me neither"
+          ],
+          "explanation_ru": "Вспомогательный берётся из реплики A (have), а подлежащее ставится после него: Neither have I.",
+          "difficulty": 2
+        },
+        {
+          "id": "c1_ellipsis_and_substitution_in_extended_discourse_07",
+          "kind": "correct",
+          "prompt": "My monitor is too small; I need a bigger.",
+          "answer": "My monitor is too small; I need a bigger one.",
+          "accept": [],
+          "explanation_ru": "После прилагательного исчисляемое существительное нельзя просто опустить: его заменяет субститут one.",
+          "difficulty": 3
+        },
+        {
+          "id": "c1_ellipsis_and_substitution_in_extended_discourse_08",
+          "kind": "transform",
+          "prompt": "Rewrite the second clause with ellipsis: I wanted to join the standup, but I wasn't able to join the standup.",
+          "answer": "I wanted to join the standup, but I wasn't able to.",
+          "accept": [
+            "I wanted to join the standup, but I was not able to."
+          ],
+          "explanation_ru": "Повторяющаяся группа после to опускается, а сама частица to остаётся как маркер усечённого инфинитива.",
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "c1_advanced_past_simple_past_continuous_past_perfect",
+      "level": "B2",
+      "band": "B2.1",
+      "topic": "Tenses",
+      "title_en": "Advanced past simple, past continuous & past perfect",
+      "source_slug": "advanced-past-simple-past-continuous-past-perfect",
+      "title_ru": "Продвинутые прошедшие времена",
+      "summary_ru": "На C1 выбор прошедшего времени определяется не словами-маркерами, а точкой отсчёта в рассказе. Past simple двигает события вперёд, past continuous даёт фон и незаконченное действие в конкретный момент, past perfect отправляет событие назад, до уже названного момента в прошлом. Past perfect continuous подчёркивает длительность до этой точки: she had been debugging for six hours. Past perfect обязателен после it was the first time и в конструкциях несбывшегося намерения: we had hoped to release on Friday. После before и after порядок событий ясен из союза, поэтому past perfect там необязателен. Was going to и was about to описывают планы, которые так и не осуществились.",
+      "forms": [
+        "V2 / did not + V1 (past simple)",
+        "was/were + V-ing (past continuous)",
+        "had + V3 (past perfect)",
+        "had been + V-ing (past perfect continuous)",
+        "was/were going to + V1 (несостоявшийся план)"
+      ],
+      "examples": [
+        "It was the first time I had worked with a remote team.",
+        "By three in the morning we had been chasing the same bug for eight hours.",
+        "We had hoped to release on Friday, but the tests failed.",
+        "I was going to call you, but the meeting ran late.",
+        "At six yesterday evening we were still running the load test.",
+        "By the time we arrived, everyone had left."
+      ],
+      "ru_interference": "В русском одно прошедшее время, поэтому предшествование не маркируют: неверно When I arrived, the meeting already started. → верно When I arrived, the meeting had already started.",
+      "prerequisites": [
+        "b1_past_simple_past_continuous_past_perfect",
+        "b2_narrative_tenses"
+      ],
+      "exercises": [
+        {
+          "id": "c1_advanced_past_simple_past_continuous_past_perfect_01",
+          "kind": "choice",
+          "prompt": "It was the first time I ___ worked with a remote team.",
+          "options": [
+            "have",
+            "was",
+            "had",
+            "did"
+          ],
+          "correct_index": 2,
+          "explanation_ru": "После it was the first time действие уходит в past perfect, поэтому нужен вспомогательный had.",
+          "difficulty": 1,
+          "diagnostic": false
+        },
+        {
+          "id": "c1_advanced_past_simple_past_continuous_past_perfect_02",
+          "kind": "choice",
+          "prompt": "By three in the morning we ___ the same bug for eight hours.",
+          "options": [
+            "chased",
+            "had been chasing",
+            "were chasing",
+            "have been chasing"
+          ],
+          "correct_index": 1,
+          "explanation_ru": "By + момент в прошлом и for + длительность требуют past perfect continuous; остальные формы не показывают отрезок до этой точки.",
+          "difficulty": 2,
+          "diagnostic": false
+        },
+        {
+          "id": "c1_advanced_past_simple_past_continuous_past_perfect_03",
+          "kind": "choice",
+          "prompt": "At six yesterday evening we ___ the load test.",
+          "options": [
+            "still ran",
+            "have still run",
+            "were still running",
+            "had still run"
+          ],
+          "correct_index": 2,
+          "explanation_ru": "Конкретный момент в прошлом плюс still требует past continuous: действие шло в тот момент.",
+          "difficulty": 1,
+          "diagnostic": false
+        },
+        {
+          "id": "c1_advanced_past_simple_past_continuous_past_perfect_04",
+          "kind": "choice",
+          "prompt": "I ___ to call you, but the meeting ran late.",
+          "options": [
+            "am going",
+            "go",
+            "was going",
+            "have gone"
+          ],
+          "correct_index": 2,
+          "explanation_ru": "Несостоявшийся план в прошлом выражается формой was going to; настоящее время рядом с ran невозможно.",
+          "difficulty": 1,
+          "diagnostic": false
+        },
+        {
+          "id": "c1_advanced_past_simple_past_continuous_past_perfect_05",
+          "kind": "gap",
+          "prompt": "When we finally deployed, the client ___ (already / leave) for the day.",
+          "answer": "had already left",
+          "accept": [
+            "had left already"
+          ],
+          "explanation_ru": "Клиент ушёл раньше момента деплоя, поэтому нужен past perfect с already между had и третьей формой.",
+          "difficulty": 2
+        },
+        {
+          "id": "c1_advanced_past_simple_past_continuous_past_perfect_06",
+          "kind": "gap",
+          "prompt": "The server ___ (run) for 400 days before it finally crashed.",
+          "answer": "had been running",
+          "accept": [
+            "had run"
+          ],
+          "explanation_ru": "Действие тянулось до момента в прошлом, поэтому основной ответ — past perfect continuous had been running, который подчёркивает непрерывность; простой past perfect had run здесь тоже принимается.",
+          "difficulty": 3
+        },
+        {
+          "id": "c1_advanced_past_simple_past_continuous_past_perfect_07",
+          "kind": "correct",
+          "prompt": "When I arrived, the meeting already started.",
+          "answer": "When I arrived, the meeting had already started.",
+          "accept": [
+            "When I arrived, the meeting had started already."
+          ],
+          "explanation_ru": "Собрание началось до моего прихода, значит нужен past perfect had already started.",
+          "difficulty": 2
+        },
+        {
+          "id": "c1_advanced_past_simple_past_continuous_past_perfect_08",
+          "kind": "order",
+          "prompt": "had / by / left / arrived / everyone / we / the time",
+          "answer": "By the time we arrived, everyone had left.",
+          "accept": [],
+          "explanation_ru": "By the time вводит придаточное в past simple, а более раннее действие в главной части стоит в past perfect.",
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "c1_the_perfect_tenses_forms_and_uses",
+      "level": "B2",
+      "band": "B2.1",
+      "topic": "Tenses",
+      "title_en": "The perfect tenses: Forms and uses",
+      "source_slug": "the-perfect-tenses-forms-and-uses",
+      "title_ru": "Перфектные времена: формы и употребление",
+      "summary_ru": "Перфект всегда связывает действие с более поздней точкой отсчёта, а не просто помещает его в прошлое. Present perfect привязан к настоящему, поэтому он несовместим с точной точкой в прошлом (yesterday, in 2018), зато свободно идёт с since Monday, so far, already и never. Present perfect continuous подчёркивает длительность и процесс, а simple — результат и количество. Past perfect отправляет событие в точку до прошлого, future perfect — в точку до будущего момента: by this time next year she will have worked here for a decade. Перфект существует и в неличных формах: to have forgotten, having finished, must have deleted. Эти формы всегда означают, что действие произошло раньше главного глагола.",
+      "forms": [
+        "have/has + V3 (present perfect)",
+        "have/has been + V-ing (present perfect continuous)",
+        "had + V3 / had been + V-ing (past perfect)",
+        "will have + V3 (future perfect)",
+        "to have + V3 / having + V3 (перфектный инфинитив и причастие)"
+      ],
+      "examples": [
+        "By this time next year she will have worked here for a decade.",
+        "I have not seen him since we worked together in 2018.",
+        "Having reviewed the logs, we decided to roll back.",
+        "I have been waiting for their approval since Monday.",
+        "She had never worked with a remote team before she joined us.",
+        "By the time you read this, I will have already left the country."
+      ],
+      "ru_interference": "Русское «работаю здесь с 2019 года» переносят в настоящее время: неверно I work here since 2019. → верно I have worked here since 2019.",
+      "prerequisites": [
+        "a2_past_perfect",
+        "b1_present_perfect_simple_present_perfect_continuous",
+        "b2_future_continuous_and_future_perfect"
+      ],
+      "exercises": [
+        {
+          "id": "c1_the_perfect_tenses_forms_and_uses_01",
+          "kind": "choice",
+          "prompt": "By this time next year, she ___ here for a decade.",
+          "options": [
+            "will work",
+            "works",
+            "will have worked",
+            "has worked"
+          ],
+          "correct_index": 2,
+          "explanation_ru": "Точка отсчёта в будущем плюс for + срок требуют future perfect will have worked.",
+          "difficulty": 1,
+          "diagnostic": false
+        },
+        {
+          "id": "c1_the_perfect_tenses_forms_and_uses_02",
+          "kind": "choice",
+          "prompt": "I ___ him since we worked together in 2018.",
+          "options": [
+            "don't see",
+            "didn't see",
+            "am not seeing",
+            "haven't seen"
+          ],
+          "correct_index": 3,
+          "explanation_ru": "Since задаёт отрезок, который тянется до настоящего момента, поэтому нужен present perfect.",
+          "difficulty": 1,
+          "diagnostic": false
+        },
+        {
+          "id": "c1_the_perfect_tenses_forms_and_uses_03",
+          "kind": "choice",
+          "prompt": "___ reviewed the logs, we decided to roll back.",
+          "options": [
+            "Have",
+            "Having",
+            "To have",
+            "Had"
+          ],
+          "correct_index": 1,
+          "explanation_ru": "Перед главным действием стоит более раннее, и это выражается перфектным причастием having + V3.",
+          "difficulty": 2
+        },
+        {
+          "id": "c1_the_perfect_tenses_forms_and_uses_04",
+          "kind": "choice",
+          "prompt": "I ___ for their approval since Monday, and I am still waiting.",
+          "options": [
+            "wait",
+            "waited",
+            "have been waiting",
+            "am waiting"
+          ],
+          "correct_index": 2,
+          "explanation_ru": "Действие началось в прошлом, продолжается сейчас и подчёркнута длительность, поэтому present perfect continuous.",
+          "difficulty": 2,
+          "diagnostic": false
+        },
+        {
+          "id": "c1_the_perfect_tenses_forms_and_uses_05",
+          "kind": "gap",
+          "prompt": "She ___ (never / work) with a remote team before she joined us.",
+          "answer": "had never worked",
+          "accept": [],
+          "explanation_ru": "Действие относится к периоду до другого прошедшего события, значит past perfect с never между had и V3.",
+          "difficulty": 1
+        },
+        {
+          "id": "c1_the_perfect_tenses_forms_and_uses_06",
+          "kind": "correct",
+          "prompt": "I work here since 2019.",
+          "answer": "I have worked here since 2019.",
+          "accept": [
+            "I've worked here since 2019.",
+            "I have been working here since 2019.",
+            "I've been working here since 2019."
+          ],
+          "explanation_ru": "Since требует перфекта: период тянется от 2019 года до настоящего момента.",
+          "difficulty": 2
+        },
+        {
+          "id": "c1_the_perfect_tenses_forms_and_uses_07",
+          "kind": "gap",
+          "prompt": "By the time you read this, I ___ (already / leave) the country.",
+          "answer": "will have already left",
+          "accept": [
+            "will already have left",
+            "'ll have already left",
+            "'ll already have left"
+          ],
+          "explanation_ru": "By the time задаёт будущую точку отсчёта, поэтому нужен future perfect; already стоит внутри формы.",
+          "difficulty": 3
+        },
+        {
+          "id": "c1_the_perfect_tenses_forms_and_uses_08",
+          "kind": "transform",
+          "prompt": "Rewrite with a perfect participle: After we had checked the backups, we started the upgrade.",
+          "answer": "Having checked the backups, we started the upgrade.",
+          "accept": [],
+          "explanation_ru": "Придаточное с одинаковым подлежащим сворачивается в having + V3, а союз и подлежащее исчезают.",
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "c1_advanced_modal_verbs_can_be_able_to_may_might",
+      "level": "B2",
+      "band": "B2.1",
+      "topic": "Modals",
+      "title_en": "Advanced modal verbs: can / be able to, may / might",
+      "source_slug": "advanced-modal-verbs-can-be-able-to-may-might",
+      "title_ru": "Модальные: can / be able to, may / might",
+      "summary_ru": "Can и could описывают общую способность и возможность, но для единичного успешного действия в прошлом нужен was / were able to или managed to. Отрицание couldn't, наоборот, свободно используется и для единичного случая. Be able to заменяет can там, где у модального глагола просто нет формы: will be able to, have been able to, to be able to. Could have + V3 означает нереализованную возможность в прошлом или предположение о прошлом. May и might выражают вероятность, причём may звучит чуть увереннее; may have и might have + V3 относят предположение к прошлому. May также даёт формальное разрешение, а might входит в обороты may well и might as well. Для уверенного отрицательного вывода о прошлом используется can't have + V3.",
+      "forms": [
+        "can / could / may / might + инфинитив без to",
+        "be able to: will be able to, have been able to, to be able to",
+        "was / were able to + инфинитив (успех в конкретном случае)",
+        "may / might / could + have + V3 (предположение о прошлом)",
+        "can't have + V3 (уверенный отрицательный вывод о прошлом)"
+      ],
+      "examples": [
+        "After two hours of debugging, we were able to reproduce the crash.",
+        "She could read C code before she finished school.",
+        "The outage might have been caused by a bad config.",
+        "You may leave the meeting early if you have finished your part.",
+        "We may well need a second reviewer for this pull request.",
+        "They can't have deployed it yet; the pipeline is still running."
+      ],
+      "ru_interference": "Русское «смог» покрывает и способность, и единичный успех, поэтому вместо was able to ставят could: неверно «Yesterday I could fix the bug in ten minutes» → верно «Yesterday I was able to fix the bug in ten minutes». Ещё после may и might добавляют to.",
+      "prerequisites": [
+        "b1_can_could_be_able_to",
+        "b2_speculation_deduction",
+        "b2_past_modal_verbs"
+      ],
+      "exercises": [
+        {
+          "id": "c1_advanced_modal_verbs_can_be_able_to_may_might_01",
+          "kind": "choice",
+          "prompt": "The lock was jammed, but after a few minutes we ___ open the door.",
+          "options": [
+            "could",
+            "were able to",
+            "can",
+            "may"
+          ],
+          "correct_index": 1,
+          "explanation_ru": "Речь об одном удавшемся действии в прошлом, а не об общей способности, поэтому нужен was / were able to, а не could.",
+          "difficulty": 1,
+          "diagnostic": false
+        },
+        {
+          "id": "c1_advanced_modal_verbs_can_be_able_to_may_might_02",
+          "kind": "choice",
+          "prompt": "Take an umbrella. It ___ rain later.",
+          "options": [
+            "might",
+            "must",
+            "can",
+            "would"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Нужна возможность в будущем; must даёт уверенный вывод, can не используется для предсказания конкретного события, а would без условия здесь невозможно.",
+          "difficulty": 1,
+          "diagnostic": false
+        },
+        {
+          "id": "c1_advanced_modal_verbs_can_be_able_to_may_might_03",
+          "kind": "choice",
+          "prompt": "By the end of the course, you ___ write basic SQL queries.",
+          "options": [
+            "will can",
+            "will be able to",
+            "can to",
+            "will could"
+          ],
+          "correct_index": 1,
+          "explanation_ru": "У can нет формы будущего времени, поэтому после will используется be able to.",
+          "difficulty": 2,
+          "diagnostic": false
+        },
+        {
+          "id": "c1_advanced_modal_verbs_can_be_able_to_may_might_04",
+          "kind": "choice",
+          "prompt": "The message is still marked as unread, so she ___ seen it.",
+          "options": [
+            "can't have",
+            "shouldn't have",
+            "couldn't be",
+            "may not to have"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Уверенный отрицательный вывод о прошлом передаётся конструкцией can't have + V3; shouldn't have выражал бы упрёк.",
+          "difficulty": 2,
+          "diagnostic": false
+        },
+        {
+          "id": "c1_advanced_modal_verbs_can_be_able_to_may_might_05",
+          "kind": "gap",
+          "prompt": "We ___ (not / be able to) reach the client all morning.",
+          "answer": "weren't able to",
+          "accept": [
+            "were not able to",
+            "haven't been able to",
+            "have not been able to"
+          ],
+          "explanation_ru": "Be able to принимает обычные глагольные формы, поэтому отрицание строится как weren't able to.",
+          "difficulty": 1
+        },
+        {
+          "id": "c1_advanced_modal_verbs_can_be_able_to_may_might_06",
+          "kind": "gap",
+          "prompt": "The deploy failed silently. Someone ___ (may / change) the config file.",
+          "answer": "may have changed",
+          "accept": [
+            "might have changed",
+            "may've changed",
+            "might've changed"
+          ],
+          "explanation_ru": "Предположение о завершённом действии в прошлом требует may / might + have + V3.",
+          "difficulty": 2
+        },
+        {
+          "id": "c1_advanced_modal_verbs_can_be_able_to_may_might_07",
+          "kind": "correct",
+          "prompt": "Yesterday we could fix the memory leak in half an hour.",
+          "answer": "Yesterday we were able to fix the memory leak in half an hour.",
+          "accept": [
+            "Yesterday we managed to fix the memory leak in half an hour."
+          ],
+          "explanation_ru": "Could не используется для единичного успеха в прошлом: нужен was / were able to или managed to.",
+          "difficulty": 3
+        },
+        {
+          "id": "c1_advanced_modal_verbs_can_be_able_to_may_might_08",
+          "kind": "transform",
+          "prompt": "Rewrite with 'might', keeping the meaning: It is possible that the client has already signed the contract.",
+          "answer": "The client might have already signed the contract.",
+          "accept": [
+            "The client might already have signed the contract.",
+            "The client may have already signed the contract.",
+            "The client may already have signed the contract."
+          ],
+          "explanation_ru": "Оборот it is possible that с перфектом заменяется на might have + V3, а подлежащее придаточного становится подлежащим предложения.",
+          "difficulty": 3
+        }
+      ]
     }
-   ]
-  },
-  {
-   "id": "b2_narrative_tenses_used_to_would",
-   "level": "B2",
-   "band": "B2.2",
-   "topic": "Tenses",
-   "title_en": "Narrative tenses, used to, would",
-   "source_slug": "narrative-tenses-used-to-would",
-   "title_ru": "Времена рассказа, used to и would",
-   "summary_ru": "В рассказе о прошлом английский распределяет события по четырём формам. Past Simple даёт цепочку основных событий, Past Continuous — фон и незаконченное действие, на которое что-то наложилось, Past Perfect — то, что произошло раньше другого прошедшего момента, Past Perfect Continuous — длительность до этого момента. Для регулярных привычек и состояний в прошлом, которых больше нет, используется used to: I used to work nights. Would тоже описывает повторяющиеся действия в прошлом, но только действия: с глаголами состояния (be, have, know, like) would не употребляется. Поэтому «I would have an old laptop» невозможно, а «I used to have an old laptop» нормально. Отрицание и вопрос от used to строятся через did: didn't use to, did you use to.",
-   "forms": [
-    "Past Simple: I opened the ticket at nine.",
-    "was/were + V-ing: I was testing when it crashed.",
-    "had + V3: The server had crashed before we arrived.",
-    "had been + V-ing: We had been debugging for hours.",
-    "used to / would + инфинитив: We used to deploy on Fridays."
-   ],
-   "examples": [
-    "I was reviewing the code when the build failed.",
-    "By the time I logged in, someone had already fixed the bug.",
-    "She was tired because she had been fixing bugs all morning.",
-    "I used to work night shifts at my first job.",
-    "Every Friday we would order pizza and stay late."
-   ],
-   "ru_interference": "В русском одно прошедшее время, поэтому предпрошедшее теряется: «Когда я пришёл, он уже ушёл» переводят как «When I arrived, he already left» — неверно; верно «When I arrived, he had already left». И «раньше у меня был» передают через would: «I would have an old laptop» → «I used to have an old laptop».",
-   "prerequisites": [
-    "b1_past_simple_past_continuous_past_perfect",
-    "b2_narrative_tenses",
-    "b2_would_and_used_to"
-   ],
-   "exercises": [
-    {
-     "id": "b2_narrative_tenses_used_to_would_01",
-     "kind": "choice",
-     "prompt": "At three o'clock yesterday we ___ the new release.",
-     "options": [
-      "were deploying",
-      "are deploying",
-      "have deployed",
-      "deploy"
-     ],
-     "correct_index": 0,
-     "explanation_ru": "Точный момент в прошлом плюс процесс — Past Continuous; остальные формы относятся к настоящему и с «yesterday» невозможны.",
-     "difficulty": 1
-    },
-    {
-     "id": "b2_narrative_tenses_used_to_would_02",
-     "kind": "choice",
-     "prompt": "I couldn't log in because I ___ my password.",
-     "options": [
-      "forget",
-      "have forgotten",
-      "had forgotten",
-      "was forgetting"
-     ],
-     "correct_index": 2,
-     "explanation_ru": "Забыл пароль раньше, чем не смог войти, поэтому более раннее действие идёт в Past Perfect.",
-     "difficulty": 1
-    },
-    {
-     "id": "b2_narrative_tenses_used_to_would_03",
-     "kind": "choice",
-     "prompt": "At my previous company we ___ have a strict dress code, but now nobody cares.",
-     "options": [
-      "used to",
-      "would",
-      "was used to",
-      "use to"
-     ],
-     "correct_index": 0,
-     "explanation_ru": "Have здесь — состояние, а с состояниями возможно только used to; would описывает лишь повторяющиеся действия.",
-     "difficulty": 1
-    },
-    {
-     "id": "b2_narrative_tenses_used_to_would_04",
-     "kind": "choice",
-     "prompt": "She was exhausted: she ___ bugs since seven in the morning.",
-     "options": [
-      "had been fixing",
-      "was fixing",
-      "fixed",
-      "has been fixing"
-     ],
-     "correct_index": 0,
-     "explanation_ru": "Since задаёт начало периода, а точка отсчёта в прошлом, поэтому нужен Past Perfect Continuous.",
-     "difficulty": 2
-    },
-    {
-     "id": "b2_narrative_tenses_used_to_would_05",
-     "kind": "gap",
-     "prompt": "By the time I moved to QA, I ___ (work) as a support engineer for two years.",
-     "answer": "had worked",
-     "accept": [
-      "had been working"
-     ],
-     "explanation_ru": "Оборот by the time задаёт точку в прошлом, а работа закончилась до неё, поэтому нужен Past Perfect.",
-     "difficulty": 2
-    },
-    {
-     "id": "b2_narrative_tenses_used_to_would_06",
-     "kind": "gap",
-     "prompt": "Every Friday that summer we ___ (order) pizza and stay late to finish the sprint.",
-     "answer": "would order",
-     "accept": [
-      "used to order"
-     ],
-     "explanation_ru": "Повторяющееся действие в прошлом допускает и would, и used to.",
-     "difficulty": 2
-    },
-    {
-     "id": "b2_narrative_tenses_used_to_would_07",
-     "kind": "correct",
-     "prompt": "When I was a junior, I would have a lot of free time.",
-     "answer": "When I was a junior, I used to have a lot of free time.",
-     "accept": [
-      "When I was a junior, I had a lot of free time."
-     ],
-     "explanation_ru": "Have в значении «иметь» — состояние, а would с состояниями не употребляется.",
-     "difficulty": 3
-    },
-    {
-     "id": "b2_narrative_tenses_used_to_would_08",
-     "kind": "order",
-     "prompt": "before / had / everyone / arrived / left / we",
-     "answer": "Everyone had left before we arrived.",
-     "accept": [],
-     "explanation_ru": "Более раннее событие — в Past Perfect, более позднее после before — в Past Simple.",
-     "difficulty": 3
-    }
-   ]
-  },
-  {
-   "id": "b2_ways_express_future",
-   "level": "B2",
-   "band": "B2.2",
-   "topic": "Tenses",
-   "title_en": "Other ways to express future: Be about to, be due to, etc.",
-   "source_slug": "ways-express-future",
-   "title_ru": "Другие способы говорить о будущем",
-   "summary_ru": "Кроме will, be going to и Present Continuous, у будущего есть несколько специальных конструкций. Be about to + инфинитив означает «вот-вот», действие начнётся через считаные секунды или минуты, поэтому оно не сочетается с указанием даты. Be due to + инфинитив означает «должно произойти по расписанию или плану»: The release is due to ship on Friday. Be to + инфинитив звучит официально и передаёт распоряжение или согласованный план: All staff are to complete the training. Be bound to значит «неизбежно произойдёт», be likely to — «вероятно», be set to — «готово начаться». В прошедшем времени was/were about to описывает то, что почти случилось, но не случилось: I was about to send the email when I noticed the typo. После всех этих оборотов идёт инфинитив с to (to start, to ship), а не форма на -ing.",
-   "forms": [
-    "be about to + инфинитив: The build is about to finish.",
-    "be due to + инфинитив: The release is due to ship on Friday.",
-    "be to + инфинитив (официально): All staff are to sign the policy.",
-    "be bound to / be likely to + инфинитив: It's bound to break.",
-    "was/were about to + инфинитив (несостоявшееся): I was about to call you."
-   ],
-   "examples": [
-    "Don't restart the server — the backup is about to finish.",
-    "The new version is due to be released next Tuesday.",
-    "All employees are to complete the security training by June.",
-    "With no tests at all, this code is bound to break.",
-    "I was about to send the email when I noticed a typo."
-   ],
-   "ru_interference": "Русское «должен» о расписании переводят модальным глаголом: «Поезд должен прибыть в 7:40» → неверно «The train must arrive at 7:40» (звучит как приказ); верно «The train is due to arrive at 7:40». Ещё путают be due to + инфинитив («по плану») и due to + существительное («из-за»): «The delay is due to a bug» — из-за бага, «The bug is due to be fixed» — баг починят по плану.",
-   "prerequisites": [
-    "b1_future_forms",
-    "b2_future_forms_expressing_future_time"
-   ],
-   "exercises": [
-    {
-     "id": "b2_ways_express_future_01",
-     "kind": "choice",
-     "prompt": "Don't close the laptop — the update is about to ___.",
-     "options": [
-      "finishing",
-      "finish",
-      "finished",
-      "finishes"
-     ],
-     "correct_index": 1,
-     "explanation_ru": "После be about to идёт начальная форма глагола: to finish, а не finishing, finished или finishes.",
-     "difficulty": 1
-    },
-    {
-     "id": "b2_ways_express_future_02",
-     "kind": "choice",
-     "prompt": "I ___ send the report when I noticed a mistake in the numbers.",
-     "options": [
-      "was about to",
-      "am about to",
-      "was about",
-      "about to"
-     ],
-     "correct_index": 0,
-     "explanation_ru": "Действие почти произошло в прошлом, поэтому нужна прошедшая форма be плюс about to.",
-     "difficulty": 1
-    },
-    {
-     "id": "b2_ways_express_future_03",
-     "kind": "choice",
-     "prompt": "The server migration ___ to take place next weekend.",
-     "options": [
-      "is due",
-      "is about",
-      "is used",
-      "would due"
-     ],
-     "correct_index": 0,
-     "explanation_ru": "Речь о запланированном на конкретную дату событии — это be due to; about to означает «через минуту».",
-     "difficulty": 1
-    },
-    {
-     "id": "b2_ways_express_future_04",
-     "kind": "choice",
-     "prompt": "With no tests at all, this code is ___ to break sooner or later.",
-     "options": [
-      "bound",
-      "due",
-      "about",
-      "being"
-     ],
-     "correct_index": 0,
-     "explanation_ru": "Be bound to значит «неизбежно случится»; due и about to требуют конкретного расписания или ближайшей минуты.",
-     "difficulty": 2
-    },
-    {
-     "id": "b2_ways_express_future_05",
-     "kind": "gap",
-     "prompt": "Hurry up — the demo ___ (be about to / start) and the client is already online.",
-     "answer": "is about to start",
-     "accept": [
-      "'s about to start"
-     ],
-     "explanation_ru": "Событие начнётся прямо сейчас, поэтому be about to в настоящем времени.",
-     "difficulty": 2
-    },
-    {
-     "id": "b2_ways_express_future_06",
-     "kind": "gap",
-     "prompt": "The report ___ (be due to / be published) at the end of the quarter.",
-     "answer": "is due to be published",
-     "accept": [
-      "'s due to be published"
-     ],
-     "explanation_ru": "Отчёт публикуют, значит после be due to нужен пассивный инфинитив to be published.",
-     "difficulty": 2
-    },
-    {
-     "id": "b2_ways_express_future_07",
-     "kind": "correct",
-     "prompt": "The call is about to starting, so please join now.",
-     "answer": "The call is about to start, so please join now.",
-     "accept": [],
-     "explanation_ru": "После about to стоит инфинитив без -ing.",
-     "difficulty": 3
-    },
-    {
-     "id": "b2_ways_express_future_08",
-     "kind": "transform",
-     "prompt": "Rewrite with 'be due to': The plane arrives at 7:40 according to the timetable.",
-     "answer": "The plane is due to arrive at 7:40 according to the timetable.",
-     "accept": [
-      "The plane is due to arrive at 7:40."
-     ],
-     "explanation_ru": "Расписание передаётся конструкцией be due to + инфинитив.",
-     "difficulty": 3
-    }
-   ]
-  },
-  {
-   "id": "b2_unreal_uses_past_tenses",
-   "level": "B2",
-   "band": "B2.2",
-   "topic": "Tenses",
-   "title_en": "Wish, rather, if only, it's time: Unreal uses of past tenses",
-   "source_slug": "unreal-uses-past-tenses",
-   "title_ru": "Wish, would rather, if only, it's time",
-   "summary_ru": "После wish, if only, would rather и it's time прошедшее время не означает прошлое: оно показывает, что ситуация нереальна или желательна. Wish и if only с Past Simple говорят о недовольстве настоящим: I wish I knew the answer. С Past Perfect они говорят о сожалении о прошлом: If only we had made a backup. Wish плюс would описывает раздражение чужим поведением или желание, чтобы что-то изменилось: I wish he would answer my emails. Would rather с новым подлежащим требует Past Simple: I'd rather you came tomorrow, а с тем же подлежащим — голого инфинитива: I'd rather stay. It's time и it's high time тоже берут Past Simple: It's time we left. Форма were возможна для всех лиц: I wish I were more careful.",
-   "forms": [
-    "wish / if only + Past Simple: I wish I knew.",
-    "wish / if only + Past Perfect: I wish I had known.",
-    "wish / if only + would + инфинитив: I wish he would reply.",
-    "would rather + подлежащее + Past Simple: I'd rather you asked me.",
-    "It's (high) time + подлежащее + Past Simple: It's time we started."
-   ],
-   "examples": [
-    "I wish I knew how this legacy module works.",
-    "If only we had written tests for that function.",
-    "I wish the client would stop changing the requirements.",
-    "I'd rather you didn't push straight to main.",
-    "It's high time we upgraded the database."
-   ],
-   "ru_interference": "Русское «Жаль, что…» переворачивает полярность: «Жаль, что он не пришёл» пишут как «I wish he didn't come» — неверно; верно «I wish he had come». И после wish ставят настоящее или будущее время: «I wish I know English» → «I wish I knew English».",
-   "prerequisites": [
-    "b2_wishes_regrets",
-    "b1_second_conditional_unreal_situations",
-    "b1_third_conditional_past_unreal_situations"
-   ],
-   "exercises": [
-    {
-     "id": "b2_unreal_uses_past_tenses_01",
-     "kind": "choice",
-     "prompt": "I wish I ___ how to use this framework — it would save me hours.",
-     "options": [
-      "know",
-      "knew",
-      "will know",
-      "would know"
-     ],
-     "correct_index": 1,
-     "explanation_ru": "Недовольство настоящим после wish выражается формой Past Simple, а would с тем же подлежащим и глаголом состояния невозможен.",
-     "difficulty": 1
-    },
-    {
-     "id": "b2_unreal_uses_past_tenses_02",
-     "kind": "choice",
-     "prompt": "If only we ___ a backup last night!",
-     "options": [
-      "made",
-      "have made",
-      "had made",
-      "would make"
-     ],
-     "correct_index": 2,
-     "explanation_ru": "Сожаление о конкретном прошлом моменте требует Past Perfect после if only.",
-     "difficulty": 1
-    },
-    {
-     "id": "b2_unreal_uses_past_tenses_03",
-     "kind": "choice",
-     "prompt": "It's high time we ___ this legacy code.",
-     "options": [
-      "rewrote",
-      "to rewrite",
-      "rewriting",
-      "will rewrite"
-     ],
-     "correct_index": 0,
-     "explanation_ru": "После it's high time с подлежащим используется только Past Simple.",
-     "difficulty": 1
-    },
-    {
-     "id": "b2_unreal_uses_past_tenses_04",
-     "kind": "choice",
-     "prompt": "I'd rather you ___ me before you delete a branch.",
-     "options": [
-      "asked",
-      "to ask",
-      "asking",
-      "would ask"
-     ],
-     "correct_index": 0,
-     "explanation_ru": "Would rather с новым подлежащим требует Past Simple, а не инфинитива и не would.",
-     "difficulty": 2
-    },
-    {
-     "id": "b2_unreal_uses_past_tenses_05",
-     "kind": "gap",
-     "prompt": "I wish it ___ (stop) raining so we could test the drone outside.",
-     "answer": "would stop",
-     "accept": [
-      "'d stop"
-     ],
-     "explanation_ru": "Речь о желаемом изменении, которое зависит не от говорящего, — здесь нужен wish + would.",
-     "difficulty": 2
-    },
-    {
-     "id": "b2_unreal_uses_past_tenses_06",
-     "kind": "gap",
-     "prompt": "I wish I ___ (not/delete) that file yesterday.",
-     "answer": "hadn't deleted",
-     "accept": [
-      "had not deleted"
-     ],
-     "explanation_ru": "Сожаление о прошлом действии выражается через wish + Past Perfect.",
-     "difficulty": 2
-    },
-    {
-     "id": "b2_unreal_uses_past_tenses_07",
-     "kind": "correct",
-     "prompt": "I wish I have more time to learn Python.",
-     "answer": "I wish I had more time to learn Python.",
-     "accept": [],
-     "explanation_ru": "После wish о нереальном настоящем ставится Past Simple, а не Present Simple.",
-     "difficulty": 3
-    },
-    {
-     "id": "b2_unreal_uses_past_tenses_08",
-     "kind": "transform",
-     "prompt": "Rewrite with 'If only': I'm sorry I didn't back up the database.",
-     "answer": "If only I had backed up the database.",
-     "accept": [
-      "If only I'd backed up the database."
-     ],
-     "explanation_ru": "Сожаление о прошлом после if only передаётся формой Past Perfect.",
-     "difficulty": 3
-    }
-   ]
-  },
-  {
-   "id": "b2_gerunds_infinitives_complex_forms",
-   "level": "B2",
-   "band": "B2.2",
-   "topic": "Verb patterns",
-   "title_en": "Gerunds and infinitives: Complex forms",
-   "source_slug": "gerunds-infinitives-complex-forms",
-   "title_ru": "Сложные формы герундия и инфинитива",
-   "summary_ru": "У герундия и инфинитива есть не только простые формы. Перфектный герундий having done показывает, что действие произошло раньше главного: He admitted having copied the code. Пассивный герундий being done показывает, что действие направлено на подлежащее: Nobody likes being told what to do. Перфектный инфинитив to have done тоже отсылает к более раннему моменту: The bug appears to have been fixed. Продолженный инфинитив to be doing описывает процесс в момент речи: She seems to be working. Пассивный инфинитив to be done нужен, когда действие совершают над предметом: This bug needs to be fixed. Отрицание ставится перед всей формой: not having read the docs, not to tell anyone. После предлогов возможен только герундий, инфинитив с to там невозможен.",
-   "forms": [
-    "having + V3 (перфектный герундий): He denied having seen it.",
-    "being + V3 (пассивный герундий): She hates being interrupted.",
-    "having been + V3: After having been tested, it was released.",
-    "to have + V3 (перфектный инфинитив): He seems to have forgotten.",
-    "to be + V3 / to be + V-ing: It needs to be fixed. He seems to be working."
-   ],
-   "examples": [
-    "He admitted having copied the code from a forum.",
-    "Nobody likes being told what to do.",
-    "The bug appears to have been fixed in the last build.",
-    "She seems to be working on the API right now.",
-    "Not having read the documentation, I broke the config."
-   ],
-   "ru_interference": "Русское придаточное с «когда» вытесняет пассивный герундий: «Никто не любит, когда ему указывают» → неверно «Nobody likes when they tell him what to do»; верно «Nobody likes being told what to do». А безличное «Этот баг нужно исправить» даёт активный инфинитив: неверно «This bug needs to fix» → верно «This bug needs to be fixed».",
-   "prerequisites": [
-    "b1_gerund_or_infinitive_do_to_do_doing",
-    "b2_gerund_or_infinitive",
-    "b2_reporting_verbs"
-   ],
-   "exercises": [
-    {
-     "id": "b2_gerunds_infinitives_complex_forms_01",
-     "kind": "choice",
-     "prompt": "Nobody likes ___ what to do.",
-     "options": [
-      "being told",
-      "telling",
-      "to telling",
-      "been told"
-     ],
-     "correct_index": 0,
-     "explanation_ru": "Действие направлено на подлежащее, поэтому нужен пассивный герундий being told.",
-     "difficulty": 1
-    },
-    {
-     "id": "b2_gerunds_infinitives_complex_forms_02",
-     "kind": "choice",
-     "prompt": "The database ___ before the next release.",
-     "options": [
-      "needs to update",
-      "needs to be updated",
-      "needs being updated",
-      "needs update"
-     ],
-     "correct_index": 1,
-     "explanation_ru": "Базу обновляют, а не она обновляет, поэтому после needs идёт пассивный инфинитив to be updated.",
-     "difficulty": 1
-    },
-    {
-     "id": "b2_gerunds_infinitives_complex_forms_03",
-     "kind": "choice",
-     "prompt": "He denied ___ the file, but the logs showed his account.",
-     "options": [
-      "having deleted",
-      "to have deleted",
-      "having been deleted",
-      "to delete"
-     ],
-     "correct_index": 0,
-     "explanation_ru": "Deny требует герундия, а удаление произошло раньше отрицания — значит перфектный герундий.",
-     "difficulty": 1
-    },
-    {
-     "id": "b2_gerunds_infinitives_complex_forms_04",
-     "kind": "choice",
-     "prompt": "She seems ___ on the migration right now — her status is green.",
-     "options": [
-      "to work",
-      "to be working",
-      "to have worked",
-      "working"
-     ],
-     "correct_index": 1,
-     "explanation_ru": "Right now указывает на процесс в момент речи, поэтому нужен продолженный инфинитив to be working.",
-     "difficulty": 2
-    },
-    {
-     "id": "b2_gerunds_infinitives_complex_forms_05",
-     "kind": "gap",
-     "prompt": "The server appears ___ (crash) during the night; it was already down at 7 a.m.",
-     "answer": "to have crashed",
-     "accept": [],
-     "explanation_ru": "Сбой случился раньше момента наблюдения, поэтому после appears идёт перфектный инфинитив.",
-     "difficulty": 2
-    },
-    {
-     "id": "b2_gerunds_infinitives_complex_forms_06",
-     "kind": "gap",
-     "prompt": "After ___ (be) tested for a month, the feature was finally released.",
-     "answer": "having been",
-     "accept": [
-      "being"
-     ],
-     "explanation_ru": "Функцию тестировали, значит нужна пассивная форма герундия после предлога after.",
-     "difficulty": 2
-    },
-    {
-     "id": "b2_gerunds_infinitives_complex_forms_07",
-     "kind": "correct",
-     "prompt": "This bug needs to fix before Friday.",
-     "answer": "This bug needs to be fixed before Friday.",
-     "accept": [
-      "This bug needs fixing before Friday."
-     ],
-     "explanation_ru": "Баг не чинит сам себя: нужен пассивный инфинитив to be fixed или герундий fixing.",
-     "difficulty": 3
-    },
-    {
-     "id": "b2_gerunds_infinitives_complex_forms_08",
-     "kind": "transform",
-     "prompt": "Rewrite with a perfect gerund: He admitted that he had copied the code.",
-     "answer": "He admitted having copied the code.",
-     "accept": [],
-     "explanation_ru": "Придаточное с более ранним действием сворачивается в форму having + V3.",
-     "difficulty": 3
-    }
-   ]
-  },
-  {
-   "id": "b2_reduced_infinitives_omitting_the_infinitive_phrase_after_to",
-   "level": "B2",
-   "band": "B2.2",
-   "topic": "Verb patterns",
-   "title_en": "Reduced infinitives: Omitting the infinitive phrase after 'to'",
-   "source_slug": "reduced-infinitives-omitting-the-infinitive-phrase-after-to",
-   "title_ru": "Редуцированный инфинитив: только to",
-   "summary_ru": "Чтобы не повторять уже названный глагол, в английском оставляют одно to и убирают всё остальное: Do you want to join the call? — I'd love to. Так работают want, would like, would love, hope, need, try, forget, promise, have to, ought to, be going to. Само to обязательно остаётся: ответ «I'd love» без to звучит неправильно. Если повторяемый глагол — be или смысловой have, их сохраняют: She isn't a team lead, but she hopes to be. После модальных глаголов can, will, must, should никакого to не нужно: I can't help now, but I will. Отрицание ставится перед to: I told him not to. Такой приём очень частотен в разговоре и в рабочей переписке.",
-   "forms": [
-    "want / hope / need / have + to (глагол опущен): I'd love to.",
-    "not + to: I asked her not to.",
-    "to be сохраняется: He isn't a manager, but he wants to be.",
-    "модальный без to: I can't do it now, but I will.",
-    "be going to: I didn't plan to, but now I'm going to."
-   ],
-   "examples": [
-    "Do you want to join the call? I'd love to.",
-    "I didn't want to rewrite the module, but I had to.",
-    "She isn't a team lead yet, but she hopes to be.",
-    "You don't have to stay late if you don't want to.",
-    "I asked him to review my PR, but he forgot to."
-   ],
-   "ru_interference": "В русском в ответе повторяют глагол или говорят одним словом («Хочу»), поэтому пишут «Yes, I want» без to: неверно «Do you want to test it? — Yes, I want» → верно «Yes, I want to» или «Yes, I'd love to».",
-   "prerequisites": [
-    "a2_infinitives_and_gerunds",
-    "b1_gerund_or_infinitive_do_to_do_doing"
-   ],
-   "exercises": [
-    {
-     "id": "b2_reduced_infinitives_omitting_the_infinitive_phrase_after_to_01",
-     "kind": "choice",
-     "prompt": "Would you like to see the demo? Yes, I'd love ___.",
-     "options": [
-      "to",
-      "to be",
-      "doing",
-      "so"
-     ],
-     "correct_index": 0,
-     "explanation_ru": "Повторяемый глагол see опускается, но to остаётся обязательно.",
-     "difficulty": 1
-    },
-    {
-     "id": "b2_reduced_infinitives_omitting_the_infinitive_phrase_after_to_02",
-     "kind": "choice",
-     "prompt": "I didn't want to work last Saturday, but I ___.",
-     "options": [
-      "had to",
-      "had",
-      "must",
-      "have to"
-     ],
-     "correct_index": 0,
-     "explanation_ru": "Прошедшее время требует had to, а глагол work не повторяется.",
-     "difficulty": 1
-    },
-    {
-     "id": "b2_reduced_infinitives_omitting_the_infinitive_phrase_after_to_03",
-     "kind": "choice",
-     "prompt": "She isn't a team lead yet, but she wants ___.",
-     "options": [
-      "to be",
-      "to",
-      "be",
-      "to being"
-     ],
-     "correct_index": 0,
-     "explanation_ru": "При сокращении инфинитива глагол be сохраняется, поэтому остаётся to be.",
-     "difficulty": 1
-    },
-    {
-     "id": "b2_reduced_infinitives_omitting_the_infinitive_phrase_after_to_04",
-     "kind": "choice",
-     "prompt": "I asked him to update the docs, but he forgot ___.",
-     "options": [
-      "to",
-      "to updating",
-      "update",
-      "forgetting"
-     ],
-     "correct_index": 0,
-     "explanation_ru": "После forgot остаётся только to, вся остальная часть инфинитива опускается.",
-     "difficulty": 2
-    },
-    {
-     "id": "b2_reduced_infinitives_omitting_the_infinitive_phrase_after_to_05",
-     "kind": "gap",
-     "prompt": "Can you join the call at six? I'd like ___, but I have another meeting.",
-     "answer": "to",
-     "accept": [
-      "to join"
-     ],
-     "explanation_ru": "Глагол join уже назван в вопросе, поэтому в ответе достаточно одного to.",
-     "difficulty": 2
-    },
-    {
-     "id": "b2_reduced_infinitives_omitting_the_infinitive_phrase_after_to_06",
-     "kind": "gap",
-     "prompt": "He isn't the project owner yet, but he'd like ___ (be).",
-     "answer": "to be",
-     "accept": [],
-     "explanation_ru": "Be не опускается при сокращении инфинитива, остаётся форма to be.",
-     "difficulty": 2
-    },
-    {
-     "id": "b2_reduced_infinitives_omitting_the_infinitive_phrase_after_to_07",
-     "kind": "correct",
-     "prompt": "I asked her to help, but she didn't want.",
-     "answer": "I asked her to help, but she didn't want to.",
-     "accept": [],
-     "explanation_ru": "После want обязательно остаётся to, даже если сам глагол опущен.",
-     "difficulty": 3
-    },
-    {
-     "id": "b2_reduced_infinitives_omitting_the_infinitive_phrase_after_to_08",
-     "kind": "transform",
-     "prompt": "Shorten the repetition: He wanted to fix the bug today, but he didn't have time to fix the bug today.",
-     "answer": "He wanted to fix the bug today, but he didn't have time to.",
-     "accept": [
-      "He wanted to fix the bug today, but he didn't have the time to."
-     ],
-     "explanation_ru": "Повторяющийся инфинитив сворачивается до одного to.",
-     "difficulty": 3
-    }
-   ]
-  },
-  {
-   "id": "b2_verb_object_infinitive_gerund",
-   "level": "B2",
-   "band": "B2.2",
-   "topic": "Verb patterns",
-   "title_en": "Verb + object + infinitive/gerund: Verb patterns",
-   "source_slug": "verb-object-infinitive-gerund",
-   "title_ru": "Глагол + дополнение + инфинитив или герундий",
-   "summary_ru": "Многие английские глаголы требуют после себя дополнение и только потом вторую форму глагола. С to-инфинитивом идут ask, tell, want, expect, advise, allow, remind, persuade, encourage, teach, warn, force: The manager asked me to lead the demo. С голым инфинитивом идут make, let и каузативный have: They let us leave early. Help допускает оба варианта: help me (to) find it. Глаголы восприятия see, hear, watch берут -ing для процесса и голый инфинитив для законченного действия: I heard someone typing и I saw him leave. В пассиве make возвращает to: I was made to rewrite it. Есть и глаголы, которые дополнение с инфинитивом не берут вовсе: suggest и recommend требуют придаточного или герундия. После prevent и stop используется предлог from и герундий.",
-   "forms": [
-    "глагол + дополнение + to-инфинитив: They asked me to help.",
-    "make / let + дополнение + голый инфинитив: They let us go.",
-    "help + дополнение + (to) инфинитив: He helped me fix it.",
-    "see / hear / watch + дополнение + V-ing или голый инфинитив",
-    "пассив: I was made to rewrite the module."
-   ],
-   "examples": [
-    "The manager asked me to lead the demo.",
-    "They wouldn't let us deploy on Friday.",
-    "The new linter makes everyone follow the same style.",
-    "I saw him leave the office at six.",
-    "The policy prevents users from installing their own software."
-   ],
-   "ru_interference": "Русские модели «предложил мне сделать» и «позволил мне сделать» дают ошибки: неверно «He suggested me to go» и «They let me to go» → верно «He suggested that I go» (или «He suggested going») и «They let me go».",
-   "prerequisites": [
-    "a2_infinitives_and_gerunds",
-    "b2_gerund_or_infinitive",
-    "b2_reporting_verbs"
-   ],
-   "exercises": [
-    {
-     "id": "b2_verb_object_infinitive_gerund_01",
-     "kind": "choice",
-     "prompt": "My manager asked me ___ the release notes.",
-     "options": [
-      "to write",
-      "write",
-      "writing",
-      "that write"
-     ],
-     "correct_index": 0,
-     "explanation_ru": "После ask + дополнение употребляется только to-инфинитив.",
-     "difficulty": 1
-    },
-    {
-     "id": "b2_verb_object_infinitive_gerund_02",
-     "kind": "choice",
-     "prompt": "They didn't let us ___ the server without a ticket.",
-     "options": [
-      "to restart",
-      "restart",
-      "restarting",
-      "restarted"
-     ],
-     "correct_index": 1,
-     "explanation_ru": "Let требует голого инфинитива без to.",
-     "difficulty": 1
-    },
-    {
-     "id": "b2_verb_object_infinitive_gerund_03",
-     "kind": "choice",
-     "prompt": "The new linter makes everyone ___ the same code style.",
-     "options": [
-      "to follow",
-      "follow",
-      "following",
-      "followed"
-     ],
-     "correct_index": 1,
-     "explanation_ru": "Make в активном залоге тоже берёт голый инфинитив.",
-     "difficulty": 1
-    },
-    {
-     "id": "b2_verb_object_infinitive_gerund_04",
-     "kind": "choice",
-     "prompt": "We ___ the whole module because of one missing test.",
-     "options": [
-      "were made rewrite",
-      "were made to rewrite",
-      "made to rewrite",
-      "were make to rewrite"
-     ],
-     "correct_index": 1,
-     "explanation_ru": "В пассиве make восстанавливает to: be made to do something.",
-     "difficulty": 2
-    },
-    {
-     "id": "b2_verb_object_infinitive_gerund_05",
-     "kind": "gap",
-     "prompt": "The team lead reminded us ___ (send) the report before Friday.",
-     "answer": "to send",
-     "accept": [],
-     "explanation_ru": "Remind + дополнение требует to-инфинитива.",
-     "difficulty": 2
-    },
-    {
-     "id": "b2_verb_object_infinitive_gerund_06",
-     "kind": "gap",
-     "prompt": "The security policy prevents users ___ (install) their own software.",
-     "answer": "from installing",
-     "accept": [],
-     "explanation_ru": "После prevent + дополнение идёт предлог from и герундий.",
-     "difficulty": 2
-    },
-    {
-     "id": "b2_verb_object_infinitive_gerund_07",
-     "kind": "correct",
-     "prompt": "He suggested me to use a different library.",
-     "answer": "He suggested that I use a different library.",
-     "accept": [
-      "He suggested using a different library.",
-      "He suggested I use a different library."
-     ],
-     "explanation_ru": "Suggest не берёт дополнение с инфинитивом: нужно придаточное или герундий.",
-     "difficulty": 3
-    },
-    {
-     "id": "b2_verb_object_infinitive_gerund_08",
-     "kind": "order",
-     "prompt": "the / let / us / they / leave / meeting / early",
-     "answer": "They let us leave the meeting early.",
-     "accept": [],
-     "explanation_ru": "После let идёт дополнение и голый инфинитив, затем его собственное дополнение.",
-     "difficulty": 3
-    }
-   ]
-  },
-  {
-   "id": "b2_cleft_sentences",
-   "level": "B2",
-   "band": "B2.2",
-   "topic": "Word order & emphasis",
-   "title_en": "Cleft sentences: Adding emphasis",
-   "source_slug": "cleft-sentences",
-   "title_ru": "Расщеплённые предложения для акцента",
-   "summary_ru": "Английский порядок слов жёсткий, поэтому выделить нужную часть фразы помогают особые конструкции. It-cleft строится по схеме it + be + выделяемая часть + that/who + остальное: It was Anna who found the bug. Выделять можно подлежащее, дополнение, время или место: It was on Monday that we deployed. Связка that или who обязательна, когда в фокусе подлежащее; опустить её можно только при выделении дополнения: It was the logs (that) we checked first. Wh-cleft начинается с what и ставит важное после be: What we need is a rollback plan. Если выделяют действие, используется схема what + подлежащее + do + be: What he did was restart the cluster. Похожие модели дают all, the reason, the thing: All I want is a stable build. Отдельно запомните оборот it wasn't until ... that ...",
-   "forms": [
-    "It + be + фокус + that/who + остальное: It was Anna who called.",
-    "It + be + обстоятельство + that: It was in 2020 that we migrated.",
-    "What + подлежащее + глагол + be + фокус: What we need is time.",
-    "What + подлежащее + do + be + инфинитив: What she did was restart it.",
-    "All (that) + подлежащее + глагол + be: All I want is a clear error."
-   ],
-   "examples": [
-    "It was Anna who wrote the deployment script.",
-    "It wasn't the code that failed; it was the network.",
-    "What I don't understand is why nobody tested it.",
-    "What we did was roll back to the previous version.",
-    "It wasn't until I read the logs that I found the problem."
-   ],
-   "ru_interference": "В русском акцент даётся порядком слов и частицами («Это Анна нашла баг»), поэтому связку выбрасывают: неверно «It was Anna found the bug» → верно «It was Anna who found the bug».",
-   "prerequisites": [
-    "a1_basic_word_order_in_english",
-    "b1_active_passive_voice"
-   ],
-   "exercises": [
-    {
-     "id": "b2_cleft_sentences_01",
-     "kind": "choice",
-     "prompt": "___ was Anna who found the bug in the payment module.",
-     "options": [
-      "It",
-      "That",
-      "This",
-      "She"
-     ],
-     "correct_index": 0,
-     "explanation_ru": "It-cleft начинается с формального подлежащего it; that, this или she на этом месте невозможны.",
-     "difficulty": 1
-    },
-    {
-     "id": "b2_cleft_sentences_02",
-     "kind": "choice",
-     "prompt": "It was the network ___ caused the outage, not the new code.",
-     "options": [
-      "what",
-      "that",
-      "who",
-      "which it"
-     ],
-     "correct_index": 1,
-     "explanation_ru": "После выделенной неодушевлённой части ставится that; who относится только к людям, а what в it-cleft невозможен.",
-     "difficulty": 1
-    },
-    {
-     "id": "b2_cleft_sentences_03",
-     "kind": "choice",
-     "prompt": "___ we need is a proper rollback plan.",
-     "options": [
-      "What",
-      "That",
-      "Which",
-      "It"
-     ],
-     "correct_index": 0,
-     "explanation_ru": "Wh-cleft начинается именно с what, которое здесь заменяет «то, что».",
-     "difficulty": 1
-    },
-    {
-     "id": "b2_cleft_sentences_04",
-     "kind": "choice",
-     "prompt": "What he did ___ restart the whole cluster.",
-     "options": [
-      "was",
-      "being",
-      "to be",
-      "been"
-     ],
-     "correct_index": 0,
-     "explanation_ru": "В схеме what + подлежащее + did связка стоит в личной форме прошедшего времени.",
-     "difficulty": 2
-    },
-    {
-     "id": "b2_cleft_sentences_05",
-     "kind": "gap",
-     "prompt": "It wasn't until I read the logs ___ I understood the problem.",
-     "answer": "that",
-     "accept": [],
-     "explanation_ru": "Оборот it wasn't until ... требует связки that перед основной частью.",
-     "difficulty": 2
-    },
-    {
-     "id": "b2_cleft_sentences_06",
-     "kind": "gap",
-     "prompt": "___ I don't understand is why nobody tested this feature.",
-     "answer": "What",
-     "accept": [
-      "The thing that",
-      "The thing"
-     ],
-     "explanation_ru": "Придаточное с what выносит непонятное в фокус и присоединяется к is.",
-     "difficulty": 2
-    },
-    {
-     "id": "b2_cleft_sentences_07",
-     "kind": "correct",
-     "prompt": "It was Anna found the bug.",
-     "answer": "It was Anna who found the bug.",
-     "accept": [
-      "It was Anna that found the bug."
-     ],
-     "explanation_ru": "В it-cleft связка who или that обязательна и не опускается.",
-     "difficulty": 3
-    },
-    {
-     "id": "b2_cleft_sentences_08",
-     "kind": "transform",
-     "prompt": "Emphasize 'the tests' with an it-cleft: The tests saved us from a serious outage.",
-     "answer": "It was the tests that saved us from a serious outage.",
-     "accept": [
-      "It was the tests which saved us from a serious outage."
-     ],
-     "explanation_ru": "Выделяемая часть ставится после it was, остальное присоединяется через that.",
-     "difficulty": 3
-    }
-   ]
-  }
- ]
+  ]
 }

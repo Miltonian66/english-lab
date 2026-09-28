@@ -16,8 +16,8 @@ from typing import Any
 
 from ..content.banks import VocabItem
 from ..content.registry import Curriculum
-from ..content.schema import Exercise, GrammarPoint
-from .answers import matches, normalize, parse_choice
+from ..content.schema import LEVEL_ORDER, Exercise, GrammarPoint
+from .answers import display_options, matches, normalize, parse_choice
 
 
 TARGET_LOW = 0.6
@@ -201,18 +201,31 @@ def queue_of_vocab(
 
 
 def queue_for_review(
-    curriculum: Curriculum, cards: list[Any], rng: random.Random, length: int = 15
+    curriculum: Curriculum,
+    cards: list[Any],
+    rng: random.Random,
+    length: int = 15,
+    level: str = "",
 ) -> list[str]:
-    """Очередь из карточек, у которых подошёл срок повторения."""
+    """Очередь из карточек, у которых подошёл срок повторения.
+
+    Материал выше уровня ученика не поднимается: после исправления уровня в
+    очереди оставались карточки прежнего, и «Повторение» превращалось в чужой
+    курс.
+    """
+    ceiling = LEVEL_ORDER.get(level) if level else None
     refs: list[str] = []
     for card in cards:
         if card.card_type == "vocab":
             refs.append(vocab_ref(card.card_key, rng))
         elif card.card_type == "point":
             point = curriculum.point(card.card_key)
-            if point and point.exercises:
-                exercise = rng.choice(list(point.exercises))
-                refs.append(f"ex:{exercise.id}")
+            if point is None or not point.exercises:
+                continue
+            if ceiling is not None and LEVEL_ORDER.get(point.level, 0) > ceiling:
+                continue
+            exercise = rng.choice(list(point.exercises))
+            refs.append(f"ex:{exercise.id}")
         if len(refs) >= length:
             break
     return refs
@@ -249,11 +262,14 @@ def resolve(ref: str, curriculum: Curriculum, rng: random.Random) -> Question | 
         if not found:
             return None
         exercise, point = found
+        # Варианты раскладываются в порядке показа один раз здесь: дальше и
+        # клавиатура, и разбор ответа работают с этим порядком.
+        shown = tuple(option for _, option in display_options(exercise))
         return Question(
             ref=ref,
             kind=exercise.kind,
             prompt=exercise.prompt,
-            options=exercise.options,
+            options=shown,
             expected=exercise.expected,
             explanation_ru=exercise.explanation_ru,
             difficulty=exercise.difficulty,
@@ -447,6 +463,7 @@ def check(question: Question, text: str) -> Verdict:
                 correct_index=_expected_index(question),
             ),
             text,
+            shuffle=False,
         )
         if index is None:
             return Verdict(False, False, None, expected_text)

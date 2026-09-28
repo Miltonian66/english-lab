@@ -94,14 +94,40 @@ class AnswerTests(unittest.TestCase):
         self.assertTrue(matches(exercise, "they built the bridge in 1990"))
 
     def test_choice_accepts_letter_number_and_text(self) -> None:
+        """Буква и номер относятся к порядку показа, текст — к самому варианту."""
+        from english_bot.learning.answers import display_options
+
         exercise = Exercise(
             id="t_02", kind="choice", prompt="p", explanation_ru="e",
             options=("lives", "lived", "has lived", "is living"), correct_index=2,
         )
-        for given in ("C", "c)", "3", "has lived", "C) has lived"):
+        shown = display_options(exercise)
+        position = next(i for i, (index, _) in enumerate(shown) if index == 2)
+        letter = chr(ord("A") + position)
+        for given in (letter, f"{letter.lower()})", str(position + 1),
+                      "has lived", f"{letter}) has lived"):
             with self.subTest(given=given):
                 self.assertEqual(parse_choice(exercise, given), 2)
         self.assertIsNone(parse_choice(exercise, "яблоко"))
+
+    def test_key_position_is_not_the_file_order(self) -> None:
+        """Ключ стоял первым в 47% заданий банка: «жать A» проходило блок теста."""
+        import collections
+
+        from english_bot.learning.answers import display_options
+
+        items = [
+            ex
+            for point in CURRICULUM.points.values()
+            for ex in point.exercises
+            if ex.kind == "choice"
+        ]
+        positions = collections.Counter()
+        for ex in items:
+            shown = display_options(ex)
+            positions[next(i for i, (idx, _) in enumerate(shown) if idx == ex.correct_index)] += 1
+        share = max(positions.values()) / len(items)
+        self.assertLess(share, 0.3, "порядок показа снова смещён к одной позиции")
 
 
 class PlacementTests(unittest.TestCase):
@@ -112,40 +138,78 @@ class PlacementTests(unittest.TestCase):
 
     def test_ladder_climbs_on_success(self) -> None:
         state = pl.PlacementState(session_id=1, level="A2")
-        state.results["A2"] = [1, 1, 1, 1]
+        state.results["A2"] = [1, 1, 1, 1, 1, 0]  # 5 из 6 — порог подъёма
         state.visited = ["A2"]
         self.assertTrue(pl.advance(state, CURRICULUM))
         self.assertEqual(state.level, "B1")
 
     def test_ladder_descends_on_failure(self) -> None:
         state = pl.PlacementState(session_id=1, level="B1")
-        state.results["B1"] = [0, 0, 0, 1]
+        state.results["B1"] = [0, 0, 0, 0, 1, 1]
         state.visited = ["B1"]
         self.assertTrue(pl.advance(state, CURRICULUM))
         self.assertEqual(state.level, "A2")
 
-    def test_ladder_stops_in_the_middle_band(self) -> None:
+    def test_middle_band_asks_a_second_block_instead_of_stopping(self) -> None:
+        """Половина верных — не приговор: раньше тест обрывался после одного блока."""
         state = pl.PlacementState(session_id=1, level="B1")
-        state.results["B1"] = [1, 1, 0, 0]
+        state.results["B1"] = [1, 1, 1, 0, 0, 0]
         state.visited = ["B1"]
+        self.assertTrue(pl.advance(state, CURRICULUM))
+        self.assertEqual(state.level, "B1")
+
+        state.results["B1"] += [1, 1, 0, 0, 0, 0]
         self.assertFalse(pl.advance(state, CURRICULUM))
 
-    def test_ladder_does_not_revisit_levels(self) -> None:
+    def test_top_level_needs_a_confirming_block(self) -> None:
+        """C2 не с чем сравнить сверху, поэтому его подтверждает второй блок."""
+        state = pl.PlacementState(session_id=1, level="C2")
+        state.results["C2"] = [1, 1, 1, 1, 1, 0]
+        state.visited = ["C1", "C2"]
+        self.assertTrue(pl.advance(state, CURRICULUM))
+        self.assertEqual(state.level, "C2")
+
+    def test_visited_level_gets_a_second_block_not_an_abrupt_end(self) -> None:
         state = pl.PlacementState(session_id=1, level="B1")
-        state.results["B1"] = [1, 1, 1, 1]
+        state.results["B1"] = [1, 1, 1, 1, 1, 1]
         state.visited = ["B1", "B2"]
+        self.assertTrue(pl.advance(state, CURRICULUM))
+        state.results["B1"] += [1, 1, 1, 1, 1, 1]
         self.assertFalse(pl.advance(state, CURRICULUM))
 
     def test_result_picks_highest_passed_level(self) -> None:
         state = pl.PlacementState(session_id=1)
-        state.results = {"A2": [1, 1, 1, 1], "B1": [1, 1, 1, 0], "B2": [0, 0, 1, 0]}
+        state.results = {
+            "A2": [1, 1, 1, 1, 1, 1],
+            "B1": [1, 1, 1, 1, 0, 0],
+            "B2": [0, 0, 1, 0, 0, 1],
+        }
         result = pl.finish(state, CURRICULUM)
         self.assertEqual(result.level, "B1")
         self.assertEqual(result.asked, 0)
 
-    def test_result_drops_below_when_nothing_passed(self) -> None:
+    def test_incomplete_block_proves_nothing(self) -> None:
         state = pl.PlacementState(session_id=1)
-        state.results = {"B1": [0, 0, 0, 0]}
+        state.results = {"B1": [1, 1, 1, 1, 1, 1], "B2": [1, 1]}
+        self.assertEqual(pl.finish(state, CURRICULUM).level, "B1")
+
+    def test_top_level_needs_the_climb_threshold_to_be_assigned(self) -> None:
+        """4 из 6 на C2 — это «продолжаем», а не потолок курса."""
+        state = pl.PlacementState(session_id=1)
+        state.results = {"C1": [1, 1, 1, 1, 1, 1], "C2": [1, 1, 1, 1, 0, 0]}
+        self.assertEqual(pl.finish(state, CURRICULUM).level, "C1")
+        state.results["C2"] = [1, 1, 1, 1, 1, 0]
+        self.assertEqual(pl.finish(state, CURRICULUM).level, "C2")
+
+    def test_result_drops_below_only_when_the_level_is_failed(self) -> None:
+        state = pl.PlacementState(session_id=1)
+        state.results = {"B1": [0, 0, 0, 0, 0, 0]}
+        self.assertEqual(pl.finish(state, CURRICULUM).level, "A2")
+
+    def test_half_right_keeps_the_tested_level(self) -> None:
+        """Половина верных на A2 — это A2, а не A1, где не задали ни одного вопроса."""
+        state = pl.PlacementState(session_id=1)
+        state.results = {"A2": [1, 1, 1, 0, 0, 0]}
         self.assertEqual(pl.finish(state, CURRICULUM).level, "A2")
 
     def test_adaptive_run_converges_for_a_simulated_learner(self) -> None:
@@ -288,7 +352,8 @@ class PracticeTests(unittest.TestCase):
         choice = next(ex for ex in point.exercises if ex.kind == "choice")
         question = pr.resolve(f"ex:{choice.id}", CURRICULUM, self.rng)
         assert question is not None
-        correct_letter = chr(ord("A") + (choice.correct_index or 0))
+        key = choice.options[choice.correct_index or 0]
+        correct_letter = chr(ord("A") + question.options.index(key))
         self.assertTrue(pr.check(question, correct_letter).correct)
         self.assertFalse(pr.check(question, "полная ерунда").understood)
 

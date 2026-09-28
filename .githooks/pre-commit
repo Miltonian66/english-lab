@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# Коммиты только в ветке задачи и только в рабочей копии (AGENTS.md, docs/delivery.md).
+set -euo pipefail
+prod=$(git worktree list --porcelain | awk 'NR == 1 {print $2}')
+if [[ $(git rev-parse --show-toplevel) == "$prod" ]]; then
+    echo "Коммит в боевом каталоге запрещён: scripts/worktree.sh new <тип>/<имя>" >&2
+    exit 1
+fi
+if [[ $(git branch --show-current) == main ]]; then
+    echo "Коммит в main запрещён: main меняется только мержем PR" >&2
+    exit 1
+fi

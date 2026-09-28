@@ -8,6 +8,8 @@
 
 from __future__ import annotations
 
+import hashlib
+import random
 import re
 import unicodedata
 
@@ -68,11 +70,44 @@ def matches(exercise: Exercise, given: str) -> bool:
     return any(expand(variant) == expanded for variant in variants)
 
 
-def parse_choice(exercise: Exercise, text: str) -> int | None:
-    """Принимает букву A–H, номер 1–8 или текст самого варианта."""
+def option_order(key: str, count: int) -> tuple[int, ...]:
+    """Порядок показа вариантов: устойчивый для задания, но не порядок из файла.
+
+    В банке правильный вариант стоит первым почти в половине заданий, а на C2 —
+    в двух третях: «жать A» проходило блок диагностики чаще, чем знание языка.
+    Порядок выводится из id, поэтому одно и то же задание всегда показывается
+    одинаково — иначе показанный вопрос и проверяемый ответ разошлись бы.
+    """
+    if count <= 1:
+        return tuple(range(count))
+    digest = hashlib.blake2b(key.encode("utf-8"), digest_size=8).digest()
+    order = list(range(count))
+    random.Random(int.from_bytes(digest, "big")).shuffle(order)
+    return tuple(order)
+
+
+def display_options(exercise: Exercise) -> tuple[tuple[int, str], ...]:
+    """Пары «исходный индекс, текст» в порядке показа."""
+    order = option_order(exercise.id, len(exercise.options))
+    return tuple((index, exercise.options[index]) for index in order)
+
+
+def parse_choice(exercise: Exercise, text: str, shuffle: bool = True) -> int | None:
+    """Принимает букву A–H, номер 1–8 или текст самого варианта.
+
+    Буква и номер относятся к порядку показа, а возвращается исходный индекс:
+    ученик видит перемешанные варианты, а проверка идёт по данным задания.
+    `shuffle=False` — когда варианты уже разложены в порядке показа и второе
+    перемешивание развело бы кнопку «A» и букву «A».
+    """
     raw = text.strip()
     if not raw or not exercise.options:
         return None
+    shown = (
+        display_options(exercise)
+        if shuffle
+        else tuple(enumerate(exercise.options))
+    )
 
     # Сначала точное совпадение с текстом варианта: иначе ответ "a" на задание
     # про артикли был бы прочитан как метка варианта A.
@@ -83,13 +118,13 @@ def parse_choice(exercise: Exercise, text: str) -> int | None:
 
     head = raw.split()[0].strip(".)-:").upper()
     if len(head) == 1 and head.isalpha():
-        index = ord(head) - ord("A")
-        if 0 <= index < len(exercise.options):
-            return index
+        position = ord(head) - ord("A")
+        if 0 <= position < len(shown):
+            return shown[position][0]
     if head.isdigit():
-        index = int(head) - 1
-        if 0 <= index < len(exercise.options):
-            return index
+        position = int(head) - 1
+        if 0 <= position < len(shown):
+            return shown[position][0]
     # Ученик мог прислать «C) has lived» — отрезаем метку и сверяем остаток.
     stripped = normalize(re.sub(r"^[A-Ha-h1-8][).:-]\s*", "", raw))
     for index, option in enumerate(exercise.options):
@@ -99,8 +134,10 @@ def parse_choice(exercise: Exercise, text: str) -> int | None:
 
 
 def labelled_options(exercise: Exercise) -> list[str]:
+    """Подписанные варианты в порядке показа, а не в порядке из файла."""
     return [
-        f"{chr(ord('A') + index)}) {option}" for index, option in enumerate(exercise.options)
+        f"{chr(ord('A') + position)}) {option}"
+        for position, (_, option) in enumerate(display_options(exercise))
     ]
 
 

@@ -166,6 +166,133 @@ class UserTests(StorageTestCase):
         self.assertEqual(self.storage.attempts_count(1), (0, 0))
 
 
+class BackgroundWriteTests(StorageTestCase):
+    """Ограды записи: фоновая задача заканчивается минутой позже своего старта."""
+
+    def setUp(self) -> None:
+        super().setUp()
+        self.storage.create_user(1, 1)
+
+    def test_swap_state_ignores_a_foreign_task(self) -> None:
+        """Разбор задания T1 не должен закрывать взятое позже задание T2."""
+        self.storage.set_state(1, "speaking", {"task_id": "T2"})
+        changed = self.storage.swap_state(1, "speaking", "idle", {}, key="task_id", value="T1")
+        self.assertFalse(changed)
+        user = self.storage.user(1)
+        assert user is not None
+        self.assertEqual(user.state, "speaking")
+        self.assertEqual(user.state_data["task_id"], "T2")
+
+    def test_swap_state_releases_its_own_task(self) -> None:
+        self.storage.set_state(1, "speaking", {"task_id": "T1"})
+        self.assertTrue(
+            self.storage.swap_state(1, "speaking", "idle", {}, key="task_id", value="T1")
+        )
+        user = self.storage.user(1)
+        assert user is not None
+        self.assertEqual(user.state, "idle")
+
+    def test_swap_state_matches_a_numeric_marker(self) -> None:
+        """`session_id` лежит в JSON числом: без приведения к тексту ограда молчит."""
+        self.storage.set_state(1, "listening", {"session_id": 7})
+        self.assertTrue(
+            self.storage.swap_state(1, "listening", "idle", {}, key="session_id", value="7")
+        )
+
+    def test_swap_state_without_a_marker_checks_only_the_state(self) -> None:
+        self.storage.set_state(1, "practice", {"index": 3})
+        self.assertFalse(self.storage.swap_state(1, "writing", "idle", {}))
+        self.assertTrue(self.storage.swap_state(1, "practice", "idle", {}))
+
+    def test_voice_transcript_does_not_touch_feedback(self) -> None:
+        self._add_voice()
+        self.storage.set_voice_feedback(1, 5, "разбор")
+        self.storage.set_voice_transcript(1, 5, "новая расшифровка", 4)
+        row = self.storage.voices(1)[0]
+        self.assertEqual(row["transcript"], "новая расшифровка")
+        self.assertEqual(row["feedback"], "разбор")
+
+    def test_voice_feedback_is_written_once(self) -> None:
+        """Повтор задачи не должен второй раз засчитывать навык и серию."""
+        self._add_voice()
+        self.assertTrue(self.storage.set_voice_feedback(1, 5, "первый разбор"))
+        self.assertFalse(self.storage.set_voice_feedback(1, 5, "второй разбор"))
+        self.assertEqual(self.storage.voices(1)[0]["feedback"], "первый разбор")
+
+    def test_add_voice_keeps_the_task_of_a_reviewed_record(self) -> None:
+        self._add_voice(task_id="T1")
+        self.storage.set_voice_feedback(1, 5, "разбор")
+        self._add_voice(task_id="free_speech")
+        self.assertEqual(self.storage.voices(1)[0]["task_id"], "T1")
+
+    def test_finish_session_does_not_reopen_a_closed_one(self) -> None:
+        """Занятие дня считается по закрытым сессиям: обнулить их нельзя."""
+        session_id = self.storage.start_session(1, "listening", "task")
+        self.assertTrue(self.storage.finish_session(session_id, items=1, correct=1))
+        self.assertFalse(self.storage.finish_session(session_id, items=0, correct=0))
+        row = self.storage.sessions(1)[0]
+        self.assertEqual(row["items"], 1)
+        self.assertEqual(row["correct"], 1)
+
+    def test_save_pronunciation_keeps_a_better_transcription(self) -> None:
+        """Окно между чтением кэша и записью — минуты, и пустое поле не аргумент."""
+        self.storage.save_pronunciation("schedule", "schedule", "/ˈskɛdʒul/", "заметка")
+        self.storage.save_pronunciation("schedule", "", "", "", file_id="abc")
+        cached = self.storage.pronunciation("schedule")
+        assert cached is not None
+        self.assertEqual(cached["ipa"], "/ˈskɛdʒul/")
+        self.assertEqual(cached["note"], "заметка")
+        self.assertEqual(cached["file_id"], "abc")
+
+    def _add_voice(self, task_id: str = "T1") -> None:
+        self.storage.add_voice(
+            user_id=1,
+            telegram_message_id=5,
+            file_id="f",
+            file_unique_id="u",
+            duration_seconds=12,
+            local_path=Path("/tmp/x.ogg"),
+            task_id=task_id,
+        )
+
+
+class AccessLogTests(StorageTestCase):
+    """Журнал входов: он нужен именно для тех, кого в `users` нет."""
+
+    def test_refused_stranger_is_recorded_without_a_user_row(self) -> None:
+        self.storage.log_access(555, 555, "Гость", "need_invite")
+        row = self.storage.access_attempts()[0]
+        self.assertEqual(row["user_id"], 555)
+        self.assertEqual(row["outcome"], "need_invite")
+        self.assertIsNone(self.storage.user(555))
+
+    def test_summary_groups_outcomes_and_people(self) -> None:
+        self.storage.log_access(1, 1, "A", "need_invite")
+        self.storage.log_access(1, 1, "A", "need_invite")
+        self.storage.log_access(2, 2, "B", "joined", "member")
+        summary = {row["outcome"]: row for row in self.storage.access_summary(days=7)}
+        self.assertEqual(summary["need_invite"]["times"], 2)
+        self.assertEqual(summary["need_invite"]["people"], 1)
+        self.assertEqual(summary["joined"]["times"], 1)
+
+    def test_log_is_capped_and_keeps_the_newest(self) -> None:
+        """Разбор «почему не пускает» смотрит в хвост, архив тут не нужен."""
+        from english_bot.storage import ACCESS_LOG_LIMIT
+
+        for number in range(ACCESS_LOG_LIMIT + 25):
+            self.storage.log_access(number, number, "", "need_invite")
+        with self.storage.session() as db:
+            total = int(db.execute("SELECT count(*) FROM access_log").fetchone()[0])
+        self.assertLessEqual(total, ACCESS_LOG_LIMIT + 1)
+        self.assertEqual(self.storage.access_attempts(limit=1)[0]["user_id"], ACCESS_LOG_LIMIT + 24)
+
+    def test_filter_by_outcome(self) -> None:
+        self.storage.log_access(1, 1, "A", "joined", "member")
+        self.storage.log_access(2, 2, "B", "need_invite")
+        rows = self.storage.access_attempts(outcome="joined")
+        self.assertEqual([row["user_id"] for row in rows], [1])
+
+
 class InviteTests(StorageTestCase):
     def setUp(self) -> None:
         super().setUp()

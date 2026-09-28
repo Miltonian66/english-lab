@@ -8,11 +8,14 @@ from pathlib import Path
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 
 # Переключатели контуров. Текст и речь выбираются независимо: можно взять
-# бесплатный Codex по подписке и при этом озвучивать через локальные модели,
+# подписочный Codex или Claude и при этом озвучивать через локальные модели,
 # а позже перевести текст на API, поменяв одну переменную.
-LLM_PROVIDERS: tuple[str, ...] = ("codex", "openai", "anthropic")
+LLM_PROVIDERS: tuple[str, ...] = ("codex", "claude", "openai", "anthropic")
+# Провайдеры, которые работают подпроцессом по подписке, а не по ключу.
+CLI_PROVIDERS: tuple[str, ...] = ("codex", "claude")
 SPEECH_BACKENDS: tuple[str, ...] = ("local", "openai")
 CODEX_EFFORTS: tuple[str, ...] = ("low", "medium", "high", "xhigh")
+CLAUDE_EFFORTS: tuple[str, ...] = ("low", "medium", "high", "xhigh", "max")
 
 
 def _project_path(raw: str) -> Path:
@@ -48,6 +51,10 @@ class Settings:
     codex_model: str
     codex_effort: str
     codex_timeout: int
+    claude_binary: str
+    claude_model: str
+    claude_effort: str
+    claude_timeout: int
     speech_backend: str
     models_dir: Path
     whisper_model: str
@@ -63,6 +70,8 @@ class Settings:
     tts_voice: str
 
     workers: int
+    job_workers: int
+    job_timeout: int
     llm_workers: int
     stt_workers: int
     tts_workers: int
@@ -73,8 +82,8 @@ class Settings:
     @property
     def llm_ready(self) -> bool:
         """Готов ли текстовый ИИ-наставник."""
-        if self.llm_provider == "codex":
-            return True  # ключ не нужен, проверка наличия бинарника — при запуске
+        if self.llm_provider in CLI_PROVIDERS:
+            return True  # ключ не нужен, наличие бинарника проверяет `app._build_llm`
         if self.llm_provider == "anthropic":
             return bool(self.anthropic_api_key)
         return bool(self.openai_api_key)
@@ -116,6 +125,10 @@ class Settings:
         if effort not in CODEX_EFFORTS:
             raise RuntimeError(f"CODEX_EFFORT должен быть одним из {', '.join(CODEX_EFFORTS)}")
 
+        claude_effort = os.environ.get("CLAUDE_EFFORT", "low").strip().lower() or "low"
+        if claude_effort not in CLAUDE_EFFORTS:
+            raise RuntimeError(f"CLAUDE_EFFORT должен быть одним из {', '.join(CLAUDE_EFFORTS)}")
+
         return cls(
             telegram_token=token,
             claim_code=claim_code,
@@ -131,6 +144,10 @@ class Settings:
             codex_model=os.environ.get("CODEX_MODEL", "").strip(),
             codex_effort=effort,
             codex_timeout=_int_env("CODEX_TIMEOUT", 180, 30, 900),
+            claude_binary=os.environ.get("CLAUDE_BINARY", "claude").strip() or "claude",
+            claude_model=os.environ.get("CLAUDE_MODEL", "sonnet").strip(),
+            claude_effort=claude_effort,
+            claude_timeout=_int_env("CLAUDE_TIMEOUT", 180, 30, 900),
             speech_backend=backend,
             models_dir=_project_path(os.environ.get("MODELS_DIR", "data/models")),
             whisper_model=os.environ.get("WHISPER_MODEL", "small.en").strip() or "small.en",
@@ -148,6 +165,10 @@ class Settings:
             tts_model=os.environ.get("TTS_MODEL", "gpt-4o-mini-tts").strip(),
             tts_voice=os.environ.get("TTS_VOICE", "alloy").strip(),
             workers=_int_env("WORKERS", 16, 1, 64),
+            # 0 — выполнять длинные цепочки прямо в дорожке обновления, как было
+            # до фоновых задач. Нужен тестам обработчиков и отладке по шагам.
+            job_workers=_int_env("JOB_WORKERS", 4, 0, 16),
+            job_timeout=_int_env("JOB_TIMEOUT", 900, 60, 3600),
             llm_workers=_int_env("LLM_WORKERS", 2, 1, 8),
             stt_workers=_int_env("STT_WORKERS", 1, 1, 4),
             tts_workers=_int_env("TTS_WORKERS", 1, 1, 4),

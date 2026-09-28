@@ -1,8 +1,9 @@
 """Текстовая модель за единым интерфейсом.
 
-Три источника: OpenAI Responses, Anthropic Messages и локальный `codex exec`,
-работающий по подписке ChatGPT. Провайдер выбирается переменной `LLM_PROVIDER`,
-и весь остальной код о разнице не знает — это и есть переключатель.
+Четыре источника: OpenAI Responses, Anthropic Messages и два подписочных
+запуска через CLI — `codex exec` по подписке ChatGPT и `claude -p` по подписке
+Claude. Провайдер выбирается переменной `LLM_PROVIDER`, и весь остальной код о
+разнице не знает — это и есть переключатель.
 """
 
 from __future__ import annotations
@@ -11,6 +12,7 @@ import hashlib
 import logging
 from typing import Any
 
+from .claude_cli import ClaudeError, ClaudeRunner, compose_dialogue
 from .codex_cli import CodexError, CodexRunner, compose_prompt
 from .http import ProviderError, extract_json, post_json
 
@@ -23,11 +25,15 @@ class LLMError(RuntimeError):
 
 
 class LLM:
-    """Один интерфейс поверх трёх источников текста.
+    """Один интерфейс поверх четырёх источников текста.
 
-    `codex` работает по подписке ChatGPT и денег не стоит, но отвечает медленнее;
-    `openai` и `anthropic` ходят по HTTP за ключ. Речь ни один из них не закрывает:
-    распознавание и синтез живут отдельно, в `stt.py`/`tts.py` или `local_speech.py`.
+    `codex` и `claude` работают по подписке и денег не стоят, но отвечают
+    медленнее; `openai` и `anthropic` ходят по HTTP за ключ. Речь ни один из них
+    не закрывает: распознавание и синтез живут отдельно, в `stt.py`/`tts.py` или
+    `local_speech.py`.
+
+    У подписочных провайдеров нет ни `max_tokens`, ни `temperature`: длину и тон
+    задаёт только системный промпт, поэтому эти параметры для них игнорируются.
     """
 
     def __init__(
@@ -36,11 +42,15 @@ class LLM:
         api_key: str = "",
         model: str = "",
         codex: CodexRunner | None = None,
+        claude: ClaudeRunner | None = None,
     ):
         self.provider = provider
         self.api_key = api_key
         self.model = model
         self.codex = codex if codex is not None else (CodexRunner() if provider == "codex" else None)
+        self.claude = (
+            claude if claude is not None else (ClaudeRunner() if provider == "claude" else None)
+        )
 
     def complete(
         self,
@@ -60,12 +70,14 @@ class LLM:
         try:
             if self.provider == "codex":
                 return self._codex(system, history)
+            if self.provider == "claude":
+                return self._claude(system, history)
             if self.provider == "anthropic":
                 return self._anthropic(system, history, max_tokens, temperature)
             return self._openai(system, history, user_id, max_tokens, temperature)
         except ProviderError as exc:
             raise LLMError(str(exc)) from exc
-        except CodexError as exc:
+        except (CodexError, ClaudeError) as exc:
             raise LLMError(str(exc)) from exc
 
     def complete_json(
@@ -93,6 +105,13 @@ class LLM:
         if self.codex is None:
             raise LLMError("провайдер codex не инициализирован")
         return self.codex.run(compose_prompt(system, messages))
+
+    def _claude(self, system: str, messages: list[dict[str, str]]) -> str:
+        if self.claude is None:
+            raise LLMError("провайдер claude не инициализирован")
+        # Системная часть уходит отдельным флагом, поэтому склеивать её с
+        # диалогом не нужно — модель получает ровно промпт наставника.
+        return self.claude.run(system, compose_dialogue(messages))
 
     def _openai(
         self,

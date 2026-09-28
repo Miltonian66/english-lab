@@ -240,5 +240,53 @@ class CatalogTests(unittest.TestCase):
         self.assertEqual(missing, [], f"нет контента для пунктов каталога: {missing[:10]}")
 
 
+class DiagnosticPoolTests(unittest.TestCase):
+    """Пул диагностики — измерительный инструмент, а не просто выборка курса."""
+
+    def test_every_level_has_enough_items_for_two_blocks(self) -> None:
+        from english_bot.learning import placement as pl
+
+        for level in LEVELS:
+            with self.subTest(level=level):
+                pool = pl._pool(CURRICULUM, level)
+                self.assertGreaterEqual(
+                    len(pool),
+                    2 * pl.BLOCK_SIZE,
+                    f"на {level} не хватит заданий на подтверждающий блок",
+                )
+
+    def test_pool_has_no_cross_level_duplicates(self) -> None:
+        """Задание, дословно повторяющее материал уровнем ниже, уровень не измеряет."""
+        import collections
+        import re
+
+        from english_bot.learning import placement as pl
+        from english_bot.learning.answers import normalize
+
+        order = {level: index for index, level in enumerate(LEVELS)}
+        by_key = collections.defaultdict(set)
+        for level in LEVELS:
+            for exercise, point in pl._pool(CURRICULUM, level):
+                options = tuple(sorted(normalize(option) for option in exercise.options))
+                key = (options, normalize(exercise.options[exercise.correct_index or 0]))
+                by_key[key].add(point.level)
+                by_key[re.sub(r"\d+", "#", normalize(exercise.prompt))].add(point.level)
+        clashes = [key for key, levels in by_key.items() if len(levels) > 1]
+        self.assertEqual(clashes, [], f"дубли между уровнями в пуле: {clashes[:3]}")
+
+    def test_flagged_items_stay_available_for_practice(self) -> None:
+        """Непригодное для теста задание остаётся полноценной тренировкой."""
+        excluded = [
+            exercise
+            for point in CURRICULUM.points.values()
+            for exercise in point.exercises
+            if not exercise.diagnostic
+        ]
+        self.assertTrue(excluded, "флаг diagnostic нигде не проставлен")
+        sample = excluded[0]
+        found = CURRICULUM.exercise(sample.id)
+        self.assertIsNotNone(found)
+
+
 if __name__ == "__main__":
     unittest.main()

@@ -7,4 +7,14 @@ __pycache__/
 # Без ведущего слэша правило совпадало бы и с english_bot/content/data/ —
 # то есть выбрасывало бы из репозитория весь курс.
 /data/
-.venv/
+# Без завершающего слэша: в worktree `.venv` — симлинк на боевое окружение,
+# а шаблон `.venv/` совпадает только с каталогом.
+/.venv
+# Рабочие копии задач: scripts/worktree.sh и EnterWorktree в Claude Code.
+/.worktrees/
+/.claude/worktrees/
+/.claude/settings.local.json
+# Локальные артефакты агентов: исходники страниц lavish, расшифровки сессий,
+# выгрузки. Репозиторий публичный — в Git им не место.
+/.lavish/
+/local/

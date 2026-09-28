@@ -123,7 +123,7 @@
         {
           "id": "b1_present_simple_present_continuous_08",
           "kind": "order",
-          "prompt": "are / at / we / the / moment / testing / the / new / API",
+          "prompt": "are / at / we / the / moment / testing / the / new / API / .",
           "answer": "At the moment we are testing the new API.",
           "accept": [
             "We are testing the new API at the moment.",
@@ -515,7 +515,7 @@
         {
           "id": "b1_gerund_or_infinitive_do_to_do_doing_08",
           "kind": "order",
-          "prompt": "stand / can't / I / early / up / getting",
+          "prompt": "stand / can't / I / early / up / getting / .",
           "answer": "I can't stand getting up early.",
           "accept": [
             "I cannot stand getting up early."
@@ -642,7 +642,7 @@
         {
           "id": "b1_verb_preposition_08",
           "kind": "order",
-          "prompt": "on / focus / we / should / the / most / important / bugs",
+          "prompt": "on / focus / we / should / the / most / important / bugs / .",
           "answer": "We should focus on the most important bugs.",
           "accept": [],
           "explanation_ru": "Focus управляет предлогом on, который стоит сразу после глагола перед дополнением.",

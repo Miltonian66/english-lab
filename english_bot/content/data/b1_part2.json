@@ -247,7 +247,7 @@
         {
           "id": "b1_would_rather_would_sooner_08",
           "kind": "order",
-          "prompt": "than / rather / I'd / drive / fly",
+          "prompt": "than / rather / i'd / drive / fly / .",
           "answer": "I'd rather fly than drive.",
           "accept": [
             "I'd rather drive than fly."

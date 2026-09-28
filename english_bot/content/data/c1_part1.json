@@ -526,7 +526,7 @@
         {
           "id": "c1_advanced_modal_verbs_will_would_and_should_08",
           "kind": "order",
-          "prompt": "always / will / he / the last minute / leave / everything / until",
+          "prompt": "always / will / he / the last minute / leave / everything / until / .",
           "answer": "He will always leave everything until the last minute.",
           "accept": [],
           "explanation_ru": "Will + always описывает типичное раздражающее поведение; always стоит между модальным глаголом и инфинитивом.",

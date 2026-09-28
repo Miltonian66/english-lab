@@ -653,7 +653,7 @@ def task_hint(question: "Question") -> str:
     if question.kind == "correct":
         return "Здесь есть ошибка. Пришли исправленное предложение целиком."
     if question.kind == "order":
-        return "Составь предложение из этих слов и пришли целиком."
+        return "Составь предложение из этих слов и пришли целиком. Последний элемент — знак в конце."
     if question.kind == "transform":
         return "Пришли переписанное предложение целиком."
     if question.kind == "gap" and "___" in question.prompt:

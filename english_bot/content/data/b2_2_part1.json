@@ -122,7 +122,7 @@
         {
           "id": "b2_comparative_structures_modifying_comparatives_08",
           "kind": "order",
-          "prompt": "much / it / than / longer / expected / took",
+          "prompt": "much / it / than / longer / expected / took / .",
           "answer": "It took much longer than expected.",
           "accept": [],
           "explanation_ru": "Усилитель much стоит непосредственно перед сравнительной формой longer, а than вводит второй элемент сравнения.",

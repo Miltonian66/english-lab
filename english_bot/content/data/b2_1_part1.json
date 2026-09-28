@@ -114,7 +114,7 @@
         {
           "id": "b2_adjective_order_08",
           "kind": "order",
-          "prompt": "a / bought / she / silk / long / dress",
+          "prompt": "a / bought / she / silk / long / dress / .",
           "answer": "She bought a long silk dress.",
           "accept": [],
           "explanation_ru": "Размер (long) идёт перед материалом (silk), а артикль открывает всю группу.",
@@ -280,7 +280,7 @@
         {
           "id": "b2_position_of_adverbs_01",
           "kind": "order",
-          "prompt": "yesterday / quickly / we / the task / finished",
+          "prompt": "yesterday / quickly / we / the task / finished / .",
           "answer": "We finished the task quickly yesterday.",
           "accept": [
             "We quickly finished the task yesterday."
@@ -597,7 +597,7 @@
         {
           "id": "b2_so_such_a_so_much_so_many_05",
           "kind": "order",
-          "prompt": "such / it / a / was / long / meeting",
+          "prompt": "such / it / a / was / long / meeting / .",
           "answer": "It was such a long meeting.",
           "accept": [],
           "explanation_ru": "Such идёт перед артиклем, затем прилагательное и существительное.",
@@ -719,7 +719,7 @@
         {
           "id": "b2_the_the_comparatives_05",
           "kind": "order",
-          "prompt": "sooner / the / we / better / the / start",
+          "prompt": "sooner / the / we / better / the / start / .",
           "answer": "The sooner we start, the better.",
           "accept": [],
           "explanation_ru": "Первая часть содержит подлежащее и сказуемое, вторая сокращается до the better.",
@@ -1376,7 +1376,7 @@
         {
           "id": "b2_double_negatives_in_english_05",
           "kind": "order",
-          "prompt": "anything / never / anyone / he / tells",
+          "prompt": "anything / never / anyone / he / tells / .",
           "answer": "He never tells anyone anything.",
           "accept": [],
           "explanation_ru": "Отрицание выражено словом never, а остальные слова берутся в форме с any.",

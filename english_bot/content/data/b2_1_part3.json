@@ -248,7 +248,7 @@
         {
           "id": "b2_future_continuous_and_future_perfect_08",
           "kind": "order",
-          "prompt": "Friday / By / will / they / have / left",
+          "prompt": "Friday / by / will / they / have / left / .",
           "answer": "By Friday they will have left.",
           "accept": [
             "They will have left by Friday."
@@ -380,7 +380,7 @@
         {
           "id": "b2_narrative_tenses_08",
           "kind": "order",
-          "prompt": "had / when / left / arrived / we / already / they",
+          "prompt": "had / when / left / arrived / we / already / they / .",
           "answer": "When we arrived, they had already left.",
           "accept": [
             "They had already left when we arrived."
@@ -640,7 +640,7 @@
         {
           "id": "b2_review_verb_tenses_b1_b2_08",
           "kind": "order",
-          "prompt": "you / will / when / call / arrive / I / I",
+          "prompt": "you / will / when / call / arrive / I / I / .",
           "answer": "I will call you when I arrive.",
           "accept": [
             "I'll call you when I arrive.",
@@ -893,7 +893,7 @@
         {
           "id": "b2_used_to_08",
           "kind": "order",
-          "prompt": "used / not / I / am / to / early / getting / up",
+          "prompt": "used / not / I / am / to / early / getting / up / .",
           "answer": "I am not used to getting up early.",
           "accept": [
             "I'm not used to getting up early."
@@ -1539,7 +1539,7 @@
         {
           "id": "b2_verbs_of_the_senses_08",
           "kind": "order",
-          "prompt": "if / as / looks / it / it / rain / going / is / to",
+          "prompt": "if / as / looks / it / it / rain / going / is / to / .",
           "answer": "It looks as if it is going to rain.",
           "accept": [
             "It looks as if it's going to rain."

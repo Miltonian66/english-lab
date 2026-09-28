@@ -118,7 +118,7 @@
         {
           "id": "c2_the_subjunctive_and_formulaic_remnants_be_that_as_it_may_come_what_08",
           "kind": "order",
-          "prompt": "it / far / from / be / me / to / disagree",
+          "prompt": "it / far / from / be / me / to / disagree / .",
           "answer": "Far be it from me to disagree.",
           "accept": [],
           "explanation_ru": "Порядок в формуле фиксирован: far + be + it + from me + to-инфинитив.",

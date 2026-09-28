@@ -113,7 +113,7 @@
     {
      "id": "a1_adjectives_08",
      "kind": "order",
-     "prompt": "very / is / new / laptop / My",
+     "prompt": "very / is / new / laptop / my / .",
      "answer": "My laptop is very new.",
      "accept": [],
      "explanation_ru": "После be идёт very и затем прилагательное; притяжательное местоимение открывает предложение.",
@@ -234,7 +234,7 @@
     {
      "id": "a1_adverbs_manner_08",
      "kind": "order",
-     "prompt": "carefully / documents / the / reads / He",
+     "prompt": "carefully / documents / the / reads / he / .",
      "answer": "He reads the documents carefully.",
      "accept": [
       "He carefully reads the documents."
@@ -356,7 +356,7 @@
     {
      "id": "a1_comparative_adjectives_08",
      "kind": "order",
-     "prompt": "than / me / is / older / my / manager",
+     "prompt": "than / me / is / older / my / manager / .",
      "answer": "My manager is older than me.",
      "accept": [],
      "explanation_ru": "Сравнение строится по схеме подлежащее + be + прилагательное с -er + than.",
@@ -476,7 +476,7 @@
     {
      "id": "a1_superlative_adjectives_08",
      "kind": "order",
-     "prompt": "company / the / is / she / in / fastest / the",
+     "prompt": "company / the / is / she / in / fastest / the / .",
      "answer": "She is the fastest in the company.",
      "accept": [],
      "explanation_ru": "После превосходной степени группа сравнения вводится предлогом in.",
@@ -599,7 +599,7 @@
     {
      "id": "a1_can_cant_08",
      "kind": "order",
-     "prompt": "can't / the / I / password / remember",
+     "prompt": "can't / the / I / password / remember / .",
      "answer": "I can't remember the password.",
      "accept": [
       "I cannot remember the password."
@@ -721,7 +721,7 @@
     {
      "id": "a1_a_an_plurals_08",
      "kind": "order",
-     "prompt": "an / I / have / hour / for / lunch",
+     "prompt": "an / I / have / hour / for / lunch / .",
      "answer": "I have an hour for lunch.",
      "accept": [],
      "explanation_ru": "В слове hour первая буква не читается, слово начинается с гласного звука, поэтому нужен an.",
@@ -841,7 +841,7 @@
     {
      "id": "a1_a_an_the_no_article_08",
      "kind": "order",
-     "prompt": "a / I / need / new / keyboard",
+     "prompt": "a / I / need / new / keyboard / .",
      "answer": "I need a new keyboard.",
      "accept": [],
      "explanation_ru": "Клавиатура упоминается впервые и стоит в единственном числе, поэтому нужен a перед прилагательным.",
@@ -961,7 +961,7 @@
     {
      "id": "a1_possessive_adjectives_08",
      "kind": "order",
-     "prompt": "our / is / new / this / manager",
+     "prompt": "our / is / new / this / manager / .",
      "answer": "This is our new manager.",
      "accept": [],
      "explanation_ru": "Притяжательное местоимение стоит перед прилагательным и существительным и заменяет артикль.",
@@ -1081,12 +1081,12 @@
     {
      "id": "a1_whose_possessive_s_08",
      "kind": "order",
-     "prompt": "is / whose / this / phone",
+     "prompt": "is / whose / this / phone / ?",
      "answer": "Whose phone is this?",
      "accept": [
-      "Whose phone is this",
+      "Whose phone is this?",
       "Whose is this phone?",
-      "Whose is this phone"
+      "Whose is this phone?"
      ],
      "explanation_ru": "Whose открывает вопрос, дальше идёт существительное и глагол be перед подлежащим.",
      "difficulty": 3
@@ -1212,7 +1212,7 @@
     {
      "id": "a1_be_going_to_plans_predictions_08",
      "kind": "order",
-     "prompt": "going / we / to / are / buy / a / new / server",
+     "prompt": "going / we / to / are / buy / a / new / server / .",
      "answer": "We are going to buy a new server.",
      "accept": [
       "We're going to buy a new server."
@@ -1342,7 +1342,7 @@
     {
      "id": "a1_have_got_08",
      "kind": "order",
-     "prompt": "got / I / have / an / idea",
+     "prompt": "got / I / have / an / idea / .",
      "answer": "I have got an idea.",
      "accept": [
       "I've got an idea."
@@ -1466,7 +1466,7 @@
     {
      "id": "a1_the_difference_between_this_and_it_08",
      "kind": "order",
-     "prompt": "new / this / my / is / colleague",
+     "prompt": "new / this / my / is / colleague / .",
      "answer": "This is my new colleague.",
      "accept": [],
      "explanation_ru": "Человека представляют впервые, поэтому предложение начинается с this is.",

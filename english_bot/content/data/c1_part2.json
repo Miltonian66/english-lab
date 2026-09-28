@@ -384,7 +384,7 @@
         {
           "id": "c1_advanced_inversion_negative_adverbials_and_conditional_inversion_08",
           "kind": "order",
-          "prompt": "had / than / no / we / deployed / sooner / the alerts started",
+          "prompt": "had / than / no / we / deployed / sooner / the alerts started / .",
           "answer": "No sooner had we deployed than the alerts started.",
           "accept": [],
           "explanation_ru": "Схема no sooner + had + подлежащее + V3 + than обязательна и не допускает прямого порядка слов.",
@@ -513,7 +513,7 @@
         {
           "id": "c1_advanced_word_order_08",
           "kind": "order",
-          "prompt": "well / very / knows / she / the codebase",
+          "prompt": "well / very / knows / she / the codebase / .",
           "answer": "She knows the codebase very well.",
           "accept": [],
           "explanation_ru": "Дополнение идёт сразу за глаголом, а оценка степени very well занимает конечную позицию.",

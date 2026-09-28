@@ -242,7 +242,7 @@
     {
      "id": "a1_at_in_on_prepositions_of_place_08",
      "kind": "order",
-     "prompt": "at / is / Anna / work / now",
+     "prompt": "at / is / anna / work / now / .",
      "answer": "Anna is at work now.",
      "accept": [],
      "explanation_ru": "Порядок слов: подлежащее, глагол be, обстоятельство места at work, затем время.",
@@ -365,7 +365,7 @@
     {
      "id": "a1_at_in_on_prepositions_time_08",
      "kind": "order",
-     "prompt": "at / we / o'clock / lunch / have / twelve",
+     "prompt": "at / we / o'clock / lunch / have / twelve / .",
      "answer": "We have lunch at twelve o'clock.",
      "accept": [],
      "explanation_ru": "Сначала подлежащее и сказуемое с дополнением, потом время с предлогом at.",
@@ -488,7 +488,7 @@
     {
      "id": "a1_next_to_under_between_in_front_behind_etc_08",
      "kind": "order",
-     "prompt": "the / is / bag / under / my / desk",
+     "prompt": "the / is / bag / under / my / desk / .",
      "answer": "My bag is under the desk.",
      "accept": [],
      "explanation_ru": "Сначала подлежащее с определением, затем глагол be и предлог места с существительным.",
@@ -608,7 +608,7 @@
     {
      "id": "a1_object_pronouns_08",
      "kind": "order",
-     "prompt": "us / she / never / calls",
+     "prompt": "us / she / never / calls / .",
      "answer": "She never calls us.",
      "accept": [],
      "explanation_ru": "Подлежащее She, наречие never перед смысловым глаголом, затем объектное местоимение us.",
@@ -733,7 +733,7 @@
     {
      "id": "a1_there_is_there_are_08",
      "kind": "order",
-     "prompt": "on / a / there / is / desk / lamp / the",
+     "prompt": "on / a / there / is / desk / lamp / the / .",
      "answer": "There is a lamp on the desk.",
      "accept": [],
      "explanation_ru": "Схема: there + is + существительное с артиклем + обстоятельство места.",
@@ -855,7 +855,7 @@
     {
      "id": "a1_there_it_08",
      "kind": "order",
-     "prompt": "in / there / a / is / the / problem / report",
+     "prompt": "in / there / a / is / the / problem / report / .",
      "answer": "There is a problem in the report.",
      "accept": [],
      "explanation_ru": "There is вводит объект, а обстоятельство места стоит в конце.",
@@ -1099,7 +1099,7 @@
     {
      "id": "a1_a_some_any_countable_uncountable_08",
      "kind": "order",
-     "prompt": "any / there / isn't / sugar / tea / in / my",
+     "prompt": "any / there / isn't / sugar / tea / in / my / .",
      "answer": "There isn't any sugar in my tea.",
      "accept": [],
      "explanation_ru": "Схема: there isn't + any + неисчисляемое + обстоятельство места.",
@@ -1223,7 +1223,7 @@
     {
      "id": "a1_much_many_lot_little_few_08",
      "kind": "order",
-     "prompt": "much / we / don't / work / have / today",
+     "prompt": "much / we / don't / work / have / today / .",
      "answer": "We don't have much work today.",
      "accept": [],
      "explanation_ru": "Отрицание don't have, затем much с неисчисляемым work и обстоятельство времени.",
@@ -1470,7 +1470,7 @@
     {
      "id": "a1_will_and_shall_08",
      "kind": "order",
-     "prompt": "next / we / meet / will / week",
+     "prompt": "next / we / meet / will / week / .",
      "answer": "We will meet next week.",
      "accept": [
       "We'll meet next week."

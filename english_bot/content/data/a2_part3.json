@@ -253,10 +253,10 @@
         {
           "id": "a2_auxiliary_verbs_do_be_and_have_08",
           "kind": "order",
-          "prompt": "you / changed / Have / the / password",
+          "prompt": "you / changed / have / the / password / ?",
           "answer": "Have you changed the password?",
           "accept": [
-            "Have you changed the password"
+            "Have you changed the password?"
           ],
           "explanation_ru": "В вопросе Present Perfect вспомогательный have выходит перед подлежащим, а третья форма changed остаётся после него.",
           "difficulty": 3
@@ -382,7 +382,7 @@
         {
           "id": "a2_first_conditional_future_time_clauses_08",
           "kind": "order",
-          "prompt": "when / call / I'll / home / you / I / get",
+          "prompt": "when / call / i'll / home / you / I / get / .",
           "answer": "I'll call you when I get home.",
           "accept": [
             "When I get home, I'll call you."
@@ -509,7 +509,7 @@
         {
           "id": "a2_past_continuous_past_simple_08",
           "kind": "order",
-          "prompt": "raining / when / it / arrived / was / we",
+          "prompt": "raining / when / it / arrived / was / we / .",
           "answer": "It was raining when we arrived.",
           "accept": [
             "When we arrived, it was raining."
@@ -767,7 +767,7 @@
         {
           "id": "a2_past_simple_form_use_08",
           "kind": "order",
-          "prompt": "password / I / remember / didn't / the",
+          "prompt": "password / I / remember / didn't / the / .",
           "answer": "I didn't remember the password.",
           "accept": [
             "I did not remember the password."
@@ -1024,7 +1024,7 @@
         {
           "id": "a2_present_continuous_future_arrangements_08",
           "kind": "order",
-          "prompt": "starting / at / we / tomorrow / are / eight",
+          "prompt": "starting / at / we / tomorrow / are / eight / .",
           "answer": "We are starting at eight tomorrow.",
           "accept": [
             "We're starting at eight tomorrow.",
@@ -1287,10 +1287,10 @@
         {
           "id": "a2_present_perfect_08",
           "kind": "order",
-          "prompt": "seen / you / message / Have / the",
+          "prompt": "seen / you / message / have / the / ?",
           "answer": "Have you seen the message?",
           "accept": [
-            "Have you seen the message"
+            "Have you seen the message?"
           ],
           "explanation_ru": "В вопросе have выходит перед подлежащим, а третья форма seen остаётся сразу за ним.",
           "difficulty": 3
@@ -1418,7 +1418,7 @@
         {
           "id": "a2_present_simple_continuous_08",
           "kind": "order",
-          "prompt": "usually / He / work / doesn't / Saturdays / on",
+          "prompt": "usually / he / work / doesn't / Saturdays / on / .",
           "answer": "He doesn't usually work on Saturdays.",
           "accept": [
             "He usually doesn't work on Saturdays.",

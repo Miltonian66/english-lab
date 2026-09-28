@@ -117,7 +117,7 @@
         {
           "id": "a2_phrasal_verbs_transitive_and_intransitive_separable_and_inseparable_08",
           "kind": "order",
-          "prompt": "please / put / it / on",
+          "prompt": "please / put / it / on / .",
           "answer": "Please put it on.",
           "accept": [
             "Put it on, please."
@@ -497,7 +497,7 @@
         {
           "id": "a2_prepositions_of_movement_08",
           "kind": "order",
-          "prompt": "we / across / walked / the / bridge",
+          "prompt": "we / across / walked / the / bridge / .",
           "answer": "We walked across the bridge.",
           "accept": [],
           "explanation_ru": "Предлог движения стоит сразу после глагола, перед местом: walked across the bridge.",
@@ -1135,7 +1135,7 @@
         {
           "id": "a2_asking_questions_in_english_08",
           "kind": "order",
-          "prompt": "do / you / know / where / the / office / is",
+          "prompt": "do / you / know / where / the / office / is / ?",
           "answer": "Do you know where the office is?",
           "accept": [],
           "explanation_ru": "После know идёт придаточное с прямым порядком слов: подлежащее перед глаголом и без второго вспомогательного.",

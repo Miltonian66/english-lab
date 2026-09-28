@@ -125,7 +125,7 @@
         {
           "id": "a2_stative_vs_dynamic_verbs_or_non_action_vs_action_verbs_08",
           "kind": "order",
-          "prompt": "anything / this / does / to / mean / not / me",
+          "prompt": "anything / this / does / to / mean / not / me / .",
           "answer": "This does not mean anything to me.",
           "accept": [
             "This doesn't mean anything to me."
@@ -253,7 +253,7 @@
         {
           "id": "a2_used_to_08",
           "kind": "order",
-          "prompt": "used / we / to / meet / every / Friday",
+          "prompt": "used / we / to / meet / every / Friday / .",
           "answer": "We used to meet every Friday.",
           "accept": [],
           "explanation_ru": "Порядок обычный: подлежащее, used to, начальная форма глагола и обстоятельство времени в конце.",
@@ -376,7 +376,7 @@
         {
           "id": "a2_infinitives_and_gerunds_08",
           "kind": "order",
-          "prompt": "to / long / I / avoid / try / meetings",
+          "prompt": "to / long / I / avoid / try / meetings / .",
           "answer": "I try to avoid long meetings.",
           "accept": [],
           "explanation_ru": "После try идёт инфинитив с to: try to do something. Дополнение long meetings стоит сразу после avoid.",
@@ -629,7 +629,7 @@
         {
           "id": "a2_so_neither_08",
           "kind": "order",
-          "prompt": "and / so / do / I / my / colleagues / like / remote / work",
+          "prompt": "and / so / do / I / my / colleagues / like / remote / work / .",
           "answer": "My colleagues like remote work and so do I.",
           "accept": [],
           "explanation_ru": "Первая часть в Present Simple без вспомогательного глагола, поэтому в короткой части появляется do с обратным порядком.",

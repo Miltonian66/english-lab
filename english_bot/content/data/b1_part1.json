@@ -114,7 +114,7 @@
         {
           "id": "b1_ed_ing_adjectives_adjectives_verbs_08",
           "kind": "order",
-          "prompt": "the / was / everyone / news / shocked / by",
+          "prompt": "the / was / everyone / news / shocked / by / .",
           "answer": "Everyone was shocked by the news.",
           "accept": [],
           "explanation_ru": "Люди испытывают чувство, поэтому shocked; источник вводится предлогом by.",
@@ -237,7 +237,7 @@
         {
           "id": "b1_adjective_preposition_08",
           "kind": "order",
-          "prompt": "of / afraid / is / she / not / spiders",
+          "prompt": "of / afraid / is / she / not / spiders / .",
           "answer": "She is not afraid of spiders.",
           "accept": [
             "She isn't afraid of spiders."
@@ -490,7 +490,7 @@
         {
           "id": "b1_compound_adjectives_with_numbers_a_two_day_trip_08",
           "kind": "order",
-          "prompt": "a / walk / it / ten-minute / is",
+          "prompt": "a / walk / it / ten-minute / is / .",
           "answer": "It is a ten-minute walk.",
           "accept": [
             "It's a ten-minute walk."
@@ -747,7 +747,7 @@
         {
           "id": "b1_first_and_second_conditionals_08",
           "kind": "order",
-          "prompt": "if / I / were / you / I / would / accept / the offer",
+          "prompt": "if / I / were / you / I / would / accept / the offer / .",
           "answer": "If I were you, I would accept the offer.",
           "accept": [
             "If I were you, I'd accept the offer."
@@ -1262,7 +1262,7 @@
         {
           "id": "b1_can_could_be_able_to_08",
           "kind": "order",
-          "prompt": "able / we / to / were / find / not / the bug",
+          "prompt": "able / we / to / were / find / not / the bug / .",
           "answer": "We were not able to find the bug.",
           "accept": [
             "We weren't able to find the bug."
@@ -1389,7 +1389,7 @@
         {
           "id": "b1_had_better_its_time_08",
           "kind": "order",
-          "prompt": "better / had / we / leave / now",
+          "prompt": "better / had / we / leave / now / .",
           "answer": "We had better leave now.",
           "accept": [
             "We'd better leave now."

@@ -117,7 +117,7 @@
     {
      "id": "a1_adverbs_frequency_08",
      "kind": "order",
-     "prompt": "always / meetings / long / are / our",
+     "prompt": "always / meetings / long / are / our / .",
      "answer": "Our meetings are always long.",
      "accept": [],
      "explanation_ru": "После формы are наречие always стоит перед прилагательным long.",
@@ -239,7 +239,7 @@
     {
      "id": "a1_past_simple_negatives_questions_08",
      "kind": "order",
-     "prompt": "not / did / he / call / me",
+     "prompt": "not / did / he / call / me / .",
      "answer": "He did not call me.",
      "accept": [
       "He didn't call me."
@@ -361,7 +361,7 @@
     {
      "id": "a1_past_simple_regular_irregular_08",
      "kind": "order",
-     "prompt": "us / helped / she / yesterday",
+     "prompt": "us / helped / she / yesterday / .",
      "answer": "She helped us yesterday.",
      "accept": [],
      "explanation_ru": "Порядок: подлежащее, глагол в прошедшем времени, дополнение, обстоятельство времени.",
@@ -487,7 +487,7 @@
     {
      "id": "a1_present_continuous_08",
      "kind": "order",
-     "prompt": "you / are / doing / what",
+     "prompt": "you / are / doing / what / ?",
      "answer": "What are you doing?",
      "accept": [],
      "explanation_ru": "В вопросе сначала идёт вопросительное слово, затем are, подлежащее и глагол с -ing.",
@@ -611,7 +611,7 @@
     {
      "id": "a1_present_simple_forms_of_to_be_08",
      "kind": "order",
-     "prompt": "is / from / she / Spain / not",
+     "prompt": "is / from / she / Spain / not / .",
      "answer": "She is not from Spain.",
      "accept": [
       "She isn't from Spain."
@@ -735,7 +735,7 @@
     {
      "id": "a1_present_simple_present_continuous_08",
      "kind": "order",
-     "prompt": "now / are / they / lunch / having",
+     "prompt": "now / are / they / lunch / having / .",
      "answer": "They are having lunch now.",
      "accept": [],
      "explanation_ru": "Слово now требует Present Continuous: are плюс having, а обстоятельство идёт в конце.",
@@ -858,7 +858,7 @@
     {
      "id": "a1_present_simple_08",
      "kind": "order",
-     "prompt": "you / where / do / live",
+     "prompt": "you / where / do / live / ?",
      "answer": "Where do you live?",
      "accept": [],
      "explanation_ru": "Порядок в специальном вопросе: вопросительное слово, do, подлежащее, глагол.",
@@ -979,7 +979,7 @@
     {
      "id": "a1_was_were_08",
      "kind": "order",
-     "prompt": "was / the / cold / weather / very",
+     "prompt": "was / the / cold / weather / very / .",
      "answer": "The weather was very cold.",
      "accept": [],
      "explanation_ru": "Порядок: подлежащее the weather, форма was, затем very и прилагательное cold.",
@@ -1098,7 +1098,7 @@
     {
      "id": "a1_verbs_infinitive_verbs_ing_08",
      "kind": "order",
-     "prompt": "to / would / like / I / help",
+     "prompt": "to / would / like / I / help / .",
      "answer": "I would like to help.",
      "accept": [
       "I'd like to help."
@@ -1219,7 +1219,7 @@
     {
      "id": "a1_basic_word_order_in_english_08",
      "kind": "order",
-     "prompt": "office / to / the / goes / he / every day",
+     "prompt": "office / to / the / goes / he / every day / .",
      "answer": "He goes to the office every day.",
      "accept": [],
      "explanation_ru": "Порядок: подлежащее, глагол, место, время.",
@@ -1342,7 +1342,7 @@
     {
      "id": "a1_imperative_sit_dont_talk_08",
      "kind": "order",
-     "prompt": "the / please / send / file",
+     "prompt": "the / please / send / file / .",
      "answer": "Please send the file.",
      "accept": [
       "Send the file, please."

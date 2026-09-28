@@ -117,7 +117,7 @@
         {
           "id": "b2_possessive_s_with_time_expressions_two_hours_walk_08",
           "kind": "order",
-          "prompt": "notice / two / gave / weeks' / they / us",
+          "prompt": "notice / two / gave / weeks' / they / us / .",
           "answer": "They gave us two weeks' notice.",
           "accept": [],
           "explanation_ru": "Порядок обычный: подлежащее, глагол, лицо, затем группа two weeks' notice.",

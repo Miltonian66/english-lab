@@ -123,7 +123,7 @@
         {
           "id": "b2_have_auxiliary_main_verb_08",
           "kind": "order",
-          "prompt": "meeting / are / we / a / having / now",
+          "prompt": "meeting / are / we / a / having / now / .",
           "answer": "We are having a meeting now.",
           "accept": [
             "We're having a meeting now."
@@ -255,7 +255,7 @@
         {
           "id": "b2_narrative_tenses_used_to_would_08",
           "kind": "order",
-          "prompt": "before / had / everyone / arrived / left / we",
+          "prompt": "before / had / everyone / arrived / left / we / .",
           "answer": "Everyone had left before we arrived.",
           "accept": [],
           "explanation_ru": "Более раннее событие — в Past Perfect, более позднее после before — в Past Simple.",
@@ -896,7 +896,7 @@
         {
           "id": "b2_verb_object_infinitive_gerund_08",
           "kind": "order",
-          "prompt": "the / let / us / they / leave / meeting / early",
+          "prompt": "the / let / us / they / leave / meeting / early / .",
           "answer": "They let us leave the meeting early.",
           "accept": [],
           "explanation_ru": "После let идёт дополнение и голый инфинитив, затем его собственное дополнение.",
@@ -1426,7 +1426,7 @@
         {
           "id": "c1_advanced_past_simple_past_continuous_past_perfect_08",
           "kind": "order",
-          "prompt": "had / by / left / arrived / everyone / we / the time",
+          "prompt": "had / by / left / arrived / everyone / we / the time / .",
           "answer": "By the time we arrived, everyone had left.",
           "accept": [],
           "explanation_ru": "By the time вводит придаточное в past simple, а более раннее действие в главной части стоит в past perfect.",

@@ -100,7 +100,7 @@
         {
           "id": "b2_auxiliary_verbs_different_uses_06",
           "kind": "gap",
-          "prompt": "You work in the support team, ___ (question tag)?",
+          "prompt": "You work on the support team, ___ (question tag)?",
           "answer": "don't you",
           "accept": [],
           "explanation_ru": "В present simple без вспомогательного хвост строится с do; подлежащее you сохраняется.",
@@ -111,7 +111,9 @@
           "kind": "correct",
           "prompt": "Do you have finished the migration?",
           "answer": "Have you finished the migration?",
-          "accept": [],
+          "accept": [
+            "Did you finish the migration?"
+          ],
           "explanation_ru": "В present perfect вспомогательным уже является have, поэтому do в вопросе лишний.",
           "difficulty": 3
         },
@@ -195,7 +197,7 @@
             "already moves"
           ],
           "correct_index": 1,
-          "explanation_ru": "Переезд закончится раньше вашего возвращения, поэтому нужен future perfect, а already стоит после will have.",
+          "explanation_ru": "Переезд закончится раньше вашего возвращения, поэтому нужен future perfect; already ставится после will have или между will и have: will already have moved.",
           "difficulty": 2
         },
         {
@@ -295,11 +297,11 @@
           "options": [
             "already left",
             "had already left",
-            "was already leaving",
+            "was already left",
             "has already left"
           ],
           "correct_index": 1,
-          "explanation_ru": "By the time требует действия, случившегося раньше другого прошедшего события, то есть past perfect.",
+          "explanation_ru": "By the time требует действия, случившегося раньше другого прошедшего события, то есть past perfect; was left — это пассив («поезд оставили»), а не прошедшее время глагола leave.",
           "difficulty": 1
         },
         {
@@ -360,12 +362,12 @@
         {
           "id": "b2_narrative_tenses_06",
           "kind": "gap",
-          "prompt": "When I woke up, it ___ (stop) raining.",
+          "prompt": "When I woke up, the streets were already dry: it ___ (stop) raining hours before.",
           "answer": "had stopped",
           "accept": [
             "'d stopped"
           ],
-          "explanation_ru": "Дождь кончился раньше пробуждения, поэтому past perfect.",
+          "explanation_ru": "Дождь кончился задолго до пробуждения (hours before), поэтому past perfect.",
           "difficulty": 1
         },
         {
@@ -750,12 +752,12 @@
         {
           "id": "b2_passive_voice_all_tenses_06",
           "kind": "gap",
-          "prompt": "The report ___ (not/finish) yet.",
+          "prompt": "The report ___ (not/finish, present perfect) yet.",
           "answer": "hasn't been finished",
           "accept": [
             "has not been finished"
           ],
-          "explanation_ru": "Yet требует present perfect, а пассив в нём выглядит как has been плюс третья форма.",
+          "explanation_ru": "Отчёт не заканчивает себя сам, поэтому нужен пассив: в present perfect это hasn't been плюс третья форма.",
           "difficulty": 3
         },
         {
@@ -852,7 +854,7 @@
         {
           "id": "b2_used_to_04",
           "kind": "choice",
-          "prompt": "We ___ have a printer in the office, but now everything is digital.",
+          "prompt": "We ___ have a printer in the office, but now we have two.",
           "options": [
             "didn't use to",
             "didn't used to",
@@ -860,7 +862,7 @@
             "don't use to"
           ],
           "correct_index": 0,
-          "explanation_ru": "В отрицании после did остаётся первая форма use, а не used.",
+          "explanation_ru": "Раньше принтера не было, а теперь их два: прошлое состояние в отрицании — didn't use to, и после did остаётся первая форма use, а не used.",
           "difficulty": 2
         },
         {
@@ -875,7 +877,7 @@
         {
           "id": "b2_used_to_06",
           "kind": "gap",
-          "prompt": "When I was younger, I ___ (used to / play) the guitar every day.",
+          "prompt": "Use used to, be used to or get used to: When I was younger, I ___ (play) the guitar every day.",
           "answer": "used to play",
           "accept": [],
           "explanation_ru": "Регулярное занятие в прошлом, которого больше нет, передаётся через used to плюс первая форма.",
@@ -884,10 +886,10 @@
         {
           "id": "b2_used_to_07",
           "kind": "correct",
-          "prompt": "I am used to get up early.",
-          "answer": "I am used to getting up early.",
+          "prompt": "I am used to get up early, so morning meetings are no problem for me.",
+          "answer": "I am used to getting up early, so morning meetings are no problem for me.",
           "accept": [],
-          "explanation_ru": "После am used to нужен герундий, потому что to здесь предлог.",
+          "explanation_ru": "После am used to нужен герундий, потому что to здесь предлог: ранний подъём для меня привычен сейчас.",
           "difficulty": 3
         },
         {
@@ -1027,9 +1029,11 @@
           "accept": [
             "We'll leave as soon as the taxi arrives.",
             "As soon as the taxi arrives, we will leave.",
-            "As soon as the taxi arrives, we'll leave."
+            "As soon as the taxi arrives, we'll leave.",
+            "We will leave as soon as the taxi has arrived.",
+            "As soon as the taxi has arrived, we will leave."
           ],
-          "explanation_ru": "Will сохраняется только в главной части, а в придаточном с as soon as остаётся arrives.",
+          "explanation_ru": "Will сохраняется только в главной части, а в придаточном с as soon as стоит arrives или, с упором на завершённость, has arrived.",
           "difficulty": 3
         }
       ]
@@ -1109,21 +1113,21 @@
         {
           "id": "b2_would_and_used_to_04",
           "kind": "choice",
-          "prompt": "My grandfather ___ a teacher for forty years.",
+          "prompt": "My grandfather ___ a teacher, but he retired long ago.",
           "options": [
             "would be",
             "used to be",
-            "would being",
+            "was used to be",
             "use to be"
           ],
           "correct_index": 1,
-          "explanation_ru": "Состояние в прошлом передаётся только через used to, would с глаголом be в этом значении невозможен.",
+          "explanation_ru": "Прошлое состояние, которого больше нет, передаётся через used to; would с глаголом be в этом значении невозможен, а was used to значит «привык» и требует формы на -ing.",
           "difficulty": 2
         },
         {
           "id": "b2_would_and_used_to_05",
           "kind": "gap",
-          "prompt": "Every Friday we ___ (go) to the movies together.",
+          "prompt": "Use would or used to: When we were in college, every Friday we ___ (go) to the movies together.",
           "answer": "would go",
           "accept": [
             "used to go"
@@ -1134,7 +1138,7 @@
         {
           "id": "b2_would_and_used_to_06",
           "kind": "gap",
-          "prompt": "There ___ (used to / be) a bakery on this corner, but it closed last year.",
+          "prompt": "Use would or used to: There ___ (be) a bakery on this corner, but it closed last year.",
           "answer": "used to be",
           "accept": [],
           "explanation_ru": "Это состояние, а не повторяющееся действие, поэтому would здесь невозможен.",
@@ -1145,7 +1149,9 @@
           "kind": "correct",
           "prompt": "When I was young, I would be afraid of the dark.",
           "answer": "When I was young, I used to be afraid of the dark.",
-          "accept": [],
+          "accept": [
+            "When I was young, I was afraid of the dark."
+          ],
           "explanation_ru": "Would не сочетается с глаголом be в значении прошлого состояния.",
           "difficulty": 3
         },
@@ -1286,7 +1292,9 @@
           "prompt": "Rewrite with 'unless': If you don't back up your files, you will lose them.",
           "answer": "Unless you back up your files, you will lose them.",
           "accept": [
-            "Unless you back up your files, you'll lose them."
+            "Unless you back up your files, you'll lose them.",
+            "You will lose your files unless you back them up.",
+            "Unless you back your files up, you will lose them."
           ],
           "explanation_ru": "Unless уже содержит отрицание, поэтому don't убирается.",
           "difficulty": 3
@@ -1404,7 +1412,9 @@
           "kind": "correct",
           "prompt": "I look forward to meet you next week.",
           "answer": "I look forward to meeting you next week.",
-          "accept": [],
+          "accept": [
+            "I'm looking forward to meeting you next week."
+          ],
           "explanation_ru": "В look forward to слово to — предлог, поэтому после него нужна форма на -ing.",
           "difficulty": 3
         },
@@ -1523,8 +1533,10 @@
           "kind": "gap",
           "prompt": "She ___ (seem) to know the answer.",
           "answer": "seems",
-          "accept": [],
-          "explanation_ru": "Seem сочетается с инфинитивом, а подлежащее she требует окончания -s.",
+          "accept": [
+            "seemed"
+          ],
+          "explanation_ru": "Seem сочетается с инфинитивом to know; с подлежащим she нужна форма seems, а если речь о прошлом — seemed.",
           "difficulty": 1
         },
         {

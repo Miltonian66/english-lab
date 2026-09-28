@@ -60,7 +60,7 @@
         {
           "id": "b2_possessive_s_with_time_expressions_two_hours_walk_03",
           "kind": "choice",
-          "prompt": "___ meeting was cancelled at the last moment.",
+          "prompt": "___ meeting was canceled at the last minute.",
           "options": [
             "Yesterday",
             "Yesterdays",
@@ -199,15 +199,15 @@
         {
           "id": "b2_distancing_04",
           "kind": "choice",
-          "prompt": "___, the servers were restarted twice last night.",
+          "prompt": "I haven't checked the logs myself, but ___, the servers were restarted twice last night.",
           "options": [
             "Apparently",
-            "Apparent",
-            "Appearance",
-            "Appear"
+            "Obviously",
+            "Certainly",
+            "Personally"
           ],
           "correct_index": 0,
-          "explanation_ru": "В начале предложения нужно наречие apparently; apparent - прилагательное, appearance - существительное, appear - глагол.",
+          "explanation_ru": "Говорящий сам логи не проверял и передаёт чужие сведения, поэтому нужно дистанцирующее apparently («судя по всему»); obviously и certainly выражают уверенность, а personally — личное мнение.",
           "difficulty": 1
         },
         {
@@ -215,8 +215,11 @@
           "kind": "gap",
           "prompt": "It ___ (report) that the company loses money every year.",
           "answer": "is reported",
-          "accept": [],
-          "explanation_ru": "Безличная модель It + be + V3 + that в настоящем времени даёт is reported.",
+          "accept": [
+            "was reported",
+            "has been reported"
+          ],
+          "explanation_ru": "Безличная модель It + be + V3 + that: в настоящем is reported, о прошлом сообщении — was reported или has been reported.",
           "difficulty": 2
         },
         {
@@ -224,8 +227,10 @@
           "kind": "gap",
           "prompt": "The CEO ___ (say) to be extremely demanding.",
           "answer": "is said",
-          "accept": [],
-          "explanation_ru": "Личная модель: подлежащее + is said + to + инфинитив.",
+          "accept": [
+            "was said"
+          ],
+          "explanation_ru": "Личная модель: подлежащее + is said (о прошлом — was said) + to + инфинитив.",
           "difficulty": 2
         },
         {
@@ -244,7 +249,9 @@
           "kind": "transform",
           "prompt": "Rewrite starting with 'He': It is believed that he works for a competitor.",
           "answer": "He is believed to work for a competitor.",
-          "accept": [],
+          "accept": [
+            "He is believed to be working for a competitor."
+          ],
           "explanation_ru": "При переходе к личной модели подлежащее придаточного становится подлежащим главного, а глагол - инфинитивом.",
           "difficulty": 3
         }
@@ -295,7 +302,7 @@
         {
           "id": "b2_passive_verbs_with_two_objects_02",
           "kind": "choice",
-          "prompt": "The company paid the contractors on Friday. The contractors ___ on Friday.",
+          "prompt": "The company paid the contractors a bonus on Friday. The contractors ___ a bonus on Friday.",
           "options": [
             "were paid",
             "was paid",
@@ -303,7 +310,7 @@
             "paid"
           ],
           "correct_index": 0,
-          "explanation_ru": "Подлежащее contractors во множественном числе, действие прошедшее и пассивное: were paid.",
+          "explanation_ru": "Подлежащим пассива стало лицо contractors во множественном числе, а второе дополнение a bonus осталось после глагола: were paid a bonus.",
           "difficulty": 1
         },
         {
@@ -476,9 +483,10 @@
           "prompt": "I ___ (not/get) the joke.",
           "answer": "don't get",
           "accept": [
-            "do not get"
+            "do not get",
+            "didn't get"
           ],
-          "explanation_ru": "Present simple с отрицанием: don't get в значении 'не понимаю'.",
+          "explanation_ru": "Get здесь значит «понимать», а отрицание строится через do: don't get, о прошлом — didn't get.",
           "difficulty": 2
         },
         {
@@ -625,7 +633,9 @@
           "kind": "correct",
           "prompt": "The main cause for the incident was a bad config file.",
           "answer": "The main cause of the incident was a bad config file.",
-          "accept": [],
+          "accept": [
+            "The main reason for the incident was a bad config file."
+          ],
           "explanation_ru": "Cause сочетается с of, хотя близкое по смыслу reason требует for.",
           "difficulty": 3
         }
@@ -709,11 +719,11 @@
           "options": [
             "There is",
             "It is",
-            "There have",
-            "It are"
+            "It has",
+            "It makes"
           ],
           "correct_index": 0,
-          "explanation_ru": "Устойчивый оборот there is no point in doing; it здесь невозможно.",
+          "explanation_ru": "Устойчивый оборот there is no point in doing; it is no point и it has no point — кальки с русского «нет смысла», а it makes работает только в it makes no sense.",
           "difficulty": 2
         },
         {
@@ -851,7 +861,9 @@
           "kind": "gap",
           "prompt": "If a customer complains, listen to ___ carefully.",
           "answer": "them",
-          "accept": [],
+          "accept": [
+            "him or her"
+          ],
           "explanation_ru": "Пол клиента неизвестен, поэтому используется объектная форма singular they - them.",
           "difficulty": 2
         },
@@ -860,7 +872,9 @@
           "kind": "gap",
           "prompt": "Everyone must bring ___ own headphones.",
           "answer": "their",
-          "accept": [],
+          "accept": [
+            "his or her"
+          ],
           "explanation_ru": "После everyone современная норма - притяжательное their.",
           "difficulty": 2
         },
@@ -870,7 +884,9 @@
           "prompt": "In Russia can't drive a car at 16.",
           "answer": "In Russia you can't drive a car at 16.",
           "accept": [
-            "In Russia you cannot drive a car at 16."
+            "In Russia you cannot drive a car at 16.",
+            "In Russia one can't drive a car at 16.",
+            "In Russia people can't drive a car at 16."
           ],
           "explanation_ru": "Без подлежащего предложение невозможно: в обобщающем значении ставим you.",
           "difficulty": 3
@@ -1137,7 +1153,9 @@
           "kind": "transform",
           "prompt": "Rewrite with a participle clause: Because I didn't have the key, I waited outside.",
           "answer": "Not having the key, I waited outside.",
-          "accept": [],
+          "accept": [
+            "Having no key, I waited outside."
+          ],
           "explanation_ru": "Причина сворачивается в причастный оборот, отрицание идёт словом not перед having.",
           "difficulty": 3
         }
@@ -1498,8 +1516,10 @@
           "kind": "gap",
           "prompt": "They promised the fix ___ (be) ready by Monday, but it wasn't.",
           "answer": "would be",
-          "accept": [],
-          "explanation_ru": "После глагола в прошедшем времени будущее выражается через would.",
+          "accept": [
+            "was going to be"
+          ],
+          "explanation_ru": "После глагола в прошедшем времени будущее выражается через would (или was going to).",
           "difficulty": 1
         },
         {
@@ -1508,7 +1528,7 @@
           "prompt": "I ___ (be going to) send the invoice yesterday, but I forgot.",
           "answer": "was going to",
           "accept": [],
-          "explanation_ru": "Подлежащее I в прошедшем времени даёт форму was going to.",
+          "explanation_ru": "План был, но не выполнен (but I forgot), — это was going to: be going to уходит в прошедшее, и с подлежащим I получается was.",
           "difficulty": 2
         },
         {
@@ -1516,7 +1536,9 @@
           "kind": "correct",
           "prompt": "Last week he said he will join the call, but he never did.",
           "answer": "Last week he said he would join the call, but he never did.",
-          "accept": [],
+          "accept": [
+            "Last week he said he was going to join the call, but he never did."
+          ],
           "explanation_ru": "В косвенной речи после said будущее сдвигается: will становится would.",
           "difficulty": 3
         },

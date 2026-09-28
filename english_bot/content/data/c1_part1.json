@@ -105,12 +105,12 @@
         {
           "id": "c1_advanced_conditionals_mixed_inverted_and_alternatives_to_if_06",
           "kind": "gap",
-          "prompt": "But for your review, we ___ (release) a broken version.",
+          "prompt": "But for your review, we ___ (release) a broken version last Friday.",
           "answer": "would have released",
           "accept": [
             "would've released"
           ],
-          "explanation_ru": "But for + существительное заменяет if it hadn't been for и относит ситуацию к прошлому, поэтому в главной части нужен would have + V3.",
+          "explanation_ru": "But for + существительное заменяет условие, но время само не задаёт — его задаёт контекст. Last Friday относит несостоявшийся выпуск к прошлому, поэтому в главной части нужен would have + V3.",
           "difficulty": 1
         },
         {
@@ -389,16 +389,18 @@
             "thus",
             "accordingly"
           ],
-          "explanation_ru": "После точки с запятой нужен формальный маркер следствия; hence и thus здесь так же уместны, как therefore.",
+          "explanation_ru": "После точки с запятой нужен формальный маркер следствия: therefore, consequently, thus или accordingly. Hence обычно присоединяет именную группу (hence the delay), а перед целым предложением звучит книжно.",
           "difficulty": 2
         },
         {
           "id": "c1_advanced_discourse_markers_and_cohesion_08",
           "kind": "correct",
-          "prompt": "The service is stable, however it is slow.",
+          "prompt": "Keep 'however' and correct the sentence: The service is stable, however it is slow.",
           "answer": "The service is stable; however, it is slow.",
           "accept": [
-            "The service is stable. However, it is slow."
+            "The service is stable. However, it is slow.",
+            "The service is stable; it is, however, slow.",
+            "The service is stable. It is, however, slow."
           ],
           "explanation_ru": "However — наречие, а не союз, поэтому оно не может соединять два предложения простой запятой.",
           "difficulty": 3
@@ -497,10 +499,13 @@
         {
           "id": "c1_advanced_modal_verbs_will_would_and_should_05",
           "kind": "gap",
-          "prompt": "The package left the warehouse on Monday, so it ___ (should / arrive) today.",
+          "prompt": "The package left the warehouse on Monday, so it ___ (arrive — a modal of expectation, not certainty) today.",
           "answer": "should arrive",
-          "accept": [],
-          "explanation_ru": "Should выражает ожидание, основанное на известных фактах, а не совет.",
+          "accept": [
+            "ought to arrive",
+            "should be arriving"
+          ],
+          "explanation_ru": "Should выражает ожидание, основанное на известных фактах, а не совет; ought to в этом значении тоже возможно, а will звучало бы как уверенный прогноз.",
           "difficulty": 1
         },
         {
@@ -796,7 +801,11 @@
           "accept": [
             "A careful analysis of the data helped us find the bug.",
             "Their careful analysis of the data helped us to find the bug.",
-            "A careful analysis of the data helped us to find the bug."
+            "A careful analysis of the data helped us to find the bug.",
+            "Careful analysis of the data helped us find the bug.",
+            "Careful analysis of the data helped us to find the bug.",
+            "The careful analysis of the data helped us find the bug.",
+            "The careful analysis of the data helped us to find the bug."
           ],
           "explanation_ru": "Глагольная клауза сворачивается в именную группу: наречие carefully становится прилагательным careful, а дополнение присоединяется через of.",
           "difficulty": 3
@@ -913,7 +922,9 @@
           "prompt": "Informal: 'The company was set up in 2010.' Formal: 'The company was ___ in 2010.'",
           "answer": "established",
           "accept": [
-            "founded"
+            "founded",
+            "incorporated",
+            "formed"
           ],
           "explanation_ru": "Формальный однословный эквивалент фразового глагола set up — establish или found.",
           "difficulty": 1
@@ -936,8 +947,11 @@
           "kind": "correct",
           "prompt": "Our team made a lot of research before choosing the framework.",
           "answer": "Our team did a lot of research before choosing the framework.",
-          "accept": [],
-          "explanation_ru": "Английская коллокация — do research; make здесь невозможно независимо от регистра.",
+          "accept": [
+            "Our team conducted a lot of research before choosing the framework.",
+            "Our team carried out a lot of research before choosing the framework."
+          ],
+          "explanation_ru": "Английская коллокация — do research, в формальном тексте conduct или carry out research; make здесь невозможно независимо от регистра.",
           "difficulty": 3
         }
       ]
@@ -961,7 +975,7 @@
       "examples": [
         "We will look into the crash report tomorrow.",
         "They called the meeting off at the last minute.",
-        "I can't put up with these random timeouts any more.",
+        "I can't put up with these random timeouts anymore.",
         "The deal fell through two days before signing.",
         "It all comes down to how much traffic we expect.",
         "We are rolling the new dashboard out next week."
@@ -1048,7 +1062,7 @@
         {
           "id": "c1_idiomatic_multi_word_verbs_at_c1_06",
           "kind": "gap",
-          "prompt": "The client cancelled, so we had to ___ (call / off) the presentation.",
+          "prompt": "The client couldn't make it, so we had to ___ (a phrasal verb meaning 'cancel') the presentation.",
           "answer": "call off",
           "accept": [],
           "explanation_ru": "Перед полным существительным частица off может стоять сразу после глагола: call off the presentation.",
@@ -1057,7 +1071,7 @@
         {
           "id": "c1_idiomatic_multi_word_verbs_at_c1_07",
           "kind": "gap",
-          "prompt": "I can't ___ (tolerate: use a three-part verb) these random timeouts any more.",
+          "prompt": "Our users won't ___ (tolerate: use a three-part verb) slow page loads anymore.",
           "answer": "put up with",
           "accept": [],
           "explanation_ru": "Трёхчастный глагол put up with никогда не разделяется, поэтому все три части идут подряд перед дополнением.",
@@ -1184,7 +1198,8 @@
           "prompt": "___ (finish) the migration, we turned off the old server.",
           "answer": "Having finished",
           "accept": [
-            "After finishing"
+            "After finishing",
+            "After having finished"
           ],
           "explanation_ru": "Действие произошло раньше главного, поэтому нужен оборот having + V3 или эквивалент с after.",
           "difficulty": 1
@@ -1204,12 +1219,14 @@
         {
           "id": "c1_advanced_participle_clauses_08",
           "kind": "correct",
-          "prompt": "Working on the report, the phone rang.",
+          "prompt": "Correct the sentence so that the speaker (I) is the one working and 'the phone rang' stays: Working on the report, the phone rang.",
           "answer": "While I was working on the report, the phone rang.",
           "accept": [
-            "I was working on the report when the phone rang."
+            "I was working on the report when the phone rang.",
+            "As I was working on the report, the phone rang.",
+            "When I was working on the report, the phone rang."
           ],
-          "explanation_ru": "Подлежащее оборота и главного предложения не совпадают (телефон не работал над отчётом), поэтому причастие нужно развернуть в полное придаточное.",
+          "explanation_ru": "Подлежащее оборота и главного предложения не совпадают (телефон не работал над отчётом), поэтому причастие нужно развернуть в полное придаточное с подлежащим I: While/As/When I was working.",
           "difficulty": 3
         }
       ]

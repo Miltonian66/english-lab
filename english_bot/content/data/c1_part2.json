@@ -71,7 +71,7 @@
             "with that"
           ],
           "correct_index": 1,
-          "explanation_ru": "Глагол build требует предлога with, а в относительном придаточном предлог ставится перед which; с that предлог впереди стоять не может.",
+          "explanation_ru": "With which здесь значит «с помощью которого»: предлог with обозначает инструмент (build with a tool) и в формальном придаточном стоит перед which. С that предлог впереди стоять не может, а голое which теряет связь с инструментом.",
           "difficulty": 1
         },
         {
@@ -101,7 +101,7 @@
         {
           "id": "c1_advanced_relative_clauses_reduced_prepositional_of_which_whom_06",
           "kind": "gap",
-          "prompt": "We have three servers, two ___ are offline. (of / which)",
+          "prompt": "We have three servers, two ___ are offline. (preposition + relative pronoun)",
           "answer": "of which",
           "accept": [],
           "explanation_ru": "Количество плюс относительное местоимение оформляется как of which; from which здесь невозможно.",
@@ -110,7 +110,7 @@
         {
           "id": "c1_advanced_relative_clauses_reduced_prepositional_of_which_whom_07",
           "kind": "correct",
-          "prompt": "We tested five builds, from which two failed.",
+          "prompt": "Correct the relative clause: We tested five builds, from which two failed.",
           "answer": "We tested five builds, two of which failed.",
           "accept": [
             "We tested five builds, of which two failed."
@@ -166,11 +166,11 @@
           "options": [
             "are been",
             "are being",
-            "is being",
-            "being"
+            "had been",
+            "will be"
           ],
           "correct_index": 1,
-          "explanation_ru": "Речь о временном поведении именно сегодня, поэтому нужна форма are being; остальные варианты грамматически невозможны.",
+          "explanation_ru": "Речь о поведении прямо сейчас, сегодня: временное поведение передаёт are being. Had been требует точки отсчёта в прошлом, will be звучит как прогноз или приказ, а формы are been в английском нет.",
           "difficulty": 1
         },
         {
@@ -359,14 +359,17 @@
           "kind": "gap",
           "prompt": "Rarely ___ (a project / finish) on time in this company.",
           "answer": "does a project finish",
-          "accept": [],
+          "accept": [
+            "is a project finished",
+            "does a project get finished"
+          ],
           "explanation_ru": "После rarely в начале нужна инверсия со вспомогательным does, а смысловой глагол остаётся в первой форме.",
           "difficulty": 2
         },
         {
           "id": "c1_advanced_inversion_negative_adverbials_and_conditional_inversion_06",
           "kind": "gap",
-          "prompt": "___ (should / you / need) anything, just send me a message.",
+          "prompt": "___ (you / need — a formal condition without 'if') further information, please contact our support team.",
           "answer": "Should you need",
           "accept": [],
           "explanation_ru": "Условие без if строится инверсией should + подлежащее + инфинитив без to.",
@@ -375,8 +378,8 @@
         {
           "id": "c1_advanced_inversion_negative_adverbials_and_conditional_inversion_07",
           "kind": "correct",
-          "prompt": "Only then I understood the problem.",
-          "answer": "Only then did I understand the problem.",
+          "prompt": "Keep 'Only then' at the start and correct the sentence: Only then we understood the cause of the outage.",
+          "answer": "Only then did we understand the cause of the outage.",
           "accept": [],
           "explanation_ru": "Ограничительное only then в начале требует инверсии, а вспомогательного глагола нет, поэтому вставляется did.",
           "difficulty": 1
@@ -414,7 +417,7 @@
         "He gave me the file before the meeting.",
         "Only the team lead can approve a production deploy.",
         "She knows the codebase very well.",
-        "I can never remember his surname."
+        "I can never remember his last name."
       ],
       "ru_interference": "Из русского «мне очень нравится» получается наречие между глаголом и дополнением: неверно I like very much this idea. → верно I like this idea very much.",
       "prerequisites": [
@@ -493,7 +496,7 @@
         {
           "id": "c1_advanced_word_order_06",
           "kind": "gap",
-          "prompt": "I ___ (can / never / remember) his surname.",
+          "prompt": "I ___ (remember / never / can) where we keep the staging credentials.",
           "answer": "can never remember",
           "accept": [],
           "explanation_ru": "После модального глагола наречие never занимает среднюю позицию, а смысловой глагол идёт без to.",
@@ -507,7 +510,7 @@
           "accept": [
             "I very much like this idea."
           ],
-          "explanation_ru": "Very much нельзя вставлять между глаголом и дополнением: оно уходит в конец предложения.",
+          "explanation_ru": "Very much нельзя вставлять между глаголом и дополнением: обычно оно уходит в конец предложения, а в более формальной речи может стоять перед глаголом (I very much like this idea).",
           "difficulty": 3
         },
         {
@@ -612,7 +615,7 @@
         {
           "id": "c1_cleft_sentences_and_fronting_for_information_structure_05",
           "kind": "gap",
-          "prompt": "We need a rollback plan. Rewrite the beginning: ___ (what / we / need) is a rollback plan.",
+          "prompt": "We need a rollback plan. Rewrite the beginning as a what-cleft: ___ is a rollback plan.",
           "answer": "What we need",
           "accept": [],
           "explanation_ru": "Wh-cleft строится по схеме what + подлежащее + глагол, и только потом идёт is.",
@@ -632,8 +635,10 @@
           "kind": "gap",
           "prompt": "He only had to renew the certificate. Rewrite: ___ (all / he / have to do) was renew the certificate.",
           "answer": "All he had to do",
-          "accept": [],
-          "explanation_ru": "После all глагол ставится в прошедшем времени по контексту, а относительное местоимение опускается.",
+          "accept": [
+            "All that he had to do"
+          ],
+          "explanation_ru": "После all глагол ставится в прошедшем времени по контексту, а относительное местоимение опускается или становится that.",
           "difficulty": 3
         },
         {
@@ -750,7 +755,7 @@
         {
           "id": "c1_emphatic_structures_do_did_what_clauses_it_clefts_06",
           "kind": "correct",
-          "prompt": "I did understood the problem, but I could not fix it.",
+          "prompt": "Keep the emphatic 'did' and correct the sentence: I did understood the problem, but I could not fix it.",
           "answer": "I did understand the problem, but I could not fix it.",
           "accept": [
             "I did understand the problem, but I couldn't fix it."

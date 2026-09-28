@@ -265,7 +265,10 @@
           "prompt": "Rewrite as one sentence in the present perfect continuous: I started fixing this bug three hours ago and I am still fixing it.",
           "answer": "I have been fixing this bug for three hours.",
           "accept": [
-            "I've been fixing this bug for three hours."
+            "I've been fixing this bug for three hours.",
+            "I have been fixing this bug for the past three hours.",
+            "I have been fixing this bug for the last three hours.",
+            "I have been fixing this bug for three hours now."
           ],
           "explanation_ru": "Незаконченный процесс с указанием длительности сворачивается в have been + V-ing, а ago меняется на for.",
           "difficulty": 3
@@ -375,7 +378,9 @@
           "kind": "gap",
           "prompt": "I clearly remember ___ (lock) the door, so someone else must have opened it.",
           "answer": "locking",
-          "accept": [],
+          "accept": [
+            "having locked"
+          ],
           "explanation_ru": "Говорящий вспоминает уже совершённое действие, значит после remember стоит герундий.",
           "difficulty": 2
         },
@@ -384,7 +389,9 @@
           "kind": "correct",
           "prompt": "Correct the sentence so that it means the driver pulled over in order to look at the radiator: The engine was overheating, so the driver stopped checking the radiator.",
           "answer": "The engine was overheating, so the driver stopped to check the radiator.",
-          "accept": [],
+          "accept": [
+            "The engine was overheating, so the driver stopped in order to check the radiator."
+          ],
           "explanation_ru": "По смыслу водитель остановился, чтобы проверить радиатор: это цель, а не прекращение действия.",
           "difficulty": 3
         },
@@ -510,7 +517,7 @@
         {
           "id": "c2_fronting_and_marked_word_order_for_information_structure_07",
           "kind": "correct",
-          "prompt": "Only after the incident we realized how fragile the system was.",
+          "prompt": "Keep 'Only after' at the start and correct the sentence: Only after the incident we realized how fragile the system was.",
           "answer": "Only after the incident did we realize how fragile the system was.",
           "accept": [],
           "explanation_ru": "После ограничительного only after нужна инверсия: вспомогательный did перед подлежащим и голый инфинитив realize.",

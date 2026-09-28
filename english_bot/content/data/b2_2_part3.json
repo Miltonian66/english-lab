@@ -126,7 +126,9 @@
           "prompt": "meeting / are / we / a / having / now / .",
           "answer": "We are having a meeting now.",
           "accept": [
-            "We're having a meeting now."
+            "We're having a meeting now.",
+            "Now we are having a meeting.",
+            "We are now having a meeting."
           ],
           "explanation_ru": "Have a meeting — действие, поэтому нужен вспомогательный be и форма having.",
           "difficulty": 3
@@ -257,7 +259,9 @@
           "kind": "order",
           "prompt": "before / had / everyone / arrived / left / we / .",
           "answer": "Everyone had left before we arrived.",
-          "accept": [],
+          "accept": [
+            "Before we arrived, everyone had left."
+          ],
           "explanation_ru": "Более раннее событие — в Past Perfect, более позднее после before — в Past Simple.",
           "difficulty": 3
         }
@@ -382,8 +386,8 @@
         {
           "id": "b2_ways_express_future_08",
           "kind": "transform",
-          "prompt": "Rewrite with 'be due to': The plane arrives at 7:40 according to the timetable.",
-          "answer": "The plane is due to arrive at 7:40 according to the timetable.",
+          "prompt": "Rewrite with 'be due to': The plane arrives at 7:40 according to the schedule.",
+          "answer": "The plane is due to arrive at 7:40 according to the schedule.",
           "accept": [
             "The plane is due to arrive at 7:40."
           ],
@@ -515,7 +519,8 @@
           "prompt": "Rewrite with 'If only': I'm sorry I didn't back up the database.",
           "answer": "If only I had backed up the database.",
           "accept": [
-            "If only I'd backed up the database."
+            "If only I'd backed up the database.",
+            "If only I had backed the database up."
           ],
           "explanation_ru": "Сожаление о прошлом после if only передаётся формой Past Perfect.",
           "difficulty": 3
@@ -644,7 +649,9 @@
           "kind": "transform",
           "prompt": "Rewrite with a perfect gerund: He admitted that he had copied the code.",
           "answer": "He admitted having copied the code.",
-          "accept": [],
+          "accept": [
+            "He admitted to having copied the code."
+          ],
           "explanation_ru": "Придаточное с более ранним действием сворачивается в форму having + V3.",
           "difficulty": 3
         }
@@ -741,7 +748,8 @@
           "prompt": "Can you join the call at six? I'd like ___, but I have another meeting.",
           "answer": "to",
           "accept": [
-            "to join"
+            "to join",
+            "to join the call"
           ],
           "explanation_ru": "Глагол join уже назван в вопросе, поэтому в ответе достаточно одного to.",
           "difficulty": 2
@@ -760,7 +768,9 @@
           "kind": "correct",
           "prompt": "I asked her to help, but she didn't want.",
           "answer": "I asked her to help, but she didn't want to.",
-          "accept": [],
+          "accept": [
+            "I asked her to help, but she didn't want to help."
+          ],
           "explanation_ru": "После want обязательно остаётся to, даже если сам глагол опущен.",
           "difficulty": 3
         },
@@ -888,7 +898,9 @@
           "answer": "He suggested that I use a different library.",
           "accept": [
             "He suggested using a different library.",
-            "He suggested I use a different library."
+            "He suggested I use a different library.",
+            "He suggested that I should use a different library.",
+            "He suggested I should use a different library."
           ],
           "explanation_ru": "Suggest не берёт дополнение с инфинитивом: нужно придаточное или герундий.",
           "difficulty": 3
@@ -1283,7 +1295,10 @@
           "kind": "correct",
           "prompt": "My monitor is too small; I need a bigger.",
           "answer": "My monitor is too small; I need a bigger one.",
-          "accept": [],
+          "accept": [
+            "My monitor is too small; I need a bigger monitor.",
+            "My monitor is too small. I need a bigger one."
+          ],
           "explanation_ru": "После прилагательного исчисляемое существительное нельзя просто опустить: его заменяет субститут one.",
           "difficulty": 3
         },
@@ -1293,7 +1308,8 @@
           "prompt": "Rewrite the second clause with ellipsis: I wanted to join the standup, but I wasn't able to join the standup.",
           "answer": "I wanted to join the standup, but I wasn't able to.",
           "accept": [
-            "I wanted to join the standup, but I was not able to."
+            "I wanted to join the standup, but I was not able to.",
+            "I wanted to join the standup, but I couldn't."
           ],
           "explanation_ru": "Повторяющаяся группа после to опускается, а сама частица to остаётся как маркер усечённого инфинитива.",
           "difficulty": 3
@@ -1407,9 +1423,10 @@
           "prompt": "The server ___ (run) for 400 days before it finally crashed.",
           "answer": "had been running",
           "accept": [
-            "had run"
+            "had run",
+            "ran"
           ],
-          "explanation_ru": "Действие тянулось до момента в прошлом, поэтому основной ответ — past perfect continuous had been running, который подчёркивает непрерывность; простой past perfect had run здесь тоже принимается.",
+          "explanation_ru": "Действие тянулось до момента в прошлом, поэтому основной ответ — past perfect continuous had been running, который подчёркивает непрерывность; принимаются и had run, и past simple ran: после before порядок событий ясен из союза.",
           "difficulty": 3
         },
         {
@@ -1428,7 +1445,9 @@
           "kind": "order",
           "prompt": "had / by / left / arrived / everyone / we / the time / .",
           "answer": "By the time we arrived, everyone had left.",
-          "accept": [],
+          "accept": [
+            "Everyone had left by the time we arrived."
+          ],
           "explanation_ru": "By the time вводит придаточное в past simple, а более раннее действие в главной части стоит в past perfect.",
           "difficulty": 3
         }
@@ -1529,8 +1548,10 @@
           "kind": "gap",
           "prompt": "She ___ (never / work) with a remote team before she joined us.",
           "answer": "had never worked",
-          "accept": [],
-          "explanation_ru": "Действие относится к периоду до другого прошедшего события, значит past perfect с never между had и V3.",
+          "accept": [
+            "never worked"
+          ],
+          "explanation_ru": "Действие относится к периоду до другого прошедшего события, значит past perfect с never между had и V3; после before допустим и past simple never worked.",
           "difficulty": 1
         },
         {
@@ -1564,7 +1585,9 @@
           "kind": "transform",
           "prompt": "Rewrite with a perfect participle: After we had checked the backups, we started the upgrade.",
           "answer": "Having checked the backups, we started the upgrade.",
-          "accept": [],
+          "accept": [
+            "After having checked the backups, we started the upgrade."
+          ],
           "explanation_ru": "Придаточное с одинаковым подлежащим сворачивается в having + V3, а союз и подлежащее исчезают.",
           "difficulty": 3
         }
@@ -1634,15 +1657,15 @@
         {
           "id": "c1_advanced_modal_verbs_can_be_able_to_may_might_03",
           "kind": "choice",
-          "prompt": "By the end of the course, you ___ write basic SQL queries.",
+          "prompt": "By the end of the course next month, you ___ write basic SQL queries.",
           "options": [
-            "will can",
+            "were able to",
             "will be able to",
-            "can to",
-            "will could"
+            "will be able",
+            "have been able to"
           ],
           "correct_index": 1,
-          "explanation_ru": "У can нет формы будущего времени, поэтому после will используется be able to.",
+          "explanation_ru": "У can нет будущего времени, поэтому будущая способность — will be able to, с to перед глаголом; were able to и have been able to говорят о прошлом, а курс закончится только в следующем месяце.",
           "difficulty": 2,
           "diagnostic": false
         },
@@ -1706,7 +1729,9 @@
           "accept": [
             "The client might already have signed the contract.",
             "The client may have already signed the contract.",
-            "The client may already have signed the contract."
+            "The client may already have signed the contract.",
+            "The client might have signed the contract already.",
+            "The client may have signed the contract already."
           ],
           "explanation_ru": "Оборот it is possible that с перфектом заменяется на might have + V3, а подлежащее придаточного становится подлежащим предложения.",
           "difficulty": 3

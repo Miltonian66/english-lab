@@ -91,7 +91,7 @@
         {
           "id": "c2_the_subjunctive_and_formulaic_remnants_be_that_as_it_may_come_what_05",
           "kind": "gap",
-          "prompt": "___ (suffice) it to say, the rollback took six hours.",
+          "prompt": "___ (a fixed formula: 'I'll just say that') it to say, the rollback took six hours.",
           "answer": "Suffice",
           "accept": [],
           "explanation_ru": "В обороте suffice it to say глагол стоит в голой форме субъюнктива; форма suffices сюда не подходит.",
@@ -100,8 +100,8 @@
         {
           "id": "c2_the_subjunctive_and_formulaic_remnants_be_that_as_it_may_come_what_06",
           "kind": "gap",
-          "prompt": "Were the incident ___ (repeat) itself next quarter, we would lose the contract.",
-          "answer": "to repeat",
+          "prompt": "Were the incident ___ (recur) next quarter, we would lose the contract.",
+          "answer": "to recur",
           "accept": [],
           "explanation_ru": "После инвертированного Were the incident нужен инфинитив с to: конструкция were + subject + to + V заменяет if-условие.",
           "difficulty": 3
@@ -134,7 +134,7 @@
       "title_en": "Formal concessive and conditional connectors: albeit, notwithstanding, insofar as",
       "source_slug": "",
       "title_ru": "Формальные уступительные и условные коннекторы",
-      "summary_ru": "Эти коннекторы отличаются не столько значением, сколько тем, что стоит после них. Albeit присоединяет не целое предложение, а прилагательное, наречие или короткую фразу: albeit briefly, albeit with reservations. Notwithstanding — предлог, он требует именной группы и может стоять как перед ней, так и после неё: notwithstanding the delay / the delay notwithstanding. Insofar as и inasmuch as вводят полноценное придаточное и означают «в той мере, в какой». Lest вводит придаточное с субъюнктивом и значит «чтобы не». But for + именная группа заменяет условие нереального типа: but for the backup, we would have lost a week. Все эти слова принадлежат письменному формальному регистру и в устной речи звучат книжно.",
+      "summary_ru": "Эти коннекторы отличаются не столько значением, сколько тем, что стоит после них. Albeit присоединяет не целое предложение, а прилагательное, наречие или короткую фразу: albeit briefly, albeit with reservations. Notwithstanding — предлог, он требует именной группы и может стоять как перед ней, так и после неё: notwithstanding the delay / the delay notwithstanding. Insofar as вводит полноценное придаточное и означает «в той мере, в какой»; похожее inasmuch as в современном языке значит скорее «поскольку». Lest вводит придаточное с субъюнктивом и значит «чтобы не». But for + именная группа заменяет условие нереального типа: but for the backup, we would have lost a week. Все эти слова принадлежат письменному формальному регистру и в устной речи звучат книжно.",
       "forms": [
         "albeit + adjective / adverb / prepositional phrase",
         "notwithstanding + noun phrase (or: noun phrase + notwithstanding)",
@@ -214,19 +214,18 @@
         {
           "id": "c2_formal_concessive_and_conditional_connectors_albeit_notwithstanding_05",
           "kind": "gap",
-          "prompt": "The results are reliable ___ ___ (= to the extent that) the assumptions hold.",
+          "prompt": "The results are reliable ___ (= to the extent that) the assumptions hold.",
           "answer": "insofar as",
           "accept": [
-            "in so far as",
-            "inasmuch as"
+            "in so far as"
           ],
-          "explanation_ru": "Значение «в той мере, в какой» передаёт insofar as; вариант в три слова in so far as равноправен.",
+          "explanation_ru": "Значение «в той мере, в какой» передаёт insofar as (раздельное in so far as — британское написание). Inasmuch as в современном языке значит скорее «поскольку».",
           "difficulty": 2
         },
         {
           "id": "c2_formal_concessive_and_conditional_connectors_albeit_notwithstanding_06",
           "kind": "gap",
-          "prompt": "It was a useful meeting, ___ (= although it was) a very short one.",
+          "prompt": "It was a useful meeting, ___ (formal one-word connector = 'although it was'; not 'though') a very short one.",
           "answer": "albeit",
           "accept": [],
           "explanation_ru": "Albeit сжимает уступку до одной фразы без подлежащего и глагола, поэтому оно и стоит здесь перед a very short one.",
@@ -235,12 +234,14 @@
         {
           "id": "c2_formal_concessive_and_conditional_connectors_albeit_notwithstanding_07",
           "kind": "correct",
-          "prompt": "Notwithstanding the team worked overtime, the release slipped by a month.",
+          "prompt": "Keep 'Notwithstanding' at the start and correct the sentence: Notwithstanding the team worked overtime, the release slipped by a month.",
           "answer": "Notwithstanding the team's overtime, the release slipped by a month.",
           "accept": [
-            "Notwithstanding that the team worked overtime, the release slipped by a month."
+            "Notwithstanding that the team worked overtime, the release slipped by a month.",
+            "Notwithstanding the fact that the team worked overtime, the release slipped by a month.",
+            "Notwithstanding the team's working overtime, the release slipped by a month."
           ],
-          "explanation_ru": "Notwithstanding — предлог: после него нужна именная группа, а придаточное возможно только с добавленным that.",
+          "explanation_ru": "Notwithstanding — предлог: после него нужна именная группа, а придаточное возможно только с добавленным that или the fact that.",
           "difficulty": 2
         },
         {
@@ -364,10 +365,10 @@
         {
           "id": "c2_irony_understatement_and_litotes_07",
           "kind": "correct",
-          "prompt": "I didn't learn nothing from the post-mortem.",
-          "answer": "I didn't learn anything from the post-mortem.",
+          "prompt": "I didn't learn nothing from the postmortem.",
+          "answer": "I didn't learn anything from the postmortem.",
           "accept": [
-            "I learned nothing from the post-mortem."
+            "I learned nothing from the postmortem."
           ],
           "explanation_ru": "В стандартном английском одно отрицание на предложение: либо didn't ... anything, либо learned nothing.",
           "difficulty": 2
@@ -492,11 +493,12 @@
         {
           "id": "c2_punctuation_with_grammatical_consequences_07",
           "kind": "correct",
-          "prompt": "The build failed, nobody noticed until Monday.",
-          "answer": "The build failed; nobody noticed until Monday.",
+          "prompt": "The build failed on Friday, nobody noticed until Monday.",
+          "answer": "The build failed on Friday; nobody noticed until Monday.",
           "accept": [
-            "The build failed, and nobody noticed until Monday.",
-            "The build failed. Nobody noticed until Monday."
+            "The build failed on Friday, and nobody noticed until Monday.",
+            "The build failed on Friday. Nobody noticed until Monday.",
+            "The build failed on Friday, but nobody noticed until Monday."
           ],
           "explanation_ru": "Два самостоятельных предложения нельзя соединять одной запятой: нужна точка с запятой, точка или сочинительный союз.",
           "difficulty": 2
@@ -649,7 +651,7 @@
       "title_en": "Advanced modality: epistemic and deontic nuance",
       "source_slug": "",
       "title_ru": "Тонкая модальность: вероятность и долженствование",
-      "summary_ru": "Один и тот же модальный глагол читается двумя способами. Эпистемическое чтение — про вероятность и вывод: The service must be down (я делаю вывод). Деонтическое — про обязанность и разрешение: Access must be logged (таково правило). Шкала уверенности выстраивается так: might < may < could well < should < must. Для вывода о прошлом берут перфектные модальные: must have failed, can't have finished, may well have been. Важно, что отрицательный вывод передаётся через can't, а не через mustn't: He can't be in the office (mustn't читалось бы как запрет). Отсутствие обязанности — это don't have to и needn't, а mustn't означает прямой запрет. Оборот be to выражает договорённость или инструкцию: The release is to be signed off by two reviewers.",
+      "summary_ru": "Один и тот же модальный глагол читается двумя способами. Эпистемическое чтение — про вероятность и вывод: The service must be down (я делаю вывод). Деонтическое — про обязанность и разрешение: Access must be logged (таково правило). Шкала уверенности выстраивается так: might < may < could well < should < must. Для вывода о прошлом берут перфектные модальные: must have failed, can't have finished, may well have been. Отрицательный вывод обычно передаётся через can't или couldn't: He can't be in the office. В американском английском так же работает несокращённое must not (He must not be in the office), а сокращённое mustn't чаще читается как запрет. Отсутствие обязанности — это don't have to и needn't, а mustn't означает прямой запрет. Оборот be to выражает договорённость или инструкцию: The release is to be signed off by two reviewers.",
       "forms": [
         "must / can't / may / might + have + V3 (past deduction)",
         "must / have to / be to (obligation) vs needn't / don't have to (no obligation)",
@@ -692,12 +694,12 @@
           "prompt": "The logs are completely empty, so the nightly job ___ run at all.",
           "options": [
             "can't have",
-            "mustn't have",
+            "didn't have to",
             "needn't have",
             "shouldn't have"
           ],
           "correct_index": 0,
-          "explanation_ru": "Отрицательный вывод о прошлом выражается через can't have; сокращённое mustn't have читается как запрет, а needn't have и shouldn't have означали бы, что действие всё-таки произошло.",
+          "explanation_ru": "Пустые логи дают почти полную уверенность, что задание не запускалось, а такой отрицательный вывод о прошлом передаёт can't have + V3. Didn't have to говорит лишь об отсутствии обязанности, а needn't have и shouldn't have означали бы, что задание всё-таки выполнилось.",
           "difficulty": 2,
           "diagnostic": false
         },
@@ -733,7 +735,7 @@
         {
           "id": "c2_advanced_modality_epistemic_and_deontic_nuance_05",
           "kind": "gap",
-          "prompt": "The office is dark and the door is locked, so everyone ___ ___ (must/leave) already.",
+          "prompt": "The office is dark and the door is locked, so everyone ___ (must/leave) already.",
           "answer": "must have left",
           "accept": [],
           "explanation_ru": "Вывод о завершённом прошлом строится по схеме must + have + третья форма.",
@@ -768,9 +770,11 @@
           "prompt": "Rewrite with a modal of past deduction: I am sure the deployment did not finish.",
           "answer": "The deployment can't have finished.",
           "accept": [
-            "The deployment cannot have finished."
+            "The deployment cannot have finished.",
+            "The deployment couldn't have finished.",
+            "The deployment must not have finished."
           ],
-          "explanation_ru": "Уверенность в том, что событие не произошло, передаётся конструкцией can't have + третья форма.",
+          "explanation_ru": "Уверенность в том, что событие не произошло, передаётся конструкцией can't have + третья форма; couldn't have и американское must not have передают тот же вывод.",
           "difficulty": 3
         }
       ]
@@ -877,20 +881,19 @@
           "kind": "gap",
           "prompt": "The vendor ___ (say) to be unable to reproduce the issue.",
           "answer": "is said",
-          "accept": [],
-          "explanation_ru": "Конструкция be said to переносит ответственность за утверждение на поставщика.",
+          "accept": [
+            "was said"
+          ],
+          "explanation_ru": "Be said to приписывает утверждение неназванным другим («говорят, что…»): говорящий передаёт чужие слова и сам за них не ручается. Is said — так говорят сейчас, was said — так говорили тогда.",
           "difficulty": 1
         },
         {
           "id": "c2_pragmatic_force_softening_boosting_and_distancing_07",
           "kind": "correct",
-          "prompt": "Fix this bug today.",
-          "answer": "Could you fix this bug today?",
-          "accept": [
-            "Could you possibly fix this bug today?",
-            "Would you be able to fix this bug today?"
-          ],
-          "explanation_ru": "Голый императив в сообщении коллеге звучит как приказ; вежливая просьба оформляется вопросом с could или would.",
+          "prompt": "Would you mind to fix this bug today?",
+          "answer": "Would you mind fixing this bug today?",
+          "accept": [],
+          "explanation_ru": "Would you mind — мягкая форма просьбы к коллеге, но после mind идёт только герундий: would you mind fixing, а не to fix.",
           "difficulty": 2
         },
         {
@@ -899,7 +902,8 @@
           "prompt": "Rewrite to distance yourself from the claim, using 'would appear': The cache is the bottleneck.",
           "answer": "The cache would appear to be the bottleneck.",
           "accept": [
-            "It would appear that the cache is the bottleneck."
+            "It would appear that the cache is the bottleneck.",
+            "It would appear the cache is the bottleneck."
           ],
           "explanation_ru": "Would appear превращает категоричное утверждение в осторожный вывод из наблюдений.",
           "difficulty": 3
@@ -972,12 +976,12 @@
           "prompt": "We generated a list of ___.",
           "options": [
             "every user account created before 2019",
-            "every created before 2019 user account",
+            "every user account which created before 2019",
             "every before 2019 created user account",
-            "every user created account before 2019"
+            "every user account creating before 2019"
           ],
           "correct_index": 0,
-          "explanation_ru": "Тяжёлое определение с датой не помещается перед существительным и ставится после него причастным оборотом.",
+          "explanation_ru": "Тяжёлое определение с датой не помещается перед существительным и ставится после него причастным оборотом. Учётные записи создали, поэтому нужно пассивное created: creating и which created без was дают обратный смысл.",
           "difficulty": 1
         },
         {
@@ -1017,8 +1021,8 @@
         {
           "id": "c2_complex_noun_phrases_and_heavy_premodification_07",
           "kind": "correct",
-          "prompt": "They promised a two-weeks delay, not a two-months one.",
-          "answer": "They promised a two-week delay, not a two-month one.",
+          "prompt": "They announced a two-weeks delay, not a two-months one.",
+          "answer": "They announced a two-week delay, not a two-month one.",
           "accept": [],
           "explanation_ru": "Определяющее существительное с числительным всегда стоит в единственном числе.",
           "difficulty": 2
@@ -1028,7 +1032,9 @@
           "kind": "transform",
           "prompt": "Rewrite as a compound noun phrase: the timeout of the pool of connections to the database",
           "answer": "the database connection pool timeout",
-          "accept": [],
+          "accept": [
+            "database connection pool timeout"
+          ],
           "explanation_ru": "Цепочка предлогов сворачивается в цепочку существительных, причём порядок становится обратным.",
           "difficulty": 3
         }
@@ -1154,9 +1160,17 @@
           "prompt": "The consultants made a research and gave us a advice.",
           "answer": "The consultants did some research and gave us some advice.",
           "accept": [
-            "The consultants did research and gave us advice."
+            "The consultants did research and gave us advice.",
+            "The consultants did some research and gave us advice.",
+            "The consultants did research and gave us some advice.",
+            "The consultants did some research and gave us a piece of advice.",
+            "The consultants did research and gave us a piece of advice.",
+            "The consultants conducted some research and gave us some advice.",
+            "The consultants conducted research and gave us advice.",
+            "The consultants conducted some research and gave us advice.",
+            "The consultants conducted research and gave us some advice."
           ],
-          "explanation_ru": "Research идёт с do, advice — с give, и оба слова неисчисляемы, поэтому артикль a невозможен.",
+          "explanation_ru": "Research идёт с do (в формальном тексте — conduct), advice — с give, и оба слова неисчисляемы: артикль a невозможен, вместо него some, a piece of или ничего.",
           "difficulty": 3
         }
       ]
@@ -1249,10 +1263,12 @@
         {
           "id": "c2_figurative_language_and_conventional_metaphor_05",
           "kind": "gap",
-          "prompt": "Sales are up, but morale is ___ (opposite of up) after the layoffs.",
+          "prompt": "Sales are up, but morale is ___ (an adjective or adverb that keeps the up/down metaphor) after the layoffs.",
           "answer": "down",
-          "accept": [],
-          "explanation_ru": "Настроение в английском измеряется по той же вертикальной шкале, что и количество: up и down.",
+          "accept": [
+            "low"
+          ],
+          "explanation_ru": "Настроение в английском измеряется по той же вертикальной шкале, что и количество: sales are up, morale is down или low.",
           "difficulty": 1
         },
         {
@@ -1276,12 +1292,17 @@
         {
           "id": "c2_figurative_language_and_conventional_metaphor_08",
           "kind": "correct",
-          "prompt": "This approach has a big minus: it does not scale.",
-          "answer": "This approach has a serious drawback: it does not scale.",
+          "prompt": "Replace only the calque 'minus' with a natural English noun: This approach has a big minus: it does not scale.",
+          "answer": "This approach has a big drawback: it does not scale.",
           "accept": [
-            "This approach has a major drawback: it does not scale."
+            "This approach has a big downside: it does not scale.",
+            "This approach has a big disadvantage: it does not scale.",
+            "This approach has a big flaw: it does not scale.",
+            "This approach has a big weakness: it does not scale.",
+            "This approach has a big limitation: it does not scale.",
+            "This approach has a big problem: it does not scale."
           ],
-          "explanation_ru": "Калька big minus не входит в английскую сочетаемость; недостаток называют drawback или downside.",
+          "explanation_ru": "Have a big minus — калька с «иметь большой минус»: английское minus в значении «недостаток» разговорное и живёт в паре pluses and minuses. Недостаток решения называют drawback, downside или disadvantage.",
           "difficulty": 3
         }
       ]
@@ -1385,7 +1406,7 @@
         {
           "id": "c2_register_shifting_academic_journalistic_and_colloquial_english_06",
           "kind": "gap",
-          "prompt": "Headline style: The bank has been hit by an outage becomes Bank ___ (hit) by outage.",
+          "prompt": "Headline style: 'The bank has been hit by an outage' becomes 'Bank ___ by outage.'",
           "answer": "hit",
           "accept": [],
           "explanation_ru": "В заголовке вспомогательные глаголы выбрасываются, и остаётся только третья форма смыслового глагола.",
@@ -1397,7 +1418,8 @@
           "prompt": "Dear Ms. Ivanova, I'm gonna send you the report tomorrow.",
           "answer": "Dear Ms. Ivanova, I will send you the report tomorrow.",
           "accept": [
-            "Dear Ms. Ivanova, I am going to send you the report tomorrow."
+            "Dear Ms. Ivanova, I am going to send you the report tomorrow.",
+            "Dear Ms. Ivanova, I will be sending you the report tomorrow."
           ],
           "explanation_ru": "Формальное обращение и разговорное gonna несовместимы в одном письме.",
           "difficulty": 2
@@ -1405,13 +1427,18 @@
         {
           "id": "c2_register_shifting_academic_journalistic_and_colloquial_english_08",
           "kind": "transform",
-          "prompt": "Rewrite in a formal written register: We didn't do the tests because we ran out of time.",
-          "answer": "The tests were not carried out because of a lack of time.",
+          "prompt": "Rewrite in a formal written register, starting with 'The tests' and using the passive of 'carry out' and 'owing to': We didn't do the tests because we ran out of time.",
+          "answer": "The tests were not carried out owing to a lack of time.",
           "accept": [
-            "The tests were not carried out owing to a lack of time.",
-            "The tests were not performed because of a lack of time."
+            "The tests were not carried out owing to lack of time.",
+            "The tests were not carried out owing to time constraints.",
+            "The tests were not carried out owing to insufficient time.",
+            "The tests could not be carried out owing to a lack of time.",
+            "The tests could not be carried out owing to lack of time.",
+            "The tests could not be carried out owing to time constraints.",
+            "The tests could not be carried out owing to insufficient time."
           ],
-          "explanation_ru": "Формальный вариант требует пассива, оборота carry out и предложной причины вместо разговорного run out of time.",
+          "explanation_ru": "Формальный вариант строится на пассиве с carry out и предложной причине owing to + существительное вместо разговорного придаточного because we ran out of time.",
           "difficulty": 3
         }
       ]
@@ -1535,8 +1562,10 @@
           "kind": "correct",
           "prompt": "The team fixed a few of bugs and made few progress on the rest.",
           "answer": "The team fixed a few bugs and made little progress on the rest.",
-          "accept": [],
-          "explanation_ru": "A few не соединяется с of перед голым существительным, а с неисчисляемым progress нужно little.",
+          "accept": [
+            "The team fixed a few of the bugs and made little progress on the rest."
+          ],
+          "explanation_ru": "A few не соединяется с of перед голым существительным: либо a few bugs, либо a few of the bugs. С неисчисляемым progress нужно little.",
           "difficulty": 3
         }
       ]

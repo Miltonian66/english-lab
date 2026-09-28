@@ -503,12 +503,12 @@
       "id": "c1_sp_ai_and_jobs",
       "level": "C1",
       "mode": "opinion",
-      "title_ru": "ИИ и junior-разработчики",
-      "prompt_en": "Will AI tools mostly replace junior developers, or mostly change what juniors do? Take a position and defend it against the obvious objection.",
-      "guidance_ru": "Позиция без обтекаемости, два довода, потом самое сильное возражение и твой ответ на него. В конце скажи, что заставило бы тебя изменить взгляд через пару лет.",
+      "title_ru": "Четырёхдневная рабочая неделя",
+      "prompt_en": "Your country is debating a law that would give everyone a four-day, 32-hour work week with the same pay. Would it work? Take a position, test it on two real jobs, for example a nurse and a café owner, and answer the strongest objection.",
+      "guidance_ru": "Позиция в первой фразе, без обтекаемости. Потом два довода, и каждый проверь на конкретной профессии: что изменится у медсестры, у хозяина кафе, у учителя. Дальше самое сильное возражение — кто оплатит лишние смены и как быть больницам — и твой ответ на него. Вероятность оценивай точно: It would almost certainly…, It is unlikely to… В конце скажи, какие данные — например, итоги годового эксперимента — заставили бы тебя изменить взгляд.",
       "seconds_min": 130,
       "seconds_max": 180,
-      "focus": ["speculation and probability", "concession", "future forms"]
+      "focus": ["speculation and probability", "concession", "hypothetical would"]
     },
     {
       "id": "c1_sp_privacy_line",
@@ -547,9 +547,9 @@
       "id": "c1_sp_city_in_2045",
       "level": "C1",
       "mode": "monologue",
-      "title_ru": "Город через двадцать лет",
-      "prompt_en": "Describe your city as you expect it to be twenty years from now. What will have changed, what will feel exactly the same, and what worries you about that picture?",
-      "guidance_ru": "Два-три изменения: одно-два через will have — By 2045 the city will have built... — остальные через is likely to или is bound to. Потом одно, что точно останется, потом честное опасение с обоснованием. Не уходи в фантастику, держись того, что уже началось.",
+      "title_ru": "Школа в 2045 году",
+      "prompt_en": "Imagine a child who starts school in 2045. How will their school day differ from yours? Describe what will have changed, what will feel exactly the same, and what worries you about that picture.",
+      "guidance_ru": "Два-три изменения: одно-два через will have — By then most schools will have dropped paper textbooks — остальные через is likely to или is bound to. Потом одно, что точно останется: учитель, который замечает заскучавшего ребёнка, перемена, первая дружба. Потом честное опасение с обоснованием. Не уходи в фантастику, держись того, что уже началось: запреты телефонов в классах, онлайн-уроки, нехватка учителей.",
       "seconds_min": 130,
       "seconds_max": 180,
       "focus": ["future perfect", "likely to / bound to", "concession"]
@@ -570,9 +570,9 @@
       "id": "c2_sp_blameless",
       "level": "C2",
       "mode": "opinion",
-      "title_ru": "Разборы без виноватых: работает ли",
-      "prompt_en": "Blameless postmortems are standard advice. Argue where they genuinely work, where they quietly shield weak performance, and how you would draw the line.",
-      "guidance_ru": "Сначала за что практику ценят, потом два случая, где она вырождается, потом твой критерий разграничения. Категоричность на этом уровне слышится слабее, чем разбор нюансов.",
+      "title_ru": "Врачебная ошибка: вина или система",
+      "prompt_en": "At the end of a fourteen-hour shift, a nurse gave a patient the wrong drug: the two vials looked almost identical, and the patient was seriously harmed. Prosecutors want to charge her with a crime. Argue whether honest medical errors should ever be treated as crimes, what that would do to patient safety, and where you would draw the line.",
+      "guidance_ru": "Сначала раздели три вещи: честную ошибку, рискованную небрежность и безрассудство — от этой границы зависит весь ответ. Потом довод за наказание в самом сильном виде: пострадавшая семья, доверие к больницам. Дальше — что уголовное дело сделает с системой: медики перестанут сообщать о собственных промахах. Финал — твой критерий, проверенный на этом случае: четырнадцатичасовая смена и одинаковые флаконы — это вина человека или устройства работы? Категоричность на этом уровне слышится слабее, чем разбор нюансов.",
       "seconds_min": 180,
       "seconds_max": 240,
       "focus": ["nuanced argument", "hedging and qualification", "abstract nouns"]

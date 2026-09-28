@@ -55,6 +55,61 @@
       "correct_index": 1,
       "explanation_ru": "Запах говорящий хвалит (smells great), а вкус нет: кофе much too sweet. Отказываться от него он не собирается — в следующий раз закажет without sugar."
     },
+    {
+      "id": "a1_ls_tshirt_price",
+      "level": "A1",
+      "skill": "detail",
+      "title_ru": "В магазине одежды",
+      "script_en": "Emma: Excuse me, how much is this blue T-shirt?\nSam: It's fifteen dollars. The white one is twelve.\nEmma: OK, I like the blue one. Do you have it in medium?\nSam: Yes, here you go.",
+      "question_en": "How much is the blue T-shirt?",
+      "options": ["Twelve dollars", "Fifteen dollars", "Fifty dollars", "Sixteen dollars"],
+      "correct_index": 1,
+      "explanation_ru": "Продавец называет цену синей футболки: It's fifteen dollars. Twelve — цена белой, а fifteen легко спутать с fifty: в fifteen ударение падает на второй слог."
+    },
+    {
+      "id": "a1_ls_birthday_call",
+      "level": "A1",
+      "skill": "gist",
+      "title_ru": "Звонок маме",
+      "script_en": "Lily: Hi, Mom! Are you free on Saturday?\nAnna: Yes, I think so. Why?\nLily: It's Ben's birthday. We're having a small party at our place at two. Can you come?\nAnna: Of course! I'll bring a cake.",
+      "question_en": "What is the phone call mainly about?",
+      "options": ["Asking Mom to bring a birthday cake", "Inviting Mom to a birthday party", "Planning a party at Mom's place", "Asking Mom about her Saturday plans"],
+      "correct_index": 1,
+      "explanation_ru": "Лили звонит, чтобы позвать маму на день рождения Бена: We're having a small party... Can you come? Торт мама предлагает принести сама (I'll bring a cake), а праздник будет у Лили — at our place."
+    },
+    {
+      "id": "a1_ls_sunday_plan",
+      "level": "A1",
+      "skill": "sequence",
+      "title_ru": "Голосовое от подруги",
+      "script_en": "Hi, it's Kate. Let's meet at the train station tomorrow at ten. First, we'll visit the art museum. Then we'll have lunch in the park. After lunch, we can go shopping, OK? See you!",
+      "question_en": "What will they do right after the museum?",
+      "options": ["Go shopping", "Have lunch in the park", "Go back to the station", "Have coffee at home"],
+      "correct_index": 1,
+      "explanation_ru": "Порядок такой: встреча на вокзале → музей → Then we'll have lunch in the park → After lunch, we can go shopping. Сразу после музея — обед в парке, магазины потом."
+    },
+    {
+      "id": "a1_ls_table_for_two",
+      "level": "A1",
+      "skill": "inference",
+      "title_ru": "Вечером в городе",
+      "script_en": "Jack: Good evening. A table for two, please.\nNina: Sure. Inside or by the window?\nJack: By the window, please. And can we see the menu?\nNina: Here you are. Today's soup is tomato.",
+      "question_en": "Where are Jack and Nina?",
+      "options": ["On a train", "In a restaurant", "In a food store", "At a friend's home"],
+      "correct_index": 1,
+      "explanation_ru": "Место прямо не названо, но A table for two, please, просьба показать menu и Today's soup is tomato — это ресторан. Место у окна бывает и в поезде, но столик на двоих и суп дня там не предлагают."
+    },
+    {
+      "id": "a1_ls_new_apartment",
+      "level": "A1",
+      "skill": "attitude",
+      "title_ru": "Новая квартира",
+      "script_en": "I love my new apartment. It's small, but the kitchen is big and bright. The only problem is the noise. The street is very busy at night. But I'm really happy here.",
+      "question_en": "How does the speaker feel about the new apartment?",
+      "options": ["Happy, but the street is noisy", "Unhappy, because it is too small", "Happy, but the kitchen is too small", "Unhappy, and wants to move"],
+      "correct_index": 0,
+      "explanation_ru": "Говорящий доволен: I love my new apartment и I'm really happy here. Минус один — шум: The only problem is the noise. Маленькая сама квартира, а кухня как раз big and bright; переезжать он не собирается."
+    },
 
     {
       "id": "a2_ls_train_platform",
@@ -110,6 +165,61 @@
       "options": ["Mostly positive", "Completely negative", "Not interested", "The old and new versions are identical"],
       "correct_index": 0,
       "explanation_ru": "Есть один минус со settings, но overall и much better показывают в целом положительную оценку."
+    },
+    {
+      "id": "a2_ls_flight_delay",
+      "level": "A2",
+      "skill": "detail",
+      "title_ru": "Объявление в аэропорту",
+      "script_en": "Attention, please. Passengers on flight three twenty to Denver, your flight is delayed by forty minutes because of snow. The new departure time is five fifty. Please stay near gate twelve. We're sorry for the delay, and thank you for your patience.",
+      "question_en": "What is the new departure time?",
+      "options": ["At 3:20", "At 5:15", "At 5:50", "At 4:40"],
+      "correct_index": 2,
+      "explanation_ru": "Новое время названо прямо: The new departure time is five fifty — 5:50. Three twenty — номер рейса, forty minutes — длительность задержки, а fifty легко спутать с fifteen."
+    },
+    {
+      "id": "a2_ls_pharmacy_visit",
+      "level": "A2",
+      "skill": "gist",
+      "title_ru": "Разговор у прилавка",
+      "script_en": "Ella: Hi, I'd like something for a sore throat, please.\nRon: Sure. Do you have a fever too?\nElla: No, but I've had a bad cough since Monday.\nRon: OK, try this syrup twice a day. If you don't feel better in three days, see a doctor.",
+      "question_en": "What is the conversation mainly about?",
+      "options": ["Making an appointment with a doctor", "Getting medicine for a throat and cough", "Buying medicine to bring down a fever", "Asking when the pharmacy opens on Monday"],
+      "correct_index": 1,
+      "explanation_ru": "Элла просит something for a sore throat, рассказывает про кашель, и ей советуют сироп twice a day. К врачу идти нужно, только если через три дня не станет лучше; температуры у неё нет (No), а Monday — день, когда начался кашель."
+    },
+    {
+      "id": "a2_ls_post_office_way",
+      "level": "A2",
+      "skill": "sequence",
+      "title_ru": "Как пройти",
+      "script_en": "Paul: Excuse me, how do I get to the post office?\nMaya: Go straight to the bank, then turn left. Walk past the park, and it's on your right, next to a small café.\nPaul: So, left at the bank, then past the park?\nMaya: That's right. It's about five minutes.",
+      "question_en": "What will Paul walk past right after he turns left?",
+      "options": ["The bank", "The park", "A small café", "The post office"],
+      "correct_index": 1,
+      "explanation_ru": "Маршрут: straight to the bank → turn left → Walk past the park → почта справа, рядом с кафе. После поворота Пол проходит мимо парка; банк остаётся до поворота, а кафе стоит уже у самой почты."
+    },
+    {
+      "id": "a2_ls_neighbor_voicemail",
+      "level": "A2",
+      "skill": "inference",
+      "title_ru": "Сообщение от соседа",
+      "script_en": "Hi, it's Greg from next door. I found a little brown dog in my backyard this morning. It has a red collar with your phone number on it. Don't worry, it's fine, and it's eating now. Please call me when you get home.",
+      "question_en": "What has probably happened?",
+      "options": ["The listener's dog got out of the house", "Greg has lost his own dog", "The dog got hurt in Greg's backyard", "Greg wants to give the listener a dog"],
+      "correct_index": 0,
+      "explanation_ru": "Прямо это не сказано, но на ошейнике номер телефона слушателя (your phone number), а нашлась собака у соседа — значит, это собака слушателя и она сбежала из дома. С ней всё в порядке (it's fine), а свою собаку Грег не терял."
+    },
+    {
+      "id": "a2_ls_movie_night",
+      "level": "A2",
+      "skill": "attitude",
+      "title_ru": "Вчерашний фильм",
+      "script_en": "Kim: So, how was the movie last night? Everybody's talking about it.\nDan: Well, the actors were great, but it was way too long. Almost three hours!\nKim: Would you see it again?\nDan: Hmm, maybe at home, but not at the movie theater.",
+      "question_en": "What does Dan think of the movie?",
+      "options": ["He loved it and wants to see it again soon", "He liked the actors but found it too long", "He didn't like the actors but liked the story", "He thought it was boring from start to end"],
+      "correct_index": 1,
+      "explanation_ru": "Дэн хвалит актёров (the actors were great), но жалуется на длину: way too long. Almost three hours! Пересмотреть он готов разве что дома (maybe at home), а не в кинотеатре."
     },
 
     {
@@ -167,6 +277,61 @@
       "correct_index": 1,
       "explanation_ru": "Второй approval уже поймал две серьёзные ошибки, но ждать сутки ради мелкой правки документации говорящий считает лишним и предлагает оставить правило только для code changes — то есть сузить его, а не ускорить."
     },
+    {
+      "id": "b1_ls_hotel_breakfast",
+      "level": "B1",
+      "skill": "detail",
+      "title_ru": "Регистрация в отеле",
+      "script_en": "Olivia: Hi, I have a reservation under Martinez, for two nights.\nJake: Let me check. Yes, here it is. You're in room four oh six, on the fourth floor.\nOlivia: Great. And what time is breakfast?\nJake: On weekdays, it's from six thirty to ten, but on weekends it starts at seven.\nOlivia: And tomorrow's Saturday, right?\nJake: That's right.",
+      "question_en": "What time does breakfast start tomorrow?",
+      "options": ["At 6:30", "At 7:00", "At 10:00", "At 6:00"],
+      "correct_index": 1,
+      "explanation_ru": "Завтра суббота (tomorrow's Saturday), а on weekends it starts at seven — в 7:00. С 6:30 завтрак начинается только по будням, а ten — время, когда он заканчивается."
+    },
+    {
+      "id": "b1_ls_bike_share_news",
+      "level": "B1",
+      "skill": "gist",
+      "title_ru": "Городские новости",
+      "script_en": "Good morning, this is City Radio with your local news. Starting next month, the city's bike-sharing program is expanding to the east side, with thirty new stations. Rides under thirty minutes will stay free for anyone with a city card, and visitors will be able to pay by phone. The mayor says the goal is to cut traffic downtown, especially during rush hour.",
+      "question_en": "What is the news story mainly about?",
+      "options": ["Free bus rides for people with a city card", "The bike-sharing program growing to a new area", "A new app that lets visitors pay by phone", "The mayor's plan to close downtown to cars"],
+      "correct_index": 1,
+      "explanation_ru": "Главная новость — расширение велопроката: the city's bike-sharing program is expanding to the east side, with thirty new stations. Бесплатные поездки по city card и оплата по телефону — детали, а закрывать центр для машин никто не собирается: мэр хочет лишь cut traffic."
+    },
+    {
+      "id": "b1_ls_pancake_recipe",
+      "level": "B1",
+      "skill": "sequence",
+      "title_ru": "Семейный рецепт",
+      "script_en": "Sophie: Mom, I'm making your pancakes, but I forgot the order.\nLinda: OK. Mix the flour, sugar, and salt first. Then add the milk and eggs.\nSophie: And the butter? Do I just put it in the pan?\nLinda: No, melt it and add it to the batter at the end. Then let it rest for ten minutes before you cook anything.\nSophie: Got it. Rest, then cook.\nLinda: Exactly.",
+      "question_en": "What should Sophie do right after adding the milk and eggs?",
+      "options": ["Put butter in the pan", "Add the melted butter", "Let the batter rest", "Start cooking the pancakes"],
+      "correct_index": 1,
+      "explanation_ru": "Порядок: flour, sugar, salt → milk and eggs → растопленное масло at the end → rest for ten minutes → жарить. Масло не кладут на сковороду (No, melt it), а отдыхать тесто оставляют уже после масла."
+    },
+    {
+      "id": "b1_ls_rainy_game",
+      "level": "B1",
+      "skill": "inference",
+      "title_ru": "Матч вечером",
+      "script_en": "Tyler: Hey, are you still coming to the game tonight?\nMegan: I'd love to, but have you looked outside?\nTyler: Oh. Yeah, it's really coming down. Do you think they'll play?\nMegan: Last time it was like this, they waited two hours and then sent everyone home. I'll watch it on TV, if they play at all.\nTyler: Fair enough. I'm still going. I've got a good umbrella.",
+      "question_en": "What does Megan expect to happen tonight?",
+      "options": ["The game will be delayed or canceled","The game will start two hours early", "Tyler will decide to stay at home", "The game won't be shown on TV"],
+      "correct_index": 0,
+      "explanation_ru": "Прямо Меган этого не говорит, но вспоминает, что в прошлый раз в такую погоду they waited two hours and then sent everyone home, и добавляет if they play at all — она ждёт задержки или отмены. Матч она собирается смотреть по телевизору, а Тайлер всё равно пойдёт."
+    },
+    {
+      "id": "b1_ls_gym_review",
+      "level": "B1",
+      "skill": "attitude",
+      "title_ru": "Новый спортзал",
+      "script_en": "I've been going to the new gym on Pine Street for a month now. The equipment's brand-new, and the staff are really friendly. But honestly, for eighty dollars a month, I expected longer hours. It closes at nine, which is too early for me. I'll probably stay until my contract ends, and then I'll look for something cheaper.",
+      "question_en": "How does the speaker feel about the gym?",
+      "options": ["Happy with it and planning to stay for years", "Likes it but feels it isn't worth the price", "Dislikes the staff but likes the equipment", "Likes the hours but not the equipment"],
+      "correct_index": 1,
+      "explanation_ru": "Оборудование и персонал говорящий хвалит (brand-new, really friendly), но за eighty dollars a month ждал более долгих часов работы и после окончания контракта поищет something cheaper — цена кажется ему завышенной."
+    },
 
     {
       "id": "b2_ls_budget_numbers",
@@ -206,11 +371,11 @@
       "level": "B2",
       "skill": "inference",
       "title_ru": "Перед запуском",
-      "script_en": "Marketing has already prepared the announcement, and the feature passed all functional tests. Still, the team lead asked everyone to keep Friday evening free and requested an additional rollback rehearsal on Thursday.",
+      "script_en": "So, quick update on Friday's launch. Marketing has already prepared the announcement, and the feature passed all functional tests on Tuesday. Well, technically Wednesday morning, after the last fix went in. On paper, everything's green. Still, the team lead asked everyone to keep Friday evening free and not to plan any trips that weekend. She's also requested an extra rollback rehearsal on Thursday, and she wants support to have instructions for the old version ready, just in case. So, you know, don't book anything yet.",
       "question_en": "What is the team lead probably concerned about?",
       "options": ["Marketing announcing the feature too early", "Problems in production after the launch", "The feature failing its functional tests", "The announcement not being ready in time"],
       "correct_index": 1,
-      "explanation_ru": "Функциональные тесты пройдены и анонс готов, но тимлид просит держать свободным вечер пятницы и ещё раз отрепетировать rollback — он опасается проблем в эксплуатации после запуска. О спешке маркетинга в записи ничего нет."
+      "explanation_ru": "Функциональные тесты пройдены и анонс готов, но тимлид просит держать свободными вечер пятницы и выходные, заказывает extra rollback rehearsal и инструкции к старой версии для поддержки just in case — она опасается проблем в эксплуатации после запуска. О спешке маркетинга в записи ничего нет."
     },
     {
       "id": "b2_ls_vendor_pitch",
@@ -222,6 +387,61 @@
       "options": ["Impressed by the demo and ready to sign after the next release", "Impressed by the demo but doubtful about the vendor's promises", "Unimpressed by the demo but confident in the vendor's roadmap", "Doubtful about the demo but happy with a three-year contract"],
       "correct_index": 1,
       "explanation_ru": "Демо говорящий хвалит (polished), но на каждый трудный вопрос звучало обещание про next release, а контракт требует трёх лет — поэтому он ничего не подпишет, пока не поговорит с existing customers. Ждать следующего релиза он не предлагает."
+    },
+    {
+      "id": "b2_ls_apartment_call",
+      "level": "B2",
+      "skill": "detail",
+      "title_ru": "Звонок по объявлению",
+      "script_en": "Rachel: Hi, I'm calling about the two-bedroom on Maple Avenue. Is it still available?\nVictor: It is. Rent's eighteen hundred a month, and that includes water and trash, but not electricity.\nRachel: OK. And what about the deposit?\nVictor: It's one month's rent, so eighteen hundred. Oh, wait, sorry, for this unit it's actually fifteen hundred, since it hasn't been renovated yet.\nRachel: Got it. And pets? I've got a cat.\nVictor: Cats are fine, but there's a fifty-dollar monthly pet fee.",
+      "question_en": "How much is the deposit for this apartment?",
+      "options": ["$1,500", "$1,800", "$1,850", "$50"],
+      "correct_index": 0,
+      "explanation_ru": "Сначала Виктор называет залог в размере месячной аренды (eighteen hundred), но тут же поправляется: for this unit it's actually fifteen hundred — $1,500. $1,800 — сама аренда, а $50 — ежемесячная плата за питомца."
+    },
+    {
+      "id": "b2_ls_sleep_podcast",
+      "level": "B2",
+      "skill": "gist",
+      "title_ru": "Подкаст о здоровье",
+      "script_en": "Welcome back to Healthy Habits. So, today's question comes from a listener who, um, can't fall asleep before two in the morning. Now, most people blame their phones, and, well, screens do play a part. But the research we looked at, or most of it anyway, points somewhere else: to irregular schedules. If you go to bed at eleven on weekdays and at two or three on weekends, your body never really knows when night is. So before you buy another sleep app, try getting up at the same time every day, even on Sundays.",
+      "question_en": "What is the host's main point?",
+      "options": ["Phones are the main reason people can't fall asleep", "An irregular schedule matters more than screens", "A good sleep app can fix an irregular schedule", "Everyone should go to bed at eleven every night"],
+      "correct_index": 1,
+      "explanation_ru": "Ведущий признаёт, что screens do play a part, но главным называет другое: the research... points somewhere else: to irregular schedules — и советует вставать в одно и то же время каждый день. Покупать приложение он как раз не советует, а eleven — лишь пример будничного отбоя."
+    },
+    {
+      "id": "b2_ls_lost_suitcase",
+      "level": "B2",
+      "skill": "sequence",
+      "title_ru": "У багажной ленты",
+      "script_en": "Hannah: Hi, my suitcase didn't come out on the belt. I just flew in from Atlanta.\nOscar: Sorry about that. Can I see your baggage tag? OK, it looks like it's still in Atlanta. It'll be on the next flight, which lands at, uh, nine tonight. No, nine fifteen.\nHannah: So do I have to come back and pick it up?\nOscar: No. Once it lands, we'll scan it here, and then a courier will take it to your hotel, probably before midnight. Just fill out this form with your address before you leave.\nHannah: Great, thanks so much.",
+      "question_en": "What will happen right after the suitcase is scanned?",
+      "options": ["Hannah will pick it up at the airport", "A courier will take it to her hotel", "It will be put on the next flight", "Hannah will fill out a form"],
+      "correct_index": 1,
+      "explanation_ru": "Порядок: чемодан прилетит следующим рейсом (в 21:15) → we'll scan it here → and then a courier will take it to your hotel. Форму Ханна заполняет сейчас, до ухода из аэропорта, а возвращаться за багажом ей не нужно."
+    },
+    {
+      "id": "b2_ls_swim_meet",
+      "level": "B2",
+      "skill": "inference",
+      "title_ru": "Первые соревнования",
+      "script_en": "Laura: So, how was Jamie's first swim meet?\nChris: Well, he came in last in both races. Actually, no, second to last in the relay.\nLaura: Oh no. Was he upset?\nChris: That's the funny thing. He talked about it the whole way home: the starting blocks, the big timing boards, the older kids' dives. Then he asked if we could go to the pool on Saturday so he could practice his turns.\nLaura: Sounds like you'll be spending a lot of weekends at the pool.",
+      "question_en": "What can be inferred about Jamie?",
+      "options": ["He wants to quit swimming after losing", "He's excited about swimming despite losing", "He won one of his two races", "He only enjoyed watching the older kids"],
+      "correct_index": 1,
+      "explanation_ru": "Прямо это не сказано, но после проигрыша Джейми всю дорогу говорил о соревнованиях (talked about it the whole way home) и сам попросился в субботу в бассейн, чтобы practice his turns, — плавание его увлекло. Он ничего не выиграл: last и second to last."
+    },
+    {
+      "id": "b2_ls_customer_service",
+      "level": "B2",
+      "skill": "attitude",
+      "title_ru": "Звонок в поддержку",
+      "script_en": "So I finally called customer service about the broken blender. And I'll give them this: the woman I spoke to was lovely, really apologetic. But it took forty, no, closer to fifty minutes on hold just to reach her, and then she told me I'd have to mail it back at my own cost. For a blender that's two weeks old! I mean, I'll probably get my money back eventually, but I'm not buying anything from that company again.",
+      "question_en": "How does the speaker feel about the company?",
+      "options": ["Satisfied, because the agent was so helpful", "Frustrated, even though the agent was kind", "Angry with the agent, but happy with the company", "Worried that the money won't be refunded"],
+      "correct_index": 1,
+      "explanation_ru": "Сотрудницу говорящий хвалит (lovely, really apologetic), но почти пятьдесят минут ожидания и пересылка за свой счёт его злят, и вывод такой: I'm not buying anything from that company again. Деньги он, скорее всего, вернёт — probably get my money back eventually."
     },
 
     {
@@ -279,6 +499,61 @@
       "correct_index": 1,
       "explanation_ru": "Цель (more deliberate collaboration) и два общих дня говорящий принимает, но возражает против blanket requirement for everyone и просит явные исключения и пересмотр через три месяца. Новичков он упоминает как тех, кому общие дни помогут, а не как единственных, для кого нужно правило."
     },
+    {
+      "id": "c1_ls_author_interview",
+      "level": "C1",
+      "skill": "detail",
+      "title_ru": "Интервью с писателем",
+      "script_en": "Grace: Your first novel came out when you were in your fifties, so people tend to assume it took you decades to write.\nMartin: Ha, they do. The truth is, I carried the idea around for about twenty years, but the actual writing took just under three. No, let me be honest, closer to four, if you count the rewrite my editor insisted on.\nGrace: The rewrite being the new ending?\nMartin: Right. In the original, the brother survives. My editor said, you know, the book had earned something darker, and she was right, annoyingly.\nGrace: And the sequel?\nMartin: Half-drafted. Don't hold your breath.",
+      "question_en": "Including the rewrite, how long did the actual writing take?",
+      "options": ["Just under three years", "Close to four years", "About twenty years", "Several decades"],
+      "correct_index": 1,
+      "explanation_ru": "Мартин сначала говорит just under three, но сразу поправляется: closer to four, if you count the rewrite. Twenty years он носил идею в голове, а decades — предположение публики, которое он опровергает."
+    },
+    {
+      "id": "c1_ls_zoning_vote",
+      "level": "C1",
+      "skill": "gist",
+      "title_ru": "Утренний выпуск новостей",
+      "script_en": "In a vote late last night, the city council approved a plan that will, in effect, end single-family-only zoning across most of the city. Supporters argue that allowing duplexes and small apartment buildings on ordinary residential lots is the fastest way to bring rents down, or, well, at least to slow their rise. Opponents, many of them longtime homeowners, say the change was rushed and will put pressure on parking and schools. The plan doesn't take effect until January, and the council has promised to review its impact on traffic after the first year. Meanwhile, a petition to put the decision to a public vote is already circulating.",
+      "question_en": "What is the report mainly about?",
+      "options": ["A new city rule that caps rents in apartment buildings", "A council vote allowing more housing on residential lots", "A homeowners' petition against new schools and parking", "A study of how the new zoning has affected traffic"],
+      "correct_index": 1,
+      "explanation_ru": "Главное — решение совета: approved a plan that will... end single-family-only zoning, то есть на обычных участках разрешат дуплексы и небольшие дома. Снижение аренды — лишь надежда сторонников, петиция пока только собирает подписи, а влияние на трафик обещали изучить через год."
+    },
+    {
+      "id": "c1_ls_strike_reroute",
+      "level": "C1",
+      "skill": "sequence",
+      "title_ru": "Перестройка маршрута",
+      "script_en": "Nora: So the train strike's confirmed for Tuesday. What does that do to our plan?\nAdam: Well, we can't get to the coast on Tuesday, so let's flip it. We'll do the wine country first and pick up the rental car on Monday afternoon instead of Wednesday.\nNora: And drop it off where?\nAdam: Back in the city, Wednesday night. Then Thursday morning we take the train to the coast, assuming the strike's over by then.\nNora: And if it isn't?\nAdam: Then we just keep the car an extra day and drive. Oh, and first thing tomorrow we need to move the coast hotel from Tuesday to Thursday, before the prices jump.",
+      "question_en": "Under the new plan, what will they do right after returning the car?",
+      "options": ["Drive out to the wine country", "Take the train to the coast", "Keep the car for an extra day", "Move the coast hotel booking"],
+      "correct_index": 1,
+      "explanation_ru": "Новый порядок: в понедельник взять машину → винодельческий край → вернуть её в городе в среду вечером → Then Thursday morning we take the train to the coast. Лишний день с машиной — лишь запасной вариант, если забастовка не кончится, а отель переносят first thing tomorrow, ещё до поездки."
+    },
+    {
+      "id": "c1_ls_family_voicemail",
+      "level": "C1",
+      "skill": "inference",
+      "title_ru": "Голосовое от родных",
+      "script_en": "Hey, it's me. So I talked to Dad this afternoon. He says he's fine, and, you know, he probably is, mostly. But he asked me twice, maybe three times, what day it was, and when I mentioned his doctor's appointment, he said he'd never heard of it, even though he's the one who booked it. The fridge was nearly empty, too, which isn't like him at all. I don't want to make a big deal out of it, but maybe we should talk this weekend about, well, how often one of us drops by. Anyway, call me back when you can.",
+      "question_en": "What is the caller most likely worried about?",
+      "options": ["Dad has stopped taking his medicine", "Dad is struggling to manage on his own","Dad has argued with his doctor", "Dad can no longer afford groceries"],
+      "correct_index": 1,
+      "explanation_ru": "Прямо об этом не сказано, но отец несколько раз спрашивает, какой сегодня день, не помнит о приёме, который сам записал, а холодильник почти пустой (which isn't like him). Поэтому звонящий предлагает обсудить, how often one of us drops by, — отцу, похоже, уже трудно справляться одному. О лекарствах, ссоре с врачом или деньгах речи нет."
+    },
+    {
+      "id": "c1_ls_theater_debate",
+      "level": "C1",
+      "skill": "attitude",
+      "title_ru": "После спектакля",
+      "script_en": "Ruth: So, what did you make of it? You were very quiet at intermission.\nLeon: I was trying to work out whether I liked it. The staging was extraordinary: that revolving set, the lighting in the second act.\nRuth: But?\nLeon: But I never once cared what happened to anyone. It's as if the director was so pleased with the machinery that the actors became, well, furniture. Technically brilliant, emotionally, I'd say hollow. No, that's harsh. Cold.\nRuth: I'd have said the same about the first half, honestly, but the ending really got me.\nLeon: See, by then I was checking my watch.",
+      "question_en": "What is Leon's opinion of the play?",
+      "options": ["He admired the staging but found it emotionally cold", "He was bored in the first half but loved the ending", "He disliked the set but thought the acting was strong", "He found it moving but too long and too technical"],
+      "correct_index": 0,
+      "explanation_ru": "Постановку Леон хвалит (The staging was extraordinary), но ему ни разу не было дела до героев: I never once cared what happened to anyone, — и смягчает hollow до Cold. Финал понравился Рут, а Леон к тому времени смотрел на часы."
+    },
 
     {
       "id": "c2_ls_forecast_caveat",
@@ -334,6 +609,61 @@
       "options": ["Accepts the aim but objects to decisions moving upward", "Welcomes the new roles but wishes consultation had started earlier", "Doubts that duplication exists but likes the new chart", "Accepts the new chart but wants lower delivery targets"],
       "correct_index": 0,
       "explanation_ru": "Цель убрать duplication говорящий называет legitimate concern, но критикует то, что решения уходят наверх (moves decision-making upward), и поддержит консолидацию, только если authority moved closer to the teams. Позднюю consultation он приводит как ещё один симптом, а новые роли и схему не одобряет."
+    },
+    {
+      "id": "c2_ls_walking_study",
+      "level": "C2",
+      "skill": "detail",
+      "title_ru": "Новости науки",
+      "script_en": "And finally, a story that's been, shall we say, a little overhyped. You may have seen headlines claiming that a daily walk cuts your risk of dementia in half. The study behind them is real, and fairly large: about twelve thousand adults, well, twelve and a half thousand, followed for nine years. But what it actually found is that people who walked roughly forty minutes a day had a risk about a third lower than those who barely walked at all. Not half. A third. And that's an association, not proof of cause, since people in the early stages of decline may simply walk less. The authors themselves are careful on this point; it's the press releases that weren't. None of which, of course, is a reason to stay on the couch.",
+      "question_en": "According to the study, how much lower was the risk for people who walked about forty minutes a day?",
+      "options": ["About half", "About a third", "About forty percent", "About twelve percent"],
+      "correct_index": 1,
+      "explanation_ru": "Заголовки обещали in half, но ведущий уточняет: a risk about a third lower... Not half. A third. Forty — это минуты ходьбы в день, а twelve — тысячи участников исследования."
+    },
+    {
+      "id": "c2_ls_tourist_fee",
+      "level": "C2",
+      "skill": "gist",
+      "title_ru": "Интервью о туризме",
+      "script_en": "Julia: Your city's introduced a daily fee for day-trippers. Critics are calling it a tax on curiosity. Is that fair?\nMarco: It's a good line, I'll give them that. But the fee isn't really about revenue; it barely covers the cost of collecting it. The point is to spread visitors out. On a peak Saturday we get, what, eighty thousand people, some days closer to ninety, in a historic center built for maybe a tenth of that.\nJulia: So you're pricing people out.\nMarco: We're pricing people into Tuesday. The fee only applies on about thirty peak days, and it's waived for anyone staying overnight, because those visitors actually sustain local businesses rather than just, you know, passing through.\nJulia: And if it doesn't work?\nMarco: Then we've learned something cheaply, and we'll drop it.",
+      "question_en": "What is Marco's main argument?",
+      "options": ["The fee mainly raises money to protect the historic center", "The fee is meant to spread visits out, not to raise money", "The fee is meant to keep day-trippers away from the city", "The fee should also apply to visitors who stay overnight"],
+      "correct_index": 1,
+      "explanation_ru": "Марко прямо отделяет сбор от дохода (isn't really about revenue) и называет цель: to spread visitors out — We're pricing people into Tuesday, то есть переносит поездки на спокойные дни. Отпугивать туристов вообще он не хочет, а для тех, кто ночует в городе, сбор отменён (waived)."
+    },
+    {
+      "id": "c2_ls_house_sale_steps",
+      "level": "C2",
+      "skill": "sequence",
+      "title_ru": "Продажа дома",
+      "script_en": "Hi, it's Deborah from Lane Realty, following up on the sale. So, the buyers' lender has, finally, signed off on the appraisal, which means we can move forward, but the order really matters here. Before anything gets scheduled, I need the signed disclosure form back; I can't release the draft contract without it. Once the buyers have reviewed that draft, their inspector wants one more visit. The whole house again, no, sorry, just the roof. Assuming nothing new turns up, we'll book the closing, and you hand over the keys at the closing itself, not before, whatever their agent suggests. Oh, and please don't cancel your home insurance until the funds have actually cleared. Call me if any of that's unclear.",
+      "question_en": "What must happen immediately before the roof inspection?",
+      "options": ["The seller returns the signed disclosure form", "The buyers review the draft contract", "The seller hands over the keys", "The closing date is booked"],
+      "correct_index": 1,
+      "explanation_ru": "Цепочка такая: подписанная disclosure form → черновик договора → Once the buyers have reviewed that draft, their inspector wants one more visit → closing и передача ключей прямо на нём. Непосредственно перед осмотром крыши покупатели изучают черновик; форма нужна раньше, а closing и ключи — позже."
+    },
+    {
+      "id": "c2_ls_coach_press",
+      "level": "C2",
+      "skill": "inference",
+      "title_ru": "Пресс-конференция тренера",
+      "script_en": "Kevin: Coach, you took Marcus Sanchez off at halftime. Is he injured?\nDiane: No, he's fine. Fully fit.\nKevin: Then why bench him in a game you needed to win?\nDiane: Look, we have to think beyond tonight. The young guys need minutes, and, frankly, they need to learn to win without leaning on one player.\nKevin: There've been reports of offers from Europe. Any truth to that?\nDiane: I'm not going to comment on rumors. What I will say is that Marcus has given this club seven great years, eight, actually, if you count the youth team, and whatever happens this summer, people here will remember that.\nKevin: That sounds a lot like a goodbye.\nDiane: It's a thank-you. Next question.",
+      "question_en": "What do the coach's answers suggest?",
+      "options": ["Sanchez is hiding an injury from the press", "Sanchez will leave the club soon","The coach is unhappy with how Sanchez played", "The young players will be sold this summer"],
+      "correct_index": 1,
+      "explanation_ru": "Прямо тренер ничего не подтверждает, но подводит итог годам Маркуса в клубе (has given this club seven great years), добавляет whatever happens this summer и заранее учит молодых выигрывать without leaning on one player — всё это похоже на подготовку к его уходу. Травму она отрицает (Fully fit), а претензий к его игре не высказывает."
+    },
+    {
+      "id": "c2_ls_library_documentary",
+      "level": "C2",
+      "skill": "attitude",
+      "title_ru": "Рецензия на документальный фильм",
+      "script_en": "I'll admit I went in expecting to hate it. A three-hour documentary about, of all things, a public library sounded like a punishment. And the first hour does test your patience: no narration, no music, just meetings about budgets. But somewhere in the second hour, I realized I'd stopped checking the time. Watching a librarian spend twenty minutes helping an elderly man fill out a benefits form is more moving than most thrillers manage. Is it too long? Probably, yes, by about forty minutes, maybe even an hour. Would I sit through it again? Honestly, I'm not sure I would. But I'm glad I saw it once, and I've been recommending it to, well, my more patient friends.",
+      "question_en": "What is the speaker's overall attitude toward the documentary?",
+      "options": ["Bored by it and sorry to have gone", "Won over by it, despite finding it too long", "Eager to see it again as soon as possible", "Moved mostly by the meetings about budgets"],
+      "correct_index": 1,
+      "explanation_ru": "Говорящий шёл с мыслью, что фильм ему не понравится (expecting to hate it), и признаёт, что он too long, но со второго часа перестал смотреть на часы, называет эпизод с библиотекарем more moving than most thrillers и рад, что посмотрел. Пересматривать он не уверен (I'm not sure I would), а встречи о бюджетах — как раз скучная часть."
     }
   ]
 }

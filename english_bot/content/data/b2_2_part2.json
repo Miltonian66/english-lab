@@ -32,7 +32,7 @@
         {
           "id": "b2_possessive_s_with_time_expressions_two_hours_walk_01",
           "kind": "choice",
-          "prompt": "She has five ___ experience with Python.",
+          "prompt": "My aunt has thirty ___ experience as a nurse in a children's hospital.",
           "options": [
             "years",
             "year's",
@@ -40,13 +40,13 @@
             "years's"
           ],
           "correct_index": 2,
-          "explanation_ru": "Множественное число years уже оканчивается на -s, поэтому добавляем только апостроф после него.",
+          "explanation_ru": "Thirty years — множественное число на -s, поэтому апостроф ставится после s: thirty years' experience. Year's — единственное число, years без апострофа теряет связь с experience, years's не пишут.",
           "difficulty": 1
         },
         {
           "id": "b2_possessive_s_with_time_expressions_two_hours_walk_02",
           "kind": "choice",
-          "prompt": "The office is about ten ___ walk from the station.",
+          "prompt": "Our cabin is about twenty ___ drive from the nearest town.",
           "options": [
             "minutes",
             "minute's",
@@ -54,13 +54,13 @@
             "minutes's"
           ],
           "correct_index": 2,
-          "explanation_ru": "Ten minutes - множественное число, значит форма minutes' с апострофом после -s.",
+          "explanation_ru": "Twenty minutes — множественное число на -s, значит форма minutes' с апострофом после -s: twenty minutes' drive.",
           "difficulty": 1
         },
         {
           "id": "b2_possessive_s_with_time_expressions_two_hours_walk_03",
           "kind": "choice",
-          "prompt": "___ meeting was canceled at the last minute.",
+          "prompt": "___ game was canceled at the last minute because of the storm.",
           "options": [
             "Yesterday",
             "Yesterdays",
@@ -68,7 +68,7 @@
             "Yesterdays'"
           ],
           "correct_index": 2,
-          "explanation_ru": "Слова yesterday, today, tomorrow перед существительным берут обычное 's: yesterday's meeting.",
+          "explanation_ru": "Слова yesterday, today, tomorrow перед существительным берут обычное 's: yesterday's game.",
           "difficulty": 1
         },
         {
@@ -88,7 +88,7 @@
         {
           "id": "b2_possessive_s_with_time_expressions_two_hours_walk_05",
           "kind": "gap",
-          "prompt": "The team was given a ___ (month) notice before the reorganization.",
+          "prompt": "The tenants were given a ___ (month) notice before the rent went up.",
           "answer": "month's",
           "accept": [],
           "explanation_ru": "Единственное число month получает 's: a month's notice.",
@@ -97,7 +97,7 @@
         {
           "id": "b2_possessive_s_with_time_expressions_two_hours_walk_06",
           "kind": "gap",
-          "prompt": "They finished the audit after three ___ (week) work.",
+          "prompt": "They finished renovating the kitchen after three ___ (week) work.",
           "answer": "weeks'",
           "accept": [],
           "explanation_ru": "Three weeks - множественное число, поэтому апостроф ставится после -s: weeks'.",
@@ -106,10 +106,10 @@
         {
           "id": "b2_possessive_s_with_time_expressions_two_hours_walk_07",
           "kind": "correct",
-          "prompt": "I have three years experience in backend development.",
-          "answer": "I have three years' experience in backend development.",
+          "prompt": "I have three years experience as a lifeguard.",
+          "answer": "I have three years' experience as a lifeguard.",
           "accept": [
-            "I have three years of experience in backend development."
+            "I have three years of experience as a lifeguard."
           ],
           "explanation_ru": "Без апострофа сочетание разваливается: нужно three years' experience или three years of experience.",
           "difficulty": 3
@@ -121,6 +121,55 @@
           "answer": "They gave us two weeks' notice.",
           "accept": [],
           "explanation_ru": "Порядок обычный: подлежащее, глагол, лицо, затем группа two weeks' notice.",
+          "difficulty": 3
+        },
+        {
+          "id": "b2_possessive_s_with_time_expressions_two_hours_walk_09",
+          "kind": "cloze",
+          "prompt": "After a long ___ (day) work at the hospital, Kenji likes to walk to the lake. It's only fifteen ___ (minute) walk from his house. On Friday he's starting two ___ (week) vacation, and he's already packed. He read about a great campsite in ___ (yesterday) newspaper.",
+          "gaps": [
+            [
+              "day's"
+            ],
+            [
+              "minutes'"
+            ],
+            [
+              "weeks'"
+            ],
+            [
+              "yesterday's"
+            ]
+          ],
+          "explanation_ru": "Выражения времени перед существительным берут притяжательную форму: в единственном числе 's (a day's work, yesterday's newspaper), во множественном на -s — только апостроф (fifteen minutes' walk, two weeks' vacation).",
+          "difficulty": 2
+        },
+        {
+          "id": "b2_possessive_s_with_time_expressions_two_hours_walk_10",
+          "kind": "choice",
+          "prompt": "Как сказать по-английски: «Мы опоздали на рейс из-за трёхчасовой пробки»?",
+          "options": [
+            "We missed the flight because of a three-hour traffic jam.",
+            "We missed the flight because of a three-hours traffic jam.",
+            "We missed the flight because of a three hours' traffic jam.",
+            "We missed the flight because of a three-hour's traffic jam."
+          ],
+          "correct_index": 0,
+          "explanation_ru": "С артиклем a число и существительное превращаются в прилагательное через дефис и в единственном числе: a three-hour traffic jam. Притяжательная форма three hours' возможна только без a.",
+          "difficulty": 2,
+          "diagnostic": true
+        },
+        {
+          "id": "b2_possessive_s_with_time_expressions_two_hours_walk_11",
+          "kind": "transform",
+          "prompt": "Rewrite with a possessive time expression (like 'two days' journey'): It takes ten minutes to walk from our hotel to the concert hall.",
+          "answer": "The concert hall is ten minutes' walk from our hotel.",
+          "accept": [
+            "Our hotel is ten minutes' walk from the concert hall.",
+            "The concert hall is only ten minutes' walk from our hotel.",
+            "It's ten minutes' walk from our hotel to the concert hall."
+          ],
+          "explanation_ru": "Расстояние во времени передаётся притяжательной формой: ten minutes' walk — «десять минут пешком». Minutes — множественное число на -s, поэтому апостроф после s.",
           "difficulty": 3
         }
       ]
@@ -157,7 +206,7 @@
         {
           "id": "b2_distancing_01",
           "kind": "choice",
-          "prompt": "It ___ that the vulnerability appeared in 2019.",
+          "prompt": "It ___ that the painting was stolen sometime in the 1990s.",
           "options": [
             "is believed",
             "believes",
@@ -171,7 +220,7 @@
         {
           "id": "b2_distancing_02",
           "kind": "choice",
-          "prompt": "___ are believed to be no serious security risks in this release.",
+          "prompt": "___ are believed to be fewer than fifty wolves left in the national park.",
           "options": [
             "It",
             "There",
@@ -179,13 +228,13 @@
             "These"
           ],
           "correct_index": 1,
-          "explanation_ru": "Отрицание существования вводится только оборотом there + are believed to be; личное местоимение с группой no serious security risks невозможно.",
+          "explanation_ru": "Существование чего-то вводится оборотом there + are believed to be: There are believed to be fewer than fifty wolves. It, they и these не могут вводить существование с последующим to be + существительное.",
           "difficulty": 1
         },
         {
           "id": "b2_distancing_03",
           "kind": "choice",
-          "prompt": "He is thought ___ the company last year.",
+          "prompt": "The musician is thought ___ the country last year.",
           "options": [
             "to leave",
             "to have left",
@@ -199,7 +248,7 @@
         {
           "id": "b2_distancing_04",
           "kind": "choice",
-          "prompt": "I haven't checked the logs myself, but ___, the servers were restarted twice last night.",
+          "prompt": "I haven't read the article myself, but ___, the mayor is going to resign next month.",
           "options": [
             "Apparently",
             "Obviously",
@@ -207,25 +256,25 @@
             "Personally"
           ],
           "correct_index": 0,
-          "explanation_ru": "Говорящий сам логи не проверял и передаёт чужие сведения, поэтому нужно дистанцирующее apparently («судя по всему»); obviously и certainly выражают уверенность, а personally — личное мнение.",
+          "explanation_ru": "Говорящий сам статью не читал и передаёт чужие сведения, поэтому нужно дистанцирующее apparently («судя по всему»); obviously и certainly выражают уверенность, а personally — личное мнение.",
           "difficulty": 1
         },
         {
           "id": "b2_distancing_05",
           "kind": "gap",
-          "prompt": "It ___ (report) that the company loses money every year.",
-          "answer": "is reported",
+          "prompt": "It ___ (claim) that the local zoo loses money every year.",
+          "answer": "is claimed",
           "accept": [
-            "was reported",
-            "has been reported"
+            "was claimed",
+            "has been claimed"
           ],
-          "explanation_ru": "Безличная модель It + be + V3 + that: в настоящем is reported, о прошлом сообщении — was reported или has been reported.",
+          "explanation_ru": "Безличная модель It + be + V3 + that снимает с говорящего ответственность за сведения: в настоящем is claimed, о прошлом сообщении — was claimed или has been claimed.",
           "difficulty": 2
         },
         {
           "id": "b2_distancing_06",
           "kind": "gap",
-          "prompt": "The CEO ___ (say) to be extremely demanding.",
+          "prompt": "The new head chef ___ (say) to be extremely demanding.",
           "answer": "is said",
           "accept": [
             "was said"
@@ -236,10 +285,10 @@
         {
           "id": "b2_distancing_07",
           "kind": "correct",
-          "prompt": "The startup is said that it has lost two big clients.",
-          "answer": "The startup is said to have lost two big clients.",
+          "prompt": "The restaurant is said that it has lost its Michelin star.",
+          "answer": "The restaurant is said to have lost its Michelin star.",
           "accept": [
-            "It is said that the startup has lost two big clients."
+            "It is said that the restaurant has lost its Michelin star."
           ],
           "explanation_ru": "После is said идёт инфинитив, а не придаточное с that; действие раньше момента речи даёт to have lost.",
           "difficulty": 3
@@ -247,13 +296,70 @@
         {
           "id": "b2_distancing_08",
           "kind": "transform",
-          "prompt": "Rewrite starting with 'He': It is believed that he works for a competitor.",
-          "answer": "He is believed to work for a competitor.",
+          "prompt": "Rewrite starting with 'He': It is believed that he lives somewhere in Portugal.",
+          "answer": "He is believed to live somewhere in Portugal.",
           "accept": [
-            "He is believed to be working for a competitor."
+            "He is believed to be living somewhere in Portugal."
           ],
           "explanation_ru": "При переходе к личной модели подлежащее придаточного становится подлежащим главного, а глагол - инфинитивом.",
           "difficulty": 3
+        },
+        {
+          "id": "b2_distancing_09",
+          "kind": "cloze",
+          "prompt": "Nobody knows exactly what happened at the old mill last night. A fire ___ (believe) to have started at around midnight. The owner ___ (think) to be abroad at the moment. ___ (appear → adverb), nobody was inside the building. There ___ (say) to be serious damage to the roof.",
+          "gaps": [
+            [
+              "is believed",
+              "was believed"
+            ],
+            [
+              "is thought"
+            ],
+            [
+              "Apparently"
+            ],
+            [
+              "is said"
+            ]
+          ],
+          "explanation_ru": "Чтобы не утверждать от себя, используют пассив глаголов сообщения: A fire is believed to have started, The owner is thought to be, There is said to be. Apparently — «судя по всему»: говорящий передаёт чужие сведения.",
+          "difficulty": 2
+        },
+        {
+          "id": "b2_distancing_10",
+          "kind": "choice",
+          "prompt": "A: Is the new bakery any good?\nB: I haven't been there yet, but it ___ to be very popular — there's always a line.",
+          "options": [
+            "seems",
+            "is seemed",
+            "seems that",
+            "is seeming"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Seem + to + инфинитив смягчает утверждение: «похоже, что». Seem не бывает в пассиве и в continuous, а seems that требует придаточного с подлежащим (it seems that it is popular).",
+          "difficulty": 1,
+          "diagnostic": true
+        },
+        {
+          "id": "b2_distancing_11",
+          "kind": "transform",
+          "prompt": "Rewrite using the word in capitals (do not change it): People say that the old castle is haunted. SAID",
+          "answer": "The old castle is said to be haunted.",
+          "accept": [
+            "It is said that the old castle is haunted."
+          ],
+          "explanation_ru": "Личная модель: подлежащее + is said + to + инфинитив (the castle is said to be haunted), безличная — It is said that + придаточное. Смешивать их (is said that it is) нельзя.",
+          "difficulty": 2
+        },
+        {
+          "id": "b2_distancing_12",
+          "kind": "gap",
+          "prompt": "Nobody knows who wrote the letter, but it ___ (believe) to be more than a hundred years old.",
+          "answer": "is believed",
+          "accept": [],
+          "explanation_ru": "Личная модель дистанцирования: подлежащее + is believed + to + инфинитив. Письмо само ни во что не верит, поэтому нужен пассив, а не believes.",
+          "difficulty": 1
         }
       ]
     },
@@ -288,7 +394,7 @@
         {
           "id": "b2_passive_verbs_with_two_objects_01",
           "kind": "choice",
-          "prompt": "They offered Anna a new position. Anna ___ a new position.",
+          "prompt": "They offered Priya a place at the university. Priya ___ a place at the university.",
           "options": [
             "was offered",
             "offered",
@@ -296,13 +402,13 @@
             "has offered"
           ],
           "correct_index": 0,
-          "explanation_ru": "Анна не предлагала, а получала предложение, поэтому нужен пассив was offered.",
+          "explanation_ru": "Прия не предлагала, а получила предложение, поэтому нужен пассив was offered; лицо стало подлежащим, а a place осталось после глагола.",
           "difficulty": 1
         },
         {
           "id": "b2_passive_verbs_with_two_objects_02",
           "kind": "choice",
-          "prompt": "The company paid the contractors a bonus on Friday. The contractors ___ a bonus on Friday.",
+          "prompt": "The city paid the volunteers a small fee on Friday. The volunteers ___ a small fee on Friday.",
           "options": [
             "were paid",
             "was paid",
@@ -310,13 +416,13 @@
             "paid"
           ],
           "correct_index": 0,
-          "explanation_ru": "Подлежащим пассива стало лицо contractors во множественном числе, а второе дополнение a bonus осталось после глагола: were paid a bonus.",
+          "explanation_ru": "Подлежащим пассива стало лицо volunteers во множественном числе, а второе дополнение a small fee осталось после глагола: were paid a small fee.",
           "difficulty": 1
         },
         {
           "id": "b2_passive_verbs_with_two_objects_03",
           "kind": "choice",
-          "prompt": "All new hires ___ a laptop on their first day.",
+          "prompt": "All new students ___ a campus map on their first day.",
           "options": [
             "are given",
             "are giving",
@@ -324,13 +430,13 @@
             "are gave"
           ],
           "correct_index": 0,
-          "explanation_ru": "Ноутбук получают, а не выдают сами новички, поэтому пассив are given.",
+          "explanation_ru": "Карту получают, а не выдают сами студенты, поэтому пассив are given; are giving значило бы, что раздают они.",
           "difficulty": 1
         },
         {
           "id": "b2_passive_verbs_with_two_objects_04",
           "kind": "choice",
-          "prompt": "A free trial was offered ___ every new customer.",
+          "prompt": "A free dessert was offered ___ every guest at the wedding.",
           "options": [
             "to",
             "for",
@@ -338,7 +444,7 @@
             "with"
           ],
           "correct_index": 0,
-          "explanation_ru": "Если подлежащим стал предмет, лицо вводится предлогом to: offered to every new customer.",
+          "explanation_ru": "Если подлежащим стал предмет, лицо вводится предлогом to: offered to every guest. For, of и with с offer в этом значении не используются.",
           "difficulty": 2
         },
         {
@@ -375,11 +481,61 @@
         {
           "id": "b2_passive_verbs_with_two_objects_08",
           "kind": "transform",
-          "prompt": "Rewrite in the passive starting with 'The team': They promised the team a bonus.",
-          "answer": "The team was promised a bonus.",
+          "prompt": "Rewrite in the passive starting with 'The players': They promised the players a bonus.",
+          "answer": "The players were promised a bonus.",
           "accept": [],
           "explanation_ru": "Лицо становится подлежащим, второе дополнение a bonus остаётся после глагола.",
           "difficulty": 3
+        },
+        {
+          "id": "b2_passive_verbs_with_two_objects_09",
+          "kind": "cloze",
+          "prompt": "When I moved to Seoul, I ___ (give) a warm welcome by my neighbors. On my first day I ___ (show) around the market by an old woman called Mrs. Park. A week later I ___ (offer) a free Korean class at the community center. But I ___ (not / tell) about the rules for sorting trash, so I made a lot of mistakes.",
+          "gaps": [
+            [
+              "was given"
+            ],
+            [
+              "was shown"
+            ],
+            [
+              "was offered"
+            ],
+            [
+              "wasn't told",
+              "was not told",
+              "hadn't been told",
+              "had not been told"
+            ]
+          ],
+          "explanation_ru": "С глаголами give, show, offer, tell подлежащим пассива обычно становится человек, которому что-то дали или сказали: I was given a welcome, I was shown around, I wasn't told about the rules. Отрицание — be + not + V3.",
+          "difficulty": 2
+        },
+        {
+          "id": "b2_passive_verbs_with_two_objects_10",
+          "kind": "transform",
+          "prompt": "Rewrite using the word in capitals (do not change it): The hotel gave us a room with a view of the sea. WERE",
+          "answer": "We were given a room with a view of the sea.",
+          "accept": [
+            "We were given a room with a view of the sea by the hotel."
+          ],
+          "explanation_ru": "Лицо (us) становится подлежащим пассива, а второе дополнение (a room) остаётся после глагола: We were given a room. Were требует причастия given, а не gave.",
+          "difficulty": 2
+        },
+        {
+          "id": "b2_passive_verbs_with_two_objects_11",
+          "kind": "choice",
+          "prompt": "Как сказать по-английски: «Мне предложили скидку 20 процентов»?",
+          "options": [
+            "I was offered a 20 percent discount.",
+            "To me was offered a 20 percent discount.",
+            "Me was offered a 20 percent discount.",
+            "I offered a 20 percent discount."
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Русское «мне» (дательный падеж) в английском пассиве становится подлежащим I: I was offered. To me в начале и me в роли подлежащего — кальки, а I offered значит «я предложил».",
+          "difficulty": 1,
+          "diagnostic": true
         }
       ]
     },
@@ -415,15 +571,15 @@
         {
           "id": "b2_get_01",
           "kind": "choice",
-          "prompt": "Sorry, I don't ___ what you mean.",
+          "prompt": "Waiters in the US often ___ paid less than the minimum wage, but they earn tips.",
           "options": [
             "get",
-            "take",
-            "arrive",
-            "become"
+            "become",
+            "are getting to",
+            "make"
           ],
           "correct_index": 0,
-          "explanation_ru": "В значении 'понимать' используется именно get; остальные глаголы такого значения не имеют.",
+          "explanation_ru": "Get + V3 — разговорный пассив: get paid = «получать зарплату». Become paid — калька с «становиться», make paid и get to paid такой модели не образуют.",
           "difficulty": 1
         },
         {
@@ -443,21 +599,21 @@
         {
           "id": "b2_get_03",
           "kind": "choice",
-          "prompt": "I ___ an email from the client this morning.",
+          "prompt": "My brother ___ fired after he was late for work three times in one week.",
           "options": [
             "got",
             "became",
-            "arrived",
-            "reached"
+            "was get",
+            "made"
           ],
           "correct_index": 0,
-          "explanation_ru": "Get + существительное значит 'получить'; become, arrive и reach с письмом не сочетаются.",
+          "explanation_ru": "Get + причастие прошедшего времени описывает то, что случилось с человеком (часто неприятное): got fired — его уволили. Became fired — калька, was get — смесь двух пассивов, made не образует пассив.",
           "difficulty": 1
         },
         {
           "id": "b2_get_04",
           "kind": "choice",
-          "prompt": "Can you ___ Sam to look at this ticket?",
+          "prompt": "Can you ___ your brother to help us move the sofa on Saturday?",
           "options": [
             "get",
             "let",
@@ -465,16 +621,19 @@
             "suggest"
           ],
           "correct_index": 0,
-          "explanation_ru": "Из этих глаголов схему объект + to + инфинитив берёт только get: let и make требуют инфинитив без to, а suggest такую конструкцию не строит.",
+          "explanation_ru": "Из этих глаголов схему объект + to + инфинитив берёт только get (get someone to do = уговорить): let и make требуют инфинитив без to, а suggest такую конструкцию не строит.",
           "difficulty": 2
         },
         {
           "id": "b2_get_05",
           "kind": "gap",
-          "prompt": "We ___ (get) to the hotel very late last night.",
-          "answer": "got",
-          "accept": [],
-          "explanation_ru": "Last night требует прошедшего времени, а get - неправильный глагол: got.",
+          "prompt": "The roads ___ (get / bad) and worse as we drove further north.",
+          "answer": "got worse",
+          "accept": [
+            "were getting worse",
+            "kept getting worse"
+          ],
+          "explanation_ru": "Get + прилагательное (часто в сравнительной степени) — «становиться»: got worse and worse. Bad образует неправильную форму worse; become звучит книжно и в разговоре о постепенном изменении уступает get.",
           "difficulty": 2
         },
         {
@@ -492,22 +651,74 @@
         {
           "id": "b2_get_07",
           "kind": "correct",
-          "prompt": "Yesterday I arrived to the office at nine.",
-          "answer": "Yesterday I got to the office at nine.",
+          "prompt": "I finally got my hair to cut yesterday.",
+          "answer": "I finally got my hair cut yesterday.",
           "accept": [
-            "Yesterday I arrived at the office at nine."
+            "I finally had my hair cut yesterday."
           ],
-          "explanation_ru": "Arrive не берёт to перед местом: либо разговорное get to the office, либо arrive at the office.",
+          "explanation_ru": "Get + предмет + V3 значит, что работу сделал кто-то другой: got my hair cut — подстригли в парикмахерской. Get + предмет + to + инфинитив используют только с людьми, которых уговорили что-то сделать.",
           "difficulty": 3
         },
         {
           "id": "b2_get_08",
           "kind": "transform",
-          "prompt": "Rewrite with get + object + past participle: I need someone to repair my laptop.",
-          "answer": "I need to get my laptop repaired.",
+          "prompt": "Rewrite using the word in capitals (do not change it): I finally persuaded my dad to try sushi. GOT",
+          "answer": "I finally got my dad to try sushi.",
           "accept": [],
-          "explanation_ru": "Конструкция get something done показывает, что работу выполняет кто-то другой.",
+          "explanation_ru": "Get + человек + to + инфинитив = «уговорить, добиться, чтобы кто-то сделал»: got my dad to try. В отличие от make и let, здесь to обязателен.",
           "difficulty": 3
+        },
+        {
+          "id": "b2_get_09",
+          "kind": "cloze",
+          "prompt": "Last month Carlos finally ___ (get / promote) to head chef. He ___ (get / pay) much more now, but the hours are long. By the time he ___ (get) home at night, his kids are already asleep. His wife is trying to ___ (get / him / take) a week off in August.",
+          "gaps": [
+            [
+              "got promoted"
+            ],
+            [
+              "gets paid",
+              "is getting paid"
+            ],
+            [
+              "gets"
+            ],
+            [
+              "get him to take"
+            ]
+          ],
+          "explanation_ru": "Get + V3 — что произошло с человеком (got promoted, gets paid). Get home — «добираться»; by the time здесь описывает то, что повторяется каждый вечер, поэтому present simple. Get + человек + to + инфинитив — «уговорить»: get him to take.",
+          "difficulty": 2
+        },
+        {
+          "id": "b2_get_10",
+          "kind": "choice",
+          "prompt": "A: Your hair looks great!\nB: Thanks, I ___ at the new salon on Main Street.",
+          "options": [
+            "got it cut",
+            "got cut it",
+            "cut it got",
+            "got it to cut"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Get + предмет + V3 — услугу выполнил кто-то другой: got it cut. Предмет стоит между get и причастием; get it to cut значило бы, что уговорили сами волосы.",
+          "difficulty": 1,
+          "diagnostic": true
+        },
+        {
+          "id": "b2_get_11",
+          "kind": "choice",
+          "prompt": "Как сказать по-английски: «Становится холодно — давай зайдём внутрь»?",
+          "options": [
+            "It's getting cold — let's go inside.",
+            "It becomes cold — let's go inside.",
+            "It's becoming to cold — let's go inside.",
+            "It's making cold — let's go inside."
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Изменение, которое происходит прямо сейчас, — get + прилагательное в continuous: it's getting cold. It becomes cold — калька со словарным «становиться» и не то время; make cold и become to не существуют.",
+          "difficulty": 1,
+          "diagnostic": true
         }
       ]
     },
@@ -543,7 +754,7 @@
         {
           "id": "b2_50_common_noun_preposition_collocations_01",
           "kind": "choice",
-          "prompt": "Nobody could explain the reason ___ the outage.",
+          "prompt": "Nobody could explain the reason ___ the sudden rise in bread prices.",
           "options": [
             "for",
             "of",
@@ -557,21 +768,21 @@
         {
           "id": "b2_50_common_noun_preposition_collocations_02",
           "kind": "choice",
-          "prompt": "There is no easy answer ___ that question.",
+          "prompt": "Unfortunately, there is no simple solution ___ the parking problem in our neighborhood.",
           "options": [
             "to",
-            "for",
-            "on",
-            "of"
+            "with",
+            "of",
+            "on"
           ],
           "correct_index": 0,
-          "explanation_ru": "Answer и solution требуют предлога to, а не on, как в русском 'ответ на'.",
+          "explanation_ru": "Solution, answer и key берут предлог to: a solution to the problem (solution for тоже встречается, но основная норма — to). Русское «решение проблемы» тянет к of, а on и with с solution не сочетаются.",
           "difficulty": 1
         },
         {
           "id": "b2_50_common_noun_preposition_collocations_03",
           "kind": "choice",
-          "prompt": "There has been a sharp increase ___ the number of support tickets.",
+          "prompt": "There has been a sharp increase ___ the number of tourists visiting the island.",
           "options": [
             "in",
             "of",
@@ -585,7 +796,7 @@
         {
           "id": "b2_50_common_noun_preposition_collocations_04",
           "kind": "choice",
-          "prompt": "The new policy had a big effect ___ our daily workflow.",
+          "prompt": "Lack of sleep has a big effect ___ your mood and memory.",
           "options": [
             "on",
             "to",
@@ -599,7 +810,7 @@
         {
           "id": "b2_50_common_noun_preposition_collocations_05",
           "kind": "choice",
-          "prompt": "What is the difference ___ these two libraries?",
+          "prompt": "What is the difference ___ a crocodile and an alligator?",
           "options": [
             "between",
             "among",
@@ -613,16 +824,16 @@
         {
           "id": "b2_50_common_noun_preposition_collocations_06",
           "kind": "gap",
-          "prompt": "Only admins have access ___ the production database.",
+          "prompt": "Everyone who lives in the building has free access ___ the gym and the pool.",
           "answer": "to",
           "accept": [],
-          "explanation_ru": "Access всегда сочетается с предлогом to.",
+          "explanation_ru": "Access всегда сочетается с предлогом to: access to the gym. Русское «доступ в спортзал» подсказывает in, а «доступ для» — for, но оба неверны.",
           "difficulty": 2
         },
         {
           "id": "b2_50_common_noun_preposition_collocations_07",
           "kind": "gap",
-          "prompt": "There is a growing demand ___ senior Go developers.",
+          "prompt": "There is a growing demand ___ electric cars in many European countries.",
           "answer": "for",
           "accept": [],
           "explanation_ru": "Demand и need идут с for.",
@@ -631,13 +842,68 @@
         {
           "id": "b2_50_common_noun_preposition_collocations_08",
           "kind": "correct",
-          "prompt": "The main cause for the incident was a bad config file.",
-          "answer": "The main cause of the incident was a bad config file.",
+          "prompt": "The main cause for the fire was an old electric heater.",
+          "answer": "The main cause of the fire was an old electric heater.",
           "accept": [
-            "The main reason for the incident was a bad config file."
+            "The main reason for the fire was an old electric heater."
           ],
           "explanation_ru": "Cause сочетается с of, хотя близкое по смыслу reason требует for.",
           "difficulty": 3
+        },
+        {
+          "id": "b2_50_common_noun_preposition_collocations_09",
+          "kind": "cloze",
+          "prompt": "Our town has seen a big increase ___ traffic since the new mall opened. Many residents complain about the lack ___ parking spaces. The mayor says there is no quick solution ___ the problem. However, a new bus line should have a positive effect ___ the situation, and there is a growing demand ___ bike lanes.",
+          "gaps": [
+            [
+              "in"
+            ],
+            [
+              "of"
+            ],
+            [
+              "to",
+              "for"
+            ],
+            [
+              "on"
+            ],
+            [
+              "for"
+            ]
+          ],
+          "explanation_ru": "Increase, rise, fall — in (что выросло); lack — of; solution, answer — to; effect, impact — on; demand, need — for. Русские падежи здесь не подсказка: «решение проблемы», «спрос на».",
+          "difficulty": 2
+        },
+        {
+          "id": "b2_50_common_noun_preposition_collocations_10",
+          "kind": "choice",
+          "prompt": "В каком предложении ошибка?",
+          "options": [
+            "I have absolutely no interest in politics.",
+            "She is an expert on Japanese history.",
+            "What was your reaction on the news?",
+            "Living near the sea has many advantages."
+          ],
+          "correct_index": 2,
+          "explanation_ru": "Reaction, response и answer берут to: a reaction to the news. Русское «реакция на» подсказывает on, но это ошибка. Interest in, expert on и advantage употреблены верно.",
+          "difficulty": 2,
+          "diagnostic": true
+        },
+        {
+          "id": "b2_50_common_noun_preposition_collocations_11",
+          "kind": "choice",
+          "prompt": "Как сказать по-английски: «Я до сих пор жду ответа на своё письмо»?",
+          "options": [
+            "I'm still waiting for an answer to my letter.",
+            "I'm still waiting for an answer on my letter.",
+            "I'm still waiting an answer for my letter.",
+            "I'm still waiting for an answer at my letter."
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Answer (как и reply, response) сочетается с to: an answer to my letter. Answer on — калька с «ответ на»; кроме того, wait требует for перед тем, чего ждут.",
+          "difficulty": 1,
+          "diagnostic": true
         }
       ]
     },
@@ -673,7 +939,7 @@
         {
           "id": "b2_there_and_it_01",
           "kind": "choice",
-          "prompt": "___ is something wrong with the login page.",
+          "prompt": "___ appears to be a problem with the washing machine — it's making a strange noise.",
           "options": [
             "There",
             "It",
@@ -681,27 +947,27 @@
             "That"
           ],
           "correct_index": 0,
-          "explanation_ru": "Существование проблемы вводится только оборотом there is: there is something wrong with something.",
-          "difficulty": 1
+          "explanation_ru": "Существование проблемы вводится оборотом there; с seem и appear он сохраняется: there appears to be a problem. It appears пошло бы с that-придаточным, а this и that указывают на уже известный предмет.",
+          "difficulty": 2
         },
         {
           "id": "b2_there_and_it_02",
           "kind": "choice",
-          "prompt": "___ was nice to meet the whole team in person.",
+          "prompt": "I find ___ hard to believe that she's only fifteen — she plays like a professional.",
           "options": [
-            "There",
-            "It",
-            "This",
-            "What"
+            "it",
+            "there",
+            "this",
+            "that"
           ],
-          "correct_index": 1,
-          "explanation_ru": "Настоящее подлежащее - инфинитивный оборот, его замещает формальное it.",
-          "difficulty": 1
+          "correct_index": 0,
+          "explanation_ru": "После find, make, think перед прилагательным нужно формальное дополнение it, которое заменяет придаточное that she's only fifteen. Без него (I find hard to believe) предложение неполное, а this и that указывают на конкретный предмет.",
+          "difficulty": 2
         },
         {
           "id": "b2_there_and_it_03",
           "kind": "choice",
-          "prompt": "___ seems that the cache was never cleared.",
+          "prompt": "___ seems that nobody locked the back door last night.",
           "options": [
             "It",
             "There",
@@ -715,7 +981,7 @@
         {
           "id": "b2_there_and_it_04",
           "kind": "choice",
-          "prompt": "___ no point in arguing about the naming now.",
+          "prompt": "___ no point in arguing about it now — the tickets are already sold out.",
           "options": [
             "There is",
             "It is",
@@ -729,7 +995,7 @@
         {
           "id": "b2_there_and_it_05",
           "kind": "choice",
-          "prompt": "___ takes about two hours to build the whole project.",
+          "prompt": "___ takes about two hours to drive from here to the coast.",
           "options": [
             "It",
             "There",
@@ -743,31 +1009,79 @@
         {
           "id": "b2_there_and_it_06",
           "kind": "gap",
-          "prompt": "___ are three open tickets in the queue.",
-          "answer": "There",
+          "prompt": "___ turns out that the museum is closed on Mondays, so let's go on Tuesday. (one word)",
+          "answer": "It",
           "accept": [],
-          "explanation_ru": "Существование нескольких объектов вводится через there are.",
+          "explanation_ru": "It turns out that — «оказывается»: формальное it замещает придаточное-подлежащее. There с turn out не употребляется, а в русском подлежащего нет вовсе, поэтому его легко пропустить.",
           "difficulty": 2
         },
         {
           "id": "b2_there_and_it_07",
           "kind": "gap",
-          "prompt": "___ is important to write tests before merging.",
+          "prompt": "___ is worth visiting the old town early in the morning, before the crowds arrive. (one word)",
           "answer": "It",
           "accept": [],
-          "explanation_ru": "Схема it + be + прилагательное + to + инфинитив.",
-          "difficulty": 3
+          "explanation_ru": "It is worth + -ing — «стоит (сделать)»: формальное it замещает действие visiting the old town. There is worth невозможно, а русское «стоит сходить» без подлежащего провоцирует пропуск.",
+          "difficulty": 2
         },
         {
           "id": "b2_there_and_it_08",
           "kind": "correct",
-          "prompt": "Is very difficult to explain this to the client.",
-          "answer": "It is very difficult to explain this to the client.",
+          "prompt": "Is very difficult to explain this rule to young children.",
+          "answer": "It is very difficult to explain this rule to young children.",
           "accept": [
-            "It's very difficult to explain this to the client."
+            "It's very difficult to explain this rule to young children."
           ],
           "explanation_ru": "Английское предложение не может остаться без подлежащего, нужно формальное it.",
           "difficulty": 3
+        },
+        {
+          "id": "b2_there_and_it_09",
+          "kind": "cloze",
+          "prompt": "We planned a picnic at the lake last Saturday. ___ was a beautiful morning, but ___ were already dozens of families there. ___ took us twenty minutes to find a free table. Then ___ turned out that we had forgotten the bread! Luckily, ___ was a small shop nearby.",
+          "gaps": [
+            [
+              "It"
+            ],
+            [
+              "there"
+            ],
+            [
+              "It"
+            ],
+            [
+              "it"
+            ],
+            [
+              "there"
+            ]
+          ],
+          "explanation_ru": "It описывает время, погоду, длительность (it takes) и замещает придаточное (it turned out that). There вводит существование чего-то: there were families, there was a shop.",
+          "difficulty": 2
+        },
+        {
+          "id": "b2_there_and_it_10",
+          "kind": "transform",
+          "prompt": "Rewrite using the word in capitals (do not change it): You don't need to buy tickets in advance. NEED",
+          "answer": "There is no need to buy tickets in advance.",
+          "accept": [],
+          "explanation_ru": "There is no need to + V1 — «нет необходимости». Оборот вводится через there, как любое «существует / не существует»; it is no need — калька с безличного русского предложения.",
+          "difficulty": 2
+        },
+        {
+          "id": "b2_there_and_it_11",
+          "kind": "choice",
+          "prompt": "Как сказать по-английски: «Оказалось, что он давно переехал»?",
+          "options": [
+            "It turned out that he had moved long ago.",
+            "There turned out that he had moved long ago.",
+            "It was turned out that he had moved long ago.",
+            "It turned that he had moved long ago."
+          ],
+          "correct_index": 0,
+          "explanation_ru": "«Оказалось» — it turned out that: формальное it + активный глагол с частицей out. There так не употребляется, пассив was turned out здесь невозможен, а без out значение теряется.",
+          "difficulty": 2,
+          "diagnostic": true
         }
       ]
     },
@@ -802,7 +1116,7 @@
         {
           "id": "b2_generic_pronouns_01",
           "kind": "choice",
-          "prompt": "Somebody left ___ badge in the meeting room.",
+          "prompt": "Somebody left ___ umbrella in the waiting room.",
           "options": [
             "their",
             "them",
@@ -831,7 +1145,7 @@
         {
           "id": "b2_generic_pronouns_03",
           "kind": "choice",
-          "prompt": "___ never know when the server will go down.",
+          "prompt": "___ never know when the weather will change in the mountains.",
           "options": [
             "You",
             "One",
@@ -859,12 +1173,12 @@
         {
           "id": "b2_generic_pronouns_05",
           "kind": "gap",
-          "prompt": "If a customer complains, listen to ___ carefully.",
+          "prompt": "If a patient complains, listen to ___ carefully.",
           "answer": "them",
           "accept": [
             "him or her"
           ],
-          "explanation_ru": "Пол клиента неизвестен, поэтому используется объектная форма singular they - them.",
+          "explanation_ru": "Пол пациента неизвестен, поэтому используется объектная форма singular they — them; в официальном стиле возможно him or her.",
           "difficulty": 2
         },
         {
@@ -894,11 +1208,69 @@
         {
           "id": "b2_generic_pronouns_08",
           "kind": "transform",
-          "prompt": "Rewrite using singular they: If a user forgets his password, he can reset it.",
-          "answer": "If a user forgets their password, they can reset it.",
+          "prompt": "Rewrite using singular they: If a student forgets his book, he can borrow one from the library.",
+          "answer": "If a student forgets their book, they can borrow one from the library.",
           "accept": [],
-          "explanation_ru": "Пол пользователя не важен, поэтому his меняется на their, а he на they.",
+          "explanation_ru": "Пол студента не важен, поэтому his меняется на their, а he на they; глагол can от этого не меняется.",
           "difficulty": 3
+        },
+        {
+          "id": "b2_generic_pronouns_09",
+          "kind": "cloze",
+          "prompt": "Every guest at the hostel gets a locker for ___ things. If someone loses ___ key, ___ have to pay ten dollars. ___ can't bring food into the rooms, but ___ can use the kitchen downstairs.",
+          "gaps": [
+            [
+              "their",
+              "his or her"
+            ],
+            [
+              "their",
+              "his or her"
+            ],
+            [
+              "they"
+            ],
+            [
+              "You",
+              "One"
+            ],
+            [
+              "you",
+              "one"
+            ]
+          ],
+          "explanation_ru": "О человеке, пол которого неизвестен или не важен (every guest, someone), говорят their и they, причём глагол стоит во множественном числе: they have to pay. Общее правило для всех — you (формально one).",
+          "difficulty": 2
+        },
+        {
+          "id": "b2_generic_pronouns_10",
+          "kind": "choice",
+          "prompt": "A: Someone called while you were out.\nB: Did ___ leave a message?",
+          "options": [
+            "they",
+            "them",
+            "one",
+            "it"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Когда неизвестно, кто звонил, английский использует singular they: Did they leave a message? Them — объектная форма, one — обобщающее «человек вообще», it о людях не говорят.",
+          "difficulty": 1,
+          "diagnostic": true
+        },
+        {
+          "id": "b2_generic_pronouns_11",
+          "kind": "choice",
+          "prompt": "Как сказать по-английски: «Никогда не знаешь, чем всё закончится»?",
+          "options": [
+            "You never know how it will end.",
+            "Never know how it will end.",
+            "One never know how it will end.",
+            "It never knows how it will end."
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Русское обобщённо-личное «не знаешь» передаётся местоимением you. Без подлежащего предложение невозможно, one требует формы knows, а it не может обозначать человека.",
+          "difficulty": 2,
+          "diagnostic": true
         }
       ]
     },
@@ -933,7 +1305,7 @@
         {
           "id": "b2_reflexive_reciprocal_pronouns_01",
           "kind": "choice",
-          "prompt": "Anna writes to Ben and Ben writes to Anna, so they write to ___ every day.",
+          "prompt": "After the argument, the two sisters blamed ___ — each said it was the other's fault.",
           "options": [
             "each other",
             "themselves",
@@ -941,28 +1313,27 @@
             "one other"
           ],
           "correct_index": 0,
-          "explanation_ru": "Действие направлено друг на друга, а не на самих себя, поэтому только each other; форм theirselves и one other в английском нет.",
-          "difficulty": 1
+          "explanation_ru": "Каждая винила другую, значит действие взаимное — each other. Themselves означало бы, что каждая винила саму себя; форм theirselves и one other в английском нет.",
+          "difficulty": 2
         },
         {
           "id": "b2_reflexive_reciprocal_pronouns_02",
           "kind": "choice",
-          "prompt": "I hurt ___ while moving the servers.",
+          "prompt": "The kids really enjoyed ___ at the water park yesterday.",
           "options": [
-            "myself",
-            "me",
-            "my",
-            "mine"
+            "themselves",
+            "them",
+            "theirselves",
+            "themself"
           ],
           "correct_index": 0,
-          "explanation_ru": "Подлежащее и дополнение совпадают, а объектная форма me после того же подлежащего невозможна.",
-          "difficulty": 1,
-          "diagnostic": false
+          "explanation_ru": "Enjoy обязательно требует дополнения, и в значении «хорошо провести время» это возвратное местоимение: enjoyed themselves. Русское «веселились» обходится без него, отсюда ошибка; them указывало бы на других людей, themself говорят об одном человеке, а theirselves не существует.",
+          "difficulty": 1
         },
         {
           "id": "b2_reflexive_reciprocal_pronouns_03",
           "kind": "choice",
-          "prompt": "The manager ___ apologized to the client.",
+          "prompt": "The mayor ___ came to open the new playground.",
           "options": [
             "himself",
             "him",
@@ -970,13 +1341,13 @@
             "by him"
           ],
           "correct_index": 0,
-          "explanation_ru": "Здесь возвратное местоимение усиливает подлежащее: извинился лично сам менеджер.",
+          "explanation_ru": "Здесь возвратное местоимение усиливает подлежащее: пришёл лично сам мэр, а не его представитель.",
           "difficulty": 1
         },
         {
           "id": "b2_reflexive_reciprocal_pronouns_04",
           "kind": "choice",
-          "prompt": "I don't need help. I can install it ___.",
+          "prompt": "I don't need help. I can put the shelf up ___.",
           "options": [
             "by myself",
             "by me",
@@ -1015,12 +1386,12 @@
         {
           "id": "b2_reflexive_reciprocal_pronouns_07",
           "kind": "gap",
-          "prompt": "We wrote the whole document ___ (we), without any help.",
+          "prompt": "We built the whole treehouse ___ (we), without any help.",
           "answer": "ourselves",
           "accept": [
             "by ourselves"
           ],
-          "explanation_ru": "Возвратное местоимение подчёркивает, что работу сделали сами авторы.",
+          "explanation_ru": "Возвратное местоимение подчёркивает, что работу сделали сами, без помощи: ourselves или by ourselves.",
           "difficulty": 3
         },
         {
@@ -1031,6 +1402,59 @@
           "accept": [],
           "explanation_ru": "Глагол feel в значении самочувствия не берёт возвратное местоимение.",
           "difficulty": 3
+        },
+        {
+          "id": "b2_reflexive_reciprocal_pronouns_09",
+          "kind": "cloze",
+          "prompt": "My twin brothers are very independent. They taught ___ to cook when they were twelve. They often help ___ with homework, but they never ask me. Last summer they built a small boat by ___. When it sank on the first day, they just looked at ___ and started laughing.",
+          "gaps": [
+            [
+              "themselves"
+            ],
+            [
+              "each other",
+              "one another"
+            ],
+            [
+              "themselves"
+            ],
+            [
+              "each other",
+              "one another"
+            ]
+          ],
+          "explanation_ru": "Themselves — действие направлено на самих себя (taught themselves) или «без помощи» (by themselves). Each other — действие взаимное: один помогает другому, они смотрят друг на друга.",
+          "difficulty": 2
+        },
+        {
+          "id": "b2_reflexive_reciprocal_pronouns_10",
+          "kind": "choice",
+          "prompt": "Как сказать по-английски: «Мы познакомились в Праге»?",
+          "options": [
+            "We met in Prague.",
+            "We met ourselves in Prague.",
+            "We acquainted in Prague.",
+            "We got to know ourselves in Prague."
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Русское «познакомились» с частицей -ся в английском не требует возвратного местоимения: we met. Met ourselves и got to know ourselves значат «встретили самих себя», а acquaint требует дополнения.",
+          "difficulty": 1,
+          "diagnostic": true
+        },
+        {
+          "id": "b2_reflexive_reciprocal_pronouns_11",
+          "kind": "choice",
+          "prompt": "В каком предложении ошибка?",
+          "options": [
+            "Please come in and make yourself at home.",
+            "She cut herself while she was cooking.",
+            "I need to concentrate myself on my exams.",
+            "They blamed each other for the accident."
+          ],
+          "correct_index": 2,
+          "explanation_ru": "Concentrate, relax, feel, meet в английском не возвратные: I need to concentrate on my exams. Make yourself at home и cut herself — случаи, где возвратное местоимение нужно.",
+          "difficulty": 2,
+          "diagnostic": true
         }
       ]
     },
@@ -1066,7 +1490,7 @@
         {
           "id": "b2_participle_clauses_01",
           "kind": "choice",
-          "prompt": "___ in 2010, the library is still widely used.",
+          "prompt": "___ in 1847, the novel is still read in schools all over the world.",
           "options": [
             "Writing",
             "Written",
@@ -1074,27 +1498,27 @@
             "Write"
           ],
           "correct_index": 1,
-          "explanation_ru": "Библиотеку написали, значит значение пассивное и нужна форма причастия III.",
+          "explanation_ru": "Роман написали, значит значение пассивное и нужно причастие прошедшего времени Written. Writing и having written означали бы, что пишет сам роман.",
           "difficulty": 1
         },
         {
           "id": "b2_participle_clauses_02",
           "kind": "choice",
-          "prompt": "___ by a small team, the app handles millions of requests.",
+          "prompt": "___ the museum, we realized we had left our tickets at the hotel.",
           "options": [
-            "Building",
-            "Built",
-            "Build",
-            "Having built"
+            "Having reached",
+            "Reached",
+            "Having been reached",
+            "To reach"
           ],
-          "correct_index": 1,
-          "explanation_ru": "Есть исполнитель с предлогом by, поэтому оборот пассивный: Built by a small team.",
-          "difficulty": 1
+          "correct_index": 0,
+          "explanation_ru": "Сначала дошли до музея, потом поняли: предшествующее действие того же подлежащего — having + V3. Reached и having been reached — пассив (кто-то «достиг» нас), а to reach выражает цель.",
+          "difficulty": 2
         },
         {
           "id": "b2_participle_clauses_03",
           "kind": "choice",
-          "prompt": "The developer ___ next to the window is our new hire.",
+          "prompt": "The woman ___ next to the window is my new neighbor.",
           "options": [
             "sitting",
             "sat",
@@ -1108,7 +1532,7 @@
         {
           "id": "b2_participle_clauses_04",
           "kind": "choice",
-          "prompt": "___ the password, I couldn't open the archive.",
+          "prompt": "___ what to say, she just smiled and nodded.",
           "options": [
             "Not knowing",
             "Knowing not",
@@ -1116,13 +1540,13 @@
             "Not known"
           ],
           "correct_index": 0,
-          "explanation_ru": "Отрицание в причастном обороте ставится словом not перед формой на -ing.",
+          "explanation_ru": "Отрицание в причастном обороте ставится словом not перед формой на -ing: Not knowing. Don't с причастием не сочетается, knowing not — устаревший порядок, not known — пассив («неизвестная»).",
           "difficulty": 2
         },
         {
           "id": "b2_participle_clauses_05",
           "kind": "gap",
-          "prompt": "___ (feel) tired, he left the office early.",
+          "prompt": "___ (feel) tired, he left the party early.",
           "answer": "Feeling",
           "accept": [],
           "explanation_ru": "Активное значение и то же подлежащее, поэтому форма на -ing.",
@@ -1142,10 +1566,10 @@
         {
           "id": "b2_participle_clauses_07",
           "kind": "correct",
-          "prompt": "Writing in Python, the script is easy to read.",
-          "answer": "Written in Python, the script is easy to read.",
+          "prompt": "Writing in simple language, the book is easy to read.",
+          "answer": "Written in simple language, the book is easy to read.",
           "accept": [],
-          "explanation_ru": "Скрипт не пишет сам, его написали, поэтому нужна пассивная форма Written.",
+          "explanation_ru": "Книга не пишет сама, её написали, поэтому нужна пассивная форма Written.",
           "difficulty": 3
         },
         {
@@ -1158,6 +1582,63 @@
           ],
           "explanation_ru": "Причина сворачивается в причастный оборот, отрицание идёт словом not перед having.",
           "difficulty": 3
+        },
+        {
+          "id": "b2_participle_clauses_09",
+          "kind": "cloze",
+          "prompt": "___ (walk) along the beach one evening, Aisha found an old bottle. Inside was a letter ___ (write) in French. ___ (not / speak) French herself, she asked her neighbor for help. ___ (read — finished first) the letter, the neighbor smiled: it was a love letter from 1962.",
+          "gaps": [
+            [
+              "Walking",
+              "While walking"
+            ],
+            [
+              "written"
+            ],
+            [
+              "Not speaking"
+            ],
+            [
+              "Having read",
+              "After reading",
+              "After having read"
+            ]
+          ],
+          "explanation_ru": "Причастный оборот описывает подлежащее главной части. Активное одновременное действие — V-ing (walking), пассивное — V3 (written), отрицание — not перед -ing, завершённое раньше — having + V3.",
+          "difficulty": 3
+        },
+        {
+          "id": "b2_participle_clauses_10",
+          "kind": "transform",
+          "prompt": "Rewrite with a participle clause: The man who is standing by the door is my uncle.",
+          "answer": "The man standing by the door is my uncle.",
+          "accept": [],
+          "explanation_ru": "Определительное придаточное who is standing сокращается до причастия standing: оно описывает man и заменяет who is. Stood здесь было бы пассивным или прошедшим значением.",
+          "difficulty": 2
+        },
+        {
+          "id": "b2_participle_clauses_11",
+          "kind": "choice",
+          "prompt": "В каком предложении ошибка?",
+          "options": [
+            "Waiting for the bus, it started to rain.",
+            "Having finished dinner, we went for a walk.",
+            "The boy hit by the ball was taken to the nurse.",
+            "Not wanting to wake the baby, she whispered."
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Причастный оборот должен относиться к подлежащему главной части. В первом предложении получается, что автобуса ждал дождь (it). Нужно: While I was waiting for the bus, it started to rain.",
+          "difficulty": 2,
+          "diagnostic": true
+        },
+        {
+          "id": "b2_participle_clauses_12",
+          "kind": "gap",
+          "prompt": "The boy ___ (play) the violin on the street corner is only ten years old. (use a participle)",
+          "answer": "playing",
+          "accept": [],
+          "explanation_ru": "Причастие на -ing заменяет определительное придаточное who is playing и описывает мальчика: The boy playing the violin. Played было бы пассивом («сыгранный»), plays — второе сказуемое.",
+          "difficulty": 1
         }
       ]
     },
@@ -1193,7 +1674,7 @@
         {
           "id": "b2_relative_clauses_01",
           "kind": "choice",
-          "prompt": "My boss, ___ has three kids, never works on weekends.",
+          "prompt": "My neighbor, ___ has three kids, never sleeps past six.",
           "options": [
             "who",
             "that",
@@ -1207,7 +1688,7 @@
         {
           "id": "b2_relative_clauses_02",
           "kind": "choice",
-          "prompt": "This is the tool ___ we use for monitoring.",
+          "prompt": "This is the recipe ___ my grandmother used for her famous apple pie.",
           "options": [
             "that",
             "who",
@@ -1221,7 +1702,7 @@
         {
           "id": "b2_relative_clauses_03",
           "kind": "choice",
-          "prompt": "She works for a company ___ servers are all in Europe.",
+          "prompt": "She grew up in a village ___ streets are all named after flowers.",
           "options": [
             "whose",
             "which",
@@ -1229,13 +1710,13 @@
             "who's"
           ],
           "correct_index": 0,
-          "explanation_ru": "Серверы принадлежат компании, поэтому нужна притяжательная форма whose.",
+          "explanation_ru": "Улицы принадлежат деревне, поэтому нужна притяжательная форма whose; whose употребляется и с неодушевлёнными существительными. Who's = who is.",
           "difficulty": 1
         },
         {
           "id": "b2_relative_clauses_04",
           "kind": "choice",
-          "prompt": "The release was delayed by a week, ___ annoyed everyone.",
+          "prompt": "Our flight was delayed by six hours, ___ annoyed everyone.",
           "options": [
             "which",
             "that",
@@ -1249,7 +1730,7 @@
         {
           "id": "b2_relative_clauses_05",
           "kind": "choice",
-          "prompt": "That's the office ___ we first met the client.",
+          "prompt": "That's the café ___ my parents first met.",
           "options": [
             "where",
             "which",
@@ -1263,7 +1744,7 @@
         {
           "id": "b2_relative_clauses_06",
           "kind": "gap",
-          "prompt": "The developer ___ fixed the bug is on vacation.",
+          "prompt": "The mechanic ___ fixed our car is on vacation this week.",
           "answer": "who",
           "accept": [
             "that"
@@ -1292,6 +1773,73 @@
           ],
           "explanation_ru": "Which не употребляется с людьми, нужно who или that.",
           "difficulty": 3
+        },
+        {
+          "id": "b2_relative_clauses_09",
+          "kind": "cloze",
+          "prompt": "Lisbon, ___ I spent last summer, is full of surprises. The hostel ___ I stayed in was run by a man ___ grandfather had been a sailor. He told us old stories about the city, ___ made every breakfast an adventure. I still write to the friends ___ I met there.",
+          "gaps": [
+            [
+              "where",
+              "in which"
+            ],
+            [
+              "that",
+              "which"
+            ],
+            [
+              "whose"
+            ],
+            [
+              "which"
+            ],
+            [
+              "that",
+              "who",
+              "whom"
+            ]
+          ],
+          "explanation_ru": "Where — место, где что-то происходит (spent last summer — без предлога). В defining-придаточном о предмете — that или which, о людях — that, who, whom. Whose — «чей». После запятой, комментируя всю мысль, возможно только which, но не that.",
+          "difficulty": 2
+        },
+        {
+          "id": "b2_relative_clauses_10",
+          "kind": "transform",
+          "prompt": "Rewrite in a formal style, moving the preposition before the relative pronoun: The woman who I spoke to was very helpful.",
+          "answer": "The woman to whom I spoke was very helpful.",
+          "accept": [],
+          "explanation_ru": "В формальном стиле предлог ставят перед относительным местоимением, и тогда о человеке возможно только whom, о предмете — which: to whom, in which. После предлога не бывает who и that.",
+          "difficulty": 3
+        },
+        {
+          "id": "b2_relative_clauses_11",
+          "kind": "choice",
+          "prompt": "В каком предложении ошибка?",
+          "options": [
+            "My sister, who lives in Denver, is a nurse.",
+            "The book that you lent me was fantastic.",
+            "Our teacher, that is from Canada, speaks four languages.",
+            "The town where I was born is very small."
+          ],
+          "correct_index": 2,
+          "explanation_ru": "В придаточном с запятыми (non-defining) that невозможно: нужно who is from Canada. В defining-придаточном без запятых that допустимо.",
+          "difficulty": 2,
+          "diagnostic": true
+        },
+        {
+          "id": "b2_relative_clauses_12",
+          "kind": "choice",
+          "prompt": "A: Which of these bags is yours?\nB: The one ___ handle is broken.",
+          "options": [
+            "whose",
+            "which",
+            "who's",
+            "that"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Whose — «чей», указывает на принадлежность и подходит и для предметов: the one whose handle is broken. Who's = who is, а which и that не выражают принадлежность.",
+          "difficulty": 1,
+          "diagnostic": true
         }
       ]
     },
@@ -1328,12 +1876,12 @@
         {
           "id": "b2_future_forms_expressing_future_time_01",
           "kind": "choice",
-          "prompt": "I'll call you as soon as the tests ___.",
+          "prompt": "I'll call you as soon as the plane ___.",
           "options": [
-            "finish",
-            "will finish",
-            "will have finished",
-            "are going to finish"
+            "lands",
+            "will land",
+            "will have landed",
+            "is going to land"
           ],
           "correct_index": 0,
           "explanation_ru": "После as soon as будущее время не ставится, используется present simple.",
@@ -1342,21 +1890,21 @@
         {
           "id": "b2_future_forms_expressing_future_time_02",
           "kind": "choice",
-          "prompt": "The train to Boston ___ at 7:15 every morning.",
+          "prompt": "Please don't call me at eight tomorrow evening — I ___ my daughter's school concert.",
           "options": [
-            "leaves",
-            "is leaving",
-            "will leave",
-            "is going to leave"
+            "will be watching",
+            "watch",
+            "will have watched",
+            "was watching"
           ],
           "correct_index": 0,
-          "explanation_ru": "Every morning указывает на расписание, а расписание передаётся present simple.",
+          "explanation_ru": "Действие будет идти в конкретный момент будущего (завтра в восемь) — future continuous: will be watching. Watch — привычка или расписание, will have watched — завершённость к моменту, was watching — прошлое.",
           "difficulty": 1
         },
         {
           "id": "b2_future_forms_expressing_future_time_03",
           "kind": "choice",
-          "prompt": "I can't come on Friday. I ___ the client at three.",
+          "prompt": "I can't come on Friday. I ___ my cousin at the airport at three.",
           "options": [
             "'m meeting",
             "meet",
@@ -1370,7 +1918,7 @@
         {
           "id": "b2_future_forms_expressing_future_time_04",
           "kind": "choice",
-          "prompt": "By the time you arrive, we ___ the deployment.",
+          "prompt": "By the time you arrive, we ___ dinner.",
           "options": [
             "will have finished",
             "will have finish",
@@ -1384,13 +1932,15 @@
         {
           "id": "b2_future_forms_expressing_future_time_05",
           "kind": "gap",
-          "prompt": "Watch out! You ___ (going to/drop) the laptop!",
-          "answer": "are going to drop",
+          "prompt": "___ (you / use) the car tonight? If not, I'd like to borrow it. (polite question about plans)",
+          "answer": "Will you be using",
           "accept": [
-            "'re going to drop"
+            "Are you using",
+            "Are you going to use",
+            "Are you going to be using"
           ],
-          "explanation_ru": "Предсказание по видимым признакам строится через be going to.",
-          "difficulty": 1
+          "explanation_ru": "Future continuous в вопросе — вежливый способ узнать о чужих планах, не давя на собеседника: Will you be using the car tonight? Will you use звучит как просьба или требование решить прямо сейчас.",
+          "difficulty": 2
         },
         {
           "id": "b2_future_forms_expressing_future_time_06",
@@ -1404,24 +1954,83 @@
         {
           "id": "b2_future_forms_expressing_future_time_07",
           "kind": "correct",
-          "prompt": "I'll call you when I will arrive.",
-          "answer": "I'll call you when I arrive.",
-          "accept": [
-            "I will call you when I arrive."
-          ],
-          "explanation_ru": "В придаточном времени will не используется, нужен present simple.",
+          "prompt": "By next June, my parents will be married for forty years.",
+          "answer": "By next June, my parents will have been married for forty years.",
+          "accept": [],
+          "explanation_ru": "By + момент в будущем + for + период — нужна future perfect: will have been married. Will be married описывает состояние в будущем, но не подводит итог к сроку.",
           "difficulty": 3
         },
         {
           "id": "b2_future_forms_expressing_future_time_08",
           "kind": "transform",
-          "prompt": "Rewrite with be going to: We have decided to rewrite the parser.",
-          "answer": "We are going to rewrite the parser.",
-          "accept": [
-            "We're going to rewrite the parser."
+          "prompt": "Rewrite using the word in capitals (do not change it): I plan to sell my old car next month. GOING",
+          "answer": "I'm going to sell my old car next month.",
+          "accept": [],
+          "explanation_ru": "Заранее принятое намерение передаётся be going to + V1: I'm going to sell. Will чаще выражает решение, принятое в момент речи.",
+          "difficulty": 2
+        },
+        {
+          "id": "b2_future_forms_expressing_future_time_09",
+          "kind": "cloze",
+          "prompt": "My sister is getting married next Saturday, and the whole family is busy. The ceremony ___ (start) at 3 p.m. — it says so on the invitation. This time next week, we ___ (dance) at the reception. By then, my mom ___ (cook) for three days straight! And by the end of the evening, I ___ (probably / take) about a thousand photos.",
+          "gaps": [
+            [
+              "starts"
+            ],
+            [
+              "will be dancing"
+            ],
+            [
+              "will have been cooking"
+            ],
+            [
+              "will probably have taken",
+              "will have probably taken"
+            ]
           ],
-          "explanation_ru": "Заранее принятое решение передаётся конструкцией be going to.",
+          "explanation_ru": "Расписание — present simple (starts). Процесс в момент будущего — will be + V-ing. Длительность до момента в будущем — will have been + V-ing. Результат к моменту — will have + V3; probably обычно стоит после will.",
           "difficulty": 3
+        },
+        {
+          "id": "b2_future_forms_expressing_future_time_10",
+          "kind": "choice",
+          "prompt": "A: ___ you be joining us for dinner on Sunday?\nB: Yes, I'd love to.",
+          "options": [
+            "Will",
+            "Are",
+            "Do",
+            "Shall"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Will you be + V-ing — вежливый вопрос о планах собеседника: Will you be joining us? Are и do с be + V-ing не сочетаются, shall you в американском не употребляется.",
+          "difficulty": 1,
+          "diagnostic": true
+        },
+        {
+          "id": "b2_future_forms_expressing_future_time_11",
+          "kind": "choice",
+          "prompt": "Как сказать по-английски: «К концу года я буду учить испанский уже три года»?",
+          "options": [
+            "By the end of the year, I will have been learning Spanish for three years.",
+            "By the end of the year, I will learn Spanish for three years.",
+            "By the end of the year, I will be learning Spanish for three years.",
+            "By the end of the year, I am learning Spanish for three years."
+          ],
+          "correct_index": 0,
+          "explanation_ru": "By + момент в будущем + for + период — future perfect continuous: will have been learning. Русское «буду учить» подталкивает к will learn или will be learning, но они не подводят итог к сроку.",
+          "difficulty": 2,
+          "diagnostic": true
+        },
+        {
+          "id": "b2_future_forms_expressing_future_time_12",
+          "kind": "correct",
+          "prompt": "Will you be join us for lunch tomorrow?",
+          "answer": "Will you be joining us for lunch tomorrow?",
+          "accept": [
+            "Will you join us for lunch tomorrow?"
+          ],
+          "explanation_ru": "Future continuous строится как will be + V-ing: Will you be joining us? Такой вопрос вежливо уточняет планы. После be смысловой глагол не может стоять в начальной форме.",
+          "difficulty": 2
         }
       ]
     },
@@ -1472,7 +2081,7 @@
         {
           "id": "b2_future_in_the_past_02",
           "kind": "choice",
-          "prompt": "We ___ about to start the meeting when the CEO walked in.",
+          "prompt": "We ___ about to start dinner when the doorbell rang.",
           "options": [
             "were",
             "are",
@@ -1486,21 +2095,21 @@
         {
           "id": "b2_future_in_the_past_03",
           "kind": "choice",
-          "prompt": "I ___ call you, but my phone died.",
+          "prompt": "We ___ go camping last weekend, but it rained the whole time, so we stayed home.",
           "options": [
-            "was going to",
-            "am going to",
+            "were going to",
+            "are going to",
             "will",
             "would have"
           ],
           "correct_index": 0,
-          "explanation_ru": "Несостоявшийся план в прошлом передаётся конструкцией was going to.",
+          "explanation_ru": "План в прошлом, который не состоялся, — was/were going to. Are going to и will относятся к будущему, а would have требует третьей формы.",
           "difficulty": 2
         },
         {
           "id": "b2_future_in_the_past_04",
           "kind": "choice",
-          "prompt": "She left early because she ___ the client at nine the next morning.",
+          "prompt": "She left the party early because she ___ her grandparents at nine the next morning.",
           "options": [
             "was meeting",
             "is meeting",
@@ -1514,7 +2123,7 @@
         {
           "id": "b2_future_in_the_past_05",
           "kind": "gap",
-          "prompt": "They promised the fix ___ (be) ready by Monday, but it wasn't.",
+          "prompt": "They promised the dress ___ (be) ready by Monday, but it wasn't.",
           "answer": "would be",
           "accept": [
             "was going to be"
@@ -1534,10 +2143,10 @@
         {
           "id": "b2_future_in_the_past_07",
           "kind": "correct",
-          "prompt": "Last week he said he will join the call, but he never did.",
-          "answer": "Last week he said he would join the call, but he never did.",
+          "prompt": "Last week he said he will come to the barbecue, but he never did.",
+          "answer": "Last week he said he would come to the barbecue, but he never did.",
           "accept": [
-            "Last week he said he was going to join the call, but he never did."
+            "Last week he said he was going to come to the barbecue, but he never did."
           ],
           "explanation_ru": "В косвенной речи после said будущее сдвигается: will становится would.",
           "difficulty": 3
@@ -1545,11 +2154,58 @@
         {
           "id": "b2_future_in_the_past_08",
           "kind": "transform",
-          "prompt": "Rewrite in the past: I am going to buy a new laptop.",
-          "answer": "I was going to buy a new laptop.",
+          "prompt": "Rewrite in the past: I am going to buy a new bike.",
+          "answer": "I was going to buy a new bike.",
           "accept": [],
           "explanation_ru": "Форма am going to переходит в was going to при сдвиге в прошлое.",
           "difficulty": 3
+        },
+        {
+          "id": "b2_future_in_the_past_09",
+          "kind": "cloze",
+          "prompt": "When I was nineteen, I was sure my life ___ (be) one long adventure. I ___ (be going to) travel around the world before I turned twenty-five. My parents said I ___ (change) my mind, and I just laughed. In the end, I ___ (be about to) buy a ticket to Peru when I met my future wife.",
+          "gaps": [
+            [
+              "would be",
+              "was going to be"
+            ],
+            [
+              "was going to"
+            ],
+            [
+              "would change",
+              "was going to change"
+            ],
+            [
+              "was about to"
+            ]
+          ],
+          "explanation_ru": "Будущее с точки зрения прошлого: will → would, am going to → was going to, am about to → was about to. Was going to и was about to часто означают, что план так и не осуществился.",
+          "difficulty": 2
+        },
+        {
+          "id": "b2_future_in_the_past_10",
+          "kind": "transform",
+          "prompt": "Rewrite using the word in capitals (do not change it): I had planned to phone you, but I forgot. GOING",
+          "answer": "I was going to phone you, but I forgot.",
+          "accept": [],
+          "explanation_ru": "Несостоявшийся план в прошлом — was going to + V1: I was going to phone you, but… Форма be переходит в прошедшее время, а смысловой глагол остаётся инфинитивом.",
+          "difficulty": 2
+        },
+        {
+          "id": "b2_future_in_the_past_11",
+          "kind": "choice",
+          "prompt": "Как сказать по-английски: «Я знал, что она не придёт»?",
+          "options": [
+            "I knew she wouldn't come.",
+            "I knew she won't come.",
+            "I knew she didn't come.",
+            "I knew she wouldn't came."
+          ],
+          "correct_index": 0,
+          "explanation_ru": "После глагола в прошедшем времени будущее сдвигается: won't → wouldn't. В русском остаётся «не придёт», отсюда ошибка won't; didn't come значило бы «не пришла», а после would — инфинитив без окончания.",
+          "difficulty": 1,
+          "diagnostic": true
         }
       ]
     }

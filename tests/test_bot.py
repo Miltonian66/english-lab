@@ -279,6 +279,10 @@ class BotTestCase(unittest.TestCase):
             if not correctly:
                 index = (index + 1) % len(question.options)
             self.press(user_id, f"an:{self.step_payload(user_id)}:{index}")
+        elif question.kind == "cloze" and not correctly:
+            # Неверный ответ — по слову на каждый пропуск: иначе бот не поймёт
+            # ответ и попросит нужное число, а не засчитает ошибку.
+            self.send(user_id, "; ".join("definitely wrong" for _ in question.gaps))
         else:
             self.send(user_id, expected if correctly else "definitely wrong answer")
 
@@ -698,6 +702,28 @@ class PracticeFlowTests(BotTestCase):
         text = self.telegram.all_text()
         self.assertNotIn("точно не", text)
         self.assertNotIn("ответ начинается", text)
+
+    def test_cloze_text_is_answered_gap_by_gap(self) -> None:
+        """Связный текст: пропуски пронумерованы, ответы — по порядку, разбор — по номерам."""
+        point = next(
+            point for point in self.bot.curriculum.points.values()
+            if any(exercise.kind == "cloze" for exercise in point.exercises)
+        )
+        self.press(100, f"pr:{self.bot.curriculum.point_code(point.id)}")
+        for _ in range(len(point.exercises)):
+            if self.current_question(100).kind == "cloze":
+                break
+            self.answer_current(100)
+        question = self.current_question(100)
+        self.assertEqual(question.kind, "cloze")
+        self.assertIn("(1) ___", self.telegram.all_text())
+        self.telegram.reset()
+        self.send(100, "только один ответ")
+        self.assertIn("по порядку", self.telegram.all_text())
+        self.assertEqual(self.current_question(100).ref, question.ref)
+        self.telegram.reset()
+        self.send(100, "\n".join(gap[0] for gap in question.gaps))
+        self.assertIn("Верно", self.telegram.all_text())
 
     def test_vocabulary_hint_never_contains_the_word(self) -> None:
         self.press(100, "startpractice")

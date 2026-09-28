@@ -61,6 +61,7 @@ class Settings:
     whisper_compute: str
     whisper_threads: int
     piper_voice: str
+    piper_second_voice: str
     openai_api_key: str | None
     openai_model: str
     anthropic_api_key: str | None
@@ -156,6 +157,10 @@ class Settings:
             piper_voice=(
                 os.environ.get("PIPER_VOICE", "en_US-lessac-medium").strip()
                 or "en_US-lessac-medium"
+            ),
+            piper_second_voice=(
+                os.environ.get("PIPER_VOICE_2", "en_US-ryan-medium").strip()
+                or "en_US-ryan-medium"
             ),
             openai_api_key=os.environ.get("OPENAI_API_KEY", "").strip() or None,
             openai_model=os.environ.get("OPENAI_MODEL", "gpt-5-mini").strip(),

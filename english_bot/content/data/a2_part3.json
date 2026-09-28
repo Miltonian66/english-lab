@@ -123,12 +123,46 @@
         {
           "id": "a2_will_vs_be_going_to_08",
           "kind": "transform",
-          "prompt": "They made this plan last month. Rewrite with 'be going to': They will move the office to Berlin next year.",
-          "answer": "They are going to move the office to Berlin next year.",
+          "prompt": "They made this plan last month. Rewrite with 'be going to': They will move to Lisbon next year.",
+          "answer": "They are going to move to Lisbon next year.",
           "accept": [
-            "They're going to move the office to Berlin next year."
+            "They're going to move to Lisbon next year."
           ],
           "explanation_ru": "Решение принято заранее, поэтому will меняется на are going to, а глагол move остаётся без изменений.",
+          "difficulty": 3
+        },
+        {
+          "id": "a2_will_vs_be_going_to_09",
+          "kind": "choice",
+          "prompt": "Как сказать по-английски: «Я помогу тебе с сумками.»?",
+          "options": [
+            "I'll help you with your bags.",
+            "I help you with your bags.",
+            "I'm helping you with your bags.",
+            "I will to help you with your bags."
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Предложение помощи, решённое в момент разговора, — will. Русское «помогу» тянет к I help, но Present Simple обещания не выражает; I'm helping — процесс или договорённость, а после will частица to не ставится.",
+          "difficulty": 1,
+          "diagnostic": true
+        },
+        {
+          "id": "a2_will_vs_be_going_to_10",
+          "kind": "cloze",
+          "prompt": "A: What are your plans for the summer?\nB: We ___ (visit) my cousins in Canada. We bought the tickets last month.\nA: Nice! Oh, look at those dark clouds. It ___ (rain).\nB: You're right. I ___ (close) the windows.",
+          "gaps": [
+            [
+              "are going to visit",
+              "are visiting"
+            ],
+            [
+              "is going to rain"
+            ],
+            [
+              "will close"
+            ]
+          ],
+          "explanation_ru": "План с купленными билетами — be going to (или Present Continuous); прогноз по тучам, которые видны сейчас, — be going to; решение, принятое в момент разговора, — will.",
           "difficulty": 3
         }
       ]
@@ -180,7 +214,7 @@
         {
           "id": "a2_auxiliary_verbs_do_be_and_have_02",
           "kind": "choice",
-          "prompt": "They ___ not finished the migration.",
+          "prompt": "They ___ not finished their dinner.",
           "options": [
             "do",
             "are",
@@ -223,7 +257,7 @@
         {
           "id": "a2_auxiliary_verbs_do_be_and_have_05",
           "kind": "gap",
-          "prompt": "___ (be) they testing the app at ten o'clock yesterday?",
+          "prompt": "___ (be) they playing tennis at ten o'clock yesterday?",
           "answer": "Were",
           "accept": [],
           "explanation_ru": "Форма на -ing и прошедшее время во множественном числе дают вспомогательный were в начале вопроса.",
@@ -259,6 +293,57 @@
           "accept": [],
           "explanation_ru": "В вопросе Present Perfect вспомогательный have выходит перед подлежащим, а третья форма changed остаётся после него.",
           "difficulty": 3
+        },
+        {
+          "id": "a2_auxiliary_verbs_do_be_and_have_09",
+          "kind": "choice",
+          "prompt": "A: Have you ever been to Peru?\nB: No, I ___.",
+          "options": [
+            "haven't",
+            "don't",
+            "didn't",
+            "am not"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Короткий ответ повторяет вспомогательный глагол вопроса: Have you…? — No, I haven't. Don't и didn't отвечают на Do и Did, am not — на Are you…?",
+          "difficulty": 1,
+          "diagnostic": true
+        },
+        {
+          "id": "a2_auxiliary_verbs_do_be_and_have_10",
+          "kind": "cloze",
+          "prompt": "A: ___ you enjoy the concert last night?\nB: Yes, I ___. It was great!\nA: ___ your brother go with you?\nB: No, he ___ working late.",
+          "gaps": [
+            [
+              "Did"
+            ],
+            [
+              "did"
+            ],
+            [
+              "Did"
+            ],
+            [
+              "was"
+            ]
+          ],
+          "explanation_ru": "Past Simple в вопросе и коротком ответе держит did, а смысловой глагол остаётся в начальной форме (enjoy, go). Процесс в прошлом — Past Continuous, и его строит was.",
+          "difficulty": 2
+        },
+        {
+          "id": "a2_auxiliary_verbs_do_be_and_have_11",
+          "kind": "choice",
+          "prompt": "Омар расспрашивает о сестре. В каком предложении ошибка?",
+          "options": [
+            "Does she likes pizza?",
+            "Does she like pizza?",
+            "Is she eating pizza now?",
+            "Has she ever tried pizza?"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Does уже показывает третье лицо, поэтому смысловой глагол теряет -s: Does she like…? Время и лицо отмечаются один раз — на вспомогательном глаголе.",
+          "difficulty": 2,
+          "diagnostic": true
         }
       ]
     },
@@ -336,15 +421,15 @@
         {
           "id": "a2_first_conditional_future_time_clauses_04",
           "kind": "choice",
-          "prompt": "If the tests ___, we won't deploy today.",
+          "prompt": "If the kids ___ tired, we won't go to the zoo today.",
           "options": [
-            "will fail",
-            "fail",
-            "fails",
-            "to fail"
+            "will get",
+            "get",
+            "gets",
+            "to get"
           ],
           "correct_index": 1,
-          "explanation_ru": "Подлежащее tests во множественном числе, поэтому Present Simple без -s: fail; will после if не ставят, а fails и to fail не подходят по форме.",
+          "explanation_ru": "Подлежащее the kids во множественном числе, поэтому Present Simple без -s: get; will после if не ставят, а gets и to get не подходят по форме.",
           "difficulty": 2
         },
         {
@@ -389,6 +474,76 @@
           ],
           "explanation_ru": "Будущее will стоит в главной части, а после when идёт Present Simple get; порядок частей можно поменять местами.",
           "difficulty": 3
+        },
+        {
+          "id": "a2_first_conditional_future_time_clauses_09",
+          "kind": "choice",
+          "prompt": "If you heat ice, it ___.",
+          "options": [
+            "melts",
+            "will melts",
+            "melt",
+            "is melt"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Это общий факт, верный всегда, — нулевое условие: Present Simple в обеих частях, и с it глагол получает -s. Will melts смешивает две формы, а is melt не существует.",
+          "difficulty": 1,
+          "diagnostic": true
+        },
+        {
+          "id": "a2_first_conditional_future_time_clauses_10",
+          "kind": "choice",
+          "prompt": "Как сказать по-английски: «Если нажать эту кнопку, дверь открывается.»?",
+          "options": [
+            "If you press this button, the door opens.",
+            "If to press this button, the door opens.",
+            "If press this button, the door opens.",
+            "If you will press this button, the door opens."
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Русское безличное «если нажать» в английском требует подлежащего: if you press. Инфинитив после if невозможен, а will в части с if не ставят. Правило, верное всегда, — Present Simple в обеих частях.",
+          "difficulty": 2,
+          "diagnostic": true
+        },
+        {
+          "id": "a2_first_conditional_future_time_clauses_11",
+          "kind": "cloze",
+          "prompt": "If it ___ (be) sunny tomorrow, we ___ (go) to the beach. If it ___ (rain), we ___ (stay) at home and watch a movie.",
+          "gaps": [
+            [
+              "is"
+            ],
+            [
+              "will go",
+              "are going to go",
+              "are going"
+            ],
+            [
+              "rains"
+            ],
+            [
+              "will stay",
+              "are going to stay",
+              "are staying"
+            ]
+          ],
+          "explanation_ru": "В части с if — Present Simple (is, rains), даже когда речь о завтрашнем дне; результат — will + глагол. Will после if — калька с русского «если будет».",
+          "difficulty": 2
+        },
+        {
+          "id": "a2_first_conditional_future_time_clauses_12",
+          "kind": "choice",
+          "prompt": "A: What happens if you don't water plants?\nB: They ___.",
+          "options": [
+            "die",
+            "dies",
+            "would die",
+            "are die"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Вопрос What happens if…? спрашивает об общем законе, поэтому ответ в Present Simple: they die. Dies не подходит к they, would die описывало бы воображаемую ситуацию, а are die не существует.",
+          "difficulty": 2,
+          "diagnostic": true
         }
       ]
     },
@@ -425,15 +580,15 @@
         {
           "id": "a2_past_continuous_past_simple_01",
           "kind": "choice",
-          "prompt": "While we ___ the new version, the power went out.",
+          "prompt": "While we ___ dinner, the power went out.",
           "options": [
-            "was testing",
-            "were testing",
-            "were tested",
-            "are testing"
+            "was cooking",
+            "were cooking",
+            "were cooked",
+            "are cooking"
           ],
           "correct_index": 1,
-          "explanation_ru": "Длинный фон после while стоит в Past Continuous, а подлежащее we требует were; were tested - это пассив, он не может иметь дополнение the new version.",
+          "explanation_ru": "Длинный фон после while стоит в Past Continuous, а подлежащее we требует were; were cooked - это пассив, он не может иметь дополнение dinner.",
           "difficulty": 1
         },
         {
@@ -491,10 +646,10 @@
         {
           "id": "a2_past_continuous_past_simple_06",
           "kind": "gap",
-          "prompt": "The manager came in at ten. At that moment we ___ (talk) about the project.",
+          "prompt": "The teacher came in at ten. At that moment we ___ (talk) about the weekend.",
           "answer": "were talking",
           "accept": [],
-          "explanation_ru": "В момент, когда вошёл менеджер, разговор уже шёл, значит это длинный фон в Past Continuous.",
+          "explanation_ru": "В момент, когда вошёл учитель, разговор уже шёл, значит это длинный фон в Past Continuous.",
           "difficulty": 2
         },
         {
@@ -517,6 +672,57 @@
           ],
           "explanation_ru": "Длинная погода идёт в Past Continuous, а короткое действие после when - в Past Simple; части можно поменять местами.",
           "difficulty": 3
+        },
+        {
+          "id": "a2_past_continuous_past_simple_09",
+          "kind": "cloze",
+          "prompt": "Last night I ___ (cook) dinner when the lights ___ (go) out. My kids ___ (watch) TV in the living room. We ___ (find) some candles and had dinner in the dark.",
+          "gaps": [
+            [
+              "was cooking"
+            ],
+            [
+              "went"
+            ],
+            [
+              "were watching"
+            ],
+            [
+              "found"
+            ]
+          ],
+          "explanation_ru": "Длинный фон — Past Continuous (was cooking, were watching). Короткое событие, которое его прервало, и следующие шаги рассказа — Past Simple (went, found).",
+          "difficulty": 3
+        },
+        {
+          "id": "a2_past_continuous_past_simple_10",
+          "kind": "choice",
+          "prompt": "Как сказать по-английски: «Когда я пришёл, она читала.»?",
+          "options": [
+            "When I came, she was reading.",
+            "When I came, she read.",
+            "When I was coming, she read.",
+            "When I came, she was read."
+          ],
+          "correct_index": 0,
+          "explanation_ru": "«Читала» — процесс, который уже шёл в момент прихода, поэтому Past Continuous was reading. She read значило бы, что она начала читать после прихода, а was read — пассив «была прочитана».",
+          "difficulty": 2,
+          "diagnostic": true
+        },
+        {
+          "id": "a2_past_continuous_past_simple_11",
+          "kind": "choice",
+          "prompt": "A: What were you doing at eight last night?\nB: I ___ dinner with my family.",
+          "options": [
+            "was having",
+            "were having",
+            "am having",
+            "was have"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Вопрос о процессе в конкретный момент прошлого — Past Continuous. С I нужна форма was, а после неё глагол с -ing; am having — настоящее время.",
+          "difficulty": 1,
+          "diagnostic": true
         }
       ]
     },
@@ -552,15 +758,15 @@
         {
           "id": "a2_past_perfect_01",
           "kind": "choice",
-          "prompt": "When we got to the theater, the movie ___ already started.",
+          "prompt": "\"When we got to the theater, the movie had started.\" Что случилось раньше?",
           "options": [
-            "has",
-            "had",
-            "was",
-            "did"
+            "Начался фильм.",
+            "Мы пришли в кинотеатр.",
+            "Оба события произошли одновременно.",
+            "Фильм начнётся позже."
           ],
-          "correct_index": 1,
-          "explanation_ru": "Фильм начался раньше нашего прихода, а весь рассказ в прошлом, поэтому had started.",
+          "correct_index": 0,
+          "explanation_ru": "Had + третья форма (had started) отмечает более раннее из двух прошлых событий: фильм начался до того, как мы пришли. Более позднее событие стоит в Past Simple: got to.",
           "difficulty": 1
         },
         {
@@ -580,40 +786,40 @@
         {
           "id": "a2_past_perfect_03",
           "kind": "choice",
-          "prompt": "___ you ever visited London before you moved there?",
+          "prompt": "The kitchen was clean because Dad ___ the dishes.",
           "options": [
-            "Did",
-            "Have",
-            "Had",
-            "Were"
+            "had washed",
+            "has washed",
+            "had wash",
+            "was washed"
           ],
-          "correct_index": 2,
-          "explanation_ru": "Точка отсчёта в прошлом (before you moved there), поэтому вопрос открывает had, а не have или did.",
+          "correct_index": 0,
+          "explanation_ru": "Посуду вымыли раньше, чем мы увидели чистую кухню, а рассказ идёт в прошлом, поэтому had + третья форма washed. Has washed привязан к настоящему, had wash — без третьей формы, was washed — пассив «был вымыт».",
           "difficulty": 2
         },
         {
           "id": "a2_past_perfect_04",
           "kind": "choice",
-          "prompt": "By the time the technician came, we ___ the problem ourselves.",
+          "prompt": "I got to the bus stop at 8:05, but the bus ___ at 8:00.",
           "options": [
-            "had fixed",
-            "have fixed",
-            "had fix",
-            "was fixed"
+            "had left",
+            "has left",
+            "had leave",
+            "was leave"
           ],
           "correct_index": 0,
-          "explanation_ru": "By the time задаёт более позднюю точку в прошлом, а раннее действие стоит в Past Perfect had fixed.",
+          "explanation_ru": "Автобус ушёл раньше, чем я пришёл на остановку, поэтому had + третья форма left. Has left не сочетается с рассказом о прошлом, а had leave и was leave — несуществующие формы.",
           "difficulty": 2
         },
         {
           "id": "a2_past_perfect_05",
           "kind": "gap",
-          "prompt": "The office was empty. Everyone ___ (go) home.",
+          "prompt": "The party was over, and the house was quiet. Everyone ___ (go) home.",
           "answer": "had gone",
           "accept": [
             "'d gone"
           ],
-          "explanation_ru": "Люди ушли раньше, чем мы увидели пустой офис, поэтому Past Perfect с третьей формой gone.",
+          "explanation_ru": "Гости ушли раньше, чем мы заметили тишину, поэтому Past Perfect с третьей формой gone.",
           "difficulty": 1
         },
         {
@@ -647,6 +853,37 @@
           ],
           "explanation_ru": "Раннее действие (потеря ключей) уходит в Past Perfect, а следствие остаётся в Past Simple.",
           "difficulty": 3
+        },
+        {
+          "id": "a2_past_perfect_09",
+          "kind": "choice",
+          "prompt": "Как сказать по-английски: «Когда мы приехали, поезд уже ушёл.»?",
+          "options": [
+            "When we arrived, the train had already left.",
+            "When we arrived, the train has already left.",
+            "When we arrived, the train had already leave.",
+            "When we arrived, the train was already leaving."
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Поезд ушёл раньше нашего приезда, и весь рассказ в прошлом — had already left. Has left привязан к настоящему, had leave без третьей формы, а was leaving значило бы «как раз отходил».",
+          "difficulty": 2,
+          "diagnostic": true
+        },
+        {
+          "id": "a2_past_perfect_10",
+          "kind": "cloze",
+          "prompt": "Last Sunday Fatima went to her favorite cafe, but it was closed. The owner ___ (go) on vacation. So she went to the bakery next door, but they ___ (sell) all the bread. In the end, she ate at home.",
+          "gaps": [
+            [
+              "had gone"
+            ],
+            [
+              "had sold",
+              "had already sold"
+            ]
+          ],
+          "explanation_ru": "Хозяин уехал и хлеб распродали ещё до прихода Фатимы, поэтому оба действия — had + третья форма. Сам её поход и обед дома — Past Simple.",
+          "difficulty": 2
         }
       ]
     },
@@ -776,6 +1013,60 @@
           ],
           "explanation_ru": "Порядок в отрицании: подлежащее, didn't, глагол в начальной форме, дополнение.",
           "difficulty": 3
+        },
+        {
+          "id": "a2_past_simple_form_use_09",
+          "kind": "choice",
+          "prompt": "When I was five, I ___ swim, but I couldn't read.",
+          "options": [
+            "could",
+            "can",
+            "could to",
+            "was can"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Умение в прошлом — could, прошедшая форма can. После could глагол идёт без to, а was can не существует.",
+          "difficulty": 1,
+          "diagnostic": true
+        },
+        {
+          "id": "a2_past_simple_form_use_10",
+          "kind": "choice",
+          "prompt": "Как сказать по-английски: «Я не смог найти ключи.»?",
+          "options": [
+            "I couldn't find my keys.",
+            "I can't found my keys.",
+            "I didn't can find my keys.",
+            "I couldn't found my keys."
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Прошедшее «не смог» — couldn't, и после него глагол в начальной форме find. Can не строит отрицание через didn't, а вторая форма после модального глагола не ставится.",
+          "difficulty": 2,
+          "diagnostic": true
+        },
+        {
+          "id": "a2_past_simple_form_use_11",
+          "kind": "cloze",
+          "prompt": "Last summer Noah ___ (go) to Japan. He ___ (not/speak) Japanese, but he ___ (can) read some signs. He ___ (eat) sushi every day!",
+          "gaps": [
+            [
+              "went"
+            ],
+            [
+              "didn't speak",
+              "did not speak",
+              "couldn't speak",
+              "could not speak"
+            ],
+            [
+              "could"
+            ],
+            [
+              "ate"
+            ]
+          ],
+          "explanation_ru": "Законченные события прошлого — Past Simple: went, ate (неправильные глаголы). Отрицание строит didn't с начальной формой speak, а прошедшая форма can — could.",
+          "difficulty": 2
         }
       ]
     },
@@ -840,7 +1131,7 @@
         {
           "id": "a2_present_past_simple_passive_03",
           "kind": "choice",
-          "prompt": "The bug ___ by one of our users last week.",
+          "prompt": "The wallet ___ by a little boy last week.",
           "options": [
             "found",
             "was found",
@@ -848,7 +1139,7 @@
             "were found"
           ],
           "correct_index": 1,
-          "explanation_ru": "Ошибку нашли, а не она нашла, поэтому нужен пассив was found; find - не третья форма, а were не подходит по числу.",
+          "explanation_ru": "Кошелёк нашли, а не он нашёл, поэтому нужен пассив was found; find - не третья форма, а were не подходит по числу.",
           "difficulty": 2
         },
         {
@@ -868,16 +1159,16 @@
         {
           "id": "a2_present_past_simple_passive_05",
           "kind": "gap",
-          "prompt": "The report ___ (write) by Anna last Friday.",
+          "prompt": "This letter ___ (write) by my grandfather in 1970.",
           "answer": "was written",
           "accept": [],
-          "explanation_ru": "Прошедший пассив: was плюс третья форма written, потому что отчёт написали.",
+          "explanation_ru": "Прошедший пассив: was плюс третья форма written, потому что письмо написали.",
           "difficulty": 1
         },
         {
           "id": "a2_present_past_simple_passive_06",
           "kind": "gap",
-          "prompt": "These old servers ___ (not/use) anymore.",
+          "prompt": "These old coins ___ (not/use) anymore.",
           "answer": "aren't used",
           "accept": [
             "are not used"
@@ -904,6 +1195,53 @@
             "The old files were deleted yesterday by them."
           ],
           "explanation_ru": "Дополнение становится подлежащим во множественном числе, поэтому were deleted; исполнителя можно опустить.",
+          "difficulty": 3
+        },
+        {
+          "id": "a2_present_past_simple_passive_09",
+          "kind": "choice",
+          "prompt": "Как сказать по-английски: «Этот мост построили в 1890 году.»?",
+          "options": [
+            "This bridge was built in 1890.",
+            "This bridge built in 1890.",
+            "This bridge was build in 1890.",
+            "This bridge is built in 1890."
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Русское «построили» без подлежащего передаётся пассивом: was built. Без was выходит, что мост сам что-то построил; build — не третья форма, а is built не сочетается с 1890 годом.",
+          "difficulty": 2,
+          "diagnostic": true
+        },
+        {
+          "id": "a2_present_past_simple_passive_10",
+          "kind": "cloze",
+          "prompt": "Coffee ___ (grow) in many hot countries. In some places, the beans ___ (pick) by hand. The first coffee shop in our town ___ (open) in 1995 by an Italian family.",
+          "gaps": [
+            [
+              "is grown"
+            ],
+            [
+              "are picked"
+            ],
+            [
+              "was opened"
+            ]
+          ],
+          "explanation_ru": "Важен не исполнитель, а сам предмет, поэтому пассив: форма be плюс третья форма. Coffee — единственное число (is), the beans — множественное (are), 1995 год — прошлое (was).",
+          "difficulty": 2
+        },
+        {
+          "id": "a2_present_past_simple_passive_11",
+          "kind": "choice",
+          "prompt": "Маркус рассказывает о доме и путешествиях. В каком предложении ошибка?",
+          "options": [
+            "This house was build by my grandfather.",
+            "These photos were taken in Peru.",
+            "Spanish is spoken in Mexico.",
+            "The windows are cleaned every week."
+          ],
+          "correct_index": 0,
+          "explanation_ru": "В пассиве после be нужна третья форма: was built. Build — начальная форма, с ней пассив не строится.",
           "difficulty": 3
         }
       ]
@@ -981,7 +1319,7 @@
         {
           "id": "a2_present_continuous_future_arrangements_04",
           "kind": "choice",
-          "prompt": "We ___ to Berlin on Monday. We booked the tickets last week.",
+          "prompt": "We ___ to Denver on Monday. We booked the tickets last week.",
           "options": [
             "flies",
             "are flying",
@@ -1016,11 +1354,11 @@
         {
           "id": "a2_present_continuous_future_arrangements_07",
           "kind": "correct",
-          "prompt": "I meeting my manager at ten tomorrow.",
-          "answer": "I'm meeting my manager at ten tomorrow.",
+          "prompt": "I meeting my sister at ten tomorrow.",
+          "answer": "I'm meeting my sister at ten tomorrow.",
           "accept": [
-            "I am meeting my manager at ten tomorrow.",
-            "I am going to meet my manager at ten tomorrow."
+            "I am meeting my sister at ten tomorrow.",
+            "I am going to meet my sister at ten tomorrow."
           ],
           "explanation_ru": "Форма на -ing не работает без глагола be: нужен am или короткое 'm.",
           "difficulty": 3
@@ -1038,6 +1376,76 @@
           ],
           "explanation_ru": "Порядок: подлежащее, форма be, глагол с -ing, затем время; договорённость на завтра уже зафиксирована.",
           "difficulty": 3
+        },
+        {
+          "id": "a2_present_continuous_future_arrangements_09",
+          "kind": "choice",
+          "prompt": "The museum tour ___ at 10:30 tomorrow, so don't be late.",
+          "options": [
+            "starts",
+            "is start",
+            "will starting",
+            "start"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Расписание, которое от нас не зависит (экскурсии, поезда, фильмы), описывает Present Simple даже о будущем: the tour starts. Is start и will starting — смешение форм, start не подходит к единственному числу.",
+          "difficulty": 2,
+          "diagnostic": true
+        },
+        {
+          "id": "a2_present_continuous_future_arrangements_10",
+          "kind": "choice",
+          "prompt": "A: Are you free on Friday evening?\nB: Sorry, I ___ my grandparents. We planned it last week.",
+          "options": [
+            "am visiting",
+            "visit",
+            "visits",
+            "am visit"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Встреча договорена заранее, значит Present Continuous: am visiting. Present Simple visit говорит о привычке, а не о плане, visits не подходит к I, а am visit без -ing не существует.",
+          "difficulty": 1,
+          "diagnostic": true
+        },
+        {
+          "id": "a2_present_continuous_future_arrangements_11",
+          "kind": "cloze",
+          "prompt": "Mei is going to Lisbon this weekend. Her plane ___ (leave) at 6:40 on Friday morning. On Saturday she ___ (meet) her friend Elena for lunch: they booked a table last week. The castle ___ (close) at 6 p.m., so they ___ (go) there right after lunch.",
+          "gaps": [
+            [
+              "leaves",
+              "is leaving"
+            ],
+            [
+              "is meeting",
+              "is going to meet"
+            ],
+            [
+              "closes"
+            ],
+            [
+              "are going",
+              "are going to go",
+              "will go"
+            ]
+          ],
+          "explanation_ru": "Расписания самолёта и замка — Present Simple (leaves, closes). Договорённость с подругой — Present Continuous (is meeting), план на основе расписания — are going.",
+          "difficulty": 3
+        },
+        {
+          "id": "a2_present_continuous_future_arrangements_12",
+          "kind": "choice",
+          "prompt": "Как сказать по-английски: «Что ты делаешь в эту субботу вечером?»",
+          "options": [
+            "What are you doing this Saturday evening?",
+            "What do you do this Saturday evening?",
+            "What you are doing this Saturday evening?",
+            "What will you doing this Saturday evening?"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "О планах собеседника на конкретный день спрашивают в Present Continuous: What are you doing…? Do you do спрашивает о привычке, без are перед подлежащим нет вопроса, а will doing — смешение форм.",
+          "difficulty": 2,
+          "diagnostic": true
         }
       ]
     },
@@ -1101,7 +1509,7 @@
         {
           "id": "a2_present_perfect_or_past_simple_03",
           "kind": "choice",
-          "prompt": "She ___ the company in 2019.",
+          "prompt": "She ___ school in 2019.",
           "options": [
             "has left",
             "left",
@@ -1165,6 +1573,53 @@
           ],
           "explanation_ru": "Появилось указание на закрытый период, поэтому форма меняется на Past Simple sent.",
           "difficulty": 3
+        },
+        {
+          "id": "a2_present_perfect_or_past_simple_09",
+          "kind": "cloze",
+          "prompt": "A: Have you ever ___ (be) to Mexico?\nB: Yes, I ___ (go) there two years ago.\nA: ___ you like it?\nB: I loved it! The food was amazing.",
+          "gaps": [
+            [
+              "been"
+            ],
+            [
+              "went"
+            ],
+            [
+              "Did"
+            ]
+          ],
+          "explanation_ru": "Опыт без времени — Present Perfect: Have you ever been…? Как только появляется конкретный момент (two years ago) и детали, рассказ переходит в Past Simple: went, Did you like…?",
+          "difficulty": 2
+        },
+        {
+          "id": "a2_present_perfect_or_past_simple_10",
+          "kind": "choice",
+          "prompt": "Как сказать по-английски: «Я видел этот фильм два года назад.»?",
+          "options": [
+            "I saw this movie two years ago.",
+            "I have seen this movie two years ago.",
+            "I have seen this movie before two years.",
+            "I saw this movie before two years."
+          ],
+          "correct_index": 0,
+          "explanation_ru": "«Назад» — ago, и оно всегда требует Past Simple: saw. Present Perfect с ago не сочетается, а before two years — калька с «два года назад».",
+          "difficulty": 2,
+          "diagnostic": true
+        },
+        {
+          "id": "a2_present_perfect_or_past_simple_11",
+          "kind": "choice",
+          "prompt": "Диего вспоминает Париж. В каком предложении ошибка?",
+          "options": [
+            "I have visited Paris in 2020.",
+            "I visited Paris in 2020.",
+            "I have visited Paris twice.",
+            "Have you ever visited Paris?"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "In 2020 называет закрытый момент, поэтому нужен Past Simple visited. Present Perfect работает, когда время не названо: twice, ever.",
+          "difficulty": 3
         }
       ]
     },
@@ -1200,7 +1655,7 @@
         {
           "id": "a2_present_perfect_01",
           "kind": "choice",
-          "prompt": "She ___ finished the report.",
+          "prompt": "She ___ finished her homework.",
           "options": [
             "have",
             "has",
@@ -1297,6 +1752,60 @@
           "accept": [],
           "explanation_ru": "В вопросе have выходит перед подлежащим, а третья форма seen остаётся сразу за ним.",
           "difficulty": 3
+        },
+        {
+          "id": "a2_present_perfect_09",
+          "kind": "choice",
+          "prompt": "A: Can I have some cake?\nB: Sorry, your brother ___ it all!",
+          "options": [
+            "has already eaten",
+            "has already ate",
+            "already has eat",
+            "is already eaten"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Свежий результат (торта уже нет) — Present Perfect: has + третья форма eaten. Ate — вторая форма, после has не ставится, has eat — без третьей формы, а is eaten — пассив «съеден».",
+          "difficulty": 2,
+          "diagnostic": true
+        },
+        {
+          "id": "a2_present_perfect_10",
+          "kind": "choice",
+          "prompt": "Как сказать по-английски: «Я никогда не был в Японии.»?",
+          "options": [
+            "I have never been to Japan.",
+            "I haven't never been to Japan.",
+            "I was never to Japan.",
+            "I have never went to Japan."
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Жизненный опыт без времени — Present Perfect: have never been to. Never уже отрицание, второе not не нужно; was to так не говорят, а went — вторая форма, после have нужна третья.",
+          "difficulty": 1,
+          "diagnostic": true
+        },
+        {
+          "id": "a2_present_perfect_11",
+          "kind": "cloze",
+          "prompt": "Carlos ___ (live) in Madrid for five years. He ___ (learn) a lot of Spanish, but he ___ (not/visit) the south of Spain yet. His friends ___ (be) to Seville many times!",
+          "gaps": [
+            [
+              "has lived",
+              "has been living"
+            ],
+            [
+              "has learned",
+              "has learnt"
+            ],
+            [
+              "hasn't visited",
+              "has not visited"
+            ],
+            [
+              "have been"
+            ]
+          ],
+          "explanation_ru": "Все четыре действия связаны с настоящим: живёт до сих пор (for five years), результат (learned), ещё не сделано (yet) и опыт (many times). Поэтому has или have + третья форма: с he — has, с friends — have.",
+          "difficulty": 3
         }
       ]
     },
@@ -1375,7 +1884,7 @@
         {
           "id": "a2_present_simple_continuous_04",
           "kind": "choice",
-          "prompt": "___ you working on the bug report at the moment?",
+          "prompt": "___ you cooking dinner at the moment?",
           "options": [
             "Do",
             "Are",
@@ -1383,7 +1892,7 @@
             "Have"
           ],
           "correct_index": 1,
-          "explanation_ru": "Форма working требует be, а с you это are.",
+          "explanation_ru": "Форма cooking требует be, а с you это are.",
           "difficulty": 2,
           "diagnostic": false
         },
@@ -1429,6 +1938,43 @@
           ],
           "explanation_ru": "Регулярность передаёт Present Simple, а наречие usually стоит рядом с doesn't перед смысловым глаголом.",
           "difficulty": 3
+        },
+        {
+          "id": "a2_present_simple_continuous_09",
+          "kind": "cloze",
+          "prompt": "Diego usually ___ (drive) to work, but his car is broken, so this week he ___ (take) the bus. Right now he ___ (wait) at the bus stop in the rain, and he ___ (not/like) it at all!",
+          "gaps": [
+            [
+              "drives"
+            ],
+            [
+              "is taking"
+            ],
+            [
+              "is waiting"
+            ],
+            [
+              "doesn't like",
+              "does not like"
+            ]
+          ],
+          "explanation_ru": "Привычка — Present Simple с -s: usually drives. Временная ситуация этой недели и действие прямо сейчас — Present Continuous: is taking, is waiting. Like — глагол состояния, поэтому даже о моменте речи остаётся Present Simple: doesn't like.",
+          "difficulty": 2
+        },
+        {
+          "id": "a2_present_simple_continuous_10",
+          "kind": "choice",
+          "prompt": "Как сказать по-английски: «Сейчас я живу у друга» (временно)?",
+          "options": [
+            "I'm staying with a friend at the moment.",
+            "I stay with a friend at the moment.",
+            "I live by a friend at the moment.",
+            "I'm stay with a friend at the moment."
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Временная ситуация «сейчас, в этот период» — Present Continuous: I'm staying. Present Simple I stay звучит как постоянное положение дел, by a friend — калька «у друга» (правильно with a friend), а I'm stay без -ing не существует.",
+          "difficulty": 2,
+          "diagnostic": true
         }
       ]
     },
@@ -1465,7 +2011,7 @@
         {
           "id": "a2_review_verb_tenses_a2_01",
           "kind": "choice",
-          "prompt": "Right now I ___ on a new ticket.",
+          "prompt": "Right now I ___ on a new painting.",
           "options": [
             "work",
             "am working",
@@ -1479,15 +2025,15 @@
         {
           "id": "a2_review_verb_tenses_a2_02",
           "kind": "choice",
-          "prompt": "We ___ the new version last Friday.",
+          "prompt": "We ___ into our new house last Friday.",
           "options": [
-            "have released",
-            "released",
-            "are releasing",
-            "release"
+            "have moved",
+            "moved",
+            "are moving",
+            "move"
           ],
           "correct_index": 1,
-          "explanation_ru": "Last Friday - закрытый момент в прошлом, поэтому Past Simple released.",
+          "explanation_ru": "Last Friday - закрытый момент в прошлом, поэтому Past Simple moved; Present Perfect с названным моментом не сочетается.",
           "difficulty": 1
         },
         {
@@ -1552,13 +2098,84 @@
         {
           "id": "a2_review_verb_tenses_a2_08",
           "kind": "transform",
-          "prompt": "Rewrite in the passive: Someone stole my laptop last week.",
-          "answer": "My laptop was stolen last week.",
+          "prompt": "Rewrite in the passive: Someone stole my bike last week.",
+          "answer": "My bike was stolen last week.",
           "accept": [
-            "My laptop was stolen last week by someone."
+            "My bike was stolen last week by someone."
           ],
           "explanation_ru": "Исполнитель неизвестен, поэтому дополнение становится подлежащим и берёт форму was stolen.",
           "difficulty": 3
+        },
+        {
+          "id": "a2_review_verb_tenses_a2_09",
+          "kind": "cloze",
+          "prompt": "Next week I ___ (fly) to Chicago: I booked the ticket yesterday. My flight ___ (leave) at 9 a.m. on Monday. I think it ___ (be) cold there, so I ___ (take) my warm coat.",
+          "gaps": [
+            [
+              "am flying",
+              "am going to fly"
+            ],
+            [
+              "leaves",
+              "is leaving"
+            ],
+            [
+              "will be",
+              "is going to be"
+            ],
+            [
+              "will take",
+              "am going to take",
+              "am taking"
+            ]
+          ],
+          "explanation_ru": "Купленный билет — договорённость: am flying (или am going to fly). Расписание рейса — Present Simple leaves. Мнение после I think — will be. Решение о тёплом пальто — will take или am going to take.",
+          "difficulty": 3
+        },
+        {
+          "id": "a2_review_verb_tenses_a2_10",
+          "kind": "choice",
+          "prompt": "I was sad at the party because Diego ___ home.",
+          "options": [
+            "had already gone",
+            "has already gone",
+            "already goes",
+            "was already go"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Диего ушёл раньше, чем мне стало грустно на вечеринке, а рассказ идёт в прошлом, поэтому had already gone. Has gone привязан к настоящему, goes — настоящее время, was go не существует.",
+          "difficulty": 2,
+          "diagnostic": true
+        },
+        {
+          "id": "a2_review_verb_tenses_a2_11",
+          "kind": "choice",
+          "prompt": "Зои планирует вечер. В каком предложении ошибка?",
+          "options": [
+            "We are go to the movies tonight.",
+            "We are going to the movies tonight.",
+            "The movie starts at eight.",
+            "I think you will love it."
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Договорённость на вечер — Present Continuous: are going, а форма be без -ing (are go) не существует. Расписание фильма — Present Simple, мнение после I think — will.",
+          "difficulty": 2,
+          "diagnostic": true
+        },
+        {
+          "id": "a2_review_verb_tenses_a2_12",
+          "kind": "choice",
+          "prompt": "Как сказать по-английски: «Я позвоню тебе, когда приеду.»?",
+          "options": [
+            "I'll call you when I arrive.",
+            "I'll call you when I will arrive.",
+            "I call you when I arrive.",
+            "I will calling you when I arrive."
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Будущее ставится в главную часть: I'll call. После when о будущем говорят в Present Simple: when I arrive, хотя по-русски «когда приеду». Present Simple I call в главной части обещания не выражает.",
+          "difficulty": 1,
+          "diagnostic": true
         }
       ]
     }

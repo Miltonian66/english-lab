@@ -616,3 +616,11 @@ class ThreadedSpeaker:
             return self._pool.run(self._delegate.synthesize, *args, **kwargs)
         except OverloadedError as exc:
             raise SpeechError("очередь синтеза заполнена") from exc
+
+    def synthesize_dialogue(self, lines: list[tuple[str, str]]) -> Any:
+        if not hasattr(self._delegate, "synthesize_dialogue"):
+            return self.synthesize(" ".join(text for _, text in lines))
+        try:
+            return self._pool.run(self._delegate.synthesize_dialogue, lines)
+        except OverloadedError as exc:
+            raise SpeechError("очередь синтеза заполнена") from exc

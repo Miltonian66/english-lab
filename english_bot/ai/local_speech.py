@@ -33,6 +33,10 @@ DEFAULT_WHISPER_THREADS = 3
 # минутный ответ обрабатывается примерно за 40 секунд.
 REALTIME_FACTOR = 1.6
 DEFAULT_PIPER_VOICE = "en_US-lessac-medium"
+# Второй голос диалогов аудирования: мужской к женскому основному.
+DEFAULT_SECOND_VOICE = "en_US-ryan-medium"
+# Пауза между репликами диалога: без неё собеседники сливаются.
+TURN_PAUSE_SECONDS = 0.35
 SLOW_LENGTH_SCALE = 1.45  # растягивает слоги, не меняя высоту голоса
 # piper обрывает звук ровно на последнем сэмпле: без полей слово в Telegram
 # щёлкает на старте и рубится на конце. Десятая доля секунды это снимает.
@@ -120,20 +124,32 @@ class LocalTranscriber:
 
 
 class LocalSpeaker:
-    """Синтез через piper с последующей упаковкой в Ogg/Opus для Telegram."""
+    """Синтез через piper с последующей упаковкой в Ogg/Opus для Telegram.
 
-    def __init__(self, voice_dir: Path, cache_dir: Path, voice: str = DEFAULT_PIPER_VOICE):
+    Второй голос нужен диалогам аудирования: двух собеседников одним голосом
+    на слух не различить. Если его модели нет, диалог читается основным голосом.
+    """
+
+    def __init__(
+        self,
+        voice_dir: Path,
+        cache_dir: Path,
+        voice: str = DEFAULT_PIPER_VOICE,
+        second_voice: str = DEFAULT_SECOND_VOICE,
+    ):
         self.voice_dir = voice_dir
         self.cache_dir = cache_dir
         self.voice = voice
-        self._piper: Any | None = None
+        self.second_voice = second_voice
+        self._voices: dict[str, Any] = {}
 
     @property
     def model_path(self) -> Path:
         return self.voice_dir / f"{self.voice}.onnx"
 
-    def _load(self) -> Any:
-        if self._piper is None:
+    def _load(self, name: str | None = None) -> Any:
+        name = name or self.voice
+        if name not in self._voices:
             try:
                 from piper import PiperVoice
             except ImportError as exc:
@@ -141,14 +157,42 @@ class LocalSpeaker:
                     "piper-tts не установлен. Запусти бота из .venv или "
                     "переключи SPEECH_BACKEND на openai."
                 ) from exc
-            if not self.model_path.exists():
+            path = self.voice_dir / f"{name}.onnx"
+            if not path.exists():
                 raise SpeechError(
-                    f"голос {self.voice} не найден в {self.voice_dir}. "
+                    f"голос {name} не найден в {self.voice_dir}. "
                     "Скачай его: python -m piper.download_voices <голос>"
                 )
-            LOGGER.info("Загружаю голос синтеза %s", self.voice)
-            self._piper = PiperVoice.load(self.model_path)
-        return self._piper
+            LOGGER.info("Загружаю голос синтеза %s", name)
+            self._voices[name] = PiperVoice.load(path)
+        return self._voices[name]
+
+    def _wav(self, text: str, voice_name: str | None = None, slow: bool = False) -> bytes:
+        voice = self._load(voice_name)
+        try:
+            from piper.config import SynthesisConfig
+
+            config = SynthesisConfig(length_scale=SLOW_LENGTH_SCALE) if slow else None
+            buffer = io.BytesIO()
+            with wave.open(buffer, "wb") as wav_file:
+                voice.synthesize_wav(text, wav_file, syn_config=config)
+            return buffer.getvalue()
+        except SpeechError:
+            raise
+        except Exception as exc:
+            raise SpeechError(f"синтез не удался: {exc}") from exc
+
+    def _store(self, destination: Path, wav_bytes: bytes) -> Path:
+        audio = wav_to_opus(pad_wav(wav_bytes))
+        # Кэш общий на всю платформу, поэтому имя временного файла уникально.
+        partial = destination.with_suffix(f".{os.getpid()}.{secrets.token_hex(4)}.part")
+        try:
+            partial.write_bytes(audio)
+            partial.replace(destination)
+        finally:
+            partial.unlink(missing_ok=True)
+        destination.chmod(0o600)
+        return destination
 
     def synthesize(self, text: str, slow: bool = False) -> Path:
         cleaned = text.strip()
@@ -160,31 +204,53 @@ class LocalSpeaker:
         destination = self.cache_dir / cache_name(cleaned, f"piper-{self.voice}", slow)
         if destination.exists() and destination.stat().st_size > 0:
             return destination
+        return self._store(destination, self._wav(cleaned, slow=slow))
 
-        voice = self._load()
-        try:
-            from piper.config import SynthesisConfig
+    def _second(self) -> str:
+        return self.second_voice if (self.voice_dir / f"{self.second_voice}.onnx").exists() else self.voice
 
-            config = SynthesisConfig(length_scale=SLOW_LENGTH_SCALE) if slow else None
-            buffer = io.BytesIO()
-            with wave.open(buffer, "wb") as wav_file:
-                voice.synthesize_wav(cleaned, wav_file, syn_config=config)
-            wav_bytes = buffer.getvalue()
-        except SpeechError:
-            raise
-        except Exception as exc:
-            raise SpeechError(f"синтез не удался: {exc}") from exc
+    def synthesize_dialogue(self, lines: list[tuple[str, str]]) -> Path:
+        """Реплики по голосам: первый говорящий — основной голос, второй — второй.
 
-        audio = wav_to_opus(pad_wav(wav_bytes))
-        # Кэш общий на всю платформу, поэтому имя временного файла уникально.
-        partial = destination.with_suffix(f".{os.getpid()}.{secrets.token_hex(4)}.part")
-        try:
-            partial.write_bytes(audio)
-            partial.replace(destination)
-        finally:
-            partial.unlink(missing_ok=True)
-        destination.chmod(0o600)
-        return destination
+        Реплики склеиваются в одну запись с паузой между ними: Telegram отдаёт
+        аудирование одним голосовым, а повтор идёт по его file_id.
+        """
+        turns = [(speaker, text.strip()) for speaker, text in lines if text.strip()]
+        if not turns:
+            raise SpeechError("нечего озвучивать")
+        order: list[str] = []
+        for speaker, _ in turns:
+            if speaker not in order:
+                order.append(speaker)
+        voices = {speaker: (self.voice if index % 2 == 0 else self._second()) for index, speaker in enumerate(order)}
+        script = "\n".join(f"{speaker}: {text}" for speaker, text in turns)[:2000]
+
+        self.cache_dir.mkdir(parents=True, exist_ok=True)
+        tag = f"piper-dialogue-{self.voice}-{self._second()}"
+        destination = self.cache_dir / cache_name(script, tag, False)
+        if destination.exists() and destination.stat().st_size > 0:
+            return destination
+
+        params = None
+        frames: list[bytes] = []
+        for index, (speaker, text) in enumerate(turns):
+            with wave.open(io.BytesIO(self._wav(text, voices[speaker])), "rb") as source:
+                current = (source.getnchannels(), source.getsampwidth(), source.getframerate())
+                if params is None:
+                    params = current
+                elif current != params:
+                    raise SpeechError("голоса диалога записаны в разных форматах")
+                if index:
+                    frames.append(b"\x00" * int(params[2] * TURN_PAUSE_SECONDS) * params[0] * params[1])
+                frames.append(source.readframes(source.getnframes()))
+        assert params is not None
+        output = io.BytesIO()
+        with wave.open(output, "wb") as target:
+            target.setnchannels(params[0])
+            target.setsampwidth(params[1])
+            target.setframerate(params[2])
+            target.writeframes(b"".join(frames))
+        return self._store(destination, output.getvalue())
 
 
 def pad_wav(wav_bytes: bytes, seconds: float = PAD_SECONDS) -> bytes:

@@ -147,6 +147,15 @@ class AnswerTests(unittest.TestCase):
         self.assertTrue(result.correct)
         self.assertIn("hve → have", result.note)
 
+    def test_a_real_word_is_never_a_typo(self) -> None:
+        """«use to» вместо «used to» — грамматическая ошибка, а не опечатка."""
+        exercise = self._ex("transform", "Rewrite with used to: I played tennis every day.",
+                            "I used to play tennis every day.")
+        self.assertFalse(matches(exercise, "I use to play tennis every day."))
+        self.assertTrue(matches(exercise, "I usd to play tennis every day."))
+        order = self._ex("order", "than / older / she / is / me / .", "She is older than me.")
+        self.assertFalse(matches(order, "She is older then me."))
+
     def test_typo_in_the_corrected_word_is_still_an_error(self) -> None:
         exercise = self._ex("correct", "He goed to the office.", "He went to the office.")
         self.assertFalse(matches(exercise, "He wnet to the office."))
@@ -300,6 +309,52 @@ class PlacementTests(unittest.TestCase):
             assert found is not None
             self.assertNotIn(found[0].id, state.asked)
             pl.record(state, found[0], found[1], True)
+
+
+class ClozeTests(unittest.TestCase):
+    RAW = {
+        "id": "b1_test_cloze_09", "kind": "cloze",
+        "prompt": "Last year I ___ to Spain. I ___ there before, so everything was new.",
+        "gaps": [["went", "traveled"], ["had never been"]],
+        "explanation_ru": "Прошлое событие и опыт до него.", "difficulty": 2,
+    }
+
+    def question(self) -> pr.Question:
+        from english_bot.content.schema import parse_exercise
+
+        exercise = parse_exercise(self.RAW, "t")
+        return pr.Question(
+            ref=f"ex:{exercise.id}", kind="cloze", prompt=pr.number_gaps(exercise.prompt), options=(),
+            expected=exercise.expected, explanation_ru="", difficulty=2, point_id="p", level="B1",
+            title_ru="", topic="", card_type="point", card_key="p", gaps=exercise.gaps,
+        )
+
+    def test_gaps_are_numbered_and_answers_split_many_ways(self) -> None:
+        question = self.question()
+        self.assertIn("(1) ___", question.prompt)
+        self.assertIn("(2) ___", question.prompt)
+        for given in ("went; had never been", "went\nhad never been", "1) traveled 2) had never been",
+                      "went, had never been"):
+            with self.subTest(given=given):
+                self.assertTrue(pr.check(question, given).correct)
+
+    def test_each_gap_is_graded_and_reported(self) -> None:
+        verdict = pr.check(self.question(), "went; had been")
+        self.assertFalse(verdict.correct)
+        self.assertIn("1 ✓", verdict.note)
+        self.assertIn("2 ✗ (had never been)", verdict.note)
+
+    def test_wrong_number_of_answers_is_not_understood(self) -> None:
+        verdict = pr.check(self.question(), "went")
+        self.assertFalse(verdict.understood)
+
+    def test_schema_rejects_inconsistent_cloze(self) -> None:
+        from english_bot.content.schema import ContentError, parse_exercise
+
+        for broken in (dict(self.RAW, gaps=[["went"]]), dict(self.RAW, gaps=[["a;b"], ["c"]]),
+                       dict(self.RAW, prompt="No gaps in this text at all.")):
+            with self.assertRaises(ContentError):
+                parse_exercise(broken, "t")
 
 
 class PracticeTests(unittest.TestCase):
@@ -490,7 +545,7 @@ class PracticeTests(unittest.TestCase):
                 if hint == "Напиши ответ сообщением.":
                     self.assertNotEqual(exercise.kind, "correct")
                     self.assertNotEqual(exercise.kind, "order")
-        self.assertEqual(seen, {"gap", "correct", "order", "transform"})
+        self.assertEqual(seen, {"gap", "correct", "order", "transform", "cloze"})
 
     def test_error_hunting_task_is_announced(self) -> None:
         exercise = next(e for e, _ in CURRICULUM.exercises.values() if e.kind == "correct")

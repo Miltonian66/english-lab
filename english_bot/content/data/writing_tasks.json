@@ -55,9 +55,9 @@
     {
       "id": "a1_wr_desk_setup",
       "level": "A1",
-      "title_ru": "Рабочее место",
-      "prompt_en": "Describe your workplace to a new colleague: what is on your desk, what computer you use, and where you usually work.",
-      "guidance_ru": "Начни с There is и There are про вещи на столе. Потом одно предложение про компьютер и одно про место работы. Следи за артиклями a и the — в русском их нет, здесь нужны.",
+      "title_ru": "Записка гостю о квартире",
+      "prompt_en": "A friend is staying in your apartment while you are away. Write a short note: what is in the apartment, where the important things are, and one thing your friend needs to do.",
+      "guidance_ru": "Пять-семь коротких предложений, всего 30–50 слов. Начни с Hi, Mei! Welcome! Потом что есть в квартире: There is a big bed in the bedroom. There are clean towels in the bathroom. Потом где лежат важные вещи: The keys are on the table next to the door. The coffee is in the box above the sink. В конце одна просьба и подпись: Please water the plants. See you on Sunday! Про одну вещь — There is, про несколько — There are. Артикль не пропускай: a big bed, the table.",
       "words_min": 30,
       "words_max": 50,
       "focus": [
@@ -76,6 +76,45 @@
       "focus": [
         "be going to",
         "questions"
+      ]
+    },
+    {
+      "id": "a1_wr_invite_friend",
+      "level": "A1",
+      "title_ru": "Позвать друга на выходные",
+      "prompt_en": "Write a message to a friend and invite them to spend Saturday with you. Say where you want to go, what you can do there, when and where to meet, and what to bring.",
+      "guidance_ru": "Пять-семь коротких предложений, всего 30–50 слов. Начни с Hi, Carlos! Потом приглашение: Let's go to the park on Saturday. Что там можно делать: We can ride bikes and have a picnic. Где и когда встречаемся: Let's meet at the bus stop at eleven. Что взять: Bring some water and a hat. В конце вопрос: Are you free? После Let's и can глагол идёт без to: Let's go, а не Let's to go; we can swim, а не we can to swim.",
+      "words_min": 30,
+      "words_max": 50,
+      "focus": [
+        "let's for suggestions",
+        "can for possibility"
+      ]
+    },
+    {
+      "id": "a1_wr_postcard",
+      "level": "A1",
+      "title_ru": "Открытка из поездки",
+      "prompt_en": "You are on vacation. Write a postcard to a friend: where you are, who you are with, what the place and the weather are like, and what you are doing right now.",
+      "guidance_ru": "Пять-семь коротких предложений, всего 30–50 слов. Начни с Dear Aisha, или Hi, Aisha! Где ты и с кем: I am in Kazan with my sister. Какое место и погода: The city is beautiful, and the food is great. It is sunny and hot. Что делаешь прямо сейчас: Right now I am sitting in a café by the river. В конце See you soon! и имя. То, что происходит в момент письма, пиши через am/is/are + -ing: I am sitting, we are walking, а не I sit.",
+      "words_min": 30,
+      "words_max": 50,
+      "focus": [
+        "present continuous",
+        "adjectives"
+      ]
+    },
+    {
+      "id": "a1_wr_neighbor_note",
+      "level": "A1",
+      "title_ru": "Записка соседу",
+      "prompt_en": "You are having a birthday party at home on Saturday evening. Write a note to your neighbor: say what is happening, when it starts and when it ends, and say sorry for the noise. Then invite them for a piece of cake.",
+      "guidance_ru": "Пять-семь коротких предложений, всего 30–50 слов. Начни с Dear neighbor, и скажи, кто ты: I am Diego from apartment 12. Что будет: It is my birthday, and I am having a party on Saturday. Время: It starts at 7 p.m. and ends at 11 p.m. Извинение: Sorry for the noise! Приглашение: Please come and have some cake with us. В конце Thank you! и имя. День недели — с on, час — с at: on Saturday, at 7 p.m.",
+      "words_min": 30,
+      "words_max": 50,
+      "focus": [
+        "prepositions of time",
+        "polite phrases"
       ]
     },
     {
@@ -157,11 +196,50 @@
       ]
     },
     {
+      "id": "a2_wr_invitation_reply",
+      "level": "A2",
+      "title_ru": "Ответ на приглашение",
+      "prompt_en": "Your friend Priya invited you to her housewarming party next Saturday. Write a reply: thank her, say you are coming but you will be an hour late and explain why, offer to bring something, and ask two questions about the party.",
+      "guidance_ru": "Шесть-восемь предложений, всего 50–80 слов. Начни со спасибо: Hi Priya! Thanks so much for the invitation! Потом что придёшь, но опоздаешь, и почему: I'm coming, but I'll be about an hour late. I'm working until six on Saturday. Предложи помощь: I'll bring a salad for everyone. Два вопроса: Who else is coming? Is it OK if I bring my brother? В конце See you on Saturday! О том, что уже договорено на конкретный день, говори через am/is/are + -ing: I'm working on Saturday, а не I work. Решение, принятое прямо сейчас, — через I'll: I'll bring a salad.",
+      "words_min": 50,
+      "words_max": 80,
+      "focus": [
+        "present continuous for arrangements",
+        "will for offers"
+      ]
+    },
+    {
+      "id": "a2_wr_last_weekend",
+      "level": "A2",
+      "title_ru": "Как прошли выходные",
+      "prompt_en": "Write a message to a friend about last weekend: where you went and who with, what you did, one thing that went wrong, and how the weekend ended.",
+      "guidance_ru": "Шесть-восемь предложений, всего 50–80 слов, по порядку событий. Куда и с кем: On Saturday I went to the lake with two friends. Что делали — шаги связывай словами First, Then, After that: First we swam, then we made a fire. Что пошло не так: Suddenly it started to rain, and we all got wet. Чем закончилось: In the end we had dinner in a small café. I was tired but happy. Проверь неправильные глаголы: went, swam, got, had — не goed и не swimmed.",
+      "words_min": 50,
+      "words_max": 80,
+      "focus": [
+        "past simple irregular verbs",
+        "sequence words"
+      ]
+    },
+    {
+      "id": "a2_wr_cafe_review",
+      "level": "A2",
+      "title_ru": "Отзыв о кафе",
+      "prompt_en": "Write a review of a café you visited recently for a maps app: what you ordered, the food and the prices, one problem, and whether you will go there again.",
+      "guidance_ru": "Шесть-восемь предложений, всего 50–80 слов. Название и первое впечатление: Green Cup is a small café near the park. Что заказал: I had a cheesecake and a latte. Что хорошо: It is the best cheesecake in our area, and the prices are fair. Что не очень: The music was too loud, and there were not enough seats. Итог: I will go there again, but not on a weekend. Too — «слишком, больше, чем нужно»: too loud. Enough — «достаточно», ставится после прилагательного, но перед существительным: big enough, enough seats.",
+      "words_min": 50,
+      "words_max": 80,
+      "focus": [
+        "superlative adjectives",
+        "too and enough"
+      ]
+    },
+    {
       "id": "b1_wr_incident_note",
       "level": "B1",
-      "title_ru": "Заметка об инциденте",
-      "prompt_en": "Write a short internal note about a bug that reached production: what happened, what the impact was, and what you changed.",
-      "guidance_ru": "Три коротких абзаца. Что случилось: когда и что увидели пользователи — On Tuesday evening, users could not log in. Влияние: сколько людей и как долго — About 200 users were affected for 30 minutes. Что сделали: We have fixed the bug and have added a test for it. Past simple для событий, present perfect для результата.",
+      "title_ru": "Сообщение арендодателю о протечке",
+      "prompt_en": "Last night water came through the bathroom ceiling of the apartment you rent. Write a message to your landlord: what happened and when, what was damaged, what you have already done, and what you need from them now.",
+      "guidance_ru": "Три коротких абзаца, всего 80–120 слов. Первый — что случилось и когда: Last night at about eleven, water started to come through the bathroom ceiling. Что пострадало: The ceiling is wet, and the bathroom light does not work. Второй — что ты уже сделал; тут важен результат к этой минуте, поэтому have + третья форма: I have turned off the electricity in the bathroom, I have talked to the neighbors upstairs, and I have taken photos. Если называешь время — last night, at eleven, — только простое прошедшее: I called the neighbors at midnight, а не I have called at midnight. Третий — просьба со сроком: Could you send a plumber today or tomorrow? Тон вежливый, но конкретный: время, факты, просьба.",
       "words_min": 80,
       "words_max": 120,
       "focus": [
@@ -232,6 +310,45 @@
       "focus": [
         "expressing opinion",
         "contrast linkers"
+      ]
+    },
+    {
+      "id": "b1_wr_memorable_event",
+      "level": "B1",
+      "title_ru": "День, который запомнился",
+      "prompt_en": "Write a short story about a day you will never forget: where you were, what you were doing when something unexpected happened, how you and the people around you reacted, and why you still remember it.",
+      "guidance_ru": "Четыре коротких абзаца, всего 80–120 слов. Начало — место и фон: It was a cold evening in March, and I was waiting for a train at a small station. Фон, который длился, — was/were + -ing, а неожиданное событие — простое прошедшее: I was reading a book when all the lights went out. Потом твоя реакция и что было дальше; связки Suddenly, At first, In the end. Последний абзац — почему помнишь до сих пор: I still remember it because… Один яркий эпизод с деталями лучше пересказа всего дня.",
+      "words_min": 80,
+      "words_max": 120,
+      "focus": [
+        "past simple and past continuous",
+        "time linkers"
+      ]
+    },
+    {
+      "id": "b1_wr_film_review",
+      "level": "B1",
+      "title_ru": "Отзыв о фильме или сериале",
+      "prompt_en": "Write a review of a movie or series you watched recently for a movie website: what it is about without spoilers, what you liked, what you did not like, and who should watch it.",
+      "guidance_ru": "Четыре коротких абзаца, всего 80–120 слов. Первый — название, жанр и завязка без спойлеров; сюжет пересказывают в настоящем времени: The story follows a young chef who opens a restaurant in Chicago. Второй — что понравилось: актёры, музыка, конкретная сцена. Третий — что нет: The middle part is too slow. Четвёртый — кому смотреть: If you like quiet comedies, you will enjoy it. Чувство зрителя — через -ed, то, что его вызывает, — через -ing: I was bored, but the ending is surprising; не I was boring.",
+      "words_min": 80,
+      "words_max": 120,
+      "focus": [
+        "present simple for a plot",
+        "-ed and -ing adjectives"
+      ]
+    },
+    {
+      "id": "b1_wr_advice_email",
+      "level": "B1",
+      "title_ru": "Совет другу в письме",
+      "prompt_en": "Your friend Omar wrote to you: he is moving to your city next month, he does not know anyone there, and apartments look very expensive. Write a reply with advice on finding a place to live, meeting new people, and one thing he should not do.",
+      "guidance_ru": "Четыре коротких абзаца, всего 80–120 слов. Первый — тёплое начало и реакция на новость: Great news! I'm so happy you're moving here. Второй — жильё: You should look at the area near the river — it is cheaper and quieter. Третий — знакомства: Why don't you join a running club? If I were you, I would try a language exchange. Четвёртый — одно предостережение и прощание: Don't pay anything before you see the apartment. Let me know when you arrive! Чередуй should, could, why don't you, if I were you, а не should в каждой фразе. После if I were you — I would, а не I will.",
+      "words_min": 80,
+      "words_max": 120,
+      "focus": [
+        "advice with should, could, why don't you",
+        "if I were you"
       ]
     },
     {
@@ -310,6 +427,47 @@
       "focus": [
         "reported speech",
         "past simple and past perfect"
+      ]
+    },
+    {
+      "id": "b2_wr_for_against_essay",
+      "level": "B2",
+      "title_ru": "Эссе «за и против»: плата за вход в город",
+      "prompt_en": "Some popular cities now charge day visitors a fee to reduce crowds. Write a for-and-against essay: the main arguments for such a fee, the main arguments against it, and your own balanced conclusion.",
+      "guidance_ru": "Четыре абзаца, всего 120–180 слов. Вступление в два предложения: тема и почему о ней спорят — In recent years, several cities have started charging day visitors a fee. Второй абзац — доводы за, каждый с примером или следствием. Третий — доводы против: кто платит, кто теряет, помогает ли мера вообще. Вывод — твоя позиция с оговоркой: On balance, the fee seems fair, provided that the money goes back into the city. Противопоставляй через whereas, although, despite; после despite — существительное или -ing: despite the cost, а не despite it costs. Чужие мнения вводи безлично: It is often argued that…, Critics point out that…",
+      "words_min": 120,
+      "words_max": 180,
+      "focus": [
+        "contrast linkers: although, whereas, despite",
+        "impersonal phrases: it is argued that"
+      ]
+    },
+    {
+      "id": "b2_wr_customer_complaint",
+      "level": "B2",
+      "title_ru": "Официальная жалоба в магазин",
+      "prompt_en": "You ordered a sofa from an online furniture store. It arrived three weeks late with a broken leg, and two calls to customer service did not help. Write a formal complaint: what you ordered, what went wrong, what you have already done, and what you expect the company to do and by when.",
+      "guidance_ru": "Четыре абзаца, всего 120–180 слов. Первый — зачем пишешь, с номером заказа и датой: I am writing to complain about order 48215, which I placed on May 3. Второй — факты по порядку и без эмоций: доставка, поломка, звонки. Если названа дата — простое прошедшее: I called your service line on May 27; если важен итог к сегодняшнему дню — have + третья форма: I still have not received a reply. Третий — чего требуешь: a replacement within ten days or a full refund. Последний — срок и вежливое закрытие: I look forward to your reply by June 15. Sincerely, и имя. Твёрдость — в конкретике, а не в восклицательных знаках. Без сокращений: I am, I have.",
+      "words_min": 120,
+      "words_max": 180,
+      "focus": [
+        "formal register",
+        "past simple and present perfect",
+        "firm polite requests"
+      ]
+    },
+    {
+      "id": "b2_wr_community_article",
+      "level": "B2",
+      "title_ru": "Статья для сайта района",
+      "prompt_en": "Write an article for your neighborhood website about a local place that deserves more attention: a library, a park, a sports club, or a market. Describe it, explain why it matters to the area, and tell readers how they can support it.",
+      "guidance_ru": "Заголовок и четыре абзаца, всего 120–180 слов. Заголовок короткий и живой: The Best Room in Our Neighborhood Is Free. Первый абзац цепляет вопросом к читателю: When did you last spend a whole afternoon somewhere without paying a cent? Второй — место с деталями, которые видно и слышно. Дополнительные сведения вставляй через запятую и which или who: The library, which opened in 1974, has a quiet reading room. Третий — почему место важно: кому помогает, что район без него потеряет. Последний — призыв с конкретными действиями, глагол в начале фразы: Come to the book swap on Saturday. Bring your kids. Пиши для соседей, а не для чиновников: you, we, our street.",
+      "words_min": 120,
+      "words_max": 180,
+      "focus": [
+        "rhetorical questions",
+        "non-defining relative clauses",
+        "imperatives for a call to action"
       ]
     },
     {
@@ -397,6 +555,48 @@
       ]
     },
     {
+      "id": "c1_wr_event_review",
+      "level": "C1",
+      "title_ru": "Рецензия на концерт или выставку",
+      "prompt_en": "Write a review of a concert, play, exhibition, or festival you attended for a city culture magazine. Set the scene, evaluate two or three specific elements, say how it compared with your expectations, and end with a clear verdict for a specific kind of reader.",
+      "guidance_ru": "Пять-шесть абзацев, всего 180–250 слов. Начни со сцены, а не с даты: зал, публика, первая минута — The lights had barely gone down when… Деталь сцены сжимай причастным оборотом: Packed into a former factory, the crowd fell silent. Дальше два-три элемента, каждый в своём абзаце и с доказательством: конкретная песня, картина, сцена. Оценивай точной лексикой вместо good и interesting: understated, overlong, a stunning final act, the pacing sagged. Похвалу и критику связывай уступкой: While the staging was inventive, the second half dragged. Admittedly, the encore felt rushed. Отдельный абзац — ожидания против реальности. Вердикт адресный: Worth the ticket if you…; skip it if you…",
+      "words_min": 180,
+      "words_max": 250,
+      "focus": [
+        "evaluative collocations",
+        "concession: while, admittedly",
+        "participle clauses"
+      ]
+    },
+    {
+      "id": "c1_wr_council_proposal",
+      "level": "C1",
+      "title_ru": "Предложение городскому совету",
+      "prompt_en": "The old market building in your district has stood empty for five years. Write a proposal to the city council to turn it into something the area needs: a community center, a covered market, a sports hall, or your own idea. Describe the current situation, your plan, the costs and who benefits, the main objection, and the first steps.",
+      "guidance_ru": "Пять коротких разделов, всего 180–250 слов; каждый можно начать заголовком отдельной строкой — Background, Proposal, Costs and benefits, Concerns, Next steps. Первый — что не так сейчас, с фактами: The building has been empty since 2021 and is becoming a safety risk. Второй — что именно предлагаешь и для кого. Третий — цифры и выгоды; где точных данных нет, оценивай осторожно: it is estimated that, roughly, would be expected to. Четвёртый — главное возражение, например шум или парковка, и как его снять. Последний — что совет должен решить и к какому сроку. Безличный пассив там, где важно действие, а не исполнитель: A public consultation could be held in March. Регистр официальный, но без канцелярита: короткие предложения, конкретные решения.",
+      "words_min": 180,
+      "words_max": 250,
+      "focus": [
+        "formal proposal register",
+        "impersonal passive",
+        "conditionals for outcomes"
+      ]
+    },
+    {
+      "id": "c1_wr_reflective_essay",
+      "level": "C1",
+      "title_ru": "Эссе-размышление: снова новичок",
+      "prompt_en": "Write a reflective essay about a time you became a complete beginner again as an adult: learning a sport, an instrument, a language, or how to live in a new country. What was hardest, what did it teach you about learning, and what do you do differently because of it?",
+      "guidance_ru": "Пять абзацев, всего 180–250 слов. Начни с конкретного момента, а не с общих слов: I was thirty-four, and I could not stay on a surfboard for more than two seconds. Дальше — что было труднее всего и почему, с честными деталями. Потом — вывод о том, как учатся взрослые; сформулируй его один раз и точно, без морали. Связь прошлого с настоящим передавай смешанным условием: If I hadn't failed so publicly, I wouldn't be so patient with beginners now. Главную мысль выдели конструкцией What … was или It was … that: What changed was not my skill but my attitude toward mistakes. В финале — что ты делаешь иначе сейчас, а не лозунг.",
+      "words_min": 180,
+      "words_max": 250,
+      "focus": [
+        "reflective language",
+        "mixed conditionals",
+        "cleft sentences"
+      ]
+    },
+    {
       "id": "c2_wr_platform_strategy",
       "level": "C2",
       "title_ru": "Стратегический документ по платформе",
@@ -478,6 +678,48 @@
         "executive register",
         "concision under complexity",
         "impersonal constructions"
+      ]
+    },
+    {
+      "id": "c2_wr_opinion_column",
+      "level": "C2",
+      "title_ru": "Колонка мнений: доставка за пятнадцать минут",
+      "prompt_en": "Write an opinion column for a national newspaper on the fifteen-minute delivery economy: groceries, meals, and almost anything else at your door within minutes. Has it made city life better, or quietly worse? Take a sharp position, ground it in concrete scenes, and concede the one point your opponents get right.",
+      "guidance_ru": "Пять-шесть абзацев, всего 250–350 слов. Открой сценой, а не тезисом: курьер под дождём в десять вечера, пустая витрина закрывшегося магазина у дома. Позицию сформулируй к концу первого абзаца — остро, но так, чтобы с ней можно было спорить. Дальше два-три довода, каждый на конкретной детали, а не на цифрах ради цифр. Отдельный абзац — уступка: в чём оппоненты правы (пожилым и больным доставка действительно меняет жизнь) и почему это не отменяет твоего вывода. Меняй ритм: после длинного периода — короткая фраза. Иронию дозируй: одна точная фраза сильнее трёх сарказмов. Финал — образ или вопрос, который останется с читателем, а не пересказ.",
+      "words_min": 250,
+      "words_max": 350,
+      "focus": [
+        "rhetorical devices",
+        "irony and understatement",
+        "sentence rhythm"
+      ]
+    },
+    {
+      "id": "c2_wr_critical_review",
+      "level": "C2",
+      "title_ru": "Критическая рецензия на признанное произведение",
+      "prompt_en": "Write a critical review of a widely acclaimed book, film, or series that you believe is either overrated or misunderstood. Place it in context, analyze how it achieves its effects, and reach a verdict that goes beyond whether you liked it.",
+      "guidance_ru": "Пять-шесть абзацев, всего 250–350 слов. Первый — произведение, его репутация и твой тезис о ней: Few novels of the last decade have been praised as loudly as… Дальше — контекст: что было до него и на что оно отвечает. Центральные абзацы — разбор приёмов на конкретных эпизодах: структура, язык, персонажи, темп; критикуй механизм, а не вкус. Сильные стороны признай всерьёз, через уступку: For all its ambition, the novel…; Much as I admire the dialogue, … Вердикт — о том, заслужена ли похвала, а не о том, понравилось ли тебе. Пересказ сюжета — не больше двух предложений.",
+      "words_min": 250,
+      "words_max": 350,
+      "focus": [
+        "evaluative nuance",
+        "concessive structures",
+        "critical lexis"
+      ]
+    },
+    {
+      "id": "c2_wr_persuasion_letter",
+      "level": "C2",
+      "title_ru": "Письмо-убеждение о доступной среде",
+      "prompt_en": "Write a formal letter to your elected representative urging them to support a bill that would require all public transport and public buildings in your region to be fully accessible to wheelchair users within ten years. Anticipate the cost objection, combine evidence with one human example, and end with a specific request.",
+      "guidance_ru": "Пять-шесть абзацев, всего 250–350 слов. Первый — кто ты и о чём просишь, одной фразой: I am writing to urge you to vote for the accessibility bill. Дальше — масштаб проблемы с цифрами, затем один человеческий пример: соседка, которая не может спуститься в метро без чужой помощи. Отдельный абзац — возражение о стоимости: прими его всерьёз, покажи цену бездействия и кому ещё поможет доступность — родителям с колясками, пожилым, туристам с чемоданами. Требования в официальном стиле: It is essential that every new station be accessible — после essential, vital, recommend that глагол стоит в начальной форме, без -s и will. Финал — конкретная просьба и готовность встретиться. Давление — аргументами и уважением, а не обвинением. Заверши Sincerely и именем.",
+      "words_min": 250,
+      "words_max": 350,
+      "focus": [
+        "formal persuasive register",
+        "mandative subjunctive",
+        "anticipating objections"
       ]
     }
   ]

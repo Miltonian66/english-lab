@@ -9,21 +9,22 @@
       "title_en": "Advanced conditionals: mixed, inverted and alternatives to 'if'",
       "source_slug": "",
       "title_ru": "Сложные условные: смешанные, инверсия, замены if",
-      "summary_ru": "На C1 условные предложения перестают быть жёсткими схемами первого, второго и третьего типа. В смешанном условии части относятся к разным временам: если условие в прошлом, а следствие в настоящем, ставим if + past perfect и would + инфинитив. Обратный вариант — постоянное условие в настоящем и результат в прошлом: if + past simple и would have + V3. В формальном стиле if опускают и делают инверсию: Had we known, Were he to agree, Should you need. Вместо if используют unless, provided (that), as long as, in case, suppose и but for + существительное. В придаточном с if would и will не выражают будущее: там стоит прошедшая форма, а will сохраняется только в значении согласия (If you will follow me). Выбор конструкции задаёт не только время, но и регистр: инверсия звучит книжно, as long as — нейтрально.",
+      "summary_ru": "На C1 условные предложения перестают быть жёсткими схемами первого, второго и третьего типа. В смешанном условии части относятся к разным временам: если условие в прошлом, а следствие в настоящем, ставим if + past perfect и would + инфинитив. Обратный вариант — постоянное условие в настоящем и результат в прошлом: if + past simple и would have + V3. В формальном стиле if опускают и делают инверсию: Had we known, Were he to agree, Should you need. Отрицание в инверсии не сокращается и стоит после подлежащего: Had it not been for, Were it not for. Вместо if используют provided (that), as long as, in case, suppose и but for + существительное. Unless значит «кроме случая, когда» и в нереальных условиях не заменяет if ... not: If you hadn't reminded me, а не Unless you had reminded me. Условие бывает и скрытым: I'd have called, but my phone died — «позвонил бы (если бы мог), но телефон сел». Выбор конструкции задаёт не только время, но и регистр: инверсия звучит книжно, as long as — нейтрально.",
       "forms": [
         "if + past perfect, ... would + инфинитив (прошлое условие, настоящий результат)",
         "if + past simple, ... would have + V3 (постоянное условие, прошлый результат)",
-        "Had + подлежащее + V3, ... would have + V3 (инверсия вместо if)",
+        "Had + подлежащее (+ not) + V3, ... would have + V3 (инверсия вместо if)",
         "Were + подлежащее + to + инфинитив / Should + подлежащее + инфинитив",
-        "but for + существительное / provided (that) / as long as / unless"
+        "Had it not been for / Were it not for / But for + существительное",
+        "скрытое условие: I'd have + V3, but ... / otherwise / without"
       ],
       "examples": [
-        "If we had documented the API, we wouldn't be answering the same questions now.",
-        "If I were the manager, I would have approved that budget last month.",
-        "Had we noticed the memory leak earlier, we would have saved two days.",
-        "Should the build fail again, please ping me in the channel.",
-        "Were the client to cancel, we would still keep the prototype.",
-        "But for the backup, we would have lost the whole database."
+        "If we had booked earlier, we wouldn't be sleeping in the car tonight.",
+        "If she weren't so shy, she would have asked the doctor herself.",
+        "Had we noticed the leak earlier, we would have saved the carpet.",
+        "Should you need a ride to the airport, just give me a call.",
+        "Were it not for the scholarship, I couldn't afford college.",
+        "I'd have come to your party, but I was stuck at work."
       ],
       "ru_interference": "В русском одна форма на «бы», поэтому «бы» дублируют в обеих частях и пишут would внутри if: неверно «If I would know the answer, I would tell you» → верно «If I knew the answer, I would tell you». Также теряется разница между would и would have.",
       "prerequisites": [
@@ -34,47 +35,47 @@
         {
           "id": "c1_advanced_conditionals_mixed_inverted_and_alternatives_to_if_01",
           "kind": "choice",
-          "prompt": "If we had fixed the bug last week, the server ___ down right now.",
+          "prompt": "Как сказать по-английски: «Если бы не твоя помощь, я бы до сих пор искал квартиру»?",
           "options": [
-            "would not be",
-            "would not have been",
-            "will not be",
-            "had not been"
+            "If it hadn't been for your help, I would still be looking for an apartment.",
+            "If not your help, I would still look for an apartment.",
+            "If it hadn't been your help, I would still have looked for an apartment.",
+            "Unless your help, I would still be looking for an apartment."
           ],
           "correct_index": 0,
-          "explanation_ru": "Условие в прошлом (had fixed), а результат относится к настоящему (right now), поэтому нужна форма would + инфинитив, а не would have + V3.",
-          "difficulty": 1,
-          "diagnostic": false
+          "explanation_ru": "Помощь была в прошлом, а результат — сейчас («до сих пор»), поэтому смешанное условие: If it hadn't been for + существительное и would be + -ing. «If not your help» — калька с «если бы не»: без it hadn't been for фраза неграмматична. Без for тоже нельзя, а unless не присоединяет существительное.",
+          "difficulty": 2,
+          "diagnostic": true
         },
         {
           "id": "c1_advanced_conditionals_mixed_inverted_and_alternatives_to_if_02",
           "kind": "choice",
-          "prompt": "___ you need any help with the migration, just let me know.",
+          "prompt": "___ the museum decide to close early, visitors will be notified by text message.",
           "options": [
             "Should",
-            "Would",
+            "Were",
             "Had",
-            "Were"
+            "Would"
           ],
           "correct_index": 0,
-          "explanation_ru": "Инверсия с should + инфинитив без to выражает маловероятное будущее условие; остальные варианты требуют других форм глагола (Had you needed, Were you to need).",
+          "explanation_ru": "Should + подлежащее + инфинитив без to — формальное условие о маловероятном будущем, и главная часть может стоять в will. Were потребовал бы to decide (Were the museum to decide), Had — причастия (Had the museum decided), а would в условной инверсии не бывает.",
           "difficulty": 1,
           "diagnostic": false
         },
         {
           "id": "c1_advanced_conditionals_mixed_inverted_and_alternatives_to_if_03",
           "kind": "choice",
-          "prompt": "___ we known about the deadline, we would have started earlier.",
+          "prompt": "___ for the storm, the ferry would have left on time.",
           "options": [
-            "If",
-            "Had",
-            "Have",
-            "Should"
+            "Had it not been",
+            "Hadn't it been",
+            "Had not it been",
+            "If it had not"
           ],
-          "correct_index": 1,
-          "explanation_ru": "После пропуска if остаётся инверсия had + подлежащее + V3; форма known без вспомогательного глагола возможна только с had.",
+          "correct_index": 0,
+          "explanation_ru": "В условной инверсии отрицание не сокращается и стоит после подлежащего: Had it not been for. Hadn't it been и Had not it been — ошибки порядка слов, а If it had not без been не присоединяет for + существительное (нужно If it had not been for).",
           "difficulty": 2,
-          "diagnostic": false
+          "diagnostic": true
         },
         {
           "id": "c1_advanced_conditionals_mixed_inverted_and_alternatives_to_if_04",
@@ -94,44 +95,129 @@
         {
           "id": "c1_advanced_conditionals_mixed_inverted_and_alternatives_to_if_05",
           "kind": "correct",
-          "prompt": "If we would have known about the outage, we would have warned the users.",
-          "answer": "If we had known about the outage, we would have warned the users.",
+          "prompt": "Unless you had reminded me, I would have forgotten Grandma's birthday.",
+          "answer": "If you hadn't reminded me, I would have forgotten Grandma's birthday.",
           "accept": [
-            "Had we known about the outage, we would have warned the users."
+            "Had you not reminded me, I would have forgotten Grandma's birthday.",
+            "But for your reminder, I would have forgotten Grandma's birthday."
           ],
-          "explanation_ru": "В придаточном с if would не употребляется: нереальное условие в прошлом передаётся формой past perfect.",
+          "explanation_ru": "Unless значит «кроме случая, если» и описывает реальные условия. Для того, что не произошло (ты ведь напомнил), нужно if ... not: If you hadn't reminded me. Возможна и инверсия Had you not reminded me.",
           "difficulty": 3
         },
         {
           "id": "c1_advanced_conditionals_mixed_inverted_and_alternatives_to_if_06",
           "kind": "gap",
-          "prompt": "But for your review, we ___ (release) a broken version last Friday.",
-          "answer": "would have released",
+          "prompt": "But for the lifeguard, the boy ___ (drown) last Sunday.",
+          "answer": "would have drowned",
           "accept": [
-            "would've released"
+            "would've drowned",
+            "might have drowned",
+            "could have drowned"
           ],
-          "explanation_ru": "But for + существительное заменяет условие, но время само не задаёт — его задаёт контекст. Last Friday относит несостоявшийся выпуск к прошлому, поэтому в главной части нужен would have + V3.",
+          "explanation_ru": "But for + существительное заменяет условие, но время само не задаёт — его задаёт контекст. Last Sunday относит несостоявшееся событие к прошлому, поэтому в главной части нужен would have + V3.",
           "difficulty": 1
         },
         {
           "id": "c1_advanced_conditionals_mixed_inverted_and_alternatives_to_if_07",
           "kind": "gap",
-          "prompt": "If you ___ (not / miss) the train, you would be at the office already.",
+          "prompt": "If you ___ (not / miss) the ferry, you would be on the island by now.",
           "answer": "hadn't missed",
           "accept": [
             "had not missed"
           ],
-          "explanation_ru": "Смешанное условие: причина в прошлом требует past perfect, а результат в настоящем уже выражен формой would be.",
+          "explanation_ru": "Смешанное условие: причина в прошлом (паром ушёл) требует past perfect, а результат в настоящем (by now) уже выражен формой would be.",
           "difficulty": 2
         },
         {
           "id": "c1_advanced_conditionals_mixed_inverted_and_alternatives_to_if_08",
           "kind": "transform",
-          "prompt": "Rewrite with inversion, without 'if': If the team had tested the release, they would have found the bug.",
-          "answer": "Had the team tested the release, they would have found the bug.",
+          "prompt": "Rewrite with inversion, without 'if': If the organizers had checked the forecast, they would have postponed the concert.",
+          "answer": "Had the organizers checked the forecast, they would have postponed the concert.",
           "accept": [],
           "explanation_ru": "При отбрасывании if вспомогательный had выносится перед подлежащим, а остальная часть предложения не меняется.",
           "difficulty": 3
+        },
+        {
+          "id": "c1_advanced_conditionals_mixed_inverted_and_alternatives_to_if_09",
+          "kind": "choice",
+          "prompt": "I'd have called you last night, ___ my phone died.",
+          "options": [
+            "but",
+            "unless",
+            "otherwise",
+            "if"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Скрытое условие: I'd have called («позвонил бы, если бы мог»), а but вводит реальную причину. Unless и if ввели бы условие, а не причину, а otherwise требует обратного порядка: My phone died; otherwise I'd have called.",
+          "difficulty": 1,
+          "diagnostic": true
+        },
+        {
+          "id": "c1_advanced_conditionals_mixed_inverted_and_alternatives_to_if_10",
+          "kind": "choice",
+          "prompt": "___ for my sister's help with the kids, I couldn't work full-time.",
+          "options": [
+            "Were it not",
+            "Weren't it",
+            "Wasn't it",
+            "It weren't"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Were it not for — формальная замена if it weren't for для настоящего. В инверсии отрицание не сокращается (Weren't it — ошибка), формы was в ней нет, а без инверсии нужен if: If it weren't for.",
+          "difficulty": 2,
+          "diagnostic": true
+        },
+        {
+          "id": "c1_advanced_conditionals_mixed_inverted_and_alternatives_to_if_11",
+          "kind": "cloze",
+          "prompt": "Looking back, our trip to Peru could easily have gone wrong. ___ (we / not / book) the train tickets months in advance, we would never have reached Machu Picchu. On the second day the guide told us that, ___ the rain stop, the trail would reopen by noon — and luckily it did. ___ for a stranger who lent us her umbrella, we would have been soaked to the skin. The hotel let us stay an extra night, ___ (= only on condition that) we paid in cash. If I ___ (take) that climbing course last spring, I would be planning a trek in Nepal right now.",
+          "gaps": [
+            [
+              "Had we not booked",
+              "If we hadn't booked",
+              "If we had not booked"
+            ],
+            [
+              "should"
+            ],
+            [
+              "But",
+              "Had it not been",
+              "If it hadn't been",
+              "If it had not been",
+              "If not"
+            ],
+            [
+              "provided",
+              "providing",
+              "provided that",
+              "providing that",
+              "as long as",
+              "so long as",
+              "on condition that"
+            ],
+            [
+              "had taken"
+            ]
+          ],
+          "explanation_ru": "1 — инверсия с несокращённым отрицанием (Had we not booked) или обычное if. 2 — should + инфинитив без to: should the rain stop, а не stops. 3 — But for / Had it not been for + существительное. 4 — provided (that), as long as: «при условии что». 5 — смешанное условие: прошлое (last spring) → настоящий результат (right now).",
+          "difficulty": 3
+        },
+        {
+          "id": "c1_advanced_conditionals_mixed_inverted_and_alternatives_to_if_12",
+          "kind": "transform",
+          "prompt": "Rewrite using the word in capitals (do not change it): If Leila hadn't warned us about the pickpockets, we would have lost our passports. BUT",
+          "answer": "But for Leila's warning about the pickpockets, we would have lost our passports.",
+          "accept": [
+            "But for Leila's warning, we would have lost our passports.",
+            "But for Leila, we would have lost our passports.",
+            "But for Leila warning us about the pickpockets, we would have lost our passports.",
+            "We would have lost our passports but for Leila's warning about the pickpockets.",
+            "We would have lost our passports but for Leila's warning.",
+            "But for Leila's warnings about the pickpockets, we would have lost our passports."
+          ],
+          "explanation_ru": "But for присоединяет существительное, а не придаточное: But for Leila's warning. Глагольную часть (hadn't warned) переводим в существительное или оставляем только человека; главная часть остаётся would have + V3.",
+          "difficulty": 2
         }
       ]
     },
@@ -143,7 +229,7 @@
       "title_en": "The subjunctive in English: Present and past",
       "source_slug": "the-subjunctive-in-english-present-and-past",
       "title_ru": "Сослагательное наклонение: настоящее и прошедшее",
-      "summary_ru": "Сослагательное наклонение в английском сохранилось в двух формах. Настоящее сослагательное — это инфинитив без to для всех лиц; оно стоит в придаточном после глаголов требования и совета (suggest, insist, demand, recommend, propose, require) и после оборотов типа it is essential / vital / important that. Отрицание строится как not + инфинитив, без вспомогательного do: that he not be told. В американском варианте это норма письменной речи, в британском чаще пишут should + инфинитив. Прошедшее сослагательное — форма were для всех лиц после if, wish, as if, as though, I'd rather и it's time. Она обозначает не прошлое, а нереальность. Кроме того, сослагательное застыло в устойчивых выражениях: be that as it may, come what may, if need be, so be it.",
+      "summary_ru": "Сослагательное наклонение в английском сохранилось в двух формах. Настоящее сослагательное — это инфинитив без to для всех лиц; оно стоит в придаточном после глаголов требования и совета (suggest, insist, demand, recommend, propose, require, order) и после оборотов it is essential / vital / important that. Отрицание строится как not + инфинитив, без вспомогательного do: that he not be told. В американском варианте это норма и устной, и письменной речи, в британском чаще пишут should + инфинитив. Важная тонкость: субъюнктив ставится, только когда речь о требовании или совете. Если insist значит «настаивать, что это правда», а suggest — «указывать на, свидетельствовать», нужна обычная форма: He insisted that he had paid; The study suggests that coffee is harmless. Прошедшее сослагательное — форма were для всех лиц после if, wish, as if, as though, I'd rather и it's time: она обозначает не прошлое, а нереальность. Застывшие формулы вроде be that as it may разбираются в отдельной теме уровня C2.",
       "forms": [
         "suggest / insist / demand / recommend / require + that + подлежащее + инфинитив без to",
         "It is essential / vital / important + that + подлежащее + инфинитив без to",
@@ -152,14 +238,14 @@
         "should + инфинитив как британский эквивалент: insisted that he should sign"
       ],
       "examples": [
-        "The team lead insisted that every commit be reviewed.",
-        "It is essential that the server not restart during the demo.",
-        "We recommend that he take the security training first.",
-        "If I were in your position, I would ask for a code review.",
-        "She talks about the system as if she were the architect.",
-        "Be that as it may, the release still goes out on Friday."
+        "The team lead insisted that every change be reviewed.",
+        "It is essential that the patient not eat before surgery.",
+        "We recommend that he take the safety course first.",
+        "The driver insisted that the light had been green.",
+        "She talks about the house as if she were the owner.",
+        "The results suggest that the method works."
       ],
-      "ru_interference": "В русском глагол под «чтобы» согласуется по лицу, поэтому появляется лишнее -s: неверно «The manager insisted that he signs the contract» → верно «The manager insisted that he sign the contract». Аналогично «If I was you» вместо нормативного «If I were you».",
+      "ru_interference": "В русском глагол под «чтобы» согласуется по лицу, поэтому появляется лишнее -s или do: неверно «The manager insisted that he signs the contract» → верно «The manager insisted that he sign the contract»; неверно «that he doesn't leave» → верно «that he not leave». Обратная ошибка — субъюнктив там, где insist значит «утверждать»: неверно «He insisted that he be innocent» → верно «He insisted that he was innocent».",
       "prerequisites": [
         "b2_unreal_uses_past_tenses",
         "b2_reporting_verbs"
@@ -168,7 +254,7 @@
         {
           "id": "c1_the_subjunctive_in_english_present_and_past_01",
           "kind": "choice",
-          "prompt": "It is essential that this document ___ shared outside the company.",
+          "prompt": "It is essential that the patient ___ left alone during the first night.",
           "options": [
             "not be",
             "be not",
@@ -176,13 +262,14 @@
             "don't be"
           ],
           "correct_index": 0,
-          "explanation_ru": "В настоящем сослагательном отрицание строится как not + инфинитив без to, без вспомогательного do и без перестановки.",
-          "difficulty": 1
+          "explanation_ru": "В настоящем сослагательном отрицание строится как not + инфинитив без to: that the patient not be left. Без do, без перестановки и без to.",
+          "difficulty": 1,
+          "diagnostic": true
         },
         {
           "id": "c1_the_subjunctive_in_english_present_and_past_02",
           "kind": "choice",
-          "prompt": "The auditor insisted that the logs ___ kept for a full year.",
+          "prompt": "The landlord insisted that the rent ___ paid in cash.",
           "options": [
             "be",
             "being",
@@ -190,28 +277,29 @@
             "been"
           ],
           "correct_index": 0,
-          "explanation_ru": "После insist that в придаточном стоит инфинитив без to, поэтому единственная возможная форма здесь — be.",
-          "difficulty": 1
+          "explanation_ru": "Insist that в значении требования вводит субъюнктив: инфинитив без to для любого подлежащего, здесь пассивный — be paid.",
+          "difficulty": 1,
+          "diagnostic": true
         },
         {
           "id": "c1_the_subjunctive_in_english_present_and_past_03",
           "kind": "choice",
-          "prompt": "Be that as it ___, we still need to ship on Friday.",
+          "prompt": "The driver insisted that he ___ through a green light, not a red one.",
           "options": [
-            "may",
-            "might",
-            "can",
-            "is"
+            "had driven",
+            "drive",
+            "be driving",
+            "should drive"
           ],
           "correct_index": 0,
-          "explanation_ru": "Be that as it may — застывшее выражение со значением «как бы то ни было»; заменять may на другие глаголы нельзя.",
+          "explanation_ru": "Здесь insist значит «настаивать, что это правда», а не «требовать», поэтому субъюнктив не нужен: обычное прошедшее had driven (раньше момента спора). Drive и should drive превратили бы утверждение в требование, чтобы он проехал на зелёный.",
           "difficulty": 2,
-          "diagnostic": false
+          "diagnostic": true
         },
         {
           "id": "c1_the_subjunctive_in_english_present_and_past_04",
           "kind": "choice",
-          "prompt": "The committee proposed that the deadline ___ by two weeks.",
+          "prompt": "The residents' committee proposed that the bus route ___ as far as the new hospital.",
           "options": [
             "be extended",
             "is extending",
@@ -219,48 +307,130 @@
             "to be extended"
           ],
           "correct_index": 0,
-          "explanation_ru": "Нужен пассив в сослагательном: be + V3 без вспомогательных глаголов и без to.",
-          "difficulty": 2
+          "explanation_ru": "После propose that — субъюнктив. Маршрут продлевают, поэтому пассив be extended: без вспомогательных глаголов и без to.",
+          "difficulty": 2,
+          "diagnostic": true
         },
         {
           "id": "c1_the_subjunctive_in_english_present_and_past_05",
           "kind": "gap",
-          "prompt": "If I ___ (be) in your position, I would talk to the client directly.",
-          "answer": "were",
-          "accept": [],
-          "explanation_ru": "В прошедшем сослагательном для всех лиц используется were; was здесь считается ошибкой в письменной норме.",
-          "difficulty": 1
+          "prompt": "The doctor recommended that the stitches ___ (not / get) wet for a week.",
+          "answer": "not get",
+          "accept": [
+            "should not get"
+          ],
+          "explanation_ru": "После recommend that — субъюнктив, и отрицание в нём строится без do: not + голый инфинитив (not get). Don't get или doesn't get — ошибка; британское should not get тоже верно.",
+          "difficulty": 2
         },
         {
           "id": "c1_the_subjunctive_in_english_present_and_past_06",
           "kind": "gap",
-          "prompt": "The manager recommended that Anna ___ (take) over the project.",
+          "prompt": "The coach recommended that Aisha ___ (take) a week off before the final.",
           "answer": "take",
           "accept": [
             "should take"
           ],
-          "explanation_ru": "После recommend that ставится инфинитив без to, поэтому takes здесь неверно; британский вариант should take тоже допустим.",
+          "explanation_ru": "После recommend that ставится инфинитив без to для всех лиц, поэтому takes неверно; британский вариант should take тоже допустим.",
           "difficulty": 2
         },
         {
           "id": "c1_the_subjunctive_in_english_present_and_past_07",
           "kind": "correct",
-          "prompt": "If I was the team lead, I would change the review process.",
-          "answer": "If I were the team lead, I would change the review process.",
-          "accept": [],
-          "explanation_ru": "Нереальное условие требует формы were во всех лицах, включая первое лицо единственного числа.",
+          "prompt": "The judge ordered that the defendant does not leave the state.",
+          "answer": "The judge ordered that the defendant not leave the state.",
+          "accept": [
+            "The judge ordered that the defendant should not leave the state.",
+            "The judge ordered the defendant not to leave the state."
+          ],
+          "explanation_ru": "Order that — требование, поэтому субъюнктив: not + инфинитив без do и без -s. «Does not leave» описывало бы факт. Вместо придаточного можно сказать ordered the defendant not to leave.",
           "difficulty": 3
         },
         {
           "id": "c1_the_subjunctive_in_english_present_and_past_08",
           "kind": "transform",
-          "prompt": "Rewrite using the subjunctive. Start with 'The CTO insisted that': The CTO said, 'The API must be documented.'",
-          "answer": "The CTO insisted that the API be documented.",
+          "prompt": "Rewrite using the subjunctive. Start with 'The principal insisted that': The principal said, 'Every child must be picked up by an adult.'",
+          "answer": "The principal insisted that every child be picked up by an adult.",
           "accept": [
-            "The CTO insisted that the API should be documented."
+            "The principal insisted that every child should be picked up by an adult."
           ],
-          "explanation_ru": "Insist that вводит сослагательное: модальный must исчезает, а остаётся пассивный инфинитив be documented.",
+          "explanation_ru": "Insist that в значении требования вводит субъюнктив: must исчезает, остаётся пассивный инфинитив be picked up для любого лица.",
           "difficulty": 3
+        },
+        {
+          "id": "c1_the_subjunctive_in_english_present_and_past_09",
+          "kind": "choice",
+          "prompt": "The latest study suggests that coffee ___ less harmful than we once thought.",
+          "options": [
+            "is",
+            "be",
+            "should be",
+            "were"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Suggest здесь значит «указывать на, свидетельствовать», а не «предлагать», поэтому субъюнктив не нужен — обычное is. Be и should be превратили бы вывод исследования в совет, а were — в нереальность.",
+          "difficulty": 2,
+          "diagnostic": true
+        },
+        {
+          "id": "c1_the_subjunctive_in_english_present_and_past_10",
+          "kind": "choice",
+          "prompt": "Как сказать по-английски: «Врач настоял, чтобы я месяц не поднимал тяжести»?",
+          "options": [
+            "The doctor insisted that I not lift anything heavy for a month.",
+            "The doctor insisted that I don't lift anything heavy for a month.",
+            "The doctor insisted me not to lift anything heavy for a month.",
+            "The doctor insisted that I didn't lift anything heavy for a month."
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Требование после insist that — субъюнктив: not перед голым инфинитивом. Don't lift — перенос изъявительного, insist me to — несуществующая модель (insist не берёт дополнение с инфинитивом), а didn't lift значило бы «настаивал, что я не поднимал».",
+          "difficulty": 2,
+          "diagnostic": true
+        },
+        {
+          "id": "c1_the_subjunctive_in_english_present_and_past_11",
+          "kind": "cloze",
+          "prompt": "Dear residents, following last week's flood, the building board has made several decisions. First, it is essential that no one ___ (use) the basement laundry room until the floor is completely dry. The insurer has also asked that every apartment ___ (inspect) by an engineer before the end of the month. Several of you have insisted that the water ___ (come) through the roof, but the plumber believes a pipe burst. Until then, we recommend that you ___ (not / store) anything valuable on the floor. Thank you for your patience.",
+          "gaps": [
+            [
+              "use",
+              "should use"
+            ],
+            [
+              "be inspected",
+              "should be inspected"
+            ],
+            [
+              "came",
+              "had come"
+            ],
+            [
+              "not store",
+              "should not store"
+            ]
+          ],
+          "explanation_ru": "1, 2, 4 — требование или совет (it is essential, ask, recommend) → субъюнктив: голый инфинитив для всех лиц, пассив be inspected, отрицание not store без do. 3 — insist в значении «утверждать, что так было» → обычное прошедшее came.",
+          "difficulty": 3
+        },
+        {
+          "id": "c1_the_subjunctive_in_english_present_and_past_12",
+          "kind": "transform",
+          "prompt": "Rewrite using the word in capitals (do not change it): 'You really should apply for the scholarship, Hana,' said her teacher. RECOMMENDED",
+          "answer": "Hana's teacher recommended that she apply for the scholarship.",
+          "accept": [
+            "Her teacher recommended that Hana apply for the scholarship.",
+            "Her teacher recommended that she apply for the scholarship.",
+            "Hana's teacher recommended that she should apply for the scholarship.",
+            "Her teacher recommended that Hana should apply for the scholarship.",
+            "Hana's teacher recommended she apply for the scholarship.",
+            "Her teacher recommended Hana apply for the scholarship.",
+            "Hana's teacher recommended applying for the scholarship.",
+            "Hana's teacher recommended she should apply for the scholarship.",
+            "The teacher recommended that Hana apply for the scholarship.",
+            "Her teacher recommended that she should apply for the scholarship.",
+            "Her teacher recommended applying for the scholarship."
+          ],
+          "explanation_ru": "Recommend that + подлежащее + голый инфинитив: she apply, а не she applies. Модели recommend her to apply в американской норме нет; возможен и герундий recommended applying.",
+          "difficulty": 2
         }
       ]
     },
@@ -272,23 +442,23 @@
       "title_en": "Advanced discourse markers and cohesion",
       "source_slug": "",
       "title_ru": "Продвинутые дискурсивные маркеры и связность",
-      "summary_ru": "Дискурсивные маркеры на C1 отвечают не за смысл отдельного предложения, а за связность текста. Они делятся на группы: добавление (moreover, furthermore, in addition), контраст (however, nevertheless, nonetheless, that said), следствие (therefore, consequently, hence, thus), переформулировка (in other words, namely, that is), уступка (admittedly, granted) и оценка (arguably, understandably). Важно различать наречия-маркеры и союзы: however, therefore, nevertheless не соединяют два предложения запятой — нужна точка или точка с запятой. Although, whereas, while и since — подчинительные союзы и вводят придаточное. Despite и in spite of требуют существительного или формы на -ing, а не полного предложения. Регистр тоже важен: hence и thus уместны в отчёте, а besides и anyway — в устной речи.",
+      "summary_ru": "Дискурсивные маркеры на C1 — не набор синонимов «однако», а инструменты с точным значением. On the contrary опровергает сказанное («наоборот»), а on the other hand добавляет другую сторону того же вопроса. After all напоминает о причине («всё-таки, ведь»), а «наконец, в конце концов» — это finally, at last или eventually. Even so — «и всё же» в начале нового предложения, тогда как even though — союз «хотя» внутри одного предложения; whereas тоже союз и отдельно не стоит. Admittedly и granted признают довод собеседника перед возражением, if anything усиливает противоположное («скорее даже наоборот»), hence присоединяет именную группу (hence the delay), а namely вводит полный перечень. That said и having said that вводят оговорку после оценки. Наречия-маркеры не соединяют два предложения запятой: нужна точка или точка с запятой. Регистр тоже важен: besides и anyway живут в речи, hence и thus — в письменном тексте.",
       "forms": [
-        "However / Nevertheless / Therefore + запятая + предложение",
-        "предложение + точка с запятой + however + запятая + предложение",
-        "although / whereas / while / since + придаточное предложение",
-        "despite / in spite of + существительное или -ing",
-        "that said / having said that / then again (разговорная уступка)"
+        "On the contrary (опровержение) ↔ On the other hand (другая сторона)",
+        "After all (напоминание о причине) ↔ Finally / Eventually / At last (наконец)",
+        "Even so, + предложение ↔ even though / whereas + придаточное",
+        "Admittedly / Granted, ..., but ... (уступка перед возражением)",
+        "..., hence + именная группа; ..., namely + полный перечень"
       ],
       "examples": [
-        "The migration was delayed; nevertheless, the release went out on time.",
-        "We tested three databases. Ultimately, we chose Postgres.",
-        "Our latency dropped by half. Consequently, support tickets fell too.",
-        "The design is simple, whereas the implementation is quite complex.",
-        "Despite the tight deadline, the team shipped a stable build.",
-        "That said, we still need a proper rollback plan."
+        "I didn't find the film boring. On the contrary, I was on the edge of my seat.",
+        "Let her choose the restaurant — it's her birthday, after all.",
+        "It rained all weekend. Even so, we enjoyed the trip.",
+        "Granted, the apartment is small, but the location is perfect.",
+        "The bridge is closed for repairs, hence the traffic.",
+        "The service was slow. That said, the food was excellent."
       ],
-      "ru_interference": "В русском «однако» и «тем не менее» спокойно соединяют части через запятую, поэтому возникает сращение предложений: неверно «The API is fast, however it is not documented» → верно «The API is fast; however, it is not documented». Ещё «несмотря на» переносят как despite of.",
+      "ru_interference": "«Наоборот» переводят как on the other hand, а «наконец, в конце концов» — как after all: неверно «We waited two hours, and after all the bus came» → верно «We waited two hours, and finally the bus came». «Даже так» превращается в even though вместо even so, а «однако» соединяет части запятой: неверно «The apartment is nice, however it is noisy» → верно «The apartment is nice; however, it is noisy».",
       "prerequisites": [
         "b2_discourse_markers",
         "b2_clauses_contrast_purpose_reason_result"
@@ -297,37 +467,37 @@
         {
           "id": "c1_advanced_discourse_markers_and_cohesion_01",
           "kind": "choice",
-          "prompt": "The tests passed on staging. ___, the same build crashed in production.",
+          "prompt": "The new diet didn't make Omar feel weak. ___, he had more energy than ever.",
           "options": [
-            "However",
-            "Despite",
-            "Whereas",
-            "In spite"
+            "On the contrary",
+            "On the other hand",
+            "In contrast",
+            "Conversely"
           ],
           "correct_index": 0,
-          "explanation_ru": "В начале нового предложения перед запятой может стоять только наречие-маркер; despite и in spite требуют существительного, а whereas — союз внутри одного предложения.",
-          "difficulty": 1,
-          "diagnostic": false
+          "explanation_ru": "Первое предложение отрицает («не ослаб»), второе утверждает противоположное — это опровержение, «наоборот»: on the contrary. On the other hand добавляет другую сторону вопроса, in contrast сравнивает два разных предмета, conversely — обратную зависимость.",
+          "difficulty": 2,
+          "diagnostic": true
         },
         {
           "id": "c1_advanced_discourse_markers_and_cohesion_02",
           "kind": "choice",
-          "prompt": "___ the tight budget, the team delivered on time.",
+          "prompt": "Don't be too hard on Lucas — he's only twelve, ___.",
           "options": [
-            "Despite",
-            "Although",
-            "However",
-            "Whereas"
+            "after all",
+            "finally",
+            "at last",
+            "in the end"
           ],
           "correct_index": 0,
-          "explanation_ru": "После пропуска стоит существительное the tight budget, а не придаточное, поэтому подходит только предлог despite.",
+          "explanation_ru": "After all напоминает о причине: «он ведь всего лишь ребёнок». Finally, at last и in the end значат «наконец, в итоге» и описывают конец процесса; русское «в конце концов» в значении «ведь» переводится только after all.",
           "difficulty": 1,
-          "diagnostic": false
+          "diagnostic": true
         },
         {
           "id": "c1_advanced_discourse_markers_and_cohesion_03",
           "kind": "choice",
-          "prompt": "The report was long and repetitive; ___, it made one useful point.",
+          "prompt": "The novel is far too long and rather repetitive; ___, its final chapter is brilliant.",
           "options": [
             "therefore",
             "that said",
@@ -335,75 +505,159 @@
             "namely"
           ],
           "correct_index": 1,
-          "explanation_ru": "Вторая часть противопоставлена первой, а из вариантов уступку выражает только that said; therefore даёт следствие, moreover — добавление, namely — уточнение.",
-          "difficulty": 2
+          "explanation_ru": "Вторая часть противопоставлена первой, а оговорку после оценки вводит that said; therefore даёт следствие, moreover — добавление, namely — уточнение.",
+          "difficulty": 2,
+          "diagnostic": true
         },
         {
           "id": "c1_advanced_discourse_markers_and_cohesion_04",
           "kind": "choice",
-          "prompt": "We only support two browsers, ___ Chrome and Firefox.",
+          "prompt": "The museum is closed on only two public holidays, ___ Thanksgiving and Christmas Day.",
           "options": [
             "namely",
-            "however",
-            "whereas",
-            "although"
+            "such as",
+            "for instance",
+            "in particular"
           ],
           "correct_index": 0,
-          "explanation_ru": "Дальше идёт расшифровка того, что названо раньше, а такое уточнение вводит только namely.",
-          "difficulty": 2
+          "explanation_ru": "Namely вводит полный перечень того, что уже названо числом («а именно»). Such as и for instance дают примеры из более широкого списка, а здесь праздников ровно два; in particular выделяет один из многих.",
+          "difficulty": 2,
+          "diagnostic": true
         },
         {
           "id": "c1_advanced_discourse_markers_and_cohesion_05",
           "kind": "choice",
-          "prompt": "Traffic doubled overnight. ___, we had to add three more servers.",
+          "prompt": "Moving to the suburbs didn't make our commute shorter. ___, it added twenty minutes each way.",
           "options": [
-            "Consequently",
-            "Nevertheless",
-            "Conversely",
-            "Otherwise"
+            "If anything",
+            "Anyhow",
+            "In any case",
+            "Above all"
           ],
           "correct_index": 0,
-          "explanation_ru": "Вторая часть — прямое следствие первой, поэтому нужен маркер результата; остальные варианты вводят контраст, противоположность или альтернативу.",
-          "difficulty": 3
+          "explanation_ru": "If anything — «скорее даже наоборот»: усиливает вывод, противоположный ожидаемому. Anyhow и in any case значат «так или иначе», above all — «прежде всего».",
+          "difficulty": 2,
+          "diagnostic": true
         },
         {
           "id": "c1_advanced_discourse_markers_and_cohesion_06",
           "kind": "gap",
-          "prompt": "The library is free to use. ___ (contrast, one formal word), the license forbids commercial redistribution.",
-          "answer": "However",
+          "prompt": "___ (a one-word marker that concedes a point before you argue against it), the hotel was cheap, but the noise made sleep impossible.",
+          "answer": "Admittedly",
           "accept": [
-            "Nevertheless",
-            "Nonetheless"
+            "Granted",
+            "True",
+            "Certainly",
+            "Sure"
           ],
-          "explanation_ru": "Нужно одно формальное наречие контраста в начале предложения с запятой после него.",
-          "difficulty": 1
+          "explanation_ru": "Admittedly (или granted) признаёт довод собеседника перед возражением с but: «да, отель был дешёвый, но…». However и nevertheless здесь не подходят: они противопоставляют, а не уступают.",
+          "difficulty": 2
         },
         {
           "id": "c1_advanced_discourse_markers_and_cohesion_07",
           "kind": "gap",
-          "prompt": "We could not reproduce the bug; ___ (result, one formal word), we closed the ticket.",
-          "answer": "therefore",
-          "accept": [
-            "consequently",
-            "hence",
-            "thus",
-            "accordingly"
-          ],
-          "explanation_ru": "После точки с запятой нужен формальный маркер следствия: therefore, consequently, thus или accordingly. Hence обычно присоединяет именную группу (hence the delay), а перед целым предложением звучит книжно.",
+          "prompt": "The main road was closed for repairs, ___ (a formal one-word marker used before a noun phrase: 'which explains') the long detour.",
+          "answer": "hence",
+          "accept": [],
+          "explanation_ru": "Hence в значении «отсюда, этим объясняется» присоединяет именную группу без глагола: hence the long detour. Therefore и so требуют полного предложения (therefore we took a long detour).",
           "difficulty": 2
         },
         {
           "id": "c1_advanced_discourse_markers_and_cohesion_08",
           "kind": "correct",
-          "prompt": "Keep 'however' and correct the sentence: The service is stable, however it is slow.",
-          "answer": "The service is stable; however, it is slow.",
+          "prompt": "The forecast promised sunshine. Even though, we packed our umbrellas.",
+          "answer": "The forecast promised sunshine. Even so, we packed our umbrellas.",
           "accept": [
-            "The service is stable. However, it is slow.",
-            "The service is stable; it is, however, slow.",
-            "The service is stable. It is, however, slow."
+            "The forecast promised sunshine. Nevertheless, we packed our umbrellas.",
+            "The forecast promised sunshine. Nonetheless, we packed our umbrellas.",
+            "The forecast promised sunshine. All the same, we packed our umbrellas.",
+            "The forecast promised sunshine. Still, we packed our umbrellas.",
+            "The forecast promised sunshine. However, we packed our umbrellas.",
+            "Even though the forecast promised sunshine, we packed our umbrellas."
           ],
-          "explanation_ru": "However — наречие, а не союз, поэтому оно не может соединять два предложения простой запятой.",
+          "explanation_ru": "Even though — союз «хотя»: он вводит придаточное внутри одного предложения и отдельно не стоит. «И всё же» в начале нового предложения — even so, nevertheless или all the same.",
+          "difficulty": 2
+        },
+        {
+          "id": "c1_advanced_discourse_markers_and_cohesion_09",
+          "kind": "cloze",
+          "prompt": "Many cities are experimenting with car-free centers. ___ (concession: 'it is true that'), shop owners often fear losing customers at first. ___ (contrast: 'despite this'), most studies show that the number of shoppers actually rises once the cars are gone. People linger longer and, ___ (adding a stronger point), they spend more. Out-of-town malls, ___ (comparing two different things), tend to lose visitors when parking becomes harder. ___ (rephrasing), people go where they feel comfortable, not just where they can park.",
+          "gaps": [
+            [
+              "Admittedly",
+              "Granted",
+              "True",
+              "Of course",
+              "Certainly",
+              "To be fair"
+            ],
+            [
+              "Even so",
+              "Nevertheless",
+              "Nonetheless",
+              "Still",
+              "That said",
+              "Yet",
+              "However",
+              "All the same",
+              "Having said that"
+            ],
+            [
+              "what is more",
+              "what's more",
+              "more importantly",
+              "crucially",
+              "moreover",
+              "furthermore",
+              "above all"
+            ],
+            [
+              "by contrast",
+              "in contrast",
+              "on the other hand",
+              "conversely"
+            ],
+            [
+              "In other words",
+              "Put simply",
+              "Simply put",
+              "That is",
+              "In short",
+              "To put it simply"
+            ]
+          ],
+          "explanation_ru": "1 — уступка перед возражением (admittedly, granted). 2 — контраст с предыдущим (even so, nevertheless). 3 — добавление более сильного довода (what is more, more importantly). 4 — сравнение двух разных объектов (by contrast). 5 — переформулировка (in other words). On the contrary во 2-м пропуске не подходит: он опровергает, а не противопоставляет.",
           "difficulty": 3
+        },
+        {
+          "id": "c1_advanced_discourse_markers_and_cohesion_10",
+          "kind": "choice",
+          "prompt": "В каком предложении ошибка?",
+          "options": [
+            "The tickets were expensive. Even so, the show sold out in an hour.",
+            "She has lived in Lima for years; hence her excellent Spanish.",
+            "Let's invite Kenji — he did help us move, after all.",
+            "My brother loves football. Whereas, I prefer tennis."
+          ],
+          "correct_index": 3,
+          "explanation_ru": "Whereas — союз, а не наречие-маркер: он соединяет две части одного предложения (My brother loves football, whereas I prefer tennis) и не стоит в начале с запятой. Остальные предложения верны: even so — «и всё же», hence + именная группа, after all — «ведь».",
+          "difficulty": 2,
+          "diagnostic": true
+        },
+        {
+          "id": "c1_advanced_discourse_markers_and_cohesion_11",
+          "kind": "choice",
+          "prompt": "Как сказать по-английски: «Отель, конечно, дорогой, но зато в двух шагах от пляжа»?",
+          "options": [
+            "Admittedly, the hotel is expensive, but it's a short walk from the beach.",
+            "Of course the hotel is expensive, but instead it's a short walk from the beach.",
+            "The hotel is expensive, of course, but in return it's a short walk from the beach.",
+            "The hotel, of course, is expensive, but on the contrary it's a short walk from the beach."
+          ],
+          "correct_index": 0,
+          "explanation_ru": "«Конечно …, но зато» — уступка и довод в пользу: admittedly (или of course) …, but … . «Зато» не переводится как instead (вместо), in return (в обмен) или on the contrary (наоборот): его роль играет само but.",
+          "difficulty": 2,
+          "diagnostic": true
         }
       ]
     },
@@ -415,23 +669,23 @@
       "title_en": "Advanced modal verbs: will, would and should",
       "source_slug": "advanced-modal-verbs-will-would-and-should",
       "title_ru": "Модальные глаголы will, would и should",
-      "summary_ru": "Will, would и should на C1 выходят далеко за рамки будущего времени и совета. Will выражает не только прогноз, но и уверенный вывод о настоящем (That will be the courier), готовность, а вместе с always — типичное раздражающее поведение. Won't и его прошедшая форма wouldn't обозначают отказ, в том числе у неодушевлённых предметов: the engine wouldn't start. Would описывает повторяющиеся действия в прошлом, вежливую просьбу и предположение. Should выражает совет и слабое долженствование, а также ожидание: The parcel should arrive today. Should have + V3 — упрёк или сожаление о невыполненном действии. В формальном стиле should встречается после it is strange / natural that и в условии вместо if: Should you need help.",
+      "summary_ru": "Will, would и should на C1 выходят далеко за рамки будущего времени и совета. Will выражает уверенный вывод о настоящем (That will be the courier), а will have + V3 — о прошлом (You'll have heard the news). Вместе с always will описывает типичное, часто раздражающее поведение, а won't и wouldn't — отказ, в том числе у предметов: the engine wouldn't start. Would описывает привычки прошлого и предсказуемую реакцию: She would say that, wouldn't she? — «ну конечно, что ещё она скажет». I would have thought мягко выражает несогласие. Should передаёт ожидание по известным фактам (The parcel should arrive today — не must), а в оборотах who should walk in but … и It's odd that she should … — удивление говорящего.",
       "forms": [
-        "will / would / should + инфинитив без to",
-        "should have + V3 (упрёк или сожаление о невыполненном)",
-        "would + инфинитив (повторяющееся действие в прошлом)",
-        "will / won't + инфинитив (типичное поведение, отказ)",
-        "It is strange / natural that ... should + инфинитив"
+        "will + инфинитив / will have + V3 (уверенный вывод о настоящем / прошлом)",
+        "will always + инфинитив; won't / wouldn't (типичное поведение, отказ)",
+        "would say that / would do that (предсказуемая реакция)",
+        "should + инфинитив (ожидание по фактам)",
+        "who should + инфинитив + but ... (удивление)"
       ],
       "examples": [
-        "That will be the delivery guy; I ordered a keyboard.",
-        "The old laptop wouldn't boot after the update.",
-        "Every Friday he would stay late to clean up the backlog.",
-        "You should have run the tests before merging.",
-        "The report should be ready by noon.",
-        "It is odd that she should ask for access now."
+        "That'll be Grandma — she always rings twice.",
+        "You'll have noticed that the park is closed.",
+        "My car wouldn't start this morning.",
+        "He would say that — he's the one who planned the trip.",
+        "It's nearly six, so Dad should be home soon.",
+        "I was waiting at the station, and who should appear but my old roommate!"
       ],
-      "ru_interference": "Русские «должен» и «бы» дают кальки: should ставят там, где нужен долг (must), и теряют have в упрёке о прошлом: неверно «You should run the tests yesterday» → верно «You should have run the tests yesterday». Ещё «машина не хотела заводиться» переводят как did not want вместо wouldn't start.",
+      "ru_interference": "Русское «должен» даёт must там, где нужно ожидание: неверно «She left an hour ago, so she must arrive any minute» → верно «…so she should arrive any minute». А «машина не хотела заводиться» переводят как didn't want to start вместо wouldn't start.",
       "prerequisites": [
         "b2_would_and_used_to",
         "b2_speculation_deduction",
@@ -455,32 +709,32 @@
         {
           "id": "c1_advanced_modal_verbs_will_would_and_should_02",
           "kind": "choice",
-          "prompt": "The build is broken. You ___ have run the tests before merging.",
+          "prompt": "You ___ the news by now — it's been on every channel all morning.",
           "options": [
-            "should",
-            "ought",
-            "must to",
-            "would to"
+            "will have heard",
+            "would hear",
+            "should hear",
+            "will be hearing"
           ],
           "correct_index": 0,
-          "explanation_ru": "Упрёк о прошлом строится как should have + V3; ought требует to, а must to и would to невозможны.",
-          "difficulty": 1,
-          "diagnostic": false
+          "explanation_ru": "Will have + V3 — уверенный вывод о прошлом: «ты наверняка уже слышал». Would hear и should hear не выражают вывода о свершившемся, а will be hearing относится к будущему.",
+          "difficulty": 2,
+          "diagnostic": true
         },
         {
           "id": "c1_advanced_modal_verbs_will_would_and_should_03",
           "kind": "choice",
-          "prompt": "When we were students, we ___ spend whole nights in the lab.",
+          "prompt": "A: Mom says my haircut looks fantastic.\nB: Well, she ___ say that, wouldn't she? She's your mother!",
           "options": [
             "would",
             "will",
             "should",
-            "used"
+            "could"
           ],
           "correct_index": 0,
-          "explanation_ru": "Повторяющееся действие в прошлом передаётся через would + инфинитив; used требовало бы to.",
+          "explanation_ru": "Would say that — «ну конечно, она так и скажет»: предсказуемая реакция человека. Хвостик wouldn't she подтверждает would; will было бы обычным прогнозом, should — советом, could — возможностью.",
           "difficulty": 2,
-          "diagnostic": false
+          "diagnostic": true
         },
         {
           "id": "c1_advanced_modal_verbs_will_would_and_should_04",
@@ -511,21 +765,28 @@
         {
           "id": "c1_advanced_modal_verbs_will_would_and_should_06",
           "kind": "gap",
-          "prompt": "He ___ (should / not / send) the invoice without approval, but he did.",
-          "answer": "shouldn't have sent",
+          "prompt": "A: The museum is probably free on Sundays.\nB: Really? I ___ (think — soften your disagreement with a modal) they'd charge more on weekends, not less.",
+          "answer": "would have thought",
           "accept": [
-            "should not have sent"
+            "would've thought",
+            "would think"
           ],
-          "explanation_ru": "Действие уже произошло и оценивается отрицательно, поэтому нужна форма shouldn't have + V3.",
+          "explanation_ru": "I would have thought — мягкое несогласие: «а я-то думал, что…». Would смягчает, а перфект показывает, что так думалось до реплики собеседника. Простое I thought звучит резче.",
           "difficulty": 2
         },
         {
           "id": "c1_advanced_modal_verbs_will_would_and_should_07",
           "kind": "correct",
-          "prompt": "You should call the client yesterday, not today.",
-          "answer": "You should have called the client yesterday, not today.",
-          "accept": [],
-          "explanation_ru": "Маркер yesterday относит совет к прошлому, а значит нужна перфектная форма should have called.",
+          "prompt": "Hana left the station an hour ago, so she must arrive any minute now.",
+          "answer": "Hana left the station an hour ago, so she should arrive any minute now.",
+          "accept": [
+            "Hana left the station an hour ago, so she should be arriving any minute now.",
+            "Hana left the station an hour ago, so she ought to arrive any minute now.",
+            "Hana left the station an hour ago, so she will arrive any minute now.",
+            "Hana left the station an hour ago, so she will be arriving any minute now.",
+            "Hana left the station an hour ago, so she ought to be arriving any minute now."
+          ],
+          "explanation_ru": "Ожидание по фактам («должна вот-вот приехать») передаёт should (или ought to); must о будущем событии звучит как приказ. Must для вывода работает о настоящем: She must be on the train now.",
           "difficulty": 3
         },
         {
@@ -536,6 +797,64 @@
           "accept": [],
           "explanation_ru": "Will + always описывает типичное раздражающее поведение; always стоит между модальным глаголом и инфинитивом.",
           "difficulty": 3
+        },
+        {
+          "id": "c1_advanced_modal_verbs_will_would_and_should_09",
+          "kind": "choice",
+          "prompt": "I was having coffee in a tiny café in Lisbon, and who ___ walk in but my old chemistry teacher!",
+          "options": [
+            "should",
+            "will",
+            "must",
+            "shall"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Who should + инфинитив + but … — устойчивый оборот удивления: «и кто бы вы думали вошёл — мой учитель!». Should здесь не совет, а эмоциональная окраска; will, must и shall так не употребляются.",
+          "difficulty": 2,
+          "diagnostic": true
+        },
+        {
+          "id": "c1_advanced_modal_verbs_will_would_and_should_10",
+          "kind": "cloze",
+          "prompt": "My grandfather has always been a creature of habit. When I was little, every Sunday he ___ (past habit: make) pancakes for the whole family, and he ___ (refused to: let) anyone else near the stove. His old car was just as stubborn: on cold mornings it simply ___ (refused to: start). Even now my grandmother sighs, 'That man ___ (typical, annoying behavior: always / insist) on doing everything his own way!' Last week she called me and said, 'You ___ (I'm sure you have: hear) that he's bought a motorcycle.'",
+          "gaps": [
+            [
+              "would make",
+              "used to make"
+            ],
+            [
+              "wouldn't let",
+              "would not let"
+            ],
+            [
+              "wouldn't start",
+              "would not start"
+            ],
+            [
+              "will always insist",
+              "is always insisting"
+            ],
+            [
+              "will have heard",
+              "must have heard"
+            ]
+          ],
+          "explanation_ru": "1 — would + инфинитив о привычке прошлого (или used to). 2, 3 — wouldn't об отказе человека и предмета. 4 — will always + инфинитив о типичном раздражающем поведении (или is always + -ing). 5 — will have + V3: уверенный вывод о прошлом.",
+          "difficulty": 3
+        },
+        {
+          "id": "c1_advanced_modal_verbs_will_would_and_should_11",
+          "kind": "transform",
+          "prompt": "Rewrite using the word in capitals (do not change it): I'm sure Diego has already left for the airport. WILL",
+          "answer": "Diego will have already left for the airport.",
+          "accept": [
+            "Diego will already have left for the airport.",
+            "Diego will have left for the airport already.",
+            "Diego will have left for the airport by now.",
+            "Diego will have left for the airport."
+          ],
+          "explanation_ru": "Уверенный вывод о прошлом — will have + V3: «он наверняка уже уехал». Will leave было бы прогнозом о будущем.",
+          "difficulty": 2
         }
       ]
     },
@@ -547,21 +866,21 @@
       "title_en": "Hedging and tentative language: softening claims",
       "source_slug": "",
       "title_ru": "Хеджирование: как смягчать утверждения",
-      "summary_ru": "Хеджирование — это осторожная подача утверждения, обязательная норма деловой и академической речи на английском. Смягчают четырьмя способами: модальными глаголами (may, might, could), глаголами seem, appear, tend, suggest, indicate, наречиями (possibly, arguably, apparently, somewhat, relatively) и безличными оборотами It seems that, It would appear that. Would делает высказывание менее категоричным: I would argue that. Ограничители количества (some, a number of, in many cases) снимают претензию на всеобщность. Несогласие тоже смягчают: That may be true, but ... вместо That is wrong. Перебор с хеджированием так же вреден, как и его отсутствие: текст становится бессодержательным.",
+      "summary_ru": "Хеджирование — это осторожная подача утверждения, обязательная норма деловой и академической речи на английском. Смягчают четырьмя способами: модальными глаголами (may, might, could), глаголами seem, appear, tend, suggest, indicate, наречиями (possibly, arguably, apparently, somewhat, relatively) и безличными оборотами It seems that, It would appear that, It could be argued that. Сила глагола-«доклада» тоже важна: findings suggest / indicate — осторожно, prove / demonstrate / confirm — категорично. Степень ограничивают to some extent, to a certain degree и somewhat (не somehow — это «каким-то образом»). Вывод о прошлом смягчают перфектным инфинитивом: The letter seems to have been lost. Would делает высказывание менее категоричным: I would argue that. Перебор с хеджированием так же вреден, как и его отсутствие: текст становится бессодержательным.",
       "forms": [
-        "It seems / It appears / It would appear + that + предложение",
-        "There seems / seem to be + существительное",
-        "tend to / have a tendency to + инфинитив",
-        "may / might / could + инфинитив без to",
-        "would + say / argue / suggest + that + предложение"
+        "may / might / could + инфинитив; may well + инфинитив",
+        "seem / appear + to have been + V3 (осторожный вывод о прошлом)",
+        "findings suggest / indicate (осторожно) ↔ prove / confirm (категорично)",
+        "tend to + инфинитив; somewhat / to some extent (ограничение степени)",
+        "It could be argued / It would appear + that + предложение"
       ],
       "examples": [
-        "The data suggest that response times tend to rise after 6 p.m.",
-        "It would appear that the cache was never invalidated.",
-        "This approach may not be the best option for large teams.",
-        "I would argue that the design is somewhat over-engineered.",
-        "There seems to be a problem with the login service.",
-        "The results are arguably less reliable than we expected."
+        "The findings suggest that noise tends to affect older adults more.",
+        "It would appear that the letter was never delivered.",
+        "This approach may not suit large families.",
+        "The painting seems to have been restored at some point.",
+        "The results are somewhat surprising.",
+        "To some extent, the delay was unavoidable."
       ],
       "ru_interference": "Прямолинейность русской деловой речи даёт слишком категоричные формулировки и кальку с «мне кажется»: неверно «It seems me the plan is risky» → верно «It seems to me that the plan is risky». Вместо резкого «It is not correct» в письме уместнее «That may not be entirely accurate».",
       "prerequisites": [
@@ -573,67 +892,67 @@
         {
           "id": "c1_hedging_and_tentative_language_softening_claims_01",
           "kind": "choice",
-          "prompt": "There ___ to be a problem with the payment gateway.",
+          "prompt": "Only 40 people took part in the survey. Which sentence reports the finding most appropriately?",
           "options": [
-            "seems",
-            "seem",
-            "is seeming",
-            "seems like"
+            "The results prove that people who work from home are happier.",
+            "The results suggest that people who work from home may be happier, although the sample was small.",
+            "The results say people who work from home are definitely happier.",
+            "It is a fact that people who work from home are happier."
           ],
-          "correct_index": 0,
-          "explanation_ru": "Подлежащее a problem в единственном числе, поэтому нужна форма seems; seem не согласуется, а остальные варианты не сочетаются с инфинитивом to be.",
+          "correct_index": 1,
+          "explanation_ru": "При маленькой выборке вывод подают осторожно: suggest + may + оговорка. Prove, definitely и it is a fact выдают предположение за доказанный факт, а results say — разговорная калька.",
           "difficulty": 1,
-          "diagnostic": false
+          "diagnostic": true
         },
         {
           "id": "c1_hedging_and_tentative_language_softening_claims_02",
           "kind": "choice",
-          "prompt": "It would ___ that nobody read the release notes.",
+          "prompt": "These findings ___ that regular naps improve memory, but more research is needed.",
           "options": [
-            "appear",
-            "appears",
-            "appearing",
-            "to appear"
+            "suggest",
+            "prove",
+            "demonstrate",
+            "confirm"
           ],
           "correct_index": 0,
-          "explanation_ru": "После модального would идёт инфинитив без to, поэтому единственная возможная форма — appear.",
-          "difficulty": 1,
-          "diagnostic": false
+          "explanation_ru": "Вторая половина («нужны ещё исследования») требует осторожного глагола: suggest — «указывают на». Prove, demonstrate и confirm заявляют доказанность и противоречат оговорке.",
+          "difficulty": 2,
+          "diagnostic": true
         },
         {
           "id": "c1_hedging_and_tentative_language_softening_claims_03",
           "kind": "choice",
-          "prompt": "Junior developers ___ to underestimate testing time.",
+          "prompt": "The sequel is ___ weaker than the original, but it's still worth watching.",
           "options": [
-            "tend",
-            "tends",
-            "are tending",
-            "tend for"
+            "somewhat",
+            "somehow",
+            "some",
+            "something"
           ],
           "correct_index": 0,
-          "explanation_ru": "Подлежащее во множественном числе, а конструкция фиксирована: tend + to + инфинитив.",
+          "explanation_ru": "Somewhat — «несколько, отчасти»: смягчает сравнительную степень. Somehow значит «каким-то образом» (калька с «как-то»), а some и something перед прилагательным в этом значении не ставятся.",
           "difficulty": 2,
-          "diagnostic": false
+          "diagnostic": true
         },
         {
           "id": "c1_hedging_and_tentative_language_softening_claims_04",
           "kind": "choice",
-          "prompt": "I ___ say that the current design is somewhat risky.",
+          "prompt": "I agree with the critics ___: the plot is predictable, but the acting is superb.",
           "options": [
-            "would",
-            "would to",
-            "am",
-            "had"
+            "to some extent",
+            "in some extent",
+            "at some degree",
+            "on some extent"
           ],
           "correct_index": 0,
-          "explanation_ru": "Would say — стандартный способ смягчить оценку; после would инфинитив идёт без to.",
+          "explanation_ru": "Ограничение степени — to some extent (to a certain degree): «в какой-то мере». Предлог здесь только to; in, at и on — кальки с «в некоторой степени».",
           "difficulty": 2,
-          "diagnostic": false
+          "diagnostic": true
         },
         {
           "id": "c1_hedging_and_tentative_language_softening_claims_05",
           "kind": "choice",
-          "prompt": "The delay was ___ caused by a network issue, though we cannot be certain.",
+          "prompt": "The fire was ___ caused by a faulty heater, though investigators cannot yet be certain.",
           "options": [
             "possibly",
             "definitely",
@@ -642,16 +961,19 @@
           ],
           "correct_index": 0,
           "explanation_ru": "Вторая часть прямо снимает уверенность, поэтому definitely и certainly противоречат контексту, а прилагательное possible не может стоять перед причастием.",
-          "difficulty": 3
+          "difficulty": 3,
+          "diagnostic": true
         },
         {
           "id": "c1_hedging_and_tentative_language_softening_claims_06",
           "kind": "gap",
-          "prompt": "It ___ (seem) to me that we are solving the wrong problem.",
-          "answer": "seems",
-          "accept": [],
-          "explanation_ru": "В обороте с формальным подлежащим it глагол стоит в третьем лице единственного числа: it seems to me that.",
-          "difficulty": 1
+          "prompt": "The painting ___ (seem / damage) during the move — there is a small tear in one corner.",
+          "answer": "seems to have been damaged",
+          "accept": [
+            "appears to have been damaged"
+          ],
+          "explanation_ru": "Осторожный вывод о прошлом событии — seem + перфектный пассивный инфинитив: seems to have been damaged («похоже, повредили»). Картину повредили (пассив) раньше, чем мы это заметили (перфект).",
+          "difficulty": 2
         },
         {
           "id": "c1_hedging_and_tentative_language_softening_claims_07",
@@ -674,6 +996,56 @@
           ],
           "explanation_ru": "Seem требует предлога to перед лицом: it seems to me, а не it seems me.",
           "difficulty": 3
+        },
+        {
+          "id": "c1_hedging_and_tentative_language_softening_claims_09",
+          "kind": "transform",
+          "prompt": "Rewrite using the word in capitals (do not change it): The storm probably caused the power outage. LIKELY",
+          "answer": "It is likely that the storm caused the power outage.",
+          "accept": [
+            "The storm is likely to have caused the power outage.",
+            "The storm likely caused the power outage.",
+            "The power outage was likely caused by the storm.",
+            "It is likely the storm caused the power outage.",
+            "It seems likely that the storm caused the power outage.",
+            "Most likely, the storm caused the power outage.",
+            "The storm is likely to be the cause of the power outage."
+          ],
+          "explanation_ru": "Likely — прилагательное: It is likely that … или be likely to have + V3 о прошлом. В американском английском likely работает и как наречие: The storm likely caused the outage.",
+          "difficulty": 1
+        },
+        {
+          "id": "c1_hedging_and_tentative_language_softening_claims_10",
+          "kind": "cloze",
+          "prompt": "Several recent studies ___ (a cautious reporting verb) that people who walk to work are healthier than those who drive. Walkers, however, ___ (have a tendency / be) younger and ___ (to a small degree) wealthier than drivers. It ___ (argue — hedged passive with a modal) that these factors, rather than walking itself, explain much of the difference. The benefits of walking are real, but they ___ (seem / overstate — perfect passive) in the popular press.",
+          "gaps": [
+            [
+              "suggest",
+              "indicate"
+            ],
+            [
+              "tend to be"
+            ],
+            [
+              "somewhat",
+              "slightly",
+              "a little",
+              "marginally",
+              "rather"
+            ],
+            [
+              "could be argued",
+              "can be argued",
+              "might be argued",
+              "may be argued"
+            ],
+            [
+              "seem to have been overstated",
+              "appear to have been overstated"
+            ]
+          ],
+          "explanation_ru": "1 — осторожный глагол-доклад (suggest, indicate), а не prove. 2 — tend to be: тенденция, а не правило. 3 — somewhat, slightly ограничивают степень. 4 — безличный хеджированный пассив It could be argued that. 5 — seem + to have been + V3: осторожный вывод о прошлом.",
+          "difficulty": 3
         }
       ]
     },
@@ -685,23 +1057,23 @@
       "title_en": "Nominalisation for formal and academic register",
       "source_slug": "",
       "title_ru": "Номинализация для формального регистра",
-      "summary_ru": "Номинализация — превращение глагола или прилагательного в существительное: implement — implementation, decide — decision, fail — failure, able — ability, complex — complexity. Она уплотняет информацию и характерна для отчётов, документации и академического стиля. Типичные суффиксы: -tion и -sion, -ment, -ance и -ence, -ity, -ness, -ure; часть слов не меняет формы вообще (increase, use, change). Дополнение присоединяется через of: the analysis of the logs, the failure of the script. Рядом с отглагольным существительным обычно стоит глагол с ослабленным значением: make an assessment, carry out an analysis, reach a decision, provide a description. Номинализация часто убирает исполнителя и потому хорошо сочетается с пассивом. Злоупотребление делает текст тяжёлым, поэтому в переписке её дозируют.",
+      "summary_ru": "Номинализация — превращение глагола или прилагательного в существительное: implement — implementation, decide — decision, fail — failure, unwilling — unwillingness, complex — complexity. Она уплотняет информацию и характерна для отчётов, статей и академического стиля: Because prices rose sharply, fewer people traveled → A sharp rise in prices led to a fall in travel. Типичные суффиксы: -tion и -sion, -ment, -ance и -ence, -ity, -ness, -ure; часть слов меняет основу (maintain — maintenance). Дополнение присоединяется через of, исполнитель — через by или притяжательный падеж: the rejection of the plan by the council, the council's rejection of the plan. Предлоги после таких существительных фиксированы: increase / decline in, demand for, impact on, access to, а decision, refusal, attempt присоединяют действие инфинитивом с to. Рядом стоят глаголы с ослабленным значением: carry out an analysis, reach a decision, give rise to problems. Злоупотребление делает текст тяжёлым, поэтому в переписке её дозируют.",
       "forms": [
         "глагол + -tion / -sion / -ment / -ance / -ence / -ure → существительное",
         "прилагательное + -ity / -ness → существительное",
-        "the + отглагольное существительное + of + дополнение",
-        "make / carry out / provide / reach + отглагольное существительное",
-        "There was a + существительное + in ... (вместо глагольной клаузы)"
+        "the + отглагольное существительное + of + дополнение (+ by + исполнитель)",
+        "increase / decline in; impact on; demand for; decision / refusal to + инфинитив",
+        "carry out / reach / give rise to + отглагольное существительное"
       ],
       "examples": [
-        "The implementation of the new policy took six months.",
-        "We carried out an analysis of the server logs.",
-        "There was a sharp increase in error rates after the release.",
-        "The failure of the backup script went unnoticed for a week.",
-        "Their refusal to share the data delayed the audit.",
-        "The complexity of the codebase makes onboarding slow."
+        "The introduction of the new tax took six months.",
+        "Researchers carried out an analysis of hospital waiting times.",
+        "There was a sharp rise in the number of cyclists.",
+        "The closure of the factory hit the whole region.",
+        "Their refusal to cooperate delayed the inquiry.",
+        "The complexity of the rules discourages many applicants."
       ],
-      "ru_interference": "В русском отглагольные существительные образуются почти автоматически («внедрение», «согласование»), поэтому берут неверный суффикс или пропускают of: неверно «the implementation the policy» → верно «the implementation of the policy». Также появляется «for analyze the logs» вместо «for the analysis of the logs».",
+      "ru_interference": "Русские «рост числа», «влияние на» и «не хватает» переносятся дословно: неверно «an increase of the number», «an impact to», «we lack of time» → верно «an increase in the number», «an impact on», «we lack time» (или «there is a lack of time»). Ещё теряется of: неверно «the implementation the policy» → верно «the implementation of the policy».",
       "prerequisites": [
         "b2_compound_nouns_possessive_forms",
         "b1_an_the_no_article"
@@ -710,105 +1082,161 @@
         {
           "id": "c1_nominalisation_for_formal_and_academic_register_01",
           "kind": "choice",
-          "prompt": "The ___ of the new system took longer than planned.",
+          "prompt": "Which is the most natural nominalized version of 'Because prices rose sharply, fewer people traveled abroad'?",
           "options": [
-            "implementation",
-            "implement",
-            "implementable",
-            "implemented"
+            "A sharp rise in prices led to a fall in foreign travel.",
+            "A sharp rising of prices led to fall of foreign travel.",
+            "Prices' sharp rise led to less travels abroad.",
+            "A sharp rise of prices led to a fall on foreign travel."
           ],
           "correct_index": 0,
-          "explanation_ru": "После артикля the и перед of нужна форма существительного, а не глагол, прилагательное или причастие.",
-          "difficulty": 1,
-          "diagnostic": false
+          "explanation_ru": "Номинализация сворачивает придаточное в существительное с правильным предлогом: rise in, fall in. Rising of и fall of — калька с «рост цен», travels в этом значении не употребляется, fall on — неверный предлог.",
+          "difficulty": 2,
+          "diagnostic": true
         },
         {
           "id": "c1_nominalisation_for_formal_and_academic_register_02",
           "kind": "choice",
-          "prompt": "We need to carry out a full ___ of the logs before Friday.",
+          "prompt": "Social media has had a profound impact ___ the way teenagers sleep.",
           "options": [
-            "analysis",
-            "analyze",
-            "analytic",
-            "analyzed"
+            "on",
+            "to",
+            "for",
+            "at"
           ],
           "correct_index": 0,
-          "explanation_ru": "Carry out — глагол с ослабленным значением, после которого идёт существительное; analysis и есть номинализация глагола analyze.",
+          "explanation_ru": "Impact присоединяет то, на что влияют, предлогом on: an impact on sleep. To — калька с «воздействие к», for и at здесь невозможны.",
           "difficulty": 1,
-          "diagnostic": false
+          "diagnostic": true
         },
         {
           "id": "c1_nominalisation_for_formal_and_academic_register_03",
           "kind": "choice",
-          "prompt": "Their ___ to sign the contract surprised everyone.",
+          "prompt": "The council's ___ the plans for a new stadium surprised everyone.",
           "options": [
-            "refusal",
-            "refuse",
-            "refusable",
-            "refused"
+            "decision to reject",
+            "decision of rejecting",
+            "deciding rejection of",
+            "decision for rejecting"
           ],
           "correct_index": 0,
-          "explanation_ru": "После притяжательного their нужно существительное; отглагольная форма от refuse — refusal.",
-          "difficulty": 2
+          "explanation_ru": "Decision, refusal, attempt, plan присоединяют действие инфинитивом с to: decision to reject. Decision of rejecting — калька с «решение об отклонении».",
+          "difficulty": 2,
+          "diagnostic": true
         },
         {
           "id": "c1_nominalisation_for_formal_and_academic_register_04",
           "kind": "choice",
-          "prompt": "There was a significant ___ in latency after the migration.",
+          "prompt": "Poor ventilation in classrooms can give ___ to headaches and poor concentration.",
           "options": [
-            "reduction",
-            "reduce",
-            "reduced",
-            "reducing"
+            "rise",
+            "raise",
+            "arise",
+            "rising"
           ],
           "correct_index": 0,
-          "explanation_ru": "Шаблон there was a + существительное + in требует именно существительного reduction.",
+          "explanation_ru": "Give rise to — «вызывать, приводить к»: книжный связующий оборот при номинализации. Raise — переходный глагол «поднимать», arise — «возникать»; ни один из них этой идиомы не образует.",
           "difficulty": 2,
-          "diagnostic": false
+          "diagnostic": true
         },
         {
           "id": "c1_nominalisation_for_formal_and_academic_register_05",
           "kind": "correct",
-          "prompt": "The implementation the new policy started in March.",
-          "answer": "The implementation of the new policy started in March.",
+          "prompt": "There was a sharp increase of the number of burglaries last winter.",
+          "answer": "There was a sharp increase in the number of burglaries last winter.",
           "accept": [],
-          "explanation_ru": "Отглагольное существительное присоединяет дополнение только через предлог of.",
-          "difficulty": 3
+          "explanation_ru": "Increase, rise, decline, fall присоединяют то, что изменилось, предлогом in: an increase in the number. Of после increase ставится только перед величиной: an increase of 20%.",
+          "difficulty": 2
         },
         {
           "id": "c1_nominalisation_for_formal_and_academic_register_06",
           "kind": "gap",
-          "prompt": "The team decided quickly. -> The team's ___ (decide) was quick.",
-          "answer": "decision",
+          "prompt": "People are unwilling to pay for news online. → People's ___ (unwilling) to pay for news online worries publishers.",
+          "answer": "unwillingness",
           "accept": [],
-          "explanation_ru": "Глагол decide превращается в существительное decision с суффиксом -sion.",
-          "difficulty": 1
+          "explanation_ru": "Прилагательное unwilling превращается в существительное с -ness, а дополнение to pay сохраняется: unwillingness to pay.",
+          "difficulty": 2
         },
         {
           "id": "c1_nominalisation_for_formal_and_academic_register_07",
           "kind": "gap",
-          "prompt": "The system failed twice last month. -> There were two system ___ (fail) last month.",
-          "answer": "failures",
+          "prompt": "The bridge was closed because nobody had maintained it properly. → The bridge was closed because of poor ___ (maintain).",
+          "answer": "maintenance",
           "accept": [],
-          "explanation_ru": "После числительного two нужна форма множественного числа существительного failure.",
+          "explanation_ru": "Существительное от maintain — maintenance: меняется и суффикс, и основа (ai → e). Maintainance — частая ошибка.",
           "difficulty": 2
         },
         {
           "id": "c1_nominalisation_for_formal_and_academic_register_08",
           "kind": "transform",
-          "prompt": "Rewrite in a more formal, nominalised style: They analyzed the data carefully, and this helped us find the bug.",
-          "answer": "Their careful analysis of the data helped us find the bug.",
+          "prompt": "Rewrite in a more formal, nominalized style: They analyzed the survey results carefully, and this helped them find the cause.",
+          "answer": "Their careful analysis of the survey results helped them find the cause.",
           "accept": [
-            "A careful analysis of the data helped us find the bug.",
-            "Their careful analysis of the data helped us to find the bug.",
-            "A careful analysis of the data helped us to find the bug.",
-            "Careful analysis of the data helped us find the bug.",
-            "Careful analysis of the data helped us to find the bug.",
-            "The careful analysis of the data helped us find the bug.",
-            "The careful analysis of the data helped us to find the bug."
+            "A careful analysis of the survey results helped them find the cause.",
+            "Their careful analysis of the survey results helped them to find the cause.",
+            "A careful analysis of the survey results helped them to find the cause.",
+            "Careful analysis of the survey results helped them find the cause.",
+            "Careful analysis of the survey results helped them to find the cause.",
+            "The careful analysis of the survey results helped them find the cause.",
+            "The careful analysis of the survey results helped them to find the cause."
           ],
           "explanation_ru": "Глагольная клауза сворачивается в именную группу: наречие carefully становится прилагательным careful, а дополнение присоединяется через of.",
           "difficulty": 3
+        },
+        {
+          "id": "c1_nominalisation_for_formal_and_academic_register_09",
+          "kind": "cloze",
+          "prompt": "Over the past decade there has been a dramatic ___ (grow) in the number of electric cars on our roads. This rapid ___ (expand) has put serious pressure on the power grid. Critics also point to the industry's heavy ___ (depend) on lithium and to the growing ___ (scarce) of the metal. Nevertheless, the ___ (introduce) of generous subsidies has made the switch affordable for many families.",
+          "gaps": [
+            [
+              "growth"
+            ],
+            [
+              "expansion"
+            ],
+            [
+              "dependence",
+              "dependency"
+            ],
+            [
+              "scarcity"
+            ],
+            [
+              "introduction"
+            ]
+          ],
+          "explanation_ru": "Номинализация в тексте: grow → growth (growth in), expand → expansion, depend → dependence on, scarce → scarcity, introduce → introduction of. Такие существительные делают текст плотным и безличным — стиль статьи и отчёта.",
+          "difficulty": 2
+        },
+        {
+          "id": "c1_nominalisation_for_formal_and_academic_register_10",
+          "kind": "transform",
+          "prompt": "Rewrite using the word in capitals (do not change it): The museum closed suddenly, which shocked the whole town. CLOSURE",
+          "answer": "The sudden closure of the museum shocked the whole town.",
+          "accept": [
+            "The museum's sudden closure shocked the whole town.",
+            "The sudden closure of the museum came as a shock to the whole town.",
+            "The museum's sudden closure came as a shock to the whole town.",
+            "The whole town was shocked by the sudden closure of the museum.",
+            "The whole town was shocked by the museum's sudden closure."
+          ],
+          "explanation_ru": "Глагол closed становится существительным closure, наречие suddenly — прилагательным sudden, а подлежащее уходит в of или в притяжательный падеж.",
+          "difficulty": 3
+        },
+        {
+          "id": "c1_nominalisation_for_formal_and_academic_register_11",
+          "kind": "choice",
+          "prompt": "В каком предложении ошибка?",
+          "options": [
+            "The rejection of the proposal by the council angered local residents.",
+            "Many rural schools still lack of access to fast internet.",
+            "Their lack of experience was obvious from the start.",
+            "The demand for organic food has doubled in five years."
+          ],
+          "correct_index": 1,
+          "explanation_ru": "Lack как глагол не требует предлога: schools lack access. Lack of — только у существительного: a lack of access. Остальные предложения верны: rejection of … by, lack of experience, demand for.",
+          "difficulty": 2,
+          "diagnostic": true
         }
       ]
     },
@@ -820,23 +1248,23 @@
       "title_en": "Collocation and register: formal vs informal equivalents",
       "source_slug": "",
       "title_ru": "Коллокации и регистр: формально и неформально",
-      "summary_ru": "Регистр — это степень формальности, и на C1 ошибка регистра считается такой же ошибкой, как ошибка в грамматике. Неформальный английский предпочитает фразовые глаголы и короткие германские слова: find out, set up, put off, get in touch, ask for. Формальный письменный английский выбирает однословные латинские эквиваленты: determine, establish, postpone, contact, request. То же касается связок: but и so в письме заменяются на however и therefore. Отдельная тема — коллокации, то есть устойчивые сочетания слов: do research, make a decision, heavy traffic, strong argument, deeply concerned. Коллокация не выводится из логики, её нужно запоминать целиком. Смешение регистров в одном письме читается как небрежность.",
+      "summary_ru": "Регистр — это степень формальности, и на C1 ошибка регистра считается такой же ошибкой, как ошибка в грамматике. Неформальный английский предпочитает фразовые глаголы и короткие германские слова: find out, set up, put off, get in touch, ask for. Формальный письменный английский выбирает однословные латинские эквиваленты: determine, establish, postpone, contact, request. Меняются и связки: but и so в письме заменяются на however и therefore, before и because of — на prior to и owing to. Prior to — предлог, поэтому после него идёт -ing, а не инфинитив: prior to leaving. У формального письма свои устойчивые формулы и коллокации: I look forward to hearing from you, generate interest, request a refund. Русские канцелярские обороты («в связи с», «заранее благодарю») дословно не переводятся. Смешение регистров в одном письме читается как небрежность.",
       "forms": [
         "фразовый глагол (неформально) ↔ однословный латинский глагол (формально)",
-        "make + decision / mistake / progress; do + research / homework / damage",
-        "a great deal of / considerable + неисчисляемое существительное (формально)",
+        "before / because of (нейтрально) ↔ prior to + -ing / owing to + существительное (формально)",
+        "generate / attract interest; request / require assistance",
         "however / therefore / furthermore (формально) ↔ but / so / also",
-        "would like to / request (формально) ↔ want / ask for"
+        "I look forward to + -ing; Should you wish to ... (формулы письма)"
       ],
       "examples": [
         "We need to find out what happened. / We need to determine what happened.",
         "The meeting was put off until Monday. / The meeting was postponed until Monday.",
-        "Please get in touch if you need help. / Please contact us if you require assistance.",
-        "The team did a lot of research before the launch.",
-        "Heavy traffic delayed the delivery this morning.",
-        "I would like to request access to the production logs."
+        "Please get in touch if you need help. / Please contact us should you require assistance.",
+        "Prior to boarding, passengers must show their passports.",
+        "Owing to heavy snow, all flights have been canceled.",
+        "I look forward to hearing from you."
       ],
-      "ru_interference": "Русское «делать» покрывает и do, и make, поэтому появляется калька «make research»: неверно «We made research last year» → верно «We did research last year». Ещё в письме клиенту пишут разговорное «I wanna ask you» вместо «I would like to ask you».",
+      "ru_interference": "Канцелярские обороты переводят дословно: «в связи с ремонтом» → неверно «in connection with renovation» → верно «owing to renovation work»; «прежде чем покинуть» → неверно «prior to leave» → верно «prior to leaving». В письме клиенту к тому же пишут разговорное «I wanna ask you» вместо «I would like to ask you».",
       "prerequisites": [
         "b2_do_or_make_which_is_it",
         "b2_get",
@@ -846,17 +1274,17 @@
         {
           "id": "c1_collocation_and_register_formal_vs_informal_equivalents_01",
           "kind": "choice",
-          "prompt": "The lab has been ___ research on battery life for two years.",
+          "prompt": "Which is the most appropriate way to end a formal letter of complaint?",
           "options": [
-            "doing",
-            "making",
-            "taking",
-            "getting"
+            "I look forward to your prompt reply.",
+            "Hope to hear from you soon, cheers!",
+            "Waiting for your answer.",
+            "Write me back ASAP."
           ],
           "correct_index": 0,
-          "explanation_ru": "Research сочетается только с do: do research, но не make, take или get research.",
+          "explanation_ru": "Формальное письмо заканчивается устойчивой формулой I look forward to + существительное или -ing. Cheers и ASAP — разговорные, а Waiting for your answer — калька с «Жду ответа».",
           "difficulty": 1,
-          "diagnostic": false
+          "diagnostic": true
         },
         {
           "id": "c1_collocation_and_register_formal_vs_informal_equivalents_02",
@@ -890,54 +1318,53 @@
         {
           "id": "c1_collocation_and_register_formal_vs_informal_equivalents_04",
           "kind": "choice",
-          "prompt": "We had to ___ a difficult decision about the budget.",
+          "prompt": "Official notice: 'The concert has been ___ until next spring owing to the singer's illness.'",
           "options": [
-            "make",
-            "do",
-            "take up",
-            "put"
+            "postponed",
+            "put away",
+            "called off",
+            "delayed off"
           ],
           "correct_index": 0,
-          "explanation_ru": "Decision сочетается с make; do a decision и put a decision невозможны, а take up значит «начать заниматься».",
+          "explanation_ru": "Официальное объявление требует однословного латинского глагола postpone — «перенести на более поздний срок». Called off значит «отменён» и не сочетается с until, put away — «убрать», delayed off не существует.",
           "difficulty": 2,
-          "diagnostic": false
+          "diagnostic": true
         },
         {
           "id": "c1_collocation_and_register_formal_vs_informal_equivalents_05",
           "kind": "choice",
-          "prompt": "In an academic paper you would write '___' rather than 'find out'.",
+          "prompt": "In a formal letter you would write '___' rather than 'ask for'.",
           "options": [
-            "determine",
-            "figure out",
-            "check out",
-            "sort out"
+            "request",
+            "call for",
+            "look for",
+            "go for"
           ],
           "correct_index": 0,
-          "explanation_ru": "Задание требует формального однословного эквивалента, а три других варианта — такие же разговорные фразовые глаголы, как find out.",
-          "difficulty": 3
+          "explanation_ru": "Формальный однословный эквивалент ask for — request: We request a refund. Call for значит «призывать, требовать публично», look for — «искать», go for — «выбрать, попытаться получить»; все три — фразовые глаголы, а не формальная замена.",
+          "difficulty": 2,
+          "diagnostic": true
         },
         {
           "id": "c1_collocation_and_register_formal_vs_informal_equivalents_06",
           "kind": "gap",
-          "prompt": "Informal: 'The company was set up in 2010.' Formal: 'The company was ___ in 2010.'",
-          "answer": "established",
+          "prompt": "Informal: 'The orchestra was set up in 1920.' Formal: 'The orchestra was ___ in 1920.'",
+          "answer": "founded",
           "accept": [
-            "founded",
-            "incorporated",
+            "established",
             "formed"
           ],
-          "explanation_ru": "Формальный однословный эквивалент фразового глагола set up — establish или found.",
+          "explanation_ru": "Формальный однословный эквивалент фразового глагола set up — found или establish.",
           "difficulty": 1
         },
         {
           "id": "c1_collocation_and_register_formal_vs_informal_equivalents_07",
           "kind": "gap",
-          "prompt": "Informal: 'Can you find out who deleted the file?' Formal: 'Could you ___ who deleted the file?'",
+          "prompt": "Informal: 'Can you find out when the castle was built?' Formal: 'Could you ___ when the castle was built?'",
           "answer": "determine",
           "accept": [
             "establish",
-            "ascertain",
-            "identify"
+            "ascertain"
           ],
           "explanation_ru": "Find out в формальном регистре заменяется одним латинским глаголом: determine, establish или ascertain.",
           "difficulty": 2
@@ -945,14 +1372,60 @@
         {
           "id": "c1_collocation_and_register_formal_vs_informal_equivalents_08",
           "kind": "correct",
-          "prompt": "Our team made a lot of research before choosing the framework.",
-          "answer": "Our team did a lot of research before choosing the framework.",
+          "prompt": "Prior to leave the building, please ensure that all windows are closed.",
+          "answer": "Prior to leaving the building, please ensure that all windows are closed.",
           "accept": [
-            "Our team conducted a lot of research before choosing the framework.",
-            "Our team carried out a lot of research before choosing the framework."
+            "Before leaving the building, please ensure that all windows are closed.",
+            "Before you leave the building, please ensure that all windows are closed."
           ],
-          "explanation_ru": "Английская коллокация — do research, в формальном тексте conduct или carry out research; make здесь невозможно независимо от регистра.",
-          "difficulty": 3
+          "explanation_ru": "Prior to — формальный синоним before, но это предлог, поэтому после него идёт -ing: prior to leaving. Инфинитив здесь — калька с «прежде чем покинуть».",
+          "difficulty": 2
+        },
+        {
+          "id": "c1_collocation_and_register_formal_vs_informal_equivalents_09",
+          "kind": "cloze",
+          "prompt": "Informal: 'Hi all! We have to put off the trip because not enough people signed up. We'll let you know the new dates soon, and you can get your money back if you want.' Formal: 'Dear participants, we regret that the excursion has been ___ owing to ___ demand. We will ___ you of the new dates shortly. Should you wish to ___ a refund, please reply to this message.'",
+          "gaps": [
+            [
+              "postponed",
+              "deferred"
+            ],
+            [
+              "insufficient",
+              "low",
+              "limited",
+              "poor",
+              "weak"
+            ],
+            [
+              "inform",
+              "notify",
+              "advise"
+            ],
+            [
+              "request",
+              "claim",
+              "obtain",
+              "receive"
+            ]
+          ],
+          "explanation_ru": "Формальная версия заменяет фразовые глаголы и разговорные слова: put off → postpone, not enough → insufficient, let you know → inform/notify of, get your money back → request a refund. Should you wish — формальное условие вместо if you want.",
+          "difficulty": 2
+        },
+        {
+          "id": "c1_collocation_and_register_formal_vs_informal_equivalents_10",
+          "kind": "choice",
+          "prompt": "Как сказать по-английски в официальном объявлении: «В связи с ремонтом библиотека будет закрыта до 5 мая»?",
+          "options": [
+            "Owing to renovation work, the library will be closed until May 5.",
+            "In connection with renovation, the library will be closed until May 5.",
+            "Due to the library is being renovated, it will be closed until May 5.",
+            "Thanks to renovation work, the library will be closed until May 5."
+          ],
+          "correct_index": 0,
+          "explanation_ru": "«В связи с» в значении причины — owing to (или due to) + существительное. In connection with значит «относительно, по поводу», due to не вводит придаточное с глаголом, а thanks to — «благодаря», с положительной оценкой.",
+          "difficulty": 2,
+          "diagnostic": true
         }
       ]
     },
@@ -964,23 +1437,23 @@
       "title_en": "Idiomatic multi-word verbs at C1",
       "source_slug": "",
       "title_ru": "Идиоматичные фразовые глаголы на C1",
-      "summary_ru": "На C1 фразовые глаголы становятся идиоматичными: значение не выводится из значений частей. Ключевые примеры: put up with (терпеть), come down to (сводиться к), get away with (остаться безнаказанным), fall through (сорваться), iron out (уладить), bring about (вызвать), take on (взять на себя), roll out (постепенно запускать), look into (расследовать). Грамматически они делятся на разделяемые (turn the offer down, turn it down), неразделяемые (look after the client) и трёхчастные, которые не разделяются никогда (put up with it). Местоимение-дополнение у разделяемого глагола всегда стоит между глаголом и наречием: call it off, а не call off it. Некоторые фразовые глаголы непереходны и не имеют дополнения вообще: the deal fell through. По регистру они нейтрально-разговорные, поэтому в отчёте их часто заменяют однословным глаголом.",
+      "summary_ru": "На C1 фразовые глаголы становятся идиоматичными: значение не выводится из значений частей. Ключевые примеры: fall through (сорваться), bear out (подтвердить), play down (преуменьшить), sink in (дойти до сознания), drag on (затянуться), crop up (внезапно возникнуть), live up to (оправдать ожидания), make up for (возместить), get away with (сойти с рук), come down to (сводиться к), dawn on (осенить). Многие из них непереходны и дополнения не берут вообще: the deal fell through, the news sank in, the talks dragged on. У трёхчастных глаголов предлог обязателен и не опускается: live up to expectations, make up for lost time, put up with the noise. Dawn on строится безлично, через it: It dawned on me that … По регистру такие глаголы нейтрально-разговорные, и в официальном тексте их часто заменяют однословным: bear out → confirm, play down → minimize.",
       "forms": [
-        "глагол + предлог (неразделяемый): look into the issue",
-        "глагол + наречие (разделяемый): turn the offer down / turn it down",
-        "глагол + наречие + предлог (неразделяемый): put up with it",
-        "местоимение всегда между глаголом и наречием: call it off",
-        "непереходный фразовый глагол без дополнения: the deal fell through"
+        "непереходный глагол без дополнения: the deal fell through, the news sank in",
+        "глагол + наречие (разделяемый): play the problem down / play it down",
+        "глагол + наречие + предлог (неразделяемый): live up to, make up for, get away with",
+        "It + dawned on + человек + that ... (безличная модель)",
+        "come down to / boil down to + существительное (сводиться к)"
       ],
       "examples": [
-        "We will look into the crash report tomorrow.",
-        "They called the meeting off at the last minute.",
-        "I can't put up with these random timeouts anymore.",
-        "The deal fell through two days before signing.",
-        "It all comes down to how much traffic we expect.",
-        "We are rolling the new dashboard out next week."
+        "Our plans for the weekend fell through.",
+        "It took a while for the news to sink in.",
+        "The talks dragged on until midnight.",
+        "The sequel didn't live up to the hype.",
+        "It suddenly dawned on me that I'd left my passport at home.",
+        "In the end, it all comes down to money."
       ],
-      "ru_interference": "В русском нет отделяемых частиц, поэтому местоимение ставят после частицы: неверно «Turn off it» → верно «Turn it off». Ещё дословно переводят управление и получают «look the problem» вместо «look into the problem».",
+      "ru_interference": "В русском нет обязательных частиц, поэтому их теряют или путают: неверно «The film didn't live up our expectations» → верно «didn't live up to our expectations»; неверно «Nobody owned up for it» → верно «Nobody owned up to it». «Ему всё сошло с рук» переводят дословно вместо «He got away with everything».",
       "prerequisites": [
         "b1_b1_phrasal_verbs_2_exercises_and_explanation",
         "b1_verb_preposition",
@@ -1004,46 +1477,47 @@
         {
           "id": "c1_idiomatic_multi_word_verbs_at_c1_02",
           "kind": "choice",
-          "prompt": "Here is the offer. I have decided to turn ___.",
+          "prompt": "It took a while for the news to ___ — we had actually won the lottery!",
           "options": [
-            "it down",
-            "down it",
-            "it downwards",
-            "down of it"
+            "sink in",
+            "sink down",
+            "take in",
+            "get in"
           ],
           "correct_index": 0,
-          "explanation_ru": "Turn down — разделяемый фразовый глагол, поэтому местоимение it обязательно стоит между глаголом и наречием.",
-          "difficulty": 1,
-          "diagnostic": false
+          "explanation_ru": "Sink in — «дойти до сознания», непереходный: the news sank in. Take in требует дополнения и подлежащего-человека (I couldn't take it in), sink down — «опуститься», get in — «войти, попасть».",
+          "difficulty": 2,
+          "diagnostic": true
         },
         {
           "id": "c1_idiomatic_multi_word_verbs_at_c1_03",
           "kind": "choice",
-          "prompt": "I don't know how they ___ with such poor test coverage.",
+          "prompt": "The rumors turned out to be true: the leaked documents fully ___ the journalist's claims.",
           "options": [
-            "put up",
-            "put on",
-            "put off",
-            "put out"
+            "bore out",
+            "bore up",
+            "carried on",
+            "brought out"
           ],
           "correct_index": 0,
-          "explanation_ru": "Трёхчастный глагол put up with означает «мириться, терпеть»; другие частицы дают глаголы, которые не сочетаются с with в этом значении.",
+          "explanation_ru": "Bear out — «подтверждать»: факты подтверждают утверждение. Bear up — «держаться в трудной ситуации», carry on — «продолжать», bring out — «выпускать, выявлять».",
           "difficulty": 2,
-          "diagnostic": false
+          "diagnostic": true
         },
         {
           "id": "c1_idiomatic_multi_word_verbs_at_c1_04",
           "kind": "choice",
-          "prompt": "The regulator will ___ the accident and publish a report.",
+          "prompt": "The minister tried to ___ the scandal, calling it 'a minor misunderstanding.'",
           "options": [
-            "look into",
-            "look after",
-            "look forward to",
-            "look out for"
+            "play down",
+            "play off",
+            "put down",
+            "turn down"
           ],
           "correct_index": 0,
-          "explanation_ru": "Look into значит «расследовать»; look after — «заботиться», look forward to — «ждать с нетерпением», look out for — «высматривать».",
-          "difficulty": 2
+          "explanation_ru": "Play down — «преуменьшать значение». Put down — «подавлять» или «унижать», turn down — «отклонять», play off — «стравливать».",
+          "difficulty": 2,
+          "diagnostic": true
         },
         {
           "id": "c1_idiomatic_multi_word_verbs_at_c1_05",
@@ -1062,16 +1536,18 @@
         {
           "id": "c1_idiomatic_multi_word_verbs_at_c1_06",
           "kind": "gap",
-          "prompt": "The client couldn't make it, so we had to ___ (a phrasal verb meaning 'cancel') the presentation.",
-          "answer": "call off",
-          "accept": [],
-          "explanation_ru": "Перед полным существительным частица off может стоять сразу после глагола: call off the presentation.",
-          "difficulty": 1
+          "prompt": "The peace talks ___ (drag) for months before both sides finally signed.",
+          "answer": "dragged on",
+          "accept": [
+            "had dragged on"
+          ],
+          "explanation_ru": "Drag on — «затягиваться» (о чём-то долгом и утомительном); частица on обязательна, без неё drag значит «тащить».",
+          "difficulty": 2
         },
         {
           "id": "c1_idiomatic_multi_word_verbs_at_c1_07",
           "kind": "gap",
-          "prompt": "Our users won't ___ (tolerate: use a three-part verb) slow page loads anymore.",
+          "prompt": "Our neighbors won't ___ (tolerate: use a three-part verb) the noise from the bar much longer.",
           "answer": "put up with",
           "accept": [],
           "explanation_ru": "Трёхчастный глагол put up with никогда не разделяется, поэтому все три части идут подряд перед дополнением.",
@@ -1080,11 +1556,72 @@
         {
           "id": "c1_idiomatic_multi_word_verbs_at_c1_08",
           "kind": "correct",
-          "prompt": "Please switch off it before you leave the room.",
-          "answer": "Please switch it off before you leave the room.",
+          "prompt": "The hotel didn't live up our expectations at all.",
+          "answer": "The hotel didn't live up to our expectations at all.",
           "accept": [],
-          "explanation_ru": "Switch off разделяемый, а местоимение it не может стоять после наречия: только switch it off.",
+          "explanation_ru": "Live up to — трёхчастный глагол, предлог to обязателен: live up to expectations — «оправдать ожидания».",
+          "difficulty": 2
+        },
+        {
+          "id": "c1_idiomatic_multi_word_verbs_at_c1_09",
+          "kind": "cloze",
+          "prompt": "Our road trip across Utah didn't quite go to plan. First, it took the rental office two hours to ___ (= resolve) a problem with our booking. Then, on the second day, a strange noise ___ (appeared unexpectedly) in the engine. To ___ (compensate for) the lost time, we drove through the night, and we never ___ (found the time to do it) visiting Bryce Canyon. Still, on the last day we ___ (= found by chance) a tiny diner that served the best pie in the state.",
+          "gaps": [
+            [
+              "iron out",
+              "sort out",
+              "straighten out",
+              "clear up"
+            ],
+            [
+              "cropped up",
+              "came up",
+              "popped up"
+            ],
+            [
+              "make up for"
+            ],
+            [
+              "got around to",
+              "got round to"
+            ],
+            [
+              "stumbled upon",
+              "stumbled on",
+              "came across"
+            ]
+          ],
+          "explanation_ru": "Iron out — уладить, crop up — неожиданно возникнуть, make up for — возместить, get around to + -ing — наконец найти время, stumble upon — случайно наткнуться. У трёхчастных глаголов ни одна часть не опускается.",
           "difficulty": 3
+        },
+        {
+          "id": "c1_idiomatic_multi_word_verbs_at_c1_10",
+          "kind": "transform",
+          "prompt": "Rewrite using the word in capitals (do not change it): I didn't realize until later that she had been joking. DAWNED",
+          "answer": "It only dawned on me later that she had been joking.",
+          "accept": [
+            "It dawned on me later that she had been joking.",
+            "It dawned on me only later that she had been joking.",
+            "It only later dawned on me that she had been joking.",
+            "It wasn't until later that it dawned on me that she had been joking."
+          ],
+          "explanation_ru": "Dawn on строится безлично: It dawned on me that … — «до меня дошло». Подлежащее — it, а человек стоит после on.",
+          "difficulty": 2
+        },
+        {
+          "id": "c1_idiomatic_multi_word_verbs_at_c1_11",
+          "kind": "choice",
+          "prompt": "Как сказать по-английски: «Ему всё сошло с рук»?",
+          "options": [
+            "He got away with everything.",
+            "Everything went off his hands.",
+            "He got off with everything.",
+            "Everything came off his hands."
+          ],
+          "correct_index": 0,
+          "explanation_ru": "«Сойти с рук» — get away with something, и подлежащее здесь человек. Went off / came off his hands — дословные кальки, а get off with — другой, сленговый смысл.",
+          "difficulty": 1,
+          "diagnostic": true
         }
       ]
     },
@@ -1096,23 +1633,24 @@
       "title_en": "Advanced participle clauses",
       "source_slug": "advanced-participle-clauses",
       "title_ru": "Продвинутые причастные обороты",
-      "summary_ru": "Причастные обороты сокращают придаточные и делают текст плотнее. Оборот с -ing активен и передаёт одновременность или причину: Feeling tired, he left early. Оборот с V3 пассивен: Written in Go, the service starts fast. Having + V3 показывает, что действие предшествовало главному, а having been + V3 добавляет пассив. Отрицание ставится перед причастием: Not knowing the password, she filed a ticket. Обороты сочетаются с союзами after, before, while, once и when. Главное ограничение: подлежащее оборота и главного предложения должны совпадать, иначе получается повисшее причастие. Причастие также сокращает определительное придаточное: the file uploaded yesterday, the people waiting outside.",
+      "summary_ru": "Причастные обороты сокращают придаточные и делают текст плотнее. Оборот с -ing активен и передаёт одновременность или причину: Feeling tired, he left early. Оборот с V3 пассивен: Written in 1851, the novel is still read. Having + V3 показывает, что действие предшествовало главному, а having been + V3 добавляет пассив. Отрицание ставится перед причастием: Not knowing the way, she asked for directions. Главное ограничение: подлежащее оборота и главного предложения должны совпадать, иначе получается повисшее причастие. Отдельная модель C1 — абсолютный оборот со своим подлежащим: The rain over, we set off again; Weather permitting, we'll eat outside; All things considered, it went well. С предлогом with он описывает обстоятельства: With prices rising, families spend less. Абсолютный оборот книжный, но он снимает проблему повисшего причастия, потому что подлежащее названо.",
       "forms": [
         "V-ing + ..., + главное предложение (одновременность или причина)",
         "V3 + ..., + главное предложение (пассивное значение)",
-        "Having + V3 + ..., + главное предложение (предшествование)",
+        "Having + V3 / Having been + V3 + ..., + главное предложение (предшествование)",
         "Not + V-ing / Not having + V3 (отрицание перед причастием)",
-        "After / While / Once / When + V-ing или V3"
+        "существительное + V-ing / V3 / прилагательное, + главное предложение (абсолютный оборот)",
+        "With + существительное + V-ing / V3 (обстоятельства)"
       ],
       "examples": [
-        "Having reviewed the logs, we found the root cause.",
-        "Written in Rust, the parser handles a million lines a second.",
-        "Not knowing the admin password, she filed a ticket.",
-        "Once deployed, the service updates itself automatically.",
-        "The engineer sitting next to me wrote the original API.",
-        "Having been rejected twice, the proposal was finally approved."
+        "Having checked the map twice, we set off.",
+        "Built in the 1920s, the hotel has kept its original charm.",
+        "Not knowing the way, she asked a police officer.",
+        "Once opened, the jar should be kept in the fridge.",
+        "The rain over, we continued our walk.",
+        "With the kids asleep, the house was finally quiet."
       ],
-      "ru_interference": "Русское деепричастие допускает смену подлежащего, поэтому появляется повисшее причастие: неверно «Working on the report, the phone rang» → верно «While I was working on the report, the phone rang». Ещё вместо пассивного причастия ставят активное: «Writing in Java, the service is slow» вместо «Written in Java, the service is slow».",
+      "ru_interference": "Русское деепричастие допускает смену подлежащего, поэтому появляется повисшее причастие: неверно «Looking out of the window, the mountains were beautiful» → верно «Looking out of the window, I saw the beautiful mountains». Ещё вместо пассивного причастия ставят активное: «Writing in 1851, the novel…» вместо «Written in 1851, the novel…».",
       "prerequisites": [
         "b2_participle_clauses",
         "b2_relative_clauses",
@@ -1122,7 +1660,7 @@
         {
           "id": "c1_advanced_participle_clauses_01",
           "kind": "choice",
-          "prompt": "___ in 1995, the library is still widely used.",
+          "prompt": "___ in 1851, the novel is still widely read.",
           "options": [
             "Written",
             "Writing",
@@ -1130,14 +1668,14 @@
             "Write"
           ],
           "correct_index": 0,
-          "explanation_ru": "Библиотеку написали, а не она писала, поэтому нужно пассивное причастие V3.",
+          "explanation_ru": "Роман написали, а не он писал, поэтому нужно пассивное причастие V3.",
           "difficulty": 1,
           "diagnostic": false
         },
         {
           "id": "c1_advanced_participle_clauses_02",
           "kind": "choice",
-          "prompt": "___ the tests, the team merged the branch.",
+          "prompt": "___ the whole route twice, Kenji felt ready for the marathon.",
           "options": [
             "Having run",
             "Having ran",
@@ -1146,7 +1684,8 @@
           ],
           "correct_index": 0,
           "explanation_ru": "Предшествующее действие передаётся формой having + V3, а третья форма глагола run — run, а не ran.",
-          "difficulty": 1
+          "difficulty": 1,
+          "diagnostic": true
         },
         {
           "id": "c1_advanced_participle_clauses_03",
@@ -1166,7 +1705,7 @@
         {
           "id": "c1_advanced_participle_clauses_04",
           "kind": "choice",
-          "prompt": "The engineer ___ next to me wrote the first version of the API.",
+          "prompt": "The woman ___ next to me on the plane turned out to be a famous chef.",
           "options": [
             "sitting",
             "sat",
@@ -1174,28 +1713,29 @@
             "sits"
           ],
           "correct_index": 0,
-          "explanation_ru": "Причастие на -ing сокращает определительное придаточное who is sitting next to me.",
+          "explanation_ru": "Причастие на -ing сокращает определительное придаточное who was sitting next to me.",
           "difficulty": 2,
           "diagnostic": false
         },
         {
           "id": "c1_advanced_participle_clauses_05",
           "kind": "choice",
-          "prompt": "___ several times, the script finally ran without errors.",
+          "prompt": "___ twice by the city council, the plan was finally approved in May.",
           "options": [
-            "Having been fixed",
-            "Having fixed",
-            "Fixing",
-            "Being fixing"
+            "Having been rejected",
+            "Having rejected",
+            "Rejecting",
+            "Being rejecting"
           ],
           "correct_index": 0,
-          "explanation_ru": "Подлежащее the script не чинило само себя, поэтому нужен пассивный перфектный оборот having been + V3.",
-          "difficulty": 3
+          "explanation_ru": "План не отклонял сам себя, его отклоняли, и это было раньше одобрения, поэтому нужен пассивный перфектный оборот having been + V3.",
+          "difficulty": 2,
+          "diagnostic": true
         },
         {
           "id": "c1_advanced_participle_clauses_06",
           "kind": "gap",
-          "prompt": "___ (finish) the migration, we turned off the old server.",
+          "prompt": "___ (finish) her last exam, Zoe went straight to bed.",
           "answer": "Having finished",
           "accept": [
             "After finishing",
@@ -1207,7 +1747,7 @@
         {
           "id": "c1_advanced_participle_clauses_07",
           "kind": "gap",
-          "prompt": "___ (not / receive) any reply, the client called the support line.",
+          "prompt": "___ (not / receive) any reply from the landlord, Fatima called the housing authority.",
           "answer": "Not having received",
           "accept": [
             "Having not received",
@@ -1219,14 +1759,71 @@
         {
           "id": "c1_advanced_participle_clauses_08",
           "kind": "correct",
-          "prompt": "Correct the sentence so that the speaker (I) is the one working and 'the phone rang' stays: Working on the report, the phone rang.",
-          "answer": "While I was working on the report, the phone rang.",
+          "prompt": "Correct the sentence so that the speaker (I) is the one walking and 'the rain started' stays: Walking home from the station, the rain started.",
+          "answer": "While I was walking home from the station, the rain started.",
           "accept": [
-            "I was working on the report when the phone rang.",
-            "As I was working on the report, the phone rang.",
-            "When I was working on the report, the phone rang."
+            "As I was walking home from the station, the rain started.",
+            "When I was walking home from the station, the rain started.",
+            "I was walking home from the station when the rain started."
           ],
-          "explanation_ru": "Подлежащее оборота и главного предложения не совпадают (телефон не работал над отчётом), поэтому причастие нужно развернуть в полное придаточное с подлежащим I: While/As/When I was working.",
+          "explanation_ru": "Подлежащее оборота и главного предложения не совпадают (дождь не шёл домой со станции), поэтому причастие нужно развернуть в полное придаточное с подлежащим I: While/As/When I was walking.",
+          "difficulty": 3
+        },
+        {
+          "id": "c1_advanced_participle_clauses_09",
+          "kind": "choice",
+          "prompt": "___, we all went for a walk along the river.",
+          "options": [
+            "Dinner over",
+            "Dinner was over",
+            "Being dinner over",
+            "Dinner having over"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Абсолютный оборот: своё подлежащее + причастие или прилагательное без связки — Dinner over («когда ужин закончился»). Dinner was over, we went — два предложения через запятую; being и having over здесь неграмматичны (можно Dinner having ended).",
+          "difficulty": 2,
+          "diagnostic": true
+        },
+        {
+          "id": "c1_advanced_participle_clauses_10",
+          "kind": "choice",
+          "prompt": "___ prices rising every month, many families are cutting back on meat.",
+          "options": [
+            "With",
+            "As",
+            "Because",
+            "Since"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "With + существительное + причастие описывает сопутствующие обстоятельства: With prices rising. As, because и since — союзы, после них нужно полное предложение с глаголом: as prices are rising.",
+          "difficulty": 1,
+          "diagnostic": true
+        },
+        {
+          "id": "c1_advanced_participle_clauses_11",
+          "kind": "cloze",
+          "prompt": "___ (weather / permit), the festival will take place in Riverside Park on Saturday. ___ (found) in 1998, it has grown from a small street party into one of the biggest events in the state. ___ (not / want) to disappoint last year's crowds, the organizers have added a second stage. Tickets ___ (buy) at the gate cost ten dollars more than online. ___ (all things / consider), it promises to be the best festival yet.",
+          "gaps": [
+            [
+              "Weather permitting"
+            ],
+            [
+              "Founded",
+              "Having been founded"
+            ],
+            [
+              "Not wanting",
+              "Not wishing"
+            ],
+            [
+              "bought",
+              "purchased"
+            ],
+            [
+              "All things considered"
+            ]
+          ],
+          "explanation_ru": "1 и 5 — застывшие абсолютные обороты со своим подлежащим (weather, all things). 2 — пассивное V3: фестиваль основали. 3 — отрицание not перед -ing. 4 — сокращённое определительное: tickets (that are) bought.",
           "difficulty": 3
         }
       ]

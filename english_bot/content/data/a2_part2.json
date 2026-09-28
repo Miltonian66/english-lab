@@ -90,7 +90,7 @@
         {
           "id": "a2_phrasal_verbs_transitive_and_intransitive_separable_and_inseparable_05",
           "kind": "gap",
-          "prompt": "Nobody can come to the meeting, so I have to call ___ ___. (it / off)",
+          "prompt": "Nobody can come to the party, so I have to call ___ ___. (it / off)",
           "answer": "it off",
           "accept": [],
           "explanation_ru": "Call off — отделяемый глагол, а местоимение it может стоять только между call и off.",
@@ -124,6 +124,57 @@
           ],
           "explanation_ru": "Местоимение it стоит между put и on, поэтому вариант 'put on it' невозможен.",
           "difficulty": 3
+        },
+        {
+          "id": "a2_phrasal_verbs_transitive_and_intransitive_separable_and_inseparable_09",
+          "kind": "cloze",
+          "prompt": "It was cold outside, so Hana put her coat ___. She looked ___ her keys for ten minutes. When she found them, she turned the lights ___ and left. Then her mom called: \"Your scarf is here! Come back and put ___!\"",
+          "gaps": [
+            [
+              "on"
+            ],
+            [
+              "for"
+            ],
+            [
+              "off"
+            ],
+            [
+              "it on"
+            ]
+          ],
+          "explanation_ru": "Put on и turn off — отделяемые глаголы: частица может стоять после существительного (put her coat on), а местоимение it — только между глаголом и частицей: put it on. Look for не разделяется: looked for her keys.",
+          "difficulty": 2
+        },
+        {
+          "id": "a2_phrasal_verbs_transitive_and_intransitive_separable_and_inseparable_10",
+          "kind": "choice",
+          "prompt": "Лейла просит соседа о помощи. В каком предложении ошибка?",
+          "options": [
+            "Can you pick up me at six?",
+            "Can you pick me up at six?",
+            "Can you pick up the kids at six?",
+            "Can you pick the kids up at six?"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Pick up — отделяемый глагол: существительное может стоять до или после up, а местоимение me — только между pick и up: pick me up.",
+          "difficulty": 2,
+          "diagnostic": true
+        },
+        {
+          "id": "a2_phrasal_verbs_transitive_and_intransitive_separable_and_inseparable_11",
+          "kind": "choice",
+          "prompt": "Как сказать по-английски: «Я ищу свои очки.»?",
+          "options": [
+            "I'm looking for my glasses.",
+            "I'm searching my glasses.",
+            "I'm looking my glasses.",
+            "I'm looking after my glasses."
+          ],
+          "correct_index": 0,
+          "explanation_ru": "«Искать» — look for, предлог for обязателен. Search my glasses значит «обыскивать очки», look без for — «смотреть», а look after — «присматривать за».",
+          "difficulty": 1,
+          "diagnostic": true
         }
       ]
     },
@@ -160,7 +211,7 @@
         {
           "id": "a2_the_different_uses_of_the_verb_get_01",
           "kind": "choice",
-          "prompt": "We ___ the office at nine o'clock.",
+          "prompt": "We ___ the hotel at nine o'clock.",
           "options": [
             "got to",
             "got at",
@@ -225,7 +276,7 @@
         {
           "id": "a2_the_different_uses_of_the_verb_get_06",
           "kind": "gap",
-          "prompt": "They ___ ___ in June and moved to Berlin. (get / married)",
+          "prompt": "They ___ ___ in June and moved to Lisbon. (get / married)",
           "answer": "got married",
           "accept": [],
           "explanation_ru": "Устойчивое сочетание get married в прошедшем времени: got married.",
@@ -250,6 +301,36 @@
           ],
           "explanation_ru": "Get в значении 'получить' заменяет receive и в прошедшем времени даёт got.",
           "difficulty": 3
+        },
+        {
+          "id": "a2_the_different_uses_of_the_verb_get_09",
+          "kind": "choice",
+          "prompt": "Как сказать по-английски: «Становится холодно.»?",
+          "options": [
+            "It's getting cold.",
+            "Is getting cold.",
+            "It's get cold.",
+            "Becomes cold."
+          ],
+          "correct_index": 0,
+          "explanation_ru": "«Становится» о погоде сейчас — it is getting + прилагательное. В английском предложении обязательно подлежащее it, даже если в русском его нет, а после is нужна форма на -ing.",
+          "difficulty": 2,
+          "diagnostic": true
+        },
+        {
+          "id": "a2_the_different_uses_of_the_verb_get_10",
+          "kind": "choice",
+          "prompt": "A: Excuse me, how do I ___ to the train station?\nB: Go straight and turn left at the bank.",
+          "options": [
+            "get",
+            "arrive",
+            "reach",
+            "come to get"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Спросить дорогу — How do I get to…? Get to значит «добраться». Arrive требует at или in и не спрашивает о маршруте, а reach берёт дополнение без to.",
+          "difficulty": 1,
+          "diagnostic": true
         }
       ]
     },
@@ -350,7 +431,7 @@
         {
           "id": "a2_on_time_vs_in_time_at_the_end_vs_in_the_end_06",
           "kind": "gap",
-          "prompt": "We asked two teams for help. ___ ___ ___, we fixed the bug ourselves. (= finally)",
+          "prompt": "We asked two plumbers for help. ___ ___ ___, we fixed the pipe ourselves. (= finally)",
           "answer": "In the end",
           "accept": [],
           "explanation_ru": "Значение 'в итоге, в конце концов' передаёт in the end без предлога of.",
@@ -359,8 +440,8 @@
         {
           "id": "a2_on_time_vs_in_time_at_the_end_vs_in_the_end_07",
           "kind": "correct",
-          "prompt": "In the end of the year we always check the servers.",
-          "answer": "At the end of the year we always check the servers.",
+          "prompt": "In the end of the year we always clean the whole house.",
+          "answer": "At the end of the year we always clean the whole house.",
           "accept": [],
           "explanation_ru": "Перед of the year нужна форма at the end; in the end не сочетается с of.",
           "difficulty": 3
@@ -368,11 +449,44 @@
         {
           "id": "a2_on_time_vs_in_time_at_the_end_vs_in_the_end_08",
           "kind": "correct",
-          "prompt": "We got to the meeting room on time to hear the last question.",
-          "answer": "We got to the meeting room in time to hear the last question.",
+          "prompt": "We got to the station on time to catch the last train.",
+          "answer": "We got to the station in time to catch the last train.",
           "accept": [],
           "explanation_ru": "Перед to + инфинитив со значением 'успеть' используется in time, а не on time.",
           "difficulty": 3
+        },
+        {
+          "id": "a2_on_time_vs_in_time_at_the_end_vs_in_the_end_09",
+          "kind": "cloze",
+          "prompt": "Our train to Madrid left ___ (time), at exactly 9:15. We almost missed it, but we got to the station just ___ (time). We spent a week in Spain, and ___ (end) of the trip we were tired but very happy.",
+          "gaps": [
+            [
+              "on time"
+            ],
+            [
+              "in time"
+            ],
+            [
+              "at the end"
+            ]
+          ],
+          "explanation_ru": "По расписанию, минута в минуту — on time; успеть, не опоздать — in time; точка в конце чего-то — at the end of. In the end без of значило бы «в итоге».",
+          "difficulty": 2
+        },
+        {
+          "id": "a2_on_time_vs_in_time_at_the_end_vs_in_the_end_10",
+          "kind": "choice",
+          "prompt": "Как сказать по-английски: «В конце концов мы решили остаться дома.»?",
+          "options": [
+            "In the end, we decided to stay at home.",
+            "At the end, we decided to stay at home.",
+            "On the end, we decided to stay at home.",
+            "In the finish, we decided to stay at home."
+          ],
+          "correct_index": 0,
+          "explanation_ru": "«В конце концов, в итоге» — in the end без of. At the end требует продолжения of something (at the end of the day), а on the end и in the finish так не говорят.",
+          "difficulty": 2,
+          "diagnostic": true
         }
       ]
     },
@@ -503,6 +617,62 @@
           "accept": [],
           "explanation_ru": "Предлог движения стоит сразу после глагола, перед местом: walked across the bridge.",
           "difficulty": 3
+        },
+        {
+          "id": "a2_prepositions_of_movement_09",
+          "kind": "cloze",
+          "prompt": "To get to the museum, walk ___ the bridge and then walk ___ the river for five minutes. After that, go ___ the park, and you'll see the museum. Go ___ the building and buy a ticket at the desk.",
+          "gaps": [
+            [
+              "across",
+              "over"
+            ],
+            [
+              "along",
+              "by"
+            ],
+            [
+              "through",
+              "across",
+              "past"
+            ],
+            [
+              "into",
+              "inside"
+            ]
+          ],
+          "explanation_ru": "На другую сторону моста — across (или over); вдоль реки — along; сквозь парк — through; внутрь здания — into.",
+          "difficulty": 2
+        },
+        {
+          "id": "a2_prepositions_of_movement_10",
+          "kind": "choice",
+          "prompt": "Как сказать по-английски: «Мы перешли через улицу.»?",
+          "options": [
+            "We walked across the street.",
+            "We walked through the street.",
+            "We walked along the street.",
+            "We walked over of the street."
+          ],
+          "correct_index": 0,
+          "explanation_ru": "«Через» в смысле «на другую сторону» — across. Through значит «сквозь, внутри» (через тоннель, через парк), along — «вдоль, по улице», а over of так не говорят.",
+          "difficulty": 2,
+          "diagnostic": true
+        },
+        {
+          "id": "a2_prepositions_of_movement_11",
+          "kind": "choice",
+          "prompt": "A: How do I get to the lake?\nB: Go ___ the hill and down the other side.",
+          "options": [
+            "over",
+            "through",
+            "along",
+            "into"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Перебраться через препятствие сверху, вверх и вниз — over. Through значило бы идти сквозь холм, along — вдоль, into — внутрь.",
+          "difficulty": 2,
+          "diagnostic": true
         }
       ]
     },
@@ -595,7 +765,7 @@
         {
           "id": "a2_something_anything_nothing_etc_05",
           "kind": "gap",
-          "prompt": "I'm hungry. Let's eat ___ before the meeting. (-thing)",
+          "prompt": "I'm hungry. Let's eat ___ before the movie. (-thing)",
           "answer": "something",
           "accept": [],
           "explanation_ru": "Let's... - утвердительное предложение, речь о любой еде, поэтому something: any- уходит в вопросы и отрицания, а nothing значило бы «ничего».",
@@ -604,23 +774,23 @@
         {
           "id": "a2_something_anything_nothing_etc_06",
           "kind": "gap",
-          "prompt": "We fixed all the bugs, and ___ works now. (-thing)",
+          "prompt": "The electrician fixed all the lamps, and ___ works now. (-thing)",
           "answer": "everything",
           "accept": [],
-          "explanation_ru": "Все ошибки исправлены, значит работает всё: everything, и глагол после него в единственном числе: works.",
+          "explanation_ru": "Все лампы починены, значит работает всё: everything, и глагол после него в единственном числе: works.",
           "difficulty": 2
         },
         {
           "id": "a2_something_anything_nothing_etc_07",
           "kind": "correct",
-          "prompt": "I did not tell nobody about the new project.",
-          "answer": "I did not tell anybody about the new project.",
+          "prompt": "I did not tell nobody about the surprise party.",
+          "answer": "I did not tell anybody about the surprise party.",
           "accept": [
-            "I didn't tell anybody about the new project.",
-            "I did not tell anyone about the new project.",
-            "I didn't tell anyone about the new project.",
-            "I told nobody about the new project.",
-            "I told no one about the new project."
+            "I didn't tell anybody about the surprise party.",
+            "I did not tell anyone about the surprise party.",
+            "I didn't tell anyone about the surprise party.",
+            "I told nobody about the surprise party.",
+            "I told no one about the surprise party."
           ],
           "explanation_ru": "В английском одно отрицание на предложение: после did not нужно anybody.",
           "difficulty": 3
@@ -635,6 +805,58 @@
           ],
           "explanation_ru": "Nobody уже отрицание, поэтому глагол утвердительный и в третьем лице ед. числа.",
           "difficulty": 3
+        },
+        {
+          "id": "a2_something_anything_nothing_etc_09",
+          "kind": "cloze",
+          "prompt": "Last night I heard a noise in the kitchen. I went downstairs, but there was ___ (-body) there. I looked ___ (-where), but I didn't find ___ (-thing). Then I saw ___ (-thing) small and gray under the table. It was a mouse!",
+          "gaps": [
+            [
+              "nobody",
+              "no one"
+            ],
+            [
+              "everywhere"
+            ],
+            [
+              "anything"
+            ],
+            [
+              "something"
+            ]
+          ],
+          "explanation_ru": "«Никого» в утверждении — nobody, и глагол was остаётся утвердительным; «везде» — everywhere; после didn't — any-, иначе двойное отрицание; в утверждении о находке — something.",
+          "difficulty": 2
+        },
+        {
+          "id": "a2_something_anything_nothing_etc_10",
+          "kind": "choice",
+          "prompt": "Как сказать по-английски: «Я ничего не знаю.»?",
+          "options": [
+            "I don't know anything.",
+            "I don't know nothing.",
+            "I know anything.",
+            "I not know nothing."
+          ],
+          "correct_index": 0,
+          "explanation_ru": "В английском одно отрицание на предложение: don't + anything. Русское «ничего не» даёт кальку с двумя отрицаниями, а I know anything значит «я знаю что угодно».",
+          "difficulty": 1,
+          "diagnostic": true
+        },
+        {
+          "id": "a2_something_anything_nothing_etc_11",
+          "kind": "choice",
+          "prompt": "A: Where are my glasses?\nB: I don't know. I can't see them ___.",
+          "options": [
+            "anywhere",
+            "somewhere",
+            "nowhere",
+            "everywhere"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "После can't нужна форма any-: anywhere. Nowhere дало бы двойное отрицание, somewhere в отрицании не используют, а everywhere меняет смысл («не вижу их повсюду»).",
+          "difficulty": 2,
+          "diagnostic": true
         }
       ]
     },
@@ -736,21 +958,21 @@
         {
           "id": "a2_most_most_of_the_most_06",
           "kind": "gap",
-          "prompt": "This is ___ ___ ___ laptop in the store. (3 words: expensive)",
-          "answer": "the most expensive",
+          "prompt": "Kenji ate ___ ___ ___ pizza, and there was only one slice left for me. (most / the)",
+          "answer": "most of the",
           "accept": [],
-          "explanation_ru": "Превосходная степень длинного прилагательного: the most expensive.",
+          "explanation_ru": "Речь о конкретной пицце, поэтому перед the нужен of: most of the pizza — «большую часть пиццы». Most pizza без of говорило бы о пицце вообще.",
           "difficulty": 2
         },
         {
           "id": "a2_most_most_of_the_most_07",
           "kind": "correct",
-          "prompt": "Most of developers use a laptop at work.",
-          "answer": "Most developers use a laptop at work.",
+          "prompt": "Most of children like ice cream.",
+          "answer": "Most children like ice cream.",
           "accept": [
-            "Most of the developers use a laptop at work."
+            "Most of the children like ice cream."
           ],
-          "explanation_ru": "Без the, my или these предлог of не нужен: most developers.",
+          "explanation_ru": "Без the, my или these предлог of не нужен: most children — о детях вообще. Most of the children говорит о конкретной группе.",
           "difficulty": 3
         },
         {
@@ -763,6 +985,36 @@
           ],
           "explanation_ru": "Речь о тикетах из конкретного списка, поэтому перед the нужен of: most of the tickets.",
           "difficulty": 3
+        },
+        {
+          "id": "a2_most_most_of_the_most_09",
+          "kind": "choice",
+          "prompt": "Как сказать по-английски: «Большинство моих друзей живут в городе.»?",
+          "options": [
+            "Most of my friends live in the city.",
+            "Most my friends live in the city.",
+            "The most of my friends live in the city.",
+            "Most of my friends lives in the city."
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Перед притяжательным my нужен of: most of my friends. The most — превосходная степень и перед of не ставится, а после most of + множественное число глагол тоже во множественном: live.",
+          "difficulty": 2,
+          "diagnostic": true
+        },
+        {
+          "id": "a2_most_most_of_the_most_10",
+          "kind": "choice",
+          "prompt": "Матео пишет о сладостях. В каком предложении ошибка?",
+          "options": [
+            "The most people like chocolate.",
+            "Most people like chocolate.",
+            "Most of us like chocolate.",
+            "This is the most delicious chocolate."
+          ],
+          "correct_index": 0,
+          "explanation_ru": "«Большинство людей» — most people без the. The most нужен только в превосходной степени прилагательного: the most delicious.",
+          "difficulty": 2,
+          "diagnostic": true
         }
       ]
     },
@@ -799,7 +1051,7 @@
         {
           "id": "a2_much_many_little_few_some_any_01",
           "kind": "choice",
-          "prompt": "How ___ people came to the meeting?",
+          "prompt": "How ___ people came to the wedding?",
           "options": [
             "many",
             "much",
@@ -842,7 +1094,7 @@
         {
           "id": "a2_much_many_little_few_some_any_04",
           "kind": "choice",
-          "prompt": "We did not find ___ errors in the log.",
+          "prompt": "We did not find ___ mistakes in your essay.",
           "options": [
             "any",
             "some",
@@ -856,7 +1108,7 @@
         {
           "id": "a2_much_many_little_few_some_any_05",
           "kind": "gap",
-          "prompt": "How ___ money do we need for the new servers?",
+          "prompt": "How ___ money do we need for the party?",
           "answer": "much",
           "accept": [],
           "explanation_ru": "Money неисчисляемое, поэтому вопрос о количестве строится с how much.",
@@ -895,6 +1147,61 @@
           ],
           "explanation_ru": "Time неисчисляемое, поэтому нужно a little; a few идёт только с исчисляемыми во множественном числе.",
           "difficulty": 3
+        },
+        {
+          "id": "a2_much_many_little_few_some_any_09",
+          "kind": "cloze",
+          "prompt": "Grace wants to bake a cake for her son's birthday. She has ___ eggs, but not many: only three. There isn't ___ sugar, so she needs to buy some. How ___ flour does she need? Not ___, only two cups.",
+          "gaps": [
+            [
+              "a few",
+              "some"
+            ],
+            [
+              "any",
+              "much",
+              "enough"
+            ],
+            [
+              "much"
+            ],
+            [
+              "much",
+              "a lot"
+            ]
+          ],
+          "explanation_ru": "Eggs исчисляемые: «немного, но есть» — a few. Sugar и flour неисчисляемые, поэтому в отрицании any или much, а в вопросе о количестве — how much.",
+          "difficulty": 2
+        },
+        {
+          "id": "a2_much_many_little_few_some_any_10",
+          "kind": "choice",
+          "prompt": "Как сказать по-английски: «У меня есть несколько друзей в Лондоне.»?",
+          "options": [
+            "I have a few friends in London.",
+            "I have few friends in London.",
+            "I have a little friends in London.",
+            "I have some of friends in London."
+          ],
+          "correct_index": 0,
+          "explanation_ru": "«Несколько, и этого достаточно» — a few. Few без артикля значит «мало, почти нет» и меняет смысл, a little ставится только с неисчисляемыми, а some of требует после себя the или my.",
+          "difficulty": 2,
+          "diagnostic": true
+        },
+        {
+          "id": "a2_much_many_little_few_some_any_11",
+          "kind": "choice",
+          "prompt": "A: Did many people come to the concert?\nB: No, very ___. The hall was almost empty.",
+          "options": [
+            "few",
+            "a few",
+            "little",
+            "much"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "People исчисляемые, а смысл «мало, почти нет» даёт few без артикля. A few значит «несколько, достаточно», а little и much — только с неисчисляемыми.",
+          "difficulty": 2,
+          "diagnostic": true
         }
       ]
     },
@@ -973,7 +1280,7 @@
         {
           "id": "a2_too_too_much_too_many_enough_04",
           "kind": "choice",
-          "prompt": "The meeting room is not ___ for twenty people.",
+          "prompt": "This table is not ___ for twenty people.",
           "options": [
             "big enough",
             "enough big",
@@ -1014,11 +1321,62 @@
         {
           "id": "a2_too_too_much_too_many_enough_08",
           "kind": "correct",
-          "prompt": "We have too much bugs in this version.",
-          "answer": "We have too many bugs in this version.",
+          "prompt": "There are too much cars in the city center.",
+          "answer": "There are too many cars in the city center.",
           "accept": [],
-          "explanation_ru": "Bugs — исчисляемое во множественном числе, значит too many.",
+          "explanation_ru": "Cars — исчисляемое во множественном числе, значит too many; too much ставится только с неисчисляемыми.",
           "difficulty": 3
+        },
+        {
+          "id": "a2_too_too_much_too_many_enough_09",
+          "kind": "choice",
+          "prompt": "Как сказать по-английски: «Я недостаточно взрослый, чтобы водить машину.»?",
+          "options": [
+            "I'm not old enough to drive.",
+            "I'm not enough old to drive.",
+            "I'm not enough old for driving.",
+            "I'm too not old to drive."
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Enough с прилагательным стоит после него: old enough, а цель после него — to + глагол. Русский порядок «недостаточно взрослый» даёт кальку enough old.",
+          "difficulty": 2,
+          "diagnostic": true
+        },
+        {
+          "id": "a2_too_too_much_too_many_enough_10",
+          "kind": "cloze",
+          "prompt": "We wanted to try the new restaurant last night, but it was ___ (слишком) expensive. There were also ___ (слишком) people, and we didn't have ___ (достаточно) time to wait. So we cooked pasta at home, and there was ___ (достаточно) for everyone!",
+          "gaps": [
+            [
+              "too"
+            ],
+            [
+              "too many"
+            ],
+            [
+              "enough"
+            ],
+            [
+              "enough"
+            ]
+          ],
+          "explanation_ru": "Перед прилагательным — просто too; перед исчисляемым people — too many; «достаточно времени» — enough перед существительным; enough может стоять и одно, без существительного.",
+          "difficulty": 2
+        },
+        {
+          "id": "a2_too_too_much_too_many_enough_11",
+          "kind": "choice",
+          "prompt": "A: Would you like some more cake?\nB: No, thanks. I've had ___.",
+          "options": [
+            "enough",
+            "too",
+            "enough of",
+            "too many"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Enough может стоять без существительного: I've had enough — «мне достаточно». Too без прилагательного не употребляется, too many — только с исчисляемыми, а enough of требует продолжения (enough of this cake).",
+          "difficulty": 2,
+          "diagnostic": true
         }
       ]
     },
@@ -1086,7 +1444,7 @@
         {
           "id": "a2_asking_questions_in_english_03",
           "kind": "choice",
-          "prompt": "What ___ you say to the client yesterday?",
+          "prompt": "What ___ you say to the doctor yesterday?",
           "options": [
             "did",
             "do",
@@ -1145,11 +1503,73 @@
         {
           "id": "a2_asking_questions_in_english_08",
           "kind": "order",
-          "prompt": "do / you / know / where / the / office / is / ?",
-          "answer": "Do you know where the office is?",
+          "prompt": "kind / of / what / music / do / you / like / ?",
+          "answer": "What kind of music do you like?",
           "accept": [],
-          "explanation_ru": "После know идёт придаточное с прямым порядком слов: подлежащее перед глаголом и без второго вспомогательного.",
+          "explanation_ru": "Вопросительная группа what kind of music стоит целиком в начале, за ней вспомогательный do, подлежащее you и глагол like. Разрывать what kind of и существительное нельзя.",
           "difficulty": 3
+        },
+        {
+          "id": "a2_asking_questions_in_english_09",
+          "kind": "choice",
+          "prompt": "A: ___ does the next bus to the airport leave?\nB: At 7:15.",
+          "options": [
+            "What time",
+            "Which hour",
+            "How time",
+            "When time"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "О времени по часам спрашивают What time…? (или просто When…?). Which hour и how time — кальки с «в котором часу» и «во сколько».",
+          "difficulty": 1,
+          "diagnostic": true
+        },
+        {
+          "id": "a2_asking_questions_in_english_10",
+          "kind": "choice",
+          "prompt": "Как сказать по-английски: «Как по-английски будет „окно\"?»",
+          "options": [
+            "How do you say \"okno\" in English?",
+            "How to say \"okno\" in English?",
+            "How is \"okno\" on English?",
+            "How do you speak \"okno\" in English?"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Полный вопрос требует вспомогательного do и подлежащего you: How do you say…? How to say… — заголовок, а не вопрос; speak значит «говорить на языке», а язык вводится предлогом in, а не on.",
+          "difficulty": 2,
+          "diagnostic": true
+        },
+        {
+          "id": "a2_asking_questions_in_english_11",
+          "kind": "correct",
+          "prompt": "Could you to tell me the way to the station?",
+          "answer": "Could you tell me the way to the station?",
+          "accept": [
+            "Can you tell me the way to the station?"
+          ],
+          "explanation_ru": "Could you…? — вежливая просьба, и после could, как после can, глагол стоит без to.",
+          "difficulty": 2
+        },
+        {
+          "id": "a2_asking_questions_in_english_12",
+          "kind": "cloze",
+          "prompt": "A: Hi! Where ___ you from?\nB: I'm from Lima, in Peru.\nA: Oh, nice! What ___ you do?\nB: I'm a nurse.\nA: When ___ you move here?\nB: Last month.\nA: ___ you like the city?\nB: Yes, very much!",
+          "gaps": [
+            [
+              "are"
+            ],
+            [
+              "do"
+            ],
+            [
+              "did"
+            ],
+            [
+              "Do"
+            ]
+          ],
+          "explanation_ru": "С be вопрос строит сам глагол: Where are you from? Со смысловыми глаголами в настоящем нужен do, а о прошлом (last month) — did; смысловой глагол при этом остаётся в начальной форме.",
+          "difficulty": 2
         }
       ]
     },
@@ -1228,7 +1648,7 @@
         {
           "id": "a2_subject_questions_questions_preposition_04",
           "kind": "choice",
-          "prompt": "Where does your new colleague come ___?",
+          "prompt": "Where does your new neighbor come ___?",
           "options": [
             "from",
             "of",
@@ -1279,6 +1699,54 @@
           "accept": [],
           "explanation_ru": "Who заменяет подлежащее Marta, поэтому вспомогательный did не нужен, а глагол остаётся в прошедшей форме wrote.",
           "difficulty": 3
+        },
+        {
+          "id": "a2_subject_questions_questions_preposition_09",
+          "kind": "choice",
+          "prompt": "A: Who are you waiting ___?\nB: My sister. She is always late.",
+          "options": [
+            "for",
+            "to",
+            "at",
+            "of"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Wait for someone — «ждать кого-то», и в вопросе предлог уходит в конец: Who are you waiting for? Wait to, wait at и wait of с человеком не употребляются.",
+          "difficulty": 1,
+          "diagnostic": true
+        },
+        {
+          "id": "a2_subject_questions_questions_preposition_10",
+          "kind": "choice",
+          "prompt": "Как сказать по-английски: «О чём ты думаешь?»",
+          "options": [
+            "What are you thinking about?",
+            "About what are you thinking?",
+            "What you are thinking about?",
+            "About what you think?"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "В разговорном вопросе предлог уходит в конец: What are you thinking about? Русский порядок «о чём» даёт кальку About what…, а без are перед подлежащим вопроса нет.",
+          "difficulty": 2,
+          "diagnostic": true
+        },
+        {
+          "id": "a2_subject_questions_questions_preposition_11",
+          "kind": "cloze",
+          "prompt": "A: Who ___ (make) this soup? It's delicious!\nB: My grandma made it.\nA: What ___ she put in it?\nB: Lots of vegetables and a little ginger.\nA: And who ___ (teach) her to cook?\nB: Her mother.",
+          "gaps": [
+            [
+              "made"
+            ],
+            [
+              "did"
+            ],
+            [
+              "taught"
+            ]
+          ],
+          "explanation_ru": "Who как подлежащее не требует did: Who made…?, Who taught…? — глагол сразу в прошедшей форме. В вопросе к дополнению (what she put) подлежащее she уже есть, поэтому нужен did.",
+          "difficulty": 2
         }
       ]
     },
@@ -1343,7 +1811,7 @@
         {
           "id": "a2_defining_relative_clauses_who_which_that_where_03",
           "kind": "choice",
-          "prompt": "That is the building ___ our office is.",
+          "prompt": "That is the hotel ___ we stayed last summer.",
           "options": [
             "where",
             "which",
@@ -1402,16 +1870,66 @@
         {
           "id": "a2_defining_relative_clauses_who_which_that_where_08",
           "kind": "correct",
-          "prompt": "I like the store which we bought the laptop.",
-          "answer": "I like the store where we bought the laptop.",
+          "prompt": "I like the store which we bought the sofa.",
+          "answer": "I like the store where we bought the sofa.",
           "accept": [
-            "I like the store that we bought the laptop from.",
-            "I like the store which we bought the laptop from.",
-            "I like the store we bought the laptop from.",
-            "I like the store in which we bought the laptop."
+            "I like the store that we bought the sofa from.",
+            "I like the store which we bought the sofa from.",
+            "I like the store we bought the sofa from.",
+            "I like the store in which we bought the sofa."
           ],
           "explanation_ru": "После store идёт полное предложение с местом действия, поэтому нужно where.",
           "difficulty": 3
+        },
+        {
+          "id": "a2_defining_relative_clauses_who_which_that_where_09",
+          "kind": "cloze",
+          "prompt": "Rome is the city ___ my parents met. My dad was a waiter at a small cafe ___ was near the Colosseum. My mom was a tourist ___ came to the cafe every morning. The cafe is still open, and we go there every summer.",
+          "gaps": [
+            [
+              "where"
+            ],
+            [
+              "that",
+              "which"
+            ],
+            [
+              "who",
+              "that"
+            ]
+          ],
+          "explanation_ru": "Для места, после которого идёт полное предложение, — where; для кафе как предмета — that или which; для человека — who или that.",
+          "difficulty": 2
+        },
+        {
+          "id": "a2_defining_relative_clauses_who_which_that_where_10",
+          "kind": "choice",
+          "prompt": "Как сказать по-английски: «Это девушка, которая живёт рядом с нами.»?",
+          "options": [
+            "This is the girl who lives next to us.",
+            "This is the girl which lives next to us.",
+            "This is the girl who she lives next to us.",
+            "This is the girl what lives next to us."
+          ],
+          "correct_index": 0,
+          "explanation_ru": "О человеке — who (или that). Which — для вещей, what не вводит определительное придаточное, а she лишнее: who уже подлежащее придаточного.",
+          "difficulty": 1,
+          "diagnostic": true
+        },
+        {
+          "id": "a2_defining_relative_clauses_who_which_that_where_11",
+          "kind": "choice",
+          "prompt": "Юки рассказывает о своей жизни. В каком предложении ошибка?",
+          "options": [
+            "I have a friend which speaks five languages.",
+            "I have a friend who speaks five languages.",
+            "I have a car that is very old.",
+            "This is the park where we play tennis."
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Friend — человек, поэтому who или that; which ставится только для вещей и животных.",
+          "difficulty": 2,
+          "diagnostic": true
         }
       ]
     },
@@ -1477,80 +1995,116 @@
         {
           "id": "a2_reported_speech_indirect_speech_03",
           "kind": "choice",
-          "prompt": "He ___ me that the server was down.",
+          "prompt": "At dinner, Omar ___ that the soup was too salty.",
           "options": [
-            "told",
             "said",
-            "says",
-            "tell"
+            "told",
+            "spoke",
+            "talked"
           ],
           "correct_index": 0,
-          "explanation_ru": "Перед адресатом me используется tell, поэтому told.",
+          "explanation_ru": "Адресата нет, поэтому said: say + that. Tell требует человека сразу после себя (told us that…), а speak и talk не вводят чужие слова.",
           "difficulty": 2
         },
         {
           "id": "a2_reported_speech_indirect_speech_04",
           "kind": "choice",
-          "prompt": "'We can fix it today.' -> They said they ___ fix it that day.",
+          "prompt": "Hana's message: \"I'm at the station.\" → Hana says she ___ at the station.",
           "options": [
-            "could",
-            "can",
-            "could to",
-            "would can"
+            "is",
+            "was",
+            "be",
+            "are"
           ],
           "correct_index": 0,
-          "explanation_ru": "Can после прошедшего вводящего глагола становится could, без to.",
+          "explanation_ru": "Вводящий глагол says стоит в настоящем времени, поэтому время не сдвигается: she is. Сдвиг назад (was) нужен только после said, be без изменения формы сказуемым не бывает, а are не подходит к she.",
           "difficulty": 2
         },
         {
           "id": "a2_reported_speech_indirect_speech_05",
           "kind": "gap",
-          "prompt": "'I work in Berlin,' he said last year. Now he works in Paris. -> He said he ___ in Berlin. (work)",
-          "answer": "worked",
+          "prompt": "Yesterday Aisha ___ me her new phone number. (say / tell)",
+          "answer": "told",
           "accept": [],
-          "explanation_ru": "Present Simple в косвенной речи после said сдвигается в Past Simple; к тому же в Берлине он больше не работает, поэтому оставить works нельзя.",
+          "explanation_ru": "Когда сразу после глагола стоит адресат (me), нужен tell, в прошедшем времени — told. Said me без to невозможно.",
           "difficulty": 1
         },
         {
           "id": "a2_reported_speech_indirect_speech_06",
           "kind": "gap",
-          "prompt": "'I am reading your report,' she said. -> She said she ___ ___ my report. (read)",
-          "answer": "was reading",
+          "prompt": "Mei: \"I'm cooking dinner.\" → Mei says she ___ ___ dinner. (cook)",
+          "answer": "is cooking",
           "accept": [],
-          "explanation_ru": "Present Continuous после said становится Past Continuous: was reading.",
+          "explanation_ru": "После says (настоящее время) время не сдвигается: am cooking становится is cooking — меняется только лицо, I → she.",
           "difficulty": 2
         },
         {
           "id": "a2_reported_speech_indirect_speech_07",
           "kind": "correct",
-          "prompt": "He said me that he was late.",
-          "answer": "He told me that he was late.",
-          "accept": [
-            "He said that he was late.",
-            "He said he was late.",
-            "He told me he was late.",
-            "He said to me that he was late.",
-            "He said to me he was late."
-          ],
-          "explanation_ru": "Say не берёт адресата без to: либо He told me, либо He said to me.",
+          "prompt": "Diego said us a funny joke.",
+          "answer": "Diego told us a funny joke.",
+          "accept": [],
+          "explanation_ru": "Шутку и историю рассказывают через tell: tell a joke, tell a story. К тому же say не берёт адресата us без предлога to.",
           "difficulty": 3
         },
         {
           "id": "a2_reported_speech_indirect_speech_08",
           "kind": "transform",
-          "prompt": "Report the sentence: 'I do not like this plan,' he said.",
-          "answer": "He said he did not like that plan.",
+          "prompt": "Report the message with 'says': Lucas: \"I'm at home.\"",
+          "answer": "Lucas says he is at home.",
           "accept": [
-            "He said that he did not like that plan.",
-            "He said he didn't like that plan.",
-            "He said that he didn't like that plan.",
-            "He said he did not like this plan.",
-            "He said he didn't like this plan.",
-            "He said that he did not like this plan.",
-            "He said that he didn't like this plan."
+            "Lucas says that he is at home."
           ],
-          "explanation_ru": "Do not становится did not, а this меняется на that вместе с местоимением I -> he.",
+          "explanation_ru": "Местоимение I меняется на he, а время остаётся настоящим, потому что says — настоящее время. Союз that можно опустить.",
           "difficulty": 3
+        },
+        {
+          "id": "a2_reported_speech_indirect_speech_09",
+          "kind": "choice",
+          "prompt": "Как сказать по-английски: «Он сказал мне, что опоздает.»?",
+          "options": [
+            "He told me he would be late.",
+            "He said me he would be late.",
+            "He told to me he would be late.",
+            "He talked me he would be late."
+          ],
+          "correct_index": 0,
+          "explanation_ru": "С адресатом — tell: told me. Say требовал бы предлога (said to me), told to me и talked me невозможны. Will после прошедшего told становится would.",
+          "difficulty": 2,
+          "diagnostic": true
+        },
+        {
+          "id": "a2_reported_speech_indirect_speech_10",
+          "kind": "choice",
+          "prompt": "A: What did the doctor say?\nB: She ___ I need more sleep and fresh air.",
+          "options": [
+            "says",
+            "tells",
+            "speaks",
+            "talks"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Без адресата чужие слова вводит say; пересказывая совет, который всё ещё в силе, часто говорят в настоящем: She says… Tells нужен человек после глагола (tells me), а speak и talk не вводят чужие слова.",
+          "difficulty": 1,
+          "diagnostic": true
+        },
+        {
+          "id": "a2_reported_speech_indirect_speech_11",
+          "kind": "cloze",
+          "prompt": "Yesterday my brother called me from Rome. He ___ (say / tell) that the weather was great. He ___ (say / tell) me about the food, and he ___ (say / tell) he would come home next month.",
+          "gaps": [
+            [
+              "said"
+            ],
+            [
+              "told"
+            ],
+            [
+              "said"
+            ]
+          ],
+          "explanation_ru": "Said — когда адресата нет (said that…), told — когда сразу после глагола стоит человек (told me). Разговор уже в прошлом, поэтому оба глагола в прошедшей форме.",
+          "difficulty": 2
         }
       ]
     }

@@ -78,15 +78,15 @@
         {
           "id": "a2_stative_vs_dynamic_verbs_or_non_action_vs_action_verbs_04",
           "kind": "choice",
-          "prompt": "Sorry, I can't talk now. I ___ about a difficult bug.",
+          "prompt": "Sorry, I can't talk now. I ___ about a difficult question.",
           "options": [
             "think",
             "am thinking",
             "thinks",
-            "am think"
+            "thinking"
           ],
           "correct_index": 1,
-          "explanation_ru": "Здесь think значит «обдумывать», то есть процесс прямо сейчас, поэтому нужен Present Continuous.",
+          "explanation_ru": "Здесь think значит «обдумывать», то есть процесс прямо сейчас, поэтому нужен Present Continuous am thinking. Think без -ing выражал бы мнение, thinks не подходит к I, а голое thinking без am сказуемым не бывает.",
           "difficulty": 2
         },
         {
@@ -131,6 +131,42 @@
             "This doesn't mean anything to me."
           ],
           "explanation_ru": "Mean — глагол состояния, поэтому отрицание строится через does not в Present Simple, без Continuous.",
+          "difficulty": 3
+        },
+        {
+          "id": "a2_stative_vs_dynamic_verbs_or_non_action_vs_action_verbs_09",
+          "kind": "choice",
+          "prompt": "Как сказать по-английски: «Этот суп вкусно пахнет.»?",
+          "options": [
+            "This soup smells good.",
+            "This soup is smelling good.",
+            "This soup smells well.",
+            "This soup smell good."
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Smell в значении «пахнуть» — состояние: Present Simple smells. После глаголов восприятия ставят прилагательное good, а не наречие well; с this soup нужна форма на -s.",
+          "difficulty": 2,
+          "diagnostic": true
+        },
+        {
+          "id": "a2_stative_vs_dynamic_verbs_or_non_action_vs_action_verbs_10",
+          "kind": "cloze",
+          "prompt": "Hi Mom! I ___ (sit) in a cafe near the beach right now. I ___ (love) this town! The weather is great, and the food ___ (taste) amazing. I ___ (want) to stay here forever!",
+          "gaps": [
+            [
+              "am sitting"
+            ],
+            [
+              "love"
+            ],
+            [
+              "tastes"
+            ],
+            [
+              "want"
+            ]
+          ],
+          "explanation_ru": "Sit — действие, которое идёт прямо сейчас: am sitting. Love, taste («быть на вкус») и want — глаголы состояния, поэтому Present Simple даже о моменте речи.",
           "difficulty": 3
         }
       ]
@@ -195,7 +231,7 @@
         {
           "id": "a2_used_to_03",
           "kind": "choice",
-          "prompt": "___ your team use to work at the office?",
+          "prompt": "___ your family use to live in the city?",
           "options": [
             "Did",
             "Do",
@@ -233,7 +269,7 @@
         {
           "id": "a2_used_to_06",
           "kind": "gap",
-          "prompt": "I ___ (not / used to / like) this framework, but now it is my favorite.",
+          "prompt": "I ___ (not / used to / like) jazz, but now it is my favorite music.",
           "answer": "didn't use to like",
           "accept": [
             "did not use to like"
@@ -257,6 +293,43 @@
           "answer": "We used to meet every Friday.",
           "accept": [],
           "explanation_ru": "Порядок обычный: подлежащее, used to, начальная форма глагола и обстоятельство времени в конце.",
+          "difficulty": 3
+        },
+        {
+          "id": "a2_used_to_09",
+          "kind": "choice",
+          "prompt": "Как сказать по-английски: «Раньше я жил в деревне.»?",
+          "options": [
+            "I used to live in a village.",
+            "I use to live in a village.",
+            "I used to living in a village.",
+            "I was used to live in a village."
+          ],
+          "correct_index": 0,
+          "explanation_ru": "«Раньше» о прошлом положении дел, которого больше нет, — used to + начальная форма. Use to без -d пишется только после did, а used to living и was used to относятся к «быть привыкшим».",
+          "difficulty": 2,
+          "diagnostic": true
+        },
+        {
+          "id": "a2_used_to_10",
+          "kind": "cloze",
+          "prompt": "Use used to. When my grandpa was young, he ___ (live) on a farm. He ___ (get) up at five every day. He ___ (not/have) a car, so he walked everywhere. Did you ___ (visit) him there?",
+          "gaps": [
+            [
+              "used to live"
+            ],
+            [
+              "used to get"
+            ],
+            [
+              "didn't use to have",
+              "did not use to have"
+            ],
+            [
+              "use to visit"
+            ]
+          ],
+          "explanation_ru": "Прошлые привычки и состояния — used to + начальная форма. В отрицании и вопросе прошлое показывает did, поэтому used теряет -d: didn't use to have, Did you use to visit…?",
           "difficulty": 3
         }
       ]
@@ -381,6 +454,57 @@
           "accept": [],
           "explanation_ru": "После try идёт инфинитив с to: try to do something. Дополнение long meetings стоит сразу после avoid.",
           "difficulty": 3
+        },
+        {
+          "id": "a2_infinitives_and_gerunds_09",
+          "kind": "choice",
+          "prompt": "A: I'm so hungry!\nB: How about ___ a pizza?",
+          "options": [
+            "ordering",
+            "to order",
+            "order",
+            "we order to"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "После How about идёт форма на -ing: How about ordering…? Так предлагают идею. About — предлог, поэтому инфинитив и голый глагол после него невозможны.",
+          "difficulty": 1,
+          "diagnostic": true
+        },
+        {
+          "id": "a2_infinitives_and_gerunds_10",
+          "kind": "choice",
+          "prompt": "Как сказать по-английски: «Может, сходим на пляж?»",
+          "options": [
+            "Why don't we go to the beach?",
+            "Why don't we to go to the beach?",
+            "Why we don't go to the beach?",
+            "Why not we go to the beach?"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Предложение «может, сделаем…?» — Why don't we + глагол без to. Порядок вопросный: don't перед we. Why not тоже бывает, но без подлежащего: Why not go…?",
+          "difficulty": 2,
+          "diagnostic": true
+        },
+        {
+          "id": "a2_infinitives_and_gerunds_11",
+          "kind": "cloze",
+          "prompt": "Priya: Are you free on Saturday? How about ___ (go) to the new Thai restaurant?\nDiego: Great idea! I'd love ___ (try) Thai food.\nPriya: Do you mind ___ (meet) at seven?\nDiego: Not at all. I hope ___ (find) a parking space!",
+          "gaps": [
+            [
+              "going"
+            ],
+            [
+              "to try"
+            ],
+            [
+              "meeting"
+            ],
+            [
+              "to find"
+            ]
+          ],
+          "explanation_ru": "После предлога about и глагола mind — форма на -ing (going, meeting). После would love и hope — to + глагол (to try, to find).",
+          "difficulty": 3
         }
       ]
     },
@@ -459,15 +583,15 @@
         {
           "id": "a2_verbs_with_two_objects_04",
           "kind": "choice",
-          "prompt": "Anna showed ___ yesterday.",
+          "prompt": "Elena showed ___ yesterday.",
           "options": [
-            "us her new laptop",
-            "her new laptop us",
-            "to us her new laptop",
-            "us to her new laptop"
+            "us her new car",
+            "her new car us",
+            "to us her new car",
+            "us to her new car"
           ],
           "correct_index": 0,
-          "explanation_ru": "Без предлога порядок строгий: сначала лицо us, потом предмет her new laptop.",
+          "explanation_ru": "Без предлога порядок строгий: сначала лицо us, потом предмет her new car.",
           "difficulty": 2
         },
         {
@@ -482,8 +606,8 @@
         {
           "id": "a2_verbs_with_two_objects_06",
           "kind": "gap",
-          "prompt": "I lent my charger ___ (Tom) yesterday.",
-          "answer": "to Tom",
+          "prompt": "I lent my charger ___ (Marcus) yesterday.",
+          "answer": "to Marcus",
           "accept": [],
           "explanation_ru": "Lend входит в группу с предлогом to, когда предмет стоит перед лицом.",
           "difficulty": 2
@@ -502,11 +626,47 @@
         {
           "id": "a2_verbs_with_two_objects_08",
           "kind": "transform",
-          "prompt": "Rewrite without a preposition: He sent an email to the client.",
-          "answer": "He sent the client an email.",
+          "prompt": "Rewrite without a preposition: He sent a postcard to his grandmother.",
+          "answer": "He sent his grandmother a postcard.",
           "accept": [],
-          "explanation_ru": "Во втором варианте лицо the client идёт сразу после глагола, а предмет an email уходит в конец.",
+          "explanation_ru": "Без предлога лицо his grandmother идёт сразу после глагола, а предмет a postcard уходит в конец.",
           "difficulty": 3
+        },
+        {
+          "id": "a2_verbs_with_two_objects_09",
+          "kind": "choice",
+          "prompt": "Как сказать по-английски: «Я купил маме цветы.»?",
+          "options": [
+            "I bought my mom some flowers.",
+            "I bought to my mom some flowers.",
+            "I bought some flowers to my mom.",
+            "I bought for my mom flowers."
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Без предлога лицо стоит сразу после глагола: bought my mom some flowers. Если предмет идёт первым, buy требует for, а не to (flowers for my mom). Русский дательный «маме» тянет к to, но с buy это ошибка.",
+          "difficulty": 2,
+          "diagnostic": true
+        },
+        {
+          "id": "a2_verbs_with_two_objects_10",
+          "kind": "cloze",
+          "prompt": "For my birthday, my parents gave ___ (I) a new bike. My brother made a card ___ me, and my aunt sent a box of chocolates ___ me from Brazil. I showed the bike ___ all my friends.",
+          "gaps": [
+            [
+              "me"
+            ],
+            [
+              "for"
+            ],
+            [
+              "to"
+            ],
+            [
+              "to"
+            ]
+          ],
+          "explanation_ru": "Лицо сразу после глагола — без предлога и в объектной форме: gave me. Когда предмет стоит первым, make требует for, а send и show — to.",
+          "difficulty": 2
         }
       ]
     },
@@ -544,7 +704,7 @@
         {
           "id": "a2_so_neither_01",
           "kind": "choice",
-          "prompt": "I like this tool. - ___",
+          "prompt": "I like this song. - ___",
           "options": [
             "So do I.",
             "So am I.",
@@ -635,6 +795,67 @@
           "accept": [],
           "explanation_ru": "Первая часть в Present Simple без вспомогательного глагола, поэтому в короткой части появляется do с обратным порядком.",
           "difficulty": 3
+        },
+        {
+          "id": "a2_so_neither_09",
+          "kind": "choice",
+          "prompt": "A: I don't like horror movies.\nB: I don't ___.",
+          "options": [
+            "either",
+            "too",
+            "neither",
+            "as well"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Согласие с отрицанием в конце фразы — either: I don't either. Too и as well работают только с утверждением, а neither уже отрицательное и ставится в начало: Neither do I.",
+          "difficulty": 1,
+          "diagnostic": true
+        },
+        {
+          "id": "a2_so_neither_10",
+          "kind": "choice",
+          "prompt": "Как сказать по-английски: «Я тоже не люблю джаз.»?",
+          "options": [
+            "I don't like jazz either.",
+            "I don't like jazz too.",
+            "I don't like jazz neither.",
+            "Neither I like jazz."
+          ],
+          "correct_index": 0,
+          "explanation_ru": "«Тоже не» — either в конце отрицательного предложения. Too — калька русского «тоже», но оно только для утверждений; neither с don't дало бы двойное отрицание, а после neither нужен обратный порядок: Neither do I.",
+          "difficulty": 2,
+          "diagnostic": true
+        },
+        {
+          "id": "a2_so_neither_11",
+          "kind": "cloze",
+          "prompt": "Kenji: I'm really hungry.\nMei: So ___ I!\nKenji: I didn't have breakfast.\nMei: Neither ___ I. And I can't cook very well.\nKenji: I can't ___. Let's go to a cafe!",
+          "gaps": [
+            [
+              "am"
+            ],
+            [
+              "did"
+            ],
+            [
+              "either"
+            ]
+          ],
+          "explanation_ru": "Короткое согласие повторяет вспомогательный глагол реплики: I'm → So am I, didn't → Neither did I. В полном отрицательном предложении «тоже» — either в конце.",
+          "difficulty": 2
+        },
+        {
+          "id": "a2_so_neither_12",
+          "kind": "correct",
+          "prompt": "I like too jazz.",
+          "answer": "I like jazz too.",
+          "accept": [
+            "I also like jazz.",
+            "I, too, like jazz.",
+            "I like jazz as well."
+          ],
+          "explanation_ru": "Too ставится в конец предложения, а не сразу после глагола. Also, наоборот, стоит перед смысловым глаголом: I also like jazz.",
+          "difficulty": 2
         }
       ]
     }

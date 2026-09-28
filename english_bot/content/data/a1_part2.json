@@ -44,7 +44,7 @@
     {
      "id": "a1_would_like_02",
      "kind": "choice",
-     "prompt": "Would you like ___ to the meeting with me?",
+     "prompt": "Would you like ___ to the movies with me?",
      "options": [
       "come",
       "to come",
@@ -58,7 +58,7 @@
     {
      "id": "a1_would_like_03",
      "kind": "choice",
-     "prompt": "She ___ a new laptop for her birthday.",
+     "prompt": "She ___ a new bike for her birthday.",
      "options": [
       "would like",
       "would like to",
@@ -123,6 +123,54 @@
      "accept": [],
      "explanation_ru": "В вопросе Would идёт перед подлежащим: Would + you + like + дополнение.",
      "difficulty": 3
+    },
+    {
+     "id": "a1_would_like_09",
+     "kind": "choice",
+     "prompt": "A: Can I help you?\nB: Yes, ___ a coffee, please.",
+     "options": [
+      "I like",
+      "I'd like",
+      "I would",
+      "I'd like to"
+     ],
+     "correct_index": 1,
+     "diagnostic": true,
+     "explanation_ru": "Вежливая просьба в кафе — I'd like плюс существительное. I like значит «мне нравится», I would без like неполно, а to ставят только перед глаголом: I'd like to order.",
+     "difficulty": 2
+    },
+    {
+     "id": "a1_would_like_10",
+     "kind": "choice",
+     "prompt": "Как сказать по-английски: «Хотите печенье?»",
+     "options": [
+      "Do you like a cookie?",
+      "Would you like to cookie?",
+      "Would you like a cookie?",
+      "Are you want a cookie?"
+     ],
+     "correct_index": 2,
+     "diagnostic": true,
+     "explanation_ru": "Предложение угощения строится через Would you like…? Do you like спрашивает, нравится ли вообще; to ставят перед глаголом, а не перед существительным, а are с want не сочетается.",
+     "difficulty": 1
+    },
+    {
+     "id": "a1_would_like_11",
+     "kind": "cloze",
+     "prompt": "Waiter: Hello! What ___ (you / would like) to eat?\nMei: I ___ (would like) the fish, please. And my son ___ (would like) a burger.",
+     "gaps": [
+      [
+       "would you like"
+      ],
+      [
+       "would like"
+      ],
+      [
+       "would like"
+      ]
+     ],
+     "explanation_ru": "В вопросе would выходит перед подлежащим: What would you like…? Would одинаков для всех лиц, поэтому и с my son — would like, без -s; в речи — I'd like.",
+     "difficulty": 1
     }
    ]
   },
@@ -244,11 +292,60 @@
     {
      "id": "a1_at_in_on_prepositions_of_place_08",
      "kind": "order",
-     "prompt": "at / is / Anna / work / now / .",
-     "answer": "Anna is at work now.",
+     "prompt": "at / is / Priya / school / now / .",
+     "answer": "Priya is at school now.",
      "accept": [],
-     "explanation_ru": "Порядок слов: подлежащее, глагол be, обстоятельство места at work, затем время.",
+     "explanation_ru": "Порядок слов: подлежащее, глагол be, обстоятельство места at school, затем время.",
      "difficulty": 3
+    },
+    {
+     "id": "a1_at_in_on_prepositions_of_place_09",
+     "kind": "choice",
+     "prompt": "Как сказать по-английски: «Я иду домой»?",
+     "options": [
+      "I am going to home.",
+      "I am going home.",
+      "I am going at home.",
+      "I am going to the home."
+     ],
+     "correct_index": 1,
+     "diagnostic": true,
+     "explanation_ru": "Home после глаголов движения стоит без предлога: go home, come home. Русское «домой» подталкивает к to home, но to здесь лишний, а at home значит «дома», а не «домой».",
+     "difficulty": 1
+    },
+    {
+     "id": "a1_at_in_on_prepositions_of_place_10",
+     "kind": "choice",
+     "prompt": "Lucas opened the door and went ___ the room.",
+     "options": [
+      "at",
+      "on",
+      "into",
+      "from"
+     ],
+     "correct_index": 2,
+     "diagnostic": true,
+     "explanation_ru": "Движение внутрь чего-то передаёт into: went into the room. At и on описывают место, а не направление, а from значит «из, от».",
+     "difficulty": 2
+    },
+    {
+     "id": "a1_at_in_on_prepositions_of_place_11",
+     "kind": "cloze",
+     "prompt": "Grace is ___ Canada, but now she lives in Miami. Every morning she walks ___ school. After school she gets ___ her mom's car.",
+     "gaps": [
+      [
+       "from"
+      ],
+      [
+       "to"
+      ],
+      [
+       "into",
+       "in"
+      ]
+     ],
+     "explanation_ru": "Откуда человек родом — from: she is from Canada. Направление движения — to: walks to school. В машину садятся с into или in: get into the car. At описывает место, а не движение.",
+     "difficulty": 2
     }
    ]
   },
@@ -347,7 +444,7 @@
     {
      "id": "a1_at_in_on_prepositions_time_06",
      "kind": "gap",
-     "prompt": "The company started ___ 2010.",
+     "prompt": "My daughter was born ___ 2010.",
      "answer": "in",
      "accept": [],
      "explanation_ru": "С годами используется предлог in: in 2010.",
@@ -373,6 +470,66 @@
       "At twelve o'clock we have lunch."
      ],
      "explanation_ru": "Сначала подлежащее и сказуемое с дополнением, потом время с предлогом at.",
+     "difficulty": 3
+    },
+    {
+     "id": "a1_at_in_on_prepositions_time_09",
+     "kind": "choice",
+     "prompt": "My birthday is ___ May 3rd.",
+     "options": [
+      "in",
+      "at",
+      "on",
+      "by"
+     ],
+     "correct_index": 2,
+     "diagnostic": true,
+     "explanation_ru": "С конкретной датой используется on: on May 3rd, как и с днями недели. In ставят с месяцем без числа (in May), а at — с точным временем.",
+     "difficulty": 1
+    },
+    {
+     "id": "a1_at_in_on_prepositions_time_10",
+     "kind": "cloze",
+     "prompt": "On Saturdays I get up ___ nine o'clock. ___ the afternoon I play tennis with Kenji. We never play ___ night.",
+     "gaps": [
+      [
+       "at"
+      ],
+      [
+       "In"
+      ],
+      [
+       "at"
+      ]
+     ],
+     "explanation_ru": "Точное время — at: at nine o'clock. Части суток — in: in the afternoon. Исключение — at night.",
+     "difficulty": 2
+    },
+    {
+     "id": "a1_at_in_on_prepositions_time_11",
+     "kind": "choice",
+     "prompt": "Как сказать по-английски: «Увидимся в пятницу вечером»?",
+     "options": [
+      "See you in Friday evening.",
+      "See you at Friday evening.",
+      "See you on Friday evening.",
+      "See you in the Friday evening."
+     ],
+     "correct_index": 2,
+     "diagnostic": true,
+     "explanation_ru": "Когда часть суток привязана к дню, предлог выбирается по дню: on Friday evening. Одно in the evening без дня верно, но с Friday остаётся on.",
+     "difficulty": 2
+    },
+    {
+     "id": "a1_at_in_on_prepositions_time_12",
+     "kind": "gap",
+     "prompt": "A: When is your birthday?\nB: It is on June ___ (21).",
+     "answer": "21st",
+     "accept": [
+      "twenty-first",
+      "twenty first"
+     ],
+     "explanation_ru": "В дате число читается порядковым: June twenty-first, а на письме — 21st (в американских текстах окончание часто опускают: June 21). Окончание зависит от последней цифры: 1st, 2nd, 3rd, поэтому 21st, 22nd, 23rd; остальные числа, в том числе 11th, 12th и 13th, получают -th.",
      "difficulty": 3
     }
    ]
@@ -449,7 +606,7 @@
     {
      "id": "a1_next_to_under_between_in_front_behind_etc_04",
      "kind": "choice",
-     "prompt": "Ann sits ___ me, so I can only see her back.",
+     "prompt": "Zoe sits ___ me, so I can only see her back.",
      "options": [
       "in front of",
       "behind",
@@ -472,7 +629,7 @@
     {
      "id": "a1_next_to_under_between_in_front_behind_etc_06",
      "kind": "gap",
-     "prompt": "Ann is standing ___ to Tom.",
+     "prompt": "Hana is standing ___ to Lucas.",
      "answer": "next",
      "accept": [
       "close"
@@ -499,6 +656,39 @@
      ],
      "explanation_ru": "Сначала подлежащее с определением, затем глагол be и предлог места с существительным.",
      "difficulty": 3
+    },
+    {
+     "id": "a1_next_to_under_between_in_front_behind_etc_09",
+     "kind": "cloze",
+     "prompt": "Our house is small. There is a big tree ___ (перед) the house. Our cat is sleeping ___ (под) the tree. The school is ___ (между) our house and the park.",
+     "gaps": [
+      [
+       "in front of"
+      ],
+      [
+       "under"
+      ],
+      [
+       "between"
+      ]
+     ],
+     "explanation_ru": "«Перед» — составной предлог in front of, of терять нельзя. «Под» — under. «Между» двумя предметами — between с союзом and.",
+     "difficulty": 2
+    },
+    {
+     "id": "a1_next_to_under_between_in_front_behind_etc_10",
+     "kind": "choice",
+     "prompt": "Как сказать по-английски: «Аптека напротив банка»?",
+     "options": [
+      "The pharmacy is opposite of the bank.",
+      "The pharmacy opposite the bank.",
+      "The pharmacy is in opposite the bank.",
+      "The pharmacy is opposite the bank."
+     ],
+     "correct_index": 3,
+     "diagnostic": true,
+     "explanation_ru": "Opposite — предлог без of: opposite the bank. Связка is обязательна, хотя в русском её нет. В американской речи так же часто говорят across from the bank.",
+     "difficulty": 2
     }
    ]
   },
@@ -531,7 +721,7 @@
     {
      "id": "a1_object_pronouns_01",
      "kind": "choice",
-     "prompt": "Tom is my friend. I see ___ every day.",
+     "prompt": "Marcus is my friend. I see ___ every day.",
      "options": [
       "his",
       "he",
@@ -587,7 +777,7 @@
     {
      "id": "a1_object_pronouns_05",
      "kind": "gap",
-     "prompt": "I like Ann. I often help ___ with reports.",
+     "prompt": "I like Zoe. I often help ___ with her homework.",
      "answer": "her",
      "accept": [],
      "explanation_ru": "После глагола help нужна объектная форма her, а не she.",
@@ -596,7 +786,7 @@
     {
      "id": "a1_object_pronouns_06",
      "kind": "gap",
-     "prompt": "This laptop is old, but I still use ___ every day.",
+     "prompt": "This bike is old, but I still ride ___ every day.",
      "answer": "it",
      "accept": [],
      "explanation_ru": "Для неодушевлённого предмета в роли дополнения используется it.",
@@ -619,6 +809,51 @@
      "accept": [],
      "explanation_ru": "Подлежащее She, наречие never перед смысловым глаголом, затем объектное местоимение us.",
      "difficulty": 3
+    },
+    {
+     "id": "a1_object_pronouns_09",
+     "kind": "choice",
+     "prompt": "Как сказать по-английски: «Мне нравится эта песня»?",
+     "options": [
+      "Me like this song.",
+      "I like this song.",
+      "To me likes this song.",
+      "Me likes this song."
+     ],
+     "correct_index": 1,
+     "diagnostic": true,
+     "explanation_ru": "В английском тот, кому нравится, — подлежащее: I like. Русское «мне» подталкивает к me, но me — объектная форма и перед глаголом не стоит.",
+     "difficulty": 1
+    },
+    {
+     "id": "a1_object_pronouns_10",
+     "kind": "choice",
+     "prompt": "A: Is Leila at home?\nB: I don't know. I can't see ___.",
+     "options": [
+      "she",
+      "her",
+      "hers",
+      "she's"
+     ],
+     "correct_index": 1,
+     "diagnostic": true,
+     "explanation_ru": "После глагола see нужна объектная форма her. She — подлежащее, hers — «её» без существительного, а she's — это she is.",
+     "difficulty": 2
+    },
+    {
+     "id": "a1_object_pronouns_11",
+     "kind": "choice",
+     "prompt": "Ноа пишет о друзьях. В каком предложении ошибка?",
+     "options": [
+      "My friends often visit me.",
+      "I play tennis with them on Sundays.",
+      "Mateo sometimes helps I with math.",
+      "We call her every evening."
+     ],
+     "correct_index": 2,
+     "diagnostic": true,
+     "explanation_ru": "После глагола helps нужна объектная форма me, а не I. В остальных предложениях объектные формы me, them, her стоят верно — после глагола или предлога.",
+     "difficulty": 2
     }
    ]
   },
@@ -666,7 +901,7 @@
     {
      "id": "a1_there_is_there_are_02",
      "kind": "choice",
-     "prompt": "There ___ five servers in the room now.",
+     "prompt": "There ___ five people in the kitchen now.",
      "options": [
       "is",
       "was",
@@ -717,7 +952,7 @@
     {
      "id": "a1_there_is_there_are_06",
      "kind": "gap",
-     "prompt": "There ___ (not / be) any free rooms in the office yesterday.",
+     "prompt": "There ___ (not / be) any free rooms in the hotel yesterday.",
      "answer": "weren't",
      "accept": [
       "were not"
@@ -728,10 +963,10 @@
     {
      "id": "a1_there_is_there_are_07",
      "kind": "correct",
-     "prompt": "In my office are three computers.",
-     "answer": "There are three computers in my office.",
+     "prompt": "In my room are three windows.",
+     "answer": "There are three windows in my room.",
      "accept": [
-      "In my office there are three computers."
+      "In my room there are three windows."
      ],
      "explanation_ru": "Английскому предложению нужно формальное подлежащее there, а место уходит в конец.",
      "difficulty": 3
@@ -746,6 +981,54 @@
      ],
      "explanation_ru": "Схема: there + is + существительное с артиклем + обстоятельство места.",
      "difficulty": 3
+    },
+    {
+     "id": "a1_there_is_there_are_09",
+     "kind": "choice",
+     "prompt": "A: Is there a bank near here?\nB: Yes, there ___. It's on Main Street.",
+     "options": [
+      "are",
+      "is",
+      "has",
+      "be"
+     ],
+     "correct_index": 1,
+     "diagnostic": true,
+     "explanation_ru": "Краткий ответ повторяет конструкцию вопроса: Is there…? — Yes, there is. Bank — единственное число, поэтому не are; has в конструкции there is не используется, а be без формы is не ставят.",
+     "difficulty": 1
+    },
+    {
+     "id": "a1_there_is_there_are_10",
+     "kind": "cloze",
+     "prompt": "I live in a small town. There ___ (be) a nice park near my house. There ___ (be) two cafes on my street, but there ___ (not / be) a movie theater.",
+     "gaps": [
+      [
+       "is"
+      ],
+      [
+       "are"
+      ],
+      [
+       "isn't"
+      ]
+     ],
+     "explanation_ru": "Форма be зависит от следующего существительного: a nice park — is, two cafes — are, a movie theater — isn't.",
+     "difficulty": 2
+    },
+    {
+     "id": "a1_there_is_there_are_11",
+     "kind": "choice",
+     "prompt": "Как сказать по-английски: «На столе две чашки»?",
+     "options": [
+      "On the table are two cups.",
+      "There is two cups on the table.",
+      "There are two cups on the table.",
+      "It is two cups on the table."
+     ],
+     "correct_index": 2,
+     "diagnostic": true,
+     "explanation_ru": "Русское предложение начинается с места, а английское — с there are, место уходит в конец. Cups во множественном числе, поэтому are, а it не вводит новый предмет.",
+     "difficulty": 2
     }
    ]
   },
@@ -820,7 +1103,7 @@
     {
      "id": "a1_there_it_04",
      "kind": "choice",
-     "prompt": "___ is a bug in the code, and ___ is a serious one.",
+     "prompt": "___ is a new cafe on our street, and ___ is very good.",
      "options": [
       "There / there",
       "It / it",
@@ -828,7 +1111,7 @@
       "It / there"
      ],
      "correct_index": 2,
-     "explanation_ru": "Сначала there вводит новый объект, затем it указывает на уже названный баг.",
+     "explanation_ru": "Сначала there вводит новый объект, затем it указывает на уже названное кафе.",
      "difficulty": 2
     },
     {
@@ -852,24 +1135,70 @@
     {
      "id": "a1_there_it_07",
      "kind": "correct",
-     "prompt": "There is difficult to fix this bug.",
-     "answer": "It is difficult to fix this bug.",
-     "accept": [
-      "It's difficult to fix this bug."
-     ],
-     "explanation_ru": "Перед прилагательным с инфинитивом ставится it, а не there.",
+     "prompt": "It is many people in the park today.",
+     "answer": "There are many people in the park today.",
+     "accept": [],
+     "explanation_ru": "Сообщение о том, что где-то есть люди или предметы, вводится через there, а не it; people — множественное число, поэтому there are.",
      "difficulty": 3
     },
     {
      "id": "a1_there_it_08",
      "kind": "order",
-     "prompt": "in / there / a / is / the / problem / report / .",
-     "answer": "There is a problem in the report.",
+     "prompt": "in / there / a / is / the / fly / soup / .",
+     "answer": "There is a fly in the soup.",
      "accept": [
-      "In the report there is a problem."
+      "In the soup there is a fly."
      ],
      "explanation_ru": "There is вводит объект, а обстоятельство места стоит в конце.",
      "difficulty": 3
+    },
+    {
+     "id": "a1_there_it_09",
+     "kind": "choice",
+     "prompt": "A: How far is the beach?\nB: ___ about two miles.",
+     "options": [
+      "There is",
+      "It's",
+      "There are",
+      "Is"
+     ],
+     "correct_index": 1,
+     "diagnostic": true,
+     "explanation_ru": "О расстоянии, как о погоде и времени, говорят через формальное подлежащее it: It's about two miles. There is сообщает о существовании предмета, а без подлежащего английское предложение не строится.",
+     "difficulty": 2
+    },
+    {
+     "id": "a1_there_it_10",
+     "kind": "cloze",
+     "prompt": "___ is a small market near my house. ___ is open every day. Today ___ is sunny, so I am going to walk there.",
+     "gaps": [
+      [
+       "There"
+      ],
+      [
+       "It"
+      ],
+      [
+       "it"
+      ]
+     ],
+     "explanation_ru": "Новый объект вводится через there is. Дальше рынок уже назван — о нём говорят it. О погоде всегда говорят it: it is sunny.",
+     "difficulty": 2
+    },
+    {
+     "id": "a1_there_it_11",
+     "kind": "choice",
+     "prompt": "Как сказать по-английски: «Уже поздно»?",
+     "options": [
+      "There is late.",
+      "It's late.",
+      "Is late.",
+      "Late is."
+     ],
+     "correct_index": 1,
+     "diagnostic": true,
+     "explanation_ru": "Безличное русское «поздно» в английском требует формального подлежащего it: It's late. There is сообщает о существовании предмета, а предложение без подлежащего невозможно.",
+     "difficulty": 1
     }
    ]
   },
@@ -944,7 +1273,7 @@
     {
      "id": "a1_this_that_these_those_04",
      "kind": "choice",
-     "prompt": "___ are the new keyboards. Take one.",
+     "prompt": "___ are fresh cookies. Take one!",
      "options": [
       "This",
       "That",
@@ -952,36 +1281,36 @@
       "It"
      ],
      "correct_index": 2,
-     "explanation_ru": "Глагол are и множественное число keyboards требуют These.",
+     "explanation_ru": "Глагол are и множественное число cookies требуют These.",
      "difficulty": 2
     },
     {
      "id": "a1_this_that_these_those_05",
      "kind": "gap",
-     "prompt": "___ is my desk, and that one over there is Tom's.",
+     "prompt": "___ is my bed, and that one over there is Hana's.",
      "answer": "This",
      "accept": [],
-     "explanation_ru": "Противопоставление с that one over there показывает, что первый стол рядом: This.",
+     "explanation_ru": "Противопоставление с that one over there показывает, что первая кровать рядом: This.",
      "difficulty": 1
     },
     {
      "id": "a1_this_that_these_those_06",
      "kind": "gap",
-     "prompt": "___ (this / that / these / those) computers over there are very old.",
+     "prompt": "___ (this / that / these / those) houses over there are very old.",
      "answer": "Those",
      "accept": [],
-     "explanation_ru": "Множественное число computers плюс over there дают Those.",
+     "explanation_ru": "Множественное число houses плюс over there дают Those.",
      "difficulty": 2
     },
     {
      "id": "a1_this_that_these_those_07",
      "kind": "correct",
-     "prompt": "This are my colleagues.",
-     "answer": "These are my colleagues.",
+     "prompt": "This are my cousins.",
+     "answer": "These are my cousins.",
      "accept": [
-      "Those are my colleagues."
+      "Those are my cousins."
      ],
-     "explanation_ru": "Colleagues и are — множественное число, поэтому нужно These (или Those, если коллеги далеко): this сочетается только с единственным числом.",
+     "explanation_ru": "Cousins и are — множественное число, поэтому нужно These (или Those, если родственники далеко): this сочетается только с единственным числом.",
      "difficulty": 3
     },
     {
@@ -992,6 +1321,36 @@
      "accept": [],
      "explanation_ru": "В вопросе глагол is выходит на первое место, затем указательное слово this.",
      "difficulty": 3
+    },
+    {
+     "id": "a1_this_that_these_those_09",
+     "kind": "choice",
+     "prompt": "A: How much is ___ bag over there?\nB: It's twenty dollars.",
+     "options": [
+      "this",
+      "that",
+      "these",
+      "those"
+     ],
+     "correct_index": 1,
+     "diagnostic": true,
+     "explanation_ru": "Одна сумка, и она далеко (over there), поэтому that. This — рядом, these и those — для нескольких предметов.",
+     "difficulty": 1
+    },
+    {
+     "id": "a1_this_that_these_those_10",
+     "kind": "choice",
+     "prompt": "Гость смотрит семейные фото. В каком предложении ошибка?",
+     "options": [
+      "This is my grandma.",
+      "These are my parents.",
+      "Those boy is my cousin.",
+      "That is our old dog."
+     ],
+     "correct_index": 2,
+     "diagnostic": true,
+     "explanation_ru": "Boy — единственное число, поэтому нужно that, а не those: That boy is my cousin. Those сочетается только с множественным числом.",
+     "difficulty": 2
     }
    ]
   },
@@ -1025,7 +1384,7 @@
     {
      "id": "a1_a_some_any_countable_uncountable_01",
      "kind": "choice",
-     "prompt": "I need ___ new keyboard.",
+     "prompt": "I need ___ new pen.",
      "options": [
       "some",
       "any",
@@ -1033,7 +1392,7 @@
       "an"
      ],
      "correct_index": 2,
-     "explanation_ru": "Keyboard — исчисляемое в единственном числе, значит a; an ставится только перед гласным звуком.",
+     "explanation_ru": "Pen — исчисляемое в единственном числе, значит a; an ставится только перед гласным звуком, а следующее слово new начинается с согласного.",
      "difficulty": 1
     },
     {
@@ -1115,6 +1474,54 @@
      "answer": "There isn't any sugar in my tea.",
      "accept": [],
      "explanation_ru": "Схема: there isn't + any + неисчисляемое + обстоятельство места.",
+     "difficulty": 3
+    },
+    {
+     "id": "a1_a_some_any_countable_uncountable_09",
+     "kind": "choice",
+     "prompt": "Как сказать по-английски: «У нас нет хлеба»?",
+     "options": [
+      "We don't have some bread.",
+      "We don't have any bread.",
+      "We don't have no bread.",
+      "We not have any bread."
+     ],
+     "correct_index": 1,
+     "diagnostic": true,
+     "explanation_ru": "В отрицании с неисчисляемым bread используется any. Some — для утверждений, двойное отрицание don't … no в английском невозможно, а без don't отрицание не строится.",
+     "difficulty": 2
+    },
+    {
+     "id": "a1_a_some_any_countable_uncountable_10",
+     "kind": "choice",
+     "prompt": "A: Do we have eggs?\nB: No, we don't have ___ eggs.",
+     "options": [
+      "some",
+      "any",
+      "a",
+      "an"
+     ],
+     "correct_index": 1,
+     "diagnostic": true,
+     "explanation_ru": "В отрицании с множественным числом нужен any. Some ставят в утверждениях, a и an — только с единственным числом.",
+     "difficulty": 1
+    },
+    {
+     "id": "a1_a_some_any_countable_uncountable_11",
+     "kind": "cloze",
+     "prompt": "I'm making pancakes. I have ___ (a / some / any) big bowl and ___ (a / some / any) eggs. But there isn't ___ (a / some / any) milk in the fridge.",
+     "gaps": [
+      [
+       "a"
+      ],
+      [
+       "some"
+      ],
+      [
+       "any"
+      ]
+     ],
+     "explanation_ru": "Bowl — исчисляемое в единственном числе, поэтому a. Eggs во множественном числе в утверждении — some. В отрицании с неисчисляемым milk — any.",
      "difficulty": 3
     }
    ]
@@ -1223,13 +1630,13 @@
     {
      "id": "a1_much_many_lot_little_few_07",
      "kind": "correct",
-     "prompt": "There are much bugs in this program.",
-     "answer": "There are a lot of bugs in this program.",
+     "prompt": "There are much cars on the road today.",
+     "answer": "There are a lot of cars on the road today.",
      "accept": [
-      "There are many bugs in this program.",
-      "There are lots of bugs in this program."
+      "There are many cars on the road today.",
+      "There are lots of cars on the road today."
      ],
-     "explanation_ru": "Bugs исчисляемые, поэтому нужен a lot of или many, но не much.",
+     "explanation_ru": "Cars исчисляемые, поэтому нужен a lot of или many, но не much.",
      "difficulty": 3
     },
     {
@@ -1242,6 +1649,54 @@
      ],
      "explanation_ru": "Отрицание don't have, затем much с неисчисляемым work и обстоятельство времени.",
      "difficulty": 3
+    },
+    {
+     "id": "a1_much_many_lot_little_few_09",
+     "kind": "cloze",
+     "prompt": "At the market I bought ___ (a lot of / much) apples and ___ (a few / a little) cheese. I didn't have ___ (many / much) money.",
+     "gaps": [
+      [
+       "a lot of"
+      ],
+      [
+       "a little"
+      ],
+      [
+       "much"
+      ]
+     ],
+     "explanation_ru": "A lot of подходит к исчисляемым apples, а much ставят только с неисчисляемыми. Cheese и money неисчисляемые, поэтому a little и much; a few и many — только для исчисляемых.",
+     "difficulty": 3
+    },
+    {
+     "id": "a1_much_many_lot_little_few_10",
+     "kind": "choice",
+     "prompt": "Как сказать по-английски: «Сколько стоят эти яблоки?»",
+     "options": [
+      "How many are these apples?",
+      "How much are these apples?",
+      "How much cost these apples?",
+      "How many cost these apples?"
+     ],
+     "correct_index": 1,
+     "diagnostic": true,
+     "explanation_ru": "О цене спрашивают How much, даже если предметов много, а How many спрашивает о количестве. Вопрос строится через are или do … cost: How much do these apples cost? Порядок cost these apples повторяет русский и неверен.",
+     "difficulty": 2
+    },
+    {
+     "id": "a1_much_many_lot_little_few_11",
+     "kind": "choice",
+     "prompt": "A: Do you have any friends in Miami?\nB: Yes, ___. Maybe three or four.",
+     "options": [
+      "a little",
+      "a few",
+      "much",
+      "a lot of"
+     ],
+     "correct_index": 1,
+     "diagnostic": true,
+     "explanation_ru": "Речь о небольшом числе людей, а friends — исчисляемое, поэтому a few. A little и much — для неисчисляемых, а a lot of без существительного не ставят.",
+     "difficulty": 2
     }
    ]
   },
@@ -1331,7 +1786,7 @@
     {
      "id": "a1_questions_05",
      "kind": "gap",
-     "prompt": "___ (you / be) ready for the demo now?",
+     "prompt": "___ (you / be) ready for dinner now?",
      "answer": "Are you",
      "accept": [],
      "explanation_ru": "С глаголом be вспомогательный не нужен: be сам выходит перед подлежащим.",
@@ -1358,10 +1813,58 @@
     {
      "id": "a1_questions_08",
      "kind": "order",
-     "prompt": "does / start / when / the / meeting / ?",
-     "answer": "When does the meeting start?",
+     "prompt": "does / start / when / the / concert / ?",
+     "answer": "When does the concert start?",
      "accept": [],
      "explanation_ru": "Схема: вопросительное слово, does, подлежащее, глагол в начальной форме.",
+     "difficulty": 3
+    },
+    {
+     "id": "a1_questions_09",
+     "kind": "choice",
+     "prompt": "Как сказать по-английски: «Откуда ты?»",
+     "options": [
+      "From where are you?",
+      "Where you are from?",
+      "Where are you from?",
+      "Where do you from?"
+     ],
+     "correct_index": 2,
+     "diagnostic": true,
+     "explanation_ru": "Вопрос строится с be: Where are you from? Предлог from в английском вопросе уходит в конец, are выходит перед подлежащим, а do с be не сочетается.",
+     "difficulty": 1
+    },
+    {
+     "id": "a1_questions_10",
+     "kind": "choice",
+     "prompt": "Как сказать по-английски: «Сколько лет твоему сыну?»",
+     "options": [
+      "How many years has your son?",
+      "How old is your son?",
+      "How much years is your son?",
+      "How old has your son?"
+     ],
+     "correct_index": 1,
+     "diagnostic": true,
+     "explanation_ru": "О возрасте спрашивают How old плюс be: How old is your son? Русское «сколько лет» подталкивает к how many years, но так о возрасте не спрашивают, а have здесь не нужен.",
+     "difficulty": 2
+    },
+    {
+     "id": "a1_questions_11",
+     "kind": "gap",
+     "prompt": "A: ___ (what / you / do) on weekends?\nB: I usually play football with my friends.",
+     "answer": "What do you do",
+     "accept": [],
+     "explanation_ru": "Вопросительное слово стоит первым, за ним вспомогательный do, подлежащее и глагол do в начальной форме. Два do подряд здесь нормальны: первый — вспомогательный, второй — смысловой.",
+     "difficulty": 3
+    },
+    {
+     "id": "a1_questions_12",
+     "kind": "transform",
+     "prompt": "Ask a question with where: Mateo works in a hospital.",
+     "answer": "Where does Mateo work?",
+     "accept": [],
+     "explanation_ru": "Подлежащее Mateo — третье лицо, поэтому вспомогательный does, а окончание -s уходит с глагола на does. Порядок: вопросительное слово, does, подлежащее, глагол в начальной форме.",
      "difficulty": 3
     }
    ]
@@ -1462,7 +1965,7 @@
     {
      "id": "a1_will_and_shall_06",
      "kind": "gap",
-     "prompt": "They ___ (not / will / finish) the project this week.",
+     "prompt": "They ___ (not / will / finish) the book this week.",
      "answer": "won't finish",
      "accept": [
       "will not finish"
@@ -1492,6 +1995,52 @@
      ],
      "explanation_ru": "Порядок: подлежащее, will, глагол без to, затем обстоятельство времени.",
      "difficulty": 3
+    },
+    {
+     "id": "a1_will_and_shall_09",
+     "kind": "choice",
+     "prompt": "A: This bag is very heavy.\nB: Don't worry, I ___ help you.",
+     "options": [
+      "am",
+      "will",
+      "do",
+      "shall to"
+     ],
+     "correct_index": 1,
+     "diagnostic": true,
+     "explanation_ru": "Решение, принятое прямо сейчас, выражается через will плюс глагол без to. Am и do с help в таком значении не работают, а после shall частица to не ставится.",
+     "difficulty": 1
+    },
+    {
+     "id": "a1_will_and_shall_10",
+     "kind": "choice",
+     "prompt": "Как сказать по-английски: «Завтра будет дождь»?",
+     "options": [
+      "Tomorrow will be rain.",
+      "It will to rain tomorrow.",
+      "It will rains tomorrow.",
+      "It will rain tomorrow."
+     ],
+     "correct_index": 3,
+     "diagnostic": true,
+     "explanation_ru": "О погоде говорят с формальным подлежащим it: It will rain. Tomorrow will be rain повторяет русский порядок без подлежащего; после will глагол идёт без to и без -s.",
+     "difficulty": 2
+    },
+    {
+     "id": "a1_will_and_shall_11",
+     "kind": "cloze",
+     "prompt": "A: I'm hungry.\nB: ___ (shall / will) I make you a sandwich?\nA: Yes, please! And I ___ (will / wash) the dishes after lunch.",
+     "gaps": [
+      [
+       "Shall",
+       "Should"
+      ],
+      [
+       "will wash"
+      ]
+     ],
+     "explanation_ru": "Предложение помощи — Shall I…? (в американской речи чаще Should I…?); Will I…? спрашивает о будущем, а не предлагает. Обещание — will плюс глагол без to: I will wash, в речи I'll wash.",
+     "difficulty": 2
     }
    ]
   }

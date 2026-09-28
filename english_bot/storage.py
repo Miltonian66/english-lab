@@ -688,6 +688,15 @@ class Storage:
             ).fetchall()
         return {str(row["point_id"]): (int(row["correct"] or 0), int(row["total"])) for row in rows}
 
+    def seen_exercises(self, user_id: int) -> set[str]:
+        """Ссылки на упражнения курса, на которые человек уже отвечал."""
+        with self.session() as db:
+            rows = db.execute(
+                "SELECT DISTINCT exercise_id FROM attempts WHERE user_id = ? AND exercise_id LIKE 'ex:%'",
+                (user_id,),
+            ).fetchall()
+        return {str(row["exercise_id"]) for row in rows}
+
     def recent_accuracy(self, user_id: int, limit: int = 12) -> float | None:
         with self.session() as db:
             rows = db.execute(

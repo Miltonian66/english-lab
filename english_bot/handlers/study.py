@@ -547,7 +547,8 @@ def command_practice(ctx: Context, user: User, text: str) -> None:
         if mastery.get(point.id, 0) < 3
     ]
     queue = pr.queue_for_level(
-        ctx.curriculum, level, ctx.rng, weak, SESSION_LENGTH - VOCAB_PER_SESSION
+        ctx.curriculum, level, ctx.rng, weak, SESSION_LENGTH - VOCAB_PER_SESSION,
+        seen=ctx.storage.seen_exercises(user.user_id),
     )
     queue += pr.queue_of_vocab(
         ctx.curriculum, level, ctx.storage.vocab_card_keys(user.user_id), ctx.rng,
@@ -603,7 +604,9 @@ def callback_practice_topic(ctx: Context, user: User, payload: str) -> str:
     topic = ctx.curriculum.topic_by_code(level, code)
     if topic is None:
         return "тема не найдена"
-    queue = pr.queue_for_topic(ctx.curriculum, level, topic, ctx.rng)
+    queue = pr.queue_for_topic(
+        ctx.curriculum, level, topic, ctx.rng, seen=ctx.storage.seen_exercises(user.user_id)
+    )
     if not queue:
         return "в теме нет заданий"
     _start_session(ctx, user, "topic", topic, queue, level)
@@ -613,7 +616,8 @@ def callback_practice_topic(ctx: Context, user: User, payload: str) -> str:
 def command_review(ctx: Context, user: User, text: str) -> None:
     cards = ctx.storage.due_cards(user.user_id, limit=REVIEW_LENGTH * 2)
     queue = pr.queue_for_review(
-        ctx.curriculum, cards, ctx.rng, REVIEW_LENGTH, level=user.level or ""
+        ctx.curriculum, cards, ctx.rng, REVIEW_LENGTH, level=user.level or "",
+        seen=ctx.storage.seen_exercises(user.user_id),
     )
     if not queue:
         counts = ctx.storage.card_counts(user.user_id)
@@ -810,6 +814,8 @@ def _grade(
     else:
         head = f"Мимо. Правильно: {verdict.expected_text}"
     reply = [head]
+    if verdict.note:
+        reply.append(verdict.note)
     if question.explanation_ru:
         reply.append(question.explanation_ru)
     reply.append(srs.interval_note_ru(updated) + f" · {srs.stars(updated.mastery)}")
@@ -856,7 +862,12 @@ def callback_rule(ctx: Context, user: User, payload: str) -> str:
     if fresh.state == "practice":
         # Внутри занятия «Тренировать эту тему» начала бы новую сессию поверх
         # текущей — предлагаем вернуться к заданию, которое человек уже решает.
-        ctx.say(user, pr.point_help(point), inline([[("▶️ Продолжить", "rsm")]]))
+        # Следующий вопрос уже открыт и может быть по той же теме: его ответ прячем.
+        state = pr.PracticeState.from_dict(fresh.state_data)
+        ref = state.current_ref()
+        current = pr.resolve(ref, ctx.curriculum, ctx.rng) if ref else None
+        hide = pr.revealing_texts(current) if current else ()
+        ctx.say(user, pr.point_help(point, hide=hide), inline([[("▶️ Продолжить", "rsm")]]))
     else:
         ctx.say(
             user,

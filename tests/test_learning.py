@@ -406,6 +406,10 @@ class PracticeTests(unittest.TestCase):
             with self.subTest(word=word):
                 self.assertEqual(pr.accepted_forms(card), forms)  # type: ignore[arg-type]
 
+    def test_synonyms_count_in_their_forms_too(self) -> None:
+        question = pr.vocab_question(self._vocab("do"), CURRICULUM, self.rng)
+        self.assertTrue(pr.check(question, "made").correct)
+
     def test_recall_forms_depend_on_part_of_speech(self) -> None:
         self.assertEqual(pr.accepted_forms(self._vocab("on")), [])
         self.assertEqual(pr.accepted_forms(self._vocab("table")), ["tables"])

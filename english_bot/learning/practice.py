@@ -347,10 +347,14 @@ def _covers(asked: set[str], offered: set[str]) -> bool:
 
 def accepted_forms(item: VocabItem) -> list[str]:
     """Формы, которые засчитываются во вспоминании: глаголу — времена, существительному — число."""
-    base = item.word.strip().lower()
-    if item.pos in ("verb", "phrasal verb"):
+    return _forms_of(item.word, item.pos)
+
+
+def _forms_of(word: str, pos: str) -> list[str]:
+    base = word.strip().lower()
+    if pos in ("verb", "phrasal verb"):
         return [form for form in word_forms(base) if form != base]
-    if item.pos == "noun" and " " not in base:
+    if pos == "noun" and " " not in base:
         if base in UNCOUNTABLE:
             return []
         if base in IRREGULAR_PLURAL:
@@ -370,15 +374,19 @@ def vocab_alternatives(item: VocabItem, curriculum: Curriculum) -> tuple[str, ..
     пометкой, какое слово было загадано.
     """
     mine = senses(item.translation_ru)
-    found: list[str] = list(item.accept)
-    found.extend(accepted_forms(item))
+    synonyms: list[str] = list(item.accept)
     for other in _all_vocab(curriculum):
         if (
             other.id != item.id
             and other.pos == item.pos
             and _covers(mine, senses(other.translation_ru))
         ):
-            found.append(other.word)
+            synonyms.append(other.word)
+    found: list[str] = list(accepted_forms(item))
+    # Синоним засчитывается и в форме: «claims» на вопрос, где загадано assert.
+    for word in synonyms:
+        found.append(word)
+        found.extend(_forms_of(word, item.pos))
     unique: list[str] = []
     for word in found:
         if word.lower() != item.word.lower() and word.lower() not in (x.lower() for x in unique):

@@ -219,6 +219,17 @@ class CallbackCodeTests(unittest.TestCase):
 
 
 class BankTests(unittest.TestCase):
+    def test_card_level_matches_its_file(self) -> None:
+        """Уровень карточки — это её файл: обманки узнавания берутся из того же уровня.
+
+        id при переносе не меняется, поэтому префикс id уровнем не считается.
+        """
+        for level in LEVELS:
+            path = DATA_DIR / f"vocabulary_{level.lower()}.json"
+            for item in json.loads(path.read_text(encoding="utf-8"))["items"]:
+                with self.subTest(card=item["id"]):
+                    self.assertEqual(item["level"], level)
+
     def test_vocabulary_covers_all_levels(self) -> None:
         for level in LEVELS:
             with self.subTest(level=level):

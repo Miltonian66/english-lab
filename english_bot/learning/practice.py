@@ -385,7 +385,7 @@ def _forms_of(word: str, pos: str) -> list[str]:
     if pos in ("verb", "phrasal verb"):
         return [form for form in word_forms(base) if form != base]
     if pos == "noun" and " " not in base:
-        if base in UNCOUNTABLE:
+        if base in UNCOUNTABLE or base in INVARIANT_PLURAL:
             return []
         if base in IRREGULAR_PLURAL:
             return [IRREGULAR_PLURAL[base]]
@@ -635,6 +635,11 @@ IRREGULAR_PLURAL: dict[str, str] = {
     "leaf": "leaves", "half": "halves", "shelf": "shelves", "thief": "thieves", "wolf": "wolves",
     "crisis": "crises", "hypothesis": "hypotheses", "thesis": "theses", "basis": "bases",
 }
+# Множественное совпадает с единственным: «specieses» и «sheeps» — ошибки.
+INVARIANT_PLURAL = frozenset({
+    "species", "series", "means", "crossroads", "headquarters", "aircraft", "sheep", "deer",
+    "fish", "offspring",
+})
 UNCOUNTABLE = frozenset({
     "information", "advice", "equipment", "furniture", "news", "feedback", "research",
     "software", "hardware", "homework", "luggage", "baggage", "money", "traffic", "weather",

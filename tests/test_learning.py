@@ -455,7 +455,7 @@ class PracticeTests(unittest.TestCase):
         class Card:
             pos = "noun"
 
-        for word, forms in (("child", ["children"]), ("advice", []), ("person", ["people"])):
+        for word, forms in (("child", ["children"]), ("advice", []), ("person", ["people"]), ("species", [])):
             card = Card()
             card.word = word  # type: ignore[attr-defined]
             with self.subTest(word=word):

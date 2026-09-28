@@ -5,7 +5,7 @@ from __future__ import annotations
 import logging
 from pathlib import Path
 
-from ..ai.tts import SpeechError
+from ..ai.tts import SpeechError, split_dialogue, spoken_text
 from ..content.banks import ListeningTask
 from ..content.registry import Curriculum
 from ..context import SPEECH_OFF_TEXT, Context, Ticket
@@ -60,7 +60,13 @@ def _listening_job(job: Job, ctx: Context, ticket: Ticket, code: str) -> None:
         return
     assert ctx.speaker is not None
     try:
-        audio: Path = ctx.speaker.synthesize(task.script_en)
+        # Диалог звучит двумя голосами: одним голосом собеседников не различить.
+        turns = split_dialogue(task.script_en)
+        audio: Path = (
+            ctx.speaker.synthesize_dialogue(turns)
+            if turns and hasattr(ctx.speaker, "synthesize_dialogue")
+            else ctx.speaker.synthesize(spoken_text(task.script_en))
+        )
     except SpeechError as exc:
         LOGGER.warning("Не удалось подготовить аудирование: %s", exc)
         ctx.tell(ticket, "Не смог подготовить аудио. Попробуй другое задание чуть позже.")

@@ -231,7 +231,12 @@ def _build_speech(settings: Settings) -> tuple[Any, Any]:
             else None
         )
         speaker = (
-            LocalSpeaker(settings.piper_dir, settings.audio_cache_dir, settings.piper_voice)
+            LocalSpeaker(
+                settings.piper_dir,
+                settings.audio_cache_dir,
+                settings.piper_voice,
+                settings.piper_second_voice,
+            )
             if piper_available()
             else None
         )

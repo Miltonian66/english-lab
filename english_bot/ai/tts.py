@@ -31,6 +31,29 @@ def cache_name(text: str, voice: str, slow: bool) -> str:
     return f"{slug}-{digest}.ogg"
 
 
+DIALOGUE_LINE = re.compile(r"^([A-Z][A-Za-z]{0,20}):\s*(.+)$")
+
+
+def split_dialogue(script: str) -> list[tuple[str, str]]:
+    """Реплики диалога «Имя: текст» по строкам; пусто, если это не диалог.
+
+    Диалогом считается скрипт, где каждая непустая строка — реплика, а
+    говорящих не меньше двух.
+    """
+    lines = [line.strip() for line in script.splitlines() if line.strip()]
+    turns = [DIALOGUE_LINE.match(line) for line in lines]
+    if len(lines) < 2 or not all(turns):
+        return []
+    pairs = [(found.group(1), found.group(2)) for found in turns if found]
+    return pairs if len({speaker for speaker, _ in pairs}) >= 2 else []
+
+
+def spoken_text(script: str) -> str:
+    """Текст для одного голоса: без имён говорящих, если скрипт — диалог."""
+    turns = split_dialogue(script)
+    return " ".join(text for _, text in turns) if turns else script
+
+
 class Speaker:
     def __init__(self, api_key: str, model: str, voice: str, cache_dir: Path):
         self.api_key = api_key
@@ -79,3 +102,8 @@ class Speaker:
             partial.unlink(missing_ok=True)
         destination.chmod(0o600)
         return destination
+
+    def synthesize_dialogue(self, lines: list[tuple[str, str]]) -> Path:
+        """Хостинговый синтез отдаёт готовый Opus, склеить его без PyAV нечем:
+        диалог читается одним голосом, без имён говорящих."""
+        return self.synthesize(" ".join(text for _, text in lines))

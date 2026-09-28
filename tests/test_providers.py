@@ -451,6 +451,25 @@ class SettingsSwitchTests(unittest.TestCase):
         os.environ.pop("JOB_WORKERS", None)
 
 
+class DialogueScriptTests(unittest.TestCase):
+    def test_dialogue_lines_are_split_by_speaker(self) -> None:
+        from english_bot.ai.tts import split_dialogue, spoken_text
+
+        script = "Anna: Are you free on Friday?\nTom: I think so. Why?\nAnna: Team lunch."
+        self.assertEqual(
+            split_dialogue(script),
+            [("Anna", "Are you free on Friday?"), ("Tom", "I think so. Why?"), ("Anna", "Team lunch.")],
+        )
+        self.assertEqual(spoken_text(script), "Are you free on Friday? I think so. Why? Team lunch.")
+
+    def test_monologue_is_not_a_dialogue(self) -> None:
+        from english_bot.ai.tts import split_dialogue, spoken_text
+
+        self.assertEqual(split_dialogue("Note: the meeting moved. It starts at ten."), [])
+        self.assertEqual(split_dialogue("Anna: Hi.\nAnna: It's me again."), [])
+        self.assertEqual(spoken_text("Just one voice here."), "Just one voice here.")
+
+
 @unittest.skipUnless(
     whisper_available() and piper_available(),
     "локальные модели доступны только из .venv",
@@ -470,6 +489,15 @@ class LocalSpeechTests(unittest.TestCase):
     @classmethod
     def tearDownClass(cls) -> None:
         cls._dir.cleanup()
+
+    def test_dialogue_is_one_ogg_with_both_voices(self) -> None:
+        import av
+
+        path = self.speaker.synthesize_dialogue([("Anna", "Are you free on Friday?"), ("Tom", "Yes, I am.")])
+        with av.open(str(path)) as container:
+            self.assertEqual(container.streams.audio[0].codec_context.name, "opus")
+            self.assertGreater(container.duration / 1_000_000, 1.5)
+        self.assertEqual(len(self.speaker._voices), 2 if (self.speaker.voice_dir / "en_US-ryan-medium.onnx").exists() else 1)
 
     def test_synthesis_produces_ogg_opus_for_telegram(self) -> None:
         import av

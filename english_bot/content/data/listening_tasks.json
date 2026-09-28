@@ -4,7 +4,7 @@
       "id": "a1_ls_meeting_time",
       "level": "A1",
       "skill": "detail",
-      "title_ru": "Время встречи",
+      "title_ru": "Время урока",
       "script_en": "Hi, Anna. Our English class is not at nine today. It starts at ten thirty in room twelve.",
       "question_en": "When does the English class start?",
       "options": ["At 9:00", "At 9:30", "At 10:30", "At 12:00"],
@@ -37,12 +37,12 @@
       "id": "a1_ls_empty_office",
       "level": "A1",
       "skill": "inference",
-      "title_ru": "Пустой офис",
-      "script_en": "The office is dark and the front door is locked. It is seven o'clock on Sunday morning.",
-      "question_en": "Why can the speaker not go inside?",
-      "options": ["The office is closed", "The speaker lost a phone", "The room is full", "The bus is late"],
+      "title_ru": "У двери офиса",
+      "script_en": "I want to get my laptop, but the office is dark and the front door is locked. It is seven o'clock on Sunday morning.",
+      "question_en": "Why can't the speaker get in?",
+      "options": ["The office is closed on Sunday", "There is no electricity in the building", "The front door is broken", "It is too late in the evening"],
       "correct_index": 0,
-      "explanation_ru": "Закрытая дверь, темнота и раннее воскресное утро позволяют понять, что офис ещё закрыт."
+      "explanation_ru": "Человек пришёл за ноутбуком, но дверь заперта (locked), внутри темно, а на часах seven o'clock on Sunday morning — в выходной офис закрыт. Дверь не сломана, а заперта; темно, потому что внутри никого нет, об электричестве ничего не сказано; и сейчас утро, а не вечер."
     },
     {
       "id": "a1_ls_cafe_reaction",
@@ -51,9 +51,9 @@
       "title_ru": "Новый кофе",
       "script_en": "This coffee smells great, but it is much too sweet for me. Next time I will order it without sugar.",
       "question_en": "How does the speaker feel about the coffee?",
-      "options": ["It is perfect", "It is too sweet", "It is too cold", "It has no smell"],
+      "options": ["Likes everything and will order the same again", "Likes the smell, but not the taste", "Likes the taste, but not the smell", "Does not like it and will not order it again"],
       "correct_index": 1,
-      "explanation_ru": "Говорящий хвалит запах, но прямо говорит much too sweet и в следующий раз уберёт сахар."
+      "explanation_ru": "Запах говорящий хвалит (smells great), а вкус нет: кофе much too sweet. Отказываться от него он не собирается — в следующий раз закажет without sugar."
     },
 
     {
@@ -71,12 +71,12 @@
       "id": "a2_ls_remote_day",
       "level": "A2",
       "skill": "gist",
-      "title_ru": "Работа из дома",
+      "title_ru": "Утреннее сообщение",
       "script_en": "I usually work at the office, but today I am staying home. A repair person is coming to fix my kitchen sink, so I will join all meetings online.",
-      "question_en": "Why is the speaker working from home?",
-      "options": ["The office is closed", "Someone is coming to make a repair", "The speaker is sick", "There are no meetings"],
+      "question_en": "What is the speaker mainly telling the team?",
+      "options": ["The speaker is sick and cannot come to today's meetings", "The speaker is staying home today but will join the meetings", "A repair person is coming to fix the kitchen in the office", "Today's meetings are moving online for the whole team"],
       "correct_index": 1,
-      "explanation_ru": "Человек остаётся дома, потому что repair person должен починить кухонную раковину."
+      "explanation_ru": "Главное сообщение: сегодня человек работает из дома (today I am staying home), но на всех встречах будет онлайн (I will join all meetings online). Мастер придёт к нему домой чинить раковину, а онлайн встречи только для него, а не для всей команды."
     },
     {
       "id": "a2_ls_release_steps",
@@ -85,20 +85,20 @@
       "title_ru": "Небольшой релиз",
       "script_en": "First, check that all the tests are green. Then ask Maria to review the change. After she approves it, you can deploy the new version.",
       "question_en": "What should happen immediately before deployment?",
-      "options": ["Writing the first test", "Maria's approval", "A customer call", "Restarting the computer"],
+      "options": ["Checking that the tests are green", "Getting Maria's approval", "Asking Maria to review the change", "Asking Maria to deploy"],
       "correct_index": 1,
-      "explanation_ru": "Последовательность заканчивается так: Maria reviews and approves, затем можно deploy."
+      "explanation_ru": "Порядок такой: tests are green → ask Maria to review → she approves → deploy. Непосредственно перед deploy стоит её одобрение; просьба о ревью идёт раньше, а выкатывает версию сам слушатель, а не Maria."
     },
     {
       "id": "a2_ls_missing_colleague",
       "level": "A2",
       "skill": "inference",
-      "title_ru": "Коллега не на встрече",
+      "title_ru": "Коллеги нет на месте",
       "script_en": "Leo's chair is empty, and he sent me a photo from the airport this morning. He said he would be back in the office next Monday.",
-      "question_en": "Where is Leo probably going?",
-      "options": ["On a trip", "To another meeting room", "To the cafeteria", "Home for lunch"],
+      "question_en": "Why is Leo's chair empty?",
+      "options": ["He is on a trip", "He is in another meeting", "He is having lunch", "He is sick at home"],
       "correct_index": 0,
-      "explanation_ru": "Фото из аэропорта и возвращение только в понедельник указывают на поездку."
+      "explanation_ru": "Фото из аэропорта и возвращение в офис только в следующий понедельник указывают на поездку, а не на встречу, обед или болезнь."
     },
     {
       "id": "a2_ls_app_update",
@@ -127,12 +127,12 @@
       "id": "b1_ls_incident_summary",
       "level": "B1",
       "skill": "gist",
-      "title_ru": "Короткий разбор сбоя",
+      "title_ru": "Сообщение команде",
       "script_en": "Yesterday's outage was not caused by the new release. One of our database certificates had expired, so the service could not connect after its scheduled restart. We renewed the certificate and added an automatic warning for next time.",
       "question_en": "What is the main purpose of this message?",
-      "options": ["To announce a new feature", "To explain an outage and the fix", "To cancel a scheduled restart", "To hire a database engineer"],
+      "options": ["To report that yesterday's outage was caused by the new release", "To explain the real cause of the outage and its fix", "To announce a scheduled restart of the database service", "To warn the team that more certificates will expire soon"],
       "correct_index": 1,
-      "explanation_ru": "Сообщение называет причину outage, сделанное исправление и защиту от повторения."
+      "explanation_ru": "Сообщение объясняет настоящую причину outage — истёк сертификат базы, — сделанное исправление и новое предупреждение на будущее. Новый релиз прямо назван невиновным, а restart упомянут как момент сбоя, а не как анонс."
     },
     {
       "id": "b1_ls_customer_followup",
@@ -152,9 +152,9 @@
       "title_ru": "После собеседования",
       "script_en": "Sam did not say much during the first ten minutes, but his answers became detailed when we discussed real production problems. He also asked thoughtful questions about monitoring and support duties.",
       "question_en": "What can be inferred about Sam?",
-      "options": ["He has no technical experience", "He became more comfortable during the interview", "He dislikes production work", "He did not understand the questions"],
+      "options": ["He has little experience with production systems", "He became more comfortable as the interview went on", "He knows monitoring better than coding", "He is more interested in support than in development"],
       "correct_index": 1,
-      "explanation_ru": "Сначала Sam говорил мало, затем стал отвечать подробно и задавать содержательные вопросы — он освоился."
+      "explanation_ru": "Сначала Sam говорил мало, а потом стал подробно отвечать о реальных production problems и задавать продуманные вопросы — он освоился. Monitoring и support он лишь упомянул в своих вопросах; сравнения с кодом или разработкой в записи нет."
     },
     {
       "id": "b1_ls_process_feedback",
@@ -163,9 +163,9 @@
       "title_ru": "Новый процесс ревью",
       "script_en": "I understand why we added a second approval, and it has already caught two serious mistakes. However, waiting a full day for every small documentation change feels unnecessary. I think we should keep the rule only for code changes.",
       "question_en": "What does the speaker think about the new process?",
-      "options": ["It should be removed completely", "It is useful but applied too broadly", "It never catches mistakes", "It should cover even more types of work"],
+      "options": ["It is useful but should cover only documentation changes", "It is useful but applied too broadly", "It slows everyone down and has caught nothing serious", "It is fine as it is, but reviews should be faster"],
       "correct_index": 1,
-      "explanation_ru": "Говорящий признаёт пользу второго approval, но предлагает ограничить правило изменениями кода."
+      "explanation_ru": "Второй approval уже поймал две серьёзные ошибки, но ждать сутки ради мелкой правки документации говорящий считает лишним и предлагает оставить правило только для code changes — то есть сузить его, а не ускорить."
     },
 
     {
@@ -186,9 +186,9 @@
       "title_ru": "Решение о миграции",
       "script_en": "Moving every customer at once would shorten the project, but a single unnoticed compatibility issue could affect the entire platform. We will therefore start with internal accounts, monitor them for two weeks, and expand the migration only if the error rate remains stable.",
       "question_en": "Which approach has the team chosen?",
-      "options": ["A gradual migration with monitoring", "An immediate migration of every customer", "Canceling the migration", "Waiting until all old accounts expire"],
-      "correct_index": 0,
-      "explanation_ru": "Команда начнёт с внутренних аккаунтов, понаблюдает две недели и лишь затем расширит миграцию."
+      "options": ["Moving every customer at once to finish sooner", "Starting with internal accounts and expanding if errors stay stable", "Migrating only internal accounts and stopping there", "Moving all customers at once, then monitoring for two weeks"],
+      "correct_index": 1,
+      "explanation_ru": "Одновременный переезд сократил бы проект, но рискован, поэтому команда начнёт с internal accounts, понаблюдает две недели и расширит миграцию, только если error rate останется стабильным. Две недели наблюдения относятся к внутренним аккаунтам, а не ко всем клиентам."
     },
     {
       "id": "b2_ls_handover_order",
@@ -205,12 +205,12 @@
       "id": "b2_ls_delayed_launch",
       "level": "B2",
       "skill": "inference",
-      "title_ru": "Осторожный запуск",
+      "title_ru": "Перед запуском",
       "script_en": "Marketing has already prepared the announcement, and the feature passed all functional tests. Still, the team lead asked everyone to keep Friday evening free and requested an additional rollback rehearsal on Thursday.",
       "question_en": "What is the team lead probably concerned about?",
-      "options": ["The marketing text", "Operational problems after launch", "The lack of functional tests", "The feature name"],
+      "options": ["Marketing announcing the feature too early", "Problems in production after the launch", "The feature failing its functional tests", "The announcement not being ready in time"],
       "correct_index": 1,
-      "explanation_ru": "Свободный вечер запуска и дополнительная репетиция rollback указывают на опасение эксплуатационных проблем."
+      "explanation_ru": "Функциональные тесты пройдены и анонс готов, но тимлид просит держать свободным вечер пятницы и ещё раз отрепетировать rollback — он опасается проблем в эксплуатации после запуска. О спешке маркетинга в записи ничего нет."
     },
     {
       "id": "b2_ls_vendor_pitch",
@@ -219,9 +219,9 @@
       "title_ru": "Предложение поставщика",
       "script_en": "The demo was polished, and I can see why the sales team liked it. Yet every difficult question was answered with a promise about the next release, while the contract requires a three-year commitment. I would not sign anything until we speak to existing customers.",
       "question_en": "How does the speaker feel about the vendor?",
-      "options": ["Ready to sign immediately", "Interested but skeptical", "Completely uninterested in the product", "Certain that the product is mature"],
+      "options": ["Impressed by the demo and ready to sign after the next release", "Impressed by the demo but doubtful about the vendor's promises", "Unimpressed by the demo but confident in the vendor's roadmap", "Doubtful about the demo but happy with a three-year contract"],
       "correct_index": 1,
-      "explanation_ru": "Говорящий видит достоинства demo, но сомневается в обещаниях и хочет проверить отзывы клиентов."
+      "explanation_ru": "Демо говорящий хвалит (polished), но на каждый трудный вопрос звучало обещание про next release, а контракт требует трёх лет — поэтому он ничего не подпишет, пока не поговорит с existing customers. Ждать следующего релиза он не предлагает."
     },
 
     {
@@ -233,18 +233,18 @@
       "question_en": "Which metric became worse during the experiment?",
       "options": ["Mobile registrations", "Desktop conversion", "Email verification", "Completed registrations overall"],
       "correct_index": 2,
-      "explanation_ru": "Общие регистрации выросли, desktop не изменился, а доля подтвердивших email fell by two percent."
+      "explanation_ru": "Общие регистрации выросли, desktop не изменился, а число подтвердивших email снизилось на 2 % (fell by two percent)."
     },
     {
       "id": "c1_ls_architecture_tradeoff",
       "level": "C1",
       "skill": "gist",
-      "title_ru": "Архитектурный компромисс",
+      "title_ru": "Модуль отчётов",
       "script_en": "A separate service would give the reporting team independent releases and clearer ownership. It would also introduce another database, deployment pipeline, and on-call responsibility for a component that currently handles modest traffic. Rather than splitting it out now, I suggest defining a strict internal interface and measuring whether the existing module becomes a genuine bottleneck over the next quarter.",
       "question_en": "What is the speaker recommending?",
-      "options": ["Creating the service immediately", "Deleting the reporting module", "Delaying the split while collecting evidence", "Giving ownership to an external vendor"],
-      "correct_index": 2,
-      "explanation_ru": "Рекомендация — пока задать строгий интерфейс и измерять bottleneck, а не выделять сервис немедленно."
+      "options": ["Creating a separate service right away", "Splitting it out next quarter, whatever the data shows", "Keeping the module but giving it its own database", "Keeping it for now and watching for a bottleneck"],
+      "correct_index": 3,
+      "explanation_ru": "Отдельный сервис дал бы независимые релизы, но добавил бы базу, pipeline и дежурства. Поэтому говорящий предлагает пока не выделять модуль: задать строгий интерфейс и в течение квартала измерять, станет ли он настоящим bottleneck. Разделения через квартал он не обещает — всё решат измерения."
     },
     {
       "id": "c1_ls_escalation_sequence",
@@ -252,21 +252,21 @@
       "skill": "sequence",
       "title_ru": "Эскалация инцидента",
       "script_en": "Confirm that the alert reflects customer impact rather than a monitoring fault. If it does, appoint an incident lead and open the shared timeline before paging the database team. Notify senior management only after the lead has published an initial impact estimate, unless legal or security concerns require immediate escalation.",
-      "question_en": "What normally happens immediately before senior management is notified?",
-      "options": ["The alert is ignored", "An initial impact estimate is published", "The database team closes the incident", "Legal approves the final report"],
+      "question_en": "Normally, what must happen before senior management is notified?",
+      "options": ["Legal or security approves the escalation", "The lead publishes an impact estimate", "The database team fixes the problem", "The monitoring fault is repaired"],
       "correct_index": 1,
-      "explanation_ru": "Обычный порядок требует сначала initial impact estimate; исключение сделано лишь для legal/security concerns."
+      "explanation_ru": "В обычном случае руководство уведомляют only after the lead has published an initial impact estimate. Legal и security — не согласование, а повод эскалировать сразу; ждать исправления проблемы не нужно, а monitoring fault — как раз случай, когда эскалации нет."
     },
     {
       "id": "c1_ls_manager_silence",
       "level": "C1",
       "skill": "inference",
       "title_ru": "Необычная тишина",
-      "script_en": "Dana normally challenges every estimate in the planning meeting, but today she accepted the six-week proposal without a single question. She had just come from a budget review, and afterward she asked me to document which features we could drop if the team lost two contractors.",
+      "script_en": "Dana normally challenges every estimate in the planning meeting, but today she accepted the six-week proposal without a single question. She had just come from a budget review, and afterward she asked me which features depend on the contractors' code and who else on the team could maintain it.",
       "question_en": "What is Dana probably expecting?",
-      "options": ["The project will receive more funding", "The team may have fewer people", "The deadline will disappear", "The contractors will become managers"],
+      "options": ["The project is about to get extra funding", "The contractors may soon leave the project", "The contractors' code will have to be rewritten", "The team will soon hire more full-time engineers"],
       "correct_index": 1,
-      "explanation_ru": "Просьба подготовить вариант при потере двух contractors после budget review указывает на возможное сокращение ресурсов."
+      "explanation_ru": "Dana пришла с budget review и спрашивает, какие функции держатся на коде подрядчиков и кто ещё в команде сможет его поддерживать, — она готовится к тому, что contractors уйдут. О новых деньгах, найме или переписывании кода в записи ничего нет."
     },
     {
       "id": "c1_ls_policy_tone",
@@ -275,9 +275,9 @@
       "title_ru": "Политика работы из офиса",
       "script_en": "I appreciate the attempt to make collaboration more deliberate, and two shared office days could help new employees build relationships. What worries me is the blanket requirement for everyone, regardless of role, location, or team performance. A policy with explicit exceptions and a review after three months would be far easier to support.",
       "question_en": "Which description best matches the speaker's position?",
-      "options": ["Strongly opposed to any office work", "Supportive of the goal but critical of the rigid rule", "Satisfied with the policy as written", "Interested only in reducing office costs"],
+      "options": ["Supports the rule but wants more office days", "Supports the goal but objects to one rule for everyone", "Supports the goal but wants the rule for new hires only", "Accepts the rule but doubts it will help collaboration"],
       "correct_index": 1,
-      "explanation_ru": "Цель и два общих дня говорящий допускает, но blanket requirement считает слишком жёстким."
+      "explanation_ru": "Цель (more deliberate collaboration) и два общих дня говорящий принимает, но возражает против blanket requirement for everyone и просит явные исключения и пересмотр через три месяца. Новичков он упоминает как тех, кому общие дни помогут, а не как единственных, для кого нужно правило."
     },
 
     {
@@ -286,10 +286,10 @@
       "skill": "detail",
       "title_ru": "Оговорка в прогнозе",
       "script_en": "The headline forecast puts annual growth at seven percent, but that figure assumes the enterprise contract closes in September and is recognized immediately. Under the finance team's more conservative scenario, where revenue is spread across the contract term, reported growth would be closer to four and a half percent. Neither estimate includes a possible acquisition, despite recent speculation in the press.",
-      "question_en": "What growth does the conservative accounting scenario predict?",
-      "options": ["Four and a half percent", "Seven percent", "Nine percent", "The forecast gives no figure"],
+      "question_en": "Why could the seven percent headline figure be misleading?",
+      "options": ["It counts all the contract's revenue at once", "It already includes the possible acquisition", "It assumes the contract will not close until next year", "It is based on the finance team's cautious method"],
       "correct_index": 0,
-      "explanation_ru": "Seven percent — headline forecast, а conservative scenario даёт closer to four and a half percent."
+      "explanation_ru": "Seven percent предполагает, что enterprise contract закроют в сентябре и выручку признают сразу (recognized immediately). Консервативный сценарий финансистов распределяет её по сроку контракта и даёт около 4,5 %, а возможная покупка компании не входит ни в один прогноз."
     },
     {
       "id": "c2_ls_governance_argument",
@@ -297,10 +297,10 @@
       "skill": "gist",
       "title_ru": "Спор о стандартизации",
       "script_en": "Allowing each team to choose its own tools has encouraged experimentation, but it has also left the company maintaining five deployment systems and training engineers repeatedly on local conventions. A central platform must not become a gatekeeper that freezes good ideas. Its mandate should be to provide a well-supported default and transparent extension points, while requiring exceptions to carry their own operational costs.",
-      "question_en": "What balance is the speaker proposing?",
-      "options": ["Ban all tools except one", "Keep complete team autonomy without shared support", "Offer a standard platform while preserving accountable exceptions", "Outsource every deployment system"],
-      "correct_index": 2,
-      "explanation_ru": "Предлагается поддерживаемый default с extension points и исключениями, которые сами несут свои эксплуатационные расходы."
+      "question_en": "What is the speaker's main proposal?",
+      "options": ["Let the central platform approve new tools before any team adopts them", "Keep a supported default, but let teams opt out at their own cost", "Keep full team choice, with the platform paying to run every exception", "Move every team to one deployment system with a single set of conventions"],
+      "correct_index": 1,
+      "explanation_ru": "Говорящий предлагает поддерживаемый default с extension points; исключения допустимы, но сами несут свои эксплуатационные расходы. Роль привратника он прямо отвергает (must not become a gatekeeper), а переводить всех на одну систему не требует."
     },
     {
       "id": "c2_ls_negotiation_order",
@@ -320,20 +320,20 @@
       "title_ru": "Реакция совета",
       "script_en": "The board praised the proposal's ambition and asked the team to refine the implementation timeline. At the same time, it postponed the funding decision, requested a scenario requiring half the initial capital, and added the chief risk officer to every future review. No one rejected the strategy outright, but the next presentation has been reduced from an hour to twenty minutes.",
       "question_en": "What can most reasonably be inferred about the board?",
-      "options": ["It has fully approved the proposal", "It is interested but has serious reservations", "It has permanently rejected the strategy", "It wants a longer and more detailed presentation"],
+      "options": ["It is ready to fund the plan once the timeline is refined", "It is interested but not ready to commit the full budget", "It thinks the proposal is not ambitious enough", "It wants a longer, more detailed presentation next time"],
       "correct_index": 1,
-      "explanation_ru": "Похвала сочетается с отсрочкой денег, урезанным сценарием и усиленным risk review — интерес есть, уверенности нет."
+      "explanation_ru": "Интерес есть: совет похвалил ambition, просит уточнить timeline, и стратегию никто не отверг. Но решение о деньгах отложено (postponed the funding decision), нужен сценарий с половиной initial capital, а в каждый review добавлен chief risk officer — всю сумму совет давать пока не готов. Амбициозность он как раз хвалит, а следующую презентацию не удлинил, а сократил с часа до двадцати минут."
     },
     {
       "id": "c2_ls_reorg_subtext",
       "level": "C2",
       "skill": "attitude",
-      "title_ru": "Подтекст реорганизации",
+      "title_ru": "Новая оргструктура",
       "script_en": "Leadership describes the reorganization as a way to eliminate duplication, which is a legitimate concern. Yet the published chart moves decision-making upward while leaving delivery targets untouched, and the consultation period begins only after the new roles have been announced. Calling that empowerment stretches the word beyond recognition. I would support consolidation if authority moved closer to the teams actually carrying the risk.",
       "question_en": "What is the speaker's attitude toward the reorganization?",
-      "options": ["Unreservedly enthusiastic", "Critical of the design despite accepting part of the rationale", "Indifferent to how authority is distributed", "Opposed to any reduction in duplication"],
-      "correct_index": 1,
-      "explanation_ru": "Проблему duplication говорящий признаёт, но централизацию и фиктивную consultation резко критикует."
+      "options": ["Accepts the aim but objects to decisions moving upward", "Welcomes the new roles but wishes consultation had started earlier", "Doubts that duplication exists but likes the new chart", "Accepts the new chart but wants lower delivery targets"],
+      "correct_index": 0,
+      "explanation_ru": "Цель убрать duplication говорящий называет legitimate concern, но критикует то, что решения уходят наверх (moves decision-making upward), и поддержит консолидацию, только если authority moved closer to the teams. Позднюю consultation он приводит как ещё один симптом, а новые роли и схему не одобряет."
     }
   ]
 }

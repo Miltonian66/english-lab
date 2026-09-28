@@ -377,10 +377,18 @@ def _covers(asked: set[str], offered: set[str]) -> bool:
 
 def accepted_forms(item: VocabItem) -> list[str]:
     """Формы, которые засчитываются во вспоминании: глаголу — времена, существительному — число."""
-    base = item.word.strip().lower()
-    if item.pos in ("verb", "phrasal verb"):
+    return _forms_of(item.word, item.pos)
+
+
+def _forms_of(word: str, pos: str) -> list[str]:
+    base = word.strip().lower()
+    if pos in ("verb", "phrasal verb"):
         return [form for form in word_forms(base) if form != base]
-    if item.pos == "noun" and " " not in base:
+    if pos == "noun" and " " not in base:
+        if base in UNCOUNTABLE:
+            return []
+        if base in IRREGULAR_PLURAL:
+            return [IRREGULAR_PLURAL[base]]
         if base.endswith("y") and len(base) > 2 and base[-2] not in "aeiou":
             return [f"{base[:-1]}ies"]
         return [f"{base}es" if re.search(r"(s|x|z|ch|sh)$", base) else f"{base}s"]
@@ -396,15 +404,19 @@ def vocab_alternatives(item: VocabItem, curriculum: Curriculum) -> tuple[str, ..
     пометкой, какое слово было загадано.
     """
     mine = senses(item.translation_ru)
-    found: list[str] = list(item.accept)
-    found.extend(accepted_forms(item))
+    synonyms: list[str] = list(item.accept)
     for other in _all_vocab(curriculum):
         if (
             other.id != item.id
             and other.pos == item.pos
             and _covers(mine, senses(other.translation_ru))
         ):
-            found.append(other.word)
+            synonyms.append(other.word)
+    found: list[str] = list(accepted_forms(item))
+    # Синоним засчитывается и в форме: «claims» на вопрос, где загадано assert.
+    for word in synonyms:
+        found.append(word)
+        found.extend(_forms_of(word, item.pos))
     unique: list[str] = []
     for word in found:
         if word.lower() != item.word.lower() and word.lower() not in (x.lower() for x in unique):
@@ -609,7 +621,26 @@ IRREGULAR: dict[str, tuple[str, ...]] = {
     "undertake": ("undertook", "undertaken"), "understand": ("understood",),
     "wake": ("woke", "woken"), "wear": ("wore", "worn"), "weep": ("wept",), "win": ("won",),
     "wind": ("wound",), "withdraw": ("withdrew", "withdrawn"), "write": ("wrote", "written"),
+    # Форма прошедшего совпадает с основой: «putted» и «hurted» — ошибки.
+    "bet": (), "broadcast": (), "burst": (), "cast": (), "cost": (), "cut": (), "fit": (),
+    "forecast": (), "hit": (), "hurt": (), "let": (), "put": (), "quit": (), "read": (),
+    "rid": (), "set": (), "shut": (), "split": (), "spread": (), "upset": (), "beat": ("beaten",),
 }
+
+# Неправильное множественное число и существительные без множественного.
+IRREGULAR_PLURAL: dict[str, str] = {
+    "child": "children", "person": "people", "man": "men", "woman": "women", "foot": "feet",
+    "tooth": "teeth", "mouse": "mice", "analysis": "analyses", "criterion": "criteria",
+    "phenomenon": "phenomena", "life": "lives", "knife": "knives", "wife": "wives",
+    "leaf": "leaves", "half": "halves", "shelf": "shelves", "thief": "thieves", "wolf": "wolves",
+    "crisis": "crises", "hypothesis": "hypotheses", "thesis": "theses", "basis": "bases",
+}
+UNCOUNTABLE = frozenset({
+    "information", "advice", "equipment", "furniture", "news", "feedback", "research",
+    "software", "hardware", "homework", "luggage", "baggage", "money", "traffic", "weather",
+    "knowledge", "evidence", "progress", "data", "staff", "rice", "bread", "milk", "water",
+    "music", "health", "work", "fun", "luck", "overhead", "downtime", "leverage",
+})
 
 
 # Двусложные с ударением на последнем слоге удваивают согласную, как односложные.
@@ -688,7 +719,7 @@ def task_hint(question: "Question") -> str:
     if question.kind == "correct":
         return "Здесь есть ошибка. Пришли исправленное предложение целиком."
     if question.kind == "order":
-        return "Составь предложение из этих слов и пришли целиком."
+        return "Составь предложение из этих слов и пришли целиком. Последний элемент — знак в конце."
     if question.kind == "transform":
         return "Пришли переписанное предложение целиком."
     if question.kind == "cloze":

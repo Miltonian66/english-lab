@@ -5,7 +5,7 @@
       "level": "A1",
       "title_ru": "Знакомство в командном чате",
       "prompt_en": "You just joined the IT team. Write a short message in the team chat: your name, your role, the city you work from, and one thing you like doing after work.",
-      "guidance_ru": "Четыре коротких предложения по порядку: имя, должность, город, любимое дело после работы. Всегда ставь глагол: I am a tester, а не I tester.",
+      "guidance_ru": "Пять-семь коротких предложений, всего 30–50 слов. Приветствие — Hi everyone! Потом имя, должность и одна деталь к ней: I am a tester. I test the mobile app. Потом город и любимое дело после работы. В конце — Nice to meet you all! Всегда ставь глагол: I am a tester, а не I tester.",
       "words_min": 30,
       "words_max": 50,
       "focus": [
@@ -70,12 +70,12 @@
       "level": "A1",
       "title_ru": "Планы на выходные",
       "prompt_en": "Write a short message to a friend about your weekend: where you are going, who you are going with, and what you want to do there.",
-      "guidance_ru": "Три предложения: куда едешь и с кем — present continuous (I am going to the lake with my brother), что там будешь делать — be going to (I am going to swim). В конце спроси друга о его планах: What are you going to do?",
+      "guidance_ru": "Пять коротких предложений, всего 30–50 слов: куда едешь, с кем и когда, что будете там делать, и в конце вопрос другу. Например: I am going to the lake with my brother on Saturday. We are going to swim and cook fish. The weather is going to be warm. What are you going to do this weekend?",
       "words_min": 30,
       "words_max": 50,
       "focus": [
         "be going to",
-        "present continuous"
+        "questions"
       ]
     },
     {
@@ -161,7 +161,7 @@
       "level": "B1",
       "title_ru": "Заметка об инциденте",
       "prompt_en": "Write a short internal note about a bug that reached production: what happened, what the impact was, and what you changed.",
-      "guidance_ru": "Три абзаца: что случилось, на что повлияло, что сделали. Past simple для событий, present perfect для результата.",
+      "guidance_ru": "Три коротких абзаца. Что случилось: когда и что увидели пользователи — On Tuesday evening, users could not log in. Влияние: сколько людей и как долго — About 200 users were affected for 30 minutes. Что сделали: We have fixed the bug and have added a test for it. Past simple для событий, present perfect для результата.",
       "words_min": 80,
       "words_max": 120,
       "focus": [
@@ -173,8 +173,8 @@
       "id": "b1_wr_pr_comment",
       "level": "B1",
       "title_ru": "Комментарий к пул-реквесту",
-      "prompt_en": "Write a review comment on a teammate's pull request. Say what works well, point out two things you would change, and explain why each change matters.",
-      "guidance_ru": "Начни с того, что сделано хорошо. Дальше два замечания, каждое с причиной через because или so that. Формулируй как предложение, а не приказ: I would rename this, It might be better to. В конце задай автору вопрос.",
+      "prompt_en": "Write a review comment on a teammate's pull request. The PR adds CSV export to the reports page. The main function is 150 lines long, and there are no tests for empty files. Say what works well, point out these two problems, and explain why each change matters.",
+      "guidance_ru": "Начни с того, что сделано хорошо. Дальше два замечания — длинная функция и нет тестов на пустые файлы, — каждое с причиной через because или so that. Формулируй как предложение, а не приказ: I would split this function, It might be better to. В конце задай автору вопрос.",
       "words_min": 80,
       "words_max": 120,
       "focus": [
@@ -212,7 +212,7 @@
       "id": "b1_wr_tool_choice",
       "level": "B1",
       "title_ru": "Выбор между двумя инструментами",
-      "prompt_en": "Your team must choose between two libraries that do the same job. Write a short message comparing them and recommend one, with reasons.",
+      "prompt_en": "Your team must choose between two tools that do the same job, for example two task trackers or two libraries. Write a short message comparing them and recommend one, with reasons.",
       "guidance_ru": "Абзац про первый вариант, абзац про второй, короткий вывод. Сравнивай по одним и тем же признакам: faster, more stable, easier to learn. Вариантов два, поэтому нужна сравнительная степень, а не превосходная: the faster option, не the fastest. В выводе бери I would go with — звучит мягче, чем We must use.",
       "words_min": 80,
       "words_max": 120,
@@ -239,7 +239,7 @@
       "level": "B2",
       "title_ru": "Постмортем после сбоя",
       "prompt_en": "Write a postmortem summary for an outage that took the payment service down for forty minutes. Cover the timeline, the root cause, the customer impact, and the actions you committed to.",
-      "guidance_ru": "Четыре коротких блока сплошным текстом, без заголовков: хронология, корневая причина, влияние на клиентов, что делаем дальше. Что случилось до сбоя — past perfect: the job had been failing since Monday. Пассив там, где важен факт, а не автор: The service was restored at 14:20. Про людей пиши нейтрально, без поиска виноватых.",
+      "guidance_ru": "Четыре коротких блока; каждый можно начать заголовком отдельной строкой — Timeline, Root cause, Impact, Actions. Внутри: хронология, корневая причина, влияние на клиентов, что делаем дальше. Что случилось до сбоя — past perfect: the job had been failing since Monday. Пассив там, где важен факт, а не автор: The service was restored at 14:20. Про людей пиши нейтрально, без поиска виноватых.",
       "words_min": 120,
       "words_max": 180,
       "focus": [
@@ -345,7 +345,7 @@
       "level": "C1",
       "title_ru": "Обратная связь после собеседования",
       "prompt_en": "Write structured feedback after a technical interview: what the candidate did well, where they struggled, how they responded to hints, and your hiring recommendation with a confidence level.",
-      "guidance_ru": "Четыре части: сильные стороны с примерами из задачи, слабые места, реакция на подсказки, рекомендация с уровнем уверенности. Описывай поведение, а не личность: что кандидат сделал, а не какой он. Где данных мало, так и пиши.",
+      "guidance_ru": "Четыре части: сильные стороны с примерами из задачи, слабые места, реакция на подсказки, рекомендация с уровнем уверенности. Если собеседований не проводил, придумай кандидата: какая была задача, что он сделал, где застрял. Описывай поведение, а не личность: что кандидат сделал, а не какой он. Где данных мало, так и пиши.",
       "words_min": 180,
       "words_max": 250,
       "focus": [

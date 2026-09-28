@@ -95,7 +95,7 @@
     {
      "id": "a1_adverbs_frequency_06",
      "kind": "gap",
-     "prompt": "Tom ___ (always / be) friendly with new people.",
+     "prompt": "Tom ___ (always / be) friendly with new people, so everyone likes him.",
      "answer": "is always",
      "accept": [
       "'s always"
@@ -117,7 +117,7 @@
     {
      "id": "a1_adverbs_frequency_08",
      "kind": "order",
-     "prompt": "always / meetings / long / are / our",
+     "prompt": "always / meetings / long / are / our / .",
      "answer": "Our meetings are always long.",
      "accept": [],
      "explanation_ru": "После формы are наречие always стоит перед прилагательным long.",
@@ -239,7 +239,7 @@
     {
      "id": "a1_past_simple_negatives_questions_08",
      "kind": "order",
-     "prompt": "not / did / he / call / me",
+     "prompt": "not / did / he / call / me / .",
      "answer": "He did not call me.",
      "accept": [
       "He didn't call me."
@@ -361,9 +361,11 @@
     {
      "id": "a1_past_simple_regular_irregular_08",
      "kind": "order",
-     "prompt": "us / helped / she / yesterday",
+     "prompt": "us / helped / she / yesterday / .",
      "answer": "She helped us yesterday.",
-     "accept": [],
+     "accept": [
+      "Yesterday she helped us."
+     ],
      "explanation_ru": "Порядок: подлежащее, глагол в прошедшем времени, дополнение, обстоятельство времени.",
      "difficulty": 3
     }
@@ -453,7 +455,7 @@
     {
      "id": "a1_present_continuous_05",
      "kind": "gap",
-     "prompt": "We ___ (not/work) today.",
+     "prompt": "We ___ (not/work) right now. We are on a break.",
      "answer": "aren't working",
      "accept": [
       "are not working",
@@ -487,7 +489,7 @@
     {
      "id": "a1_present_continuous_08",
      "kind": "order",
-     "prompt": "you / are / doing / what",
+     "prompt": "you / are / doing / what / ?",
      "answer": "What are you doing?",
      "accept": [],
      "explanation_ru": "В вопросе сначала идёт вопросительное слово, затем are, подлежащее и глагол с -ing.",
@@ -511,7 +513,7 @@
     "Short answers: Yes, I am. / No, he isn't."
    ],
    "examples": [
-    "I am a tester in a small team.",
+    "I am a tester on a small team.",
     "My colleagues are from Poland.",
     "The office isn't open on Sunday.",
     "Is she your manager?",
@@ -611,7 +613,7 @@
     {
      "id": "a1_present_simple_forms_of_to_be_08",
      "kind": "order",
-     "prompt": "is / from / she / Spain / not",
+     "prompt": "is / from / she / Spain / not / .",
      "answer": "She is not from Spain.",
      "accept": [
       "She isn't from Spain."
@@ -629,7 +631,7 @@
    "title_en": "Present simple or present continuous?",
    "source_slug": "present-simple-present-continuous",
    "title_ru": "Present Simple или Present Continuous?",
-   "summary_ru": "Present Simple описывает регулярные действия, постоянные ситуации и общие факты: I work in IT. Water boils at 100 degrees. Его маркеры — every day, usually, always, often, never. Present Continuous описывает то, что происходит сейчас или в текущий период: I am working on a new task. Его маркеры — now, right now, at the moment, today, this week. Глаголы состояния know, like, want, need, understand обычно не ставятся в форму с -ing. Сравните: I usually take the bus, but today I am driving. Выбор формы зависит не от самого глагола, а от смысла: привычка или момент.",
+   "summary_ru": "Present Simple описывает регулярные действия, постоянные ситуации и общие факты: I work in IT. Water boils at 100 degrees Celsius. Его маркеры — every day, usually, always, often, never. Present Continuous описывает то, что происходит сейчас или в текущий период: I am working on a new task. Его маркеры — now, right now, at the moment, today, this week. Глаголы состояния know, like, want, need, understand обычно не ставятся в форму с -ing. Сравните: I usually take the bus, but today I am driving. Выбор формы зависит не от самого глагола, а от смысла: привычка или момент.",
    "forms": [
     "Present Simple: V1 / V + -s — every day, usually, always",
     "Present Continuous: am/is/are + V-ing — now, at the moment",
@@ -641,7 +643,7 @@
     "Sorry, I can't talk — I am fixing a bug.",
     "She works in Berlin, but she is working from home this week.",
     "I know the answer.",
-    "Water boils at 100 degrees."
+    "Water boils at 100 degrees Celsius."
    ],
    "ru_interference": "В русском одна форма настоящего времени, поэтому две английские формы путают: неверно «I fix a bug now» → верно «I am fixing a bug now». А глаголы состояния ошибочно ставят в Continuous: неверно «I am knowing the answer» → верно «I know the answer».",
    "prerequisites": [],
@@ -705,7 +707,7 @@
     {
      "id": "a1_present_simple_present_continuous_05",
      "kind": "gap",
-     "prompt": "Water ___ (boil) at 100 degrees.",
+     "prompt": "Water ___ (boil) at 100 degrees Celsius.",
      "answer": "boils",
      "accept": [],
      "explanation_ru": "Это всегда верный факт, поэтому Present Simple с окончанием -s.",
@@ -735,7 +737,7 @@
     {
      "id": "a1_present_simple_present_continuous_08",
      "kind": "order",
-     "prompt": "now / are / they / lunch / having",
+     "prompt": "now / are / they / lunch / having / .",
      "answer": "They are having lunch now.",
      "accept": [],
      "explanation_ru": "Слово now требует Present Continuous: are плюс having, а обстоятельство идёт в конце.",
@@ -759,7 +761,7 @@
     "Do/Does + subject + V1?"
    ],
    "examples": [
-    "I work in a small IT team.",
+    "I work on a small IT team.",
     "My brother works in a bank.",
     "She doesn't like long meetings.",
     "Do they speak English at work?",
@@ -836,7 +838,7 @@
     {
      "id": "a1_present_simple_06",
      "kind": "gap",
-     "prompt": "We ___ (not/use) that tool.",
+     "prompt": "We ___ (not/use) that tool. We never need it.",
      "answer": "don't use",
      "accept": [
       "do not use"
@@ -858,7 +860,7 @@
     {
      "id": "a1_present_simple_08",
      "kind": "order",
-     "prompt": "you / where / do / live",
+     "prompt": "you / where / do / live / ?",
      "answer": "Where do you live?",
      "accept": [],
      "explanation_ru": "Порядок в специальном вопросе: вопросительное слово, do, подлежащее, глагол.",
@@ -886,7 +888,7 @@
     "They were very busy last week.",
     "The meeting wasn't long.",
     "Were you at home on Sunday?",
-    "There were two new people in the team."
+    "There were two new people on the team."
    ],
    "ru_interference": "Русскоязычные переносят схему с did на глагол be: неверно «Did you was late?» → верно «Were you late?»; неверно «I didn't was at home» → верно «I wasn't at home».",
    "prerequisites": [],
@@ -936,7 +938,7 @@
     {
      "id": "a1_was_were_04",
      "kind": "choice",
-     "prompt": "There ___ two new people in the team last week.",
+     "prompt": "There ___ two new people on the team last week.",
      "options": [
       "was",
       "is",
@@ -961,7 +963,7 @@
     {
      "id": "a1_was_were_06",
      "kind": "gap",
-     "prompt": "___ (she/be) at the party on Friday?",
+     "prompt": "___ (she/be) at the party last Friday?",
      "answer": "Was she",
      "accept": [],
      "explanation_ru": "В вопросе форма was выходит на первое место, а с she используется именно was.",
@@ -979,7 +981,7 @@
     {
      "id": "a1_was_were_08",
      "kind": "order",
-     "prompt": "was / the / cold / weather / very",
+     "prompt": "was / the / cold / weather / very / .",
      "answer": "The weather was very cold.",
      "accept": [],
      "explanation_ru": "Порядок: подлежащее the weather, форма was, затем very и прилагательное cold.",
@@ -1098,7 +1100,7 @@
     {
      "id": "a1_verbs_infinitive_verbs_ing_08",
      "kind": "order",
-     "prompt": "to / would / like / I / help",
+     "prompt": "to / would / like / I / help / .",
      "answer": "I would like to help.",
      "accept": [
       "I'd like to help."
@@ -1150,15 +1152,15 @@
     {
      "id": "a1_basic_word_order_in_english_02",
      "kind": "choice",
-     "prompt": "We ___ every Monday.",
+     "prompt": "Our team ___.",
      "options": [
-      "a meeting have",
-      "have a meeting",
-      "have meeting a",
-      "meeting have a"
+      "every Monday has a meeting",
+      "has a meeting every Monday",
+      "has every Monday a meeting",
+      "has meeting every Monday"
      ],
      "correct_index": 1,
-     "explanation_ru": "Сначала глагол, потом дополнение с артиклем перед существительным.",
+     "explanation_ru": "Сначала глагол, затем дополнение a meeting, время every Monday — в конце; между подлежащим и глаголом и между глаголом и дополнением его не вставляют, а перед meeting нужен артикль a.",
      "difficulty": 1
     },
     {
@@ -1219,10 +1221,12 @@
     {
      "id": "a1_basic_word_order_in_english_08",
      "kind": "order",
-     "prompt": "office / to / the / goes / he / every day",
+     "prompt": "office / to / the / goes / he / every day / .",
      "answer": "He goes to the office every day.",
-     "accept": [],
-     "explanation_ru": "Порядок: подлежащее, глагол, место, время.",
+     "accept": [
+      "Every day he goes to the office."
+     ],
+     "explanation_ru": "Порядок: подлежащее, глагол, место, время; время можно вынести и в начало: Every day he goes to the office.",
      "difficulty": 3
     }
    ]
@@ -1322,27 +1326,27 @@
     {
      "id": "a1_imperative_sit_dont_talk_06",
      "kind": "gap",
-     "prompt": "___ (be) careful with the cables.",
-     "answer": "Be",
+     "prompt": "___ (not / be) afraid to ask questions.",
+     "answer": "Don't be",
      "accept": [],
-     "explanation_ru": "Глагол be в повелительном наклонении имеет форму Be, а не am, is или are.",
+     "explanation_ru": "Afraid — прилагательное, поэтому в приказе нужен глагол be: Don't be afraid. Вариант «Don't afraid» без be — частая ошибка.",
      "difficulty": 2
     },
     {
      "id": "a1_imperative_sit_dont_talk_07",
      "kind": "correct",
-     "prompt": "You not talk in the library.",
-     "answer": "Don't talk in the library.",
+     "prompt": "Please not talk in the library.",
+     "answer": "Please don't talk in the library.",
      "accept": [
-      "Do not talk in the library."
+      "Don't talk in the library, please."
      ],
-     "explanation_ru": "Подлежащее в приказе не ставится, а отрицание образуется словом Don't.",
+     "explanation_ru": "Отрицательный приказ строится через Don't и первую форму глагола; одно not, как русское «не», перед глаголом не ставится.",
      "difficulty": 3
     },
     {
      "id": "a1_imperative_sit_dont_talk_08",
      "kind": "order",
-     "prompt": "the / please / send / file",
+     "prompt": "the / please / send / file / .",
      "answer": "Please send the file.",
      "accept": [
       "Send the file, please."

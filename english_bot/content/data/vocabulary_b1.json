@@ -13,7 +13,10 @@
         "ahead of schedule",
         "behind schedule"
       ],
-      "topic": "work"
+      "topic": "work",
+      "accept": [
+        "timetable"
+      ]
     },
     {
       "id": "b1_v_deadline",
@@ -42,7 +45,11 @@
         "a close colleague",
         "a former colleague"
       ],
-      "topic": "work"
+      "topic": "work",
+      "accept": [
+        "coworker",
+        "co-worker"
+      ]
     },
     {
       "id": "b1_v_process",
@@ -50,7 +57,7 @@
       "word": "process",
       "pos": "noun",
       "ipa_us": "/ˈprɑˌsɛs/",
-      "translation_ru": "процесс, порядок действий",
+      "translation_ru": "процесс",
       "example_en": "The whole process takes about three days from start to finish.",
       "collocations": [
         "a long process",
@@ -70,7 +77,10 @@
         "reach an agreement",
         "sign an agreement"
       ],
-      "topic": "work"
+      "topic": "work",
+      "accept": [
+        "deal"
+      ]
     },
     {
       "id": "b1_v_report",
@@ -92,7 +102,7 @@
       "word": "client",
       "pos": "noun",
       "ipa_us": "/ˈklaɪənt/",
-      "translation_ru": "клиент, заказчик",
+      "translation_ru": "клиент (услуг), заказчик",
       "example_en": "The client asked for a demo before the end of the month.",
       "collocations": [
         "a regular client",
@@ -120,7 +130,7 @@
       "word": "staff",
       "pos": "noun",
       "ipa_us": "/stæf/",
-      "translation_ru": "персонал, сотрудники",
+      "translation_ru": "персонал (весь коллектив)",
       "example_en": "The whole staff has to take a security course this year.",
       "collocations": [
         "train the staff",
@@ -196,7 +206,10 @@
         "take responsibility",
         "share responsibility"
       ],
-      "topic": "work"
+      "topic": "work",
+      "accept": [
+        "duty"
+      ]
     },
     {
       "id": "b1_v_progress",
@@ -218,13 +231,16 @@
       "word": "issue",
       "pos": "noun",
       "ipa_us": "/ˈɪʃu/",
-      "translation_ru": "проблема, вопрос",
+      "translation_ru": "проблема (рабочая), вопрос (для обсуждения)",
       "example_en": "There is a small issue with the login page on old phones.",
       "collocations": [
         "raise an issue",
         "fix an issue"
       ],
-      "topic": "work"
+      "topic": "work",
+      "accept": [
+        "problem"
+      ]
     },
     {
       "id": "b1_v_solution",
@@ -232,7 +248,7 @@
       "word": "solution",
       "pos": "noun",
       "ipa_us": "/səˈluʃən/",
-      "translation_ru": "решение, выход",
+      "translation_ru": "решение проблемы, выход",
       "example_en": "The simplest solution was to restart the service every night.",
       "collocations": [
         "find a solution",
@@ -280,7 +296,10 @@
         "a great opportunity",
         "miss an opportunity"
       ],
-      "topic": "work"
+      "topic": "work",
+      "accept": [
+        "chance"
+      ]
     },
     {
       "id": "b1_v_goal",
@@ -294,7 +313,10 @@
         "set a goal",
         "reach a goal"
       ],
-      "topic": "work"
+      "topic": "work",
+      "accept": [
+        "aim"
+      ]
     },
     {
       "id": "b1_v_priority",
@@ -316,7 +338,7 @@
       "word": "decision",
       "pos": "noun",
       "ipa_us": "/dɪˈsɪʒən/",
-      "translation_ru": "решение",
+      "translation_ru": "решение (сделанный выбор)",
       "example_en": "It was a hard decision, but we chose the cheaper option.",
       "collocations": [
         "make a decision",
@@ -406,7 +428,10 @@
         "a big advantage",
         "take advantage of"
       ],
-      "topic": "work"
+      "topic": "work",
+      "accept": [
+        "benefit"
+      ]
     },
     {
       "id": "b1_v_opinion",
@@ -420,7 +445,10 @@
         "a strong opinion",
         "change your opinion"
       ],
-      "topic": "feelings"
+      "topic": "feelings",
+      "accept": [
+        "view"
+      ]
     },
     {
       "id": "b1_v_confidence",
@@ -582,7 +610,7 @@
       "word": "manage",
       "pos": "verb",
       "ipa_us": "/ˈmænɪdʒ/",
-      "translation_ru": "управлять, справляться",
+      "translation_ru": "управлять, руководить (командой); суметь (сделать)",
       "example_en": "She manages a small team of five developers.",
       "collocations": [
         "manage a team",
@@ -596,13 +624,16 @@
       "word": "organize",
       "pos": "verb",
       "ipa_us": "/ˈɔrgəˌnaɪz/",
-      "translation_ru": "организовывать, устраивать",
+      "translation_ru": "организовывать (встречу, мероприятие), устраивать",
       "example_en": "Could you organize a short call with the client tomorrow?",
       "collocations": [
         "organize a meeting",
         "organize your time"
       ],
-      "topic": "work"
+      "topic": "work",
+      "accept": [
+        "arrange"
+      ]
     },
     {
       "id": "b1_v_attend",
@@ -624,11 +655,11 @@
       "word": "apply",
       "pos": "verb",
       "ipa_us": "/əˈplaɪ/",
-      "translation_ru": "подавать заявку, применять",
+      "translation_ru": "подавать заявку (на работу, визу)",
       "example_en": "He applied for a job in another department.",
       "collocations": [
         "apply for a job",
-        "apply the rules"
+        "apply online"
       ],
       "topic": "work"
     },
@@ -644,7 +675,10 @@
         "hire staff",
         "hire a specialist"
       ],
-      "topic": "work"
+      "topic": "work",
+      "accept": [
+        "employ"
+      ]
     },
     {
       "id": "b1_v_improve",
@@ -686,7 +720,12 @@
         "reduce costs",
         "reduce the risk"
       ],
-      "topic": "work"
+      "topic": "work",
+      "accept": [
+        "cut",
+        "decrease",
+        "lower"
+      ]
     },
     {
       "id": "b1_v_achieve",
@@ -700,7 +739,10 @@
         "achieve a goal",
         "achieve a result"
       ],
-      "topic": "work"
+      "topic": "work",
+      "accept": [
+        "reach"
+      ]
     },
     {
       "id": "b1_v_avoid",
@@ -722,7 +764,7 @@
       "word": "suggest",
       "pos": "verb",
       "ipa_us": "/səgˈdʒɛst/",
-      "translation_ru": "предлагать, советовать",
+      "translation_ru": "предлагать (идею)",
       "example_en": "I suggest we start the meeting without him.",
       "collocations": [
         "suggest an idea",
@@ -792,7 +834,7 @@
       "word": "handle",
       "pos": "verb",
       "ipa_us": "/ˈhændəl/",
-      "translation_ru": "справляться, заниматься",
+      "translation_ru": "заниматься (вопросами, запросами), обрабатывать",
       "example_en": "She handles all the questions from our biggest client.",
       "collocations": [
         "handle a situation",
@@ -820,13 +862,16 @@
       "word": "arrange",
       "pos": "verb",
       "ipa_us": "/əˈreɪndʒ/",
-      "translation_ru": "организовывать, договариваться",
+      "translation_ru": "договариваться о (встрече), назначать (встречу)",
       "example_en": "I will arrange a meeting with the support team.",
       "collocations": [
         "arrange a meeting",
         "arrange a visit"
       ],
-      "topic": "work"
+      "topic": "work",
+      "accept": [
+        "organize"
+      ]
     },
     {
       "id": "b1_v_replace",
@@ -862,7 +907,7 @@
       "word": "require",
       "pos": "verb",
       "ipa_us": "/rɪˈkwaɪɚ/",
-      "translation_ru": "требовать, нуждаться",
+      "translation_ru": "требовать (быть необходимым)",
       "example_en": "This task requires a lot of attention.",
       "collocations": [
         "require attention",
@@ -882,7 +927,10 @@
         "affect the result",
         "seriously affect"
       ],
-      "topic": "work"
+      "topic": "work",
+      "accept": [
+        "influence"
+      ]
     },
     {
       "id": "b1_v_depend",
@@ -904,7 +952,7 @@
       "word": "realize",
       "pos": "verb",
       "ipa_us": "/ˈriəˌlaɪz/",
-      "translation_ru": "осознавать, понимать",
+      "translation_ru": "осознавать",
       "example_en": "I did not realize how long the process would take.",
       "collocations": [
         "realize your mistake",
@@ -918,7 +966,7 @@
       "word": "expect",
       "pos": "verb",
       "ipa_us": "/ɪkˈspɛkt/",
-      "translation_ru": "ожидать, рассчитывать",
+      "translation_ru": "ожидать (что-то случится), рассчитывать",
       "example_en": "We expect an answer from the client this week.",
       "collocations": [
         "expect a reply",
@@ -1044,13 +1092,16 @@
       "word": "annoyed",
       "pos": "adjective",
       "ipa_us": "/əˈnɔɪd/",
-      "translation_ru": "раздражённый, недовольный",
+      "translation_ru": "раздражённый",
       "example_en": "I was annoyed because the meeting started twenty minutes late.",
       "collocations": [
         "annoyed with someone",
         "annoyed about something"
       ],
-      "topic": "feelings"
+      "topic": "feelings",
+      "accept": [
+        "irritated"
+      ]
     },
     {
       "id": "b1_v_disappointed",
@@ -1086,7 +1137,7 @@
       "word": "proud",
       "pos": "adjective",
       "ipa_us": "/praʊd/",
-      "translation_ru": "гордый, довольный",
+      "translation_ru": "гордый",
       "example_en": "The team is proud of the work it did this year.",
       "collocations": [
         "proud of someone",
@@ -1106,7 +1157,10 @@
         "satisfied with something",
         "a satisfied customer"
       ],
-      "topic": "feelings"
+      "topic": "feelings",
+      "accept": [
+        "pleased"
+      ]
     },
     {
       "id": "b1_v_stressed",
@@ -1128,7 +1182,7 @@
       "word": "reliable",
       "pos": "adjective",
       "ipa_us": "/rɪˈlaɪəbəl/",
-      "translation_ru": "надёжный",
+      "translation_ru": "надёжный (не подведёт)",
       "example_en": "We need a reliable server that never goes down at night.",
       "collocations": [
         "a reliable person",
@@ -1198,13 +1252,16 @@
       "word": "complicated",
       "pos": "adjective",
       "ipa_us": "/ˈkɑmpləˌkeɪtɪd/",
-      "translation_ru": "сложный, запутанный",
+      "translation_ru": "запутанный, сложный (по устройству)",
       "example_en": "The rules are complicated, and new people often get lost.",
       "collocations": [
         "a complicated problem",
         "too complicated"
       ],
-      "topic": "work"
+      "topic": "work",
+      "accept": [
+        "complex"
+      ]
     },
     {
       "id": "b1_v_probably",
@@ -1260,7 +1317,11 @@
         "almost immediately",
         "immediately after"
       ],
-      "topic": "time"
+      "topic": "time",
+      "accept": [
+        "right away",
+        "at once"
+      ]
     },
     {
       "id": "b1_v_especially",
@@ -1310,7 +1371,7 @@
       "word": "properly",
       "pos": "adverb",
       "ipa_us": "/ˈprɑpɚli/",
-      "translation_ru": "правильно, как следует",
+      "translation_ru": "как следует",
       "example_en": "The report was not written properly, so we did it again.",
       "collocations": [
         "work properly",
@@ -1324,11 +1385,11 @@
       "word": "however",
       "pos": "adverb",
       "ipa_us": "/haʊˈɛvɚ/",
-      "translation_ru": "однако, тем не менее",
+      "translation_ru": "однако",
       "example_en": "The idea is good; however, we have no time for it.",
       "collocations": [
-        "however much",
-        "however difficult"
+        "however, it is too late",
+        "this, however, is not enough"
       ],
       "topic": "people"
     },
@@ -1338,7 +1399,7 @@
       "word": "deal with",
       "pos": "phrasal verb",
       "ipa_us": "/ˈdil wɪð/",
-      "translation_ru": "справляться с, заниматься",
+      "translation_ru": "разбираться с (проблемой), заниматься",
       "example_en": "Our support team deals with about fifty tickets a day.",
       "collocations": [
         "deal with a problem",
@@ -1358,7 +1419,10 @@
         "look after someone",
         "look after a client"
       ],
-      "topic": "work"
+      "topic": "work",
+      "accept": [
+        "take care of"
+      ]
     },
     {
       "id": "b1_v_set_up",
@@ -1366,10 +1430,10 @@
       "word": "set up",
       "pos": "phrasal verb",
       "ipa_us": "/ˌsɛt ˈʌp/",
-      "translation_ru": "настраивать, организовывать",
+      "translation_ru": "настраивать, устанавливать",
       "example_en": "It takes ten minutes to set up a new laptop.",
       "collocations": [
-        "set up a meeting",
+        "set up an account",
         "set up a system"
       ],
       "topic": "tech"
@@ -1386,7 +1450,11 @@
         "turn down an offer",
         "turn down a request"
       ],
-      "topic": "work"
+      "topic": "work",
+      "accept": [
+        "reject",
+        "decline"
+      ]
     },
     {
       "id": "b1_v_put_off",
@@ -1400,7 +1468,10 @@
         "put off a meeting",
         "put off a decision"
       ],
-      "topic": "time"
+      "topic": "time",
+      "accept": [
+        "postpone"
+      ]
     },
     {
       "id": "b1_v_come_up_with",
@@ -1408,7 +1479,7 @@
       "word": "come up with",
       "pos": "phrasal verb",
       "ipa_us": "/ˌkʌm ˈʌp wɪð/",
-      "translation_ru": "придумывать, предлагать",
+      "translation_ru": "придумывать (идею)",
       "example_en": "He came up with a simple idea that saved us a week.",
       "collocations": [
         "come up with an idea",
@@ -1422,11 +1493,11 @@
       "word": "work out",
       "pos": "phrasal verb",
       "ipa_us": "/ˌwɝk ˈaʊt/",
-      "translation_ru": "получаться, находить решение",
+      "translation_ru": "получаться, складываться (о плане)",
       "example_en": "The new schedule worked out well for everyone.",
       "collocations": [
         "work out well",
-        "work out a solution"
+        "it all worked out in the end"
       ],
       "topic": "work"
     },
@@ -1464,7 +1535,7 @@
       "word": "figure out",
       "pos": "phrasal verb",
       "ipa_us": "/ˌfɪgjɚ ˈaʊt/",
-      "translation_ru": "разобраться, понять",
+      "translation_ru": "разобраться (в чём дело)",
       "example_en": "I cannot figure out why the report is empty.",
       "collocations": [
         "figure out the answer",
@@ -1519,7 +1590,7 @@
       "level": "B1",
       "word": "on the other hand",
       "pos": "phrase",
-      "ipa_us": "/ˌɑn ði ˈʌðɚ ˌhænd/",
+      "ipa_us": "/ɑn ði ˌʌðɚ ˈhænd/",
       "translation_ru": "с другой стороны",
       "example_en": "The tool is fast; on the other hand, it costs a lot.",
       "collocations": [
@@ -1569,7 +1640,10 @@
         "although it was late",
         "although we tried"
       ],
-      "topic": "work"
+      "topic": "work",
+      "accept": [
+        "though"
+      ]
     },
     {
       "id": "b1_v_unless",
@@ -1597,7 +1671,10 @@
         "despite the fact that",
         "despite the problems"
       ],
-      "topic": "work"
+      "topic": "work",
+      "accept": [
+        "in spite of"
+      ]
     }
   ]
 }

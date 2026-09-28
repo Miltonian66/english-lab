@@ -98,7 +98,7 @@
         {
           "id": "b1_all_both_06",
           "kind": "gap",
-          "prompt": "They ___ (both / speak) Spanish at home.",
+          "prompt": "They ___ (= the two of them / speak) Spanish at home.",
           "answer": "both speak",
           "accept": [],
           "explanation_ru": "Both стоит перед смысловым глаголом, а сам глагол остаётся во множественном числе: they both speak.",
@@ -121,7 +121,8 @@
           "prompt": "Both of team leads approved the plan.",
           "answer": "Both of the team leads approved the plan.",
           "accept": [
-            "Both team leads approved the plan."
+            "Both team leads approved the plan.",
+            "Both the team leads approved the plan."
           ],
           "explanation_ru": "Конструкция both of требует определителя перед существительным (the, my, these); без него of не ставят.",
           "difficulty": 3
@@ -347,7 +348,7 @@
         {
           "id": "b1_both_either_neither_05",
           "kind": "gap",
-          "prompt": "Neither of the tests ___ (pass) on the new build.",
+          "prompt": "Neither of the tests ___ (pass, present simple) on the new build.",
           "answer": "passes",
           "accept": [],
           "explanation_ru": "После neither of + существительное во множественном числе глагол по норме ставится в единственном числе.",
@@ -379,7 +380,8 @@
           "prompt": "Rewrite with 'neither ... nor': The printer doesn't work and the scanner doesn't work.",
           "answer": "Neither the printer nor the scanner works.",
           "accept": [
-            "Neither the printer nor the scanner work."
+            "Neither the printer nor the scanner work.",
+            "Neither the printer nor the scanner is working."
           ],
           "explanation_ru": "Два отрицания сворачиваются в конструкцию neither ... nor с утвердительным глаголом.",
           "difficulty": 3
@@ -475,7 +477,7 @@
         {
           "id": "b1_much_many_lot_little_no_05",
           "kind": "gap",
-          "prompt": "How ___ (much/many) engineers are there in your team?",
+          "prompt": "How ___ (much/many) engineers are there on your team?",
           "answer": "many",
           "accept": [],
           "explanation_ru": "Engineers считаются поштучно, поэтому нужен вариант how many.",
@@ -829,7 +831,7 @@
         {
           "id": "b1_reported_speech_indirect_speech_03",
           "kind": "choice",
-          "prompt": "Last week she told me she ___ in Berlin, but now she lives in Prague.",
+          "prompt": "Two years ago she told me she ___ in Berlin, but now she lives in Prague.",
           "options": [
             "lived",
             "lives",
@@ -837,7 +839,7 @@
             "is living"
           ],
           "correct_index": 0,
-          "explanation_ru": "Информация уже неверна для настоящего момента, поэтому после told нужен сдвиг времени назад: lives становится lived.",
+          "explanation_ru": "После told в прошедшем времени глагол косвенной речи сдвигается на шаг назад: lives становится lived. Здесь сдвиг обязателен ещё и потому, что сейчас это уже неправда: она живёт в Праге.",
           "difficulty": 2
         },
         {
@@ -1000,9 +1002,10 @@
           "prompt": "We ___ (send) you an invoice when the work is finished.",
           "answer": "will send",
           "accept": [
-            "'ll send"
+            "'ll send",
+            "are going to send"
           ],
-          "explanation_ru": "Это главная часть предложения, поэтому здесь как раз нужен will.",
+          "explanation_ru": "Это главная часть предложения, поэтому здесь как раз нужно будущее: will send (или are going to send).",
           "difficulty": 1
         },
         {
@@ -1011,9 +1014,10 @@
           "prompt": "When I will finish the task, I will tell you.",
           "answer": "When I finish the task, I will tell you.",
           "accept": [
-            "When I finish the task, I'll tell you."
+            "When I finish the task, I'll tell you.",
+            "When I have finished the task, I will tell you."
           ],
-          "explanation_ru": "После when будущее время не ставится: остаётся present simple.",
+          "explanation_ru": "После when будущее время не ставится: нужен present simple (или present perfect, если важно, что задача уже закончена).",
           "difficulty": 3
         },
         {
@@ -1063,43 +1067,43 @@
         {
           "id": "b1_future_forms_01",
           "kind": "choice",
-          "prompt": "Don't worry, I ___ you with the report.",
+          "prompt": "The report is due in an hour? Don't worry, I ___ you with it.",
           "options": [
             "will help",
-            "will helping",
-            "am help",
-            "will to help"
+            "help",
+            "am helping",
+            "would help"
           ],
           "correct_index": 0,
-          "explanation_ru": "После will идёт голый инфинитив без to и без окончания -ing.",
+          "explanation_ru": "Решение помочь принято в момент речи, в ответ на новость, а такое обещание передаётся will + инфинитив. Present simple будущее здесь не выражает, present continuous — для заранее условленного, а would нужен при условии.",
           "difficulty": 1
         },
         {
           "id": "b1_future_forms_02",
           "kind": "choice",
-          "prompt": "I ___ meeting the client at 3 p.m. tomorrow - it is in my calendar.",
+          "prompt": "I ___ the client at 3 p.m. tomorrow - it is in my calendar.",
           "options": [
-            "am",
-            "will",
-            "do",
-            "have"
+            "am meeting",
+            "am meet",
+            "meet",
+            "meeting"
           ],
           "correct_index": 0,
-          "explanation_ru": "Договорённость с точным временем передаётся present continuous, а он строится с формой глагола be.",
+          "explanation_ru": "Встреча уже назначена и стоит в календаре, а договорённость с точным временем передаётся present continuous: am meeting. Am meet без -ing и голое meeting без am неграмматичны, meet — привычка.",
           "difficulty": 1
         },
         {
           "id": "b1_future_forms_03",
           "kind": "choice",
-          "prompt": "Look at the sky. It ___ rain very soon.",
+          "prompt": "Look at the sky. It ___ very soon.",
           "options": [
-            "is going to",
-            "will to",
-            "is",
-            "was"
+            "is going to rain",
+            "will rain",
+            "is raining",
+            "rains"
           ],
           "correct_index": 0,
-          "explanation_ru": "После пропуска стоит голый глагол rain, и по видимым сейчас признакам подходит именно оборот is going to.",
+          "explanation_ru": "Прогноз по тому, что видно сейчас (тёмное небо), передаётся is going to. Will — для прогноза-мнения (I think it will rain), а present continuous и present simple о будущей погоде не говорят.",
           "difficulty": 2
         },
         {
@@ -1120,7 +1124,7 @@
         {
           "id": "b1_future_forms_05",
           "kind": "gap",
-          "prompt": "Look at those clouds. It ___ (going to / rain) in a few minutes.",
+          "prompt": "Look at those clouds. It ___ (rain — вывод по тому, что видно сейчас) in a few minutes.",
           "answer": "is going to rain",
           "accept": [
             "'s going to rain"
@@ -1131,12 +1135,13 @@
         {
           "id": "b1_future_forms_06",
           "kind": "gap",
-          "prompt": "I ___ (fly - present continuous) to Berlin on Monday.",
+          "prompt": "I've already booked the ticket. I ___ (fly) to Berlin on Monday.",
           "answer": "am flying",
           "accept": [
-            "'m flying"
+            "'m flying",
+            "am going to fly"
           ],
-          "explanation_ru": "Поездка уже назначена на конкретный день, а такая договорённость передаётся present continuous.",
+          "explanation_ru": "Билет уже куплен — это договорённость на конкретный день, и её естественнее всего передать present continuous: am flying; план с going to тоже верен.",
           "difficulty": 1
         },
         {
@@ -1145,9 +1150,10 @@
           "prompt": "She will going to start the course in September.",
           "answer": "She is going to start the course in September.",
           "accept": [
-            "She's going to start the course in September."
+            "She's going to start the course in September.",
+            "She will start the course in September."
           ],
-          "explanation_ru": "Will и be going to не соединяются: в обороте going to нужен глагол be.",
+          "explanation_ru": "Will и be going to не соединяются: либо is going to start, либо просто will start.",
           "difficulty": 3
         },
         {
@@ -1282,11 +1288,11 @@
         {
           "id": "b1_past_simple_present_perfect_08",
           "kind": "correct",
-          "prompt": "I work in this team for three years.",
-          "answer": "I have worked in this team for three years.",
+          "prompt": "I work on this team for three years.",
+          "answer": "I have worked on this team for three years.",
           "accept": [
-            "I've worked in this team for three years.",
-            "I have been working in this team for three years."
+            "I've worked on this team for three years.",
+            "I have been working on this team for three years."
           ],
           "explanation_ru": "For three years означает период, который начался в прошлом и продолжается, поэтому нужен present perfect.",
           "difficulty": 3
@@ -1405,7 +1411,9 @@
           "kind": "correct",
           "prompt": "When I came home, he already went to bed.",
           "answer": "When I came home, he had already gone to bed.",
-          "accept": [],
+          "accept": [
+            "When I came home, he had gone to bed already."
+          ],
           "explanation_ru": "Более раннее из двух прошедших действий требует past perfect.",
           "difficulty": 3
         },
@@ -1452,7 +1460,7 @@
         {
           "id": "b1_present_perfect_simple_present_perfect_continuous_01",
           "kind": "choice",
-          "prompt": "I ___ known him since university.",
+          "prompt": "I ___ known him since college.",
           "options": [
             "have",
             "have been",
@@ -1509,10 +1517,10 @@
         {
           "id": "b1_present_perfect_simple_present_perfect_continuous_05",
           "kind": "gap",
-          "prompt": "I ___ (work) on this bug since 9 a.m. and I still can't fix it.",
-          "answer": "have been working",
+          "prompt": "I ___ (look) for this bug since 9 a.m. and I still can't find it.",
+          "answer": "have been looking",
           "accept": [
-            "'ve been working"
+            "'ve been looking"
           ],
           "explanation_ru": "Since плюс продолжающийся процесс без результата — это present perfect continuous.",
           "difficulty": 2

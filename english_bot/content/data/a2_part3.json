@@ -36,12 +36,12 @@
           "prompt": "Careful! That box ___ fall.",
           "options": [
             "is going to",
-            "will going to",
-            "is go to",
-            "goes to"
+            "will",
+            "going to",
+            "will going to"
           ],
           "correct_index": 0,
-          "explanation_ru": "Причину видно прямо сейчас, поэтому нужен be going to; остальные три сочетания будущего не образуют.",
+          "explanation_ru": "Причину видно прямо сейчас, поэтому прогноз по видимым признакам - be going to, а не will. В going to без is потерян глагол be, а will going to смешивает две формы будущего.",
           "difficulty": 1
         },
         {
@@ -50,12 +50,12 @@
           "prompt": "A: The printer is broken again. B: Don't worry, I ___ fix it.",
           "options": [
             "will",
-            "am will",
+            "am going to",
             "going to",
             "will to"
           ],
           "correct_index": 0,
-          "explanation_ru": "Решение помочь принято прямо в момент разговора, поэтому will + голый инфинитив; варианты am will, going to без be и will to грамматически невозможны.",
+          "explanation_ru": "Решение помочь принято прямо в момент разговора, поэтому will + глагол без to. Am going to говорит о решении, принятом заранее, в going to без am потерян глагол be, а после will частица to не ставится.",
           "difficulty": 1
         },
         {
@@ -78,12 +78,12 @@
           "prompt": "It's very cold today. I think it ___ snow tonight.",
           "options": [
             "will",
-            "is going",
-            "goes",
+            "going to",
+            "will to",
             "will be"
           ],
           "correct_index": 0,
-          "explanation_ru": "После I think идёт прогноз-мнение, поэтому will + snow. Форма is going работает только в связке is going to, а goes и will be с глаголом snow не сочетаются.",
+          "explanation_ru": "После I think идёт прогноз-мнение, поэтому will + snow. В going to без is потерян глагол be, после will частица to не ставится, а will be snow - калька с «будет снег».",
           "difficulty": 2
         },
         {
@@ -114,7 +114,8 @@
           "prompt": "I going to send you the file tonight.",
           "answer": "I'm going to send you the file tonight.",
           "accept": [
-            "I am going to send you the file tonight."
+            "I am going to send you the file tonight.",
+            "I will send you the file tonight."
           ],
           "explanation_ru": "В конструкции going to обязателен глагол be, здесь am или короткая форма 'm.",
           "difficulty": 3
@@ -165,7 +166,7 @@
         {
           "id": "a2_auxiliary_verbs_do_be_and_have_01",
           "kind": "choice",
-          "prompt": "___ she work in the support team?",
+          "prompt": "___ she work on the support team?",
           "options": [
             "Do",
             "Does",
@@ -253,11 +254,9 @@
         {
           "id": "a2_auxiliary_verbs_do_be_and_have_08",
           "kind": "order",
-          "prompt": "you / changed / Have / the / password",
+          "prompt": "you / changed / have / the / password / ?",
           "answer": "Have you changed the password?",
-          "accept": [
-            "Have you changed the password"
-          ],
+          "accept": [],
           "explanation_ru": "В вопросе Present Perfect вспомогательный have выходит перед подлежащим, а третья форма changed остаётся после него.",
           "difficulty": 3
         }
@@ -363,7 +362,8 @@
           "prompt": "I ___ (call) you as soon as the meeting ends.",
           "answer": "will call",
           "accept": [
-            "'ll call"
+            "'ll call",
+            "am going to call"
           ],
           "explanation_ru": "Будущее ставится в главной части, а не после as soon as, поэтому will call.",
           "difficulty": 2
@@ -382,7 +382,7 @@
         {
           "id": "a2_first_conditional_future_time_clauses_08",
           "kind": "order",
-          "prompt": "when / call / I'll / home / you / I / get",
+          "prompt": "when / call / I'll / home / you / I / get / .",
           "answer": "I'll call you when I get home.",
           "accept": [
             "When I get home, I'll call you."
@@ -509,10 +509,11 @@
         {
           "id": "a2_past_continuous_past_simple_08",
           "kind": "order",
-          "prompt": "raining / when / it / arrived / was / we",
+          "prompt": "raining / when / it / arrived / was / we / .",
           "answer": "It was raining when we arrived.",
           "accept": [
-            "When we arrived, it was raining."
+            "When we arrived, it was raining.",
+            "We arrived when it was raining."
           ],
           "explanation_ru": "Длинная погода идёт в Past Continuous, а короткое действие после when - в Past Simple; части можно поменять местами.",
           "difficulty": 3
@@ -641,7 +642,8 @@
           "prompt": "Rewrite with 'because' and the past perfect: She lost her keys, so she couldn't open the door.",
           "answer": "She couldn't open the door because she had lost her keys.",
           "accept": [
-            "She couldn't open the door because she'd lost her keys."
+            "She couldn't open the door because she'd lost her keys.",
+            "Because she had lost her keys, she couldn't open the door."
           ],
           "explanation_ru": "Раннее действие (потеря ключей) уходит в Past Perfect, а следствие остаётся в Past Simple.",
           "difficulty": 3
@@ -767,7 +769,7 @@
         {
           "id": "a2_past_simple_form_use_08",
           "kind": "order",
-          "prompt": "password / I / remember / didn't / the",
+          "prompt": "password / I / remember / didn't / the / .",
           "answer": "I didn't remember the password.",
           "accept": [
             "I did not remember the password."
@@ -941,11 +943,11 @@
           "options": [
             "am seeing",
             "sees",
-            "will seeing",
+            "am going see",
             "am see"
           ],
           "correct_index": 0,
-          "explanation_ru": "Визит назначен заранее, поэтому am + seeing; sees не согласуется с I, а will seeing и am see невозможны.",
+          "explanation_ru": "Визит назначен заранее — это договорённость, поэтому am seeing. После going нужен to (am going to see), а am see без -ing не существует.",
           "difficulty": 1
         },
         {
@@ -983,17 +985,17 @@
           "options": [
             "flies",
             "are flying",
-            "will flying",
-            "are fly"
+            "are fly to",
+            "flying"
           ],
           "correct_index": 1,
-          "explanation_ru": "Билеты куплены, значит договорённость: are flying; flies не согласуется с we, остальные формы невозможны.",
+          "explanation_ru": "Билеты куплены, значит поездка — договорённость: are flying. Flies — расписание, а не план людей; are fly и голое flying без are неграмматичны.",
           "difficulty": 2
         },
         {
           "id": "a2_present_continuous_future_arrangements_05",
           "kind": "gap",
-          "prompt": "___ (you/come) to the office tomorrow?",
+          "prompt": "Use the present continuous. ___ (you/come) to the office tomorrow?",
           "answer": "Are you coming",
           "accept": [],
           "explanation_ru": "Вопрос о договорённости на завтра: are перед подлежащим и глагол с окончанием -ing.",
@@ -1002,12 +1004,13 @@
         {
           "id": "a2_present_continuous_future_arrangements_06",
           "kind": "gap",
-          "prompt": "I can't meet you on Friday. I ___ (fly) to Prague.",
+          "prompt": "I can't meet you on Friday. I ___ (fly) to Prague. I already have the ticket.",
           "answer": "am flying",
           "accept": [
-            "'m flying"
+            "'m flying",
+            "am going to fly"
           ],
-          "explanation_ru": "Билет уже есть, поэтому назначенное будущее выражается формой am flying, а не will fly.",
+          "explanation_ru": "Билет уже куплен - это договорённость, поэтому am flying (подойдёт и am going to fly), а не will fly.",
           "difficulty": 2
         },
         {
@@ -1016,7 +1019,8 @@
           "prompt": "I meeting my manager at ten tomorrow.",
           "answer": "I'm meeting my manager at ten tomorrow.",
           "accept": [
-            "I am meeting my manager at ten tomorrow."
+            "I am meeting my manager at ten tomorrow.",
+            "I am going to meet my manager at ten tomorrow."
           ],
           "explanation_ru": "Форма на -ing не работает без глагола be: нужен am или короткое 'm.",
           "difficulty": 3
@@ -1024,12 +1028,13 @@
         {
           "id": "a2_present_continuous_future_arrangements_08",
           "kind": "order",
-          "prompt": "starting / at / we / tomorrow / are / eight",
+          "prompt": "starting / at / we / tomorrow / are / eight / .",
           "answer": "We are starting at eight tomorrow.",
           "accept": [
             "We're starting at eight tomorrow.",
             "Tomorrow we are starting at eight.",
-            "Tomorrow we're starting at eight."
+            "Tomorrow we're starting at eight.",
+            "We are starting tomorrow at eight."
           ],
           "explanation_ru": "Порядок: подлежащее, форма be, глагол с -ing, затем время; договорённость на завтра уже зафиксирована.",
           "difficulty": 3
@@ -1287,11 +1292,9 @@
         {
           "id": "a2_present_perfect_08",
           "kind": "order",
-          "prompt": "seen / you / message / Have / the",
+          "prompt": "seen / you / message / have / the / ?",
           "answer": "Have you seen the message?",
-          "accept": [
-            "Have you seen the message"
-          ],
+          "accept": [],
           "explanation_ru": "В вопросе have выходит перед подлежащим, а третья форма seen остаётся сразу за ним.",
           "difficulty": 3
         }
@@ -1314,7 +1317,7 @@
         "state verbs: know, want, like - no -ing"
       ],
       "examples": [
-        "I work in the support team.",
+        "I work on the support team.",
         "I'm working on a new ticket right now.",
         "She usually takes the bus, but today she is driving.",
         "Do you know the answer?",
@@ -1418,7 +1421,7 @@
         {
           "id": "a2_present_simple_continuous_08",
           "kind": "order",
-          "prompt": "usually / He / work / doesn't / Saturdays / on",
+          "prompt": "usually / he / work / doesn't / Saturdays / on / .",
           "answer": "He doesn't usually work on Saturdays.",
           "accept": [
             "He usually doesn't work on Saturdays.",

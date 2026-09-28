@@ -131,6 +131,19 @@ def parse_exercise(raw: object, where: str) -> Exercise:
         _require(correct_index is None, f"{where}: correct_index допустим только для kind=choice")
         _require(len(answer) >= 1, f"{where}: у {kind} обязателен answer")
 
+    if kind == "order":
+        # Без знака в конце ученик не знает, собрать утверждение или вопрос, и
+        # законный вопрос из тех же слов засчитывался ошибкой.
+        mark = prompt.split("/")[-1].strip()
+        _require(
+            mark in (".", "?", "!"),
+            f"{where}: у order последний элемент — знак конца: «… / .» или «… / ?»",
+        )
+        _require(
+            all(item.rstrip().endswith(mark) for item in (answer, *accept)),
+            f"{where}: эталон и accept у order кончаются тем же знаком {mark!r}, что и условие",
+        )
+
     return Exercise(
         id=exercise_id,
         kind=kind,

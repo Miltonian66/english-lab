@@ -20,7 +20,7 @@
    "examples": [
     "I'd like a cup of coffee, please.",
     "Would you like some tea?",
-    "She would like to work in our team.",
+    "She would like to work on our team.",
     "Would you like to join the call?",
     "We wouldn't like to wait for an hour."
    ],
@@ -34,11 +34,11 @@
      "options": [
       "am",
       "would",
-      "have",
-      "was"
+      "will",
+      "want"
      ],
      "correct_index": 1,
-     "explanation_ru": "Конструкция одна: would like. Формы «am like», «have like», «was like» здесь невозможны.",
+     "explanation_ru": "Вежливое «я хотел бы» — только would like. Will like значит «понравится», am like — «я похож на», а want like — два глагола подряд без связи.",
      "difficulty": 1
     },
     {
@@ -58,15 +58,15 @@
     {
      "id": "a1_would_like_03",
      "kind": "choice",
-     "prompt": "She'd like ___ new laptop.",
+     "prompt": "She ___ a new laptop for her birthday.",
      "options": [
-      "a",
-      "to a",
-      "an",
-      "some"
+      "would like",
+      "would like to",
+      "would likes",
+      "like"
      ],
      "correct_index": 0,
-     "explanation_ru": "Laptop — исчисляемое в единственном числе, нужен артикль a; an ставится только перед гласным звуком.",
+     "explanation_ru": "Перед существительным would like идёт без to; would одинаково для всех лиц, поэтому like после него без -s. Просто like с she потребовал бы -s и значил бы «нравится».",
      "difficulty": 2
     },
     {
@@ -86,7 +86,7 @@
     {
      "id": "a1_would_like_05",
      "kind": "gap",
-     "prompt": "___ (you / like) to see our new office?",
+     "prompt": "___ (you / would like) to see our new office?",
      "answer": "Would you like",
      "accept": [],
      "explanation_ru": "Вопрос с would like начинается с Would, затем подлежащее и like.",
@@ -95,7 +95,7 @@
     {
      "id": "a1_would_like_06",
      "kind": "gap",
-     "prompt": "We ___ (not / like) to wait here for an hour.",
+     "prompt": "We ___ (not / would like) to wait here for an hour.",
      "answer": "wouldn't like",
      "accept": [
       "would not like"
@@ -109,9 +109,10 @@
      "prompt": "I would like drink some water.",
      "answer": "I would like to drink some water.",
      "accept": [
-      "I'd like to drink some water."
+      "I'd like to drink some water.",
+      "I would like some water."
      ],
-     "explanation_ru": "Перед глаголом после would like обязательно нужна частица to.",
+     "explanation_ru": "Перед глаголом после would like обязательно нужна частица to: would like to drink; можно и убрать лишний глагол: would like some water.",
      "difficulty": 3
     },
     {
@@ -177,7 +178,7 @@
       "to"
      ],
      "correct_index": 1,
-     "explanation_ru": "Home в значении «дома» используется только с at и без артикля: at home.",
+     "explanation_ru": "«Дома» — это at home, а в американской речи и просто home (She is home today); артикль не нужен, а in, on и to с home в этом значении не используются.",
      "difficulty": 1
     },
     {
@@ -234,15 +235,16 @@
      "prompt": "My father works on a bank.",
      "answer": "My father works in a bank.",
      "accept": [
-      "My father works at a bank."
+      "My father works at a bank.",
+      "My father works for a bank."
      ],
-     "explanation_ru": "Банк здесь — место работы как помещение или организация, нужен in (или at), но не on.",
+     "explanation_ru": "Банк здесь — место работы: in или at a bank, а works for a bank значит «работает на банк»; on с таким местом не сочетается.",
      "difficulty": 3
     },
     {
      "id": "a1_at_in_on_prepositions_of_place_08",
      "kind": "order",
-     "prompt": "at / is / Anna / work / now",
+     "prompt": "at / is / Anna / work / now / .",
      "answer": "Anna is at work now.",
      "accept": [],
      "explanation_ru": "Порядок слов: подлежащее, глагол be, обстоятельство места at work, затем время.",
@@ -365,9 +367,11 @@
     {
      "id": "a1_at_in_on_prepositions_time_08",
      "kind": "order",
-     "prompt": "at / we / o'clock / lunch / have / twelve",
+     "prompt": "at / we / o'clock / lunch / have / twelve / .",
      "answer": "We have lunch at twelve o'clock.",
-     "accept": [],
+     "accept": [
+      "At twelve o'clock we have lunch."
+     ],
      "explanation_ru": "Сначала подлежащее и сказуемое с дополнением, потом время с предлогом at.",
      "difficulty": 3
     }
@@ -393,7 +397,7 @@
     "The printer is next to the window.",
     "My chair is behind the door.",
     "The cat is under the table.",
-    "The bank is between the shop and the cafe.",
+    "The bank is between the store and the cafe.",
     "There is a lamp over my desk.",
     "The bus stop is in front of our office."
    ],
@@ -403,29 +407,29 @@
     {
      "id": "a1_next_to_under_between_in_front_behind_etc_01",
      "kind": "choice",
-     "prompt": "My bag is ___ the chair.",
+     "prompt": "My bag is on the floor ___ the chair.",
      "options": [
       "under",
-      "between",
-      "of",
-      "in front"
+      "on",
+      "in",
+      "above"
      ],
      "correct_index": 0,
-     "explanation_ru": "Under — «под»; between требует двух объектов, in front нельзя использовать без of, а of не предлог места.",
+     "explanation_ru": "Сумка лежит на полу, а стул над ней — значит, она под стулом: under. On, in и above противоречат словам on the floor.",
      "difficulty": 1
     },
     {
      "id": "a1_next_to_under_between_in_front_behind_etc_02",
      "kind": "choice",
-     "prompt": "The shop is ___ the bank and the cafe.",
+     "prompt": "The store is ___ the bank and the cafe.",
      "options": [
-      "next",
+      "among",
       "between",
-      "in front",
-      "behind of"
+      "between of",
+      "near with"
      ],
      "correct_index": 1,
-     "explanation_ru": "Только between сочетается с двумя объектами через and; остальные формы без of или с лишним of невозможны.",
+     "explanation_ru": "Между двумя объектами — between ... and ...; among говорят о трёх и больше, of к between не добавляют, а near with — калька с «рядом с»: правильно near или next to.",
      "difficulty": 1
     },
     {
@@ -459,7 +463,7 @@
     {
      "id": "a1_next_to_under_between_in_front_behind_etc_05",
      "kind": "gap",
-     "prompt": "The bank is ___ the shop and the school.",
+     "prompt": "The bank is ___ the store and the school.",
      "answer": "between",
      "accept": [],
      "explanation_ru": "Между двумя объектами используется between ... and ... .",
@@ -488,9 +492,11 @@
     {
      "id": "a1_next_to_under_between_in_front_behind_etc_08",
      "kind": "order",
-     "prompt": "the / is / bag / under / my / desk",
+     "prompt": "the / is / bag / under / my / desk / .",
      "answer": "My bag is under the desk.",
-     "accept": [],
+     "accept": [
+      "The bag is under my desk."
+     ],
      "explanation_ru": "Сначала подлежащее с определением, затем глагол be и предлог места с существительным.",
      "difficulty": 3
     }
@@ -539,7 +545,7 @@
     {
      "id": "a1_object_pronouns_02",
      "kind": "choice",
-     "prompt": "___ works with us in the same team.",
+     "prompt": "___ works with us on the same team.",
      "options": [
       "Her",
       "Hers",
@@ -608,7 +614,7 @@
     {
      "id": "a1_object_pronouns_08",
      "kind": "order",
-     "prompt": "us / she / never / calls",
+     "prompt": "us / she / never / calls / .",
      "answer": "She never calls us.",
      "accept": [],
      "explanation_ru": "Подлежащее She, наречие never перед смысловым глаголом, затем объектное местоимение us.",
@@ -634,7 +640,7 @@
    ],
    "examples": [
     "There is a new laptop on my desk.",
-    "There are ten people in our team.",
+    "There are ten people on our team.",
     "There isn't any coffee in the kitchen.",
     "Are there any questions?",
     "There was a bug in the code.",
@@ -702,7 +708,7 @@
     {
      "id": "a1_there_is_there_are_05",
      "kind": "gap",
-     "prompt": "___ (there / be) two new people in our team.",
+     "prompt": "___ (there / be) two new people on our team now.",
      "answer": "There are",
      "accept": [],
      "explanation_ru": "Two new people — множественное число, значит there are.",
@@ -733,9 +739,11 @@
     {
      "id": "a1_there_is_there_are_08",
      "kind": "order",
-     "prompt": "on / a / there / is / desk / lamp / the",
+     "prompt": "on / a / there / is / desk / lamp / the / .",
      "answer": "There is a lamp on the desk.",
-     "accept": [],
+     "accept": [
+      "On the desk there is a lamp."
+     ],
      "explanation_ru": "Схема: there + is + существительное с артиклем + обстоятельство места.",
      "difficulty": 3
     }
@@ -855,9 +863,11 @@
     {
      "id": "a1_there_it_08",
      "kind": "order",
-     "prompt": "in / there / a / is / the / problem / report",
+     "prompt": "in / there / a / is / the / problem / report / .",
      "answer": "There is a problem in the report.",
-     "accept": [],
+     "accept": [
+      "In the report there is a problem."
+     ],
      "explanation_ru": "There is вводит объект, а обстоятельство места стоит в конце.",
      "difficulty": 3
     }
@@ -957,7 +967,7 @@
     {
      "id": "a1_this_that_these_those_06",
      "kind": "gap",
-     "prompt": "___ computers over there are very old.",
+     "prompt": "___ (this / that / these / those) computers over there are very old.",
      "answer": "Those",
      "accept": [],
      "explanation_ru": "Множественное число computers плюс over there дают Those.",
@@ -968,8 +978,10 @@
      "kind": "correct",
      "prompt": "This are my colleagues.",
      "answer": "These are my colleagues.",
-     "accept": [],
-     "explanation_ru": "Перед множественным числом и формой are нужно These.",
+     "accept": [
+      "Those are my colleagues."
+     ],
+     "explanation_ru": "Colleagues и are — множественное число, поэтому нужно These (или Those, если коллеги далеко): this сочетается только с единственным числом.",
      "difficulty": 3
     },
     {
@@ -1069,7 +1081,7 @@
     {
      "id": "a1_a_some_any_countable_uncountable_05",
      "kind": "gap",
-     "prompt": "She has ___ new phone.",
+     "prompt": "She has ___ (a / some / any) new phone.",
      "answer": "a",
      "accept": [],
      "explanation_ru": "Phone — исчисляемое в единственном числе, нужен артикль a.",
@@ -1078,7 +1090,7 @@
     {
      "id": "a1_a_some_any_countable_uncountable_06",
      "kind": "gap",
-     "prompt": "There aren't ___ free rooms today.",
+     "prompt": "There aren't ___ (some / any) free rooms today.",
      "answer": "any",
      "accept": [],
      "explanation_ru": "В отрицательном предложении с множественным числом ставится any.",
@@ -1099,7 +1111,7 @@
     {
      "id": "a1_a_some_any_countable_uncountable_08",
      "kind": "order",
-     "prompt": "any / there / isn't / sugar / tea / in / my",
+     "prompt": "any / there / isn't / sugar / tea / in / my / .",
      "answer": "There isn't any sugar in my tea.",
      "accept": [],
      "explanation_ru": "Схема: there isn't + any + неисчисляемое + обстоятельство места.",
@@ -1125,7 +1137,7 @@
    ],
    "examples": [
     "We don't have much time.",
-    "How many people are in the team?",
+    "How many people are on the team?",
     "There are a lot of emails in my inbox.",
     "I have a few questions.",
     "Add a little water.",
@@ -1137,7 +1149,7 @@
     {
      "id": "a1_much_many_lot_little_few_01",
      "kind": "choice",
-     "prompt": "How ___ people work in your team?",
+     "prompt": "How ___ people are on your team?",
      "options": [
       "much",
       "many",
@@ -1223,9 +1235,11 @@
     {
      "id": "a1_much_many_lot_little_few_08",
      "kind": "order",
-     "prompt": "much / we / don't / work / have / today",
+     "prompt": "much / we / don't / work / have / today / .",
      "answer": "We don't have much work today.",
-     "accept": [],
+     "accept": [
+      "Today we don't have much work."
+     ],
      "explanation_ru": "Отрицание don't have, затем much с неисчисляемым work и обстоятельство времени.",
      "difficulty": 3
     }
@@ -1317,7 +1331,7 @@
     {
      "id": "a1_questions_05",
      "kind": "gap",
-     "prompt": "___ (you / be) ready for the demo?",
+     "prompt": "___ (you / be) ready for the demo now?",
      "answer": "Are you",
      "accept": [],
      "explanation_ru": "С глаголом be вспомогательный не нужен: be сам выходит перед подлежащим.",
@@ -1409,7 +1423,7 @@
     {
      "id": "a1_will_and_shall_03",
      "kind": "choice",
-     "prompt": "He ___ come to the office tomorrow; he is ill.",
+     "prompt": "He ___ come to the office tomorrow; he is sick.",
      "options": [
       "doesn't",
       "don't",
@@ -1437,18 +1451,18 @@
     {
      "id": "a1_will_and_shall_05",
      "kind": "gap",
-     "prompt": "___ I open the window? It is very hot here.",
+     "prompt": "___ (shall / will) I open the window? It is very hot here.",
      "answer": "Shall",
      "accept": [
       "Should"
      ],
-     "explanation_ru": "Предложение помощи с местоимением I строится через Shall I ...?",
+     "explanation_ru": "Предложение помощи с I строится через Shall I ...?; в американской речи чаще говорят Should I ...?. Will I ...? спрашивал бы о будущем, а не предлагал помощь.",
      "difficulty": 1
     },
     {
      "id": "a1_will_and_shall_06",
      "kind": "gap",
-     "prompt": "They ___ (not / finish) the project this week.",
+     "prompt": "They ___ (not / will / finish) the project this week.",
      "answer": "won't finish",
      "accept": [
       "will not finish"
@@ -1470,10 +1484,11 @@
     {
      "id": "a1_will_and_shall_08",
      "kind": "order",
-     "prompt": "next / we / meet / will / week",
+     "prompt": "next / we / meet / will / week / .",
      "answer": "We will meet next week.",
      "accept": [
-      "We'll meet next week."
+      "We'll meet next week.",
+      "Next week we will meet."
      ],
      "explanation_ru": "Порядок: подлежащее, will, глагол без to, затем обстоятельство времени.",
      "difficulty": 3

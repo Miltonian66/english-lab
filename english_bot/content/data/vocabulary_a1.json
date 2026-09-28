@@ -34,7 +34,7 @@
       "word": "do",
       "pos": "verb",
       "ipa_us": "/du/",
-      "translation_ru": "делать, выполнять",
+      "translation_ru": "делать (дела, уроки, работу), выполнять",
       "example_en": "I do my homework after dinner every day.",
       "collocations": [
         "do homework",
@@ -48,7 +48,7 @@
       "word": "go",
       "pos": "verb",
       "ipa_us": "/goʊ/",
-      "translation_ru": "идти, ехать, ходить",
+      "translation_ru": "идти, ехать",
       "example_en": "We go to work by bus in the morning.",
       "collocations": [
         "go home",
@@ -62,7 +62,7 @@
       "word": "come",
       "pos": "verb",
       "ipa_us": "/kʌm/",
-      "translation_ru": "приходить, приезжать",
+      "translation_ru": "приходить, приезжать (к кому-то)",
       "example_en": "My friends come to my house every week.",
       "collocations": [
         "come home",
@@ -76,7 +76,7 @@
       "word": "make",
       "pos": "verb",
       "ipa_us": "/meɪk/",
-      "translation_ru": "делать, готовить",
+      "translation_ru": "делать (изготавливать), готовить (еду, кофе)",
       "example_en": "My mother makes very good coffee.",
       "collocations": [
         "make dinner",
@@ -160,7 +160,7 @@
       "word": "like",
       "pos": "verb",
       "ipa_us": "/laɪk/",
-      "translation_ru": "нравиться, любить",
+      "translation_ru": "нравиться",
       "example_en": "I like my new job very much.",
       "collocations": [
         "like music",
@@ -272,7 +272,7 @@
       "word": "speak",
       "pos": "verb",
       "ipa_us": "/spik/",
-      "translation_ru": "говорить, разговаривать",
+      "translation_ru": "говорить (на языке)",
       "example_en": "I speak English and Russian at work.",
       "collocations": [
         "speak English",
@@ -300,7 +300,7 @@
       "word": "watch",
       "pos": "verb",
       "ipa_us": "/wɑtʃ/",
-      "translation_ru": "смотреть, наблюдать",
+      "translation_ru": "смотреть (фильм, ТВ), наблюдать",
       "example_en": "We watch a movie at home in the evening.",
       "collocations": [
         "watch TV",
@@ -398,7 +398,7 @@
       "word": "walk",
       "pos": "verb",
       "ipa_us": "/wɔk/",
-      "translation_ru": "идти пешком, гулять",
+      "translation_ru": "ходить пешком, гулять",
       "example_en": "I walk to work when the weather is good.",
       "collocations": [
         "walk home",
@@ -426,7 +426,7 @@
       "word": "sit",
       "pos": "verb",
       "ipa_us": "/sɪt/",
-      "translation_ru": "сидеть, садиться",
+      "translation_ru": "сидеть",
       "example_en": "We sit at the table and eat dinner together.",
       "collocations": [
         "sit at a table",
@@ -488,7 +488,10 @@
         "learn English",
         "learn fast"
       ],
-      "topic": "study"
+      "topic": "study",
+      "accept": [
+        "study"
+      ]
     },
     {
       "id": "a1_v_call",
@@ -496,7 +499,7 @@
       "word": "call",
       "pos": "verb",
       "ipa_us": "/kɔl/",
-      "translation_ru": "звонить, называть",
+      "translation_ru": "звонить (по телефону)",
       "example_en": "Call me tomorrow morning, please.",
       "collocations": [
         "call a friend",
@@ -524,7 +527,7 @@
       "word": "say",
       "pos": "verb",
       "ipa_us": "/seɪ/",
-      "translation_ru": "сказать, говорить",
+      "translation_ru": "сказать (слова, что-то)",
       "example_en": "Say your name slowly, please.",
       "collocations": [
         "say yes",
@@ -538,7 +541,7 @@
       "word": "think",
       "pos": "verb",
       "ipa_us": "/θɪŋk/",
-      "translation_ru": "думать, считать",
+      "translation_ru": "думать, полагать",
       "example_en": "I think this book is very good.",
       "collocations": [
         "think about",
@@ -572,7 +575,10 @@
         "start work",
         "start a car"
       ],
-      "topic": "work"
+      "topic": "work",
+      "accept": [
+        "begin"
+      ]
     },
     {
       "id": "a1_v_stop",
@@ -614,7 +620,10 @@
         "a young mother",
         "mother and father"
       ],
-      "topic": "people"
+      "topic": "people",
+      "accept": [
+        "mom"
+      ]
     },
     {
       "id": "a1_v_father",
@@ -628,7 +637,10 @@
         "a good father",
         "father and son"
       ],
-      "topic": "people"
+      "topic": "people",
+      "accept": [
+        "dad"
+      ]
     },
     {
       "id": "a1_v_friend",
@@ -670,7 +682,10 @@
         "a small child",
         "a happy child"
       ],
-      "topic": "people"
+      "topic": "people",
+      "accept": [
+        "kid"
+      ]
     },
     {
       "id": "a1_v_house",
@@ -678,7 +693,7 @@
       "word": "house",
       "pos": "noun",
       "ipa_us": "/haʊs/",
-      "translation_ru": "дом",
+      "translation_ru": "дом (здание)",
       "example_en": "We live in a small house near the school.",
       "collocations": [
         "a big house",
@@ -720,7 +735,7 @@
       "word": "table",
       "pos": "noun",
       "ipa_us": "/ˈteɪbəl/",
-      "translation_ru": "стол",
+      "translation_ru": "стол (обеденный, кухонный)",
       "example_en": "We eat breakfast at the kitchen table.",
       "collocations": [
         "a big table",
@@ -790,7 +805,7 @@
       "word": "food",
       "pos": "noun",
       "ipa_us": "/fud/",
-      "translation_ru": "еда, пища",
+      "translation_ru": "еда (продукты), пища",
       "example_en": "The food in this small shop is very good.",
       "collocations": [
         "good food",
@@ -930,13 +945,16 @@
       "word": "shop",
       "pos": "noun",
       "ipa_us": "/ʃɑp/",
-      "translation_ru": "магазин",
-      "example_en": "The shop near my house is open every day.",
+      "translation_ru": "магазин (небольшой, лавка)",
+      "example_en": "There is a small flower shop next to our building.",
       "collocations": [
         "a small shop",
-        "go to the shop"
+        "a gift shop"
       ],
-      "topic": "money"
+      "topic": "money",
+      "accept": [
+        "store"
+      ]
     },
     {
       "id": "a1_v_street",
@@ -958,7 +976,7 @@
       "word": "city",
       "pos": "noun",
       "ipa_us": "/ˈsɪti/",
-      "translation_ru": "город",
+      "translation_ru": "город (большой)",
       "example_en": "I live in a big city with my family.",
       "collocations": [
         "a big city",
@@ -1084,7 +1102,7 @@
       "word": "good",
       "pos": "adjective",
       "ipa_us": "/gʊd/",
-      "translation_ru": "хороший, добрый",
+      "translation_ru": "хороший",
       "example_en": "This is a very good book for children.",
       "collocations": [
         "a good day",
@@ -1118,7 +1136,10 @@
         "a big house",
         "a big family"
       ],
-      "topic": "home"
+      "topic": "home",
+      "accept": [
+        "large"
+      ]
     },
     {
       "id": "a1_v_small",
@@ -1132,7 +1153,10 @@
         "a small room",
         "a small city"
       ],
-      "topic": "home"
+      "topic": "home",
+      "accept": [
+        "little"
+      ]
     },
     {
       "id": "a1_v_new",
@@ -1168,7 +1192,7 @@
       "word": "happy",
       "pos": "adjective",
       "ipa_us": "/ˈhæpi/",
-      "translation_ru": "счастливый, радостный",
+      "translation_ru": "счастливый",
       "example_en": "My sister is happy with her new job.",
       "collocations": [
         "a happy day",
@@ -1210,7 +1234,7 @@
       "word": "easy",
       "pos": "adjective",
       "ipa_us": "/ˈizi/",
-      "translation_ru": "лёгкий, простой",
+      "translation_ru": "лёгкий (нетрудный)",
       "example_en": "This book is easy to read in English.",
       "collocations": [
         "an easy job",
@@ -1224,7 +1248,7 @@
       "word": "nice",
       "pos": "adjective",
       "ipa_us": "/naɪs/",
-      "translation_ru": "приятный, милый",
+      "translation_ru": "приятный (о человеке, дне)",
       "example_en": "My new friends are very nice people.",
       "collocations": [
         "a nice day",
@@ -1365,7 +1389,7 @@
       "pos": "adverb",
       "ipa_us": "/təˈmɑroʊ/",
       "translation_ru": "завтра",
-      "example_en": "I go to the doctor tomorrow morning.",
+      "example_en": "I have a doctor's appointment tomorrow morning.",
       "collocations": [
         "see you tomorrow",
         "tomorrow morning"
@@ -1448,7 +1472,7 @@
       "word": "well",
       "pos": "adverb",
       "ipa_us": "/wɛl/",
-      "translation_ru": "хорошо",
+      "translation_ru": "хорошо (как именно: работает, говорит)",
       "example_en": "My old car works well.",
       "collocations": [
         "work well",
@@ -1462,7 +1486,7 @@
       "word": "in",
       "pos": "preposition",
       "ipa_us": "/ɪn/",
-      "translation_ru": "в, внутри",
+      "translation_ru": "в (внутри чего-то)",
       "example_en": "My mother is in the kitchen now.",
       "collocations": [
         "in the room",
@@ -1476,7 +1500,7 @@
       "word": "on",
       "pos": "preposition",
       "ipa_us": "/ɑn/",
-      "translation_ru": "на, по",
+      "translation_ru": "на (поверхности), по (телефону)",
       "example_en": "Your book is on the table.",
       "collocations": [
         "on the table",
@@ -1490,7 +1514,7 @@
       "word": "at",
       "pos": "preposition",
       "ipa_us": "/æt/",
-      "translation_ru": "в, у, на",
+      "translation_ru": "в месте-точке (дома, на работе, на остановке)",
       "example_en": "I am at home now.",
       "collocations": [
         "at home",
@@ -1504,7 +1528,7 @@
       "word": "with",
       "pos": "preposition",
       "ipa_us": "/wɪð/",
-      "translation_ru": "с, вместе с",
+      "translation_ru": "с (вместе с кем-то, чем-то)",
       "example_en": "I live with my family in a small house.",
       "collocations": [
         "with me",
@@ -1518,7 +1542,7 @@
       "word": "from",
       "pos": "preposition",
       "ipa_us": "/frʌm/",
-      "translation_ru": "из, от, с",
+      "translation_ru": "из, от (откуда; с какого времени)",
       "example_en": "I work from nine to six.",
       "collocations": [
         "from home",
@@ -1538,7 +1562,10 @@
         "near here",
         "near the door"
       ],
-      "topic": "travel"
+      "topic": "travel",
+      "accept": [
+        "next to"
+      ]
     },
     {
       "id": "a1_v_and",
@@ -1546,7 +1573,7 @@
       "word": "and",
       "pos": "conjunction",
       "ipa_us": "/ænd/",
-      "translation_ru": "и, а",
+      "translation_ru": "и (соединяет слова)",
       "example_en": "I have a brother and a sister.",
       "collocations": [
         "you and me",
@@ -1588,7 +1615,7 @@
       "word": "get up",
       "pos": "phrasal verb",
       "ipa_us": "/ˌgɛt ˈʌp/",
-      "translation_ru": "вставать, подниматься",
+      "translation_ru": "вставать (с постели)",
       "example_en": "I get up at six every morning.",
       "collocations": [
         "get up early",
@@ -1622,7 +1649,10 @@
         "turn on the light",
         "turn on the TV"
       ],
-      "topic": "tech"
+      "topic": "tech",
+      "accept": [
+        "switch on"
+      ]
     },
     {
       "id": "a1_v_sit_down",
@@ -1650,7 +1680,10 @@
         "thank you very much",
         "thank you for"
       ],
-      "topic": "people"
+      "topic": "people",
+      "accept": [
+        "thanks"
+      ]
     },
     {
       "id": "a1_v_excuse_me",
@@ -1658,10 +1691,10 @@
       "word": "excuse me",
       "pos": "phrase",
       "ipa_us": "/ɪkˈskjuz mi/",
-      "translation_ru": "извините, простите",
+      "translation_ru": "извините (обращаясь к незнакомому)",
       "example_en": "Excuse me, where is the bus stop?",
       "collocations": [
-        "excuse me, please"
+        "excuse me, is this seat taken?"
       ],
       "topic": "people"
     },

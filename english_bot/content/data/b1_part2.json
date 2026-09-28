@@ -100,10 +100,13 @@
         {
           "id": "b1_modal_verbs_of_deduction_06",
           "kind": "gap",
-          "prompt": "I don't know his age exactly. He ___ (might/be) about forty.",
+          "prompt": "I don't know his age exactly. He ___ (not sure + be) about forty.",
           "answer": "might be",
-          "accept": [],
-          "explanation_ru": "После might идёт инфинитив без to, а сам might передаёт неуверенное предположение.",
+          "accept": [
+            "may be",
+            "could be"
+          ],
+          "explanation_ru": "Неуверенное предположение передают might, may или could, а после них идёт инфинитив без to: might be.",
           "difficulty": 2
         },
         {
@@ -123,7 +126,9 @@
           "accept": [
             "It can't be his car.",
             "This cannot be his car.",
-            "It cannot be his car."
+            "It cannot be his car.",
+            "This car can't be his.",
+            "That can't be his car."
           ],
           "explanation_ru": "Уверенность в том, что что-то невозможно, выражается через can't + be.",
           "difficulty": 3
@@ -176,7 +181,7 @@
         {
           "id": "b1_would_rather_would_sooner_02",
           "kind": "choice",
-          "prompt": "I'd rather work in a small team ___ in a big company.",
+          "prompt": "I'd rather work on a small team ___ in a big company.",
           "options": [
             "that",
             "than",
@@ -247,7 +252,7 @@
         {
           "id": "b1_would_rather_would_sooner_08",
           "kind": "order",
-          "prompt": "than / rather / I'd / drive / fly",
+          "prompt": "than / rather / I'd / drive / fly / .",
           "answer": "I'd rather fly than drive.",
           "accept": [
             "I'd rather drive than fly."
@@ -361,10 +366,10 @@
         {
           "id": "b1_an_the_no_article_06",
           "kind": "gap",
-          "prompt": "It's raining. I need ___ umbrella.",
+          "prompt": "It's raining. I need to buy ___ umbrella.",
           "answer": "an",
           "accept": [],
-          "explanation_ru": "Предмет упоминается впервые и начинается с гласного звука, поэтому нужен артикль an.",
+          "explanation_ru": "Нужен какой-нибудь зонт, а не конкретный, и слово начинается с гласного звука, поэтому an.",
           "difficulty": 2
         },
         {
@@ -485,8 +490,10 @@
           "kind": "gap",
           "prompt": "My laptop ___ (steal) at the airport last year.",
           "answer": "was stolen",
-          "accept": [],
-          "explanation_ru": "Прошедшее время плюс пассив дают was, а третья форма от steal — stolen.",
+          "accept": [
+            "got stolen"
+          ],
+          "explanation_ru": "Прошедшее время плюс пассив дают was, а третья форма от steal — stolen; в разговоре так же естественно got stolen.",
           "difficulty": 2
         },
         {
@@ -616,8 +623,10 @@
           "kind": "gap",
           "prompt": "The invoice ___ (send) to you tomorrow morning.",
           "answer": "will be sent",
-          "accept": [],
-          "explanation_ru": "Маркер tomorrow требует будущего времени, а пассив даёт формулу will be + третья форма.",
+          "accept": [
+            "is going to be sent"
+          ],
+          "explanation_ru": "Маркер tomorrow требует будущего времени, а будущий пассив строится как will be + третья форма; is going to be sent тоже верно.",
           "difficulty": 2
         },
         {
@@ -634,8 +643,10 @@
           "kind": "correct",
           "prompt": "The parcel has sent to the wrong address.",
           "answer": "The parcel has been sent to the wrong address.",
-          "accept": [],
-          "explanation_ru": "В present perfect passive между has и третьей формой обязательно стоит been.",
+          "accept": [
+            "The parcel was sent to the wrong address."
+          ],
+          "explanation_ru": "В present perfect passive между has и третьей формой обязательно стоит been; простое was sent тоже верно.",
           "difficulty": 1
         }
       ]
@@ -728,7 +739,7 @@
         {
           "id": "b1_b1_phrasal_verbs_1_exercises_explanation_05",
           "kind": "choice",
-          "prompt": "The meeting was ___ until Friday because the manager was ill.",
+          "prompt": "The meeting was ___ until Friday because the manager was sick.",
           "options": [
             "put off",
             "put on",
@@ -751,7 +762,7 @@
         {
           "id": "b1_b1_phrasal_verbs_1_exercises_explanation_07",
           "kind": "gap",
-          "prompt": "I called the shop to find ___ when it closes.",
+          "prompt": "I called the store to find ___ when it closes.",
           "answer": "out",
           "accept": [],
           "explanation_ru": "Find out значит «выяснить, узнать информацию».",
@@ -1018,10 +1029,10 @@
         {
           "id": "b1_b1_phrasal_verbs_3_exercises_and_explanation_08",
           "kind": "correct",
-          "prompt": "She brought on an interesting idea at the meeting.",
-          "answer": "She brought up an interesting idea at the meeting.",
+          "prompt": "She brought on the question of salaries at the meeting.",
+          "answer": "She brought up the question of salaries at the meeting.",
           "accept": [],
-          "explanation_ru": "«Поднять тему в разговоре» — это bring up; сочетания bring on в этом значении нет.",
+          "explanation_ru": "«Поднять вопрос в разговоре» — это bring up; bring on значит «вызвать» (bring on a headache) и сюда не подходит.",
           "difficulty": 3
         }
       ]
@@ -1042,10 +1053,10 @@
         "while + V-ing (while working)"
       ],
       "examples": [
-        "I fell asleep during the film.",
+        "I fell asleep during the movie.",
         "We waited for two hours at the airport.",
         "While I was cooking, the phone rang.",
-        "I met my wife during my first year at university.",
+        "I met my wife during my first year of college.",
         "She hurt her leg while playing football."
       ],
       "ru_interference": "Русское «во время» соответствует и during, и while, поэтому союз заменяют предлогом: неверно «During I was reading» → верно «While I was reading».",
@@ -1057,7 +1068,7 @@
         {
           "id": "b1_during_for_while_01",
           "kind": "choice",
-          "prompt": "I fell asleep ___ the film.",
+          "prompt": "I fell asleep ___ the movie.",
           "options": [
             "during",
             "for",
@@ -1099,7 +1110,7 @@
         {
           "id": "b1_during_for_while_04",
           "kind": "choice",
-          "prompt": "I met my wife ___ my first year at university.",
+          "prompt": "I met my wife ___ my first year of college.",
           "options": [
             "while",
             "during",
@@ -1138,8 +1149,10 @@
           "kind": "gap",
           "prompt": "___ the flight, I watched two movies.",
           "answer": "During",
-          "accept": [],
-          "explanation_ru": "После пропуска стоит существительное the flight, поэтому нужен предлог during.",
+          "accept": [
+            "On"
+          ],
+          "explanation_ru": "После пропуска стоит существительное the flight, поэтому нужен предлог during, а не союз while; в разговоре так же естественно on the flight.",
           "difficulty": 2
         },
         {
@@ -1255,7 +1268,7 @@
         {
           "id": "b1_for_since_from_difference_06",
           "kind": "gap",
-          "prompt": "He has been ill ___ Monday, so he is working from home.",
+          "prompt": "He has been sick ___ Monday, so he is working from home.",
           "answer": "since",
           "accept": [],
           "explanation_ru": "Monday — точка отсчёта, и при перфекте она вводится предлогом since.",
@@ -1305,7 +1318,7 @@
         "Some people like tea; others prefer coffee.",
         "I have two brothers. One lives in Moscow and the other lives in Kazan.",
         "Do you have any other questions?",
-        "Only three people came to the meeting; the others were ill."
+        "Only three people came to the meeting; the others were sick."
       ],
       "ru_interference": "Русское «другой» одно на все случаи, поэтому other ставят с единственным числом: неверно «Give me other cup» → верно «Give me another cup».",
       "prerequisites": [
@@ -1358,15 +1371,15 @@
         {
           "id": "b1_another_other_others_the_other_the_others_04",
           "kind": "choice",
-          "prompt": "There are ten people in my team. Only three came to the meeting; ___ were ill.",
+          "prompt": "There are ten people on my team. Only three came to the meeting; ___ were sick.",
           "options": [
             "other",
-            "others",
+            "another",
             "the other",
             "the others"
           ],
           "correct_index": 3,
-          "explanation_ru": "Группа известна и речь обо всём остатке этой группы, поэтому нужна форма the others.",
+          "explanation_ru": "Группа известна и речь обо всём её остатке во множественном числе, поэтому нужна форма the others; another и the other говорят об одном человеке.",
           "difficulty": 3
         },
         {
@@ -1395,7 +1408,7 @@
         {
           "id": "b1_another_other_others_the_other_the_others_07",
           "kind": "gap",
-          "prompt": "She has two cats. One is white and ___ (the second one) is black.",
+          "prompt": "She has two cats. One is white and ___ (other) is black.",
           "answer": "the other",
           "accept": [],
           "explanation_ru": "Из двух предметов второй всегда конкретный, поэтому нужен определённый артикль: the other.",

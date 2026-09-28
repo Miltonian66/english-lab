@@ -391,6 +391,25 @@ class PracticeTests(unittest.TestCase):
         phrasal = pr.vocab_question(self._vocab("check in"), CURRICULUM, self.rng)
         self.assertTrue(pr.check(phrasal, "checked in").correct)
 
+    def test_invented_forms_are_never_accepted(self) -> None:
+        """«childs», «hurted», «putted on» — ошибки, а не формы слова."""
+        self.assertNotIn("hurted", pr.word_forms("hurt"))
+        self.assertNotIn("putted on", pr.word_forms("put on"))
+        self.assertIn("put on", pr.word_forms("put on"))
+
+        class Card:
+            pos = "noun"
+
+        for word, forms in (("child", ["children"]), ("advice", []), ("person", ["people"])):
+            card = Card()
+            card.word = word  # type: ignore[attr-defined]
+            with self.subTest(word=word):
+                self.assertEqual(pr.accepted_forms(card), forms)  # type: ignore[arg-type]
+
+    def test_synonyms_count_in_their_forms_too(self) -> None:
+        question = pr.vocab_question(self._vocab("do"), CURRICULUM, self.rng)
+        self.assertTrue(pr.check(question, "made").correct)
+
     def test_recall_forms_depend_on_part_of_speech(self) -> None:
         self.assertEqual(pr.accepted_forms(self._vocab("on")), [])
         self.assertEqual(pr.accepted_forms(self._vocab("table")), ["tables"])

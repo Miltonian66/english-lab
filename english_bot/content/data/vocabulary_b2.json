@@ -43,7 +43,10 @@
         "assess the damage",
         "carefully assess"
       ],
-      "topic": "work"
+      "topic": "work",
+      "accept": [
+        "evaluate"
+      ]
     },
     {
       "id": "b2_v_justify",
@@ -51,7 +54,7 @@
       "word": "justify",
       "pos": "verb",
       "ipa_us": "/ˈdʒʌstəˌfaɪ/",
-      "translation_ru": "оправдывать, обосновывать",
+      "translation_ru": "обосновывать (затраты, решение), оправдывать",
       "example_en": "It is hard to justify the cost of another server right now.",
       "collocations": [
         "justify a decision",
@@ -65,7 +68,7 @@
       "word": "contradict",
       "pos": "verb",
       "ipa_us": "/ˌkɑntrəˈdɪkt/",
-      "translation_ru": "противоречить, опровергать",
+      "translation_ru": "противоречить",
       "example_en": "These two reports contradict each other on almost every number.",
       "collocations": [
         "contradict yourself",
@@ -86,7 +89,10 @@
         "perfectly reasonable",
         "a reasonable price"
       ],
-      "topic": "study"
+      "topic": "study",
+      "accept": [
+        "sensible"
+      ]
     },
     {
       "id": "b2_v_relevant",
@@ -109,7 +115,7 @@
       "word": "apparently",
       "pos": "adverb",
       "ipa_us": "/əˈpɛrəntli/",
-      "translation_ru": "по-видимому, судя по всему",
+      "translation_ru": "судя по всему (говорят, что), по-видимому",
       "example_en": "Apparently the server was restarted during the night.",
       "collocations": [
         "apparently not",
@@ -123,7 +129,7 @@
       "word": "bias",
       "pos": "noun",
       "ipa_us": "/ˈbaɪəs/",
-      "translation_ru": "предвзятость, склонность",
+      "translation_ru": "предвзятость",
       "example_en": "We should check the data for bias before we draw conclusions.",
       "collocations": [
         "a strong bias",
@@ -137,7 +143,7 @@
       "word": "objective",
       "pos": "noun",
       "ipa_us": "/əbˈdʒɛktɪv/",
-      "translation_ru": "цель, задача",
+      "translation_ru": "цель (формальная, измеримая)",
       "example_en": "The main objective of this sprint is to cut the load time.",
       "collocations": [
         "achieve an objective",
@@ -151,11 +157,11 @@
       "word": "acknowledge",
       "pos": "verb",
       "ipa_us": "/əkˈnɑlɪdʒ/",
-      "translation_ru": "признавать, подтверждать",
+      "translation_ru": "признавать (факт, ошибку)",
       "example_en": "He acknowledged that the design had a serious flaw.",
       "collocations": [
         "acknowledge a mistake",
-        "acknowledge receipt"
+        "acknowledge the problem"
       ],
       "topic": "work"
     },
@@ -171,7 +177,11 @@
         "emphasize the need",
         "strongly emphasize"
       ],
-      "topic": "study"
+      "topic": "study",
+      "accept": [
+        "stress",
+        "highlight"
+      ]
     },
     {
       "id": "b2_v_reveal",
@@ -179,7 +189,7 @@
       "word": "reveal",
       "pos": "verb",
       "ipa_us": "/rɪˈvil/",
-      "translation_ru": "раскрывать, показывать",
+      "translation_ru": "раскрывать, обнаруживать (скрытое)",
       "example_en": "The logs revealed that the job had already failed twice.",
       "collocations": [
         "reveal the truth",
@@ -242,7 +252,11 @@
         "a considerable amount",
         "considerable effort"
       ],
-      "topic": "work"
+      "topic": "work",
+      "accept": [
+        "significant",
+        "substantial"
+      ]
     },
     {
       "id": "b2_v_thorough",
@@ -270,7 +284,11 @@
         "deliberately ignore",
         "act deliberately"
       ],
-      "topic": "people"
+      "topic": "people",
+      "accept": [
+        "on purpose",
+        "intentionally"
+      ]
     },
     {
       "id": "b2_v_nevertheless",
@@ -284,7 +302,10 @@
         "nevertheless, we agreed",
         "but nevertheless"
       ],
-      "topic": "study"
+      "topic": "study",
+      "accept": [
+        "nonetheless"
+      ]
     },
     {
       "id": "b2_v_even_though",
@@ -292,7 +313,7 @@
       "word": "even though",
       "pos": "conjunction",
       "ipa_us": "/ˌivən ˈðoʊ/",
-      "translation_ru": "хотя, несмотря на то что",
+      "translation_ru": "хотя (с нажимом), даже несмотря на то что",
       "example_en": "Even though all the tests passed, we found a bug in production.",
       "collocations": [
         "even though it was late",
@@ -327,7 +348,10 @@
         "given the circumstances",
         "given that"
       ],
-      "topic": "work"
+      "topic": "work",
+      "accept": [
+        "considering"
+      ]
     },
     {
       "id": "b2_v_regardless",
@@ -355,7 +379,11 @@
         "furthermore, the data shows",
         "and furthermore"
       ],
-      "topic": "study"
+      "topic": "study",
+      "accept": [
+        "moreover",
+        "in addition"
+      ]
     },
     {
       "id": "b2_v_tendency",
@@ -363,7 +391,7 @@
       "word": "tendency",
       "pos": "noun",
       "ipa_us": "/ˈtɛndənsi/",
-      "translation_ru": "тенденция, склонность",
+      "translation_ru": "склонность (к действию), тенденция",
       "example_en": "He has a tendency to promise more than he can deliver.",
       "collocations": [
         "have a tendency to do something",
@@ -377,13 +405,16 @@
       "word": "outcome",
       "pos": "noun",
       "ipa_us": "/ˈaʊtˌkʌm/",
-      "translation_ru": "результат, итог",
+      "translation_ru": "исход, итог",
       "example_en": "Nobody could predict the outcome of the negotiation.",
       "collocations": [
         "a positive outcome",
         "the likely outcome"
       ],
-      "topic": "work"
+      "topic": "work",
+      "accept": [
+        "result"
+      ]
     },
     {
       "id": "b2_v_evidence",
@@ -391,13 +422,16 @@
       "word": "evidence",
       "pos": "noun",
       "ipa_us": "/ˈɛvədəns/",
-      "translation_ru": "доказательство, данные",
+      "translation_ru": "доказательства, свидетельства",
       "example_en": "There is no evidence that the update caused the crash.",
       "collocations": [
         "clear evidence",
         "provide evidence"
       ],
-      "topic": "study"
+      "topic": "study",
+      "accept": [
+        "proof"
+      ]
     },
     {
       "id": "b2_v_insight",
@@ -405,7 +439,7 @@
       "word": "insight",
       "pos": "noun",
       "ipa_us": "/ˈɪnˌsaɪt/",
-      "translation_ru": "понимание, идея",
+      "translation_ru": "глубокое понимание",
       "example_en": "The interviews gave us useful insight into how people use the app.",
       "collocations": [
         "valuable insight",
@@ -448,7 +482,7 @@
       "word": "procedure",
       "pos": "noun",
       "ipa_us": "/prəˈsidʒɚ/",
-      "translation_ru": "процедура, порядок действий",
+      "translation_ru": "процедура",
       "example_en": "There is a clear procedure for reporting a security problem.",
       "collocations": [
         "follow a procedure",
@@ -491,7 +525,7 @@
       "word": "maintenance",
       "pos": "noun",
       "ipa_us": "/ˈmeɪntənəns/",
-      "translation_ru": "обслуживание, поддержка",
+      "translation_ru": "техобслуживание, обслуживание",
       "example_en": "The server will be down for maintenance on Sunday morning.",
       "collocations": [
         "regular maintenance",
@@ -554,7 +588,10 @@
         "a serious shortage",
         "a housing shortage"
       ],
-      "topic": "work"
+      "topic": "work",
+      "accept": [
+        "lack"
+      ]
     },
     {
       "id": "b2_v_outage",
@@ -583,7 +620,10 @@
         "a major impact",
         "a negative impact"
       ],
-      "topic": "work"
+      "topic": "work",
+      "accept": [
+        "effect"
+      ]
     },
     {
       "id": "b2_v_downtime",
@@ -649,7 +689,7 @@
       "word": "legacy",
       "pos": "noun",
       "ipa_us": "/ˈlɛgəsi/",
-      "translation_ru": "устаревшая система, наследие",
+      "translation_ru": "наследие (в ИТ: унаследованный код)",
       "example_en": "Half of our time goes to supporting legacy code.",
       "collocations": [
         "legacy code",
@@ -669,7 +709,10 @@
         "a software vendor",
         "choose a vendor"
       ],
-      "topic": "money"
+      "topic": "money",
+      "accept": [
+        "supplier"
+      ]
     },
     {
       "id": "b2_v_revenue",
@@ -677,7 +720,7 @@
       "word": "revenue",
       "pos": "noun",
       "ipa_us": "/ˈrɛvəˌnu/",
-      "translation_ru": "выручка, доход",
+      "translation_ru": "выручка (доход компании)",
       "example_en": "The new pricing plan raised monthly revenue by twelve percent.",
       "collocations": [
         "generate revenue",
@@ -733,7 +776,7 @@
       "word": "turnover",
       "pos": "noun",
       "ipa_us": "/ˈtɝnˌoʊvɚ/",
-      "translation_ru": "текучесть кадров, оборот",
+      "translation_ru": "текучесть кадров",
       "example_en": "High staff turnover is hurting the support team.",
       "collocations": [
         "staff turnover",
@@ -747,7 +790,7 @@
       "word": "efficiency",
       "pos": "noun",
       "ipa_us": "/ɪˈfɪʃənsi/",
-      "translation_ru": "эффективность, производительность",
+      "translation_ru": "эффективность",
       "example_en": "Caching improved efficiency without any extra hardware.",
       "collocations": [
         "improve efficiency",
@@ -818,7 +861,7 @@
       "word": "incentive",
       "pos": "noun",
       "ipa_us": "/ɪnˈsɛntɪv/",
-      "translation_ru": "стимул, мотивация",
+      "translation_ru": "стимул",
       "example_en": "A bonus is a strong incentive to finish the migration on time.",
       "collocations": [
         "a financial incentive",
@@ -909,7 +952,11 @@
         "a major drawback",
         "the main drawback"
       ],
-      "topic": "study"
+      "topic": "study",
+      "accept": [
+        "disadvantage",
+        "downside"
+      ]
     },
     {
       "id": "b2_v_narrow_down",
@@ -918,7 +965,7 @@
       "pos": "phrasal verb",
       "ipa_us": "/ˌnɛroʊ ˈdaʊn/",
       "translation_ru": "сузить круг, отобрать",
-      "example_en": "We narrowed the list down to three possible causes.",
+      "example_en": "We need to narrow down the list of possible causes.",
       "collocations": [
         "narrow down a list",
         "narrow down the options"
@@ -959,13 +1006,16 @@
       "word": "call off",
       "pos": "phrasal verb",
       "ipa_us": "/ˌkɔl ˈɔf/",
-      "translation_ru": "отменить",
+      "translation_ru": "отменить (встречу, мероприятие)",
       "example_en": "They called off the demo an hour before it was due to start.",
       "collocations": [
         "call off a meeting",
         "call off a deal"
       ],
-      "topic": "time"
+      "topic": "time",
+      "accept": [
+        "cancel"
+      ]
     },
     {
       "id": "b2_v_hand_over",
@@ -1001,13 +1051,16 @@
       "word": "roll out",
       "pos": "phrasal verb",
       "ipa_us": "/ˌroʊl ˈaʊt/",
-      "translation_ru": "запускать, внедрять",
+      "translation_ru": "запускать (постепенно, на всех), внедрять",
       "example_en": "The company will roll out the new policy in September.",
       "collocations": [
         "roll out a feature",
         "roll out an update"
       ],
-      "topic": "work"
+      "topic": "work",
+      "accept": [
+        "launch"
+      ]
     },
     {
       "id": "b2_v_back_up",
@@ -1015,11 +1068,11 @@
       "word": "back up",
       "pos": "phrasal verb",
       "ipa_us": "/ˌbæk ˈʌp/",
-      "translation_ru": "создавать резервную копию, подкреплять",
+      "translation_ru": "создавать резервную копию",
       "example_en": "Back up the database before you touch the schema.",
       "collocations": [
         "back up a file",
-        "back up a claim"
+        "back up your photos"
       ],
       "topic": "tech"
     },
@@ -1029,11 +1082,11 @@
       "word": "take on",
       "pos": "phrasal verb",
       "ipa_us": "/ˌteɪk ˈɑn/",
-      "translation_ru": "браться за, нанимать",
+      "translation_ru": "браться за (работу)",
       "example_en": "Do not take on more work than you can finish this week.",
       "collocations": [
         "take on a task",
-        "take on new staff",
+        "take on a new project",
         "take on responsibility"
       ],
       "topic": "work"
@@ -1050,7 +1103,10 @@
         "look into a matter",
         "look into a complaint"
       ],
-      "topic": "work"
+      "topic": "work",
+      "accept": [
+        "investigate"
+      ]
     },
     {
       "id": "b2_v_follow_up",
@@ -1072,8 +1128,8 @@
       "word": "break down",
       "pos": "phrasal verb",
       "ipa_us": "/ˌbreɪk ˈdaʊn/",
-      "translation_ru": "разбивать на части, ломаться",
-      "example_en": "Let's break the task down into smaller steps.",
+      "translation_ru": "разбивать на части",
+      "example_en": "Let's break down the task into smaller steps.",
       "collocations": [
         "break down into parts",
         "break down a problem"
@@ -1085,14 +1141,18 @@
       "level": "B2",
       "word": "put up with",
       "pos": "phrasal verb",
-      "ipa_us": "/ˌpʊt ˈʌp wɪθ/",
+      "ipa_us": "/ˌpʊt ˈʌp wɪð/",
       "translation_ru": "мириться с, терпеть",
       "example_en": "Users will not put up with a slow site for long.",
       "collocations": [
         "put up with noise",
         "put up with a problem"
       ],
-      "topic": "feelings"
+      "topic": "feelings",
+      "accept": [
+        "tolerate",
+        "stand"
+      ]
     },
     {
       "id": "b2_v_bring_up",
@@ -1106,15 +1166,19 @@
         "bring up a topic",
         "bring up an issue"
       ],
-      "topic": "people"
+      "topic": "people",
+      "accept": [
+        "raise",
+        "mention"
+      ]
     },
     {
       "id": "b2_v_keep_up_with",
       "level": "B2",
       "word": "keep up with",
       "pos": "phrasal verb",
-      "ipa_us": "/ˌkip ˈʌp wɪθ/",
-      "translation_ru": "успевать за, следить за",
+      "ipa_us": "/ˌkip ˈʌp wɪð/",
+      "translation_ru": "успевать за, не отставать от",
       "example_en": "It is hard to keep up with all the changes in this field.",
       "collocations": [
         "keep up with the news",
@@ -1128,7 +1192,7 @@
       "word": "keep an eye on",
       "pos": "phrase",
       "ipa_us": "/ˌkip ən ˈaɪ ɑn/",
-      "translation_ru": "присматривать за, следить за",
+      "translation_ru": "приглядывать за, следить за (не спуская глаз)",
       "example_en": "Keep an eye on the memory usage after the deploy.",
       "collocations": [
         "keep an eye on the time",
@@ -1162,7 +1226,10 @@
         "available at short notice",
         "cancel at short notice"
       ],
-      "topic": "time"
+      "topic": "time",
+      "accept": [
+        "on short notice"
+      ]
     },
     {
       "id": "b2_v_in_the_long_run",
@@ -1185,7 +1252,7 @@
       "pos": "phrase",
       "ipa_us": "/ˌteɪk fɚ ˈgræntɪd/",
       "translation_ru": "принимать как должное",
-      "example_en": "We took the backups for granted until the day we needed them.",
+      "example_en": "Backups are one of those things we take for granted until the day we need them.",
       "collocations": [
         "take something for granted",
         "take someone for granted"
@@ -1199,7 +1266,7 @@
       "pos": "noun",
       "ipa_us": "/ˈlɝnɪŋ ˌkɝv/",
       "translation_ru": "кривая обучения, сложность освоения",
-      "example_en": "The tool is powerful, but the learning curve is steep.",
+      "example_en": "Every new tool has a learning curve, so give yourself a week.",
       "collocations": [
         "a steep learning curve",
         "a gentle learning curve"
@@ -1211,7 +1278,7 @@
       "level": "B2",
       "word": "get the hang of",
       "pos": "phrase",
-      "ipa_us": "/ˌgɛt ðə ˈhæŋ ʌv/",
+      "ipa_us": "/ˌgɛt ðə ˈhæŋ əv/",
       "translation_ru": "освоиться, набить руку",
       "example_en": "After a week or two you get the hang of the new editor.",
       "collocations": [
@@ -1239,7 +1306,7 @@
       "level": "B2",
       "word": "from scratch",
       "pos": "phrase",
-      "ipa_us": "/frʌm ˈskrætʃ/",
+      "ipa_us": "/frəm ˈskrætʃ/",
       "translation_ru": "с нуля",
       "example_en": "Instead of patching it, they built the service from scratch.",
       "collocations": [
@@ -1255,7 +1322,7 @@
       "pos": "phrase",
       "ipa_us": "/bɪˌhaɪnd ˈskɛdʒul/",
       "translation_ru": "с отставанием от графика",
-      "example_en": "The project is already two weeks behind schedule.",
+      "example_en": "We are behind schedule, so the demo moves to next week.",
       "collocations": [
         "fall behind schedule",
         "run behind schedule"
@@ -1274,14 +1341,18 @@
         "in a nutshell, it works",
         "to put it in a nutshell"
       ],
-      "topic": "study"
+      "topic": "study",
+      "accept": [
+        "in short",
+        "briefly"
+      ]
     },
     {
       "id": "b2_v_keep_track_of",
       "level": "B2",
       "word": "keep track of",
       "pos": "phrase",
-      "ipa_us": "/ˌkip ˈtræk ʌv/",
+      "ipa_us": "/ˌkip ˈtræk əv/",
       "translation_ru": "отслеживать, вести учёт",
       "example_en": "We use a simple board to keep track of open tasks.",
       "collocations": [
@@ -1330,7 +1401,10 @@
         "in the meantime, nothing changes",
         "and in the meantime"
       ],
-      "topic": "time"
+      "topic": "time",
+      "accept": [
+        "meanwhile"
+      ]
     },
     {
       "id": "b2_v_overwhelming",
@@ -1352,7 +1426,7 @@
       "word": "frustrating",
       "pos": "adjective",
       "ipa_us": "/ˈfrʌsˌtreɪtɪŋ/",
-      "translation_ru": "раздражающий, выводящий из себя",
+      "translation_ru": "досадный, выводящий из себя",
       "example_en": "It is frustrating when the build fails for no clear reason.",
       "collocations": [
         "deeply frustrating",
@@ -1373,7 +1447,11 @@
         "highly accurate",
         "an accurate estimate"
       ],
-      "topic": "study"
+      "topic": "study",
+      "accept": [
+        "precise",
+        "exact"
+      ]
     },
     {
       "id": "b2_v_awkward",
@@ -1415,7 +1493,10 @@
         "cautious optimism",
         "be cautious about something"
       ],
-      "topic": "feelings"
+      "topic": "feelings",
+      "accept": [
+        "careful"
+      ]
     },
     {
       "id": "b2_v_genuine",
@@ -1423,13 +1504,16 @@
       "word": "genuine",
       "pos": "adjective",
       "ipa_us": "/ˈdʒɛnjuɪn/",
-      "translation_ru": "искренний, настоящий",
+      "translation_ru": "подлинный, искренний",
       "example_en": "He showed genuine interest in how the system works.",
       "collocations": [
         "genuine interest",
         "a genuine mistake"
       ],
-      "topic": "feelings"
+      "topic": "feelings",
+      "accept": [
+        "sincere"
+      ]
     },
     {
       "id": "b2_v_tedious",
@@ -1437,7 +1521,7 @@
       "word": "tedious",
       "pos": "adjective",
       "ipa_us": "/ˈtidiəs/",
-      "translation_ru": "нудный, утомительный",
+      "translation_ru": "нудный (о работе), утомительный",
       "example_en": "Filling in these forms by hand is tedious work.",
       "collocations": [
         "a tedious task",
@@ -1451,7 +1535,7 @@
       "word": "straightforward",
       "pos": "adjective",
       "ipa_us": "/ˌstreɪtˈfɔrwɚd/",
-      "translation_ru": "простой, понятный",
+      "translation_ru": "незамысловатый, без подвоха",
       "example_en": "The setup is straightforward if you follow the guide.",
       "collocations": [
         "a straightforward answer",
@@ -1471,7 +1555,10 @@
         "a vague idea",
         "remain vague"
       ],
-      "topic": "study"
+      "topic": "study",
+      "accept": [
+        "unclear"
+      ]
     },
     {
       "id": "b2_v_rewarding",
@@ -1493,7 +1580,7 @@
       "word": "remarkable",
       "pos": "adjective",
       "ipa_us": "/rɪˈmɑrkəbəl/",
-      "translation_ru": "замечательный, поразительный",
+      "translation_ru": "примечательный, поразительный",
       "example_en": "The team made remarkable progress in only two weeks.",
       "collocations": [
         "remarkable progress",
@@ -1541,7 +1628,11 @@
         "a crucial role",
         "a crucial decision"
       ],
-      "topic": "work"
+      "topic": "work",
+      "accept": [
+        "critical",
+        "vital"
+      ]
     },
     {
       "id": "b2_v_ongoing",
@@ -1549,7 +1640,7 @@
       "word": "ongoing",
       "pos": "adjective",
       "ipa_us": "/ˈɑnˌgoʊɪŋ/",
-      "translation_ru": "текущий, продолжающийся",
+      "translation_ru": "продолжающийся, идущий (сейчас)",
       "example_en": "There is an ongoing discussion about the naming rules.",
       "collocations": [
         "an ongoing process",
@@ -1563,13 +1654,16 @@
       "word": "prior",
       "pos": "adjective",
       "ipa_us": "/ˈpraɪɚ/",
-      "translation_ru": "предыдущий, предварительный",
+      "translation_ru": "предшествующий, прежний",
       "example_en": "No prior experience with this tool is required.",
       "collocations": [
         "prior experience",
         "prior to the meeting"
       ],
-      "topic": "time"
+      "topic": "time",
+      "accept": [
+        "previous"
+      ]
     },
     {
       "id": "b2_v_hesitate",
@@ -1591,7 +1685,7 @@
       "word": "cope",
       "pos": "verb",
       "ipa_us": "/koʊp/",
-      "translation_ru": "справляться, выдерживать",
+      "translation_ru": "справляться (с нагрузкой, трудностью), выдерживать",
       "example_en": "The server could not cope with the traffic on launch day.",
       "collocations": [
         "cope with stress",
@@ -1605,13 +1699,16 @@
       "word": "anticipate",
       "pos": "verb",
       "ipa_us": "/ænˈtɪsəˌpeɪt/",
-      "translation_ru": "предвидеть, ожидать",
+      "translation_ru": "предвидеть",
       "example_en": "We did not anticipate such a high load on the first day.",
       "collocations": [
         "anticipate a problem",
         "anticipate demand"
       ],
-      "topic": "work"
+      "topic": "work",
+      "accept": [
+        "foresee"
+      ]
     },
     {
       "id": "b2_v_implement",
@@ -1619,7 +1716,7 @@
       "word": "implement",
       "pos": "verb",
       "ipa_us": "/ˈɪmpləˌmɛnt/",
-      "translation_ru": "внедрять, реализовать",
+      "translation_ru": "реализовать (план, решение), внедрять",
       "example_en": "It took a month to implement the new access rules.",
       "collocations": [
         "implement a policy",
@@ -1668,7 +1765,10 @@
         "overlook a detail",
         "easily overlooked"
       ],
-      "topic": "tech"
+      "topic": "tech",
+      "accept": [
+        "miss"
+      ]
     },
     {
       "id": "b2_v_eventually",
@@ -1682,7 +1782,11 @@
         "eventually agree",
         "eventually find out"
       ],
-      "topic": "time"
+      "topic": "time",
+      "accept": [
+        "finally",
+        "in the end"
+      ]
     },
     {
       "id": "b2_v_gradually",

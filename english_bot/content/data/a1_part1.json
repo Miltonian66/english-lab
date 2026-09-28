@@ -86,10 +86,10 @@
     {
      "id": "a1_adjectives_05",
      "kind": "gap",
-     "prompt": "My two brothers are very ___ (tall).",
+     "prompt": "My two brothers are very ___ (tall / talls).",
      "answer": "tall",
      "accept": [],
-     "explanation_ru": "Прилагательное одинаково для одного и для нескольких предметов, форма talls не существует.",
+     "explanation_ru": "Прилагательное одинаково для одного и для нескольких предметов: число показывает только существительное brothers, а формы talls не существует.",
      "difficulty": 1
     },
     {
@@ -113,7 +113,7 @@
     {
      "id": "a1_adjectives_08",
      "kind": "order",
-     "prompt": "very / is / new / laptop / My",
+     "prompt": "very / is / new / laptop / my / .",
      "answer": "My laptop is very new.",
      "accept": [],
      "explanation_ru": "После be идёт very и затем прилагательное; притяжательное местоимение открывает предложение.",
@@ -210,7 +210,7 @@
      "prompt": "He speaks Spanish ___ (good).",
      "answer": "well",
      "accept": [],
-     "explanation_ru": "У прилагательного good наречие well, форма goodly не используется.",
+     "explanation_ru": "Как он говорит? Слово описывает действие speaks, поэтому нужно наречие, а у good оно неправильное: well.",
      "difficulty": 1
     },
     {
@@ -219,7 +219,7 @@
      "prompt": "The developers finished the task ___ (easy).",
      "answer": "easily",
      "accept": [],
-     "explanation_ru": "Конечная -y после согласной меняется на -ily.",
+     "explanation_ru": "Слово отвечает на вопрос «как закончили?» и описывает действие finished, поэтому нужно наречие; конечная -y после согласной меняется на -ily: easily.",
      "difficulty": 2
     },
     {
@@ -234,7 +234,7 @@
     {
      "id": "a1_adverbs_manner_08",
      "kind": "order",
-     "prompt": "carefully / documents / the / reads / He",
+     "prompt": "carefully / documents / the / reads / he / .",
      "answer": "He reads the documents carefully.",
      "accept": [
       "He carefully reads the documents."
@@ -356,7 +356,7 @@
     {
      "id": "a1_comparative_adjectives_08",
      "kind": "order",
-     "prompt": "than / me / is / older / my / manager",
+     "prompt": "than / me / is / older / my / manager / .",
      "answer": "My manager is older than me.",
      "accept": [],
      "explanation_ru": "Сравнение строится по схеме подлежащее + be + прилагательное с -er + than.",
@@ -449,19 +449,19 @@
     {
      "id": "a1_superlative_adjectives_05",
      "kind": "gap",
-     "prompt": "This is ___ (easy) task on the list.",
-     "answer": "the easiest",
+     "prompt": "This is the ___ (easy) task on the list.",
+     "answer": "easiest",
      "accept": [],
-     "explanation_ru": "Перед превосходной степенью нужен артикль the, а -y переходит в -iest.",
+     "explanation_ru": "Задача выделяется из всего списка, поэтому нужна превосходная степень; у easy конечная -y после согласной переходит в -iest: easiest — the уже стоит перед пропуском.",
      "difficulty": 2
     },
     {
      "id": "a1_superlative_adjectives_06",
      "kind": "gap",
-     "prompt": "He is ___ (young) person in the office.",
-     "answer": "the youngest",
+     "prompt": "He is the ___ (young) person in the office.",
+     "answer": "youngest",
      "accept": [],
-     "explanation_ru": "Короткое прилагательное получает -est и артикль the.",
+     "explanation_ru": "Человек выделяется из всех в офисе, поэтому нужна превосходная степень; короткое прилагательное получает -est: youngest — the уже стоит перед пропуском.",
      "difficulty": 2
     },
     {
@@ -476,7 +476,7 @@
     {
      "id": "a1_superlative_adjectives_08",
      "kind": "order",
-     "prompt": "company / the / is / she / in / fastest / the",
+     "prompt": "company / the / is / she / in / fastest / the / .",
      "answer": "She is the fastest in the company.",
      "accept": [],
      "explanation_ru": "После превосходной степени группа сравнения вводится предлогом in.",
@@ -599,7 +599,7 @@
     {
      "id": "a1_can_cant_08",
      "kind": "order",
-     "prompt": "can't / the / I / password / remember",
+     "prompt": "can't / the / I / password / remember / .",
      "answer": "I can't remember the password.",
      "accept": [
       "I cannot remember the password."
@@ -642,11 +642,11 @@
      "options": [
       "a",
       "an",
-      "many",
-      "two"
+      "no article",
+      "any"
      ],
      "correct_index": 1,
-     "explanation_ru": "Слово interview начинается с гласного звука, поэтому нужен an; many и two требуют множественного числа.",
+     "explanation_ru": "Interview — исчисляемое в единственном числе, поэтому без артикля нельзя, а слово начинается с гласного звука: an. A ставится перед согласным звуком, а any с единственным числом в утверждении не употребляют.",
      "difficulty": 1
     },
     {
@@ -721,7 +721,7 @@
     {
      "id": "a1_a_an_plurals_08",
      "kind": "order",
-     "prompt": "an / I / have / hour / for / lunch",
+     "prompt": "an / I / have / hour / for / lunch / .",
      "answer": "I have an hour for lunch.",
      "accept": [],
      "explanation_ru": "В слове hour первая буква не читается, слово начинается с гласного звука, поэтому нужен an.",
@@ -776,11 +776,11 @@
      "options": [
       "a",
       "an",
-      "any",
-      "two"
+      "the",
+      "no article"
      ],
      "correct_index": 0,
-     "explanation_ru": "Название профессии в единственном числе требует a перед согласным звуком.",
+     "explanation_ru": "Профессию называют с a или an, без артикля нельзя; programmer начинается с согласного звука, поэтому a. The значило бы «тот самый программист», о котором уже шла речь.",
      "difficulty": 1
     },
     {
@@ -841,7 +841,7 @@
     {
      "id": "a1_a_an_the_no_article_08",
      "kind": "order",
-     "prompt": "a / I / need / new / keyboard",
+     "prompt": "a / I / need / new / keyboard / .",
      "answer": "I need a new keyboard.",
      "accept": [],
      "explanation_ru": "Клавиатура упоминается впервые и стоит в единственном числе, поэтому нужен a перед прилагательным.",
@@ -961,7 +961,7 @@
     {
      "id": "a1_possessive_adjectives_08",
      "kind": "order",
-     "prompt": "our / is / new / this / manager",
+     "prompt": "our / is / new / this / manager / .",
      "answer": "This is our new manager.",
      "accept": [],
      "explanation_ru": "Притяжательное местоимение стоит перед прилагательным и существительным и заменяет артикль.",
@@ -1072,21 +1072,19 @@
     {
      "id": "a1_whose_possessive_s_07",
      "kind": "correct",
-     "prompt": "This is my parents house.",
-     "answer": "This is my parents' house.",
+     "prompt": "My mom and dad live here. This is my parents house.",
+     "answer": "My mom and dad live here. This is my parents' house.",
      "accept": [],
-     "explanation_ru": "Множественное число parents уже кончается на -s, поэтому добавляется только апостроф.",
+     "explanation_ru": "Родителей двое, а parents уже кончается на -s, поэтому добавляется только апостроф: my parents' house.",
      "difficulty": 3
     },
     {
      "id": "a1_whose_possessive_s_08",
      "kind": "order",
-     "prompt": "is / whose / this / phone",
+     "prompt": "is / whose / this / phone / ?",
      "answer": "Whose phone is this?",
      "accept": [
-      "Whose phone is this",
-      "Whose is this phone?",
-      "Whose is this phone"
+      "Whose is this phone?"
      ],
      "explanation_ru": "Whose открывает вопрос, дальше идёт существительное и глагол be перед подлежащим.",
      "difficulty": 3
@@ -1212,7 +1210,7 @@
     {
      "id": "a1_be_going_to_plans_predictions_08",
      "kind": "order",
-     "prompt": "going / we / to / are / buy / a / new / server",
+     "prompt": "going / we / to / are / buy / a / new / server / .",
      "answer": "We are going to buy a new server.",
      "accept": [
       "We're going to buy a new server."
@@ -1301,7 +1299,7 @@
       "getting"
      ],
      "correct_index": 1,
-     "explanation_ru": "В конструкции всегда третья форма got, она не меняется.",
+     "explanation_ru": "В have got слово got не меняется: это устойчивое выражение со значением «иметь», а не «получать». В американском английском причастие от get — gotten, но в have got всегда got.",
      "difficulty": 2
     },
     {
@@ -1342,7 +1340,7 @@
     {
      "id": "a1_have_got_08",
      "kind": "order",
-     "prompt": "got / I / have / an / idea",
+     "prompt": "got / I / have / an / idea / .",
      "answer": "I have got an idea.",
      "accept": [
       "I've got an idea."
@@ -1384,26 +1382,26 @@
      "prompt": "What's this? - ___ my new phone.",
      "options": [
       "It's",
-      "This's",
-      "It are",
-      "Its'"
+      "This is",
+      "Its",
+      "It"
      ],
      "correct_index": 0,
-     "explanation_ru": "В ответе предмет уже известен из вопроса, поэтому используется it; формы This's и Its' не существуют.",
+     "explanation_ru": "Предмет уже назван в вопросе, поэтому в ответе it: It's my new phone. This is вводит предмет впервые, its — притяжательное «его», а без is предложению не хватает глагола.",
      "difficulty": 1
     },
     {
      "id": "a1_the_difference_between_this_and_it_02",
      "kind": "choice",
-     "prompt": "Look, ___ are my new headphones!",
+     "prompt": "Look, these are my new headphones! ___ are wireless.",
      "options": [
-      "it",
-      "this",
-      "these",
-      "that"
+      "They",
+      "These",
+      "Them",
+      "It"
      ],
-     "correct_index": 2,
-     "explanation_ru": "Предмет во множественном числе и рядом с говорящим, поэтому нужно these; остальные формы не сочетаются с are.",
+     "correct_index": 0,
+     "explanation_ru": "Наушники уже названы, поэтому дальше их заменяет they — множественное число от it. These снова вводило бы их как новый предмет, them — форма дополнения, а it не сочетается с are.",
      "difficulty": 2
     },
     {
@@ -1446,10 +1444,10 @@
     {
      "id": "a1_the_difference_between_this_and_it_06",
      "kind": "gap",
-     "prompt": "Hello, ___ (this / it) is Anna from the IT department.",
+     "prompt": "On the phone with a new client: 'Hello, ___ (this / it) is Anna from the IT department.'",
      "answer": "This",
      "accept": [],
-     "explanation_ru": "Представляясь по телефону, себя называют через this is.",
+     "explanation_ru": "Незнакомому собеседнику по телефону представляются через this is: Hello, this is Anna. It's Anna говорят тому, кто вас уже знает.",
      "difficulty": 2
     },
     {
@@ -1466,7 +1464,7 @@
     {
      "id": "a1_the_difference_between_this_and_it_08",
      "kind": "order",
-     "prompt": "new / this / my / is / colleague",
+     "prompt": "new / this / my / is / colleague / .",
      "answer": "This is my new colleague.",
      "accept": [],
      "explanation_ru": "Человека представляют впервые, поэтому предложение начинается с this is.",

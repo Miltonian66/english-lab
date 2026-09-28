@@ -6,9 +6,9 @@
       "mode": "monologue",
       "title_ru": "Моё утро",
       "prompt_en": "Tell me about your morning. What time do you get up? What do you eat for breakfast? How do you get to work?",
-      "guidance_ru": "Три коротких предложения по порядку: во сколько встаёшь, что ешь, как добираешься. Каждое начинай с I. Лишнее не добавляй, лучше скажи медленно и до конца.",
-      "seconds_min": 25,
-      "seconds_max": 45,
+      "guidance_ru": "Пять-шесть коротких предложений по порядку: во сколько встаёшь, что ешь на завтрак, как добираешься до работы и сколько это занимает. Например: I get up at seven. I have tea and eggs. I go to work by metro. It takes forty minutes. Говори медленно и договаривай каждое предложение до конца.",
+      "seconds_min": 20,
+      "seconds_max": 40,
       "focus": ["present simple", "time expressions"]
     },
     {
@@ -17,7 +17,7 @@
       "mode": "describe",
       "title_ru": "Мой рабочий стол",
       "prompt_en": "Describe your desk at work. What is on it? Where is your computer, your cup, your phone?",
-      "guidance_ru": "Начни с There is или There are, потом два предложения о том, где что лежит: on the table, next to the laptop. В конце скажи, что тебе на столе нравится.",
+      "guidance_ru": "Начни с There is или There are, потом два предложения о том, где что лежит: on the desk, next to the laptop. В конце скажи, что тебе на столе нравится.",
       "seconds_min": 20,
       "seconds_max": 40,
       "focus": ["there is / there are", "prepositions of place"]
@@ -28,7 +28,7 @@
       "mode": "monologue",
       "title_ru": "Моя команда",
       "prompt_en": "Talk about the people on your team. Name three of them and say what each person does.",
-      "guidance_ru": "На каждого человека одно предложение: имя, работа, одна деталь. Например: This is Anna. She is a tester. She works with me every day. Не теряй -s в третьем лице.",
+      "guidance_ru": "На каждого человека два-три коротких предложения: имя, работа, одна деталь. Например: This is Anna. She is a tester. She works with me every day. Имена можно придумать. Не теряй -s в третьем лице.",
       "seconds_min": 25,
       "seconds_max": 45,
       "focus": ["present simple third person", "jobs vocabulary"]
@@ -82,22 +82,22 @@
       "level": "A1",
       "mode": "describe",
       "title_ru": "Где я работаю дома",
-      "prompt_en": "Describe the room where you work at home. What furniture is there? What color are the walls? Is it big or small?",
-      "guidance_ru": "Сначала общее: It is a small room. Потом два-три предмета через There is. В конце одно слово про цвет или свет. Прилагательное ставь перед существительным.",
+      "prompt_en": "Tell me about the room where you work at home. Is it big or small, quiet or noisy, light or dark? What do you like about it? What do you want to change?",
+      "guidance_ru": "Пять-шесть коротких предложений. Сначала какая это комната: It is a small room. It is quiet and light. Потом что тебе в ней нравится: I like my big window. В конце что хочешь поменять: I want a new chair. Прилагательное ставь перед существительным: a big window, а не a window big.",
       "seconds_min": 25,
       "seconds_max": 45,
-      "focus": ["there is / there are", "adjectives", "colors"]
+      "focus": ["adjectives", "verb to be", "like / want"]
     },
     {
       "id": "a1_sp_ask_way",
       "level": "A1",
       "mode": "roleplay",
       "title_ru": "Спросить дорогу",
-      "prompt_en": "You are in a new city. Stop someone in the street and ask how to get to the metro station. Then repeat the way out loud and say thank you.",
-      "guidance_ru": "Начни с Excuse me, потом вопрос How do I get to...? Дальше проговори маршрут за собой: Go straight, turn left, it is on the right. Закончи Thank you very much.",
+      "prompt_en": "You are in a new city. Stop someone in the street and ask how to get to the metro station. The person says: \"Go straight, then turn left at the bank. The station is on the right.\" Repeat the way back to check, then say thank you.",
+      "guidance_ru": "Начни с Excuse me, потом вопрос How do I get to the metro station? Потом перескажи маршрут прохожего, чтобы проверить, что понял: So I go straight, then I turn left at the bank, and the station is on the right? Закончи Thank you very much.",
       "seconds_min": 25,
       "seconds_max": 45,
-      "focus": ["question forms", "directions", "imperatives"]
+      "focus": ["question forms", "directions", "checking understanding"]
     },
     {
       "id": "a1_sp_lunch",
@@ -192,12 +192,12 @@
       "id": "a2_sp_job_talk",
       "level": "A2",
       "mode": "interview",
-      "title_ru": "Вопросы о моей работе",
-      "prompt_en": "Answer these questions: What is your job? What do you do every day? What part of your job do you like most, and why?",
-      "guidance_ru": "На каждый вопрос по два предложения. В последнем ответе обязательно I like плюс глагол с -ing и короткое because. Отвечай по очереди, не перепрыгивай.",
+      "title_ru": "Вопросы о моей карьере",
+      "prompt_en": "Answer these questions: What did you study? How did you start your career? What do you want to learn next year, and why?",
+      "guidance_ru": "На каждый вопрос по два предложения. Первые два ответа — о прошлом: I studied economics. I started as a tester in 2019. Последний — о планах с коротким because: I want to learn Python because I want to automate my tests. Отвечай по очереди, не перепрыгивай.",
       "seconds_min": 35,
       "seconds_max": 60,
-      "focus": ["present simple", "like + -ing", "because"]
+      "focus": ["past simple", "want to + verb", "because"]
     },
     {
       "id": "a2_sp_work_laptop",
@@ -205,7 +205,7 @@
       "mode": "describe",
       "title_ru": "Мой рабочий ноутбук",
       "prompt_en": "Describe the computer you use at work. How old is it? What is good about it? What is the problem with it?",
-      "guidance_ru": "Начни с модели и возраста, потом один плюс, потом один минус через but: It is fast, but the battery is bad. В конце скажи, поменял бы ты его.",
+      "guidance_ru": "Начни с модели и возраста, потом один плюс, потом один минус через but: It is fast, but the battery is bad. В конце скажи, хочешь ли новый: I want a new one или I am happy with it.",
       "seconds_min": 30,
       "seconds_max": 50,
       "focus": ["adjectives", "but for contrast", "it has / it does not have"]
@@ -216,7 +216,7 @@
       "mode": "monologue",
       "title_ru": "После работы",
       "prompt_en": "What do you do after work? Say two things you often do, one thing you never do, and one thing you want to start doing.",
-      "guidance_ru": "Четыре предложения по плану: often, sometimes, never, want to. Наречие частоты ставь перед смысловым глаголом: I often go, I never watch.",
+      "guidance_ru": "Четыре дела по плану: два с often, одно с never, одно с want to start. К каждому добавь деталь: где, с кем или почему. Наречие частоты ставь перед смысловым глаголом: I often go, I never watch.",
       "seconds_min": 30,
       "seconds_max": 55,
       "focus": ["frequency adverbs", "want to + verb"]
@@ -225,10 +225,10 @@
     {
       "id": "b1_sp_code_review",
       "level": "B1",
-      "mode": "monologue",
-      "title_ru": "Комментарий на код-ревью",
-      "prompt_en": "A teammate opened a pull request with no tests and one very long function. Give the review comment you would leave, and explain why you would word it that way.",
-      "guidance_ru": "Сначала что в PR хорошего, потом две правки с обоснованием, потом вопрос автору. Смягчай: I would suggest, it might be worth. Не начинай с This is wrong.",
+      "mode": "roleplay",
+      "title_ru": "Разговор о пул-реквесте",
+      "prompt_en": "Call your teammate and give feedback on their pull request. It adds a password reset page, but the error messages are confusing, and the page looks broken on phones. Say what is good, suggest two changes, and agree on the next step.",
+      "guidance_ru": "Говори с автором напрямую, через you и your. Сначала что в PR хорошего, потом две правки с причиной: понятные сообщения об ошибках и вид страницы на телефоне. Смягчай: I would suggest, it might be worth. Не начинай с This is wrong. Закончи договорённостью: кто что делает и когда.",
       "seconds_min": 65,
       "seconds_max": 90,
       "focus": ["modals for advice", "softening language", "because / so"]
@@ -405,7 +405,7 @@
       "mode": "opinion",
       "title_ru": "Центр города без машин",
       "prompt_en": "Should city centers be closed to private cars? Give your view, say who would lose from it, and say what would have to happen first.",
-      "guidance_ru": "Позиция, две причины, потом честно про тех, кто пострадает. Заканчивай условием: это сработает, только если сначала сделают... Второй кондишенал тут звучит естественно.",
+      "guidance_ru": "Позиция, две причины, потом честно про тех, кто пострадает. Для воображаемой ситуации — If the city closed the center to cars, shop owners would lose customers. Для обязательного условия в конце — It will only work if the city first builds better public transport.",
       "seconds_min": 90,
       "seconds_max": 115,
       "focus": ["second conditional", "modals of obligation", "impersonal structures"]
@@ -438,7 +438,7 @@
       "mode": "monologue",
       "title_ru": "Как изменился мой сон",
       "prompt_en": "Talk about how your sleep and daily routine have changed over the last year. What caused the change, and what would you fix if you could?",
-      "guidance_ru": "Сначала как было и как стало, потом две причины, потом одно реальное изменение, которое готов внести с завтрашнего дня. Изменения — present perfect, мечта — second conditional.",
+      "guidance_ru": "Сначала как было и как стало, потом две причины, потом что поменял бы, если бы мог. Что изменилось и продолжается — I have been sleeping less since spring. Мечта — If I could, I would stop checking my phone in bed.",
       "seconds_min": 90,
       "seconds_max": 120,
       "focus": ["present perfect continuous", "comparatives", "second conditional"]
@@ -461,9 +461,9 @@
       "mode": "monologue",
       "title_ru": "Доклад руководству об инциденте",
       "prompt_en": "The service has been down for forty minutes. Give the executive update: impact, what is known, what is being done, when the next update comes. Then answer the question: when will it be fixed?",
-      "guidance_ru": "Сначала влияние на клиентов в цифрах, потом факты, потом действия, потом время следующего апдейта. На вопрос о сроке не давай точной даты: скажи, что известно и что определит срок.",
-      "seconds_min": 120,
-      "seconds_max": 160,
+      "guidance_ru": "Апдейт уложи в четыре-пять фраз: влияние на клиентов в цифрах, что известно, что делаете, когда следующий апдейт. Потом ответ на вопрос о сроке: точной даты не давай, скажи, что известно и что определит срок. Краткость здесь — часть задания.",
+      "seconds_min": 60,
+      "seconds_max": 100,
       "focus": ["passive voice", "hedged commitments", "time expressions"]
     },
     {
@@ -471,8 +471,8 @@
       "level": "C1",
       "mode": "roleplay",
       "title_ru": "Спор на код-ревью",
-      "prompt_en": "A senior colleague blocked your pull request over style, not correctness. Push back in a one-on-one call without turning it into a conflict.",
-      "guidance_ru": "Начни с общей цели, потом отдели вкус от требования, потом попроси критерий: what would make this approvable. Если правило действительно есть, соглашайся сразу и предложи внести его в гайд.",
+      "prompt_en": "A senior colleague blocked your pull request with this comment: \"Use early returns instead of nested ifs. Blocking until fixed.\" Your code is correct, and your team has no style guide on this. Push back in a one-on-one call without turning it into a conflict.",
+      "guidance_ru": "Начни с общей цели, потом отдели вкус от требования: правила в гайде нет, а код работает. Попроси критерий: what would make this approvable? Предложи выход — например, смержить сейчас и отдельно договориться о правиле для гайда. Заканчивай договорённостью, а не упрёком.",
       "seconds_min": 130,
       "seconds_max": 180,
       "focus": ["diplomatic disagreement", "cleft sentences", "question strategies"]
@@ -536,12 +536,12 @@
       "id": "c1_sp_family_talk",
       "level": "C1",
       "mode": "roleplay",
-      "title_ru": "Трудный разговор с близким",
-      "prompt_en": "A close relative is about to make a decision you think is a mistake. Talk to them: you cannot order them around, and you do not want to damage the relationship.",
-      "guidance_ru": "Сначала признай их право решать, потом два вопроса вместо совета, потом одно конкретное опасение и маленький проверяемый шаг. Тон держи ровным до конца.",
+      "title_ru": "Разговор с отцом о деньгах",
+      "prompt_en": "Your father wants to lend all his savings to an old friend who is opening a café, and he has already promised the money. Talk to him and find a compromise you can both accept: you cannot order him around, and you do not want to damage the relationship.",
+      "guidance_ru": "Сначала признай его право решать и желание помочь другу. Потом два вопроса вместо совета: What happens if the café closes? Will there be a written agreement? Дальше предложи компромисс: одолжить часть суммы, оформить договор, возвращать по частям. Без you always и you never. Закончи тем, на чём вы сошлись.",
       "seconds_min": 130,
       "seconds_max": 180,
-      "focus": ["indirect language", "softeners", "suggestions and advice"]
+      "focus": ["indirect language", "softeners", "negotiating a compromise"]
     },
     {
       "id": "c1_sp_city_in_2045",
@@ -549,10 +549,10 @@
       "mode": "monologue",
       "title_ru": "Город через двадцать лет",
       "prompt_en": "Describe your city as you expect it to be twenty years from now. What will have changed, what will feel exactly the same, and what worries you about that picture?",
-      "guidance_ru": "Три изменения через future perfect, потом одно, что точно останется, потом честное опасение с обоснованием. Не уходи в фантастику, держись того, что уже началось.",
+      "guidance_ru": "Два-три изменения: одно-два через will have — By 2045 the city will have built... — остальные через is likely to или is bound to. Потом одно, что точно останется, потом честное опасение с обоснованием. Не уходи в фантастику, держись того, что уже началось.",
       "seconds_min": 130,
       "seconds_max": 180,
-      "focus": ["future perfect", "speculation", "concession"]
+      "focus": ["future perfect", "likely to / bound to", "concession"]
     },
 
     {
@@ -582,7 +582,7 @@
       "level": "C2",
       "mode": "roleplay",
       "title_ru": "Эскалация от заказчика",
-      "prompt_en": "A major client is on the call and they are angry: you missed the release and their launch is at risk. Take the call. You cannot promise the original date.",
+      "prompt_en": "You missed a release, and a major client is angry on the call: \"We announced the launch for Monday. You promised this release two weeks ago. What exactly are you going to do?\" Answer them. You cannot promise the original date.",
       "guidance_ru": "Сначала признание ущерба без оправданий, потом факты о текущем состоянии, потом два варианта спасти запуск с честной ценой каждого. Обещай только то, что контролируешь, и назови время следующего контакта.",
       "seconds_min": 180,
       "seconds_max": 240,

@@ -51,25 +51,25 @@
           "options": [
             "needn't have",
             "didn't need to",
-            "don't need to",
-            "wasn't need to"
+            "must have",
+            "can't have"
           ],
           "correct_index": 0,
-          "explanation_ru": "Только needn't have сочетается с третьей формой bought; остальные варианты требуют инфинитива buy.",
+          "explanation_ru": "Зарядку купили, а она оказалась лишней — это needn't have + V3. Must have и can't have — догадки о прошлом, а о своей покупке говорящий знает точно; didn't need to с третьей формой bought не сочетается.",
           "difficulty": 2
         },
         {
           "id": "b2_neednt_dont_need_to_didnt_need_to_neednt_have_03",
           "kind": "choice",
-          "prompt": "She ___ go to the office yesterday, so she worked from home all day.",
+          "prompt": "She ___ to the office yesterday, so she worked from home all day.",
           "options": [
-            "didn't need to",
-            "needn't have",
-            "doesn't need to",
-            "needn't to"
+            "didn't need to go",
+            "needn't have gone",
+            "doesn't need to go",
+            "needn't to go"
           ],
           "correct_index": 0,
-          "explanation_ru": "Необходимости не было и в офис она не поехала — это didn't need to; needn't have требует V3 и означало бы, что она всё-таки поехала.",
+          "explanation_ru": "Необходимости не было, и в офис она не поехала — это didn't need to go; needn't have gone означало бы, что она всё-таки поехала, doesn't need to — настоящее время, а после needn't частица to не ставится.",
           "difficulty": 2
         },
         {
@@ -141,10 +141,10 @@
       "title_en": "Past modal verbs of deduction",
       "source_slug": "past-modal-verbs",
       "title_ru": "Догадки о прошлом: must have, can't have, might have",
-      "summary_ru": "Когда мы делаем вывод о прошлом на основании фактов, используется модальный глагол + have + третья форма. Must have + V3 выражает уверенность, что что-то произошло: The build must have failed. Can't have или couldn't have + V3 выражает уверенность, что этого не было. Might have, may have, could have + V3 означают предположение без уверенности. Форма одинакова для всех лиц, окончания -s нет и вспомогательный do не используется. Отрицательная уверенность передаётся через can't have, а не через mustn't have. Отрицательное предположение — might not have или may not have + V3.",
+      "summary_ru": "Когда мы делаем вывод о прошлом на основании фактов, используется модальный глагол + have + третья форма. Must have + V3 выражает уверенность, что что-то произошло: The build must have failed. Can't have или couldn't have + V3 выражает уверенность, что этого не было; в американском английском в том же значении часто говорят must not have + V3: She must not have seen the message (сокращение mustn't в американской речи редкое). Might have, may have, could have + V3 означают предположение без уверенности. Форма одинакова для всех лиц, окончания -s нет и вспомогательный do не используется. Отрицательное предположение — might not have или may not have + V3.",
       "forms": [
         "must have + V3 (уверенность, что было)",
-        "can't / couldn't have + V3 (уверенность, что не было)",
+        "can't / couldn't / must not have + V3 (уверенность, что не было)",
         "may / might / could have + V3 (предположение)",
         "might not / may not have + V3 (предположение с отрицанием)"
       ],
@@ -155,7 +155,7 @@
         "They may have already fixed it in the last release.",
         "Someone could have changed the config by mistake."
       ],
-      "ru_interference": "В русском догадка о прошлом строится наречием плюс прошедшее время («наверное, забыл»), поэтому have + V3 теряется: «He must forgot the password» → «He must have forgotten the password». И для уверенного отрицания берут mustn't: «He mustn't have seen it» → «He can't have seen it».",
+      "ru_interference": "В русском догадка о прошлом строится наречием плюс прошедшее время («наверное, забыл»), поэтому have + V3 теряется: «He must forgot the password» → «He must have forgotten the password». С отрицанием то же самое: «She can't received it» → «She can't have received it».",
       "prerequisites": [
         "b1_modal_verbs_of_deduction",
         "a2_may_and_might_whats_the_difference"
@@ -211,10 +211,10 @@
             "can't have come in",
             "must have come in",
             "can't come in",
-            "mustn't have come in"
+            "can't have came in"
           ],
           "correct_index": 0,
-          "explanation_ru": "Запертая изнутри дверь делает вход через неё невозможным, а для уверенного отрицания в прошлом употребляется can't have + V3.",
+          "explanation_ru": "Запертая изнутри дверь делает вход через неё невозможным: уверенное отрицание в прошлом — can't have + третья форма come, а не вторая came.",
           "difficulty": 3
         },
         {
@@ -247,12 +247,13 @@
         {
           "id": "b2_past_modal_verbs_08",
           "kind": "correct",
-          "prompt": "She mustn't have received the invoice; it is still in my outbox.",
+          "prompt": "She can't received the invoice; it is still in my outbox.",
           "answer": "She can't have received the invoice; it is still in my outbox.",
           "accept": [
-            "She couldn't have received the invoice; it is still in my outbox."
+            "She couldn't have received the invoice; it is still in my outbox.",
+            "She must not have received the invoice; it is still in my outbox."
           ],
-          "explanation_ru": "Для уверенного вывода о том, что чего-то не произошло, используется can't have, а не mustn't have.",
+          "explanation_ru": "Вывод о том, чего не было, строится как can't have + третья форма: have пропускать нельзя. В американском английском так же верно must not have received.",
           "difficulty": 3
         }
       ]
@@ -379,12 +380,12 @@
         {
           "id": "b2_would_rather_would_prefer_08",
           "kind": "transform",
-          "prompt": "Rewrite with 'would rather': I'd prefer you to send the invoice tomorrow.",
+          "prompt": "Rewrite with 'would rather': I'd prefer it if you sent the invoice tomorrow.",
           "answer": "I'd rather you sent the invoice tomorrow.",
           "accept": [
             "I would rather you sent the invoice tomorrow."
           ],
-          "explanation_ru": "Схема would prefer + object + to + V1 переходит в would rather + подлежащее + глагол в прошедшем времени.",
+          "explanation_ru": "После would rather с другим подлежащим глагол стоит в прошедшем времени, хотя речь о будущем: I'd rather you sent.",
           "difficulty": 3
         }
       ]
@@ -508,7 +509,9 @@
           "prompt": "Rewrite with 'have something done', starting with 'We': An electrician is installing new lights in our office this week.",
           "answer": "We're having new lights installed in our office this week.",
           "accept": [
-            "We are having new lights installed in our office this week."
+            "We are having new lights installed in our office this week.",
+            "We're having new lights installed in our office by an electrician this week.",
+            "We're having new lights installed by an electrician in our office this week."
           ],
           "explanation_ru": "Работу делает электрик, поэтому подлежащее We берёт схему are having + объект + installed.",
           "difficulty": 3
@@ -737,10 +740,10 @@
         {
           "id": "b2_do_or_make_which_is_it_06",
           "kind": "gap",
-          "prompt": "She ___ (do, past simple) her best, but the client still complained.",
+          "prompt": "She ___ (make / do) her best, but the client still complained.",
           "answer": "did",
           "accept": [],
-          "explanation_ru": "Выражение do one's best берёт глагол do, в прошедшем времени — did.",
+          "explanation_ru": "Выражение do one's best берёт глагол do, а complained показывает прошлое — did.",
           "difficulty": 2
         },
         {
@@ -757,7 +760,10 @@
           "kind": "correct",
           "prompt": "I need to do an appointment with the dentist.",
           "answer": "I need to make an appointment with the dentist.",
-          "accept": [],
+          "accept": [
+            "I need to schedule an appointment with the dentist.",
+            "I need to book an appointment with the dentist."
+          ],
           "explanation_ru": "Appointment договариваются, то есть создают, поэтому употребляется make an appointment.",
           "difficulty": 3
         }
@@ -809,15 +815,15 @@
         {
           "id": "b2_whatever_whenever_wherever_whoever_however_02",
           "kind": "choice",
-          "prompt": "Text me ___ you get to the office.",
+          "prompt": "___ I open this app, it asks me to log in again.",
           "options": [
-            "whenever",
-            "whoever",
-            "whatever",
-            "whichever"
+            "Whenever",
+            "Whoever",
+            "Whatever",
+            "Whichever"
           ],
           "correct_index": 0,
-          "explanation_ru": "Придаточное указывает на время прибытия, значит нужно whenever.",
+          "explanation_ru": "Речь о каждом случае, когда открывается приложение, то есть о времени: whenever — «всякий раз, когда».",
           "difficulty": 1
         },
         {
@@ -871,7 +877,9 @@
           "kind": "correct",
           "prompt": "However hardly we try, the tests keep failing.",
           "answer": "However hard we try, the tests keep failing.",
-          "accept": [],
+          "accept": [
+            "No matter how hard we try, the tests keep failing."
+          ],
           "explanation_ru": "Hardly значит «едва»; в этой конструкции нужно наречие hard.",
           "difficulty": 3
         },
@@ -880,7 +888,10 @@
           "kind": "correct",
           "prompt": "Whenever you will finish, send me the link.",
           "answer": "Whenever you finish, send me the link.",
-          "accept": [],
+          "accept": [
+            "Whenever you've finished, send me the link.",
+            "When you finish, send me the link."
+          ],
           "explanation_ru": "В придаточном времени с whenever будущее выражается формой настоящего времени.",
           "difficulty": 3
         }
@@ -997,7 +1008,9 @@
           "kind": "correct",
           "prompt": "Most of people prefer to work from home on Fridays.",
           "answer": "Most people prefer to work from home on Fridays.",
-          "accept": [],
+          "accept": [
+            "Most of the people prefer to work from home on Fridays."
+          ],
           "explanation_ru": "Существительное people употреблено в общем значении, без the, поэтому of лишнее.",
           "difficulty": 3
         },
@@ -1114,10 +1127,10 @@
         {
           "id": "b2_questions_different_types_06",
           "kind": "gap",
-          "prompt": "I'm looking at a strange log entry. What ___ (you / look) at?",
+          "prompt": "A: What ___ (you / look) at right now? B: A strange log entry.",
           "answer": "are you looking",
           "accept": [],
-          "explanation_ru": "Ответ стоит в Present Continuous, поэтому в вопросе инверсия are you looking, а предлог at остаётся в конце.",
+          "explanation_ru": "Действие идёт прямо сейчас (right now), поэтому Present Continuous с инверсией are you looking, а предлог at остаётся в конце.",
           "difficulty": 2
         },
         {
@@ -1380,7 +1393,9 @@
           "kind": "correct",
           "prompt": "I wonder where did they put the new printer.",
           "answer": "I wonder where they put the new printer.",
-          "accept": [],
+          "accept": [
+            "I wonder where they've put the new printer."
+          ],
           "explanation_ru": "После I wonder идёт прямой порядок слов, вспомогательный did лишний.",
           "difficulty": 3
         }
@@ -1496,9 +1511,12 @@
           "prompt": "He suggested to take a short break.",
           "answer": "He suggested taking a short break.",
           "accept": [
-            "He suggested that we take a short break."
+            "He suggested that we take a short break.",
+            "He suggested we take a short break.",
+            "He suggested that we should take a short break.",
+            "He suggested we should take a short break."
           ],
-          "explanation_ru": "Suggest не берёт инфинитив: нужен герундий или придаточное с that.",
+          "explanation_ru": "Suggest не берёт инфинитив: нужен герундий или придаточное (that) we take.",
           "difficulty": 3
         },
         {

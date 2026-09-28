@@ -147,6 +147,15 @@ class AnswerTests(unittest.TestCase):
         self.assertTrue(result.correct)
         self.assertIn("hve → have", result.note)
 
+    def test_a_real_word_is_never_a_typo(self) -> None:
+        """«use to» вместо «used to» — грамматическая ошибка, а не опечатка."""
+        exercise = self._ex("transform", "Rewrite with used to: I played tennis every day.",
+                            "I used to play tennis every day.")
+        self.assertFalse(matches(exercise, "I use to play tennis every day."))
+        self.assertTrue(matches(exercise, "I usd to play tennis every day."))
+        order = self._ex("order", "than / older / she / is / me / .", "She is older than me.")
+        self.assertFalse(matches(order, "She is older then me."))
+
     def test_typo_in_the_corrected_word_is_still_an_error(self) -> None:
         exercise = self._ex("correct", "He goed to the office.", "He went to the office.")
         self.assertFalse(matches(exercise, "He wnet to the office."))

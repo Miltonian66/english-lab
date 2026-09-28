@@ -9,12 +9,15 @@
 from __future__ import annotations
 
 import difflib
+import functools
 import hashlib
 import itertools
+import json
 import random
 import re
 import unicodedata
 from dataclasses import dataclass
+from pathlib import Path
 
 from ..content.schema import Exercise
 
@@ -198,6 +201,35 @@ def _one_edit(left: str, right: str) -> bool:
 
 
 _TYPO_KINDS = frozenset({"correct", "order", "transform"})
+_DATA = Path(__file__).resolve().parent.parent / "content" / "data"
+
+
+@functools.lru_cache(maxsize=1)
+def known_words() -> frozenset[str]:
+    """Все английские слова учебного контента: условия, варианты, ответы, примеры, словарь.
+
+    Опечатка — это не слово. Если набранное есть в контенте («use», «then»,
+    «were»), это другое слово или другая форма, то есть грамматическая ошибка,
+    и прощать её нельзя.
+    """
+    words: set[str] = set()
+    for path in _DATA.glob("*.json"):
+        try:
+            text = path.read_text(encoding="utf-8")
+        except OSError:
+            continue
+        for value in re.findall(r'"((?:[^"\\]|\\.)*)"', text):
+            words.update(re.findall(r"[a-z]+(?:'[a-z]+)?", value.lower()))
+    return frozenset(words)
+
+
+def _inflection_of(left: str, right: str) -> bool:
+    """use/used, work/works, make/making: одна форма слова вместо другой."""
+    short, long_ = sorted((left, right), key=len)
+    tail = long_[len(short):] if long_.startswith(short) else ""
+    if tail in ("s", "es", "d", "ed", "ing"):
+        return True
+    return short.endswith("e") and long_ == f"{short[:-1]}ing"
 
 
 def _typo(exercise: Exercise, candidate: list[str]) -> tuple[str, list[tuple[str, str]]] | None:
@@ -226,7 +258,12 @@ def _typo(exercise: Exercise, candidate: list[str]) -> tuple[str, list[tuple[str
         if not slips or len(slips) > 2:
             continue
         if all(
-            wanted in given and len(wanted) >= 4 and index not in changed and _one_edit(typed, wanted)
+            wanted in given
+            and len(wanted) >= 4
+            and index not in changed
+            and _one_edit(typed, wanted)
+            and not _inflection_of(typed, wanted)
+            and typed not in known_words()
             for typed, wanted, index in slips
         ):
             return variant, [(typed, wanted) for typed, wanted, _ in slips]

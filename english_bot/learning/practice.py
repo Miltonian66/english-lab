@@ -42,6 +42,7 @@ class Question:
     topic: str
     card_type: str
     card_key: str
+    gaps: tuple[tuple[str, ...], ...] = ()
 
     @property
     def is_choice(self) -> bool:
@@ -294,7 +295,7 @@ def resolve(ref: str, curriculum: Curriculum, rng: random.Random) -> Question | 
         return Question(
             ref=ref,
             kind=exercise.kind,
-            prompt=exercise.prompt,
+            prompt=number_gaps(exercise.prompt) if exercise.kind == "cloze" else exercise.prompt,
             options=shown,
             expected=exercise.expected,
             explanation_ru=exercise.explanation_ru,
@@ -305,6 +306,7 @@ def resolve(ref: str, curriculum: Curriculum, rng: random.Random) -> Question | 
             topic=point.topic,
             card_type="point",
             card_key=point.id,
+            gaps=exercise.gaps,
         )
     if prefix == "vocab":
         mode, _, vocab_id = key.partition(":")
@@ -314,6 +316,34 @@ def resolve(ref: str, curriculum: Curriculum, rng: random.Random) -> Question | 
         if item is None:
             return None
         return vocab_question(item, curriculum, rng, recognise=mode == "r")
+    return None
+
+
+def answers_word(count: int) -> str:
+    """«2 ответа», «5 ответов»."""
+    return "ответа" if count % 10 in (2, 3, 4) and count % 100 not in (12, 13, 14) else "ответов"
+
+
+def number_gaps(text: str) -> str:
+    """«___» в тексте cloze → «(1) ___», «(2) ___»: ответы присылаются по номерам."""
+    counter = iter(range(1, 100))
+    return re.sub(r"___", lambda _: f"({next(counter)}) ___", text)
+
+
+def split_cloze_answer(text: str, count: int) -> list[str] | None:
+    """Ответы на пропуски по порядку: строки, «;», «1) … 2) …», в крайнем случае запятые."""
+    raw = text.strip()
+    numbered = re.split(r"(?:^|\s)\(?\d{1,2}[).:]\s*", raw)
+    for parts in (
+        re.split(r"[;\n]+", raw),
+        numbered,
+        raw.split(","),
+        raw.split(" / "),
+    ):
+        cleaned = [re.sub(r"^\(?\d{1,2}[).:]\s*", "", part).strip() for part in parts]
+        cleaned = [part for part in cleaned if part]
+        if len(cleaned) == count:
+            return cleaned
     return None
 
 
@@ -484,6 +514,11 @@ def revealing_texts(question: "Question") -> tuple[str, ...]:
     if question.card_type != "point":
         return ()
     found: list[str] = []
+    if question.kind == "cloze":
+        keys = iter(gap[0] for gap in question.gaps)
+        filled = re.sub(r"\(\d+\) ___", lambda _: next(keys), question.prompt)
+        found.extend(re.split(r"(?<=[.!?])\s+", filled))
+        return tuple(_plain(text) for text in found if len(_plain(text).split()) >= 3)
     for answer in question.expected:
         if "___" in question.prompt:
             filled = re.sub(r"___(?:\s*___)*", answer, question.prompt, count=1)
@@ -656,6 +691,11 @@ def task_hint(question: "Question") -> str:
         return "Составь предложение из этих слов и пришли целиком."
     if question.kind == "transform":
         return "Пришли переписанное предложение целиком."
+    if question.kind == "cloze":
+        return (
+            f"Пришли {len(question.gaps)} {answers_word(len(question.gaps))} по порядку: каждый с новой строки "
+            "или через точку с запятой."
+        )
     if question.kind == "gap" and "___" in question.prompt:
         return "Напиши только то, что стоит вместо пропуска."
     return "Напиши ответ сообщением."
@@ -706,6 +746,9 @@ def check(question: Question, text: str) -> Verdict:
             normalize(chosen) == normalize(expected_text), True, index, expected_text
         )
 
+    if question.kind == "cloze":
+        return _check_cloze(question, text, expected_text)
+
     # Ссылка на упражнение несёт его id: по нему сверка узнаёт пункт про
     # пунктуацию, где запятая — предмет задания.
     probe = Exercise(
@@ -723,6 +766,28 @@ def check(question: Question, text: str) -> Verdict:
     ):
         note = f"Засчитано. Загадано слово: {expected_text}."
     return Verdict(result.correct, True, None, expected_text, note)
+
+
+def _check_cloze(question: Question, text: str, expected_text: str) -> Verdict:
+    """Каждый пропуск сверяется отдельно; задание засчитано, когда верны все."""
+    shown = "; ".join(f"{index}) {gap[0]}" for index, gap in enumerate(question.gaps, 1))
+    parts = split_cloze_answer(text, len(question.gaps))
+    if parts is None:
+        return Verdict(False, False, None, shown)
+    marks: list[str] = []
+    all_right = True
+    for index, (given, gap) in enumerate(zip(parts, question.gaps), 1):
+        probe = Exercise(
+            id=question.ref.partition(":")[2] or question.ref, kind="gap", prompt="",
+            explanation_ru="", answer=gap[0], accept=tuple(gap[1:]),
+        )
+        if grade(probe, given).correct:
+            marks.append(f"{index} ✓")
+        else:
+            all_right = False
+            marks.append(f"{index} ✗ ({gap[0]})")
+    note = "" if all_right else "По пропускам: " + ", ".join(marks)
+    return Verdict(all_right, True, None, shown, note)
 
 
 def _expected_index(question: Question) -> int | None:

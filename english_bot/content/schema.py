@@ -16,7 +16,10 @@ from pathlib import Path
 
 LEVELS: tuple[str, ...] = ("A1", "A2", "B1", "B2", "C1", "C2")
 BANDS: tuple[str, ...] = ("A1", "A2", "B1", "B2.1", "B2.2", "C1", "C2")
-EXERCISE_KINDS: tuple[str, ...] = ("choice", "gap", "correct", "transform", "order")
+# `cloze` — связный текст с несколькими пропусками: проверяет правило в контексте,
+# а не в одиночной фразе.
+EXERCISE_KINDS: tuple[str, ...] = ("choice", "gap", "correct", "transform", "order", "cloze")
+CLOZE_GAPS = (2, 6)
 
 LEVEL_ORDER = {level: index for index, level in enumerate(LEVELS)}
 BAND_ORDER = {band: index for index, band in enumerate(BANDS)}
@@ -45,10 +48,14 @@ class Exercise:
     # оно дублирует материал уровнем ниже или проверяет структуру не своего
     # уровня. Для тренировки такое задание остаётся полноценным.
     diagnostic: bool = True
+    # Ответы на пропуски `cloze` по порядку: первый — эталон, остальные тоже верны.
+    gaps: tuple[tuple[str, ...], ...] = ()
 
     @property
     def expected(self) -> tuple[str, ...]:
         """Все строки, которые считаются верным ответом."""
+        if self.kind == "cloze":
+            return ("; ".join(gap[0] for gap in self.gaps),)
         if self.kind == "choice":
             if self.correct_index is None:
                 return ()
@@ -118,8 +125,25 @@ def parse_exercise(raw: object, where: str) -> Exercise:
     correct_index = data.get("correct_index")
     answer = str(data.get("answer") or "").strip()
     accept = _tuple(data.get("accept"), "accept", where)
+    gaps: tuple[tuple[str, ...], ...] = ()
 
-    if kind == "choice":
+    if kind == "cloze":
+        raw_gaps = data.get("gaps")
+        _require(isinstance(raw_gaps, list), f"{where}: у cloze обязателен список gaps")
+        gaps = tuple(_tuple(item, "gaps[]", where) for item in raw_gaps)  # type: ignore[union-attr]
+        low, high = CLOZE_GAPS
+        _require(low <= len(gaps) <= high, f"{where}: у cloze от {low} до {high} пропусков")
+        _require(all(gaps), f"{where}: у каждого пропуска cloze нужен хотя бы один ответ")
+        _require(
+            prompt.count("___") == len(gaps),
+            f"{where}: пропусков ___ в тексте {prompt.count('___')}, а ответов {len(gaps)}",
+        )
+        _require(
+            not any(";" in item or "\n" in item for gap in gaps for item in gap),
+            f"{where}: ответ пропуска cloze не может содержать «;» — это разделитель ответов",
+        )
+        _require(not options and not answer and not accept, f"{where}: у cloze только gaps")
+    elif kind == "choice":
         _require(len(options) >= 3, f"{where}: у choice нужно минимум 3 варианта")
         _require(len(set(options)) == len(options), f"{where}: варианты choice повторяются")
         _require(
@@ -142,6 +166,7 @@ def parse_exercise(raw: object, where: str) -> Exercise:
         answer=answer,
         accept=accept,
         diagnostic=bool(diagnostic),
+        gaps=gaps,
     )
 
 

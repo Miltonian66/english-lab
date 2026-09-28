@@ -792,7 +792,14 @@ def _grade(
 ) -> None:
     verdict = pr.check(question, text)
     if not verdict.understood:
-        ctx.say(user, "Выбери вариант кнопкой или пришли букву: A, B, C или D.")
+        if question.kind == "cloze":
+            ctx.say(
+                user,
+                f"Нужно {len(question.gaps)} {pr.answers_word(len(question.gaps))} по порядку — каждый с новой строки "
+                "или через точку с запятой.",
+            )
+        else:
+            ctx.say(user, "Выбери вариант кнопкой или пришли букву: A, B, C или D.")
         return
 
     state.answered += 1

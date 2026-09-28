@@ -7,7 +7,7 @@
       "pos": "noun",
       "ipa_us": "/ˈkɪtʃən/",
       "translation_ru": "кухня",
-      "example_en": "We usually have lunch in the office kitchen.",
+      "example_en": "We cook dinner together in the kitchen every evening.",
       "collocations": [
         "a small kitchen",
         "in the kitchen"
@@ -21,7 +21,7 @@
       "pos": "noun",
       "ipa_us": "/ˈfɝnɪtʃɚ/",
       "translation_ru": "мебель",
-      "example_en": "The new office furniture arrives on Monday.",
+      "example_en": "We need some new furniture for the living room.",
       "collocations": [
         "office furniture",
         "a piece of furniture"
@@ -96,7 +96,10 @@
         "repair a car",
         "repair a roof"
       ],
-      "topic": "home"
+      "topic": "home",
+      "accept": [
+        "fix"
+      ]
     },
     {
       "id": "a2_v_tidy",
@@ -110,7 +113,10 @@
         "a tidy room",
         "keep something tidy"
       ],
-      "topic": "home"
+      "topic": "home",
+      "accept": [
+        "neat"
+      ]
     },
     {
       "id": "a2_v_noisy",
@@ -132,7 +138,7 @@
       "word": "quiet",
       "pos": "adjective",
       "ipa_us": "/ˈkwaɪət/",
-      "translation_ru": "тихий, спокойный",
+      "translation_ru": "тихий",
       "example_en": "I need a quiet room for the video call.",
       "collocations": [
         "a quiet place",
@@ -146,7 +152,7 @@
       "word": "comfortable",
       "pos": "adjective",
       "ipa_us": "/ˈkʌmftɚbəl/",
-      "translation_ru": "удобный, комфортный",
+      "translation_ru": "удобный (о мебели, одежде), комфортный",
       "example_en": "This chair is comfortable, so I can work all day.",
       "collocations": [
         "a comfortable chair",
@@ -188,7 +194,7 @@
       "word": "manager",
       "pos": "noun",
       "ipa_us": "/ˈmænɪdʒɚ/",
-      "translation_ru": "менеджер, руководитель",
+      "translation_ru": "менеджер (руководитель отдела)",
       "example_en": "My manager asked me to send the numbers today.",
       "collocations": [
         "a project manager",
@@ -216,7 +222,7 @@
       "word": "task",
       "pos": "noun",
       "ipa_us": "/tæsk/",
-      "translation_ru": "задача, задание",
+      "translation_ru": "задача (по работе), задание",
       "example_en": "This task is easy, but it takes a lot of time.",
       "collocations": [
         "a difficult task",
@@ -250,7 +256,10 @@
         "a big company",
         "work for a company"
       ],
-      "topic": "work"
+      "topic": "work",
+      "accept": [
+        "firm"
+      ]
     },
     {
       "id": "a2_v_interview",
@@ -286,7 +295,7 @@
       "word": "break",
       "pos": "noun",
       "ipa_us": "/breɪk/",
-      "translation_ru": "перерыв, пауза",
+      "translation_ru": "перерыв (в работе), пауза",
       "example_en": "Let's take a short break and drink some coffee.",
       "collocations": [
         "take a break",
@@ -314,7 +323,7 @@
       "word": "useful",
       "pos": "adjective",
       "ipa_us": "/ˈjusfəl/",
-      "translation_ru": "полезный",
+      "translation_ru": "полезный (нужный для дела)",
       "example_en": "Your notes were very useful for the test.",
       "collocations": [
         "useful information",
@@ -440,7 +449,7 @@
       "word": "download",
       "pos": "verb",
       "ipa_us": "/ˈdaʊnˌloʊd/",
-      "translation_ru": "скачивать, загружать",
+      "translation_ru": "скачивать",
       "example_en": "It takes ten minutes to download this video.",
       "collocations": [
         "download a file",
@@ -468,7 +477,7 @@
       "word": "save",
       "pos": "verb",
       "ipa_us": "/seɪv/",
-      "translation_ru": "сохранять, экономить",
+      "translation_ru": "сохранять (файл, работу), экономить (деньги)",
       "example_en": "Save your work before you close the program.",
       "collocations": [
         "save a file",
@@ -482,7 +491,7 @@
       "word": "click",
       "pos": "verb",
       "ipa_us": "/klɪk/",
-      "translation_ru": "нажимать, кликать",
+      "translation_ru": "кликать, нажимать (мышью)",
       "example_en": "Click the blue button to send the form.",
       "collocations": [
         "click a button",
@@ -516,7 +525,10 @@
         "a good price",
         "a high price"
       ],
-      "topic": "money"
+      "topic": "money",
+      "accept": [
+        "cost"
+      ]
     },
     {
       "id": "a2_v_cheap",
@@ -552,7 +564,7 @@
       "word": "receipt",
       "pos": "noun",
       "ipa_us": "/rɪˈsit/",
-      "translation_ru": "чек, квитанция",
+      "translation_ru": "чек (из магазина), квитанция",
       "example_en": "Keep the receipt if you want to return the shoes.",
       "collocations": [
         "keep the receipt",
@@ -608,7 +620,7 @@
       "word": "customer",
       "pos": "noun",
       "ipa_us": "/ˈkʌstəmɚ/",
-      "translation_ru": "клиент, покупатель",
+      "translation_ru": "покупатель, клиент магазина",
       "example_en": "The customer asked for a bigger size.",
       "collocations": [
         "a happy customer",
@@ -622,7 +634,7 @@
       "word": "salary",
       "pos": "noun",
       "ipa_us": "/ˈsæləri/",
-      "translation_ru": "зарплата",
+      "translation_ru": "зарплата (ежемесячная), оклад",
       "example_en": "He gets his salary on the tenth of every month.",
       "collocations": [
         "a good salary",
@@ -650,7 +662,7 @@
       "word": "spend",
       "pos": "verb",
       "ipa_us": "/spɛnd/",
-      "translation_ru": "тратить, проводить",
+      "translation_ru": "тратить (деньги), проводить (время)",
       "example_en": "We spend too much money on taxis.",
       "collocations": [
         "spend money",
@@ -712,7 +724,10 @@
         "hand luggage",
         "lose your luggage"
       ],
-      "topic": "travel"
+      "topic": "travel",
+      "accept": [
+        "baggage"
+      ]
     },
     {
       "id": "a2_v_passport",
@@ -734,7 +749,7 @@
       "word": "journey",
       "pos": "noun",
       "ipa_us": "/ˈdʒɝni/",
-      "translation_ru": "поездка, дорога (сам путь)",
+      "translation_ru": "путь, дорога (сам процесс поездки)",
       "example_en": "The journey home was long and slow.",
       "collocations": [
         "a long journey",
@@ -748,7 +763,7 @@
       "word": "trip",
       "pos": "noun",
       "ipa_us": "/trɪp/",
-      "translation_ru": "поездка, выезд (туда и обратно)",
+      "translation_ru": "поездка (туда и обратно), выезд",
       "example_en": "We had a great trip to the mountains.",
       "collocations": [
         "a business trip",
@@ -790,7 +805,7 @@
       "word": "arrive",
       "pos": "verb",
       "ipa_us": "/əˈraɪv/",
-      "translation_ru": "прибывать, приезжать",
+      "translation_ru": "прибывать (куда-то)",
       "example_en": "We arrive in Rome at eight in the evening.",
       "collocations": [
         "arrive on time",
@@ -866,7 +881,10 @@
         "take medicine",
         "cold medicine"
       ],
-      "topic": "health"
+      "topic": "health",
+      "accept": [
+        "medication"
+      ]
     },
     {
       "id": "a2_v_dentist",
@@ -933,7 +951,7 @@
       "translation_ru": "температура",
       "example_en": "The nurse took my temperature.",
       "collocations": [
-        "a high temperature",
+        "room temperature",
         "take your temperature"
       ],
       "topic": "health"
@@ -958,7 +976,7 @@
       "word": "hurt",
       "pos": "verb",
       "ipa_us": "/hɝt/",
-      "translation_ru": "болеть, причинять боль",
+      "translation_ru": "болеть (о части тела), причинять боль",
       "example_en": "My eyes hurt after eight hours in front of the screen.",
       "collocations": [
         "hurt your leg",
@@ -973,12 +991,15 @@
       "pos": "adjective",
       "ipa_us": "/sɪk/",
       "translation_ru": "больной",
-      "example_en": "She is sick today and stays at home.",
+      "example_en": "She is sick today, so she is staying home.",
       "collocations": [
         "feel sick",
         "get sick"
       ],
-      "topic": "health"
+      "topic": "health",
+      "accept": [
+        "ill"
+      ]
     },
     {
       "id": "a2_v_healthy",
@@ -986,7 +1007,7 @@
       "word": "healthy",
       "pos": "adjective",
       "ipa_us": "/ˈhɛlθi/",
-      "translation_ru": "здоровый, полезный",
+      "translation_ru": "здоровый, полезный для здоровья",
       "example_en": "Fruit and vegetables are healthy food.",
       "collocations": [
         "a healthy diet",
@@ -1174,7 +1195,10 @@
         "look delicious",
         "taste delicious"
       ],
-      "topic": "food"
+      "topic": "food",
+      "accept": [
+        "tasty"
+      ]
     },
     {
       "id": "a2_v_fresh",
@@ -1196,7 +1220,7 @@
       "word": "taste",
       "pos": "verb",
       "ipa_us": "/teɪst/",
-      "translation_ru": "пробовать, иметь вкус",
+      "translation_ru": "пробовать на вкус, иметь вкус",
       "example_en": "Taste the sauce and tell me if it is good.",
       "collocations": [
         "taste good",
@@ -1224,11 +1248,11 @@
       "word": "bill",
       "pos": "noun",
       "ipa_us": "/bɪl/",
-      "translation_ru": "счёт",
-      "example_en": "We paid the bill and left the cafe.",
+      "translation_ru": "счёт (сумма к оплате)",
+      "example_en": "Our grocery bill gets bigger every month.",
       "collocations": [
         "pay the bill",
-        "ask for the bill"
+        "split the bill"
       ],
       "topic": "food"
     },
@@ -1328,7 +1352,11 @@
         "worried about something",
         "look worried"
       ],
-      "topic": "feelings"
+      "topic": "feelings",
+      "accept": [
+        "concerned",
+        "anxious"
+      ]
     },
     {
       "id": "a2_v_afraid",
@@ -1342,7 +1370,11 @@
         "afraid of something",
         "be afraid to do something"
       ],
-      "topic": "feelings"
+      "topic": "feelings",
+      "accept": [
+        "scared",
+        "frightened"
+      ]
     },
     {
       "id": "a2_v_glad",
@@ -1350,7 +1382,7 @@
       "word": "glad",
       "pos": "adjective",
       "ipa_us": "/glæd/",
-      "translation_ru": "рад, довольный",
+      "translation_ru": "рад",
       "example_en": "I am glad you can come to the party.",
       "collocations": [
         "glad to hear it",
@@ -1398,21 +1430,27 @@
         "turn off the light",
         "turn off the computer"
       ],
-      "topic": "tech"
+      "topic": "tech",
+      "accept": [
+        "switch off"
+      ]
     },
     {
       "id": "a2_v_look_for",
       "level": "A2",
       "word": "look for",
       "pos": "phrasal verb",
-      "ipa_us": "/ˈlʊk fɔr/",
+      "ipa_us": "/ˈlʊk fɚ/",
       "translation_ru": "искать",
       "example_en": "I am looking for my keys.",
       "collocations": [
         "look for a job",
         "look for information"
       ],
-      "topic": "work"
+      "topic": "work",
+      "accept": [
+        "search for"
+      ]
     },
     {
       "id": "a2_v_find_out",
@@ -1420,7 +1458,7 @@
       "word": "find out",
       "pos": "phrasal verb",
       "ipa_us": "/faɪnd ˈaʊt/",
-      "translation_ru": "выяснять, узнавать",
+      "translation_ru": "выяснять, узнавать (факт)",
       "example_en": "I want to find out why the site is slow.",
       "collocations": [
         "find out the truth",
@@ -1440,7 +1478,10 @@
         "give up smoking",
         "never give up"
       ],
-      "topic": "feelings"
+      "topic": "feelings",
+      "accept": [
+        "quit"
+      ]
     },
     {
       "id": "a2_v_put_on",
@@ -1463,7 +1504,7 @@
       "pos": "phrasal verb",
       "ipa_us": "/pɪk ˈʌp/",
       "translation_ru": "забирать, подбирать",
-      "example_en": "Can you pick me up at the station?",
+      "example_en": "Can you pick up my son from school today?",
       "collocations": [
         "pick up a friend",
         "pick up the phone"
@@ -1476,7 +1517,7 @@
       "word": "check in",
       "pos": "phrasal verb",
       "ipa_us": "/tʃɛk ˈɪn/",
-      "translation_ru": "регистрироваться",
+      "translation_ru": "регистрироваться (в отеле, аэропорту)",
       "example_en": "We check in at the hotel at two o'clock.",
       "collocations": [
         "check in online",
@@ -1496,7 +1537,11 @@
         "log in to your account",
         "log in again"
       ],
-      "topic": "tech"
+      "topic": "tech",
+      "accept": [
+        "sign in",
+        "log on"
+      ]
     },
     {
       "id": "a2_v_fill_in",
@@ -1510,7 +1555,10 @@
         "fill in a form",
         "fill in your name"
       ],
-      "topic": "work"
+      "topic": "work",
+      "accept": [
+        "fill out"
+      ]
     },
     {
       "id": "a2_v_usually",
@@ -1520,7 +1568,10 @@
       "ipa_us": "/ˈjuʒuəli/",
       "translation_ru": "обычно",
       "example_en": "I usually work from home on Fridays.",
-      "collocations": [],
+      "collocations": [
+        "usually get up early",
+        "not usually"
+      ],
       "topic": "time"
     },
     {
@@ -1531,7 +1582,10 @@
       "ipa_us": "/ɔlˈrɛdi/",
       "translation_ru": "уже",
       "example_en": "I have already sent the report.",
-      "collocations": [],
+      "collocations": [
+        "already done",
+        "already know"
+      ],
       "topic": "time"
     },
     {
@@ -1554,13 +1608,16 @@
       "word": "until",
       "pos": "preposition",
       "ipa_us": "/ənˈtɪl/",
-      "translation_ru": "до, пока не",
+      "translation_ru": "до (какого-то момента), пока не",
       "example_en": "The shop is open until nine in the evening.",
       "collocations": [
         "until now",
         "wait until"
       ],
-      "topic": "time"
+      "topic": "time",
+      "accept": [
+        "till"
+      ]
     },
     {
       "id": "a2_v_while",
@@ -1570,7 +1627,10 @@
       "ipa_us": "/waɪl/",
       "translation_ru": "пока, в то время как",
       "example_en": "I listen to music while I work.",
-      "collocations": [],
+      "collocations": [
+        "while you wait",
+        "while I was cooking"
+      ],
       "topic": "time"
     },
     {
@@ -1579,7 +1639,7 @@
       "word": "on time",
       "pos": "phrase",
       "ipa_us": "/ɑn ˈtaɪm/",
-      "translation_ru": "вовремя",
+      "translation_ru": "вовремя (по расписанию, не опоздав)",
       "example_en": "The train left on time.",
       "collocations": [
         "arrive on time",
@@ -1599,7 +1659,10 @@
         "make a mistake",
         "a big mistake"
       ],
-      "topic": "study"
+      "topic": "study",
+      "accept": [
+        "error"
+      ]
     },
     {
       "id": "a2_v_polite",

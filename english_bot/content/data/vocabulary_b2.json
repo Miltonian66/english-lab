@@ -124,20 +124,6 @@
       "topic": "study"
     },
     {
-      "id": "b2_v_bias",
-      "level": "B2",
-      "word": "bias",
-      "pos": "noun",
-      "ipa_us": "/ˈbaɪəs/",
-      "translation_ru": "предвзятость",
-      "example_en": "We should check the data for bias before we draw conclusions.",
-      "collocations": [
-        "a strong bias",
-        "personal bias"
-      ],
-      "topic": "people"
-    },
-    {
       "id": "b2_v_objective",
       "level": "B2",
       "word": "objective",
@@ -308,20 +294,6 @@
       ]
     },
     {
-      "id": "b2_v_even_though",
-      "level": "B2",
-      "word": "even though",
-      "pos": "conjunction",
-      "ipa_us": "/ˌivən ˈðoʊ/",
-      "translation_ru": "хотя (с нажимом), даже несмотря на то что",
-      "example_en": "Even though all the tests passed, we found a bug in production.",
-      "collocations": [
-        "even though it was late",
-        "even though we knew the risk"
-      ],
-      "topic": "study"
-    },
-    {
       "id": "b2_v_throughout",
       "level": "B2",
       "word": "throughout",
@@ -434,20 +406,6 @@
       ]
     },
     {
-      "id": "b2_v_insight",
-      "level": "B2",
-      "word": "insight",
-      "pos": "noun",
-      "ipa_us": "/ˈɪnˌsaɪt/",
-      "translation_ru": "глубокое понимание",
-      "example_en": "The interviews gave us useful insight into how people use the app.",
-      "collocations": [
-        "valuable insight",
-        "gain insight into something"
-      ],
-      "topic": "study"
-    },
-    {
       "id": "b2_v_commitment",
       "level": "B2",
       "word": "commitment",
@@ -502,20 +460,6 @@
       "collocations": [
         "deploy an update",
         "deploy to production"
-      ],
-      "topic": "tech"
-    },
-    {
-      "id": "b2_v_scalable",
-      "level": "B2",
-      "word": "scalable",
-      "pos": "adjective",
-      "ipa_us": "/ˈskeɪləbəl/",
-      "translation_ru": "масштабируемый",
-      "example_en": "The current design is simple, but it is not very scalable.",
-      "collocations": [
-        "a scalable solution",
-        "scalable architecture"
       ],
       "topic": "tech"
     },
@@ -594,20 +538,6 @@
       ]
     },
     {
-      "id": "b2_v_outage",
-      "level": "B2",
-      "word": "outage",
-      "pos": "noun",
-      "ipa_us": "/ˈaʊtɪdʒ/",
-      "translation_ru": "сбой, перебой в работе сервиса",
-      "example_en": "The outage lasted forty minutes and affected all our users.",
-      "collocations": [
-        "a major outage",
-        "a planned outage"
-      ],
-      "topic": "tech"
-    },
-    {
       "id": "b2_v_impact",
       "level": "B2",
       "word": "impact",
@@ -624,20 +554,6 @@
       "accept": [
         "effect"
       ]
-    },
-    {
-      "id": "b2_v_downtime",
-      "level": "B2",
-      "word": "downtime",
-      "pos": "noun",
-      "ipa_us": "/ˈdaʊnˌtaɪm/",
-      "translation_ru": "простой, время недоступности",
-      "example_en": "The migration should cause no more than ten minutes of downtime.",
-      "collocations": [
-        "minimize downtime",
-        "unplanned downtime"
-      ],
-      "topic": "tech"
     },
     {
       "id": "b2_v_realistic",
@@ -666,20 +582,6 @@
         "consistent results",
         "consistent with the data",
         "a consistent style"
-      ],
-      "topic": "tech"
-    },
-    {
-      "id": "b2_v_seamless",
-      "level": "B2",
-      "word": "seamless",
-      "pos": "adjective",
-      "ipa_us": "/ˈsimləs/",
-      "translation_ru": "бесшовный, плавный",
-      "example_en": "The goal is a seamless move to the new payment system.",
-      "collocations": [
-        "a seamless experience",
-        "seamless integration"
       ],
       "topic": "tech"
     },
@@ -715,20 +617,6 @@
       ]
     },
     {
-      "id": "b2_v_revenue",
-      "level": "B2",
-      "word": "revenue",
-      "pos": "noun",
-      "ipa_us": "/ˈrɛvəˌnu/",
-      "translation_ru": "выручка (доход компании)",
-      "example_en": "The new pricing plan raised monthly revenue by twelve percent.",
-      "collocations": [
-        "generate revenue",
-        "annual revenue"
-      ],
-      "topic": "money"
-    },
-    {
       "id": "b2_v_negotiate",
       "level": "B2",
       "word": "negotiate",
@@ -753,34 +641,6 @@
       "collocations": [
         "outsource development",
         "outsource a service"
-      ],
-      "topic": "work"
-    },
-    {
-      "id": "b2_v_merge",
-      "level": "B2",
-      "word": "merge",
-      "pos": "verb",
-      "ipa_us": "/mɝdʒ/",
-      "translation_ru": "объединять, сливать",
-      "example_en": "Please merge your branch as soon as the review is done.",
-      "collocations": [
-        "merge a branch",
-        "merge two teams"
-      ],
-      "topic": "tech"
-    },
-    {
-      "id": "b2_v_turnover",
-      "level": "B2",
-      "word": "turnover",
-      "pos": "noun",
-      "ipa_us": "/ˈtɝnˌoʊvɚ/",
-      "translation_ru": "текучесть кадров",
-      "example_en": "High staff turnover is hurting the support team.",
-      "collocations": [
-        "staff turnover",
-        "high turnover"
       ],
       "topic": "work"
     },
@@ -856,48 +716,6 @@
       "topic": "work"
     },
     {
-      "id": "b2_v_incentive",
-      "level": "B2",
-      "word": "incentive",
-      "pos": "noun",
-      "ipa_us": "/ɪnˈsɛntɪv/",
-      "translation_ru": "стимул",
-      "example_en": "A bonus is a strong incentive to finish the migration on time.",
-      "collocations": [
-        "a financial incentive",
-        "provide an incentive"
-      ],
-      "topic": "money"
-    },
-    {
-      "id": "b2_v_asset",
-      "level": "B2",
-      "word": "asset",
-      "pos": "noun",
-      "ipa_us": "/ˈæsɛt/",
-      "translation_ru": "актив, ценный ресурс",
-      "example_en": "Her experience with databases is a real asset to the team.",
-      "collocations": [
-        "a valuable asset",
-        "company assets"
-      ],
-      "topic": "money"
-    },
-    {
-      "id": "b2_v_margin",
-      "level": "B2",
-      "word": "margin",
-      "pos": "noun",
-      "ipa_us": "/ˈmɑrdʒən/",
-      "translation_ru": "маржа, запас",
-      "example_en": "We left a small margin for error in the schedule.",
-      "collocations": [
-        "a profit margin",
-        "a margin for error"
-      ],
-      "topic": "money"
-    },
-    {
       "id": "b2_v_workload",
       "level": "B2",
       "word": "workload",
@@ -908,20 +726,6 @@
       "collocations": [
         "a heavy workload",
         "share the workload"
-      ],
-      "topic": "work"
-    },
-    {
-      "id": "b2_v_milestone",
-      "level": "B2",
-      "word": "milestone",
-      "pos": "noun",
-      "ipa_us": "/ˈmaɪlˌstoʊn/",
-      "translation_ru": "веха, контрольная точка",
-      "example_en": "The first public demo is an important milestone for us.",
-      "collocations": [
-        "reach a milestone",
-        "a major milestone"
       ],
       "topic": "work"
     },
@@ -959,20 +763,6 @@
       ]
     },
     {
-      "id": "b2_v_narrow_down",
-      "level": "B2",
-      "word": "narrow down",
-      "pos": "phrasal verb",
-      "ipa_us": "/ˌnɛroʊ ˈdaʊn/",
-      "translation_ru": "сузить круг, отобрать",
-      "example_en": "We need to narrow down the list of possible causes.",
-      "collocations": [
-        "narrow down a list",
-        "narrow down the options"
-      ],
-      "topic": "tech"
-    },
-    {
       "id": "b2_v_draw_up",
       "level": "B2",
       "word": "draw up",
@@ -983,20 +773,6 @@
       "collocations": [
         "draw up a contract",
         "draw up a plan"
-      ],
-      "topic": "work"
-    },
-    {
-      "id": "b2_v_rule_out",
-      "level": "B2",
-      "word": "rule out",
-      "pos": "phrasal verb",
-      "ipa_us": "/ˌrul ˈaʊt/",
-      "translation_ru": "исключить (вариант)",
-      "example_en": "We can rule out a network problem: the logs are clean.",
-      "collocations": [
-        "rule out a possibility",
-        "cannot be ruled out"
       ],
       "topic": "work"
     },
@@ -1201,20 +977,6 @@
       "topic": "work"
     },
     {
-      "id": "b2_v_cut_corners",
-      "level": "B2",
-      "word": "cut corners",
-      "pos": "phrase",
-      "ipa_us": "/ˌkʌt ˈkɔrnɚz/",
-      "translation_ru": "халтурить, экономить на качестве",
-      "example_en": "If we cut corners now, we will pay for it later.",
-      "collocations": [
-        "cut corners on quality",
-        "never cut corners"
-      ],
-      "topic": "work"
-    },
-    {
       "id": "b2_v_at_short_notice",
       "level": "B2",
       "word": "at short notice",
@@ -1274,48 +1036,6 @@
       "topic": "study"
     },
     {
-      "id": "b2_v_get_the_hang_of",
-      "level": "B2",
-      "word": "get the hang of",
-      "pos": "phrase",
-      "ipa_us": "/ˌgɛt ðə ˈhæŋ əv/",
-      "translation_ru": "освоиться, набить руку",
-      "example_en": "After a week or two you get the hang of the new editor.",
-      "collocations": [
-        "get the hang of it",
-        "get the hang of a tool"
-      ],
-      "topic": "study"
-    },
-    {
-      "id": "b2_v_touch_base",
-      "level": "B2",
-      "word": "touch base",
-      "pos": "phrase",
-      "ipa_us": "/ˌtʌtʃ ˈbeɪs/",
-      "translation_ru": "связаться, свериться",
-      "example_en": "Let's touch base on Friday and look at the numbers together.",
-      "collocations": [
-        "touch base with someone",
-        "touch base later"
-      ],
-      "topic": "work"
-    },
-    {
-      "id": "b2_v_from_scratch",
-      "level": "B2",
-      "word": "from scratch",
-      "pos": "phrase",
-      "ipa_us": "/frəm ˈskrætʃ/",
-      "translation_ru": "с нуля",
-      "example_en": "Instead of patching it, they built the service from scratch.",
-      "collocations": [
-        "start from scratch",
-        "build from scratch"
-      ],
-      "topic": "work"
-    },
-    {
       "id": "b2_v_behind_schedule",
       "level": "B2",
       "word": "behind schedule",
@@ -1360,20 +1080,6 @@
         "keep track of changes"
       ],
       "topic": "time"
-    },
-    {
-      "id": "b2_v_at_stake",
-      "level": "B2",
-      "word": "at stake",
-      "pos": "phrase",
-      "ipa_us": "/ət ˈsteɪk/",
-      "translation_ru": "на кону, под угрозой",
-      "example_en": "There is a lot at stake if the demo goes wrong.",
-      "collocations": [
-        "a lot at stake",
-        "a reputation at stake"
-      ],
-      "topic": "work"
     },
     {
       "id": "b2_v_up_to_speed",
@@ -1516,20 +1222,6 @@
       ]
     },
     {
-      "id": "b2_v_tedious",
-      "level": "B2",
-      "word": "tedious",
-      "pos": "adjective",
-      "ipa_us": "/ˈtidiəs/",
-      "translation_ru": "нудный (о работе), утомительный",
-      "example_en": "Filling in these forms by hand is tedious work.",
-      "collocations": [
-        "a tedious task",
-        "tedious work"
-      ],
-      "topic": "feelings"
-    },
-    {
       "id": "b2_v_straightforward",
       "level": "B2",
       "word": "straightforward",
@@ -1601,20 +1293,6 @@
         "a decent result"
       ],
       "topic": "money"
-    },
-    {
-      "id": "b2_v_flawed",
-      "level": "B2",
-      "word": "flawed",
-      "pos": "adjective",
-      "ipa_us": "/flɔd/",
-      "translation_ru": "ошибочный, с изъяном",
-      "example_en": "The whole approach was flawed from the very beginning.",
-      "collocations": [
-        "a flawed argument",
-        "deeply flawed"
-      ],
-      "topic": "study"
     },
     {
       "id": "b2_v_crucial",
@@ -1694,66 +1372,6 @@
       "topic": "feelings"
     },
     {
-      "id": "b2_v_anticipate",
-      "level": "B2",
-      "word": "anticipate",
-      "pos": "verb",
-      "ipa_us": "/ænˈtɪsəˌpeɪt/",
-      "translation_ru": "предвидеть",
-      "example_en": "We did not anticipate such a high load on the first day.",
-      "collocations": [
-        "anticipate a problem",
-        "anticipate demand"
-      ],
-      "topic": "work",
-      "accept": [
-        "foresee"
-      ]
-    },
-    {
-      "id": "b2_v_implement",
-      "level": "B2",
-      "word": "implement",
-      "pos": "verb",
-      "ipa_us": "/ˈɪmpləˌmɛnt/",
-      "translation_ru": "реализовать (план, решение), внедрять",
-      "example_en": "It took a month to implement the new access rules.",
-      "collocations": [
-        "implement a policy",
-        "implement a change",
-        "fully implement"
-      ],
-      "topic": "work"
-    },
-    {
-      "id": "b2_v_clarify",
-      "level": "B2",
-      "word": "clarify",
-      "pos": "verb",
-      "ipa_us": "/ˈklɛrəˌfaɪ/",
-      "translation_ru": "прояснить, уточнить",
-      "example_en": "Could you clarify what you mean by \"soon\"?",
-      "collocations": [
-        "clarify a point",
-        "clarify the situation"
-      ],
-      "topic": "study"
-    },
-    {
-      "id": "b2_v_prioritize",
-      "level": "B2",
-      "word": "prioritize",
-      "pos": "verb",
-      "ipa_us": "/praɪˈɔrəˌtaɪz/",
-      "translation_ru": "расставлять приоритеты, ставить в приоритет",
-      "example_en": "We have to prioritize security over new features this quarter.",
-      "collocations": [
-        "prioritize tasks",
-        "learn to prioritize"
-      ],
-      "topic": "work"
-    },
-    {
       "id": "b2_v_overlook",
       "level": "B2",
       "word": "overlook",
@@ -1771,36 +1389,509 @@
       ]
     },
     {
-      "id": "b2_v_eventually",
+      "id": "c2_v_picturesque",
       "level": "B2",
-      "word": "eventually",
-      "pos": "adverb",
-      "ipa_us": "/ɪˈvɛntʃuəli/",
-      "translation_ru": "в конце концов, со временем",
-      "example_en": "The bug was eventually traced to a missing index.",
+      "word": "picturesque",
+      "pos": "adjective",
+      "ipa_us": "/ˌpɪktʃəˈrɛsk/",
+      "translation_ru": "живописный, колоритный",
+      "example_en": "The route back was longer but far more picturesque.",
       "collocations": [
-        "eventually agree",
-        "eventually find out"
+        "a picturesque village",
+        "picturesque scenery"
       ],
-      "topic": "time",
+      "topic": "travel"
+    },
+    {
+      "id": "b1_v_handle",
+      "level": "B2",
+      "word": "handle",
+      "pos": "verb",
+      "ipa_us": "/ˈhændəl/",
+      "translation_ru": "заниматься (вопросами, запросами), обрабатывать",
+      "example_en": "She handles all the questions from our biggest client.",
+      "collocations": [
+        "handle a situation",
+        "handle a request"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "b1_v_issue",
+      "level": "B2",
+      "word": "issue",
+      "pos": "noun",
+      "ipa_us": "/ˈɪʃu/",
+      "translation_ru": "проблема (рабочая), вопрос (для обсуждения)",
+      "example_en": "There is a small issue with the login page on old phones.",
+      "collocations": [
+        "raise an issue",
+        "fix an issue"
+      ],
+      "topic": "work",
       "accept": [
-        "finally",
-        "in the end"
+        "problem"
       ]
     },
     {
-      "id": "b2_v_gradually",
+      "id": "b1_v_priority",
       "level": "B2",
-      "word": "gradually",
-      "pos": "adverb",
-      "ipa_us": "/ˈgrædʒuəli/",
-      "translation_ru": "постепенно",
-      "example_en": "Traffic grew gradually over the first month.",
+      "word": "priority",
+      "pos": "noun",
+      "ipa_us": "/praɪˈɔrəti/",
+      "translation_ru": "приоритет",
+      "example_en": "Security is our top priority in every release.",
       "collocations": [
-        "gradually improve",
-        "gradually increase"
+        "a top priority",
+        "set priorities"
       ],
-      "topic": "time"
+      "topic": "work"
+    },
+    {
+      "id": "b1_v_feedback",
+      "level": "B2",
+      "word": "feedback",
+      "pos": "noun",
+      "ipa_us": "/ˈfidˌbæk/",
+      "translation_ru": "обратная связь, отзывы",
+      "example_en": "Our manager gives useful feedback after every release.",
+      "collocations": [
+        "give feedback",
+        "honest feedback"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "b1_v_put_off",
+      "level": "B2",
+      "word": "put off",
+      "pos": "phrasal verb",
+      "ipa_us": "/ˌpʊt ˈɔf/",
+      "translation_ru": "откладывать, переносить",
+      "example_en": "We put off the meeting until next Monday.",
+      "collocations": [
+        "put off a meeting",
+        "put off a decision"
+      ],
+      "topic": "time",
+      "accept": [
+        "postpone"
+      ]
+    },
+    {
+      "id": "b1_v_come_up_with",
+      "level": "B2",
+      "word": "come up with",
+      "pos": "phrasal verb",
+      "ipa_us": "/ˌkʌm ˈʌp wɪð/",
+      "translation_ru": "придумывать (идею)",
+      "example_en": "He came up with a simple idea that saved us a week.",
+      "collocations": [
+        "come up with an idea",
+        "come up with a plan"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "b1_v_point_out",
+      "level": "B2",
+      "word": "point out",
+      "pos": "phrasal verb",
+      "ipa_us": "/ˌpɔɪnt ˈaʊt/",
+      "translation_ru": "указывать, отмечать",
+      "example_en": "She pointed out a mistake in the second table.",
+      "collocations": [
+        "point out a mistake",
+        "point out that"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "b1_v_figure_out",
+      "level": "B2",
+      "word": "figure out",
+      "pos": "phrasal verb",
+      "ipa_us": "/ˌfɪgjɚ ˈaʊt/",
+      "translation_ru": "разобраться (в чём дело)",
+      "example_en": "I cannot figure out why the report is empty.",
+      "collocations": [
+        "figure out the answer",
+        "figure out how to do something"
+      ],
+      "topic": "tech"
+    },
+    {
+      "id": "b2_v_spacious",
+      "level": "B2",
+      "word": "spacious",
+      "pos": "adjective",
+      "ipa_us": "/ˈspeɪʃəs/",
+      "translation_ru": "просторный",
+      "example_en": "The new apartment is much more spacious than our old one.",
+      "collocations": [
+        "a spacious room",
+        "bright and spacious",
+        "a spacious kitchen"
+      ],
+      "topic": "home"
+    },
+    {
+      "id": "b2_v_cozy",
+      "level": "B2",
+      "word": "cozy",
+      "pos": "adjective",
+      "ipa_us": "/ˈkoʊzi/",
+      "translation_ru": "уютный",
+      "example_en": "Their living room is small but very cozy.",
+      "collocations": [
+        "a cozy room",
+        "warm and cozy",
+        "a cozy corner"
+      ],
+      "topic": "home"
+    },
+    {
+      "id": "b2_v_household",
+      "level": "B2",
+      "word": "household",
+      "pos": "noun",
+      "ipa_us": "/ˈhaʊsˌhoʊld/",
+      "translation_ru": "домохозяйство (все, кто живёт в одном доме)",
+      "example_en": "Almost every household on our street has two cars.",
+      "collocations": [
+        "household chores",
+        "a large household",
+        "household items"
+      ],
+      "topic": "home"
+    },
+    {
+      "id": "b2_v_mortgage",
+      "level": "B2",
+      "word": "mortgage",
+      "pos": "noun",
+      "ipa_us": "/ˈmɔrgɪdʒ/",
+      "translation_ru": "ипотека, ипотечный кредит",
+      "example_en": "They took out a thirty-year mortgage to buy the house.",
+      "collocations": [
+        "take out a mortgage",
+        "pay off the mortgage",
+        "mortgage payments"
+      ],
+      "topic": "home"
+    },
+    {
+      "id": "b2_v_cuisine",
+      "level": "B2",
+      "word": "cuisine",
+      "pos": "noun",
+      "ipa_us": "/kwɪˈzin/",
+      "translation_ru": "национальная кухня, кулинария",
+      "example_en": "I love Italian cuisine, especially fresh pasta.",
+      "collocations": [
+        "local cuisine",
+        "Italian cuisine",
+        "traditional cuisine"
+      ],
+      "topic": "food"
+    },
+    {
+      "id": "b2_v_appetite",
+      "level": "B2",
+      "word": "appetite",
+      "pos": "noun",
+      "ipa_us": "/ˈæpəˌtaɪt/",
+      "translation_ru": "аппетит",
+      "example_en": "A long walk in the fresh air always gives me a huge appetite.",
+      "collocations": [
+        "a good appetite",
+        "lose your appetite",
+        "spoil your appetite"
+      ],
+      "topic": "food"
+    },
+    {
+      "id": "b2_v_portion",
+      "level": "B2",
+      "word": "portion",
+      "pos": "noun",
+      "ipa_us": "/ˈpɔrʃən/",
+      "translation_ru": "порция",
+      "example_en": "The portions in that restaurant are huge, so we usually share one.",
+      "collocations": [
+        "a large portion",
+        "a small portion",
+        "portion size"
+      ],
+      "topic": "food"
+    },
+    {
+      "id": "b2_v_bitter",
+      "level": "B2",
+      "word": "bitter",
+      "pos": "adjective",
+      "ipa_us": "/ˈbɪtɚ/",
+      "translation_ru": "горький (на вкус)",
+      "example_en": "This coffee is too bitter for me without sugar.",
+      "collocations": [
+        "a bitter taste",
+        "slightly bitter",
+        "taste bitter"
+      ],
+      "topic": "food"
+    },
+    {
+      "id": "b2_v_landmark",
+      "level": "B2",
+      "word": "landmark",
+      "pos": "noun",
+      "ipa_us": "/ˈlændˌmɑrk/",
+      "translation_ru": "достопримечательность, ориентир",
+      "example_en": "The old bridge is the most famous landmark in the city.",
+      "collocations": [
+        "a famous landmark",
+        "a local landmark",
+        "a historic landmark"
+      ],
+      "topic": "travel"
+    },
+    {
+      "id": "b2_v_remote",
+      "level": "B2",
+      "word": "remote",
+      "pos": "adjective",
+      "ipa_us": "/rɪˈmoʊt/",
+      "translation_ru": "отдалённый, удалённый (о месте)",
+      "example_en": "We spent a week in a remote village with no internet.",
+      "collocations": [
+        "a remote village",
+        "a remote area",
+        "a remote island"
+      ],
+      "topic": "travel"
+    },
+    {
+      "id": "b2_v_jet_lag",
+      "level": "B2",
+      "word": "jet lag",
+      "pos": "noun",
+      "ipa_us": "/ˈdʒɛt ˌlæg/",
+      "translation_ru": "джетлаг, усталость после перелёта через часовые пояса",
+      "example_en": "I always have terrible jet lag after flying to New York.",
+      "collocations": [
+        "suffer from jet lag",
+        "bad jet lag",
+        "get over jet lag"
+      ],
+      "topic": "travel"
+    },
+    {
+      "id": "b2_v_stunning",
+      "level": "B2",
+      "word": "stunning",
+      "pos": "adjective",
+      "ipa_us": "/ˈstʌnɪŋ/",
+      "translation_ru": "потрясающий, ошеломляюще красивый",
+      "example_en": "From the top of the hill there is a stunning view of the bay.",
+      "collocations": [
+        "a stunning view",
+        "absolutely stunning",
+        "stunning scenery"
+      ],
+      "topic": "travel"
+    },
+    {
+      "id": "b2_v_humid",
+      "level": "B2",
+      "word": "humid",
+      "pos": "adjective",
+      "ipa_us": "/ˈhjumɪd/",
+      "translation_ru": "влажный и душный (о погоде, воздухе)",
+      "example_en": "Summers here are hot and humid, so we sleep with the fan on.",
+      "collocations": [
+        "hot and humid",
+        "humid air",
+        "a humid climate"
+      ],
+      "topic": "nature"
+    },
+    {
+      "id": "b2_v_breeze",
+      "level": "B2",
+      "word": "breeze",
+      "pos": "noun",
+      "ipa_us": "/briz/",
+      "translation_ru": "лёгкий ветерок, бриз",
+      "example_en": "A cool breeze was blowing from the sea.",
+      "collocations": [
+        "a light breeze",
+        "a cool breeze",
+        "a sea breeze"
+      ],
+      "topic": "nature"
+    },
+    {
+      "id": "b2_v_extinct",
+      "level": "B2",
+      "word": "extinct",
+      "pos": "adjective",
+      "ipa_us": "/ɪkˈstɪŋkt/",
+      "translation_ru": "вымерший, потухший (о вулкане)",
+      "example_en": "Dinosaurs became extinct millions of years ago.",
+      "collocations": [
+        "become extinct",
+        "almost extinct",
+        "an extinct volcano"
+      ],
+      "topic": "nature"
+    },
+    {
+      "id": "b2_v_endangered",
+      "level": "B2",
+      "word": "endangered",
+      "pos": "adjective",
+      "ipa_us": "/ɪnˈdeɪndʒɚd/",
+      "translation_ru": "находящийся под угрозой исчезновения",
+      "example_en": "The snow leopard is an endangered animal, and hunting it is illegal.",
+      "collocations": [
+        "an endangered species",
+        "critically endangered",
+        "endangered animals"
+      ],
+      "topic": "nature"
+    },
+    {
+      "id": "b2_v_prescription",
+      "level": "B2",
+      "word": "prescription",
+      "pos": "noun",
+      "ipa_us": "/prɪˈskrɪpʃən/",
+      "translation_ru": "врачебный рецепт",
+      "example_en": "You can't buy this medicine without a prescription.",
+      "collocations": [
+        "write a prescription",
+        "a prescription for something",
+        "prescription drugs"
+      ],
+      "topic": "health"
+    },
+    {
+      "id": "b2_v_dizzy",
+      "level": "B2",
+      "word": "dizzy",
+      "pos": "adjective",
+      "ipa_us": "/ˈdɪzi/",
+      "translation_ru": "чувствующий головокружение",
+      "example_en": "I stood up too quickly and felt dizzy.",
+      "collocations": [
+        "feel dizzy",
+        "get dizzy",
+        "slightly dizzy"
+      ],
+      "topic": "health"
+    },
+    {
+      "id": "b2_v_heal",
+      "level": "B2",
+      "word": "heal",
+      "pos": "verb",
+      "ipa_us": "/hil/",
+      "translation_ru": "заживать, исцелять",
+      "example_en": "The cut on my hand took two weeks to heal.",
+      "collocations": [
+        "heal quickly",
+        "heal completely",
+        "a wound heals"
+      ],
+      "topic": "health"
+    },
+    {
+      "id": "b2_v_infection",
+      "level": "B2",
+      "word": "infection",
+      "pos": "noun",
+      "ipa_us": "/ɪnˈfɛkʃən/",
+      "translation_ru": "инфекция, заражение",
+      "example_en": "The doctor gave her antibiotics for an ear infection.",
+      "collocations": [
+        "an ear infection",
+        "a viral infection",
+        "the risk of infection"
+      ],
+      "topic": "health"
+    },
+    {
+      "id": "b2_v_loyal",
+      "level": "B2",
+      "word": "loyal",
+      "pos": "adjective",
+      "ipa_us": "/ˈlɔɪəl/",
+      "translation_ru": "преданный, лояльный",
+      "example_en": "She has been a loyal friend to me for twenty years.",
+      "collocations": [
+        "a loyal friend",
+        "loyal customers",
+        "remain loyal to"
+      ],
+      "topic": "people"
+    },
+    {
+      "id": "b2_v_sympathetic",
+      "level": "B2",
+      "word": "sympathetic",
+      "pos": "adjective",
+      "ipa_us": "/ˌsɪmpəˈθɛtɪk/",
+      "translation_ru": "сочувствующий, отзывчивый (не «симпатичный»)",
+      "example_en": "My boss was very sympathetic when my father was in the hospital.",
+      "collocations": [
+        "a sympathetic ear",
+        "be sympathetic to",
+        "deeply sympathetic"
+      ],
+      "topic": "people"
+    },
+    {
+      "id": "b2_v_supportive",
+      "level": "B2",
+      "word": "supportive",
+      "pos": "adjective",
+      "ipa_us": "/səˈpɔrtɪv/",
+      "translation_ru": "поддерживающий, готовый поддержать",
+      "example_en": "My family was very supportive when I decided to change careers.",
+      "collocations": [
+        "a supportive family",
+        "very supportive",
+        "supportive of someone"
+      ],
+      "topic": "people"
+    },
+    {
+      "id": "b2_v_take_after",
+      "level": "B2",
+      "word": "take after",
+      "pos": "phrasal verb",
+      "ipa_us": "/ˌteɪk ˈæftɚ/",
+      "translation_ru": "быть похожим (на родственника)",
+      "example_en": "Everyone says I take after my father.",
+      "collocations": [
+        "take after your mother",
+        "take after a parent"
+      ],
+      "topic": "people"
+    },
+    {
+      "id": "b2_v_look_up_to",
+      "level": "B2",
+      "word": "look up to",
+      "pos": "phrasal verb",
+      "ipa_us": "/ˌlʊk ˈʌp tu/",
+      "translation_ru": "уважать, равняться на (кого-то)",
+      "example_en": "Many young players look up to him as a role model.",
+      "collocations": [
+        "look up to someone",
+        "look up to your parents"
+      ],
+      "topic": "people"
     }
   ]
 }

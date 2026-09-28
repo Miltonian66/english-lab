@@ -226,23 +226,6 @@
       "topic": "work"
     },
     {
-      "id": "b1_v_issue",
-      "level": "B1",
-      "word": "issue",
-      "pos": "noun",
-      "ipa_us": "/ˈɪʃu/",
-      "translation_ru": "проблема (рабочая), вопрос (для обсуждения)",
-      "example_en": "There is a small issue with the login page on old phones.",
-      "collocations": [
-        "raise an issue",
-        "fix an issue"
-      ],
-      "topic": "work",
-      "accept": [
-        "problem"
-      ]
-    },
-    {
       "id": "b1_v_solution",
       "level": "B1",
       "word": "solution",
@@ -269,20 +252,6 @@
         "a training course"
       ],
       "topic": "study"
-    },
-    {
-      "id": "b1_v_feedback",
-      "level": "B1",
-      "word": "feedback",
-      "pos": "noun",
-      "ipa_us": "/ˈfidˌbæk/",
-      "translation_ru": "обратная связь, отзывы",
-      "example_en": "Our manager gives useful feedback after every release.",
-      "collocations": [
-        "give feedback",
-        "honest feedback"
-      ],
-      "topic": "work"
     },
     {
       "id": "b1_v_opportunity",
@@ -317,20 +286,6 @@
       "accept": [
         "aim"
       ]
-    },
-    {
-      "id": "b1_v_priority",
-      "level": "B1",
-      "word": "priority",
-      "pos": "noun",
-      "ipa_us": "/praɪˈɔrəti/",
-      "translation_ru": "приоритет",
-      "example_en": "Security is our top priority in every release.",
-      "collocations": [
-        "a top priority",
-        "set priorities"
-      ],
-      "topic": "work"
     },
     {
       "id": "b1_v_decision",
@@ -399,20 +354,6 @@
       "collocations": [
         "get a result",
         "as a result"
-      ],
-      "topic": "work"
-    },
-    {
-      "id": "b1_v_reason",
-      "level": "B1",
-      "word": "reason",
-      "pos": "noun",
-      "ipa_us": "/ˈrizən/",
-      "translation_ru": "причина, довод",
-      "example_en": "The main reason for the delay was a missing file.",
-      "collocations": [
-        "the main reason",
-        "for this reason"
       ],
       "topic": "work"
     },
@@ -505,20 +446,6 @@
         "a bad mood"
       ],
       "topic": "feelings"
-    },
-    {
-      "id": "b1_v_advice",
-      "level": "B1",
-      "word": "advice",
-      "pos": "noun",
-      "ipa_us": "/ədˈvaɪs/",
-      "translation_ru": "совет, советы",
-      "example_en": "She gave me good advice about my presentation.",
-      "collocations": [
-        "give advice",
-        "a piece of advice"
-      ],
-      "topic": "people"
     },
     {
       "id": "b1_v_device",
@@ -787,20 +714,6 @@
       "topic": "work"
     },
     {
-      "id": "b1_v_explain",
-      "level": "B1",
-      "word": "explain",
-      "pos": "verb",
-      "ipa_us": "/ɪkˈspleɪn/",
-      "translation_ru": "объяснять",
-      "example_en": "He explained the problem in simple words.",
-      "collocations": [
-        "explain a rule",
-        "explain clearly"
-      ],
-      "topic": "study"
-    },
-    {
       "id": "b1_v_consider",
       "level": "B1",
       "word": "consider",
@@ -825,20 +738,6 @@
       "collocations": [
         "solve a problem",
         "solve an issue"
-      ],
-      "topic": "work"
-    },
-    {
-      "id": "b1_v_handle",
-      "level": "B1",
-      "word": "handle",
-      "pos": "verb",
-      "ipa_us": "/ˈhændəl/",
-      "translation_ru": "заниматься (вопросами, запросами), обрабатывать",
-      "example_en": "She handles all the questions from our biggest client.",
-      "collocations": [
-        "handle a situation",
-        "handle a request"
       ],
       "topic": "work"
     },
@@ -1264,20 +1163,6 @@
       ]
     },
     {
-      "id": "b1_v_probably",
-      "level": "B1",
-      "word": "probably",
-      "pos": "adverb",
-      "ipa_us": "/ˈprɑbəbli/",
-      "translation_ru": "вероятно, наверное",
-      "example_en": "The meeting will probably finish before lunch.",
-      "collocations": [
-        "will probably",
-        "probably not"
-      ],
-      "topic": "time"
-    },
-    {
       "id": "b1_v_actually",
       "level": "B1",
       "word": "actually",
@@ -1457,37 +1342,6 @@
       ]
     },
     {
-      "id": "b1_v_put_off",
-      "level": "B1",
-      "word": "put off",
-      "pos": "phrasal verb",
-      "ipa_us": "/ˌpʊt ˈɔf/",
-      "translation_ru": "откладывать, переносить",
-      "example_en": "We put off the meeting until next Monday.",
-      "collocations": [
-        "put off a meeting",
-        "put off a decision"
-      ],
-      "topic": "time",
-      "accept": [
-        "postpone"
-      ]
-    },
-    {
-      "id": "b1_v_come_up_with",
-      "level": "B1",
-      "word": "come up with",
-      "pos": "phrasal verb",
-      "ipa_us": "/ˌkʌm ˈʌp wɪð/",
-      "translation_ru": "придумывать (идею)",
-      "example_en": "He came up with a simple idea that saved us a week.",
-      "collocations": [
-        "come up with an idea",
-        "come up with a plan"
-      ],
-      "topic": "work"
-    },
-    {
       "id": "b1_v_work_out",
       "level": "B1",
       "word": "work out",
@@ -1530,20 +1384,6 @@
       "topic": "work"
     },
     {
-      "id": "b1_v_figure_out",
-      "level": "B1",
-      "word": "figure out",
-      "pos": "phrasal verb",
-      "ipa_us": "/ˌfɪgjɚ ˈaʊt/",
-      "translation_ru": "разобраться (в чём дело)",
-      "example_en": "I cannot figure out why the report is empty.",
-      "collocations": [
-        "figure out the answer",
-        "figure out how to do something"
-      ],
-      "topic": "tech"
-    },
-    {
       "id": "b1_v_run_out_of",
       "level": "B1",
       "word": "run out of",
@@ -1556,34 +1396,6 @@
         "run out of money"
       ],
       "topic": "work"
-    },
-    {
-      "id": "b1_v_point_out",
-      "level": "B1",
-      "word": "point out",
-      "pos": "phrasal verb",
-      "ipa_us": "/ˌpɔɪnt ˈaʊt/",
-      "translation_ru": "указывать, отмечать",
-      "example_en": "She pointed out a mistake in the second table.",
-      "collocations": [
-        "point out a mistake",
-        "point out that"
-      ],
-      "topic": "work"
-    },
-    {
-      "id": "b1_v_in_my_opinion",
-      "level": "B1",
-      "word": "in my opinion",
-      "pos": "phrase",
-      "ipa_us": "/ɪn maɪ əˈpɪnjən/",
-      "translation_ru": "по-моему, на мой взгляд",
-      "example_en": "In my opinion, we should test the feature one more time.",
-      "collocations": [
-        "in my opinion, we should",
-        "in my honest opinion"
-      ],
-      "topic": "feelings"
     },
     {
       "id": "b1_v_on_the_other_hand",
@@ -1674,6 +1486,129 @@
       "topic": "work",
       "accept": [
         "in spite of"
+      ]
+    },
+    {
+      "id": "b2_v_even_though",
+      "level": "B1",
+      "word": "even though",
+      "pos": "conjunction",
+      "ipa_us": "/ˌivən ˈðoʊ/",
+      "translation_ru": "хотя (с нажимом), даже несмотря на то что",
+      "example_en": "Even though all the tests passed, we found a bug in production.",
+      "collocations": [
+        "even though it was late",
+        "even though we knew the risk"
+      ],
+      "topic": "study"
+    },
+    {
+      "id": "b2_v_eventually",
+      "level": "B1",
+      "word": "eventually",
+      "pos": "adverb",
+      "ipa_us": "/ɪˈvɛntʃuəli/",
+      "translation_ru": "в конце концов, со временем",
+      "example_en": "It took a while, but we eventually found the bug.",
+      "collocations": [
+        "eventually agree",
+        "eventually find out"
+      ],
+      "topic": "time",
+      "accept": [
+        "finally",
+        "in the end"
+      ]
+    },
+    {
+      "id": "b2_v_gradually",
+      "level": "B1",
+      "word": "gradually",
+      "pos": "adverb",
+      "ipa_us": "/ˈgrædʒuəli/",
+      "translation_ru": "постепенно",
+      "example_en": "Traffic grew gradually over the first month.",
+      "collocations": [
+        "gradually improve",
+        "gradually increase"
+      ],
+      "topic": "time"
+    },
+    {
+      "id": "a2_v_give_up",
+      "level": "B1",
+      "word": "give up",
+      "pos": "phrasal verb",
+      "ipa_us": "/gɪv ˈʌp/",
+      "translation_ru": "бросать, сдаваться",
+      "example_en": "Do not give up after the first try.",
+      "collocations": [
+        "give up smoking",
+        "never give up"
+      ],
+      "topic": "feelings",
+      "accept": [
+        "quit"
+      ]
+    },
+    {
+      "id": "a2_v_delay",
+      "level": "B1",
+      "word": "delay",
+      "pos": "noun",
+      "ipa_us": "/dɪˈleɪ/",
+      "translation_ru": "задержка, опоздание",
+      "example_en": "There was a two-hour delay at the airport.",
+      "collocations": [
+        "a long delay",
+        "a short delay"
+      ],
+      "topic": "travel"
+    },
+    {
+      "id": "a2_v_freeze",
+      "level": "B1",
+      "word": "freeze",
+      "pos": "verb",
+      "ipa_us": "/friz/",
+      "translation_ru": "замерзать, замораживать",
+      "example_en": "Water freezes at zero degrees.",
+      "collocations": [
+        "freeze food",
+        "start to freeze"
+      ],
+      "topic": "nature"
+    },
+    {
+      "id": "a2_v_receipt",
+      "level": "B1",
+      "word": "receipt",
+      "pos": "noun",
+      "ipa_us": "/rɪˈsit/",
+      "translation_ru": "чек (из магазина), квитанция",
+      "example_en": "Keep the receipt if you want to return the shoes.",
+      "collocations": [
+        "keep the receipt",
+        "ask for a receipt"
+      ],
+      "topic": "money"
+    },
+    {
+      "id": "a2_v_log_in",
+      "level": "B1",
+      "word": "log in",
+      "pos": "phrasal verb",
+      "ipa_us": "/lɔg ˈɪn/",
+      "translation_ru": "входить в систему",
+      "example_en": "I cannot log in with my old password.",
+      "collocations": [
+        "log in to your account",
+        "log in again"
+      ],
+      "topic": "tech",
+      "accept": [
+        "sign in",
+        "log on"
       ]
     }
   ]

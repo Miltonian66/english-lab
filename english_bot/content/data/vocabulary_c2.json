@@ -1154,23 +1154,6 @@
       ]
     },
     {
-      "id": "c2_v_haggle",
-      "level": "C2",
-      "word": "haggle",
-      "pos": "verb",
-      "ipa_us": "/ˈhægəl/",
-      "translation_ru": "торговаться, препираться о цене",
-      "example_en": "He spent an hour haggling with the vendor over a discount of two percent.",
-      "collocations": [
-        "haggle over the price",
-        "haggle with a seller"
-      ],
-      "topic": "money",
-      "accept": [
-        "bargain"
-      ]
-    },
-    {
       "id": "c2_v_procure",
       "level": "C2",
       "word": "procure",
@@ -1468,20 +1451,6 @@
       ]
     },
     {
-      "id": "c2_v_picturesque",
-      "level": "C2",
-      "word": "picturesque",
-      "pos": "adjective",
-      "ipa_us": "/ˌpɪktʃəˈrɛsk/",
-      "translation_ru": "живописный, колоритный",
-      "example_en": "The route back was longer but far more picturesque.",
-      "collocations": [
-        "a picturesque village",
-        "picturesque scenery"
-      ],
-      "topic": "travel"
-    },
-    {
       "id": "c2_v_off_the_beaten_path",
       "level": "C2",
       "word": "off the beaten path",
@@ -1557,20 +1526,6 @@
         "shrink",
         "diminish"
       ]
-    },
-    {
-      "id": "c2_v_downpour",
-      "level": "C2",
-      "word": "downpour",
-      "pos": "noun",
-      "ipa_us": "/ˈdaʊnˌpɔr/",
-      "translation_ru": "ливень, проливной дождь",
-      "example_en": "A sudden downpour flooded the road within twenty minutes.",
-      "collocations": [
-        "a sudden downpour",
-        "a heavy downpour"
-      ],
-      "topic": "nature"
     },
     {
       "id": "c2_v_pristine",
@@ -1757,20 +1712,6 @@
       "topic": "study"
     },
     {
-      "id": "c2_v_empirical",
-      "level": "C2",
-      "word": "empirical",
-      "pos": "adjective",
-      "ipa_us": "/ɪmˈpɪrɪkəl/",
-      "translation_ru": "эмпирический, опытный, основанный на данных",
-      "example_en": "We need empirical evidence, not a shared feeling that it is slower.",
-      "collocations": [
-        "empirical evidence",
-        "empirical research"
-      ],
-      "topic": "study"
-    },
-    {
       "id": "c2_v_seminal",
       "level": "C2",
       "word": "seminal",
@@ -1898,6 +1839,161 @@
       "topic": "time",
       "accept": [
         "occasional"
+      ]
+    },
+    {
+      "id": "c1_v_corroborate",
+      "level": "C2",
+      "word": "corroborate",
+      "pos": "verb",
+      "ipa_us": "/kəˈrɑbəˌreɪt/",
+      "translation_ru": "подтверждать (независимым источником), подкреплять",
+      "example_en": "Two independent tests corroborate what the user reported.",
+      "collocations": [
+        "corroborate the evidence",
+        "corroborate a story"
+      ],
+      "topic": "study"
+    },
+    {
+      "id": "c1_v_discern",
+      "level": "C2",
+      "word": "discern",
+      "pos": "verb",
+      "ipa_us": "/dɪˈsɝn/",
+      "translation_ru": "разглядеть, уловить",
+      "example_en": "It is hard to discern any real pattern in these numbers.",
+      "collocations": [
+        "discern a pattern",
+        "discern a difference"
+      ],
+      "topic": "study",
+      "accept": [
+        "detect",
+        "see"
+      ]
+    },
+    {
+      "id": "c1_v_entail",
+      "level": "C2",
+      "word": "entail",
+      "pos": "verb",
+      "ipa_us": "/ɪnˈteɪl/",
+      "translation_ru": "влечь за собой, предполагать",
+      "example_en": "Moving to the new provider would entail rewriting most of the deployment scripts.",
+      "collocations": [
+        "entail a risk",
+        "entail extra work"
+      ],
+      "topic": "work",
+      "accept": [
+        "involve",
+        "mean"
+      ]
+    },
+    {
+      "id": "c1_v_underpin",
+      "level": "C2",
+      "word": "underpin",
+      "pos": "verb",
+      "ipa_us": "/ˌʌndɚˈpɪn/",
+      "translation_ru": "лежать в основе, служить опорой",
+      "example_en": "A single shared library underpins all of our internal tools.",
+      "collocations": [
+        "underpin an argument",
+        "underpin a strategy"
+      ],
+      "topic": "tech"
+    },
+    {
+      "id": "c1_v_leeway",
+      "level": "C2",
+      "word": "leeway",
+      "pos": "noun",
+      "ipa_us": "/ˈliˌweɪ/",
+      "translation_ru": "свобода действий, запас",
+      "example_en": "The deadline gives us a bit of leeway if testing takes longer.",
+      "collocations": [
+        "give someone leeway",
+        "a little leeway"
+      ],
+      "topic": "time"
+    },
+    {
+      "id": "c1_v_ramification",
+      "level": "C2",
+      "word": "ramification",
+      "pos": "noun",
+      "ipa_us": "/ˌræməfəˈkeɪʃən/",
+      "translation_ru": "скрытое последствие (решения)",
+      "example_en": "Nobody thought through the legal ramifications of storing that data.",
+      "collocations": [
+        "far-reaching ramifications",
+        "the ramifications of a decision"
+      ],
+      "topic": "study",
+      "accept": [
+        "consequence"
+      ]
+    },
+    {
+      "id": "c1_v_conducive",
+      "level": "C2",
+      "word": "conducive",
+      "pos": "adjective",
+      "ipa_us": "/kənˈdusɪv/",
+      "translation_ru": "благоприятствующий, способствующий",
+      "example_en": "An open office is not conducive to deep concentration.",
+      "collocations": [
+        "conducive to learning",
+        "hardly conducive to"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "c1_v_invariably",
+      "level": "C2",
+      "word": "invariably",
+      "pos": "adverb",
+      "ipa_us": "/ɪnˈvɛriəbli/",
+      "translation_ru": "неизменно",
+      "example_en": "Estimates made without the team are invariably too optimistic.",
+      "collocations": [
+        "invariably lead to",
+        "almost invariably"
+      ],
+      "topic": "time",
+      "accept": [
+        "always"
+      ]
+    },
+    {
+      "id": "c1_v_move_the_needle",
+      "level": "C2",
+      "word": "move the needle",
+      "pos": "phrase",
+      "ipa_us": "/ˌmuv ðə ˈnidəl/",
+      "translation_ru": "заметно повлиять, сдвинуть с места",
+      "example_en": "Redesigning the button will not move the needle on sign-ups.",
+      "collocations": [
+        "move the needle on something"
+      ],
+      "topic": "work"
+    },
+    {
+      "id": "c1_v_low_hanging_fruit",
+      "level": "C2",
+      "word": "low-hanging fruit",
+      "pos": "phrase",
+      "ipa_us": "/ˈloʊ ˌhæŋɪŋ ˈfrut/",
+      "translation_ru": "лёгкие победы, самые простые задачи",
+      "example_en": "Let's start with the low-hanging fruit and fix the slowest queries.",
+      "collocations": [
+        "pick the low-hanging fruit"
+      ],
+      "topic": "work",
+      "accept": [
+        "low hanging fruit"
       ]
     }
   ]

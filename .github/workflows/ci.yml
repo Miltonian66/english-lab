@@ -1,0 +1,32 @@
+# Шлюз выкладки: scripts/release.sh выкатывает коммит main только с зелёным
+# прогоном этого workflow. Проверки — те же, что локально (scripts/check.sh).
+name: CI
+
+on:
+  push:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  # На main прогон не отменяется: у каждого коммита main должен быть итог.
+  cancel-in-progress: ${{ github.ref != 'refs/heads/main' }}
+
+jobs:
+  check:
+    name: check (Python ${{ matrix.python }})
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      matrix:
+        # 3.11 — заявленный минимум ядра, 3.14 — Python прода.
+        python: ["3.11", "3.14"]
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: ${{ matrix.python }}
+      - run: scripts/check.sh

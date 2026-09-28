@@ -699,6 +699,28 @@ class PracticeFlowTests(BotTestCase):
         self.assertNotIn("точно не", text)
         self.assertNotIn("ответ начинается", text)
 
+    def test_cloze_text_is_answered_gap_by_gap(self) -> None:
+        """Связный текст: пропуски пронумерованы, ответы — по порядку, разбор — по номерам."""
+        point = next(
+            point for point in self.bot.curriculum.points.values()
+            if any(exercise.kind == "cloze" for exercise in point.exercises)
+        )
+        self.press(100, f"pr:{self.bot.curriculum.point_code(point.id)}")
+        for _ in range(len(point.exercises)):
+            if self.current_question(100).kind == "cloze":
+                break
+            self.answer_current(100)
+        question = self.current_question(100)
+        self.assertEqual(question.kind, "cloze")
+        self.assertIn("(1) ___", self.telegram.all_text())
+        self.telegram.reset()
+        self.send(100, "только один ответ")
+        self.assertIn("по порядку", self.telegram.all_text())
+        self.assertEqual(self.current_question(100).ref, question.ref)
+        self.telegram.reset()
+        self.send(100, "\n".join(gap[0] for gap in question.gaps))
+        self.assertIn("Верно", self.telegram.all_text())
+
     def test_vocabulary_hint_never_contains_the_word(self) -> None:
         self.press(100, "startpractice")
         for _ in range(len(self.bot.storage.user(100).state_data["queue"])):  # type: ignore[union-attr]

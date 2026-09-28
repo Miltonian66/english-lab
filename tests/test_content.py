@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import json
 import re
 import unittest
 from pathlib import Path
@@ -151,10 +152,12 @@ class BankTests(unittest.TestCase):
                 self.assertGreaterEqual(len(CURRICULUM.vocab_of_level(level)), 100)
 
     def test_vocabulary_has_no_cross_level_duplicates(self) -> None:
-        seen: dict[str, str] = {}
-        for level, items in CURRICULUM.vocabulary.items():
-            for item in items:
-                word = item.word.lower()
+        """Проверяются файлы, а не загруженный курс: загрузчик повтор молча отбросил бы."""
+        seen: dict[tuple[str, str], str] = {}
+        for level in LEVELS:
+            path = DATA_DIR / f"vocabulary_{level.lower()}.json"
+            for item in json.loads(path.read_text(encoding="utf-8"))["items"]:
+                word = (item["word"].strip().lower(), item["pos"])
                 self.assertNotIn(word, seen, f"{word} есть и в {seen.get(word)}, и в {level}")
                 seen[word] = level
 

@@ -228,8 +228,10 @@ def _load_grammar(curriculum: Curriculum, directory: Path) -> None:
 
 def _load_banks(curriculum: Curriculum, directory: Path) -> None:
     # Слово вводится один раз, на самом низком уровне, где встретилось: иначе
-    # `vocab_upto` вернул бы его дважды и повторение задвоилось бы.
-    introduced: set[str] = set()
+    # `vocab_upto` вернул бы его дважды и повторение задвоилось бы. Словом
+    # считается пара «написание + часть речи»: book-книга и book-бронировать —
+    # две карточки. Настоящие повторы ловит тест, поэтому здесь они — страховка.
+    introduced: set[tuple[str, str]] = set()
     for level in LEVELS:
         path = directory / f"vocabulary_{level.lower()}.json"
         if not path.exists():
@@ -242,8 +244,9 @@ def _load_banks(curriculum: Curriculum, directory: Path) -> None:
             continue
         unique: list[VocabItem] = []
         for item in items:  # type: ignore[assignment]
-            word = item.word.strip().lower()  # type: ignore[attr-defined]
+            word = (item.word.strip().lower(), item.pos)  # type: ignore[attr-defined]
             if word in introduced:
+                LOGGER.warning("Повтор слова в банке лексики пропущен: %s (%s)", *word)
                 continue
             introduced.add(word)
             unique.append(item)  # type: ignore[arg-type]

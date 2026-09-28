@@ -108,8 +108,8 @@
     {
      "id": "a2_comparative_superlative_adjectives_adverbs_07",
      "kind": "correct",
-     "prompt": "This is the more expensive laptop in the store.",
-     "answer": "This is the most expensive laptop in the store.",
+     "prompt": "This is the more expensive bike in the store.",
+     "answer": "This is the most expensive bike in the store.",
      "accept": [],
      "explanation_ru": "Значение здесь - один из всех в магазине, значит нужна превосходная степень the most, а не сравнительная more.",
      "difficulty": 3
@@ -122,6 +122,72 @@
      "accept": [],
      "explanation_ru": "Порядок такой: подлежащее, глагол, the + превосходная степень, существительное, затем обстоятельство места.",
      "difficulty": 3
+    },
+    {
+     "id": "a2_comparative_superlative_adjectives_adverbs_09",
+     "kind": "choice",
+     "prompt": "Liam is 180 cm tall, and his brother is 180 cm too. Liam is ___ his brother.",
+     "options": [
+      "as tall as",
+      "as tall than",
+      "so tall like",
+      "taller as"
+     ],
+     "correct_index": 0,
+     "explanation_ru": "Одинаковый рост — это равенство, а его передаёт as + прилагательное + as. Than ставится только после сравнительной степени (taller than), а like и as после taller в этой конструкции не работают.",
+     "difficulty": 1,
+     "diagnostic": true
+    },
+    {
+     "id": "a2_comparative_superlative_adjectives_adverbs_10",
+     "kind": "choice",
+     "prompt": "Как сказать по-английски: «Эта куртка не такая тёплая, как моя.»?",
+     "options": [
+      "This jacket isn't as warm as mine.",
+      "This jacket isn't so warm than mine.",
+      "This jacket isn't as warm like mine.",
+      "This jacket isn't warmer as mine."
+     ],
+     "correct_index": 0,
+     "explanation_ru": "Неравенство «не такой…, как» передаёт not as + прилагательное + as. Русское «как» тянет к like, а «чем» — к than, но внутри as…as оба слова невозможны; warmer as смешивает две конструкции.",
+     "difficulty": 2,
+     "diagnostic": true
+    },
+    {
+     "id": "a2_comparative_superlative_adjectives_adverbs_11",
+     "kind": "cloze",
+     "prompt": "My two sisters are very different. Mei is two years ___ (old) than Hana, but Hana is ___ (tall) than Mei. Mei drives ___ (careful) than Hana, and she is the ___ (good) cook in our family.",
+     "gaps": [
+      [
+       "older"
+      ],
+      [
+       "taller"
+      ],
+      [
+       "more carefully"
+      ],
+      [
+       "best"
+      ]
+     ],
+     "explanation_ru": "Короткие прилагательные берут -er: older, taller. Наречие carefully длинное, поэтому more carefully. У good неправильная превосходная форма best, а the уже стоит в тексте.",
+     "difficulty": 2
+    },
+    {
+     "id": "a2_comparative_superlative_adjectives_adverbs_12",
+     "kind": "choice",
+     "prompt": "Our new apartment is ___ bigger than our old one.",
+     "options": [
+      "much",
+      "very",
+      "more",
+      "too"
+     ],
+     "correct_index": 0,
+     "explanation_ru": "«Намного» перед сравнительной степенью — much (также a lot, а «чуть-чуть» — a bit). Very ставится только перед обычным прилагательным (very big), more с bigger дало бы двойную степень, а too значит «слишком».",
+     "difficulty": 2,
+     "diagnostic": true
     }
    ]
   },
@@ -157,15 +223,15 @@
     {
      "id": "a2_second_conditional_01",
      "kind": "choice",
-     "prompt": "If I ___ more money, I would buy a car.",
+     "prompt": "Mei says: \"If I had a car, I would drive you to the airport.\" What does Mei mean?",
      "options": [
-      "have",
-      "will have",
-      "had",
-      "would have"
+      "She has no car, so she can't drive you.",
+      "She has a car and will drive you.",
+      "She is going to buy a car soon.",
+      "She had a car in the past."
      ],
-     "correct_index": 2,
-     "explanation_ru": "После if во втором условном стоит past simple, а would остаётся только в главной части.",
+     "correct_index": 0,
+     "explanation_ru": "Past simple после if здесь говорит не о прошлом, а о нереальном: машины у Мэй нет, поэтому would drive — только воображаемый результат. Реальное обещание звучало бы как If I have a car, I will drive you, а о прошлом эта конструкция не рассказывает.",
      "difficulty": 1
     },
     {
@@ -185,15 +251,15 @@
     {
      "id": "a2_second_conditional_03",
      "kind": "choice",
-     "prompt": "What would you do if you ___ your phone?",
+     "prompt": "Какое предложение описывает воображаемую, нереальную ситуацию?",
      "options": [
-      "lose",
-      "will lose",
-      "lost",
-      "would lose"
+      "If I had wings, I would fly to school.",
+      "If it rains, I will take a taxi.",
+      "When I get home, I will call you.",
+      "If you heat ice, it melts."
      ],
-     "correct_index": 2,
-     "explanation_ru": "Would уже стоит в вопросе, значит в части с if нужен past simple lost.",
+     "correct_index": 0,
+     "explanation_ru": "Воображаемую ситуацию выдаёт пара past simple после if и would в главной части: крыльев нет и не будет. Остальные предложения о реальном: if + present и will — возможное будущее, when — то, что точно случится, а present в обеих частях — общий факт.",
      "difficulty": 2
     },
     {
@@ -233,12 +299,12 @@
     {
      "id": "a2_second_conditional_07",
      "kind": "correct",
-     "prompt": "If I would know the answer, I would tell you.",
-     "answer": "If I knew the answer, I would tell you.",
+     "prompt": "If I would have a garden, I would grow tomatoes.",
+     "answer": "If I had a garden, I would grow tomatoes.",
      "accept": [
-      "If I knew the answer, I'd tell you."
+      "If I had a garden, I'd grow tomatoes."
      ],
-     "explanation_ru": "После if would не ставится: нужен past simple knew.",
+     "explanation_ru": "Would ставится только в главную часть. После if нужен past simple had, хотя по-русски говорят «если бы у меня был»: русское «бы» в английском уходит только в результат.",
      "difficulty": 3
     },
     {
@@ -252,6 +318,56 @@
      ],
      "explanation_ru": "Совет через второе условное: устойчивая формула If I were you + would + глагол.",
      "difficulty": 3
+    },
+    {
+     "id": "a2_second_conditional_09",
+     "kind": "choice",
+     "prompt": "Как сказать по-английски: «Если бы у меня было время, я бы тебе помог.»?",
+     "options": [
+      "If I had time, I would help you.",
+      "If I would have time, I would help you.",
+      "If I have time, I would help you.",
+      "If I had time, I will help you."
+     ],
+     "correct_index": 0,
+     "explanation_ru": "Русское «бы» стоит в обеих частях, а в английском would — только в главной; после if нужен past simple had. Have с would и had с will не сочетаются: обе части должны принадлежать одному типу условия.",
+     "difficulty": 2,
+     "diagnostic": true
+    },
+    {
+     "id": "a2_second_conditional_10",
+     "kind": "choice",
+     "prompt": "A: I have a terrible toothache.\nB: If I ___ you, I would call the dentist today.",
+     "options": [
+      "were",
+      "am",
+      "will be",
+      "would be"
+     ],
+     "correct_index": 0,
+     "explanation_ru": "If I were you — готовая формула совета «на твоём месте». После if нужен past simple, и для be в этой формуле принято were; am, will be и would be в части с if не ставятся.",
+     "difficulty": 1,
+     "diagnostic": true
+    },
+    {
+     "id": "a2_second_conditional_11",
+     "kind": "cloze",
+     "prompt": "Liam lives in a small apartment in the city. He often dreams: \"If I ___ (have) a house by the sea, I ___ (swim) every morning. And if I ___ (not/work) so much, I would read more books.\"",
+     "gaps": [
+      [
+       "had"
+      ],
+      [
+       "would swim",
+       "could swim"
+      ],
+      [
+       "didn't work",
+       "did not work"
+      ]
+     ],
+     "explanation_ru": "Мечта о нереальном: в части с if стоит past simple (had, didn't work), а в главной — would + глагол без to. Will здесь не подходит: дома у моря у Лиама нет.",
+     "difficulty": 2
     }
    ]
   },
@@ -314,15 +430,15 @@
     {
      "id": "a2_purpose_to_for_03",
      "kind": "choice",
-     "prompt": "This app is ___ photos.",
+     "prompt": "This knife is ___ bread.",
      "options": [
-      "for edit",
-      "to editing",
-      "for editing",
-      "for to edit"
+      "for cut",
+      "to cutting",
+      "for cutting",
+      "for to cut"
      ],
      "correct_index": 2,
-     "explanation_ru": "Назначение предмета описывается через for и форму на -ing.",
+     "explanation_ru": "Назначение предмета описывается через for и форму на -ing: a knife for cutting bread. После for голый глагол и to не ставятся, а to cutting смешивает две конструкции.",
      "difficulty": 2
     },
     {
@@ -375,13 +491,54 @@
     {
      "id": "a2_purpose_to_for_08",
      "kind": "order",
-     "prompt": "to / I / the manager / ask / called / a question / .",
-     "answer": "I called the manager to ask a question.",
+     "prompt": "to / I / the doctor / ask / called / a question / .",
+     "answer": "I called the doctor to ask a question.",
      "accept": [
-      "I called to ask the manager a question."
+      "I called to ask the doctor a question."
      ],
      "explanation_ru": "Сначала подлежащее и сказуемое с дополнением, затем цель через to и глагол.",
      "difficulty": 3
+    },
+    {
+     "id": "a2_purpose_to_for_09",
+     "kind": "choice",
+     "prompt": "Как сказать по-английски: «Я пришёл, чтобы помочь тебе.»?",
+     "options": [
+      "I came to help you.",
+      "I came for help you.",
+      "I came for to help you.",
+      "I came that help you."
+     ],
+     "correct_index": 0,
+     "explanation_ru": "Цель действия человека — просто to + глагол. «Чтобы» тянет к that или for, но that вводит целое предложение с подлежащим, а for перед глаголом в этой роли невозможен.",
+     "difficulty": 1,
+     "diagnostic": true
+    },
+    {
+     "id": "a2_purpose_to_for_10",
+     "kind": "cloze",
+     "prompt": "Every Saturday Carlos goes to the market ___ (buy) vegetables. He always takes a big bag ___ (carry) them. After that, he goes to a cafe ___ a cup of coffee.",
+     "gaps": [
+      [
+       "to buy",
+       "in order to buy"
+      ],
+      [
+       "to carry",
+       "for carrying",
+       "in order to carry"
+      ],
+      [
+       "for",
+       "to have",
+       "to get",
+       "to drink",
+       "to buy",
+       "to order"
+      ]
+     ],
+     "explanation_ru": "Цель-действие — to + глагол: to buy, to carry. Перед существительным a cup of coffee цель вводит for. Голый глагол после for в этой роли не ставят.",
+     "difficulty": 2
     }
    ]
   },
@@ -515,6 +672,66 @@
      ],
      "explanation_ru": "However не соединяет два предложения запятой: перед ним нужна точка или точка с запятой, а после - запятая. Через запятую части связывает but, а although присоединяет уступку внутри одного предложения.",
      "difficulty": 3
+    },
+    {
+     "id": "a2_however_although_time_connectors_09",
+     "kind": "cloze",
+     "prompt": "Last Saturday we made pizza at home. ___, we went to the store for cheese and tomatoes. ___ we got home, we made the dough. ___ that, we put everything in the oven. ___, after twenty minutes, we had the best pizza ever!",
+     "gaps": [
+      [
+       "First",
+       "First of all",
+       "Firstly"
+      ],
+      [
+       "When",
+       "After",
+       "As soon as",
+       "Once"
+      ],
+      [
+       "After"
+      ],
+      [
+       "Finally",
+       "In the end",
+       "Then",
+       "At last",
+       "Eventually"
+      ]
+     ],
+     "explanation_ru": "Рассказ по шагам держат связки: first открывает цепочку, when, after или as soon as присоединяют действие с подлежащим, after that — готовое «после этого», а finally или in the end закрывают историю.",
+     "difficulty": 2
+    },
+    {
+     "id": "a2_however_although_time_connectors_10",
+     "kind": "choice",
+     "prompt": "София объясняет, почему они не пошли гулять. В каком предложении ошибка?",
+     "options": [
+      "We didn't go out because of it was cold.",
+      "We didn't go out because it was cold.",
+      "We didn't go out because of the cold.",
+      "It was cold, so we didn't go out."
+     ],
+     "correct_index": 0,
+     "explanation_ru": "Because of ставится только перед существительным (because of the cold), а перед предложением с подлежащим и глаголом нужно просто because. So вводит следствие и тоже верно.",
+     "difficulty": 2,
+     "diagnostic": true
+    },
+    {
+     "id": "a2_however_although_time_connectors_11",
+     "kind": "choice",
+     "prompt": "Как сказать по-английски: «Я не лягу спать, пока ты не позвонишь.»?",
+     "options": [
+      "I won't go to bed until you call.",
+      "I won't go to bed until you don't call.",
+      "I won't go to bed until you will call.",
+      "I won't go to bed while you call."
+     ],
+     "correct_index": 0,
+     "explanation_ru": "Until уже значит «до того момента, как», поэтому русское «пока не» не даёт второго отрицания: until you call. После until о будущем говорят в Present Simple, а while значит «в то время как».",
+     "difficulty": 2,
+     "diagnostic": true
     }
    ]
   },
@@ -578,7 +795,7 @@
     {
      "id": "a2_no_longer_any_longer_anymore_03",
      "kind": "choice",
-     "prompt": "Tom isn't a student ___.",
+     "prompt": "Noah isn't a student ___.",
      "options": [
       "no longer",
       "anymore",
@@ -641,11 +858,35 @@
     {
      "id": "a2_no_longer_any_longer_anymore_08",
      "kind": "transform",
-     "prompt": "Rewrite with 'no longer': She doesn't live in Berlin anymore.",
-     "answer": "She no longer lives in Berlin.",
+     "prompt": "Rewrite with 'no longer': She doesn't live in Chicago anymore.",
+     "answer": "She no longer lives in Chicago.",
      "accept": [],
      "explanation_ru": "No longer уходит в середину предложения, а глагол становится утвердительным: lives.",
      "difficulty": 3
+    },
+    {
+     "id": "a2_no_longer_any_longer_anymore_09",
+     "kind": "choice",
+     "prompt": "Как сказать по-английски: «Я больше не пью кофе.»?",
+     "options": [
+      "I don't drink coffee anymore.",
+      "I don't drink coffee more.",
+      "I no more drink coffee.",
+      "I don't drink coffee no longer."
+     ],
+     "correct_index": 0,
+     "explanation_ru": "«Больше не» о прекращённой привычке — not … anymore (или no longer). More значит «больше по количеству», no more перед глаголом так не ставят, а don't … no longer даёт двойное отрицание.",
+     "difficulty": 1,
+     "diagnostic": true
+    },
+    {
+     "id": "a2_no_longer_any_longer_anymore_10",
+     "kind": "gap",
+     "prompt": "A: Is Diego still your neighbor?\nB: No, he ___ ___ ___ next door. He moved to Chile. (no longer / live)",
+     "answer": "no longer lives",
+     "accept": [],
+     "explanation_ru": "No longer стоит перед смысловым глаголом, а сам глагол остаётся утвердительным и получает -s: no longer lives. Doesn't no longer live было бы двойным отрицанием.",
+     "difficulty": 2
     }
    ]
   },
@@ -695,7 +936,7 @@
     {
      "id": "a2_have_to_dont_have_to_must_mustnt_02",
      "kind": "choice",
-     "prompt": "He ___ get up early tomorrow. His first meeting is at 7 a.m.",
+     "prompt": "He ___ get up early tomorrow. His train leaves at 6 a.m.",
      "options": [
       "have to",
       "has to",
@@ -776,6 +1017,59 @@
      ],
      "explanation_ru": "Праздник снимает обязанность, а не вводит запрет, поэтому нужно don't have to.",
      "difficulty": 3
+    },
+    {
+     "id": "a2_have_to_dont_have_to_must_mustnt_09",
+     "kind": "choice",
+     "prompt": "Как сказать по-английски: «Тебе не нужно приходить завтра.»?",
+     "options": [
+      "You don't have to come tomorrow.",
+      "You mustn't come tomorrow.",
+      "You haven't to come tomorrow.",
+      "You don't must come tomorrow."
+     ],
+     "correct_index": 0,
+     "explanation_ru": "«Не нужно» — отсутствие обязанности: don't have to. Mustn't значит «нельзя», это запрет. Haven't to и don't must не существуют: have to отрицается через do, а must — через not.",
+     "difficulty": 2,
+     "diagnostic": true
+    },
+    {
+     "id": "a2_have_to_dont_have_to_must_mustnt_10",
+     "kind": "cloze",
+     "prompt": "At my new school, we ___ (have to) wear a uniform, but we ___ (not/have to) wear a tie. We ___ (must/not) use our phones in class. At my old school, we ___ (have to) be there at 7:30 every morning!",
+     "gaps": [
+      [
+       "have to"
+      ],
+      [
+       "don't have to",
+       "do not have to"
+      ],
+      [
+       "mustn't",
+       "must not"
+      ],
+      [
+       "had to"
+      ]
+     ],
+     "explanation_ru": "Правило школы — have to; галстук не обязателен — don't have to (можно не носить); телефон запрещён — mustn't; о прошлом говорят had to, потому что у must нет прошедшей формы.",
+     "difficulty": 3
+    },
+    {
+     "id": "a2_have_to_dont_have_to_must_mustnt_11",
+     "kind": "choice",
+     "prompt": "A: Can I swim in this lake?\nB: No, you ___ swim here. It is very dangerous.",
+     "options": [
+      "mustn't",
+      "don't have to",
+      "don't must",
+      "must not to"
+     ],
+     "correct_index": 0,
+     "explanation_ru": "Опасно — значит нельзя: запрет выражает mustn't. Don't have to означало бы «можно не плавать», у must нет отрицания через do, а после must частица to не ставится.",
+     "difficulty": 1,
+     "diagnostic": true
     }
    ]
   },
@@ -879,12 +1173,12 @@
     {
      "id": "a2_may_and_might_whats_the_difference_06",
      "kind": "gap",
-     "prompt": "Use may or might. She is sick, so she ___ (come) to the meeting.",
+     "prompt": "Use may or might. She is sick, so she ___ (come) to the party.",
      "answer": "may not come",
      "accept": [
       "might not come"
      ],
-     "explanation_ru": "Из-за болезни она, скорее всего, не придёт - это отрицательная возможность: may not или might not, затем глагол без to.",
+     "explanation_ru": "Из-за болезни она, скорее всего, не придёт на вечеринку - это отрицательная возможность: may not или might not, затем глагол без to.",
      "difficulty": 2
     },
     {
@@ -905,6 +1199,49 @@
      "answer": "She might be at home.",
      "accept": [],
      "explanation_ru": "Наречие perhaps заменяется на might, а глагол is становится инфинитивом be.",
+     "difficulty": 3
+    },
+    {
+     "id": "a2_may_and_might_whats_the_difference_09",
+     "kind": "choice",
+     "prompt": "A: ___ you open the window, please? It's very hot.\nB: Sure, no problem.",
+     "options": [
+      "Could",
+      "May",
+      "Must",
+      "Should"
+     ],
+     "correct_index": 0,
+     "explanation_ru": "Попросить другого человека что-то сделать — Could you…? (или Can you…?). May спрашивает разрешения для себя — May I…?, поэтому May you… невозможно; must и should превратили бы просьбу в обязанность или совет.",
+     "difficulty": 1,
+     "diagnostic": false
+    },
+    {
+     "id": "a2_may_and_might_whats_the_difference_10",
+     "kind": "choice",
+     "prompt": "Как сказать по-английски: «Можно мне взять твой зонт?»",
+     "options": [
+      "May I borrow your umbrella?",
+      "May I to borrow your umbrella?",
+      "Do I may borrow your umbrella?",
+      "Can me borrow your umbrella?"
+     ],
+     "correct_index": 0,
+     "explanation_ru": "Разрешение для себя просят через May I (или Can I, Could I) + глагол без to. Do в вопросе с модальным глаголом не нужен, а «можно мне» — калька: подлежащее — I, а не me. «Взять на время» — borrow.",
+     "difficulty": 1,
+     "diagnostic": true
+    },
+    {
+     "id": "a2_may_and_might_whats_the_difference_11",
+     "kind": "correct",
+     "prompt": "May you help me with my bags, please?",
+     "answer": "Could you help me with my bags, please?",
+     "accept": [
+      "Can you help me with my bags, please?",
+      "Would you help me with my bags, please?",
+      "Will you help me with my bags, please?"
+     ],
+     "explanation_ru": "May вежливо спрашивает разрешения только для себя: May I…? Когда просят другого человека, говорят Could you…? или Can you…?; could звучит вежливее.",
      "difficulty": 3
     }
    ]
@@ -955,7 +1292,7 @@
     {
      "id": "a2_might_might_not_02",
      "kind": "choice",
-     "prompt": "Where is Tom? He ___ be having lunch.",
+     "prompt": "Where is Marcus? He ___ be having lunch.",
      "options": [
       "might",
       "might to",
@@ -969,15 +1306,15 @@
     {
      "id": "a2_might_might_not_03",
      "kind": "choice",
-     "prompt": "Take a jacket. It ___ get cold in the evening.",
+     "prompt": "I'm not sure yet, but we ___ visit my aunt this weekend.",
      "options": [
       "might",
-      "might to",
-      "is might",
-      "might be"
+      "will",
+      "must",
+      "might to"
      ],
      "correct_index": 0,
-     "explanation_ru": "Смысловой глагол get идёт сразу после might; лишние be и to здесь не нужны.",
+     "explanation_ru": "Говорящий ещё не уверен, поэтому подходит might. Will прозвучал бы как решённый план и спорит с I'm not sure, must — обязанность или уверенный вывод, а после might частица to не ставится.",
      "difficulty": 2
     },
     {
@@ -1031,6 +1368,44 @@
      "accept": [],
      "explanation_ru": "Perhaps и will not заменяются одним might not, после которого глагол стоит без to.",
      "difficulty": 3
+    },
+    {
+     "id": "a2_might_might_not_09",
+     "kind": "cloze",
+     "prompt": "Kenji is not sure about his plans for Saturday. He ___ (visit) his grandparents, or he ___ (go) fishing with Noah. The weather forecast isn't sure either: it ___ (not/be) sunny.",
+     "gaps": [
+      [
+       "might visit",
+       "may visit",
+       "could visit"
+      ],
+      [
+       "might go",
+       "may go",
+       "could go"
+      ],
+      [
+       "might not be",
+       "may not be"
+      ]
+     ],
+     "explanation_ru": "Неуверенные планы и прогноз передаёт might (или may) + глагол без to. Отрицание стоит сразу после might: might not be.",
+     "difficulty": 2
+    },
+    {
+     "id": "a2_might_might_not_10",
+     "kind": "choice",
+     "prompt": "Как сказать по-английски: «Может быть, я опоздаю.»?",
+     "options": [
+      "I might be late.",
+      "I can be late.",
+      "I might late.",
+      "I maybe late."
+     ],
+     "correct_index": 0,
+     "explanation_ru": "«Может быть» о возможном событии — might + глагол. Can — калька с «могу»: это умение или общая возможность, а не догадка. Late — прилагательное, поэтому нужен be: might be late; maybe — наречие, сказуемым оно не бывает.",
+     "difficulty": 1,
+     "diagnostic": true
     }
    ]
   },
@@ -1134,10 +1509,10 @@
     {
      "id": "a2_should_shouldnt_06",
      "kind": "gap",
-     "prompt": "Use should or shouldn't. The problem is serious. I think you ___ (talk) to your manager about it.",
-     "answer": "should talk",
+     "prompt": "Use should or shouldn't. Your cough is getting worse. I think you ___ (see) a doctor.",
+     "answer": "should see",
      "accept": [],
-     "explanation_ru": "Проблема серьёзная, поэтому совет утвердительный: should, а глагол после него в начальной форме.",
+     "explanation_ru": "Кашель усиливается, поэтому совет утвердительный: should, а глагол после него в начальной форме.",
      "difficulty": 2
     },
     {
@@ -1157,6 +1532,56 @@
      "accept": [],
      "explanation_ru": "В вопросе should сам выходит на первое место, вспомогательный do не нужен.",
      "difficulty": 3
+    },
+    {
+     "id": "a2_should_shouldnt_09",
+     "kind": "choice",
+     "prompt": "Как сказать по-английски: «Тебе стоит больше спать.»?",
+     "options": [
+      "You should sleep more.",
+      "You should to sleep more.",
+      "It costs you to sleep more.",
+      "You must to sleep more."
+     ],
+     "correct_index": 0,
+     "explanation_ru": "«Стоит» в значении совета — should + глагол без to. It costs — калька: cost значит «стоить денег». После should и must частица to не ставится.",
+     "difficulty": 1,
+     "diagnostic": true
+    },
+    {
+     "id": "a2_should_shouldnt_10",
+     "kind": "choice",
+     "prompt": "A: I have a headache.\nB: Why ___ you lie down for a bit?",
+     "options": [
+      "don't",
+      "not",
+      "aren't",
+      "doesn't"
+     ],
+     "correct_index": 0,
+     "explanation_ru": "Совет в форме вопроса — Why don't you + глагол? («почему бы тебе не…»). Why not you… так не строится, aren't не сочетается с lie без -ing, а doesn't не подходит к you.",
+     "difficulty": 2,
+     "diagnostic": true
+    },
+    {
+     "id": "a2_should_shouldnt_11",
+     "kind": "cloze",
+     "prompt": "Use should or shouldn't. Aisha's back hurts every evening. Her doctor says: \"You ___ (sit) at the computer for so many hours. You ___ (walk) more, and you ___ (carry) heavy bags.\"",
+     "gaps": [
+      [
+       "shouldn't sit",
+       "should not sit"
+      ],
+      [
+       "should walk"
+      ],
+      [
+       "shouldn't carry",
+       "should not carry"
+      ]
+     ],
+     "explanation_ru": "Совет «так не надо» — shouldn't, «так надо» — should, и в обоих случаях глагол без to. Выбор подсказывает смысл: долго сидеть и носить тяжёлое вредно для спины, а ходить полезно.",
+     "difficulty": 2
     }
    ]
   },
@@ -1207,7 +1632,7 @@
     {
      "id": "a2_subject_pronouns_object_pronouns_possessive_pronouns_possessive_adj_02",
      "kind": "choice",
-     "prompt": "I saw Anna yesterday and I gave ___ the documents.",
+     "prompt": "I saw Sofia yesterday and I gave ___ the tickets.",
      "options": [
       "she",
       "her",
@@ -1249,7 +1674,7 @@
     {
      "id": "a2_subject_pronouns_object_pronouns_possessive_pronouns_possessive_adj_05",
      "kind": "gap",
-     "prompt": "This is Anna's coat. It is ___.",
+     "prompt": "This is Grace's coat. It is ___.",
      "answer": "hers",
      "accept": [],
      "explanation_ru": "Существительное не повторяется, значит нужна самостоятельная форма hers без апострофа.",
@@ -1281,6 +1706,43 @@
      "accept": [],
      "explanation_ru": "После глагола showed нужна форма дополнения us, а не подлежащего we.",
      "difficulty": 3
+    },
+    {
+     "id": "a2_subject_pronouns_object_pronouns_possessive_pronouns_possessive_adj_09",
+     "kind": "cloze",
+     "prompt": "This is my friend Leila. ___ lives next door with her dog. The dog is very big, and ___ name is Max. I often walk Max with ___ in the park. On Fridays we cook dinner at her house or at ___.",
+     "gaps": [
+      [
+       "She"
+      ],
+      [
+       "its",
+       "his"
+      ],
+      [
+       "her"
+      ],
+      [
+       "mine"
+      ]
+     ],
+     "explanation_ru": "Подлежащее — she; принадлежность собаке — its (о любимой собаке говорят и his); после предлога with — объектная форма her; вместо my house — самостоятельное mine.",
+     "difficulty": 2
+    },
+    {
+     "id": "a2_subject_pronouns_object_pronouns_possessive_pronouns_possessive_adj_10",
+     "kind": "choice",
+     "prompt": "Как сказать по-английски: «Мы с другом ходили в кино.»?",
+     "options": [
+      "My friend and I went to the movies.",
+      "We with my friend went to the movies.",
+      "Me with my friend went to the movies.",
+      "My friend and me went to the movies."
+     ],
+     "correct_index": 0,
+     "explanation_ru": "Русское «мы с другом» значит «я и друг», поэтому по-английски My friend and I. Калька We with my friend звучит как «мы (несколько человек) и ещё друг». В роли подлежащего нужна форма I, а не me.",
+     "difficulty": 2,
+     "diagnostic": true
     }
    ]
   },
@@ -1404,6 +1866,42 @@
      "accept": [],
      "explanation_ru": "Homework сочетается с do, а в третьем лице форма does.",
      "difficulty": 3
+    },
+    {
+     "id": "a2_do_vs_make_difference_09",
+     "kind": "cloze",
+     "prompt": "On Sunday mornings everyone in my family is busy. Dad ___ (do/make) breakfast, and I ___ (do/make) the dishes. My sister ___ (do/make) her homework, and Mom ___ (do/make) a shopping list.",
+     "gaps": [
+      [
+       "makes"
+      ],
+      [
+       "do"
+      ],
+      [
+       "does"
+      ],
+      [
+       "makes"
+      ]
+     ],
+     "explanation_ru": "Создаём результат — make: make breakfast, make a list. Работа и обязанности — do: do the dishes, do homework. С he и she форма получает -s: makes, does.",
+     "difficulty": 2
+    },
+    {
+     "id": "a2_do_vs_make_difference_10",
+     "kind": "choice",
+     "prompt": "Как сказать по-английски: «Я делаю зарядку каждое утро.»?",
+     "options": [
+      "I do exercises every morning.",
+      "I make exercises every morning.",
+      "I make sport every morning.",
+      "I do a charge every morning."
+     ],
+     "correct_index": 0,
+     "explanation_ru": "Физические упражнения делают через do: do exercises. Make относится к созданию результата, make sport — калька (по-английски play sports), а charge — заряд батареи, а не зарядка.",
+     "difficulty": 1,
+     "diagnostic": true
     }
    ]
   },
@@ -1440,7 +1938,7 @@
     {
      "id": "a2_use_verb_go_english_01",
      "kind": "choice",
-     "prompt": "After the meeting I usually go ___.",
+     "prompt": "After the gym I usually go ___.",
      "options": [
       "to home",
       "home",
@@ -1496,19 +1994,21 @@
     {
      "id": "a2_use_verb_go_english_05",
      "kind": "gap",
-     "prompt": "She ___ (go) to the gym every Monday.",
-     "answer": "goes",
-     "accept": [],
-     "explanation_ru": "Настоящее простое время, третье лицо: goes.",
+     "prompt": "After dinner we often go ___ ___ ___ in the park. (walk)",
+     "answer": "for a walk",
+     "accept": [
+      "on a walk"
+     ],
+     "explanation_ru": "Когда занятие после go названо существительным (a walk, a run, a swim), а не формой на -ing, нужна связка go for: go for a walk (в американском варианте также go on a walk). Go to a walk так не говорят.",
      "difficulty": 1
     },
     {
      "id": "a2_use_verb_go_english_06",
      "kind": "gap",
-     "prompt": "Last summer we ___ (go) swimming every day.",
-     "answer": "went",
+     "prompt": "Do you want to ___ ___ with us in the mountains in January? (go / ski)",
+     "answer": "go skiing",
      "accept": [],
-     "explanation_ru": "Прошедшее время от go - неправильная форма went.",
+     "explanation_ru": "Спорт и развлечения после go выражаются формой на -ing без предлога: go skiing, go swimming. Go to ski и go on skiing так не говорят.",
      "difficulty": 2
     },
     {
@@ -1528,6 +2028,58 @@
      "accept": [],
      "explanation_ru": "После go занятие идёт в форме на -ing без предлога.",
      "difficulty": 3
+    },
+    {
+     "id": "a2_use_verb_go_english_09",
+     "kind": "choice",
+     "prompt": "It's midnight and I'm very tired. I'm going to ___.",
+     "options": [
+      "bed",
+      "the bed",
+      "a bed",
+      "in bed"
+     ],
+     "correct_index": 0,
+     "explanation_ru": "Go to bed — устойчивое «ложиться спать», и артикля здесь нет, как в go to school или go to work. Go to the bed значило бы «подойти к кровати».",
+     "difficulty": 1,
+     "diagnostic": true
+    },
+    {
+     "id": "a2_use_verb_go_english_10",
+     "kind": "cloze",
+     "prompt": "Omar usually goes to work ___ bus. In the evening he often goes ___ a run in the park. On Saturdays he goes ___ (dance) with his friends and comes ___ (домой) very late.",
+     "gaps": [
+      [
+       "by"
+      ],
+      [
+       "for",
+       "on"
+      ],
+      [
+       "dancing"
+      ],
+      [
+       "home"
+      ]
+     ],
+     "explanation_ru": "Транспорт — by bus без артикля; с существительным — go for a run; занятие — go + -ing (dancing) без предлога; перед home предлог to не ставится.",
+     "difficulty": 2
+    },
+    {
+     "id": "a2_use_verb_go_english_11",
+     "kind": "choice",
+     "prompt": "Как сказать по-английски: «Карлос уехал в Мексику» (он сейчас там)?",
+     "options": [
+      "Carlos has gone to Mexico.",
+      "Carlos has been to Mexico.",
+      "Carlos has went to Mexico.",
+      "Carlos is gone in Mexico."
+     ],
+     "correct_index": 0,
+     "explanation_ru": "Has gone значит «уехал и сейчас там», has been — «бывал и вернулся», поэтому о Карлосе, которого нет рядом, говорят has gone. Went — вторая форма, после has нужна третья.",
+     "difficulty": 2,
+     "diagnostic": true
     }
    ]
   }

@@ -58,7 +58,7 @@
     {
      "id": "a1_adverbs_frequency_03",
      "kind": "choice",
-     "prompt": "My manager ___ works on Sunday.",
+     "prompt": "My dad ___ works on Sunday.",
      "options": [
       "not",
       "never",
@@ -86,16 +86,16 @@
     {
      "id": "a1_adverbs_frequency_05",
      "kind": "gap",
-     "prompt": "Anna ___ (usually / start) work at nine.",
+     "prompt": "Kenji ___ (usually / start) school at eight.",
      "answer": "usually starts",
      "accept": [],
-     "explanation_ru": "Наречие идёт перед глаголом, а глагол получает -s, потому что подлежащее Anna — третье лицо.",
+     "explanation_ru": "Наречие идёт перед глаголом, а глагол получает -s, потому что подлежащее Kenji — третье лицо.",
      "difficulty": 2
     },
     {
      "id": "a1_adverbs_frequency_06",
      "kind": "gap",
-     "prompt": "Tom ___ (always / be) friendly with new people, so everyone likes him.",
+     "prompt": "Omar ___ (always / be) friendly with new people, so everyone likes him.",
      "answer": "is always",
      "accept": [
       "'s always"
@@ -122,6 +122,45 @@
      "accept": [],
      "explanation_ru": "После формы are наречие always стоит перед прилагательным long.",
      "difficulty": 3
+    },
+    {
+     "id": "a1_adverbs_frequency_09",
+     "kind": "transform",
+     "prompt": "Put never in the right place: She is late for class.",
+     "answer": "She is never late for class.",
+     "accept": [],
+     "explanation_ru": "С глаголом be наречие частоты стоит после него: is never late. Never уже отрицание, поэтому not не нужен.",
+     "difficulty": 2
+    },
+    {
+     "id": "a1_adverbs_frequency_10",
+     "kind": "choice",
+     "prompt": "Как сказать по-английски: «Я никогда не ем мясо»?",
+     "options": [
+      "I never don't eat meat.",
+      "I eat never meat.",
+      "I never eat meat.",
+      "I don't never eat meat."
+     ],
+     "correct_index": 2,
+     "diagnostic": true,
+     "explanation_ru": "Never уже содержит отрицание, второе not в английском невозможно, хотя в русском «никогда не» — норма. Наречие частоты стоит перед смысловым глаголом.",
+     "difficulty": 1
+    },
+    {
+     "id": "a1_adverbs_frequency_11",
+     "kind": "choice",
+     "prompt": "A: Is Liam late again?\nB: Yes, he ___ late!",
+     "options": [
+      "always is",
+      "is always",
+      "always",
+      "does always be"
+     ],
+     "correct_index": 1,
+     "diagnostic": true,
+     "explanation_ru": "С глаголом be наречие частоты стоит после него: he is always late. Перед be его не ставят, а без is предложение остаётся без сказуемого.",
+     "difficulty": 2
     }
    ]
   },
@@ -196,7 +235,7 @@
     {
      "id": "a1_past_simple_negatives_questions_04",
      "kind": "choice",
-     "prompt": "___ the meeting long?",
+     "prompt": "___ the movie long?",
      "options": [
       "Did",
       "Do",
@@ -204,16 +243,16 @@
       "Were"
      ],
      "correct_index": 2,
-     "explanation_ru": "Здесь нет смыслового глагола, только be; подлежащее the meeting в единственном числе, поэтому Was.",
+     "explanation_ru": "Здесь нет смыслового глагола, только be; подлежащее the movie в единственном числе, поэтому Was.",
      "difficulty": 2
     },
     {
      "id": "a1_past_simple_negatives_questions_05",
      "kind": "gap",
-     "prompt": "We ___ (not/finish) the task last week.",
-     "answer": "didn't finish",
+     "prompt": "We ___ (not/watch) TV last night.",
+     "answer": "didn't watch",
      "accept": [
-      "did not finish"
+      "did not watch"
      ],
      "explanation_ru": "Отрицание в прошедшем времени: didn't плюс первая форма глагола.",
      "difficulty": 2
@@ -221,7 +260,7 @@
     {
      "id": "a1_past_simple_negatives_questions_06",
      "kind": "gap",
-     "prompt": "___ (you/see) the new version yesterday?",
+     "prompt": "___ (you/see) the fireworks yesterday?",
      "answer": "Did you see",
      "accept": [],
      "explanation_ru": "Вопрос начинается с Did, затем подлежащее и первая форма глагола see.",
@@ -246,6 +285,57 @@
      ],
      "explanation_ru": "Порядок в отрицании: подлежащее, did, not, первая форма глагола, дополнение.",
      "difficulty": 3
+    },
+    {
+     "id": "a1_past_simple_negatives_questions_09",
+     "kind": "gap",
+     "prompt": "A: Did you like the movie?\nB: Yes, I ___. It was great.",
+     "answer": "did",
+     "accept": [],
+     "explanation_ru": "Краткий ответ повторяет вспомогательный глагол из вопроса: Did you…? — Yes, I did. Смысловой глагол like не повторяют.",
+     "difficulty": 1
+    },
+    {
+     "id": "a1_past_simple_negatives_questions_10",
+     "kind": "choice",
+     "prompt": "Как сказать по-английски: «Я не видел его вчера»?",
+     "options": [
+      "I didn't saw him yesterday.",
+      "I not saw him yesterday.",
+      "I don't see him yesterday.",
+      "I didn't see him yesterday."
+     ],
+     "correct_index": 3,
+     "diagnostic": true,
+     "explanation_ru": "Прошедшее время показывает только didn't, поэтому глагол остаётся в первой форме: see, а не saw. Без did отрицание не строится, а don't — настоящее время.",
+     "difficulty": 2
+    },
+    {
+     "id": "a1_past_simple_negatives_questions_11",
+     "kind": "transform",
+     "prompt": "Make the sentence negative: We went to the beach on Sunday.",
+     "answer": "We didn't go to the beach on Sunday.",
+     "accept": [],
+     "explanation_ru": "Отрицание в Past Simple — didn't плюс первая форма. Went превращается в go, потому что прошедшее время уже показывает did.",
+     "difficulty": 3
+    },
+    {
+     "id": "a1_past_simple_negatives_questions_12",
+     "kind": "cloze",
+     "prompt": "Hi Zoe! ___ (you / go) to the concert last Saturday? I ___ (not / go). I ___ (not / have) a ticket.",
+     "gaps": [
+      [
+       "Did you go"
+      ],
+      [
+       "didn't go"
+      ],
+      [
+       "didn't have"
+      ]
+     ],
+     "explanation_ru": "Вопрос и отрицание в прошедшем строятся через did, а смысловой глагол остаётся в первой форме: Did you go, didn't go, didn't have.",
+     "difficulty": 2
     }
    ]
   },
@@ -278,7 +368,7 @@
     {
      "id": "a1_past_simple_regular_irregular_01",
      "kind": "choice",
-     "prompt": "Yesterday I ___ a bug in the login form.",
+     "prompt": "Yesterday I ___ a wallet in the park.",
      "options": [
       "finded",
       "found",
@@ -306,7 +396,7 @@
     {
      "id": "a1_past_simple_regular_irregular_03",
      "kind": "choice",
-     "prompt": "They ___ a new laptop last month.",
+     "prompt": "They ___ a new car last month.",
      "options": [
       "buyed",
       "buy",
@@ -334,7 +424,7 @@
     {
      "id": "a1_past_simple_regular_irregular_05",
      "kind": "gap",
-     "prompt": "I ___ (send) the file two hours ago.",
+     "prompt": "I ___ (send) my mom a photo two hours ago.",
      "answer": "sent",
      "accept": [],
      "explanation_ru": "Send — неправильный глагол, его вторая форма sent.",
@@ -343,7 +433,7 @@
     {
      "id": "a1_past_simple_regular_irregular_06",
      "kind": "gap",
-     "prompt": "They ___ (stop) the server last night.",
+     "prompt": "The bus ___ (stop) near our house five minutes ago.",
      "answer": "stopped",
      "accept": [],
      "explanation_ru": "Короткий глагол с одной гласной удваивает конечную согласную перед -ed.",
@@ -352,8 +442,8 @@
     {
      "id": "a1_past_simple_regular_irregular_07",
      "kind": "correct",
-     "prompt": "He goed to the office by bus.",
-     "answer": "He went to the office by bus.",
+     "prompt": "He goed to school by bus.",
+     "answer": "He went to school by bus.",
      "accept": [],
      "explanation_ru": "Go — неправильный глагол, форма прошедшего времени went, а не goed.",
      "difficulty": 3
@@ -368,6 +458,56 @@
      ],
      "explanation_ru": "Порядок: подлежащее, глагол в прошедшем времени, дополнение, обстоятельство времени.",
      "difficulty": 3
+    },
+    {
+     "id": "a1_past_simple_regular_irregular_09",
+     "kind": "cloze",
+     "prompt": "Last Saturday we ___ (go) to the beach. The kids ___ (play) in the water, and I ___ (read) a book.",
+     "gaps": [
+      [
+       "went"
+      ],
+      [
+       "played",
+       "were playing"
+      ],
+      [
+       "read",
+       "was reading"
+      ]
+     ],
+     "explanation_ru": "Go и read — неправильные глаголы: went, read (пишется так же, но читается как red). Play — правильный: played; после гласной y сохраняется.",
+     "difficulty": 2
+    },
+    {
+     "id": "a1_past_simple_regular_irregular_10",
+     "kind": "choice",
+     "prompt": "Елена рассказывает о выходных. В каком предложении ошибка?",
+     "options": [
+      "On Saturday I cleaned the house.",
+      "Then I cooked dinner for my family.",
+      "On Sunday we taked the kids to the zoo.",
+      "We came home at six."
+     ],
+     "correct_index": 2,
+     "diagnostic": true,
+     "explanation_ru": "Take — неправильный глагол, его прошедшее время took, а не taked. Cleaned и cooked — правильные глаголы, came — верная форма от come.",
+     "difficulty": 2
+    },
+    {
+     "id": "a1_past_simple_regular_irregular_11",
+     "kind": "choice",
+     "prompt": "Как сказать по-английски: «Вчера я купил хлеб»?",
+     "options": [
+      "Yesterday I buyed bread.",
+      "Yesterday I bought bread.",
+      "Yesterday I buy bread.",
+      "Yesterday I was buy bread."
+     ],
+     "correct_index": 1,
+     "diagnostic": true,
+     "explanation_ru": "Buy — неправильный глагол: bought. Окончание -ed к нему не добавляют, настоящее buy со словом yesterday не сочетается, а was с другим глаголом прошедшее время не образует.",
+     "difficulty": 1
     }
    ]
   },
@@ -413,7 +553,7 @@
     {
      "id": "a1_present_continuous_02",
      "kind": "choice",
-     "prompt": "They ___ to the meeting room now.",
+     "prompt": "They ___ to the park now.",
      "options": [
       "go",
       "is going",
@@ -441,15 +581,15 @@
     {
      "id": "a1_present_continuous_04",
      "kind": "choice",
-     "prompt": "She ___ the new version at the moment.",
+     "prompt": "She ___ a cake at the moment.",
      "options": [
-      "test",
-      "is test",
-      "tests",
-      "is testing"
+      "make",
+      "is make",
+      "makes",
+      "is making"
      ],
      "correct_index": 3,
-     "explanation_ru": "At the moment показывает момент речи, поэтому нужна конструкция is + testing.",
+     "explanation_ru": "At the moment показывает момент речи, поэтому нужна конструкция is + making; немое -e перед -ing выпадает.",
      "difficulty": 2
     },
     {
@@ -494,6 +634,57 @@
      "accept": [],
      "explanation_ru": "В вопросе сначала идёт вопросительное слово, затем are, подлежащее и глагол с -ing.",
      "difficulty": 3
+    },
+    {
+     "id": "a1_present_continuous_09",
+     "kind": "gap",
+     "prompt": "Look! The kids ___ (swim) in the lake.",
+     "answer": "are swimming",
+     "accept": [],
+     "explanation_ru": "Look! показывает, что действие идёт сейчас: are + -ing. У swim короткий слог с одной гласной, поэтому m удваивается: swimming.",
+     "difficulty": 2
+    },
+    {
+     "id": "a1_present_continuous_10",
+     "kind": "gap",
+     "prompt": "A: What are you doing?\nB: I ___ (cook) dinner.",
+     "answer": "am cooking",
+     "accept": [],
+     "explanation_ru": "Действие идёт в момент разговора, поэтому am + cooking. Без am форма неверна, а I cook значит «я вообще готовлю».",
+     "difficulty": 1
+    },
+    {
+     "id": "a1_present_continuous_11",
+     "kind": "choice",
+     "prompt": "Как сказать по-английски: «Сейчас идёт дождь»?",
+     "options": [
+      "Now goes rain.",
+      "It raining now.",
+      "It is raining now.",
+      "Is raining now."
+     ],
+     "correct_index": 2,
+     "diagnostic": true,
+     "explanation_ru": "О погоде говорят с подлежащим it, а действие в момент речи — is + -ing: It is raining. Русское «идёт дождь» не переводится через go, а без is или без it предложение неверно.",
+     "difficulty": 1
+    },
+    {
+     "id": "a1_present_continuous_12",
+     "kind": "cloze",
+     "prompt": "It's Sunday morning. Dad ___ (sit) in the garden. Mom ___ (study) Spanish, and I ___ (make) breakfast.",
+     "gaps": [
+      [
+       "is sitting"
+      ],
+      [
+       "is studying"
+      ],
+      [
+       "am making"
+      ]
+     ],
+     "explanation_ru": "Всё происходит сейчас, поэтому am/is + -ing. Sit удваивает t: sitting; у study y сохраняется: studying; у make немое -e выпадает: making.",
+     "difficulty": 3
     }
    ]
   },
@@ -525,7 +716,7 @@
     {
      "id": "a1_present_simple_forms_of_to_be_01",
      "kind": "choice",
-     "prompt": "My colleagues ___ from Poland.",
+     "prompt": "My neighbors ___ from Poland.",
      "options": [
       "is",
       "are",
@@ -620,6 +811,51 @@
      ],
      "explanation_ru": "Отрицание с be: подлежащее, форма is, not, затем остальная часть предложения.",
      "difficulty": 3
+    },
+    {
+     "id": "a1_present_simple_forms_of_to_be_09",
+     "kind": "choice",
+     "prompt": "Как сказать по-английски: «Мне 30 лет»?",
+     "options": [
+      "I have 30 years.",
+      "I am 30 years old.",
+      "I am 30 years.",
+      "I have 30 years old."
+     ],
+     "correct_index": 1,
+     "diagnostic": true,
+     "explanation_ru": "Возраст в английском выражается через be: I am 30 или I am 30 years old. Русское «мне … лет» подталкивает к have, но возраст не «имеют», а years без old не ставят.",
+     "difficulty": 1
+    },
+    {
+     "id": "a1_present_simple_forms_of_to_be_10",
+     "kind": "choice",
+     "prompt": "A: Are you tired?\nB: Yes, ___.",
+     "options": [
+      "I'm",
+      "I do",
+      "I am",
+      "I tired"
+     ],
+     "correct_index": 2,
+     "diagnostic": true,
+     "explanation_ru": "В кратком утвердительном ответе be не сокращают: Yes, I am. Сокращение I'm возможно только перед продолжением (I'm tired). Do с be не сочетается, а без am нет сказуемого.",
+     "difficulty": 2
+    },
+    {
+     "id": "a1_present_simple_forms_of_to_be_11",
+     "kind": "choice",
+     "prompt": "Как сказать по-английски: «Мне холодно»?",
+     "options": [
+      "To me is cold.",
+      "Me is cold.",
+      "I am cold.",
+      "I have cold."
+     ],
+     "correct_index": 2,
+     "diagnostic": true,
+     "explanation_ru": "О своём состоянии говорят через I am плюс прилагательное: I am cold. Русское безличное «мне холодно» подталкивает к me, но подлежащее — I. I have a cold значит «я простужен».",
+     "difficulty": 1
     }
    ]
   },
@@ -716,7 +952,7 @@
     {
      "id": "a1_present_simple_present_continuous_06",
      "kind": "gap",
-     "prompt": "Look, the printer ___ (not/work) again.",
+     "prompt": "Look, the elevator ___ (not/work) again.",
      "answer": "isn't working",
      "accept": [
       "is not working",
@@ -728,8 +964,8 @@
     {
      "id": "a1_present_simple_present_continuous_07",
      "kind": "correct",
-     "prompt": "I am wanting a new keyboard.",
-     "answer": "I want a new keyboard.",
+     "prompt": "I am wanting a new bike.",
+     "answer": "I want a new bike.",
      "accept": [],
      "explanation_ru": "Want — глагол состояния, он не употребляется в форме с -ing даже при значении «сейчас».",
      "difficulty": 3
@@ -742,6 +978,54 @@
      "accept": [],
      "explanation_ru": "Слово now требует Present Continuous: are плюс having, а обстоятельство идёт в конце.",
      "difficulty": 3
+    },
+    {
+     "id": "a1_present_simple_present_continuous_09",
+     "kind": "cloze",
+     "prompt": "My sister Aisha ___ (work) in a hospital. She usually ___ (start) at seven. But this week she ___ (stay) at home because she is sick.",
+     "gaps": [
+      [
+       "works"
+      ],
+      [
+       "starts"
+      ],
+      [
+       "is staying"
+      ]
+     ],
+     "explanation_ru": "Постоянная работа и привычка — Present Simple с -s: works, starts. This week описывает временную ситуацию сейчас, поэтому is staying.",
+     "difficulty": 3
+    },
+    {
+     "id": "a1_present_simple_present_continuous_10",
+     "kind": "choice",
+     "prompt": "A: Where is Carlos?\nB: He ___ a shower. Can he call you back?",
+     "options": [
+      "takes",
+      "is taking",
+      "take",
+      "is take"
+     ],
+     "correct_index": 1,
+     "diagnostic": true,
+     "explanation_ru": "Карлос в душе прямо сейчас, поэтому Present Continuous: is taking. Takes описывает привычку, take без -s не сочетается с he, а is take — неполная форма без -ing.",
+     "difficulty": 2
+    },
+    {
+     "id": "a1_present_simple_present_continuous_11",
+     "kind": "choice",
+     "prompt": "Как сказать по-английски: «Я тебя понимаю»?",
+     "options": [
+      "I am understanding you.",
+      "I understanding you.",
+      "I understand you.",
+      "You I understand."
+     ],
+     "correct_index": 2,
+     "diagnostic": true,
+     "explanation_ru": "Understand — глагол состояния, его не ставят в Continuous даже при значении «сейчас». Без am форма с -ing вообще неверна, а порядок слов в английском — подлежащее, глагол, дополнение.",
+     "difficulty": 2
     }
    ]
   },
@@ -815,7 +1099,7 @@
     {
      "id": "a1_present_simple_04",
      "kind": "choice",
-     "prompt": "Does he ___ the office key?",
+     "prompt": "Does he ___ a car?",
      "options": [
       "has",
       "have",
@@ -829,7 +1113,7 @@
     {
      "id": "a1_present_simple_05",
      "kind": "gap",
-     "prompt": "Tom ___ (watch) videos every evening.",
+     "prompt": "Mateo ___ (watch) TV every evening.",
      "answer": "watches",
      "accept": [],
      "explanation_ru": "Глагол на -ch в третьем лице получает окончание -es.",
@@ -838,10 +1122,10 @@
     {
      "id": "a1_present_simple_06",
      "kind": "gap",
-     "prompt": "We ___ (not/use) that tool. We never need it.",
-     "answer": "don't use",
+     "prompt": "We ___ (not/drink) coffee. We only drink tea.",
+     "answer": "don't drink",
      "accept": [
-      "do not use"
+      "do not drink"
      ],
      "explanation_ru": "С we отрицание строится через don't, а глагол остаётся в первой форме.",
      "difficulty": 2
@@ -865,6 +1149,63 @@
      "accept": [],
      "explanation_ru": "Порядок в специальном вопросе: вопросительное слово, do, подлежащее, глагол.",
      "difficulty": 3
+    },
+    {
+     "id": "a1_present_simple_09",
+     "kind": "choice",
+     "prompt": "A: Do you like tea?\nB: Yes, I ___.",
+     "options": [
+      "like",
+      "do",
+      "am",
+      "does"
+     ],
+     "correct_index": 1,
+     "diagnostic": true,
+     "explanation_ru": "Краткий ответ повторяет вспомогательный глагол из вопроса: Do you…? — Yes, I do. Смысловой like не повторяют, am отвечает на вопросы с be, а does — для he, she, it.",
+     "difficulty": 1
+    },
+    {
+     "id": "a1_present_simple_10",
+     "kind": "choice",
+     "prompt": "Как сказать по-английски: «Я согласен»?",
+     "options": [
+      "I am agree.",
+      "I agree.",
+      "I agrees.",
+      "Me agree."
+     ],
+     "correct_index": 1,
+     "diagnostic": true,
+     "explanation_ru": "Agree — глагол, а не прилагательное, поэтому be перед ним не нужен: I agree. Русское «я согласен» похоже на «я рад», отсюда ошибка I am agree. С I глагол стоит без -s.",
+     "difficulty": 1
+    },
+    {
+     "id": "a1_present_simple_11",
+     "kind": "gap",
+     "prompt": "A: ___ (you / have) a car?\nB: No, I don't. I ride a bike.",
+     "answer": "Do you have",
+     "accept": [],
+     "explanation_ru": "Have — обычный глагол, и вопрос с ним строится через do: Do you have…? Это основная американская форма; краткий ответ No, I don't это подтверждает.",
+     "difficulty": 2
+    },
+    {
+     "id": "a1_present_simple_12",
+     "kind": "cloze",
+     "prompt": "My grandpa ___ (live) in a small village. He ___ (get up) at six every day. He ___ (not / watch) TV, but he reads a lot.",
+     "gaps": [
+      [
+       "lives"
+      ],
+      [
+       "gets up"
+      ],
+      [
+       "doesn't watch"
+      ]
+     ],
+     "explanation_ru": "С he глагол в утверждении получает -s: lives, gets up. В отрицании -s уходит на does: doesn't watch — после doesn't глагол в первой форме.",
+     "difficulty": 2
     }
    ]
   },
@@ -938,7 +1279,7 @@
     {
      "id": "a1_was_were_04",
      "kind": "choice",
-     "prompt": "There ___ two new people on the team last week.",
+     "prompt": "There ___ two new people in our class last week.",
      "options": [
       "was",
       "is",
@@ -986,6 +1327,57 @@
      "accept": [],
      "explanation_ru": "Порядок: подлежащее the weather, форма was, затем very и прилагательное cold.",
      "difficulty": 3
+    },
+    {
+     "id": "a1_was_were_09",
+     "kind": "choice",
+     "prompt": "A: Were you at home last night?\nB: No, I ___. I was at the gym.",
+     "options": [
+      "weren't",
+      "wasn't",
+      "didn't",
+      "am not"
+     ],
+     "correct_index": 1,
+     "diagnostic": true,
+     "explanation_ru": "Отвечают про себя, поэтому I и форма was: No, I wasn't. Weren't — для you, we, they, didn't с be не употребляют, а am not — настоящее время.",
+     "difficulty": 2
+    },
+    {
+     "id": "a1_was_were_10",
+     "kind": "choice",
+     "prompt": "Как сказать по-английски: «Где ты был вчера?»",
+     "options": [
+      "Where did you be yesterday?",
+      "Where was you yesterday?",
+      "Where were you yesterday?",
+      "Where you were yesterday?"
+     ],
+     "correct_index": 2,
+     "diagnostic": true,
+     "explanation_ru": "Вопрос с be в прошедшем строится перестановкой: Where were you? С you всегда were, did с be не сочетается, а подлежащее после вопросительного слова стоит за глаголом.",
+     "difficulty": 2
+    },
+    {
+     "id": "a1_was_were_11",
+     "kind": "cloze",
+     "prompt": "Yesterday ___ (be) my birthday. My friends ___ (be) at my house all evening. The cake ___ (not / be) very good, but we ___ (be) very happy.",
+     "gaps": [
+      [
+       "was"
+      ],
+      [
+       "were"
+      ],
+      [
+       "wasn't"
+      ],
+      [
+       "were"
+      ]
+     ],
+     "explanation_ru": "С единственным числом (my birthday, the cake) — was, с множественным (my friends, we) — were. Отрицание — wasn't, без did.",
+     "difficulty": 3
     }
    ]
   },
@@ -997,104 +1389,110 @@
    "title_en": "Verbs + to + infinitive and verbs + -ing",
    "source_slug": "verbs-infinitive-verbs-ing",
    "title_ru": "Глаголы с to и глаголы с -ing",
-   "summary_ru": "После одних глаголов идёт to и инфинитив, после других — форма с -ing. С to употребляются want, need, would like, decide, hope, try, learn: I want to change my job. С -ing употребляются enjoy, finish, stop, keep, practice: She enjoys working with the team. После like, love и hate возможны оба варианта: I like reading = I like to read. После модальных глаголов can, must, will частица to не нужна: I can help you. Списки таких глаголов нужно запомнить. Общее правило: два смысловых глагола подряд не ставят — между ними либо to, либо -ing.",
+   "summary_ru": "Когда за одним глаголом сразу идёт второй, между ними нужна связка: to или окончание -ing. После want, need и would like второй глагол идёт с to: I want to go home. После like, love и hate чаще ставят форму с -ing: I love swimming, she hates waiting. В американском английском после них так же естественно звучит to: I like to cook. После can, must и will частица to не нужна: I can swim. Два смысловых глагола без связки подряд не ставят: неверно I like cook, I want go. При добавлении -ing немое -e выпадает (dance — dancing), а короткий слог с одной гласной удваивает согласную (swim — swimming). Глаголы enjoy, finish и stop тоже требуют -ing, их отрабатывают на уровне A2.",
    "forms": [
-    "want / need / would like / decide / hope / try + to + V1",
-    "enjoy / finish / stop / keep + V-ing",
-    "like / love / hate + V-ing или to + V1",
-    "can / must / will + V1 (без to)"
+    "want / need / would like + to + V1: I want to go home",
+    "like / love / hate + V-ing: I love swimming",
+    "like / love / hate + to + V1 — тоже верно: I like to cook",
+    "can / must / will + V1 без to: I can swim",
+    "-ing: dance → dancing, swim → swimming, play → playing"
    ],
    "examples": [
-    "I want to find a new job.",
-    "She enjoys working with the team.",
-    "We finished writing the report at six.",
-    "He decided to go home early.",
-    "I hope to see you soon."
+    "I want to learn Spanish.",
+    "We need to go to the store.",
+    "My kids love drawing.",
+    "She hates waiting for the bus.",
+    "He likes to cook on Sundays.",
+    "I can ride a bike."
    ],
-   "ru_interference": "В русском после второго глагола всегда инфинитив, поэтому -ing теряется: неверно «I enjoy to work here» → верно «I enjoy working here». И наоборот, забывают частицу to: неверно «I want go home» → верно «I want to go home».",
+   "ru_interference": "В русском второй глагол просто стоит в инфинитиве («люблю готовить», «хочу пойти»), поэтому в английском теряются и to, и -ing: неверно «I like cook» → верно «I like cooking» или «I like to cook»; неверно «I want go home» → верно «I want to go home».",
    "prerequisites": [],
    "exercises": [
     {
      "id": "a1_verbs_infinitive_verbs_ing_01",
      "kind": "choice",
-     "prompt": "I want ___ a new job.",
+     "prompt": "Carlos wants ___ a new bike.",
      "options": [
-      "finding",
-      "to find",
-      "find",
-      "to finding"
+      "buying",
+      "to buy",
+      "buy",
+      "to buying"
      ],
      "correct_index": 1,
-     "explanation_ru": "После want всегда идёт to и первая форма глагола.",
+     "explanation_ru": "После want второй глагол всегда идёт с to: wants to buy. Форма с -ing после want невозможна, а to и -ing вместе не ставят.",
      "difficulty": 1
     },
     {
      "id": "a1_verbs_infinitive_verbs_ing_02",
      "kind": "choice",
-     "prompt": "She enjoys ___ with the team.",
+     "prompt": "Hana likes ___ to music in the car.",
      "options": [
-      "to work",
-      "work",
-      "working",
-      "to working"
+      "listening",
+      "listen",
+      "listens",
+      "to listening"
      ],
-     "correct_index": 2,
-     "explanation_ru": "Enjoy относится к группе глаголов, после которых используется только форма с -ing.",
+     "correct_index": 0,
+     "explanation_ru": "После like второй глагол получает -ing: likes listening (так же верно likes to listen). Голый глагол listen или listens после like не ставят, а to и -ing вместе невозможны.",
      "difficulty": 1
     },
     {
      "id": "a1_verbs_infinitive_verbs_ing_03",
      "kind": "choice",
-     "prompt": "We finished ___ the report at six.",
+     "prompt": "I hate ___ up early on Mondays.",
      "options": [
-      "writing",
-      "to write",
-      "write",
-      "wrote"
+      "getting",
+      "get",
+      "gets",
+      "to getting"
      ],
      "correct_index": 0,
-     "explanation_ru": "После finish используется форма с -ing, вариант с to невозможен.",
+     "explanation_ru": "После hate второй глагол получает -ing: hate getting up (верно и hate to get up). У get короткий слог, поэтому t удваивается. Голая форма get или gets после hate невозможна.",
      "difficulty": 1
     },
     {
      "id": "a1_verbs_infinitive_verbs_ing_04",
      "kind": "choice",
-     "prompt": "He decided ___ home early.",
+     "prompt": "Liam can ___ the guitar very well.",
      "options": [
-      "going",
-      "go",
-      "to going",
-      "to go"
+      "play",
+      "to play",
+      "playing",
+      "plays"
      ],
-     "correct_index": 3,
-     "explanation_ru": "Decide требует to и первой формы глагола, поэтому to go.",
+     "correct_index": 0,
+     "explanation_ru": "После модального can идёт глагол в начальной форме: can play. To, -ing и -s после can не ставят, хотя после want и like связка нужна.",
      "difficulty": 2
     },
     {
      "id": "a1_verbs_infinitive_verbs_ing_05",
      "kind": "gap",
-     "prompt": "I hope ___ (see) you soon.",
-     "answer": "to see",
+     "prompt": "I need ___ (call) my mom tonight.",
+     "answer": "to call",
      "accept": [],
-     "explanation_ru": "После hope ставится to и первая форма глагола.",
+     "explanation_ru": "После need второй глагол идёт с to: need to call. Без to два глагола подряд не ставят.",
      "difficulty": 2
     },
     {
      "id": "a1_verbs_infinitive_verbs_ing_06",
      "kind": "gap",
-     "prompt": "Please stop ___ (talk) during the call.",
-     "answer": "talking",
-     "accept": [],
-     "explanation_ru": "После stop в значении «прекратить занятие» используется форма с -ing.",
+     "prompt": "My kids love ___ (swim) in the sea.",
+     "answer": "swimming",
+     "accept": [
+      "to swim"
+     ],
+     "explanation_ru": "После love ставят -ing или to: love swimming, love to swim — оба верны. У swim короткий слог, поэтому m удваивается: swimming.",
      "difficulty": 2
     },
     {
      "id": "a1_verbs_infinitive_verbs_ing_07",
      "kind": "correct",
-     "prompt": "I enjoy to read English books.",
-     "answer": "I enjoy reading English books.",
-     "accept": [],
-     "explanation_ru": "Enjoy никогда не сочетается с to: нужна форма reading.",
+     "prompt": "I like cook for my family.",
+     "answer": "I like cooking for my family.",
+     "accept": [
+      "I like to cook for my family."
+     ],
+     "explanation_ru": "Два смысловых глагола подряд без связки не ставят: после like нужно -ing или to — like cooking или like to cook.",
      "difficulty": 3
     },
     {
@@ -1107,6 +1505,56 @@
      ],
      "explanation_ru": "После would like всегда идёт to и первая форма глагола.",
      "difficulty": 3
+    },
+    {
+     "id": "a1_verbs_infinitive_verbs_ing_09",
+     "kind": "choice",
+     "prompt": "Как сказать по-английски: «Я люблю читать»?",
+     "options": [
+      "I love read.",
+      "I love to reading.",
+      "I love reading.",
+      "I am love reading."
+     ],
+     "correct_index": 2,
+     "diagnostic": true,
+     "explanation_ru": "После love второй глагол получает -ing (или to: I love to read). Голый глагол после love невозможен, to и -ing вместе не ставят, а am с глаголом love не нужен.",
+     "difficulty": 1
+    },
+    {
+     "id": "a1_verbs_infinitive_verbs_ing_10",
+     "kind": "cloze",
+     "prompt": "My brother Diego ___ (love / play) football. He ___ (want / be) a coach one day. But he ___ (hate / run) in the rain!",
+     "gaps": [
+      [
+       "loves playing",
+       "loves to play"
+      ],
+      [
+       "wants to be"
+      ],
+      [
+       "hates running",
+       "hates to run"
+      ]
+     ],
+     "explanation_ru": "С he первый глагол получает -s. После love и hate — -ing или to: loves playing, hates running (у run удваивается n). После want — только to: wants to be.",
+     "difficulty": 3
+    },
+    {
+     "id": "a1_verbs_infinitive_verbs_ing_11",
+     "kind": "choice",
+     "prompt": "A: Do you want to go to the park?\nB: No, I want ___ at home today.",
+     "options": [
+      "stay",
+      "to stay",
+      "staying",
+      "to staying"
+     ],
+     "correct_index": 1,
+     "diagnostic": true,
+     "explanation_ru": "После want второй глагол идёт только с to: want to stay. Форма с -ing после want невозможна, а голый глагол без to — калька с русского «хочу остаться».",
+     "difficulty": 2
     }
    ]
   },
@@ -1140,10 +1588,10 @@
      "kind": "choice",
      "prompt": "Choose the correct sentence.",
      "options": [
-      "Anna speaks well English.",
-      "Anna speaks English well.",
-      "Speaks Anna English well.",
-      "Anna English speaks well."
+      "Carlos speaks well English.",
+      "Carlos speaks English well.",
+      "Speaks Carlos English well.",
+      "Carlos English speaks well."
      ],
      "correct_index": 1,
      "explanation_ru": "Дополнение English идёт сразу после глагола, а наречие well — только после дополнения.",
@@ -1152,15 +1600,15 @@
     {
      "id": "a1_basic_word_order_in_english_02",
      "kind": "choice",
-     "prompt": "Our team ___.",
+     "prompt": "Our family ___.",
      "options": [
-      "every Monday has a meeting",
-      "has a meeting every Monday",
-      "has every Monday a meeting",
-      "has meeting every Monday"
+      "every Sunday has a big lunch",
+      "has a big lunch every Sunday",
+      "has every Sunday a big lunch",
+      "has big lunch every Sunday"
      ],
      "correct_index": 1,
-     "explanation_ru": "Сначала глагол, затем дополнение a meeting, время every Monday — в конце; между подлежащим и глаголом и между глаголом и дополнением его не вставляют, а перед meeting нужен артикль a.",
+     "explanation_ru": "Сначала глагол, затем дополнение a big lunch, время every Sunday — в конце; между подлежащим и глаголом и между глаголом и дополнением его не вставляют, а перед lunch с прилагательным нужен артикль a.",
      "difficulty": 1
     },
     {
@@ -1194,10 +1642,10 @@
     {
      "id": "a1_basic_word_order_in_english_05",
      "kind": "gap",
-     "prompt": "We ___ (usually / watch) movies at home.",
-     "answer": "usually watch",
+     "prompt": "We ___ (at home / on Sundays / have lunch).",
+     "answer": "have lunch at home on Sundays",
      "accept": [],
-     "explanation_ru": "Наречие частоты стоит перед смысловым глаголом, а не после него.",
+     "explanation_ru": "Сначала глагол с дополнением, затем место, потом время: have lunch at home on Sundays. Место и время не ставят между глаголом и дополнением.",
      "difficulty": 2
     },
     {
@@ -1205,15 +1653,17 @@
      "kind": "gap",
      "prompt": "He ___ (send / me / an email) every morning.",
      "answer": "sends me an email",
-     "accept": [],
-     "explanation_ru": "Сначала глагол с окончанием -s, затем адресат me, затем прямое дополнение an email; предлог to при таком порядке не нужен.",
+     "accept": [
+      "sends an email to me"
+     ],
+     "explanation_ru": "Сначала глагол с окончанием -s, затем адресат me, затем прямое дополнение an email; предлог to нужен, только если адресат стоит после дополнения: sends an email to me.",
      "difficulty": 2
     },
     {
      "id": "a1_basic_word_order_in_english_07",
      "kind": "correct",
-     "prompt": "Very much I like my job.",
-     "answer": "I like my job very much.",
+     "prompt": "Very much I like my city.",
+     "answer": "I like my city very much.",
      "accept": [],
      "explanation_ru": "Предложение начинается с подлежащего, а very much ставится в конец.",
      "difficulty": 3
@@ -1221,12 +1671,73 @@
     {
      "id": "a1_basic_word_order_in_english_08",
      "kind": "order",
-     "prompt": "office / to / the / goes / he / every day / .",
-     "answer": "He goes to the office every day.",
+     "prompt": "park / to / the / goes / he / every day / .",
+     "answer": "He goes to the park every day.",
      "accept": [
-      "Every day he goes to the office."
+      "Every day he goes to the park."
      ],
-     "explanation_ru": "Порядок: подлежащее, глагол, место, время; время можно вынести и в начало: Every day he goes to the office.",
+     "explanation_ru": "Порядок: подлежащее, глагол, место, время; время можно вынести и в начало: Every day he goes to the park.",
+     "difficulty": 3
+    },
+    {
+     "id": "a1_basic_word_order_in_english_09",
+     "kind": "cloze",
+     "prompt": "Use or, because, but. Would you like tea ___ coffee? I don't drink coffee ___ it is bad for my sleep. I love green tea, ___ my husband doesn't like it.",
+     "gaps": [
+      [
+       "or"
+      ],
+      [
+       "because"
+      ],
+      [
+       "but"
+      ]
+     ],
+     "explanation_ru": "Or предлагает выбор, because называет причину, but вводит противопоставление. После союза вторая часть — полное предложение со своим подлежащим и глаголом: it is bad, my husband doesn't like.",
+     "difficulty": 2
+    },
+    {
+     "id": "a1_basic_word_order_in_english_10",
+     "kind": "choice",
+     "prompt": "It was very cold, ___ we stayed at home.",
+     "options": [
+      "because",
+      "so",
+      "but",
+      "or"
+     ],
+     "correct_index": 1,
+     "diagnostic": true,
+     "explanation_ru": "Вторая часть — следствие холода, поэтому so («поэтому»). Because вводит причину, а не следствие, but — противопоставление, or — выбор.",
+     "difficulty": 2
+    },
+    {
+     "id": "a1_basic_word_order_in_english_11",
+     "kind": "choice",
+     "prompt": "Как сказать по-английски: «Я очень люблю мою маму»?",
+     "options": [
+      "Very much I love my mom.",
+      "I love very much my mom.",
+      "I love my mom very much.",
+      "I love my very much mom."
+     ],
+     "correct_index": 2,
+     "diagnostic": true,
+     "explanation_ru": "Very much ставят в конец, после дополнения: I love my mom very much. Между глаголом и дополнением ничего не вставляют, а в начале предложения very much не стоит.",
+     "difficulty": 1
+    },
+    {
+     "id": "a1_basic_word_order_in_english_12",
+     "kind": "transform",
+     "prompt": "Join the two sentences with because: I stayed at home. I was sick.",
+     "answer": "I stayed at home because I was sick.",
+     "accept": [
+      "Because I was sick, I stayed at home.",
+      "I stayed home because I was sick.",
+      "Because I was sick, I stayed home."
+     ],
+     "explanation_ru": "Because вводит причину и присоединяет второе предложение целиком, с подлежащим и глаголом: because I was sick. Порядок внутри каждой части — подлежащее, глагол, остальное.",
      "difficulty": 3
     }
    ]
@@ -1287,7 +1798,7 @@
     {
      "id": "a1_imperative_sit_dont_talk_03",
      "kind": "choice",
-     "prompt": "___ start the demo now.",
+     "prompt": "___ start the movie now.",
      "options": [
       "Let's",
       "Lets us",
@@ -1315,10 +1826,10 @@
     {
      "id": "a1_imperative_sit_dont_talk_05",
      "kind": "gap",
-     "prompt": "___ (not/open) that file, it's dangerous.",
-     "answer": "Don't open",
+     "prompt": "___ (not/touch) the oven, it's hot.",
+     "answer": "Don't touch",
      "accept": [
-      "Do not open"
+      "Do not touch"
      ],
      "explanation_ru": "Отрицательный приказ: Don't и первая форма глагола.",
      "difficulty": 2
@@ -1346,13 +1857,62 @@
     {
      "id": "a1_imperative_sit_dont_talk_08",
      "kind": "order",
-     "prompt": "the / please / send / file / .",
-     "answer": "Please send the file.",
+     "prompt": "the / please / pass / salt / .",
+     "answer": "Please pass the salt.",
      "accept": [
-      "Send the file, please."
+      "Pass the salt, please."
      ],
      "explanation_ru": "Please стоит перед глаголом или в конце предложения, а сам глагол идёт без подлежащего.",
      "difficulty": 3
+    },
+    {
+     "id": "a1_imperative_sit_dont_talk_09",
+     "kind": "choice",
+     "prompt": "Как сказать по-английски: «Не открывай окно»?",
+     "options": [
+      "Not open the window.",
+      "No open the window.",
+      "Don't open the window.",
+      "Don't opens the window."
+     ],
+     "correct_index": 2,
+     "diagnostic": true,
+     "explanation_ru": "Отрицательная просьба строится через Don't плюс глагол в первой форме. Русское «не» нельзя перенести как not или no, а после don't глагол идёт без -s.",
+     "difficulty": 1
+    },
+    {
+     "id": "a1_imperative_sit_dont_talk_10",
+     "kind": "choice",
+     "prompt": "A: I'm so tired.\nB: ___ a break. Sit down here.",
+     "options": [
+      "Takes",
+      "Take",
+      "To take",
+      "You taking"
+     ],
+     "correct_index": 1,
+     "diagnostic": true,
+     "explanation_ru": "Совет в повелительном наклонении — глагол в первой форме без подлежащего: Take a break. Окончание -s, to и форма с -ing здесь не нужны.",
+     "difficulty": 2
+    },
+    {
+     "id": "a1_imperative_sit_dont_talk_11",
+     "kind": "cloze",
+     "prompt": "Welcome to our home! Please ___ (take off) your shoes. ___ (not / worry) about the dog, he is very friendly. ___ (let's / eat) now!",
+     "gaps": [
+      [
+       "take off"
+      ],
+      [
+       "Don't worry"
+      ],
+      [
+       "Let's eat",
+       "Let us eat"
+      ]
+     ],
+     "explanation_ru": "Просьба — глагол в первой форме: take off. Отрицательная просьба — Don't плюс глагол. Предложение сделать что-то вместе — Let's плюс глагол без to.",
+     "difficulty": 1
     }
    ]
   }

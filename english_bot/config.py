@@ -36,6 +36,12 @@ def _int_env(name: str, default: int, low: int, high: int) -> int:
     return value
 
 
+def _voices_env(name: str, default: str) -> tuple[str, ...]:
+    """Список голосов через запятую; пустое значение — список по умолчанию."""
+    raw = os.environ.get(name, "").strip() or default
+    return tuple(voice.strip() for voice in raw.split(",") if voice.strip())
+
+
 @dataclass(frozen=True)
 class Settings:
     telegram_token: str
@@ -61,7 +67,8 @@ class Settings:
     whisper_compute: str
     whisper_threads: int
     piper_voice: str
-    piper_second_voice: str
+    piper_female_voices: tuple[str, ...]
+    piper_male_voices: tuple[str, ...]
     openai_api_key: str | None
     openai_model: str
     anthropic_api_key: str | None
@@ -69,7 +76,8 @@ class Settings:
     stt_model: str
     tts_model: str
     tts_voice: str
-    tts_second_voice: str
+    tts_female_voices: tuple[str, ...]
+    tts_male_voices: tuple[str, ...]
 
     workers: int
     job_workers: int
@@ -159,10 +167,8 @@ class Settings:
                 os.environ.get("PIPER_VOICE", "en_US-lessac-medium").strip()
                 or "en_US-lessac-medium"
             ),
-            piper_second_voice=(
-                os.environ.get("PIPER_VOICE_2", "en_US-ryan-medium").strip()
-                or "en_US-ryan-medium"
-            ),
+            piper_female_voices=_voices_env("PIPER_FEMALE_VOICES", "en_US-lessac-medium,en_US-amy-medium"),
+            piper_male_voices=_voices_env("PIPER_MALE_VOICES", "en_US-ryan-medium,en_US-joe-medium"),
             openai_api_key=os.environ.get("OPENAI_API_KEY", "").strip() or None,
             openai_model=os.environ.get("OPENAI_MODEL", "gpt-5-mini").strip(),
             anthropic_api_key=os.environ.get("ANTHROPIC_API_KEY", "").strip() or None,
@@ -170,7 +176,8 @@ class Settings:
             stt_model=os.environ.get("STT_MODEL", "whisper-1").strip(),
             tts_model=os.environ.get("TTS_MODEL", "gpt-4o-mini-tts").strip(),
             tts_voice=os.environ.get("TTS_VOICE", "alloy").strip(),
-            tts_second_voice=os.environ.get("TTS_VOICE_2", "onyx").strip() or "onyx",
+            tts_female_voices=_voices_env("TTS_FEMALE_VOICES", "nova,shimmer"),
+            tts_male_voices=_voices_env("TTS_MALE_VOICES", "onyx,echo"),
             workers=_int_env("WORKERS", 16, 1, 64),
             # 0 — выполнять длинные цепочки прямо в дорожке обновления, как было
             # до фоновых задач. Нужен тестам обработчиков и отладке по шагам.

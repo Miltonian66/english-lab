@@ -122,6 +122,11 @@ class AnswerTests(unittest.TestCase):
         self.assertFalse(matches(self._ex("gap", "p", "is working"), "has worked"))
         self.assertFalse(matches(self._ex("gap", "p", "had known"), "would know"))
 
+    def test_thousands_separator_is_not_a_comma(self) -> None:
+        exercise = self._ex("correct", "The festival drew as much as 50,000 people.",
+                            "The festival drew as many as 50,000 people.")
+        self.assertTrue(matches(exercise, "The festival drew as many as 50000 people."))
+
     def test_generic_negations_expand(self) -> None:
         self.assertTrue(matches(self._ex("gap", "p", "need not worry"), "needn't worry"))
         self.assertTrue(matches(self._ex("gap", "p", "shall not"), "shan't"))
@@ -413,6 +418,20 @@ class PracticeTests(unittest.TestCase):
         refs = pr.queue_for_review(CURRICULUM, [Card()], self.rng, level=level, seen=seen)
         self.assertEqual(refs, [f"ex:{point.exercises[-1].id}"])
 
+    def test_cloze_answer_hidden_even_with_bracket_hints(self) -> None:
+        """Подсказка «(be)» в тексте cloze не должна мешать спрятать предложение-ответ."""
+        hinted = [
+            exercise for point in CURRICULUM.points.values() for exercise in point.exercises
+            if exercise.kind == "cloze" and "(" in exercise.prompt
+        ]
+        self.assertTrue(hinted)
+        for exercise in hinted:
+            question = pr.resolve(f"ex:{exercise.id}", CURRICULUM, self.rng)
+            assert question is not None
+            for secret in pr.revealing_texts(question):
+                with self.subTest(exercise=exercise.id):
+                    self.assertNotIn("(", secret)
+
     def test_rule_card_hides_the_answer_to_the_open_question(self) -> None:
         """Ответ стоял дословно в примерах карточки у 220 заданий, а кнопка доступна до ответа."""
         leaks = 0
@@ -449,6 +468,13 @@ class PracticeTests(unittest.TestCase):
     def test_invented_forms_are_never_accepted(self) -> None:
         """«childs», «hurted», «putted on» — ошибки, а не формы слова."""
         self.assertNotIn("hurted", pr.word_forms("hurt"))
+        self.assertIn("beginning", pr.word_forms("begin"))
+        self.assertNotIn("begining", pr.word_forms("begin"))
+        self.assertIn("inferred", pr.word_forms("infer"))
+        self.assertNotIn("infered", pr.word_forms("infer"))
+        self.assertIn("goes", pr.word_forms("go"))
+        self.assertIn("does", pr.word_forms("do"))
+        self.assertNotIn("gos", pr.word_forms("go"))
         self.assertNotIn("putted on", pr.word_forms("put on"))
         self.assertIn("put on", pr.word_forms("put on"))
 

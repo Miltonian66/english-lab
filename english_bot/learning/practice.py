@@ -529,6 +529,9 @@ def revealing_texts(question: "Question") -> tuple[str, ...]:
     if question.kind == "cloze":
         keys = iter(gap[0] for gap in question.gaps)
         filled = re.sub(r"\(\d+\) ___", lambda _: next(keys), question.prompt)
+        # Подсказки в скобках («(be)») в примерах правила не стоят: без их
+        # удаления предложение-ответ не совпадало бы с примером и не пряталось.
+        filled = re.sub(r"\s*\([^)]*\)", "", filled)
         found.extend(re.split(r"(?<=[.!?])\s+", filled))
         return tuple(_plain(text) for text in found if len(_plain(text).split()) >= 3)
     for answer in question.expected:
@@ -652,6 +655,8 @@ UNCOUNTABLE = frozenset({
 DOUBLING = frozenset({
     "admit", "commit", "submit", "permit", "omit", "emit", "refer", "prefer", "occur",
     "deter", "regret", "control", "compel", "expel", "propel", "rebel", "equip", "upset",
+    "begin", "infer", "confer", "defer", "incur", "recur", "transfer", "excel", "patrol",
+    "forget", "forbid",
 })
 
 
@@ -678,8 +683,9 @@ def _single_forms(base: str) -> set[str]:
         # Прошедшее у неправильных глаголов своё: «comed» и «maked» не формы.
         forms = {form for form in forms if not form.endswith("ed") and form != f"{base}d"}
         forms |= set(IRREGULAR[base])
+        # «gos», «dos», «haves», «bes» — не формы; goes, does, has пришли из таблицы.
         if base in {"be", "have", "do", "go"}:
-            forms -= {f"{base}s", f"{base}es"}
+            forms.discard(f"{base}s")
     return forms
 
 

@@ -20,7 +20,7 @@ from pathlib import Path
 from typing import Any
 
 from .stt import Transcript, TranscriptionError, count_fillers
-from .tts import SpeechError, cache_name
+from .tts import SpeechError, assign_voices, cache_name, speaking_order
 
 
 LOGGER = logging.getLogger(__name__)
@@ -33,8 +33,9 @@ DEFAULT_WHISPER_THREADS = 3
 # минутный ответ обрабатывается примерно за 40 секунд.
 REALTIME_FACTOR = 1.6
 DEFAULT_PIPER_VOICE = "en_US-lessac-medium"
-# Второй голос диалогов аудирования: мужской к женскому основному.
-DEFAULT_SECOND_VOICE = "en_US-ryan-medium"
+# Голоса диалогов аудирования по полу говорящих.
+DEFAULT_FEMALE_VOICES = ("en_US-lessac-medium", "en_US-amy-medium")
+DEFAULT_MALE_VOICES = ("en_US-ryan-medium", "en_US-joe-medium")
 # Пауза между репликами диалога: без неё собеседники сливаются.
 TURN_PAUSE_SECONDS = 0.35
 SLOW_LENGTH_SCALE = 1.45  # растягивает слоги, не меняя высоту голоса
@@ -126,8 +127,9 @@ class LocalTranscriber:
 class LocalSpeaker:
     """Синтез через piper с последующей упаковкой в Ogg/Opus для Telegram.
 
-    Второй голос нужен диалогам аудирования: двух собеседников одним голосом
-    на слух не различить. Если его модели нет, диалог читается основным голосом.
+    Диалогам аудирования нужны голоса по полу говорящих: иначе Megan звучит
+    мужским голосом, и ученик путает, кто что сказал. Голоса без модели на диске
+    из пула выпадают; пустой пул заменяется основным голосом.
     """
 
     def __init__(
@@ -135,12 +137,14 @@ class LocalSpeaker:
         voice_dir: Path,
         cache_dir: Path,
         voice: str = DEFAULT_PIPER_VOICE,
-        second_voice: str = DEFAULT_SECOND_VOICE,
+        female_voices: tuple[str, ...] = DEFAULT_FEMALE_VOICES,
+        male_voices: tuple[str, ...] = DEFAULT_MALE_VOICES,
     ):
         self.voice_dir = voice_dir
         self.cache_dir = cache_dir
         self.voice = voice
-        self.second_voice = second_voice
+        self.female_voices = female_voices
+        self.male_voices = male_voices
         self._voices: dict[str, Any] = {}
 
     @property
@@ -206,11 +210,16 @@ class LocalSpeaker:
             return destination
         return self._store(destination, self._wav(cleaned, slow=slow))
 
-    def _second(self) -> str:
-        return self.second_voice if (self.voice_dir / f"{self.second_voice}.onnx").exists() else self.voice
+    def _pools(self) -> dict[str, list[str]]:
+        def present(names: tuple[str, ...]) -> list[str]:
+            return [name for name in names if (self.voice_dir / f"{name}.onnx").exists()]
 
-    def synthesize_dialogue(self, lines: list[tuple[str, str]]) -> Path:
-        """Реплики по голосам: первый говорящий — основной голос, второй — второй.
+        return {"female": present(self.female_voices), "male": present(self.male_voices)}
+
+    def synthesize_dialogue(
+        self, lines: list[tuple[str, str]], genders: dict[str, str] | None = None
+    ) -> Path:
+        """Реплики голосами по полу говорящих (`tts.assign_voices`).
 
         Реплики склеиваются в одну запись с паузой между ними: Telegram отдаёт
         аудирование одним голосовым, а повтор идёт по его file_id.
@@ -218,15 +227,11 @@ class LocalSpeaker:
         turns = [(speaker, text.strip()) for speaker, text in lines if text.strip()]
         if not turns:
             raise SpeechError("нечего озвучивать")
-        order: list[str] = []
-        for speaker, _ in turns:
-            if speaker not in order:
-                order.append(speaker)
-        voices = {speaker: (self.voice if index % 2 == 0 else self._second()) for index, speaker in enumerate(order)}
+        voices = assign_voices(speaking_order(turns), genders or {}, self._pools(), self.voice)
         script = "\n".join(f"{speaker}: {text}" for speaker, text in turns)[:2000]
 
         self.cache_dir.mkdir(parents=True, exist_ok=True)
-        tag = f"piper-dialogue-{self.voice}-{self._second()}"
+        tag = "piper-dialogue-" + ",".join(f"{name}={voice}" for name, voice in voices.items())
         destination = self.cache_dir / cache_name(script, tag, False)
         if destination.exists() and destination.stat().st_size > 0:
             return destination

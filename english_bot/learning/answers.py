@@ -105,6 +105,8 @@ def readings(text: str) -> set[str]:
 
 
 def _without_commas(text: str) -> str:
+    # 50,000 и 50000 — одно число: запятая между цифрами убирается без пробела.
+    text = re.sub(r"(?<=\d),(?=\d{3}\b)", "", text)
     return " ".join(text.replace(",", " ").split())
 
 

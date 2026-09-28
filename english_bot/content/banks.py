@@ -77,6 +77,8 @@ class ListeningTask:
     options: tuple[str, ...]
     correct_index: int
     explanation_ru: str
+    # Пол говорящих диалога: по нему выбираются голоса синтеза.
+    speakers: tuple[tuple[str, str], ...] = ()
 
 
 @dataclass(frozen=True)
@@ -215,7 +217,20 @@ def parse_listening(raw: object, where: str) -> ListeningTask:
         options=options,
         correct_index=correct_index,
         explanation_ru=_text(data.get("explanation_ru"), "explanation_ru", where, 10),
+        speakers=_speakers(data.get("speakers"), where),
     )
+
+
+def _speakers(raw: object, where: str) -> tuple[tuple[str, str], ...]:
+    if raw is None:
+        return ()
+    _require(isinstance(raw, dict), f"{where}: speakers — объект «имя: female|male»")
+    pairs = tuple((str(name), str(gender)) for name, gender in raw.items())  # type: ignore[union-attr]
+    _require(
+        all(gender in ("female", "male") for _, gender in pairs),
+        f"{where}: пол говорящего — female или male",
+    )
+    return pairs
 
 
 def parse_error(raw: object, where: str) -> ErrorPattern:

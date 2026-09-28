@@ -63,7 +63,7 @@ def _listening_job(job: Job, ctx: Context, ticket: Ticket, code: str) -> None:
         # Диалог звучит двумя голосами: одним голосом собеседников не различить.
         turns = split_dialogue(task.script_en)
         audio: Path = (
-            ctx.speaker.synthesize_dialogue(turns)
+            ctx.speaker.synthesize_dialogue(turns, dict(task.speakers))
             if turns and hasattr(ctx.speaker, "synthesize_dialogue")
             else ctx.speaker.synthesize(spoken_text(task.script_en))
         )

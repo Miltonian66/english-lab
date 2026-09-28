@@ -235,7 +235,8 @@ def _build_speech(settings: Settings) -> tuple[Any, Any]:
                 settings.piper_dir,
                 settings.audio_cache_dir,
                 settings.piper_voice,
-                settings.piper_second_voice,
+                settings.piper_female_voices,
+                settings.piper_male_voices,
             )
             if piper_available()
             else None
@@ -258,7 +259,8 @@ def _build_speech(settings: Settings) -> tuple[Any, Any]:
             settings.tts_model,
             settings.tts_voice,
             settings.audio_cache_dir,
-            settings.tts_second_voice,
+            settings.tts_female_voices,
+            settings.tts_male_voices,
         ),
     )
 

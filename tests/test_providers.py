@@ -467,7 +467,9 @@ class HostedDialogueTests(unittest.TestCase):
             return b"\x10\x00" * 2400  # 0.1 с PCM на реплику
 
         tts.post_binary = fake_post
-        self.speaker = tts.Speaker("key", "gpt-4o-mini-tts", "alloy", Path(self._dir.name), "onyx")
+        self.speaker = tts.Speaker(
+            "key", "gpt-4o-mini-tts", "alloy", Path(self._dir.name), ("nova", "shimmer"), ("onyx", "echo")
+        )
 
     def tearDown(self) -> None:
         self.tts.post_binary = self._post
@@ -478,12 +480,13 @@ class HostedDialogueTests(unittest.TestCase):
             import av  # noqa: F401
         except ImportError:
             self.skipTest("склейка диалога требует PyAV из .venv")
-        lines = [("Anna", "Hi."), ("Tom", "Hello."), ("Anna", "Bye.")]
-        path = self.speaker.synthesize_dialogue(lines)
-        self.assertEqual([call["voice"] for call in self.calls], ["alloy", "onyx", "alloy"])
+        lines = [("Tom", "Hi."), ("Anna", "Hello."), ("Tom", "Bye.")]
+        genders = {"Tom": "male", "Anna": "female"}
+        path = self.speaker.synthesize_dialogue(lines, genders)
+        self.assertEqual([call["voice"] for call in self.calls], ["onyx", "nova", "onyx"])
         self.assertTrue(all(call["response_format"] == "pcm" for call in self.calls))
         self.assertTrue(path.read_bytes().startswith(b"OggS"))
-        self.speaker.synthesize_dialogue(lines)
+        self.speaker.synthesize_dialogue(lines, genders)
         self.assertEqual(len(self.calls), 3, "повтор берётся из кэша")
 
     def test_without_pyav_dialogue_is_read_by_one_voice(self) -> None:
@@ -504,6 +507,30 @@ class HostedDialogueTests(unittest.TestCase):
         self.assertEqual(len(self.calls), 1)
         self.assertEqual(self.calls[0]["input"], "Hi. Hello.")
         self.assertEqual(self.calls[0]["response_format"], "opus")
+
+
+class VoiceAssignmentTests(unittest.TestCase):
+    POOLS = {"female": ["lessac", "amy"], "male": ["ryan", "joe"]}
+
+    def test_voice_follows_declared_gender_not_speaking_order(self) -> None:
+        """Megan говорила мужским голосом, потому что говорила второй."""
+        from english_bot.ai.tts import assign_voices
+
+        voices = assign_voices(["Tyler", "Megan"], {"Tyler": "male", "Megan": "female"}, self.POOLS, "lessac")
+        self.assertEqual(voices, {"Tyler": "ryan", "Megan": "lessac"})
+
+    def test_two_women_get_two_different_voices(self) -> None:
+        from english_bot.ai.tts import assign_voices
+
+        voices = assign_voices(["Sophie", "Linda"], {"Sophie": "female", "Linda": "female"}, self.POOLS, "lessac")
+        self.assertEqual(voices, {"Sophie": "lessac", "Linda": "amy"})
+
+    def test_undeclared_speakers_still_sound_different(self) -> None:
+        from english_bot.ai.tts import assign_voices
+
+        voices = assign_voices(["A", "B"], {}, self.POOLS, "lessac")
+        self.assertNotEqual(voices["A"], voices["B"])
+        self.assertEqual(assign_voices(["A"], {"A": "male"}, {"female": [], "male": []}, "lessac"), {"A": "lessac"})
 
 
 class DialogueScriptTests(unittest.TestCase):
@@ -545,6 +572,16 @@ class LocalSpeechTests(unittest.TestCase):
     def tearDownClass(cls) -> None:
         cls._dir.cleanup()
 
+    def test_two_women_are_voiced_by_two_female_voices(self) -> None:
+        if not (self.speaker.voice_dir / "en_US-amy-medium.onnx").exists():
+            self.skipTest("нет второго женского голоса")
+        self.speaker.synthesize_dialogue(
+            [("Sophie", "Did you buy eggs?"), ("Linda", "Yes, a dozen.")],
+            {"Sophie": "female", "Linda": "female"},
+        )
+        self.assertIn("en_US-amy-medium", self.speaker._voices)
+        self.assertIn("en_US-lessac-medium", self.speaker._voices)
+
     def test_dialogue_is_one_ogg_with_both_voices(self) -> None:
         import av
 
@@ -552,7 +589,7 @@ class LocalSpeechTests(unittest.TestCase):
         with av.open(str(path)) as container:
             self.assertEqual(container.streams.audio[0].codec_context.name, "opus")
             self.assertGreater(container.duration / 1_000_000, 1.5)
-        self.assertEqual(len(self.speaker._voices), 2 if (self.speaker.voice_dir / "en_US-ryan-medium.onnx").exists() else 1)
+        self.assertIn("en_US-ryan-medium", self.speaker._voices)
 
     def test_synthesis_produces_ogg_opus_for_telegram(self) -> None:
         import av

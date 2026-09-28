@@ -45,7 +45,7 @@
         {
           "id": "b1_ed_ing_adjectives_adjectives_verbs_02",
           "kind": "choice",
-          "prompt": "Anna got the job she wanted. She is very ___ about it.",
+          "prompt": "Priya got into the university she wanted. She is very ___ about it.",
           "options": [
             "excite",
             "excited",
@@ -59,7 +59,7 @@
         {
           "id": "b1_ed_ing_adjectives_adjectives_verbs_03",
           "kind": "choice",
-          "prompt": "This app is really ___ to use; I can never find anything in it.",
+          "prompt": "This ticket machine is really ___ to use; I can never find the right button.",
           "options": [
             "confused",
             "confusing",
@@ -67,13 +67,13 @@
             "confusingly"
           ],
           "correct_index": 1,
-          "explanation_ru": "Приложение не может само быть в замешательстве: оно вызывает его, отсюда -ing.",
+          "explanation_ru": "Автомат не может сам быть в замешательстве: он вызывает его, отсюда -ing.",
           "difficulty": 2
         },
         {
           "id": "b1_ed_ing_adjectives_adjectives_verbs_04",
           "kind": "choice",
-          "prompt": "I was ___ by the result of the test.",
+          "prompt": "I was ___ by the result of the election.",
           "options": [
             "surprise",
             "surprised",
@@ -118,6 +118,56 @@
           "answer": "Everyone was shocked by the news.",
           "accept": [],
           "explanation_ru": "Люди испытывают чувство, поэтому shocked; источник вводится предлогом by.",
+          "difficulty": 3
+        },
+        {
+          "id": "b1_ed_ing_adjectives_adjectives_verbs_09",
+          "kind": "cloze",
+          "prompt": "Last weekend we took a boat trip along the coast. The waves were ___ (terrify), and the boat moved a lot. My little brother was so ___ (frighten) that he started to cry. Then the guide told us an ___ (amaze) story about pirates, and he calmed down. By the evening we were all completely ___ (exhaust).",
+          "gaps": [
+            [
+              "terrifying"
+            ],
+            [
+              "frightened"
+            ],
+            [
+              "amazing"
+            ],
+            [
+              "exhausted"
+            ]
+          ],
+          "explanation_ru": "Волны и история — источники чувства, поэтому terrifying и amazing. Брат и мы сами испытываем чувство, поэтому frightened и exhausted. Каждый раз спрашивай себя: кто чувствует, а что вызывает чувство.",
+          "difficulty": 2
+        },
+        {
+          "id": "b1_ed_ing_adjectives_adjectives_verbs_10",
+          "kind": "choice",
+          "prompt": "Как сказать по-английски: «Мне было скучно на этой лекции»?",
+          "options": [
+            "I was bored at this lecture.",
+            "I was boring at this lecture.",
+            "It was bored for me at this lecture.",
+            "Me was boring at this lecture."
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Скучно было мне, то есть я испытывал чувство, — нужна форма bored. I was boring значило бы «я был скучным» для других. Русское безличное «мне было» не переводится через me или it: подлежащим становится I.",
+          "difficulty": 1,
+          "diagnostic": true
+        },
+        {
+          "id": "b1_ed_ing_adjectives_adjectives_verbs_11",
+          "kind": "choice",
+          "prompt": "В каком предложении ошибка в выборе формы на -ed или -ing?",
+          "options": [
+            "The ending of the movie was really surprising.",
+            "We were all disappointed with the hotel.",
+            "I find long flights very tiring.",
+            "My parents were very worrying about me."
+          ],
+          "correct_index": 3,
+          "explanation_ru": "Родители испытывают беспокойство, поэтому worried about me; worrying описывает то, что вызывает беспокойство (a worrying situation). В остальных фразах концовка и перелёты вызывают чувство (-ing), а мы его испытываем (-ed).",
           "difficulty": 3
         }
       ]
@@ -219,7 +269,7 @@
         {
           "id": "b1_adjective_preposition_06",
           "kind": "gap",
-          "prompt": "This laptop is very similar ___ mine.",
+          "prompt": "This bike is very similar ___ mine.",
           "answer": "to",
           "accept": [],
           "explanation_ru": "Similar сочетается только с to, а не с with.",
@@ -228,8 +278,8 @@
         {
           "id": "b1_adjective_preposition_07",
           "kind": "correct",
-          "prompt": "He is responsible of the new server.",
-          "answer": "He is responsible for the new server.",
+          "prompt": "She is responsible of the children on the school trip.",
+          "answer": "She is responsible for the children on the school trip.",
           "accept": [],
           "explanation_ru": "Responsible требует предлога for.",
           "difficulty": 3
@@ -244,6 +294,53 @@
           ],
           "explanation_ru": "Afraid всегда сочетается с of, и предлог не меняется в отрицании.",
           "difficulty": 3
+        },
+        {
+          "id": "b1_adjective_preposition_09",
+          "kind": "choice",
+          "prompt": "Как сказать по-английски: «Наш город славится своими мостами»?",
+          "options": [
+            "Our city is famous for its bridges.",
+            "Our city is famous with its bridges.",
+            "Our city is famous by its bridges.",
+            "Our city is famous of its bridges."
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Famous всегда требует for: famous for its food, famous for its bridges. Русский творительный падеж («славится чем») толкает к with или by, но в английском так не говорят.",
+          "difficulty": 2,
+          "diagnostic": true
+        },
+        {
+          "id": "b1_adjective_preposition_10",
+          "kind": "gap",
+          "prompt": "A: Why didn't you try the shrimp?\nB: I'm allergic ___ seafood.",
+          "answer": "to",
+          "accept": [],
+          "explanation_ru": "Allergic сочетается только с to: allergic to cats, allergic to nuts. Русское «аллергия на» подталкивает к on, но такого сочетания нет.",
+          "difficulty": 1
+        },
+        {
+          "id": "b1_adjective_preposition_11",
+          "kind": "cloze",
+          "prompt": "My grandmother Elena is seventy-five, but she is still very keen ___ gardening. She is especially proud ___ her tomatoes. She gets really annoyed ___ anyone who steps on her flowers. She is also surprisingly good ___ fixing things around the house.",
+          "gaps": [
+            [
+              "on"
+            ],
+            [
+              "of"
+            ],
+            [
+              "with",
+              "at",
+              "by"
+            ],
+            [
+              "at"
+            ]
+          ],
+          "explanation_ru": "Предлог запоминается вместе с прилагательным: keen on (увлекаться), proud of (гордиться), annoyed with / at somebody (злиться на кого-то), good at (хорошо уметь). Русский падеж здесь не помогает.",
+          "difficulty": 3
         }
       ]
     },
@@ -255,13 +352,15 @@
       "title_en": "Comparative and superlative adjectives and adverbs",
       "source_slug": "comparative-superlative-adjectives-adverbs",
       "title_ru": "Сравнительная и превосходная степень",
-      "summary_ru": "Короткие прилагательные образуют степени с помощью -er и -est: old — older — the oldest, big — bigger — the biggest, easy — easier — the easiest. Длинные прилагательные и почти все наречия на -ly используют more и the most: more difficult, more carefully, the most difficult. Нерегулярные формы нужно помнить: good — better — the best, bad — worse — the worst, far — further — the furthest. Второй объект сравнения вводится словом than, а перед превосходной степенью почти всегда стоит the. Использовать -er и more одновременно нельзя. Для равенства служит конструкция as + прилагательное + as, а для неравенства — not as ... as.",
+      "summary_ru": "Короткие прилагательные образуют степени с помощью -er и -est: old — older — the oldest, big — bigger — the biggest, easy — easier — the easiest. Длинные прилагательные и почти все наречия на -ly используют more и the most: more difficult, more carefully, the most difficult. Нерегулярные формы нужно помнить: good — better — the best, bad — worse — the worst, far — further — the furthest. Второй объект сравнения вводится словом than, а перед превосходной степенью почти всегда стоит the. Использовать -er и more одновременно нельзя. Для равенства служит конструкция as + прилагательное + as, а для неравенства — not as ... as. Сравнительную степень усиливают much, far или a lot (much cheaper, но не very cheaper), превосходную — by far. Нарастание передают повтором: bigger and bigger, more and more expensive, а «как можно быстрее» — as quickly as possible.",
       "forms": [
         "короткое прилагательное + -er + than; the + -est",
         "more / the most + длинное прилагательное или наречие",
         "нерегулярные: good-better-best, bad-worse-worst, far-further-furthest",
         "(not) as + прилагательное + as",
-        "much / a bit + сравнительная степень: much faster"
+        "much / a bit + сравнительная степень: much faster",
+        "as + прилагательное / наречие + as possible: as quickly as possible",
+        "bigger and bigger; by far + превосходная степень: by far the tallest"
       ],
       "examples": [
         "This test was more difficult than the last one.",
@@ -280,84 +379,86 @@
         {
           "id": "b1_comparative_superlative_adjectives_adverbs_01",
           "kind": "choice",
-          "prompt": "This test was ___ than the last one.",
+          "prompt": "The train was ___ than the bus: we got there in two hours instead of five.",
           "options": [
-            "difficulter",
-            "more difficult",
-            "most difficult",
-            "the most difficult"
+            "much faster",
+            "more faster",
+            "very faster",
+            "much more fast"
           ],
-          "correct_index": 1,
-          "explanation_ru": "Difficult — длинное прилагательное, поэтому сравнительная степень строится через more; слово than требует именно сравнительной степени.",
+          "correct_index": 0,
+          "explanation_ru": "Усилить сравнение («намного быстрее») можно словами much, far, a lot перед сравнительной степенью. Very со сравнительной степенью не сочетается, а more и -er не соединяются.",
           "difficulty": 1
         },
         {
           "id": "b1_comparative_superlative_adjectives_adverbs_02",
           "kind": "choice",
-          "prompt": "He runs ___ than anyone else on the team.",
+          "prompt": "Could you walk ___? I can't keep up with you.",
           "options": [
-            "fast",
-            "faster",
-            "fastest",
-            "the fastest"
+            "more slowly",
+            "more slow",
+            "slowlier",
+            "most slowly"
           ],
-          "correct_index": 1,
-          "explanation_ru": "Наличие than требует сравнительной степени, а fast короткое, поэтому -er.",
+          "correct_index": 0,
+          "explanation_ru": "Речь о том, как идти, поэтому нужно наречие slowly, а двусложные наречия на -ly сравниваются через more. Формы slowlier нет, а most slowly — превосходная степень, которой здесь не к чему относиться.",
           "difficulty": 1
         },
         {
           "id": "b1_comparative_superlative_adjectives_adverbs_03",
           "kind": "choice",
-          "prompt": "It is ___ movie I have ever seen.",
+          "prompt": "This is by far ___ hotel we've ever stayed in.",
           "options": [
-            "a better",
-            "the best",
-            "best",
-            "better"
+            "the worst",
+            "the worse",
+            "the most bad",
+            "worst"
           ],
-          "correct_index": 1,
-          "explanation_ru": "Оборот I have ever seen требует превосходной степени с артиклем the.",
+          "correct_index": 0,
+          "explanation_ru": "By far усиливает превосходную степень, а у bad она нерегулярная — the worst. The worse — сравнительная степень, the most bad не существует, а перед существительным превосходная степень стоит с the.",
           "difficulty": 2
         },
         {
           "id": "b1_comparative_superlative_adjectives_adverbs_04",
           "kind": "choice",
-          "prompt": "My new phone works ___ than my old one.",
+          "prompt": "Grace isn't ___ her sister, but she's much more confident.",
           "options": [
-            "good",
-            "better",
-            "best",
-            "more good"
+            "as tall as",
+            "as tall than",
+            "so tall than",
+            "taller as"
           ],
-          "correct_index": 1,
-          "explanation_ru": "Good имеет нерегулярную сравнительную форму better: сочетания more good не существует, а перед than нужна именно сравнительная степень.",
+          "correct_index": 0,
+          "explanation_ru": "Сравнение «не такой ..., как» строится как not as + прилагательное + as. Than ставится только после сравнительной степени (taller than), а as и than не смешиваются.",
           "difficulty": 1
         },
         {
           "id": "b1_comparative_superlative_adjectives_adverbs_05",
           "kind": "gap",
-          "prompt": "This road is ___ (bad) than I remembered.",
-          "answer": "worse",
+          "prompt": "Traffic in our city gets ___ (bad — всё хуже и хуже) every year.",
+          "answer": "worse and worse",
           "accept": [],
-          "explanation_ru": "Bad образует сравнительную степень нерегулярно: worse, без more и без -er.",
+          "explanation_ru": "Нарастание («всё хуже и хуже») передаётся повтором сравнительной степени через and: worse and worse, bigger and bigger, more and more expensive.",
           "difficulty": 2
         },
         {
           "id": "b1_comparative_superlative_adjectives_adverbs_06",
           "kind": "gap",
-          "prompt": "Today is the ___ (hot) day of the year.",
-          "answer": "hottest",
-          "accept": [],
-          "explanation_ru": "После the нужна превосходная степень; у короткого hot согласная удваивается и добавляется -est.",
+          "prompt": "Of all my friends, Kenji drives ___ (careful).",
+          "answer": "the most carefully",
+          "accept": [
+            "most carefully"
+          ],
+          "explanation_ru": "Речь о том, как он водит, поэтому нужно наречие carefully; сравнение со всеми друзьями требует превосходной степени, а у длинных наречий она строится через (the) most.",
           "difficulty": 2
         },
         {
           "id": "b1_comparative_superlative_adjectives_adverbs_07",
           "kind": "correct",
-          "prompt": "This task is more easier than the last one.",
-          "answer": "This task is easier than the last one.",
+          "prompt": "This recipe is more easier than the last one.",
+          "answer": "This recipe is easier than the last one.",
           "accept": [
-            "This task is much easier than the last one."
+            "This recipe is much easier than the last one."
           ],
           "explanation_ru": "Нельзя совмещать more и -er: у короткого easy остаётся только форма easier.",
           "difficulty": 3
@@ -365,15 +466,67 @@
         {
           "id": "b1_comparative_superlative_adjectives_adverbs_08",
           "kind": "transform",
-          "prompt": "Rewrite with 'than': Sam is not as tall as Nick.",
-          "answer": "Nick is taller than Sam.",
+          "prompt": "Rewrite using the word in capitals (do not change it): Diego is taller than Omar. AS",
+          "answer": "Omar is not as tall as Diego.",
           "accept": [
-            "Nick is taller than Sam is.",
-            "Sam is shorter than Nick.",
-            "Sam is shorter than Nick is."
+            "Omar is not as tall as Diego is.",
+            "Omar is not so tall as Diego."
           ],
-          "explanation_ru": "Not as tall as означает, что Ник выше, поэтому в новом предложении меняется подлежащее и ставится сравнительная степень с than.",
+          "explanation_ru": "Сравнительная степень с than переворачивается в not as ... as: подлежащим становится тот, кто ниже, а прилагательное остаётся в исходной форме tall, без -er.",
           "difficulty": 3
+        },
+        {
+          "id": "b1_comparative_superlative_adjectives_adverbs_09",
+          "kind": "cloze",
+          "prompt": "My new apartment is ___ (small) than my old one. However, it is ___ (much / quiet) at night. I get to work ___ (quick) now because the station is closer. And it is ___ (cheap) place I have ever rented.",
+          "gaps": [
+            [
+              "smaller"
+            ],
+            [
+              "much quieter",
+              "much more quiet"
+            ],
+            [
+              "more quickly",
+              "quicker"
+            ],
+            [
+              "the cheapest"
+            ]
+          ],
+          "explanation_ru": "Короткие прилагательные получают -er и -est (smaller, quieter, the cheapest), much усиливает сравнение. Get to work quickly — это наречие, его сравнительная степень more quickly (в разговоре и quicker). После I have ever нужна превосходная степень с the.",
+          "difficulty": 2
+        },
+        {
+          "id": "b1_comparative_superlative_adjectives_adverbs_10",
+          "kind": "transform",
+          "prompt": "Rewrite using the word in capitals (do not change it): I have never eaten such a delicious pizza. BEST",
+          "answer": "This is the best pizza I have ever eaten.",
+          "accept": [
+            "It is the best pizza I have ever eaten.",
+            "That is the best pizza I have ever eaten.",
+            "This is the best pizza I have ever had.",
+            "It is the best pizza I have ever had.",
+            "That is the best pizza I have ever had."
+          ],
+          "explanation_ru": "«Никогда не ел такой ...» превращается в превосходную степень с ever: the best pizza I have ever eaten. Good — better — the best, поэтому такой вкусной = the best.",
+          "difficulty": 3
+        },
+        {
+          "id": "b1_comparative_superlative_adjectives_adverbs_11",
+          "kind": "choice",
+          "prompt": "Как сказать по-английски: «Приходи как можно скорее»?",
+          "options": [
+            "Come as soon as possible.",
+            "Come as sooner as possible.",
+            "Come so soon as possible.",
+            "Come how can sooner."
+          ],
+          "correct_index": 0,
+          "explanation_ru": "«Как можно + сравнительная степень» передаётся оборотом as + обычная форма + as possible: as soon as possible, as quickly as possible. Сравнительная степень внутри as ... as не ставится, а how can sooner — калька.",
+          "difficulty": 1,
+          "diagnostic": true
         }
       ]
     },
@@ -408,7 +561,7 @@
         {
           "id": "b1_compound_adjectives_with_numbers_a_two_day_trip_01",
           "kind": "choice",
-          "prompt": "We had a ___ break after the demo.",
+          "prompt": "We had a ___ break in the middle of the concert.",
           "options": [
             "ten-minutes",
             "ten-minute",
@@ -484,8 +637,8 @@
         {
           "id": "b1_compound_adjectives_with_numbers_a_two_day_trip_07",
           "kind": "correct",
-          "prompt": "We are planning a five-days trip to Berlin.",
-          "answer": "We are planning a five-day trip to Berlin.",
+          "prompt": "We are planning a five-days trip to Lisbon.",
+          "answer": "We are planning a five-day trip to Lisbon.",
           "accept": [],
           "explanation_ru": "Внутри составного прилагательного существительное не имеет множественного числа: five-day.",
           "difficulty": 3
@@ -500,6 +653,44 @@
           ],
           "explanation_ru": "Составное прилагательное ten-minute стоит между артиклем и существительным walk.",
           "difficulty": 3
+        },
+        {
+          "id": "b1_compound_adjectives_with_numbers_a_two_day_trip_09",
+          "kind": "choice",
+          "prompt": "A: How was your weekend in the mountains?\nB: Great! We did a ___ hike up to the lake.",
+          "options": [
+            "ten-mile",
+            "ten-miles",
+            "ten miles",
+            "tenth-mile"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Перед существительным hike число и единица измерения становятся одним прилагательным: через дефис и без -s. Раздельное ten miles возможно только после глагола: We walked ten miles.",
+          "difficulty": 2,
+          "diagnostic": true
+        },
+        {
+          "id": "b1_compound_adjectives_with_numbers_a_two_day_trip_10",
+          "kind": "transform",
+          "prompt": "Rewrite starting with 'It is a': The drive to the coast takes three hours.",
+          "answer": "It is a three-hour drive to the coast.",
+          "accept": [],
+          "explanation_ru": "Длительность перед существительным drive превращается в составное прилагательное three-hour: дефис и hour в единственном числе.",
+          "difficulty": 2
+        },
+        {
+          "id": "b1_compound_adjectives_with_numbers_a_two_day_trip_11",
+          "kind": "choice",
+          "prompt": "В каком предложении ошибка в составном прилагательном?",
+          "options": [
+            "We stayed in a four-star hotel.",
+            "She wrote a ten-page essay.",
+            "He has a two-years-old son.",
+            "It was a thirty-minute ride."
+          ],
+          "correct_index": 2,
+          "explanation_ru": "В составном прилагательном перед существительным year не получает -s: a two-year-old son. Остальные варианты построены верно: four-star, ten-page, thirty-minute.",
+          "difficulty": 3
         }
       ]
     },
@@ -511,13 +702,14 @@
       "title_en": "So, such, such a, so much, so many",
       "source_slug": "so-such-such-a-so-much-so-many",
       "title_ru": "So, such, such a, so much, so many",
-      "summary_ru": "So усиливает прилагательное или наречие: so tired, so quickly. Such стоит перед существительным, и если существительное исчисляемое в единственном числе, обязателен артикль: such a long day, such an interesting book. Перед множественным числом и перед неисчисляемыми существительными артикль не ставится: such nice people, such bad weather. Для количества используются so much с неисчисляемыми и so many с исчисляемыми во множественном числе: so much work, so many people. Все эти конструкции часто вводят следствие с помощью that: It was such a long meeting that I fell asleep. Порядок слов здесь жёсткий: варианты so a long day и such tired невозможны.",
+      "summary_ru": "So усиливает прилагательное или наречие: so tired, so quickly. Such стоит перед существительным, и если существительное исчисляемое в единственном числе, обязателен артикль: such a long day, such an interesting book. Перед множественным числом и перед неисчисляемыми существительными артикль не ставится: such nice people, such bad weather. Для количества используются so much с неисчисляемыми и so many с исчисляемыми во множественном числе: so much work, so many people. Все эти конструкции часто вводят следствие с помощью that: It was such a long meeting that I fell asleep. Порядок слов здесь жёсткий: варианты so a long day и such tired невозможны. Если следствие отрицательное («такой тяжёлый, что не смог поднять»), его часто сворачивают в too + прилагательное + to-инфинитив: The box was too heavy to lift.",
       "forms": [
         "so + прилагательное или наречие: so tired, so slowly",
         "such a/an + (прилагательное) + исчисляемое ед. числа: such a long day",
         "such + (прилагательное) + мн. число или неисчисляемое: such nice people, such bad weather",
         "so much + неисчисляемое; so many + мн. число",
-        "so / such ... that + следствие"
+        "so / such ... that + следствие",
+        "too + прилагательное + to + V: too heavy to lift"
       ],
       "examples": [
         "It was such a long meeting that I fell asleep.",
@@ -625,6 +817,57 @@
           "accept": [],
           "explanation_ru": "Very заменяется на such, а артикль a превращается в an перед гласным звуком.",
           "difficulty": 3
+        },
+        {
+          "id": "b1_so_such_such_a_so_much_so_many_09",
+          "kind": "transform",
+          "prompt": "Rewrite using the word in capitals (do not change it): The soup was so hot that I couldn't eat it. TOO",
+          "answer": "The soup was too hot to eat.",
+          "accept": [
+            "The soup was too hot for me to eat.",
+            "It was too hot to eat.",
+            "It was too hot for me to eat."
+          ],
+          "explanation_ru": "So ... that I couldn't сворачивается в too + прилагательное + to-инфинитив: too hot to eat. Дополнение it в конце не повторяют, потому что soup уже подлежащее: too hot to eat it — ошибка.",
+          "difficulty": 3
+        },
+        {
+          "id": "b1_so_such_such_a_so_much_so_many_10",
+          "kind": "cloze",
+          "prompt": "Our trip to Italy was ___ amazing experience. There were ___ museums to visit that we didn't have time for the beach. The food was ___ good that we ate pasta every day. We spent ___ money, but it was worth every cent.",
+          "gaps": [
+            [
+              "such an"
+            ],
+            [
+              "so many"
+            ],
+            [
+              "so"
+            ],
+            [
+              "so much",
+              "a lot of",
+              "lots of"
+            ]
+          ],
+          "explanation_ru": "Such (a / an) ставится перед группой с существительным: such an amazing experience. So — перед прилагательным без существительного: so good. Перед исчисляемым во множественном числе — so many, перед неисчисляемым money — so much.",
+          "difficulty": 2
+        },
+        {
+          "id": "b1_so_such_such_a_so_much_so_many_11",
+          "kind": "choice",
+          "prompt": "Как сказать по-английски: «У неё такие красивые глаза!»?",
+          "options": [
+            "She has such beautiful eyes!",
+            "She has so beautiful eyes!",
+            "She has such a beautiful eyes!",
+            "She has so much beautiful eyes!"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Перед прилагательным с существительным во множественном числе нужен such без артикля. So ставится только перед прилагательным без существительного (Her eyes are so beautiful), а a невозможен с eyes.",
+          "difficulty": 1,
+          "diagnostic": true
         }
       ]
     },
@@ -674,7 +917,7 @@
         {
           "id": "b1_first_and_second_conditionals_02",
           "kind": "choice",
-          "prompt": "If I ___ more money, I would buy a new laptop.",
+          "prompt": "If I ___ more free time, I would learn to play the guitar.",
           "options": [
             "have",
             "will have",
@@ -739,10 +982,10 @@
         {
           "id": "b1_first_and_second_conditionals_07",
           "kind": "correct",
-          "prompt": "If you will come early, we will start the meeting on time.",
-          "answer": "If you come early, we will start the meeting on time.",
+          "prompt": "If you will come early, we will get good seats at the concert.",
+          "answer": "If you come early, we will get good seats at the concert.",
           "accept": [
-            "If you come early, we'll start the meeting on time."
+            "If you come early, we'll get good seats at the concert."
           ],
           "explanation_ru": "После if в первом типе будущее время не употребляется, нужен present simple.",
           "difficulty": 3
@@ -758,6 +1001,61 @@
           ],
           "explanation_ru": "Устойчивый оборот второго типа: were для всех лиц, затем would с инфинитивом.",
           "difficulty": 3
+        },
+        {
+          "id": "b1_first_and_second_conditionals_09",
+          "kind": "cloze",
+          "prompt": "Kenji is thinking about moving to Canada. If he gets the visa, he ___ (leave) in May. If he ___ (speak) French, he would look for work in Montreal, but he doesn't. His plan is simple: if he ___ (not/find) work in three months, he will come home. His mom says she ___ (feel) calmer if he already had friends there.",
+          "gaps": [
+            [
+              "will leave",
+              "is going to leave"
+            ],
+            [
+              "spoke"
+            ],
+            [
+              "doesn't find",
+              "does not find",
+              "hasn't found",
+              "has not found"
+            ],
+            [
+              "would feel"
+            ]
+          ],
+          "explanation_ru": "Реальный план — первый тип: if + present simple, в главной части will. Нереальное настоящее (он не говорит по-французски, друзей там нет) — второй тип: if + past simple, в главной части would.",
+          "difficulty": 3
+        },
+        {
+          "id": "b1_first_and_second_conditionals_10",
+          "kind": "choice",
+          "prompt": "Как сказать по-английски: «Если бы я жил у моря, я бы плавал каждый день»?",
+          "options": [
+            "If I lived by the sea, I would swim every day.",
+            "If I would live by the sea, I would swim every day.",
+            "If I lived by the sea, I will swim every day.",
+            "If I live by the sea, I would swim every day."
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Нереальное настоящее — второй тип: после if past simple (lived), в главной части would. Would после if не ставится, а will и live относятся к первому типу и с would не смешиваются.",
+          "difficulty": 2,
+          "diagnostic": true
+        },
+        {
+          "id": "b1_first_and_second_conditionals_11",
+          "kind": "choice",
+          "prompt": "A: I might be late tonight.\nB: OK. If you ___ late, I'll start dinner without you.",
+          "options": [
+            "are",
+            "will be",
+            "were",
+            "would be"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Опоздание вполне возможно, и в главной части стоит will, значит это первый тип: после if — present simple are. Will после if не ставится, а were и would be относятся ко второму типу.",
+          "difficulty": 1,
+          "diagnostic": true
         }
       ]
     },
@@ -769,12 +1067,13 @@
       "title_en": "Second conditional: Unreal situations",
       "source_slug": "second-conditional-unreal-situations",
       "title_ru": "Второй тип условных: нереальные ситуации",
-      "summary_ru": "Второй тип условных описывает ситуацию, которая сейчас не соответствует действительности или маловероятна: if + past simple, would + инфинитив без to. Прошедшая форма здесь не означает прошедшее время, она показывает нереальность. После if нельзя ставить would: условие всегда стоит в past simple. С глаголом be для всех лиц используется were, особенно в устойчивом обороте If I were you. Вместо would можно использовать could и might, если речь о возможности: If we had more time, we could test it properly. Главная часть может стоять первой, и тогда запятая не нужна.",
+      "summary_ru": "Второй тип условных описывает ситуацию, которая сейчас не соответствует действительности или маловероятна: if + past simple, would + инфинитив без to. Прошедшая форма здесь не означает прошедшее время, она показывает нереальность. После if нельзя ставить would: условие всегда стоит в past simple. С глаголом be для всех лиц используется were, особенно в устойчивом обороте If I were you. Вместо would можно использовать could и might, если речь о возможности: If we had more time, we could test it properly. Главная часть может стоять первой, и тогда запятая не нужна. Та же нереальная форма стоит после I wish и If only, когда жалеют о настоящем: I wish I lived closer — «жаль, что я живу не рядом»; can при этом превращается в could: I wish I could sing.",
       "forms": [
         "If + past simple, would + инфинитив без to",
         "If I / he / she were ... (were для всех лиц)",
         "would / could / might + инфинитив в главной части",
-        "If I were you, I would + инфинитив"
+        "If I were you, I would + инфинитив",
+        "I wish / If only + past simple — сожаление о настоящем: I wish I had more time"
       ],
       "examples": [
         "If I had a car, I would drive to work.",
@@ -807,15 +1106,15 @@
         {
           "id": "b1_second_conditional_unreal_situations_02",
           "kind": "choice",
-          "prompt": "She would tell you if she ___ the answer.",
+          "prompt": "If our neighbors ___ so much noise, we would sleep much better.",
           "options": [
-            "knows",
-            "knew",
-            "would know",
-            "will know"
+            "didn't make",
+            "don't make",
+            "wouldn't make",
+            "won't make"
           ],
-          "correct_index": 1,
-          "explanation_ru": "После if во втором типе стоит past simple, а would туда не ставится.",
+          "correct_index": 0,
+          "explanation_ru": "Соседи на самом деле шумят, так что условие нереальное: после if ставится past simple (didn't make), а would остаётся в главной части. Would и will в придаточное с if не ставятся.",
           "difficulty": 1
         },
         {
@@ -835,16 +1134,16 @@
         {
           "id": "b1_second_conditional_unreal_situations_04",
           "kind": "choice",
-          "prompt": "If I were you, I ___ that email again.",
+          "prompt": "I wish I ___ how to swim. Everyone is in the pool except me.",
           "options": [
-            "will check",
-            "check",
-            "would check",
-            "checked"
+            "knew",
+            "know",
+            "would know",
+            "had known"
           ],
-          "correct_index": 2,
-          "explanation_ru": "После оборота If I were you в главной части всегда стоит would.",
-          "difficulty": 1
+          "correct_index": 0,
+          "explanation_ru": "Сожаление о настоящем после I wish выражается past simple: I wish I knew — «жаль, что я не умею». Had known относилось бы к прошлому, would know о себе после I wish не употребляется, а настоящее know после wish не ставится.",
+          "difficulty": 2
         },
         {
           "id": "b1_second_conditional_unreal_situations_05",
@@ -890,6 +1189,61 @@
           ],
           "explanation_ru": "Реальная ситуация переворачивается в нереальную: настоящее время меняется на past simple, а результат получает would (или could, раз речь о возможности).",
           "difficulty": 3
+        },
+        {
+          "id": "b1_second_conditional_unreal_situations_09",
+          "kind": "choice",
+          "prompt": "Как сказать по-английски: «Жаль, что я не говорю по-испански»?",
+          "options": [
+            "I wish I spoke Spanish.",
+            "I wish I speak Spanish.",
+            "I wish I would speak Spanish.",
+            "I wish I didn't speak Spanish."
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Русское «жаль, что не ...» переводится через I wish + утвердительный past simple: I wish I spoke. Отрицание перевернуло бы смысл («жаль, что говорю»), настоящее время после wish не ставится, а would о себе здесь не употребляется.",
+          "difficulty": 2,
+          "diagnostic": true
+        },
+        {
+          "id": "b1_second_conditional_unreal_situations_10",
+          "kind": "gap",
+          "prompt": "If only I ___ (have) a bigger kitchen! I love cooking, but there's no space.",
+          "answer": "had",
+          "accept": [],
+          "explanation_ru": "If only — более эмоциональное I wish, и после него сожаление о настоящем тоже выражается past simple: If only I had. Настоящее have здесь невозможно.",
+          "difficulty": 2
+        },
+        {
+          "id": "b1_second_conditional_unreal_situations_11",
+          "kind": "cloze",
+          "prompt": "Mei lives in a tiny apartment in the city center. She often wishes she ___ (have) a garden. If she ___ (live) in the countryside, she would grow her own vegetables. But she ___ (miss) the cafes and theaters if she moved. 'I wish the city ___ (be) a little quieter,' she says.",
+          "gaps": [
+            [
+              "had"
+            ],
+            [
+              "lived"
+            ],
+            [
+              "would miss"
+            ],
+            [
+              "were",
+              "was"
+            ]
+          ],
+          "explanation_ru": "После wish и в условии второго типа нереальное настоящее выражается past simple (had, lived, were), а в главной части второго типа стоит would miss. С be после wish нормой считается were, в разговоре допустимо was.",
+          "difficulty": 3
+        },
+        {
+          "id": "b1_second_conditional_unreal_situations_12",
+          "kind": "correct",
+          "prompt": "I wish I can drive. Then I could visit you more often.",
+          "answer": "I wish I could drive. Then I could visit you more often.",
+          "accept": [],
+          "explanation_ru": "После I wish can сдвигается в could, как любой глагол сдвигается в past simple: I wish I could drive — «жаль, что я не умею водить».",
+          "difficulty": 2
         }
       ]
     },
@@ -1009,14 +1363,67 @@
         {
           "id": "b1_third_conditional_past_unreal_situations_08",
           "kind": "transform",
-          "prompt": "Rewrite as a third conditional: I didn't check the code, so we lost a day.",
-          "answer": "If I had checked the code, we would not have lost a day.",
+          "prompt": "Rewrite as a third conditional: I didn't set an alarm, so I missed the bus.",
+          "answer": "If I had set an alarm, I would not have missed the bus.",
           "accept": [
-            "If I had checked the code, we wouldn't have lost a day.",
-            "We would not have lost a day if I had checked the code."
+            "If I had set an alarm, I wouldn't have missed the bus.",
+            "I would not have missed the bus if I had set an alarm.",
+            "I wouldn't have missed the bus if I had set an alarm."
           ],
-          "explanation_ru": "Реальное прошлое переворачивается: отрицание становится утверждением в had checked, а результат — отрицанием с would have.",
+          "explanation_ru": "Реальное прошлое переворачивается: отрицание становится утверждением в had set, а результат — отрицанием с would have.",
           "difficulty": 3
+        },
+        {
+          "id": "b1_third_conditional_past_unreal_situations_09",
+          "kind": "cloze",
+          "prompt": "Last Saturday Carlos overslept. If his alarm ___ (go) off, he would have caught the early train. Because he missed it, he arrived late for his sister's wedding. If he ___ (arrive) on time, he ___ (see) the ceremony. His sister ___ (not/be) so upset if he had called her.",
+          "gaps": [
+            [
+              "had gone"
+            ],
+            [
+              "had arrived"
+            ],
+            [
+              "would have seen",
+              "could have seen"
+            ],
+            [
+              "would not have been",
+              "wouldn't have been"
+            ]
+          ],
+          "explanation_ru": "Все условия относятся к прошлому, которого не было: в части с if — had + третья форма (had gone, had arrived), в главной — would have + третья форма (would have seen, wouldn't have been). Could have seen тоже верно: «смог бы увидеть».",
+          "difficulty": 3
+        },
+        {
+          "id": "b1_third_conditional_past_unreal_situations_10",
+          "kind": "choice",
+          "prompt": "Как сказать по-английски: «Если бы ты позвонил мне вчера, я бы встретил тебя на вокзале»?",
+          "options": [
+            "If you had called me yesterday, I would have met you at the station.",
+            "If you would call me yesterday, I would meet you at the station.",
+            "If you called me yesterday, I would meet you at the station.",
+            "If you had called me yesterday, I will meet you at the station."
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Yesterday показывает нереальное прошлое — это третий тип: if + had called, в главной части would have met. Русское «бы» не различает времена, поэтому тянет к would call или called, но они описывают настоящее, а не вчерашний день.",
+          "difficulty": 3
+        },
+        {
+          "id": "b1_third_conditional_past_unreal_situations_11",
+          "kind": "choice",
+          "prompt": "A: We missed the last bus and had to walk home.\nB: Why didn't you call me? I ___ you a ride.",
+          "options": [
+            "could have given",
+            "could give",
+            "can have given",
+            "could had given"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Упущенная возможность в прошлом («я мог бы тебя подвезти») — could have + третья форма. Could give говорит о настоящем или будущем, can have так не используется, а после have нужна форма given, а не had.",
+          "difficulty": 2,
+          "diagnostic": true
         }
       ]
     },
@@ -1028,13 +1435,14 @@
       "title_en": "Clauses of contrast, purpose and reason",
       "source_slug": "clauses-contrast-purpose-reason",
       "title_ru": "Уступка, цель и причина",
-      "summary_ru": "Уступка выражается двумя разными способами, и их нельзя смешивать. Although, even though и though вводят целое предложение с подлежащим и сказуемым, а despite и in spite of — только существительное или форму на -ing. However ничего не соединяет: оно начинает новое предложение и отделяется запятой. Цель выражается через to или in order to с инфинитивом, а если у цели другое подлежащее — через so that с придаточным. Причина вводится словом because перед предложением и оборотом because of перед существительным; as и since работают так же, как because. Результат вводит so: It was late, so we went home.",
+      "summary_ru": "Уступка выражается двумя разными способами, и их нельзя смешивать. Although, even though и though вводят целое предложение с подлежащим и сказуемым, а despite и in spite of — только существительное или форму на -ing. However ничего не соединяет: оно начинает новое предложение и отделяется запятой. Цель выражается через to или in order to с инфинитивом, а если у цели другое подлежащее — через so that с придаточным. Причина вводится словом because перед предложением и оборотом because of перед существительным; as и since работают так же, как because. Результат вводит so: It was late, so we went home. Whereas противопоставляет две части одного предложения (I drink tea, whereas my sister drinks coffee), а as a result вводит следствие в начале нового предложения.",
       "forms": [
         "although / even though / though + подлежащее + сказуемое",
         "despite / in spite of + существительное или -ing",
         "to / in order to + инфинитив; so that + подлежащее + can/could/would",
         "because + предложение; because of + существительное",
-        "however + запятая в начале нового предложения"
+        "however + запятая в начале нового предложения",
+        "whereas + предложение — контраст; As a result, ... — следствие"
       ],
       "examples": [
         "Despite the bad weather, we finished the work outside.",
@@ -1108,10 +1516,10 @@
         {
           "id": "b1_clauses_contrast_purpose_reason_05",
           "kind": "gap",
-          "prompt": "___ (although / despite) the team was small, they finished on time.",
+          "prompt": "___ (although / despite) the hotel was small, it was very comfortable.",
           "answer": "Although",
           "accept": [],
-          "explanation_ru": "Дальше идёт предложение the team was small, а с предложением работает только although.",
+          "explanation_ru": "Дальше идёт целое предложение the hotel was small, а с предложением работает только although.",
           "difficulty": 1
         },
         {
@@ -1126,10 +1534,10 @@
         {
           "id": "b1_clauses_contrast_purpose_reason_07",
           "kind": "correct",
-          "prompt": "Despite of the noise, I finished the report.",
-          "answer": "Despite the noise, I finished the report.",
+          "prompt": "Despite of the noise, I fell asleep quickly.",
+          "answer": "Despite the noise, I fell asleep quickly.",
           "accept": [
-            "In spite of the noise, I finished the report."
+            "In spite of the noise, I fell asleep quickly."
           ],
           "explanation_ru": "Despite употребляется без of; предлог of есть только в обороте in spite of.",
           "difficulty": 3
@@ -1148,6 +1556,78 @@
           ],
           "explanation_ru": "Because of требует существительного, поэтому придаточное the weather was bad превращается в группу the bad weather.",
           "difficulty": 3
+        },
+        {
+          "id": "b1_clauses_contrast_purpose_reason_09",
+          "kind": "cloze",
+          "prompt": "I wanted to improve my Spanish, ___ I signed up for evening classes. ___ I was often tired in the evenings, I never missed a lesson. I also watched Mexican TV shows ___ practice my listening. ___ all this effort, my Spanish is now much better.",
+          "gaps": [
+            [
+              "so"
+            ],
+            [
+              "Although",
+              "Even though",
+              "Though"
+            ],
+            [
+              "to",
+              "in order to",
+              "so as to"
+            ],
+            [
+              "Thanks to",
+              "Because of",
+              "As a result of"
+            ]
+          ],
+          "explanation_ru": "So вводит следствие, although — уступку перед целым предложением, to (in order to) — цель с инфинитивом, а thanks to / because of — причину перед существительным all this effort.",
+          "difficulty": 3
+        },
+        {
+          "id": "b1_clauses_contrast_purpose_reason_10",
+          "kind": "choice",
+          "prompt": "My brother loves big cities, ___ I prefer quiet villages.",
+          "options": [
+            "whereas",
+            "despite",
+            "however",
+            "because of"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Whereas противопоставляет две части одного предложения: «а я, наоборот». Despite и because of требуют существительного, а however не соединяет части: оно начинает новое предложение.",
+          "difficulty": 2,
+          "diagnostic": true
+        },
+        {
+          "id": "b1_clauses_contrast_purpose_reason_11",
+          "kind": "transform",
+          "prompt": "Rewrite using the word in capitals (do not change it): It was raining, but we went for a walk. DESPITE",
+          "answer": "Despite the rain, we went for a walk.",
+          "accept": [
+            "We went for a walk despite the rain.",
+            "Despite the fact that it was raining, we went for a walk.",
+            "We went for a walk despite the fact that it was raining.",
+            "Despite the rainy weather, we went for a walk.",
+            "We went for a walk despite the rainy weather."
+          ],
+          "explanation_ru": "После despite нужно существительное, а не целое предложение: it was raining превращается в the rain (или the fact that it was raining). Despite it was raining — ошибка.",
+          "difficulty": 3
+        },
+        {
+          "id": "b1_clauses_contrast_purpose_reason_12",
+          "kind": "choice",
+          "prompt": "A: Why is the main road closed?\nB: There was a big accident this morning. ___, all the buses are late.",
+          "options": [
+            "As a result",
+            "Although",
+            "Despite this",
+            "In order to"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Вторая фраза — следствие аварии, а следствие в начале предложения вводит as a result. Although и despite this выражают противопоставление, а in order to — цель и требует инфинитива.",
+          "difficulty": 1,
+          "diagnostic": true
         }
       ]
     },
@@ -1159,13 +1639,14 @@
       "title_en": "Can, could, be able to: Ability and possibility",
       "source_slug": "can-could-be-able-to",
       "title_ru": "Can, could, be able to: способность",
-      "summary_ru": "Can описывает способность и возможность в настоящем, could — в прошлом, а также в вежливых просьбах. У модального can нет инфинитива, будущего времени и перфекта, поэтому в этих случаях используется be able to: I will be able to help, I have been able to finish. Для общей способности в прошлом подходит could: When I was a child, I could swim. Но если речь об одном успешном действии в конкретной ситуации, нужен was или were able to: After three attempts, he was able to open the file. В отрицании оба варианта работают одинаково: couldn't и wasn't able to. После can и could инфинитив идёт без частицы to.",
+      "summary_ru": "Can описывает способность и возможность в настоящем, could — в прошлом, а также в вежливых просьбах. У модального can нет инфинитива, будущего времени и перфекта, поэтому в этих случаях используется be able to: I will be able to help, I have been able to finish. Для общей способности в прошлом подходит could: When I was a child, I could swim. Но если речь об одном успешном действии в конкретной ситуации, нужен was или were able to: After three attempts, he was able to open the file. В отрицании оба варианта работают одинаково: couldn't и wasn't able to. После can и could инфинитив идёт без частицы to. Тот же смысл «удалось» передаёт managed to: She managed to fix the bike herself; конструкции succeed to do в английском нет.",
       "forms": [
         "can / can't + инфинитив без to",
         "could / couldn't + инфинитив без to",
         "was / were able to + инфинитив — один успешный случай в прошлом",
         "will be able to + инфинитив — будущее",
-        "have / has been able to + инфинитив — перфект"
+        "have / has been able to + инфинитив — перфект",
+        "managed to + V — «удалось» в конкретной ситуации"
       ],
       "examples": [
         "I will be able to help you tomorrow morning.",
@@ -1261,11 +1742,11 @@
         {
           "id": "b1_can_could_be_able_to_07",
           "kind": "correct",
-          "prompt": "I will can send you the report on Friday.",
-          "answer": "I will be able to send you the report on Friday.",
+          "prompt": "I will can send you the photos on Friday.",
+          "answer": "I will be able to send you the photos on Friday.",
           "accept": [
-            "I'll be able to send you the report on Friday.",
-            "I can send you the report on Friday."
+            "I'll be able to send you the photos on Friday.",
+            "I can send you the photos on Friday."
           ],
           "explanation_ru": "Два модальных слова подряд невозможны: у can нет будущего времени, поэтому will can заменяют на will be able to (или просто can, если возможность есть уже сейчас).",
           "difficulty": 3
@@ -1273,13 +1754,61 @@
         {
           "id": "b1_can_could_be_able_to_08",
           "kind": "order",
-          "prompt": "able / we / to / were / find / not / the bug / .",
-          "answer": "We were not able to find the bug.",
+          "prompt": "able / we / to / were / find / not / the hotel / .",
+          "answer": "We were not able to find the hotel.",
           "accept": [
-            "We weren't able to find the bug."
+            "We weren't able to find the hotel."
           ],
           "explanation_ru": "Отрицание строится на глаголе be: were not able to, дальше инфинитив с to.",
           "difficulty": 3
+        },
+        {
+          "id": "b1_can_could_be_able_to_09",
+          "kind": "choice",
+          "prompt": "Как сказать по-английски: «Наконец-то мне удалось открыть эту банку»?",
+          "options": [
+            "I finally managed to open this jar.",
+            "I finally succeeded to open this jar.",
+            "I finally could to open this jar.",
+            "Finally it succeeded me to open this jar."
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Единичный успех в прошлом («удалось») передаётся managed to или was able to. Succeed требует in + -ing (succeeded in opening), после could частица to не ставится, а безличной конструкции «мне удалось» в английском нет.",
+          "difficulty": 2,
+          "diagnostic": true
+        },
+        {
+          "id": "b1_can_could_be_able_to_10",
+          "kind": "cloze",
+          "prompt": "When Hana was five, she ___ (can) already read. Last year, after months of training, she ___ (be able to) run a marathon. She ___ (be able to) speak three languages since she was a teenager. Next year she hopes she ___ (be able to) play the piano too.",
+          "gaps": [
+            [
+              "could"
+            ],
+            [
+              "was able to"
+            ],
+            [
+              "has been able to"
+            ],
+            [
+              "will be able to"
+            ]
+          ],
+          "explanation_ru": "Общее умение в прошлом — could; единичный успех после тренировок — was able to; с since нужен перфект, а у can его нет — has been able to; будущего у can тоже нет — will be able to.",
+          "difficulty": 2
+        },
+        {
+          "id": "b1_can_could_be_able_to_11",
+          "kind": "gap",
+          "prompt": "A: Can you come to the beach with us on Saturday?\nB: Sorry, I ___ (not/be able to) come. I'm working all weekend.",
+          "answer": "won't be able to",
+          "accept": [
+            "will not be able to",
+            "am not able to"
+          ],
+          "explanation_ru": "Речь о будущем (о субботе), а у can нет формы будущего времени, поэтому won't be able to. Am not able to тоже возможно, но звучит официальнее.",
+          "difficulty": 1
         }
       ]
     },
@@ -1357,15 +1886,15 @@
         {
           "id": "b1_had_better_its_time_04",
           "kind": "choice",
-          "prompt": "It's time we ___ about the budget.",
+          "prompt": "It's already nine o'clock. It's time ___ the kids to go to bed.",
           "options": [
-            "talk",
-            "talked",
-            "to talk",
-            "talking"
+            "for",
+            "to",
+            "that",
+            "of"
           ],
-          "correct_index": 1,
-          "explanation_ru": "Если после It's time стоит подлежащее, глагол ставится в past simple.",
+          "correct_index": 0,
+          "explanation_ru": "Кому пора что-то делать, вводится предлогом for, а само действие — инфинитивом с to: It's time for the kids to go to bed. To, that и of перед лицом в этой конструкции не ставятся.",
           "difficulty": 2
         },
         {
@@ -1380,8 +1909,8 @@
         {
           "id": "b1_had_better_its_time_06",
           "kind": "gap",
-          "prompt": "It's time for us ___ (start) the meeting.",
-          "answer": "to start",
+          "prompt": "It's time for us ___ (leave) for the airport.",
+          "answer": "to leave",
           "accept": [],
           "explanation_ru": "После оборота It's time for somebody глагол ставится в инфинитив с to.",
           "difficulty": 2
@@ -1407,6 +1936,57 @@
           ],
           "explanation_ru": "Порядок фиксированный: подлежащее, had better, затем инфинитив без to.",
           "difficulty": 3
+        },
+        {
+          "id": "b1_had_better_its_time_09",
+          "kind": "choice",
+          "prompt": "A: I've got a terrible cold.\nB: You'd better ___ to the gym today.",
+          "options": [
+            "not go",
+            "not to go",
+            "don't go",
+            "not going"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Отрицание после had better — not + инфинитив без to: You'd better not go. Вспомогательный do здесь не нужен, а после had better не ставятся ни to, ни -ing.",
+          "difficulty": 2,
+          "diagnostic": true
+        },
+        {
+          "id": "b1_had_better_its_time_10",
+          "kind": "choice",
+          "prompt": "Как сказать по-английски: «Тебе лучше взять зонт»?",
+          "options": [
+            "You'd better take an umbrella.",
+            "You'd better to take an umbrella.",
+            "You would better take an umbrella.",
+            "You had better taking an umbrella."
+          ],
+          "correct_index": 0,
+          "explanation_ru": "«Тебе лучше ...» — совет с оттенком предупреждения, это had better ('d better) + инфинитив без to. Would better не существует, а to и -ing после had better не ставятся.",
+          "difficulty": 1,
+          "diagnostic": true
+        },
+        {
+          "id": "b1_had_better_its_time_11",
+          "kind": "cloze",
+          "prompt": "It's almost midnight, Lucas. It's time ___ (go) to bed. You have an exam tomorrow, so you'd better ___ (not/stay) up late. You'd better ___ (set) two alarms, just in case. Honestly, it's time ___ (for / to) you to start taking school seriously.",
+          "gaps": [
+            [
+              "to go"
+            ],
+            [
+              "not stay"
+            ],
+            [
+              "set"
+            ],
+            [
+              "for"
+            ]
+          ],
+          "explanation_ru": "Без лица после It's time нужен инфинитив с to (to go), а если лицо названо — for + лицо + to. После had better всегда инфинитив без to, в том числе в отрицании: 'd better not stay.",
+          "difficulty": 2
         }
       ]
     },
@@ -1418,13 +1998,14 @@
       "title_en": "Have to, must, should: Obligation, prohibition, necessity, advice",
       "source_slug": "have-to-must-should",
       "title_ru": "Have to, must, should: обязанность и совет",
-      "summary_ru": "Must выражает сильную обязанность, которую считает необходимой сам говорящий, и часто встречается в правилах и инструкциях. Have to передаёт обязанность, идущую извне: от работы, закона или расписания. Форма have to меняется по лицам и временам, а вопрос с ней строится через do: Do I have to take this test? У must нет прошедшего времени, поэтому в прошлом используется had to. Главная пара, где легко ошибиться, — mustn't и don't have to: mustn't означает запрет, а don't have to означает, что делать это не обязательно. Should и shouldn't дают совет, а не обязанность. После must и should инфинитив идёт без to, а have to сохраняет to всегда.",
+      "summary_ru": "Must выражает сильную обязанность, которую считает необходимой сам говорящий, и часто встречается в правилах и инструкциях. Have to передаёт обязанность, идущую извне: от работы, закона или расписания. Форма have to меняется по лицам и временам, а вопрос с ней строится через do: Do I have to take this test? У must нет прошедшего времени, поэтому в прошлом используется had to. Главная пара, где легко ошибиться, — mustn't и don't have to: mustn't означает запрет, а don't have to означает, что делать это не обязательно. Should и shouldn't дают совет, а не обязанность. После must и should инфинитив идёт без to, а have to сохраняет to всегда. Упрёк или сожаление о прошлом выражают should have / shouldn't have + третья форма: You should have asked me; had to здесь не подходит — он значит, что действие пришлось выполнить.",
       "forms": [
         "must + инфинитив без to — сильная обязанность",
         "have to / has to + инфинитив; вопрос: Do you have to ...?",
         "mustn't + инфинитив — запрет",
         "don't have to + инфинитив — не обязательно",
-        "should / shouldn't + инфинитив — совет; had to — прошлое"
+        "should / shouldn't + инфинитив — совет; had to — прошлое",
+        "should have / shouldn't have + V3 — упрёк или сожаление о прошлом"
       ],
       "examples": [
         "It's Saturday, so I don't have to get up early.",
@@ -1507,7 +2088,7 @@
         {
           "id": "b1_have_to_must_should_06",
           "kind": "gap",
-          "prompt": "You ___ (not/have to) pay for the update; it is free.",
+          "prompt": "You ___ (not/have to) pay for the museum on Sundays; it is free.",
           "answer": "don't have to",
           "accept": [
             "do not have to"
@@ -1537,6 +2118,67 @@
           "accept": [],
           "explanation_ru": "Have to не модальный глагол, поэтому вопрос строится с вспомогательным do.",
           "difficulty": 3
+        },
+        {
+          "id": "b1_have_to_must_should_09",
+          "kind": "choice",
+          "prompt": "I feel sick. I ___ so much cake last night.",
+          "options": [
+            "shouldn't have eaten",
+            "shouldn't eat",
+            "mustn't have eaten",
+            "shouldn't have ate"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Сожаление о прошлом («зря я съел») — shouldn't have + третья форма. Shouldn't eat — совет о настоящем, mustn't have так не используется, а после have нужна третья форма eaten, а не ate.",
+          "difficulty": 2,
+          "diagnostic": true
+        },
+        {
+          "id": "b1_have_to_must_should_10",
+          "kind": "choice",
+          "prompt": "Как сказать по-английски: «Тебе надо было сказать мне раньше»?",
+          "options": [
+            "You should have told me earlier.",
+            "You had to tell me earlier.",
+            "You must have told me earlier.",
+            "You should told me earlier."
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Упрёк о прошлом («надо было, но ты не сделал») — should have + третья форма. Had to говорит о реальной обязанности, must have — вывод «наверное, сказал», а после should нужно have + told.",
+          "difficulty": 3
+        },
+        {
+          "id": "b1_have_to_must_should_11",
+          "kind": "cloze",
+          "prompt": "Last week I flew to Spain, and everything went wrong. I ___ (should / check) the baggage rules before the trip. My bag was too heavy, so I ___ (have to / pay) forty euros extra. Next time I ___ (must / remember) to weigh my bag at home. Luckily, you ___ (not / have to) lend me your suitcase: I've bought a lighter one.",
+          "gaps": [
+            [
+              "should have checked"
+            ],
+            [
+              "had to pay"
+            ],
+            [
+              "must remember"
+            ],
+            [
+              "don't have to",
+              "do not have to",
+              "don't need to"
+            ]
+          ],
+          "explanation_ru": "Упрёк себе о прошлом — should have checked; вынужденное действие в прошлом — had to pay (у must нет прошедшего времени); твёрдое намерение — must remember; отсутствие необходимости — don't have to.",
+          "difficulty": 3
+        },
+        {
+          "id": "b1_have_to_must_should_12",
+          "kind": "correct",
+          "prompt": "You should have call me when you arrived.",
+          "answer": "You should have called me when you arrived.",
+          "accept": [],
+          "explanation_ru": "После should have всегда идёт третья форма глагола: should have called. Инфинитив call после have невозможен.",
+          "difficulty": 2
         }
       ]
     }

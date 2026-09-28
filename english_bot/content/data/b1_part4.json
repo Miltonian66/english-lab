@@ -9,13 +9,15 @@
       "title_en": "Present simple or present continuous",
       "source_slug": "present-simple-present-continuous",
       "title_ru": "Present simple или present continuous",
-      "summary_ru": "Present simple описывает то, что происходит регулярно, вообще или всегда: привычки, факты, расписания, инструкции. Present continuous описывает действие в момент речи, временную ситуацию этого периода или договорённость на ближайшее будущее. Типичные маркеры present simple: usually, always, every day, on Mondays, twice a week. Типичные маркеры present continuous: now, right now, at the moment, today, this week. Глаголы состояния (know, understand, want, need, believe, belong, mean) обычно не ставятся в continuous, даже если речь о текущем моменте. Один глагол может менять смысл: I think it works означает я считаю, а I am thinking about it означает я обдумываю. В вопросах и отрицаниях present simple опирается на do и does, а present continuous на формы be.",
+      "summary_ru": "Present simple описывает то, что происходит регулярно, вообще или всегда: привычки, факты, расписания, инструкции. Present continuous описывает действие в момент речи, временную ситуацию этого периода или договорённость на ближайшее будущее. Типичные маркеры present simple: usually, always, every day, on Mondays, twice a week. Типичные маркеры present continuous: now, right now, at the moment, today, this week. Глаголы состояния (know, understand, want, need, believe, belong, mean) обычно не ставятся в continuous, даже если речь о текущем моменте. Один глагол может менять смысл: I think it works означает я считаю, а I am thinking about it означает я обдумываю. В вопросах и отрицаниях present simple опирается на do и does, а present continuous на формы be. Always с present continuous выражает раздражение: He is always losing his keys. Have, taste и smell тоже меняют смысл: We're having dinner (едим), но We have a car (владеем); The cheese smells strong (пахнет), но The dog is smelling my bag (обнюхивает).",
       "forms": [
         "V / V-s — present simple: We deploy on Fridays.",
         "do/does + not + V — I don't agree.",
         "am/is/are + V-ing — present continuous: She is testing the build.",
         "am/is/are + not + V-ing — They aren't waiting.",
-        "Do/Does + подлежащее + V? / Am-Is-Are + подлежащее + V-ing?"
+        "Do/Does + подлежащее + V? / Am-Is-Are + подлежащее + V-ing?",
+        "always + present continuous — раздражение от повторяющегося действия",
+        "have / think / taste / smell: действие → continuous, состояние → simple"
       ],
       "examples": [
         "Our team releases a new version every two weeks.",
@@ -50,21 +52,21 @@
         {
           "id": "b1_present_simple_present_continuous_02",
           "kind": "choice",
-          "prompt": "Be quiet, please. I ___ to a client right now.",
+          "prompt": "My brother ___ with us this month while his apartment is being painted.",
           "options": [
-            "talk",
-            "am talking",
-            "talks",
-            "am talk"
+            "is staying",
+            "stays",
+            "is stay",
+            "stay"
           ],
-          "correct_index": 1,
-          "explanation_ru": "Right now указывает на момент речи, поэтому нужен present continuous: am + talking.",
+          "correct_index": 0,
+          "explanation_ru": "Временная ситуация (this month) передаётся present continuous: is staying. Present simple stays говорил бы о постоянном положении дел.",
           "difficulty": 1
         },
         {
           "id": "b1_present_simple_present_continuous_03",
           "kind": "choice",
-          "prompt": "Wait! Why ___ that branch? We still need it.",
+          "prompt": "Wait! Why ___ those photos? We still need them.",
           "options": [
             "do you delete",
             "are you deleting",
@@ -78,26 +80,27 @@
         {
           "id": "b1_present_simple_present_continuous_04",
           "kind": "choice",
-          "prompt": "She ___ three programming languages.",
+          "prompt": "Why ___ the milk? Do you think it has gone bad?",
           "options": [
-            "is knowing",
-            "knows",
-            "know",
-            "is know"
+            "are you smelling",
+            "do you smell",
+            "are you smell",
+            "you smell"
           ],
-          "correct_index": 1,
-          "explanation_ru": "Know — глагол состояния, только present simple, и с she нужна форма knows.",
-          "difficulty": 1
+          "correct_index": 0,
+          "explanation_ru": "Smell в значении «нюхать» — действие, и в момент речи оно стоит в continuous: Why are you smelling the milk? Smell в значении «пахнуть» — состояние, оно остаётся простым: The milk smells bad.",
+          "difficulty": 2
         },
         {
           "id": "b1_present_simple_present_continuous_05",
           "kind": "gap",
-          "prompt": "Look! The server ___ (restart) again.",
-          "answer": "is restarting",
+          "prompt": "My little sister ___ (always / borrow) my clothes without asking! It drives me crazy.",
+          "answer": "is always borrowing",
           "accept": [
-            "'s restarting"
+            "'s always borrowing",
+            "always borrows"
           ],
-          "explanation_ru": "Слово Look показывает, что действие происходит прямо сейчас, поэтому present continuous.",
+          "explanation_ru": "Always с present continuous выражает раздражение от повторяющегося действия: she is always borrowing. Always стоит между is и формой на -ing. Always borrows тоже верно, но звучит как нейтральный факт, без раздражения.",
           "difficulty": 2
         },
         {
@@ -114,23 +117,77 @@
         {
           "id": "b1_present_simple_present_continuous_07",
           "kind": "correct",
-          "prompt": "I am knowing the answer to this question.",
-          "answer": "I know the answer to this question.",
+          "prompt": "This soup is tasting delicious.",
+          "answer": "This soup tastes delicious.",
           "accept": [],
-          "explanation_ru": "Know не употребляется в continuous, нужна простая форма know в present simple.",
+          "explanation_ru": "Taste в значении «иметь вкус» — глагол состояния и в continuous не употребляется. Is tasting возможно только о действии «пробовать»: The chef is tasting the soup.",
           "difficulty": 3
         },
         {
           "id": "b1_present_simple_present_continuous_08",
           "kind": "order",
-          "prompt": "are / at / we / the / moment / testing / the / new / API / .",
-          "answer": "At the moment we are testing the new API.",
+          "prompt": "are / at / we / the / moment / renovating / our / kitchen / .",
+          "answer": "At the moment we are renovating our kitchen.",
           "accept": [
-            "We are testing the new API at the moment.",
-            "At the moment we're testing the new API.",
-            "We're testing the new API at the moment."
+            "We are renovating our kitchen at the moment.",
+            "At the moment we're renovating our kitchen.",
+            "We're renovating our kitchen at the moment."
           ],
-          "explanation_ru": "Сказуемое — are testing, а обстоятельство at the moment стоит в начале или в конце предложения.",
+          "explanation_ru": "Сказуемое — are renovating, а обстоятельство at the moment стоит в начале или в конце предложения.",
+          "difficulty": 3
+        },
+        {
+          "id": "b1_present_simple_present_continuous_09",
+          "kind": "cloze",
+          "prompt": "Hi Leila! I ___ (write) to you from a small cafe in Lisbon. My sister ___ (live) here, so I ___ (stay) with her for two weeks. Right now the sun ___ (shine), and I ___ (not/want) to go home!",
+          "gaps": [
+            [
+              "am writing"
+            ],
+            [
+              "lives"
+            ],
+            [
+              "am staying"
+            ],
+            [
+              "is shining"
+            ],
+            [
+              "don't want",
+              "do not want"
+            ]
+          ],
+          "explanation_ru": "Действие в момент речи и временная ситуация — present continuous (am writing, am staying, is shining); постоянное положение дел — present simple (lives); want — глагол состояния, поэтому don't want.",
+          "difficulty": 1
+        },
+        {
+          "id": "b1_present_simple_present_continuous_10",
+          "kind": "choice",
+          "prompt": "Как сказать по-английски: «Мы сейчас обедаем, я перезвоню позже»?",
+          "options": [
+            "We're having lunch now. I'll call you back later.",
+            "We have lunch now. I'll call you back later.",
+            "We are have lunch now. I'll call you back later.",
+            "We having lunch now. I'll call you back later."
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Have в значении «есть, обедать» — действие, а не обладание, поэтому в момент речи используется continuous: we're having lunch. В continuous не ставится только have в значении «иметь».",
+          "difficulty": 1,
+          "diagnostic": true
+        },
+        {
+          "id": "b1_present_simple_present_continuous_11",
+          "kind": "choice",
+          "prompt": "В каком предложении неверно выбрано настоящее время?",
+          "options": [
+            "This coat belongs to my sister.",
+            "The kids are growing so fast these days.",
+            "Look, it's snowing!",
+            "I'm owning two cars and a motorbike."
+          ],
+          "correct_index": 3,
+          "explanation_ru": "Own — глагол обладания, в continuous он не употребляется: I own two cars. Grow в значении изменения и snow в момент речи стоят в continuous верно.",
           "difficulty": 3
         }
       ]
@@ -170,7 +227,7 @@
         {
           "id": "b1_review_verb_tenses_b1_01",
           "kind": "choice",
-          "prompt": "I ___ my laptop yesterday, so today I am using a spare one.",
+          "prompt": "I ___ my phone yesterday, so today I am using my wife's old one.",
           "options": [
             "have broken",
             "broke",
@@ -227,7 +284,7 @@
         {
           "id": "b1_review_verb_tenses_b1_05",
           "kind": "gap",
-          "prompt": "I ___ (never/see) this error before.",
+          "prompt": "I ___ (never/see) such a big dog before.",
           "answer": "have never seen",
           "accept": [
             "'ve never seen"
@@ -238,8 +295,8 @@
         {
           "id": "b1_review_verb_tenses_b1_06",
           "kind": "gap",
-          "prompt": "While she ___ (write) the release notes, the build failed.",
-          "answer": "was writing",
+          "prompt": "While she ___ (cook) dinner, the lights went out.",
+          "answer": "was cooking",
           "accept": [],
           "explanation_ru": "While вводит длительное действие-фон в прошлом, поэтому нужен past continuous.",
           "difficulty": 1
@@ -247,10 +304,12 @@
         {
           "id": "b1_review_verb_tenses_b1_07",
           "kind": "correct",
-          "prompt": "I have seen this client yesterday.",
-          "answer": "I saw this client yesterday.",
-          "accept": [],
-          "explanation_ru": "Yesterday относит действие к завершённому прошлому, поэтому present perfect меняется на past simple.",
+          "prompt": "How long are you living here?",
+          "answer": "How long have you been living here?",
+          "accept": [
+            "How long have you lived here?"
+          ],
+          "explanation_ru": "Вопрос «как долго» о периоде, который длится до сих пор, требует present perfect (continuous): How long have you been living here? Русское настоящее «живёшь» здесь не переводится present continuous.",
           "difficulty": 3
         },
         {
@@ -266,6 +325,59 @@
           ],
           "explanation_ru": "Более раннее действие ставится в past perfect, а последующее остаётся в past simple.",
           "difficulty": 3
+        },
+        {
+          "id": "b1_review_verb_tenses_b1_09",
+          "kind": "cloze",
+          "prompt": "I ___ (live) in Mexico City for three years now. Before that, I ___ (work) as a teacher in Canada. When I first arrived here, I ___ (never/eat) real tacos. Now I ___ (eat) them almost every day!",
+          "gaps": [
+            [
+              "have lived",
+              "have been living"
+            ],
+            [
+              "worked",
+              "was working"
+            ],
+            [
+              "had never eaten"
+            ],
+            [
+              "eat"
+            ]
+          ],
+          "explanation_ru": "Период до сих пор (for three years now) — present perfect; законченное прошлое — past simple; то, чего не было до другого прошедшего момента, — past perfect had never eaten; привычка сейчас — present simple.",
+          "difficulty": 3
+        },
+        {
+          "id": "b1_review_verb_tenses_b1_10",
+          "kind": "choice",
+          "prompt": "Who ___ you this beautiful scarf? It looks expensive.",
+          "options": [
+            "gave",
+            "did give",
+            "did gave",
+            "has gave"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Who здесь подлежащее (кто подарил), поэтому вопрос строится без did, как обычное утверждение: Who gave you ...? Did нужен только в вопросе к дополнению: Who did you give it to?",
+          "difficulty": 2,
+          "diagnostic": false
+        },
+        {
+          "id": "b1_review_verb_tenses_b1_11",
+          "kind": "choice",
+          "prompt": "Как сказать по-английски: «Я работала медсестрой, пока не родились дети»?",
+          "options": [
+            "I worked as a nurse until the kids were born.",
+            "I have worked as a nurse until the kids were born.",
+            "I worked as a nurse until the kids weren't born.",
+            "I was work as a nurse until the kids were born."
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Законченный период в прошлом — past simple worked. Present perfect не сочетается с законченным прошлым, а until уже значит «пока не», поэтому второе отрицание weren't лишнее.",
+          "difficulty": 2,
+          "diagnostic": true
         }
       ]
     },
@@ -277,13 +389,14 @@
       "title_en": "Usually, used to, be used to, get used to",
       "source_slug": "usually-used-to-be-used-to-get-used-to",
       "title_ru": "Usually, used to, be used to, get used to",
-      "summary_ru": "Usually с present simple описывает текущую привычку: I usually start work at nine. Used to с инфинитивом описывает то, что было регулярным или верным в прошлом, но сейчас не так: I used to work in a bank. В вопросах и отрицаниях после did остаётся форма use to: Did you use to smoke? I didn't use to like tea. Be used to означает быть привыкшим, это состояние, и после to идёт существительное или форма на -ing: I am used to working late. Get used to означает процесс привыкания: It took me a month to get used to the new system. Главное различие: used to всегда о прошлом, а be used to и get used to возможны в любом времени. После be used to и get used to никогда не бывает голого инфинитива.",
+      "summary_ru": "Usually с present simple описывает текущую привычку: I usually start work at nine. Used to с инфинитивом описывает то, что было регулярным или верным в прошлом, но сейчас не так: I used to work in a bank. В вопросах и отрицаниях после did остаётся форма use to: Did you use to smoke? I didn't use to like tea. Be used to означает быть привыкшим, это состояние, и после to идёт существительное или форма на -ing: I am used to working late. Get used to означает процесс привыкания: It took me a month to get used to the new system. Главное различие: used to всегда о прошлом, а be used to и get used to возможны в любом времени. После be used to и get used to никогда не бывает голого инфинитива. Повторяющиеся действия в прошлом можно передать и через would: We would play cards every evening; для состояний (have, be, like) would не используется — только used to.",
       "forms": [
         "usually + V — present simple",
         "used to + V — I used to work here.",
         "didn't use to + V / Did ... use to + V?",
         "be (am/is/are/was) + used to + V-ing или существительное",
-        "get (get/got/getting) + used to + V-ing или существительное"
+        "get (get/got/getting) + used to + V-ing или существительное",
+        "would + V — повторяющееся действие в прошлом (не состояние)"
       ],
       "examples": [
         "I usually check my email before the standup.",
@@ -367,7 +480,7 @@
         {
           "id": "b1_usually_used_to_be_used_to_get_used_to_06",
           "kind": "gap",
-          "prompt": "We ___ (use to) have a standup at nine, but now we don't.",
+          "prompt": "We ___ (use to) have breakfast together every Sunday, but now we don't.",
           "answer": "used to",
           "accept": [],
           "explanation_ru": "В утвердительном предложении прошлая привычка выражается формой used to.",
@@ -385,14 +498,79 @@
         {
           "id": "b1_usually_used_to_be_used_to_get_used_to_08",
           "kind": "transform",
-          "prompt": "Rewrite with used to: We worked in the office five days a week, but we don't now.",
-          "answer": "We used to work in the office five days a week.",
+          "prompt": "Rewrite with used to: We lived near the sea, but we don't now.",
+          "answer": "We used to live near the sea.",
           "accept": [
-            "We used to work in the office five days a week, but we don't now.",
-            "We used to work five days a week in the office."
+            "We used to live near the sea, but we don't now."
           ],
           "explanation_ru": "Used to само показывает, что действие относится только к прошлому, поэтому вторая часть необязательна.",
           "difficulty": 3
+        },
+        {
+          "id": "b1_usually_used_to_be_used_to_get_used_to_09",
+          "kind": "choice",
+          "prompt": "When we were kids, my grandma ___ us stories every night before bed.",
+          "options": [
+            "would tell",
+            "was used to tell",
+            "would told",
+            "is used to telling"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Повторяющееся действие в прошлом можно передать would + инфинитив (или used to tell). Was used to значит «привыкла», и после него нужна форма на -ing, а после would — только базовая форма.",
+          "difficulty": 2,
+          "diagnostic": true
+        },
+        {
+          "id": "b1_usually_used_to_be_used_to_get_used_to_10",
+          "kind": "choice",
+          "prompt": "В каком предложении would для привычки в прошлом употреблено неверно?",
+          "options": [
+            "We would go fishing every summer.",
+            "My dad would read the newspaper at breakfast.",
+            "I would have long hair when I was a teenager.",
+            "On Sundays we would visit our cousins."
+          ],
+          "correct_index": 2,
+          "explanation_ru": "Would передаёт только повторяющиеся действия, а не состояния: длинные волосы — состояние, поэтому нужно I used to have long hair.",
+          "difficulty": 3
+        },
+        {
+          "id": "b1_usually_used_to_be_used_to_get_used_to_11",
+          "kind": "cloze",
+          "prompt": "When Carlos moved from Brazil to Chicago, he ___ (not / be used to) the cold. In Brazil he ___ (use to) go to the beach every weekend. After two winters, he finally ___ (get used to) the snow. Now he ___ (usually / wear) three layers of clothes and never complains.",
+          "gaps": [
+            [
+              "wasn't used to",
+              "was not used to"
+            ],
+            [
+              "used to"
+            ],
+            [
+              "got used to"
+            ],
+            [
+              "usually wears"
+            ]
+          ],
+          "explanation_ru": "Be used to — «быть привычным» (wasn't used to the cold), used to + инфинитив — прошлая привычка, get used to — процесс привыкания (got used to — привык в итоге), а нынешняя регулярность — usually + present simple.",
+          "difficulty": 3
+        },
+        {
+          "id": "b1_usually_used_to_be_used_to_get_used_to_12",
+          "kind": "choice",
+          "prompt": "Как сказать по-английски: «Я привыкла готовить на большую семью»?",
+          "options": [
+            "I'm used to cooking for a big family.",
+            "I'm used to cook for a big family.",
+            "I used to cooking for a big family.",
+            "I use to cook for a big family."
+          ],
+          "correct_index": 0,
+          "explanation_ru": "«Привыкла» о нынешнем состоянии — be used to, где to — предлог, поэтому после него форма на -ing: I'm used to cooking. I used to cook значило бы «раньше готовила».",
+          "difficulty": 2,
+          "diagnostic": true
         }
       ]
     },
@@ -404,13 +582,14 @@
       "title_en": "Gerund or infinitive: Do, to do, doing",
       "source_slug": "gerund-or-infinitive-do-to-do-doing",
       "title_ru": "Герундий или инфинитив: do, to do, doing",
-      "summary_ru": "После одних глаголов идёт to с инфинитивом, после других форма на -ing, после третьих голый инфинитив. To с инфинитивом требуют want, decide, hope, plan, need, promise, agree, refuse, learn, manage, offer, expect. Форму на -ing требуют enjoy, avoid, finish, mind, suggest, keep, practice, consider, miss, can't stand. Голый инфинитив стоит после модальных глаголов и после make и let с дополнением: My boss made me rewrite it. После любого предлога всегда идёт форма на -ing: good at fixing bugs, before leaving, think about moving. С like, love, hate, start, begin разница между двумя формами почти незаметна. У stop, remember, forget и try формы дают разный смысл: stop smoking значит бросить, а stop to smoke значит остановиться, чтобы покурить.",
+      "summary_ru": "После одних глаголов идёт to с инфинитивом, после других форма на -ing, после третьих голый инфинитив. To с инфинитивом требуют want, decide, hope, plan, need, promise, agree, refuse, learn, manage, offer, expect. Форму на -ing требуют enjoy, avoid, finish, mind, suggest, keep, practice, consider, miss, can't stand. Голый инфинитив стоит после модальных глаголов и после make и let с дополнением: My boss made me rewrite it. После любого предлога всегда идёт форма на -ing: good at fixing bugs, before leaving, think about moving. С like, love, hate, start, begin разница между двумя формами почти незаметна. У stop, remember, forget и try формы дают разный смысл: stop smoking значит бросить, а stop to smoke значит остановиться, чтобы покурить. После want, ask, tell, expect с дополнением идёт to-инфинитив: The teacher wants us to read more; конструкции want that I ... в английском нет.",
       "forms": [
         "verb + to + V — want to go, decide to stay",
         "verb + V-ing — enjoy reading, avoid making",
         "make / let + дополнение + V — my boss made me rewrite it",
         "предлог + V-ing — before leaving, good at fixing",
-        "stop / remember / forget + to V или + V-ing с разным значением"
+        "stop / remember / forget + to V или + V-ing с разным значением",
+        "want / ask / tell / expect + объект + to + V: want me to go"
       ],
       "examples": [
         "I enjoy learning new tools.",
@@ -485,7 +664,7 @@
         {
           "id": "b1_gerund_or_infinitive_do_to_do_doing_05",
           "kind": "gap",
-          "prompt": "I will never forget ___ (see) that error in production.",
+          "prompt": "I will never forget ___ (see) the ocean for the first time.",
           "answer": "seeing",
           "accept": [],
           "explanation_ru": "Forget + -ing относится к событию, которое уже произошло: never forget seeing — навсегда запомнить, что видел. Forget to see значило бы «забыть посмотреть».",
@@ -503,11 +682,11 @@
         {
           "id": "b1_gerund_or_infinitive_do_to_do_doing_07",
           "kind": "correct",
-          "prompt": "I suggest to start with the database.",
-          "answer": "I suggest starting with the database.",
+          "prompt": "I suggest to take a taxi.",
+          "answer": "I suggest taking a taxi.",
           "accept": [
-            "I suggest that we start with the database.",
-            "I suggest we start with the database."
+            "I suggest that we take a taxi.",
+            "I suggest we take a taxi."
           ],
           "explanation_ru": "После suggest не бывает to с инфинитивом: нужна форма на -ing или придаточное с that.",
           "difficulty": 2
@@ -521,6 +700,72 @@
             "I cannot stand getting up early."
           ],
           "explanation_ru": "После can't stand идёт герундий, а фразовый глагол сохраняет порядок get up.",
+          "difficulty": 3
+        },
+        {
+          "id": "b1_gerund_or_infinitive_do_to_do_doing_09",
+          "kind": "choice",
+          "prompt": "Как сказать по-английски: «Родители хотят, чтобы я стал врачом»?",
+          "options": [
+            "My parents want me to become a doctor.",
+            "My parents want that I become a doctor.",
+            "My parents want me become a doctor.",
+            "My parents want that I will become a doctor."
+          ],
+          "correct_index": 0,
+          "explanation_ru": "После want придаточное с that не ставится: нужна схема want + объект + to-инфинитив — want me to become. Русское «хотят, чтобы я» дословно даёт want that I, но так не говорят.",
+          "difficulty": 2,
+          "diagnostic": true
+        },
+        {
+          "id": "b1_gerund_or_infinitive_do_to_do_doing_10",
+          "kind": "choice",
+          "prompt": "A: Would you mind ___ your music down a little? I'm trying to sleep.\nB: Oh, sorry! Not at all.",
+          "options": [
+            "turning",
+            "to turn",
+            "turn",
+            "turned"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "После would you mind всегда идёт форма на -ing: Would you mind turning ...? Инфинитив после mind не ставится.",
+          "difficulty": 2,
+          "diagnostic": false
+        },
+        {
+          "id": "b1_gerund_or_infinitive_do_to_do_doing_11",
+          "kind": "cloze",
+          "prompt": "My doctor told me ___ (walk) more, so I decided ___ (join) a hiking club. At first I hated ___ (get) up so early on Saturdays. But now I really enjoy ___ (spend) time in the mountains. Next month I'd like ___ (try) a longer trail.",
+          "gaps": [
+            [
+              "to walk"
+            ],
+            [
+              "to join"
+            ],
+            [
+              "getting",
+              "to get"
+            ],
+            [
+              "spending"
+            ],
+            [
+              "to try"
+            ]
+          ],
+          "explanation_ru": "Tell somebody, decide и would like требуют to-инфинитива, enjoy — только -ing, а после hate возможны обе формы.",
+          "difficulty": 2
+        },
+        {
+          "id": "b1_gerund_or_infinitive_do_to_do_doing_12",
+          "kind": "transform",
+          "prompt": "Rewrite using the word in capitals (do not change it): 'Please don't park here,' the guard said to us. ASKED",
+          "answer": "The guard asked us not to park there.",
+          "accept": [
+            "The guard asked us not to park here."
+          ],
+          "explanation_ru": "Просьба в пересказе строится как ask + объект + (not) to-инфинитив: asked us not to park. Here в пересказе обычно меняется на there.",
           "difficulty": 3
         }
       ]
@@ -624,8 +869,8 @@
         {
           "id": "b1_verb_preposition_06",
           "kind": "gap",
-          "prompt": "He insisted ___ (preposition + check) the logs twice.",
-          "answer": "on checking",
+          "prompt": "He insisted ___ (preposition + pay) for dinner.",
+          "answer": "on paying",
           "accept": [],
           "explanation_ru": "Insist управляет предлогом on, а после предлога глагол принимает форму на -ing.",
           "difficulty": 2
@@ -633,20 +878,75 @@
         {
           "id": "b1_verb_preposition_07",
           "kind": "correct",
-          "prompt": "The team is looking forward to meet you.",
-          "answer": "The team is looking forward to meeting you.",
+          "prompt": "Please wait me outside the pharmacy.",
+          "answer": "Please wait for me outside the pharmacy.",
           "accept": [],
-          "explanation_ru": "В обороте look forward to слово to является предлогом, поэтому нужна форма meeting.",
+          "explanation_ru": "Wait требует предлога for перед тем, кого или что ждут: wait for me, wait for the bus. Русское «ждать кого-то» без предлога подталкивает к ошибке.",
           "difficulty": 3
         },
         {
           "id": "b1_verb_preposition_08",
           "kind": "order",
-          "prompt": "on / focus / we / should / the / most / important / bugs / .",
-          "answer": "We should focus on the most important bugs.",
+          "prompt": "on / focus / we / should / the / most / important / problems / .",
+          "answer": "We should focus on the most important problems.",
           "accept": [],
           "explanation_ru": "Focus управляет предлогом on, который стоит сразу после глагола перед дополнением.",
           "difficulty": 3
+        },
+        {
+          "id": "b1_verb_preposition_09",
+          "kind": "choice",
+          "prompt": "Как сказать по-английски: «Я с тобой согласен»?",
+          "options": [
+            "I agree with you.",
+            "I am agree with you.",
+            "I agree to you.",
+            "I agree you."
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Agree — глагол, а не прилагательное, поэтому am не нужен; с человеком он сочетается через with. Agree to — «согласиться на что-то»: agree to a plan.",
+          "difficulty": 1,
+          "diagnostic": true
+        },
+        {
+          "id": "b1_verb_preposition_10",
+          "kind": "cloze",
+          "prompt": "My neighbor Noah often complains ___ the noise from our apartment. Yesterday he knocked on our door and asked ___ some sugar! We laughed ___ the situation and then talked ___ music for an hour. I think we can count ___ each other now.",
+          "gaps": [
+            [
+              "about"
+            ],
+            [
+              "for"
+            ],
+            [
+              "at",
+              "about"
+            ],
+            [
+              "about"
+            ],
+            [
+              "on"
+            ]
+          ],
+          "explanation_ru": "Complain about — жаловаться на, ask for — попросить что-то, laugh at — смеяться над, talk about — говорить о, count on — рассчитывать на. Предлог запоминается вместе с глаголом.",
+          "difficulty": 2
+        },
+        {
+          "id": "b1_verb_preposition_11",
+          "kind": "choice",
+          "prompt": "В каком предложении ошибка с предлогом после глагола?",
+          "options": [
+            "We arrived to the airport at six.",
+            "She's waiting for the bus.",
+            "I'll pay for the tickets.",
+            "This bag belongs to my sister."
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Arrive не сочетается с to: arrive at — о здании или пункте (at the airport), arrive in — о городе или стране. Остальные пары верны: wait for, pay for, belong to.",
+          "difficulty": 2,
+          "diagnostic": true
         }
       ]
     }

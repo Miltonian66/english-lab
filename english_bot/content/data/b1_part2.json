@@ -9,12 +9,13 @@
       "title_en": "Modal verbs of deduction: Must, may, might, could, can't",
       "source_slug": "modal-verbs-of-deduction",
       "title_ru": "Модальные глаголы предположения",
-      "summary_ru": "Модальные глаголы предположения показывают, насколько говорящий уверен в своём выводе. Must используют, когда вывод почти очевиден: есть факты, из которых он прямо следует. May, might и could выражают неуверенное предположение: возможно так, а возможно и нет. Can't означает уверенность в обратном, то есть «этого не может быть». После всех этих глаголов идёт инфинитив без частицы to. Если действие происходит прямо сейчас, добавляют be и форму на -ing: He must be working. Для невозможности берут can't, а не mustn't: mustn't выражает запрет, а не вывод.",
+      "summary_ru": "Модальные глаголы предположения показывают, насколько говорящий уверен в своём выводе. Must используют, когда вывод почти очевиден: есть факты, из которых он прямо следует. May, might и could выражают неуверенное предположение: возможно так, а возможно и нет. Can't означает уверенность в обратном, то есть «этого не может быть». После всех этих глаголов идёт инфинитив без частицы to. Если действие происходит прямо сейчас, добавляют be и форму на -ing: He must be working. Для невозможности берут can't, а не mustn't: mustn't выражает запрет, а не вывод. Вывод о прошлом строится как модальный глагол + have + третья форма: It must have snowed, She might have forgotten, He can't have seen us.",
       "forms": [
         "must + инфинитив без to (уверенный вывод)",
         "may / might / could + инфинитив без to (неуверенно)",
         "can't + инфинитив без to (уверенность в обратном)",
-        "must / might / can't + be + V-ing (о моменте речи)"
+        "must / might / can't + be + V-ing (о моменте речи)",
+        "must / might / may / could / can't + have + V3 — вывод о прошлом"
       ],
       "examples": [
         "The light is on, so she must be at home.",
@@ -46,7 +47,7 @@
         {
           "id": "b1_modal_verbs_of_deduction_02",
           "kind": "choice",
-          "prompt": "That ___ be Anna. She is in Berlin this week.",
+          "prompt": "That ___ be Aisha at the door. She is in Tokyo this week.",
           "options": [
             "must",
             "can't",
@@ -54,7 +55,7 @@
             "may"
           ],
           "correct_index": 1,
-          "explanation_ru": "Она в Берлине, значит это точно не она: полная уверенность в обратном передаётся через can't.",
+          "explanation_ru": "Она в Токио, значит это точно не она: полная уверенность в обратном передаётся через can't.",
           "difficulty": 1
         },
         {
@@ -132,6 +133,73 @@
           ],
           "explanation_ru": "Уверенность в том, что что-то невозможно, выражается через can't + be.",
           "difficulty": 3
+        },
+        {
+          "id": "b1_modal_verbs_of_deduction_09",
+          "kind": "choice",
+          "prompt": "The streets are all wet. It ___ during the night.",
+          "options": [
+            "must have rained",
+            "must rain",
+            "must had rained",
+            "can't have rained"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Уверенный вывод о прошлом по следам в настоящем — must have + третья форма. Must rain говорит о настоящем, после have нужна третья форма rained, а can't have rained противоречит мокрым улицам.",
+          "difficulty": 2,
+          "diagnostic": true
+        },
+        {
+          "id": "b1_modal_verbs_of_deduction_10",
+          "kind": "gap",
+          "prompt": "A: I can't find my keys anywhere.\nB: You ___ (might / leave) them at the cafe. Let's call them.",
+          "answer": "might have left",
+          "accept": [
+            "may have left",
+            "could have left"
+          ],
+          "explanation_ru": "Неуверенное предположение о прошлом — might (may, could) have + третья форма: might have left. Might left и might leave говорили бы о другом времени.",
+          "difficulty": 2
+        },
+        {
+          "id": "b1_modal_verbs_of_deduction_11",
+          "kind": "cloze",
+          "prompt": "Someone ate the whole cake while we were out. It ___ (can't / be) the dog, because the kitchen door was closed. It ___ (must / be) my brother: he was home alone all afternoon. He ___ (might / share) it with his friends, of course. Whoever it was, they ___ (must / be) very hungry!",
+          "gaps": [
+            [
+              "can't have been",
+              "cannot have been",
+              "couldn't have been"
+            ],
+            [
+              "must have been"
+            ],
+            [
+              "might have shared",
+              "may have shared",
+              "could have shared"
+            ],
+            [
+              "must have been"
+            ]
+          ],
+          "explanation_ru": "Выводы о прошлом строятся как модальный глагол + have + третья форма: can't have been (точно нет), must have been (почти наверняка), might have shared (возможно).",
+          "difficulty": 3
+        },
+        {
+          "id": "b1_modal_verbs_of_deduction_12",
+          "kind": "choice",
+          "prompt": "Как сказать по-английски: «Он, наверное, уже ушёл домой»?",
+          "options": [
+            "He must have gone home already.",
+            "He must go home already.",
+            "He must have went home already.",
+            "He can have gone home already."
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Уверенный вывод о прошлом («наверное, ушёл») — must have + третья форма gone. Must go — обязанность в настоящем, went — не третья форма, а can have в утвердительном выводе не употребляется.",
+          "difficulty": 2,
+          "diagnostic": true
         }
       ]
     },
@@ -259,6 +327,57 @@
           ],
           "explanation_ru": "Схема предложения: подлежащее + would rather + инфинитив + than + инфинитив.",
           "difficulty": 3
+        },
+        {
+          "id": "b1_would_rather_would_sooner_09",
+          "kind": "choice",
+          "prompt": "Как сказать по-английски: «Я бы лучше пошёл пешком»?",
+          "options": [
+            "I'd rather walk.",
+            "I'd rather to walk.",
+            "I would rather walking.",
+            "I will rather walk."
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Предпочтение («я бы лучше») — would rather + инфинитив без to: I'd rather walk. После would rather не ставятся ни to, ни -ing, а will rather не существует.",
+          "difficulty": 1,
+          "diagnostic": true
+        },
+        {
+          "id": "b1_would_rather_would_sooner_10",
+          "kind": "choice",
+          "prompt": "I'd sooner ___ home than ask him for money.",
+          "options": [
+            "walk",
+            "to walk",
+            "walking",
+            "walked"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Would sooner значит то же, что would rather, и строится так же: инфинитив без to в обеих частях сравнения — walk ... than ask.",
+          "difficulty": 2,
+          "diagnostic": true
+        },
+        {
+          "id": "b1_would_rather_would_sooner_11",
+          "kind": "cloze",
+          "prompt": "Zoe and her husband are planning their vacation. He would rather ___ (go) to the beach. She'd rather ___ (visit) museums in a big city. She says she would rather spend a week in Rome ___ lie in the sun all day. In the end, they'd rather ___ (not/argue), so they choose Barcelona: it has both!",
+          "gaps": [
+            [
+              "go"
+            ],
+            [
+              "visit"
+            ],
+            [
+              "than"
+            ],
+            [
+              "not argue"
+            ]
+          ],
+          "explanation_ru": "После would rather — инфинитив без to (go, visit), второй вариант сравнения вводится словом than, а отрицание — not перед инфинитивом: would rather not argue.",
+          "difficulty": 1
         }
       ]
     },
@@ -270,20 +389,22 @@
       "title_en": "A(n), the, no article",
       "source_slug": "an-the-no-article",
       "title_ru": "Артикли: a/an, the и нулевой артикль",
-      "summary_ru": "Артикль a/an ставят перед исчисляемым существительным в единственном числе, когда предмет упоминается впервые или это один из многих: I bought a laptop. Форма an идёт перед гласным звуком: an engineer, an hour. The указывает на конкретный предмет, понятный собеседнику: о нём уже говорили, он единственный в своём роде или уточнён определением. Нулевой артикль используют с существительными во множественном числе и с неисчисляемыми, когда речь идёт о вещах вообще: Cats sleep a lot. Без артикля идут имена людей, большинство стран и городов, названия языков и приёмы пищи. Есть устойчивые сочетания без артикля: go to work, go home, by bus, at night. С превосходной степенью почти всегда стоит the: the best coffee.",
+      "summary_ru": "Артикль a/an ставят перед исчисляемым существительным в единственном числе, когда предмет упоминается впервые или это один из многих: I bought a laptop. Форма an идёт перед гласным звуком: an engineer, an hour. The указывает на конкретный предмет, понятный собеседнику: о нём уже говорили, он единственный в своём роде или уточнён определением. Нулевой артикль используют с существительными во множественном числе и с неисчисляемыми, когда речь идёт о вещах вообще: Cats sleep a lot. Без артикля идут имена людей, большинство стран и городов, названия языков и приёмы пищи. Есть устойчивые сочетания без артикля: go to work, go home, by bus, at night. С превосходной степенью почти всегда стоит the: the best coffee. С the употребляются названия рек, морей, горных цепей, групп островов и стран во множественном числе: the Amazon, the Andes, the Canary Islands, the Netherlands; отдельные озёра и горы идут без артикля: Lake Victoria, Mount Elbrus. Без артикля говорят и об абстрактных понятиях в общем смысле: Love is blind.",
       "forms": [
         "a / an + исчисляемое существительное в ед. числе",
         "the + известный или единственный предмет",
         "нулевой артикль + мн. число или неисчисляемое (общий смысл)",
         "the + превосходная степень (the best)",
-        "устойчивые сочетания: go to work, by bus, at home"
+        "устойчивые сочетания: go to work, by bus, at home",
+        "the + реки, горные цепи, группы островов (the Andes); без артикля: Lake Victoria, Mount Elbrus",
+        "без артикля: абстрактное понятие в общем смысле (love, nature), go to school, by car"
       ],
       "examples": [
         "My sister is an engineer.",
         "I bought a laptop. The laptop was quite cheap.",
         "In general, cats sleep a lot.",
         "We go to work by bus every morning.",
-        "Paris is the capital of France."
+        "We went hiking in the Andes last summer."
       ],
       "ru_interference": "В русском артиклей нет, поэтому их пропускают перед профессией и перед первым упоминанием: неверно «She is engineer» → верно «She is an engineer».",
       "prerequisites": [
@@ -295,29 +416,29 @@
         {
           "id": "b1_an_the_no_article_01",
           "kind": "choice",
-          "prompt": "My sister is ___ engineer at a small company.",
+          "prompt": "We spent our honeymoon in ___ Maldives.",
           "options": [
+            "the",
             "a",
             "an",
-            "the",
             "no article"
           ],
-          "correct_index": 1,
-          "explanation_ru": "Профессия в единственном числе требует артикля, а перед гласным звуком нужна форма an.",
-          "difficulty": 1
+          "correct_index": 0,
+          "explanation_ru": "Названия во множественном числе — группы островов, горные цепи, страны вроде the Netherlands — берут the: the Maldives, the Alps.",
+          "difficulty": 2
         },
         {
           "id": "b1_an_the_no_article_02",
           "kind": "choice",
-          "prompt": "I bought a laptop yesterday. ___ laptop was quite cheap.",
+          "prompt": "I was so tired that I ___ at nine.",
           "options": [
-            "A",
-            "An",
-            "The",
-            "no article"
+            "went to bed",
+            "went to the bed",
+            "went to a bed",
+            "went in the bed"
           ],
-          "correct_index": 2,
-          "explanation_ru": "Предмет уже назван в первом предложении, поэтому при повторном упоминании ставится the.",
+          "correct_index": 0,
+          "explanation_ru": "Go to bed — устойчивое сочетание: речь о сне, а не о конкретной кровати, поэтому артикль не нужен. Так же go to school, go to work, go home.",
           "difficulty": 1
         },
         {
@@ -352,43 +473,97 @@
         {
           "id": "b1_an_the_no_article_05",
           "kind": "choice",
-          "prompt": "Paris is ___ capital of France.",
+          "prompt": "___ is the deepest lake in the world.",
           "options": [
-            "a",
-            "an",
-            "the",
-            "no article"
+            "Lake Baikal",
+            "The Lake Baikal",
+            "The Baikal Lake",
+            "A Lake Baikal"
           ],
-          "correct_index": 2,
-          "explanation_ru": "Столица у страны одна, единственный в своём роде объект берёт the.",
-          "difficulty": 1
+          "correct_index": 0,
+          "explanation_ru": "Названия отдельных озёр и гор идут без артикля: Lake Baikal, Mount Everest. The нужен рекам, морям и горным цепям (the Volga, the Alps), а в этой фразе он появляется только перед превосходной степенью the deepest.",
+          "difficulty": 2
         },
         {
           "id": "b1_an_the_no_article_06",
           "kind": "gap",
-          "prompt": "It's raining. I need to buy ___ umbrella.",
-          "answer": "an",
+          "prompt": "On our way to Italy, we flew over ___ Alps.",
+          "answer": "the",
           "accept": [],
-          "explanation_ru": "Нужен какой-нибудь зонт, а не конкретный, и слово начинается с гласного звука, поэтому an.",
+          "explanation_ru": "Горные цепи называются с артиклем the: the Alps, the Andes, the Rockies. Отдельная гора — без артикля: Mont Blanc.",
           "difficulty": 2
         },
         {
           "id": "b1_an_the_no_article_07",
           "kind": "gap",
-          "prompt": "This is ___ best coffee in the office.",
+          "prompt": "Mateo is ___ only person in our family who can cook.",
           "answer": "the",
           "accept": [],
-          "explanation_ru": "Перед превосходной степенью ставится определённый артикль the.",
+          "explanation_ru": "Only в значении «единственный» выделяет один конкретный объект, поэтому перед ним ставится the: the only person, the only way.",
           "difficulty": 2
         },
         {
           "id": "b1_an_the_no_article_08",
           "kind": "correct",
-          "prompt": "She is doctor in a big hospital.",
-          "answer": "She is a doctor in a big hospital.",
+          "prompt": "The life is too short to worry about small things.",
+          "answer": "Life is too short to worry about small things.",
           "accept": [],
-          "explanation_ru": "Название профессии в единственном числе не может стоять без артикля.",
+          "explanation_ru": "Абстрактное понятие в общем смысле (жизнь вообще) идёт без артикля: life, love, nature. The появляется только при уточнении: the life of a doctor.",
           "difficulty": 3
+        },
+        {
+          "id": "b1_an_the_no_article_09",
+          "kind": "cloze",
+          "prompt": "Last year Fatima went to ___ United States for the first time. She stayed with ___ old friend in Chicago. Every morning they had coffee in ___ small cafe on a quiet street nearby. ___ cafe belonged to an Italian couple. It served ___ best cannoli in the city.",
+          "gaps": [
+            [
+              "the"
+            ],
+            [
+              "an"
+            ],
+            [
+              "a"
+            ],
+            [
+              "The"
+            ],
+            [
+              "the"
+            ]
+          ],
+          "explanation_ru": "The United States — название со словом States во множественном числе; an old friend — один из друзей, перед гласным звуком; a small cafe — первое упоминание, а при повторном — the cafe; перед превосходной степенью best — the.",
+          "difficulty": 2
+        },
+        {
+          "id": "b1_an_the_no_article_10",
+          "kind": "choice",
+          "prompt": "В каком предложении ошибка с артиклем?",
+          "options": [
+            "My dad usually goes to bed after midnight.",
+            "We usually have lunch at one o'clock.",
+            "She has played the violin since she was six.",
+            "We traveled to the coast by the train."
+          ],
+          "correct_index": 3,
+          "explanation_ru": "Способ передвижения после by идёт без артикля: by train, by car, by bus. В остальных фразах всё верно: go to bed и have lunch — без артикля, а музыкальный инструмент — с the.",
+          "difficulty": 2,
+          "diagnostic": true
+        },
+        {
+          "id": "b1_an_the_no_article_11",
+          "kind": "choice",
+          "prompt": "Как сказать по-английски: «Молоко полезно для детей»?",
+          "options": [
+            "Milk is good for children.",
+            "The milk is good for the children.",
+            "A milk is good for children.",
+            "The milk is good for children."
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Речь о молоке и детях вообще, поэтому неисчисляемое milk и множественное children идут без артикля. The сделал бы их конкретными («это молоко», «эти дети»), а a с неисчисляемым существительным невозможен.",
+          "difficulty": 1,
+          "diagnostic": true
         }
       ]
     },
@@ -400,12 +575,13 @@
       "title_en": "Active and passive voice",
       "source_slug": "active-passive-voice",
       "title_ru": "Активный и пассивный залог",
-      "summary_ru": "В активном залоге подлежащее само выполняет действие, в пассивном — испытывает его на себе. Пассив строится по формуле be + третья форма глагола (V3), при этом по временам меняется только be. Дополнение активного предложения становится подлежащим пассивного: They fixed the bug превращается в The bug was fixed. Исполнителя добавляют через by, но чаще его вообще не называют: он неизвестен, неважен или очевиден. Пассив часто встречается в отчётах, инструкциях и технической документации, где важно само действие. Глагол be опускать нельзя: без него получается активная форма прошедшего времени и смысл меняется.",
+      "summary_ru": "В активном залоге подлежащее само выполняет действие, в пассивном — испытывает его на себе. Пассив строится по формуле be + третья форма глагола (V3), при этом по временам меняется только be. Дополнение активного предложения становится подлежащим пассивного: They fixed the bug превращается в The bug was fixed. Исполнителя добавляют через by, но чаще его вообще не называют: он неизвестен, неважен или очевиден. Пассив часто встречается в отчётах, инструкциях и технической документации, где важно само действие. Глагол be опускать нельзя: без него получается активная форма прошедшего времени и смысл меняется. Если работу за нас выполняет кто-то другой (ремонт, стрижка, покраска), используется каузатив have + объект + третья форма: I had my phone screen fixed — «мне починили экран телефона».",
       "forms": [
         "be + V3 (третья форма глагола)",
         "am / is / are + V3 — Present Simple Passive",
         "was / were + V3 — Past Simple Passive",
-        "by + исполнитель (часто опускается)"
+        "by + исполнитель (часто опускается)",
+        "have + объект + V3 — услуга, которую сделали для нас: We had the roof repaired"
       ],
       "examples": [
         "This app is used by thousands of people.",
@@ -423,15 +599,15 @@
         {
           "id": "b1_active_passive_voice_01",
           "kind": "choice",
-          "prompt": "This app ___ by a small team in Berlin.",
+          "prompt": "This cheese ___ by a small family farm in Vermont.",
           "options": [
-            "develops",
-            "is developed",
-            "is developing",
-            "develop"
+            "makes",
+            "is made",
+            "is making",
+            "make"
           ],
           "correct_index": 1,
-          "explanation_ru": "Приложение не разрабатывает само себя: нужен пассив is + третья форма.",
+          "explanation_ru": "Сыр не делает себя сам: нужен пассив is + третья форма.",
           "difficulty": 1
         },
         {
@@ -451,15 +627,15 @@
         {
           "id": "b1_active_passive_voice_03",
           "kind": "choice",
-          "prompt": "These servers ___ every night.",
+          "prompt": "These streets ___ every night.",
           "options": [
-            "are checked",
-            "are checking",
-            "check",
-            "is checked"
+            "are cleaned",
+            "are cleaning",
+            "clean",
+            "is cleaned"
           ],
           "correct_index": 0,
-          "explanation_ru": "Подлежащее во множественном числе и действие направлено на него, поэтому are + checked.",
+          "explanation_ru": "Подлежащее во множественном числе и действие направлено на него, поэтому are + cleaned.",
           "difficulty": 1
         },
         {
@@ -479,16 +655,18 @@
         {
           "id": "b1_active_passive_voice_05",
           "kind": "gap",
-          "prompt": "The office ___ (clean) every evening.",
-          "answer": "is cleaned",
-          "accept": [],
-          "explanation_ru": "Регулярное действие над подлежащим передаётся формой is + третья форма глагола.",
+          "prompt": "The grass in the park ___ (cut) every week.",
+          "answer": "is cut",
+          "accept": [
+            "gets cut"
+          ],
+          "explanation_ru": "Регулярное действие над подлежащим передаётся формой is + третья форма глагола; у cut третья форма совпадает с первой.",
           "difficulty": 2
         },
         {
           "id": "b1_active_passive_voice_06",
           "kind": "gap",
-          "prompt": "My laptop ___ (steal) at the airport last year.",
+          "prompt": "My bike ___ (steal) outside the station last year.",
           "answer": "was stolen",
           "accept": [
             "got stolen"
@@ -508,13 +686,79 @@
         {
           "id": "b1_active_passive_voice_08",
           "kind": "transform",
-          "prompt": "Rewrite in the passive: They built the office in 2010.",
-          "answer": "The office was built in 2010.",
+          "prompt": "Rewrite in the passive: They built this church in 1850.",
+          "answer": "This church was built in 1850.",
           "accept": [
-            "The office was built by them in 2010."
+            "This church was built by them in 1850."
           ],
-          "explanation_ru": "Дополнение the office становится подлежащим, а неважный исполнитель they просто исчезает.",
+          "explanation_ru": "Дополнение this church становится подлежащим, а неважный исполнитель they просто исчезает.",
           "difficulty": 3
+        },
+        {
+          "id": "b1_active_passive_voice_09",
+          "kind": "choice",
+          "prompt": "I don't cut my own hair. I ___ every six weeks at a salon.",
+          "options": [
+            "have it cut",
+            "have cut it",
+            "cut it",
+            "am cut it"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Когда работу за нас делает другой человек, используется have + объект + третья форма: have it cut. Have cut it — present perfect («я сам подстриг»), а cut it значит, что стрижёшься сам.",
+          "difficulty": 2,
+          "diagnostic": true
+        },
+        {
+          "id": "b1_active_passive_voice_10",
+          "kind": "choice",
+          "prompt": "Как сказать по-английски: «Вчера мне починили машину» (в автосервисе)?",
+          "options": [
+            "I had my car repaired yesterday.",
+            "I repaired my car yesterday.",
+            "I had repaired my car yesterday.",
+            "My car repaired yesterday."
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Услуга, которую для нас выполнил кто-то другой, — have + объект + третья форма: I had my car repaired. I repaired my car значит «починил сам», had repaired — past perfect, а в последнем варианте машина будто сама что-то чинила.",
+          "difficulty": 2,
+          "diagnostic": true
+        },
+        {
+          "id": "b1_active_passive_voice_11",
+          "kind": "transform",
+          "prompt": "Rewrite using the word in capitals (do not change it): Someone painted our kitchen last month. HAD",
+          "answer": "We had our kitchen painted last month.",
+          "accept": [
+            "We had the kitchen painted last month.",
+            "Last month we had our kitchen painted.",
+            "Last month we had the kitchen painted."
+          ],
+          "explanation_ru": "Каузатив have + объект + третья форма показывает, что работу сделали для нас: We had our kitchen painted. We had painted our kitchen — past perfect: «мы сами покрасили».",
+          "difficulty": 3
+        },
+        {
+          "id": "b1_active_passive_voice_12",
+          "kind": "cloze",
+          "prompt": "The Golden Gate Bridge in San Francisco ___ (build) in the 1930s. It ___ (paint) a special orange color. This color ___ (call) 'International Orange'. Today the bridge ___ (cross) by about 100,000 cars every day.",
+          "gaps": [
+            [
+              "was built"
+            ],
+            [
+              "is painted",
+              "was painted",
+              "has been painted"
+            ],
+            [
+              "is called"
+            ],
+            [
+              "is crossed"
+            ]
+          ],
+          "explanation_ru": "Мост не строит, не красит и не пересекает себя сам, поэтому везде пассив: be + третья форма. Время задаёт be: was built — о прошлом, is called и is crossed — о том, что верно сейчас.",
+          "difficulty": 2
         }
       ]
     },
@@ -551,15 +795,15 @@
         {
           "id": "b1_passive_verb_forms_01",
           "kind": "choice",
-          "prompt": "The new version ___ next Monday.",
+          "prompt": "The results of the election ___ next Monday.",
           "options": [
-            "will release",
-            "will be released",
-            "will be release",
-            "is releasing"
+            "will announce",
+            "will be announced",
+            "will be announce",
+            "is announcing"
           ],
           "correct_index": 1,
-          "explanation_ru": "Будущий пассив строится как will be плюс третья форма глагола.",
+          "explanation_ru": "Будущий пассив строится как will be плюс третья форма глагола: will be announced.",
           "difficulty": 1
         },
         {
@@ -648,6 +892,55 @@
           ],
           "explanation_ru": "В present perfect passive между has и третьей формой обязательно стоит been; простое was sent тоже верно.",
           "difficulty": 1
+        },
+        {
+          "id": "b1_passive_verb_forms_09",
+          "kind": "cloze",
+          "prompt": "Our old house ___ (sell) right now, and three families have already come to see it. Most of our furniture ___ (already / move) to the new apartment. A new kitchen ___ (install) there next week. Until then, all our meals ___ (must / cook) on a small camping stove.",
+          "gaps": [
+            [
+              "is being sold"
+            ],
+            [
+              "has already been moved"
+            ],
+            [
+              "will be installed",
+              "is going to be installed",
+              "is being installed"
+            ],
+            [
+              "must be cooked"
+            ]
+          ],
+          "explanation_ru": "Везде действие направлено на подлежащее, поэтому пассив, а время показывает be: is being sold — прямо сейчас, has already been moved — результат к настоящему, will be installed — будущее, must be cooked — модальный глагол + be + третья форма.",
+          "difficulty": 3
+        },
+        {
+          "id": "b1_passive_verb_forms_10",
+          "kind": "choice",
+          "prompt": "A: Why can't we swim in the pool today?\nB: It ___ at the moment. It'll be open again on Friday.",
+          "options": [
+            "is being cleaned",
+            "is cleaning",
+            "has cleaned",
+            "was cleaning"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Бассейн не чистит сам себя, а работы идут прямо сейчас — нужен пассив present continuous: is being cleaned. Остальные формы активные: в них бассейн сам что-то чистит.",
+          "difficulty": 1,
+          "diagnostic": true
+        },
+        {
+          "id": "b1_passive_verb_forms_11",
+          "kind": "correct",
+          "prompt": "The winners have chosen by the judges.",
+          "answer": "The winners have been chosen by the judges.",
+          "accept": [
+            "The winners were chosen by the judges."
+          ],
+          "explanation_ru": "Исполнитель введён через by, значит нужен пассив, а в present perfect passive между have и третьей формой обязательно стоит been.",
+          "difficulty": 2
         }
       ]
     },
@@ -776,6 +1069,52 @@
           "accept": [],
           "explanation_ru": "В look forward to слово to является предлогом, поэтому глагол после него стоит в форме на -ing.",
           "difficulty": 3
+        },
+        {
+          "id": "b1_b1_phrasal_verbs_1_exercises_explanation_09",
+          "kind": "cloze",
+          "prompt": "Last month my neighbor Omar asked me to look ___ his dog while he was away. I didn't know much about dogs, so I looked ___ some advice online. On the second day we ran ___ dog food, and I had to go to the store. When Omar came back, he found ___ that his dog had gained five pounds!",
+          "gaps": [
+            [
+              "after"
+            ],
+            [
+              "for",
+              "up"
+            ],
+            [
+              "out of"
+            ],
+            [
+              "out"
+            ]
+          ],
+          "explanation_ru": "Look after — присматривать, look for — искать (look up — найти в справочнике), run out of — закончиться (о запасах, с of перед существительным), find out — узнать, выяснить.",
+          "difficulty": 2
+        },
+        {
+          "id": "b1_b1_phrasal_verbs_1_exercises_explanation_10",
+          "kind": "choice",
+          "prompt": "Как сказать по-английски: «Не откладывай это на завтра»?",
+          "options": [
+            "Don't put it off until tomorrow.",
+            "Don't put off it until tomorrow.",
+            "Don't put it away until tomorrow.",
+            "Don't put it on tomorrow."
+          ],
+          "correct_index": 0,
+          "explanation_ru": "«Откладывать на потом» — put off, а местоимение it ставится между глаголом и частицей: put it off, а не put off it. Put away — убрать на место, put on — надеть.",
+          "difficulty": 2,
+          "diagnostic": true
+        },
+        {
+          "id": "b1_b1_phrasal_verbs_1_exercises_explanation_11",
+          "kind": "gap",
+          "prompt": "A: I can't solve this puzzle. It's too hard.\nB: Don't give ___! You're almost there.",
+          "answer": "up",
+          "accept": [],
+          "explanation_ru": "Give up значит «сдаваться, бросать попытки»; в этом значении дополнение не нужно.",
+          "difficulty": 1
         }
       ]
     },
@@ -906,6 +1245,43 @@
           "accept": [],
           "explanation_ru": "После carry on ставится форма на -ing, а не инфинитив с to.",
           "difficulty": 3
+        },
+        {
+          "id": "b1_b1_phrasal_verbs_2_exercises_and_explanation_09",
+          "kind": "cloze",
+          "prompt": "Our vacation started badly. First, our flight took ___ three hours late. Then our rental car broke ___ on the highway. My cousin promised to meet us, but he never turned ___. Still, we got ___ really well with the hotel staff, and the rest of the week was great.",
+          "gaps": [
+            [
+              "off"
+            ],
+            [
+              "down"
+            ],
+            [
+              "up"
+            ],
+            [
+              "on",
+              "along"
+            ]
+          ],
+          "explanation_ru": "Take off — взлететь, break down — сломаться (о технике), turn up — появиться, прийти, get on (along) with — ладить с кем-то.",
+          "difficulty": 1
+        },
+        {
+          "id": "b1_b1_phrasal_verbs_2_exercises_and_explanation_10",
+          "kind": "choice",
+          "prompt": "В каком предложении ошибка во фразовом глаголе?",
+          "options": [
+            "The picnic was called off because of the rain.",
+            "My car broke down on the way home.",
+            "I get on really well my sister.",
+            "He finally turned up at ten o'clock."
+          ],
+          "correct_index": 2,
+          "explanation_ru": "Get on (well) with somebody — ладить с кем-то: без with фразовый глагол не присоединяет человека. Остальные фразы верны: call off — отменить, break down — сломаться, turn up — появиться.",
+          "difficulty": 2,
+          "diagnostic": true
         }
       ]
     },
@@ -1029,10 +1405,46 @@
         {
           "id": "b1_b1_phrasal_verbs_3_exercises_and_explanation_08",
           "kind": "correct",
-          "prompt": "She brought on the question of salaries at the meeting.",
-          "answer": "She brought up the question of salaries at the meeting.",
+          "prompt": "She brought on the question of pocket money at dinner.",
+          "answer": "She brought up the question of pocket money at dinner.",
           "accept": [],
           "explanation_ru": "«Поднять вопрос в разговоре» — это bring up; bring on значит «вызвать» (bring on a headache) и сюда не подходит.",
+          "difficulty": 3
+        },
+        {
+          "id": "b1_b1_phrasal_verbs_3_exercises_and_explanation_09",
+          "kind": "choice",
+          "prompt": "A: What time are you leaving for the airport tomorrow?\nB: We're ___ at six, before the traffic starts.",
+          "options": [
+            "setting off",
+            "setting up",
+            "putting off",
+            "going on"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Set off — отправляться в путь. Set up значит «основать, устроить», put off — «откладывать», go on — «продолжать».",
+          "difficulty": 1,
+          "diagnostic": true
+        },
+        {
+          "id": "b1_b1_phrasal_verbs_3_exercises_and_explanation_10",
+          "kind": "cloze",
+          "prompt": "Use phrasal verbs. When my parents retired, they ___ (= opened) a small guesthouse by the sea. At first they had to ___ (= handle) a lot of problems. They ___ (= tolerated) a leaking roof and noisy guests for two years. Now everything is ___ (sort) out, and they love their new life.",
+          "gaps": [
+            [
+              "set up"
+            ],
+            [
+              "deal with"
+            ],
+            [
+              "put up with"
+            ],
+            [
+              "sorted"
+            ]
+          ],
+          "explanation_ru": "Set up — основать дело, deal with — заниматься проблемой, put up with — терпеть, мириться, sort out — уладить. Во фразовом глаголе время меняет только первое слово: put up with (прошедшее совпадает с настоящим), sorted out.",
           "difficulty": 3
         }
       ]
@@ -1138,7 +1550,7 @@
         {
           "id": "b1_during_for_while_06",
           "kind": "gap",
-          "prompt": "We lived in Prague ___ three years and then moved to Berlin.",
+          "prompt": "We lived in Prague ___ three years and then moved to Vienna.",
           "answer": "for",
           "accept": [],
           "explanation_ru": "Три года — это длительность, а её вводит предлог for.",
@@ -1163,6 +1575,45 @@
           "accept": [],
           "explanation_ru": "Перед целым предложением нужен союз while; during может стоять только перед существительным.",
           "difficulty": 3
+        },
+        {
+          "id": "b1_during_for_while_09",
+          "kind": "cloze",
+          "prompt": "___ our trip to Japan, we visited five cities. We stayed in Kyoto ___ four days. ___ we were there, it rained almost every day. I also caught a cold ___ the flight home.",
+          "gaps": [
+            [
+              "During",
+              "On"
+            ],
+            [
+              "for"
+            ],
+            [
+              "While",
+              "When"
+            ],
+            [
+              "during",
+              "on"
+            ]
+          ],
+          "explanation_ru": "During ставится перед существительным (our trip, the flight), for — перед длительностью (four days), while — перед целым предложением с подлежащим и сказуемым (we were there).",
+          "difficulty": 2
+        },
+        {
+          "id": "b1_during_for_while_10",
+          "kind": "choice",
+          "prompt": "Как сказать по-английски: «Пока я ждал автобус, я прочитал две главы»?",
+          "options": [
+            "While I was waiting for the bus, I read two chapters.",
+            "During I was waiting for the bus, I read two chapters.",
+            "For I was waiting for the bus, I read two chapters.",
+            "While I was waiting the bus, I read two chapters."
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Перед целым предложением (I was waiting) ставится while, а during — только перед существительным. Wait требует предлога for: wait for the bus.",
+          "difficulty": 2,
+          "diagnostic": true
         }
       ]
     },
@@ -1294,6 +1745,58 @@
           ],
           "explanation_ru": "Начало периода, который длится до сих пор, вводится через since и требует перфектного времени.",
           "difficulty": 3
+        },
+        {
+          "id": "b1_for_since_from_difference_09",
+          "kind": "gap",
+          "prompt": "A: How long have you had your dog?\nB: ___ she was a puppy. She's eight now.",
+          "answer": "Since",
+          "accept": [
+            "Ever since"
+          ],
+          "explanation_ru": "Ответ называет момент начала (когда она была щенком), а начало периода, который длится до сих пор, вводится словом since.",
+          "difficulty": 1
+        },
+        {
+          "id": "b1_for_since_from_difference_10",
+          "kind": "cloze",
+          "prompt": "My aunt Leila has been a nurse ___ more than twenty years. She has worked at the same hospital ___ 2005. Her shift usually lasts ___ seven in the morning ___ seven in the evening. She hasn't had a real vacation ___ her wedding!",
+          "gaps": [
+            [
+              "for"
+            ],
+            [
+              "since"
+            ],
+            [
+              "from"
+            ],
+            [
+              "to",
+              "until",
+              "till"
+            ],
+            [
+              "since"
+            ]
+          ],
+          "explanation_ru": "For — длительность (twenty years), since — точка начала периода до настоящего момента (2005, her wedding), from ... to — начало и конец промежутка.",
+          "difficulty": 1
+        },
+        {
+          "id": "b1_for_since_from_difference_11",
+          "kind": "choice",
+          "prompt": "Как сказать по-английски: «Я живу здесь с детства»?",
+          "options": [
+            "I've lived here since I was a child.",
+            "I live here since I was a child.",
+            "I've lived here for I was a child.",
+            "I'm living here since my childhood."
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Период, который начался в прошлом и продолжается сейчас, требует present perfect, а его начало вводит since. Русское настоящее «живу» здесь не переводится ни present simple, ни continuous.",
+          "difficulty": 2,
+          "diagnostic": true
         }
       ]
     },
@@ -1424,6 +1927,56 @@
           ],
           "explanation_ru": "Речь об остальных студентах во множественном числе, поэтому нужна форма the others.",
           "difficulty": 3
+        },
+        {
+          "id": "b1_another_other_others_the_other_the_others_09",
+          "kind": "cloze",
+          "prompt": "We have three kids. One loves soccer, and ___ two prefer music. Our son wants ___ guitar for his birthday, although he already has one. Some parents think music lessons are too expensive, but ___ say they are worth every cent. Are there any ___ activities you would recommend for kids?",
+          "gaps": [
+            [
+              "the other"
+            ],
+            [
+              "another"
+            ],
+            [
+              "others"
+            ],
+            [
+              "other"
+            ]
+          ],
+          "explanation_ru": "Остальные двое из известной группы — the other two; «ещё одна» гитара — another; «другие» без существительного — others; перед существительным во множественном числе — other activities.",
+          "difficulty": 2
+        },
+        {
+          "id": "b1_another_other_others_the_other_the_others_10",
+          "kind": "choice",
+          "prompt": "Как сказать по-английски: «Дай мне, пожалуйста, ещё одну неделю»?",
+          "options": [
+            "Please give me another week.",
+            "Please give me other week.",
+            "Please give me an other week.",
+            "Please give me one more other week."
+          ],
+          "correct_index": 0,
+          "explanation_ru": "«Ещё один» с исчисляемым в единственном числе — another, одним словом. Other перед единственным числом без артикля не стоит, а an other раздельно не пишут.",
+          "difficulty": 1,
+          "diagnostic": true
+        },
+        {
+          "id": "b1_another_other_others_the_other_the_others_11",
+          "kind": "choice",
+          "prompt": "В каком предложении ошибка с other или another?",
+          "options": [
+            "I don't like this hat. Can I try another one?",
+            "Two of my friends came, but the others stayed at home.",
+            "Some people love winter; others hate it.",
+            "I have two sisters: one is a teacher, and another is a doctor."
+          ],
+          "correct_index": 3,
+          "explanation_ru": "Сестёр ровно две, значит вторая — конкретная: the other is a doctor. Another значит «ещё один из многих» и подходит, только когда вариантов больше двух.",
+          "difficulty": 3
         }
       ]
     },
@@ -1502,7 +2055,7 @@
         {
           "id": "b1_reflexive_pronouns_myself_yourself_04",
           "kind": "choice",
-          "prompt": "Tom and Anna have known ___ since school.",
+          "prompt": "Hana and Lucas have known ___ since school.",
           "options": [
             "themselves",
             "each other",
@@ -1552,6 +2105,46 @@
           "answer": "I feel very tired today.",
           "accept": [],
           "explanation_ru": "После глагола feel возвратное местоимение лишнее: английский feel уже значит «чувствовать себя».",
+          "difficulty": 3
+        },
+        {
+          "id": "b1_reflexive_pronouns_myself_yourself_09",
+          "kind": "choice",
+          "prompt": "Как сказать по-английски (гостю за столом): «Угощайся!»?",
+          "options": [
+            "Help yourself!",
+            "Treat yourself!",
+            "Help you!",
+            "Take yourself!"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Help yourself — устойчивое приглашение брать еду самому. Treat yourself значит «побалуй себя», а без возвратного местоимения или с take фраза теряет смысл.",
+          "difficulty": 1,
+          "diagnostic": true
+        },
+        {
+          "id": "b1_reflexive_pronouns_myself_yourself_10",
+          "kind": "gap",
+          "prompt": "A: Who fixed your bike?\nB: Nobody. I fixed it ___.",
+          "answer": "myself",
+          "accept": [
+            "by myself"
+          ],
+          "explanation_ru": "Myself в конце фразы подчёркивает «сам, без помощи»; by myself значит то же самое.",
+          "difficulty": 2
+        },
+        {
+          "id": "b1_reflexive_pronouns_myself_yourself_11",
+          "kind": "choice",
+          "prompt": "В каком предложении лишнее возвратное местоимение?",
+          "options": [
+            "She taught herself to play the guitar.",
+            "We really enjoyed ourselves at the party.",
+            "Did you hurt yourself when you fell?",
+            "Let's meet ourselves at the cafe at six."
+          ],
+          "correct_index": 3,
+          "explanation_ru": "Meet в значении «встретиться» не требует возвратного местоимения: Let's meet at the cafe. Русское -ся не переводится через ourselves. В остальных фразах возвратная форма нужна: teach yourself, enjoy yourself, hurt yourself.",
           "difficulty": 3
         }
       ]

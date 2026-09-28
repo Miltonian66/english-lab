@@ -61,7 +61,7 @@
         {
           "id": "b1_all_both_03",
           "kind": "choice",
-          "prompt": "They are ___ working on the same bug.",
+          "prompt": "My parents are ___ retired now.",
           "options": [
             "both",
             "both of",
@@ -69,7 +69,7 @@
             "the both"
           ],
           "correct_index": 0,
-          "explanation_ru": "После глагола be идёт both без of и без артикля: They are both working.",
+          "explanation_ru": "После глагола be идёт both без of и без артикля: They are both retired.",
           "difficulty": 2
         },
         {
@@ -118,14 +118,52 @@
         {
           "id": "b1_all_both_08",
           "kind": "correct",
-          "prompt": "Both of team leads approved the plan.",
-          "answer": "Both of the team leads approved the plan.",
+          "prompt": "Both of teachers liked my essay.",
+          "answer": "Both of the teachers liked my essay.",
           "accept": [
-            "Both team leads approved the plan.",
-            "Both the team leads approved the plan."
+            "Both teachers liked my essay.",
+            "Both the teachers liked my essay."
           ],
           "explanation_ru": "Конструкция both of требует определителя перед существительным (the, my, these); без него of не ставят.",
           "difficulty": 3
+        },
+        {
+          "id": "b1_all_both_09",
+          "kind": "cloze",
+          "prompt": "My grandparents have four children, and ___ four of them have kids of their own. My mom has two sisters. ___ my aunts are doctors. They ___ work in hospitals in Canada. Every summer, ___ the family meets at my grandparents' house.",
+          "gaps": [
+            [
+              "all"
+            ],
+            [
+              "Both",
+              "Both of"
+            ],
+            [
+              "both"
+            ],
+            [
+              "all",
+              "all of"
+            ]
+          ],
+          "explanation_ru": "All — о трёх и более (all four of them, all the family), both — ровно о двух (две тёти). Перед смысловым глаголом both и all стоят после подлежащего: They both work.",
+          "difficulty": 1
+        },
+        {
+          "id": "b1_all_both_10",
+          "kind": "choice",
+          "prompt": "Как сказать по-английски: «Мы оба любим готовить»?",
+          "options": [
+            "We both love cooking.",
+            "Both we love cooking.",
+            "We both loves cooking.",
+            "Us both love cooking."
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Both ставится после подлежащего-местоимения и перед смысловым глаголом: We both love. Both we — калька русского порядка слов, а глагол после we остаётся без -s.",
+          "difficulty": 1,
+          "diagnostic": true
         }
       ]
     },
@@ -190,7 +228,7 @@
         {
           "id": "b1_any_no_none_03",
           "kind": "choice",
-          "prompt": "How many bugs did you find yesterday? ___.",
+          "prompt": "How many fish did you catch yesterday? ___.",
           "options": [
             "None",
             "No",
@@ -218,7 +256,7 @@
         {
           "id": "b1_any_no_none_05",
           "kind": "gap",
-          "prompt": "We ___ (not/have) any spare monitors in the office.",
+          "prompt": "We ___ (not/have) any eggs, so I can't make pancakes.",
           "answer": "don't have",
           "accept": [
             "do not have",
@@ -231,7 +269,7 @@
         {
           "id": "b1_any_no_none_06",
           "kind": "gap",
-          "prompt": "There is ___ (= not any) information about the new API on the site.",
+          "prompt": "There is ___ (= not any) information about the concert on the website.",
           "answer": "no",
           "accept": [],
           "explanation_ru": "Отрицание переносится на существительное: is + no information вместо isn't any information.",
@@ -257,6 +295,51 @@
           "accept": [],
           "explanation_ru": "При замене not any на no глагол становится утвердительным: aren't any → are no.",
           "difficulty": 3
+        },
+        {
+          "id": "b1_any_no_none_09",
+          "kind": "choice",
+          "prompt": "A: Did you buy any bread?\nB: No, there was ___ left at the bakery.",
+          "options": [
+            "none",
+            "no",
+            "any",
+            "nothing of"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Без существительного после пропуска нужно местоимение none. No ставится только перед существительным (no bread), а any в утвердительной фразе со смыслом «ничего» не работает.",
+          "difficulty": 1,
+          "diagnostic": true
+        },
+        {
+          "id": "b1_any_no_none_10",
+          "kind": "choice",
+          "prompt": "В каком предложении ошибка с any, no или none?",
+          "options": [
+            "There's no milk in the fridge.",
+            "None of my friends came to the party.",
+            "I didn't see nobody in the park.",
+            "Do you have any brothers or sisters?"
+          ],
+          "correct_index": 2,
+          "explanation_ru": "В английском предложении только одно отрицание: I didn't see anybody или I saw nobody. Русское «никого не видел» с двумя отрицаниями переносить нельзя.",
+          "difficulty": 2,
+          "diagnostic": true
+        },
+        {
+          "id": "b1_any_no_none_11",
+          "kind": "choice",
+          "prompt": "Как сказать по-английски: «Никто из нас не знал дорогу»?",
+          "options": [
+            "None of us knew the way.",
+            "Nobody of us knew the way.",
+            "No of us knew the way.",
+            "None of us didn't know the way."
+          ],
+          "correct_index": 0,
+          "explanation_ru": "«Никто из» группы — none of: None of us knew. Nobody и no не сочетаются с of, а второе отрицание (didn't) после none ставить нельзя.",
+          "difficulty": 2,
+          "diagnostic": true
         }
       ]
     },
@@ -320,7 +403,7 @@
         {
           "id": "b1_both_either_neither_03",
           "kind": "choice",
-          "prompt": "___ of the two servers is available: both of them are down.",
+          "prompt": "___ of the two elevators is working: both of them are broken.",
           "options": [
             "Neither",
             "Both",
@@ -328,7 +411,7 @@
             "All"
           ],
           "correct_index": 0,
-          "explanation_ru": "Вторая часть предложения говорит, что оба сервера не работают, поэтому нужно neither; both of и all of требуют глагола are.",
+          "explanation_ru": "Вторая часть предложения говорит, что оба лифта сломаны, поэтому нужно neither; both of и all of требуют глагола are.",
           "difficulty": 2
         },
         {
@@ -348,8 +431,8 @@
         {
           "id": "b1_both_either_neither_05",
           "kind": "gap",
-          "prompt": "Neither of the tests ___ (pass, present simple) on the new build.",
-          "answer": "passes",
+          "prompt": "Neither of the stores ___ (open, present simple) on Sundays.",
+          "answer": "opens",
           "accept": [],
           "explanation_ru": "После neither of + существительное во множественном числе глагол по норме ставится в единственном числе.",
           "difficulty": 2
@@ -385,6 +468,57 @@
           ],
           "explanation_ru": "Два отрицания сворачиваются в конструкцию neither ... nor с утвердительным глаголом.",
           "difficulty": 3
+        },
+        {
+          "id": "b1_both_either_neither_09",
+          "kind": "choice",
+          "prompt": "A: Do you want pizza or pasta tonight?\nB: I don't mind. ___ is fine with me.",
+          "options": [
+            "Either",
+            "Neither",
+            "Both",
+            "Each"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Either без существительного значит «любой из двух»: Either is fine — «подойдёт любой вариант». Neither значило бы «ни один», both требует глагола are, а each о выборе из двух так не говорят.",
+          "difficulty": 2,
+          "diagnostic": true
+        },
+        {
+          "id": "b1_both_either_neither_10",
+          "kind": "choice",
+          "prompt": "Как сказать по-английски: «Ни одна из этих двух курток мне не подходит»?",
+          "options": [
+            "Neither of these jackets fits me.",
+            "Neither of these jackets doesn't fit me.",
+            "Either of these jackets fits me.",
+            "Nor of these jackets fits me."
+          ],
+          "correct_index": 0,
+          "explanation_ru": "О двух предметах «ни один» — neither of; neither уже отрицательное, поэтому глагол утвердительный. Either значит «любой из двух», а nor без neither так не используется.",
+          "difficulty": 2,
+          "diagnostic": true
+        },
+        {
+          "id": "b1_both_either_neither_11",
+          "kind": "cloze",
+          "prompt": "My brother and I are very different. He likes ___ rock and jazz. I don't like ___ of them. I would be happy with ___ pop or classical music. ___ of us can sing, though, so we never go to karaoke!",
+          "gaps": [
+            [
+              "both"
+            ],
+            [
+              "either"
+            ],
+            [
+              "either"
+            ],
+            [
+              "Neither"
+            ]
+          ],
+          "explanation_ru": "Both ... and — «и то, и другое»; в отрицании о двух — either (I don't like either of them); either ... or — «или то, или другое»; neither of us — «ни один из нас двоих» с утвердительным глаголом.",
+          "difficulty": 3
         }
       ]
     },
@@ -396,13 +530,14 @@
       "title_en": "Much, many, a lot, little, few, some, any, no: Quantifiers",
       "source_slug": "much-many-lot-little-no",
       "title_ru": "Much, many, a lot of, little, few",
-      "summary_ru": "Выбор слова зависит от типа существительного. Many и (a) few идут с исчисляемыми во множественном числе: many tickets, a few questions. Much и (a) little идут с неисчисляемыми: much time, a little money. A lot of и lots of подходят и тем и другим и звучат естественно в утвердительных предложениях, тогда как much в утверждении почти не используется: не 'I have much work', а 'I have a lot of work'. A few и a little значат 'немного, но достаточно', а few и little без артикля значат 'мало, почти нет'. Some ставится в утверждениях, а также в вопросах-предложениях и просьбах (Would you like some coffee?), any — в отрицаниях и обычных вопросах, no — перед существительным при утвердительном глаголе. В вопросах о количестве работают how much (неисчисляемое) и how many (исчисляемое).",
+      "summary_ru": "Выбор слова зависит от типа существительного. Many и (a) few идут с исчисляемыми во множественном числе: many tickets, a few questions. Much и (a) little идут с неисчисляемыми: much time, a little money. A lot of и lots of подходят и тем и другим и звучат естественно в утвердительных предложениях, тогда как much в утверждении почти не используется: не 'I have much work', а 'I have a lot of work'. A few и a little значат 'немного, но достаточно', а few и little без артикля значат 'мало, почти нет'. Some ставится в утверждениях, а также в вопросах-предложениях и просьбах (Would you like some coffee?), any — в отрицаниях и обычных вопросах, no — перед существительным при утвердительном глаголе. В вопросах о количестве работают how much (неисчисляемое) и how many (исчисляемое). Plenty of значит «много, с запасом» и подходит к любым существительным: plenty of room, plenty of chairs.",
       "forms": [
         "many / how many / a few / few + plural noun",
         "much / how much / a little / little + uncountable noun",
         "a lot of / lots of + plural or uncountable noun",
         "some / any / no + noun",
-        "not + much/many + noun"
+        "not + much/many + noun",
+        "plenty of + noun — «много, с запасом»; very few / very little — «почти нет»"
       ],
       "examples": [
         "We don't have much time before the demo.",
@@ -420,21 +555,21 @@
         {
           "id": "b1_much_many_lot_little_no_01",
           "kind": "choice",
-          "prompt": "How ___ bugs did you close today?",
+          "prompt": "Very ___ tourists visit this village in winter, so it's really quiet.",
           "options": [
-            "many",
-            "much",
-            "a lot of",
-            "little"
+            "few",
+            "a few",
+            "little",
+            "a little"
           ],
           "correct_index": 0,
-          "explanation_ru": "Bugs — исчисляемое во множественном числе, поэтому в вопросе о количестве нужно how many.",
-          "difficulty": 1
+          "explanation_ru": "Few без артикля значит «мало, почти нет» и подчёркивает недостаток, а с исчисляемым tourists нужен few, а не little. A few значит «несколько», и тогда деревня не была бы тихой.",
+          "difficulty": 2
         },
         {
           "id": "b1_much_many_lot_little_no_02",
           "kind": "choice",
-          "prompt": "We don't have ___ time left before the release.",
+          "prompt": "We don't have ___ time left before the train leaves.",
           "options": [
             "much",
             "many",
@@ -449,38 +584,38 @@
         {
           "id": "b1_much_many_lot_little_no_03",
           "kind": "choice",
-          "prompt": "She made ___ mistakes in the report.",
+          "prompt": "Don't worry, there's still ___ milk in the fridge — enough for your coffee.",
           "options": [
-            "a few",
             "a little",
-            "much",
-            "a much"
+            "little",
+            "a few",
+            "few"
           ],
           "correct_index": 0,
-          "explanation_ru": "Mistakes — исчисляемое во множественном числе, поэтому подходит только a few.",
+          "explanation_ru": "A little с неисчисляемым существительным значит «немного, но хватает». Little без артикля значило бы «почти нет» и противоречило бы словам enough for your coffee, а few и a few ставятся только с исчисляемыми.",
           "difficulty": 2
         },
         {
           "id": "b1_much_many_lot_little_no_04",
           "kind": "choice",
-          "prompt": "We spent ___ money on new equipment.",
+          "prompt": "Don't hurry. We have ___ time before the movie starts.",
           "options": [
-            "a lot of",
+            "plenty of",
+            "plenty",
             "many",
-            "a lot",
-            "much of"
+            "a few"
           ],
           "correct_index": 0,
-          "explanation_ru": "Money неисчисляемое, а в утвердительном предложении естественна форма a lot of; a lot без of и much of здесь невозможны.",
+          "explanation_ru": "Plenty of значит «много, с запасом» и сочетается и с исчисляемыми, и с неисчисляемыми; без of перед существительным не ставится. Many и a few с неисчисляемым time невозможны.",
           "difficulty": 2
         },
         {
           "id": "b1_much_many_lot_little_no_05",
           "kind": "gap",
-          "prompt": "How ___ (much/many) engineers are there on your team?",
-          "answer": "many",
+          "prompt": "I have very ___ (few / little) free time these days because of my new baby.",
+          "answer": "little",
           "accept": [],
-          "explanation_ru": "Engineers считаются поштучно, поэтому нужен вариант how many.",
+          "explanation_ru": "Time здесь неисчисляемое, поэтому little; very little значит «очень мало, почти нет».",
           "difficulty": 1
         },
         {
@@ -506,12 +641,62 @@
         {
           "id": "b1_much_many_lot_little_no_08",
           "kind": "transform",
-          "prompt": "Rewrite in the negative with 'much': We have a lot of free space on the server.",
-          "answer": "We don't have much free space on the server.",
+          "prompt": "Rewrite in the negative with 'much': We have a lot of free space in the car.",
+          "answer": "We don't have much free space in the car.",
           "accept": [
-            "We do not have much free space on the server."
+            "We do not have much free space in the car."
           ],
           "explanation_ru": "В отрицательном предложении a lot of обычно заменяется на much с неисчисляемым существительным.",
+          "difficulty": 3
+        },
+        {
+          "id": "b1_much_many_lot_little_no_09",
+          "kind": "cloze",
+          "prompt": "My grandmother lives in a tiny village in the mountains. There are only ___ (a few / few) shops there. Very ___ (few / little) people visit in winter, maybe five or six a week. She doesn't have ___ (much / many) money, but she has ___ (plenty / many) of fresh air and good neighbors.",
+          "gaps": [
+            [
+              "a few"
+            ],
+            [
+              "few"
+            ],
+            [
+              "much"
+            ],
+            [
+              "plenty"
+            ]
+          ],
+          "explanation_ru": "Only a few — «лишь несколько»; very few — «очень мало, почти никто»; much — с неисчисляемым money в отрицании; plenty of — «сколько угодно, с запасом».",
+          "difficulty": 1
+        },
+        {
+          "id": "b1_much_many_lot_little_no_10",
+          "kind": "choice",
+          "prompt": "Как сказать по-английски: «У меня мало друзей в этом городе»?",
+          "options": [
+            "I have few friends in this city.",
+            "I have a few friends in this city.",
+            "I have little friends in this city.",
+            "I have not many friends in this city."
+          ],
+          "correct_index": 0,
+          "explanation_ru": "«Мало» с исчисляемыми — few без артикля. A few значит «несколько» и звучит позитивно, little ставится с неисчисляемыми (little friends — «маленькие друзья»), а have not many — калька; естественно также I don't have many friends.",
+          "difficulty": 2,
+          "diagnostic": true
+        },
+        {
+          "id": "b1_much_many_lot_little_no_11",
+          "kind": "choice",
+          "prompt": "В каком предложении ошибка с few или little?",
+          "options": [
+            "We had a few problems, but the trip was great.",
+            "There's very little sugar left.",
+            "How much bread should I buy?",
+            "I know a little people who speak Japanese."
+          ],
+          "correct_index": 3,
+          "explanation_ru": "People — исчисляемое, поэтому a few people. A little ставится только с неисчисляемыми: a little sugar, a little time.",
           "difficulty": 3
         }
       ]
@@ -548,7 +733,7 @@
         {
           "id": "b1_question_tags_01",
           "kind": "choice",
-          "prompt": "You work in the IT department, ___?",
+          "prompt": "You work at the hospital, ___?",
           "options": [
             "don't you",
             "doesn't you",
@@ -576,7 +761,7 @@
         {
           "id": "b1_question_tags_03",
           "kind": "choice",
-          "prompt": "Let's start the meeting, ___?",
+          "prompt": "Let's order pizza, ___?",
           "options": [
             "shall we",
             "will we",
@@ -635,12 +820,57 @@
         {
           "id": "b1_question_tags_08",
           "kind": "transform",
-          "prompt": "Add a question tag: There is a problem with the build.",
-          "answer": "There is a problem with the build, isn't there?",
+          "prompt": "Add a question tag: There is a problem with the car.",
+          "answer": "There is a problem with the car, isn't there?",
           "accept": [
-            "There is a problem with the build, isn’t there?"
+            "There is a problem with the car, isn’t there?"
           ],
           "explanation_ru": "В обороте there is подлежащим хвостика остаётся there: isn't there.",
+          "difficulty": 3
+        },
+        {
+          "id": "b1_question_tags_09",
+          "kind": "choice",
+          "prompt": "A: You've never been to Mexico, ___?\nB: No, never. But I'd love to go.",
+          "options": [
+            "have you",
+            "haven't you",
+            "did you",
+            "are you"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Never делает основную часть отрицательной, поэтому хвостик утвердительный, а вспомогательный глагол повторяется — have: have you?",
+          "difficulty": 1,
+          "diagnostic": true
+        },
+        {
+          "id": "b1_question_tags_10",
+          "kind": "cloze",
+          "prompt": "Grace: It's a lovely day, ___? Mateo: Yes, perfect for a picnic. Grace: You didn't forget the sandwiches, ___? Mateo: No, they're in my bag. Grace: And your sister is coming too, ___? Mateo: Yes. Grace: Let's go, then, ___?",
+          "gaps": [
+            [
+              "isn't it"
+            ],
+            [
+              "did you"
+            ],
+            [
+              "isn't she"
+            ],
+            [
+              "shall we"
+            ]
+          ],
+          "explanation_ru": "Хвостик повторяет вспомогательный глагол основной части с обратным знаком: it's → isn't it, didn't → did you, is → isn't she. После Let's — всегда shall we.",
+          "difficulty": 2
+        },
+        {
+          "id": "b1_question_tags_11",
+          "kind": "gap",
+          "prompt": "Everybody enjoyed the party, ___?",
+          "answer": "didn't they",
+          "accept": [],
+          "explanation_ru": "После everybody, somebody, nobody в хвостике используется they, а прошедшее время enjoyed даёт вспомогательный did: didn't they?",
           "difficulty": 3
         }
       ]
@@ -676,7 +906,7 @@
         {
           "id": "b1_defining_and_non_defining_relative_clauses_01",
           "kind": "choice",
-          "prompt": "The engineer ___ fixed the bug works in our Berlin office.",
+          "prompt": "The engineer ___ fixed the bug works in our Madrid office.",
           "options": [
             "who",
             "which",
@@ -704,7 +934,7 @@
         {
           "id": "b1_defining_and_non_defining_relative_clauses_03",
           "kind": "choice",
-          "prompt": "Our office, ___ was built in 2015, has no elevator.",
+          "prompt": "Our school, ___ was built in 1915, has no elevator.",
           "options": [
             "which",
             "that",
@@ -718,7 +948,7 @@
         {
           "id": "b1_defining_and_non_defining_relative_clauses_04",
           "kind": "choice",
-          "prompt": "This is the folder ___ we keep the backups.",
+          "prompt": "This is the cafe ___ we first met.",
           "options": [
             "where",
             "which",
@@ -726,36 +956,36 @@
             "who"
           ],
           "correct_index": 0,
-          "explanation_ru": "Придаточное указывает место хранения, и после него нет предлога, поэтому нужно where.",
+          "explanation_ru": "Придаточное указывает место встречи, и после него нет предлога, поэтому нужно where.",
           "difficulty": 2
         },
         {
           "id": "b1_defining_and_non_defining_relative_clauses_05",
           "kind": "gap",
-          "prompt": "The colleague ___ car is outside is waiting for you.",
+          "prompt": "The man ___ car is outside is waiting for you.",
           "answer": "whose",
           "accept": [],
-          "explanation_ru": "Машина принадлежит коллеге, а принадлежность в придаточном выражает слово whose.",
+          "explanation_ru": "Машина принадлежит мужчине, а принадлежность в придаточном выражает слово whose.",
           "difficulty": 2
         },
         {
           "id": "b1_defining_and_non_defining_relative_clauses_06",
           "kind": "gap",
-          "prompt": "The tool ___ (which / who) we use for testing is free.",
+          "prompt": "The bus ___ (which / who) goes to the airport leaves every hour.",
           "answer": "which",
           "accept": [
             "that"
           ],
-          "explanation_ru": "Tool — предмет, поэтому подходит which; в определительном придаточном возможно и that.",
+          "explanation_ru": "Bus — предмет, поэтому подходит which; в определительном придаточном возможно и that.",
           "difficulty": 1
         },
         {
           "id": "b1_defining_and_non_defining_relative_clauses_07",
           "kind": "correct",
-          "prompt": "The man which called you is our client.",
-          "answer": "The man who called you is our client.",
+          "prompt": "The man which called you is our neighbor.",
+          "answer": "The man who called you is our neighbor.",
           "accept": [
-            "The man that called you is our client."
+            "The man that called you is our neighbor."
           ],
           "explanation_ru": "Which не употребляется с людьми: нужно who или that.",
           "difficulty": 3
@@ -763,10 +993,62 @@
         {
           "id": "b1_defining_and_non_defining_relative_clauses_08",
           "kind": "correct",
-          "prompt": "My laptop, that I bought in 2020, still works well.",
-          "answer": "My laptop, which I bought in 2020, still works well.",
+          "prompt": "My car, that I bought in 2012, still runs well.",
+          "answer": "My car, which I bought in 2012, still runs well.",
           "accept": [],
           "explanation_ru": "В придаточном, выделенном запятыми, that невозможно — его заменяет which.",
+          "difficulty": 3
+        },
+        {
+          "id": "b1_defining_and_non_defining_relative_clauses_09",
+          "kind": "cloze",
+          "prompt": "Frida Kahlo, ___ was born in 1907, is one of Mexico's most famous artists. The house ___ she grew up is now a museum. It is called the Blue House, ___ is a good name because its walls are bright blue. Visitors ___ come to Mexico City often spend hours there.",
+          "gaps": [
+            [
+              "who"
+            ],
+            [
+              "where",
+              "in which"
+            ],
+            [
+              "which"
+            ],
+            [
+              "who",
+              "that"
+            ]
+          ],
+          "explanation_ru": "Who — о людях (в придаточном с запятыми — только who), where — о месте без предлога в конце, which — о предмете в придаточном с запятыми, а в определительном придаточном без запятых о людях возможно и that.",
+          "difficulty": 2
+        },
+        {
+          "id": "b1_defining_and_non_defining_relative_clauses_10",
+          "kind": "choice",
+          "prompt": "Как сказать по-английски: «Это та книга, о которой я тебе рассказывал»?",
+          "options": [
+            "This is the book I told you about.",
+            "This is the book what I told you about.",
+            "This is the book about that I told you.",
+            "This is the book which I told you."
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Относительное слово-дополнение можно опустить, а предлог уходит в конец: the book I told you about. What в роли относительного слова не используется, после предлога that невозможно, а без about теряется смысл «о которой».",
+          "difficulty": 2,
+          "diagnostic": true
+        },
+        {
+          "id": "b1_defining_and_non_defining_relative_clauses_11",
+          "kind": "choice",
+          "prompt": "В каком предложении ошибка в относительном придаточном?",
+          "options": [
+            "The woman who lives next door is a dentist.",
+            "Lima, which is the capital of Peru, is on the coast.",
+            "The hotel where we stayed was very clean.",
+            "My brother, that lives in Chicago, is a chef."
+          ],
+          "correct_index": 3,
+          "explanation_ru": "В придаточном, выделенном запятыми, that не употребляется: My brother, who lives in Chicago, ... В остальных фразах who, which и where выбраны верно.",
           "difficulty": 3
         }
       ]
@@ -779,13 +1061,14 @@
       "title_en": "Indirect speech / Reported speech",
       "source_slug": "reported-speech-indirect-speech",
       "title_ru": "Косвенная речь: он сказал, что...",
-      "summary_ru": "Когда мы передаём чужие слова после глагола в прошедшем времени, время внутри сдвигается на шаг назад: present simple становится past simple, present continuous — past continuous, past simple и present perfect — past perfect, will становится would, can становится could. Вместе со временем меняются местоимения и слова времени и места: tomorrow становится the next day, here становится there. Say используется без адресата, tell — только с адресатом: He said that... но He told me that... В косвенных вопросах прямой порядок слов, без do, does, did и без вопросительного знака: He asked where the office was. Для вопросов без вопросительного слова берут if или whether. Просьбы и приказы передаются через ask или tell плюс инфинитив с to, а отрицание ставится перед to: told us not to change it.",
+      "summary_ru": "Когда мы передаём чужие слова после глагола в прошедшем времени, время внутри сдвигается на шаг назад: present simple становится past simple, present continuous — past continuous, past simple и present perfect — past perfect, will становится would, can становится could. Вместе со временем меняются местоимения и слова времени и места: tomorrow становится the next day, here становится there. Say используется без адресата, tell — только с адресатом: He said that... но He told me that... В косвенных вопросах прямой порядок слов, без do, does, did и без вопросительного знака: He asked where the office was. Для вопросов без вопросительного слова берут if или whether. Просьбы и приказы передаются через ask или tell плюс инфинитив с to, а отрицание ставится перед to: told us not to change it. По тем же правилам строятся вежливые вопросы: после Could you tell me ..., Do you know ... порядок слов прямой и нет do: Do you know where the station is?",
       "forms": [
         "say (that) + clause / tell somebody (that) + clause",
         "present -> past, past/present perfect -> past perfect",
         "will -> would, can -> could, must -> had to",
         "ask + (object) + if/whether + subject + verb",
-        "ask/tell + object + (not) + to + infinitive"
+        "ask/tell + object + (not) + to + infinitive",
+        "Could you tell me / Do you know + wh-слово или if + подлежащее + глагол"
       ],
       "examples": [
         "He said that he was working on the API.",
@@ -831,7 +1114,7 @@
         {
           "id": "b1_reported_speech_indirect_speech_03",
           "kind": "choice",
-          "prompt": "Two years ago she told me she ___ in Berlin, but now she lives in Prague.",
+          "prompt": "Two years ago she told me she ___ in Seoul, but now she lives in Busan.",
           "options": [
             "lived",
             "lives",
@@ -839,7 +1122,7 @@
             "is living"
           ],
           "correct_index": 0,
-          "explanation_ru": "После told в прошедшем времени глагол косвенной речи сдвигается на шаг назад: lives становится lived. Здесь сдвиг обязателен ещё и потому, что сейчас это уже неправда: она живёт в Праге.",
+          "explanation_ru": "После told в прошедшем времени глагол косвенной речи сдвигается на шаг назад: lives становится lived. Здесь сдвиг обязателен ещё и потому, что сейчас это уже неправда: она живёт в Пусане.",
           "difficulty": 2
         },
         {
@@ -898,6 +1181,66 @@
           ],
           "explanation_ru": "В косвенном вопросе прямой порядок слов и нет вспомогательного do.",
           "difficulty": 3
+        },
+        {
+          "id": "b1_reported_speech_indirect_speech_09",
+          "kind": "choice",
+          "prompt": "Excuse me, do you know what time ___?",
+          "options": [
+            "the bank opens",
+            "does the bank open",
+            "opens the bank",
+            "the bank does open"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "После вежливого вступления (Do you know ..., Could you tell me ...) вопрос становится косвенным: прямой порядок слов и без do — what time the bank opens.",
+          "difficulty": 1,
+          "diagnostic": true
+        },
+        {
+          "id": "b1_reported_speech_indirect_speech_10",
+          "kind": "choice",
+          "prompt": "Как сказать по-английски: «Вы не знаете, работает ли аптека в воскресенье?»",
+          "options": [
+            "Do you know if the pharmacy is open on Sunday?",
+            "Do you know is the pharmacy open on Sunday?",
+            "Do you know does the pharmacy open on Sunday?",
+            "Don't you know if the pharmacy is open on Sunday?"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Косвенный общий вопрос вводится if (whether) с прямым порядком слов. Вежливое русское «Вы не знаете ...» по-английски звучит без отрицания: Don't you know ... прозвучало бы как упрёк «Разве вы не знаете?».",
+          "difficulty": 2,
+          "diagnostic": true
+        },
+        {
+          "id": "b1_reported_speech_indirect_speech_11",
+          "kind": "correct",
+          "prompt": "Do you know where is the nearest bus stop?",
+          "answer": "Do you know where the nearest bus stop is?",
+          "accept": [],
+          "explanation_ru": "Внутри вежливого вопроса Do you know ... сам вопрос косвенный: прямой порядок слов, is уходит в конец.",
+          "difficulty": 2
+        },
+        {
+          "id": "b1_reported_speech_indirect_speech_12",
+          "kind": "cloze",
+          "prompt": "When I got back from my trip, my mom asked me where I ___ (be). She also wanted to know if I ___ (eat) anything. I told her that I ___ (be) too tired to talk. She said I ___ (can) sleep in her room that night.",
+          "gaps": [
+            [
+              "had been"
+            ],
+            [
+              "had eaten"
+            ],
+            [
+              "was"
+            ],
+            [
+              "could"
+            ]
+          ],
+          "explanation_ru": "После asked, wanted to know, told и said в прошедшем времени глаголы сдвигаются на шаг назад: have been → had been, have eaten → had eaten, am → was, can → could. Порядок слов в косвенном вопросе прямой: where I had been.",
+          "difficulty": 3
         }
       ]
     },
@@ -909,13 +1252,14 @@
       "title_en": "First conditional, future time clauses",
       "source_slug": "first-conditional-future-time-clauses",
       "title_ru": "Первый тип условия и придаточные времени",
-      "summary_ru": "Первый тип условия описывает реальную возможность в будущем: if плюс present simple, а в главной части will плюс инфинитив. If the tests pass, we will deploy tonight. Части можно менять местами, и тогда запятая не нужна: We will deploy tonight if the tests pass. То же правило работает в придаточных времени после when, as soon as, before, after, until, while: там ставится настоящее время, а will не употребляется. Unless значит 'если не' и уже содержит отрицание, поэтому глагол после него утвердительный. В главной части вместо will могут стоять модальные глаголы или повелительное наклонение: If you see a bug, write a ticket. Если действие в придаточном закончится раньше главного, используется present perfect: after I have checked the logs.",
+      "summary_ru": "Первый тип условия описывает реальную возможность в будущем: if плюс present simple, а в главной части will плюс инфинитив. If the tests pass, we will deploy tonight. Части можно менять местами, и тогда запятая не нужна: We will deploy tonight if the tests pass. То же правило работает в придаточных времени после when, as soon as, before, after, until, while: там ставится настоящее время, а will не употребляется. Unless значит 'если не' и уже содержит отрицание, поэтому глагол после него утвердительный. В главной части вместо will могут стоять модальные глаголы или повелительное наклонение: If you see a bug, write a ticket. Если действие в придаточном закончится раньше главного, используется present perfect: after I have checked the logs. As long as значит «при условии, что», а until уже содержит «пока не», поэтому второе отрицание после него не ставится: Don't go until I call you.",
       "forms": [
         "If + present simple, + will/won't + infinitive",
         "will + infinitive + if/when/as soon as + present simple",
         "unless + present simple (= if ... not)",
         "when/as soon as/before/after/until + present simple (no will)",
-        "If + present simple, + imperative / can / may"
+        "If + present simple, + imperative / can / may",
+        "as long as + present simple — «при условии, что»; until + утвердительный глагол"
       ],
       "examples": [
         "If the build passes, we will deploy tonight.",
@@ -960,7 +1304,7 @@
         {
           "id": "b1_first_conditional_future_time_clauses_03",
           "kind": "choice",
-          "prompt": "We won't start the demo ___ everyone joins the call.",
+          "prompt": "We won't start dinner ___ everyone is at the table.",
           "options": [
             "until",
             "since",
@@ -968,13 +1312,13 @@
             "while"
           ],
           "correct_index": 0,
-          "explanation_ru": "Значение 'не начнём, пока не' передаётся союзом until; while значило бы 'в то время как', а since и during не подходят ни по смыслу, ни по конструкции.",
+          "explanation_ru": "Значение «не начнём, пока не» передаётся союзом until; while значило бы «в то время как», а since и during не подходят ни по смыслу, ни по конструкции.",
           "difficulty": 2
         },
         {
           "id": "b1_first_conditional_future_time_clauses_04",
           "kind": "choice",
-          "prompt": "___ you back up the data, you will lose it.",
+          "prompt": "___ you water these plants, they will die.",
           "options": [
             "Unless",
             "If",
@@ -982,7 +1326,7 @@
             "As soon as"
           ],
           "correct_index": 0,
-          "explanation_ru": "Смысл предложения — 'если не сделаешь бэкап', а это значение даёт только unless.",
+          "explanation_ru": "Смысл предложения — «если не польёшь», а это значение даёт только unless.",
           "difficulty": 2
         },
         {
@@ -1032,6 +1376,52 @@
           ],
           "explanation_ru": "Unless уже значит 'если не', поэтому отрицание из придаточного убирается.",
           "difficulty": 3
+        },
+        {
+          "id": "b1_first_conditional_future_time_clauses_09",
+          "kind": "cloze",
+          "prompt": "Liam is flying to Peru next month. As soon as he ___ (land) in Lima, he'll send us a message. He will visit Machu Picchu if the weather ___ (be) good. Before he ___ (leave), he'll buy a Spanish phrasebook. He won't come back until he ___ (see) everything!",
+          "gaps": [
+            [
+              "lands"
+            ],
+            [
+              "is"
+            ],
+            [
+              "leaves"
+            ],
+            [
+              "has seen",
+              "sees"
+            ]
+          ],
+          "explanation_ru": "В придаточных после as soon as, if, before, until будущее выражается настоящим временем, а will остаётся в главной части. Until he has seen подчёркивает, что всё должно быть увидено к моменту возвращения.",
+          "difficulty": 2
+        },
+        {
+          "id": "b1_first_conditional_future_time_clauses_10",
+          "kind": "choice",
+          "prompt": "Как сказать по-английски: «Мы не уедем, пока ты не вернёшься»?",
+          "options": [
+            "We won't leave until you come back.",
+            "We won't leave until you won't come back.",
+            "We won't leave until you will come back.",
+            "We don't leave while you don't come back."
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Until уже значит «пока не», поэтому второго отрицания в придаточном нет, а будущее там выражается present simple: until you come back. Русское «пока не вернёшься» тянет за собой won't и will, но оба лишние.",
+          "difficulty": 2,
+          "diagnostic": true
+        },
+        {
+          "id": "b1_first_conditional_future_time_clauses_11",
+          "kind": "gap",
+          "prompt": "A: Can I borrow your bike?\nB: Sure, ___ (as long as / unless) you bring it back by six.",
+          "answer": "as long as",
+          "accept": [],
+          "explanation_ru": "As long as значит «при условии, что»: дам велосипед, если вернёшь к шести. Unless значит «если не» и перевернуло бы смысл.",
+          "difficulty": 2
         }
       ]
     },
@@ -1043,13 +1433,14 @@
       "title_en": "Future forms: Will, be going to, present continuous",
       "source_slug": "future-forms",
       "title_ru": "Будущее: will, be going to, present continuous",
-      "summary_ru": "Английский выражает будущее несколькими формами, и выбор зависит от ситуации. Will используется для решения, принятого прямо сейчас, для обещаний и предложений помощи, а также для прогнозов и мнений со словами I think, probably, maybe. Be going to описывает намерение или план, о котором решили заранее, и прогноз, основанный на том, что видно сейчас: Look at those clouds, it is going to rain. Present continuous описывает договорённость с конкретным временем и другими людьми: I am meeting the client at three. Present simple используется для расписаний: The train leaves at 7:15. Формы нельзя смешивать: после will идёт голый инфинитив, а be going to требует правильной формы глагола be.",
+      "summary_ru": "Английский выражает будущее несколькими формами, и выбор зависит от ситуации. Will используется для решения, принятого прямо сейчас, для обещаний и предложений помощи, а также для прогнозов и мнений со словами I think, probably, maybe. Be going to описывает намерение или план, о котором решили заранее, и прогноз, основанный на том, что видно сейчас: Look at those clouds, it is going to rain. Present continuous описывает договорённость с конкретным временем и другими людьми: I am meeting the client at three. Present simple используется для расписаний: The train leaves at 7:15. Формы нельзя смешивать: после will идёт голый инфинитив, а be going to требует правильной формы глагола be. Future continuous (will be + V-ing) описывает действие, которое будет в процессе в определённый момент будущего, а future perfect (will have + V3) — действие, которое завершится к этому моменту: By Friday we will have finished.",
       "forms": [
         "will / won't + infinitive",
         "am/is/are + going to + infinitive",
         "am/is/are + V-ing (fixed arrangement)",
         "present simple for timetables (The train leaves at 7)",
-        "Are you going to ...? / Will you ...?"
+        "Are you going to ...? / Will you ...?",
+        "will be + V-ing — в процессе в момент будущего; will have + V3 — завершится к моменту"
       ],
       "examples": [
         "Look at those clouds - it is going to rain.",
@@ -1109,7 +1500,7 @@
         {
           "id": "b1_future_forms_04",
           "kind": "choice",
-          "prompt": "___ you going to install the update today?",
+          "prompt": "___ you going to visit your parents this weekend?",
           "options": [
             "Are",
             "Do",
@@ -1124,18 +1515,18 @@
         {
           "id": "b1_future_forms_05",
           "kind": "gap",
-          "prompt": "Look at those clouds. It ___ (rain — вывод по тому, что видно сейчас) in a few minutes.",
-          "answer": "is going to rain",
+          "prompt": "Careful! That glass is right on the edge of the table. It ___ (fall).",
+          "answer": "is going to fall",
           "accept": [
-            "'s going to rain"
+            "'s going to fall"
           ],
-          "explanation_ru": "Прогноз по видимым признакам оформляется как is going to plus инфинитив.",
+          "explanation_ru": "Прогноз по тому, что видно прямо сейчас (стакан на краю стола), оформляется как be going to + инфинитив: it is going to fall.",
           "difficulty": 2
         },
         {
           "id": "b1_future_forms_06",
           "kind": "gap",
-          "prompt": "I've already booked the ticket. I ___ (fly) to Berlin on Monday.",
+          "prompt": "I've already booked the ticket. I ___ (fly) to Madrid on Monday.",
           "answer": "am flying",
           "accept": [
             "'m flying",
@@ -1159,12 +1550,65 @@
         {
           "id": "b1_future_forms_08",
           "kind": "transform",
-          "prompt": "Rewrite with 'be going to': Our plan is to migrate the database next month.",
-          "answer": "We are going to migrate the database next month.",
+          "prompt": "Rewrite with 'be going to': Our plan is to repaint the living room next month.",
+          "answer": "We are going to repaint the living room next month.",
           "accept": [
-            "We're going to migrate the database next month."
+            "We're going to repaint the living room next month."
           ],
           "explanation_ru": "Заранее принятый план выражается конструкцией be going to plus инфинитив.",
+          "difficulty": 3
+        },
+        {
+          "id": "b1_future_forms_09",
+          "kind": "choice",
+          "prompt": "This time tomorrow I ___ on a beach in Thailand.",
+          "options": [
+            "will be lying",
+            "will lie",
+            "am lying",
+            "will have lain"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Действие, которое будет в процессе в определённый момент будущего (this time tomorrow), передаёт future continuous: will be lying. Will lie — просто факт, am lying — сейчас, will have lain — завершённость к моменту.",
+          "difficulty": 2,
+          "diagnostic": true
+        },
+        {
+          "id": "b1_future_forms_10",
+          "kind": "choice",
+          "prompt": "By the time you get home, I ___ dinner, so we can eat right away.",
+          "options": [
+            "will have cooked",
+            "will cook",
+            "am cooking",
+            "will be cooked"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "By the time + момент в будущем требует future perfect: к твоему приходу ужин уже будет готов — will have cooked. Will cook — начну готовить потом, will be cooked — пассив, где готовят меня.",
+          "difficulty": 3
+        },
+        {
+          "id": "b1_future_forms_11",
+          "kind": "cloze",
+          "prompt": "Priya: What ___ (you / do) this weekend? Noah: I ___ (visit) my grandparents. I bought the train tickets yesterday. Priya: Lucky you! I'm sure it ___ (be) a lovely trip. Noah: Thanks! But look at my bag: it's so full that it ___ (break)!",
+          "gaps": [
+            [
+              "are you doing",
+              "are you going to do"
+            ],
+            [
+              "am visiting",
+              "am going to visit"
+            ],
+            [
+              "will be",
+              "is going to be"
+            ],
+            [
+              "is going to break"
+            ]
+          ],
+          "explanation_ru": "План с уже купленными билетами — present continuous (или be going to); уверенное мнение о будущем — will; прогноз по тому, что видно прямо сейчас (сумка вот-вот лопнет), — be going to.",
           "difficulty": 3
         }
       ]
@@ -1244,7 +1688,7 @@
         {
           "id": "b1_past_simple_present_perfect_04",
           "kind": "choice",
-          "prompt": "When ___ you join the team?",
+          "prompt": "When ___ you move to this city?",
           "options": [
             "did",
             "have",
@@ -1259,7 +1703,7 @@
         {
           "id": "b1_past_simple_present_perfect_05",
           "kind": "gap",
-          "prompt": "We ___ (not/finish) the migration yet.",
+          "prompt": "We ___ (not/finish) the renovation yet.",
           "answer": "haven't finished",
           "accept": [
             "have not finished"
@@ -1270,7 +1714,7 @@
         {
           "id": "b1_past_simple_present_perfect_06",
           "kind": "gap",
-          "prompt": "He ___ (call) the client two hours ago.",
+          "prompt": "He ___ (call) his mother two hours ago.",
           "answer": "called",
           "accept": [],
           "explanation_ru": "Оборот two hours ago называет законченный момент в прошлом, значит нужен past simple.",
@@ -1296,6 +1740,59 @@
           ],
           "explanation_ru": "For three years означает период, который начался в прошлом и продолжается, поэтому нужен present perfect.",
           "difficulty": 3
+        },
+        {
+          "id": "b1_past_simple_present_perfect_09",
+          "kind": "cloze",
+          "prompt": "Hi Mom! We ___ (arrive) in Rome two days ago. Since then we ___ (see) the Colosseum and the Vatican. Yesterday we ___ (eat) the best pizza of our lives. We ___ (not/visit) the Trevi Fountain yet, but we're going tomorrow.",
+          "gaps": [
+            [
+              "arrived"
+            ],
+            [
+              "have seen"
+            ],
+            [
+              "ate",
+              "had"
+            ],
+            [
+              "haven't visited",
+              "have not visited"
+            ]
+          ],
+          "explanation_ru": "Two days ago и yesterday — законченное прошлое, поэтому past simple (arrived, ate); since then и yet связывают прошлое с настоящим, поэтому present perfect (have seen, haven't visited).",
+          "difficulty": 2
+        },
+        {
+          "id": "b1_past_simple_present_perfect_10",
+          "kind": "choice",
+          "prompt": "Как сказать по-английски: «Вчера я потерял ключи»?",
+          "options": [
+            "I lost my keys yesterday.",
+            "I have lost my keys yesterday.",
+            "I had lost my keys yesterday.",
+            "Yesterday I have lost my keys."
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Yesterday называет законченный момент в прошлом, поэтому только past simple. Present perfect с yesterday не сочетается, а past perfect нужен лишь для действия раньше другого прошедшего.",
+          "difficulty": 1,
+          "diagnostic": true
+        },
+        {
+          "id": "b1_past_simple_present_perfect_11",
+          "kind": "choice",
+          "prompt": "A: Can I speak to Carlos, please?\nB: Sorry, he ___ out. He'll be back in an hour.",
+          "options": [
+            "has just gone",
+            "has just went",
+            "is just gone",
+            "had just gone"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Только что случившееся с результатом сейчас (его нет на месте) — present perfect с just: has just gone. Went — не третья форма, is just gone out так не говорят, а had gone относится к прошлому до прошлого.",
+          "difficulty": 2,
+          "diagnostic": true
         }
       ]
     },
@@ -1331,7 +1828,7 @@
         {
           "id": "b1_past_simple_past_continuous_past_perfect_01",
           "kind": "choice",
-          "prompt": "I was testing the app when the power ___ off.",
+          "prompt": "I was reading a book when the power ___ off.",
           "options": [
             "went",
             "was going",
@@ -1389,12 +1886,12 @@
         {
           "id": "b1_past_simple_past_continuous_past_perfect_05",
           "kind": "gap",
-          "prompt": "When I got to the office, my colleagues ___ (already/leave).",
+          "prompt": "When I got to the station, my friends ___ (already/leave).",
           "answer": "had already left",
           "accept": [
             "had left already"
           ],
-          "explanation_ru": "Коллеги ушли до моего прихода, значит нужен past perfect с already между had и причастием.",
+          "explanation_ru": "Друзья ушли до моего прихода, значит нужен past perfect с already между had и причастием.",
           "difficulty": 2
         },
         {
@@ -1420,10 +1917,60 @@
         {
           "id": "b1_past_simple_past_continuous_past_perfect_08",
           "kind": "correct",
-          "prompt": "While I was walking to the office, I was seeing an accident.",
-          "answer": "While I was walking to the office, I saw an accident.",
+          "prompt": "While I was walking to the gym, I was seeing an accident.",
+          "answer": "While I was walking to the gym, I saw an accident.",
           "accept": [],
           "explanation_ru": "See здесь называет короткое законченное событие, поэтому нужен past simple, а не continuous.",
+          "difficulty": 3
+        },
+        {
+          "id": "b1_past_simple_past_continuous_past_perfect_09",
+          "kind": "cloze",
+          "prompt": "Last night Sofia ___ (drive) home when she saw a small dog in the road. It ___ (shake) with cold. She stopped and picked it up. Later she found out that the dog ___ (run away) from its owners two days before. When she ___ (call) them, they were so happy!",
+          "gaps": [
+            [
+              "was driving"
+            ],
+            [
+              "was shaking"
+            ],
+            [
+              "had run away"
+            ],
+            [
+              "called"
+            ]
+          ],
+          "explanation_ru": "Фоновые процессы в момент события — past continuous (was driving, was shaking); то, что случилось раньше другого прошедшего, — past perfect (had run away); отдельное событие в цепочке — past simple (called).",
+          "difficulty": 2
+        },
+        {
+          "id": "b1_past_simple_past_continuous_past_perfect_10",
+          "kind": "choice",
+          "prompt": "Как сказать по-английски: «Когда я вернулся домой, все уже спали»?",
+          "options": [
+            "When I got home, everyone was already sleeping.",
+            "When I got home, everyone already slept.",
+            "When I got home, everyone has already slept.",
+            "When I was getting home, everyone already sleeps."
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Процесс, который уже шёл в момент возвращения, — past continuous: was sleeping. Past simple slept означал бы законченное действие, а present perfect и present simple не согласуются с прошедшим got home.",
+          "difficulty": 2,
+          "diagnostic": true
+        },
+        {
+          "id": "b1_past_simple_past_continuous_past_perfect_11",
+          "kind": "choice",
+          "prompt": "В каком предложении ошибка в прошедших временах?",
+          "options": [
+            "I was cooking dinner when you called.",
+            "She had never seen snow before she moved to Canada.",
+            "When we arrived at the stadium, the game already started.",
+            "While they were playing, it started to rain."
+          ],
+          "correct_index": 2,
+          "explanation_ru": "Игра началась раньше нашего прихода, поэтому нужен past perfect: the game had already started. В остальных фразах времена выбраны верно.",
           "difficulty": 3
         }
       ]
@@ -1489,21 +2036,21 @@
         {
           "id": "b1_present_perfect_simple_present_perfect_continuous_03",
           "kind": "choice",
-          "prompt": "I have ___ three tickets this morning.",
+          "prompt": "I have ___ three cups of coffee this morning.",
           "options": [
-            "closed",
-            "been closing",
-            "been closed",
-            "closing"
+            "drunk",
+            "been drinking",
+            "been drunk",
+            "drinking"
           ],
           "correct_index": 0,
-          "explanation_ru": "Указано количество результатов, поэтому нужен present perfect simple; continuous с числом объектов не употребляется.",
+          "explanation_ru": "Указано количество — три чашки, поэтому нужен present perfect simple; continuous с числом законченных действий не употребляется.",
           "difficulty": 2
         },
         {
           "id": "b1_present_perfect_simple_present_perfect_continuous_04",
           "kind": "choice",
-          "prompt": "We ___ this laptop for two years.",
+          "prompt": "We ___ this car for two years.",
           "options": [
             "have had",
             "have been having",
@@ -1528,10 +2075,10 @@
         {
           "id": "b1_present_perfect_simple_present_perfect_continuous_06",
           "kind": "gap",
-          "prompt": "She ___ (send) five emails today.",
-          "answer": "has sent",
+          "prompt": "She ___ (bake) five cakes today.",
+          "answer": "has baked",
           "accept": [
-            "'s sent"
+            "'s baked"
           ],
           "explanation_ru": "Названо количество законченных действий, поэтому нужен present perfect simple.",
           "difficulty": 1
@@ -1558,6 +2105,58 @@
           ],
           "explanation_ru": "Know не употребляется в continuous, поэтому нужна простая форма present perfect.",
           "difficulty": 3
+        },
+        {
+          "id": "b1_present_perfect_simple_present_perfect_continuous_09",
+          "kind": "choice",
+          "prompt": "A: Why are your hands so dirty?\nB: I ___ in the garden all morning.",
+          "options": [
+            "have been working",
+            "am working",
+            "have been worked",
+            "was worked"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Грязные руки — видимый результат длительного процесса до настоящего момента, поэтому present perfect continuous. Am working — калька русского «работаю», а been worked и was worked — пассив, который здесь невозможен.",
+          "difficulty": 1,
+          "diagnostic": true
+        },
+        {
+          "id": "b1_present_perfect_simple_present_perfect_continuous_10",
+          "kind": "cloze",
+          "prompt": "Diego ___ (learn) Japanese for two years. So far he ___ (read) three novels in Japanese. Recently he ___ (watch) a lot of anime to practice his listening. He ___ (visit) Japan twice, and he wants to go again.",
+          "gaps": [
+            [
+              "has been learning"
+            ],
+            [
+              "has read"
+            ],
+            [
+              "has been watching",
+              "has watched"
+            ],
+            [
+              "has visited"
+            ]
+          ],
+          "explanation_ru": "Процесс, который длится до сих пор (for two years, recently), — present perfect continuous; количество законченных результатов (three novels, twice) — present perfect simple.",
+          "difficulty": 3
+        },
+        {
+          "id": "b1_present_perfect_simple_present_perfect_continuous_11",
+          "kind": "choice",
+          "prompt": "Как сказать по-английски: «Я уже час пытаюсь до тебя дозвониться»?",
+          "options": [
+            "I've been trying to call you for an hour.",
+            "I'm trying to call you for an hour.",
+            "I try to call you already an hour.",
+            "I've tried to call you since an hour."
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Действие началось час назад и всё ещё идёт — present perfect continuous с for: I've been trying for an hour. Русское настоящее «пытаюсь» не переводится present simple или continuous, а since ставится перед моментом, а не перед длительностью.",
+          "difficulty": 2,
+          "diagnostic": true
         }
       ]
     }

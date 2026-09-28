@@ -11,7 +11,7 @@ from english_bot.content.schema import Exercise
 from english_bot.learning import placement as pl
 from english_bot.learning import practice as pr
 from english_bot.learning import srs
-from english_bot.learning.answers import matches, normalize, parse_choice
+from english_bot.learning.answers import grade, matches, normalize, parse_choice
 
 
 CURRICULUM = load_curriculum()
@@ -92,6 +92,67 @@ class AnswerTests(unittest.TestCase):
     def test_accept_list_widens_the_key(self) -> None:
         exercise = self._gap("The bridge was built in 1990.", ("They built the bridge in 1990.",))
         self.assertTrue(matches(exercise, "they built the bridge in 1990"))
+
+    def _ex(self, kind: str, prompt: str, answer: str, accept: tuple[str, ...] = (), ex_id: str = "b1_x_07") -> Exercise:
+        return Exercise(id=ex_id, kind=kind, prompt=prompt, explanation_ru="e", answer=answer, accept=accept)
+
+    def test_missing_comma_inside_the_sentence_is_not_an_error(self) -> None:
+        exercise = self._ex("order", "you / I / were / if / I / would / call / him", "If I were you, I would call him.")
+        self.assertTrue(matches(exercise, "If I were you I would call him"))
+        self.assertTrue(matches(exercise, "if i were you, i would call him"))
+
+    def test_comma_is_checked_where_it_is_the_point(self) -> None:
+        """Неопределительное придаточное и «исправь ошибку» в одной запятой — запятая и есть ответ."""
+        relative = self._ex("transform", "Join: My brother lives in Berlin. He is a doctor.",
+                            "My brother, who lives in Berlin, is a doctor.")
+        self.assertFalse(matches(relative, "My brother who lives in Berlin is a doctor"))
+        splice = self._ex("correct", "The plan is good, however it is expensive.",
+                          "The plan is good. However, it is expensive.")
+        self.assertFalse(matches(splice, "The plan is good, however it is expensive."))
+        punctuation = self._ex("correct", "Its late.", "It's late, isn't it?", ex_id="c2_punctuation_x_01")
+        self.assertFalse(matches(punctuation, "It's late isn't it"))
+
+    def test_ambiguous_contractions_are_read_every_way(self) -> None:
+        there = self._ex("transform", "Add a tag: There is a problem.", "There is a problem, isn't there?")
+        self.assertTrue(matches(there, "There's a problem, isn't there?"))
+        perfect = self._ex("gap", "If I ___ (know), I would have come.", "had known")
+        self.assertTrue(matches(perfect, "'d known"))
+        self.assertTrue(matches(self._ex("gap", "p", "should have told"), "should've told"))
+        # Чтение 's как has не делает верным другое время.
+        self.assertFalse(matches(self._ex("gap", "p", "is working"), "has worked"))
+        self.assertFalse(matches(self._ex("gap", "p", "had known"), "would know"))
+
+    def test_generic_negations_expand(self) -> None:
+        self.assertTrue(matches(self._ex("gap", "p", "need not worry"), "needn't worry"))
+        self.assertTrue(matches(self._ex("gap", "p", "shall not"), "shan't"))
+
+    def test_correct_accepts_the_fixed_fragment(self) -> None:
+        """Реальная ошибка журнала: исправление верное, но прислано одним словом."""
+        exercise = self._ex("correct", "She speaks to clients very polite.", "She speaks to clients very politely.")
+        result = grade(exercise, "politely")
+        self.assertTrue(result.correct)
+        self.assertIn("She speaks to clients very politely.", result.note)
+        self.assertTrue(matches(exercise, "very politely"))
+        self.assertFalse(matches(exercise, "polite"))
+        self.assertFalse(matches(exercise, "clients very"))
+
+    def test_fragment_must_cover_a_deletion(self) -> None:
+        exercise = self._ex("correct", "I can to send the report.", "I can send the report.")
+        self.assertTrue(matches(exercise, "can send"))
+        self.assertFalse(matches(exercise, "send"))
+
+    def test_typo_in_a_given_word_is_forgiven_with_a_note(self) -> None:
+        exercise = self._ex("correct", "We have three olds computers.", "We have three old computers.")
+        result = grade(exercise, "We hve three old computers.")
+        self.assertTrue(result.correct)
+        self.assertIn("hve → have", result.note)
+
+    def test_typo_in_the_corrected_word_is_still_an_error(self) -> None:
+        exercise = self._ex("correct", "He goed to the office.", "He went to the office.")
+        self.assertFalse(matches(exercise, "He wnet to the office."))
+        self.assertFalse(matches(exercise, "He goes to the office."))
+        gap = self._ex("gap", "He ___ (go) to the office.", "went")
+        self.assertFalse(matches(gap, "wnet"))
 
     def test_choice_accepts_letter_number_and_text(self) -> None:
         """Буква и номер относятся к порядку показа, текст — к самому варианту."""
@@ -269,6 +330,100 @@ class PracticeTests(unittest.TestCase):
             for ref in queue
         }
         self.assertGreaterEqual(len(points), min(2, len(CURRICULUM.points_of_topic(level, topic))))
+
+    def test_level_queue_prefers_unseen_exercises(self) -> None:
+        """Случайный выбор без истории к 10-му дню давал треть повторов при непройденном банке."""
+        seen: set[str] = set()
+        rng = random.Random(3)
+        # Правило даёт в сессию одно задание, поэтому первые восемь сессий по
+        # десять правил из пятнадцати гарантированно обходятся без повторов.
+        for _ in range(8):
+            queue = pr.queue_for_level(CURRICULUM, "C1", rng, [], length=10, seen=seen)
+            self.assertFalse(seen & set(queue), "повтор, хотя невиденные задания уровня остались")
+            seen |= set(queue)
+
+    def test_topic_and_review_queues_prefer_unseen(self) -> None:
+        level = "B1"
+        topic = CURRICULUM.topics_of_level(level)[0][0]
+        first = pr.queue_for_topic(CURRICULUM, level, topic, self.rng, length=4)
+        second = pr.queue_for_topic(CURRICULUM, level, topic, self.rng, length=4, seen=set(first))
+        self.assertFalse(set(first) & set(second))
+        point = CURRICULUM.points_of_level(level)[0]
+        seen = {f"ex:{exercise.id}" for exercise in point.exercises[:-1]}
+
+        class Card:
+            card_type = "point"
+            card_key = point.id
+
+        refs = pr.queue_for_review(CURRICULUM, [Card()], self.rng, level=level, seen=seen)
+        self.assertEqual(refs, [f"ex:{point.exercises[-1].id}"])
+
+    def test_rule_card_hides_the_answer_to_the_open_question(self) -> None:
+        """Ответ стоял дословно в примерах карточки у 220 заданий, а кнопка доступна до ответа."""
+        leaks = 0
+        for point in CURRICULUM.points.values():
+            for exercise in point.exercises:
+                question = pr.resolve(f"ex:{exercise.id}", CURRICULUM, self.rng)
+                assert question is not None
+                card = pr.help_for(question, CURRICULUM)
+                for secret in pr.revealing_texts(question):
+                    if secret in pr._plain(card):
+                        leaks += 1
+                        break
+        self.assertEqual(leaks, 0)
+
+    def _vocab(self, word: str, pos: str = ""):
+        for items in CURRICULUM.vocabulary.values():
+            for item in items:
+                if item.word == word and (not pos or item.pos == pos):
+                    return item
+        raise AssertionError(f"нет слова {word}")
+
+    def test_recall_accepts_same_meaning_words_and_forms_with_a_note(self) -> None:
+        """«делать» — это и do, и make; «вставать» в прошедшем — тоже знание слова."""
+        question = pr.vocab_question(self._vocab("do"), CURRICULUM, self.rng)
+        self.assertTrue(pr.check(question, "do").correct)
+        verdict = pr.check(question, "make")
+        self.assertTrue(verdict.correct)
+        self.assertIn("Загадано слово: do", verdict.note)
+        self.assertTrue(pr.check(question, "did").correct)
+        self.assertFalse(pr.check(question, "go").correct)
+        phrasal = pr.vocab_question(self._vocab("check in"), CURRICULUM, self.rng)
+        self.assertTrue(pr.check(phrasal, "checked in").correct)
+
+    def test_recall_forms_depend_on_part_of_speech(self) -> None:
+        self.assertEqual(pr.accepted_forms(self._vocab("on")), [])
+        self.assertEqual(pr.accepted_forms(self._vocab("table")), ["tables"])
+        self.assertIn("came", pr.accepted_forms(self._vocab("come")))
+        self.assertNotIn("comed", pr.word_forms("come"))
+
+    def test_recognition_never_offers_a_second_correct_word(self) -> None:
+        """«на» — это on и at: at среди обманок засчитывался бы ошибкой."""
+        for items in CURRICULUM.vocabulary.values():
+            for item in items:
+                question = pr.vocab_question(item, CURRICULUM, self.rng, recognise=True)
+                self.assertEqual(question.kind, "choice")
+                self.assertEqual(len(question.options), 4, item.word)
+                valid = {word.lower() for word in pr.vocab_alternatives(item, CURRICULUM)}
+                wrong = [option for option in question.options if option != item.word and option.lower() in valid]
+                self.assertEqual(wrong, [], item.word)
+
+    def test_recall_hint_hides_the_word_even_at_sentence_start(self) -> None:
+        item = self._vocab("close")
+        question = pr.vocab_question(item, CURRICULUM, self.rng)
+        self.assertIn("Подсказка: ___ the door", question.prompt)
+
+    def test_same_spelling_different_part_of_speech_are_two_cards(self) -> None:
+        self.assertEqual(self._vocab("book", "noun").level, "A1")
+        self.assertEqual(self._vocab("book", "verb").level, "A2")
+        self.assertEqual(self._vocab("cost", "noun").level, "B1")
+
+    def test_check_accepts_the_corrected_fragment_of_a_real_exercise(self) -> None:
+        question = pr.resolve("ex:a1_adverbs_manner_07", CURRICULUM, self.rng)
+        assert question is not None
+        verdict = pr.check(question, "politely")
+        self.assertTrue(verdict.correct)
+        self.assertIn("She speaks to clients very politely.", verdict.note)
 
     def test_adapt_raises_difficulty_when_learner_is_cruising(self) -> None:
         queue = pr.queue_for_level(CURRICULUM, "B2", self.rng, [], length=10)

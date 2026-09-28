@@ -17,7 +17,7 @@ from typing import Any
 from ..content.banks import VocabItem
 from ..content.registry import Curriculum
 from ..content.schema import LEVEL_ORDER, Exercise, GrammarPoint
-from .answers import display_options, matches, normalize, parse_choice
+from .answers import display_options, grade, normalize, parse_choice
 
 
 TARGET_LOW = 0.6
@@ -119,8 +119,18 @@ def queue_for_point(point: GrammarPoint, rng: random.Random) -> list[str]:
     return [f"ex:{exercise.id}" for exercise in _shuffled_by_difficulty(list(point.exercises), rng)]
 
 
+def _unseen_first(exercises: list[Exercise], seen: set[str]) -> list[Exercise]:
+    """Невиденные задания вперёд, порядок внутри групп сохраняется."""
+    return sorted(exercises, key=lambda exercise: f"ex:{exercise.id}" in seen)
+
+
 def queue_for_topic(
-    curriculum: Curriculum, level: str, topic: str, rng: random.Random, length: int = 12
+    curriculum: Curriculum,
+    level: str,
+    topic: str,
+    rng: random.Random,
+    length: int = 12,
+    seen: set[str] | None = None,
 ) -> list[str]:
     points = curriculum.points_of_topic(level, topic)
     if not points:
@@ -128,7 +138,8 @@ def queue_for_topic(
     per_point = max(1, length // max(1, len(points)))
     refs: list[str] = []
     for point in points:
-        chosen = _shuffled_by_difficulty(list(point.exercises), rng)[:per_point]
+        ordered = _unseen_first(_shuffled_by_difficulty(list(point.exercises), rng), seen or set())
+        chosen = sorted(ordered[:per_point], key=lambda exercise: exercise.difficulty)
         refs.extend(f"ex:{exercise.id}" for exercise in chosen)
     rng.shuffle(refs)
     return refs[:length]
@@ -140,11 +151,18 @@ def queue_for_level(
     rng: random.Random,
     weak_points: list[str] | None = None,
     length: int = DEFAULT_LENGTH,
+    seen: set[str] | None = None,
 ) -> list[str]:
-    """Смешанная тренировка уровня с перевесом в сторону слабых пунктов."""
+    """Смешанная тренировка уровня с перевесом в сторону слабых пунктов.
+
+    Невиденное идёт первым: и пункты, где остались новые задания, и сами задания
+    внутри пункта. Случайный выбор без истории уже к десятому дню занятий давал
+    треть повторов, хотя банк уровня не был пройден и наполовину.
+    """
     points = curriculum.points_of_level(level)
     if not points:
         return []
+    seen = seen or set()
     weak = set(weak_points or [])
     weighted: list[GrammarPoint] = []
     for point in points:
@@ -152,6 +170,7 @@ def queue_for_level(
         if point.id in weak:
             weighted.extend([point, point])
     rng.shuffle(weighted)
+    weighted.sort(key=lambda point: all(f"ex:{e.id}" in seen for e in point.exercises))
 
     refs: list[str] = []
     used: set[str] = set()
@@ -159,7 +178,8 @@ def queue_for_level(
         pool = [exercise for exercise in point.exercises if exercise.id not in used]
         if not pool:
             continue
-        exercise = rng.choice(pool)
+        fresh = [exercise for exercise in pool if f"ex:{exercise.id}" not in seen]
+        exercise = rng.choice(fresh or pool)
         used.add(exercise.id)
         refs.append(f"ex:{exercise.id}")
         if len(refs) >= length:
@@ -206,8 +226,12 @@ def queue_for_review(
     rng: random.Random,
     length: int = 15,
     level: str = "",
+    seen: set[str] | None = None,
 ) -> list[str]:
     """Очередь из карточек, у которых подошёл срок повторения.
+
+    Карточка правила повторяется новым заданием этого правила, пока они есть:
+    повторение проверяет правило, а не память о конкретной фразе.
 
     Материал выше уровня ученика не поднимается: после исправления уровня в
     очереди оставались карточки прежнего, и «Повторение» превращалось в чужой
@@ -224,7 +248,9 @@ def queue_for_review(
                 continue
             if ceiling is not None and LEVEL_ORDER.get(point.level, 0) > ceiling:
                 continue
-            exercise = rng.choice(list(point.exercises))
+            pool = list(point.exercises)
+            fresh = [exercise for exercise in pool if f"ex:{exercise.id}" not in (seen or set())]
+            exercise = rng.choice(fresh or pool)
             refs.append(f"ex:{exercise.id}")
         if len(refs) >= length:
             break
@@ -299,6 +325,95 @@ def _find_vocab(curriculum: Curriculum, vocab_id: str) -> VocabItem | None:
     return None
 
 
+def senses(translation_ru: str) -> set[str]:
+    """Значения русского перевода: «стол, письменный стол» → {стол, письменный стол}."""
+    plain = re.sub(r"\([^)]*\)", "", translation_ru.lower())
+    return {part.strip() for part in re.split(r"[,;/]", plain) if part.strip()}
+
+
+def _all_vocab(curriculum: Curriculum) -> list[VocabItem]:
+    return [item for items in curriculum.vocabulary.values() for item in items]
+
+
+def _covers(asked: set[str], offered: set[str]) -> bool:
+    """Подходит ли слово с переводом `offered` на вопрос с переводом `asked`.
+
+    Только точное совпадение значения. Более узкое слово не годится: на «боль»
+    headache («головная боль») — уже не ответ. Где русский перевод честно
+    допускает другое слово (стол — table и desk), его перечисляет `accept`.
+    """
+    return bool(asked & offered)
+
+
+def accepted_forms(item: VocabItem) -> list[str]:
+    """Формы, которые засчитываются во вспоминании: глаголу — времена, существительному — число."""
+    base = item.word.strip().lower()
+    if item.pos in ("verb", "phrasal verb"):
+        return [form for form in word_forms(base) if form != base]
+    if item.pos == "noun" and " " not in base:
+        if base.endswith("y") and len(base) > 2 and base[-2] not in "aeiou":
+            return [f"{base[:-1]}ies"]
+        return [f"{base}es" if re.search(r"(s|x|z|ch|sh)$", base) else f"{base}s"]
+    return []
+
+
+def vocab_alternatives(item: VocabItem, curriculum: Curriculum) -> tuple[str, ...]:
+    """Что ещё засчитать во вспоминании, кроме заголовочного слова.
+
+    Перевод «стол» честно допускает и table, и desk: ученик, который знает оба,
+    не должен получать «Мимо». Засчитываются синонимы из `accept`, слова банка той
+    же части речи с тем же или более узким значением и формы самого слова — с
+    пометкой, какое слово было загадано.
+    """
+    mine = senses(item.translation_ru)
+    found: list[str] = list(item.accept)
+    found.extend(accepted_forms(item))
+    for other in _all_vocab(curriculum):
+        if (
+            other.id != item.id
+            and other.pos == item.pos
+            and _covers(mine, senses(other.translation_ru))
+        ):
+            found.append(other.word)
+    unique: list[str] = []
+    for word in found:
+        if word.lower() != item.word.lower() and word.lower() not in (x.lower() for x in unique):
+            unique.append(word)
+    return tuple(unique)
+
+
+def _distractor_pool(item: VocabItem, curriculum: Curriculum) -> list[VocabItem]:
+    """Обманки того же уровня и части речи, ни одна из которых не верна сама.
+
+    Слово с общим значением («на» — on и at) или из `accept` выбывает: иначе
+    кнопка с верным ответом засчитывалась бы ошибкой. Если на уровне не хватает
+    слов этой части речи, пул добирается с соседних уровней.
+    """
+    mine = senses(item.translation_ru)
+    blocked = {word.lower() for word in item.accept} | {item.word.lower()}
+
+    def fits(other: VocabItem) -> bool:
+        theirs = senses(other.translation_ru)
+        return (
+            other.id != item.id
+            and other.pos == item.pos
+            and other.word.lower() not in blocked
+            and item.word.lower() not in (word.lower() for word in other.accept)
+            and not _covers(mine, theirs)
+        )
+
+    pool = [other for other in curriculum.vocab_of_level(item.level) if fits(other)]
+    if len(pool) < 3:
+        order = LEVEL_ORDER.get(item.level, 0)
+        for level, index in sorted(LEVEL_ORDER.items(), key=lambda pair: abs(pair[1] - order)):
+            if level == item.level:
+                continue
+            pool.extend(other for other in curriculum.vocab_of_level(level) if fits(other))
+            if len(pool) >= 3:
+                break
+    return pool
+
+
 def vocab_question(
     item: VocabItem, curriculum: Curriculum, rng: random.Random, recognise: bool = False
 ) -> Question:
@@ -308,11 +423,7 @@ def vocab_question(
     из общего `rng`. Иначе один и тот же вопрос при показе и при проверке ответа
     получал бы разный порядок вариантов, и нажатая буква оценивала бы чужой вариант.
     """
-    pool = [
-        other
-        for other in curriculum.vocab_of_level(item.level)
-        if other.id != item.id and other.pos == item.pos
-    ]
+    pool = _distractor_pool(item, curriculum)
     if recognise and pool:
         seed = int(hashlib.sha1(f"vocab:r:{item.id}".encode()).hexdigest()[:12], 16)
         stable = random.Random(seed)
@@ -335,16 +446,16 @@ def vocab_question(
             card_key=item.id,
         )
 
-    hint = item.example_en.replace(item.word, "___") if item.word in item.example_en else ""
+    masked = mask_word(item.example_en, item.word, blank="___")
     prompt = f"Как по-английски «{item.translation_ru}»? ({item.pos})"
-    if hint:
-        prompt += f"\nПодсказка: {hint}"
+    if masked != item.example_en:
+        prompt += f"\nПодсказка: {masked}"
     return Question(
         ref=f"vocab:p:{item.id}",
         kind="gap",
         prompt=prompt,
         options=(),
-        expected=(item.word,),
+        expected=(item.word, *vocab_alternatives(item, curriculum)),
         explanation_ru=f"{item.word} {item.ipa_us} — {item.translation_ru}. {item.example_en}",
         difficulty=2,
         point_id="",
@@ -359,47 +470,165 @@ def vocab_question(
 # ── справка по теме ──────────────────────────────────────────────
 
 
-def point_help(point: GrammarPoint, limit_examples: int = 5) -> str:
+def _plain(text: str) -> str:
+    """Текст для сравнения фраз: без регистра, пунктуации и сокращений."""
+    return " ".join(re.findall(r"[a-z0-9']+", normalize(text).replace("’", "'")))
+
+
+def revealing_texts(question: "Question") -> tuple[str, ...]:
+    """Фразы, которые выдали бы ответ на текущее задание: само верное предложение.
+
+    Для пропуска и выбора — условие с подставленным ответом и без подсказки в
+    скобках, для остальных видов — эталон и допустимые варианты.
+    """
+    if question.card_type != "point":
+        return ()
+    found: list[str] = []
+    for answer in question.expected:
+        if "___" in question.prompt:
+            filled = re.sub(r"___(?:\s*___)*", answer, question.prompt, count=1)
+            filled = re.sub(r"\s*\([^)]*\)", "", filled)
+            found.extend(line for line in filled.split("\n") if answer.lower() in line.lower())
+        else:
+            found.append(answer)
+    return tuple(_plain(text) for text in found if len(_plain(text).split()) >= 3)
+
+
+def _reveals(text: str, hidden: tuple[str, ...]) -> bool:
+    plain = _plain(text)
+    return any(secret in plain or (len(plain.split()) >= 3 and plain in secret) for secret in hidden)
+
+
+_ENGLISH_RUN = re.compile(r"[A-Za-z][A-Za-z0-9'’\- ,]*[A-Za-z0-9][.!?]?")
+
+
+def _mask_secrets(text: str, hidden: tuple[str, ...]) -> str:
+    """Заменяет многоточием английские фразы, совпавшие с ответом; русский текст правила остаётся."""
+    if not hidden:
+        return text
+
+    def replace(found: re.Match[str]) -> str:
+        chunk = found.group(0)
+        return "…" if len(_plain(chunk).split()) >= 3 and _reveals(chunk, hidden) else chunk
+
+    return _ENGLISH_RUN.sub(replace, text)
+
+
+def point_help(point: GrammarPoint, limit_examples: int = 5, hide: tuple[str, ...] = ()) -> str:
     """Разбор правила для подсказки — как вкладка Explanation на test-english.com.
 
     Подсказка обязана учить, а не сдавать ответ: сужение вариантов («точно не A»)
     и первые буквы ответа ничего не объясняют и на следующем таком же задании не
     помогут. Здесь ученик получает само правило, его формы и разобранные примеры.
     """
-    lines = [f"💡 {point.title_ru}", "", point.summary_ru]
-    if point.forms:
+    # Карточка открывается, пока вопрос не решён: фраза-ответ прячется везде —
+    # в объяснении, схемах, примерах и ловушке, а само правило остаётся.
+    lines = [f"💡 {point.title_ru}", "", _mask_secrets(point.summary_ru, hide)]
+    forms = [_mask_secrets(form, hide) for form in point.forms]
+    examples = [example for example in point.examples if not _reveals(example, hide)]
+    if forms:
         lines.append("")
         lines.append("Как строится:")
-        lines.extend(f"• {form}" for form in point.forms)
-    if point.examples:
+        lines.extend(f"• {form}" for form in forms)
+    if examples:
         lines.append("")
         lines.append("Примеры:")
-        lines.extend(f"• {example}" for example in point.examples[:limit_examples])
+        lines.extend(f"• {example}" for example in examples[:limit_examples])
     if point.ru_interference:
         lines.append("")
-        lines.append(f"⚠️ Ловушка для русскоязычных: {point.ru_interference}")
+        lines.append(f"⚠️ Ловушка для русскоязычных: {_mask_secrets(point.ru_interference, hide)}")
     return "\n".join(lines)
 
 
 BLANK = "…"
 
+# Неправильные глаголы из банков лексики: без них «went» выдавало бы «go» в
+# подсказке, а во вспоминании «came up with» не засчитывалось бы формой слова.
+IRREGULAR: dict[str, tuple[str, ...]] = {
+    "arise": ("arose", "arisen"), "be": ("am", "is", "are", "was", "were", "been", "being"),
+    "bear": ("bore", "borne"), "become": ("became",), "begin": ("began", "begun"),
+    "bend": ("bent",), "bind": ("bound",), "bite": ("bit", "bitten"), "blow": ("blew", "blown"),
+    "break": ("broke", "broken"), "breed": ("bred",), "bring": ("brought",), "build": ("built",),
+    "buy": ("bought",), "catch": ("caught",), "choose": ("chose", "chosen"), "cling": ("clung",),
+    "come": ("came",), "creep": ("crept",), "deal": ("dealt",), "dig": ("dug",),
+    "do": ("did", "done", "does"), "draw": ("drew", "drawn"), "drink": ("drank", "drunk"),
+    "drive": ("drove", "driven"), "eat": ("ate", "eaten"), "fall": ("fell", "fallen"),
+    "feed": ("fed",), "feel": ("felt",), "fight": ("fought",), "find": ("found",),
+    "flee": ("fled",), "fly": ("flew", "flown", "flies"), "forbid": ("forbade", "forbidden"),
+    "foresee": ("foresaw", "foreseen"), "forget": ("forgot", "forgotten"),
+    "forgive": ("forgave", "forgiven"), "freeze": ("froze", "frozen"),
+    "get": ("got", "gotten"), "give": ("gave", "given"), "go": ("went", "gone", "goes"),
+    "grow": ("grew", "grown"), "hang": ("hung",), "have": ("had", "has"), "hear": ("heard",),
+    "hide": ("hid", "hidden"), "hold": ("held",), "keep": ("kept",), "know": ("knew", "known"),
+    "lay": ("laid",), "lead": ("led",), "leave": ("left",), "lend": ("lent",), "lie": ("lay", "lain"),
+    "lose": ("lost",), "make": ("made",), "mean": ("meant",), "meet": ("met",),
+    "overcome": ("overcame",), "pay": ("paid",), "ride": ("rode", "ridden"), "ring": ("rang", "rung"),
+    "rise": ("rose", "risen"), "run": ("ran",), "say": ("said",), "see": ("saw", "seen"),
+    "seek": ("sought",), "sell": ("sold",), "send": ("sent",), "shake": ("shook", "shaken"),
+    "shine": ("shone",), "shoot": ("shot",), "show": ("shown",), "sing": ("sang", "sung"),
+    "sit": ("sat",), "sleep": ("slept",), "speak": ("spoke", "spoken"), "spend": ("spent",),
+    "stand": ("stood",), "steal": ("stole", "stolen"), "stick": ("stuck",), "strike": ("struck",),
+    "strive": ("strove", "striven"), "swear": ("swore", "sworn"), "sweep": ("swept",),
+    "swim": ("swam", "swum"), "take": ("took", "taken"), "teach": ("taught",),
+    "tear": ("tore", "torn"), "tell": ("told",), "think": ("thought",), "throw": ("threw", "thrown"),
+    "undertake": ("undertook", "undertaken"), "understand": ("understood",),
+    "wake": ("woke", "woken"), "wear": ("wore", "worn"), "weep": ("wept",), "win": ("won",),
+    "wind": ("wound",), "withdraw": ("withdrew", "withdrawn"), "write": ("wrote", "written"),
+}
+
+
+# Двусложные с ударением на последнем слоге удваивают согласную, как односложные.
+DOUBLING = frozenset({
+    "admit", "commit", "submit", "permit", "omit", "emit", "refer", "prefer", "occur",
+    "deter", "regret", "control", "compel", "expel", "propel", "rebel", "equip", "upset",
+})
+
+
+def _single_forms(base: str) -> set[str]:
+    """Настоящие формы одного слова: без «comeed» и «stoped».
+
+    Формы идут и в маску подсказки, и в засчитанные ответы вспоминания, поэтому
+    выдуманная форма здесь означала бы засчитанную орфографическую ошибку.
+    """
+    forms = {base}
+    vowels = len(re.findall(r"[aeiouy]+", base))
+    if base.endswith("ee") or base == "be":
+        forms |= {f"{base}s", f"{base}d", f"{base}ing"}
+    elif base.endswith("e"):
+        forms |= {f"{base}s", f"{base}d", f"{base[:-1]}ing"}
+    elif base.endswith("y") and len(base) > 2 and base[-2] not in "aeiou":
+        forms |= {f"{base[:-1]}ies", f"{base[:-1]}ied", f"{base}ing"}
+    elif (vowels == 1 or base in DOUBLING) and re.fullmatch(r"[a-z]*[^aeiou][aeiou][bdgklmnprt]", base):
+        forms |= {f"{base}s", f"{base}{base[-1]}ed", f"{base}{base[-1]}ing"}
+    else:
+        plural = f"{base}es" if re.search(r"(s|x|z|ch|sh|o)$", base) else f"{base}s"
+        forms |= {plural, f"{base}ed", f"{base}ing"}
+    if base in IRREGULAR:
+        # Прошедшее у неправильных глаголов своё: «comed» и «maked» не формы.
+        forms = {form for form in forms if not form.endswith("ed") and form != f"{base}d"}
+        forms |= set(IRREGULAR[base])
+        if base in {"be", "have", "do", "go"}:
+            forms -= {f"{base}s", f"{base}es"}
+    return forms
+
 
 def word_forms(word: str) -> list[str]:
-    """Слово и его частотные формы — чтобы «schedule» не утекло как «scheduled»."""
+    """Слово и его частотные формы — чтобы «schedule» не утекло как «scheduled».
+
+    У фразового глагола меняется только первое слово: came up with, checked in.
+    """
     base = word.strip().lower()
-    forms = {base, f"{base}s", f"{base}es", f"{base}ed", f"{base}ing"}
-    if base.endswith("e"):
-        forms |= {f"{base[:-1]}ing", f"{base}d"}
-    if base.endswith("y") and len(base) > 2:
-        forms |= {f"{base[:-1]}ies", f"{base[:-1]}ied"}
+    head, _, tail = base.partition(" ")
+    forms = {f"{form} {tail}".strip() for form in _single_forms(head)} if tail else _single_forms(base)
+    forms.add(base)
     return sorted(forms, key=len, reverse=True)
 
 
-def mask_word(text: str, word: str) -> str:
+def mask_word(text: str, word: str, blank: str = BLANK) -> str:
     """Прячет слово во всех формах, но только целиком: «go» не должно съесть «good»."""
     masked = text
     for form in word_forms(word):
-        masked = re.sub(rf"\b{re.escape(form)}\b", BLANK, masked, flags=re.IGNORECASE)
+        masked = re.sub(rf"\b{re.escape(form)}\b", blank, masked, flags=re.IGNORECASE)
     return masked
 
 
@@ -438,7 +667,9 @@ def help_for(question: "Question", curriculum: Curriculum) -> str:
         item = _find_vocab(curriculum, question.card_key)
         return vocab_help(item) if item else "По этому слову справки нет."
     point = curriculum.point(question.point_id)
-    return point_help(point) if point else "По этой теме справки нет."
+    if point is None:
+        return "По этой теме справки нет."
+    return point_help(point, hide=revealing_texts(question))
 
 
 # ── проверка ─────────────────────────────────────────────────────
@@ -450,6 +681,9 @@ class Verdict:
     understood: bool
     selected_index: int | None
     expected_text: str
+    # Пояснение к засчитанному ответу: опечатка, фрагмент вместо предложения,
+    # другое слово с тем же значением.
+    note: str = ""
 
 
 def check(question: Question, text: str) -> Verdict:
@@ -472,12 +706,23 @@ def check(question: Question, text: str) -> Verdict:
             normalize(chosen) == normalize(expected_text), True, index, expected_text
         )
 
+    # Ссылка на упражнение несёт его id: по нему сверка узнаёт пункт про
+    # пунктуацию, где запятая — предмет задания.
     probe = Exercise(
-        id=question.ref, kind=question.kind, prompt=question.prompt, explanation_ru="",
+        id=question.ref.partition(":")[2] or question.ref, kind=question.kind,
+        prompt=question.prompt, explanation_ru="",
         answer=question.expected[0] if question.expected else "",
         accept=tuple(question.expected[1:]),
     )
-    return Verdict(matches(probe, text), True, None, expected_text)
+    result = grade(probe, text)
+    note = result.note
+    if (
+        result.correct
+        and question.card_type == "vocab"
+        and normalize(result.matched) != normalize(expected_text)
+    ):
+        note = f"Засчитано. Загадано слово: {expected_text}."
+    return Verdict(result.correct, True, None, expected_text, note)
 
 
 def _expected_index(question: Question) -> int | None:

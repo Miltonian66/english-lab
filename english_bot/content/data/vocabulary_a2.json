@@ -967,20 +967,6 @@
       "topic": "health"
     },
     {
-      "id": "a2_v_tired",
-      "level": "A2",
-      "word": "tired",
-      "pos": "adjective",
-      "ipa_us": "/ˈtaɪɚd/",
-      "translation_ru": "уставший",
-      "example_en": "I was very tired after the long meeting.",
-      "collocations": [
-        "feel tired",
-        "get tired"
-      ],
-      "topic": "health"
-    },
-    {
       "id": "a2_v_sick",
       "level": "A2",
       "word": "sick",
@@ -1247,20 +1233,6 @@
       "topic": "food"
     },
     {
-      "id": "a2_v_hungry",
-      "level": "A2",
-      "word": "hungry",
-      "pos": "adjective",
-      "ipa_us": "/ˈhʌŋgri/",
-      "translation_ru": "голодный",
-      "example_en": "I am hungry, so let's have lunch now.",
-      "collocations": [
-        "feel hungry",
-        "very hungry"
-      ],
-      "topic": "food"
-    },
-    {
       "id": "a2_v_snack",
       "level": "A2",
       "word": "snack",
@@ -1401,20 +1373,6 @@
       "topic": "feelings"
     },
     {
-      "id": "a2_v_get_up",
-      "level": "A2",
-      "word": "get up",
-      "pos": "phrasal verb",
-      "ipa_us": "/gɛt ˈʌp/",
-      "translation_ru": "вставать, подниматься",
-      "example_en": "I get up at seven on weekdays.",
-      "collocations": [
-        "get up early",
-        "get up late"
-      ],
-      "topic": "time"
-    },
-    {
       "id": "a2_v_wake_up",
       "level": "A2",
       "word": "wake up",
@@ -1427,20 +1385,6 @@
         "wake somebody up"
       ],
       "topic": "time"
-    },
-    {
-      "id": "a2_v_turn_on",
-      "level": "A2",
-      "word": "turn on",
-      "pos": "phrasal verb",
-      "ipa_us": "/tɝn ˈɑn/",
-      "translation_ru": "включать",
-      "example_en": "Turn on the light, please.",
-      "collocations": [
-        "turn on the TV",
-        "turn on the light"
-      ],
-      "topic": "tech"
     },
     {
       "id": "a2_v_turn_off",

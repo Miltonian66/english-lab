@@ -18,7 +18,7 @@
       "level": "A1",
       "title_ru": "Статус за день",
       "prompt_en": "Write a short end-of-day status for your team chat: what you finished today, what is still open, and what you plan to do tomorrow.",
-      "guidance_ru": "Три предложения. Что сделал сегодня — past simple: I fixed two bugs. Что не готово — The report is not ready. Что завтра — Tomorrow I will finish the report. Никаких длинных объяснений.",
+      "guidance_ru": "Пять-шесть коротких предложений, всего 30–50 слов. Что сделал сегодня — два предложения в past simple: I fixed two bugs. I tested the login page. Что не готово — одно-два: The report is not ready. I need more data. Что завтра — одно-два с will: Tomorrow I will finish the report. Коротко, но с деталями.",
       "words_min": 30,
       "words_max": 50,
       "focus": [
@@ -31,7 +31,7 @@
       "level": "A1",
       "title_ru": "Просьба о помощи",
       "prompt_en": "Write a message to a teammate. You cannot open the test server and you need help. Say what the problem is, what you already tried, and ask for help.",
-      "guidance_ru": "Начни с Hi и имени. Дальше: проблема — I cannot open the test server. Что уже пробовал — I tried a different browser. Просьба в конце — Can you help me? Вопрос заканчивай вопросительным знаком.",
+      "guidance_ru": "Начни с Hi и имени. Дальше пять-шесть коротких предложений, всего 30–50 слов. Проблема — I cannot open the test server. Что уже пробовал — два предложения: I tried another browser. I restarted my laptop. Зачем нужно — I need the server for my task today. Просьба в конце — Can you help me? Вопрос заканчивай вопросительным знаком.",
       "words_min": 30,
       "words_max": 50,
       "focus": [
@@ -44,7 +44,7 @@
       "level": "A1",
       "title_ru": "Короткий баг-репорт",
       "prompt_en": "Write a short bug report for the tracker. The mobile app closes when a user opens the payment page. Say what you did, what happened, and what you expected.",
-      "guidance_ru": "Три части по одному предложению: что сделал — I opened the payment page. Что случилось — The app closed. Чего ждал — I expected to see the price. Всё в past simple.",
+      "guidance_ru": "Пять-шесть коротких предложений, всего 30–50 слов, всё в past simple. Что сделал — два предложения: I opened the app. I went to the payment page. Что случилось — одно-два: The app closed. I lost my order. Чего ждал — одно: I expected to see the price. В конце — на чём проверял: I used an Android phone.",
       "words_min": 30,
       "words_max": 50,
       "focus": [

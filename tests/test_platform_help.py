@@ -29,6 +29,11 @@ class PlatformKnowledgeTests(unittest.TestCase):
         self.assertTrue(found)
         self.assertEqual(found[0].id, "diagnostics")
 
+    def test_answer_checking_article_is_found_by_a_learner_complaint(self) -> None:
+        found = find_articles("Почему бот не засчитал ответ из-за опечатки?")
+        self.assertTrue(found)
+        self.assertEqual(found[0].id, "answer_checking")
+
     def test_unrelated_question_has_no_results(self) -> None:
         self.assertEqual(find_articles("Сколько варить пельмени?"), ())
 

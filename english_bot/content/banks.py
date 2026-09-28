@@ -36,6 +36,9 @@ class VocabItem:
     example_en: str
     collocations: tuple[str, ...] = ()
     topic: str = ""
+    # Другие верные ответы при вспоминании по переводу: «начинать» — это и
+    # start, и begin. Слова банка с общим значением засчитываются и без этого.
+    accept: tuple[str, ...] = ()
 
 
 @dataclass(frozen=True)
@@ -141,6 +144,7 @@ def parse_vocab(raw: object, where: str) -> VocabItem:
         example_en=_text(data.get("example_en"), "example_en", where, 8),
         collocations=_tuple(data.get("collocations"), "collocations", where),
         topic=str(data.get("topic") or "").strip(),
+        accept=_tuple(data.get("accept"), "accept", where),
     )
 
 

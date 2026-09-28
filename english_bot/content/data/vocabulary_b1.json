@@ -115,20 +115,6 @@
       "topic": "money"
     },
     {
-      "id": "b1_v_salary",
-      "level": "B1",
-      "word": "salary",
-      "pos": "noun",
-      "ipa_us": "/ˈsæləri/",
-      "translation_ru": "зарплата, оклад",
-      "example_en": "He changed jobs because the salary was much better.",
-      "collocations": [
-        "a high salary",
-        "a monthly salary"
-      ],
-      "topic": "money"
-    },
-    {
       "id": "b1_v_staff",
       "level": "B1",
       "word": "staff",
@@ -269,20 +255,6 @@
       "topic": "study"
     },
     {
-      "id": "b1_v_interview",
-      "level": "B1",
-      "word": "interview",
-      "pos": "noun",
-      "ipa_us": "/ˈɪntɚˌvju/",
-      "translation_ru": "собеседование, интервью",
-      "example_en": "My interview for the developer job is on Thursday.",
-      "collocations": [
-        "a job interview",
-        "have an interview"
-      ],
-      "topic": "work"
-    },
-    {
       "id": "b1_v_feedback",
       "level": "B1",
       "word": "feedback",
@@ -295,20 +267,6 @@
         "honest feedback"
       ],
       "topic": "work"
-    },
-    {
-      "id": "b1_v_appointment",
-      "level": "B1",
-      "word": "appointment",
-      "pos": "noun",
-      "ipa_us": "/əˈpɔɪntmənt/",
-      "translation_ru": "встреча, приём",
-      "example_en": "I have an appointment with the dentist at six o'clock.",
-      "collocations": [
-        "make an appointment",
-        "cancel an appointment"
-      ],
-      "topic": "time"
     },
     {
       "id": "b1_v_opportunity",
@@ -351,20 +309,6 @@
         "set priorities"
       ],
       "topic": "work"
-    },
-    {
-      "id": "b1_v_delay",
-      "level": "B1",
-      "word": "delay",
-      "pos": "noun",
-      "ipa_us": "/dɪˈleɪ/",
-      "translation_ru": "задержка, опоздание",
-      "example_en": "There was a short delay because the server was down.",
-      "collocations": [
-        "a long delay",
-        "without delay"
-      ],
-      "topic": "time"
     },
     {
       "id": "b1_v_decision",
@@ -1403,20 +1347,6 @@
       "topic": "work"
     },
     {
-      "id": "b1_v_find_out",
-      "level": "B1",
-      "word": "find out",
-      "pos": "phrasal verb",
-      "ipa_us": "/ˌfaɪnd ˈaʊt/",
-      "translation_ru": "выяснять, узнавать",
-      "example_en": "I will find out who changed the settings yesterday.",
-      "collocations": [
-        "find out the truth",
-        "find out what happened"
-      ],
-      "topic": "work"
-    },
-    {
       "id": "b1_v_look_after",
       "level": "B1",
       "word": "look after",
@@ -1499,20 +1429,6 @@
         "work out a solution"
       ],
       "topic": "work"
-    },
-    {
-      "id": "b1_v_give_up",
-      "level": "B1",
-      "word": "give up",
-      "pos": "phrasal verb",
-      "ipa_us": "/ˌgɪv ˈʌp/",
-      "translation_ru": "сдаваться, бросать",
-      "example_en": "Do not give up if the first solution does not work.",
-      "collocations": [
-        "give up easily",
-        "never give up"
-      ],
-      "topic": "feelings"
     },
     {
       "id": "b1_v_look_forward_to",

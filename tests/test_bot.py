@@ -966,12 +966,18 @@ class ListeningTests(BotTestCase):
         self.assertEqual(user.state, "idle")
         self.assertIn("Голос сейчас не настроен", self.telegram.all_text())
 
+    def key_position(self, task) -> int:
+        """Кнопка несёт позицию в порядке показа, а не индекс из файла."""
+        from english_bot.handlers.listening import shown_order
+
+        return shown_order(task, self.bot.curriculum).index(task.correct_index)
+
     def test_correct_answer_records_progress_and_reveals_the_script(self) -> None:
         self.press(100, "listen")
         task = self.task()
         code = self.bot.curriculum.listening_code(task.id)
         self.telegram.reset()
-        self.press(100, f"la:{code}:{task.correct_index}")
+        self.press(100, f"la:{code}:{self.key_position(task)}")
 
         user = self.bot.storage.user(100)
         assert user is not None
@@ -980,6 +986,23 @@ class ListeningTests(BotTestCase):
         self.assertIn("listening", self.bot.storage.skills(100))
         self.assertIn(task.script_en, self.telegram.all_text())
         self.assertIn("✅ Верно", self.telegram.all_text())
+
+    def test_options_are_shown_in_balanced_order_not_file_order(self) -> None:
+        """Ключ стоял на B в 16 из 30 заданий: «всегда B» проходило аудирование."""
+        import collections
+
+        from english_bot.handlers.listening import shown_order
+
+        tasks = [task for rows in self.bot.curriculum.listening.values() for task in rows]
+        letters = collections.Counter(
+            shown_order(task, self.bot.curriculum).index(task.correct_index) for task in tasks
+        )
+        self.assertLessEqual(max(letters.values()) - min(letters.values()), 1)
+        self.press(100, "listen")
+        task = self.task()
+        _, _, caption = self.telegram.voices[-1]
+        letter = "ABCD"[self.key_position(task)]
+        self.assertIn(f"{letter}. {task.options[task.correct_index]}", caption)
 
     def test_replay_reuses_telegram_file_and_does_not_resynthesize(self) -> None:
         self.press(100, "listen")
@@ -996,10 +1019,10 @@ class ListeningTests(BotTestCase):
         self.press(100, "listen")
         first = self.task()
         first_code = self.bot.curriculum.listening_code(first.id)
-        self.press(100, f"la:{first_code}:{first.correct_index}")
+        self.press(100, f"la:{first_code}:{self.key_position(first)}")
         self.press(100, "listen")
         before = self.bot.storage.session_totals(100, "listening")
-        self.press(100, f"la:{first_code}:{first.correct_index}")
+        self.press(100, f"la:{first_code}:{self.key_position(first)}")
         self.assertEqual(self.bot.storage.session_totals(100, "listening"), before)
         self.assertIn("уже закрыто", self.telegram.answered[-1])
 

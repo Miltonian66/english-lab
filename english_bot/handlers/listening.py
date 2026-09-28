@@ -7,7 +7,9 @@ from pathlib import Path
 
 from ..ai.tts import SpeechError
 from ..content.banks import ListeningTask
+from ..content.registry import Curriculum
 from ..context import SPEECH_OFF_TEXT, Context, Ticket
+from ..learning.answers import option_order
 from ..learning.progress import skill_level
 from ..runtime import Job
 from ..storage import User
@@ -65,7 +67,7 @@ def _listening_job(job: Job, ctx: Context, ticket: Ticket, code: str) -> None:
         return
     job.checkpoint()
 
-    caption = _caption(task)
+    caption = _caption(task, ctx.curriculum)
     try:
         file_id = ctx.telegram.send_voice(
             ticket.chat_id, audio, caption, reply_markup=_answer_keyboard(task, code)
@@ -105,7 +107,7 @@ def remind_listening(ctx: Context, user: User) -> None:
         ctx.reset_state(user)
         ctx.say(user, "Задание потерялось. Возьми новое — «📊 Я» → «🎧 Аудирование».")
         return
-    ctx.say(user, _caption(task), _answer_keyboard(task, code))
+    ctx.say(user, _caption(task, ctx.curriculum), _answer_keyboard(task, code))
 
 
 def callback_listening(ctx: Context, user: User, payload: str) -> str:
@@ -127,13 +129,17 @@ def callback_answer(ctx: Context, user: User, payload: str) -> str:
         return "это задание уже закрыто"
     task = ctx.curriculum.listening_by_code(code)
     try:
-        selected = int(raw_index)
+        position = int(raw_index)
     except ValueError:
         return "не понял вариант"
-    if task is None or not 0 <= selected < len(task.options):
+    if task is None or not 0 <= position < len(task.options):
         return "задание не найдено"
 
+    # Кнопка несёт позицию в порядке показа, а ключ хранится в порядке файла.
+    order = shown_order(task, ctx.curriculum)
+    selected = order[position]
     correct = selected == task.correct_index
+    key_letter = LETTERS[order.index(task.correct_index)]
     session_id = int(user.state_data.get("session_id") or 0)
     plays = int(user.state_data.get("plays") or 1)
     if session_id:
@@ -162,7 +168,7 @@ def callback_answer(ctx: Context, user: User, payload: str) -> str:
     ctx.say(
         user,
         f"{status}\n\n"
-        f"Правильный ответ: {LETTERS[task.correct_index]}. {answer}\n"
+        f"Правильный ответ: {key_letter}. {answer}\n"
         f"Почему: {task.explanation_ru}\n\n"
         f"Текст записи:\n{task.script_en}\n\n"
         f"Прослушиваний: {plays} · результат по аудированию: {right}/{total}",
@@ -171,7 +177,7 @@ def callback_answer(ctx: Context, user: User, payload: str) -> str:
              [("Прогресс", "progress")]]
         ),
     )
-    return "верно" if correct else f"ответ {LETTERS[task.correct_index]}"
+    return "верно" if correct else f"ответ {key_letter}"
 
 
 def callback_replay(ctx: Context, user: User, payload: str) -> str:
@@ -198,7 +204,7 @@ def callback_replay(ctx: Context, user: User, payload: str) -> str:
 
     try:
         ctx.telegram.send_voice_by_id(
-            user.chat_id, file_id, _caption(task), reply_markup=_answer_keyboard(task, code)
+            user.chat_id, file_id, _caption(task, ctx.curriculum), reply_markup=_answer_keyboard(task, code)
         )
     except TelegramError:
         LOGGER.warning("Не удалось повторно отправить аудирование")
@@ -221,7 +227,7 @@ def _replay_job(
         file_id = ctx.telegram.send_voice(
             ticket.chat_id,
             Path(audio_path),
-            _caption(task),
+            _caption(task, ctx.curriculum),
             reply_markup=_answer_keyboard(task, code),
         )
     except TelegramError:
@@ -239,8 +245,28 @@ def _replay_job(
     ctx.hold_state(ticket, "listening", state)
 
 
-def _caption(task: ListeningTask) -> str:
-    options = "\n".join(f"{LETTERS[index]}. {option}" for index, option in enumerate(task.options))
+def shown_order(task: ListeningTask, curriculum: Curriculum) -> tuple[int, ...]:
+    """Порядок показа вариантов: устойчивый для задания и не порядок из файла.
+
+    В банке ключ стоял на B в 16 из 30 заданий, и «всегда B» давало больше
+    половины верных ответов без понимания записи. Случайное перемешивание на
+    тридцати заданиях тоже даёт перекос, поэтому позиция ключа идёт по кругу
+    A, B, C, D по всему банку, а остальные варианты перемешаны по id.
+    """
+    count = len(task.options)
+    ordered = sorted(
+        (item for rows in curriculum.listening.values() for item in rows), key=lambda item: item.id
+    )
+    position = next((index for index, item in enumerate(ordered) if item.id == task.id), 0) % count
+    others = [index for index in option_order(task.id, count) if index != task.correct_index]
+    return tuple(others[:position] + [task.correct_index] + others[position:])
+
+
+def _caption(task: ListeningTask, curriculum: Curriculum) -> str:
+    options = "\n".join(
+        f"{LETTERS[position]}. {task.options[index]}"
+        for position, index in enumerate(shown_order(task, curriculum))
+    )
     skill = SKILL_LABELS.get(task.skill, task.skill)
     return (
         f"🎧 {task.title_ru} · {task.level} · {skill}\n\n"

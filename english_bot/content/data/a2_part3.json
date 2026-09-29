@@ -1751,8 +1751,7 @@
           "prompt": "He ___ (work) here since 2020.",
           "answer": "has worked",
           "accept": [
-            "has been working",
-            "'s worked"
+            "has been working"
           ],
           "explanation_ru": "Since 2020 показывает период до настоящего момента, поэтому нужен Present Perfect, а не настоящее время.",
           "difficulty": 2

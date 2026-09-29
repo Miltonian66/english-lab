@@ -198,8 +198,7 @@
        "always gets up"
       ],
       [
-       "is never",
-       "'s never"
+       "is never"
       ],
       [
        "doesn't usually eat",
@@ -223,7 +222,7 @@
    "title_en": "Past simple: Negatives and questions",
    "source_slug": "past-simple-negatives-questions",
    "title_ru": "Past Simple: отрицания и вопросы",
-   "summary_ru": "В Past Simple отрицание и вопрос строятся со вспомогательным глаголом did. Отрицание: подлежащее + didn't + первая форма глагола: I didn't call her. Вопрос: Did + подлежащее + первая форма: Did you send the file? После did основной глагол никогда не имеет -ed и не стоит во второй форме. Вопросительное слово ставится перед did: Where did you eat? Форма did одинакова для всех лиц. Глагол be — исключение: у него нет did, вместо этого используются was и were: Was he at home? Короткие ответы: Yes, I did. / No, I didn't.",
+   "summary_ru": "В Past Simple отрицание и вопрос строятся со вспомогательным глаголом did. Отрицание: подлежащее + didn't + первая форма глагола: I didn't lock the door. Вопрос: Did + подлежащее + первая форма: Did you send the file? После did основной глагол никогда не имеет -ed и не стоит во второй форме. Вопросительное слово ставится перед did: Where did you eat? Форма did одинакова для всех лиц. Глагол be — исключение: у него нет did, вместо этого используются was и were: Was he at home? Короткие ответы: Yes, I did. / No, I didn't.",
    "forms": [
     "subject + didn't + V1",
     "Did + subject + V1?",
@@ -787,7 +786,7 @@
    "title_en": "Present simple forms of 'to be': am/is/are",
    "source_slug": "present-simple-forms-of-to-be",
    "title_ru": "Формы глагола to be: am, is, are",
-   "summary_ru": "Глагол be в настоящем времени имеет три формы: am с I, is с he, she, it, are с you, we, they. Утверждение: I am at work. She is a developer. They are in the office. Отрицание образуется словом not сразу после be: I'm not busy. He isn't here. We aren't ready. Вопрос строится простой перестановкой: Am I late? Is he your brother? Are you free? Вспомогательный do с глаголом be не употребляется. В коротких ответах be повторяется: Yes, I am. / No, she isn't. В английском связка обязательна, даже если в русском переводе её нет.",
+   "summary_ru": "Глагол be в настоящем времени имеет три формы: am с I, is с he, she, it, are с you, we, they. Утверждение: I am at work. She is a developer. They are in the office. Отрицание образуется словом not сразу после be: I'm not busy. He isn't here. We aren't ready. Вопрос строится простой перестановкой: Am I late? Is it far? Are you free? Вспомогательный do с глаголом be не употребляется. В коротких ответах be повторяется: Yes, I am. / No, she isn't. В английском связка обязательна, даже если в русском переводе её нет.",
    "forms": [
     "I am / he, she, it is / you, we, they are",
     "I'm not / he isn't / they aren't",
@@ -796,7 +795,7 @@
    ],
    "examples": [
     "I am a tester on a small team.",
-    "Our teachers are from Canada.",
+    "Our teachers are very kind.",
     "My kids aren't at school today.",
     "Is your dad a doctor?",
     "Is it cold outside?"
@@ -991,8 +990,7 @@
       ],
       [
        "isn't",
-       "is not",
-       "'s not"
+       "is not"
       ],
       [
        "Are you"
@@ -1193,7 +1191,7 @@
    ],
    "examples": [
     "I work on a small IT team.",
-    "My aunt works in a hotel.",
+    "My aunt teaches math.",
     "He doesn't eat meat.",
     "Do your kids speak Spanish?",
     "My dad fixes old cars."

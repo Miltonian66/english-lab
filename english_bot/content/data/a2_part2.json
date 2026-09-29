@@ -918,7 +918,9 @@
             "I didn't say anything to anybody.",
             "I didn't say anything to anyone.",
             "I said nothing to anybody.",
-            "I said nothing to anyone."
+            "I said nothing to anyone.",
+            "I haven't told anybody anything.",
+            "I haven't told anyone anything."
           ],
           "explanation_ru": "В английском одно отрицание на предложение, сколько бы «ни-» ни было в русском: после didn't все слова идут с any-: I didn't tell anybody anything. Если отрицание несёт no-слово, глагол утвердительный: I told nobody anything. I didn't tell nobody nothing — калька с тройным отрицанием.",
           "difficulty": 3
@@ -1301,7 +1303,8 @@
             "How many siblings have you got?"
           ],
           "explanation_ru": "Brothers и sisters исчисляемые, поэтому how many, а не how much. «У тебя есть» — do you have, и do стоит перед подлежащим: How many brothers and sisters do you have?",
-          "difficulty": 2
+          "difficulty": 2,
+          "diagnostic": false
         }
       ]
     },
@@ -1329,7 +1332,7 @@
         "The server isn't fast enough.",
         "She is tall enough to reach the top shelf."
       ],
-      "ru_interference": "Русский порядок слов даёт 'достаточно большой' перед прилагательным: неверно 'The room is enough big' -> верно 'The room is big enough'.",
+      "ru_interference": "Русский порядок слов даёт 'достаточно тёплая' перед прилагательным: неверно 'The water is enough warm' -> верно 'The water is warm enough'.",
       "prerequisites": [
         "a1_adjectives",
         "a1_much_many_lot_little_few"
@@ -1504,7 +1507,7 @@
             "This movie is pretty much interesting."
           ],
           "correct_index": 0,
-          "explanation_ru": "«Довольно» перед прилагательным в американской речи — pretty: pretty interesting (сильнее — really interesting). Enough значит «достаточно» и ставится после прилагательного, pretty — перед ним, а pretty much значит «почти» и перед прилагательным не ставится.",
+          "explanation_ru": "«Довольно» перед прилагательным в американской речи — pretty: pretty interesting (сильнее — really interesting). Enough значит «достаточно» и ставится после прилагательного, pretty — перед ним, а pretty much значит «почти, практически» (pretty much done) и с interesting не сочетается.",
           "difficulty": 2,
           "diagnostic": true
         },
@@ -1723,7 +1726,7 @@
       "title_en": "Subject questions, questions with preposition",
       "source_slug": "subject-questions-questions-preposition",
       "title_ru": "Вопросы к подлежащему и вопросы с предлогом",
-      "summary_ru": "Если вопросительное слово who, what или which само является подлежащим, вспомогательный глагол не нужен и порядок слов остаётся прямым: Who broke the window? What happened? Сравните с вопросом к дополнению, где do, does или did обязательны: Who did you call? В вопросе к подлежащему в настоящем времени глагол стоит в третьем лице единственного числа: Who knows the answer? Who wants coffee? В прошедшем времени просто прошедшая форма: Who called you? Второе правило: если в ответе нужен предлог, в вопросе он уходит в самый конец: Who are you waiting for? What are you talking about? Where does he come from? В разговорной речи предлог перед вопросительным словом не ставят; в официальном стиле так можно только с whom: With whom did you speak?",
+      "summary_ru": "Если вопросительное слово who, what или which само является подлежащим, вспомогательный глагол не нужен и порядок слов остаётся прямым: Who broke the window? What happened? Сравните с вопросом к дополнению, где do, does или did обязательны: Who did you call? В вопросе к подлежащему в настоящем времени глагол стоит в третьем лице единственного числа: Who knows the answer? Who wants coffee? В прошедшем времени просто прошедшая форма: Who called you? Второе правило: если в ответе нужен предлог, в вопросе он уходит в самый конец: Who are you waiting for? What are you laughing at? Where is she from? В разговорной речи предлог перед вопросительным словом не ставят; в официальном стиле так можно только с whom: With whom did you speak?",
       "forms": [
         "Вопрос к подлежащему: Who / What + глагол (без do, does, did)",
         "Who called? / What happened? — прошедшее без did",
@@ -1739,7 +1742,7 @@
         "What is this book about?",
         "Which hotel did you stay at?"
       ],
-      "ru_interference": "Русский ставит предлог перед вопросительным словом: неверно 'With who did you speak?' -> верно 'Who did you speak with?'.",
+      "ru_interference": "Русский ставит предлог перед вопросительным словом: неверно 'For who is this gift?' -> верно 'Who is this gift for?'.",
       "prerequisites": [
         "a1_questions",
         "a1_past_simple_negatives_questions"
@@ -2032,7 +2035,8 @@
             "I like the store in which we bought the sofa.",
             "I like the store we bought the sofa at.",
             "I like the store that we bought the sofa at.",
-            "I like the store which we bought the sofa at."
+            "I like the store which we bought the sofa at.",
+            "I like the store at which we bought the sofa."
           ],
           "explanation_ru": "После store идёт полное предложение с местом действия, поэтому нужно where.",
           "difficulty": 3

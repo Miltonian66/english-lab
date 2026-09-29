@@ -841,7 +841,7 @@
     "I no longer use that app.",
     "She doesn't live in Moscow anymore.",
     "We don't need this server any longer.",
-    "He is no longer on our team.",
+    "The store is no longer open on Sundays.",
     "They don't send paper letters anymore."
    ],
    "ru_interference": "Русское больше не переносят целиком и получают двойное отрицание: неверно He doesn't work here no longer. Верно: He doesn't work here any longer или He no longer works here.",
@@ -1802,7 +1802,7 @@
     "Their kids go to my school.",
     "The company changed its name last year."
    ],
-   "ru_interference": "В русском притяжательное слово выглядит одинаково и перед существительным, и вместо него - мой ноутбук, ноутбук мой, поэтому появляется неверное This book is my. Верно: This book is mine. Ещё одна ошибка - пропуск притяжательного там, где русский обходится без него: неверно She washed hands, верно She washed her hands.",
+   "ru_interference": "В русском притяжательное слово выглядит одинаково и перед существительным, и вместо него - твой ноутбук, ноутбук твой, поэтому появляется неверное Is this laptop your? Верно: Is this laptop yours? Ещё одна ошибка - пропуск притяжательного там, где русский обходится без него: неверно She washed hands, верно She washed her hands.",
    "prerequisites": [
     "a1_object_pronouns",
     "a1_possessive_adjectives",
@@ -2187,12 +2187,12 @@
     {
      "id": "a2_do_vs_make_difference_12",
      "kind": "transform",
-     "prompt": "Переведи на английский, используя do или make: «Кто сделал этот торт?»",
-     "answer": "Who made this cake?",
+     "prompt": "Переведи на английский, используя do или make: «Кто сделал эту полку?»",
+     "answer": "Who made this shelf?",
      "accept": [
-      "Who made the cake?"
+      "Who made the shelf?"
      ],
-     "explanation_ru": "Торт — созданный результат, поэтому make: Who made this cake? Do относится к работе и делам (do homework, do the dishes), а не к тому, что создают. Who здесь подлежащее, поэтому did не нужен.",
+     "explanation_ru": "Полка — созданная вещь, результат работы, поэтому make: Who made this shelf? Do относится к работе и делам (do homework, do the dishes), а не к тому, что создают. Who здесь подлежащее, поэтому did не нужен.",
      "difficulty": 2
     }
    ]

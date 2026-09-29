@@ -180,9 +180,10 @@
       "This is a really interesting book.",
       "It's a really interesting book.",
       "This book is very interesting.",
-      "This book is really interesting."
+      "This book is really interesting.",
+      "That's a very interesting book."
      ],
-     "explanation_ru": "Прилагательное с very стоит между артиклем и существительным: a very interesting book. Артикль выбирают по следующему звуку, а это very — согласный, поэтому a, хотя interesting начинается с гласного (an interesting book). Без артикля (is very interesting book) и с прилагательным после существительного так не говорят.",
+     "explanation_ru": "Прилагательное с very стоит между артиклем и существительным: a very interesting book. Артикль выбирают по следующему звуку, а это very — согласный, поэтому a, хотя interesting начинается с гласного (an interesting book). Без артикля (is very interesting book) и с прилагательным сразу после существительного (a book very interesting) так не говорят; можно сказать и This book is very interesting.",
      "difficulty": 3
     }
    ]
@@ -712,7 +713,7 @@
     "can't / cannot + base verb: I can't open the file",
     "Can + subject + base verb ...?: Can you help me?",
     "short answers: Yes, I can. / No, I can't.",
-    "no -s and no to: He can work on Monday"
+    "no -s and no to: He can cook very well"
    ],
    "examples": [
     "Our son can ride a bike.",
@@ -1097,7 +1098,7 @@
     {
      "id": "a1_a_an_the_no_article_01",
      "kind": "choice",
-     "prompt": "I bought a new bike yesterday. ___ bike is very fast.",
+     "prompt": "We have a dog and a cat. ___ cat is very lazy.",
      "options": [
       "A",
       "An",
@@ -1105,7 +1106,7 @@
       "Some"
      ],
      "correct_index": 2,
-     "explanation_ru": "Велосипед уже назван в первом предложении, поэтому во втором нужен the.",
+     "explanation_ru": "Кошка уже названа в первом предложении, поэтому во втором нужен the.",
      "difficulty": 1
     },
     {
@@ -1429,12 +1430,12 @@
    "title_en": "Whose, possessive 's: Whose is this? It's Mike's",
    "source_slug": "whose-possessive-s",
    "title_ru": "Whose и притяжательная форма с 's",
-   "summary_ru": "Принадлежность чаще всего выражается формой с 's, которая ставится после имени владельца: Mike's laptop. Порядок слов обратный русскому: сначала владелец, потом предмет. Если владельцев несколько и слово уже кончается на -s, добавляется только апостроф: my parents' house. У неправильных форм множественного числа сохраняется полное 's: the children's room. Вопрос о владельце задаётся словом whose: Whose shoes are these? Не путайте whose с who's, то есть с сокращением от who is. Для неодушевлённых предметов чаще используют конструкцию с of или два существительных подряд: the name of the file, the office door.",
+   "summary_ru": "Принадлежность чаще всего выражается формой с 's, которая ставится после имени владельца: Mike's laptop. Порядок слов обратный русскому: сначала владелец, потом предмет. Если владельцев несколько и слово уже кончается на -s, добавляется только апостроф: my parents' house. У неправильных форм множественного числа сохраняется полное 's: the children's room. Вопрос о владельце задаётся словом whose: Whose books are on the table? Не путайте whose с who's, то есть с сокращением от who is. Для неодушевлённых предметов чаще используют конструкцию с of или два существительных подряд: the name of the file, the office door.",
    "forms": [
     "name or singular noun + 's: Mike's laptop",
     "plural noun in -s + apostrophe: my parents' house",
     "irregular plural + 's: the children's room",
-    "Whose + noun + is / are ...?: Whose shoes are these?",
+    "Whose + noun + is / are ...?: Whose books are on the table?",
     "the + noun + of + thing: the name of the file"
    ],
    "examples": [
@@ -1444,7 +1445,7 @@
     "It's my brother's wedding on Saturday.",
     "The kids' toys are everywhere."
    ],
-   "ru_interference": "Русский родительный падеж «телефон Майка» переносят в обратном порядке или через of: неверно 'This is the phone of Mike' → верно 'This is Mike's phone.'",
+   "ru_interference": "Русский родительный падеж «кличка моей собаки» переносят в обратном порядке или через of: неверно 'The name of my dog is Rex' → верно 'My dog's name is Rex.'",
    "prerequisites": [],
    "exercises": [
     {
@@ -1656,7 +1657,7 @@
     "We're going to paint the kitchen this weekend.",
     "My sister is going to learn to drive this summer.",
     "Be careful! That glass is going to fall.",
-    "Are you going to take the train?",
+    "Are they going to sell their house?",
     "He isn't going to buy a new car this year."
    ],
    "ru_interference": "Русское «собираюсь сделать» не содержит глагола-связки, поэтому be теряется, а смысловой глагол получает окончание: неверно 'I going to sends the report' → верно 'I am going to send the report.'",
@@ -1821,7 +1822,7 @@
    "title_en": "Have got",
    "source_slug": "have-got",
    "title_ru": "Have got: обладание и наличие",
-   "summary_ru": "Have got — разговорный синоним have в значении «иметь»: I've got a headache = I have a headache. В американской речи он звучит в утверждениях и почти всегда в сокращённой форме: I've got, you've got, she's got. Форма зависит от лица: I, you, we, they have got; he, she, it has got; слово got не меняется. Вопросы и отрицания в американском английском строят с do, как у обычного глагола have: Does your sister have kids? I don't have time. My parents don't have a car. Короткие ответы тоже с do: Yes, I do. No, I don't. Формы Have you got…? и I haven't got… — британские: в США их поймут, но сами говорите Do you have…? и I don't have… Прошедшего времени у have got нет: I had a dog, I didn't have a car.",
+   "summary_ru": "Have got — разговорный синоним have в значении «иметь»: I've got a headache = I have a headache. В американской речи он звучит в утверждениях и почти всегда в сокращённой форме: I've got, you've got, she's got. Форма зависит от лица: I, you, we, they have got; he, she, it has got; слово got не меняется. Вопросы и отрицания в американском английском строят с do, как у обычного глагола have: Does your sister have kids? I don't have time. My parents don't have a TV. Короткие ответы тоже с do: Yes, I do. No, I don't. Формы Have you got…? и I haven't got… — британские: в США их поймут, но сами говорите Do you have…? и I don't have… Прошедшего времени у have got нет: I had a dog, I didn't have a car.",
    "forms": [
     "statement: I've got / she's got = I have / she has",
     "I / you / we / they have got; he / she / it has got",
@@ -1831,12 +1832,12 @@
    ],
    "examples": [
     "My sister's got a new job.",
-    "He's got three brothers.",
+    "He's got a bad cold.",
     "We don't have any milk.",
     "Does your hotel have a pool?",
     "They've got a nice house by the lake."
    ],
-   "ru_interference": "Русское «у меня есть» обходится без глагола, поэтому have теряют или строят вопрос через be: неверно 'Are you have a car?' и 'At me is a cat' → верно 'Do you have a car?' и 'I've got a cat.'",
+   "ru_interference": "Русское «у меня есть» обходится без глагола, поэтому have теряют или строят вопрос через be: неверно 'Is your dad have a car?' и 'At me is a cat' → верно 'Does your dad have a car?' и 'I've got a cat.'",
    "prerequisites": [],
    "exercises": [
     {
@@ -1900,9 +1901,7 @@
      "kind": "gap",
      "prompt": "He ___ (have got) a new car.",
      "answer": "has got",
-     "accept": [
-      "'s got"
-     ],
+     "accept": [],
      "explanation_ru": "Третье лицо единственного числа требует формы has got.",
      "difficulty": 1
     },
@@ -1982,7 +1981,6 @@
      "prompt": "Переведи на английский: «У моего брата есть машина.»",
      "answer": "My brother has a car.",
      "accept": [
-      "My brother's got a car.",
       "My brother has got a car."
      ],
      "explanation_ru": "«У него есть» — he has или разговорное he's got: с третьим лицом have превращается в has. Подлежащим становится владелец — my brother; русский оборот без глагола не переносят: at my brother is a car невозможно.",
@@ -1994,7 +1992,6 @@
      "prompt": "Use have got in statements and do in questions and negatives. My friend Ana ___ (have got) three sisters. ___ (you / have) any sisters? I ___ (not / have) any, but I ___ (have got) two brothers.",
      "gaps": [
       [
-       "'s got",
        "has got"
       ],
       [
@@ -2033,7 +2030,7 @@
    "examples": [
     "This is our new car. It is electric.",
     "What's this? It's a scanner.",
-    "These are my new boots. They are waterproof.",
+    "These photos are from our trip. They are beautiful.",
     "Hello, this is Anna from the IT department.",
     "It is raining today, so the meeting is online."
    ],

@@ -18,7 +18,7 @@
     "Отрицание: I wouldn't like ..."
    ],
    "examples": [
-    "I'd like a cup of coffee, please.",
+    "I'd like a table for two, please.",
     "Would you like something to drink?",
     "She would like to work on our team.",
     "Would you like to join the call?",
@@ -551,14 +551,10 @@
     {
      "id": "a1_at_in_on_prepositions_time_12",
      "kind": "gap",
-     "prompt": "A: When is your birthday?\nB: It's on June ___ (21).",
-     "answer": "21",
-     "accept": [
-      "21st",
-      "twenty-first",
-      "twenty first"
-     ],
-     "explanation_ru": "По-американски дату пишут числом без окончания — June 21, а вслух читают порядковым числом: June twenty-first. Поэтому верно и 21, и 21st, и twenty-first. Порядковые окончания: 1st, 2nd, 3rd, отсюда 21st, 22nd, 23rd; остальные числа, в том числе 11th, 12th и 13th, получают -th. Перед датой, как перед днём недели, стоит on.",
+     "prompt": "A: When is your sister's wedding?\nB: It's ___ June 21.",
+     "answer": "on",
+     "accept": [],
+     "explanation_ru": "Перед датой, как перед днём недели, стоит on: on June 21. In ставят с месяцем без числа (in June), а at — с точным временем (at four o'clock). По-американски дату пишут June 21, а читают порядковым числом: June twenty-first.",
      "difficulty": 1
     },
     {
@@ -958,7 +954,9 @@
      "accept": [
       "We often see them at the park.",
       "We see them in the park often.",
-      "We see them at the park often."
+      "We see them at the park often.",
+      "We see them often in the park.",
+      "We see them often at the park."
      ],
      "explanation_ru": "«Их» после глагола see — объектная форма them: see them. They стоит только перед глаголом, как подлежащее. Often — перед смысловым глаголом: we often see.",
      "difficulty": 2
@@ -989,7 +987,7 @@
     "There was a bug in the code.",
     "There were two meetings yesterday."
    ],
-   "ru_interference": "В русском бытийное предложение начинается с места и обходится без подлежащего («В моём офисе три компьютера»), поэтому there теряется: неверно «In my office are three computers» → верно «There are three computers in my office».",
+   "ru_interference": "В русском бытийное предложение начинается с места и обходится без подлежащего («В холодильнике две бутылки молока»), поэтому there теряется: неверно «In the fridge are two bottles of milk» → верно «There are two bottles of milk in the fridge».",
    "prerequisites": [],
    "exercises": [
     {
@@ -1212,7 +1210,7 @@
       "Have"
      ],
      "correct_index": 1,
-     "explanation_ru": "Сообщение о существовании объектов вводится через there are: rooms во множественном числе. It is указывает на уже известный предмет, а без подлежащего (Is…, Have…) английское предложение не строится; русское «есть» через have не переводят.",
+     "explanation_ru": "Сообщение о существовании объектов вводится через there are: rooms во множественном числе. It is указывает на уже известный предмет, а без подлежащего (Is…, Have…) английское предложение не строится. Have говорит о владельце и требует его как подлежащее (We have three meeting rooms), а «на этаже есть…» — это there are.",
      "difficulty": 1
     },
     {
@@ -1357,7 +1355,7 @@
    "title_en": "This, that, these, those",
    "source_slug": "this-that-these-those",
    "title_ru": "This, that, these, those",
-   "summary_ru": "Эти четыре слова указывают на предметы и различаются по числу и по расстоянию. This — один предмет рядом, these — несколько предметов рядом. That — один предмет далеко, those — несколько предметов далеко. Расстояние может быть и во времени: this week — текущая неделя, that year — тот год в прошлом, о котором идёт речь. Перед существительным артикль уже не нужен: this laptop, а не this the laptop. В роли подлежащего форма глагола меняется: This is my desk, но These are my keys. По телефону о себе говорят This is Anna, а не I am Anna.",
+   "summary_ru": "Эти четыре слова указывают на предметы и различаются по числу и по расстоянию. This — один предмет рядом, these — несколько предметов рядом. That — один предмет далеко, those — несколько предметов далеко. Расстояние может быть и во времени: this week — текущая неделя, that year — тот год в прошлом, о котором идёт речь. Перед существительным артикль уже не нужен: this laptop, а не this the laptop. В роли подлежащего форма глагола меняется: This is a good idea, но These are good ideas. По телефону о себе говорят This is Anna, а не I am Anna.",
    "forms": [
     "this + существительное в единственном числе (рядом)",
     "these + существительное во множественном числе (рядом)",
@@ -1911,7 +1909,7 @@
    ],
    "examples": [
     "Why do you study English?",
-    "When does the store close?",
+    "What time does the bank open?",
     "When did the project finish?",
     "Are you at the office now?",
     "Who made this cake?",
@@ -2070,7 +2068,8 @@
      "accept": [
       "How do you go to work?",
       "How do you travel to work?",
-      "How do you get to the office?"
+      "How do you get to the office?",
+      "How do you commute to work?"
      ],
      "explanation_ru": "О привычном действии спрашивают в Present Simple, поэтому нужен do: How do you get to work? Порядок: вопросительное слово, do, подлежащее, глагол в начальной форме. Без do (How you get…?) вопрос не строится; «добираться» — get to: get to work, get home.",
      "difficulty": 3
@@ -2118,7 +2117,7 @@
     "Do you want me to call a taxi?",
     "We'll finish the task next week."
    ],
-   "ru_interference": "Русское «буду звонить» тянет за собой лишнее to, а вместо будущего часто ставят настоящее: неверно «I will to write to you» и «Tomorrow I write to you» → верно «I will write to you» и «I will write to you tomorrow».",
+   "ru_interference": "Русское «буду звонить» тянет за собой лишнее to, а вместо будущего часто ставят настоящее: неверно «They will to buy a new car» и «Next year we move to Texas» → верно «They will buy a new car» и «We will move to Texas next year».",
    "prerequisites": [],
    "exercises": [
     {

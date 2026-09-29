@@ -597,6 +597,24 @@
           "explanation_ru": "После would prefer + дополнение идёт инфинитив с to: would prefer me to live. Past simple (lived) ставится после would rather с новым подлежащим, а не после would prefer.",
           "difficulty": 2,
           "diagnostic": true
+        },
+        {
+          "id": "b2_would_rather_would_prefer_13",
+          "kind": "gap",
+          "prompt": "I'd rather you ___ (not / tell) Mom about the accident — now she's worried sick.",
+          "answer": "hadn't told",
+          "accept": [],
+          "explanation_ru": "Would rather + другое лицо + past perfect — сожаление о том, что уже случилось: I'd rather you hadn't told Mom — «лучше бы ты не рассказывал». Past simple (didn't tell) говорил бы о настоящем или будущем: «лучше не рассказывай».",
+          "difficulty": 3
+        },
+        {
+          "id": "b2_would_rather_would_prefer_14",
+          "kind": "order",
+          "prompt": "rather / you / I'd / told / hadn't / him / .",
+          "answer": "I'd rather you hadn't told him.",
+          "accept": [],
+          "explanation_ru": "После would rather с другим подлежащим о прошлом говорят через past perfect: I'd rather you hadn't told him — «лучше бы ты ему не говорил». Порядок: I'd rather + подлежащее + hadn't + V3.",
+          "difficulty": 2
         }
       ]
     },
@@ -2270,6 +2288,46 @@
           "accept": [],
           "explanation_ru": "Вежливая рамка Do you know стоит в начале и сама задаёт вопрос, а после when порядок слов прямой: the next release is planned — подлежащее перед глаголом, без инверсии.",
           "difficulty": 2
+        },
+        {
+          "id": "b2_indirect_questions_15",
+          "kind": "transform",
+          "prompt": "Переведи на английский: «Она спросила, смогу ли я прийти в субботу»",
+          "answer": "She asked if I could come on Saturday.",
+          "accept": [
+            "She asked if I would be able to come on Saturday.",
+            "She asked whether I could come on Saturday.",
+            "She asked whether I would be able to come on Saturday.",
+            "She asked me if I could come on Saturday.",
+            "She asked me if I would be able to come on Saturday.",
+            "She asked me whether I could come on Saturday.",
+            "She asked me whether I would be able to come on Saturday."
+          ],
+          "explanation_ru": "«Ли» в пересказанном вопросе — if или whether, после них прямой порядок слов: if I could come. Глагол asked стоит в прошедшем, поэтому модальный сдвигается: can → could (или will be able to → would be able to). Can I come и if I can come — ошибки.",
+          "difficulty": 2
+        },
+        {
+          "id": "b2_indirect_questions_16",
+          "kind": "cloze",
+          "prompt": "Last week my landlord called me with a lot of questions. He asked me whether I ___ (can) fix the leaky faucet myself and when I ___ (will) be home on Friday. He wanted to know how long the heating ___ (be) broken. He also said that the plumber ___ (must) come before the end of the month.",
+          "gaps": [
+            [
+              "could"
+            ],
+            [
+              "would"
+            ],
+            [
+              "had been"
+            ],
+            [
+              "had to",
+              "must",
+              "would have to"
+            ]
+          ],
+          "explanation_ru": "После прошедшего asked, wanted to know, said модальные и времена сдвигаются: can → could, will → would, has been → had been, must → had to (must может и остаться). Порядок слов в пересказанном вопросе прямой: when I would be home, how long the heating had been broken.",
+          "difficulty": 3
         }
       ]
     },

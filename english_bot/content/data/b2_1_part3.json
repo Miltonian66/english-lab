@@ -378,6 +378,34 @@
           "explanation_ru": "После by the time будущее выражается present simple (you arrive), а ужин закончится раньше — future perfect will have had. Will have dinner описывало бы сам ужин, а until значит «до тех пор, пока» и меняет смысл.",
           "difficulty": 2,
           "diagnostic": true
+        },
+        {
+          "id": "b2_future_continuous_and_future_perfect_13",
+          "kind": "transform",
+          "prompt": "Переведи на английский вежливый вопрос, используя future continuous: «Ты сегодня вечером будешь брать машину?»",
+          "answer": "Will you be using the car tonight?",
+          "accept": [
+            "Will you be taking the car tonight?",
+            "Will you be needing the car tonight?",
+            "Are you going to be using the car tonight?",
+            "Are you going to be taking the car tonight?",
+            "Will you be using the car this evening?",
+            "Will you be taking the car this evening?",
+            "Will you be needing the car this evening?",
+            "Are you going to be using the car this evening?",
+            "Are you going to be taking the car this evening?"
+          ],
+          "explanation_ru": "Future continuous (will be + -ing) спрашивает о чужих планах, ни на что не намекая: Will you be using the car tonight? Will you use the car? звучит как просьба или требование, поэтому вежливый вопрос строят через will be + -ing.",
+          "difficulty": 2
+        },
+        {
+          "id": "b2_future_continuous_and_future_perfect_14",
+          "kind": "order",
+          "prompt": "be / you / will / staying / for dinner / ?",
+          "answer": "Will you be staying for dinner?",
+          "accept": [],
+          "explanation_ru": "Will you be staying for dinner? — вежливый вопрос о планах гостя: future continuous не звучит ни приглашением, ни давлением. Порядок: will + подлежащее + be + -ing.",
+          "difficulty": 2
         }
       ]
     },

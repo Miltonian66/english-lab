@@ -178,13 +178,14 @@
       "title_en": "Adjectives without noun",
       "source_slug": "adjectives-without-noun",
       "title_ru": "Прилагательные без существительного",
-      "summary_ru": "Прилагательное может использоваться без существительного, если из контекста ясно, о ком или о чём речь. Конструкция the плюс прилагательное обозначает всю группу людей и требует глагола во множественном числе: the rich are, the unemployed need. Так же работают названия наций на -ch, -sh, -ese, -ss: the French, the British, the Chinese, the Swiss. Остальные нации требуют существительного во множественном числе: the Germans, the Russians, the Americans. Прилагательное в превосходной степени тоже обходится без существительного: this one is the cheapest. Чтобы не повторять исчисляемое существительное, используют one или ones: I want the blue one. Абстрактные понятия строятся по той же модели: the impossible, the unknown.",
+      "summary_ru": "Прилагательное может использоваться без существительного, если из контекста ясно, о ком или о чём речь. Конструкция the плюс прилагательное обозначает всю группу людей и требует глагола во множественном числе: the rich are, the unemployed need. Так же работают названия наций на -ch, -sh, -ese, -ss: the French, the British, the Chinese, the Swiss. Остальные нации требуют существительного во множественном числе: the Germans, the Russians, the Americans. Прилагательное в превосходной степени тоже обходится без существительного: this one is the cheapest. Чтобы не повторять исчисляемое существительное, используют one или ones: I want the blue one. Абстрактные понятия строятся по той же модели: the impossible, the unknown. Не путай эту модель с абстрактным существительным: poverty, unemployment, education в общем смысле идут без артикля, а the появляется, когда понятие уточнено: the poverty of the 1930s. С the употребляются и единственные в своём роде учреждения: the government, the police.",
       "forms": [
         "the + прилагательное = группа людей, глагол во множественном числе",
         "the + French / British / Chinese / Swiss = нация целиком",
         "the + Germans / Russians / Americans (существительное во множественном числе)",
         "the + превосходная степень без существительного",
-        "one / ones вместо повторяемого исчисляемого существительного"
+        "one / ones вместо повторяемого исчисляемого существительного",
+        "без артикля — абстрактное понятие в общем смысле (poverty, unemployment); the — уточнённое понятие (the poverty of the 1930s) и единственное учреждение (the government)"
       ],
       "examples": [
         "The rich are getting richer every year.",
@@ -352,6 +353,39 @@
           "accept": [],
           "explanation_ru": "Чтобы не повторять исчисляемое существительное в единственном числе (jacket), ставят one: the green one. Прилагательное само по себе без one здесь не употребляется.",
           "difficulty": 1
+        },
+        {
+          "id": "b2_adjectives_without_noun_13",
+          "kind": "cloze",
+          "prompt": "Add the where it is needed: ___ (unemployment) in our town has doubled in five years, and ___ (unemployed) now wait months for help. ___ (government) has promised new jobs, but for many families ___ (poverty) is still part of daily life. My grandmother says that ___ (poverty) of the 1930s was much worse.",
+          "gaps": [
+            [
+              "Unemployment"
+            ],
+            [
+              "the unemployed"
+            ],
+            [
+              "The government"
+            ],
+            [
+              "poverty"
+            ],
+            [
+              "the poverty"
+            ]
+          ],
+          "explanation_ru": "Абстрактное понятие в общем смысле идёт без артикля: unemployment has doubled, poverty is part of daily life. The + прилагательное — группа людей: the unemployed. The government — единственное в своём роде учреждение. Когда понятие уточнено (of the 1930s), артикль возвращается: the poverty of the 1930s.",
+          "difficulty": 3
+        },
+        {
+          "id": "b2_adjectives_without_noun_14",
+          "kind": "correct",
+          "prompt": "The poverty is the main reason why the young leave the countryside.",
+          "answer": "Poverty is the main reason why the young leave the countryside.",
+          "accept": [],
+          "explanation_ru": "Poverty здесь — явление вообще, поэтому без артикля, как абстрактные love или education. А the young остаётся: the + прилагательное обозначает всю группу людей.",
+          "difficulty": 3
         }
       ]
     },
@@ -1421,6 +1455,37 @@
           ],
           "explanation_ru": "Причина в прошлом (не взял работу) — if + past perfect; результат сейчас (не живу там) — would + V1 и now. Would have lived относило бы и результат к прошлому, а if I took — к воображаемому настоящему.",
           "difficulty": 3
+        },
+        {
+          "id": "b2_second_third_conditionals_15",
+          "kind": "transform",
+          "prompt": "Rewrite as a mixed conditional (the first fact is still true now): I'm not very organized, so I missed the deadline yesterday.",
+          "answer": "If I were more organized, I wouldn't have missed the deadline yesterday.",
+          "accept": [
+            "I wouldn't have missed the deadline yesterday if I were more organized.",
+            "If I was more organized, I wouldn't have missed the deadline yesterday.",
+            "I wouldn't have missed the deadline yesterday if I was more organized.",
+            "If I were better organized, I wouldn't have missed the deadline yesterday.",
+            "I wouldn't have missed the deadline yesterday if I were better organized.",
+            "If I was better organized, I wouldn't have missed the deadline yesterday.",
+            "I wouldn't have missed the deadline yesterday if I was better organized."
+          ],
+          "explanation_ru": "Условие — постоянная черта, верная и сейчас, поэтому if + past simple, как во втором типе: If I were more organized. Результат — в прошлом, поэтому would have + V3, как в третьем: I wouldn't have missed. Это обратное смешанное условное: нереальное настоящее → нереальное прошлое.",
+          "difficulty": 3
+        },
+        {
+          "id": "b2_second_third_conditionals_16",
+          "kind": "choice",
+          "prompt": "If Mateo ___ an exam tomorrow morning, he would have come to the party last night.",
+          "options": [
+            "didn't have",
+            "hadn't had",
+            "doesn't have",
+            "wouldn't have"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Условие касается завтрашнего экзамена — это нереальное настоящее, поэтому past simple: If Mateo didn't have. Результат относится ко вчерашнему вечеру — would have come. Hadn't had сдвинуло бы условие в прошлое и противоречит tomorrow, doesn't have — реальное условие, а would в части с if не ставится.",
+          "difficulty": 3
         }
       ]
     },
@@ -1630,6 +1695,21 @@
           "answer": "I wish I hadn't said that.",
           "accept": [],
           "explanation_ru": "Сожаление о сказанном в прошлом — wish + past perfect: I wish I hadn't said that. Первое I — подлежащее при wish, второе — в придаточном.",
+          "difficulty": 2
+        },
+        {
+          "id": "b2_wishes_regrets_14",
+          "kind": "transform",
+          "prompt": "Переведи на английский, используя wish: «Хоть бы этот дождь уже прекратился!»",
+          "answer": "I wish it would stop raining!",
+          "accept": [
+            "I wish it would stop raining already!",
+            "I wish the rain would stop!",
+            "I wish the rain would stop already!",
+            "I wish this rain would stop!",
+            "I wish this rain would stop already!"
+          ],
+          "explanation_ru": "Wish + would — желание, чтобы ситуация или чужое поведение изменились, часто с раздражением: I wish it would stop raining. Will и настоящее время после wish не ставятся, а wish + past simple (I wish it stopped) описывало бы положение дел, а не перемену.",
           "difficulty": 2
         }
       ]

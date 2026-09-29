@@ -80,7 +80,7 @@
       "pos": "adjective",
       "ipa_us": "/ˈtaɪdi/",
       "translation_ru": "аккуратный, опрятный",
-      "example_en": "My desk is tidy because I clean it every Friday.",
+      "example_en": "Her bedroom is always tidy: every book is on the shelf.",
       "collocations": [
         "a tidy room",
         "keep something tidy"
@@ -111,7 +111,7 @@
       "pos": "adjective",
       "ipa_us": "/ˈkwaɪət/",
       "translation_ru": "тихий",
-      "example_en": "I need a quiet room for the video call.",
+      "example_en": "We live on a quiet street near the park.",
       "collocations": [
         "a quiet place",
         "keep quiet"
@@ -125,12 +125,15 @@
       "pos": "adjective",
       "ipa_us": "/ˈkʌmftɚbəl/",
       "translation_ru": "удобный (о мебели, одежде), комфортный",
-      "example_en": "This chair is comfortable, so I can work all day.",
+      "example_en": "This sofa is so comfortable that I fell asleep on it.",
       "collocations": [
         "a comfortable chair",
         "feel comfortable"
       ],
-      "topic": "home"
+      "topic": "home",
+      "accept": [
+        "comfy"
+      ]
     },
     {
       "id": "a2_v_wash",
@@ -172,7 +175,10 @@
         "a project manager",
         "talk to the manager"
       ],
-      "topic": "work"
+      "topic": "work",
+      "accept": [
+        "boss"
+      ]
     },
     {
       "id": "a2_v_meeting",
@@ -259,7 +265,10 @@
         "a good boss",
         "ask your boss"
       ],
-      "topic": "work"
+      "topic": "work",
+      "accept": [
+        "manager"
+      ]
     },
     {
       "id": "a2_v_break",
@@ -301,7 +310,10 @@
         "useful information",
         "very useful"
       ],
-      "topic": "work"
+      "topic": "work",
+      "accept": [
+        "helpful"
+      ]
     },
     {
       "id": "a2_v_project",
@@ -329,7 +341,10 @@
         "send an email",
         "check your email"
       ],
-      "topic": "tech"
+      "topic": "tech",
+      "accept": [
+        "e-mail"
+      ]
     },
     {
       "id": "a2_v_password",
@@ -469,7 +484,10 @@
         "click a button",
         "click here"
       ],
-      "topic": "tech"
+      "topic": "tech",
+      "accept": [
+        "press"
+      ]
     },
     {
       "id": "a2_v_update",
@@ -523,7 +541,7 @@
       "pos": "adjective",
       "ipa_us": "/ɪkˈspɛnsɪv/",
       "translation_ru": "дорогой",
-      "example_en": "The restaurant near the office is too expensive.",
+      "example_en": "The restaurant near the beach is too expensive.",
       "collocations": [
         "very expensive",
         "an expensive car"
@@ -713,7 +731,10 @@
         "a long journey",
         "a safe journey"
       ],
-      "topic": "travel"
+      "topic": "travel",
+      "accept": [
+        "trip"
+      ]
     },
     {
       "id": "a2_v_trip",
@@ -769,7 +790,10 @@
         "book a table",
         "book a room"
       ],
-      "topic": "travel"
+      "topic": "travel",
+      "accept": [
+        "reserve"
+      ]
     },
     {
       "id": "a2_v_abroad",
@@ -926,7 +950,10 @@
         "hurt your leg",
         "it hurts"
       ],
-      "topic": "health"
+      "topic": "health",
+      "accept": [
+        "ache"
+      ]
     },
     {
       "id": "a2_v_sick",
@@ -1156,7 +1183,10 @@
         "taste good",
         "taste bad"
       ],
-      "topic": "food"
+      "topic": "food",
+      "accept": [
+        "try"
+      ]
     },
     {
       "id": "a2_v_menu",
@@ -1193,7 +1223,7 @@
       "pos": "noun",
       "ipa_us": "/snæk/",
       "translation_ru": "перекус, лёгкая еда между приёмами пищи",
-      "example_en": "I always take a snack to the office.",
+      "example_en": "I always take a snack for the kids when we go to the park.",
       "collocations": [
         "a quick snack",
         "a healthy snack"
@@ -1207,7 +1237,7 @@
       "pos": "verb",
       "ipa_us": "/ˈɔrdɚ/",
       "translation_ru": "заказывать",
-      "example_en": "We ordered pizza for the whole team.",
+      "example_en": "We ordered pizza and watched a movie at home.",
       "collocations": [
         "order food",
         "order online"
@@ -1304,7 +1334,11 @@
         "glad to hear it",
         "glad to help"
       ],
-      "topic": "feelings"
+      "topic": "feelings",
+      "accept": [
+        "happy",
+        "pleased"
+      ]
     },
     {
       "id": "a2_v_surprised",
@@ -1327,12 +1361,12 @@
       "pos": "phrasal verb",
       "ipa_us": "/tɝn ˈɔf/",
       "translation_ru": "выключать",
-      "example_en": "Turn off your phone during the meeting.",
+      "example_en": "Turn off the lights when you leave the room.",
       "collocations": [
         "turn off the light",
         "turn off the computer"
       ],
-      "topic": "tech",
+      "topic": "home",
       "accept": [
         "switch off"
       ]
@@ -1361,12 +1395,12 @@
       "pos": "phrasal verb",
       "ipa_us": "/faɪnd ˈaʊt/",
       "translation_ru": "выяснять, узнавать (факт)",
-      "example_en": "I want to find out why the site is slow.",
+      "example_en": "I called the station to find out when the last train leaves.",
       "collocations": [
         "find out the truth",
         "find out more"
       ],
-      "topic": "study"
+      "topic": "travel"
     },
     {
       "id": "a2_v_put_on",
@@ -1434,7 +1468,7 @@
       "pos": "adverb",
       "ipa_us": "/ɔlˈrɛdi/",
       "translation_ru": "уже",
-      "example_en": "I have already sent the report.",
+      "example_en": "I have already seen this movie twice.",
       "collocations": [
         "already done",
         "already know"
@@ -1479,7 +1513,7 @@
       "pos": "conjunction",
       "ipa_us": "/waɪl/",
       "translation_ru": "пока, в то время как",
-      "example_en": "I listen to music while I work.",
+      "example_en": "I listen to podcasts while I cook.",
       "collocations": [
         "while you wait",
         "while I was cooking"
@@ -1507,7 +1541,7 @@
       "pos": "noun",
       "ipa_us": "/mɪˈsteɪk/",
       "translation_ru": "ошибка",
-      "example_en": "I made a small mistake in the file name.",
+      "example_en": "I made a small mistake in my homework.",
       "collocations": [
         "make a mistake",
         "a big mistake"
@@ -1524,7 +1558,7 @@
       "pos": "adjective",
       "ipa_us": "/pəˈlaɪt/",
       "translation_ru": "вежливый",
-      "example_en": "He is always polite to customers.",
+      "example_en": "Their children are always polite to older people.",
       "collocations": [
         "a polite answer",
         "be polite to somebody"
@@ -1552,7 +1586,7 @@
       "pos": "noun",
       "ipa_us": "/ədˈvaɪs/",
       "translation_ru": "совет, советы",
-      "example_en": "She gave me good advice about my presentation.",
+      "example_en": "My grandmother gave me good advice about cooking.",
       "collocations": [
         "give advice",
         "a piece of advice"
@@ -1566,12 +1600,12 @@
       "pos": "noun",
       "ipa_us": "/ˈrizən/",
       "translation_ru": "причина, довод",
-      "example_en": "The main reason for the delay was a missing file.",
+      "example_en": "The main reason for the delay was heavy snow.",
       "collocations": [
         "the main reason",
         "for this reason"
       ],
-      "topic": "work"
+      "topic": "travel"
     },
     {
       "id": "b1_v_probably",
@@ -1580,7 +1614,7 @@
       "pos": "adverb",
       "ipa_us": "/ˈprɑbəbli/",
       "translation_ru": "вероятно, наверное",
-      "example_en": "The meeting will probably finish before lunch.",
+      "example_en": "It will probably rain this afternoon.",
       "collocations": [
         "will probably",
         "probably not"
@@ -1594,12 +1628,15 @@
       "pos": "phrase",
       "ipa_us": "/ɪn maɪ əˈpɪnjən/",
       "translation_ru": "по-моему, на мой взгляд",
-      "example_en": "In my opinion, we should test the app one more time.",
+      "example_en": "In my opinion, the book is better than the movie.",
       "collocations": [
         "in my opinion, we should",
         "in my honest opinion"
       ],
-      "topic": "feelings"
+      "topic": "feelings",
+      "accept": [
+        "in my view"
+      ]
     },
     {
       "id": "a1_v_turn_on",

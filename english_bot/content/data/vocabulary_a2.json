@@ -1619,7 +1619,10 @@
         "will probably",
         "probably not"
       ],
-      "topic": "time"
+      "topic": "time",
+      "accept": [
+        "likely"
+      ]
     },
     {
       "id": "b1_v_in_my_opinion",

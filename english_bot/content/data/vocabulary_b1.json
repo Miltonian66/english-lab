@@ -671,7 +671,7 @@
       "pos": "verb",
       "ipa_us": "/əˈtʃiv/",
       "translation_ru": "достигать, добиваться",
-      "example_en": "He worked hard and achieved his dream of opening a café.",
+      "example_en": "He worked hard and achieved his goal of opening a café.",
       "collocations": [
         "achieve a goal",
         "achieve a result"
@@ -753,12 +753,16 @@
       "pos": "verb",
       "ipa_us": "/sɑlv/",
       "translation_ru": "решать, устранять",
-      "example_en": "My daughter can solve this puzzle in five minutes.",
+      "example_en": "We solved the problem with our noisy neighbors by talking to them.",
       "collocations": [
         "solve a problem",
         "solve an issue"
       ],
-      "topic": "study"
+      "topic": "people",
+      "accept": [
+        "resolve",
+        "fix"
+      ]
     },
     {
       "id": "b1_v_confirm",
@@ -1099,7 +1103,10 @@
         "feel stressed",
         "get stressed"
       ],
-      "topic": "health"
+      "topic": "health",
+      "accept": [
+        "stressed out"
+      ]
     },
     {
       "id": "b1_v_reliable",
@@ -1113,7 +1120,10 @@
         "a reliable person",
         "a reliable source"
       ],
-      "topic": "travel"
+      "topic": "travel",
+      "accept": [
+        "dependable"
+      ]
     },
     {
       "id": "b1_v_flexible",
@@ -1392,7 +1402,10 @@
         "work out well",
         "it all worked out in the end"
       ],
-      "topic": "people"
+      "topic": "people",
+      "accept": [
+        "turn out"
+      ]
     },
     {
       "id": "b1_v_look_forward_to",
@@ -1928,7 +1941,10 @@
         "hang out with friends",
         "a place to hang out"
       ],
-      "topic": "people"
+      "topic": "people",
+      "accept": [
+        "spend time"
+      ]
     }
   ]
 }

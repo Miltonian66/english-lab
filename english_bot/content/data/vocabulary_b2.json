@@ -1070,7 +1070,10 @@
         "keep track of time",
         "keep track of changes"
       ],
-      "topic": "money"
+      "topic": "money",
+      "accept": [
+        "track"
+      ]
     },
     {
       "id": "b2_v_in_the_meantime",

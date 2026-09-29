@@ -1476,7 +1476,10 @@
         "how often",
         "very often"
       ],
-      "topic": "time"
+      "topic": "time",
+      "accept": [
+        "frequently"
+      ]
     },
     {
       "id": "a1_v_well",

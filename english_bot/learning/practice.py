@@ -656,6 +656,7 @@ IRREGULAR: dict[str, tuple[str, ...]] = {
     "grow": ("grew", "grown"), "hang": ("hung",), "have": ("had", "has"), "hear": ("heard",),
     "hide": ("hid", "hidden"), "hold": ("held",), "keep": ("kept",), "know": ("knew", "known"),
     "lay": ("laid",), "lead": ("led",), "leave": ("left",), "lend": ("lent",), "lie": ("lay", "lain"),
+    "underlie": ("underlay", "underlain"),
     "lose": ("lost",), "make": ("made",), "mean": ("meant",), "meet": ("met",),
     "overcome": ("overcame",), "pay": ("paid",), "ride": ("rode", "ridden"), "ring": ("rang", "rung"),
     "rise": ("rose", "risen"), "run": ("ran",), "say": ("said",), "see": ("saw", "seen"),
@@ -718,6 +719,9 @@ def _single_forms(base: str) -> set[str]:
     vowels = len(re.findall(r"[aeiouy]+", probe))
     if base.endswith("ee") or base == "be":
         forms |= {f"{base}s", f"{base}d", f"{base}ing"}
+    elif base.endswith("ie"):
+        # lie → lying, tie → tying: «liing» не форма.
+        forms |= {f"{base}s", f"{base}d", f"{base[:-2]}ying"}
     elif base.endswith("e"):
         forms |= {f"{base}s", f"{base}d", f"{base[:-1]}ing"}
     elif base.endswith("y") and len(base) > 2 and base[-2] not in "aeiou":

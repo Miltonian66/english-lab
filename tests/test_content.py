@@ -198,6 +198,37 @@ class ListeningBankTests(unittest.TestCase):
                 with self.subTest(task=task.id):
                     self.assertEqual({name for name, _ in task.speakers}, names)
 
+    def test_every_script_fits_its_level_length(self) -> None:
+        """Запись C2 в 60 слов — это 20 секунд письменной речи, а не C2."""
+        from english_bot.ai.tts import split_dialogue
+
+        ranges = {"A1": (25, 40), "A2": (35, 55), "B1": (50, 80), "B2": (70, 110),
+                  "C1": (90, 130), "C2": (110, 150)}
+        outside: list[str] = []
+        for level, tasks in CURRICULUM.listening.items():
+            low, high = ranges[level]
+            for task in tasks:
+                turns = split_dialogue(task.script_en)
+                words = sum(len(text.split()) for _, text in turns) if turns else len(task.script_en.split())
+                if not low <= words <= high:
+                    outside.append(f"{task.id}: {words}")
+        self.assertEqual(outside, [], "длина записи вне диапазона уровня")
+
+    def test_dialogue_names_used_in_the_question_are_heard(self) -> None:
+        """Имена говорящих синтез не читает: ученик узнаёт Megan, только если её так назвали."""
+        from english_bot.ai.tts import split_dialogue
+
+        unheard: list[str] = []
+        for tasks in CURRICULUM.listening.values():
+            for task in tasks:
+                turns = split_dialogue(task.script_en)
+                spoken = " ".join(text for _, text in turns)
+                asked = " ".join((task.question_en, *task.options))
+                for name in {name for name, _ in turns}:
+                    if re.search(rf"\b{name}\b", asked) and not re.search(rf"\b{name}\b", spoken):
+                        unheard.append(f"{task.id}: {name}")
+        self.assertEqual(unheard, [], "имя из вопроса не звучит в записи")
+
     def test_every_level_covers_all_listening_skills(self) -> None:
         from english_bot.content.banks import LISTENING_SKILLS
 

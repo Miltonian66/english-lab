@@ -209,11 +209,11 @@
       ]
     },
     {
-      "id": "a2_wr_last_weekend",
+      "id": "a2_wr_bad_day",
       "level": "A2",
-      "title_ru": "Как прошли выходные",
-      "prompt_en": "Write a message to a friend about last weekend: where you went and who with, what you did, one thing that went wrong, and how the weekend ended.",
-      "guidance_ru": "Шесть-восемь предложений, всего 50–80 слов, по порядку событий. Куда ездил и с кем? Что делали — два-три шага, связанных словами First, Then, After that. Что пошло не так — начни с Suddenly. Чем всё закончилось и как ты себя чувствовал. Проверь неправильные глаголы: go — went, swim — swam, get — got, have — had, а не goed и swimmed.",
+      "title_ru": "День, когда всё пошло не так",
+      "prompt_en": "Write a message to a friend about a recent day when everything went wrong: what went wrong first, two more problems that happened after that, who or what helped you, and how the day ended.",
+      "guidance_ru": "Шесть-восемь предложений, всего 50–80 слов, по порядку событий. Что пошло не так с самого утра: My alarm did not ring, so I woke up late. Ещё две неприятности, связанные словами Then и After that: I missed the bus. Then I left my keys at home. Кто или что помогло: My neighbor gave me a ride. Чем закончился день и как ты себя чувствовал: In the end, I laughed about it. День уже прошёл, поэтому глагол во второй форме; проверь неправильные: wake — woke, leave — left, lose — lost, forget — forgot, а не waked и forgetted. В отрицании вторая форма уходит в did: did not + начальная форма — my alarm did not ring, а не did not rang.",
       "words_min": 50,
       "words_max": 80,
       "focus": [
@@ -356,7 +356,7 @@
       "level": "B2",
       "title_ru": "Постмортем после сбоя",
       "prompt_en": "Write a postmortem summary for an outage that took the payment service down for forty minutes. Cover the timeline, the root cause, the customer impact, and the actions you committed to.",
-      "guidance_ru": "Четыре коротких блока; каждый можно начать заголовком отдельной строкой — Timeline, Root cause, Impact, Actions. Внутри: хронология, корневая причина, влияние на клиентов, что делаем дальше. Что началось раньше сбоя и уже шло к его моменту — had + третья форма или had been + -ing: the job had been failing since Monday. Пассив там, где важен факт, а не автор: The service was restored at 14:20. Про людей пиши нейтрально, без поиска виноватых.",
+      "guidance_ru": "Четыре коротких блока по два-три предложения, всего 120–180 слов; каждый можно начать заголовком отдельной строкой — Timeline, Root cause, Impact, Actions. Внутри: хронология, корневая причина, влияние на клиентов, что делаем дальше. Что началось раньше сбоя и уже шло к его моменту — had + третья форма или had been + -ing: the job had been failing since Monday. Пассив там, где важен факт, а не автор: The service was restored at 14:20. Про людей пиши нейтрально, без поиска виноватых.",
       "words_min": 120,
       "words_max": 180,
       "focus": [
@@ -369,7 +369,7 @@
       "level": "B2",
       "title_ru": "Предложение по рефакторингу",
       "prompt_en": "Write a proposal to your team lead: the reporting module should be rewritten. Explain the current pain, what you suggest, what it will cost in time, and what could go wrong.",
-      "guidance_ru": "Четыре абзаца: что болит сейчас, что предлагаешь, оценка сроков, риски и как их снизить. Риск описывай как следствие реального условия: после if — настоящее время, в главной части — will: If we postpone this, the cost will grow. Оценку смягчай: it would take roughly three weeks.",
+      "guidance_ru": "Четыре абзаца по два-три предложения, всего 120–180 слов: что болит сейчас, что предлагаешь, оценка сроков, риски и как их снизить. Риск описывай как следствие реального условия: после if — настоящее время, в главной части — will: If we postpone this, the cost will grow. Оценку смягчай: it would take roughly three weeks.",
       "words_min": 120,
       "words_max": 180,
       "focus": [
@@ -382,7 +382,7 @@
       "level": "B2",
       "title_ru": "Вежливое несогласие в ревью",
       "prompt_en": "A reviewer asked you to change an approach you believe is correct. Write a reply that acknowledges their point, explains your reasoning with evidence, and proposes a way to settle the question.",
-      "guidance_ru": "Три части: признать сильную сторону замечания, спокойно объяснить свою логику с цифрами или примером, предложить способ договориться. Смягчай: I see your point, I may be missing something, would it make sense to. Не защищайся и не переходи на личности.",
+      "guidance_ru": "Три части по три-четыре предложения, всего 120–180 слов: признать сильную сторону замечания, спокойно объяснить свою логику с цифрами или примером, предложить способ договориться. Смягчай: I see your point, I may be missing something, would it make sense to. Не защищайся и не переходи на личности.",
       "words_min": 120,
       "words_max": 180,
       "focus": [
@@ -395,7 +395,7 @@
       "level": "B2",
       "title_ru": "Заметки к релизу для бизнеса",
       "prompt_en": "Write release notes for a non-technical audience: three changes shipped this month, what each one means for the user, and one known limitation.",
-      "guidance_ru": "Вступление в одно-два предложения и три коротких блока по изменениям. Каждое изменение объясняй через пользу для человека, а не через технику: a new filter that shows only failed exports. Ограничение назови честно и укажи срок, когда его исправите.",
+      "guidance_ru": "Вступление в одно-два предложения, три коротких блока по изменениям и ограничение — по два-три предложения в каждом блоке, всего 120–180 слов. Каждое изменение объясняй через пользу для человека, а не через технику: a new filter that shows only failed exports. Ограничение назови честно и укажи срок, когда его исправите.",
       "words_min": 120,
       "words_max": 180,
       "focus": [
@@ -407,8 +407,8 @@
       "id": "b2_wr_feature_request_reply",
       "level": "B2",
       "title_ru": "Ответ клиенту на просьбу о доработке",
-      "prompt_en": "A client has asked your team to add automatic weekly reports, sent by email to twenty of their managers, by the end of this month. You cannot build it in that time. Write a reply: show that you understand why they need it, explain honestly why the full request is not possible by then, offer an alternative that solves most of the problem, and suggest a next step.",
-      "guidance_ru": "Четыре абзаца, всего 120–180 слов. Первый — благодарность и задача клиента своими словами: он должен увидеть, что его поняли. Второй — отказ ясно и один раз, без жаргона: что мешает успеть к концу месяца. Смягчай форму, но не размывай суть: Unfortunately, we will not be able to... by the 30th, because... Третий — альтернатива, которая закрывает большую часть задачи, например выгрузка в один клик или ежемесячный отчёт, и когда можно вернуться к полной версии. Последний — следующий шаг с датой: короткий звонок, прототип. Тон спокойный и уверенный, без sorry в каждом абзаце.",
+      "prompt_en": "A client has asked your team to email a weekly spreadsheet to twenty of their managers with their full customer list, including names, phone numbers, and home addresses. Your company's security policy does not allow personal data to be sent as email attachments. Write a reply: show that you understand why they need it, explain honestly why you cannot do it in that form, offer an alternative that solves most of the problem, and suggest a next step.",
+      "guidance_ru": "Четыре абзаца по два-три предложения, всего 120–180 слов. Первый — благодарность и задача клиента своими словами: он должен увидеть, что его поняли. Второй — отказ ясно и один раз, без жаргона: что запрещает политика и от чего она защищает, в том числе самих клиентов заказчика. Смягчай форму, но не размывай суть: Unfortunately, we are not able to send personal data as an attachment, because our security policy does not allow it. Третий — альтернатива, которая закрывает большую часть задачи, например письмо со ссылкой на отчёт, который открывается только после входа в систему, или таблица без имён, телефонов и адресов. Последний — следующий шаг с датой: короткий звонок, демонстрация. Тон спокойный и уверенный, без sorry в каждом абзаце.",
       "words_min": 120,
       "words_max": 180,
       "focus": [
@@ -422,7 +422,7 @@
       "level": "B2",
       "title_ru": "Отчёт после конференции",
       "prompt_en": "You attended a two-day tech conference. Write a report for your colleagues: the most useful talk, what you disagreed with, and two ideas the team could try.",
-      "guidance_ru": "Четыре абзаца: зачем ездил, самый полезный доклад с конкретным выводом, с чем не согласен и почему, две идеи для команды. Чужие мысли пересказывай через глагол речи и that; после argued, said, claimed время сдвигается на шаг в прошлое: The speaker argued that the approach did not scale.",
+      "guidance_ru": "Четыре абзаца по два-три предложения, всего 120–180 слов: зачем ездил, самый полезный доклад с конкретным выводом, с чем не согласен и почему, две идеи для команды. Чужие мысли пересказывай через глагол речи и that; после argued, said, claimed время сдвигается на шаг в прошлое: The speaker argued that the approach did not scale.",
       "words_min": 120,
       "words_max": 180,
       "focus": [
@@ -476,7 +476,7 @@
       "level": "C1",
       "title_ru": "Раздел проектного документа",
       "prompt_en": "Write the decision section of a design document: the problem you are solving, two options you considered, the trade-offs of each, and the option you recommend with your reasoning.",
-      "guidance_ru": "Пять абзацев: проблема, вариант А, вариант Б, сравнение по одним и тем же критериям, рекомендация. Пиши для того, кто придёт через год и спросит, почему решили так. Вместо общих слов вроде better называй, что именно лучше и на сколько. Ключевые мысли сворачивай в именные группы: the main trade-off is operational cost.",
+      "guidance_ru": "Пять абзацев по два-три предложения, всего 180–250 слов: проблема, вариант А, вариант Б, сравнение по одним и тем же критериям, рекомендация. Пиши для того, кто придёт через год и спросит, почему решили так. Вместо общих слов вроде better называй, что именно лучше и на сколько. Ключевые мысли сворачивай в именные группы: the main trade-off is operational cost.",
       "words_min": 180,
       "words_max": 250,
       "focus": [
@@ -490,7 +490,7 @@
       "level": "C1",
       "title_ru": "Служебная записка о техдолге",
       "prompt_en": "Write a memo to leadership arguing that the team needs one quarter to pay down technical debt. Quantify the current cost, describe what you would do, and answer the objection that feature work will stop.",
-      "guidance_ru": "Вывод в первом абзаце, доказательства после него. Переводи техдолг в понятные бизнесу единицы: время, деньги, риск. Отдельный абзац на возражение и ответ. В финале конкретная просьба, а не общее пожелание.",
+      "guidance_ru": "Четыре-пять абзацев по три предложения, всего 180–250 слов. Вывод в первом абзаце, доказательства после него. Переводи техдолг в понятные бизнесу единицы: время, деньги, риск. Отдельный абзац на возражение и ответ. В финале конкретная просьба, а не общее пожелание.",
       "words_min": 180,
       "words_max": 250,
       "focus": [
@@ -504,7 +504,7 @@
       "level": "C1",
       "title_ru": "Обратная связь после собеседования",
       "prompt_en": "Write structured feedback after a technical interview: what the candidate did well, where they struggled, how they responded to hints, and your hiring recommendation with a confidence level.",
-      "guidance_ru": "Четыре части: сильные стороны с примерами из задачи, слабые места, реакция на подсказки, рекомендация с уровнем уверенности. Если собеседований не проводил, придумай кандидата: какая была задача, что он сделал, где застрял. Описывай поведение, а не личность: что кандидат сделал, а не какой он. Где данных мало, так и пиши.",
+      "guidance_ru": "Четыре части по три-четыре предложения, всего 180–250 слов: сильные стороны с примерами из задачи, слабые места, реакция на подсказки, рекомендация с уровнем уверенности. Если собеседований не проводил, придумай кандидата: какая была задача, что он сделал, где застрял. Описывай поведение, а не личность: что кандидат сделал, а не какой он. Где данных мало, так и пиши.",
       "words_min": 180,
       "words_max": 250,
       "focus": [
@@ -518,7 +518,7 @@
       "level": "C1",
       "title_ru": "Критика процесса и предложение",
       "prompt_en": "Your team's code review process has become a bottleneck. Write a message that diagnoses why, acknowledges what the process was designed to protect, and proposes a change that keeps those protections.",
-      "guidance_ru": "Пять абзацев: симптом с цифрами, разбор причин, признание того, что процесс защищал не зря, предложение, способ проверить результат через месяц. Разбирай устройство процесса, а не людей. Один раз усиль главный вывод инверсией: Not only has review time doubled, but it has also delayed two releases.",
+      "guidance_ru": "Пять абзацев по два-три предложения, всего 180–250 слов: симптом с цифрами, разбор причин, признание того, что процесс защищал не зря, предложение, способ проверить результат через месяц. Разбирай устройство процесса, а не людей. Один раз усиль главный вывод инверсией: Not only has review time doubled, but it has also delayed two releases.",
       "words_min": 180,
       "words_max": 250,
       "focus": [
@@ -532,7 +532,7 @@
       "level": "C1",
       "title_ru": "Публичное сообщение о крупном сбое",
       "prompt_en": "Write a public status update after a six-hour outage that affected all customers: what happened, what data was and was not affected, what you have done, and what you commit to next.",
-      "guidance_ru": "Четыре абзаца строго по порядку: факты, границы ущерба, выполненные действия, обязательства со сроками. Отдельным предложением скажи, что не пострадало. Никаких размытых формул вроде some users may have experienced issues. Текст должен одинаково читаться юристом и инженером.",
+      "guidance_ru": "Четыре абзаца по три-четыре предложения, всего 180–250 слов, строго по порядку: факты, границы ущерба, выполненные действия, обязательства со сроками. Отдельным предложением скажи, что не пострадало. Никаких размытых формул вроде some users may have experienced issues. Текст должен одинаково читаться юристом и инженером.",
       "words_min": 180,
       "words_max": 250,
       "focus": [
@@ -546,7 +546,7 @@
       "level": "C1",
       "title_ru": "Эссе о влиянии ИИ на профессию",
       "prompt_en": "Write an essay about how AI coding tools are changing what a software engineer is actually paid for. Take a clear position, support it, and deal seriously with the strongest counterargument.",
-      "guidance_ru": "Тезис в конце первого абзаца, два-три аргумента с примерами, сильный контраргумент и ответ на него, вывод без дословного повтора тезиса. Избегай штампов вроде in today's fast-changing world.",
+      "guidance_ru": "Четыре-пять абзацев, всего 180–250 слов. Тезис в конце первого абзаца, два-три аргумента с примерами, сильный контраргумент и ответ на него, вывод без дословного повтора тезиса. Избегай штампов вроде in today's fast-changing world.",
       "words_min": 180,
       "words_max": 250,
       "focus": [
@@ -602,7 +602,7 @@
       "level": "C2",
       "title_ru": "Стратегический документ по платформе",
       "prompt_en": "Write a strategy paper arguing whether your company should build an internal developer platform or keep letting each team choose its own tooling. Argue one side, model the costs of both, and define what would make you change your mind.",
-      "guidance_ru": "Пять-шесть абзацев: позиция, экономика обоих путей, что показывает отраслевой опыт, сильнейшее возражение и разбор, условия пересмотра решения. Держи один регистр от начала до конца, не срывайся в разговорные обороты.",
+      "guidance_ru": "Пять-шесть абзацев по три предложения, всего 250–350 слов: позиция, экономика обоих путей, что показывает отраслевой опыт, сильнейшее возражение и разбор, условия пересмотра решения. Держи один регистр от начала до конца, не срывайся в разговорные обороты.",
       "words_min": 250,
       "words_max": 350,
       "focus": [
@@ -630,7 +630,7 @@
       "level": "C2",
       "title_ru": "Анализ: строить или покупать",
       "prompt_en": "Write a critical analysis of a build-versus-buy decision for your authentication stack. Weigh cost, control, security, hiring, and exit risk, then reach a recommendation you can defend.",
-      "guidance_ru": "Разбери пять критериев по одной схеме, чтобы их можно было сравнить. Отдельно назови, чего ты не знаешь и как проверить это дешевле всего. Рекомендация должна следовать из анализа, а не из вкуса. Вместо probably и maybe давай точные оговорки.",
+      "guidance_ru": "Семь коротких абзацев, всего 250–350 слов: вступление, по абзацу на каждый из пяти критериев и рекомендация. Разбери пять критериев по одной схеме, чтобы их можно было сравнить. Отдельно назови, чего ты не знаешь и как проверить это дешевле всего. Рекомендация должна следовать из анализа, а не из вкуса. Вместо probably и maybe давай точные оговорки.",
       "words_min": 250,
       "words_max": 350,
       "focus": [
@@ -644,7 +644,7 @@
       "level": "C2",
       "title_ru": "Ответ на предложенную политику",
       "prompt_en": "Management has proposed a new rule: all AI-generated code must be reviewed by two senior engineers. Write a persuasive response: engage with the real risk behind the policy, show where the rule backfires, and propose a better one.",
-      "guidance_ru": "Сначала покажи, что понял настоящий страх за политикой, иначе тебя не услышат. Дальше — где правило даст обратный эффект, с механизмом, а не с эмоцией. Предложи альтернативу, которую можно ввести в понедельник. Тон уверенный, но без высокомерия.",
+      "guidance_ru": "Четыре-пять абзацев по три-четыре предложения, всего 250–350 слов. Сначала покажи, что понял настоящий страх за политикой, иначе тебя не услышат. Дальше — где правило даст обратный эффект, с механизмом, а не с эмоцией. Предложи альтернативу, которую можно ввести в понедельник. Тон уверенный, но без высокомерия.",
       "words_min": 250,
       "words_max": 350,
       "focus": [
@@ -658,7 +658,7 @@
       "level": "C2",
       "title_ru": "Эссе об этике продуктовой аналитики",
       "prompt_en": "Write an essay on where product analytics stops being useful measurement and starts being surveillance. Draw a line you can defend, then test it against a hard case where it nearly breaks.",
-      "guidance_ru": "Проведи границу и сразу проверь её на неудобном примере, где твой критерий трещит. Держи разницу между тем, что законно, и тем, что правильно. Абстрактную лексику используй точно, без философского тумана.",
+      "guidance_ru": "Пять абзацев по три предложения, всего 250–350 слов. Проведи границу и сразу проверь её на неудобном примере, где твой критерий трещит. Держи разницу между тем, что законно, и тем, что правильно. Абстрактную лексику используй точно, без философского тумана.",
       "words_min": 250,
       "words_max": 350,
       "focus": [
@@ -672,7 +672,7 @@
       "level": "C2",
       "title_ru": "Брифинг для совета директоров",
       "prompt_en": "Write a briefing for the board on your security posture after a competitor suffered a major breach: your real exposure, what you are doing, what you have deliberately chosen not to do, and what you need from the board.",
-      "guidance_ru": "Первый абзац должен работать, даже если дальше не прочитают. Без технического жаргона, но и без упрощений, которые искажают суть. Отдельно объясни осознанные отказы: почему часть мер вы намеренно не берёте. Заканчивай конкретным запросом: деньги, люди, решение.",
+      "guidance_ru": "Пять абзацев по три предложения, всего 250–350 слов: суть, реальная уязвимость, что уже делаете, от чего осознанно отказались, запрос к совету. Первый абзац должен работать, даже если дальше не прочитают. Без технического жаргона, но и без упрощений, которые искажают суть. Отдельно объясни осознанные отказы: почему часть мер вы намеренно не берёте. Заканчивай конкретным запросом: деньги, люди, решение.",
       "words_min": 250,
       "words_max": 350,
       "focus": [

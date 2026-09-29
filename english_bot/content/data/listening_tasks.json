@@ -113,7 +113,7 @@
       "question_en": "How does the speaker feel about the new apartment?",
       "options": ["Happy, but the street is noisy", "Unhappy, because it is too small", "Happy, but the kitchen is too small", "Unhappy, and wants to move"],
       "correct_index": 0,
-      "explanation_ru": "Говорящий доволен: I love my new apartment и I'm really happy here. Минус один — шум: The only problem is the noise. Маленькая сама квартира, а кухня как раз big and bright; переезжать он не собирается."
+      "explanation_ru": "Говорящая довольна: I love my new apartment и I'm really happy here. Минус один — шум: The only problem is the noise. Маленькая сама квартира, а кухня как раз big and bright; переезжать она не собирается."
     },
 
     {
@@ -347,7 +347,7 @@
       "question_en": "How does the speaker feel about the gym?",
       "options": ["Happy with it and planning to stay for years", "Likes it but feels it isn't worth the price", "Dislikes the staff but likes the equipment", "Likes the hours but not the equipment"],
       "correct_index": 1,
-      "explanation_ru": "Оборудование и персонал говорящий хвалит (brand-new, really friendly), но за eighty dollars a month ждал более долгих часов работы и после окончания контракта поищет something cheaper — цена кажется ему завышенной."
+      "explanation_ru": "Оборудование и персонал говорящая хвалит (brand-new, really friendly), но за eighty dollars a month ждала более долгих часов работы и после окончания контракта поищет something cheaper — цена кажется ей завышенной."
     },
 
     {
@@ -429,7 +429,7 @@
       "question_en": "What is the host's main point?",
       "options": ["Phones are the main reason people can't fall asleep", "An irregular schedule matters more than screens", "A good sleep app can fix an irregular schedule", "Everyone should go to bed at eleven every night"],
       "correct_index": 1,
-      "explanation_ru": "Ведущий признаёт, что screens do play a part, но главным называет другое: the research... points somewhere else: to irregular schedules — и советует вставать в одно и то же время каждый день. Покупать приложение он как раз не советует, а eleven — лишь пример будничного отбоя."
+      "explanation_ru": "Ведущая признаёт, что screens do play a part, но главным называет другое: the research... points somewhere else: to irregular schedules — и советует вставать в одно и то же время каждый день. Покупать приложение она как раз не советует, а eleven — лишь пример будничного отбоя."
     },
     {
       "id": "b2_ls_lost_suitcase",
@@ -464,7 +464,7 @@
       "question_en": "How does the speaker feel about the company?",
       "options": ["Satisfied, because the agent was so helpful", "Frustrated, even though the agent was kind", "Angry with the agent, but happy with the company", "Worried that the money won't be refunded"],
       "correct_index": 1,
-      "explanation_ru": "Сотрудницу говорящий хвалит (lovely, really apologetic), но почти пятьдесят минут ожидания и пересылка за свой счёт его злят, и вывод такой: I'm not buying anything from that company again. Деньги он, скорее всего, вернёт — probably get my money back eventually."
+      "explanation_ru": "Сотрудницу говорящая хвалит (lovely, really apologetic), но почти пятьдесят минут ожидания и пересылка за свой счёт её злят, и вывод такой: I'm not buying anything from that company again. Деньги она, скорее всего, вернёт — probably get my money back eventually."
     },
 
     {
@@ -524,7 +524,7 @@
       "question_en": "Which description best matches the speaker's position?",
       "options": ["Supports the rule, but wants more office days", "Supports the goal, but objects to one rule for everyone", "Supports the goal, but wants the rule for new hires only", "Accepts the rule, but doubts it will help new hires"],
       "correct_index": 1,
-      "explanation_ru": "Цель — собирать людей on purpose — говорящий поддерживает и считает, что два офисных дня помогут новичкам, но его беспокоит the one-size-fits-all part: одно правило для всех, whatever their role, wherever they live. С исключениями и пересмотром через три месяца он бы политику поддержал. Новичков он приводит как пример пользы, а не как единственную группу для правила."
+      "explanation_ru": "Цель — собирать людей on purpose — говорящая поддерживает и считает, что два офисных дня помогут новичкам, но её беспокоит the one-size-fits-all part: одно правило для всех, whatever their role, wherever they live. С исключениями и пересмотром через три месяца она бы политику поддержала. Новичков она приводит как пример пользы, а не как единственную группу для правила."
     },
     {
       "id": "c1_ls_author_interview",
@@ -570,7 +570,7 @@
       "question_en": "What is the caller most likely worried about?",
       "options": ["Dad has stopped taking his medicine", "Dad is struggling to manage on his own", "Dad has argued with his doctor", "Dad can no longer afford groceries"],
       "correct_index": 1,
-      "explanation_ru": "Прямо об этом не сказано, но отец несколько раз спрашивает, какой сегодня день, не помнит о приёме, который сам записал, а холодильник почти пустой (which isn't like him). Поэтому звонящий предлагает обсудить, how often one of us drops by, — отцу, похоже, уже трудно справляться одному. О лекарствах, ссоре с врачом или деньгах речи нет."
+      "explanation_ru": "Прямо об этом не сказано, но отец несколько раз спрашивает, какой сегодня день, не помнит о приёме, который сам записал, а холодильник почти пустой (which isn't like him). Поэтому звонящая предлагает обсудить, how often one of us drops by, — отцу, похоже, уже трудно справляться одному. О лекарствах, ссоре с врачом или деньгах речи нет."
     },
     {
       "id": "c1_ls_theater_debate",
@@ -641,7 +641,7 @@
       "question_en": "What is the speaker's attitude toward the reorganization?",
       "options": ["Accepts the aim, but objects to decisions moving upward", "Welcomes the new roles, but wishes consultation had started earlier", "Doubts that duplication exists, but likes the new chart", "Accepts the new chart, but wants lower delivery targets"],
       "correct_index": 0,
-      "explanation_ru": "Цель убрать дублирование говорящий признаёт (duplication's a real problem), но критикует то, что решения уходят наверх (goes up a level, sometimes two), тогда как цели по срокам не изменились. Слияние он поддержит, if the authority moved down, closer to the people who actually carry the risk. Позднюю консультацию он приводит как ещё один симптом, а новые роли и схему не одобряет."
+      "explanation_ru": "Цель убрать дублирование говорящая признаёт (duplication's a real problem), но критикует то, что решения уходят наверх (goes up a level, sometimes two), тогда как цели по срокам не изменились. Слияние она поддержит, if the authority moved down, closer to the people who actually carry the risk. Позднюю консультацию она приводит как ещё один симптом, а новые роли и схему не одобряет."
     },
     {
       "id": "c2_ls_walking_study",
@@ -652,7 +652,7 @@
       "question_en": "According to the study, how much lower was the risk for people who walked about forty minutes a day?",
       "options": ["About half", "About a third", "About forty percent", "About twelve percent"],
       "correct_index": 1,
-      "explanation_ru": "Заголовки обещали in half, но ведущий уточняет: a risk about a third lower... Not half. A third. Forty — это минуты ходьбы в день, а twelve — тысячи участников исследования."
+      "explanation_ru": "Заголовки обещали in half, но ведущая уточняет: a risk about a third lower... Not half. A third. Forty — это минуты ходьбы в день, а twelve — тысячи участников исследования."
     },
     {
       "id": "c2_ls_tourist_fee",
@@ -698,7 +698,7 @@
       "question_en": "What is the speaker's overall attitude toward the documentary?",
       "options": ["Moved by the second hour, but wouldn't recommend it to anyone", "Glad to have seen it, though unsure about watching it again", "Found it too long, but keen to watch it again soon", "Enjoyed the first hour, but found the second one too slow"],
       "correct_index": 1,
-      "explanation_ru": "Говорящий шёл с мыслью, что фильм ему не понравится (expecting to hate it), и признаёт, что он too long, но со второго часа перестал смотреть на часы и рад, что посмотрел: I'm glad I saw it once. Пересматривать он не уверен (I'm not sure I would), хотя советует фильм my more patient friends. Первый час, наоборот, испытывает терпение, а тронул его второй."
+      "explanation_ru": "Говорящая шла с мыслью, что фильм ей не понравится (expecting to hate it), и признаёт, что он too long, но со второго часа перестала смотреть на часы и рада, что посмотрела: I'm glad I saw it once. Посмотрит ли ещё раз, она не уверена (I'm not sure I would), хотя советует фильм my more patient friends. Первый час, наоборот, испытывает терпение, а тронул её второй."
     }
   ]
 }

@@ -223,12 +223,12 @@
     },
 
     {
-      "id": "b1_sp_code_review",
+      "id": "b1_sp_mockup_feedback",
       "level": "B1",
       "mode": "roleplay",
-      "title_ru": "Разговор о пул-реквесте",
-      "prompt_en": "Your teammate calls you: \"Hi! Did you look at my pull request? I'd really like to merge it today.\" The PR adds a password reset page, but the error messages are confusing, and the page looks broken on phones. Give your feedback: say what is good, suggest two changes, and agree on the next step.",
-      "guidance_ru": "Около двенадцати предложений. Говори с автором напрямую, через you и your. На просьбу смержить сегодня не отвечай сразу «нет»: одно предложение-реакция, потом три о том, что в PR хорошего, с конкретикой. Дальше две правки — понятные сообщения об ошибках и вид страницы на телефоне, — на каждую три предложения: что не так, почему это важно пользователю, что предлагаешь. Смягчай: I would suggest..., it might be worth... Не начинай с This is wrong. Закончи договорённостью в двух предложениях: кто что делает и когда можно смержить.",
+      "title_ru": "Отзыв на макет дизайнера",
+      "prompt_en": "A designer on your team calls you: \"Hi! Did you get a chance to look at my mockups for the new sign-up screen? I'd like to send them to the developers tomorrow.\" The screen looks clean, but the text on the buttons is small and hard to read, and the form asks for a phone number, a home address, and a date of birth before people can even try the app. Give your feedback: say what is good, suggest two changes, and agree on the next step.",
+      "guidance_ru": "Около двенадцати предложений. Говори с дизайнером напрямую, через you и your. На план отдать макеты завтра не отвечай сразу «нет»: одно предложение-реакция, потом три о том, что в макете хорошего, с конкретикой: цвета, порядок полей, одна заметная кнопка. Дальше две правки — мелкий текст на кнопках и слишком длинная форма, — на каждую три предложения: что не так, почему это важно пользователю, что предлагаешь. Причину и следствие связывай через because и so: The form is long, so many people might leave before they even try the app. Смягчай: I would suggest..., it might be worth... Не начинай с This is wrong. Закончи договорённостью в двух предложениях: кто что делает и когда макеты уйдут разработчикам.",
       "seconds_min": 65,
       "seconds_max": 90,
       "focus": ["modals for advice", "softening language", "because / so"]
@@ -339,7 +339,7 @@
       "mode": "monologue",
       "title_ru": "Вводная для нового коллеги",
       "prompt_en": "A new colleague joins your team on Monday, and you have ten minutes with them. Explain how work really flows in your team: where tasks come from, how a task gets from 'to do' to 'done', and three unwritten rules that everyone follows.",
-      "guidance_ru": "Начни с общей картины одной фразой, потом путь задачи по шагам: откуда приходит, кто оценивает, кто проверяет, когда она считается готовой. Где важен шаг, а не исполнитель, — пассив: Every change is reviewed by two people. Дальше три неписаных правила, к каждому — зачем оно нужно. Чего команда ждёт от человека — be expected to и be supposed to: You are not supposed to merge on Friday evening. Смысл правила объясняй через if: If something breaks on Friday night, nobody is around to fix it. Закончи тем, к кому идти, когда сомневаешься.",
+      "guidance_ru": "По две-три фразы на каждую часть, всего около 180 слов — примерно полторы минуты речи. Начни с общей картины: сколько вас и откуда приходят задачи — from the product manager, from support tickets. Потом путь задачи по шагам: кто оценивает, кто проверяет, когда она считается готовой. Где важен шаг, а не исполнитель, — пассив: Every change is reviewed by two people. Дальше три неписаных правила, каждое отдельной частью и с тем, зачем оно нужно. Чего команда ждёт от человека — be expected to и be supposed to: You are not supposed to merge on Friday evening. Смысл правила объясняй через if: If something breaks on Friday night, nobody is around to fix it. Потом первая неделя новичка: что от него ждут и чего пока не трогать — In your first week, you are expected to... Закончи тем, к кому идти, когда сомневаешься: If you are stuck for more than an hour, ask...",
       "seconds_min": 95,
       "seconds_max": 120,
       "focus": ["passive voice", "be supposed to / be expected to", "first conditional"]
@@ -350,7 +350,7 @@
       "mode": "opinion",
       "title_ru": "Защитить техническое решение",
       "prompt_en": "You picked one tool over another and a teammate disagrees. Explain your choice, name the trade-off you accepted, and say what would make you change your mind.",
-      "guidance_ru": "Позиция в первом предложении, два аргумента с фактами, потом честный минус через admittedly. Финал — условие, при котором ты передумаешь: оно снимает спор лучше, чем ещё один довод.",
+      "guidance_ru": "По две-три фразы на каждую часть, всего около 170 слов — примерно полторы минуты речи. Сначала что выбирали и между чем: We needed a new..., and we compared X and Y. Потом позиция без оговорок: I went with X because... Два аргумента, каждый отдельной частью и с фактом или цифрой: It cut our build time from ten minutes to four. Где уверенности нет, смягчай: as far as I can tell, at least in our case. Дальше признай, в чём коллега прав, — I can see why you prefer Y: ... — и назови цену своего выбора через admittedly: Admittedly, X has a smaller community, so answers are harder to find. Финал — условие, при котором ты передумаешь. Воображаемое условие — if + прошедшее время, would в главной части: If our team doubled, I would look at Y again. Такое условие снимает спор лучше, чем ещё один довод.",
       "seconds_min": 90,
       "seconds_max": 120,
       "focus": ["concession linkers", "second conditional", "hedging"]
@@ -361,7 +361,7 @@
       "mode": "monologue",
       "title_ru": "Демо для заказчика",
       "prompt_en": "Demo a new feature to a client who is not technical: say what problem it solves, walk through the main steps, and be clear about what is not ready yet.",
-      "guidance_ru": "Начни с боли клиента, а не с технологии. Дальше три шага сценария от лица пользователя. В конце честно про незакрытое и следующий шаг. Термины заменяй простыми словами.",
+      "guidance_ru": "По две-три фразы на каждую часть, всего около 170 слов — примерно полторы минуты речи. Начни с боли клиента, а не с технологии: Right now, your managers copy numbers into a spreadsheet by hand every Monday. Скажи, что сейчас покажешь, — слушателю проще следить: I'll walk you through three steps. Дальше три шага сценария от лица пользователя, каждый отдельной частью: First, you open... Once that's done, you... Термины заменяй простыми словами: не API, а the connection to your system. Потом что это даёт: сколько времени или ошибок экономит. Дальше честно про незакрытое; где важен результат, а не исполнитель, — пассив: Email alerts haven't been added yet, but they will be ready in May. Закончи следующим шагом и вопросом: What would you like to try first?",
       "seconds_min": 90,
       "seconds_max": 120,
       "focus": ["passive voice", "paraphrasing technical terms", "signposting"]
@@ -372,7 +372,7 @@
       "mode": "roleplay",
       "title_ru": "Сдвинуть срок",
       "prompt_en": "Your project manager says: \"The client demo is on the fifteenth, and we promised them the full feature set. Tell me we're on track.\" You are not. Tell them the deadline is not realistic: give evidence, offer two options, and say what you need decided today.",
-      "guidance_ru": "Отреагируй на его слова и сразу переходи к факту, без извинений: I know how much the demo matters, which is why I'm raising this now. Потом цифра: сколько работы осталось и сколько реально успеть к пятнадцатому. Почему старый план не сходится. Два варианта — урезать объём к демо или сдвинуть дату — и честная цена каждого; реальное условие и его следствие — if + настоящее время, will в главной части: If we drop the reports, we will still demo on the fifteenth. Заканчивай вопросом о решении: Which option can we agree on today?",
+      "guidance_ru": "По две-три фразы на каждую часть, всего около 180 слов — примерно полторы минуты речи. Отреагируй на его слова и сразу переходи к факту, без извинений: I know how much the demo matters, which is why I'm raising this now. Что уже готово — пусть будет видно, что работа идёт: The login page and the dashboard are done and tested. Потом цифра: сколько работы осталось и сколько реально успеть к пятнадцатому. Почему старый план не сходится: что оказалось сложнее или что добавили по ходу. Два варианта — урезать объём к демо или сдвинуть дату, — каждый отдельной частью и с честной ценой; реальное условие и его следствие — if + настоящее время, will в главной части: If we drop the reports, we will still demo on the fifteenth. Потом что тебе нужно, кроме решения, и что возьмёшь на себя: I can write the note to the client myself. Заканчивай вопросом о решении: Which option can we agree on today?",
       "seconds_min": 95,
       "seconds_max": 120,
       "focus": ["conditionals", "diplomatic language", "presenting options"]
@@ -383,7 +383,7 @@
       "mode": "interview",
       "title_ru": "Собеседование: неудача в проекте",
       "prompt_en": "Answer an interview question: Tell me about a time a project went wrong. What was your part in it, and what did you change afterwards?",
-      "guidance_ru": "Контекст в двух предложениях, что пошло не так, твоя доля ответственности без перевода стрелок, вывод и как ты его применил позже. Вывод — конкретное действие, а не мысль.",
+      "guidance_ru": "По две-три фразы на каждую часть, всего около 180 слов — чуть больше полутора минут речи. Контекст: что за проект, какая была твоя роль и что стояло на кону. Что пошло не так и когда это стало видно. То, что случилось ещё раньше этого момента, — had + третья форма: By the time we noticed, the bug had been in production for a week. Твоя доля ответственности — прямо, без перевода стрелок: I didn't check..., I should have asked... Потом что вы сделали, чтобы исправить ситуацию, и чем всё закончилось; следствие связывай через as a result или which meant that. Вывод — конкретное действие, а не мысль: не I learned to communicate better, а I now send a risk list every Friday. Закончи тем, как ты применил вывод позже и что это дало.",
       "seconds_min": 100,
       "seconds_max": 120,
       "focus": ["past perfect", "taking responsibility", "result linkers"]
@@ -394,7 +394,7 @@
       "mode": "opinion",
       "title_ru": "Соцсети и концентрация",
       "prompt_en": "Are phones and social apps really making it harder to concentrate, or do we just blame them too easily? Take a side and answer the strongest argument against you.",
-      "guidance_ru": "Позиция, два довода, потом сам сформулируй сильный контраргумент и ответь на него. Уступка через admittedly и that said. Обобщение подкрепи примером из своей недели.",
+      "guidance_ru": "По две-три фразы на каждую часть, всего около 170 слов — примерно полторы минуты речи. Сначала позиция: I think phones really do make it harder to focus или I think we blame them too easily. Потом два довода, каждый отдельной частью и с примером из своей недели: Last Tuesday I checked my phone every ten minutes during a two-hour task. Дальше сам сформулируй самый сильный довод другой стороны — честно, без карикатуры — и ответь на него. Уступка — admittedly, поворот к ответу — that said: Admittedly, people got distracted long before smartphones. That said, ... Догадку о причинах выражай через might, may или could: It might not be the app itself but the way we use it. В конце — что ты сам уже делаешь или готов изменить: I have started leaving my phone in another room.",
       "seconds_min": 90,
       "seconds_max": 115,
       "focus": ["concession", "argument language", "modals of speculation"]
@@ -405,7 +405,7 @@
       "mode": "opinion",
       "title_ru": "Центр города без машин",
       "prompt_en": "Should city centers be closed to private cars? Give your view, say who would lose from it, and say what would have to happen first.",
-      "guidance_ru": "Позиция, две причины, потом честно про тех, кто пострадает. Для воображаемой ситуации — If the city closed the center to cars, shop owners would lose customers. Для обязательного условия в конце — It will only work if the city first builds better public transport.",
+      "guidance_ru": "По две-три фразы на каждую часть, всего около 170 слов — примерно полторы минуты речи. Сначала позиция и о каком городе говоришь — о своём или о том, который хорошо знаешь. Потом две причины, каждая отдельной частью и с деталью: воздух, шум, безопасность детей, место для людей. Дальше честно про тех, кто проиграет: владельцы магазинов, курьеры, те, кто живёт далеко от метро. Воображаемую ситуацию описывай через if + прошедшее время и would в главной части: If the city closed the center to cars, some shop owners would lose customers. Потом что обычно говорят сторонники и противники — безлично: It is often said that..., It is argued that... В конце — что должно случиться сначала, через must, have to или only if: It will only work if the city first builds better public transport.",
       "seconds_min": 90,
       "seconds_max": 115,
       "focus": ["second conditional", "modals of obligation", "impersonal structures"]
@@ -416,7 +416,7 @@
       "mode": "describe",
       "title_ru": "Место, куда хочется вернуться",
       "prompt_en": "Describe a place you would go back to tomorrow. What does it look and sound like, what did you do there, and why has it stayed with you?",
-      "guidance_ru": "Сначала картинка через три детали на разные чувства, потом один эпизод, потом почему запомнилось. Убери nice и beautiful, ищи точные прилагательные.",
+      "guidance_ru": "По две-три фразы на каждую часть, всего около 170 слов — примерно полторы минуты речи. Сначала где это место и когда ты там был. Потом картинка — что видно, что слышно, чем пахнет, — по части на каждое чувство. Ощущение передавай через look, sound, smell, feel + прилагательное или like: The old harbor smells like salt and diesel. Уточнение к месту или человеку — через where, which или who: a tiny café where the owner remembers your order. Дальше один эпизод: что ты там делал и что случилось. Потом почему место запомнилось и что оно для тебя значит. В конце — что сделаешь первым делом, если вернёшься завтра. Убери nice и beautiful, ищи точные прилагательные: crowded, faded, salty, quiet.",
       "seconds_min": 90,
       "seconds_max": 120,
       "focus": ["descriptive adjectives", "relative clauses", "sensory verbs"]
@@ -427,7 +427,7 @@
       "mode": "roleplay",
       "title_ru": "Разговор с шумным соседом",
       "prompt_en": "Your neighbor often plays loud music after midnight. You knock on the door, and they say: \"Oh, hi. Is it too loud? Sorry, but I work until ten, and this is the only time I can relax.\" Sort it out without a fight: describe the problem, say what you need, and agree on something you can both live with.",
-      "guidance_ru": "Отреагируй на слова соседа: признай, что причина понятная, но от своей просьбы не отступай. Проблему назови нейтральным фактом, а не обвинением: I can hear the music in my bedroom until two. Просьбу привяжи к конкретному времени: after eleven on weekdays. Потом предложи компромисс — наушники, тише после одиннадцати, в выходные можно дольше — и проговори договорённость вслух: So we agree that...",
+      "guidance_ru": "По две-три фразы на каждую часть, всего около 170 слов — примерно полторы минуты речи. Представься и отреагируй на слова соседа: признай, что причина понятная, но от своей просьбы не отступай — I get it, you work late and need to relax. Проблему назови нейтральным фактом, а не обвинением: I can hear the music in my bedroom until two. Потом как это сказывается на тебе: во сколько встаёшь, что с работой на следующий день. Просьбу смягчай через would или could и привязывай к конкретному времени: Would you mind turning it down after eleven on weekdays? Дальше компромисс — наушники, тише после одиннадцати, в выходные можно дольше — и вопрос, что подходит соседу: What would work for you? Проговори договорённость вслух: So we agree that... Закончи по-соседски: предложи обменяться номерами, чтобы в следующий раз просто написать.",
       "seconds_min": 90,
       "seconds_max": 115,
       "focus": ["polite complaints", "would / could", "agreeing on terms"]
@@ -438,7 +438,7 @@
       "mode": "monologue",
       "title_ru": "Как изменился мой сон",
       "prompt_en": "Talk about how your sleep and daily routine have changed over the last year. What caused the change, and what would you fix if you could?",
-      "guidance_ru": "Сначала как было и как стало, потом две причины, потом что поменял бы, если бы мог. Что изменилось и продолжается — I have been sleeping less since spring. Мечта — If I could, I would stop checking my phone in bed.",
+      "guidance_ru": "По две-три фразы на каждую часть, всего около 170 слов — примерно полторы минуты речи. Сначала как было год назад: во сколько ложился и вставал, как чувствовал себя утром. Потом как стало; сравнение — через -er или more и than: I go to bed later than before, and I feel more tired in the morning. Что изменилось и продолжается до сих пор — have been + -ing: I have been sleeping less since spring. Дальше две причины, каждая отдельной частью и с примером: новая работа, ребёнок, переезд, поздние звонки. Потом как это сказывается на дне: работа, настроение, спорт. В конце — что поменял бы, если бы мог; мечта — if + прошедшее время, would в главной части: If I could, I would stop checking my phone in bed.",
       "seconds_min": 90,
       "seconds_max": 120,
       "focus": ["present perfect continuous", "comparatives", "second conditional"]
@@ -450,7 +450,7 @@
       "mode": "monologue",
       "title_ru": "Монолит или сервисы",
       "prompt_en": "Your team of eight engineers is arguing about splitting the monolith into services. Take a side and cover cost, operational load, and what you would actually do in the first three months.",
-      "guidance_ru": "Тезис, три опоры: деньги, эксплуатация, скорость команды. Потом план на первые месяцы. Один раз признай сильную сторону противоположного решения, иначе речь звучит как реклама.",
+      "guidance_ru": "По две-три фразы на каждую часть, всего около 240 слов — чуть больше двух минут речи. Сначала тезис: оставить монолит, разбить его целиком или вынести один-два сервиса. Потом три опоры, каждая отдельной частью: деньги, нагрузка на эксплуатацию, скорость команды из восьми человек. Последствия выбора описывай гипотетически: If we split it now, we would need someone on call for every service. Опоры связывай явными переходами: On top of that, More importantly, Which brings me to... Дальше один раз признай сильную сторону противоположного решения, иначе речь звучит как реклама: To be fair, separate services would let two teams release independently. Потом план на первые три месяца — что делаете в первом, втором и третьем. Закончи тем, по какому признаку через три месяца станет ясно, что решение верное. Оценки давай точными прилагательными вместо good и bad: costly, fragile, manageable.",
       "seconds_min": 130,
       "seconds_max": 180,
       "focus": ["hypothetical language", "cohesive devices", "evaluative adjectives"]
@@ -461,7 +461,7 @@
       "mode": "monologue",
       "title_ru": "Доклад руководству: уходит поставщик",
       "prompt_en": "The SMS provider that sends every login code to your customers has just announced it will shut down in ninety days. You have a minute or two with the executive team. Give the update: what is at risk for customers and revenue, what is known, what is being done, and when they will hear from you next. Then answer the CFO's question: \"So how much is this going to cost us?\"",
-      "guidance_ru": "Апдейт уложи в пять-шесть фраз: что под угрозой в цифрах — сколько клиентов входят по коду из SMS, — что известно, что уже делаете, например сравниваете двух поставщиков, и когда следующий апдейт. Потом ответ финансовому директору: точной суммы не называй, дай вилку, скажи, из чего она сложится и когда будет точная цифра. Обещания дозируй: We expect..., It is likely to..., We will know by Friday. Краткость здесь — часть задания.",
+      "guidance_ru": "Всего около 120 слов — чуть больше минуты речи. Апдейт уложи в пять-шесть фраз: что под угрозой в цифрах — сколько клиентов входят по коду из SMS, — что известно, что уже делаете, например сравниваете двух поставщиков, и когда следующий апдейт. Потом ответ финансовому директору в три-четыре фразы: точной суммы не называй, дай вилку, скажи, из чего она сложится и когда будет точная цифра. Обещания дозируй: We expect..., It is likely to..., We will know by Friday. Краткость здесь — часть задания.",
       "seconds_min": 60,
       "seconds_max": 100,
       "focus": ["passive voice", "hedged commitments", "time expressions"]
@@ -472,7 +472,7 @@
       "mode": "roleplay",
       "title_ru": "Спор на код-ревью",
       "prompt_en": "A senior colleague blocked your pull request with this comment: \"Use early returns instead of nested ifs. Blocking until fixed.\" Your code is correct, and your team has no style guide on this. Push back in a one-on-one call without turning it into a conflict.",
-      "guidance_ru": "Начни с общей цели, потом отдели вкус от требования: правила в гайде нет, а код работает. Попроси критерий: what would make this approvable? Предложи выход — например, смержить сейчас и отдельно договориться о правиле для гайда. Заканчивай договорённостью, а не упрёком.",
+      "guidance_ru": "По две-три фразы на каждую часть, всего около 240 слов — чуть больше двух минут речи. Начни с благодарности за ревью и общей цели: We both want code that's easy to read six months from now. Потом признай, в чём коллега прав: ранние выходы действительно часто читаются легче. Дальше отдели вкус от требования: правила в гайде нет, а код работает и покрыт тестами. Главную мысль выдели конструкцией What... is или It's... that: What I'm not sure about is whether this should block the merge. Потом спрашивай, а не утверждай: What would make this approvable? Is there a case where the nested version could break? Предложи выход — например, смержить сейчас и отдельно договориться о правиле для гайда на ближайшей встрече команды. Заканчивай договорённостью, а не упрёком: кто что делает и к какому сроку.",
       "seconds_min": 130,
       "seconds_max": 180,
       "focus": ["diplomatic disagreement", "cleft sentences", "question strategies"]
@@ -483,7 +483,7 @@
       "mode": "opinion",
       "title_ru": "Почему оценки не сбываются",
       "prompt_en": "Explain to a non-technical stakeholder why software estimates slip so often, and what you would change to make them more useful.",
-      "guidance_ru": "Одно простое объяснение вместо жаргона, две настоящие причины, потом три конкретных изменения в процессе. Заканчивай тем, что стейкхолдер получит взамен, а не тем, что потеряет.",
+      "guidance_ru": "По две-три фразы на каждую часть, всего около 240 слов — чуть больше двух минут речи. Начни с одного простого объяснения вместо жаргона, лучше через сравнение: Estimating software is like estimating a renovation before you open the walls. Потом две настоящие причины, каждая отдельной частью и с примером из вашего проекта; причину и следствие связывай через which means, as a result, that's why. Термин, без которого не обойтись, сразу перефразируй: technical debt — in other words, shortcuts we now have to pay for. Дальше три конкретных изменения в процессе, каждое отдельной частью: например, оценка вилкой, а не одной датой, пересмотр оценки каждые две недели, отдельный запас времени на неизвестное. Когда важна вещь, а не действие, сворачивай мысль в существительное: the main cause of delay, a regular review of the estimate. Заканчивай тем, что стейкхолдер получит взамен, а не тем, что потеряет.",
       "seconds_min": 130,
       "seconds_max": 180,
       "focus": ["cause and effect language", "nominalization", "paraphrasing"]
@@ -494,7 +494,7 @@
       "mode": "interview",
       "title_ru": "Собеседование на сеньора",
       "prompt_en": "Answer a senior interview question: how do you decide what not to build? Give your principle and two real cases where you said no.",
-      "guidance_ru": "Сначала принцип одной фразой, потом два случая с последствиями отказа, потом как ты объяснял это команде и заказчику. Показывай не только результат, но и ход решения.",
+      "guidance_ru": "По две-три фразы на каждую часть, всего около 260 слов — почти две с половиной минуты речи. Начни с принципа и того, откуда он взялся: I don't build anything I can't connect to a measurable problem. Скажи, как построишь ответ, — в длинном ответе это держит слушателя: Let me give you two cases. Потом два случая, в каждом три части: что просили и почему это казалось разумным; как ты решал — какие вопросы задал, какие данные смотрел; что было после отказа. Показывай не только результат, но и ход решения. Последствия, которые так и не случились, передавай через would have + третья форма: If we had built it, we would have spent a quarter on a feature three clients asked for. Дальше как ты объяснял отказ команде и заказчику и что предложил взамен. Закончи тем, где твой принцип даёт сбой и как ты это учитываешь.",
       "seconds_min": 140,
       "seconds_max": 180,
       "focus": ["conditionals", "evaluative language", "structuring a long answer"]
@@ -505,7 +505,7 @@
       "mode": "opinion",
       "title_ru": "Четырёхдневная рабочая неделя",
       "prompt_en": "Your country is debating a law that would give everyone a four-day, 32-hour work week with the same pay. Would it work? Take a position, test it on two real jobs, for example a nurse and a café owner, and answer the strongest objection.",
-      "guidance_ru": "Позиция в первой фразе, без обтекаемости. Потом два довода, и каждый проверь на конкретной профессии: что изменится у медсестры, у хозяина кафе, у учителя. Дальше самое сильное возражение — кто оплатит лишние смены и как быть больницам — и твой ответ на него. Вероятность оценивай точно: It would almost certainly…, It is unlikely to… В конце скажи, какие данные — например, итоги годового эксперимента — заставили бы тебя изменить взгляд.",
+      "guidance_ru": "По две-три фразы на каждую часть, всего около 240 слов — чуть больше двух минут речи. Позиция сразу, без обтекаемости: I think it would work for some jobs, but not as one law for everyone. Потом два довода, каждый отдельной частью. Дальше проверь позицию на двух профессиях, по части на каждую: что изменится у медсестры и что у хозяина кафе — смены, зарплаты, клиенты. Вероятность оценивай точно: It would almost certainly…, It is unlikely to… Потом самое сильное возражение — кто оплатит лишние смены и как быть больницам — в честной форме и твой ответ на него; уступку вводи через granted или even so. Затем как ввести закон, чтобы он сработал: постепенно, сначала в одной отрасли, с исключениями. В конце скажи, какие данные — например, итоги годового эксперимента — заставили бы тебя изменить взгляд.",
       "seconds_min": 130,
       "seconds_max": 180,
       "focus": ["speculation and probability", "concession", "hypothetical would"]
@@ -516,7 +516,7 @@
       "mode": "opinion",
       "title_ru": "Приватность против удобства",
       "prompt_en": "Where is your personal line between privacy and convenience? Name one thing you refuse to share and one thing you share happily, and explain what makes them different.",
-      "guidance_ru": "Начни с личного правила, потом два примера по разные стороны черты, потом критерий, который их разделяет. Абстракции подкрепляй конкретным сервисом.",
+      "guidance_ru": "По две-три фразы на каждую часть, всего около 220 слов — примерно две минуты речи. Начни с личного правила: I share what helps me today, but not what could be used against me tomorrow. Потом то, чем ты делиться отказываешься, — с конкретным сервисом и тем, что могло бы случиться. Дальше то, чем делишься охотно, и что получаешь взамен. Контраст между примерами связывай через whereas, while, on the other hand: I happily share my location with a delivery app, whereas my contacts stay private. Потом критерий, который их разделяет, — абстрактным существительным: control, consent, trust, the right to take it back. Дальше честно: где ты сам нарушаешь своё правило и почему. Закончи тем, сдвинулась ли твоя черта за последние годы и в какую сторону.",
       "seconds_min": 120,
       "seconds_max": 170,
       "focus": ["abstract nouns", "contrast linkers", "justifying a position"]
@@ -527,7 +527,7 @@
       "mode": "describe",
       "title_ru": "Книга, которая сдвинула взгляд",
       "prompt_en": "Describe a book or a long article that changed how you see something. What did you think before, what did it show you, and what do you do differently now?",
-      "guidance_ru": "Позиция до, ключевая идея своими словами, позиция после и одно изменение в поведении. Пересказ сюжета не нужен, важна логика сдвига.",
+      "guidance_ru": "По две-три фразы на каждую часть, всего около 220 слов — примерно две минуты речи. Сначала что это за книга или статья и как она к тебе попала. Потом что ты думал до неё — прошедшим временем, чтобы был слышен контраст с сегодняшним: I used to believe that productivity was about working longer. Дальше ключевая идея своими словами; мысль автора передавай глаголом речи: The author argues that..., She shows that..., He points out that... Потом довод или пример из книги, который тебя убедил. Дальше что ты думаешь теперь — настоящим временем: Now I see... И одно изменение в поведении с примером из прошлой недели. Закончи тем, с чем в книге ты до сих пор не согласен. Пересказ сюжета не нужен, важна логика сдвига.",
       "seconds_min": 120,
       "seconds_max": 170,
       "focus": ["reporting verbs", "past vs present contrast", "abstract vocabulary"]
@@ -538,7 +538,7 @@
       "mode": "roleplay",
       "title_ru": "Разговор с отцом о деньгах",
       "prompt_en": "Your father tells you: \"I've promised Viktor my savings for his new café. We've been friends for forty years, and I'm not going back on my word.\" It is all the money he has. Talk to him and find a compromise you can both accept: you cannot order him around, and you do not want to damage the relationship.",
-      "guidance_ru": "Сначала признай его право решать и то, что держать слово для него важно, — спорить с этим бесполезно. Потом два вопроса вместо совета: What happens if the café closes? Will there be a written agreement? Дальше предложи компромисс, который не заставляет его нарушить обещание: одолжить часть суммы, оформить договор, возвращать по частям. Без you always и you never. Закончи тем, на чём вы сошлись.",
+      "guidance_ru": "По две-три фразы на каждую часть, всего около 240 слов — чуть больше двух минут речи. Сначала признай его право решать и то, что держать слово для него важно, — спорить с этим бесполезно: It's your money, and I know how much your word means to you. Потом скажи о своём беспокойстве от первого лица, а не упрёком: I'm worried because this is everything you've saved. Дальше два вопроса вместо совета, мягко и косвенно: I was wondering what happens if the café closes. Would there be a written agreement? Потом перескажи его главную причину своими словами — так он поймёт, что его слышат: So what matters most to you is standing by Viktor. Дальше компромисс, который не заставляет его нарушить обещание: одолжить часть суммы, оформить договор, возвращать по частям. Предлагай через what if и how about: What if you lent him half now? Потом что делать, если Виктор на такие условия не согласится. Без you always и you never. Закончи тем, на чём вы сошлись, и что сделаешь сам: I could help you draft the agreement this weekend.",
       "seconds_min": 130,
       "seconds_max": 180,
       "focus": ["indirect language", "softeners", "negotiating a compromise"]
@@ -549,7 +549,7 @@
       "mode": "monologue",
       "title_ru": "Школа в 2045 году",
       "prompt_en": "Imagine a child who starts school in 2045. How will their school day differ from yours? Describe what will have changed, what will feel exactly the same, and what worries you about that picture.",
-      "guidance_ru": "Два-три изменения: одно-два через will have — By then most schools will have dropped paper textbooks — остальные через is likely to или is bound to. Потом одно, что точно останется: учитель, который замечает заскучавшего ребёнка, перемена, первая дружба. Потом честное опасение с обоснованием. Не уходи в фантастику, держись того, что уже началось: запреты телефонов в классах, онлайн-уроки, нехватка учителей.",
+      "guidance_ru": "По две-три фразы на каждую часть, всего около 240 слов — чуть больше двух минут речи. Начни с того, каким был твой школьный день: во сколько начинался, что лежало в рюкзаке, как проходили уроки. Потом три изменения, каждое отдельной частью: одно-два через will have — By then most schools will have dropped paper textbooks, — остальные через is likely to или is bound to. Потом одно, что точно останется: учитель, который замечает заскучавшего ребёнка, перемена, первая дружба. Дальше что в этой картине ты приветствуешь; уступку вводи через admittedly или even so. Потом честное опасение с обоснованием. Закончи тем, что бы ты сохранил из своей школы для этого ребёнка. Не уходи в фантастику, держись того, что уже началось: запреты телефонов в классах, онлайн-уроки, нехватка учителей.",
       "seconds_min": 130,
       "seconds_max": 180,
       "focus": ["future perfect", "likely to / bound to", "concession"]
@@ -561,7 +561,7 @@
       "mode": "monologue",
       "title_ru": "Техническая стратегия на год",
       "prompt_en": "Present a one-year technical strategy to a board that cares about money, not architecture. Name the single bet you are making, what you will stop doing to fund it, and how you will know it worked.",
-      "guidance_ru": "Одна ставка, три следствия, что закрываешь ради неё, метрики успеха и провала. Формулируй в деньгах и сроках, а не в названиях технологий. Финал — просьба о конкретном решении.",
+      "guidance_ru": "По три фразы на каждую часть, всего около 330 слов — примерно три минуты речи. Начни с проблемы, которую совет узнает, — в деньгах: Onboarding each new customer currently costs us six weeks of engineering time. Потом одна ставка, сформулированная как решение, а не как технология: We will automate onboarding end to end. Дальше три следствия ставки, каждое отдельной частью: для выручки, для затрат, для скорости. Формулируй в деньгах и сроках, а мысль сворачивай в именные группы — так звучит язык решений: a reduction in onboarding time, the cost of delay. Потом что закрываете или замораживаете ради ставки и чем это рискованно. Дальше метрики: по каким цифрам и к какому кварталу станет ясно, что ставка сработала, и какая цифра скажет, что пора остановиться. Финал — просьба о конкретном решении: We are asking the board to approve... by...",
       "seconds_min": 180,
       "seconds_max": 240,
       "focus": ["persuasive structure", "nominalization", "metric language"]
@@ -572,7 +572,7 @@
       "mode": "opinion",
       "title_ru": "Врачебная ошибка: вина или система",
       "prompt_en": "At the end of a fourteen-hour shift, a nurse gave a patient the wrong drug: the two vials looked almost identical, and the patient was seriously harmed. Prosecutors want to charge her with a crime. Argue whether honest medical errors should ever be treated as crimes, what that would do to patient safety, and where you would draw the line.",
-      "guidance_ru": "Сначала раздели три вещи: честную ошибку, рискованную небрежность и безрассудство — от этой границы зависит весь ответ. Потом довод за наказание в самом сильном виде: пострадавшая семья, доверие к больницам. Дальше — что уголовное дело сделает с системой: медики перестанут сообщать о собственных промахах. Финал — твой критерий, проверенный на этом случае: четырнадцатичасовая смена и одинаковые флаконы — это вина человека или устройства работы? Категоричность на этом уровне слышится слабее, чем разбор нюансов.",
+      "guidance_ru": "По три фразы на каждую часть, всего около 330 слов — примерно три минуты речи. Сначала раздели три вещи: честную ошибку, рискованную небрежность и безрассудство — от этой границы зависит весь ответ. Потом довод за наказание в самом сильном виде: пострадавшая семья, доверие к больницам. Дальше — что уголовное дело сделает с системой: медики перестанут сообщать о собственных промахах, и таких ошибок станет больше, а не меньше. Потом что должно происходить вместо суда, чтобы ответственность не исчезла: разбор случая, изменения в работе — разные флаконы, предел длины смены, — проверка допуска к работе. Дальше что получает семья, если не приговор: признание, компенсацию, перемены, которые защитят следующих пациентов. Потом твой критерий, проверенный на этом случае: четырнадцатичасовая смена и одинаковые флаконы — это вина человека или устройства работы? Закончи тем, где твоя граница всё-таки допускает уголовное дело. Оговорки ставь точно, а не везде: in most cases, unless there is evidence that..., arguably. Категоричность на этом уровне слышится слабее, чем разбор нюансов.",
       "seconds_min": 180,
       "seconds_max": 240,
       "focus": ["nuanced argument", "hedging and qualification", "abstract nouns"]
@@ -583,7 +583,7 @@
       "mode": "roleplay",
       "title_ru": "Эскалация от заказчика",
       "prompt_en": "You missed a release, and a major client is angry on the call: \"We announced the launch for Monday. You promised this release two weeks ago. What exactly are you going to do?\" Answer them. You cannot promise the original date.",
-      "guidance_ru": "Сначала признание ущерба без оправданий, потом факты о текущем состоянии, потом два варианта спасти запуск с честной ценой каждого. Обещай только то, что контролируешь, и назови время следующего контакта.",
+      "guidance_ru": "По три фразы на каждую часть, всего около 330 слов — примерно три минуты речи. Сначала признание ущерба без оправданий и именно для них: You announced Monday, and we let you down. Потом коротко и без технических подробностей, почему срок сорвался, — одна главная причина, а не список. Дальше факты о текущем состоянии: что уже работает, что осталось, какая дата реальна. Потом два варианта спасти запуск, каждый отдельной частью и с честной ценой: например, выйти в понедельник с урезанной версией или сдвинуть объявление на неделю, но с полной. Твёрдые обещания давай только на то, что контролируешь: We will..., I will personally... Остальное — с оговоркой: We expect..., If the tests pass, ... Дальше что вы сделаете, чтобы клиенту было легче: например, поможете с сообщением для их пользователей. Закончи тем, кто будет на связи и когда следующий контакт: I'll call you tomorrow at ten with the test results.",
       "seconds_min": 180,
       "seconds_max": 240,
       "focus": ["damage control language", "commitment vs hedging", "de-escalation phrases"]
@@ -594,7 +594,7 @@
       "mode": "monologue",
       "title_ru": "Отключение старого API",
       "prompt_en": "You are shutting down an old API that external customers still depend on. Explain the decision twice in one answer: first to your own engineers, then to those customers.",
-      "guidance_ru": "Внутрь — причины, риски и план миграции. Наружу — выгода, сроки, поддержка при переезде. Между частями скажи, что именно ты меняешь в подаче и зачем. Разницу регистров должно быть слышно.",
+      "guidance_ru": "По три фразы на каждую часть, всего около 330 слов — примерно три минуты речи. Сначала версия для своих инженеров, в трёх частях: почему отключаете — стоимость поддержки, безопасность; какие риски — кто из клиентов может сломаться и что будет, если не успеют; план миграции по шагам и датам. Здесь можно прямо и технично: The v1 endpoints still handle eight percent of traffic, mostly from three large clients. Потом переход — скажи, что именно меняешь в подаче и зачем: Now, the same news for customers. I'll drop the internals and start with what they get. Дальше версия для клиентов, тоже в трёх частях: что они выиграют, какие сроки и что будет в день отключения, какая помощь при переезде. Здесь спокойный вежливый регистр и слова клиента, а не ваши: Your integration will keep working until March 31. Закончи для клиентов тем, куда писать с вопросами. Разницу регистров должно быть слышно.",
       "seconds_min": 180,
       "seconds_max": 240,
       "focus": ["register shift", "audience-appropriate lexis", "signposting"]
@@ -605,7 +605,7 @@
       "mode": "interview",
       "title_ru": "Панельное интервью: смена позиции",
       "prompt_en": "Answer this panel question: describe a position you argued for openly, at work or outside it, and later abandoned. What convinced you, and what did changing your mind cost you?",
-      "guidance_ru": "Подойдёт любое мнение, которое ты отстаивал вслух: техническое решение, способ вести проект, взгляд на образование, деньги или воспитание. Если такой истории нет, придумай правдоподобный случай. Позиция и почему ты её защищал, момент сомнения, что именно переубедило: данные, случай или человек. Потом цена смены мнения и как ты сказал об этом тем, с кем спорил. Финал — что теперь делаешь иначе.",
+      "guidance_ru": "По три фразы на каждую часть, всего около 330 слов — примерно три минуты речи. Подойдёт любое мнение, которое ты отстаивал вслух: техническое решение, способ вести проект, взгляд на образование, деньги или воспитание. Если такой истории нет, придумай правдоподобный случай. Сначала обстановка: где это было, с кем ты спорил и что стояло на кону. Потом позиция и почему ты её защищал — самый сильный твой довод тогда. Дальше момент сомнения: что первым не сошлось. Потом что именно переубедило — данные, случай или человек; чужие слова передавай точным глаголом речи, а не said: She pointed out that..., He conceded that..., They insisted that... Дальше цена смены мнения — репутация, отношения, потраченное время — и как ты сказал об этом тем, с кем спорил. Потом что в старой позиции было всё-таки верным. Финал — что теперь делаешь иначе и как с тех пор относишься к собственной уверенности.",
       "seconds_min": 180,
       "seconds_max": 240,
       "focus": ["narrative sophistication", "reporting verbs", "evaluative language"]
@@ -616,7 +616,7 @@
       "mode": "opinion",
       "title_ru": "Регулирование ИИ",
       "prompt_en": "Should governments regulate AI models before harm is proven, or only after? Build the strongest version of the side you disagree with, then answer it.",
-      "guidance_ru": "Сначала честный пересказ чужой позиции без карикатуры, потом своя, потом место, где вы расходитесь на самом деле. Заканчивай тем, какой факт разрешил бы спор.",
+      "guidance_ru": "По три фразы на каждую часть, всего около 330 слов — примерно три минуты речи. Сначала обозначь спор и сторону, которую ты не разделяешь. Потом её самую сильную версию, без карикатуры, — так, чтобы её сторонник согласился с пересказом: Their strongest point is not fear but timing... В ней два довода, каждый отдельной частью. Дальше своя позиция и два довода к ней, тоже по части на довод. Рассуждай через условия: If regulation waits for proof of harm, the harm will already have happened; Were the rules written too early, they would lock in today's technology. Потом место, где вы расходитесь на самом деле: чаще всего это не ценности, а оценка риска или доверие к государству. Заканчивай тем, какой факт разрешил бы спор и как его можно получить. Регистр держи ровным, без разговорных оборотов.",
       "seconds_min": 180,
       "seconds_max": 240,
       "focus": ["steelmanning an opposing view", "conditional reasoning", "formal register"]
@@ -627,7 +627,7 @@
       "mode": "opinion",
       "title_ru": "Нужен ли диплом в IT",
       "prompt_en": "Is a university degree still worth four years for someone entering IT today? Answer for two different people: a school leaver and someone changing careers at thirty-five.",
-      "guidance_ru": "Один ответ на двоих не годится: разбирай случаи по очереди и по разным критериям. В каждом назови, что диплом даёт кроме знаний. Заканчивай правилом, которое покрывает оба случая.",
+      "guidance_ru": "По три фразы на каждую часть, всего около 310 слов — почти три минуты речи. Один ответ на двоих не годится: разбирай случаи по очереди и по разным критериям. Начни с общего: что сегодня на самом деле проверяют при найме в IT. Потом выпускник школы, в трёх частях: что диплом даёт кроме знаний — среду, стажировки, время повзрослеть; сколько это стоит в годах и деньгах; при каком условии лучше пойти другим путём: If they are already building things on their own, ... Дальше тот, кто меняет профессию в тридцать пять, тоже в трёх частях: что у него уже есть, чего не хватает и какой путь короче четырёх лет. Сравнивай точно: far more valuable for..., only marginally useful to..., considerably cheaper than... Заканчивай правилом, которое покрывает оба случая.",
       "seconds_min": 170,
       "seconds_max": 230,
       "focus": ["comparative argument", "conditional structures", "precise qualifiers"]
@@ -638,7 +638,7 @@
       "mode": "describe",
       "title_ru": "Фотография, которую не выбрасываю",
       "prompt_en": "Describe one photograph you keep, not for what it shows but for what it means to you. Make the listener see the frame and feel the weight of it.",
-      "guidance_ru": "Сначала кадр в деталях, потом контекст за кадром, потом почему снимок держит. Работают точные детали и одно сравнение, а не гроздь эпитетов. Пафос в финале всё портит, лучше сдержанно.",
+      "guidance_ru": "По три фразы на каждую часть, всего около 280 слов — примерно две с половиной минуты речи. Сначала где снимок живёт сейчас: в кошельке, на холодильнике, в старом телефоне. Потом кадр в деталях — передний план, задний план, свет и цвет, — так, чтобы слушатель его увидел: In the bottom corner, you can just make out my father's thumb over the lens. Дальше что осталось за кадром: кто снимал, что было за минуту до и после. Потом почему снимок держит: что он значит сейчас и что изменилось с тех пор. Работают точные детали и одно сравнение, а не гроздь эпитетов. Дальше почему ты его не выбрасываешь и почему не вешаешь на стену. Финал сдержанный: пафос всё портит, одна простая фраза сильнее трёх громких.",
       "seconds_min": 150,
       "seconds_max": 220,
       "focus": ["figurative language", "precise description", "emotional restraint"]
@@ -649,7 +649,7 @@
       "mode": "roleplay",
       "title_ru": "Честный разговор с другом",
       "prompt_en": "Your closest friend calls you: \"I'm quitting my job and moving to Canada to be with Sam. We met on vacation four months ago, and I know how it sounds. Everyone else just says how romantic it is. You're the only one who'll be honest with me, so tell me what you really think.\" Answer them.",
-      "guidance_ru": "Сначала покажи, что услышал главное: человек счастлив и ждёт честности, а не поздравлений. Потом три конкретных вопроса — про работу и визу, про деньги на первые полгода и про точку возврата: что будет, если через год не сложится. Своё мнение скажи прямо один раз и не повторяй; смягчай форму, а не суть. Заканчивай тем, что останешься рядом при любом решении.",
+      "guidance_ru": "По три фразы на каждую часть, всего около 310 слов — почти три минуты речи. Сначала покажи, что услышал главное: человек счастлив и ждёт честности, а не поздравлений — I'm glad you called me, and I can hear how happy you are. Потом что в этой истории тебя искренне радует: без этого честность прозвучит как приговор. Дальше три конкретных вопроса, каждый отдельной частью и с тем, почему он важен: про работу и визу, про деньги на первые полгода и про точку возврата — What happens if it doesn't work out in a year? Потом своё мнение — прямо, один раз и с причиной; смягчай форму, а не суть: I think you're moving too fast, and here's why. Дальше конкретный совет — средний путь вместо «да» или «нет», например пожить там два месяца, прежде чем увольняться. Условный совет — через if I were you, I'd: If I were you, I'd keep the job until your visa comes through. Заканчивай тем, что останешься рядом при любом решении.",
       "seconds_min": 170,
       "seconds_max": 240,
       "focus": ["directness with tact", "probing questions", "conditional advice"]
@@ -660,7 +660,7 @@
       "mode": "monologue",
       "title_ru": "Исчезающие языки",
       "prompt_en": "Roughly every two weeks a language dies. Is that a loss worth public money, or simply the price of a connected world? Argue your case.",
-      "guidance_ru": "Сначала определи, что именно теряется, потом два довода своей стороны, потом сильное возражение и ответ. Финал — что бы ты профинансировал первым и почему именно это.",
+      "guidance_ru": "По три фразы на каждую часть, всего около 330 слов — примерно три минуты речи. Сначала определи, что именно теряется, когда умирает язык: слова, знание о месте, способ видеть мир — с одним конкретным примером. Потом позиция: стоят ли эти потери общественных денег и при каких условиях. Дальше два довода своей стороны, каждый отдельной частью. Потом сильное возражение в честной форме — деньги нужнее школам и больницам, а язык живёт, только пока на нём говорят, — и отдельной частью ответ на него. Уступку и ответ связывай формально: Granted, ... Even so, ...; It is true that...; however, ... Дальше кто должен за это отвечать: государство, сами носители или университеты. Финал — что бы ты профинансировал первым и почему именно это: словарь, школу, записи последних носителей.",
       "seconds_min": 180,
       "seconds_max": 240,
       "focus": ["abstract argumentation", "concession and rebuttal", "formal cohesion"]

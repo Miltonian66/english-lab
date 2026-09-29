@@ -178,6 +178,13 @@ class AnswerTests(unittest.TestCase):
         self.assertEqual(american_spelling("I will organise it and realise the plan")[0],
                          "I will organize it and realize the plan")
         self.assertEqual(american_spelling("advise and exercise")[1], [])
+        flat = self._ex("gap", "They live in a small ___ near the station.", "apartment")
+        result = grade(flat, "flat")
+        self.assertTrue(result.correct)
+        self.assertIn("flat → apartment", result.note)
+        tire = self._ex("gap", "We had a ___ tire on the way home.", "flat")
+        self.assertTrue(matches(tire, "flat"))
+        self.assertTrue(matches(self._ex("gap", "a ___ little cafe", "cozy"), "cosy"))
 
     def test_british_have_for_possession_is_not_i_have(self) -> None:
         """«I've a dog» в General American не говорят; «I've got a dog» — да."""
@@ -568,6 +575,26 @@ class PracticeTests(unittest.TestCase):
             pool = [other.word for other in pr._distractor_pool(self._vocab(word), CURRICULUM)]
             with self.subTest(word=word):
                 self.assertNotIn(near, pool)
+
+    def test_recall_accepts_the_form_the_hint_needs(self) -> None:
+        """Слово, которое стоит на месте пропуска в подсказке, всегда засчитывается.
+
+        «Your plan ___, but…» требует makes sense: у фразы с глаголом во главе
+        тоже есть формы, иначе верный ответ получал бы «Мимо».
+        """
+        import re
+
+        missing: list[str] = []
+        for items in CURRICULUM.vocabulary.values():
+            for item in items:
+                question = pr.vocab_question(item, CURRICULUM, self.rng)
+                for form in pr.word_forms(item.word):
+                    found = re.search(rf"\b{re.escape(form)}\b", item.example_en, flags=re.IGNORECASE)
+                    if found:
+                        if not pr.check(question, found.group(0)).correct:
+                            missing.append(f"{item.id}: {found.group(0)}")
+                        break
+        self.assertEqual(missing, [])
 
     def test_recall_forms_depend_on_part_of_speech(self) -> None:
         self.assertEqual(pr.accepted_forms(self._vocab("on")), [])

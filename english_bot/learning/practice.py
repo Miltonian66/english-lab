@@ -426,7 +426,9 @@ def accepted_forms(item: VocabItem) -> list[str]:
 
 def _forms_of(word: str, pos: str) -> list[str]:
     base = word.strip().lower()
-    if pos in ("verb", "phrasal verb"):
+    # Фраза с глаголом во главе спрягается так же: «Your plan makes sense».
+    verbal_phrase = pos == "phrase" and base.partition(" ")[0] in IRREGULAR
+    if pos in ("verb", "phrasal verb") or verbal_phrase:
         return [form for form in word_forms(base) if form != base]
     if pos == "noun" and " " not in base:
         # amenities уже во множественном: «amenitieses» — не форма.

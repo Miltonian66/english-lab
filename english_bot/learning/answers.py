@@ -140,16 +140,20 @@ def contraction_sensitive(exercise: Exercise) -> bool:
     return bool(_ASKS_CONTRACTION.search(exercise.prompt))
 
 
-# Британское написание — не грамматика: «cancelled» и «colour» засчитываются
-# с пометкой, как пишут в General American. Только однозначные пары: -ise у
-# advise, exercise, surprise — норма и в американском.
-_OUR = "colour|favour|neighbour|behaviour|humour|honour|labour|flavour|harbour|rumour|savour|endeavour|vapour|odour|armour|parlour"
+# Британское написание и британское слово — не грамматика: «cancelled»,
+# «colour» и «flat» засчитываются с пометкой, как говорят в General American.
+# Только однозначные пары: -ise у advise, exercise, surprise — норма и в
+# американском. Замена пробуется последней и засчитывается, только если ответ
+# после неё совпал с эталоном, поэтому «flat tire» квартирой не станет.
+_OUR = ("colour|favour|neighbour|behaviour|humour|honour|labour|flavour|harbour|rumour|savour|"
+        "endeavour|vapour|odour|armour|parlour|demeanour|glamour")
 _RE = {"centre": "center", "centres": "centers", "theatre": "theater", "theatres": "theaters",
        "metre": "meter", "metres": "meters", "litre": "liter", "litres": "liters",
        "fibre": "fiber", "sombre": "somber", "calibre": "caliber"}
 _ISE = ("organ|real|recogn|apolog|priorit|summar|critic|memor|special|minim|maxim|optim|"
         "categor|custom|final|normal|standard|util|visual|emphas|character|author|modern|"
-        "mobil|sympath|capital|general|personal|stabil|symbol|harmon|agon|fantas|jeopard")
+        "mobil|sympath|capital|general|personal|stabil|symbol|harmon|agon|fantas|jeopard|patron|"
+        "apolog|global|legal|polar|scrutin|terror|trivial|vandal|energ|evangel")
 _LL = "cancel|travel|label|model|level|fuel|signal|total|marvel|quarrel|dial|channel|counsel|equal|jewel|tunnel|shovel"
 _WORDS = {"grey": "gray", "greys": "grays", "jewellery": "jewelry", "programme": "program",
           "programmes": "programs", "catalogue": "catalog", "catalogues": "catalogs",
@@ -159,11 +163,17 @@ _WORDS = {"grey": "gray", "greys": "grays", "jewellery": "jewelry", "programme":
           "skilful": "skillful", "practise": "practice", "practises": "practices",
           "practised": "practiced", "practising": "practicing", "ageing": "aging",
           "judgement": "judgment", "analyse": "analyze", "analysed": "analyzed",
-          "analysing": "analyzing", "paralysed": "paralyzed", "mum": "mom", "mums": "moms"}
+          "analysing": "analyzing", "paralysed": "paralyzed", "cosy": "cozy", "cosier": "cozier",
+          "mum": "mom", "mums": "moms", "flat": "apartment", "flats": "apartments",
+          "lift": "elevator", "lifts": "elevators", "queue": "line", "petrol": "gas",
+          "trousers": "pants", "rubbish": "trash", "pavement": "sidewalk", "motorway": "highway",
+          "postcode": "zip code", "timetable": "schedule", "timetables": "schedules",
+          "holiday": "vacation", "biscuit": "cookie", "biscuits": "cookies", "sweets": "candy",
+          "football": "soccer", "shop": "store", "shops": "stores", "film": "movie", "films": "movies"}
 
 
 def american_spelling(text: str) -> tuple[str, list[tuple[str, str]]]:
-    """Текст в американском написании и список замен (британское → американское)."""
+    """Текст в американском варианте и список замен (британское → американское)."""
     changes: list[tuple[str, str]] = []
 
     def swap(found: re.Match[str], new: str) -> str:
@@ -386,7 +396,7 @@ def grade(exercise: Exercise, given: str) -> Grade:
 
 
 def _american(exercise: Exercise, candidate: str) -> Grade:
-    """Последняя попытка: тот же ответ в американском написании."""
+    """Последняя попытка: тот же ответ в американском варианте."""
     american, changes = american_spelling(candidate)
     if not changes or "spelling" in exercise.id:
         return Grade(False)
@@ -394,7 +404,7 @@ def _american(exercise: Exercise, candidate: str) -> Grade:
     if not result.correct:
         return Grade(False)
     fixes = ", ".join(f"{british} → {us}" for british, us in changes)
-    return Grade(True, result.matched, f"Засчитано. В американском написании: {fixes}.")
+    return Grade(True, result.matched, f"Засчитано. В американском варианте: {fixes}.")
 
 
 def matches(exercise: Exercise, given: str) -> bool:

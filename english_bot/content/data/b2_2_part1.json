@@ -824,8 +824,7 @@
           "prompt": "Rewrite without 'if', starting with 'Were': If I were in your position, I would take the earlier train.",
           "answer": "Were I in your position, I would take the earlier train.",
           "accept": [
-            "Were I in your position, I'd take the earlier train.",
-            "I would take the earlier train were I in your position."
+            "Were I in your position, I'd take the earlier train."
           ],
           "explanation_ru": "В формальной речи if опускают, а were ставят перед подлежащим: Were I in your position. Так можно только с were — «Was I …» в этой роли неверно; главная часть остаётся с would.",
           "difficulty": 3
@@ -1564,7 +1563,7 @@
         {
           "id": "b2_clauses_contrast_purpose_reason_result_14",
           "kind": "gap",
-          "prompt": "___ (however / tired) you are, always take off your makeup before bed.",
+          "prompt": "___ (как бы ты ни устал) you are, always take off your makeup before bed.",
           "answer": "However tired",
           "accept": [
             "No matter how tired"
@@ -2499,7 +2498,9 @@
             "Fatima can't have taken your umbrella. She had her own.",
             "Fatima can't have taken your umbrella — she had her own.",
             "Fatima can't have taken your umbrella, she had her own.",
-            "Fatima can't have taken your umbrella because she had her own."
+            "Fatima can't have taken your umbrella because she had her own.",
+            "Fatima can't have taken your umbrella since she had her own.",
+            "Fatima can't have taken your umbrella as she had her own."
           ],
           "explanation_ru": "Уверенность, что в прошлом чего-то не было, — can't have + V3 (taken). Can't take относится к настоящему, а после have нужна третья форма, не вторая.",
           "difficulty": 2

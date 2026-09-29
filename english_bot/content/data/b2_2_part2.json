@@ -178,7 +178,7 @@
       "title_en": "Distancing: Expressions and passive of reporting verbs",
       "source_slug": "distancing",
       "title_ru": "Дистанцирование: безличные и пассивные конструкции",
-      "summary_ru": "Дистанцирование нужно, когда мы передаём информацию, но не отвечаем за её достоверность: слухи, отчёты, оценки. Первая модель безличная: It is said / believed / thought / reported / expected + that + придаточное. Вторая модель личная: подлежащее + is или was said + to + инфинитив, при этом лицо или предмет выносится в начало. Если событие произошло раньше момента речи, после to ставим перфектный инфинитив: to have + V3. С оборотом there конструкция тоже работает: There are thought to be about 200 users left. Короче и мягче то же самое передают наречия apparently, allegedly, reportedly и глаголы seem и appear. Процесс в прошлом передаёт to have been + V-ing: The driver is said to have been speeding. Ещё осторожнее звучат it would appear that и tend to + инфинитив для обобщений: Users tend to ignore warnings. Все эти формы типичны для новостей, отчётов об инцидентах и осторожной деловой переписки.",
+      "summary_ru": "Дистанцирование нужно, когда мы передаём информацию, но не отвечаем за её достоверность: слухи, отчёты, оценки. Первая модель безличная: It is said / believed / thought / reported / expected + that + придаточное. Вторая модель личная: подлежащее + is или was said + to + инфинитив, при этом лицо или предмет выносится в начало. Если событие произошло раньше момента речи, после to ставим перфектный инфинитив: to have + V3. С оборотом there конструкция тоже работает: There are thought to be about 200 users left. Короче и мягче то же самое передают наречия apparently, allegedly, reportedly и глаголы seem и appear. Процесс в прошлом передаёт to have been + V-ing: The suspect is said to have been hiding in the woods. Ещё осторожнее звучат it would appear that и tend to + инфинитив для обобщений: People tend to overestimate their free time. Все эти формы типичны для новостей, отчётов об инцидентах и осторожной деловой переписки.",
       "forms": [
         "It + is/was + said/believed/thought/reported + that + clause",
         "Subject + is/was + said/believed + to + infinitive",
@@ -529,12 +529,12 @@
         {
           "id": "b2_passive_verbs_with_two_objects_05",
           "kind": "gap",
-          "prompt": "The on-call engineer ___ (should / send) an alert at 2 a.m., but someone had muted the monitoring rule.",
+          "prompt": "The on-call engineer ___ (should / send) an automatic alert at 2 a.m., but someone had muted the monitoring rule.",
           "answer": "should have been sent",
           "accept": [
             "should've been sent"
           ],
-          "explanation_ru": "Дежурному должны были отправить оповещение, но не отправили: подлежащим пассива стал человек, которому отправляют (send someone an alert), а упрёк о прошлом — should have been + V3. Should have sent значило бы, что отправить должен был сам дежурный.",
+          "explanation_ru": "Дежурному должны были отправить автоматическое оповещение, но не отправили: подлежащим пассива стал человек, которому отправляют (send someone an alert), а упрёк о прошлом — should have been + V3. Should have sent значило бы, что отправить должен был сам дежурный.",
           "difficulty": 3
         },
         {
@@ -682,51 +682,51 @@
           "answer": "We were told that the office would close at five.",
           "accept": [
             "We were told that the office would close at 5.",
-            "We were told that the office would close at 5 p.m..",
+            "We were told that the office would close at 5 p.m.",
             "We were told that the office would close at five o'clock.",
             "We were told that the office would be closed at five.",
             "We were told that the office would be closed at 5.",
-            "We were told that the office would be closed at 5 p.m..",
+            "We were told that the office would be closed at 5 p.m.",
             "We were told that the office would be closed at five o'clock.",
             "We were told that the office was going to close at five.",
             "We were told that the office was going to close at 5.",
-            "We were told that the office was going to close at 5 p.m..",
+            "We were told that the office was going to close at 5 p.m.",
             "We were told that the office was going to close at five o'clock.",
             "We were told that the office would be closing at five.",
             "We were told that the office would be closing at 5.",
-            "We were told that the office would be closing at 5 p.m..",
+            "We were told that the office would be closing at 5 p.m.",
             "We were told that the office would be closing at five o'clock.",
             "We were told that the office will close at five.",
             "We were told that the office will close at 5.",
-            "We were told that the office will close at 5 p.m..",
+            "We were told that the office will close at 5 p.m.",
             "We were told that the office will close at five o'clock.",
             "We were told that the office closes at five.",
             "We were told that the office closes at 5.",
-            "We were told that the office closes at 5 p.m..",
+            "We were told that the office closes at 5 p.m.",
             "We were told that the office closes at five o'clock.",
             "We were told the office would close at five.",
             "We were told the office would close at 5.",
-            "We were told the office would close at 5 p.m..",
+            "We were told the office would close at 5 p.m.",
             "We were told the office would close at five o'clock.",
             "We were told the office would be closed at five.",
             "We were told the office would be closed at 5.",
-            "We were told the office would be closed at 5 p.m..",
+            "We were told the office would be closed at 5 p.m.",
             "We were told the office would be closed at five o'clock.",
             "We were told the office was going to close at five.",
             "We were told the office was going to close at 5.",
-            "We were told the office was going to close at 5 p.m..",
+            "We were told the office was going to close at 5 p.m.",
             "We were told the office was going to close at five o'clock.",
             "We were told the office would be closing at five.",
             "We were told the office would be closing at 5.",
-            "We were told the office would be closing at 5 p.m..",
+            "We were told the office would be closing at 5 p.m.",
             "We were told the office would be closing at five o'clock.",
             "We were told the office will close at five.",
             "We were told the office will close at 5.",
-            "We were told the office will close at 5 p.m..",
+            "We were told the office will close at 5 p.m.",
             "We were told the office will close at five o'clock.",
             "We were told the office closes at five.",
             "We were told the office closes at 5.",
-            "We were told the office closes at 5 p.m..",
+            "We were told the office closes at 5 p.m.",
             "We were told the office closes at five o'clock."
           ],
           "explanation_ru": "Русское «нам сказали» — пассив с лицом в роли подлежащего: We were told. We were said и To us was said — кальки: say не берёт лицо без to. Будущее из прошлого — would close (если закрытие ещё впереди, возможно и will close).",
@@ -742,14 +742,14 @@
       "title_en": "Get: Different meanings",
       "source_slug": "get",
       "title_ru": "Глагол get: основные значения",
-      "summary_ru": "Get - один из самых частотных глаголов английского, и его значение задаёт то, что стоит после него. Get + существительное значит 'получить, достать': I got your email. Get + прилагательное значит 'становиться': it gets dark, I got angry, we got tired. Get to + место значит 'добраться, прийти': we got to the office at eight. Get + дополнение + to + инфинитив значит 'уговорить кого-то что-то сделать' или 'заставить вещь работать': get the printer to work. Get + дополнение + -ing — 'запустить, привести в движение': we finally got the old car going. Get + дополнение + причастие III означает, что работу делает кто-то другой: get the laptop repaired. Отдельно запоминаем get + V3 как разговорный пассив: get lost, get paid, get stuck, get fired. В неформальной речи get также значит 'понимать': I don't get it.",
+      "summary_ru": "Get - один из самых частотных глаголов английского, и его значение задаёт то, что стоит после него. Get + существительное значит 'получить, достать': I got your email. Get + прилагательное значит 'становиться': it gets dark, I got angry, we got tired. Get to + место значит 'добраться, прийти': we got to the office at eight. Get + дополнение + to + инфинитив значит 'уговорить кого-то что-то сделать' или 'заставить вещь работать': get the dishwasher to start. Get + дополнение + -ing — 'запустить, привести в движение': the host got the conversation going. Get + дополнение + причастие III означает, что работу делает кто-то другой: get the laptop repaired. Отдельно запоминаем get + V3 как разговорный пассив: get lost, get paid, get stuck, get fired. В неформальной речи get также значит 'понимать': I don't get it.",
       "forms": [
         "get + noun = receive, obtain",
         "get + adjective = become",
         "get to + place = arrive",
         "get + object + to + infinitive = persuade",
         "get + object + V3 = have something done",
-        "get + object + -ing = start something moving: get the car going"
+        "get + object + -ing = start something moving: get the conversation going"
       ],
       "examples": [
         "I got your email this morning.",
@@ -1106,10 +1106,10 @@
         {
           "id": "b2_50_common_noun_preposition_collocations_12",
           "kind": "order",
-          "prompt": "the storm / to / serious / caused / damage / the roof / .",
-          "answer": "The storm caused serious damage to the roof.",
+          "prompt": "the hail / to / serious / caused / damage / our car / .",
+          "answer": "The hail caused serious damage to our car.",
           "accept": [],
-          "explanation_ru": "Damage сочетается с to: damage to the roof. Русский родительный падеж («повреждение крыши») тянет к of, но damage of — ошибка. Прилагательное стоит перед существительным: serious damage.",
+          "explanation_ru": "Damage сочетается с to: damage to our car. Русский родительный падеж («повреждение машины») тянет к of, но damage of — ошибка. Прилагательное стоит перед существительным: serious damage.",
           "difficulty": 2
         },
         {
@@ -1126,7 +1126,12 @@
             "Our yoga teacher places great emphasis on breathing.",
             "Our yoga teacher places a strong emphasis on breathing.",
             "Our yoga teacher places a big emphasis on breathing.",
-            "Our yoga teacher places a huge emphasis on breathing."
+            "Our yoga teacher places a huge emphasis on breathing.",
+            "Our yoga teacher puts lots of emphasis on breathing.",
+            "Our yoga teacher puts a great deal of emphasis on breathing.",
+            "Our yoga teacher places a great deal of emphasis on breathing.",
+            "Our yoga teacher puts heavy emphasis on breathing.",
+            "Our yoga teacher places heavy emphasis on breathing."
           ],
           "explanation_ru": "Глагол emphasize идёт без предлога (emphasizes breathing), а существительное emphasis требует on: put (place) a lot of emphasis on breathing — «делать большой упор на». Emphasis in и emphasis to — ошибки.",
           "difficulty": 3
@@ -1157,7 +1162,7 @@
         {
           "id": "b2_50_common_noun_preposition_collocations_16",
           "kind": "cloze",
-          "prompt": "Dear Aunt Rosa, thank you so much for the invitation ___ Mia's graduation party. Sadly, I can't come: last week's storm did serious damage ___ our roof, and the repairs start on Saturday. I know how close your relationship ___ Mia is, so please give her a hug from me. I have huge respect ___ how hard she worked this year.",
+          "prompt": "Dear Aunt Rosa, thank you so much for the invitation ___ Mia's graduation party. Sadly, I can't come: last week a tree fell on our house and did serious damage ___ the roof, and the repairs start on Saturday. I know how close your relationship ___ Mia is, so please give her a hug from me. I have huge respect ___ how hard she worked this year.",
           "gaps": [
             [
               "to"
@@ -1867,7 +1872,15 @@
             "Don't blame yourself, you did everything that you could.",
             "Don't blame yourself, you've done everything that you could.",
             "Don't blame yourself. You did everything that you could.",
-            "Don't blame yourself. You've done everything that you could."
+            "Don't blame yourself. You've done everything that you could.",
+            "Don't blame yourself — you did all that you could.",
+            "Don't blame yourself — you've done all that you could.",
+            "Don't blame yourself. You did all that you could.",
+            "Don't blame yourself. You've done all that you could.",
+            "Don't blame yourself; you did all that you could.",
+            "Don't blame yourself; you've done all that you could.",
+            "Don't blame yourself, you did all that you could.",
+            "Don't blame yourself, you've done all that you could."
           ],
           "explanation_ru": "«Винить себя» — blame + возвратное местоимение: don't blame yourself. Don't blame you сделало бы объектом кого-то другого, а действие направлено на само подлежащее. Русское «себя» одно на все лица, а в английском местоимение согласуется с подлежащим: yourself.",
           "difficulty": 2
@@ -2118,7 +2131,7 @@
       "title_en": "Relative clauses: Defining and non-defining",
       "source_slug": "relative-clauses",
       "title_ru": "Определительные придаточные: с запятыми и без",
-      "summary_ru": "Defining-придаточное отвечает на вопрос 'какой именно' и без него смысл теряется: The engineer who wrote this module has left. Оно не выделяется запятыми, допускает that вместо who и which, а если местоимение является дополнением, его можно опустить: The bug we fixed yesterday is back. Non-defining-придаточное добавляет побочную информацию, обязательно выделяется запятыми, that в нём невозможно, а местоимение опустить нельзя: My manager, who joined last year, speaks four languages. Which в non-defining может относиться ко всему предложению: The server crashed at three, which nobody noticed. Whose показывает принадлежность, where указывает на место, when на время. В разговорной речи предлог уходит в конец придаточного, а в формальном стиле встаёт перед whom или which. После some, most, all, both, none и числительных в non-defining-придаточном ставится of whom о людях и of which о предметах: two sisters, both of whom are doctors. Книжное whereby значит «при котором, согласно которому»: a system whereby every change is reviewed. The extent to which — «то, насколько»: предлог to стоит перед which.",
+      "summary_ru": "Defining-придаточное отвечает на вопрос 'какой именно' и без него смысл теряется: The engineer who wrote this module has left. Оно не выделяется запятыми, допускает that вместо who и which, а если местоимение является дополнением, его можно опустить: The bug we fixed yesterday is back. Non-defining-придаточное добавляет побочную информацию, обязательно выделяется запятыми, that в нём невозможно, а местоимение опустить нельзя: My manager, who joined last year, speaks four languages. Which в non-defining может относиться ко всему предложению: The server crashed at three, which nobody noticed. Whose показывает принадлежность, where указывает на место, when на время. В разговорной речи предлог уходит в конец придаточного, а в формальном стиле встаёт перед whom или which. После some, most, all, both, none и числительных в non-defining-придаточном ставится of whom о людях и of which о предметах: my cousins, two of whom work nights. Книжное whereby значит «при котором, согласно которому»: an agreement whereby each roommate buys their own food. The extent to which — «то, насколько»: предлог to стоит перед which.",
       "forms": [
         "defining: noun + who/that/which + verb (no commas)",
         "defining object: noun (+ who/that/which) + subject + verb (pronoun can be dropped)",
@@ -2595,7 +2608,7 @@
       "title_en": "Future in the past",
       "source_slug": "future-in-the-past",
       "title_ru": "Будущее в прошедшем",
-      "summary_ru": "Когда мы смотрим на будущее из точки в прошлом, все формы будущего сдвигаются назад. Will превращается в would: He said he would send the report by Friday. Be going to превращается в was или were going to и часто описывает несостоявшийся план: I was going to call you, but I forgot. Present continuous для договорённости превращается в past continuous: She was meeting the client at nine. Оборот be about to переходит в was или were about to: We were about to leave when the alarm went off. Формальное be to становится was или were to: The migration was to start on Monday. Was to have + V3 подчёркивает, что официальный план сорвался: The release was to have shipped in May. Эти формы обязательны в косвенной речи и в рассказе о прошлых планах. Оборот was supposed to добавляет оттенок невыполненного обязательства.",
+      "summary_ru": "Когда мы смотрим на будущее из точки в прошлом, все формы будущего сдвигаются назад. Will превращается в would: He said he would send the report by Friday. Be going to превращается в was или were going to и часто описывает несостоявшийся план: I was going to call you, but I forgot. Present continuous для договорённости превращается в past continuous: She was meeting the client at nine. Оборот be about to переходит в was или were about to: We were about to leave when the alarm went off. Книжный синоним — was или were on the point of + -ing. Формальное be to становится was или were to: The migration was to start on Monday. Was to have + V3 подчёркивает, что официальный план сорвался: The release was to have shipped in May. Эти формы обязательны в косвенной речи и в рассказе о прошлых планах. Оборот was supposed to добавляет оттенок невыполненного обязательства.",
       "forms": [
         "would + V (will becomes would)",
         "was/were going to + V (plan, often unrealized)",
@@ -2609,7 +2622,7 @@
         "I was going to call you, but my phone died.",
         "We were about to leave when the alarm went off.",
         "She was meeting the client at nine, so she left early.",
-        "The wedding was to take place in June, but it was postponed."
+        "The concert was to start at eight, but the band arrived late."
       ],
       "ru_interference": "В русском после 'сказал, что' стоит обычное будущее время ('сказал, что позвонит'), поэтому в английском ошибочно остаётся will. Неверно: He said he will send the file. Верно: He said he would send the file.",
       "prerequisites": [

@@ -405,7 +405,7 @@
       "title_en": "Other ways to express future: Be about to, be due to, etc.",
       "source_slug": "ways-express-future",
       "title_ru": "Другие способы говорить о будущем",
-      "summary_ru": "Кроме will, be going to и Present Continuous, у будущего есть несколько специальных конструкций. Be about to + инфинитив означает «вот-вот», действие начнётся через считаные секунды или минуты, поэтому оно не сочетается с указанием даты. Be due to + инфинитив означает «должно произойти по расписанию или плану»: The release is due to ship on Friday. Be to + инфинитив звучит официально и передаёт распоряжение или согласованный план: All staff are to complete the training. Be bound to значит «неизбежно произойдёт», be likely to — «вероятно», be set to — «намечено, ожидается» (частый оборот новостей: prices are set to rise). В прошедшем времени was/were about to описывает то, что почти случилось, но не случилось: I was about to send the email when I noticed the typo. После этих оборотов идёт инфинитив с to (to start, to ship), а не форма на -ing. Исключение — be on the point of и be on the verge of («вот-вот, чуть было не»): после предлога of нужна форма на -ing или существительное: I was on the point of giving up, scientists are on the verge of a breakthrough.",
+      "summary_ru": "Кроме will, be going to и Present Continuous, у будущего есть несколько специальных конструкций. Be about to + инфинитив означает «вот-вот», действие начнётся через считаные секунды или минуты, поэтому оно не сочетается с указанием даты. Be due to + инфинитив означает «должно произойти по расписанию или плану»: The release is due to ship on Friday. Be to + инфинитив звучит официально и передаёт распоряжение или согласованный план: All staff are to complete the training. Be bound to значит «неизбежно произойдёт», be likely to — «вероятно», be set to — «намечено, ожидается» (частый оборот новостей: the festival is set to return next summer). В прошедшем времени was/were about to описывает то, что почти случилось, но не случилось: I was about to send the email when I noticed the typo. После этих оборотов идёт инфинитив с to (to start, to ship), а не форма на -ing. Исключение — be on the point of и be on the verge of («вот-вот, чуть было не»): после предлога of нужна форма на -ing или существительное: I was on the point of leaving, the old bridge is on the verge of collapse.",
       "forms": [
         "be about to + инфинитив: The build is about to finish.",
         "be due to + инфинитив: The release is due to ship on Friday.",
@@ -413,7 +413,7 @@
         "be bound to / be likely to + инфинитив: It's bound to break.",
         "was/were about to + инфинитив (несостоявшееся): I was about to call you.",
         "be on the point of / be on the verge of + -ing: I was on the point of leaving.",
-        "be set to / be likely to + infinitive; be on the verge of + noun or -ing"
+        "be set to + infinitive; be on the verge of + noun or -ing"
       ],
       "examples": [
         "Don't restart the server — the backup is about to finish.",
@@ -1504,7 +1504,9 @@
             "The traffic jam prevented me from arriving at the interview on time.",
             "The traffic jam prevented me from arriving at my interview on time.",
             "The traffic jam prevented me from making it to the interview on time.",
-            "The traffic jam prevented me from making it to my interview on time."
+            "The traffic jam prevented me from making it to my interview on time.",
+            "The traffic prevented me from coming to the interview on time.",
+            "Traffic prevented me from coming to the interview on time."
           ],
           "explanation_ru": "«Помешать сделать» — prevent + человек + from + -ing: prevented me from getting. Инфинитив после prevent невозможен (prevented me to get — калька с русского), а from обязателен. Та же модель у keep и stop: kept me from getting.",
           "difficulty": 3

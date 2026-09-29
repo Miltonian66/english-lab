@@ -743,8 +743,7 @@
       "topic": "nature",
       "accept": [
         "highlight",
-        "underline",
-        "stress"
+        "underline"
       ]
     },
     {
@@ -815,7 +814,6 @@
       "topic": "health",
       "accept": [
         "identify",
-        "locate",
         "pin down"
       ]
     },
@@ -1844,7 +1842,10 @@
       ],
       "topic": "people",
       "accept": [
-        "as much as"
+        "as much as",
+        "although",
+        "though",
+        "even though"
       ]
     },
     {
@@ -2271,16 +2272,13 @@
       "word": "revenue",
       "pos": "noun",
       "ipa_us": "/ˈrɛvəˌnu/",
-      "translation_ru": "выручка (доход компании)",
+      "translation_ru": "выручка (доход компании от продаж)",
       "example_en": "The new pricing plan raised monthly revenue by twelve percent.",
       "collocations": [
         "generate revenue",
         "annual revenue"
       ],
-      "topic": "money",
-      "accept": [
-        "income"
-      ]
+      "topic": "money"
     },
     {
       "id": "b2_v_seamless",
@@ -2515,10 +2513,7 @@
         "take a detour",
         "a short detour"
       ],
-      "topic": "travel",
-      "accept": [
-        "diversion"
-      ]
+      "topic": "travel"
     },
     {
       "id": "c1_v_hospitality",

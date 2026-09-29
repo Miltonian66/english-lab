@@ -427,12 +427,12 @@
       "pos": "noun",
       "ipa_us": "/kəˈmɪtmənt/",
       "translation_ru": "обязательство, преданность",
-      "example_en": "Having a dog is a big commitment.",
+      "example_en": "She made a commitment to run three times a week, and she has not missed a week since.",
       "collocations": [
         "make a commitment",
         "a long-term commitment"
       ],
-      "topic": "home"
+      "topic": "health"
     },
     {
       "id": "b2_v_agenda",
@@ -921,7 +921,7 @@
       "pos": "phrasal verb",
       "ipa_us": "/ˌbrɪŋ ˈʌp/",
       "translation_ru": "поднять вопрос, упомянуть",
-      "example_en": "Please do not bring up politics at dinner with my parents.",
+      "example_en": "Please do not bring up the subject of money at dinner with my parents.",
       "collocations": [
         "bring up a topic",
         "bring up an issue"
@@ -1869,13 +1869,16 @@
       "pos": "adjective",
       "ipa_us": "/ˌsɪmpəˈθɛtɪk/",
       "translation_ru": "сочувствующий, отзывчивый (не «симпатичный»)",
-      "example_en": "My friends were very sympathetic when my father was in the hospital.",
+      "example_en": "The nurse gave me a sympathetic look when she saw my swollen ankle.",
       "collocations": [
         "a sympathetic ear",
         "be sympathetic to",
         "deeply sympathetic"
       ],
-      "topic": "people"
+      "topic": "people",
+      "accept": [
+        "compassionate"
+      ]
     },
     {
       "id": "b2_v_supportive",

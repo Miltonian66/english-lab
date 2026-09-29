@@ -51,6 +51,15 @@ def normalize(text: str) -> str:
     return value
 
 
+# «I've a dog» — британское обладание: в General American have в значении
+# «иметь» не сокращается. Перед определителем 've не раскрывается, иначе
+# сверка засчитала бы его за «I have a dog».
+_POSSESSED = (
+    r"(?:a|an|the|some|any|no|one|two|three|four|five|six|seven|eight|nine|ten|"
+    r"my|your|his|her|its|our|their|this|that|these|those|lots|many|much|several)"
+)
+
+
 def expand(text: str) -> str:
     """Сводит сокращения к полной форме, чтобы don't и do not совпадали.
 
@@ -61,7 +70,10 @@ def expand(text: str) -> str:
     # "cannot" слитное, поэтому идёт до пробельных правил — иначе правило мёртвое.
     value = value.replace(" cannot ", " can not ").replace(" can't ", " can not ")
     for full, short in CONTRACTIONS:
-        value = value.replace(f" {short} ", f" {full} ")
+        if short.endswith("'ve"):
+            value = re.sub(rf" {re.escape(short)} (?!{_POSSESSED} )", f" {full} ", value)
+        else:
+            value = value.replace(f" {short} ", f" {full} ")
     # Остальные отрицания однозначны: needn't, mightn't, shan't.
     value = value.replace(" shan't ", " shall not ")
     value = re.sub(r"(?<=\w)n't\b", " not", value)
@@ -82,9 +94,11 @@ def readings(text: str) -> set[str]:
     """Все допустимые чтения нормализованного ответа."""
     base = expand(text)
     choices: list[tuple[str, ...]] = []
-    for token in base.split():
+    tokens = base.split()
+    for index, token in enumerate(tokens):
         found = _CONTRACTION.match(token)
-        if not found:
+        following = tokens[index + 1] if index + 1 < len(tokens) else ""
+        if not found or (found.group(2) == "ve" and re.fullmatch(_POSSESSED, following)):
             choices.append((token,))
             continue
         stem, tail = found.groups()
@@ -115,6 +129,54 @@ def _without_commas(text: str) -> str:
 # неопределительное придаточное (my brother, who lives in Berlin, — один брат)
 # и «исправь ошибку», где эталон отличается от условия только запятыми.
 _NON_DEFINING = re.compile(r",\s*(which|who|whom|whose|where)\b")
+
+
+# Задание прямо просит сокращение или разговорную форму: тогда полная форма —
+# не тот ответ, и уравнивать don't и do not нельзя.
+_ASKS_CONTRACTION = re.compile(r"\bcontractions?\b|\bcasual spoken\b|сокращени", re.IGNORECASE)
+
+
+def contraction_sensitive(exercise: Exercise) -> bool:
+    return bool(_ASKS_CONTRACTION.search(exercise.prompt))
+
+
+# Британское написание — не грамматика: «cancelled» и «colour» засчитываются
+# с пометкой, как пишут в General American. Только однозначные пары: -ise у
+# advise, exercise, surprise — норма и в американском.
+_OUR = "colour|favour|neighbour|behaviour|humour|honour|labour|flavour|harbour|rumour|savour|endeavour|vapour|odour|armour|parlour"
+_RE = {"centre": "center", "centres": "centers", "theatre": "theater", "theatres": "theaters",
+       "metre": "meter", "metres": "meters", "litre": "liter", "litres": "liters",
+       "fibre": "fiber", "sombre": "somber", "calibre": "caliber"}
+_ISE = ("organ|real|recogn|apolog|priorit|summar|critic|memor|special|minim|maxim|optim|"
+        "categor|custom|final|normal|standard|util|visual|emphas|character|author|modern|"
+        "mobil|sympath|capital|general|personal|stabil|symbol|harmon|agon|fantas|jeopard")
+_LL = "cancel|travel|label|model|level|fuel|signal|total|marvel|quarrel|dial|channel|counsel|equal|jewel|tunnel|shovel"
+_WORDS = {"grey": "gray", "greys": "grays", "jewellery": "jewelry", "programme": "program",
+          "programmes": "programs", "catalogue": "catalog", "catalogues": "catalogs",
+          "licence": "license", "defence": "defense", "offence": "offense", "pyjamas": "pajamas",
+          "aluminium": "aluminum", "plough": "plow", "tyre": "tire", "tyres": "tires", "kerb": "curb",
+          "enrol": "enroll", "enrolment": "enrollment", "fulfil": "fulfill", "fulfilment": "fulfillment",
+          "skilful": "skillful", "practise": "practice", "practises": "practices",
+          "practised": "practiced", "practising": "practicing", "ageing": "aging",
+          "judgement": "judgment", "analyse": "analyze", "analysed": "analyzed",
+          "analysing": "analyzing", "paralysed": "paralyzed", "mum": "mom", "mums": "moms"}
+
+
+def american_spelling(text: str) -> tuple[str, list[tuple[str, str]]]:
+    """Текст в американском написании и список замен (британское → американское)."""
+    changes: list[tuple[str, str]] = []
+
+    def swap(found: re.Match[str], new: str) -> str:
+        if found.group(0) != new:
+            changes.append((found.group(0), new))
+        return new
+
+    value = re.sub(rf"\b({_OUR})(\w*)", lambda m: swap(m, m.group(1)[:-2] + "r" + m.group(2)), text)
+    value = re.sub(r"\b(\w+)\b", lambda m: swap(m, _RE.get(m.group(1), _WORDS.get(m.group(1), m.group(1)))), value)
+    value = re.sub(rf"\b({_ISE})is(e|es|ed|ing|ation|ations|er|ers)\b",
+                   lambda m: swap(m, f"{m.group(1)}iz{m.group(2)}"), value)
+    value = re.sub(rf"\b({_LL})l(ed|ing|er|ers)\b", lambda m: swap(m, f"{m.group(1)}{m.group(2)}"), value)
+    return value, changes
 
 
 def comma_sensitive(exercise: Exercise) -> bool:
@@ -279,11 +341,18 @@ def grade(exercise: Exercise, given: str) -> Grade:
     if not candidate:
         return Grade(False)
     variants = [item for item in exercise.expected if item]
+    loose_commas = not comma_sensitive(exercise)
+    if contraction_sensitive(exercise):
+        plain = _without_commas(candidate) if loose_commas else candidate
+        for variant in variants:
+            wanted = normalize(variant)
+            if (_without_commas(wanted) if loose_commas else wanted) == plain:
+                return Grade(True, variant)
+        return _american(exercise, candidate)
     for variant in variants:
         if normalize(variant) == candidate or expand(normalize(variant)) == expand(candidate):
             return Grade(True, variant)
 
-    loose_commas = not comma_sensitive(exercise)
     heard = readings(candidate)
     if loose_commas:
         heard |= {_without_commas(item) for item in heard}
@@ -303,7 +372,19 @@ def grade(exercise: Exercise, given: str) -> Grade:
         variant, slips = typo
         fixes = ", ".join(f"{typed} → {wanted}" for typed, wanted in slips)
         return Grade(True, variant, f"Засчитано, но проверь написание: {fixes}.")
-    return Grade(False)
+    return _american(exercise, candidate)
+
+
+def _american(exercise: Exercise, candidate: str) -> Grade:
+    """Последняя попытка: тот же ответ в американском написании."""
+    american, changes = american_spelling(candidate)
+    if not changes or "spelling" in exercise.id:
+        return Grade(False)
+    result = grade(exercise, american)
+    if not result.correct:
+        return Grade(False)
+    fixes = ", ".join(f"{british} → {us}" for british, us in changes)
+    return Grade(True, result.matched, f"Засчитано. В американском написании: {fixes}.")
 
 
 def matches(exercise: Exercise, given: str) -> bool:

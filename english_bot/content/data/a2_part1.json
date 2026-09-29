@@ -245,6 +245,40 @@
      "correct_index": 0,
      "explanation_ru": "Сравнение «в меньшую сторону» — less + прилагательное + than: less expensive than a taxi («не так дорого, дешевле»). Fewer ставят перед исчисляемыми существительными (fewer cars), more little не говорят, а the least — превосходная степень, и с than она не сочетается.",
      "difficulty": 2
+    },
+    {
+     "id": "a2_comparative_superlative_adjectives_adverbs_17",
+     "kind": "choice",
+     "prompt": "You look ___. Did you sleep badly last night?",
+     "options": [
+      "tired",
+      "tiredly",
+      "tiring",
+      "tire"
+     ],
+     "correct_index": 0,
+     "explanation_ru": "После look в значении «выглядеть» описывают человека, а не действие, поэтому прилагательное: You look tired. Так же с feel, sound, seem: I feel tired, it sounds good. Tiredly — наречие, tiring значит «утомительный», а tire — глагол.",
+     "difficulty": 2
+    },
+    {
+     "id": "a2_comparative_superlative_adjectives_adverbs_18",
+     "kind": "correct",
+     "prompt": "Leila worked hardly all weekend, so she's very tired now.",
+     "answer": "Leila worked hard all weekend, so she's very tired now.",
+     "accept": [],
+     "explanation_ru": "Наречие от hard совпадает с прилагательным: work hard — «работать усердно». Hardly — другое слово, оно значит «едва, почти не»: Leila hardly worked значило бы, что она почти не работала, а тогда не с чего устать.",
+     "difficulty": 3
+    },
+    {
+     "id": "a2_comparative_superlative_adjectives_adverbs_19",
+     "kind": "transform",
+     "prompt": "Rewrite with the verb 'teach' and adverbs: Mateo is a careful and patient teacher.",
+     "answer": "Mateo teaches carefully and patiently.",
+     "accept": [
+      "Mateo teaches patiently and carefully."
+     ],
+     "explanation_ru": "Прилагательное описывает существительное (a careful teacher), а наречие — действие: teaches carefully. Наречие образуется через -ly: careful → carefully, patient → patiently.",
+     "difficulty": 3
     }
    ]
   },
@@ -2009,6 +2043,15 @@
      "correct_index": 0,
      "explanation_ru": "Чтобы не повторять существительное, после прилагательного ставят one или ones: the black ones = the black shoes. Shoes — множественное число, поэтому ones; one заменяет единственное (the black one). Them и it после прилагательного не ставятся.",
      "difficulty": 2
+    },
+    {
+     "id": "a2_subject_pronouns_object_pronouns_possessive_pronouns_possessive_adj_16",
+     "kind": "correct",
+     "prompt": "Yesterday I bought a lamp and a chair. A chair is really comfortable.",
+     "answer": "Yesterday I bought a lamp and a chair. The chair is really comfortable.",
+     "accept": [],
+     "explanation_ru": "Впервые предмет называют с a: I bought a chair. Когда о нём говорят второй раз, собеседник уже знает, какой он, поэтому the: the chair. It здесь было бы непонятно: куплены два предмета.",
+     "difficulty": 3
     }
    ]
   },
@@ -2420,6 +2463,43 @@
      ],
      "explanation_ru": "Перед home предлог to не ставится: went home, хотя по-русски «поехал домой» тянет к to home. Транспорт — by bus без артикля (или on the bus). Прошедшая форма go — went.",
      "difficulty": 3
+    },
+    {
+     "id": "a2_use_verb_go_english_15",
+     "kind": "cloze",
+     "prompt": "It's Monday evening. Dad is still ___ (на работе), and Mom is ___ (дома) with my little brother. We usually ___ (ужинаем) at seven, and at ten I go ___ (спать).",
+     "gaps": [
+      [
+       "at work"
+      ],
+      [
+       "at home",
+       "home"
+      ],
+      [
+       "have dinner",
+       "eat dinner"
+      ],
+      [
+       "to bed"
+      ]
+     ],
+     "explanation_ru": "В устойчивых сочетаниях артикль не ставят: at work, at home (в американской речи и просто home), have dinner, go to bed. At the work, have a dinner и go to the bed — кальки: с артиклем говорят только о конкретном месте или ужине — the bed by the window, a big dinner.",
+     "difficulty": 2
+    },
+    {
+     "id": "a2_use_verb_go_english_16",
+     "kind": "choice",
+     "prompt": "Как сказать по-английски: «Я нашёл этот рецепт в интернете.»?",
+     "options": [
+      "I found this recipe on the internet.",
+      "I found this recipe on internet.",
+      "I found this recipe in internet.",
+      "I found this recipe in an internet."
+     ],
+     "correct_index": 0,
+     "explanation_ru": "Интернет один на всех, поэтому с ним ставят the, как с the sun и the moon. «В интернете» — on the internet: предлог on, а не калька in. Без артикля и с an так не говорят.",
+     "difficulty": 2
     }
    ]
   }

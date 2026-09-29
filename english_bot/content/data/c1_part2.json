@@ -215,12 +215,15 @@
               "whereby",
               "under which",
               "by which",
-              "in which"
+              "in which",
+              "through which"
             ],
             [
               "at which point",
               "whereupon",
-              "when"
+              "when",
+              "at which time",
+              "where"
             ],
             [
               "in which case"
@@ -801,7 +804,7 @@
       "title_en": "Cleft sentences and fronting for information structure",
       "source_slug": "",
       "title_ru": "Расщеплённые предложения и фронтинг",
-      "summary_ru": "Расщеплённое предложение выделяет один элемент, не меняя интонации. It-cleft ставит фокус сразу после it is или it was, а остальное уходит в придаточное с that или who: It was in Kyoto that they got engaged. Wh-cleft начинается с what, all, the thing, the last thing, the reason или where и ставит фокус после is или was: What I need is sleep; All we need is time; Where the plan falls short is the budget. Оборот all I need значит «только это и ничего больше»; после all относительное местоимение опускается или становится that, но what после all невозможно. Обратный wh-cleft подхватывает сказанное: That's what I mean; This is where it gets interesting. Разговорные рамки The thing is, … и It's not that …, it's (just) that … переносят фокус на настоящую причину. Схема the reason ... is that в письменной норме требует that, а не because. Подлежащим бывает и целое придаточное: Whether we go depends on the weather (не If we go), What matters is the result, The fact that she apologized changes nothing. That-придаточное в начале звучит книжно, поэтому в речи говорят The fact that … или выносят его в конец: It's obvious that … Подлежащим бывает и целое придаточное: Whether we go depends on the weather (не If we go), What matters is the result, The fact that she apologized changes nothing. That-придаточное в начале звучит книжно, поэтому в речи говорят The fact that … или выносят его в конец: It's obvious that … Подлежащим бывает и целое придаточное: Whether we go depends on the weather (не If we go), What matters is the result, The fact that she apologized changes nothing. That-придаточное в начале звучит книжно, поэтому в речи говорят The fact that … или выносят его в конец: It's obvious that …",
+      "summary_ru": "Расщеплённое предложение выделяет один элемент, не меняя интонации. It-cleft ставит фокус сразу после it is или it was, а остальное уходит в придаточное с that или who: It was in Kyoto that they got engaged. Wh-cleft начинается с what, all, the thing, the last thing, the reason или where и ставит фокус после is или was: What I need is sleep; All we need is time; Where the plan falls short is the budget. Оборот all I need значит «только это и ничего больше»; после all относительное местоимение опускается или становится that, но what после all невозможно. Обратный wh-cleft подхватывает сказанное: That's what I mean; This is where it gets interesting. Разговорные рамки The thing is, … и It's not that …, it's (just) that … переносят фокус на настоящую причину. Схема the reason ... is that в письменной норме требует that, а не because. Подлежащим бывает и целое придаточное: Whether we go depends on the weather (не If we go), What bothers me is the noise, The fact that she apologized changes nothing. That-придаточное в начале звучит книжно, поэтому в речи говорят The fact that … или выносят его в конец: It's obvious that …",
       "forms": [
         "It + be + фокус + that / who + придаточное",
         "What / All / The thing / The last thing + S + V + is / was + фокус",
@@ -914,7 +917,9 @@
           "prompt": "He only had to sign the form. → ___ was sign the form. (start with 'All')",
           "answer": "All he had to do",
           "accept": [
-            "All that he had to do"
+            "All that he had to do",
+            "All he needed to do",
+            "All that he needed to do"
           ],
           "explanation_ru": "All he had to do was + инфинитив без to — wh-cleft со значением «всего-то и нужно было». После all относительное местоимение опускается или становится that.",
           "difficulty": 3
@@ -1028,7 +1033,8 @@
             "What matters most is that everyone gets home safely.",
             "What is important is that everyone gets home safely.",
             "What is really important is that everyone gets home safely.",
-            "What counts is that everyone gets home safely."
+            "What counts is that everyone gets home safely.",
+            "What really counts is that everyone gets home safely."
           ],
           "explanation_ru": "Wh-cleft ставит фокус в конец: What matters is that … — «важно только то, что…». Придаточное с what само служит подлежащим, а после is идёт that-придаточное с главной мыслью.",
           "difficulty": 2
@@ -1068,7 +1074,7 @@
         {
           "id": "c1_emphatic_structures_do_did_what_clauses_it_clefts_01",
           "kind": "choice",
-          "prompt": "A: You forgot to feed the cat again!\nB: I ___ feed her — she's just pretending to be hungry.",
+          "prompt": "A: You forgot to feed the cat again!\nB: I ___ feed her this morning — she's just pretending to be hungry.",
           "options": [
             "did",
             "do",
@@ -1076,7 +1082,7 @@
             "had"
           ],
           "correct_index": 0,
-          "explanation_ru": "Эмфатическое did подтверждает прошлый факт, в котором собеседник сомневается: I did feed her. Do относилось бы к настоящему, а was и had не сочетаются с голым инфинитивом.",
+          "explanation_ru": "Эмфатическое did подтверждает прошлый факт, в котором собеседник сомневается: I did feed her this morning. Do относилось бы к настоящему, а was и had не сочетаются с голым инфинитивом.",
           "difficulty": 1,
           "diagnostic": false
         },

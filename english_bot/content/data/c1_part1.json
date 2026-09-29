@@ -454,7 +454,9 @@
           "kind": "correct",
           "prompt": "It's about time the city fixes the streetlights on our block — it's been dark for a month.",
           "answer": "It's about time the city fixed the streetlights on our block — it's been dark for a month.",
-          "accept": [],
+          "accept": [
+            "It's about time for the city to fix the streetlights on our block — it's been dark for a month."
+          ],
           "explanation_ru": "После it's (high / about) time + подлежащее глагол стоит в прошедшем, хотя речь о настоящем: «давно пора, чтобы город починил». Present simple (fixes) после этого оборота — ошибка. Без подлежащего возможен инфинитив: It's about time to fix the lights.",
           "difficulty": 2
         },
@@ -749,7 +751,7 @@
         {
           "id": "c1_advanced_modal_verbs_will_would_and_should_01",
           "kind": "choice",
-          "prompt": "I've asked him three times, but he still ___ sign the contract — he says his lawyer hasn't read it yet.",
+          "prompt": "I keep asking him, but he still ___ sign the contract — he says his lawyer hasn't read it yet.",
           "options": [
             "won't",
             "wouldn't",
@@ -793,7 +795,7 @@
         {
           "id": "c1_advanced_modal_verbs_will_would_and_should_04",
           "kind": "choice",
-          "prompt": "I restarted the router three times, but my laptop still ___ connect to the office Wi-Fi.",
+          "prompt": "Yesterday I restarted the router three times, but my laptop still ___ connect to the office Wi-Fi, so I ended up working from a café.",
           "options": [
             "wouldn't",
             "shouldn't",
@@ -1092,7 +1094,10 @@
           "answer": "may well be",
           "accept": [
             "might well be",
-            "could well be"
+            "could well be",
+            "may very well be",
+            "might very well be",
+            "could very well be"
           ],
           "explanation_ru": "May well (might well, could well) + инфинитив — «вполне возможно»: осторожное, но довольно уверенное предположение. Well стоит между модальным глаголом и инфинитивом; просто may be прозвучало бы неувереннее, чем «вполне».",
           "difficulty": 2
@@ -1397,7 +1402,7 @@
       "title_en": "Collocation and register: formal vs informal equivalents",
       "source_slug": "",
       "title_ru": "Коллокации и регистр: формально и неформально",
-      "summary_ru": "Регистр — это степень формальности, и на C1 ошибка регистра считается такой же ошибкой, как ошибка в грамматике. Неформальный английский предпочитает фразовые глаголы и короткие германские слова: find out, set up, put off, get in touch, ask for. Формальный письменный английский выбирает однословные латинские эквиваленты: determine, establish, postpone, contact, request. Меняются и связки: but и so в письме заменяются на however и therefore, before и because of — на prior to и owing to. Prior to — предлог, поэтому после него идёт -ing, а не инфинитив: prior to leaving. У формального письма свои устойчивые формулы и коллокации: I look forward to hearing from you, generate interest, request a refund. Русские канцелярские обороты («в связи с», «заранее благодарю») дословно не переводятся. Переход работает в обе стороны: официальное объявление, пересказанное коллеге в чате, переводят обратно на разговорный язык (Please be advised that… → Heads-up: …). Смешение регистров в одном тексте читается как небрежность: разговорная фраза посреди официального письма режет слух так же, как канцелярит в сообщении другу.",
+      "summary_ru": "Регистр — это степень формальности, и на C1 ошибка регистра считается такой же ошибкой, как ошибка в грамматике. Неформальный английский предпочитает фразовые глаголы и короткие германские слова: find out, set up, put off, get in touch, ask for. Формальный письменный английский выбирает однословные латинские эквиваленты: determine, establish, postpone, contact, request. Меняются и связки: but и so в письме заменяются на however и therefore, before и because of — на prior to и owing to. Prior to — предлог, поэтому после него идёт -ing, а не инфинитив: prior to leaving. У формального письма свои устойчивые формулы и коллокации: I look forward to hearing from you, generate interest, request a refund. Русские канцелярские обороты («в связи с», «заранее благодарю») дословно не переводятся. Переход работает в обе стороны: официальное объявление, пересказанное коллеге в чате, переводят обратно на разговорный язык (We apologize for any inconvenience → Sorry for the hassle). Смешение регистров в одном тексте читается как небрежность: разговорная фраза посреди официального письма режет слух так же, как канцелярит в сообщении другу.",
       "forms": [
         "фразовый глагол (неформально) ↔ однословный латинский глагол (формально)",
         "before / because of (нейтрально) ↔ prior to + -ing / owing to + существительное (формально)",
@@ -1423,7 +1428,7 @@
         {
           "id": "c1_collocation_and_register_formal_vs_informal_equivalents_01",
           "kind": "choice",
-          "prompt": "For the second time, a supplier has delivered damaged equipment to your company. Which closing line best suits your formal complaint: firm but polite?",
+          "prompt": "For the second time, a supplier has delivered damaged equipment to your company. Your formal complaint should be firm but polite. Which closing line suits it best?",
           "options": [
             "I look forward to your prompt reply.",
             "Looking forward to hearing from you!",
@@ -1456,12 +1461,12 @@
           "prompt": "The proposal ___ a great deal of interest among investors.",
           "options": [
             "generated",
-            "caused",
+            "called",
             "made",
             "did"
           ],
           "correct_index": 0,
-          "explanation_ru": "Interest сочетается с generate, attract или arouse. Cause interest — калька с «вызвать интерес», а make interest и do interest не являются английскими коллокациями.",
+          "explanation_ru": "Interest сочетается с generate, attract или arouse. Called — дословный перевод «вызвал интерес», а make interest и do interest не являются английскими коллокациями.",
           "difficulty": 2
         },
         {
@@ -1810,10 +1815,8 @@
             "It dawned on me later that she had been joking.",
             "It dawned on me only later that she had been joking.",
             "It only later dawned on me that she had been joking.",
-            "It didn't dawn on me until later that she had been joking.",
             "It wasn't until later that it dawned on me that she had been joking.",
-            "It was only later that it dawned on me that she had been joking.",
-            "Only later did it dawn on me that she had been joking."
+            "It was only later that it dawned on me that she had been joking."
           ],
           "explanation_ru": "Dawn on строится безлично: It dawned on me that … — «до меня дошло». Подлежащее — it, а человек стоит после on.",
           "difficulty": 2

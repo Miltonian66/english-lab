@@ -149,12 +149,13 @@ _OUR = ("colour|favour|neighbour|behaviour|humour|honour|labour|flavour|harbour|
         "endeavour|vapour|odour|armour|parlour|demeanour|glamour")
 _RE = {"centre": "center", "centres": "centers", "theatre": "theater", "theatres": "theaters",
        "metre": "meter", "metres": "meters", "litre": "liter", "litres": "liters",
-       "fibre": "fiber", "sombre": "somber", "calibre": "caliber"}
+       "fibre": "fiber", "sombre": "somber", "calibre": "caliber", "meagre": "meager",
+       "manoeuvre": "maneuver", "lustre": "luster", "sabre": "saber"}
 _ISE = ("organ|real|recogn|apolog|priorit|summar|critic|memor|special|minim|maxim|optim|"
         "categor|custom|final|normal|standard|util|visual|emphas|character|author|modern|"
         "mobil|sympath|capital|general|personal|stabil|symbol|harmon|agon|fantas|jeopard|patron|"
         "apolog|global|legal|polar|scrutin|terror|trivial|vandal|energ|evangel")
-_LL = "cancel|travel|label|model|level|fuel|signal|total|marvel|quarrel|dial|channel|counsel|equal|jewel|tunnel|shovel"
+_LL = "cancel|travel|label|model|remodel|level|fuel|signal|total|marvel|quarrel|dial|channel|counsel|equal|jewel|tunnel|shovel"
 _WORDS = {"grey": "gray", "greys": "grays", "jewellery": "jewelry", "programme": "program",
           "programmes": "programs", "catalogue": "catalog", "catalogues": "catalogs",
           "licence": "license", "defence": "defense", "offence": "offense", "pyjamas": "pajamas",
@@ -164,6 +165,7 @@ _WORDS = {"grey": "gray", "greys": "grays", "jewellery": "jewelry", "programme":
           "practised": "practiced", "practising": "practicing", "ageing": "aging",
           "judgement": "judgment", "analyse": "analyze", "analysed": "analyzed",
           "analysing": "analyzing", "paralysed": "paralyzed", "cosy": "cozy", "cosier": "cozier",
+          "spoilt": "spoiled", "unspoilt": "unspoiled", "learnt": "learned", "spelt": "spelled",
           "mum": "mom", "mums": "moms", "flat": "apartment", "flats": "apartments",
           "lift": "elevator", "lifts": "elevators", "queue": "line", "petrol": "gas",
           "trousers": "pants", "rubbish": "trash", "pavement": "sidewalk", "motorway": "highway",

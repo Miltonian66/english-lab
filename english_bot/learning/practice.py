@@ -431,8 +431,10 @@ def _forms_of(word: str, pos: str) -> list[str]:
     if pos in ("verb", "phrasal verb") or verbal_phrase:
         return [form for form in word_forms(base) if form != base]
     if pos == "noun" and " " not in base:
-        # amenities уже во множественном: «amenitieses» — не форма.
-        if base in UNCOUNTABLE or base in INVARIANT_PLURAL or base.endswith("ies"):
+        # amenities, chores, earnings уже во множественном: «choreses» — не форма.
+        # bus, bias, consensus кончаются на -s в единственном и остаются.
+        plural_already = base.endswith(("ies", "es")) or re.search(r"[^aeiousy]s$", base)
+        if base in UNCOUNTABLE or base in INVARIANT_PLURAL or plural_already:
             return []
         if base in IRREGULAR_PLURAL:
             return [IRREGULAR_PLURAL[base]]
@@ -785,6 +787,8 @@ def task_hint(question: "Question") -> str:
         return "Здесь есть ошибка. Пришли исправленное предложение целиком."
     if question.kind == "order":
         return "Составь предложение из этих слов и пришли целиком. Последний элемент — знак в конце."
+    if question.kind == "transform" and question.prompt.startswith("Переведи"):
+        return "Пришли перевод целиком."
     if question.kind == "transform":
         return "Пришли переписанное предложение целиком."
     if question.kind == "cloze":

@@ -58,12 +58,12 @@
       "pos": "noun",
       "ipa_us": "/ˈprɑˌsɛs/",
       "translation_ru": "процесс",
-      "example_en": "The whole process takes about three days from start to finish.",
+      "example_en": "Getting a new passport is a slow process.",
       "collocations": [
         "a long process",
         "speed up the process"
       ],
-      "topic": "work"
+      "topic": "travel"
     },
     {
       "id": "b1_v_agreement",
@@ -117,7 +117,7 @@
       "pos": "noun",
       "ipa_us": "/ˈbʌdʒɪt/",
       "translation_ru": "бюджет, смета",
-      "example_en": "We cannot buy new laptops because the budget is too small.",
+      "example_en": "Our budget for the vacation is small, so we are staying in hostels.",
       "collocations": [
         "a tight budget",
         "stay within budget"
@@ -173,12 +173,12 @@
       "pos": "noun",
       "ipa_us": "/skɪl/",
       "translation_ru": "навык, умение",
-      "example_en": "Writing clear emails is a useful skill in our job.",
+      "example_en": "Cooking is a useful skill for every student.",
       "collocations": [
         "a useful skill",
         "develop a skill"
       ],
-      "topic": "work"
+      "topic": "study"
     },
     {
       "id": "b1_v_experience",
@@ -201,12 +201,12 @@
       "pos": "noun",
       "ipa_us": "/rɪˌspɑnsəˈbɪləti/",
       "translation_ru": "ответственность, обязанность",
-      "example_en": "Checking the backups is my responsibility every Friday.",
+      "example_en": "Walking the dog is my son's responsibility.",
       "collocations": [
         "take responsibility",
         "share responsibility"
       ],
-      "topic": "work",
+      "topic": "home",
       "accept": [
         "duty"
       ]
@@ -218,12 +218,12 @@
       "pos": "noun",
       "ipa_us": "/ˈprɑgrəs/",
       "translation_ru": "прогресс, продвижение",
-      "example_en": "We make good progress when nobody interrupts us.",
+      "example_en": "I am making good progress with my Spanish.",
       "collocations": [
         "make progress",
         "slow progress"
       ],
-      "topic": "work"
+      "topic": "study"
     },
     {
       "id": "b1_v_solution",
@@ -232,12 +232,12 @@
       "pos": "noun",
       "ipa_us": "/səˈluʃən/",
       "translation_ru": "решение проблемы, выход",
-      "example_en": "The simplest solution was to restart the service every night.",
+      "example_en": "Our neighbors finally found a solution to the parking problem.",
       "collocations": [
         "find a solution",
         "a simple solution"
       ],
-      "topic": "work"
+      "topic": "people"
     },
     {
       "id": "b1_v_training",
@@ -260,12 +260,12 @@
       "pos": "noun",
       "ipa_us": "/ˌɑpɚˈtunəti/",
       "translation_ru": "возможность, шанс",
-      "example_en": "This job is a great opportunity to learn new tools.",
+      "example_en": "Living abroad is a great opportunity to learn a language.",
       "collocations": [
         "a great opportunity",
         "miss an opportunity"
       ],
-      "topic": "work",
+      "topic": "travel",
       "accept": [
         "chance"
       ]
@@ -277,12 +277,12 @@
       "pos": "noun",
       "ipa_us": "/goʊl/",
       "translation_ru": "цель",
-      "example_en": "Our main goal this year is to make the app faster.",
+      "example_en": "My goal this year is to read twenty books.",
       "collocations": [
         "set a goal",
         "reach a goal"
       ],
-      "topic": "work",
+      "topic": "study",
       "accept": [
         "aim"
       ]
@@ -294,12 +294,15 @@
       "pos": "noun",
       "ipa_us": "/dɪˈsɪʒən/",
       "translation_ru": "решение (сделанный выбор)",
-      "example_en": "It was a hard decision, but we chose the cheaper option.",
+      "example_en": "Moving to another city was the hardest decision of my life.",
       "collocations": [
         "make a decision",
         "a final decision"
       ],
-      "topic": "work"
+      "topic": "people",
+      "accept": [
+        "choice"
+      ]
     },
     {
       "id": "b1_v_quality",
@@ -308,12 +311,12 @@
       "pos": "noun",
       "ipa_us": "/ˈkwɑləti/",
       "translation_ru": "качество",
-      "example_en": "The quality of the translation was better than we expected.",
+      "example_en": "The food was cheap, but the quality was very good.",
       "collocations": [
         "high quality",
         "improve the quality"
       ],
-      "topic": "work"
+      "topic": "food"
     },
     {
       "id": "b1_v_risk",
@@ -322,12 +325,12 @@
       "pos": "noun",
       "ipa_us": "/rɪsk/",
       "translation_ru": "риск",
-      "example_en": "There is a small risk that the update will break the site.",
+      "example_en": "Smoking increases the risk of heart disease.",
       "collocations": [
         "take a risk",
         "a serious risk"
       ],
-      "topic": "work"
+      "topic": "health"
     },
     {
       "id": "b1_v_effort",
@@ -336,12 +339,12 @@
       "pos": "noun",
       "ipa_us": "/ˈɛfɚt/",
       "translation_ru": "усилие, старание",
-      "example_en": "It takes a lot of effort to keep the documents up to date.",
+      "example_en": "It takes a lot of effort to learn to play the piano.",
       "collocations": [
         "make an effort",
         "a big effort"
       ],
-      "topic": "work"
+      "topic": "study"
     },
     {
       "id": "b1_v_result",
@@ -350,12 +353,12 @@
       "pos": "noun",
       "ipa_us": "/rɪˈzʌlt/",
       "translation_ru": "результат",
-      "example_en": "The results of the test surprised everyone in the office.",
+      "example_en": "The results of my blood test were normal.",
       "collocations": [
         "get a result",
         "as a result"
       ],
-      "topic": "work"
+      "topic": "health"
     },
     {
       "id": "b1_v_advantage",
@@ -364,12 +367,12 @@
       "pos": "noun",
       "ipa_us": "/ədˈvæntɪdʒ/",
       "translation_ru": "преимущество, плюс",
-      "example_en": "The main advantage of this tool is that it is free.",
+      "example_en": "The main advantage of living downtown is that you can walk everywhere.",
       "collocations": [
         "a big advantage",
         "take advantage of"
       ],
-      "topic": "work",
+      "topic": "home",
       "accept": [
         "benefit"
       ]
@@ -381,7 +384,7 @@
       "pos": "noun",
       "ipa_us": "/əˈpɪnjən/",
       "translation_ru": "мнение, взгляд",
-      "example_en": "Everyone in the team had a different opinion about the design.",
+      "example_en": "Everyone in my family has a different opinion about the new movie.",
       "collocations": [
         "a strong opinion",
         "change your opinion"
@@ -443,7 +446,7 @@
       "pos": "noun",
       "ipa_us": "/mud/",
       "translation_ru": "настроение",
-      "example_en": "She is in a good mood because the release went well.",
+      "example_en": "She is in a good mood because it is her birthday.",
       "collocations": [
         "in a good mood",
         "a bad mood"
@@ -527,7 +530,7 @@
       "pos": "noun",
       "ipa_us": "/kɔst/",
       "translation_ru": "стоимость, затраты",
-      "example_en": "The cost of the new license is higher than we expected.",
+      "example_en": "The cost of living in this city is very high.",
       "collocations": [
         "the total cost",
         "cut costs"
@@ -546,7 +549,11 @@
         "manage a team",
         "manage to do something"
       ],
-      "topic": "work"
+      "topic": "work",
+      "accept": [
+        "lead",
+        "run"
+      ]
     },
     {
       "id": "b1_v_organize",
@@ -555,12 +562,12 @@
       "pos": "verb",
       "ipa_us": "/ˈɔrgəˌnaɪz/",
       "translation_ru": "организовывать (встречу, мероприятие), устраивать",
-      "example_en": "Could you organize a short call with the client tomorrow?",
+      "example_en": "My sister organized a surprise party for my birthday.",
       "collocations": [
         "organize a meeting",
         "organize your time"
       ],
-      "topic": "work",
+      "topic": "people",
       "accept": [
         "arrange"
       ]
@@ -586,12 +593,12 @@
       "pos": "verb",
       "ipa_us": "/əˈplaɪ/",
       "translation_ru": "подавать заявку (на работу, визу)",
-      "example_en": "He applied for a job in another department.",
+      "example_en": "She applied for a visa to visit her sister in Canada.",
       "collocations": [
         "apply for a job",
         "apply online"
       ],
-      "topic": "work"
+      "topic": "travel"
     },
     {
       "id": "b1_v_hire",
@@ -617,12 +624,12 @@
       "pos": "verb",
       "ipa_us": "/ɪmˈpruv/",
       "translation_ru": "улучшать, совершенствовать",
-      "example_en": "We want to improve the speed of the main page.",
+      "example_en": "Reading every day helped me improve my English.",
       "collocations": [
         "improve the quality",
         "improve your English"
       ],
-      "topic": "work"
+      "topic": "study"
     },
     {
       "id": "b1_v_provide",
@@ -631,12 +638,12 @@
       "pos": "verb",
       "ipa_us": "/prəˈvaɪd/",
       "translation_ru": "предоставлять, обеспечивать",
-      "example_en": "The company provides a laptop for every new employee.",
+      "example_en": "The hotel provides free towels and breakfast.",
       "collocations": [
         "provide support",
         "provide information"
       ],
-      "topic": "work"
+      "topic": "travel"
     },
     {
       "id": "b1_v_reduce",
@@ -645,12 +652,12 @@
       "pos": "verb",
       "ipa_us": "/rɪˈdus/",
       "translation_ru": "сокращать, снижать",
-      "example_en": "We reduced the number of meetings to two a week.",
+      "example_en": "The doctor told him to reduce the amount of salt in his food.",
       "collocations": [
         "reduce costs",
         "reduce the risk"
       ],
-      "topic": "work",
+      "topic": "health",
       "accept": [
         "cut",
         "decrease",
@@ -664,12 +671,12 @@
       "pos": "verb",
       "ipa_us": "/əˈtʃiv/",
       "translation_ru": "достигать, добиваться",
-      "example_en": "We achieved all our goals in the first half of the year.",
+      "example_en": "He worked hard and achieved his goal of opening a café.",
       "collocations": [
         "achieve a goal",
         "achieve a result"
       ],
-      "topic": "work",
+      "topic": "people",
       "accept": [
         "reach"
       ]
@@ -681,12 +688,12 @@
       "pos": "verb",
       "ipa_us": "/əˈvɔɪd/",
       "translation_ru": "избегать",
-      "example_en": "Write short emails to avoid problems later.",
+      "example_en": "We left early to avoid the traffic.",
       "collocations": [
         "avoid a problem",
         "avoid mistakes"
       ],
-      "topic": "work"
+      "topic": "travel"
     },
     {
       "id": "b1_v_suggest",
@@ -695,12 +702,15 @@
       "pos": "verb",
       "ipa_us": "/səgˈdʒɛst/",
       "translation_ru": "предлагать (идею)",
-      "example_en": "I suggest we start the meeting without him.",
+      "example_en": "I suggest we take a taxi because it is raining.",
       "collocations": [
         "suggest an idea",
         "suggest doing something"
       ],
-      "topic": "work"
+      "topic": "travel",
+      "accept": [
+        "propose"
+      ]
     },
     {
       "id": "b1_v_discuss",
@@ -709,12 +719,15 @@
       "pos": "verb",
       "ipa_us": "/dɪˈskʌs/",
       "translation_ru": "обсуждать",
-      "example_en": "Let's discuss the new design after lunch.",
+      "example_en": "We need to discuss our vacation plans tonight.",
       "collocations": [
         "discuss a problem",
         "discuss the details"
       ],
-      "topic": "work"
+      "topic": "people",
+      "accept": [
+        "talk about"
+      ]
     },
     {
       "id": "b1_v_consider",
@@ -723,12 +736,15 @@
       "pos": "verb",
       "ipa_us": "/kənˈsɪdɚ/",
       "translation_ru": "рассматривать, обдумывать",
-      "example_en": "We are considering two different tools for this task.",
+      "example_en": "We are considering moving to a bigger apartment.",
       "collocations": [
         "consider an option",
         "carefully consider"
       ],
-      "topic": "work"
+      "topic": "home",
+      "accept": [
+        "think about"
+      ]
     },
     {
       "id": "b1_v_solve",
@@ -737,12 +753,16 @@
       "pos": "verb",
       "ipa_us": "/sɑlv/",
       "translation_ru": "решать, устранять",
-      "example_en": "It took us a day to solve the problem with the database.",
+      "example_en": "We solved the problem with our noisy neighbors by talking to them.",
       "collocations": [
         "solve a problem",
         "solve an issue"
       ],
-      "topic": "work"
+      "topic": "people",
+      "accept": [
+        "resolve",
+        "fix"
+      ]
     },
     {
       "id": "b1_v_confirm",
@@ -750,13 +770,13 @@
       "word": "confirm",
       "pos": "verb",
       "ipa_us": "/kənˈfɝm/",
-      "translation_ru": "подтверждать",
-      "example_en": "Please confirm the time of the call by email.",
+      "translation_ru": "подтверждать (бронь, время, договорённость)",
+      "example_en": "Please call the hotel to confirm our booking.",
       "collocations": [
         "confirm a booking",
         "confirm the details"
       ],
-      "topic": "work"
+      "topic": "travel"
     },
     {
       "id": "b1_v_arrange",
@@ -782,12 +802,12 @@
       "pos": "verb",
       "ipa_us": "/rɪˈpleɪs/",
       "translation_ru": "заменять",
-      "example_en": "We need to replace the old router before winter.",
+      "example_en": "We need to replace the old windows before winter.",
       "collocations": [
         "replace a part",
         "replace someone"
       ],
-      "topic": "tech"
+      "topic": "home"
     },
     {
       "id": "b1_v_prevent",
@@ -796,12 +816,12 @@
       "pos": "verb",
       "ipa_us": "/prɪˈvɛnt/",
       "translation_ru": "предотвращать, мешать",
-      "example_en": "Regular backups prevent serious problems later.",
+      "example_en": "Washing your hands helps prevent colds.",
       "collocations": [
         "prevent a problem",
         "prevent someone from doing something"
       ],
-      "topic": "work"
+      "topic": "health"
     },
     {
       "id": "b1_v_require",
@@ -810,12 +830,15 @@
       "pos": "verb",
       "ipa_us": "/rɪˈkwaɪɚ/",
       "translation_ru": "требовать (быть необходимым)",
-      "example_en": "This task requires a lot of attention.",
+      "example_en": "This plant requires a lot of light and water.",
       "collocations": [
         "require attention",
         "require experience"
       ],
-      "topic": "work"
+      "topic": "nature",
+      "accept": [
+        "need"
+      ]
     },
     {
       "id": "b1_v_affect",
@@ -824,12 +847,12 @@
       "pos": "verb",
       "ipa_us": "/əˈfɛkt/",
       "translation_ru": "влиять, воздействовать",
-      "example_en": "The new rules affect everyone in our department.",
+      "example_en": "Bad weather always affects my mood.",
       "collocations": [
         "affect the result",
         "seriously affect"
       ],
-      "topic": "work",
+      "topic": "feelings",
       "accept": [
         "influence"
       ]
@@ -841,12 +864,12 @@
       "pos": "verb",
       "ipa_us": "/dɪˈpɛnd/",
       "translation_ru": "зависеть",
-      "example_en": "The date of the release depends on the test results.",
+      "example_en": "Our plans for Saturday depend on the weather.",
       "collocations": [
         "depend on someone",
         "it depends"
       ],
-      "topic": "work"
+      "topic": "time"
     },
     {
       "id": "b1_v_realize",
@@ -855,7 +878,7 @@
       "pos": "verb",
       "ipa_us": "/ˈriəˌlaɪz/",
       "translation_ru": "осознавать",
-      "example_en": "I did not realize how long the process would take.",
+      "example_en": "I did not realize how late it was.",
       "collocations": [
         "realize your mistake",
         "suddenly realize"
@@ -869,12 +892,12 @@
       "pos": "verb",
       "ipa_us": "/ɪkˈspɛkt/",
       "translation_ru": "ожидать (что-то случится), рассчитывать",
-      "example_en": "We expect an answer from the client this week.",
+      "example_en": "We are expecting about fifty guests at the wedding.",
       "collocations": [
         "expect a reply",
         "as expected"
       ],
-      "topic": "work"
+      "topic": "people"
     },
     {
       "id": "b1_v_admit",
@@ -897,7 +920,7 @@
       "pos": "verb",
       "ipa_us": "/kəmˈpleɪn/",
       "translation_ru": "жаловаться",
-      "example_en": "Users often complain about the slow search.",
+      "example_en": "My grandmother often complains about the noise from the street.",
       "collocations": [
         "complain about something",
         "complain to a manager"
@@ -911,12 +934,12 @@
       "pos": "verb",
       "ipa_us": "/ˌrɛkəˈmɛnd/",
       "translation_ru": "рекомендовать, советовать",
-      "example_en": "I recommend this book to anyone who writes code.",
+      "example_en": "I recommend this restaurant to anyone who likes fish.",
       "collocations": [
         "strongly recommend",
         "recommend a place"
       ],
-      "topic": "people"
+      "topic": "food"
     },
     {
       "id": "b1_v_notice",
@@ -925,7 +948,7 @@
       "pos": "verb",
       "ipa_us": "/ˈnoʊtəs/",
       "translation_ru": "замечать",
-      "example_en": "Nobody noticed the error until the client called.",
+      "example_en": "Did you notice that Marco has a new haircut?",
       "collocations": [
         "notice a difference",
         "hardly notice"
@@ -939,12 +962,15 @@
       "pos": "verb",
       "ipa_us": "/ˈfoʊkəs/",
       "translation_ru": "сосредоточиваться, концентрироваться",
-      "example_en": "Let's focus on the most important tasks first.",
+      "example_en": "It is hard to focus on homework with the TV on.",
       "collocations": [
         "focus on something",
         "focus your attention"
       ],
-      "topic": "work"
+      "topic": "study",
+      "accept": [
+        "concentrate"
+      ]
     },
     {
       "id": "b1_v_confident",
@@ -953,7 +979,7 @@
       "pos": "adjective",
       "ipa_us": "/ˈkɑnfədənt/",
       "translation_ru": "уверенный",
-      "example_en": "She feels confident about the presentation because she prepared well.",
+      "example_en": "She feels confident about her driving test because she practiced a lot.",
       "collocations": [
         "confident about something",
         "a confident answer"
@@ -981,7 +1007,7 @@
       "pos": "adjective",
       "ipa_us": "/ˌʌpˈsɛt/",
       "translation_ru": "расстроенный, огорчённый",
-      "example_en": "He was upset when nobody listened to his idea.",
+      "example_en": "She was upset when her team lost the final.",
       "collocations": [
         "get upset",
         "upset about something"
@@ -995,7 +1021,7 @@
       "pos": "adjective",
       "ipa_us": "/əˈnɔɪd/",
       "translation_ru": "раздражённый",
-      "example_en": "I was annoyed because the meeting started twenty minutes late.",
+      "example_en": "My dad gets annoyed when we are late for dinner.",
       "collocations": [
         "annoyed with someone",
         "annoyed about something"
@@ -1012,7 +1038,7 @@
       "pos": "adjective",
       "ipa_us": "/ˌdɪsəˈpɔɪntɪd/",
       "translation_ru": "разочарованный",
-      "example_en": "We were disappointed with the results of the first test.",
+      "example_en": "We were disappointed with the hotel: the room was dirty.",
       "collocations": [
         "disappointed with something",
         "deeply disappointed"
@@ -1026,7 +1052,7 @@
       "pos": "adjective",
       "ipa_us": "/kənˈfjuzd/",
       "translation_ru": "сбитый с толку, растерянный",
-      "example_en": "New users are confused by the long menu.",
+      "example_en": "Tourists are often confused by the subway map.",
       "collocations": [
         "get confused",
         "confused about something"
@@ -1040,7 +1066,7 @@
       "pos": "adjective",
       "ipa_us": "/praʊd/",
       "translation_ru": "гордый",
-      "example_en": "The team is proud of the work it did this year.",
+      "example_en": "My parents were proud of me when I finished school.",
       "collocations": [
         "proud of someone",
         "proud of something"
@@ -1054,14 +1080,15 @@
       "pos": "adjective",
       "ipa_us": "/ˈsætɪsˌfaɪd/",
       "translation_ru": "довольный, удовлетворённый",
-      "example_en": "The client was satisfied with our answer and closed the ticket.",
+      "example_en": "I was satisfied with the repair: the car runs well now.",
       "collocations": [
         "satisfied with something",
         "a satisfied customer"
       ],
       "topic": "feelings",
       "accept": [
-        "pleased"
+        "pleased",
+        "happy"
       ]
     },
     {
@@ -1071,12 +1098,15 @@
       "pos": "adjective",
       "ipa_us": "/strɛst/",
       "translation_ru": "напряжённый, в стрессе",
-      "example_en": "Everyone is stressed a few days before the release.",
+      "example_en": "Everyone is stressed a few days before exams.",
       "collocations": [
         "feel stressed",
         "get stressed"
       ],
-      "topic": "health"
+      "topic": "health",
+      "accept": [
+        "stressed out"
+      ]
     },
     {
       "id": "b1_v_reliable",
@@ -1085,12 +1115,15 @@
       "pos": "adjective",
       "ipa_us": "/rɪˈlaɪəbəl/",
       "translation_ru": "надёжный (не подведёт)",
-      "example_en": "We need a reliable server that never goes down at night.",
+      "example_en": "We need a reliable car for the long trip.",
       "collocations": [
         "a reliable person",
         "a reliable source"
       ],
-      "topic": "work"
+      "topic": "travel",
+      "accept": [
+        "dependable"
+      ]
     },
     {
       "id": "b1_v_flexible",
@@ -1113,12 +1146,12 @@
       "pos": "adjective",
       "ipa_us": "/rɪˈspɑnsəbəl/",
       "translation_ru": "ответственный",
-      "example_en": "Who is responsible for the documents in this project?",
+      "example_en": "Who is responsible for taking out the trash this week?",
       "collocations": [
         "responsible for something",
         "a responsible person"
       ],
-      "topic": "work"
+      "topic": "home"
     },
     {
       "id": "b1_v_available",
@@ -1127,12 +1160,15 @@
       "pos": "adjective",
       "ipa_us": "/əˈveɪləbəl/",
       "translation_ru": "доступный, свободный",
-      "example_en": "I am available for a call after three o'clock.",
+      "example_en": "Are there any rooms available for Friday night?",
       "collocations": [
         "available for something",
         "widely available"
       ],
-      "topic": "time"
+      "topic": "travel",
+      "accept": [
+        "free"
+      ]
     },
     {
       "id": "b1_v_urgent",
@@ -1155,12 +1191,12 @@
       "pos": "adjective",
       "ipa_us": "/ˈkɑmpləˌkeɪtɪd/",
       "translation_ru": "запутанный, сложный (по устройству)",
-      "example_en": "The rules are complicated, and new people often get lost.",
+      "example_en": "The rules of this board game are too complicated for kids.",
       "collocations": [
         "a complicated problem",
         "too complicated"
       ],
-      "topic": "work",
+      "topic": "people",
       "accept": [
         "complex"
       ]
@@ -1177,7 +1213,10 @@
         "actually, I think",
         "not actually"
       ],
-      "topic": "people"
+      "topic": "people",
+      "accept": [
+        "in fact"
+      ]
     },
     {
       "id": "b1_v_recently",
@@ -1186,7 +1225,7 @@
       "pos": "adverb",
       "ipa_us": "/ˈrisəntli/",
       "translation_ru": "недавно, в последнее время",
-      "example_en": "We recently moved all our files to a new system.",
+      "example_en": "We recently moved to a new apartment.",
       "collocations": [
         "until recently",
         "recently changed"
@@ -1200,12 +1239,12 @@
       "pos": "adverb",
       "ipa_us": "/ɪˈmidiətli/",
       "translation_ru": "немедленно, сразу",
-      "example_en": "Please call me immediately if the site goes down.",
+      "example_en": "Call a doctor immediately if the pain gets worse.",
       "collocations": [
         "almost immediately",
         "immediately after"
       ],
-      "topic": "time",
+      "topic": "health",
       "accept": [
         "right away",
         "at once"
@@ -1218,12 +1257,15 @@
       "pos": "adverb",
       "ipa_us": "/ɪˈspɛʃəli/",
       "translation_ru": "особенно",
-      "example_en": "I like this tool, especially the search function.",
+      "example_en": "I love summer, especially the long evenings.",
       "collocations": [
         "especially useful",
         "especially important"
       ],
-      "topic": "people"
+      "topic": "time",
+      "accept": [
+        "particularly"
+      ]
     },
     {
       "id": "b1_v_unfortunately",
@@ -1232,12 +1274,15 @@
       "pos": "adverb",
       "ipa_us": "/ʌnˈfɔrtʃənətli/",
       "translation_ru": "к сожалению",
-      "example_en": "Unfortunately, we cannot finish the task this week.",
+      "example_en": "Unfortunately, the museum is closed on Mondays.",
       "collocations": [
         "unfortunately not",
         "unfortunately for us"
       ],
-      "topic": "feelings"
+      "topic": "feelings",
+      "accept": [
+        "sadly"
+      ]
     },
     {
       "id": "b1_v_exactly",
@@ -1246,7 +1291,7 @@
       "pos": "adverb",
       "ipa_us": "/ɪgˈzæktli/",
       "translation_ru": "точно, именно",
-      "example_en": "That is exactly what the client asked for.",
+      "example_en": "That is exactly what I wanted for my birthday!",
       "collocations": [
         "exactly the same",
         "not exactly"
@@ -1260,12 +1305,12 @@
       "pos": "adverb",
       "ipa_us": "/ˈprɑpɚli/",
       "translation_ru": "как следует",
-      "example_en": "The report was not written properly, so we did it again.",
+      "example_en": "The door does not close properly, so we need a new lock.",
       "collocations": [
         "work properly",
         "do something properly"
       ],
-      "topic": "work"
+      "topic": "home"
     },
     {
       "id": "b1_v_however",
@@ -1274,12 +1319,12 @@
       "pos": "adverb",
       "ipa_us": "/haʊˈɛvɚ/",
       "translation_ru": "однако",
-      "example_en": "The idea is good; however, we have no time for it.",
+      "example_en": "The hotel was nice; however, it was far from the beach.",
       "collocations": [
         "however, it is too late",
         "this, however, is not enough"
       ],
-      "topic": "people"
+      "topic": "travel"
     },
     {
       "id": "b1_v_deal_with",
@@ -1302,12 +1347,12 @@
       "pos": "phrasal verb",
       "ipa_us": "/ˌlʊk ˈæftɚ/",
       "translation_ru": "присматривать за, отвечать за",
-      "example_en": "Who will look after the new client while you are away?",
+      "example_en": "Who will look after the cat while we are away?",
       "collocations": [
         "look after someone",
         "look after a client"
       ],
-      "topic": "work",
+      "topic": "home",
       "accept": [
         "take care of"
       ]
@@ -1341,7 +1386,8 @@
       "topic": "work",
       "accept": [
         "reject",
-        "decline"
+        "decline",
+        "refuse"
       ]
     },
     {
@@ -1351,12 +1397,15 @@
       "pos": "phrasal verb",
       "ipa_us": "/ˌwɝk ˈaʊt/",
       "translation_ru": "получаться, складываться (о плане)",
-      "example_en": "The new schedule worked out well for everyone.",
+      "example_en": "It was a difficult year, but everything worked out well.",
       "collocations": [
         "work out well",
         "it all worked out in the end"
       ],
-      "topic": "work"
+      "topic": "people",
+      "accept": [
+        "turn out"
+      ]
     },
     {
       "id": "b1_v_look_forward_to",
@@ -1365,12 +1414,12 @@
       "pos": "phrasal verb",
       "ipa_us": "/ˌlʊk ˈfɔrwɚd tə/",
       "translation_ru": "с нетерпением ждать, ждать с интересом",
-      "example_en": "I look forward to hearing from you next week.",
+      "example_en": "The kids are looking forward to summer vacation.",
       "collocations": [
         "look forward to seeing you",
         "look forward to a reply"
       ],
-      "topic": "work"
+      "topic": "time"
     },
     {
       "id": "b1_v_catch_up",
@@ -1379,12 +1428,12 @@
       "pos": "phrasal verb",
       "ipa_us": "/ˌkætʃ ˈʌp/",
       "translation_ru": "догонять, наверстать",
-      "example_en": "I stayed late to catch up on the emails I missed.",
+      "example_en": "I was sick for a week, so now I have to catch up on my homework.",
       "collocations": [
         "catch up with work",
         "catch up on email"
       ],
-      "topic": "work"
+      "topic": "study"
     },
     {
       "id": "b1_v_run_out_of",
@@ -1393,12 +1442,12 @@
       "pos": "phrasal verb",
       "ipa_us": "/ˌrʌn ˈaʊt əv/",
       "translation_ru": "заканчиваться (о запасе), остаться без",
-      "example_en": "We ran out of time and had to finish the demo quickly.",
+      "example_en": "We ran out of milk, so I went to the store.",
       "collocations": [
         "run out of time",
         "run out of money"
       ],
-      "topic": "work"
+      "topic": "food"
     },
     {
       "id": "b1_v_on_the_other_hand",
@@ -1407,12 +1456,12 @@
       "pos": "phrase",
       "ipa_us": "/ɑn ði ˌʌðɚ ˈhænd/",
       "translation_ru": "с другой стороны",
-      "example_en": "The tool is fast; on the other hand, it costs a lot.",
+      "example_en": "The apartment is small; on the other hand, it is very close to the park.",
       "collocations": [
         "on the one hand",
         "but on the other hand"
       ],
-      "topic": "people"
+      "topic": "home"
     },
     {
       "id": "b1_v_make_sense",
@@ -1435,13 +1484,17 @@
       "pos": "phrase",
       "ipa_us": "/ɪn ədˈvæns/",
       "translation_ru": "заранее, авансом",
-      "example_en": "Please send the questions in advance so we can prepare.",
+      "example_en": "Book the tickets in advance, or they will be sold out.",
       "collocations": [
         "book in advance",
         "pay in advance",
         "a week in advance"
       ],
-      "topic": "time"
+      "topic": "travel",
+      "accept": [
+        "ahead of time",
+        "beforehand"
+      ]
     },
     {
       "id": "b1_v_although",
@@ -1450,12 +1503,12 @@
       "pos": "conjunction",
       "ipa_us": "/ɔlˈðoʊ/",
       "translation_ru": "хотя, несмотря на то что",
-      "example_en": "Although the task was difficult, we finished it on time.",
+      "example_en": "Although it was raining, we went for a walk.",
       "collocations": [
         "although it was late",
         "although we tried"
       ],
-      "topic": "work",
+      "topic": "nature",
       "accept": [
         "though"
       ]
@@ -1467,12 +1520,12 @@
       "pos": "conjunction",
       "ipa_us": "/ənˈlɛs/",
       "translation_ru": "если не, если только не",
-      "example_en": "We cannot start unless the client confirms the budget.",
+      "example_en": "We will go to the beach unless it rains.",
       "collocations": [
         "unless you tell me",
         "unless something changes"
       ],
-      "topic": "work"
+      "topic": "travel"
     },
     {
       "id": "b1_v_despite",
@@ -1481,12 +1534,12 @@
       "pos": "preposition",
       "ipa_us": "/dɪˈspaɪt/",
       "translation_ru": "несмотря на",
-      "example_en": "Despite the delay, the client was happy with the result.",
+      "example_en": "Despite his age, my grandfather still plays tennis.",
       "collocations": [
         "despite the fact that",
         "despite the problems"
       ],
-      "topic": "work",
+      "topic": "people",
       "accept": [
         "in spite of"
       ]
@@ -1498,12 +1551,12 @@
       "pos": "conjunction",
       "ipa_us": "/ˌivən ˈðoʊ/",
       "translation_ru": "хотя (с нажимом), даже несмотря на то что",
-      "example_en": "Even though all the tests passed, we found a bug in production.",
+      "example_en": "Even though he was tired, he played with the kids all evening.",
       "collocations": [
         "even though it was late",
         "even though we knew the risk"
       ],
-      "topic": "study"
+      "topic": "people"
     },
     {
       "id": "b2_v_eventually",
@@ -1512,7 +1565,7 @@
       "pos": "adverb",
       "ipa_us": "/ɪˈvɛntʃuəli/",
       "translation_ru": "в конце концов, со временем",
-      "example_en": "It took a while, but we eventually found the bug.",
+      "example_en": "It took a while, but we eventually found our hotel.",
       "collocations": [
         "eventually agree",
         "eventually find out"
@@ -1530,12 +1583,15 @@
       "pos": "adverb",
       "ipa_us": "/ˈgrædʒuəli/",
       "translation_ru": "постепенно",
-      "example_en": "Traffic grew gradually over the first month.",
+      "example_en": "The weather is gradually getting warmer.",
       "collocations": [
         "gradually improve",
         "gradually increase"
       ],
-      "topic": "time"
+      "topic": "nature",
+      "accept": [
+        "little by little"
+      ]
     },
     {
       "id": "a2_v_give_up",
@@ -1612,6 +1668,282 @@
       "accept": [
         "sign in",
         "log on"
+      ]
+    },
+    {
+      "id": "b2_v_realistic",
+      "level": "B1",
+      "word": "realistic",
+      "pos": "adjective",
+      "ipa_us": "/ˌriəˈlɪstɪk/",
+      "translation_ru": "реалистичный, реально выполнимый",
+      "example_en": "Losing twenty pounds in a month is not realistic.",
+      "collocations": [
+        "a realistic plan",
+        "a realistic goal",
+        "be realistic about something"
+      ],
+      "topic": "health"
+    },
+    {
+      "id": "b1_v_destination",
+      "level": "B1",
+      "word": "destination",
+      "pos": "noun",
+      "ipa_us": "/ˌdɛstəˈneɪʃən/",
+      "translation_ru": "пункт назначения",
+      "example_en": "Rome is a popular destination for tourists all year round.",
+      "collocations": [
+        "a popular destination",
+        "a vacation destination",
+        "reach your destination"
+      ],
+      "topic": "travel"
+    },
+    {
+      "id": "b1_v_souvenir",
+      "level": "B1",
+      "word": "souvenir",
+      "pos": "noun",
+      "ipa_us": "/ˌsuvəˈnɪr/",
+      "translation_ru": "сувенир",
+      "example_en": "We bought a small souvenir for each of our friends.",
+      "collocations": [
+        "buy a souvenir",
+        "a souvenir shop"
+      ],
+      "topic": "travel"
+    },
+    {
+      "id": "b1_v_sightseeing",
+      "level": "B1",
+      "word": "sightseeing",
+      "pos": "noun",
+      "ipa_us": "/ˈsaɪtˌsiɪŋ/",
+      "translation_ru": "осмотр достопримечательностей",
+      "example_en": "We did some sightseeing before our flight home.",
+      "collocations": [
+        "go sightseeing",
+        "do some sightseeing",
+        "a sightseeing tour"
+      ],
+      "topic": "travel"
+    },
+    {
+      "id": "b1_v_coast",
+      "level": "B1",
+      "word": "coast",
+      "pos": "noun",
+      "ipa_us": "/koʊst/",
+      "translation_ru": "побережье, берег (моря)",
+      "example_en": "We drove along the coast for three days and swam every evening.",
+      "collocations": [
+        "along the coast",
+        "the east coast",
+        "off the coast"
+      ],
+      "topic": "travel",
+      "accept": [
+        "shore"
+      ]
+    },
+    {
+      "id": "b1_v_environment",
+      "level": "B1",
+      "word": "environment",
+      "pos": "noun",
+      "ipa_us": "/ɪnˈvaɪrənmənt/",
+      "translation_ru": "окружающая среда",
+      "example_en": "We should protect the environment for our children.",
+      "collocations": [
+        "protect the environment",
+        "harm the environment"
+      ],
+      "topic": "nature"
+    },
+    {
+      "id": "b1_v_pollution",
+      "level": "B1",
+      "word": "pollution",
+      "pos": "noun",
+      "ipa_us": "/pəˈluʃən/",
+      "translation_ru": "загрязнение (воздуха, воды)",
+      "example_en": "Air pollution is a serious problem in big cities.",
+      "collocations": [
+        "air pollution",
+        "water pollution",
+        "reduce pollution"
+      ],
+      "topic": "nature"
+    },
+    {
+      "id": "b1_v_wildlife",
+      "level": "B1",
+      "word": "wildlife",
+      "pos": "noun",
+      "ipa_us": "/ˈwaɪldˌlaɪf/",
+      "translation_ru": "дикая природа (животные и растения)",
+      "example_en": "The national park is full of wildlife, from bears to eagles.",
+      "collocations": [
+        "local wildlife",
+        "protect wildlife"
+      ],
+      "topic": "nature"
+    },
+    {
+      "id": "b1_v_recycle",
+      "level": "B1",
+      "word": "recycle",
+      "pos": "verb",
+      "ipa_us": "/riˈsaɪkəl/",
+      "translation_ru": "перерабатывать (отходы), сдавать в переработку",
+      "example_en": "We recycle all our paper, glass and plastic bottles.",
+      "collocations": [
+        "recycle paper",
+        "recycle plastic",
+        "recycled materials"
+      ],
+      "topic": "nature"
+    },
+    {
+      "id": "b1_v_injury",
+      "level": "B1",
+      "word": "injury",
+      "pos": "noun",
+      "ipa_us": "/ˈɪndʒəri/",
+      "translation_ru": "травма, повреждение",
+      "example_en": "He missed three games because of a knee injury.",
+      "collocations": [
+        "a serious injury",
+        "a knee injury",
+        "recover from an injury"
+      ],
+      "topic": "health"
+    },
+    {
+      "id": "b1_v_recover",
+      "level": "B1",
+      "word": "recover",
+      "pos": "verb",
+      "ipa_us": "/rɪˈkʌvɚ/",
+      "translation_ru": "выздоравливать, поправляться",
+      "example_en": "It took my grandmother a month to recover from the flu.",
+      "collocations": [
+        "recover from an illness",
+        "recover quickly",
+        "fully recover"
+      ],
+      "topic": "health"
+    },
+    {
+      "id": "b1_v_diet",
+      "level": "B1",
+      "word": "diet",
+      "pos": "noun",
+      "ipa_us": "/ˈdaɪət/",
+      "translation_ru": "рацион, питание; диета",
+      "example_en": "A healthy diet includes a lot of fruit and vegetables.",
+      "collocations": [
+        "a healthy diet",
+        "a balanced diet",
+        "go on a diet"
+      ],
+      "topic": "health"
+    },
+    {
+      "id": "b1_v_fit",
+      "level": "B1",
+      "word": "fit",
+      "pos": "adjective",
+      "ipa_us": "/fɪt/",
+      "translation_ru": "в хорошей форме (физической)",
+      "example_en": "My grandfather is eighty but still very fit.",
+      "collocations": [
+        "keep fit",
+        "stay fit",
+        "fit and healthy"
+      ],
+      "topic": "health"
+    },
+    {
+      "id": "b1_v_rent",
+      "level": "B1",
+      "word": "rent",
+      "pos": "verb",
+      "ipa_us": "/rɛnt/",
+      "translation_ru": "снимать (жильё), арендовать",
+      "example_en": "We rent a small apartment near the river.",
+      "collocations": [
+        "rent an apartment",
+        "rent a car",
+        "for rent"
+      ],
+      "topic": "home"
+    },
+    {
+      "id": "b1_v_housework",
+      "level": "B1",
+      "word": "housework",
+      "pos": "noun",
+      "ipa_us": "/ˈhaʊsˌwɝk/",
+      "translation_ru": "работа по дому, домашние дела",
+      "example_en": "We share the housework: I cook and my husband does the cleaning.",
+      "collocations": [
+        "do the housework",
+        "share the housework"
+      ],
+      "topic": "home",
+      "accept": [
+        "chores"
+      ]
+    },
+    {
+      "id": "b1_v_ceiling",
+      "level": "B1",
+      "word": "ceiling",
+      "pos": "noun",
+      "ipa_us": "/ˈsilɪŋ/",
+      "translation_ru": "потолок",
+      "example_en": "The ceiling in our old house is very high.",
+      "collocations": [
+        "a high ceiling",
+        "a low ceiling"
+      ],
+      "topic": "home"
+    },
+    {
+      "id": "b1_v_exhibition",
+      "level": "B1",
+      "word": "exhibition",
+      "pos": "noun",
+      "ipa_us": "/ˌɛksəˈbɪʃən/",
+      "translation_ru": "выставка",
+      "example_en": "We went to a photo exhibition at the city museum.",
+      "collocations": [
+        "an art exhibition",
+        "a photo exhibition",
+        "visit an exhibition"
+      ],
+      "topic": "study",
+      "accept": [
+        "exhibit"
+      ]
+    },
+    {
+      "id": "b1_v_hang_out",
+      "level": "B1",
+      "word": "hang out",
+      "pos": "phrasal verb",
+      "ipa_us": "/ˌhæŋ ˈaʊt/",
+      "translation_ru": "проводить время (с друзьями), тусоваться",
+      "example_en": "On weekends I usually hang out with my friends at the park.",
+      "collocations": [
+        "hang out with friends",
+        "a place to hang out"
+      ],
+      "topic": "people",
+      "accept": [
+        "spend time"
       ]
     }
   ]

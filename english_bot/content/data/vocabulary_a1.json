@@ -105,12 +105,15 @@
       "pos": "verb",
       "ipa_us": "/gɛt/",
       "translation_ru": "получать, доставать",
-      "example_en": "I get a lot of emails at work.",
+      "example_en": "I get a lot of messages from my friends.",
       "collocations": [
         "get a job",
         "get home"
       ],
-      "topic": "work"
+      "topic": "people",
+      "accept": [
+        "receive"
+      ]
     },
     {
       "id": "a1_v_see",
@@ -161,7 +164,7 @@
       "pos": "verb",
       "ipa_us": "/laɪk/",
       "translation_ru": "нравиться",
-      "example_en": "I like my new job very much.",
+      "example_en": "My children like pizza very much.",
       "collocations": [
         "like music",
         "like coffee"
@@ -175,7 +178,7 @@
       "pos": "verb",
       "ipa_us": "/it/",
       "translation_ru": "есть, кушать",
-      "example_en": "We eat dinner at seven in the evening.",
+      "example_en": "My daughter does not eat meat or fish.",
       "collocations": [
         "eat breakfast",
         "eat out"
@@ -189,7 +192,7 @@
       "pos": "verb",
       "ipa_us": "/drɪŋk/",
       "translation_ru": "пить",
-      "example_en": "I drink coffee every morning at work.",
+      "example_en": "Please do not drink the water from this river.",
       "collocations": [
         "drink water",
         "drink tea"
@@ -273,7 +276,7 @@
       "pos": "verb",
       "ipa_us": "/spik/",
       "translation_ru": "говорить (на языке)",
-      "example_en": "I speak English and Russian at work.",
+      "example_en": "My grandmother speaks three languages.",
       "collocations": [
         "speak English",
         "speak slowly"
@@ -287,7 +290,7 @@
       "pos": "verb",
       "ipa_us": "/ˈlɪsən/",
       "translation_ru": "слушать",
-      "example_en": "I listen to music when I work.",
+      "example_en": "I listen to music in the car.",
       "collocations": [
         "listen to music",
         "listen carefully"
@@ -329,12 +332,12 @@
       "pos": "verb",
       "ipa_us": "/hɛlp/",
       "translation_ru": "помогать",
-      "example_en": "Can you help me with this computer?",
+      "example_en": "Can you help me with these heavy bags?",
       "collocations": [
         "help a friend",
         "help with work"
       ],
-      "topic": "work"
+      "topic": "people"
     },
     {
       "id": "a1_v_open",
@@ -362,7 +365,10 @@
         "close a door",
         "close a window"
       ],
-      "topic": "home"
+      "topic": "home",
+      "accept": [
+        "shut"
+      ]
     },
     {
       "id": "a1_v_buy",
@@ -399,7 +405,7 @@
       "pos": "verb",
       "ipa_us": "/wɔk/",
       "translation_ru": "ходить пешком, гулять",
-      "example_en": "I walk to work when the weather is good.",
+      "example_en": "We walk in the park every evening after dinner.",
       "collocations": [
         "walk home",
         "walk fast"
@@ -418,7 +424,10 @@
         "run fast",
         "run every day"
       ],
-      "topic": "health"
+      "topic": "health",
+      "accept": [
+        "jog"
+      ]
     },
     {
       "id": "a1_v_sit",
@@ -514,12 +523,12 @@
       "pos": "verb",
       "ipa_us": "/nid/",
       "translation_ru": "нуждаться, требоваться",
-      "example_en": "I need a new computer for my work.",
+      "example_en": "I need a warm coat for the winter.",
       "collocations": [
         "need help",
         "need time"
       ],
-      "topic": "work"
+      "topic": "home"
     },
     {
       "id": "a1_v_say",
@@ -663,7 +672,7 @@
       "pos": "noun",
       "ipa_us": "/ˈpipəl/",
       "translation_ru": "люди, народ",
-      "example_en": "A lot of people work in this office.",
+      "example_en": "A lot of people live in this city.",
       "collocations": [
         "young people",
         "a lot of people"
@@ -1148,7 +1157,7 @@
       "pos": "adjective",
       "ipa_us": "/smɔl/",
       "translation_ru": "маленький, небольшой",
-      "example_en": "I work in a small office with four people.",
+      "example_en": "We have a small garden behind the house.",
       "collocations": [
         "a small room",
         "a small city"
@@ -1193,7 +1202,7 @@
       "pos": "adjective",
       "ipa_us": "/ˈhæpi/",
       "translation_ru": "счастливый",
-      "example_en": "My sister is happy with her new job.",
+      "example_en": "My daughter is happy with her new bike.",
       "collocations": [
         "a happy day",
         "very happy"
@@ -1254,7 +1263,10 @@
         "a nice day",
         "a nice person"
       ],
-      "topic": "feelings"
+      "topic": "feelings",
+      "accept": [
+        "pleasant"
+      ]
     },
     {
       "id": "a1_v_red",
@@ -1333,7 +1345,7 @@
       "pos": "adjective",
       "ipa_us": "/fɝst/",
       "translation_ru": "первый",
-      "example_en": "This is my first day in the new office.",
+      "example_en": "Today is my son's first day at school.",
       "collocations": [
         "the first time",
         "the first day"
@@ -1417,7 +1429,7 @@
       "pos": "adverb",
       "ipa_us": "/ˈvɛri/",
       "translation_ru": "очень",
-      "example_en": "My new job is very good.",
+      "example_en": "It is very cold outside today.",
       "collocations": [
         "very good",
         "very big"
@@ -1459,12 +1471,15 @@
       "pos": "adverb",
       "ipa_us": "/ˈɔfən/",
       "translation_ru": "часто",
-      "example_en": "We often walk to work together.",
+      "example_en": "We often go to the park on Sundays.",
       "collocations": [
         "how often",
         "very often"
       ],
-      "topic": "time"
+      "topic": "time",
+      "accept": [
+        "frequently"
+      ]
     },
     {
       "id": "a1_v_well",
@@ -1564,7 +1579,8 @@
       ],
       "topic": "travel",
       "accept": [
-        "next to"
+        "next to",
+        "close to"
       ]
     },
     {
@@ -1649,7 +1665,10 @@
         "sit down at the table",
         "sit down here"
       ],
-      "topic": "home"
+      "topic": "home",
+      "accept": [
+        "sit"
+      ]
     },
     {
       "id": "a1_v_thank_you",
@@ -1729,12 +1748,15 @@
       "pos": "adverb",
       "ipa_us": "/ˈjuʒuəli/",
       "translation_ru": "обычно",
-      "example_en": "I usually work from home on Fridays.",
+      "example_en": "We usually have pizza on Friday evenings.",
       "collocations": [
         "usually get up early",
         "not usually"
       ],
-      "topic": "time"
+      "topic": "time",
+      "accept": [
+        "normally"
+      ]
     },
     {
       "id": "a2_v_boring",

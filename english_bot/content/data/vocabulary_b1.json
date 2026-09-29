@@ -1613,6 +1613,21 @@
         "sign in",
         "log on"
       ]
+    },
+    {
+      "id": "b2_v_realistic",
+      "level": "B1",
+      "word": "realistic",
+      "pos": "adjective",
+      "ipa_us": "/ˌriəˈlɪstɪk/",
+      "translation_ru": "реалистичный, реально выполнимый",
+      "example_en": "Rewriting the whole service in a month is not realistic.",
+      "collocations": [
+        "a realistic plan",
+        "a realistic goal",
+        "be realistic about something"
+      ],
+      "topic": "work"
     }
   ]
 }

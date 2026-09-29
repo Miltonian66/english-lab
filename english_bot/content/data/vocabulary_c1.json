@@ -1263,22 +1263,6 @@
       ]
     },
     {
-      "id": "c1_v_steep_learning_curve",
-      "level": "C1",
-      "word": "a steep learning curve",
-      "pos": "phrase",
-      "ipa_us": "/ə ˌstip ˈlɝnɪŋ ˌkɝv/",
-      "translation_ru": "сложное освоение, крутая кривая обучения",
-      "example_en": "The framework is powerful, but there is a steep learning curve.",
-      "collocations": [
-        "face a steep learning curve"
-      ],
-      "topic": "study",
-      "accept": [
-        "steep learning curve"
-      ]
-    },
-    {
       "id": "c1_v_common_ground",
       "level": "C1",
       "word": "common ground",
@@ -2097,6 +2081,48 @@
         "personal bias"
       ],
       "topic": "people"
+    },
+    {
+      "id": "b2_v_deploy",
+      "level": "C1",
+      "word": "deploy",
+      "pos": "verb",
+      "ipa_us": "/dɪˈplɔɪ/",
+      "translation_ru": "развёртывать, выкатывать",
+      "example_en": "We deploy to production every Thursday evening.",
+      "collocations": [
+        "deploy an update",
+        "deploy to production"
+      ],
+      "topic": "tech"
+    },
+    {
+      "id": "b2_v_legacy",
+      "level": "C1",
+      "word": "legacy",
+      "pos": "noun",
+      "ipa_us": "/ˈlɛgəsi/",
+      "translation_ru": "наследие (в ИТ: унаследованный код)",
+      "example_en": "Half of our time goes to supporting legacy code.",
+      "collocations": [
+        "legacy code",
+        "a legacy system"
+      ],
+      "topic": "tech"
+    },
+    {
+      "id": "b2_v_up_to_speed",
+      "level": "C1",
+      "word": "up to speed",
+      "pos": "phrase",
+      "ipa_us": "/ˌʌp tə ˈspid/",
+      "translation_ru": "в курсе дела, на нужном уровне",
+      "example_en": "It took the new developer two weeks to get up to speed.",
+      "collocations": [
+        "get up to speed",
+        "bring someone up to speed"
+      ],
+      "topic": "work"
     }
   ]
 }

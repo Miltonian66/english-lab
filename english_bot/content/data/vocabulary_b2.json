@@ -450,20 +450,6 @@
       "topic": "work"
     },
     {
-      "id": "b2_v_deploy",
-      "level": "B2",
-      "word": "deploy",
-      "pos": "verb",
-      "ipa_us": "/dɪˈplɔɪ/",
-      "translation_ru": "развёртывать, выкатывать",
-      "example_en": "We deploy to production every Thursday evening.",
-      "collocations": [
-        "deploy an update",
-        "deploy to production"
-      ],
-      "topic": "tech"
-    },
-    {
       "id": "b2_v_maintenance",
       "level": "B2",
       "word": "maintenance",
@@ -556,21 +542,6 @@
       ]
     },
     {
-      "id": "b2_v_realistic",
-      "level": "B2",
-      "word": "realistic",
-      "pos": "adjective",
-      "ipa_us": "/ˌriəˈlɪstɪk/",
-      "translation_ru": "реалистичный, реально выполнимый",
-      "example_en": "Rewriting the whole service in a month is not realistic.",
-      "collocations": [
-        "a realistic plan",
-        "a realistic goal",
-        "be realistic about something"
-      ],
-      "topic": "work"
-    },
-    {
       "id": "b2_v_consistent",
       "level": "B2",
       "word": "consistent",
@@ -582,20 +553,6 @@
         "consistent results",
         "consistent with the data",
         "a consistent style"
-      ],
-      "topic": "tech"
-    },
-    {
-      "id": "b2_v_legacy",
-      "level": "B2",
-      "word": "legacy",
-      "pos": "noun",
-      "ipa_us": "/ˈlɛgəsi/",
-      "translation_ru": "наследие (в ИТ: унаследованный код)",
-      "example_en": "Half of our time goes to supporting legacy code.",
-      "collocations": [
-        "legacy code",
-        "a legacy system"
       ],
       "topic": "tech"
     },
@@ -979,18 +936,18 @@
     {
       "id": "b2_v_at_short_notice",
       "level": "B2",
-      "word": "at short notice",
+      "word": "on short notice",
       "pos": "phrase",
       "ipa_us": "/ət ˌʃɔrt ˈnoʊtɪs/",
       "translation_ru": "в короткий срок, без предупреждения",
-      "example_en": "They asked us to prepare a demo at short notice.",
+      "example_en": "They asked us to prepare a demo on short notice.",
       "collocations": [
         "available at short notice",
         "cancel at short notice"
       ],
       "topic": "time",
       "accept": [
-        "on short notice"
+        "at short notice"
       ]
     },
     {
@@ -1080,20 +1037,6 @@
         "keep track of changes"
       ],
       "topic": "time"
-    },
-    {
-      "id": "b2_v_up_to_speed",
-      "level": "B2",
-      "word": "up to speed",
-      "pos": "phrase",
-      "ipa_us": "/ˌʌp tə ˈspid/",
-      "translation_ru": "в курсе дела, на нужном уровне",
-      "example_en": "It took the new developer two weeks to get up to speed.",
-      "collocations": [
-        "get up to speed",
-        "bring someone up to speed"
-      ],
-      "topic": "work"
     },
     {
       "id": "b2_v_in_the_meantime",

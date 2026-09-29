@@ -1500,7 +1500,7 @@
           "correct_index": 0,
           "explanation_ru": "Когда речь о целом классе как об изобретении или виде (изменил работу, был изобретён, вымирает), берут the + единственное число: the smartphone, the printing press. A smartphone — «какой-нибудь один смартфон», с утверждением о классе он не сочетается; голое smartphone невозможно, а the smartphones — конкретные смартфоны из контекста.",
           "difficulty": 2,
-          "diagnostic": true
+          "diagnostic": false
         },
         {
           "id": "c2_complex_noun_phrases_and_heavy_premodification_13",

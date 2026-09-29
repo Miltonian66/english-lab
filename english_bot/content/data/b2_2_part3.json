@@ -9,7 +9,7 @@
       "title_en": "Have: Auxiliary or main verb",
       "source_slug": "have-auxiliary-main-verb",
       "title_ru": "Have: вспомогательный или смысловой глагол",
-      "summary_ru": "Have работает в английском в двух разных ролях, и от роли зависит форма вопроса и отрицания. Как вспомогательный глагол have/has/had образует перфект (have finished, had left) и сам переносится в начало вопроса и присоединяет not: Have you finished? I haven't finished. Как смысловой глагол have значит «иметь», «получать», «проводить» и в американском варианте требует do/does/did: Do you have a laptop? I didn't have time. Разговорная форма have got тоже означает обладание, но вопрос строится без do: Have you got a minute? В значении обладания have не ставится в Continuous, а в значениях действия (have lunch, have a meeting, have a shower) — ставится: We're having a call right now. Отдельно существует каузативная конструкция have something done: I had my laptop repaired. Определяйте роль have до того, как выбирать форму вопроса. Два have подряд нормальны: в had had первый — вспомогательный (время), второй — смысловой (She had had the same car for twenty years). Смысловой have в устойчивых сочетаниях действия тоже идёт в continuous: We're having a great time.",
+      "summary_ru": "Have работает в английском в двух разных ролях, и от роли зависит форма вопроса и отрицания. Как вспомогательный глагол have/has/had образует перфект (have finished, had left) и сам переносится в начало вопроса и присоединяет not: Have you finished? I haven't finished. Как смысловой глагол have значит «иметь», «получать», «проводить» и в американском варианте требует do/does/did: Do you have a laptop? I didn't have time. Разговорная форма have got тоже означает обладание, и вопрос с ней строится без do: Have you got a minute? Но такой вопрос — британский; в американской речи спрашивают Do you have a minute? В значении обладания have не ставится в Continuous, а в значениях действия (have lunch, have a meeting, have a shower) — ставится: We're having a call right now. Отдельно существует каузативная конструкция have something done: I had my laptop repaired. Определяйте роль have до того, как выбирать форму вопроса. Два have подряд нормальны: в had had первый — вспомогательный (время), второй — смысловой (She had had the same car for twenty years). Смысловой have в устойчивых сочетаниях действия тоже идёт в continuous: We're having a great time.",
       "forms": [
         "have/has/had + V3 (вспомогательный): Have you finished?",
         "do/does/did + подлежащее + have (смысловой): Do you have a ticket?",
@@ -1238,7 +1238,7 @@
         {
           "id": "b2_verb_object_infinitive_gerund_01",
           "kind": "choice",
-          "prompt": "The new team members ___ to attend all the training sessions, but half of them skipped the last one.",
+          "prompt": "The new team members ___ by their manager to attend all the training sessions, but half of them skipped the last one.",
           "options": [
             "were expected",
             "were expecting",
@@ -1246,7 +1246,7 @@
             "were supposing"
           ],
           "correct_index": 0,
-          "explanation_ru": "От новичков ждали участия — пассив be expected to + инфинитив: were expected to attend. Were expecting to attend значило бы, что они сами собирались прийти, expected — что ждали они, а were supposing — неверная форма: «должны были» — were supposed to.",
+          "explanation_ru": "By their manager показывает, что участия ждал руководитель, а не сами новички, — нужен пассив be expected to + инфинитив: were expected to attend. Expected и were expecting делают ждущими самих новичков, и by their manager к ним не присоединить, а were supposing — неверная форма: «должны были» — were supposed to.",
           "difficulty": 2
         },
         {

@@ -325,7 +325,6 @@
       "topic": "people",
       "accept": [
         "nitpick",
-        "argue",
         "squabble"
       ]
     },
@@ -1134,8 +1133,6 @@
       ],
       "topic": "travel",
       "accept": [
-        "traumatic",
-        "agonizing",
         "heartbreaking"
       ]
     },
@@ -2329,8 +2326,7 @@
       ],
       "topic": "people",
       "accept": [
-        "squabble",
-        "argue"
+        "squabble"
       ]
     },
     {

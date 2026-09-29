@@ -1843,14 +1843,12 @@
         {
           "id": "b1_can_could_be_able_to_07",
           "kind": "correct",
-          "prompt": "I will can send you the photos on Friday.",
+          "prompt": "Keep 'will' and correct the sentence: I will can send you the photos on Friday.",
           "answer": "I will be able to send you the photos on Friday.",
           "accept": [
-            "I'll be able to send you the photos on Friday.",
-            "I can send you the photos on Friday.",
-            "I will send you the photos on Friday."
+            "I'll be able to send you the photos on Friday."
           ],
-          "explanation_ru": "Два модальных слова подряд невозможны: у can нет будущего времени, поэтому will can заменяют на will be able to (или просто can, если возможность есть уже сейчас). Если важна не возможность, а само обещание, достаточно I will send.",
+          "explanation_ru": "Два модальных слова подряд невозможны: у can нет формы будущего времени, поэтому после will нужен оборот be able to — I will be able to send. Без will можно было бы сказать I can send…, но задание требует сохранить will.",
           "difficulty": 3
         },
         {

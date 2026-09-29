@@ -1531,10 +1531,10 @@
             "Moreover",
             "On the other hand",
             "Therefore",
-            "In contrast"
+            "Similarly"
           ],
           "correct_index": 1,
-          "explanation_ru": "Второе предложение — плюс того же инструмента, который взвешивают против минуса: нужен on the other hand («с другой стороны»). In contrast сравнивает два разных предмета (The old tool was cheap. In contrast, the new one…), moreover добавляет довод в ту же сторону, therefore вводит следствие.",
+          "explanation_ru": "Второе предложение — плюс того же инструмента, который взвешивают против минуса: нужен on the other hand («с другой стороны»). Similarly вводит похожий довод («точно так же»), moreover добавляет довод в ту же сторону, therefore вводит следствие.",
           "difficulty": 2
         },
         {

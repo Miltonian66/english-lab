@@ -204,6 +204,16 @@ def _tokens(text: str) -> list[str]:
     return re.findall(r"[a-z0-9']+", expand(normalize(text)))
 
 
+# «Keep 'will' and correct the sentence: I will can send…» — до двоеточия
+# инструкция, а не исправляемое предложение. Сравнивать с эталоном нужно только
+# само предложение, иначе вся инструкция попала бы в «исправленный участок».
+_INSTRUCTION = re.compile(r"^(?:keep|correct|replace|rewrite|fix)\b[^:]*:\s*", re.IGNORECASE)
+
+
+def _sentence_tokens(exercise: Exercise) -> list[str]:
+    return _tokens(_INSTRUCTION.sub("", exercise.prompt, count=1))
+
+
 def _changed_span(prompt: list[str], answer: list[str]) -> tuple[int, int] | None:
     """Границы исправленного участка эталона: всё, что отличается от условия.
 
@@ -230,7 +240,7 @@ def _fragment(exercise: Exercise, candidate: list[str]) -> str | None:
     """
     if exercise.kind != "correct" or not candidate:
         return None
-    prompt = _tokens(exercise.prompt)
+    prompt = _sentence_tokens(exercise)
     for variant in exercise.expected:
         answer = _tokens(variant)
         span = _changed_span(prompt, answer)
@@ -308,7 +318,7 @@ def _typo(exercise: Exercise, candidate: list[str]) -> tuple[str, list[tuple[str
     if exercise.kind not in _TYPO_KINDS or not candidate:
         return None
     given = set(_tokens(exercise.prompt))
-    prompt = _tokens(exercise.prompt)
+    prompt = _sentence_tokens(exercise)
     for variant in exercise.expected:
         answer = _tokens(variant)
         if len(answer) != len(candidate):

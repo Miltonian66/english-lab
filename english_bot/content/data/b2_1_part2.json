@@ -411,10 +411,11 @@
       "title_en": "Would rather, would prefer: Expressing preference",
       "source_slug": "would-rather-would-prefer",
       "title_ru": "Предпочтения: would rather и would prefer",
-      "summary_ru": "Would rather и would prefer выражают предпочтение в конкретной ситуации, но требуют разных дополнений. После would rather идёт голый инфинитив: I'd rather stay here. После would prefer идёт инфинитив с to: I'd prefer to stay here. Отрицание ставится перед инфинитивом: I'd rather not go. Если предпочтение касается другого человека, после would rather ставится подлежащее и глагол в прошедшем времени: I'd rather you sent it today; после would prefer в этом случае употребляется дополнение с to-инфинитивом: I'd prefer you to send it today. Сравнение строится как would rather A than B и would prefer A rather than B. Общее, а не ситуативное предпочтение выражает prefer + существительное или герундий с предлогом to: I prefer writing tests to fixing bugs.",
+      "summary_ru": "Would rather и would prefer выражают предпочтение в конкретной ситуации, но требуют разных дополнений. После would rather идёт голый инфинитив: I'd rather stay here. После would prefer идёт инфинитив с to: I'd prefer to stay here. Отрицание ставится перед инфинитивом: I'd rather not go. Если предпочтение касается другого человека, после would rather ставится подлежащее и глагол в прошедшем времени: I'd rather you sent it today; после would prefer в этом случае употребляется дополнение с to-инфинитивом: I'd prefer you to send it today. Сожаление о том, что уже случилось, выражают через past perfect: I'd rather you hadn't invited them — лучше бы ты их не приглашал. Сравнение строится как would rather A than B и would prefer A rather than B. Общее, а не ситуативное предпочтение выражает prefer + существительное или герундий с предлогом to: I prefer writing tests to fixing bugs.",
       "forms": [
         "would rather (not) + V1 (без to)",
         "would rather + subject + V2 (past simple)",
+        "would rather + subject + had (not) + V3 (о прошлом)",
         "would prefer + to + V1",
         "would prefer + object + to + V1",
         "would rather A than B / prefer A to B"
@@ -610,10 +611,10 @@
         {
           "id": "b2_would_rather_would_prefer_14",
           "kind": "order",
-          "prompt": "rather / you / I'd / told / hadn't / him / .",
-          "answer": "I'd rather you hadn't told him.",
+          "prompt": "rather / you / I'd / sold / hadn't / the car / .",
+          "answer": "I'd rather you hadn't sold the car.",
           "accept": [],
-          "explanation_ru": "После would rather с другим подлежащим о прошлом говорят через past perfect: I'd rather you hadn't told him — «лучше бы ты ему не говорил». Порядок: I'd rather + подлежащее + hadn't + V3.",
+          "explanation_ru": "После would rather с другим подлежащим о прошлом говорят через past perfect: I'd rather you hadn't sold the car — «лучше бы ты не продавал машину». Порядок: I'd rather + подлежащее + hadn't + V3.",
           "difficulty": 2
         }
       ]
@@ -2080,12 +2081,13 @@
       "title_en": "Indirect questions",
       "source_slug": "indirect-questions",
       "title_ru": "Косвенные вопросы: Could you tell me...",
-      "summary_ru": "Косвенный вопрос звучит вежливее прямого и начинается с оборота Could you tell me, Do you know, I wonder или I'd like to know. После этого оборота порядок слов становится как в утверждении: подлежащее стоит перед сказуемым, инверсии нет. Вспомогательные do, does и did исчезают, а их время переходит на смысловой глагол: Where does he work? превращается в Do you know where he works? Если в прямом вопросе не было вопросительного слова, в косвенном появляется if или whether: Do you know if the server is back up? Знак вопроса ставится только тогда, когда главная часть сама является вопросом; при обороте I wonder предложение заканчивается точкой. В деловой переписке самая мягкая просьба — I was wondering if you could...: прошедшее время здесь не про прошлое, а про вежливость.",
+      "summary_ru": "Косвенный вопрос звучит вежливее прямого и начинается с оборота Could you tell me, Do you know, I wonder или I'd like to know. После этого оборота порядок слов становится как в утверждении: подлежащее стоит перед сказуемым, инверсии нет. Вспомогательные do, does и did исчезают, а их время переходит на смысловой глагол: Where does he work? превращается в Do you know where he works? Если в прямом вопросе не было вопросительного слова, в косвенном появляется if или whether: Do you know if the server is back up? Знак вопроса ставится только тогда, когда главная часть сама является вопросом; при обороте I wonder предложение заканчивается точкой. Пересказывая чужой вопрос после asked или wanted to know, время сдвигают в прошлое, как в косвенной речи: Where do you work? → She asked me where I worked; Is it far? → He asked if it was far. В деловой переписке самая мягкая просьба — I was wondering if you could...: прошедшее время здесь не про прошлое, а про вежливость.",
       "forms": [
         "Could you tell me + wh-слово + subject + verb?",
         "Do you know + if / whether + subject + verb?",
         "I wonder / I'd like to know + wh-слово + subject + verb.",
         "Без do / does / did и без инверсии в придаточном",
+        "asked / wanted to know + if / wh-слово + subject + сдвинутое время (can → could, will → would)",
         "I was wondering if you could + V1 — вежливая просьба"
       ],
       "examples": [
@@ -2309,7 +2311,7 @@
         {
           "id": "b2_indirect_questions_16",
           "kind": "cloze",
-          "prompt": "Last week my landlord called me with a lot of questions. He asked me whether I ___ (can) fix the leaky faucet myself and when I ___ (will) be home on Friday. He wanted to know how long the heating ___ (be) broken. He also said that the plumber ___ (must) come before the end of the month.",
+          "prompt": "Last week my landlord called me with a lot of questions. He asked me whether I ___ (can) fix the leaky faucet myself and when I ___ (will) be home on Friday. He wanted to know how long the heater ___ (be) broken. He also said that the plumber ___ (must) come before the end of the month.",
           "gaps": [
             [
               "could"
@@ -2326,7 +2328,7 @@
               "would have to"
             ]
           ],
-          "explanation_ru": "После прошедшего asked, wanted to know, said модальные и времена сдвигаются: can → could, will → would, has been → had been, must → had to (must может и остаться). Порядок слов в пересказанном вопросе прямой: when I would be home, how long the heating had been broken.",
+          "explanation_ru": "После прошедшего asked, wanted to know, said модальные и времена сдвигаются: can → could, will → would, has been → had been, must → had to (must может и остаться). Порядок слов в пересказанном вопросе прямой: when I would be home, how long the heater had been broken.",
           "difficulty": 3
         }
       ]

@@ -178,14 +178,14 @@
       "title_en": "Adjectives without noun",
       "source_slug": "adjectives-without-noun",
       "title_ru": "Прилагательные без существительного",
-      "summary_ru": "Прилагательное может использоваться без существительного, если из контекста ясно, о ком или о чём речь. Конструкция the плюс прилагательное обозначает всю группу людей и требует глагола во множественном числе: the rich are, the unemployed need. Так же работают названия наций на -ch, -sh, -ese, -ss: the French, the British, the Chinese, the Swiss. Остальные нации требуют существительного во множественном числе: the Germans, the Russians, the Americans. Прилагательное в превосходной степени тоже обходится без существительного: this one is the cheapest. Чтобы не повторять исчисляемое существительное, используют one или ones: I want the blue one. Абстрактные понятия строятся по той же модели: the impossible, the unknown. Не путай эту модель с абстрактным существительным: poverty, unemployment, education в общем смысле идут без артикля, а the появляется, когда понятие уточнено: the poverty of the 1930s. С the употребляются и единственные в своём роде учреждения: the government, the police.",
+      "summary_ru": "Прилагательное может использоваться без существительного, если из контекста ясно, о ком или о чём речь. Конструкция the плюс прилагательное обозначает всю группу людей и требует глагола во множественном числе: the rich are, the unemployed need. Так же работают названия наций на -ch, -sh, -ese, -ss: the French, the British, the Chinese, the Swiss. Остальные нации требуют существительного во множественном числе: the Germans, the Russians, the Americans. Прилагательное в превосходной степени тоже обходится без существительного: this one is the cheapest. Чтобы не повторять исчисляемое существительное, используют one или ones: I want the blue one. Абстрактные понятия строятся по той же модели: the impossible, the unknown. Не путай эту модель с абстрактным существительным: poverty, unemployment, education в общем смысле идут без артикля, а the появляется, когда понятие уточнено: the education my parents got. С the употребляются и единственные в своём роде учреждения: the police, the army.",
       "forms": [
         "the + прилагательное = группа людей, глагол во множественном числе",
         "the + French / British / Chinese / Swiss = нация целиком",
         "the + Germans / Russians / Americans (существительное во множественном числе)",
         "the + превосходная степень без существительного",
         "one / ones вместо повторяемого исчисляемого существительного",
-        "без артикля — абстрактное понятие в общем смысле (poverty, unemployment); the — уточнённое понятие (the poverty of the 1930s) и единственное учреждение (the government)"
+        "без артикля — абстрактное понятие в общем смысле (poverty, unemployment); the — уточнённое понятие (the education my parents got) и единственное учреждение (the police)"
       ],
       "examples": [
         "The rich are getting richer every year.",
@@ -357,10 +357,10 @@
         {
           "id": "b2_adjectives_without_noun_13",
           "kind": "cloze",
-          "prompt": "Add the where it is needed: ___ (unemployment) in our town has doubled in five years, and ___ (unemployed) now wait months for help. ___ (government) has promised new jobs, but for many families ___ (poverty) is still part of daily life. My grandmother says that ___ (poverty) of the 1930s was much worse.",
+          "prompt": "Add the where it is needed: In our town, ___ (unemployment) has doubled in five years, and ___ (unemployed) now wait months for help. ___ (government) has promised new jobs, but for many families ___ (poverty) is still part of daily life. My grandmother says that ___ (poverty) of the 1930s was much worse.",
           "gaps": [
             [
-              "Unemployment"
+              "unemployment"
             ],
             [
               "the unemployed"
@@ -1226,12 +1226,13 @@
       "title_en": "Second and third conditionals: Unreal conditionals",
       "source_slug": "second-third-conditionals",
       "title_ru": "Второй и третий типы условных предложений",
-      "summary_ru": "Второе и третье условные предложения описывают нереальные ситуации. Второй тип относится к настоящему или будущему: if плюс past simple в придаточном и would плюс инфинитив в главном. Третий тип относится к прошлому, которое уже нельзя изменить: if плюс past perfect и would have плюс третья форма глагола. Вместо would можно использовать could и might, если нужен оттенок возможности. В придаточном с if форма would не употребляется. С глаголом be во втором типе для всех лиц предпочтителен вариант were: if I were you. Возможен смешанный тип: условие в прошлом, а следствие в настоящем: if I had taken that job, I would live in Berlin now.",
+      "summary_ru": "Второе и третье условные предложения описывают нереальные ситуации. Второй тип относится к настоящему или будущему: if плюс past simple в придаточном и would плюс инфинитив в главном. Третий тип относится к прошлому, которое уже нельзя изменить: if плюс past perfect и would have плюс третья форма глагола. Вместо would можно использовать could и might, если нужен оттенок возможности. В придаточном с if форма would не употребляется. С глаголом be во втором типе для всех лиц предпочтителен вариант were: if I were you. Возможен смешанный тип: условие в прошлом, а следствие в настоящем: if I had taken that job, I would live in Berlin now. Бывает и обратный смешанный тип: постоянное условие в настоящем, а следствие в прошлом: if I spoke French, I would have understood the tour guide yesterday.",
       "forms": [
         "If + past simple, ... would / could / might + инфинитив",
         "If + past perfect, ... would / could / might have + третья форма глагола",
         "If I were you, I would ...",
         "смешанный тип: If + past perfect, ... would + инфинитив",
+        "обратный смешанный тип: If + past simple, ... would have + третья форма глагола",
         "would никогда не ставится в части с if"
       ],
       "examples": [
@@ -1459,18 +1460,18 @@
         {
           "id": "b2_second_third_conditionals_15",
           "kind": "transform",
-          "prompt": "Rewrite as a mixed conditional (the first fact is still true now): I'm not very organized, so I missed the deadline yesterday.",
-          "answer": "If I were more organized, I wouldn't have missed the deadline yesterday.",
+          "prompt": "Rewrite as a mixed conditional (the first fact is still true now): I'm afraid of heights, so I didn't go up the Eiffel Tower yesterday.",
+          "answer": "If I weren't afraid of heights, I would have gone up the Eiffel Tower yesterday.",
           "accept": [
-            "I wouldn't have missed the deadline yesterday if I were more organized.",
-            "If I was more organized, I wouldn't have missed the deadline yesterday.",
-            "I wouldn't have missed the deadline yesterday if I was more organized.",
-            "If I were better organized, I wouldn't have missed the deadline yesterday.",
-            "I wouldn't have missed the deadline yesterday if I were better organized.",
-            "If I was better organized, I wouldn't have missed the deadline yesterday.",
-            "I wouldn't have missed the deadline yesterday if I was better organized."
+            "I would have gone up the Eiffel Tower yesterday if I weren't afraid of heights.",
+            "If I wasn't afraid of heights, I would have gone up the Eiffel Tower yesterday.",
+            "I would have gone up the Eiffel Tower yesterday if I wasn't afraid of heights.",
+            "If I weren't afraid of heights, I could have gone up the Eiffel Tower yesterday.",
+            "I could have gone up the Eiffel Tower yesterday if I weren't afraid of heights.",
+            "If I wasn't afraid of heights, I could have gone up the Eiffel Tower yesterday.",
+            "I could have gone up the Eiffel Tower yesterday if I wasn't afraid of heights."
           ],
-          "explanation_ru": "Условие — постоянная черта, верная и сейчас, поэтому if + past simple, как во втором типе: If I were more organized. Результат — в прошлом, поэтому would have + V3, как в третьем: I wouldn't have missed. Это обратное смешанное условное: нереальное настоящее → нереальное прошлое.",
+          "explanation_ru": "Страх высоты — постоянная черта, верная и сейчас, поэтому условие строится как во втором типе: if + past simple, If I weren't afraid of heights. Результат относится к вчерашнему дню, поэтому would have + V3, как в третьем: I would have gone up. Это обратное смешанное условное: нереальное настоящее → нереальное прошлое. If I hadn't been afraid означало бы, что страх был только вчера.",
           "difficulty": 3
         },
         {
@@ -1707,7 +1708,10 @@
             "I wish the rain would stop!",
             "I wish the rain would stop already!",
             "I wish this rain would stop!",
-            "I wish this rain would stop already!"
+            "I wish this rain would stop already!",
+            "I wish it would finally stop raining!",
+            "I wish the rain would finally stop!",
+            "I wish this rain would finally stop!"
           ],
           "explanation_ru": "Wish + would — желание, чтобы ситуация или чужое поведение изменились, часто с раздражением: I wish it would stop raining. Will и настоящее время после wish не ставятся, а wish + past simple (I wish it stopped) описывало бы положение дел, а не перемену.",
           "difficulty": 2

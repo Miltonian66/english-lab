@@ -2033,7 +2033,7 @@
         {
           "id": "a2_reported_speech_indirect_speech_01",
           "kind": "choice",
-          "prompt": "'I'm tired.' → He said he ___ tired.",
+          "prompt": "'I'm tired,' Leo said last night. → Leo said he ___ tired.",
           "options": [
             "was",
             "is",
@@ -2041,13 +2041,13 @@
             "be"
           ],
           "correct_index": 0,
-          "explanation_ru": "После said самые частые формы сдвигаются на шаг назад: am становится was.",
+          "explanation_ru": "Слова сказаны вчера вечером и о тогдашнем состоянии, поэтому после said am сдвигается на шаг назад: was. Is оставляют, только если сказанное всё ещё правда прямо сейчас; were — для you, we, they, а be без изменения формы сказуемым не бывает.",
           "difficulty": 1
         },
         {
           "id": "a2_reported_speech_indirect_speech_02",
           "kind": "choice",
-          "prompt": "'I'll call you.' → She said she ___ call me.",
+          "prompt": "'I'll call you.' → She said she ___ call me, but she didn't.",
           "options": [
             "would",
             "will",
@@ -2055,7 +2055,7 @@
             "did"
           ],
           "correct_index": 0,
-          "explanation_ru": "Will в косвенной речи после прошедшего времени становится would.",
+          "explanation_ru": "Звонка так и не было — обещание целиком в прошлом, поэтому после said will становится would. Will оставляют, только если обещанное ещё впереди; после would частица to не ставится, а did превратило бы обещание в рассказ о сделанном.",
           "difficulty": 1
         },
         {

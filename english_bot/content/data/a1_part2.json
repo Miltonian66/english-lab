@@ -573,7 +573,17 @@
       "The film starts at seven fifteen.",
       "The film starts at 7:15.",
       "The film begins at seven fifteen.",
-      "The film begins at 7:15."
+      "The film begins at 7:15.",
+      "The movie starts at seven-fifteen.",
+      "The movie begins at seven-fifteen.",
+      "The film starts at seven-fifteen.",
+      "The film begins at seven-fifteen.",
+      "The movie begins at a quarter past seven.",
+      "The film starts at a quarter past seven.",
+      "The film begins at a quarter past seven.",
+      "The movie starts at quarter past seven.",
+      "The movie starts at a quarter after seven.",
+      "The movie starts at quarter after seven."
      ],
      "explanation_ru": "Точное время по часам всегда идёт с at: at seven fifteen. Русское «в» подталкивает к in, но in ставят с месяцами и годами. Время читают по-американски просто цифрами: seven fifteen.",
      "difficulty": 2
@@ -1105,7 +1115,11 @@
       "Our town has two parks.",
       "Our city has two parks.",
       "There are 2 parks in our town.",
-      "There are 2 parks in our city."
+      "There are 2 parks in our city.",
+      "Our town has 2 parks.",
+      "Our city has 2 parks.",
+      "We have two parks in our town.",
+      "We have two parks in our city."
      ],
      "explanation_ru": "Русское предложение начинается с места, а английское — с there are: место уходит в конец. Parks во множественном числе, поэтому are. Можно сказать и Our town has two parks.",
      "difficulty": 3

@@ -315,7 +315,7 @@
       "would have"
      ],
      "correct_index": 1,
-     "explanation_ru": "Хорошей камеры у телефона нет — ситуация воображаемая, поэтому после if past simple: had. Have и will have говорили бы о реальном условии, а would после if не ставят.",
+     "explanation_ru": "Хорошей камеры у телефона нет — ситуация воображаемая, поэтому после if past simple: had. Настоящее время (с my phone — has) говорило бы о реальном условии, а will и would после if не ставят.",
      "difficulty": 2,
      "diagnostic": false
     },
@@ -1098,7 +1098,9 @@
        "mustn't",
        "must not",
        "can't",
-       "cannot"
+       "cannot",
+       "aren't allowed to",
+       "are not allowed to"
       ],
       [
        "had to"
@@ -1649,7 +1651,7 @@
      "correct_index": 0,
      "explanation_ru": "Предлагая помощь, в американской речи говорят Should I…? (или Do you want me to…?). Do I carry…? спрашивает о привычке, Am I с carry без -ing не сочетается, а Will I…? спрашивает о будущем, а не предлагает.",
      "difficulty": 2,
-     "diagnostic": true
+     "diagnostic": false
     },
     {
      "id": "a2_should_shouldnt_13",
@@ -1662,7 +1664,15 @@
       "Can I help you?",
       "Shall I help you?",
       "Do you want me to help?",
-      "Want me to help you?"
+      "Want me to help you?",
+      "Want me to help?",
+      "Should I help?",
+      "Can I help?",
+      "Would you like me to help?",
+      "Shall I help?",
+      "May I help you?",
+      "Do you want some help?",
+      "Would you like some help?"
      ],
      "explanation_ru": "Помощь предлагают вопросом Do you want me to help you? или Should I help you? После want нужна схема want + кто + to + глагол: want me to help. Русское «хочешь, я помогу» не переводится как Do you want I help you.",
      "difficulty": 3
@@ -1837,10 +1847,10 @@
       "yourself",
       "you",
       "your",
-      "yourselfs"
+      "himself"
      ],
      "correct_index": 0,
-     "explanation_ru": "Когда действие направлено на самого себя, нужно возвратное местоимение: cut yourself — «порезаться». You значило бы другого человека, your — «твой», а yourselfs — неверное множественное (для нескольких людей — yourselves).",
+     "explanation_ru": "Когда действие направлено на самого себя, нужно возвратное местоимение: cut yourself — «порезаться». You значило бы другого человека, your — «твой», а himself — «себя» только для he: в отличие от русского «себя», возвратное местоимение меняется по лицу.",
      "difficulty": 2,
      "diagnostic": true
     },
@@ -1850,7 +1860,8 @@
      "prompt": "Nobody helped my daughter. She made the cake ___ (she).",
      "answer": "herself",
      "accept": [
-      "by herself"
+      "by herself",
+      "all by herself"
      ],
      "explanation_ru": "«Сама, без чужой помощи» — возвратное местоимение в конце предложения: she made it herself.",
      "difficulty": 2
@@ -1861,7 +1872,8 @@
      "prompt": "Did you enjoy at the party?",
      "answer": "Did you enjoy yourself at the party?",
      "accept": [
-      "Did you enjoy the party?"
+      "Did you enjoy the party?",
+      "Did you enjoy yourselves at the party?"
      ],
      "explanation_ru": "Enjoy всегда требует дополнения: enjoy the party или enjoy yourself — «хорошо провести время». Русское «тебе понравилось?» подталкивает оставить enjoy без дополнения.",
      "difficulty": 3
@@ -2231,22 +2243,22 @@
      "correct_index": 0,
      "explanation_ru": "«На работе» — at work, «дома» — at home: в этих устойчивых сочетаниях артикль не ставят. Русское «на» подталкивает к on, но on work так не говорят.",
      "difficulty": 2,
-     "diagnostic": true
+     "diagnostic": false
     },
     {
      "id": "a2_use_verb_go_english_13",
      "kind": "choice",
      "prompt": "Лиам описывает свой день. В каком предложении ошибка?",
      "options": [
-      "Sun is very bright today.",
-      "I go to work by bus.",
+      "I go to the work by bus.",
+      "The sun is very bright today.",
       "We have breakfast at seven.",
       "I'm at home in the evening."
      ],
      "correct_index": 0,
-     "explanation_ru": "Солнце одно, поэтому с ним нужен the: The sun is very bright. Остальное верно: go to work и have breakfast — устойчивые сочетания без артикля, at home — «дома».",
+     "explanation_ru": "Go to work — устойчивое сочетание без артикля, как go to school и go to bed: I go to work by bus. Остальное верно: солнце одно, поэтому the sun; have breakfast — без артикля, at home — «дома».",
      "difficulty": 2,
-     "diagnostic": true
+     "diagnostic": false
     }
    ]
   }

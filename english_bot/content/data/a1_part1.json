@@ -431,9 +431,10 @@
      "prompt": "My new phone is more faster than my old phone.",
      "answer": "My new phone is faster than my old phone.",
      "accept": [
-      "My new phone is much faster than my old phone."
+      "My new phone is much faster than my old phone.",
+      "My new phone is a lot faster than my old phone."
      ],
-     "explanation_ru": "More и -er вместе не употребляются: достаточно формы faster. Если хочется подчеркнуть разницу, more меняют на much: much faster.",
+     "explanation_ru": "More и -er вместе не употребляются: достаточно формы faster. Если хочется подчеркнуть разницу, more меняют на much или a lot: much faster.",
      "difficulty": 3
     },
     {
@@ -843,7 +844,7 @@
      "accept": [
       "I don't know how to swim."
      ],
-     "explanation_ru": "Умение передаёт can, отрицание — can't (cannot) плюс глагол без to: I can't swim. Русское «не умею» не строится через don't: do с can не сочетается. Можно сказать и I don't know how to swim.",
+     "explanation_ru": "Умение передаёт can, отрицание — can't (cannot) плюс глагол без to: I can't swim. Калька I don't can swim невозможна: do с can не сочетается. Можно сказать и I don't know how to swim.",
      "difficulty": 2
     }
    ]
@@ -1516,7 +1517,9 @@
      "accept": [
       "This is my kids' room.",
       "It's my children's room.",
-      "It's my kids' room."
+      "It's my kids' room.",
+      "That's my children's room.",
+      "That's my kids' room."
      ],
      "explanation_ru": "Владелец-человек получает 's и стоит перед предметом. Children — неправильное множественное число без -s, поэтому полное 's: my children's room (или my kids' room — у kids уже есть -s, добавляется только апостроф). The room of my children повторяет русский родительный падеж — так не говорят.",
      "difficulty": 3

@@ -93,9 +93,10 @@
           "answer": "is going to start",
           "accept": [
             "'s going to start",
-            "is starting"
+            "is starting",
+            "starts"
           ],
-          "explanation_ru": "План принят заранее (контракт уже подписан), поэтому be going to: is going to start; подходит и Present Continuous is starting. Will звучал бы как решение, принятое прямо сейчас.",
+          "explanation_ru": "План принят заранее (контракт уже подписан), поэтому be going to: is going to start; подходит и Present Continuous is starting, а о начале работы по графику — и starts. Will звучал бы как решение, принятое прямо сейчас.",
           "difficulty": 1
         },
         {
@@ -883,7 +884,7 @@
         {
           "id": "a2_past_perfect_10",
           "kind": "cloze",
-          "prompt": "Last Sunday Fatima went to her favorite cafe, but it was closed. The owner ___ (go) on vacation. So she went to the bakery next door, but they ___ (sell) all the bread. In the end, she ate at home.",
+          "prompt": "Use the past perfect. Last Sunday Fatima went to her favorite cafe, but it was closed. The owner ___ (go) on vacation. So she went to the bakery next door, but they ___ (sell) all the bread. In the end, she ate at home.",
           "gaps": [
             [
               "had gone"
@@ -1842,7 +1843,9 @@
           "kind": "correct",
           "prompt": "We have known each other since ten years.",
           "answer": "We have known each other for ten years.",
-          "accept": [],
+          "accept": [
+            "We have known each other for 10 years."
+          ],
           "explanation_ru": "С длительностью (ten years) нужен for, а since — с точкой начала: since 2016, since school.",
           "difficulty": 2
         }

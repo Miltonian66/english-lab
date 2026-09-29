@@ -353,7 +353,9 @@
           "prompt": "In 2020 we used to move to a new apartment.",
           "answer": "In 2020 we moved to a new apartment.",
           "accept": [
-            "We moved to a new apartment in 2020."
+            "We moved to a new apartment in 2020.",
+            "In 2020 we moved into a new apartment.",
+            "We moved into a new apartment in 2020."
           ],
           "explanation_ru": "Переезд — одно законченное событие в названном году, поэтому Past Simple: moved. Used to говорят о привычках и состояниях прошлого, которые повторялись или длились.",
           "difficulty": 3
@@ -545,7 +547,7 @@
           "correct_index": 0,
           "explanation_ru": "Вежливое приглашение — Would you like to + глагол: Would you like to come…? To уже стоит после пропуска, поэтому второе to лишнее. Do you like to… спрашивает, нравится ли вообще, а are с like не сочетается.",
           "difficulty": 2,
-          "diagnostic": true
+          "diagnostic": false
         }
       ]
     },

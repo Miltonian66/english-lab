@@ -373,7 +373,10 @@
      "answer": "I didn't buy bread.",
      "accept": [
       "I didn't buy any bread.",
-      "I didn't buy the bread."
+      "I didn't buy the bread.",
+      "I didn't get bread.",
+      "I didn't get any bread.",
+      "I didn't get the bread."
      ],
      "explanation_ru": "Отрицание в прошедшем — didn't плюс первая форма: I didn't buy. Прошедшее время уже показывает did, поэтому bought после didn't не ставят.",
      "difficulty": 2

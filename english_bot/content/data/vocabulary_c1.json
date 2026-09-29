@@ -573,7 +573,8 @@
       ],
       "topic": "study",
       "accept": [
-        "verify"
+        "verify",
+        "confirm"
       ]
     },
     {
@@ -2004,7 +2005,7 @@
       "word": "margin",
       "pos": "noun",
       "ipa_us": "/ˈmɑrdʒən/",
-      "translation_ru": "маржа, запас",
+      "translation_ru": "маржа, запас (на ошибку, на непредвиденное)",
       "example_en": "We left a small margin for error in the schedule.",
       "collocations": [
         "a profit margin",
@@ -2154,7 +2155,9 @@
       ],
       "topic": "study",
       "accept": [
-        "faulty"
+        "faulty",
+        "wrong",
+        "mistaken"
       ]
     },
     {
@@ -2776,6 +2779,51 @@
         "gray",
         "grey"
       ]
+    },
+    {
+      "id": "b2_v_framework",
+      "level": "C1",
+      "word": "framework",
+      "pos": "noun",
+      "ipa_us": "/ˈfreɪmˌwɝk/",
+      "translation_ru": "фреймворк, структура",
+      "example_en": "We picked a lighter framework for the internal tool.",
+      "collocations": [
+        "a testing framework",
+        "a legal framework"
+      ],
+      "topic": "tech"
+    },
+    {
+      "id": "b2_v_vendor",
+      "level": "C1",
+      "word": "vendor",
+      "pos": "noun",
+      "ipa_us": "/ˈvɛndɚ/",
+      "translation_ru": "поставщик, продавец",
+      "example_en": "We are comparing three vendors before we sign anything.",
+      "collocations": [
+        "a software vendor",
+        "choose a vendor"
+      ],
+      "topic": "money",
+      "accept": [
+        "supplier"
+      ]
+    },
+    {
+      "id": "b2_v_outsource",
+      "level": "C1",
+      "word": "outsource",
+      "pos": "verb",
+      "ipa_us": "/ˈaʊtˌsɔrs/",
+      "translation_ru": "передавать на подряд, отдавать на сторону",
+      "example_en": "They decided to outsource testing to a smaller company.",
+      "collocations": [
+        "outsource development",
+        "outsource a service"
+      ],
+      "topic": "work"
     }
   ]
 }

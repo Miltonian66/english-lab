@@ -325,7 +325,8 @@
       "topic": "people",
       "accept": [
         "nitpick",
-        "squabble"
+        "squabble",
+        "argue"
       ]
     },
     {
@@ -571,7 +572,8 @@
       "topic": "home",
       "accept": [
         "multiply",
-        "mushroom"
+        "mushroom",
+        "spread"
       ]
     },
     {
@@ -985,7 +987,10 @@
         "cringe at the memory",
         "make somebody cringe"
       ],
-      "topic": "feelings"
+      "topic": "feelings",
+      "accept": [
+        "wince"
+      ]
     },
     {
       "id": "c2_v_seethe",
@@ -2097,7 +2102,10 @@
       ],
       "topic": "study",
       "accept": [
-        "back up"
+        "back up",
+        "confirm",
+        "support",
+        "verify"
       ]
     },
     {
@@ -2163,7 +2171,7 @@
       "word": "leeway",
       "pos": "noun",
       "ipa_us": "/ˈliˌweɪ/",
-      "translation_ru": "свобода действий, запас",
+      "translation_ru": "свобода действий, запас (для манёвра)",
       "example_en": "Leaving at seven gives us a bit of leeway if there is traffic.",
       "collocations": [
         "give someone leeway",
@@ -2326,7 +2334,9 @@
       ],
       "topic": "people",
       "accept": [
-        "squabble"
+        "squabble",
+        "argue",
+        "fight"
       ]
     },
     {

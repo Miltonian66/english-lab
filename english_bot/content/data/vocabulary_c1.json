@@ -12,7 +12,10 @@
         "a subtle nuance",
         "capture every nuance"
       ],
-      "topic": "study"
+      "topic": "study",
+      "accept": [
+        "subtlety"
+      ]
     },
     {
       "id": "c1_v_discrepancy",
@@ -21,12 +24,16 @@
       "pos": "noun",
       "ipa_us": "/dɪˈskrɛpənsi/",
       "translation_ru": "расхождение, несоответствие",
-      "example_en": "There is a discrepancy between the reported numbers and what the logs actually show.",
+      "example_en": "There is a discrepancy between the price on the shelf and the price on my receipt.",
       "collocations": [
         "a glaring discrepancy",
         "explain the discrepancy"
       ],
-      "topic": "work"
+      "topic": "money",
+      "accept": [
+        "mismatch",
+        "inconsistency"
+      ]
     },
     {
       "id": "c1_v_rationale",
@@ -40,7 +47,12 @@
         "the rationale behind",
         "provide a rationale"
       ],
-      "topic": "work"
+      "topic": "work",
+      "accept": [
+        "reasoning",
+        "logic",
+        "justification"
+      ]
     },
     {
       "id": "c1_v_premise",
@@ -54,7 +66,10 @@
         "a false premise",
         "start from the premise"
       ],
-      "topic": "study"
+      "topic": "study",
+      "accept": [
+        "assumption"
+      ]
     },
     {
       "id": "c1_v_reservation",
@@ -63,12 +78,16 @@
       "pos": "noun",
       "ipa_us": "/ˌrɛzɚˈveɪʃən/",
       "translation_ru": "сомнение (по поводу решения)",
-      "example_en": "I approved the plan, though I still have reservations about the timeline.",
+      "example_en": "I agreed to the road trip, though I still have reservations about driving that far with a baby.",
       "collocations": [
         "have reservations about",
         "express serious reservations"
       ],
-      "topic": "work"
+      "topic": "people",
+      "accept": [
+        "doubt",
+        "misgiving"
+      ]
     },
     {
       "id": "c1_v_scrutiny",
@@ -82,7 +101,11 @@
         "close scrutiny",
         "come under scrutiny"
       ],
-      "topic": "work"
+      "topic": "work",
+      "accept": [
+        "examination",
+        "inspection"
+      ]
     },
     {
       "id": "c1_v_benchmark",
@@ -96,7 +119,11 @@
         "set a benchmark",
         "against the benchmark"
       ],
-      "topic": "tech"
+      "topic": "tech",
+      "accept": [
+        "baseline",
+        "yardstick"
+      ]
     },
     {
       "id": "c1_v_counterpart",
@@ -110,7 +137,10 @@
         "a foreign counterpart",
         "meet your counterpart"
       ],
-      "topic": "work"
+      "topic": "work",
+      "accept": [
+        "equivalent"
+      ]
     },
     {
       "id": "c1_v_contingency",
@@ -119,12 +149,16 @@
       "pos": "noun",
       "ipa_us": "/kənˈtɪndʒənsi/",
       "translation_ru": "непредвиденный случай, резерв",
-      "example_en": "We built two extra weeks into the plan as a contingency.",
+      "example_en": "We added an extra day to the trip as a contingency in case the ferry was canceled.",
       "collocations": [
         "a contingency plan",
         "contingency budget"
       ],
-      "topic": "work"
+      "topic": "travel",
+      "accept": [
+        "buffer",
+        "cushion"
+      ]
     },
     {
       "id": "c1_v_discretion",
@@ -133,12 +167,12 @@
       "pos": "noun",
       "ipa_us": "/dɪˈskrɛʃən/",
       "translation_ru": "усмотрение, осмотрительность",
-      "example_en": "Refunds above that amount are granted at the manager's discretion.",
+      "example_en": "Tipping is not required here; it is entirely at your discretion.",
       "collocations": [
         "at your discretion",
         "use your discretion"
       ],
-      "topic": "work"
+      "topic": "travel"
     },
     {
       "id": "c1_v_consensus",
@@ -147,12 +181,15 @@
       "pos": "noun",
       "ipa_us": "/kənˈsɛnsəs/",
       "translation_ru": "консенсус, общее мнение",
-      "example_en": "After an hour of debate the team finally reached a consensus.",
+      "example_en": "After an hour of debate the family finally reached a consensus on where to spend the holidays.",
       "collocations": [
         "reach a consensus",
         "broad consensus"
       ],
-      "topic": "people"
+      "topic": "people",
+      "accept": [
+        "agreement"
+      ]
     },
     {
       "id": "c1_v_overhead",
@@ -180,7 +217,10 @@
         "detect an anomaly",
         "a statistical anomaly"
       ],
-      "topic": "tech"
+      "topic": "tech",
+      "accept": [
+        "irregularity"
+      ]
     },
     {
       "id": "c1_v_safeguard",
@@ -194,7 +234,10 @@
         "put safeguards in place",
         "a safeguard against abuse"
       ],
-      "topic": "tech"
+      "topic": "tech",
+      "accept": [
+        "protection"
+      ]
     },
     {
       "id": "c1_v_oversight",
@@ -203,12 +246,15 @@
       "pos": "noun",
       "ipa_us": "/ˈoʊvɚˌsaɪt/",
       "translation_ru": "недосмотр, упущение",
-      "example_en": "Leaving that field out of the form was an oversight, not a decision.",
+      "example_en": "Leaving her name off the wedding invitation was an oversight, not an insult.",
       "collocations": [
         "a simple oversight",
         "due to an oversight"
       ],
-      "topic": "work"
+      "topic": "people",
+      "accept": [
+        "omission"
+      ]
     },
     {
       "id": "c1_v_setback",
@@ -217,12 +263,15 @@
       "pos": "noun",
       "ipa_us": "/ˈsɛtˌbæk/",
       "translation_ru": "неудача, откат назад",
-      "example_en": "Losing the test environment was a serious setback for the release.",
+      "example_en": "Breaking his ankle a month before the marathon was a serious setback.",
       "collocations": [
         "a major setback",
         "suffer a setback"
       ],
-      "topic": "work"
+      "topic": "health",
+      "accept": [
+        "blow"
+      ]
     },
     {
       "id": "c1_v_mandate",
@@ -291,14 +340,15 @@
       "pos": "noun",
       "ipa_us": "/ˈhɝdəl/",
       "translation_ru": "барьер (который надо взять)",
-      "example_en": "Getting legal approval is the last hurdle before we can launch.",
+      "example_en": "The language exam is the last hurdle before I can apply for citizenship.",
       "collocations": [
         "clear a hurdle",
         "the main hurdle"
       ],
-      "topic": "work",
+      "topic": "study",
       "accept": [
-        "obstacle"
+        "obstacle",
+        "barrier"
       ]
     },
     {
@@ -308,12 +358,12 @@
       "pos": "noun",
       "ipa_us": "/kraɪˈtɪriən/",
       "translation_ru": "критерий",
-      "example_en": "Cost was only one criterion; support quality mattered more.",
+      "example_en": "When we chose the apartment, price was only one criterion; the neighborhood mattered more.",
       "collocations": [
         "a key criterion",
-        "meet the criteria"
+        "the main criterion"
       ],
-      "topic": "study"
+      "topic": "home"
     },
     {
       "id": "c1_v_paradigm",
@@ -327,7 +377,10 @@
         "a paradigm shift",
         "a new paradigm"
       ],
-      "topic": "tech"
+      "topic": "tech",
+      "accept": [
+        "model"
+      ]
     },
     {
       "id": "c1_v_correlation",
@@ -336,12 +389,17 @@
       "pos": "noun",
       "ipa_us": "/ˌkɔrəˈleɪʃən/",
       "translation_ru": "корреляция, взаимосвязь",
-      "example_en": "There is a clear correlation between deploy frequency and the number of incidents.",
+      "example_en": "There is a clear correlation between how late the kids use their phones and how badly they sleep.",
       "collocations": [
         "a strong correlation",
         "a correlation between"
       ],
-      "topic": "study"
+      "topic": "health",
+      "accept": [
+        "link",
+        "connection",
+        "relationship"
+      ]
     },
     {
       "id": "c1_v_threshold",
@@ -355,7 +413,10 @@
         "cross a threshold",
         "a high threshold"
       ],
-      "topic": "tech"
+      "topic": "tech",
+      "accept": [
+        "limit"
+      ]
     },
     {
       "id": "c1_v_pitfall",
@@ -364,12 +425,15 @@
       "pos": "noun",
       "ipa_us": "/ˈpɪtˌfɔl/",
       "translation_ru": "подводный камень, ловушка",
-      "example_en": "The guide lists the common pitfalls of migrating to the new database.",
+      "example_en": "The guide lists the common pitfalls of buying a used car.",
       "collocations": [
         "a common pitfall",
         "avoid the pitfalls"
       ],
-      "topic": "study"
+      "topic": "money",
+      "accept": [
+        "trap"
+      ]
     },
     {
       "id": "c1_v_shortcoming",
@@ -378,14 +442,16 @@
       "pos": "noun",
       "ipa_us": "/ˈʃɔrtˌkʌmɪŋ/",
       "translation_ru": "слабое место, изъян",
-      "example_en": "The tool is fast, but it has one serious shortcoming: no audit trail.",
+      "example_en": "The apartment is bright and cheap, but it has one serious shortcoming: no elevator.",
       "collocations": [
         "a serious shortcoming",
         "admit your shortcomings"
       ],
-      "topic": "work",
+      "topic": "home",
       "accept": [
-        "drawback"
+        "drawback",
+        "flaw",
+        "weakness"
       ]
     },
     {
@@ -395,14 +461,15 @@
       "pos": "noun",
       "ipa_us": "/dɪˈspɛrəti/",
       "translation_ru": "разрыв, неравенство",
-      "example_en": "The disparity in pay between the two offices is hard to justify.",
+      "example_en": "The disparity in income between the two neighborhoods is hard to ignore.",
       "collocations": [
         "a wide disparity",
         "a disparity between"
       ],
       "topic": "money",
       "accept": [
-        "gap"
+        "gap",
+        "inequality"
       ]
     },
     {
@@ -412,12 +479,15 @@
       "pos": "noun",
       "ipa_us": "/moʊˈmɛntəm/",
       "translation_ru": "динамика, набранный ход",
-      "example_en": "The project lost momentum after the lead developer left.",
+      "example_en": "I was running every morning, but I lost momentum when I got sick in January.",
       "collocations": [
         "gain momentum",
         "lose momentum"
       ],
-      "topic": "work"
+      "topic": "health",
+      "accept": [
+        "steam"
+      ]
     },
     {
       "id": "c1_v_precedent",
@@ -426,12 +496,12 @@
       "pos": "noun",
       "ipa_us": "/ˈprɛsədənt/",
       "translation_ru": "прецедент",
-      "example_en": "Approving this exception would set a precedent we may regret.",
+      "example_en": "Letting him stay up late tonight would set a precedent for his little sister.",
       "collocations": [
         "set a precedent",
         "without precedent"
       ],
-      "topic": "work"
+      "topic": "people"
     },
     {
       "id": "c1_v_jeopardize",
@@ -448,7 +518,8 @@
       "topic": "work",
       "accept": [
         "endanger",
-        "threaten"
+        "threaten",
+        "risk"
       ]
     },
     {
@@ -465,7 +536,8 @@
       ],
       "topic": "work",
       "accept": [
-        "reduce"
+        "reduce",
+        "lessen"
       ]
     },
     {
@@ -475,15 +547,16 @@
       "pos": "verb",
       "ipa_us": "/kəmˈpaʊnd/",
       "translation_ru": "усугублять (добавляя сверху), усиливать (проблему)",
-      "example_en": "Adding more servers only compounded the problem with the database.",
+      "example_en": "Lying to your parents about the grade only compounds the problem.",
       "collocations": [
         "compound the problem",
         "compound the damage"
       ],
-      "topic": "work",
+      "topic": "people",
       "accept": [
         "worsen",
-        "exacerbate"
+        "exacerbate",
+        "aggravate"
       ]
     },
     {
@@ -510,7 +583,7 @@
       "pos": "verb",
       "ipa_us": "/kənˈtɛnd/",
       "translation_ru": "отстаивать мнение, доказывать (в споре)",
-      "example_en": "The author contends that remote teams communicate more, not less.",
+      "example_en": "The author contends that children learn more from play than from homework.",
       "collocations": [
         "contend that",
         "strongly contend"
@@ -518,7 +591,9 @@
       "topic": "study",
       "accept": [
         "argue",
-        "maintain"
+        "maintain",
+        "claim",
+        "insist"
       ]
     },
     {
@@ -528,14 +603,16 @@
       "pos": "verb",
       "ipa_us": "/kənˈsid/",
       "translation_ru": "нехотя признавать (правоту), уступать в споре",
-      "example_en": "I will concede that the older design was easier to explain.",
+      "example_en": "I will concede that your mother's lasagna is better than mine.",
       "collocations": [
         "concede a point",
         "reluctantly concede"
       ],
-      "topic": "people",
+      "topic": "food",
       "accept": [
-        "admit"
+        "admit",
+        "acknowledge",
+        "grant"
       ]
     },
     {
@@ -553,7 +630,8 @@
       "topic": "study",
       "accept": [
         "question",
-        "challenge"
+        "challenge",
+        "contest"
       ]
     },
     {
@@ -563,12 +641,17 @@
       "pos": "verb",
       "ipa_us": "/ˈædvəˌkeɪt/",
       "translation_ru": "выступать за, отстаивать",
-      "example_en": "She has been advocating a slower release cycle for months.",
+      "example_en": "Our neighbor Mrs. Okafor has been advocating a bike lane on this street for years.",
       "collocations": [
         "advocate a change",
         "strongly advocate"
       ],
-      "topic": "work"
+      "topic": "home",
+      "accept": [
+        "champion",
+        "promote",
+        "push for"
+      ]
     },
     {
       "id": "c1_v_warrant",
@@ -577,12 +660,12 @@
       "pos": "verb",
       "ipa_us": "/ˈwɔrənt/",
       "translation_ru": "заслуживать (мер, внимания)",
-      "example_en": "The bug is annoying, but it hardly warrants a hotfix tonight.",
+      "example_en": "A mild cold hardly warrants a day off school.",
       "collocations": [
         "warrant attention",
         "warrant further investigation"
       ],
-      "topic": "work",
+      "topic": "health",
       "accept": [
         "justify",
         "deserve"
@@ -595,12 +678,17 @@
       "pos": "verb",
       "ipa_us": "/ˈdaʊnˌpleɪ/",
       "translation_ru": "преуменьшать значение, сглаживать",
-      "example_en": "He downplayed the outage in the meeting, and the support team was furious.",
+      "example_en": "He downplayed the injury so the coach would let him play in the final.",
       "collocations": [
         "downplay the risk",
         "downplay the significance"
       ],
-      "topic": "people"
+      "topic": "health",
+      "accept": [
+        "play down",
+        "minimize",
+        "understate"
+      ]
     },
     {
       "id": "c1_v_infer",
@@ -609,15 +697,16 @@
       "pos": "verb",
       "ipa_us": "/ɪnˈfɝ/",
       "translation_ru": "делать вывод, заключать",
-      "example_en": "From the logs we can infer that the request never reached the server.",
+      "example_en": "From her tone we could infer that the dinner had not gone well.",
       "collocations": [
         "infer from the data",
         "reasonably infer"
       ],
-      "topic": "study",
+      "topic": "people",
       "accept": [
         "deduce",
-        "conclude"
+        "conclude",
+        "gather"
       ]
     },
     {
@@ -634,7 +723,9 @@
       ],
       "topic": "work",
       "accept": [
-        "claim"
+        "claim",
+        "insist",
+        "state"
       ]
     },
     {
@@ -644,14 +735,16 @@
       "pos": "verb",
       "ipa_us": "/ˌʌndɚˈskɔr/",
       "translation_ru": "подчёркивать, акцентировать",
-      "example_en": "Last week's incident underscores how fragile the old cluster is.",
+      "example_en": "Last winter's storm underscored how badly the old bridge needs repairs.",
       "collocations": [
         "underscore the need for",
         "underscore the importance"
       ],
-      "topic": "work",
+      "topic": "nature",
       "accept": [
-        "highlight"
+        "highlight",
+        "underline",
+        "stress"
       ]
     },
     {
@@ -661,12 +754,15 @@
       "pos": "verb",
       "ipa_us": "/ɪˈlæbəˌreɪt/",
       "translation_ru": "подробно излагать, уточнять",
-      "example_en": "Could you elaborate on the second option before we vote?",
+      "example_en": "Could you elaborate on what you mean by \"a small wedding\"?",
       "collocations": [
         "elaborate on a point",
         "refuse to elaborate"
       ],
-      "topic": "work"
+      "topic": "people",
+      "accept": [
+        "expand"
+      ]
     },
     {
       "id": "c1_v_deem",
@@ -675,14 +771,15 @@
       "pos": "verb",
       "ipa_us": "/dim/",
       "translation_ru": "считать (каким-либо), расценивать как",
-      "example_en": "Any request without a valid token is deemed invalid.",
+      "example_en": "After the flood the old bridge was deemed unsafe and closed to traffic.",
       "collocations": [
         "deem necessary",
         "deem appropriate"
       ],
-      "topic": "work",
+      "topic": "travel",
       "accept": [
-        "consider"
+        "consider",
+        "judge"
       ]
     },
     {
@@ -692,14 +789,16 @@
       "pos": "verb",
       "ipa_us": "/geɪdʒ/",
       "translation_ru": "прикинуть, оценить (реакцию, настроение)",
-      "example_en": "We ran a short survey to gauge how people feel about the new process.",
+      "example_en": "Lena glanced at her father's face to gauge how angry he really was.",
       "collocations": [
         "gauge the reaction",
         "hard to gauge"
       ],
-      "topic": "work",
+      "topic": "feelings",
       "accept": [
-        "assess"
+        "assess",
+        "judge",
+        "measure"
       ]
     },
     {
@@ -709,12 +808,17 @@
       "pos": "verb",
       "ipa_us": "/ˈpɪnˌpɔɪnt/",
       "translation_ru": "точно определить, локализовать",
-      "example_en": "It took two days to pinpoint the source of the memory leak.",
+      "example_en": "It took the doctors a week to pinpoint the cause of the rash.",
       "collocations": [
         "pinpoint the cause",
         "pinpoint the problem"
       ],
-      "topic": "tech"
+      "topic": "health",
+      "accept": [
+        "identify",
+        "locate",
+        "pin down"
+      ]
     },
     {
       "id": "c1_v_outweigh",
@@ -723,12 +827,12 @@
       "pos": "verb",
       "ipa_us": "/ˌaʊtˈweɪ/",
       "translation_ru": "перевешивать, превосходить",
-      "example_en": "For most teams the benefits outweigh the cost of the migration.",
+      "example_en": "For most families in the suburbs, the benefits of owning a car outweigh the cost.",
       "collocations": [
         "the benefits outweigh the risks",
         "far outweigh"
       ],
-      "topic": "work"
+      "topic": "money"
     },
     {
       "id": "c1_v_reconcile",
@@ -777,7 +881,10 @@
       "topic": "work",
       "accept": [
         "hamper",
-        "impede"
+        "impede",
+        "hold back",
+        "slow down",
+        "obstruct"
       ]
     },
     {
@@ -792,7 +899,12 @@
         "facilitate a discussion",
         "facilitate access"
       ],
-      "topic": "work"
+      "topic": "work",
+      "accept": [
+        "ease",
+        "promote",
+        "enable"
+      ]
     },
     {
       "id": "c1_v_foster",
@@ -801,15 +913,17 @@
       "pos": "verb",
       "ipa_us": "/ˈfɑstɚ/",
       "translation_ru": "взращивать, поощрять (чувство, культуру)",
-      "example_en": "Pair programming fosters a sense of shared ownership.",
+      "example_en": "Eating dinner together every night fosters a sense of belonging.",
       "collocations": [
         "foster cooperation",
         "foster growth"
       ],
-      "topic": "people",
+      "topic": "home",
       "accept": [
         "encourage",
-        "nurture"
+        "nurture",
+        "promote",
+        "cultivate"
       ]
     },
     {
@@ -819,15 +933,16 @@
       "pos": "verb",
       "ipa_us": "/əˈliviˌeɪt/",
       "translation_ru": "облегчать (боль, нагрузку)",
-      "example_en": "Caching alleviated the load on the database almost immediately.",
+      "example_en": "The cream alleviated the itching almost immediately.",
       "collocations": [
         "alleviate pressure",
         "alleviate concerns"
       ],
-      "topic": "tech",
+      "topic": "health",
       "accept": [
         "relieve",
-        "ease"
+        "ease",
+        "soothe"
       ]
     },
     {
@@ -844,7 +959,9 @@
       ],
       "topic": "work",
       "accept": [
-        "use"
+        "use",
+        "harness",
+        "exploit"
       ]
     },
     {
@@ -871,12 +988,15 @@
       "pos": "adjective",
       "ipa_us": "/ɪnˈhɪrənt/",
       "translation_ru": "присущий, неотъемлемый",
-      "example_en": "There is an inherent risk in touching code that nobody understands.",
+      "example_en": "There is an inherent risk in climbing without a rope.",
       "collocations": [
         "an inherent risk",
         "inherent in the design"
       ],
-      "topic": "work"
+      "topic": "nature",
+      "accept": [
+        "intrinsic"
+      ]
     },
     {
       "id": "c1_v_credible",
@@ -892,7 +1012,9 @@
       ],
       "topic": "study",
       "accept": [
-        "believable"
+        "believable",
+        "reliable",
+        "trustworthy"
       ]
     },
     {
@@ -907,7 +1029,10 @@
         "conclusive evidence",
         "far from conclusive"
       ],
-      "topic": "study"
+      "topic": "study",
+      "accept": [
+        "definitive"
+      ]
     },
     {
       "id": "c1_v_viable",
@@ -916,14 +1041,15 @@
       "pos": "adjective",
       "ipa_us": "/ˈvaɪəbəl/",
       "translation_ru": "жизнеспособный, приемлемый",
-      "example_en": "Open source turned out to be the only viable alternative.",
+      "example_en": "When the airport closed, the night train was the only viable option.",
       "collocations": [
         "a viable option",
         "commercially viable"
       ],
-      "topic": "work",
+      "topic": "travel",
       "accept": [
-        "feasible"
+        "feasible",
+        "workable"
       ]
     },
     {
@@ -940,7 +1066,8 @@
       ],
       "topic": "tech",
       "accept": [
-        "outdated"
+        "outdated",
+        "out of date"
       ]
     },
     {
@@ -950,14 +1077,16 @@
       "pos": "adjective",
       "ipa_us": "/ˈkʌmbɚsəm/",
       "translation_ru": "громоздкий (неповоротливый)",
-      "example_en": "The approval process is so cumbersome that people quietly avoid it.",
+      "example_en": "The old stroller is so cumbersome that it barely fits in the elevator.",
       "collocations": [
         "a cumbersome process",
         "cumbersome to use"
       ],
-      "topic": "work",
+      "topic": "home",
       "accept": [
-        "clunky"
+        "clunky",
+        "bulky",
+        "unwieldy"
       ]
     },
     {
@@ -974,7 +1103,8 @@
       ],
       "topic": "tech",
       "accept": [
-        "reliable"
+        "reliable",
+        "resilient"
       ]
     },
     {
@@ -991,7 +1121,8 @@
       ],
       "topic": "work",
       "accept": [
-        "gradual"
+        "gradual",
+        "step-by-step"
       ]
     },
     {
@@ -1001,14 +1132,15 @@
       "pos": "adjective",
       "ipa_us": "/prægˈmætɪk/",
       "translation_ru": "прагматичный",
-      "example_en": "Let's take a pragmatic view and fix the worst cases first.",
+      "example_en": "Let's be pragmatic and look outside the city center; we cannot afford anything closer.",
       "collocations": [
         "a pragmatic approach",
         "pragmatic about deadlines"
       ],
-      "topic": "work",
+      "topic": "home",
       "accept": [
-        "practical"
+        "practical",
+        "realistic"
       ]
     },
     {
@@ -1018,12 +1150,12 @@
       "pos": "adjective",
       "ipa_us": "/ˈprudənt/",
       "translation_ru": "благоразумный",
-      "example_en": "It would be prudent to keep the old version running for another week.",
+      "example_en": "It would be prudent to book the hotel now, before summer prices kick in.",
       "collocations": [
         "a prudent decision",
         "financially prudent"
       ],
-      "topic": "work",
+      "topic": "travel",
       "accept": [
         "wise",
         "sensible"
@@ -1036,14 +1168,16 @@
       "pos": "adjective",
       "ipa_us": "/məˈtɪkjələs/",
       "translation_ru": "дотошный, скрупулёзный",
-      "example_en": "Her notes are meticulous, which saved us during the audit.",
+      "example_en": "My grandmother kept meticulous notes on every recipe she ever cooked.",
       "collocations": [
         "meticulous attention to detail",
         "meticulous records"
       ],
-      "topic": "people",
+      "topic": "food",
       "accept": [
-        "thorough"
+        "thorough",
+        "painstaking",
+        "scrupulous"
       ]
     },
     {
@@ -1053,12 +1187,15 @@
       "pos": "adjective",
       "ipa_us": "/æmˈbɪgjuəs/",
       "translation_ru": "двусмысленный, неоднозначный",
-      "example_en": "The requirement was ambiguous, so two teams built it differently.",
+      "example_en": "The sign at the fork was ambiguous, so half the group went left and half went right.",
       "collocations": [
         "deliberately ambiguous",
         "an ambiguous answer"
       ],
-      "topic": "study"
+      "topic": "travel",
+      "accept": [
+        "unclear"
+      ]
     },
     {
       "id": "c1_v_arbitrary",
@@ -1067,12 +1204,15 @@
       "pos": "adjective",
       "ipa_us": "/ˈɑrbɪˌtrɛri/",
       "translation_ru": "произвольный, необоснованный",
-      "example_en": "The limit of ten items looks completely arbitrary to me.",
+      "example_en": "The school's rule about hair length seems completely arbitrary to me.",
       "collocations": [
         "an arbitrary decision",
         "arbitrary limits"
       ],
-      "topic": "work"
+      "topic": "study",
+      "accept": [
+        "random"
+      ]
     },
     {
       "id": "c1_v_coherent",
@@ -1081,12 +1221,15 @@
       "pos": "adjective",
       "ipa_us": "/koʊˈhɪrənt/",
       "translation_ru": "связный, стройный",
-      "example_en": "We need a coherent strategy, not five teams pulling in different directions.",
+      "example_en": "He was so shaken after the accident that he could not give a coherent account of what happened.",
       "collocations": [
         "a coherent argument",
         "a coherent plan"
       ],
-      "topic": "study"
+      "topic": "people",
+      "accept": [
+        "clear"
+      ]
     },
     {
       "id": "c1_v_concise",
@@ -1095,14 +1238,16 @@
       "pos": "adjective",
       "ipa_us": "/kənˈsaɪs/",
       "translation_ru": "сжатый (о тексте), краткий",
-      "example_en": "Keep the summary concise: three sentences at most.",
+      "example_en": "Keep your wedding toast concise: three minutes at most.",
       "collocations": [
         "clear and concise",
         "a concise summary"
       ],
-      "topic": "study",
+      "topic": "people",
       "accept": [
-        "brief"
+        "brief",
+        "succinct",
+        "short"
       ]
     },
     {
@@ -1112,12 +1257,15 @@
       "pos": "adjective",
       "ipa_us": "/ɪkˈsplɪsɪt/",
       "translation_ru": "прямо выраженный, явный (не намёком)",
-      "example_en": "Please make the assumptions explicit in the document.",
+      "example_en": "My parents were explicit: no parties while they were away.",
       "collocations": [
         "explicit instructions",
         "make something explicit"
       ],
-      "topic": "study"
+      "topic": "home",
+      "accept": [
+        "clear"
+      ]
     },
     {
       "id": "c1_v_implicit",
@@ -1126,12 +1274,17 @@
       "pos": "adjective",
       "ipa_us": "/ɪmˈplɪsɪt/",
       "translation_ru": "неявный, подразумеваемый",
-      "example_en": "There is an implicit assumption here that users read the manual.",
+      "example_en": "There is an implicit rule in our house that whoever cooks does not wash the dishes.",
       "collocations": [
         "an implicit assumption",
         "implicit in the wording"
       ],
-      "topic": "study"
+      "topic": "home",
+      "accept": [
+        "implied",
+        "unspoken",
+        "tacit"
+      ]
     },
     {
       "id": "c1_v_negligible",
@@ -1147,7 +1300,8 @@
       ],
       "topic": "study",
       "accept": [
-        "insignificant"
+        "insignificant",
+        "minimal"
       ]
     },
     {
@@ -1164,7 +1318,9 @@
       ],
       "topic": "study",
       "accept": [
-        "thorough"
+        "thorough",
+        "strict",
+        "stringent"
       ]
     },
     {
@@ -1174,14 +1330,15 @@
       "pos": "adjective",
       "ipa_us": "/ˈtɛntətɪv/",
       "translation_ru": "предварительный, пробный",
-      "example_en": "These are tentative numbers, so treat them as a rough guide.",
+      "example_en": "We have tentative plans to visit my sister in May, but nothing is booked yet.",
       "collocations": [
         "a tentative agreement",
         "tentative conclusions"
       ],
-      "topic": "work",
+      "topic": "travel",
       "accept": [
-        "preliminary"
+        "preliminary",
+        "provisional"
       ]
     },
     {
@@ -1190,13 +1347,17 @@
       "word": "underlying",
       "pos": "adjective",
       "ipa_us": "/ˌʌndɚˈlaɪɪŋ/",
-      "translation_ru": "скрытый, глубинный (о причине)",
-      "example_en": "Restarting the service just hides the underlying problem.",
+      "translation_ru": "глубинный, коренной (о причине)",
+      "example_en": "Painkillers hide the symptoms but do nothing about the underlying cause.",
       "collocations": [
         "the underlying cause",
         "an underlying assumption"
       ],
-      "topic": "tech"
+      "topic": "health",
+      "accept": [
+        "root",
+        "fundamental"
+      ]
     },
     {
       "id": "c1_v_contentious",
@@ -1205,14 +1366,15 @@
       "pos": "adjective",
       "ipa_us": "/kənˈtɛnʃəs/",
       "translation_ru": "спорный, вызывающий разногласия",
-      "example_en": "Naming conventions are a surprisingly contentious topic in our team.",
+      "example_en": "Politics is such a contentious topic that we never bring it up at family dinners.",
       "collocations": [
         "a contentious issue",
         "highly contentious"
       ],
       "topic": "people",
       "accept": [
-        "controversial"
+        "controversial",
+        "divisive"
       ]
     },
     {
@@ -1222,12 +1384,15 @@
       "pos": "adjective",
       "ipa_us": "/ʌnˈprɛsəˌdɛntɪd/",
       "translation_ru": "беспрецедентный, небывалый",
-      "example_en": "Traffic reached an unprecedented level during the sale.",
+      "example_en": "The city saw unprecedented heat this July, and the public pools stayed open until midnight.",
       "collocations": [
         "unprecedented growth",
         "on an unprecedented scale"
       ],
-      "topic": "work"
+      "topic": "nature",
+      "accept": [
+        "record"
+      ]
     },
     {
       "id": "c1_v_double_edged_sword",
@@ -1236,11 +1401,11 @@
       "pos": "phrase",
       "ipa_us": "/ə ˈdʌbəl ˌɛdʒd ˈsɔrd/",
       "translation_ru": "палка о двух концах",
-      "example_en": "Full automation is a double-edged sword: fewer mistakes, but fewer people who understand the system.",
+      "example_en": "Social media is a double-edged sword: it keeps you in touch but eats your evenings.",
       "collocations": [
         "prove to be a double-edged sword"
       ],
-      "topic": "work",
+      "topic": "people",
       "accept": [
         "double-edged sword",
         "double edged sword"
@@ -1253,11 +1418,11 @@
       "pos": "phrase",
       "ipa_us": "/ðə ˈtɪp əv ði ˈaɪsˌbɝg/",
       "translation_ru": "вершина айсберга, малая видимая часть",
-      "example_en": "The bugs users report are just the tip of the iceberg.",
+      "example_en": "The leak under the sink turned out to be just the tip of the iceberg.",
       "collocations": [
         "just the tip of the iceberg"
       ],
-      "topic": "work",
+      "topic": "home",
       "accept": [
         "tip of the iceberg"
       ]
@@ -1269,7 +1434,7 @@
       "pos": "phrase",
       "ipa_us": "/ˌkɑmən ˈgraʊnd/",
       "translation_ru": "точки соприкосновения, общая позиция",
-      "example_en": "The two teams finally found common ground on the naming rules.",
+      "example_en": "My dad and my husband finally found common ground in fishing.",
       "collocations": [
         "find common ground",
         "common ground between"
@@ -1283,11 +1448,16 @@
       "pos": "phrase",
       "ipa_us": "/ɪn ˈhaɪnˌsaɪt/",
       "translation_ru": "задним числом, оглядываясь назад",
-      "example_en": "In hindsight, we should have tested the migration on real data.",
+      "example_en": "In hindsight, we should have booked a hotel closer to the station.",
       "collocations": [
         "in hindsight it is clear"
       ],
-      "topic": "time"
+      "topic": "travel",
+      "accept": [
+        "in retrospect",
+        "looking back",
+        "with hindsight"
+      ]
     },
     {
       "id": "c1_v_at_face_value",
@@ -1296,11 +1466,11 @@
       "pos": "phrase",
       "ipa_us": "/ət ˌfeɪs ˈvælju/",
       "translation_ru": "за чистую монету, без проверки",
-      "example_en": "Do not take vendor benchmarks at face value.",
+      "example_en": "Do not take online hotel reviews at face value.",
       "collocations": [
         "take something at face value"
       ],
-      "topic": "study"
+      "topic": "travel"
     },
     {
       "id": "c1_v_across_the_board",
@@ -1309,12 +1479,12 @@
       "pos": "phrase",
       "ipa_us": "/əˈkrɔs ðə ˈbɔrd/",
       "translation_ru": "повсеместно, по всем направлениям",
-      "example_en": "Response times improved across the board after the upgrade.",
+      "example_en": "Prices at the supermarket have gone up across the board this year.",
       "collocations": [
         "improve across the board",
         "an across-the-board cut"
       ],
-      "topic": "work"
+      "topic": "money"
     },
     {
       "id": "c1_v_on_balance",
@@ -1323,11 +1493,16 @@
       "pos": "phrase",
       "ipa_us": "/ɑn ˈbæləns/",
       "translation_ru": "взвесив всё, в итоге",
-      "example_en": "On balance, staying with the current provider is the safer choice.",
+      "example_en": "On balance, renting is still cheaper for us than buying.",
       "collocations": [
         "on balance it is better"
       ],
-      "topic": "work"
+      "topic": "home",
+      "accept": [
+        "all things considered",
+        "overall",
+        "all in all"
+      ]
     },
     {
       "id": "c1_v_case_in_point",
@@ -1352,7 +1527,7 @@
       "pos": "phrase",
       "ipa_us": "/ˈfud fɚ ˈθɔt/",
       "translation_ru": "пища для размышлений",
-      "example_en": "Her talk on testing gave us plenty of food for thought.",
+      "example_en": "The documentary about fast fashion gave us plenty of food for thought.",
       "collocations": [
         "give someone food for thought",
         "plenty of food for thought"
@@ -1366,7 +1541,7 @@
       "pos": "phrase",
       "ipa_us": "/ˌdu ˈdɪlədʒəns/",
       "translation_ru": "должная проверка, тщательный анализ",
-      "example_en": "We did our due diligence before signing with the new vendor.",
+      "example_en": "Always do your due diligence before buying a used car.",
       "collocations": [
         "do your due diligence",
         "the due diligence process"
@@ -1380,11 +1555,12 @@
       "pos": "phrase",
       "ipa_us": "/ə ˈstɪkɪŋ ˌpɔɪnt/",
       "translation_ru": "камень преткновения",
-      "example_en": "Licensing turned out to be a sticking point in the negotiation.",
+      "example_en": "Where to spend Christmas is always a sticking point in our family.",
       "collocations": [
-        "the main sticking point"
+        "remain a sticking point",
+        "prove to be a sticking point"
       ],
-      "topic": "work",
+      "topic": "people",
       "accept": [
         "sticking point"
       ]
@@ -1396,12 +1572,16 @@
       "pos": "phrasal verb",
       "ipa_us": "/ˈhɪndʒ ɑn/",
       "translation_ru": "зависеть от, определяться",
-      "example_en": "The whole schedule hinges on when the hardware arrives.",
+      "example_en": "Our whole trip hinges on whether the new passports arrive in time.",
       "collocations": [
         "hinge on a decision",
         "everything hinges on"
       ],
-      "topic": "time"
+      "topic": "travel",
+      "accept": [
+        "depend on",
+        "rest on"
+      ]
     },
     {
       "id": "c1_v_water_down",
@@ -1415,7 +1595,12 @@
         "water down a proposal",
         "a watered-down version"
       ],
-      "topic": "work"
+      "topic": "work",
+      "accept": [
+        "dilute",
+        "tone down",
+        "soften"
+      ]
     },
     {
       "id": "c1_v_flesh_out",
@@ -1429,7 +1614,11 @@
         "flesh out an idea",
         "flesh out the details"
       ],
-      "topic": "work"
+      "topic": "work",
+      "accept": [
+        "develop",
+        "expand on"
+      ]
     },
     {
       "id": "c1_v_iron_out",
@@ -1438,12 +1627,18 @@
       "pos": "phrasal verb",
       "ipa_us": "/ˌaɪɚn ˈaʊt/",
       "translation_ru": "устранять, улаживать",
-      "example_en": "We still have a few issues to iron out before the demo.",
+      "example_en": "We still have a few details to iron out before the wedding.",
       "collocations": [
         "iron out the details",
         "iron out differences"
       ],
-      "topic": "work"
+      "topic": "people",
+      "accept": [
+        "resolve",
+        "sort out",
+        "fix",
+        "work out"
+      ]
     },
     {
       "id": "c1_v_factor_in",
@@ -1452,12 +1647,17 @@
       "pos": "phrasal verb",
       "ipa_us": "/ˌfæktɚ ˈɪn/",
       "translation_ru": "учитывать, закладывать",
-      "example_en": "Did you factor in the time it takes to review the code?",
+      "example_en": "Did you factor in the cost of parking when you planned the trip?",
       "collocations": [
         "factor in the cost",
         "factor in delays"
       ],
-      "topic": "time"
+      "topic": "travel",
+      "accept": [
+        "account for",
+        "consider",
+        "take into account"
+      ]
     },
     {
       "id": "c1_v_weigh_in",
@@ -1466,12 +1666,15 @@
       "pos": "phrasal verb",
       "ipa_us": "/ˌweɪ ˈɪn/",
       "translation_ru": "высказаться, вмешаться в обсуждение",
-      "example_en": "Two architects weighed in on the thread and the argument stopped.",
+      "example_en": "Everyone at the table weighed in on where we should go for the holidays.",
       "collocations": [
         "weigh in on a debate",
         "weigh in with an opinion"
       ],
-      "topic": "people"
+      "topic": "people",
+      "accept": [
+        "chime in"
+      ]
     },
     {
       "id": "c1_v_phase_out",
@@ -1485,7 +1688,10 @@
         "phase out a product",
         "gradually phase out"
       ],
-      "topic": "tech"
+      "topic": "tech",
+      "accept": [
+        "discontinue"
+      ]
     },
     {
       "id": "c1_v_scale_back",
@@ -1494,12 +1700,15 @@
       "pos": "phrasal verb",
       "ipa_us": "/ˌskeɪl ˈbæk/",
       "translation_ru": "сокращать, урезать",
-      "example_en": "We scaled back the release to a single region.",
+      "example_en": "We scaled back the wedding to thirty close friends and family.",
       "collocations": [
         "scale back plans",
         "scale back spending"
       ],
-      "topic": "work"
+      "topic": "people",
+      "accept": [
+        "cut back"
+      ]
     },
     {
       "id": "c1_v_admittedly",
@@ -1508,12 +1717,15 @@
       "pos": "adverb",
       "ipa_us": "/ədˈmɪtədli/",
       "translation_ru": "надо признать, следует признать",
-      "example_en": "Admittedly, the first version was slower than we had promised.",
+      "example_en": "Admittedly, the hotel was a bit far from the beach, but the view was worth it.",
       "collocations": [
         "admittedly small",
         "admittedly difficult"
       ],
-      "topic": "study"
+      "topic": "travel",
+      "accept": [
+        "granted"
+      ]
     },
     {
       "id": "c1_v_predominantly",
@@ -1522,15 +1734,17 @@
       "pos": "adverb",
       "ipa_us": "/prɪˈdɑmənəntli/",
       "translation_ru": "преимущественно, в основном",
-      "example_en": "Our users are predominantly on mobile, so we test there first.",
+      "example_en": "The neighborhood is predominantly residential, so it is quiet at night.",
       "collocations": [
         "predominantly used for",
         "predominantly remote"
       ],
-      "topic": "work",
+      "topic": "home",
       "accept": [
         "mainly",
-        "mostly"
+        "mostly",
+        "largely",
+        "primarily"
       ]
     },
     {
@@ -1545,7 +1759,10 @@
         "thereby reducing",
         "thereby allowing"
       ],
-      "topic": "tech"
+      "topic": "tech",
+      "accept": [
+        "thus"
+      ]
     },
     {
       "id": "c1_v_accordingly",
@@ -1554,12 +1771,12 @@
       "pos": "adverb",
       "ipa_us": "/əˈkɔrdɪŋli/",
       "translation_ru": "соответственно, сообразно",
-      "example_en": "The requirements changed, and we adjusted the estimate accordingly.",
+      "example_en": "The forecast promised rain all week, and we packed accordingly.",
       "collocations": [
         "act accordingly",
         "adjust accordingly"
       ],
-      "topic": "work"
+      "topic": "travel"
     },
     {
       "id": "c1_v_inevitably",
@@ -1568,12 +1785,15 @@
       "pos": "adverb",
       "ipa_us": "/ɪnˈɛvətəbli/",
       "translation_ru": "неизбежно",
-      "example_en": "Rushing the release inevitably creates work for the support team.",
+      "example_en": "Packing at the last minute inevitably means forgetting something important.",
       "collocations": [
         "inevitably lead to",
         "almost inevitably"
       ],
-      "topic": "time"
+      "topic": "travel",
+      "accept": [
+        "unavoidably"
+      ]
     },
     {
       "id": "c1_v_presumably",
@@ -1582,12 +1802,12 @@
       "pos": "adverb",
       "ipa_us": "/prɪˈzuməbli/",
       "translation_ru": "по всей видимости (предполагаю)",
-      "example_en": "The service is down, presumably because of this morning's deploy.",
+      "example_en": "The neighbors' car has been gone for a week, presumably because they are on vacation.",
       "collocations": [
         "presumably because",
         "presumably not"
       ],
-      "topic": "study",
+      "topic": "home",
       "accept": [
         "probably"
       ]
@@ -1599,11 +1819,16 @@
       "pos": "adverb",
       "ipa_us": "/kənˈvɝsli/",
       "translation_ru": "напротив, наоборот",
-      "example_en": "Remote work suits some people perfectly; conversely, others find it isolating.",
+      "example_en": "Some kids love summer camp; conversely, others find it lonely.",
       "collocations": [
         "conversely, if"
       ],
-      "topic": "study"
+      "topic": "people",
+      "accept": [
+        "on the other hand",
+        "by contrast",
+        "in contrast"
+      ]
     },
     {
       "id": "c1_v_much_as",
@@ -1612,12 +1837,12 @@
       "pos": "conjunction",
       "ipa_us": "/ˈmʌtʃ əz/",
       "translation_ru": "как бы ни, при всём (желании, уважении)",
-      "example_en": "Much as I respect his experience, I think the estimate is too optimistic.",
+      "example_en": "Much as I love my parents, I could never live with them again.",
       "collocations": [
         "much as I would like to",
         "much as we admire"
       ],
-      "topic": "study"
+      "topic": "people"
     },
     {
       "id": "c1_v_provided_that",
@@ -1626,12 +1851,12 @@
       "pos": "conjunction",
       "ipa_us": "/prəˈvaɪdɪd ðət/",
       "translation_ru": "при условии что",
-      "example_en": "We can ship on Friday, provided that testing finishes on Wednesday.",
+      "example_en": "You can borrow the car, provided that you fill up the tank.",
       "collocations": [
         "provided that you agree",
         "provided that nothing changes"
       ],
-      "topic": "study",
+      "topic": "travel",
       "accept": [
         "providing that",
         "as long as",
@@ -1650,7 +1875,11 @@
         "a system whereby",
         "an arrangement whereby"
       ],
-      "topic": "work"
+      "topic": "work",
+      "accept": [
+        "in which",
+        "under which"
+      ]
     },
     {
       "id": "c1_v_in_light_of",
@@ -1659,14 +1888,16 @@
       "pos": "preposition",
       "ipa_us": "/ɪn ˈlaɪt əv/",
       "translation_ru": "в свете (новых данных)",
-      "example_en": "In light of the new data, we postponed the launch by a month.",
+      "example_en": "In light of the storm warning, we postponed the hike.",
       "collocations": [
         "in light of recent events",
         "in light of the findings"
       ],
-      "topic": "work",
+      "topic": "nature",
       "accept": [
-        "given"
+        "given",
+        "in view of",
+        "considering"
       ]
     },
     {
@@ -1676,7 +1907,7 @@
       "pos": "verb",
       "ipa_us": "/ˈhægəl/",
       "translation_ru": "торговаться, препираться о цене",
-      "example_en": "He spent an hour haggling with the vendor over a discount of two percent.",
+      "example_en": "He spent an hour haggling with a street vendor over the price of a rug.",
       "collocations": [
         "haggle over the price",
         "haggle with a seller"
@@ -1698,7 +1929,11 @@
         "a sudden downpour",
         "a heavy downpour"
       ],
-      "topic": "nature"
+      "topic": "nature",
+      "accept": [
+        "cloudburst",
+        "deluge"
+      ]
     },
     {
       "id": "c2_v_empirical",
@@ -1721,12 +1956,12 @@
       "pos": "noun",
       "ipa_us": "/ˈɪnˌsaɪt/",
       "translation_ru": "глубокое понимание",
-      "example_en": "The interviews gave us useful insight into how people use the app.",
+      "example_en": "Living with a local family gave me real insight into everyday life in Japan.",
       "collocations": [
         "valuable insight",
         "gain insight into something"
       ],
-      "topic": "study"
+      "topic": "travel"
     },
     {
       "id": "b2_v_incentive",
@@ -1740,7 +1975,10 @@
         "a financial incentive",
         "provide an incentive"
       ],
-      "topic": "money"
+      "topic": "money",
+      "accept": [
+        "motivation"
+      ]
     },
     {
       "id": "b2_v_asset",
@@ -1776,13 +2014,13 @@
       "word": "milestone",
       "pos": "noun",
       "ipa_us": "/ˈmaɪlˌstoʊn/",
-      "translation_ru": "веха, контрольная точка",
-      "example_en": "The first public demo is an important milestone for us.",
+      "translation_ru": "веха, важный этап",
+      "example_en": "Taking her first steps was a huge milestone for our daughter.",
       "collocations": [
         "reach a milestone",
         "a major milestone"
       ],
-      "topic": "work"
+      "topic": "people"
     },
     {
       "id": "b2_v_turnover",
@@ -1819,14 +2057,16 @@
       "pos": "verb",
       "ipa_us": "/ænˈtɪsəˌpeɪt/",
       "translation_ru": "предвидеть",
-      "example_en": "We did not anticipate such a high load on the first day.",
+      "example_en": "We did not anticipate so many guests at the party.",
       "collocations": [
         "anticipate a problem",
         "anticipate demand"
       ],
-      "topic": "work",
+      "topic": "people",
       "accept": [
-        "foresee"
+        "foresee",
+        "expect",
+        "predict"
       ]
     },
     {
@@ -1856,7 +2096,11 @@
         "clarify a point",
         "clarify the situation"
       ],
-      "topic": "study"
+      "topic": "study",
+      "accept": [
+        "explain",
+        "specify"
+      ]
     },
     {
       "id": "b2_v_prioritize",
@@ -1879,12 +2123,18 @@
       "pos": "adjective",
       "ipa_us": "/ˈtidiəs/",
       "translation_ru": "нудный (о работе), утомительный",
-      "example_en": "Filling in these forms by hand is tedious work.",
+      "example_en": "Peeling potatoes for forty people is tedious work.",
       "collocations": [
         "a tedious task",
         "tedious work"
       ],
-      "topic": "feelings"
+      "topic": "food",
+      "accept": [
+        "boring",
+        "dull",
+        "tiresome",
+        "monotonous"
+      ]
     },
     {
       "id": "b2_v_flawed",
@@ -1898,7 +2148,10 @@
         "a flawed argument",
         "deeply flawed"
       ],
-      "topic": "study"
+      "topic": "study",
+      "accept": [
+        "faulty"
+      ]
     },
     {
       "id": "b2_v_get_the_hang_of",
@@ -1907,12 +2160,12 @@
       "pos": "phrase",
       "ipa_us": "/ˌgɛt ðə ˈhæŋ əv/",
       "translation_ru": "освоиться, набить руку",
-      "example_en": "After a week or two you get the hang of the new editor.",
+      "example_en": "After a few days you get the hang of driving on the right.",
       "collocations": [
         "get the hang of it",
         "get the hang of a tool"
       ],
-      "topic": "study"
+      "topic": "travel"
     },
     {
       "id": "b2_v_touch_base",
@@ -1926,7 +2179,11 @@
         "touch base with someone",
         "touch base later"
       ],
-      "topic": "work"
+      "topic": "work",
+      "accept": [
+        "catch up",
+        "check in"
+      ]
     },
     {
       "id": "b2_v_cut_corners",
@@ -1935,12 +2192,12 @@
       "pos": "phrase",
       "ipa_us": "/ˌkʌt ˈkɔrnɚz/",
       "translation_ru": "халтурить, экономить на качестве",
-      "example_en": "If we cut corners now, we will pay for it later.",
+      "example_en": "If you cut corners on the roof now, you will pay for it next winter.",
       "collocations": [
         "cut corners on quality",
         "never cut corners"
       ],
-      "topic": "work"
+      "topic": "home"
     },
     {
       "id": "b2_v_at_stake",
@@ -1954,7 +2211,10 @@
         "a lot at stake",
         "a reputation at stake"
       ],
-      "topic": "work"
+      "topic": "work",
+      "accept": [
+        "on the line"
+      ]
     },
     {
       "id": "b2_v_from_scratch",
@@ -1963,12 +2223,12 @@
       "pos": "phrase",
       "ipa_us": "/frəm ˈskrætʃ/",
       "translation_ru": "с нуля",
-      "example_en": "Instead of patching it, they built the service from scratch.",
+      "example_en": "She makes the pasta from scratch every Sunday.",
       "collocations": [
         "start from scratch",
         "build from scratch"
       ],
-      "topic": "work"
+      "topic": "food"
     },
     {
       "id": "b2_v_narrow_down",
@@ -1977,12 +2237,12 @@
       "pos": "phrasal verb",
       "ipa_us": "/ˌnɛroʊ ˈdaʊn/",
       "translation_ru": "сузить круг, отобрать",
-      "example_en": "We need to narrow down the list of possible causes.",
+      "example_en": "We narrowed down the list of apartments to three.",
       "collocations": [
         "narrow down a list",
         "narrow down the options"
       ],
-      "topic": "tech"
+      "topic": "home"
     },
     {
       "id": "b2_v_rule_out",
@@ -1991,12 +2251,16 @@
       "pos": "phrasal verb",
       "ipa_us": "/ˌrul ˈaʊt/",
       "translation_ru": "исключить (вариант)",
-      "example_en": "We can rule out a network problem: the logs are clean.",
+      "example_en": "The X-ray ruled out a broken bone, so it is probably just a bad bruise.",
       "collocations": [
         "rule out a possibility",
         "cannot be ruled out"
       ],
-      "topic": "work"
+      "topic": "health",
+      "accept": [
+        "exclude",
+        "eliminate"
+      ]
     },
     {
       "id": "b2_v_revenue",
@@ -2010,7 +2274,10 @@
         "generate revenue",
         "annual revenue"
       ],
-      "topic": "money"
+      "topic": "money",
+      "accept": [
+        "income"
+      ]
     },
     {
       "id": "b2_v_seamless",
@@ -2024,7 +2291,10 @@
         "a seamless experience",
         "seamless integration"
       ],
-      "topic": "tech"
+      "topic": "tech",
+      "accept": [
+        "smooth"
+      ]
     },
     {
       "id": "b2_v_outage",
@@ -2094,7 +2364,11 @@
         "deploy an update",
         "deploy to production"
       ],
-      "topic": "tech"
+      "topic": "tech",
+      "accept": [
+        "ship",
+        "release"
+      ]
     },
     {
       "id": "b2_v_legacy",
@@ -2102,13 +2376,17 @@
       "word": "legacy",
       "pos": "noun",
       "ipa_us": "/ˈlɛgəsi/",
-      "translation_ru": "наследие (в ИТ: унаследованный код)",
-      "example_en": "Half of our time goes to supporting legacy code.",
+      "translation_ru": "наследие (оставшееся от прошлого), пережиток",
+      "example_en": "The old billing system is a legacy of the company's first years.",
       "collocations": [
-        "legacy code",
-        "a legacy system"
+        "a legacy of the past",
+        "leave a legacy"
       ],
-      "topic": "tech"
+      "topic": "tech",
+      "accept": [
+        "relic",
+        "remnant"
+      ]
     },
     {
       "id": "b2_v_up_to_speed",
@@ -2123,6 +2401,383 @@
         "bring someone up to speed"
       ],
       "topic": "work"
+    },
+    {
+      "id": "c1_v_appliance",
+      "level": "C1",
+      "word": "appliance",
+      "pos": "noun",
+      "ipa_us": "/əˈplaɪəns/",
+      "translation_ru": "бытовой прибор, техника для дома",
+      "example_en": "The apartment comes with all the major kitchen appliances: a fridge, a stove and a dishwasher.",
+      "collocations": [
+        "household appliances",
+        "kitchen appliances"
+      ],
+      "topic": "home"
+    },
+    {
+      "id": "c1_v_tenant",
+      "level": "C1",
+      "word": "tenant",
+      "pos": "noun",
+      "ipa_us": "/ˈtɛnənt/",
+      "translation_ru": "жилец, арендатор (жилья)",
+      "example_en": "The previous tenant left the apartment in a terrible state.",
+      "collocations": [
+        "a new tenant",
+        "evict a tenant"
+      ],
+      "topic": "home",
+      "accept": [
+        "renter"
+      ]
+    },
+    {
+      "id": "c1_v_renovation",
+      "level": "C1",
+      "word": "renovation",
+      "pos": "noun",
+      "ipa_us": "/ˌrɛnəˈveɪʃən/",
+      "translation_ru": "ремонт (перестройка, обновление жилья)",
+      "example_en": "The renovation of our kitchen took three months and cost twice what we had planned.",
+      "collocations": [
+        "under renovation",
+        "a major renovation"
+      ],
+      "topic": "home",
+      "accept": [
+        "remodel",
+        "remodeling"
+      ]
+    },
+    {
+      "id": "c1_v_bland",
+      "level": "C1",
+      "word": "bland",
+      "pos": "adjective",
+      "ipa_us": "/blænd/",
+      "translation_ru": "пресный, безвкусный",
+      "example_en": "The hospital soup was so bland that I asked for extra salt.",
+      "collocations": [
+        "bland food",
+        "a bland diet"
+      ],
+      "topic": "food",
+      "accept": [
+        "tasteless",
+        "flavorless"
+      ]
+    },
+    {
+      "id": "c1_v_indulge",
+      "level": "C1",
+      "word": "indulge",
+      "pos": "verb",
+      "ipa_us": "/ɪnˈdʌldʒ/",
+      "translation_ru": "побаловать себя, позволить себе (удовольствие)",
+      "example_en": "Once a month we indulge in a long, lazy breakfast at the French café.",
+      "collocations": [
+        "indulge in something",
+        "indulge yourself"
+      ],
+      "topic": "food"
+    },
+    {
+      "id": "c1_v_itinerary",
+      "level": "C1",
+      "word": "itinerary",
+      "pos": "noun",
+      "ipa_us": "/aɪˈtɪnəˌrɛri/",
+      "translation_ru": "маршрут, план поездки",
+      "example_en": "Our itinerary includes three days in Rome and two in Florence.",
+      "collocations": [
+        "a detailed itinerary",
+        "plan an itinerary"
+      ],
+      "topic": "travel",
+      "accept": [
+        "route"
+      ]
+    },
+    {
+      "id": "c1_v_detour",
+      "level": "C1",
+      "word": "detour",
+      "pos": "noun",
+      "ipa_us": "/ˈdiˌtʊr/",
+      "translation_ru": "объезд, крюк",
+      "example_en": "The bridge was closed, so we had to take a long detour through the hills.",
+      "collocations": [
+        "take a detour",
+        "a short detour"
+      ],
+      "topic": "travel",
+      "accept": [
+        "diversion"
+      ]
+    },
+    {
+      "id": "c1_v_hospitality",
+      "level": "C1",
+      "word": "hospitality",
+      "pos": "noun",
+      "ipa_us": "/ˌhɑspəˈtæləti/",
+      "translation_ru": "гостеприимство",
+      "example_en": "We were touched by the hospitality of the family we stayed with in the mountains.",
+      "collocations": [
+        "warm hospitality",
+        "thank someone for their hospitality"
+      ],
+      "topic": "travel"
+    },
+    {
+      "id": "c1_v_commute",
+      "level": "C1",
+      "word": "commute",
+      "pos": "noun",
+      "ipa_us": "/kəˈmjut/",
+      "translation_ru": "дорога на работу (и обратно)",
+      "example_en": "My daily commute takes about forty minutes by train.",
+      "collocations": [
+        "a long commute",
+        "the daily commute"
+      ],
+      "topic": "travel"
+    },
+    {
+      "id": "c1_v_congestion",
+      "level": "C1",
+      "word": "congestion",
+      "pos": "noun",
+      "ipa_us": "/kənˈdʒɛstʃən/",
+      "translation_ru": "пробки, заторы (на дорогах)",
+      "example_en": "The city charges drivers a fee to enter downtown in order to reduce congestion.",
+      "collocations": [
+        "heavy congestion",
+        "ease congestion"
+      ],
+      "topic": "travel",
+      "accept": [
+        "traffic",
+        "traffic jams"
+      ]
+    },
+    {
+      "id": "c1_v_vibrant",
+      "level": "C1",
+      "word": "vibrant",
+      "pos": "adjective",
+      "ipa_us": "/ˈvaɪbrənt/",
+      "translation_ru": "яркий, полный жизни",
+      "example_en": "The old port has become a vibrant neighborhood full of cafés and galleries.",
+      "collocations": [
+        "a vibrant city",
+        "vibrant colors"
+      ],
+      "topic": "travel",
+      "accept": [
+        "lively"
+      ]
+    },
+    {
+      "id": "c1_v_heritage",
+      "level": "C1",
+      "word": "heritage",
+      "pos": "noun",
+      "ipa_us": "/ˈhɛrətɪdʒ/",
+      "translation_ru": "наследие (культурное, историческое)",
+      "example_en": "The old town is part of the country's cultural heritage and is protected by law.",
+      "collocations": [
+        "cultural heritage",
+        "a heritage site"
+      ],
+      "topic": "travel"
+    },
+    {
+      "id": "c1_v_renowned",
+      "level": "C1",
+      "word": "renowned",
+      "pos": "adjective",
+      "ipa_us": "/rɪˈnaʊnd/",
+      "translation_ru": "прославленный, знаменитый",
+      "example_en": "The town is renowned for its cheese and its Sunday market.",
+      "collocations": [
+        "world-renowned",
+        "renowned for something"
+      ],
+      "topic": "travel",
+      "accept": [
+        "famous",
+        "well-known",
+        "celebrated"
+      ]
+    },
+    {
+      "id": "c1_v_chronic",
+      "level": "C1",
+      "word": "chronic",
+      "pos": "adjective",
+      "ipa_us": "/ˈkrɑnɪk/",
+      "translation_ru": "хронический",
+      "example_en": "My father has suffered from chronic back pain for years.",
+      "collocations": [
+        "chronic pain",
+        "a chronic illness"
+      ],
+      "topic": "health"
+    },
+    {
+      "id": "c1_v_fatigue",
+      "level": "C1",
+      "word": "fatigue",
+      "pos": "noun",
+      "ipa_us": "/fəˈtig/",
+      "translation_ru": "сильная усталость, утомление",
+      "example_en": "Weeks of broken sleep with a newborn left her with constant fatigue.",
+      "collocations": [
+        "extreme fatigue",
+        "suffer from fatigue"
+      ],
+      "topic": "health",
+      "accept": [
+        "exhaustion",
+        "tiredness"
+      ]
+    },
+    {
+      "id": "c1_v_remedy",
+      "level": "C1",
+      "word": "remedy",
+      "pos": "noun",
+      "ipa_us": "/ˈrɛmədi/",
+      "translation_ru": "средство (от болезни)",
+      "example_en": "My grandmother swears by honey and lemon as a remedy for a sore throat.",
+      "collocations": [
+        "a home remedy",
+        "a remedy for colds"
+      ],
+      "topic": "health",
+      "accept": [
+        "cure"
+      ]
+    },
+    {
+      "id": "c1_v_sprain",
+      "level": "C1",
+      "word": "sprain",
+      "pos": "verb",
+      "ipa_us": "/spreɪn/",
+      "translation_ru": "растянуть (связку, сустав)",
+      "example_en": "Maya sprained her ankle on the last day of the hiking trip.",
+      "collocations": [
+        "sprain an ankle",
+        "a sprained wrist"
+      ],
+      "topic": "health",
+      "accept": [
+        "twist"
+      ]
+    },
+    {
+      "id": "c1_v_well_being",
+      "level": "C1",
+      "word": "well-being",
+      "pos": "noun",
+      "ipa_us": "/ˌwɛlˈbiɪŋ/",
+      "translation_ru": "благополучие, хорошее самочувствие",
+      "example_en": "Regular walks in the park do wonders for your mental well-being.",
+      "collocations": [
+        "physical and mental well-being",
+        "a sense of well-being"
+      ],
+      "topic": "health",
+      "accept": [
+        "wellbeing",
+        "wellness"
+      ]
+    },
+    {
+      "id": "c1_v_upbringing",
+      "level": "C1",
+      "word": "upbringing",
+      "pos": "noun",
+      "ipa_us": "/ˈʌpˌbrɪŋɪŋ/",
+      "translation_ru": "воспитание (в детстве)",
+      "example_en": "She had a strict upbringing in a small village in the mountains.",
+      "collocations": [
+        "a strict upbringing",
+        "a religious upbringing"
+      ],
+      "topic": "people"
+    },
+    {
+      "id": "c1_v_acquaintance",
+      "level": "C1",
+      "word": "acquaintance",
+      "pos": "noun",
+      "ipa_us": "/əˈkweɪntəns/",
+      "translation_ru": "знакомый (не близкий друг)",
+      "example_en": "Tom is not really a friend, just an acquaintance from the gym.",
+      "collocations": [
+        "a casual acquaintance",
+        "an old acquaintance"
+      ],
+      "topic": "people"
+    },
+    {
+      "id": "c1_v_compassion",
+      "level": "C1",
+      "word": "compassion",
+      "pos": "noun",
+      "ipa_us": "/kəmˈpæʃən/",
+      "translation_ru": "сострадание",
+      "example_en": "The nurses treated my grandmother with real kindness and compassion.",
+      "collocations": [
+        "show compassion",
+        "compassion for others"
+      ],
+      "topic": "feelings",
+      "accept": [
+        "sympathy",
+        "empathy"
+      ]
+    },
+    {
+      "id": "c1_v_terrain",
+      "level": "C1",
+      "word": "terrain",
+      "pos": "noun",
+      "ipa_us": "/təˈreɪn/",
+      "translation_ru": "местность, рельеф",
+      "example_en": "The terrain gets steep and rocky after the second bridge, so wear proper boots.",
+      "collocations": [
+        "rough terrain",
+        "mountainous terrain"
+      ],
+      "topic": "nature",
+      "accept": [
+        "ground"
+      ]
+    },
+    {
+      "id": "c1_v_overcast",
+      "level": "C1",
+      "word": "overcast",
+      "pos": "adjective",
+      "ipa_us": "/ˈoʊvɚˌkæst/",
+      "translation_ru": "пасмурный, затянутый облаками",
+      "example_en": "It was overcast all morning, but the sun came out after lunch.",
+      "collocations": [
+        "an overcast sky",
+        "cold and overcast"
+      ],
+      "topic": "nature",
+      "accept": [
+        "cloudy",
+        "gray",
+        "grey"
+      ]
     }
   ]
 }

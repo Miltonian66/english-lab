@@ -9,20 +9,22 @@
       "title_en": "Comparative structures: Modifying comparatives",
       "source_slug": "comparative-structures-modifying-comparatives",
       "title_ru": "Усиление и смягчение сравнительной степени",
-      "summary_ru": "Сравнительную степень можно усиливать и смягчать специальными словами. Для сильного отличия используются much, far, a lot, considerably: much faster, far more expensive. Для маленького отличия — a bit, a little, slightly: slightly cheaper. Слово even показывает, что разница добавляется к уже известному признаку: even harder. Со сравнением as ... as усилители другие: nowhere near as big as, not nearly as good as, almost as fast as. Важно помнить, что very со сравнительной степенью не употребляется вообще: very better невозможно. В структуре с процентами и числами модификатор стоит прямо перед сравнительной формой: twenty percent faster, two hours longer.",
+      "summary_ru": "Сравнительную степень можно усиливать и смягчать специальными словами. Для сильного отличия используются much, far, a lot, considerably: much faster, far more expensive. Для маленького отличия — a bit, a little, slightly: slightly cheaper. Слово even показывает, что разница добавляется к уже известному признаку: even harder. Со сравнением as ... as усилители другие: nowhere near as big as, not nearly as good as, almost as fast as. Важно помнить, что very со сравнительной степенью не употребляется вообще: very better невозможно. В структуре с процентами и числами модификатор стоит прямо перед сравнительной формой: twenty percent faster, two hours longer. Кратность передают twice / three times + as … as (twice as big as) или three times + сравнительная форма (three times higher); русское «в два раза больше» дословно не переводится: twice bigger — ошибка. Двойное сравнение the + сравнительная форма …, the + сравнительная форма показывает, что одно меняется вместе с другим: The bigger we get, the more careful we need to be.",
       "forms": [
         "much / far / a lot / considerably + comparative",
         "a bit / a little / slightly + comparative",
         "even + comparative",
         "nowhere near / not nearly + as + adjective + as",
-        "number or percentage + comparative (20 percent faster)"
+        "number or percentage + comparative (20 percent faster)",
+        "twice / three times + as + adjective + as; three times + comparative",
+        "the + comparative …, the + comparative …"
       ],
       "examples": [
-        "This server is much faster than the old one.",
-        "The new build is only slightly smaller than the previous one.",
+        "The new server is much faster than the old one.",
+        "Tickets are slightly cheaper if you book online.",
         "Our release is nowhere near as risky as last year's.",
-        "The bug is even harder to reproduce now.",
-        "Deployment took far longer than we expected."
+        "Winters here are far colder than in Texas.",
+        "The migration took twice as long as we expected."
       ],
       "ru_interference": "Русское намного лучше переводят через very: неверно 'It is very better', верно 'It is much better'. Со сравнительной степенью работают much, far, a lot, но не very.",
       "prerequisites": [
@@ -48,7 +50,7 @@
         {
           "id": "b2_comparative_structures_modifying_comparatives_02",
           "kind": "choice",
-          "prompt": "This version is only ___ better than the last one.",
+          "prompt": "This version of the app is only ___ better than the last one.",
           "options": [
             "a lot of",
             "much more",
@@ -187,6 +189,57 @@
           ],
           "explanation_ru": "Число или процент ставится прямо перед сравнительной формой, как усилитель: 20 percent more expensive, two hours longer. Expensive — длинное прилагательное, поэтому more expensive.",
           "difficulty": 1
+        },
+        {
+          "id": "b2_comparative_structures_modifying_comparatives_13",
+          "kind": "choice",
+          "prompt": "Our new office is ___ the old one, so the whole team finally fits in one room.",
+          "options": [
+            "twice as big as",
+            "twice bigger as",
+            "two times as bigger than",
+            "twice as big than"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "«В два раза больше» — twice (three times и т. д.) + as + обычная форма прилагательного + as: twice as big as. Внутри as … as не бывает ни сравнительной формы, ни than, а twice bigger — калька с русского «в два раза больше».",
+          "difficulty": 2,
+          "diagnostic": true
+        },
+        {
+          "id": "b2_comparative_structures_modifying_comparatives_14",
+          "kind": "transform",
+          "prompt": "Переведи на английский: «Этот ноутбук стоит в три раза больше, чем мой старый».",
+          "answer": "This laptop costs three times as much as my old one.",
+          "accept": [
+            "This laptop costs three times more than my old one.",
+            "This laptop is three times as expensive as my old one.",
+            "This laptop is three times more expensive than my old one.",
+            "This laptop costs three times as much as my old laptop.",
+            "This laptop costs three times more than my old laptop."
+          ],
+          "explanation_ru": "Кратность ставится перед сравнением: three times as much as (или three times more than). Русское «в три раза» не даёт предлога in, а после as … as нужен второй as, а не than. Повтор laptop заменяет one: my old one.",
+          "difficulty": 3
+        },
+        {
+          "id": "b2_comparative_structures_modifying_comparatives_15",
+          "kind": "cloze",
+          "prompt": "Our team has grown fast. We now have ___ (twice / many) developers as we had last year, and our cloud bill is ___ (three times / high) than it was in January. Our finance director keeps saying that ___ (the / big) we get, ___ (the / careful) we need to be with money.",
+          "gaps": [
+            [
+              "twice as many"
+            ],
+            [
+              "three times higher"
+            ],
+            [
+              "the bigger"
+            ],
+            [
+              "the more careful"
+            ]
+          ],
+          "explanation_ru": "Twice / three times ставятся перед всем сравнением: twice as many … as, three times higher than. Двойное сравнение the bigger …, the more careful показывает, что одно растёт вместе с другим; careful — длинное прилагательное, поэтому the more careful.",
+          "difficulty": 3
         }
       ]
     },
@@ -209,9 +262,9 @@
       "examples": [
         "We had a two-hour meeting about the new release.",
         "She is a well-known expert in machine learning.",
-        "Writing the documentation is very time-consuming.",
+        "Cooking for twelve people is very time-consuming.",
         "It was a last-minute decision, but it worked.",
-        "He works for a fast-growing startup in Berlin."
+        "The water in the lake was ice-cold."
       ],
       "ru_interference": "Русское двухчасовая встреча даёт множественное число: неверно 'a two-hours meeting', верно 'a two-hour meeting'. Внутри составного прилагательного существительное всегда в единственном числе и через дефис.",
       "prerequisites": [
@@ -251,21 +304,21 @@
         {
           "id": "b2_compound_adjectives_in_english_03",
           "kind": "choice",
-          "prompt": "She runs a ___ bakery chain with shops in six cities.",
+          "prompt": "Priya works for a ___ software company that opened three new offices this year.",
           "options": [
             "fast-growing",
             "fast-grown",
-            "fast-grew",
-            "fast-grow"
+            "fastly-growing",
+            "growing-fast"
           ],
           "correct_index": 0,
-          "explanation_ru": "Активное значение «растущий» передаёт форма на -ing: fast-growing; fast-grown значит «выращенный», а grew и grow — не причастия и в составное прилагательное не входят.",
+          "explanation_ru": "Активное значение «быстро растущая» даёт модель наречие + форма на -ing: fast-growing. Fast-grown значило бы «быстро выращенная» (пассив), fastly не существует — fast уже наречие, а growing-fast ставит части в русском порядке.",
           "difficulty": 1
         },
         {
           "id": "b2_compound_adjectives_in_english_04",
           "kind": "choice",
-          "prompt": "It was a ___ decision, but everyone supported it.",
+          "prompt": "The client asked for a ___ change to the contract, but the team handled it calmly.",
           "options": [
             "last minute's",
             "last-minutes",
@@ -290,7 +343,7 @@
         {
           "id": "b2_compound_adjectives_in_english_06",
           "kind": "gap",
-          "prompt": "This is a ___ (well / know) framework among web developers.",
+          "prompt": "Our team chose a ___ (well / know) framework so that new hires could get up to speed quickly.",
           "answer": "well-known",
           "accept": [],
           "explanation_ru": "Наречие well плюс третья форма глагола known даёт well-known; перед существительным дефис обязателен.",
@@ -371,6 +424,15 @@
           ],
           "explanation_ru": "Self-employed — «работает на себя»: self- + причастие прошедшего времени. С since нужен present perfect (has been), потому что состояние длится до сих пор.",
           "difficulty": 3
+        },
+        {
+          "id": "b2_compound_adjectives_in_english_12",
+          "kind": "order",
+          "prompt": "booked / a / trip / three-day / we / for the whole family / .",
+          "answer": "We booked a three-day trip for the whole family.",
+          "accept": [],
+          "explanation_ru": "Составное прилагательное three-day стоит между артиклем и существительным, как обычное прилагательное, и day в нём остаётся в единственном числе.",
+          "difficulty": 2
         }
       ]
     },
@@ -382,20 +444,22 @@
       "title_en": "Inversion with negative adverbials: Adding emphasis",
       "source_slug": "inversion-negative-adverbials",
       "title_ru": "Инверсия после отрицательных наречий",
-      "summary_ru": "Если предложение начинается с отрицательного или ограничительного наречия, порядок слов меняется на вопросительный. После never, rarely, seldom, little, at no time, under no circumstances идёт вспомогательный глагол, затем подлежащее, затем смысловой глагол. Если своего вспомогательного глагола нет, появляется do, does или did: Rarely do we see this. Такая же инверсия работает в конструкциях not only ... but also, no sooner ... than, hardly ... when и после only after, only when, only then. Инверсия делается только в той части, которая начинается с наречия. Приём книжный и формальный: он уместен в отчёте, презентации или письме, но не в бытовом разговоре.",
+      "summary_ru": "Если предложение начинается с отрицательного или ограничительного наречия, порядок слов меняется на вопросительный. После never, rarely, seldom, little, at no time, under no circumstances идёт вспомогательный глагол, затем подлежащее, затем смысловой глагол. Если своего вспомогательного глагола нет, появляется do, does или did: Rarely do we see this. Такая же инверсия работает в конструкциях not only ... but also, no sooner ... than, hardly ... when и после only after, only when, only then. Инверсия делается только в той части, которая начинается с наречия. Приём книжный и формальный: он уместен в отчёте, презентации или письме, но не в бытовом разговоре. Тот же порядок нужен после little в значении «совсем не» (Little did I know), после not until (Not until the client called did we understand), после only if и после so + прилагательное в начале (So expensive were the repairs that…).",
       "forms": [
         "Never / Rarely / Seldom + auxiliary + subject + verb",
         "Not only + auxiliary + subject + verb, but ... also",
         "No sooner + had + subject + V3 + than + past simple",
         "Hardly / Scarcely + had + subject + V3 + when + past simple",
-        "Only after / Only when + clause, + auxiliary + subject + verb"
+        "Only after / Only when + clause, + auxiliary + subject + verb",
+        "Little did + subject + know / Not until … + auxiliary + subject + verb",
+        "Only if + clause, + auxiliary + subject + verb; So + adjective + be + subject + that"
       ],
       "examples": [
         "Never have I seen such a strange bug.",
         "Not only did they miss the deadline, but they also lost the data.",
-        "No sooner had we deployed it than the server crashed.",
+        "No sooner had I paid for the TV than it went on sale.",
         "Only after the meeting did I understand the problem.",
-        "Under no circumstances should you share your password."
+        "Under no circumstances should you leave children alone near the pool."
       ],
       "ru_interference": "В русском отрицание в начале не меняет порядок слов: неверно 'Never I have seen this', верно 'Never have I seen this'. После отрицательного наречия обязателен вспомогательный глагол перед подлежащим.",
       "prerequisites": [
@@ -411,11 +475,11 @@
           "options": [
             "have I seen",
             "I have seen",
-            "I saw have",
+            "saw I",
             "did I saw"
           ],
           "correct_index": 0,
-          "explanation_ru": "После never в начале предложения вспомогательный глагол выносится перед подлежащим: have I seen.",
+          "explanation_ru": "После never в начале предложения вспомогательный глагол выносится перед подлежащим: have I seen. Смысловой глагол сам вперёд не выходит (saw I), а после did нужна начальная форма (did I see).",
           "difficulty": 1
         },
         {
@@ -449,15 +513,15 @@
         {
           "id": "b2_inversion_negative_adverbials_04",
           "kind": "choice",
-          "prompt": "Under no circumstances ___ the children alone near the pool.",
+          "prompt": "Under no circumstances ___ customer data with anyone outside the company.",
           "options": [
-            "you should leave",
-            "you leave should",
-            "should leave you",
-            "should you leave"
+            "you should share",
+            "you share should",
+            "should share you",
+            "should you share"
           ],
           "correct_index": 3,
-          "explanation_ru": "Under no circumstances — отрицательное обстоятельство, после него модальный should встаёт перед подлежащим: should you leave. Остальные варианты либо сохраняют прямой порядок, либо ставят подлежащее после смыслового глагола.",
+          "explanation_ru": "Under no circumstances — отрицательное обстоятельство, после него модальный should встаёт перед подлежащим: should you share. Так формулируют строгие правила в компаниях. Остальные варианты либо сохраняют прямой порядок, либо ставят подлежащее после смыслового глагола.",
           "difficulty": 2
         },
         {
@@ -570,6 +634,56 @@
           "explanation_ru": "Only then в начале предложения требует инверсии, как в вопросе: did I realize. В русском порядок слов не меняется, поэтому тянет оставить прямой I realized; ставить смысловой глагол перед подлежащим тоже нельзя.",
           "difficulty": 2,
           "diagnostic": true
+        },
+        {
+          "id": "b2_inversion_negative_adverbials_13",
+          "kind": "choice",
+          "prompt": "When I joined the company as an intern, little ___ that I would be running the whole team five years later.",
+          "options": [
+            "did I know",
+            "I knew",
+            "I did know",
+            "knew I"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Little в начале части значит «совсем не, и не подозревал» и требует порядка вопроса: little did I know. Прямой порядок I knew превращает смысл в «я немного знал», I did know — усилительное «я же знал», а knew I переставляет смысловой глагол, чего английский не делает.",
+          "difficulty": 2,
+          "diagnostic": true
+        },
+        {
+          "id": "b2_inversion_negative_adverbials_14",
+          "kind": "transform",
+          "prompt": "Rewrite starting with 'Not until': We didn't realize how serious the problem was until the client called us.",
+          "answer": "Not until the client called us did we realize how serious the problem was.",
+          "accept": [
+            "Not until the client had called us did we realize how serious the problem was."
+          ],
+          "explanation_ru": "Not until + момент выносится в начало, а инверсия делается в главной части: did we realize. Внутри until-части порядок обычный (the client called us), а отрицание didn't уходит — его смысл уже несёт not until.",
+          "difficulty": 3
+        },
+        {
+          "id": "b2_inversion_negative_adverbials_15",
+          "kind": "gap",
+          "prompt": "So ___ (expensive / be) the repairs that we decided to buy a new car instead.",
+          "answer": "expensive were",
+          "accept": [],
+          "explanation_ru": "So + прилагательное в начале предложения — книжная инверсия: So expensive were the repairs that… (= The repairs were so expensive that…). Глагол be встаёт перед подлежащим и согласуется с ним: repairs — were.",
+          "difficulty": 3
+        },
+        {
+          "id": "b2_inversion_negative_adverbials_16",
+          "kind": "choice",
+          "prompt": "Only if the budget is approved ___ able to hire two more developers this year.",
+          "options": [
+            "will we be",
+            "we will be",
+            "we would be",
+            "will be we"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Only if + условие в начале: инверсия делается во второй, главной части — will we be able. В самом условии будущего времени нет (is approved), we will be сохраняет прямой порядок, would меняет смысл на нереальный, а will be we ставит подлежащее не на место.",
+          "difficulty": 2,
+          "diagnostic": true
         }
       ]
     },
@@ -591,10 +705,10 @@
       ],
       "examples": [
         "If we had tested it properly, the site would work now.",
-        "If I were more organized, I would have finished the task yesterday.",
+        "If she liked crowds, she would have come to the festival with us.",
         "Had I known about the bug, I would have fixed it.",
         "Should you need any help, just call me.",
-        "Were I you, I would talk to the manager first."
+        "Were I you, I would talk to the landlord first."
       ],
       "ru_interference": "В русском одна форма если бы на все случаи, поэтому would попадает в обе части: неверно 'If I would have time, I would help', верно 'If I had time, I would help'.",
       "prerequisites": [
@@ -614,13 +728,13 @@
             "would book"
           ],
           "correct_index": 2,
-          "explanation_ru": "Условие относится к прошлому (не забронировали), а результат — к настоящему (стоим в очереди): if + past perfect, would + V1. Booked дало бы нереальное настоящее, have made и would make в if-части невозможны.",
+          "explanation_ru": "Условие относится к прошлому (не забронировали), а результат — к настоящему (стоим в очереди): if + past perfect, would + V1. Booked дало бы нереальное настоящее, а have booked и would book в if-части невозможны.",
           "difficulty": 1
         },
         {
           "id": "b2_all_conditionals_mixed_conditionals_alternatives_if_inversion_02",
           "kind": "choice",
-          "prompt": "___ you need more time, let me know before Friday.",
+          "prompt": "___ you need more time to review the contract, let me know before Friday.",
           "options": [
             "Should",
             "Will",
@@ -693,10 +807,10 @@
         {
           "id": "b2_all_conditionals_mixed_conditionals_alternatives_if_inversion_08",
           "kind": "transform",
-          "prompt": "Rewrite without 'if': If you had asked me, I would have helped you.",
-          "answer": "Had you asked me, I would have helped you.",
+          "prompt": "Rewrite without 'if': If you had sent me the report earlier, I would have checked the numbers.",
+          "answer": "Had you sent me the report earlier, I would have checked the numbers.",
           "accept": [
-            "I would have helped you had you asked me."
+            "I would have checked the numbers had you sent me the report earlier."
           ],
           "explanation_ru": "При отказе от if вспомогательный had выходит на первое место, а порядок остальных слов сохраняется.",
           "difficulty": 3
@@ -852,7 +966,7 @@
         {
           "id": "b2_mixed_conditionals_06",
           "kind": "gap",
-          "prompt": "If I were more organized, I ___ (not / miss) my dentist appointment last week.",
+          "prompt": "If I were more organized, I ___ (not / miss) the deadline for the budget report last week.",
           "answer": "wouldn't have missed",
           "accept": [
             "would not have missed"
@@ -972,7 +1086,7 @@
       "examples": [
         "We won't finish on time unless we get more people.",
         "Even if they pay me more, I am not going to stay.",
-        "You can use my laptop provided that you do not install anything.",
+        "You can stay with us provided that you don't mind the dog.",
         "I will help you as long as you ask me in advance.",
         "Take an umbrella in case it rains later."
       ],
@@ -1050,7 +1164,7 @@
         {
           "id": "b2_unless_even_if_provided_as_long_conditionals_06",
           "kind": "gap",
-          "prompt": "Take your keys ___ I get home late. (= because it is possible; two words)",
+          "prompt": "Take your keys ___ I get home late. (= as a precaution against the possibility that…; two words)",
           "answer": "in case",
           "accept": [],
           "explanation_ru": "Значение на всякий случай передаёт in case, а не if: действие делается заранее.",
@@ -1070,11 +1184,10 @@
         {
           "id": "b2_unless_even_if_provided_as_long_conditionals_08",
           "kind": "transform",
-          "prompt": "Rewrite with 'unless': If you don't book now, you won't get a seat.",
-          "answer": "Unless you book now, you won't get a seat.",
+          "prompt": "Rewrite with 'unless': If you don't send the invoice today, the client won't pay until next month.",
+          "answer": "Unless you send the invoice today, the client won't pay until next month.",
           "accept": [
-            "Unless you book now, you will not get a seat.",
-            "You won't get a seat unless you book now."
+            "The client won't pay until next month unless you send the invoice today."
           ],
           "explanation_ru": "If ... not превращается в unless, а глагол в придаточном становится утвердительным.",
           "difficulty": 3
@@ -1157,6 +1270,17 @@
           "explanation_ru": "In case + present simple — «на случай, если». In case of ставят только перед существительным (in case of fire), if in case — лишнее слово, а will после in case не используется.",
           "difficulty": 2,
           "diagnostic": true
+        },
+        {
+          "id": "b2_unless_even_if_provided_as_long_conditionals_13",
+          "kind": "order",
+          "prompt": "unless / won't / we / hurry / make it / we / .",
+          "answer": "We won't make it unless we hurry.",
+          "accept": [
+            "Unless we hurry, we won't make it."
+          ],
+          "explanation_ru": "Unless уже содержит отрицание («если не»), поэтому глагол после него утвердительный: unless we hurry. Unless-часть может стоять и после главной, и перед ней.",
+          "difficulty": 2
         }
       ]
     },
@@ -1177,9 +1301,9 @@
         "so + adjective + that; such a + noun + that"
       ],
       "examples": [
-        "Although the code was old, it still worked.",
+        "Although the apartment was small, it was very bright.",
         "Despite the delay, we finished the release on Friday.",
-        "We wrote a script so that nobody has to do it by hand.",
+        "We left early so that we could find a parking spot.",
         "The demo failed because of a network problem.",
         "The test was so slow that we had to rewrite it."
       ],
@@ -1235,7 +1359,7 @@
         {
           "id": "b2_clauses_contrast_purpose_reason_result_04",
           "kind": "choice",
-          "prompt": "The lecture was ___ boring that half the students fell asleep.",
+          "prompt": "The budget meeting was ___ long that half the team stopped listening.",
           "options": [
             "such",
             "too",
@@ -1243,13 +1367,13 @@
             "very"
           ],
           "correct_index": 2,
-          "explanation_ru": "Перед прилагательным в конструкции результата стоит so ... that; such употребляется с существительным, а too и very с that не сочетаются.",
+          "explanation_ru": "Перед прилагательным в конструкции результата стоит so … that: so long that. Such употребляется с существительным (such a long meeting that), а too и very с that не сочетаются.",
           "difficulty": 2
         },
         {
           "id": "b2_clauses_contrast_purpose_reason_result_05",
           "kind": "gap",
-          "prompt": "I turned off my phone so ___ nobody could disturb me.",
+          "prompt": "I turned off my notifications so ___ nobody could disturb me during the interview.",
           "answer": "that",
           "accept": [],
           "explanation_ru": "Цель с придаточным вводится оборотом so that, после которого идёт подлежащее и модальный глагол.",
@@ -1325,14 +1449,13 @@
         {
           "id": "b2_clauses_contrast_purpose_reason_result_10",
           "kind": "transform",
-          "prompt": "Rewrite using the word in capitals (do not change it): The match was canceled because the weather was terrible. DUE",
-          "answer": "The match was canceled due to the terrible weather.",
+          "prompt": "Rewrite using the word in capitals (do not change it): The company picnic was postponed because the weather was terrible. DUE",
+          "answer": "The company picnic was postponed due to the terrible weather.",
           "accept": [
-            "The match was canceled due to terrible weather.",
-            "Due to the terrible weather, the match was canceled.",
-            "The match was cancelled due to the terrible weather.",
-            "The match was canceled due to the fact that the weather was terrible.",
-            "Due to terrible weather, the match was canceled."
+            "The company picnic was postponed due to terrible weather.",
+            "Due to the terrible weather, the company picnic was postponed.",
+            "Due to terrible weather, the company picnic was postponed.",
+            "The company picnic was postponed due to the fact that the weather was terrible."
           ],
           "explanation_ru": "Due to, как because of, ставится перед существительным: due to the terrible weather. Перед целым придаточным нужно because или due to the fact that.",
           "difficulty": 2
@@ -1362,19 +1485,19 @@
       "title_en": "Discourse markers: Linking words",
       "source_slug": "discourse-markers",
       "title_ru": "Дискурсивные маркеры и связки",
-      "summary_ru": "Дискурсивные маркеры связывают предложения между собой и показывают читателю логику текста. Контраст вводят however, nevertheless, on the other hand, by contrast. Добавление — moreover, furthermore, in addition, besides. Результат — therefore, as a result, consequently. В отличие от союзов but и because, эти слова не соединяют части одного предложения: они стоят в начале нового предложения и отделяются запятой, либо после точки с запятой. В устной речи используются свои маркеры: anyway для возврата к теме, by the way для смены темы, actually для поправки собеседника. Смешивать however с but в одном предложении нельзя.",
+      "summary_ru": "Дискурсивные маркеры связывают предложения между собой и показывают читателю логику текста. Контраст вводят however, nevertheless, on the other hand, by contrast. Добавление — moreover, furthermore, in addition, besides. Результат — therefore, as a result, consequently. В отличие от союзов but и because, эти слова не соединяют части одного предложения: они стоят в начале нового предложения и отделяются запятой, либо после точки с запятой. В устной речи используются свои маркеры: anyway для возврата к теме, by the way для смены темы, actually для поправки собеседника, after all для довода («ведь»), that said (по-британски mind you) для оговорки. Смешивать however с but в одном предложении нельзя.",
       "forms": [
         "..., however / nevertheless, + clause (после точки или точки с запятой)",
         "Moreover, / Furthermore, / In addition, + clause",
         "Therefore, / As a result, / Consequently, + clause",
         "On the other hand, / By contrast, + clause",
-        "Anyway, / By the way, / Actually, + clause (разговорные маркеры)"
+        "Anyway, / By the way, / Actually, / After all, / That said, + clause (разговорные маркеры)"
       ],
       "examples": [
         "The plan looks good. However, it is too expensive.",
-        "The build is faster. Moreover, it uses less memory.",
+        "The hotel is right on the beach. Moreover, breakfast is included.",
         "We lost the data. As a result, we had to start again.",
-        "By the way, did you send the invoice yesterday?",
+        "By the way, have you seen my keys anywhere?",
         "Actually, I think we should postpone the release."
       ],
       "ru_interference": "Русское однако ставят как союз в середине предложения: неверно 'The plan is good, however it is expensive', верно 'The plan is good. However, it is expensive.'",
@@ -1400,16 +1523,16 @@
         {
           "id": "b2_discourse_markers_02",
           "kind": "choice",
-          "prompt": "The new phone is very expensive. ___, it has an excellent camera.",
+          "prompt": "The new project management tool is expensive. ___, it saves the team hours every week.",
           "options": [
             "Moreover",
             "On the other hand",
             "Therefore",
-            "As a result"
+            "In contrast"
           ],
           "correct_index": 1,
-          "explanation_ru": "Вторая мысль противопоставлена первой, значит нужен маркер контраста on the other hand, а не добавления или результата.",
-          "difficulty": 1
+          "explanation_ru": "Второе предложение — плюс того же инструмента, который взвешивают против минуса: нужен on the other hand («с другой стороны»). In contrast сравнивает два разных предмета (The old tool was cheap. In contrast, the new one…), moreover добавляет довод в ту же сторону, therefore вводит следствие.",
+          "difficulty": 2
         },
         {
           "id": "b2_discourse_markers_03",
@@ -1470,11 +1593,11 @@
         {
           "id": "b2_discourse_markers_07",
           "kind": "correct",
-          "prompt": "The plan is good, however it is very expensive.",
-          "answer": "The plan is good. However, it is very expensive.",
+          "prompt": "The vendor's proposal is good, however it is over our budget.",
+          "answer": "The vendor's proposal is good. However, it is over our budget.",
           "accept": [
-            "The plan is good; however, it is very expensive.",
-            "The plan is good, but it is very expensive."
+            "The vendor's proposal is good; however, it is over our budget.",
+            "The vendor's proposal is good, but it is over our budget."
           ],
           "explanation_ru": "However не союз: он начинает новое предложение после точки или точки с запятой и отделяется запятой; союзом внутри предложения служит but.",
           "difficulty": 2
@@ -1515,7 +1638,8 @@
             ],
             [
               "On the other hand",
-              "However"
+              "However",
+              "But"
             ],
             [
               "Nevertheless",
@@ -1557,6 +1681,106 @@
           ],
           "explanation_ru": "Nevertheless — наречие-связка, а не союз: оно открывает новое предложение после точки или точки с запятой. Although при этом убирают, иначе уступка выражена дважды; запятая перед nevertheless не может соединить два предложения.",
           "difficulty": 3
+        },
+        {
+          "id": "b2_discourse_markers_12",
+          "kind": "cloze",
+          "prompt": "Hi Carla, a quick update on the website project. The new design is finished, and the client loves it. ___ (к тому же), the pages now load twice as fast. ___ (однако), the payment page still has a few bugs. ___ (в результате), we won't be able to launch on May 1. ___ (тем не менее), I'm confident we'll be ready by mid-May.",
+          "gaps": [
+            [
+              "Moreover",
+              "In addition",
+              "Furthermore",
+              "What's more",
+              "What is more",
+              "Besides",
+              "Also",
+              "On top of that"
+            ],
+            [
+              "However",
+              "But"
+            ],
+            [
+              "As a result",
+              "Therefore",
+              "Consequently",
+              "As a consequence",
+              "Because of this",
+              "Because of that",
+              "For this reason",
+              "So"
+            ],
+            [
+              "Nevertheless",
+              "Nonetheless",
+              "Even so",
+              "Still",
+              "Despite this",
+              "In spite of this",
+              "That said",
+              "However"
+            ]
+          ],
+          "explanation_ru": "В деловом письме связка в начале предложения показывает логику: moreover / in addition — ещё один довод в ту же сторону, however — поворот к проблеме, as a result / therefore — следствие, nevertheless — вывод вопреки сказанному. Каждая отделяется запятой.",
+          "difficulty": 2
+        },
+        {
+          "id": "b2_discourse_markers_13",
+          "kind": "choice",
+          "prompt": "A: Sorry about that — my kid just came in.\nB: No problem. ___, where were we? Oh right, next year's budget.",
+          "options": [
+            "Anyway",
+            "Actually",
+            "After all",
+            "Besides"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Anyway возвращает разговор к теме после отступления: «так вот, на чём мы остановились?». Actually поправляет собеседника или вводит неожиданный факт, after all приводит довод («ведь»), besides добавляет ещё одну причину.",
+          "difficulty": 2,
+          "diagnostic": true
+        },
+        {
+          "id": "b2_discourse_markers_14",
+          "kind": "choice",
+          "prompt": "A: Why did you let Nina lead the client call? She's only been here a month.\nB: Well, she knows the product better than anyone, ___.",
+          "options": [
+            "after all",
+            "in the end",
+            "at last",
+            "eventually"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "After all — «ведь, как-никак»: приводит довод, который собеседник должен учесть. In the end и eventually значат «в итоге, со временем», at last — «наконец-то». Все они переводятся «в конце концов», но довода не вводят.",
+          "difficulty": 2,
+          "diagnostic": true
+        },
+        {
+          "id": "b2_discourse_markers_15",
+          "kind": "cloze",
+          "prompt": "A: How's the new job going?\nB: Pretty well. The commute is long. ___ (softening what you just said), I can work from home on Fridays.\nA: And your boss — is she the woman from your old company?\nB: ___ (correcting A), she's someone new. She's strict, but I like her. ___ (back to the main topic), are we still on for dinner on Saturday?",
+          "gaps": [
+            [
+              "That said",
+              "Mind you",
+              "Then again",
+              "Having said that",
+              "Still",
+              "But"
+            ],
+            [
+              "Actually",
+              "No, actually",
+              "In fact"
+            ],
+            [
+              "Anyway",
+              "Anyhow",
+              "So"
+            ]
+          ],
+          "explanation_ru": "Разговорные маркеры: that said (в британской речи mind you) вводит оговорку, которая смягчает сказанное, — «правда, зато». Actually поправляет собеседника: «вообще-то». Anyway возвращает к главной теме. Маркер стоит в начале реплики и отделяется запятой.",
+          "difficulty": 2
         }
       ]
     },
@@ -1579,7 +1803,7 @@
       "examples": [
         "I didn't go to the meeting, but Anna did.",
         "Is the demo canceled? I hope not.",
-        "I don't like this mouse. Can you give me the black one?",
+        "I don't like this jacket. Can I try the black one?",
         "He said he would call me back, and he did.",
         "She bought the tickets and printed them out."
       ],
@@ -1629,7 +1853,7 @@
             "ones"
           ],
           "correct_index": 0,
-          "explanation_ru": "One заменяет исчисляемое существительное в единственном числе, когда перед ним есть артикль и уточнение: the one near the park. It не ставится после the, that без of звучит неверно, ones — множественное число.",
+          "explanation_ru": "One заменяет исчисляемое существительное в единственном числе, когда перед ним есть артикль и уточнение: the one near the park. После the не ставят ни it, ни that: that заменяет существительное только в книжной конструкции that of (the climate of the coast → that of the mountains). Ones — множественное число, а речь об одной квартире.",
           "difficulty": 2
         },
         {
@@ -1679,19 +1903,18 @@
         {
           "id": "b2_ellipsis_and_substitution_08",
           "kind": "transform",
-          "prompt": "Rewrite using 'do so' to avoid repeating: The guide told us to leave our bags at the entrance, and we left our bags there.",
-          "answer": "The guide told us to leave our bags at the entrance, and we did so.",
+          "prompt": "Rewrite using 'do so' to avoid repeating: The manager asked everyone to sign the new contract by Friday, and most people signed the new contract on Monday.",
+          "answer": "The manager asked everyone to sign the new contract by Friday, and most people did so on Monday.",
           "accept": [
-            "The guide told us to leave our bags at the entrance and we did so.",
-            "The guide told us to leave our bags at the entrance, and so we did."
+            "The manager asked everyone to sign the new contract by Friday, and most did so on Monday."
           ],
-          "explanation_ru": "Do so заменяет целую глагольную группу (left our bags there) и звучит нейтрально-письменно. Повторять глагол с дополнением не нужно.",
+          "explanation_ru": "Do so заменяет всю глагольную группу (signed the new contract) и звучит нейтрально-письменно, как и положено в деловом тексте. Обстоятельство времени (on Monday) остаётся после do so.",
           "difficulty": 3
         },
         {
           "id": "b2_ellipsis_and_substitution_09",
           "kind": "cloze",
-          "prompt": "My sister and I are very different. She loves early mornings, but I ___. I've never been skiing, but she ___ many times. Last month she said she would help me paint my room, and she ___ — at seven on a Sunday morning! When I asked if she was tired, she said, 'I don't think ___.'",
+          "prompt": "My sister and I are very different. She loves early mornings, but I ___. I've never been skiing, but she ___ many times. She can fix almost anything in the house, but I ___. When I asked if she ever gets tired of helping me, she said, 'I don't think ___.'",
           "gaps": [
             [
               "don't",
@@ -1702,13 +1925,14 @@
               "has been"
             ],
             [
-              "did"
+              "can't",
+              "cannot"
             ],
             [
               "so"
             ]
           ],
-          "explanation_ru": "Чтобы не повторять глагольную группу, оставляют вспомогательный глагол того же времени: loves → don't, have never been → has, would help → did (обещание выполнено в прошлом). После think вместо придаточного — so.",
+          "explanation_ru": "Чтобы не повторять глагольную группу, оставляют вспомогательный или модальный глагол из первой части: loves → don't, have never been → has, can fix → can't. После think вместо придаточного — so.",
           "difficulty": 2
         },
         {
@@ -1719,12 +1943,30 @@
             "I haven't read the book, but my brother has.",
             "She can't drive, but her husband can.",
             "I'm not a vegetarian, but my wife does.",
-            "He said he'd fix the fence, and he did."
+            "Mia wanted to come, but she couldn't."
           ],
           "correct_index": 2,
-          "explanation_ru": "Замещающий глагол повторяет тот вспомогательный, который стоит в первой части: I'm not → my wife is. Does заменяет смысловой глагол, а здесь сказуемое — be. В остальных предложениях замена точная: haven't → has, can't → can, would fix → did.",
+          "explanation_ru": "Замещающий глагол повторяет тот вспомогательный, который стоит в первой части: I'm not → my wife is. Does заменяет смысловой глагол, а здесь сказуемое — be. В остальных предложениях замена точная: haven't read → has, can't drive → can, а после wanted to come хватает couldn't.",
           "difficulty": 2,
           "diagnostic": true
+        },
+        {
+          "id": "b2_ellipsis_and_substitution_11",
+          "kind": "gap",
+          "prompt": "A: Has anyone checked the numbers in the budget report?\nB: Omar ___, I think — he sent me a message about it this morning. (one word)",
+          "answer": "has",
+          "accept": [],
+          "explanation_ru": "В коротком ответе повторяют вспомогательный глагол вопроса: Has anyone checked? → Omar has. Did относится к другому времени, а смысловой checked без has не образует present perfect.",
+          "difficulty": 2
+        },
+        {
+          "id": "b2_ellipsis_and_substitution_12",
+          "kind": "order",
+          "prompt": "one / let's / the / order / with / screen / bigger / the / .",
+          "answer": "Let's order the one with the bigger screen.",
+          "accept": [],
+          "explanation_ru": "One заменяет уже названное исчисляемое существительное (ноутбук, монитор), а уточнение идёт после него: the one with the bigger screen. Без one после the предложение неполное.",
+          "difficulty": 2
         }
       ]
     },
@@ -1748,9 +1990,9 @@
       ],
       "examples": [
         "You must wear a badge inside the building.",
-        "You mustn't share your password with anyone.",
+        "You mustn't use your phone while you're driving.",
         "You don't have to come to the office on Friday.",
-        "We had to rewrite the whole module last week.",
+        "We had to wait two hours at the border.",
         "Are we allowed to install our own software?"
       ],
       "ru_interference": "Русское ты не должен переводят как don't have to даже в значении запрета: неверно 'You don't have to smoke here', верно 'You mustn't smoke here'. Don't have to значит можно не делать.",
@@ -1766,18 +2008,18 @@
           "prompt": "We ___ to check out by eleven, but the hotel let us stay until one.",
           "options": [
             "were supposed",
-            "had",
+            "were allowed",
             "must",
             "should"
           ],
           "correct_index": 0,
-          "explanation_ru": "Be supposed to — «по правилам полагается», причём часто правило в итоге не выполнилось: were supposed to check out. Had to значит, что пришлось, а must и should не сочетаются с to.",
+          "explanation_ru": "Be supposed to — «по правилам полагается», причём часто правило в итоге не выполнилось: were supposed to check out. Were allowed to значило бы «нам разрешили», а разрешение выехать к одиннадцати не вяжется с тем, что отель позволил остаться дольше; must и should не сочетаются с to.",
           "difficulty": 1
         },
         {
           "id": "b2_modal_verbs_permission_obligation_prohibition_necessity_02",
           "kind": "choice",
-          "prompt": "We ___ have bought so much food — only half the guests came.",
+          "prompt": "Looking back, we ___ have booked such a big room for the team workshop — only twelve people came.",
           "options": [
             "needn't",
             "mustn't",
@@ -1785,7 +2027,7 @@
             "hadn't to"
           ],
           "correct_index": 0,
-          "explanation_ru": "Needn't have + V3 — действие совершили, а оно оказалось лишним: еду купили зря. Mustn't have не выражает ненужность, didn't need требует to, а hadn't to не существует.",
+          "explanation_ru": "Needn't have + V3 — действие совершили, а оно оказалось лишним: большой зал забронировали зря. В разговорном американском то же чаще говорят didn't need to book или didn't have to book. Mustn't have не выражает ненужность, didn't need требует to, а hadn't to не существует.",
           "difficulty": 2
         },
         {
@@ -1805,15 +2047,15 @@
         {
           "id": "b2_modal_verbs_permission_obligation_prohibition_necessity_04",
           "kind": "choice",
-          "prompt": "You ___ to bring anything to the party; we have plenty of food and drinks.",
+          "prompt": "You ___ anything to the team lunch on Friday — the company is paying for everything.",
           "options": [
-            "mustn't",
-            "needn't",
-            "not have",
-            "don't have"
+            "mustn't bring",
+            "don't have to bring",
+            "needn't to bring",
+            "haven't to bring"
           ],
-          "correct_index": 3,
-          "explanation_ru": "Еды и напитков хватает — значит, приносить ничего не обязательно: нужно don't have to (нет необходимости), а не запрет mustn't. К тому же перед to может стоять только don't have; mustn't и needn't идут с инфинитивом без to.",
+          "correct_index": 1,
+          "explanation_ru": "Компания платит за всё — значит, приносить ничего не обязательно: don't have to bring (нет необходимости). Mustn't bring — запрет, он здесь не по смыслу. Needn't ставится без to (needn't bring), а haven't to не существует.",
           "difficulty": 2
         },
         {
@@ -1896,13 +2138,13 @@
           "kind": "choice",
           "prompt": "A: I bought you a phone charger at the airport.\nB: Oh, thank you, but you ___ — I already have two!",
           "options": [
-            "needn't have",
-            "mustn't have",
-            "didn't need",
-            "don't have to"
+            "didn't have to",
+            "mustn't",
+            "don't have to",
+            "haven't to"
           ],
           "correct_index": 0,
-          "explanation_ru": "Needn't have (bought) — покупку сделали, но она оказалась лишней. Mustn't have не выражает ненужность, didn't need без to неполно, а don't have to относится к настоящему.",
+          "explanation_ru": "Подарок уже куплен, но в нём не было необходимости: в живом американском диалоге так и говорят — you didn't have to (или you shouldn't have). Mustn't — запрет, don't have to — про настоящее, haven't to не существует. Книжное needn't have в таком разговоре звучит по-британски.",
           "difficulty": 2,
           "diagnostic": true
         },
@@ -1920,6 +2162,32 @@
           "explanation_ru": "Needn't — модальный глагол, после него инфинитив без to: You needn't bring. Don't need to и don't have to сохраняют to, поэтому их легко спутать.",
           "difficulty": 2,
           "diagnostic": true
+        },
+        {
+          "id": "b2_modal_verbs_permission_obligation_prohibition_necessity_12",
+          "kind": "cloze",
+          "prompt": "A: Do I need to wear a suit to the job interview?\nB: No, you ___ (no necessity) — it's a casual office, and jeans are fine. But you ___ (prohibition) be late: they're very strict about time.\nA: Can I bring my portfolio?\nB: Sure, you ___ (permission) bring anything that shows your work.",
+          "gaps": [
+            [
+              "don't have to",
+              "don't need to",
+              "needn't",
+              "do not have to",
+              "do not need to"
+            ],
+            [
+              "mustn't",
+              "must not",
+              "can't",
+              "cannot"
+            ],
+            [
+              "can",
+              "may"
+            ]
+          ],
+          "explanation_ru": "Нет необходимости — don't have to / don't need to (можно не делать), запрет — mustn't или can't (нельзя), разрешение — can или более формальное may. Mustn't и don't have to — не синонимы: первое запрещает, второе разрешает не делать.",
+          "difficulty": 2
         }
       ]
     },
@@ -2025,7 +2293,7 @@
         {
           "id": "b2_speculation_deduction_06",
           "kind": "gap",
-          "prompt": "That ___ (not / be) Peter — he is in London right now. (you are sure)",
+          "prompt": "That ___ (not / be) the client on the phone — she's on a flight to Tokyo right now. (you are sure)",
           "answer": "can't be",
           "accept": [
             "cannot be",
@@ -2051,11 +2319,11 @@
         {
           "id": "b2_speculation_deduction_08",
           "kind": "transform",
-          "prompt": "Rewrite with a modal of deduction: I am sure they didn't hear the alarm.",
-          "answer": "They can't have heard the alarm.",
+          "prompt": "Rewrite with a modal of deduction: I'm sure the manager didn't read my email.",
+          "answer": "The manager can't have read my email.",
           "accept": [
-            "They couldn't have heard the alarm.",
-            "They must not have heard the alarm."
+            "The manager couldn't have read my email.",
+            "The manager must not have read my email."
           ],
           "explanation_ru": "Уверенность в том, что действие не произошло, передаётся через can't have плюс третья форма; в американском так же говорят must not have heard.",
           "difficulty": 3
@@ -2077,13 +2345,14 @@
               "cannot have been",
               "could not have been",
               "couldn't be",
-              "could not be"
+              "could not be",
+              "must not have been"
             ],
             [
               "must have been"
             ]
           ],
-          "explanation_ru": "Предположение о прошлом — модальный глагол + have + V3. Might/could have — возможно, can't have — точно нет, must have — точно да. Mustn't в значении «наверняка не» не используется.",
+          "explanation_ru": "Предположение о прошлом — модальный глагол + have + V3. Might/could have — возможно, can't have — точно нет (в американском так же must not have), must have — точно да. Сокращённое mustn't в значении «наверняка не» обычно не используют: оно звучит как запрет.",
           "difficulty": 3
         },
         {
@@ -2152,7 +2421,7 @@
         "This is my colleague's laptop, not mine.",
         "The teachers' room is on the second floor.",
         "Please read today's agenda before the call.",
-        "The name of the file is wrong."
+        "The name of the street is hard to pronounce."
       ],
       "ru_interference": "Русский порядок остановка автобуса даёт конструкцию с of: неверно 'the stop of the bus', верно 'the bus stop'. Определяющее существительное идёт первым и стоит в единственном числе.",
       "prerequisites": [
@@ -2220,7 +2489,7 @@
         {
           "id": "b2_compound_nouns_possessive_forms_05",
           "kind": "gap",
-          "prompt": "Excuse me, where is the ___ (women) changing room?",
+          "prompt": "Excuse me, where is the ___ (women) locker room?",
           "answer": "women's",
           "accept": [],
           "explanation_ru": "Women — неправильное множественное число без -s, поэтому притяжательная форма получает 's, как у единственного: women's, children's, men's. Womens' — ошибка: апостроф после s ставят только у форм на -s.",
@@ -2251,18 +2520,18 @@
         {
           "id": "b2_compound_nouns_possessive_forms_08",
           "kind": "transform",
-          "prompt": "Rewrite as a compound noun: a machine for washing clothes",
-          "answer": "a washing machine",
+          "prompt": "Rewrite as a compound noun: an officer who checks bags at customs",
+          "answer": "a customs officer",
           "accept": [
-            "washing machine"
+            "customs officer"
           ],
-          "explanation_ru": "Определяющее слово washing выходит вперёд, и предлог for больше не нужен.",
+          "explanation_ru": "Обычно первое существительное в составном стоит в единственном числе, но customs («таможня») существует только с -s, поэтому a customs officer — как savings account и sports car. A custom officer — ошибка: custom значит «обычай».",
           "difficulty": 3
         },
         {
           "id": "b2_compound_nouns_possessive_forms_09",
           "kind": "cloze",
-          "prompt": "Last Sunday we had lunch at my ___ (grandparents) house. My grandmother proudly showed us her new ___ (garden / vegetables). After lunch the kids played in the ___ (children) room upstairs. My uncle watched a ___ (football / game) on TV. Before we left, I found my ___ (sister) phone under the sofa.",
+          "prompt": "Last Sunday we had lunch at my ___ (grandparents) house. My grandmother proudly showed us her new ___ (garden / vegetables). After lunch the kids played in the ___ (children) room upstairs. My uncle watched a ___ (game / football) on TV. Before we left, I found my ___ (sister) phone under the sofa.",
           "gaps": [
             [
               "grandparents'"
@@ -2297,6 +2566,30 @@
           "explanation_ru": "Русское «магазин одежды» становится составным существительным: определяющее слово впереди — clothing store (или clothes store). Конструкция с of здесь неестественна, апостроф означал бы принадлежность, а clothings не существует.",
           "difficulty": 1,
           "diagnostic": true
+        },
+        {
+          "id": "b2_compound_nouns_possessive_forms_11",
+          "kind": "cloze",
+          "prompt": "Welcome to the team! Your ___ (manager) name is Rosa Diaz, and her office is next to the ___ (room / conference). The ___ (employees) lounge is on the fourth floor. Please read the ___ (company) security policy before ___ (tomorrow) training session.",
+          "gaps": [
+            [
+              "manager's"
+            ],
+            [
+              "conference room"
+            ],
+            [
+              "employees'"
+            ],
+            [
+              "company's"
+            ],
+            [
+              "tomorrow's"
+            ]
+          ],
+          "explanation_ru": "'s получают люди и организации в единственном числе (manager's, company's) и слова времени (tomorrow's), а множественное на -s — только апостроф (employees'). В составном существительном определяющее слово идёт первым и стоит в единственном числе: conference room.",
+          "difficulty": 2
         }
       ]
     }

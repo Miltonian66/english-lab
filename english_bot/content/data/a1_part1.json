@@ -30,15 +30,15 @@
     {
      "id": "a1_adjectives_01",
      "kind": "choice",
-     "prompt": "We bought two ___ bikes for the kids.",
+     "prompt": "We bought two ___ for the kids.",
      "options": [
-      "news",
-      "new",
-      "newly",
-      "newing"
+      "news bikes",
+      "new bikes",
+      "bikes new",
+      "newly bikes"
      ],
      "correct_index": 1,
-     "explanation_ru": "Прилагательное не получает окончания -s даже перед существительным во множественном числе.",
+     "explanation_ru": "Прилагательное стоит перед существительным и не получает -s: two new bikes. News bikes — лишнее -s по русской привычке согласовывать слова, bikes new — русский порядок «велосипеды новые», а newly — наречие, оно не описывает предмет.",
      "difficulty": 1
     },
     {
@@ -77,10 +77,10 @@
       "expensives",
       "expensive",
       "expensively",
-      "expensived"
+      "more expensive"
      ],
      "correct_index": 1,
-     "explanation_ru": "После be нужна простая форма прилагательного без окончаний.",
+     "explanation_ru": "После be нужна простая форма прилагательного: very expensive. Окончание -s к прилагательному не добавляют, expensively — наречие, а very со сравнительной степенью не сочетается (говорят much more expensive).",
      "difficulty": 2
     },
     {
@@ -95,10 +95,10 @@
     {
      "id": "a1_adjectives_06",
      "kind": "gap",
-     "prompt": "My grandpa drives ___ (a / an) old car.",
-     "answer": "an",
+     "prompt": "It's ___ (day / a / beautiful) today!",
+     "answer": "a beautiful day",
      "accept": [],
-     "explanation_ru": "Артикль выбирается по первому звуку слова old, которое идёт сразу после него.",
+     "explanation_ru": "Прилагательное стоит между артиклем и существительным: a beautiful day, а не a day beautiful. Артикль a выбирается по первому звуку прилагательного beautiful — он согласный.",
      "difficulty": 2
     },
     {
@@ -141,7 +141,7 @@
      "options": [
       "We live in a small house.",
       "We have two blacks cats.",
-      "Our garden is very green.",
+      "Our yard is very green.",
       "My room is big and warm."
      ],
      "correct_index": 1,
@@ -159,7 +159,7 @@
    "title_en": "Adverbs of manner (slowly) or adjectives (slow)?",
    "source_slug": "adverbs-manner",
    "title_ru": "Наречия образа действия или прилагательные",
-   "summary_ru": "Прилагательное отвечает на вопрос «какой» и описывает существительное: a slow computer. Наречие образа действия отвечает на вопрос «как» и описывает действие: He works slowly. Большинство наречий образуется прибавлением -ly: quick — quickly, careful — carefully. Если прилагательное кончается на согласную и -y, пишем -ily: easy — easily. Исключения нужно запомнить: good — well, fast — fast, hard — hard. После глагола be, а также после look и seem, нужно прилагательное, а не наречие: The office is quiet. Наречие обычно стоит после глагола, а если у глагола есть дополнение — после дополнения: She speaks English well.",
+   "summary_ru": "Прилагательное отвечает на вопрос «какой» и описывает существительное: a slow computer. Наречие образа действия отвечает на вопрос «как» и описывает действие: He works slowly. Большинство наречий образуется прибавлением -ly: quick — quickly, careful — carefully. Если прилагательное кончается на согласную и -y, пишем -ily: easy — easily. Исключения нужно запомнить: good — well, fast — fast, hard — hard. После глагола be, а также после look и seem, нужно прилагательное, а не наречие: The office is quiet. Наречие обычно стоит после глагола, а если у глагола есть дополнение — после дополнения: She plays tennis well.",
    "forms": [
     "adjective + -ly: slow → slowly",
     "consonant + y → -ily: easy → easily",
@@ -169,8 +169,8 @@
    ],
    "examples": [
     "He works slowly.",
-    "This is a slow computer.",
-    "She speaks English well.",
+    "This is a quiet street.",
+    "She plays tennis well.",
     "The team finished the task quickly.",
     "Our internet is fast.",
     "Please read the message carefully."
@@ -227,11 +227,11 @@
      "options": [
       "well",
       "good",
-      "goodly",
+      "better",
       "gooder"
      ],
      "correct_index": 1,
-     "explanation_ru": "После be описываем предмет, а не действие, поэтому нужно прилагательное good; well относилось бы к действию.",
+     "explanation_ru": "После be описываем предмет, а не действие, поэтому нужно прилагательное good; well относилось бы к действию. Better — сравнительная степень, и very перед ней не ставят, а gooder — ошибка по аналогии с -er.",
      "difficulty": 2
     },
     {
@@ -279,30 +279,33 @@
      "options": [
       "good",
       "well",
-      "goodly",
+      "nice",
       "better"
      ],
      "correct_index": 1,
      "diagnostic": true,
-     "explanation_ru": "Слово описывает действие swims — как плавает, поэтому нужно наречие. У good наречие неправильное: well. Good описывает существительное (a good swimmer), наречия goodly нет, а better — сравнение, и very перед ним не ставят.",
+     "explanation_ru": "Слово описывает действие swims — как плавает, поэтому нужно наречие. У good наречие неправильное: well. Good и nice описывают существительное (a good swimmer, a nice day), а better — сравнение, и very перед ним не ставят.",
      "difficulty": 1
     },
     {
      "id": "a1_adverbs_manner_10",
      "kind": "cloze",
-     "prompt": "My grandpa is a ___ (slow) driver. He always drives ___ (careful). My brother is different: he drives very ___ (fast).",
+     "prompt": "My grandpa drives very ___ (slow). He is a ___ (careful / carefully) driver. My brother is different: he drives very ___ (fast / fastly), but he is a ___ (good / well) driver too.",
      "gaps": [
       [
-       "slow"
+       "slowly"
       ],
       [
-       "carefully"
+       "careful"
       ],
       [
        "fast"
+      ],
+      [
+       "good"
       ]
      ],
-     "explanation_ru": "Перед существительным driver нужно прилагательное: a slow driver. После глагола drives нужно наречие: carefully. Fast — исключение: наречие совпадает с прилагательным, формы fastly нет.",
+     "explanation_ru": "После глагола drives нужно наречие: slowly. Fast — исключение: наречие совпадает с прилагательным, формы fastly нет. Перед существительным driver нужно прилагательное: a careful driver, a good driver; well описывает действие, а не человека.",
      "difficulty": 3
     },
     {
@@ -340,9 +343,9 @@
    ],
    "examples": [
     "This laptop is cheaper than mine.",
-    "Python is easier than C++.",
+    "Buses are slower than trains.",
     "The new office is bigger than the old one.",
-    "This bug is more difficult than the last one.",
+    "Math is more difficult than history for me.",
     "My internet is better than yours."
    ],
    "ru_interference": "Русское «дешевле, чем» подталкивает удваивать сравнение и путать than с that: неверно 'This phone is more cheaper that mine' → верно 'This phone is cheaper than mine.'",
@@ -427,8 +430,10 @@
      "kind": "correct",
      "prompt": "My new phone is more faster than my old phone.",
      "answer": "My new phone is faster than my old phone.",
-     "accept": [],
-     "explanation_ru": "More и -er вместе не употребляются, достаточно формы faster.",
+     "accept": [
+      "My new phone is much faster than my old phone."
+     ],
+     "explanation_ru": "More и -er вместе не употребляются: достаточно формы faster. Если хочется подчеркнуть разницу, more меняют на much: much faster.",
      "difficulty": 3
     },
     {
@@ -507,7 +512,7 @@
     "the ... in a place or group / of a period: the best in the company"
    ],
    "examples": [
-    "This is the cheapest laptop in the store.",
+    "This is the cheapest hotel in town.",
     "It was the most important meeting of the year.",
     "Anna is the best developer on our team.",
     "Monday is the worst day of the week for me.",
@@ -611,19 +616,19 @@
     {
      "id": "a1_superlative_adjectives_09",
      "kind": "cloze",
-     "prompt": "There are three cafes on our street. Of the three, Cafe Luna is ___ (cheap) and Cafe Roma is ___ (expensive). But Cafe Roma's pizza is ___ (good) in town.",
+     "prompt": "There are three cafes on our street. Of the three, Cafe Luna is the ___ (cheap) and Cafe Roma is the ___ (expensive). But Cafe Roma's pizza is the ___ (good) in town.",
      "gaps": [
       [
-       "the cheapest"
+       "cheapest"
       ],
       [
-       "the most expensive"
+       "most expensive"
       ],
       [
-       "the best"
+       "best"
       ]
      ],
-     "explanation_ru": "Каждое кафе сравнивается со всеми остальными, поэтому нужна превосходная степень с the. Короткое cheap получает -est, длинное expensive — the most, у good особая форма the best. Без the превосходная степень здесь неверна.",
+     "explanation_ru": "Каждое кафе сравнивается со всеми остальными, поэтому нужна превосходная степень; the уже стоит перед пропуском. Короткое cheap получает -est, длинное expensive — most, у good особая форма best.",
      "difficulty": 3
     },
     {
@@ -673,7 +678,7 @@
     "I can't open this file.",
     "Can you help me with the printer?",
     "We can finish the report today.",
-    "He can't come to the meeting."
+    "My grandma can't use a computer."
    ],
    "ru_interference": "Русское «мочь» требует инфинитива, поэтому появляется лишнее to и окончание -s: неверно 'He can to opens the file' → верно 'He can open the file.'",
    "prerequisites": [],
@@ -737,7 +742,7 @@
     {
      "id": "a1_can_cant_05",
      "kind": "gap",
-     "prompt": "___ (can / you) open this file on your computer?",
+     "prompt": "___ (you / can) open this file on your computer?",
      "answer": "Can you",
      "accept": [],
      "explanation_ru": "В вопросе can выходит на первое место перед подлежащим.",
@@ -829,6 +834,17 @@
      ],
      "explanation_ru": "Could — прошедшее время от can: вчера не смог — couldn't come. В просьбе can выходит перед подлежащим: Can you send…? Could you звучит ещё вежливее и тоже верно. После can и could глагол идёт без to.",
      "difficulty": 2
+    },
+    {
+     "id": "a1_can_cant_13",
+     "kind": "transform",
+     "prompt": "Переведи на английский: «Я не умею плавать.»",
+     "answer": "I can't swim.",
+     "accept": [
+      "I don't know how to swim."
+     ],
+     "explanation_ru": "Умение передаёт can, отрицание — can't (cannot) плюс глагол без to: I can't swim. Русское «не умею» не строится через don't: do с can не сочетается. Можно сказать и I don't know how to swim.",
+     "difficulty": 2
     }
    ]
   },
@@ -869,7 +885,7 @@
       "any"
      ],
      "correct_index": 1,
-     "explanation_ru": "Interview — исчисляемое в единственном числе, поэтому без артикля нельзя, а слово начинается с гласного звука: an. A ставится перед согласным звуком, а any с единственным числом в утверждении не употребляют.",
+     "explanation_ru": "Interview — исчисляемое в единственном числе, поэтому без артикля нельзя, а слово начинается с гласного звука: an. A ставится перед согласным звуком, а any здесь не подходит по смыслу: any interview значит «любое собеседование», а речь об одном конкретном.",
      "difficulty": 1
     },
     {
@@ -894,10 +910,10 @@
       "box",
       "boxs",
       "boxes",
-      "boxies"
+      "box's"
      ],
      "correct_index": 2,
-     "explanation_ru": "После -x множественное число образуется окончанием -es.",
+     "explanation_ru": "После -x множественное число образуется окончанием -es: boxes. Boxs потеряло e, а апостроф (box's) обозначает принадлежность, а не множественное число.",
      "difficulty": 1
     },
     {
@@ -926,10 +942,10 @@
     {
      "id": "a1_a_an_plurals_06",
      "kind": "gap",
-     "prompt": "It's raining. Take ___ (a / an) umbrella.",
-     "answer": "an",
+     "prompt": "Two ___ (bus) go to the airport from here.",
+     "answer": "buses",
      "accept": [],
-     "explanation_ru": "Umbrella начинается с гласного звука, поэтому an. Артикль выбирают по звуку, а не по букве: a university, но an umbrella.",
+     "explanation_ru": "После -s множественное число образуется окончанием -es: bus — buses, как box — boxes.",
      "difficulty": 2
     },
     {
@@ -1018,9 +1034,9 @@
    ],
    "examples": [
     "I bought a new laptop. The laptop is very fast.",
-    "My brother is a programmer.",
+    "Her dad is an engineer.",
     "Computers are very useful for our work.",
-    "She lives in Germany.",
+    "My cousins live in Mexico.",
     "The internet is very slow today."
    ],
    "ru_interference": "В русском нет артиклей, поэтому the появляется там, где говорят об общем, и пропадает там, где предмет уже известен: неверно 'I like the computers' в общем смысле → верно 'I like computers.'",
@@ -1154,7 +1170,7 @@
     {
      "id": "a1_a_an_the_no_article_11",
      "kind": "choice",
-     "prompt": "A: Where is Dad?\nB: He is in ___ garden.",
+     "prompt": "A: Where's Dad?\nB: He's in ___ yard.",
      "options": [
       "a",
       "an",
@@ -1163,7 +1179,7 @@
      ],
      "correct_index": 2,
      "diagnostic": true,
-     "explanation_ru": "У семьи один сад, и оба собеседника понимают, о каком речь, поэтому the. A и some значили бы «в каком-то саду», а an ставят только перед гласным звуком.",
+     "explanation_ru": "У дома один двор, и оба собеседника понимают, о каком речь, поэтому the. A и some значили бы «в каком-то дворе», а an ставят только перед гласным звуком.",
      "difficulty": 1
     }
    ]
@@ -1185,11 +1201,11 @@
     "its (possessive) vs it's (= it is)"
    ],
    "examples": [
-    "This is my laptop.",
-    "Anna is a designer. She works in our office.",
-    "Tom and Alex are here. Their office is on the third floor.",
-    "The program is new, but its interface is very simple.",
-    "Peter can't find his phone."
+    "Our dog loves the park.",
+    "My sister is a nurse. She works at night.",
+    "My parents are retired. Their house is by the sea.",
+    "The cafe is small, but its coffee is great.",
+    "Mark lost his keys again."
    ],
    "ru_interference": "В русском подлежащее-местоимение легко опускается, а притяжательное часто не нужно: неверно 'Forgot password again' → верно 'I forgot my password again.'",
    "prerequisites": [],
@@ -1335,11 +1351,11 @@
     "the + noun + of + thing: the name of the file"
    ],
    "examples": [
-    "This is Anna's office.",
-    "Whose laptop is this?",
-    "Where is Tom's desk?",
-    "It's my sister's birthday tomorrow.",
-    "This is my parents' house."
+    "Whose jacket is on the chair?",
+    "My dad's car is red.",
+    "Where is Carla's desk?",
+    "It's my brother's wedding on Saturday.",
+    "The kids' toys are everywhere."
    ],
    "ru_interference": "Русский родительный падеж «телефон Майка» переносят в обратном порядке или через of: неверно 'This is the phone of Mike' → верно 'This is Mike's phone.'",
    "prerequisites": [],
@@ -1446,11 +1462,11 @@
       "my",
       "mine",
       "me",
-      "my's"
+      "mines"
      ],
      "correct_index": 1,
      "diagnostic": true,
-     "explanation_ru": "Без существительного после себя притяжательное местоимение принимает форму mine: It's mine. My ставят только перед существительным (my umbrella), me — объектная форма, а my's не существует.",
+     "explanation_ru": "Без существительного после себя притяжательное местоимение принимает форму mine: It's mine. My ставят только перед существительным (my umbrella), me — объектная форма, а mines — ошибка по аналогии с yours и hers: у mine окончания -s нет.",
      "difficulty": 1
     },
     {
@@ -1476,6 +1492,34 @@
      "accept": [],
      "explanation_ru": "После is и без существительного нужна самостоятельная притяжательная форма: yours. Your ставят только перед существительным (your phone), а you — это «ты», а не «твой».",
      "difficulty": 2
+    },
+    {
+     "id": "a1_whose_possessive_s_12",
+     "kind": "choice",
+     "prompt": "A: Is this your car?\nB: No, it's my neighbors' car. It's ___.",
+     "options": [
+      "theirs",
+      "their",
+      "their's",
+      "them"
+     ],
+     "correct_index": 0,
+     "explanation_ru": "Без существительного после себя «их» — theirs: It's theirs. Their ставят только перед существительным (their car), апостроф у theirs не пишут, а them — объектная форма «их, им».",
+     "difficulty": 2,
+     "diagnostic": true
+    },
+    {
+     "id": "a1_whose_possessive_s_13",
+     "kind": "transform",
+     "prompt": "Переведи на английский: «Это комната моих детей.»",
+     "answer": "This is my children's room.",
+     "accept": [
+      "This is my kids' room.",
+      "It's my children's room.",
+      "It's my kids' room."
+     ],
+     "explanation_ru": "Владелец-человек получает 's и стоит перед предметом. Children — неправильное множественное число без -s, поэтому полное 's: my children's room (или my kids' room — у kids уже есть -s, добавляется только апостроф). The room of my children повторяет русский родительный падеж — так не говорят.",
+     "difficulty": 3
     }
    ]
   },
@@ -1500,7 +1544,7 @@
     "She is going to test the new version tonight.",
     "Look at those clouds! It is going to rain.",
     "Are you going to join the meeting?",
-    "They are not going to come to the office today."
+    "He isn't going to buy a new car this year."
    ],
    "ru_interference": "Русское «собираюсь сделать» не содержит глагола-связки, поэтому be теряется, а смысловой глагол получает окончание: неверно 'I going to sends the report' → верно 'I am going to send the report.'",
    "prerequisites": [],
@@ -1664,22 +1708,22 @@
    "title_en": "Have got",
    "source_slug": "have-got",
    "title_ru": "Have got: обладание и наличие",
-   "summary_ru": "Have got означает «иметь» и употребляется в разговорной речи о вещах, родственниках, внешности и болезнях: I have got a new laptop. Форма зависит от лица: I, you, we, they have got; he, she, it has got. В речи почти всегда используются сокращения: I've got, she's got. Отрицание и вопрос строятся без вспомогательного do: I haven't got time. Have you got a minute? После have got идёт существительное, а не другой глагол. В американском варианте в вопросах и отрицаниях чаще звучит have с do: Do you have a minute? В прошедшем времени эта конструкция не используется, остаётся только had.",
+   "summary_ru": "Have got — разговорный синоним have в значении «иметь»: I've got a new phone = I have a new phone. В американской речи он звучит в утверждениях и почти всегда в сокращённой форме: I've got, you've got, she's got. Форма зависит от лица: I, you, we, they have got; he, she, it has got; слово got не меняется. Вопросы и отрицания в американском английском строят с do, как у обычного глагола have: Do you have a minute? I don't have time. She doesn't have a car. Короткие ответы тоже с do: Yes, I do. No, I don't. Формы Have you got…? и I haven't got… — британские: в США их поймут, но сами говорите Do you have…? и I don't have… Прошедшего времени у have got нет: I had a dog, I didn't have a car.",
    "forms": [
-    "I / you / we / they + have got: I have got a laptop",
-    "he / she / it + has got: She has got a car",
-    "short forms: I've got, he's got",
-    "negative: haven't got / hasn't got",
-    "question: Have you got a minute?"
+    "statement: I've got / she's got = I have / she has",
+    "I / you / we / they have got; he / she / it has got",
+    "question: Do you have ...? (AmE, not Have you got ...?)",
+    "negative: don't / doesn't have: I don't have time",
+    "short answers: Yes, I do. / No, I don't."
    ],
    "examples": [
-    "I have got a new laptop.",
-    "She has got two monitors on her desk.",
-    "We haven't got enough time today.",
-    "Have you got a minute?",
-    "They have got a printer in their office."
+    "My sister's got a new job.",
+    "He's got three brothers.",
+    "We don't have any milk.",
+    "Does your hotel have a pool?",
+    "They've got a nice house by the lake."
    ],
-   "ru_interference": "Русское «у меня есть» обходится без глагола, поэтому have теряется или не согласуется с лицом: неверно 'He have got two monitors' → верно 'He has got two monitors.'",
+   "ru_interference": "Русское «у меня есть» обходится без глагола, поэтому have теряют или строят вопрос через be: неверно 'Are you have a car?' и 'At me is a cat' → верно 'Do you have a car?' и 'I've got a cat.'",
    "prerequisites": [],
    "exercises": [
     {
@@ -1693,35 +1737,35 @@
       "does"
      ],
      "correct_index": 1,
-     "explanation_ru": "С подлежащим she нужна форма has.",
+     "explanation_ru": "С подлежащим she нужна форма has: she has got, в речи she's got (= she has).",
      "difficulty": 1
     },
     {
      "id": "a1_have_got_02",
      "kind": "choice",
-     "prompt": "We ___ got enough time to finish this today.",
+     "prompt": "We ___ enough time to finish this today.",
      "options": [
-      "hasn't",
-      "haven't",
-      "don't",
-      "aren't"
+      "don't have",
+      "doesn't have",
+      "don't have got",
+      "not have"
      ],
-     "correct_index": 1,
-     "explanation_ru": "С подлежащим we отрицание строится формой haven't, вспомогательный do не нужен.",
+     "correct_index": 0,
+     "explanation_ru": "Отрицание с have «иметь» в американском английском строится через do: we don't have. Doesn't — только для he, she, it; don't have got смешивает две конструкции, а без do отрицание не строится.",
      "difficulty": 1
     },
     {
      "id": "a1_have_got_03",
      "kind": "choice",
-     "prompt": "___ you got a minute?",
+     "prompt": "___ you have a minute?",
      "options": [
       "Do",
       "Are",
       "Have",
-      "Has"
+      "Does"
      ],
-     "correct_index": 2,
-     "explanation_ru": "Вопрос с have got начинается с have, которое здесь само работает как вспомогательный глагол.",
+     "correct_index": 0,
+     "explanation_ru": "Вопрос с have «иметь» строится через do: Do you have a minute? Are с have не сочетается, Have you have… — два have подряд, а does — только для he, she, it.",
      "difficulty": 2
     },
     {
@@ -1735,7 +1779,7 @@
       "getting"
      ],
      "correct_index": 1,
-     "explanation_ru": "В have got слово got не меняется: это устойчивое выражение со значением «иметь», а не «получать». В американском английском причастие от get — gotten, но в have got всегда got.",
+     "explanation_ru": "В have got слово got не меняется: I've got a new phone = I have a new phone. Это устойчивое выражение со значением «иметь», а не «получать», поэтому не get и не getting.",
      "difficulty": 2
     },
     {
@@ -1752,25 +1796,23 @@
     {
      "id": "a1_have_got_06",
      "kind": "gap",
-     "prompt": "They ___ (not / have got) a car, so they walk everywhere.",
-     "answer": "haven't got",
+     "prompt": "They ___ (not / have) a car, so they walk everywhere.",
+     "answer": "don't have",
      "accept": [
-      "have not got"
+      "haven't got"
      ],
-     "explanation_ru": "Отрицание ставится между have и got, без do.",
+     "explanation_ru": "В американском английском отрицание с have строится через do: they don't have. Haven't got тоже верно, но звучит по-британски.",
      "difficulty": 2
     },
     {
      "id": "a1_have_got_07",
      "kind": "correct",
      "prompt": "Do you have got a pen?",
-     "answer": "Have you got a pen?",
+     "answer": "Do you have a pen?",
      "accept": [
-      "Do you have a pen?",
-      "Do you have a pen",
-      "Have you got a pen"
+      "Have you got a pen?"
      ],
-     "explanation_ru": "С have got вспомогательный do не нужен; можно также перестроить вопрос через do you have.",
+     "explanation_ru": "Do и have got в одном вопросе не сочетаются. В американском английском спрашивают Do you have a pen?; Have you got a pen? — британский вариант.",
      "difficulty": 3
     },
     {
@@ -1781,7 +1823,7 @@
      "accept": [
       "I've got an idea."
      ],
-     "explanation_ru": "Порядок: подлежащее, have, got и существительное.",
+     "explanation_ru": "Порядок: подлежащее, have, got и существительное; в речи — I've got an idea (= I have an idea).",
      "difficulty": 3
     },
     {
@@ -1802,16 +1844,16 @@
     {
      "id": "a1_have_got_10",
      "kind": "choice",
-     "prompt": "A: Have you got a car?\nB: No, I ___.",
+     "prompt": "A: Do you have a car?\nB: No, I ___.",
      "options": [
-      "am not",
-      "hasn't",
-      "haven't",
-      "haven't got"
+      "don't",
+      "doesn't",
+      "haven't got",
+      "am not"
      ],
-     "correct_index": 2,
+     "correct_index": 0,
      "diagnostic": true,
-     "explanation_ru": "Краткий ответ на вопрос с have got повторяет только have: No, I haven't. Got в кратком ответе не ставят, hasn't — форма для he и she, а am здесь ни при чём.",
+     "explanation_ru": "Краткий ответ повторяет вспомогательный глагол вопроса: Do you have…? — No, I don't. Doesn't — для he и she, got в кратком ответе не ставят, а am отвечает на вопросы с be.",
      "difficulty": 2
     },
     {
@@ -1822,6 +1864,17 @@
      "accept": [],
      "explanation_ru": "В американском варианте вместо hasn't got говорят doesn't have: отрицание строится через does, got исчезает, а после doesn't глагол стоит в начальной форме have, а не has.",
      "difficulty": 3
+    },
+    {
+     "id": "a1_have_got_12",
+     "kind": "transform",
+     "prompt": "Переведи на английский: «У меня есть собака.»",
+     "answer": "I have a dog.",
+     "accept": [
+      "I've got a dog."
+     ],
+     "explanation_ru": "«У меня есть» — I have или разговорное I've got: подлежащее I, глагол have. Русский оборот без глагола не переносят: at me is и I am have невозможны.",
+     "difficulty": 2
     }
    ]
   },
@@ -1854,7 +1907,7 @@
     {
      "id": "a1_the_difference_between_this_and_it_01",
      "kind": "choice",
-     "prompt": "What's this? - ___ my new phone.",
+     "prompt": "A: What's that on the table?\nB: ___ my new phone.",
      "options": [
       "It's",
       "This is",
@@ -1862,7 +1915,7 @@
       "It"
      ],
      "correct_index": 0,
-     "explanation_ru": "Предмет уже назван в вопросе, поэтому в ответе it: It's my new phone. This is вводит предмет впервые, its — притяжательное «его», а без is предложению не хватает глагола.",
+     "explanation_ru": "Предмет уже назван в вопросе (that), поэтому в ответе it: It's my new phone. This is вводит новый предмет рядом с говорящим, its — притяжательное «его», а без is предложению не хватает глагола.",
      "difficulty": 1
     },
     {
@@ -1928,10 +1981,10 @@
     {
      "id": "a1_the_difference_between_this_and_it_07",
      "kind": "correct",
-     "prompt": "This is my new tablet. This is very light.",
-     "answer": "This is my new tablet. It is very light.",
+     "prompt": "This is my new bike. This is really fast.",
+     "answer": "This is my new bike. It is really fast.",
      "accept": [
-      "This is my new tablet. It's very light."
+      "This is my new bike. It's really fast."
      ],
      "explanation_ru": "Во втором предложении предмет уже известен, поэтому нужно it, а не повторное this.",
      "difficulty": 3

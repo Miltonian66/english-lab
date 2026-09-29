@@ -19,7 +19,7 @@
    ],
    "examples": [
     "I always start my day with coffee.",
-    "She is never late for a meeting.",
+    "He is never at home on Fridays.",
     "We often work from home on Friday.",
     "They don't usually answer emails at night.",
     "How often do you go to the office?"
@@ -86,8 +86,8 @@
     {
      "id": "a1_adverbs_frequency_05",
      "kind": "gap",
-     "prompt": "Kenji ___ (usually / start) school at eight.",
-     "answer": "usually starts",
+     "prompt": "Kenji ___ (usually / get) to school at eight.",
+     "answer": "usually gets",
      "accept": [],
      "explanation_ru": "Наречие идёт перед глаголом, а глагол получает -s, потому что подлежащее Kenji — третье лицо.",
      "difficulty": 2
@@ -161,6 +161,33 @@
      "diagnostic": true,
      "explanation_ru": "С глаголом be наречие частоты стоит после него: he is always late. Перед be его не ставят, а без is предложение остаётся без сказуемого.",
      "difficulty": 2
+    },
+    {
+     "id": "a1_adverbs_frequency_12",
+     "kind": "choice",
+     "prompt": "A: How often do you go to the gym?\nB: ___",
+     "options": [
+      "Three times a week.",
+      "Three times in week.",
+      "Three times of week.",
+      "Three time a week."
+     ],
+     "correct_index": 0,
+     "explanation_ru": "Частоту называют так: once a week, twice a month, three times a week — a перед week, без предлога. In week и of week — кальки с «в неделю», а time после three получает -s: three times.",
+     "difficulty": 2,
+     "diagnostic": true
+    },
+    {
+     "id": "a1_adverbs_frequency_13",
+     "kind": "gap",
+     "prompt": "A: How often do you call your parents?\nB: ___ (каждый день).",
+     "answer": "Every day",
+     "accept": [
+      "Daily",
+      "Each day"
+     ],
+     "explanation_ru": "«Каждый день» — every day, два слова. Everyday одним словом — прилагательное «повседневный» (everyday life), ответом на How often? оно не бывает.",
+     "difficulty": 2
     }
    ]
   },
@@ -181,11 +208,11 @@
     "Short answers: Yes, I did. / No, I didn't."
    ],
    "examples": [
-    "I didn't get your message.",
-    "Did you finish the report yesterday?",
+    "I didn't hear the alarm.",
+    "Did she call you back?",
     "Where did they go after work?",
     "She didn't come to the office on Monday.",
-    "Was the meeting long?"
+    "Were they happy with the hotel?"
    ],
    "ru_interference": "Русскоязычные показывают прошедшее время дважды: неверно «I didn't saw him» → верно «I didn't see him»; неверно «Did you went home?» → верно «Did you go home?». Ещё путают be и did: неверно «Did you was late?» → верно «Were you late?».",
    "prerequisites": [],
@@ -315,7 +342,9 @@
      "kind": "transform",
      "prompt": "Make the sentence negative: We went to the beach on Sunday.",
      "answer": "We didn't go to the beach on Sunday.",
-     "accept": [],
+     "accept": [
+      "On Sunday we didn't go to the beach."
+     ],
      "explanation_ru": "Отрицание в Past Simple — didn't плюс первая форма. Went превращается в go, потому что прошедшее время уже показывает did.",
      "difficulty": 3
     },
@@ -335,6 +364,18 @@
       ]
      ],
      "explanation_ru": "Вопрос и отрицание в прошедшем строятся через did, а смысловой глагол остаётся в первой форме: Did you go, didn't go, didn't have.",
+     "difficulty": 2
+    },
+    {
+     "id": "a1_past_simple_negatives_questions_13",
+     "kind": "transform",
+     "prompt": "Переведи на английский: «Я не купил хлеб.»",
+     "answer": "I didn't buy bread.",
+     "accept": [
+      "I didn't buy any bread.",
+      "I didn't buy the bread."
+     ],
+     "explanation_ru": "Отрицание в прошедшем — didn't плюс первая форма: I didn't buy. Прошедшее время уже показывает did, поэтому bought после didn't не ставят.",
      "difficulty": 2
     }
    ]
@@ -358,7 +399,7 @@
    "examples": [
     "I worked from home last Friday.",
     "She studied English for three years.",
-    "They bought a new laptop last month.",
+    "We bought a lot of fruit at the market.",
     "We stopped the server for ten minutes.",
     "He wrote the report yesterday."
    ],
@@ -400,11 +441,11 @@
      "options": [
       "buyed",
       "buy",
-      "boughted",
-      "bought"
+      "bought",
+      "was buy"
      ],
-     "correct_index": 3,
-     "explanation_ru": "Buy — неправильный глагол, прошедшее время bought, окончание -ed к нему не добавляют.",
+     "correct_index": 2,
+     "explanation_ru": "Buy — неправильный глагол: bought. Buyed — ошибка по аналогии с правильными глаголами, buy — настоящее время, а was с другим глаголом прошедшее время не образует.",
      "difficulty": 1
     },
     {
@@ -414,11 +455,11 @@
      "options": [
       "studyed",
       "studied",
-      "studed",
+      "studies",
       "study"
      ],
      "correct_index": 1,
-     "explanation_ru": "Если перед -y стоит согласная, -y меняется на -i и добавляется -ed: study — studied.",
+     "explanation_ru": "Если перед -y стоит согласная, -y меняется на -i и добавляется -ed: study — studied. Studies и study — формы настоящего времени.",
      "difficulty": 2
     },
     {
@@ -462,7 +503,7 @@
     {
      "id": "a1_past_simple_regular_irregular_09",
      "kind": "cloze",
-     "prompt": "Last Saturday we ___ (go) to the beach. The kids ___ (play) in the water, and I ___ (read) a book.",
+     "prompt": "Last Saturday we ___ (go) to the beach. The kids ___ (play) in the water, and I ___ (sleep) under a big umbrella.",
      "gaps": [
       [
        "went"
@@ -472,11 +513,11 @@
        "were playing"
       ],
       [
-       "read",
-       "was reading"
+       "slept",
+       "was sleeping"
       ]
      ],
-     "explanation_ru": "Go и read — неправильные глаголы: went, read (пишется так же, но читается как red). Play — правильный: played; после гласной y сохраняется.",
+     "explanation_ru": "Go и sleep — неправильные глаголы: went, slept. Play — правильный: played; после гласной y сохраняется.",
      "difficulty": 2
     },
     {
@@ -529,7 +570,7 @@
    "examples": [
     "I am writing an email right now.",
     "She is talking to a client at the moment.",
-    "We aren't working today.",
+    "They aren't listening.",
     "Are you listening to me?",
     "They are testing the new version now."
    ],
@@ -607,12 +648,12 @@
     {
      "id": "a1_present_continuous_06",
      "kind": "gap",
-     "prompt": "I ___ (write) an email now.",
-     "answer": "am writing",
+     "prompt": "Sorry, I ___ (drive) now. I'll call you back later.",
+     "answer": "am driving",
      "accept": [
-      "'m writing"
+      "'m driving"
      ],
-     "explanation_ru": "С подлежащим I используется am, а немое -e в write перед -ing выпадает.",
+     "explanation_ru": "Действие идёт прямо сейчас: am + driving. Немое -e в drive перед -ing выпадает.",
      "difficulty": 2
     },
     {
@@ -671,7 +712,7 @@
     {
      "id": "a1_present_continuous_12",
      "kind": "cloze",
-     "prompt": "It's Sunday morning. Dad ___ (sit) in the garden. Mom ___ (study) Spanish, and I ___ (make) breakfast.",
+     "prompt": "It's Sunday morning. Dad ___ (sit) in the yard. Mom ___ (study) Spanish, and I ___ (make) breakfast.",
      "gaps": [
       [
        "is sitting"
@@ -685,6 +726,19 @@
      ],
      "explanation_ru": "Всё происходит сейчас, поэтому am/is + -ing. Sit удваивает t: sitting; у study y сохраняется: studying; у make немое -e выпадает: making.",
      "difficulty": 3
+    },
+    {
+     "id": "a1_present_continuous_13",
+     "kind": "transform",
+     "prompt": "Переведи на английский: «Что ты сейчас делаешь?»",
+     "answer": "What are you doing now?",
+     "accept": [
+      "What are you doing right now?",
+      "What are you doing at the moment?",
+      "What are you doing?"
+     ],
+     "explanation_ru": "Вопрос о том, что происходит в момент речи, — Present Continuous: What are you doing now? Are выходит перед подлежащим, а глагол получает -ing. What do you do? значит «чем ты занимаешься, кем работаешь».",
+     "difficulty": 2
     }
    ]
   },
@@ -705,10 +759,10 @@
    ],
    "examples": [
     "I am a tester on a small team.",
-    "My colleagues are from Poland.",
+    "Our teachers are from Canada.",
     "The office isn't open on Sunday.",
     "Is she your manager?",
-    "Are you ready for the call?"
+    "Is it cold outside?"
    ],
    "ru_interference": "В русском связка «есть» опускается, и её теряют в английском: неверно «He programmer» → верно «He is a programmer». Ещё берут do вместо be: неверно «Do you ready?» → верно «Are you ready?».",
    "prerequisites": [],
@@ -856,6 +910,34 @@
      "diagnostic": true,
      "explanation_ru": "О своём состоянии говорят через I am плюс прилагательное: I am cold. Русское безличное «мне холодно» подталкивает к me, но подлежащее — I. I have a cold значит «я простужен».",
      "difficulty": 1
+    },
+    {
+     "id": "a1_present_simple_forms_of_to_be_12",
+     "kind": "choice",
+     "prompt": "A: Is your brother married?\nB: No, he ___.",
+     "options": [
+      "isn't",
+      "doesn't",
+      "not",
+      "aren't"
+     ],
+     "correct_index": 0,
+     "explanation_ru": "Краткий ответ повторяет глагол вопроса: Is he…? — No, he isn't. Doesn't отвечает на вопросы с does, not без is не образует ответа, а aren't — для you, we, they.",
+     "difficulty": 1,
+     "diagnostic": true
+    },
+    {
+     "id": "a1_present_simple_forms_of_to_be_13",
+     "kind": "transform",
+     "prompt": "Переведи на английский: «Мне тридцать лет.»",
+     "answer": "I'm thirty.",
+     "accept": [
+      "I'm thirty years old.",
+      "I'm 30.",
+      "I'm 30 years old."
+     ],
+     "explanation_ru": "Возраст называют через be: I'm thirty или I'm thirty years old. Русское «мне … лет» подталкивает к have, но возраст не «имеют», а years без old в конце не ставят.",
+     "difficulty": 2
     }
    ]
   },
@@ -975,8 +1057,11 @@
      "kind": "order",
      "prompt": "now / are / they / lunch / having / .",
      "answer": "They are having lunch now.",
-     "accept": [],
-     "explanation_ru": "Слово now требует Present Continuous: are плюс having, а обстоятельство идёт в конце.",
+     "accept": [
+      "They are now having lunch.",
+      "Now they are having lunch."
+     ],
+     "explanation_ru": "Слово now требует Present Continuous: are плюс having. Now обычно стоит в конце, но может стоять и после are или в начале: They are now having lunch.",
      "difficulty": 3
     },
     {
@@ -1049,7 +1134,7 @@
     "My brother works in a bank.",
     "She doesn't like long meetings.",
     "Do they speak English at work?",
-    "Tom watches videos every evening."
+    "My dad fixes old cars."
    ],
    "ru_interference": "Русскоязычные забывают -s в третьем лице: неверно «He work here» → верно «He works here». И наоборот, оставляют -s после does и doesn't: неверно «Does he works here?» → верно «Does he work here?».",
    "prerequisites": [],
@@ -1103,11 +1188,11 @@
      "options": [
       "has",
       "have",
-      "haves",
+      "had",
       "having"
      ],
      "correct_index": 1,
-     "explanation_ru": "После Does смысловой глагол всегда стоит в первой форме, поэтому have.",
+     "explanation_ru": "После Does смысловой глагол всегда стоит в первой форме: have. Has — форма утверждения с he, had — прошедшее время, а having — форма на -ing.",
      "difficulty": 2
     },
     {
@@ -1144,10 +1229,10 @@
     {
      "id": "a1_present_simple_08",
      "kind": "order",
-     "prompt": "you / where / do / live / ?",
-     "answer": "Where do you live?",
+     "prompt": "she / time / does / what / get up / ?",
+     "answer": "What time does she get up?",
      "accept": [],
-     "explanation_ru": "Порядок в специальном вопросе: вопросительное слово, do, подлежащее, глагол.",
+     "explanation_ru": "Порядок в вопросе: вопросительная группа what time, вспомогательный does, подлежащее she и глагол в начальной форме — get up без -s.",
      "difficulty": 3
     },
     {
@@ -1205,6 +1290,36 @@
       ]
      ],
      "explanation_ru": "С he глагол в утверждении получает -s: lives, gets up. В отрицании -s уходит на does: doesn't watch — после doesn't глагол в первой форме.",
+     "difficulty": 2
+    },
+    {
+     "id": "a1_present_simple_13",
+     "kind": "gap",
+     "prompt": "A: Does your sister like cats?\nB: Yes, she ___. She has three!",
+     "answer": "does",
+     "accept": [],
+     "explanation_ru": "Краткий ответ повторяет вспомогательный глагол вопроса: Does she…? — Yes, she does. Смысловой like не повторяют, а do с she не сочетается.",
+     "difficulty": 1
+    },
+    {
+     "id": "a1_present_simple_14",
+     "kind": "cloze",
+     "prompt": "My son Leo ___ (study) at a music school. He ___ (go) to class every morning, and in the evening he ___ (do) his homework. He ___ (try) to practice the piano every day.",
+     "gaps": [
+      [
+       "studies"
+      ],
+      [
+       "goes"
+      ],
+      [
+       "does"
+      ],
+      [
+       "tries"
+      ]
+     ],
+     "explanation_ru": "С he глагол получает -s, но орфография меняется: после согласной y переходит в -ies (studies, tries), а go и do получают -es (goes, does).",
      "difficulty": 2
     }
    ]
@@ -1400,7 +1515,7 @@
    "examples": [
     "I want to learn Spanish.",
     "We need to go to the store.",
-    "My kids love drawing.",
+    "Our daughter loves drawing.",
     "She hates waiting for the bus.",
     "He likes to cook on Sundays.",
     "I can ride a bike."
@@ -1524,7 +1639,7 @@
     {
      "id": "a1_verbs_infinitive_verbs_ing_10",
      "kind": "cloze",
-     "prompt": "My brother Diego ___ (love / play) football. He ___ (want / be) a coach one day. But he ___ (hate / run) in the rain!",
+     "prompt": "My brother Diego ___ (love / play) soccer. He ___ (want / be) a coach one day. But he ___ (hate / run) in the rain!",
      "gaps": [
       [
        "loves playing",
@@ -1566,7 +1681,7 @@
    "title_en": "Basic word order in English",
    "source_slug": "basic-word-order-in-english",
    "title_ru": "Базовый порядок слов в английском",
-   "summary_ru": "Порядок слов в английском фиксированный, потому что у слов почти нет падежных окончаний и именно позиция показывает, кто действует, а кто принимает действие. Базовая схема утверждения: подлежащее, сказуемое, дополнение: Anna reads books. Обстоятельства идут после дополнения, сначала место, затем время: I met him at the office yesterday. Между глаголом и дополнением ничего не вставляют, поэтому нельзя сказать «I like very much this movie». Наречия частоты стоят перед смысловым глаголом, но после формы be. В вопросе на первое место выходит вспомогательный глагол: Do you work here? Where did she go? Подлежащее в английском предложении опускать нельзя.",
+   "summary_ru": "Порядок слов в английском фиксированный, потому что у слов почти нет падежных окончаний и именно позиция показывает, кто действует, а кто принимает действие. Базовая схема утверждения: подлежащее, сказуемое, дополнение: Anna reads books. Обстоятельства идут после дополнения, сначала место, затем время: I met Lena at the gym last week. Между глаголом и дополнением ничего не вставляют, поэтому нельзя сказать «I like very much this movie». Наречия частоты стоят перед смысловым глаголом, но после формы be. В вопросе на первое место выходит вспомогательный глагол: Do you work here? Where did she go? Подлежащее в английском предложении опускать нельзя.",
    "forms": [
     "Subject + Verb + Object",
     "Subject + Verb + Object + place + time",
@@ -1574,9 +1689,9 @@
     "(Wh-) + do/did/am/is/are + Subject + V ...?"
    ],
    "examples": [
-    "Anna speaks English well.",
-    "I saw him at the office yesterday.",
-    "She goes to work at eight.",
+    "My son plays chess very well.",
+    "I met Lena at the gym last week.",
+    "We start work at nine.",
     "We often have short meetings.",
     "Where do you live?"
    ],
@@ -1708,7 +1823,7 @@
       "or"
      ],
      "correct_index": 1,
-     "diagnostic": true,
+     "diagnostic": false,
      "explanation_ru": "Вторая часть — следствие холода, поэтому so («поэтому»). Because вводит причину, а не следствие, but — противопоставление, or — выбор.",
      "difficulty": 2
     },
@@ -1760,7 +1875,7 @@
    "examples": [
     "Close the door, please.",
     "Don't be late for the meeting.",
-    "Let's start the demo now.",
+    "Let's order a pizza.",
     "Please send me the file.",
     "Be careful with the cables."
    ],
@@ -1802,11 +1917,11 @@
      "options": [
       "Let's",
       "Lets us",
-      "Let is",
+      "Let we",
       "Let's to"
      ],
      "correct_index": 0,
-     "explanation_ru": "Предложение сделать что-то вместе выражается формой Let's плюс первая форма глагола.",
+     "explanation_ru": "Предложение сделать что-то вместе — Let's плюс первая форма глагола. Let we — калька с «давайте мы», в Lets us потерян апостроф, а to после Let's не ставят.",
      "difficulty": 1
     },
     {
@@ -1898,20 +2013,22 @@
     {
      "id": "a1_imperative_sit_dont_talk_11",
      "kind": "cloze",
-     "prompt": "Welcome to our home! Please ___ (take off) your shoes. ___ (not / worry) about the dog, he is very friendly. ___ (let's / eat) now!",
+     "prompt": "Welcome to our home! Please ___ (снимите) your shoes. ___ (not / worry) about the dog, he's very friendly. ___ (давайте поедим) now!",
      "gaps": [
       [
-       "take off"
+       "take off",
+       "remove"
       ],
       [
-       "Don't worry"
+       "Don't worry",
+       "Do not worry"
       ],
       [
        "Let's eat",
        "Let us eat"
       ]
      ],
-     "explanation_ru": "Просьба — глагол в первой форме: take off. Отрицательная просьба — Don't плюс глагол. Предложение сделать что-то вместе — Let's плюс глагол без to.",
+     "explanation_ru": "Просьба — глагол в первой форме без подлежащего: take off. Отрицательная просьба — Don't плюс глагол. «Давайте» — Let's плюс глагол без to.",
      "difficulty": 1
     }
    ]

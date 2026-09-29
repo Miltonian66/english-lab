@@ -103,22 +103,20 @@
         {
           "id": "a2_stative_vs_dynamic_verbs_or_non_action_vs_action_verbs_06",
           "kind": "gap",
-          "prompt": "Can you call me back later? I ___ (have) a quick meeting with my manager.",
+          "prompt": "Can you call me back later? I ___ (have) lunch with my sister right now.",
           "answer": "am having",
           "accept": [
             "'m having"
           ],
-          "explanation_ru": "Have a meeting — это действие, которое идёт прямо сейчас, поэтому нужен Present Continuous.",
+          "explanation_ru": "Have lunch — это действие «обедать», и оно идёт прямо сейчас (right now), поэтому Present Continuous: am having.",
           "difficulty": 2
         },
         {
           "id": "a2_stative_vs_dynamic_verbs_or_non_action_vs_action_verbs_07",
           "kind": "correct",
-          "prompt": "I know this tool very well, and I am thinking it is the best one.",
-          "answer": "I know this tool very well, and I think it is the best one.",
-          "accept": [
-            "I know this tool very well, and I think it's the best one."
-          ],
+          "prompt": "I know this tool very well, and I'm thinking it's the best one.",
+          "answer": "I know this tool very well, and I think it's the best one.",
+          "accept": [],
           "explanation_ru": "Think здесь значит «считать», то есть состояние, поэтому Present Simple: I think. Форма I am thinking значила бы «обдумываю».",
           "difficulty": 3
         },
@@ -151,22 +149,22 @@
         {
           "id": "a2_stative_vs_dynamic_verbs_or_non_action_vs_action_verbs_10",
           "kind": "cloze",
-          "prompt": "Hi Mom! I ___ (sit) in a cafe near the beach right now. I ___ (love) this town! The weather is great, and the food ___ (taste) amazing. I ___ (want) to stay here forever!",
+          "prompt": "Hi Mom! I ___ (sit) in a cafe near the beach right now. My friend Ana ___ (love) this town! The weather is great, and the food ___ (taste) amazing. She ___ (want) to stay here forever!",
           "gaps": [
             [
               "am sitting"
             ],
             [
-              "love"
+              "loves"
             ],
             [
               "tastes"
             ],
             [
-              "want"
+              "wants"
             ]
           ],
-          "explanation_ru": "Sit — действие, которое идёт прямо сейчас: am sitting. Love, taste («быть на вкус») и want — глаголы состояния, поэтому Present Simple даже о моменте речи.",
+          "explanation_ru": "Sit — действие, которое идёт прямо сейчас: am sitting. Love, taste («быть на вкус») и want — глаголы состояния, поэтому Present Simple даже о моменте речи, а с she и the food — окончание -s.",
           "difficulty": 3
         }
       ]
@@ -191,7 +189,7 @@
         "I used to work in a small company.",
         "She used to have long hair.",
         "We didn't use to write tests.",
-        "Did you use to play football at school?",
+        "Did you use to play soccer at school?",
         "There used to be a coffee machine on this floor."
       ],
       "ru_interference": "Русское «раньше я работал в банке» переводят обычным прошедшим со словом before или earlier: неверно «Before I worked in a bank» → верно «I used to work in a bank». Из-за слова «обычно» used to переносят и в настоящее время, хотя там нужно usually.",
@@ -260,7 +258,7 @@
         {
           "id": "a2_used_to_05",
           "kind": "gap",
-          "prompt": "My father ___ ___ ___ (work) as a driver, but now he is retired.",
+          "prompt": "My father ___ ___ ___ (work) as a driver, but now he's retired.",
           "answer": "used to work",
           "accept": [],
           "explanation_ru": "Речь о постоянной работе в прошлом, которой больше нет, поэтому used to + начальная форма work.",
@@ -269,7 +267,7 @@
         {
           "id": "a2_used_to_06",
           "kind": "gap",
-          "prompt": "I ___ (not / used to / like) jazz, but now it is my favorite music.",
+          "prompt": "I ___ (not / used to / like) jazz, but now it's my favorite music.",
           "answer": "didn't use to like",
           "accept": [
             "did not use to like"
@@ -291,8 +289,10 @@
           "kind": "order",
           "prompt": "used / we / to / meet / every / Friday / .",
           "answer": "We used to meet every Friday.",
-          "accept": [],
-          "explanation_ru": "Порядок обычный: подлежащее, used to, начальная форма глагола и обстоятельство времени в конце.",
+          "accept": [
+            "Every Friday we used to meet."
+          ],
+          "explanation_ru": "Порядок обычный: подлежащее, used to, начальная форма глагола; обстоятельство времени стоит в конце или в начале: Every Friday we used to meet.",
           "difficulty": 3
         },
         {
@@ -330,6 +330,32 @@
             ]
           ],
           "explanation_ru": "Прошлые привычки и состояния — used to + начальная форма. В отрицании и вопросе прошлое показывает did, поэтому used теряет -d: didn't use to have, Did you use to visit…?",
+          "difficulty": 3
+        },
+        {
+          "id": "a2_used_to_11",
+          "kind": "choice",
+          "prompt": "We ___ to Rome in 2019. It was our first trip abroad.",
+          "options": [
+            "went",
+            "used to go",
+            "use to go",
+            "go"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Поездка была одна и в точно названном году, поэтому Past Simple: went. Used to описывает то, что повторялось или длилось раньше, а сейчас не так; use to без -d пишут только после did, а go — настоящее время.",
+          "difficulty": 2,
+          "diagnostic": true
+        },
+        {
+          "id": "a2_used_to_12",
+          "kind": "correct",
+          "prompt": "In 2020 we used to move to a new apartment.",
+          "answer": "In 2020 we moved to a new apartment.",
+          "accept": [
+            "We moved to a new apartment in 2020."
+          ],
+          "explanation_ru": "Переезд — одно законченное событие в названном году, поэтому Past Simple: moved. Used to говорят о привычках и состояниях прошлого, которые повторялись или длились.",
           "difficulty": 3
         }
       ]
@@ -394,7 +420,7 @@
         {
           "id": "a2_infinitives_and_gerunds_03",
           "kind": "choice",
-          "prompt": "She is good at ___ problems quickly.",
+          "prompt": "She's good at ___ problems quickly.",
           "options": [
             "solve",
             "to solve",
@@ -505,6 +531,21 @@
           ],
           "explanation_ru": "После предлога about и глагола mind — форма на -ing (going, meeting). После would love и hope — to + глагол (to try, to find).",
           "difficulty": 3
+        },
+        {
+          "id": "a2_infinitives_and_gerunds_12",
+          "kind": "choice",
+          "prompt": "A: ___ to come to my birthday party on Saturday?\nB: I'd love to!",
+          "options": [
+            "Would you like",
+            "Do you like",
+            "Would you like to",
+            "Are you like"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Вежливое приглашение — Would you like to + глагол: Would you like to come…? To уже стоит после пропуска, поэтому второе to лишнее. Do you like to… спрашивает, нравится ли вообще, а are с like не сочетается.",
+          "difficulty": 2,
+          "diagnostic": true
         }
       ]
     },

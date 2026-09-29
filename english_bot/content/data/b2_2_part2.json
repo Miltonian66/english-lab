@@ -1804,7 +1804,7 @@
         {
           "id": "b2_participle_clauses_13",
           "kind": "transform",
-          "prompt": "Переведи на английский: «Закончив отчёт, она отправила его клиенту».",
+          "prompt": "Переведи на английский, начав с причастного оборота (-ing): «Закончив отчёт, она отправила его клиенту».",
           "answer": "Having finished the report, she sent it to the client.",
           "accept": [
             "After finishing the report, she sent it to the client.",

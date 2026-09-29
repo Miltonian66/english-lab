@@ -161,6 +161,13 @@ class AnswerTests(unittest.TestCase):
         order = self._ex("order", "than / older / she / is / me / .", "She is older than me.")
         self.assertFalse(matches(order, "She is older then me."))
 
+    def test_apostrophe_is_grammar_not_a_typo(self) -> None:
+        """«a customs' officer» — ошибка притяжательной формы, а не описка."""
+        exercise = self._ex("transform", "Rewrite as a compound noun: an officer who checks bags at customs",
+                            "a customs officer")
+        self.assertFalse(matches(exercise, "a customs' officer"))
+        self.assertTrue(matches(exercise, "a custms officer"))
+
     def test_typo_in_the_corrected_word_is_still_an_error(self) -> None:
         exercise = self._ex("correct", "He goed to the office.", "He went to the office.")
         self.assertFalse(matches(exercise, "He wnet to the office."))

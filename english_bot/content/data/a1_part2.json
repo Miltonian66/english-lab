@@ -9,7 +9,7 @@
    "title_en": "Would you like...? I'd like...",
    "source_slug": "would-like",
    "title_ru": "Would like: вежливое «я хотел бы»",
-   "summary_ru": "Would like — вежливый способ сказать, что вы хотите, и предложить что-то другому. Форма одна для всех лиц: I would like, he would like, they would like. В речи почти всегда используют сокращение: I'd like, she'd like. После would like идёт существительное (I'd like a coffee) или to + глагол (I'd like to ask a question). Вопрос строится через Would: Would you like some tea? Would you like to join us? Отрицание: I wouldn't like to work at night. Обычный ответ на предложение — Yes, please или No, thank you. Would like мягче и вежливее, чем want, поэтому в рабочем общении выбирайте его.",
+   "summary_ru": "Would like — вежливый способ сказать, что вы хотите, и предложить что-то другому. Форма одна для всех лиц: I would like, he would like, they would like. В речи почти всегда используют сокращение: I'd like, she'd like. После would like идёт существительное (I'd like a coffee) или to + глагол (I'd like to ask a question). Вопрос строится через Would: Would you like some tea? Would you like to join us? Отрицание: I wouldn't like to live there. Обычный ответ на предложение — Yes, please или No, thank you. Would like мягче и вежливее, чем want, поэтому в рабочем общении выбирайте его.",
    "forms": [
     "I/you/he/she/we/they + would like + существительное",
     "would like + to + глагол",
@@ -19,10 +19,10 @@
    ],
    "examples": [
     "I'd like a cup of coffee, please.",
-    "Would you like some tea?",
+    "Would you like something to drink?",
     "She would like to work on our team.",
     "Would you like to join the call?",
-    "We wouldn't like to wait for an hour."
+    "I wouldn't like to be famous."
    ],
    "ru_interference": "Русские говорят прямое I want tea вместо вежливого I'd like tea и теряют to перед глаголом: неверно «I would like drink tea» → верно «I would like to drink tea».",
    "prerequisites": [],
@@ -95,12 +95,12 @@
     {
      "id": "a1_would_like_06",
      "kind": "gap",
-     "prompt": "We ___ (not / would like) to wait here for an hour.",
+     "prompt": "It's a nice job, but I ___ (not / would like) to work at night.",
      "answer": "wouldn't like",
      "accept": [
       "would not like"
      ],
-     "explanation_ru": "Отрицание строится как wouldn't like; частица not ставится сразу после would.",
+     "explanation_ru": "Отрицание — wouldn't like: not ставится сразу после would. Так говорят о воображаемой ситуации; о реальном нежелании в разговоре чаще говорят I don't want to.",
      "difficulty": 2
     },
     {
@@ -157,19 +157,20 @@
     {
      "id": "a1_would_like_11",
      "kind": "cloze",
-     "prompt": "Waiter: Hello! What ___ (you / would like) to eat?\nMei: I ___ (would like) the fish, please. And my son ___ (would like) a burger.",
+     "prompt": "Use would like. Waiter: Hello! What ___ (you / like) to eat?\nNadia: I ___ (like) the fish, please.\nWaiter: And ___ (your son / like) some juice?\nNadia: Yes, please!",
      "gaps": [
       [
        "would you like"
       ],
       [
-       "would like"
+       "would like",
+       "'d like"
       ],
       [
-       "would like"
+       "would your son like"
       ]
      ],
-     "explanation_ru": "В вопросе would выходит перед подлежащим: What would you like…? Would одинаков для всех лиц, поэтому и с my son — would like, без -s; в речи — I'd like.",
+     "explanation_ru": "В вопросе would выходит перед подлежащим: What would you like…?, Would your son like…? Would одинаков для всех лиц, поэтому like без -s; в речи — I'd like.",
      "difficulty": 1
     }
    ]
@@ -294,8 +295,11 @@
      "kind": "order",
      "prompt": "at / is / Priya / school / now / .",
      "answer": "Priya is at school now.",
-     "accept": [],
-     "explanation_ru": "Порядок слов: подлежащее, глагол be, обстоятельство места at school, затем время.",
+     "accept": [
+      "Priya is now at school.",
+      "Now Priya is at school."
+     ],
+     "explanation_ru": "Порядок слов: подлежащее, глагол be, обстоятельство места at school. Now обычно стоит в конце, но может стоять и после is или в начале: Priya is now at school.",
      "difficulty": 3
     },
     {
@@ -346,6 +350,30 @@
      ],
      "explanation_ru": "Откуда человек родом — from: she is from Canada. Направление движения — to: walks to school. В машину садятся с into или in: get into the car. At описывает место, а не движение.",
      "difficulty": 2
+    },
+    {
+     "id": "a1_at_in_on_prepositions_of_place_12",
+     "kind": "choice",
+     "prompt": "I read a book ___ the bus every morning.",
+     "options": [
+      "on",
+      "in",
+      "at",
+      "by"
+     ],
+     "correct_index": 0,
+     "explanation_ru": "В автобусе, поезде и самолёте едут on: on the bus, on the train, on a plane. In — для машины и такси (in a car), by ставят только без артикля (by bus), а at обозначает точку, а не транспорт.",
+     "difficulty": 2,
+     "diagnostic": true
+    },
+    {
+     "id": "a1_at_in_on_prepositions_of_place_13",
+     "kind": "gap",
+     "prompt": "Sorry, I'm ___ a taxi now. I'll be there in five minutes.",
+     "answer": "in",
+     "accept": [],
+     "explanation_ru": "В машине и такси — in: in a taxi, in a car. On говорят об автобусе, поезде и самолёте, где можно встать и пройти: on the bus.",
+     "difficulty": 2
     }
    ]
   },
@@ -366,10 +394,10 @@
     "Без предлога: today, tomorrow, next week, every day"
    ],
    "examples": [
-    "The meeting starts at ten o'clock.",
+    "The store opens at nine.",
     "We have a demo on Friday.",
     "He was born in 1995.",
-    "I read my email in the morning.",
+    "We go for a walk in the evening.",
     "She often works at night.",
     "I will call you tomorrow."
    ],
@@ -529,8 +557,51 @@
       "twenty-first",
       "twenty first"
      ],
-     "explanation_ru": "В дате число читается порядковым: June twenty-first, а на письме — 21st (в американских текстах окончание часто опускают: June 21). Окончание зависит от последней цифры: 1st, 2nd, 3rd, поэтому 21st, 22nd, 23rd; остальные числа, в том числе 11th, 12th и 13th, получают -th.",
+     "explanation_ru": "Задание просит порядковую форму числа: в дате его читают как June twenty-first, а пишут 21st. Окончание зависит от последней цифры: 1st, 2nd, 3rd, поэтому 21st, 22nd, 23rd; остальные числа, в том числе 11th, 12th и 13th, получают -th.",
      "difficulty": 3
+    },
+    {
+     "id": "a1_at_in_on_prepositions_time_13",
+     "kind": "transform",
+     "prompt": "Переведи на английский: «Фильм начинается в семь пятнадцать.»",
+     "answer": "The movie starts at seven fifteen.",
+     "accept": [
+      "The movie starts at 7:15.",
+      "The movie begins at seven fifteen.",
+      "The movie begins at 7:15.",
+      "The movie starts at a quarter past seven.",
+      "The film starts at seven fifteen.",
+      "The film starts at 7:15.",
+      "The film begins at seven fifteen.",
+      "The film begins at 7:15.",
+      "The movie starts at seven-fifteen.",
+      "The movie begins at seven-fifteen.",
+      "The film starts at seven-fifteen.",
+      "The film begins at seven-fifteen.",
+      "The movie begins at a quarter past seven.",
+      "The film starts at a quarter past seven.",
+      "The film begins at a quarter past seven.",
+      "The movie starts at quarter past seven.",
+      "The movie starts at a quarter after seven.",
+      "The movie starts at quarter after seven."
+     ],
+     "explanation_ru": "Точное время по часам всегда идёт с at: at seven fifteen. Русское «в» подталкивает к in, но in ставят с месяцами и годами. Время читают по-американски просто цифрами: seven fifteen.",
+     "difficulty": 2
+    },
+    {
+     "id": "a1_at_in_on_prepositions_time_14",
+     "kind": "choice",
+     "prompt": "Как сказать по-английски: «Во сколько начинается урок?»",
+     "options": [
+      "What time does the lesson start?",
+      "In what time does the lesson start?",
+      "How much time does the lesson start?",
+      "What time the lesson starts?"
+     ],
+     "correct_index": 0,
+     "explanation_ru": "«Во сколько» — What time…? (можно и At what time…?). В вопросе нужен вспомогательный does перед подлежащим. In what time — калька с «в какое время», а How much time спрашивает, сколько длится, а не когда.",
+     "difficulty": 2,
+     "diagnostic": true
     }
    ]
   },
@@ -554,7 +625,7 @@
     "The printer is next to the window.",
     "My chair is behind the door.",
     "The cat is under the table.",
-    "The bank is between the store and the cafe.",
+    "The bathroom is between the kitchen and the bedroom.",
     "There is a lamp over my desk.",
     "The bus stop is in front of our office."
    ],
@@ -620,10 +691,12 @@
     {
      "id": "a1_next_to_under_between_in_front_behind_etc_05",
      "kind": "gap",
-     "prompt": "The bank is ___ the store and the school.",
-     "answer": "between",
-     "accept": [],
-     "explanation_ru": "Между двумя объектами используется between ... and ... .",
+     "prompt": "A bird is flying ___ the lake. (над)",
+     "answer": "over",
+     "accept": [
+      "above"
+     ],
+     "explanation_ru": "«Над» — over или above; over особенно часто описывает движение над чем-то: fly over the lake.",
      "difficulty": 1
     },
     {
@@ -640,10 +713,10 @@
     {
      "id": "a1_next_to_under_between_in_front_behind_etc_07",
      "kind": "correct",
-     "prompt": "The car is in front the door.",
-     "answer": "The car is in front of the door.",
+     "prompt": "Our yard is behind of the house.",
+     "answer": "Our yard is behind the house.",
      "accept": [],
-     "explanation_ru": "В составном предлоге in front of пропущено of.",
+     "explanation_ru": "Behind — предлог из одного слова, of к нему не добавляют, в отличие от in front of: behind the house, но in front of the house.",
      "difficulty": 3
     },
     {
@@ -1029,6 +1102,27 @@
      "diagnostic": true,
      "explanation_ru": "Русское предложение начинается с места, а английское — с there are, место уходит в конец. Cups во множественном числе, поэтому are, а it не вводит новый предмет.",
      "difficulty": 2
+    },
+    {
+     "id": "a1_there_is_there_are_12",
+     "kind": "transform",
+     "prompt": "Переведи на английский: «В нашем городе два парка.»",
+     "answer": "There are two parks in our town.",
+     "accept": [
+      "There are two parks in our city.",
+      "In our town there are two parks.",
+      "In our city there are two parks.",
+      "Our town has two parks.",
+      "Our city has two parks.",
+      "There are 2 parks in our town.",
+      "There are 2 parks in our city.",
+      "Our town has 2 parks.",
+      "Our city has 2 parks.",
+      "We have two parks in our town.",
+      "We have two parks in our city."
+     ],
+     "explanation_ru": "Русское предложение начинается с места, а английское — с there are: место уходит в конец. Parks во множественном числе, поэтому are. Можно сказать и Our town has two parks.",
+     "difficulty": 3
     }
    ]
   },
@@ -1050,10 +1144,10 @@
    ],
    "examples": [
     "There is a new cafe near the office. It is very good.",
-    "It is cold today.",
+    "It's snowing in the mountains.",
     "It is nine o'clock.",
     "There are two free rooms. It is easy to book them.",
-    "It is Monday today."
+    "It's already June!"
    ],
    "ru_interference": "Русские безличные фразы «холодно» и «есть» смешиваются: неверно «There is cold today» → верно «It is cold today»; неверно «There is difficult to answer» → верно «It is difficult to answer».",
    "prerequisites": [],
@@ -1089,7 +1183,7 @@
     {
      "id": "a1_there_it_03",
      "kind": "choice",
-     "prompt": "'What time is it?' '___ is half past six.'",
+     "prompt": "'What time is it?' '___ is six thirty.'",
      "options": [
       "They",
       "There",
@@ -1097,7 +1191,7 @@
       "Those"
      ],
      "correct_index": 2,
-     "explanation_ru": "Время суток называют через it: It is half past six.",
+     "explanation_ru": "Время называют через it: It is six thirty. There сообщает о существовании предмета, а they и those не говорят о времени.",
      "difficulty": 2
     },
     {
@@ -1199,6 +1293,21 @@
      "diagnostic": true,
      "explanation_ru": "Безличное русское «поздно» в английском требует формального подлежащего it: It's late. There is сообщает о существовании предмета, а предложение без подлежащего невозможно.",
      "difficulty": 1
+    },
+    {
+     "id": "a1_there_it_12",
+     "kind": "choice",
+     "prompt": "A: What time is it?\nB: ___",
+     "options": [
+      "It's a quarter to five.",
+      "It's without a quarter five.",
+      "There is a quarter to five.",
+      "Is a quarter to five."
+     ],
+     "correct_index": 0,
+     "explanation_ru": "Время называют через it: It's a quarter to five (без четверти пять). Русское «без» не переводят через without, there is о времени не говорят, а без it у предложения нет подлежащего.",
+     "difficulty": 2,
+     "diagnostic": true
     }
    ]
   },
@@ -1372,10 +1481,10 @@
    ],
    "examples": [
     "I have a question about the task.",
-    "There is some water in the bottle.",
+    "Can I have some water, please?",
     "We need some new chairs.",
     "Do you have any questions?",
-    "There isn't any milk in the fridge.",
+    "There isn't any bread at home.",
     "I don't have any time today."
    ],
    "ru_interference": "Слова information, advice, money в русском исчисляемые, и это переносят в английский: неверно «I need an advice» → верно «I need some advice».",
@@ -1543,8 +1652,8 @@
     "How many ...? / How much ...?"
    ],
    "examples": [
-    "We don't have much time.",
-    "How many people are on the team?",
+    "Is there much traffic in the morning?",
+    "How many brothers do you have?",
     "There are a lot of emails in my inbox.",
     "I have a few questions.",
     "Add a little water.",
@@ -1612,10 +1721,10 @@
     {
      "id": "a1_much_many_lot_little_few_05",
      "kind": "gap",
-     "prompt": "I have ___ questions about the task, only two.",
+     "prompt": "I have ___ (a few / a little) questions about the task, only two.",
      "answer": "a few",
      "accept": [],
-     "explanation_ru": "Речь о небольшом числе исчисляемых предметов: a few questions.",
+     "explanation_ru": "Questions — исчисляемое во множественном числе, а речь о небольшом количестве: a few questions. A little ставят только с неисчисляемыми: a little time.",
      "difficulty": 1
     },
     {
@@ -1708,7 +1817,7 @@
    "title_en": "Questions: Word order and question words",
    "source_slug": "questions",
    "title_ru": "Вопросы: порядок слов и вопросительные слова",
-   "summary_ru": "В английском вопросе порядок слов жёсткий: вспомогательный глагол стоит перед подлежащим. С глаголом be вспомогательный не нужен, be сам выходит вперёд: Are you ready? Where is he? С обычными глаголами используются do, does и did, а смысловой глагол остаётся в начальной форме: Where do you work? What did she say? Вопросительное слово ставится перед вспомогательным: who, what, where, when, why, how, how much, how many. Если вопросительное слово само является подлежащим, вспомогательный глагол не нужен: Who wrote this code? После did или does смысловой глагол не получает окончаний -s и -ed. Просто поднять интонацию, как в русском, недостаточно.",
+   "summary_ru": "В английском вопросе порядок слов жёсткий: вспомогательный глагол стоит перед подлежащим. С глаголом be вспомогательный не нужен, be сам выходит вперёд: Are you ready? Where is he? С обычными глаголами используются do, does и did, а смысловой глагол остаётся в начальной форме: Where do you work? What did she say? Вопросительное слово ставится перед вспомогательным: who, what, where, when, why, how, how much, how many. Если вопросительное слово само является подлежащим, вспомогательный глагол не нужен: Who made this cake? После did или does смысловой глагол не получает окончаний -s и -ed. Просто поднять интонацию, как в русском, недостаточно.",
    "forms": [
     "Вопросительное слово + do/does/did + подлежащее + глагол",
     "Be: Are you ready? Where is she?",
@@ -1721,7 +1830,7 @@
     "What time does the meeting start?",
     "When did the project finish?",
     "Are you at the office now?",
-    "Who wrote this code?",
+    "Who made this cake?",
     "How much does it cost?"
    ],
    "ru_interference": "В русском вопрос отличается только интонацией, поэтому вспомогательный глагол теряется: неверно «Where you work?» → верно «Where do you work?».",
@@ -1852,7 +1961,7 @@
     {
      "id": "a1_questions_11",
      "kind": "gap",
-     "prompt": "A: ___ (what / you / do) on weekends?\nB: I usually play football with my friends.",
+     "prompt": "A: ___ (what / you / do) on weekends?\nB: I usually play soccer with my friends.",
      "answer": "What do you do",
      "accept": [],
      "explanation_ru": "Вопросительное слово стоит первым, за ним вспомогательный do, подлежащее и глагол do в начальной форме. Два do подряд здесь нормальны: первый — вспомогательный, второй — смысловой.",
@@ -1863,8 +1972,19 @@
      "kind": "transform",
      "prompt": "Ask a question with where: Mateo works in a hospital.",
      "answer": "Where does Mateo work?",
-     "accept": [],
+     "accept": [
+      "Where does he work?"
+     ],
      "explanation_ru": "Подлежащее Mateo — третье лицо, поэтому вспомогательный does, а окончание -s уходит с глагола на does. Порядок: вопросительное слово, does, подлежащее, глагол в начальной форме.",
+     "difficulty": 3
+    },
+    {
+     "id": "a1_questions_13",
+     "kind": "transform",
+     "prompt": "Переведи на английский: «Где работает твоя сестра?»",
+     "answer": "Where does your sister work?",
+     "accept": [],
+     "explanation_ru": "Вопросительное слово, затем does (сестра — третье лицо), подлежащее и глагол в начальной форме: Where does your sister work? Русский порядок «где твоя сестра работает» без does и с -s у глагола в английском вопросе невозможен.",
      "difficulty": 3
     }
    ]
@@ -1877,19 +1997,19 @@
    "title_en": "'Will' and 'shall': Future",
    "source_slug": "will-and-shall",
    "title_ru": "Will и shall: будущее время",
-   "summary_ru": "Will выражает будущее действие и не меняет форму по лицам: I will, he will, they will. После will глагол стоит в начальной форме без to и без окончаний. В речи почти всегда используют сокращения: I'll, we'll, he'll. Отрицание — will not, сокращённо won't: He won't come tomorrow. Вопрос строится перестановкой: Will you help me? Will часто используется для решений, принятых прямо сейчас, обещаний и предположений о будущем. Shall в современном английском встречается прежде всего в предложениях помощи с I и we: Shall I open the window?",
+   "summary_ru": "Will выражает будущее действие и не меняет форму по лицам: I will, he will, they will. После will глагол стоит в начальной форме без to и без окончаний. В речи почти всегда используют сокращения: I'll, we'll, he'll. Отрицание — will not, сокращённо won't: He won't come tomorrow. Вопрос строится перестановкой: Will you help me? Will часто используется для решений, принятых прямо сейчас, обещаний и предположений о будущем. Shall в американской речи почти не звучит: предлагая помощь, говорят Should I…? или Do you want me to…?, а Shall I…? воспринимается как формальный или британский вариант.",
    "forms": [
     "will + глагол без to (для всех лиц)",
     "Сокращение: I'll, he'll, we'll",
     "Отрицание: will not = won't",
     "Вопрос: Will you ...?",
-    "Shall I / Shall we ...? — предложение помощи"
+    "Should I ...? / Do you want me to ...? — предложение помощи (Shall I ...? — формально)"
    ],
    "examples": [
     "I will send the report tomorrow.",
     "She will not be at the office on Friday.",
     "Will you help me with this bug?",
-    "Shall I open the window?",
+    "Do you want me to call a taxi?",
     "We'll finish the task next week."
    ],
    "ru_interference": "Русское «буду звонить» тянет за собой лишнее to, а вместо будущего часто ставят настоящее: неверно «I will to call you» и «Tomorrow I call you» → верно «I will call you» и «I will call you tomorrow».",
@@ -1903,10 +2023,10 @@
       "will to",
       "am will",
       "will",
-      "willing"
+      "am going"
      ],
      "correct_index": 2,
-     "explanation_ru": "После will глагол идёт без to, а сам will не сочетается с be.",
+     "explanation_ru": "После will глагол идёт без to: will call. Will не сочетается с am, а am going без to неполно — нужно am going to call.",
      "difficulty": 1
     },
     {
@@ -1914,13 +2034,13 @@
      "kind": "choice",
      "prompt": "She ___ be at work on Monday.",
      "options": [
-      "wills",
+      "going to",
       "will",
       "will to",
       "is will"
      ],
      "correct_index": 1,
-     "explanation_ru": "Will не получает окончания -s и не требует to.",
+     "explanation_ru": "Will одинаков для всех лиц и не требует to: she will be. Going to без is неполно, will to и is will — лишние слова.",
      "difficulty": 1
     },
     {
@@ -1954,12 +2074,12 @@
     {
      "id": "a1_will_and_shall_05",
      "kind": "gap",
-     "prompt": "___ (shall / will) I open the window? It is very hot here.",
-     "answer": "Shall",
+     "prompt": "___ (should / will) I open the window? It's very hot in here.",
+     "answer": "Should",
      "accept": [
-      "Should"
+      "Shall"
      ],
-     "explanation_ru": "Предложение помощи с I строится через Shall I ...?; в американской речи чаще говорят Should I ...?. Will I ...? спрашивал бы о будущем, а не предлагал помощь.",
+     "explanation_ru": "Предлагая помощь, в американской речи говорят Should I…? (или Do you want me to…?); Shall I…? звучит формально или по-британски. Will I…? спрашивал бы о будущем, а не предлагал помощь.",
      "difficulty": 1
     },
     {
@@ -2029,17 +2149,18 @@
     {
      "id": "a1_will_and_shall_11",
      "kind": "cloze",
-     "prompt": "A: I'm hungry.\nB: ___ (shall / will) I make you a sandwich?\nA: Yes, please! And I ___ (will / wash) the dishes after lunch.",
+     "prompt": "A: I'm hungry.\nB: ___ (should / will) I make you a sandwich?\nA: Yes, please! And I ___ (wash) the dishes after lunch, I promise.",
      "gaps": [
       [
-       "Shall",
-       "Should"
+       "Should",
+       "Shall"
       ],
       [
-       "will wash"
+       "will wash",
+       "'ll wash"
       ]
      ],
-     "explanation_ru": "Предложение помощи — Shall I…? (в американской речи чаще Should I…?); Will I…? спрашивает о будущем, а не предлагает. Обещание — will плюс глагол без to: I will wash, в речи I'll wash.",
+     "explanation_ru": "Предложение помощи — Should I…? (формально или по-британски — Shall I…?); Will I…? спрашивает о будущем, а не предлагает. Обещание — will плюс глагол без to: I will wash, в речи I'll wash.",
      "difficulty": 2
     }
    ]

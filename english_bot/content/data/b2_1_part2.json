@@ -36,26 +36,26 @@
           "prompt": "You ___ come in early tomorrow: the meeting was moved to Friday.",
           "options": [
             "needn't",
-            "needn't to",
-            "not need",
+            "mustn't",
+            "needn't have",
             "don't need"
           ],
           "correct_index": 0,
-          "explanation_ru": "Needn't — модальный глагол, после него инфинитив без to и без вспомогательного do; вариант don't need требует to.",
+          "explanation_ru": "Needn't — «нет необходимости»: приходить рано не нужно, но и не запрещено. Mustn't — запрет, и он не вытекает из переноса встречи; needn't have относится к прошлому, а don't need без to перед глаголом не ставится.",
           "difficulty": 1
         },
         {
           "id": "b2_neednt_dont_need_to_didnt_need_to_neednt_have_02",
           "kind": "choice",
-          "prompt": "I ___ bought a new charger: an hour later I found my old one in the drawer.",
+          "prompt": "I ___ a new charger: an hour later I found my old one in the drawer.",
           "options": [
-            "needn't have",
-            "didn't need to",
-            "must have",
-            "can't have"
+            "needn't have bought",
+            "must have bought",
+            "can't have bought",
+            "needn't buy"
           ],
           "correct_index": 0,
-          "explanation_ru": "Зарядку купили, а она оказалась лишней — это needn't have + V3. Must have и can't have — догадки о прошлом, а о своей покупке говорящий знает точно; didn't need to с третьей формой bought не сочетается.",
+          "explanation_ru": "Зарядку купили, а она оказалась лишней — needn't have + V3. Must have и can't have — догадки о прошлом, а о своей покупке говорящий знает точно; needn't buy относится к настоящему или будущему («можно не покупать»).",
           "difficulty": 2
         },
         {
@@ -178,13 +178,25 @@
           "options": [
             "don't need to",
             "needn't to",
-            "don't need",
+            "mustn't",
             "haven't to"
           ],
           "correct_index": 0,
-          "explanation_ru": "Отсутствие необходимости — don't need to (или краткое needn't без to). Don't need без to здесь не работает, needn't to — смешение двух форм, а haven't to — калька: отрицание have to строится через don't.",
+          "explanation_ru": "Отсутствие необходимости — don't need to (или краткое needn't без to). Mustn't означало бы запрет разуваться, а спрашивают о необходимости; needn't to — смешение двух форм, а haven't to — калька: отрицание have to строится через don't.",
           "difficulty": 1,
           "diagnostic": false
+        },
+        {
+          "id": "b2_neednt_dont_need_to_didnt_need_to_neednt_have_12",
+          "kind": "transform",
+          "prompt": "Переведи на английский, используя needn't: «Зря ты купил молоко».",
+          "answer": "You needn't have bought milk.",
+          "accept": [
+            "You needn't have bought any milk.",
+            "You needn't have bought the milk."
+          ],
+          "explanation_ru": "«Зря сделал» — действие совершено и оказалось лишним: needn't have + V3. Needn't buy относится к настоящему или будущему («можешь не покупать»), а после needn't частица to не ставится.",
+          "difficulty": 3
         }
       ]
     },
@@ -221,15 +233,15 @@
         {
           "id": "b2_past_modal_verbs_01",
           "kind": "choice",
-          "prompt": "The build failed. Someone ___ the config file.",
+          "prompt": "The build failed. Someone ___ the config file: it worked fine yesterday.",
           "options": [
             "must have changed",
-            "must changed",
-            "must have change",
-            "must be changed"
+            "can't have changed",
+            "must change",
+            "might change"
           ],
           "correct_index": 0,
-          "explanation_ru": "После must для вывода о прошлом идёт have + третья форма; must be changed сделало бы подлежащее someone объектом действия.",
+          "explanation_ru": "Уверенный вывод о прошлом по результату — must have + V3. Can't have changed противоречит тому, что вчера всё работало, а must change и might change говорят о настоящем или будущем.",
           "difficulty": 1
         },
         {
@@ -375,6 +387,17 @@
           ],
           "explanation_ru": "Must have и can't have — уверенные выводы о прошлом: забыл, не заходил. Should have been — упрёк («следовало быть осторожнее»), could have walked — возможность, которая могла осуществиться. Во всех случаях модальный + have + V3.",
           "difficulty": 3
+        },
+        {
+          "id": "b2_past_modal_verbs_13",
+          "kind": "transform",
+          "prompt": "Переведи на английский: «Ты мог бы меня предупредить!»",
+          "answer": "You could have warned me!",
+          "accept": [
+            "You might have warned me!"
+          ],
+          "explanation_ru": "Упрёк за то, чего человек не сделал в прошлом, — could have + V3: You could have warned me. Could warn говорит о настоящем или будущем («можешь предупредить»). Русское «мог бы» не различает время, а английский различает.",
+          "difficulty": 2
         }
       ]
     },
@@ -684,7 +707,9 @@
           "prompt": "Yesterday I had repaired my laptop at the repair shop.",
           "answer": "Yesterday I had my laptop repaired at the repair shop.",
           "accept": [
-            "Yesterday I got my laptop repaired at the repair shop."
+            "Yesterday I got my laptop repaired at the repair shop.",
+            "I had my laptop repaired at the repair shop yesterday.",
+            "I got my laptop repaired at the repair shop yesterday."
           ],
           "explanation_ru": "В исходном варианте получается Past Perfect и смысл «починил сам»; в каузативе объект стоит перед причастием.",
           "difficulty": 3
@@ -775,6 +800,17 @@
           ],
           "explanation_ru": "Везде схема have + объект + V3, меняется только время have: после decided to — инфинитив, last month — had, договорённость на следующую неделю — are having, после once — настоящее время (have had или have).",
           "difficulty": 3
+        },
+        {
+          "id": "b2_have_something_done_13",
+          "kind": "order",
+          "prompt": "having / we're / the office network / checked / next week / .",
+          "answer": "We're having the office network checked next week.",
+          "accept": [
+            "Next week we're having the office network checked."
+          ],
+          "explanation_ru": "Договорённость на будущее — present continuous (we're having), а работу сделают другие — have + объект + V3: the office network checked.",
+          "difficulty": 2
         }
       ]
     },
@@ -964,6 +1000,15 @@
           ],
           "explanation_ru": "Личная схема выносит the actress в подлежащее: is said + to be getting — продолженный инфинитив, потому что в исходном предложении is getting. Безличный вариант It is said that... тоже верен.",
           "difficulty": 3
+        },
+        {
+          "id": "b2_passive_reporting_verbs_13",
+          "kind": "order",
+          "prompt": "is / to / the suspect / thought / have / left / the country / .",
+          "answer": "The suspect is thought to have left the country.",
+          "accept": [],
+          "explanation_ru": "Личная схема: подлежащее + is thought + перфектный инфинитив to have left, потому что отъезд случился раньше, чем о нём заговорили.",
+          "difficulty": 2
         }
       ]
     },
@@ -1283,13 +1328,14 @@
         {
           "id": "b2_whatever_whenever_wherever_whoever_however_08",
           "kind": "correct",
-          "prompt": "Whenever you will finish, send me the link.",
-          "answer": "Whenever you finish, send me the link.",
+          "prompt": "No matter whatever you decide, I'll support you.",
+          "answer": "Whatever you decide, I'll support you.",
           "accept": [
-            "Whenever you've finished, send me the link.",
-            "When you finish, send me the link."
+            "No matter what you decide, I'll support you.",
+            "I'll support you whatever you decide.",
+            "I'll support you no matter what you decide."
           ],
-          "explanation_ru": "В придаточном времени с whenever будущее выражается формой настоящего времени.",
+          "explanation_ru": "Whatever уже значит «что бы ни», то есть no matter what, поэтому вместе они не ставятся: либо Whatever you decide, либо No matter what you decide. Будущее в этой части выражается present simple: decide, а не will decide.",
           "difficulty": 3
         },
         {
@@ -1380,7 +1426,7 @@
         {
           "id": "b2_quantifiers_01",
           "kind": "choice",
-          "prompt": "___ developers on our team work remotely.",
+          "prompt": "___ developers prefer two monitors, according to a recent survey.",
           "options": [
             "Most",
             "Most of",
@@ -1388,7 +1434,7 @@
             "Almost"
           ],
           "correct_index": 0,
-          "explanation_ru": "Перед существительным без определителя the или my квантификатор most стоит без of.",
+          "explanation_ru": "Речь о разработчиках вообще, без определителя the или my, поэтому most стоит без of: Most developers. Most of нужен перед the, my, these (most of the developers on our team), the most — превосходная степень, а almost — наречие и перед существительным не ставится.",
           "difficulty": 1
         },
         {
@@ -1437,10 +1483,10 @@
         {
           "id": "b2_quantifiers_05",
           "kind": "gap",
-          "prompt": "We tried two bakeries, but ___ (neither / none) of them had any fresh bread left.",
+          "prompt": "We tried two bakeries, but ___ (ни одна) of them had any fresh bread left.",
           "answer": "neither",
           "accept": [],
-          "explanation_ru": "Пекарен ровно две, а для двух объектов используется neither, а не none.",
+          "explanation_ru": "Пекарен ровно две, а «ни одна из двух» — neither. Русское «ни одна» тянет к none, но none говорят о трёх и более.",
           "difficulty": 2
         },
         {
@@ -1555,7 +1601,7 @@
         "Wh-слово (подлежащее) + V: Who wrote this?",
         "Wh-слово (дополнение) + do / does / did + subject + V1",
         "Wh-слово + ... + предлог в конце: What are you looking for?",
-        "Negative question: Didn't you get my message?",
+        "Negative question: Didn't you see my email?",
         "Statement + question tag: You've seen it, haven't you?"
       ],
       "examples": [
@@ -1563,7 +1609,7 @@
         "Who did you ask about the deadline?",
         "What are you working on right now?",
         "Which team does he report to?",
-        "Didn't you get my message?",
+        "Didn't you see my email?",
         "You've already tested it, haven't you?"
       ],
       "ru_interference": "В русском вспомогательного глагола нет, поэтому его добавляют и в вопрос к подлежащему: «Who did write this code?» → «Who wrote this code?». А предлог по русской модели ставят в начало: «About what are you talking?» → «What are you talking about?».",
@@ -1594,12 +1640,12 @@
           "prompt": "___ my message? I sent it two hours ago!",
           "options": [
             "Didn't you get",
-            "Don't you got",
-            "Not you got",
-            "Did you not got"
+            "Don't you get",
+            "Hadn't you gotten",
+            "Aren't you getting"
           ],
           "correct_index": 0,
-          "explanation_ru": "Отрицательный вопрос выражает удивление: Didn't you get...? — «Разве ты не получил?». После did и don't глагол стоит в начальной форме, а без вспомогательного вопрос не строится.",
+          "explanation_ru": "Удивление «Разве ты не получил?» о прошлом событии — отрицательный вопрос в past simple: Didn't you get...? Don't you get — о привычном, повторяющемся, hadn't you gotten — о времени до другого прошедшего момента, aren't you getting — о процессе сейчас.",
           "difficulty": 1,
           "diagnostic": true
         },
@@ -1748,12 +1794,14 @@
       "title_en": "Participles as adjectives: -ed/-ing adjectives",
       "source_slug": "participle-adjectives",
       "title_ru": "Прилагательные на -ed и -ing",
-      "summary_ru": "От многих глаголов образуются два прилагательных. Форма на -ing описывает источник чувства: свойство предмета, ситуации или человека, который вызывает эмоцию: The documentation is boring. Форма на -ed описывает того, кто испытывает чувство, обычно человека: I am bored. Обе формы могут стоять и перед существительным: a surprising result и a surprised look. Ошибка в выборе меняет смысл: I am boring значит «я скучный человек», а не «мне скучно». После форм на -ed часто идёт фиксированный предлог: interested in, worried about, excited about, surprised by, confused by, tired of.",
+      "summary_ru": "От многих глаголов образуются два прилагательных. Форма на -ing описывает источник чувства: свойство предмета, ситуации или человека, который вызывает эмоцию: The documentation is boring. Форма на -ed описывает того, кто испытывает чувство, обычно человека: I am bored. Обе формы могут стоять и перед существительным: a surprising result и a surprised look. Ошибка в выборе меняет смысл: I am boring значит «я скучный человек», а не «мне скучно». После форм на -ed часто идёт фиксированный предлог: interested in, worried about, excited about, surprised by, confused by, tired of. Слова look, face, voice, smile передают чувство самого человека, поэтому с ними идёт форма на -ed: a worried look, in a bored voice. Перед другим прилагательным нужно наречие: surprisingly cheap, disappointingly slow. Так же работают менее частые пары: overwhelmed / overwhelming, frustrated / frustrating, fascinated / fascinating.",
       "forms": [
         "-ing прилагательное: источник чувства (a boring meeting)",
         "-ed прилагательное: состояние человека (I am bored)",
         "be + -ed + предлог: interested in, worried about, surprised by",
-        "-ing / -ed + существительное: a surprising result / a surprised look"
+        "-ing / -ed + существительное: a surprising result / a surprised look",
+        "look / voice / face / smile + -ed: a worried look, a bored voice",
+        "наречие от -ing перед прилагательным: surprisingly cheap, disappointingly slow"
       ],
       "examples": [
         "The release notes were confusing, so everyone was confused.",
@@ -1800,30 +1848,30 @@
         {
           "id": "b2_participle_adjectives_03",
           "kind": "choice",
-          "prompt": "Everyone was ___ by the news about the merger.",
+          "prompt": "The response to our job ad was ___: we got over five hundred applications in two days.",
           "options": [
-            "shocked",
-            "shocking",
-            "shock",
-            "shockingly"
+            "overwhelming",
+            "overwhelmed",
+            "overwhelm",
+            "overwhelmingly"
           ],
           "correct_index": 0,
-          "explanation_ru": "Люди испытывают чувство, а источник назван после by, поэтому нужна форма на -ed.",
+          "explanation_ru": "Отклик сам вызывает чувство («ошеломляющий»), поэтому форма на -ing: overwhelming. Overwhelmed описало бы людей, которых завалили заявками (We were overwhelmed), а наречие overwhelmingly после was без прилагательного не ставится.",
           "difficulty": 2
         },
         {
           "id": "b2_participle_adjectives_04",
           "kind": "choice",
-          "prompt": "It was an ___ day: we hiked twenty kilometers in the heat.",
+          "prompt": "___ number of customers still pay by check, so we can't remove that option yet.",
           "options": [
-            "exhausting",
-            "exhausted",
-            "exhaust",
-            "exhaustedly"
+            "A surprising",
+            "A surprised",
+            "Surprisingly",
+            "A surprise"
           ],
           "correct_index": 0,
-          "explanation_ru": "День вызывает изнеможение, а не испытывает его, поэтому перед существительным day стоит форма на -ing: an exhausting day. Exhausted описывает людей.",
-          "difficulty": 1,
+          "explanation_ru": "Число клиентов вызывает удивление, а не испытывает его, поэтому a surprising number. A surprised number значило бы, что удивилось само число, наречие surprisingly не определяет существительное, а a surprise number — «число-сюрприз», такого сочетания нет.",
+          "difficulty": 2,
           "diagnostic": true
         },
         {
@@ -1838,28 +1886,28 @@
         {
           "id": "b2_participle_adjectives_06",
           "kind": "gap",
-          "prompt": "She was ___ (confuse) by the new interface.",
+          "prompt": "When I explained the new process, Kofi gave me a ___ (confuse) look, so I went through it again more slowly.",
           "answer": "confused",
           "accept": [],
-          "explanation_ru": "Человек испытывает состояние, а причина введена предлогом by, значит нужна форма на -ed.",
+          "explanation_ru": "Look, face, voice, smile выражают чувство самого человека, поэтому с ними форма на -ed: a confused look — «растерянный взгляд» Кофи. A confusing look значило бы «взгляд, который сбивает с толку других».",
           "difficulty": 2
         },
         {
           "id": "b2_participle_adjectives_07",
           "kind": "correct",
-          "prompt": "I was very boring during that lecture: I almost fell asleep.",
-          "answer": "I was very bored during that lecture: I almost fell asleep.",
+          "prompt": "The meeting was surprising short, so we were back at our desks in ten minutes.",
+          "answer": "The meeting was surprisingly short, so we were back at our desks in ten minutes.",
           "accept": [],
-          "explanation_ru": "Форма boring означала бы, что скучен сам говорящий; состояние скуки передаёт bored.",
+          "explanation_ru": "Перед прилагательным short нужно наречие: surprisingly short — «на удивление короткое». Прилагательное surprising определяет существительное (a surprising result), а не другое прилагательное.",
           "difficulty": 3
         },
         {
           "id": "b2_participle_adjectives_08",
           "kind": "correct",
-          "prompt": "We are all exciting about the new project.",
-          "answer": "We are all excited about the new project.",
+          "prompt": "I find the old ticketing system really frustrated to use.",
+          "answer": "I find the old ticketing system really frustrating to use.",
           "accept": [],
-          "explanation_ru": "Люди испытывают радостное волнение, поэтому нужна форма excited с предлогом about.",
+          "explanation_ru": "Система вызывает раздражение, а не испытывает его, поэтому frustrating. Frustrated описывает человека: I get frustrated when it crashes. После find + объект прилагательное описывает сам объект.",
           "difficulty": 3
         },
         {
@@ -1880,7 +1928,7 @@
         {
           "id": "b2_participle_adjectives_10",
           "kind": "cloze",
-          "prompt": "Our first night in the jungle was ___ (terrify). The noises in the dark were ___ (frighten), and none of us slept. By morning we were completely ___ (exhaust). But when we saw the sunrise over the river, we were so ___ (amaze) that we forgot how tired we were.",
+          "prompt": "Our first night in the jungle was ___ (terrify). The noises in the dark were ___ (frighten), and even our guide whispered in a ___ (frighten) voice. By morning we were completely ___ (exhaust), but the sunrise over the river was so ___ (amaze) that we forgot how tired we were.",
           "gaps": [
             [
               "terrifying"
@@ -1889,13 +1937,16 @@
               "frightening"
             ],
             [
+              "frightened"
+            ],
+            [
               "exhausted"
             ],
             [
-              "amazed"
+              "amazing"
             ]
           ],
-          "explanation_ru": "Ночь и звуки вызывают страх — формы на -ing (terrifying, frightening). Люди испытывают усталость и восторг — формы на -ed (exhausted, amazed).",
+          "explanation_ru": "Ночь, звуки и рассвет вызывают чувство — формы на -ing (terrifying, frightening, amazing). Голос выражает страх самого гида, поэтому a frightened voice, как a worried look или a surprised face. Люди испытывают усталость — exhausted.",
           "difficulty": 2
         },
         {
@@ -1923,12 +1974,13 @@
       "title_en": "Indirect questions",
       "source_slug": "indirect-questions",
       "title_ru": "Косвенные вопросы: Could you tell me...",
-      "summary_ru": "Косвенный вопрос звучит вежливее прямого и начинается с оборота Could you tell me, Do you know, I wonder или I'd like to know. После этого оборота порядок слов становится как в утверждении: подлежащее стоит перед сказуемым, инверсии нет. Вспомогательные do, does и did исчезают, а их время переходит на смысловой глагол: Where does he work? превращается в Do you know where he works? Если в прямом вопросе не было вопросительного слова, в косвенном появляется if или whether: Do you know if the server is back up? Знак вопроса ставится только тогда, когда главная часть сама является вопросом; при обороте I wonder предложение заканчивается точкой.",
+      "summary_ru": "Косвенный вопрос звучит вежливее прямого и начинается с оборота Could you tell me, Do you know, I wonder или I'd like to know. После этого оборота порядок слов становится как в утверждении: подлежащее стоит перед сказуемым, инверсии нет. Вспомогательные do, does и did исчезают, а их время переходит на смысловой глагол: Where does he work? превращается в Do you know where he works? Если в прямом вопросе не было вопросительного слова, в косвенном появляется if или whether: Do you know if the server is back up? Знак вопроса ставится только тогда, когда главная часть сама является вопросом; при обороте I wonder предложение заканчивается точкой. В деловой переписке самая мягкая просьба — I was wondering if you could...: прошедшее время здесь не про прошлое, а про вежливость.",
       "forms": [
         "Could you tell me + wh-слово + subject + verb?",
         "Do you know + if / whether + subject + verb?",
         "I wonder / I'd like to know + wh-слово + subject + verb.",
-        "Без do / does / did и без инверсии в придаточном"
+        "Без do / does / did и без инверсии в придаточном",
+        "I was wondering if you could + V1 — вежливая просьба"
       ],
       "examples": [
         "Could you tell me where the meeting room is?",
@@ -2084,7 +2136,8 @@
             ],
             [
               "need",
-              "will need"
+              "will need",
+              "would need"
             ]
           ],
           "explanation_ru": "В косвенных вопросах порядок слов прямой, без do/does: where the library is, what time it closes, whether I need. После I wonder if вежливее звучит could.",
@@ -2104,6 +2157,28 @@
           "explanation_ru": "Ошибка в how much does this cost: в косвенном вопросе does исчезает, а окончание переходит на глагол — how much this costs. В остальных предложениях порядок слов прямой.",
           "difficulty": 3,
           "diagnostic": false
+        },
+        {
+          "id": "b2_indirect_questions_13",
+          "kind": "transform",
+          "prompt": "Make the request more polite, starting with 'I was wondering if': Can you send me the latest budget before Friday's meeting?",
+          "answer": "I was wondering if you could send me the latest budget before Friday's meeting.",
+          "accept": [
+            "I was wondering if you could send me the latest budget before the meeting on Friday.",
+            "I was wondering if you can send me the latest budget before Friday's meeting.",
+            "I was wondering if you could send me the latest budget before the Friday meeting."
+          ],
+          "explanation_ru": "I was wondering if + подлежащее + could + V1 — самая мягкая форма просьбы в деловой переписке. После if порядок слов прямой (you could), как в любом косвенном вопросе, а was wondering и could делают просьбу вежливее, а не переносят её в прошлое.",
+          "difficulty": 3
+        },
+        {
+          "id": "b2_indirect_questions_14",
+          "kind": "order",
+          "prompt": "know / you / when / do / the next release / is / planned / ?",
+          "answer": "Do you know when the next release is planned?",
+          "accept": [],
+          "explanation_ru": "Вежливая рамка Do you know стоит в начале и сама задаёт вопрос, а после when порядок слов прямой: the next release is planned — подлежащее перед глаголом, без инверсии.",
+          "difficulty": 2
         }
       ]
     },
@@ -2322,6 +2397,37 @@
           "explanation_ru": "Advise требует схемы дополнение + to + V1: advised me to walk. Предлог to перед дополнением не ставится, а без to или с that без подлежащего фраза неграмматична.",
           "difficulty": 2,
           "diagnostic": true
+        },
+        {
+          "id": "b2_reporting_verbs_14",
+          "kind": "transform",
+          "prompt": "Rewrite using the word in capitals (do not change it): 'Don't merge anything until all the tests pass,' our team lead said to us. TOLD",
+          "answer": "Our team lead told us not to merge anything until all the tests passed.",
+          "accept": [
+            "Our team lead told us not to merge anything until all the tests had passed.",
+            "Our team lead told us not to merge anything until all the tests pass.",
+            "Our team lead told us not to merge anything until all tests passed.",
+            "Our team lead told us not to merge anything until the tests passed.",
+            "Our team lead told us that we shouldn't merge anything until all the tests passed."
+          ],
+          "explanation_ru": "Команда в пересказе — tell + дополнение + (not) to + V1: told us not to merge. Повелительное don't в косвенной речи не сохраняется, а в придаточном время обычно сдвигается: pass → passed.",
+          "difficulty": 3
+        },
+        {
+          "id": "b2_reporting_verbs_15",
+          "kind": "transform",
+          "prompt": "Report what your manager said last week, starting with 'She said': 'I'm meeting the client here tomorrow.'",
+          "answer": "She said she was meeting the client there the next day.",
+          "accept": [
+            "She said that she was meeting the client there the next day.",
+            "She said she was meeting the client there the following day.",
+            "She said that she was meeting the client there the following day.",
+            "She said she was meeting the client there the day after.",
+            "She said she was going to meet the client there the next day.",
+            "She said she was going to meet the client there the following day."
+          ],
+          "explanation_ru": "Слова сказаны неделю назад, поэтому меняется всё, что привязано к моменту речи: am meeting → was meeting, here → there, tomorrow → the next day (the following day). Tomorrow остаётся, только если пересказываешь в тот же день.",
+          "difficulty": 3
         }
       ]
     }

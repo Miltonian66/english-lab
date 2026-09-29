@@ -240,7 +240,8 @@ def _typo(exercise: Exercise, candidate: list[str]) -> tuple[str, list[tuple[str
     Прощается только в словах из самого условия и не в исправленном участке:
     «We hve three old computers» — опечатка, а «He goed» — та самая ошибка,
     которую задание проверяет. Пропуск с одним словом опечаток не прощает: там
-    слово и есть ответ.
+    слово и есть ответ. Лишний или пропущенный апостроф — тоже не опечатка:
+    customs' officer и its/it's — это грамматика притяжательных форм.
     """
     if exercise.kind not in _TYPO_KINDS or not candidate:
         return None
@@ -265,6 +266,7 @@ def _typo(exercise: Exercise, candidate: list[str]) -> tuple[str, list[tuple[str
             and index not in changed
             and _one_edit(typed, wanted)
             and not _inflection_of(typed, wanted)
+            and typed.replace("'", "") != wanted.replace("'", "")
             and typed not in known_words()
             for typed, wanted, index in slips
         ):

@@ -9,7 +9,7 @@
       "title_en": "Comparative structures: Modifying comparatives",
       "source_slug": "comparative-structures-modifying-comparatives",
       "title_ru": "Усиление и смягчение сравнительной степени",
-      "summary_ru": "Сравнительную степень можно усиливать и смягчать специальными словами. Для сильного отличия используются much, far, a lot, considerably: much faster, far more expensive. Для маленького отличия — a bit, a little, slightly: slightly cheaper. Слово even показывает, что разница добавляется к уже известному признаку: even harder. Со сравнением as ... as усилители другие: nowhere near as big as, not nearly as good as, almost as fast as. Важно помнить, что very со сравнительной степенью не употребляется вообще: very better невозможно. В структуре с процентами и числами модификатор стоит прямо перед сравнительной формой: twenty percent faster, two hours longer. Кратность передают twice / three times + as … as (twice as big as) или three times + сравнительная форма (three times higher); русское «в два раза больше» дословно не переводится: twice bigger — ошибка. Двойное сравнение the + сравнительная форма …, the + сравнительная форма показывает, что одно меняется вместе с другим: The bigger we get, the more careful we need to be.",
+      "summary_ru": "Сравнительную степень можно усиливать и смягчать специальными словами. Для сильного отличия используются much, far, a lot, considerably: much faster, far more expensive. Для маленького отличия — a bit, a little, slightly: slightly cheaper. Слово even показывает, что разница добавляется к уже известному признаку: even harder. Со сравнением as ... as усилители другие: nowhere near as big as, not nearly as good as, almost as fast as. Важно помнить, что very со сравнительной степенью не употребляется вообще: very better невозможно. В структуре с процентами и числами модификатор стоит прямо перед сравнительной формой: twenty percent faster, two hours longer. Кратность передают twice / three times + as … as (twice as long as) или three times + сравнительная форма (three times faster); русское «в два раза больше» дословно не переводится: twice bigger — ошибка. Двойное сравнение the + сравнительная форма …, the + сравнительная форма показывает, что одно меняется вместе с другим: The earlier you book, the cheaper the tickets are.",
       "forms": [
         "much / far / a lot / considerably + comparative",
         "a bit / a little / slightly + comparative",
@@ -215,7 +215,10 @@
             "This laptop is three times as expensive as my old one.",
             "This laptop is three times more expensive than my old one.",
             "This laptop costs three times as much as my old laptop.",
-            "This laptop costs three times more than my old laptop."
+            "This laptop costs three times more than my old laptop.",
+            "This laptop costs three times as much as my old one did.",
+            "This laptop costs three times more than my old one did.",
+            "This laptop is three times the price of my old one."
           ],
           "explanation_ru": "Кратность ставится перед сравнением: three times as much as (или three times more than). Русское «в три раза» не даёт предлога in, а после as … as нужен второй as, а не than. Повтор laptop заменяет one: my old one.",
           "difficulty": 3
@@ -444,7 +447,7 @@
       "title_en": "Inversion with negative adverbials: Adding emphasis",
       "source_slug": "inversion-negative-adverbials",
       "title_ru": "Инверсия после отрицательных наречий",
-      "summary_ru": "Если предложение начинается с отрицательного или ограничительного наречия, порядок слов меняется на вопросительный. После never, rarely, seldom, little, at no time, under no circumstances идёт вспомогательный глагол, затем подлежащее, затем смысловой глагол. Если своего вспомогательного глагола нет, появляется do, does или did: Rarely do we see this. Такая же инверсия работает в конструкциях not only ... but also, no sooner ... than, hardly ... when и после only after, only when, only then. Инверсия делается только в той части, которая начинается с наречия. Приём книжный и формальный: он уместен в отчёте, презентации или письме, но не в бытовом разговоре. Тот же порядок нужен после little в значении «совсем не» (Little did I know), после not until (Not until the client called did we understand), после only if и после so + прилагательное в начале (So expensive were the repairs that…).",
+      "summary_ru": "Если предложение начинается с отрицательного или ограничительного наречия, порядок слов меняется на вопросительный. После never, rarely, seldom, little, at no time, under no circumstances идёт вспомогательный глагол, затем подлежащее, затем смысловой глагол. Если своего вспомогательного глагола нет, появляется do, does или did: Rarely do we see this. Такая же инверсия работает в конструкциях not only ... but also, no sooner ... than, hardly ... when и после only after, only when, only then. Инверсия делается только в той части, которая начинается с наречия. Приём книжный и формальный: он уместен в отчёте, презентации или письме, но не в бытовом разговоре. Тот же порядок нужен после little в значении «совсем не» (Little did I know), после not until (Not until the plane landed did I relax), после only if и после so + прилагательное в начале (So strong was the wind that…).",
       "forms": [
         "Never / Rarely / Seldom + auxiliary + subject + verb",
         "Not only + auxiliary + subject + verb, but ... also",
@@ -1766,7 +1769,9 @@
               "Then again",
               "Having said that",
               "Still",
-              "But"
+              "But",
+              "However",
+              "On the other hand"
             ],
             [
               "Actually",
@@ -1955,8 +1960,10 @@
           "kind": "gap",
           "prompt": "A: Has anyone checked the numbers in the budget report?\nB: Omar ___, I think — he sent me a message about it this morning. (one word)",
           "answer": "has",
-          "accept": [],
-          "explanation_ru": "В коротком ответе повторяют вспомогательный глагол вопроса: Has anyone checked? → Omar has. Did относится к другому времени, а смысловой checked без has не образует present perfect.",
+          "accept": [
+            "did"
+          ],
+          "explanation_ru": "В коротком ответе обычно повторяют вспомогательный глагол вопроса: Has anyone checked? → Omar has. В американской речи, особенно когда названо время в прошлом (this morning), так же естественно Omar did. Смысловой checked без вспомогательного короткий ответ не образует.",
           "difficulty": 2
         },
         {
@@ -2056,7 +2063,8 @@
           ],
           "correct_index": 1,
           "explanation_ru": "Компания платит за всё — значит, приносить ничего не обязательно: don't have to bring (нет необходимости). Mustn't bring — запрет, он здесь не по смыслу. Needn't ставится без to (needn't bring), а haven't to не существует.",
-          "difficulty": 2
+          "difficulty": 2,
+          "diagnostic": false
         },
         {
           "id": "b2_modal_verbs_permission_obligation_prohibition_necessity_05",
@@ -2579,16 +2587,18 @@
               "conference room"
             ],
             [
-              "employees'"
+              "employees'",
+              "employee"
             ],
             [
-              "company's"
+              "company's",
+              "company"
             ],
             [
               "tomorrow's"
             ]
           ],
-          "explanation_ru": "'s получают люди и организации в единственном числе (manager's, company's) и слова времени (tomorrow's), а множественное на -s — только апостроф (employees'). В составном существительном определяющее слово идёт первым и стоит в единственном числе: conference room.",
+          "explanation_ru": "'s получают люди и организации в единственном числе (manager's, company's) и слова времени (tomorrow's), а множественное на -s — только апостроф (employees'). В составном существительном определяющее слово идёт первым и стоит в единственном числе: conference room. Название отдела или компании может стоять и как определение без 's: the company security policy, the employee lounge.",
           "difficulty": 2
         }
       ]

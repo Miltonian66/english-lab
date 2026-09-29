@@ -126,7 +126,7 @@
         {
           "id": "b2_possessive_s_with_time_expressions_two_hours_walk_09",
           "kind": "cloze",
-          "prompt": "After a long ___ (day) work at the hospital, Kenji is finally taking a break: he has two ___ (week) vacation, starting on Friday. The hospital had to find a replacement at only three ___ (day) notice. Kenji read about a great campsite in ___ (yesterday) newspaper.",
+          "prompt": "After a long ___ (day) work at the hospital, Kenji is finally taking a break: he has two ___ (week) vacation, starting on Friday. The hospital had to find a replacement with only three ___ (day) notice. Kenji read about a great campsite in ___ (yesterday) newspaper.",
           "gaps": [
             [
               "day's"
@@ -388,16 +388,16 @@
       "title_en": "Passive verbs with two objects",
       "source_slug": "passive-verbs-with-two-objects",
       "title_ru": "Пассив у глаголов с двумя дополнениями",
-      "summary_ru": "Глаголы give, send, offer, tell, show, pay, lend, teach, promise берут сразу два дополнения: лицо и предмет. У таких глаголов возможны два пассива. Чаще подлежащим становится лицо: They gave me a laptop превращается в I was given a laptop. Второй вариант выносит вперёд предмет, а лицо получает предлог to или for: A laptop was given to me. Вариант с лицом звучит естественнее в устной речи, вариант с предметом чаще встречается в отчётах и документах. Предлог to идёт с give, send, show, tell, offer, pay, lend, а for - с buy, make, find, book. Так как у английского существительного нет падежных окончаний, лицо спокойно занимает позицию подлежащего. Такой пассив возможен в любом времени и с модальным глаголом: We should have been told earlier, They had been promised a bonus. В разговоре вместо be часто ставят get: I got offered a job. В новостях и отчётах он сочетается с глаголами сообщения: The staff are said to have been promised a bonus. У фразовых глаголов частица в пассиве остаётся сразу после причастия: The meeting was put off, My application was turned down.",
+      "summary_ru": "Глаголы give, send, offer, tell, show, pay, lend, teach, promise берут сразу два дополнения: лицо и предмет. У таких глаголов возможны два пассива. Чаще подлежащим становится лицо: They gave me a laptop превращается в I was given a laptop. Второй вариант выносит вперёд предмет, а лицо получает предлог to или for: A laptop was given to me. Вариант с лицом звучит естественнее в устной речи, вариант с предметом чаще встречается в отчётах и документах. Предлог to идёт с give, send, show, tell, offer, pay, lend, а for - с buy, make, find, book. Так как у английского существительного нет падежных окончаний, лицо спокойно занимает позицию подлежащего. Такой пассив возможен в любом времени и с модальным глаголом: You will be sent a link, The kids had already been given their presents. В разговоре вместо be часто ставят get: I got sent the wrong size. В новостях и отчётах он сочетается с глаголами сообщения: The passengers are reported to have been offered hotel rooms. У фразовых глаголов частица в пассиве остаётся сразу после причастия: The game was called off, The old factory was pulled down.",
       "forms": [
         "person + be + V3 + direct object: I was given a laptop",
         "thing + be + V3 + to/for + person: A laptop was given to me",
         "be + V3: am/is/are/was/were + past participle",
         "negative: person + be + not + V3",
-        "perfect / modal: I should have been told; they had been promised a bonus",
-        "get-passive (informal): I got offered a job",
-        "reporting: The staff are said to have been given a bonus",
-        "phrasal verb: The meeting was put off; the idea was turned down"
+        "perfect / modal: You will be sent a link; the kids had been given presents",
+        "get-passive (informal): I got sent the wrong size",
+        "reporting: The passengers are reported to have been offered hotel rooms",
+        "phrasal verb: The game was called off; the old factory was pulled down"
       ],
       "examples": [
         "I was given three days to fix the bug.",
@@ -471,7 +471,7 @@
         {
           "id": "b2_passive_verbs_with_two_objects_05",
           "kind": "gap",
-          "prompt": "The clients ___ (should / send) the updated contract last week, but nobody did it.",
+          "prompt": "The clients ___ (should / send) the updated contract last week, but nobody on our team remembered to do it.",
           "answer": "should have been sent",
           "accept": [],
           "explanation_ru": "Клиентам должны были отправить договор, но не отправили: подлежащим пассива стали клиенты, а упрёк о прошлом — should have been + V3. Should have sent значило бы, что отправить должны были сами клиенты.",
@@ -590,7 +590,10 @@
               "will be carried out",
               "is going to be carried out",
               "is to be carried out",
-              "would be carried out"
+              "would be carried out",
+              "should be carried out",
+              "could be carried out",
+              "was going to be carried out"
             ]
           ],
           "explanation_ru": "Фразовый глагол в пассиве сохраняет частицу сразу после причастия: was brought up, was turned down, will be carried out. Подлежащим становится то, над чем совершают действие, — идея и пробный период.",
@@ -1193,7 +1196,10 @@
             "There's no point in rewriting the report: the client has already approved it.",
             "There's no point in rewriting the report; the client has already approved it.",
             "There's no point in rewriting the report. The client has already approved it.",
-            "There's no point in rewriting the report, the client has already approved it."
+            "There's no point in rewriting the report, the client has already approved it.",
+            "It's pointless to rewrite the report — the client has already approved it.",
+            "It makes no sense to rewrite the report — the client has already approved it.",
+            "There's no point in rewriting the report since the client has already approved it."
           ],
           "explanation_ru": "«Нет смысла делать» — there is no point (in) + -ing: there's no point in rewriting. Безличное русское предложение тянет к it is no point, но существование «смысла» вводит только there, а после point нужен -ing, не инфинитив.",
           "difficulty": 3
@@ -1422,7 +1428,7 @@
       "title_en": "Reflexive and reciprocal pronouns",
       "source_slug": "reflexive-reciprocal-pronouns",
       "title_ru": "Возвратные и взаимные местоимения",
-      "summary_ru": "Возвратные местоимения myself, yourself, himself, herself, itself, ourselves, yourselves, themselves ставятся, когда действие направлено на само подлежащее: I cut myself. Их же используют для усиления: The CEO himself answered the ticket. Оборот by + возвратное местоимение значит 'сам, без чужой помощи': She wrote the script by herself. Многие английские глаголы не требуют возвратного местоимения, хотя в русском есть -ся: feel, relax, concentrate, hurry, wash, shave, dress, meet, change. Взаимные местоимения each other и one another показывают, что действие обоюдно: We help each other. Разница принципиальна: They looked at each other значит друг на друга, а They looked at themselves значит каждый на себя. Есть и притяжательная форма each other's: We read each other's code. Устойчивые сочетания требуют возвратного местоимения: help yourself (угощайся), make yourself at home, pride oneself on (гордиться). Возвратное местоимение сразу после существительного усиливает его (The mayor himself came), а by herself значит «в одиночку».",
+      "summary_ru": "Возвратные местоимения myself, yourself, himself, herself, itself, ourselves, yourselves, themselves ставятся, когда действие направлено на само подлежащее: I cut myself. Их же используют для усиления: The CEO himself answered the ticket. Оборот by + возвратное местоимение значит 'сам, без чужой помощи': She wrote the script by herself. Многие английские глаголы не требуют возвратного местоимения, хотя в русском есть -ся: feel, relax, concentrate, hurry, wash, shave, dress, meet, change. Взаимные местоимения each other и one another показывают, что действие обоюдно: We help each other. Разница принципиальна: They looked at each other значит друг на друга, а They looked at themselves значит каждый на себя. Есть и притяжательная форма each other's: We read each other's code. Устойчивые сочетания требуют возвратного местоимения: help yourself (угощайся), make yourself at home, pride oneself on (гордиться). Возвратное местоимение сразу после существительного усиливает его (The author herself signed my copy), а by herself значит «в одиночку».",
       "forms": [
         "subject + verb + myself/yourself/himself (subject equals object)",
         "noun or pronoun + reflexive for emphasis: I did it myself",
@@ -1609,7 +1615,7 @@
           "correct_index": 0,
           "explanation_ru": "Каждый назвал своё имя — действие направлено на самого себя: introduced themselves. Introduced each other значило бы, что каждый представлял другого, yourselves обращено ко второму лицу, а them указывало бы на других людей.",
           "difficulty": 2,
-          "diagnostic": true
+          "diagnostic": false
         }
       ]
     },
@@ -2025,7 +2031,7 @@
           "correct_index": 0,
           "explanation_ru": "Опыт принадлежит Майе — нужна притяжательная форма whose («чей»). Who's = who is, who без глагола не выражает принадлежность, а which не относится к людям. Запятая показывает, что это дополнительная информация о человеке.",
           "difficulty": 2,
-          "diagnostic": true
+          "diagnostic": false
         },
         {
           "id": "b2_relative_clauses_14",

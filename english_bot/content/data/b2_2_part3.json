@@ -9,7 +9,7 @@
       "title_en": "Have: Auxiliary or main verb",
       "source_slug": "have-auxiliary-main-verb",
       "title_ru": "Have: вспомогательный или смысловой глагол",
-      "summary_ru": "Have работает в английском в двух разных ролях, и от роли зависит форма вопроса и отрицания. Как вспомогательный глагол have/has/had образует перфект (have finished, had left) и сам переносится в начало вопроса и присоединяет not: Have you finished? I haven't finished. Как смысловой глагол have значит «иметь», «получать», «проводить» и в американском варианте требует do/does/did: Do you have a laptop? I didn't have time. Разговорная форма have got тоже означает обладание, но вопрос строится без do: Have you got a minute? В значении обладания have не ставится в Continuous, а в значениях действия (have lunch, have a meeting, have a shower) — ставится: We're having a call right now. Отдельно существует каузативная конструкция have something done: I had my laptop repaired. Определяйте роль have до того, как выбирать форму вопроса. Два have подряд нормальны: в had had первый — вспомогательный (время), второй — смысловой (By noon I had had four meetings). Смысловой have в устойчивых сочетаниях действия тоже идёт в continuous: I'm having second thoughts.",
+      "summary_ru": "Have работает в английском в двух разных ролях, и от роли зависит форма вопроса и отрицания. Как вспомогательный глагол have/has/had образует перфект (have finished, had left) и сам переносится в начало вопроса и присоединяет not: Have you finished? I haven't finished. Как смысловой глагол have значит «иметь», «получать», «проводить» и в американском варианте требует do/does/did: Do you have a laptop? I didn't have time. Разговорная форма have got тоже означает обладание, но вопрос строится без do: Have you got a minute? В значении обладания have не ставится в Continuous, а в значениях действия (have lunch, have a meeting, have a shower) — ставится: We're having a call right now. Отдельно существует каузативная конструкция have something done: I had my laptop repaired. Определяйте роль have до того, как выбирать форму вопроса. Два have подряд нормальны: в had had первый — вспомогательный (время), второй — смысловой (She had had the same car for twenty years). Смысловой have в устойчивых сочетаниях действия тоже идёт в continuous: We're having a great time.",
       "forms": [
         "have/has/had + V3 (вспомогательный): Have you finished?",
         "do/does/did + подлежащее + have (смысловой): Do you have a ticket?",
@@ -56,7 +56,8 @@
           ],
           "correct_index": 0,
           "explanation_ru": "Have time — смысловой глагол («иметь время»), поэтому вопрос в прошедшем строится через did: Did you have time? Had you time — устаревший британский вариант, Have you… требовало бы had (Have you had time?) и не сочетается с yesterday, а were с have не образует вопрос.",
-          "difficulty": 1
+          "difficulty": 1,
+          "diagnostic": false
         },
         {
           "id": "b2_have_auxiliary_main_verb_03",
@@ -193,15 +194,15 @@
           "kind": "choice",
           "prompt": "A: ___ a spare charger? Mine just died.\nB: Sure, here you go.",
           "options": [
-            "Have you got",
+            "Do you have",
             "Do you have got",
             "Have you",
             "Are you having"
           ],
           "correct_index": 0,
-          "explanation_ru": "Have got (обладание) образует вопрос без do: Have you got…? Do you have got смешивает две модели, Have you без got звучит устаревшим, а are you having — continuous, в котором have в значении «иметь» не употребляется. Нейтральный американский вариант — Do you have a spare charger?",
+          "explanation_ru": "Have в значении «иметь» — смысловой глагол, и в американском английском вопрос строится через do: Do you have…? Do you have got смешивает две модели, Have you без do звучит устаревшим британским, а are you having — continuous, в котором have в значении «иметь» не употребляется. Британское Have you got…? в США тоже поймут.",
           "difficulty": 2,
-          "diagnostic": true
+          "diagnostic": false
         }
       ]
     },
@@ -382,7 +383,11 @@
           "prompt": "Rewrite using the word in capitals (do not change it): I only understood the new expense system after my manager had explained it twice. UNTIL",
           "answer": "I didn't understand the new expense system until my manager had explained it twice.",
           "accept": [
-            "I didn't understand the new expense system until my manager explained it twice."
+            "I didn't understand the new expense system until my manager explained it twice.",
+            "It wasn't until my manager had explained it twice that I understood the new expense system.",
+            "It wasn't until my manager explained it twice that I understood the new expense system.",
+            "Not until my manager had explained it twice did I understand the new expense system.",
+            "Not until my manager explained it twice did I understand the new expense system."
           ],
           "explanation_ru": "Only … after = not … until: отрицание переходит в главную часть (didn't understand), а until вводит момент, после которого всё изменилось. Past perfect подчёркивает, что объяснение было раньше понимания, но после until допустим и past simple.",
           "difficulty": 3
@@ -609,10 +614,10 @@
             "are to",
             "are due to",
             "are about to",
-            "are bound to"
+            "are likely to"
           ],
           "correct_index": 0,
-          "explanation_ru": "Be to + инфинитив — официальное правило или распоряжение: visitors are to wear a badge («обязаны носить»). Be due to — «по расписанию», be about to — «вот-вот», be bound to — «неизбежно»; требования ни одно из них не выражает.",
+          "explanation_ru": "Be to + инфинитив — официальное правило или распоряжение: visitors are to wear a badge («обязаны носить»). Be due to — «по расписанию», be about to — «вот-вот», be likely to — «вероятно»; требования ни одно из них не выражает.",
           "difficulty": 2,
           "diagnostic": true
         }
@@ -810,7 +815,11 @@
             "I wish I had said yes to that job.",
             "If only I had taken that job.",
             "If only I had accepted that job.",
-            "If only I had accepted that job offer."
+            "If only I had accepted that job offer.",
+            "I wish I had agreed to take that job.",
+            "I wish I hadn't turned down that job.",
+            "I wish I hadn't refused that job.",
+            "If only I had said yes to that job."
           ],
           "explanation_ru": "Русское «жаль, что не…» становится желанием противоположного: I wish I had taken — «хотел бы, чтобы я согласился». О прошлом после wish нужен past perfect; I wish I didn't refuse перевернуло бы смысл, а I wish I took говорило бы о настоящем.",
           "difficulty": 3
@@ -1202,7 +1211,7 @@
       "title_en": "Verb + object + infinitive/gerund: Verb patterns",
       "source_slug": "verb-object-infinitive-gerund",
       "title_ru": "Глагол + дополнение + инфинитив или герундий",
-      "summary_ru": "Многие английские глаголы требуют после себя дополнение и только потом вторую форму глагола. С to-инфинитивом идут ask, tell, want, expect, advise, allow, remind, persuade, encourage, teach, warn, force: The manager asked me to lead the demo. С голым инфинитивом идут make, let и каузативный have: They let us leave early. Help допускает оба варианта: help me (to) find it. Глаголы восприятия see, hear, watch берут -ing для процесса и голый инфинитив для законченного действия: I heard someone typing и I saw him leave. В пассиве make возвращает to: I was made to rewrite it. Есть и глаголы, которые дополнение с инфинитивом не берут вовсе: suggest и recommend требуют придаточного или герундия. После prevent и stop используется предлог from и герундий. Accuse и suspect берут of + герундий: They accused him of lying. Stop + to-инфинитив значит «остановиться, чтобы…» (stopped to get coffee), а stop + -ing — «перестать» (stopped drinking coffee).",
+      "summary_ru": "Многие английские глаголы требуют после себя дополнение и только потом вторую форму глагола. С to-инфинитивом идут ask, tell, want, expect, advise, allow, remind, persuade, encourage, teach, warn, force: The manager asked me to lead the demo. С голым инфинитивом идут make, let и каузативный have: They let us leave early. Help допускает оба варианта: help me (to) find it. Глаголы восприятия see, hear, watch берут -ing для процесса и голый инфинитив для законченного действия: I heard someone typing и I saw him leave. В пассиве make возвращает to: I was made to rewrite it. Есть и глаголы, которые дополнение с инфинитивом не берут вовсе: suggest и recommend требуют придаточного или герундия. После prevent и stop используется предлог from и герундий. Accuse и suspect берут of + герундий: They accused him of lying. Stop + to-инфинитив значит «остановиться, чтобы…» (stopped to buy some water), а stop + -ing — «перестать» (stopped eating sugar).",
       "forms": [
         "глагол + дополнение + to-инфинитив: They asked me to help.",
         "make / let + дополнение + голый инфинитив: They let us go.",
@@ -1403,7 +1412,7 @@
           "correct_index": 0,
           "explanation_ru": "Stop + to + инфинитив — остановиться, чтобы что-то сделать: зашёл за кофе по дороге. Stop + -ing значит «перестать»: stopped getting coffee — «бросил покупать кофе», и опоздание тогда непонятно. Get без to и for getting после stop не употребляются.",
           "difficulty": 2,
-          "diagnostic": true
+          "diagnostic": false
         },
         {
           "id": "b2_verb_object_infinitive_gerund_14",
@@ -1421,7 +1430,12 @@
             "The traffic kept me from getting to the interview on time.",
             "Traffic kept me from getting to the interview on time.",
             "The traffic stopped me from getting to the interview on time.",
-            "Traffic stopped me from getting to the interview on time."
+            "Traffic stopped me from getting to the interview on time.",
+            "The traffic prevented me from making it to the interview on time.",
+            "Traffic prevented me from making it to the interview on time.",
+            "The traffic jam prevented me from getting to the interview on time.",
+            "The traffic prevented me from getting to my interview on time.",
+            "Traffic prevented me from getting to my interview on time."
           ],
           "explanation_ru": "«Помешать сделать» — prevent / keep / stop + человек + from + -ing: prevented me from getting. Инфинитив после prevent невозможен (prevented me to get — калька с русского), а from обязателен.",
           "difficulty": 3
@@ -1436,7 +1450,7 @@
       "title_en": "Cleft sentences: Adding emphasis",
       "source_slug": "cleft-sentences",
       "title_ru": "Расщеплённые предложения для акцента",
-      "summary_ru": "Английский порядок слов жёсткий, поэтому выделить нужную часть фразы помогают особые конструкции. It-cleft строится по схеме it + be + выделяемая часть + that/who + остальное: It was Anna who found the bug. Выделять можно подлежащее, дополнение, время или место: It was on Monday that we deployed. Связка that или who обязательна, когда в фокусе подлежащее; опустить её можно только при выделении дополнения: It was the logs (that) we checked first. Wh-cleft начинается с what и ставит важное после be: What we need is a rollback plan. Если выделяют действие, используется схема what + подлежащее + do + be: What he did was restart the cluster. Похожие модели дают all, the reason, the thing: All I want is a stable build. Отдельно запомните оборот it wasn't until ... that ... Причину выносят в фокус моделью The reason (why) … is that…, а два фокуса противопоставляют так: It wasn't the price that worried them; it was the time.",
+      "summary_ru": "Английский порядок слов жёсткий, поэтому выделить нужную часть фразы помогают особые конструкции. It-cleft строится по схеме it + be + выделяемая часть + that/who + остальное: It was Anna who found the bug. Выделять можно подлежащее, дополнение, время или место: It was on Monday that we deployed. Связка that или who обязательна, когда в фокусе подлежащее; опустить её можно только при выделении дополнения: It was the logs (that) we checked first. Wh-cleft начинается с what и ставит важное после be: What we need is a rollback plan. Если выделяют действие, используется схема what + подлежащее + do + be: What he did was restart the cluster. Похожие модели дают all, the reason, the thing: All I want is a stable build. Отдельно запомните оборот it wasn't until ... that ... Причину выносят в фокус моделью The reason (why) … is that…, а два фокуса противопоставляют так: It wasn't the weather that ruined the trip; it was the traffic.",
       "forms": [
         "It + be + фокус + that/who + остальное: It was Anna who called.",
         "It + be + обстоятельство + that: It was in 2020 that we migrated.",
@@ -1630,7 +1644,10 @@
             "It wasn't the price which worried the client; it was the delivery time.",
             "It wasn't the price that worried the client, it was the delivery time.",
             "It wasn't the price that worried the client. It was the delivery time.",
-            "It wasn't the price that worried the client, but the delivery time."
+            "It wasn't the price that worried the client, but the delivery time.",
+            "It was the delivery time that worried the client, not the price.",
+            "It was the delivery time, not the price, that worried the client.",
+            "What worried the client wasn't the price; it was the delivery time."
           ],
           "explanation_ru": "Противопоставление двух фокусов — It wasn't X that…; it was Y: сначала отрицаемая часть с that-придаточным, потом верная. Придаточное во второй части не повторяют.",
           "difficulty": 3
@@ -2382,7 +2399,9 @@
           "accept": [
             "I have worked for this company since 2021.",
             "I have been working at this company since 2021.",
-            "I have been working for this company since 2021."
+            "I have been working for this company since 2021.",
+            "I have been with this company since 2021.",
+            "I have been at this company since 2021."
           ],
           "explanation_ru": "Русское настоящее «работаю с 2021 года» — это период, который тянется до сих пор, поэтому нужен present perfect: I have worked (или have been working) since 2021. I work … since — калька с русского.",
           "difficulty": 2

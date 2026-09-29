@@ -2303,9 +2303,13 @@
             "She asked me if I could come on Saturday.",
             "She asked me if I would be able to come on Saturday.",
             "She asked me whether I could come on Saturday.",
-            "She asked me whether I would be able to come on Saturday."
+            "She asked me whether I would be able to come on Saturday.",
+            "She asked if I can come on Saturday.",
+            "She asked whether I can come on Saturday.",
+            "She asked me if I can come on Saturday.",
+            "She asked me whether I can come on Saturday."
           ],
-          "explanation_ru": "«Ли» в пересказанном вопросе — if или whether, после них прямой порядок слов: if I could come. Глагол asked стоит в прошедшем, поэтому модальный сдвигается: can → could (или will be able to → would be able to). Can I come и if I can come — ошибки.",
+          "explanation_ru": "«Ли» в пересказанном вопросе — if или whether, после них прямой порядок слов: if I could come, а не can I come. После asked модальный обычно сдвигается: can → could (will be able to → would be able to). Если суббота ещё впереди, в разговоре допустимо и if I can come.",
           "difficulty": 2
         },
         {

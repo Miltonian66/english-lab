@@ -461,16 +461,33 @@ class PracticeTests(unittest.TestCase):
         raise AssertionError(f"нет слова {word}")
 
     def test_recall_accepts_same_meaning_words_and_forms_with_a_note(self) -> None:
-        """«делать» — это и do, и make; «вставать» в прошедшем — тоже знание слова."""
-        question = pr.vocab_question(self._vocab("do"), CURRICULUM, self.rng)
-        self.assertTrue(pr.check(question, "do").correct)
-        verdict = pr.check(question, "make")
+        """«сокращать» — это и reduce, и scale back; прошедшее время — тоже знание слова."""
+        question = pr.vocab_question(self._vocab("reduce"), CURRICULUM, self.rng)
+        verdict = pr.check(question, "scale back")
         self.assertTrue(verdict.correct)
-        self.assertIn("Загадано слово: do", verdict.note)
-        self.assertTrue(pr.check(question, "did").correct)
+        self.assertIn("Загадано слово: reduce", verdict.note)
+        self.assertTrue(pr.check(question, "scaled back").correct)
+        self.assertTrue(pr.check(question, "reduced").correct)
         self.assertFalse(pr.check(question, "go").correct)
+        handle = pr.vocab_question(self._vocab("handle"), CURRICULUM, self.rng)
+        self.assertTrue(pr.check(handle, "deal with").correct)
         phrasal = pr.vocab_question(self._vocab("check in"), CURRICULUM, self.rng)
         self.assertTrue(pr.check(phrasal, "checked in").correct)
+
+    def test_different_qualifiers_keep_do_and_make_apart(self) -> None:
+        """«делать (дела, уроки)» и «делать (изготавливать)» — разные значения.
+
+        «I make my homework» — главная ошибка русскоязычных; засчитать make за do
+        значило бы закрепить её.
+        """
+        do = pr.vocab_question(self._vocab("do"), CURRICULUM, self.rng)
+        self.assertTrue(pr.check(do, "did").correct)
+        self.assertFalse(pr.check(do, "make").correct)
+        make = pr.vocab_question(self._vocab("make"), CURRICULUM, self.rng)
+        self.assertFalse(pr.check(make, "do").correct)
+        self.assertTrue(pr.check(make, "made").correct)
+        self.assertTrue(pr._same_sense("стол", "стол (письменный)"))
+        self.assertFalse(pr._same_sense("стол (обеденный)", "стол (письменный)"))
 
     def test_invented_forms_are_never_accepted(self) -> None:
         """«childs», «hurted», «putted on» — ошибки, а не формы слова."""
@@ -480,6 +497,12 @@ class PracticeTests(unittest.TestCase):
         self.assertIn("inferred", pr.word_forms("infer"))
         self.assertNotIn("infered", pr.word_forms("infer"))
         self.assertIn("goes", pr.word_forms("go"))
+        self.assertIn("quitting", pr.word_forms("quit"))
+        self.assertNotIn("quiting", pr.word_forms("quit"))
+        self.assertIn("underpinned", pr.word_forms("underpin"))
+        self.assertIn("offsetting", pr.word_forms("offset"))
+        self.assertIn("shrank", pr.word_forms("shrink"))
+        self.assertNotIn("shrinked", pr.word_forms("shrink"))
         self.assertIn("does", pr.word_forms("do"))
         self.assertNotIn("gos", pr.word_forms("go"))
         self.assertNotIn("putted on", pr.word_forms("put on"))
@@ -488,15 +511,25 @@ class PracticeTests(unittest.TestCase):
         class Card:
             pos = "noun"
 
-        for word, forms in (("child", ["children"]), ("advice", []), ("person", ["people"]), ("species", [])):
+        for word, forms in (
+            ("child", ["children"]), ("advice", []), ("person", ["people"]), ("species", []),
+            ("amenities", []), ("bias", ["biases"]),
+        ):
             card = Card()
             card.word = word  # type: ignore[attr-defined]
             with self.subTest(word=word):
                 self.assertEqual(pr.accepted_forms(card), forms)  # type: ignore[arg-type]
 
     def test_synonyms_count_in_their_forms_too(self) -> None:
-        question = pr.vocab_question(self._vocab("do"), CURRICULUM, self.rng)
-        self.assertTrue(pr.check(question, "made").correct)
+        question = pr.vocab_question(self._vocab("solve"), CURRICULUM, self.rng)
+        self.assertTrue(pr.check(question, "ironed out").correct)
+
+    def test_recognition_never_offers_a_near_synonym(self) -> None:
+        """Обманка с общим accept или с более узким значением защитима — её не дают."""
+        for word, near in (("brusque", "terse"), ("corroborate", "substantiate")):
+            pool = [other.word for other in pr._distractor_pool(self._vocab(word), CURRICULUM)]
+            with self.subTest(word=word):
+                self.assertNotIn(near, pool)
 
     def test_recall_forms_depend_on_part_of_speech(self) -> None:
         self.assertEqual(pr.accepted_forms(self._vocab("on")), [])

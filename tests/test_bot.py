@@ -956,9 +956,11 @@ class ListeningTests(BotTestCase):
         class StubSpeaker:
             def __init__(stub) -> None:
                 stub.calls: list[str] = []
+                stub.gentle: list[bool] = []
 
-            def synthesize(stub, text: str, slow: bool = False) -> Path:
+            def synthesize(stub, text: str, slow: bool = False, gentle: bool = False) -> Path:
                 stub.calls.append(text)
+                stub.gentle.append(gentle)
                 return self.audio
 
         self.speaker = StubSpeaker()
@@ -1029,6 +1031,18 @@ class ListeningTests(BotTestCase):
         _, _, caption = self.telegram.voices[-1]
         letter = "ABCD"[self.key_position(task)]
         self.assertIn(f"{letter}. {task.options[task.correct_index]}", caption)
+
+    def test_beginner_levels_hear_a_gentler_pace(self) -> None:
+        """На A1–A2 запись спокойнее обычного, с B1 — обычный темп."""
+        self.bot.storage.update_user(100, level="B2", target_level="C1")
+        self.press(100, "listen")
+        self.assertNotIn(self.task().level, ("A1", "A2"))
+        self.assertEqual(self.speaker.gentle, [False])
+        self.bot.storage.set_state(100, "idle")
+        self.bot.storage.update_user(100, level="A1", target_level="A2")
+        self.press(100, "listen")
+        self.assertEqual(self.task().level, "A1")
+        self.assertEqual(self.speaker.gentle, [False, True])
 
     def test_replay_reuses_telegram_file_and_does_not_resynthesize(self) -> None:
         self.press(100, "listen")

@@ -24,6 +24,10 @@ US_INSTRUCTIONS = (
     "Pronounce every sound distinctly, keep rhotic /r/, and do not imitate a British accent."
 )
 US_SLOW_INSTRUCTIONS = US_INSTRUCTIONS + " Speak slowly and separate the syllables clearly."
+US_GENTLE_INSTRUCTIONS = US_INSTRUCTIONS + (
+    " The listener is a beginner: speak a little more slowly than usual and pause briefly"
+    " between sentences, without stretching syllables."
+)
 
 
 def cache_name(text: str, voice: str, slow: bool) -> str:
@@ -109,7 +113,7 @@ class Speaker:
         self.pools = {"female": list(female_voices), "male": list(male_voices)}
         self.cache_dir = cache_dir
 
-    def synthesize(self, text: str, slow: bool = False) -> Path:
+    def synthesize(self, text: str, slow: bool = False, gentle: bool = False) -> Path:
         """Возвращает путь к Ogg Opus. Повторные запросы берутся из кэша на диске."""
         cleaned = text.strip()
         if not cleaned:
@@ -118,11 +122,12 @@ class Speaker:
             cleaned = cleaned[:900]
 
         self.cache_dir.mkdir(parents=True, exist_ok=True)
-        destination = self.cache_dir / cache_name(cleaned, self.voice, slow)
+        tag = self.voice + ("-gentle" if gentle else "")
+        destination = self.cache_dir / cache_name(cleaned, tag, slow)
         if destination.exists() and destination.stat().st_size > 0:
             return destination
 
-        audio = self._request(cleaned, self.voice, "opus", slow)
+        audio = self._request(cleaned, self.voice, "opus", slow, gentle)
 
         # Кэш общий на всю платформу: имя временного файла обязано быть уникальным,
         # иначе одновременный /say одного слова двумя людьми затрёт файл под ногами.
@@ -135,13 +140,17 @@ class Speaker:
         destination.chmod(0o600)
         return destination
 
-    def _request(self, text: str, voice: str, response_format: str, slow: bool = False) -> bytes:
+    def _request(
+        self, text: str, voice: str, response_format: str, slow: bool = False, gentle: bool = False
+    ) -> bytes:
         payload = {
             "model": self.model,
             "voice": voice,
             "input": text,
             "response_format": response_format,
-            "instructions": US_SLOW_INSTRUCTIONS if slow else US_INSTRUCTIONS,
+            "instructions": (
+                US_SLOW_INSTRUCTIONS if slow else US_GENTLE_INSTRUCTIONS if gentle else US_INSTRUCTIONS
+            ),
         }
         try:
             audio = post_binary(
@@ -156,7 +165,10 @@ class Speaker:
         return audio
 
     def synthesize_dialogue(
-        self, lines: list[tuple[str, str]], genders: dict[str, str] | None = None
+        self,
+        lines: list[tuple[str, str]],
+        genders: dict[str, str] | None = None,
+        gentle: bool = False,
     ) -> Path:
         """Реплики голосами по полу говорящих (`assign_voices`).
 
@@ -170,7 +182,7 @@ class Speaker:
         try:
             import av  # noqa: F401  (проверка, что кодер Opus есть)
         except ImportError:
-            return self.synthesize(" ".join(text for _, text in turns))
+            return self.synthesize(" ".join(text for _, text in turns), gentle=gentle)
 
         from .local_speech import pad_wav, wav_to_opus
 
@@ -178,7 +190,7 @@ class Speaker:
         script = "\n".join(f"{speaker}: {text}" for speaker, text in turns)
         self.cache_dir.mkdir(parents=True, exist_ok=True)
         tag = "openai-dialogue-" + ",".join(f"{name}={voice}" for name, voice in voices.items())
-        destination = self.cache_dir / cache_name(script, tag, False)
+        destination = self.cache_dir / cache_name(script, tag + ("-gentle" if gentle else ""), False)
         if destination.exists() and destination.stat().st_size > 0:
             return destination
 
@@ -187,7 +199,7 @@ class Speaker:
         for index, (speaker, text) in enumerate(turns):
             if index:
                 pieces.append(pause)
-            pcm = self._request(text, voices[speaker], "pcm")
+            pcm = self._request(text, voices[speaker], "pcm", gentle=gentle)
             pieces.append(pcm[: len(pcm) - len(pcm) % 2])
         buffer = io.BytesIO()
         with wave.open(buffer, "wb") as target:

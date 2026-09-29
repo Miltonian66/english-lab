@@ -355,24 +355,68 @@ def _find_vocab(curriculum: Curriculum, vocab_id: str) -> VocabItem | None:
     return None
 
 
+def _qualified_senses(translation_ru: str) -> set[tuple[str, str]]:
+    """Значения перевода с уточнением: «делать (дела, уроки), выполнять» →
+    {("делать", "дела, уроки"), ("выполнять", "")}. Запятая в скобках значение не делит."""
+    parts: list[str] = []
+    depth, current = 0, ""
+    for char in translation_ru.lower():
+        depth += (char == "(") - (char == ")")
+        if depth <= 0 and char in ",;/":
+            parts.append(current)
+            current, depth = "", 0
+        else:
+            current += char
+    parts.append(current)
+    found: set[tuple[str, str]] = set()
+    for part in parts:
+        core = " ".join(re.sub(r"\([^)]*\)?", " ", part).split())
+        if core:
+            qualifier = " ".join(" ".join(re.findall(r"\(([^)]*)\)?", part)).split())
+            found.add((core, qualifier))
+    return found
+
+
 def senses(translation_ru: str) -> set[str]:
-    """Значения русского перевода: «стол, письменный стол» → {стол, письменный стол}."""
-    plain = re.sub(r"\([^)]*\)", "", translation_ru.lower())
-    return {part.strip() for part in re.split(r"[,;/]", plain) if part.strip()}
+    """Значения перевода без уточнений: «стол, письменный стол» → {стол, письменный стол}."""
+    return {core for core, _ in _qualified_senses(translation_ru)}
 
 
 def _all_vocab(curriculum: Curriculum) -> list[VocabItem]:
     return [item for items in curriculum.vocabulary.values() for item in items]
 
 
-def _covers(asked: set[str], offered: set[str]) -> bool:
-    """Подходит ли слово с переводом `offered` на вопрос с переводом `asked`.
+def _same_sense(asked: str, offered: str) -> bool:
+    """Верен ли на вопрос с переводом `asked` ответ-слово с переводом `offered`.
 
     Только точное совпадение значения. Более узкое слово не годится: на «боль»
-    headache («головная боль») — уже не ответ. Где русский перевод честно
-    допускает другое слово (стол — table и desk), его перечисляет `accept`.
+    headache («головная боль») — уже не ответ. Разные уточнения в скобках
+    разводят значения: «делать (дела, уроки)» — do, «делать (изготавливать)» —
+    make, и засчитать одно за другое значило бы засчитать главную ошибку
+    русскоязычных. Где русский перевод честно допускает другое слово, его
+    перечисляет `accept`.
     """
-    return bool(asked & offered)
+    return any(
+        core == other_core and (not qualifier or not other_qualifier or qualifier == other_qualifier)
+        for core, qualifier in _qualified_senses(asked)
+        for other_core, other_qualifier in _qualified_senses(offered)
+    )
+
+
+def _overlaps(first: str, second: str) -> bool:
+    """Близки ли значения настолько, что слово нельзя давать обманкой.
+
+    Шире, чем `_same_sense`: уточнения не разводят, а «подкреплять» близко к
+    «подкреплять доказательствами». Обманка, которую можно защитить, хуже
+    лишней верной кнопки.
+    """
+    mine, theirs = senses(first), senses(second)
+    return any(a == b or a.startswith(f"{b} ") or b.startswith(f"{a} ") for a in mine for b in theirs)
+
+
+def _pos_group(pos: str) -> str:
+    """Глагол и фразовый глагол взаимозаменяемы: deal with — ответ на handle."""
+    return "verb" if pos == "phrasal verb" else pos
 
 
 def accepted_forms(item: VocabItem) -> list[str]:
@@ -385,7 +429,8 @@ def _forms_of(word: str, pos: str) -> list[str]:
     if pos in ("verb", "phrasal verb"):
         return [form for form in word_forms(base) if form != base]
     if pos == "noun" and " " not in base:
-        if base in UNCOUNTABLE or base in INVARIANT_PLURAL:
+        # amenities уже во множественном: «amenitieses» — не форма.
+        if base in UNCOUNTABLE or base in INVARIANT_PLURAL or base.endswith("ies"):
             return []
         if base in IRREGULAR_PLURAL:
             return [IRREGULAR_PLURAL[base]]
@@ -403,13 +448,12 @@ def vocab_alternatives(item: VocabItem, curriculum: Curriculum) -> tuple[str, ..
     же части речи с тем же или более узким значением и формы самого слова — с
     пометкой, какое слово было загадано.
     """
-    mine = senses(item.translation_ru)
     synonyms: list[str] = list(item.accept)
     for other in _all_vocab(curriculum):
         if (
             other.id != item.id
-            and other.pos == item.pos
-            and _covers(mine, senses(other.translation_ru))
+            and _pos_group(other.pos) == _pos_group(item.pos)
+            and _same_sense(item.translation_ru, other.translation_ru)
         ):
             synonyms.append(other.word)
     found: list[str] = list(accepted_forms(item))
@@ -427,21 +471,22 @@ def vocab_alternatives(item: VocabItem, curriculum: Curriculum) -> tuple[str, ..
 def _distractor_pool(item: VocabItem, curriculum: Curriculum) -> list[VocabItem]:
     """Обманки того же уровня и части речи, ни одна из которых не верна сама.
 
-    Слово с общим значением («на» — on и at) или из `accept` выбывает: иначе
+    Слово с общим или близким значением («на» — on и at), из `accept` или с
+    общим синонимом в `accept` (terse и brusque оба — curt) выбывает: иначе
     кнопка с верным ответом засчитывалась бы ошибкой. Если на уровне не хватает
     слов этой части речи, пул добирается с соседних уровней.
     """
-    mine = senses(item.translation_ru)
     blocked = {word.lower() for word in item.accept} | {item.word.lower()}
 
     def fits(other: VocabItem) -> bool:
-        theirs = senses(other.translation_ru)
+        theirs = {word.lower() for word in other.accept}
         return (
             other.id != item.id
             and other.pos == item.pos
             and other.word.lower() not in blocked
-            and item.word.lower() not in (word.lower() for word in other.accept)
-            and not _covers(mine, theirs)
+            and item.word.lower() not in theirs
+            and not (blocked & theirs)
+            and not _overlaps(item.translation_ru, other.translation_ru)
         )
 
     pool = [other for other in curriculum.vocab_of_level(item.level) if fits(other)]
@@ -616,6 +661,7 @@ IRREGULAR: dict[str, tuple[str, ...]] = {
     "rise": ("rose", "risen"), "run": ("ran",), "say": ("said",), "see": ("saw", "seen"),
     "seek": ("sought",), "sell": ("sold",), "send": ("sent",), "shake": ("shook", "shaken"),
     "shine": ("shone",), "shoot": ("shot",), "show": ("shown",), "sing": ("sang", "sung"),
+    "shrink": ("shrank", "shrunk"), "prove": ("proved", "proven"), "speed": ("sped", "speeded"),
     "sit": ("sat",), "sleep": ("slept",), "speak": ("spoke", "spoken"), "spend": ("spent",),
     "stand": ("stood",), "steal": ("stole", "stolen"), "stick": ("stuck",), "strike": ("struck",),
     "strive": ("strove", "striven"), "swear": ("swore", "sworn"), "sweep": ("swept",),
@@ -626,7 +672,7 @@ IRREGULAR: dict[str, tuple[str, ...]] = {
     "wind": ("wound",), "withdraw": ("withdrew", "withdrawn"), "write": ("wrote", "written"),
     # Форма прошедшего совпадает с основой: «putted» и «hurted» — ошибки.
     "bet": (), "broadcast": (), "burst": (), "cast": (), "cost": (), "cut": (), "fit": (),
-    "forecast": (), "hit": (), "hurt": (), "let": (), "put": (), "quit": (), "read": (),
+    "forecast": (), "hit": (), "hurt": (), "let": (), "offset": (), "put": (), "quit": (), "read": (),
     "rid": (), "set": (), "shut": (), "split": (), "spread": (), "upset": (), "beat": ("beaten",),
 }
 
@@ -656,7 +702,7 @@ DOUBLING = frozenset({
     "admit", "commit", "submit", "permit", "omit", "emit", "refer", "prefer", "occur",
     "deter", "regret", "control", "compel", "expel", "propel", "rebel", "equip", "upset",
     "begin", "infer", "confer", "defer", "incur", "recur", "transfer", "excel", "patrol",
-    "forget", "forbid",
+    "forget", "forbid", "offset", "underpin",
 })
 
 
@@ -667,14 +713,16 @@ def _single_forms(base: str) -> set[str]:
     выдуманная форма здесь означала бы засчитанную орфографическую ошибку.
     """
     forms = {base}
-    vowels = len(re.findall(r"[aeiouy]+", base))
+    # «qu» звучит как согласная: quit → quitting, как sit → sitting.
+    probe = re.sub(r"qu(?=[aeiou])", "q", base)
+    vowels = len(re.findall(r"[aeiouy]+", probe))
     if base.endswith("ee") or base == "be":
         forms |= {f"{base}s", f"{base}d", f"{base}ing"}
     elif base.endswith("e"):
         forms |= {f"{base}s", f"{base}d", f"{base[:-1]}ing"}
     elif base.endswith("y") and len(base) > 2 and base[-2] not in "aeiou":
         forms |= {f"{base[:-1]}ies", f"{base[:-1]}ied", f"{base}ing"}
-    elif (vowels == 1 or base in DOUBLING) and re.fullmatch(r"[a-z]*[^aeiou][aeiou][bdgklmnprt]", base):
+    elif (vowels == 1 or base in DOUBLING) and re.fullmatch(r"[a-z]*[^aeiou][aeiou][bdgklmnprt]", probe):
         forms |= {f"{base}s", f"{base}{base[-1]}ed", f"{base}{base[-1]}ing"}
     else:
         plural = f"{base}es" if re.search(r"(s|x|z|ch|sh|o)$", base) else f"{base}s"

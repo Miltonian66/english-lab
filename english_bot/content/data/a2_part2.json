@@ -34,7 +34,7 @@
         {
           "id": "a2_phrasal_verbs_transitive_and_intransitive_separable_and_inseparable_01",
           "kind": "choice",
-          "prompt": "It is dark in here. Can you turn ___?",
+          "prompt": "It's dark in here. Can you turn ___?",
           "options": [
             "on it",
             "it on",
@@ -62,7 +62,7 @@
         {
           "id": "a2_phrasal_verbs_transitive_and_intransitive_separable_and_inseparable_03",
           "kind": "choice",
-          "prompt": "Who ___ your dog when you are away?",
+          "prompt": "Who ___ your dog when you're away?",
           "options": [
             "looks after",
             "looks for",
@@ -76,7 +76,7 @@
         {
           "id": "a2_phrasal_verbs_transitive_and_intransitive_separable_and_inseparable_04",
           "kind": "choice",
-          "prompt": "We ___ paper, so I could not print the report.",
+          "prompt": "We ___ paper, so I couldn't print the report.",
           "options": [
             "ran out of",
             "ran out",
@@ -90,27 +90,32 @@
         {
           "id": "a2_phrasal_verbs_transitive_and_intransitive_separable_and_inseparable_05",
           "kind": "gap",
-          "prompt": "Nobody can come to the party, so I have to call ___ ___. (it / off)",
-          "answer": "it off",
-          "accept": [],
-          "explanation_ru": "Call off — отделяемый глагол, а местоимение it может стоять только между call и off.",
+          "prompt": "Nobody can come to the party, so I have to ___ (call off).",
+          "answer": "call it off",
+          "accept": [
+            "call the party off",
+            "call off the party"
+          ],
+          "explanation_ru": "Call off — отделяемый глагол: местоимение it стоит только между call и off — call it off. Call off it невозможно.",
           "difficulty": 1
         },
         {
           "id": "a2_phrasal_verbs_transitive_and_intransitive_separable_and_inseparable_06",
           "kind": "gap",
-          "prompt": "He ___ ___ his little sister after school every day. (look after)",
-          "answer": "looks after",
+          "prompt": "My parents are away this week, so my aunt is looking ___ (us / after).",
+          "answer": "after us",
           "accept": [],
-          "explanation_ru": "Present Simple, третье лицо ед. числа: looks; look after — неотделяемый глагол, поэтому дополнение стоит сразу после after.",
+          "explanation_ru": "Look after — неотделяемый глагол: дополнение, даже местоимение, стоит после after — looking after us. Порядок us after подходит только отделяемым глаголам вроде call it off.",
           "difficulty": 2
         },
         {
           "id": "a2_phrasal_verbs_transitive_and_intransitive_separable_and_inseparable_07",
           "kind": "correct",
-          "prompt": "Can you turn off it? The music is too loud.",
-          "answer": "Can you turn it off? The music is too loud.",
-          "accept": [],
+          "prompt": "The music is too loud. Can you turn off it?",
+          "answer": "The music is too loud. Can you turn it off?",
+          "accept": [
+            "Can you turn it off?"
+          ],
           "explanation_ru": "С местоимением порядок только turn it off; turn off it невозможно.",
           "difficulty": 3
         },
@@ -200,7 +205,7 @@
         "It gets dark early in winter.",
         "My sister got married last year.",
         "Can you get me a coffee, please?",
-        "I have got a new laptop."
+        "I've got a new laptop."
       ],
       "ru_interference": "Русское 'добраться домой' тянет за собой предлог: неверно 'I got to home late' -> верно 'I got home late'; перед home, here, there предлог to не ставится.",
       "prerequisites": [
@@ -225,7 +230,7 @@
         {
           "id": "a2_the_different_uses_of_the_verb_get_02",
           "kind": "choice",
-          "prompt": "It is ___ dark. Let's go home.",
+          "prompt": "It's ___ dark. Let's go home.",
           "options": [
             "getting",
             "get",
@@ -253,7 +258,7 @@
         {
           "id": "a2_the_different_uses_of_the_verb_get_04",
           "kind": "choice",
-          "prompt": "When I ___ home, I will call you.",
+          "prompt": "When I ___ home, I'll call you.",
           "options": [
             "get",
             "get to",
@@ -267,19 +272,19 @@
         {
           "id": "a2_the_different_uses_of_the_verb_get_05",
           "kind": "gap",
-          "prompt": "My grandmother is 80, but she never ___ ___. (get / tired)",
+          "prompt": "Use get. My grandmother is 80, but she never ___ (устаёт).",
           "answer": "gets tired",
           "accept": [],
-          "explanation_ru": "Present Simple, третье лицо ед. числа: gets; get + прилагательное = становиться.",
+          "explanation_ru": "«Становиться, делаться» — get + прилагательное: get tired. Present Simple с she даёт gets: she never gets tired.",
           "difficulty": 1
         },
         {
           "id": "a2_the_different_uses_of_the_verb_get_06",
           "kind": "gap",
-          "prompt": "They ___ ___ in June and moved to Lisbon. (get / married)",
+          "prompt": "Use get. They ___ (поженились) in June and moved to Lisbon.",
           "answer": "got married",
           "accept": [],
-          "explanation_ru": "Устойчивое сочетание get married в прошедшем времени: got married.",
+          "explanation_ru": "«Пожениться» — устойчивое get married; в прошедшем времени got married.",
           "difficulty": 2
         },
         {
@@ -297,7 +302,9 @@
           "prompt": "Rewrite with 'get': I received three emails this morning.",
           "answer": "I got three emails this morning.",
           "accept": [
-            "I got 3 emails this morning."
+            "I got 3 emails this morning.",
+            "This morning I got three emails.",
+            "This morning I got 3 emails."
           ],
           "explanation_ru": "Get в значении 'получить' заменяет receive и в прошедшем времени даёт got.",
           "difficulty": 3
@@ -422,7 +429,7 @@
         {
           "id": "a2_on_time_vs_in_time_at_the_end_vs_in_the_end_05",
           "kind": "gap",
-          "prompt": "Our flight was not delayed. It took off ___ ___. (time)",
+          "prompt": "Our flight wasn't delayed. It took off ___ ___. (time)",
           "answer": "on time",
           "accept": [],
           "explanation_ru": "Вылет строго по расписанию — это on time.",
@@ -684,7 +691,7 @@
       "title_en": "Something, anything, nothing, etc.",
       "source_slug": "something-anything-nothing-etc",
       "title_ru": "Something, anything, nothing и другие",
-      "summary_ru": "Неопределённые местоимения строятся из частей some-, any-, no-, every- и -thing, -body/-one, -where. Формы на some- используются в утверждениях, а также в просьбах и вопросах-предложениях: There is something wrong. Would you like something to drink? Формы на any- используются в отрицаниях и вопросах: I did not say anything. Is there anybody here? Формы на no- сами по себе несут отрицание, поэтому глагол остаётся утвердительным: Nobody knows the password. Формы на every- значат 'всё, все, везде', но глагол после них стоит в единственном числе: Everything works. Все эти местоимения считаются единственным числом: Somebody is waiting for you. Прилагательное ставится после местоимения, а не перед: something new, nothing important. Body и one взаимозаменяемы: somebody = someone.",
+      "summary_ru": "Неопределённые местоимения строятся из частей some-, any-, no-, every- и -thing, -body/-one, -where. Формы на some- используются в утверждениях, а также в просьбах и вопросах-предложениях: There is something wrong. Would you like something to drink? Формы на any- используются в отрицаниях и вопросах: I didn't say anything. Is there anybody here? Формы на no- сами по себе несут отрицание, поэтому глагол остаётся утвердительным: Nobody called me today. Формы на every- значат 'всё, все, везде', но глагол после них стоит в единственном числе: Everything is ready. Все эти местоимения считаются единственным числом: Somebody is waiting for you. Прилагательное ставится после местоимения, а не перед: something new, nothing important. Body и one взаимозаменяемы: somebody = someone.",
       "forms": [
         "some- (something, somebody/someone, somewhere) — утверждение, просьба, вопрос-предложение",
         "any- (anything, anybody/anyone, anywhere) — отрицание и вопрос",
@@ -695,9 +702,9 @@
       "examples": [
         "There is something wrong with the server.",
         "Is there anybody in the meeting room?",
-        "I did not say anything about the price.",
-        "Nobody knows the password.",
-        "Everything works fine now.",
+        "I didn't say anything about the price.",
+        "Nobody called me today.",
+        "Everything is ready for the party.",
         "Let's go somewhere quiet."
       ],
       "ru_interference": "Двойное отрицание из русского: неверно 'I didn't see nobody' -> верно 'I didn't see anybody' (или 'I saw nobody').",
@@ -709,7 +716,7 @@
         {
           "id": "a2_something_anything_nothing_etc_01",
           "kind": "choice",
-          "prompt": "There is ___ wrong with my laptop. It does not start.",
+          "prompt": "There's ___ wrong with my laptop. It doesn't start.",
           "options": [
             "something",
             "anything",
@@ -751,7 +758,7 @@
         {
           "id": "a2_something_anything_nothing_etc_04",
           "kind": "choice",
-          "prompt": "I have looked ___, but I cannot find my keys.",
+          "prompt": "I've looked ___, but I can't find my keys.",
           "options": [
             "everywhere",
             "anywhere",
@@ -783,16 +790,14 @@
         {
           "id": "a2_something_anything_nothing_etc_07",
           "kind": "correct",
-          "prompt": "I did not tell nobody about the surprise party.",
-          "answer": "I did not tell anybody about the surprise party.",
+          "prompt": "I didn't tell nobody about the surprise party.",
+          "answer": "I didn't tell anybody about the surprise party.",
           "accept": [
-            "I didn't tell anybody about the surprise party.",
-            "I did not tell anyone about the surprise party.",
             "I didn't tell anyone about the surprise party.",
             "I told nobody about the surprise party.",
             "I told no one about the surprise party."
           ],
-          "explanation_ru": "В английском одно отрицание на предложение: после did not нужно anybody.",
+          "explanation_ru": "В английском одно отрицание на предложение: после didn't нужно anybody (или без didn't — told nobody).",
           "difficulty": 3
         },
         {
@@ -878,7 +883,7 @@
       ],
       "examples": [
         "Most people use a smartphone every day.",
-        "Most of the tickets on this list are old.",
+        "Most of the stores here close at nine.",
         "Most of us work from home on Friday.",
         "This is the most expensive plan.",
         "Most software has bugs.",
@@ -921,7 +926,7 @@
         {
           "id": "a2_most_most_of_the_most_03",
           "kind": "choice",
-          "prompt": "This is ___ interesting book I have ever read.",
+          "prompt": "This is ___ interesting book I've ever read.",
           "options": [
             "the most",
             "most",
@@ -949,10 +954,10 @@
         {
           "id": "a2_most_most_of_the_most_05",
           "kind": "gap",
-          "prompt": "___ ___ the emails in my inbox are spam. (2 words)",
+          "prompt": "___ the emails in my inbox are spam. (most)",
           "answer": "Most of",
           "accept": [],
-          "explanation_ru": "Перед определителем the нужна форма most of.",
+          "explanation_ru": "Перед определителем the нужна форма most of: most of the emails. Без of можно только о вещах вообще: most emails.",
           "difficulty": 1
         },
         {
@@ -1036,11 +1041,11 @@
       ],
       "examples": [
         "How many tickets do we have today?",
-        "There is not much time before the release.",
+        "There isn't much time before the release.",
         "We have a few open bugs, but nothing serious.",
         "I speak a little German.",
         "There are some new messages in the chat.",
-        "I do not have any questions."
+        "I don't have any questions."
       ],
       "ru_interference": "Русское 'много' одно на все случаи: неверно 'How much bugs are there?' -> верно 'How many bugs are there?'; и в утверждении неверно 'We have much work' -> верно 'We have a lot of work'.",
       "prerequisites": [
@@ -1065,22 +1070,22 @@
         {
           "id": "a2_much_many_little_few_some_any_02",
           "kind": "choice",
-          "prompt": "There are ___ new messages in the chat.",
+          "prompt": "Don't hurry. We still have ___ time before the train leaves.",
           "options": [
-            "some",
-            "any",
-            "much",
-            "a little"
+            "a little",
+            "a few",
+            "little",
+            "many"
           ],
           "correct_index": 0,
-          "explanation_ru": "Утвердительное предложение с исчисляемым во мн. числе требует some.",
+          "explanation_ru": "Time неисчисляемое, а смысл «немного, но достаточно» даёт a little. Little без a значит «почти нет» и спорит с Don't hurry, а a few и many ставят только с исчисляемыми во множественном числе.",
           "difficulty": 1,
-          "diagnostic": false
+          "diagnostic": true
         },
         {
           "id": "a2_much_many_little_few_some_any_03",
           "kind": "choice",
-          "prompt": "I do not have ___ time today.",
+          "prompt": "We don't have ___ money left this month.",
           "options": [
             "much",
             "many",
@@ -1088,13 +1093,13 @@
             "few"
           ],
           "correct_index": 0,
-          "explanation_ru": "Time неисчисляемое, а в отрицании используется much.",
+          "explanation_ru": "Money неисчисляемое, а в отрицании с ним используется much. Many, a few и few — только для исчисляемых.",
           "difficulty": 2
         },
         {
           "id": "a2_much_many_little_few_some_any_04",
           "kind": "choice",
-          "prompt": "We did not find ___ mistakes in your essay.",
+          "prompt": "We didn't find ___ mistakes in your essay.",
           "options": [
             "any",
             "some",
@@ -1213,7 +1218,7 @@
       "title_en": "Too, too much, too many, enough",
       "source_slug": "too-too-much-too-many-enough",
       "title_ru": "Too, too much, too many и enough",
-      "summary_ru": "Too значит 'слишком' и ставится перед прилагательным или наречием: too expensive, too slowly. Перед существительным нужна другая форма: too much с неисчисляемыми (too much coffee, too much work) и too many с исчисляемыми во множественном числе (too many tabs, too many bugs). Enough значит 'достаточно' и ведёт себя по-разному: перед существительным оно стоит впереди (enough time, enough people), а с прилагательным и наречием — ПОСЛЕ него (big enough, fast enough). Обе конструкции часто продолжаются инфинитивом: too expensive to buy, old enough to drive. Отрицание строится обычным способом: We do not have enough time. Помните: too всегда несёт отрицательную оценку, а enough — нейтральную.",
+      "summary_ru": "Too значит 'слишком' и ставится перед прилагательным или наречием: too expensive, too slowly. Перед существительным нужна другая форма: too much с неисчисляемыми (too much coffee, too much work) и too many с исчисляемыми во множественном числе (too many tabs, too many bugs). Enough значит 'достаточно' и ведёт себя по-разному: перед существительным оно стоит впереди (enough time, enough people), а с прилагательным и наречием — ПОСЛЕ него (big enough, fast enough). Обе конструкции часто продолжаются инфинитивом: too expensive to buy, old enough to drive. Отрицание строится обычным способом: We don't have enough time. Помните: too всегда несёт отрицательную оценку, а enough — нейтральную. Смягчить или усилить прилагательное помогают наречия степени: a bit (немного) cold, quite (довольно) interesting, really (очень) good.",
       "forms": [
         "too + прилагательное / наречие: too slow",
         "too much + неисчисляемое; too many + исчисляемое мн. ч.",
@@ -1225,8 +1230,8 @@
         "This laptop is too expensive for me.",
         "I drink too much coffee.",
         "There are too many tabs open in my browser.",
-        "We do not have enough time to test it.",
-        "The server is not fast enough.",
+        "We don't have enough time to test it.",
+        "The server isn't fast enough.",
         "He is old enough to drive."
       ],
       "ru_interference": "Русский порядок слов даёт 'достаточно большой' перед прилагательным: неверно 'The room is enough big' -> верно 'The room is big enough'.",
@@ -1238,7 +1243,7 @@
         {
           "id": "a2_too_too_much_too_many_enough_01",
           "kind": "choice",
-          "prompt": "There are ___ people in this room. I cannot find a free chair.",
+          "prompt": "There are ___ people in this room. I can't find a free chair.",
           "options": [
             "too many",
             "too much",
@@ -1252,7 +1257,7 @@
         {
           "id": "a2_too_too_much_too_many_enough_02",
           "kind": "choice",
-          "prompt": "I cannot buy this phone. It is ___ expensive.",
+          "prompt": "I can't buy this phone. It's ___ expensive.",
           "options": [
             "too",
             "too much",
@@ -1266,7 +1271,7 @@
         {
           "id": "a2_too_too_much_too_many_enough_03",
           "kind": "choice",
-          "prompt": "We do not have ___ time to finish the task today.",
+          "prompt": "We don't have ___ time to finish the task today.",
           "options": [
             "enough",
             "enough of",
@@ -1280,7 +1285,7 @@
         {
           "id": "a2_too_too_much_too_many_enough_04",
           "kind": "choice",
-          "prompt": "This table is not ___ for twenty people.",
+          "prompt": "This table isn't ___ for twenty people.",
           "options": [
             "big enough",
             "enough big",
@@ -1294,7 +1299,7 @@
         {
           "id": "a2_too_too_much_too_many_enough_05",
           "kind": "gap",
-          "prompt": "I drink ___ ___ coffee. My doctor is not happy. (too)",
+          "prompt": "I drink ___ ___ coffee. My doctor isn't happy. (too)",
           "answer": "too much",
           "accept": [],
           "explanation_ru": "Coffee неисчисляемое, поэтому too much.",
@@ -1303,7 +1308,7 @@
         {
           "id": "a2_too_too_much_too_many_enough_06",
           "kind": "gap",
-          "prompt": "There are ___ ___ emails in my inbox. I cannot read them all. (too)",
+          "prompt": "There are ___ ___ emails in my inbox. I can't read them all. (too)",
           "answer": "too many",
           "accept": [],
           "explanation_ru": "Emails исчисляемые во множественном числе, поэтому too many.",
@@ -1377,6 +1382,47 @@
           "explanation_ru": "Enough может стоять без существительного: I've had enough — «мне достаточно». Too без прилагательного не употребляется, too many — только с исчисляемыми, а enough of требует продолжения (enough of this cake).",
           "difficulty": 2,
           "diagnostic": true
+        },
+        {
+          "id": "a2_too_too_much_too_many_enough_12",
+          "kind": "choice",
+          "prompt": "The soup is ___ salty, but I can eat it.",
+          "options": [
+            "a bit",
+            "a bit of",
+            "too much",
+            "very much"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "«Немного, чуть-чуть» перед прилагательным — a bit (или a little): a bit salty. A bit of ставят перед существительным (a bit of salt), а too much и very much перед прилагательным не употребляют.",
+          "difficulty": 2,
+          "diagnostic": true
+        },
+        {
+          "id": "a2_too_too_much_too_many_enough_13",
+          "kind": "choice",
+          "prompt": "Как сказать по-английски: «Этот фильм довольно интересный.»?",
+          "options": [
+            "This movie is quite interesting.",
+            "This movie is quite an interesting.",
+            "This movie is enough interesting.",
+            "This movie is interesting quite."
+          ],
+          "correct_index": 0,
+          "explanation_ru": "«Довольно» перед прилагательным — quite: quite interesting (сильнее — really interesting). Артикль появляется только с существительным: quite an interesting movie. Enough ставят после прилагательного, а quite — перед ним.",
+          "difficulty": 2,
+          "diagnostic": true
+        },
+        {
+          "id": "a2_too_too_much_too_many_enough_14",
+          "kind": "order",
+          "prompt": "enough / isn't / big / the room / .",
+          "answer": "The room isn't big enough.",
+          "accept": [
+            "The room is not big enough."
+          ],
+          "explanation_ru": "Enough с прилагательным стоит после него: big enough. Отрицание — isn't перед прилагательным: The room isn't big enough.",
+          "difficulty": 3
         }
       ]
     },
@@ -1398,10 +1444,10 @@
       ],
       "examples": [
         "Do you work on Fridays?",
-        "Where does she live?",
+        "Where do your parents live?",
         "Is the server down again?",
         "Can you send me the file?",
-        "What did you say to the client?",
+        "What did you have for lunch?",
         "Do you know where the meeting room is?"
       ],
       "ru_interference": "В русском вопрос делается интонацией, поэтому порядок слов оставляют как в утверждении: неверно 'Where she works?' -> верно 'Where does she work?'.",
@@ -1472,7 +1518,7 @@
         {
           "id": "a2_asking_questions_in_english_05",
           "kind": "gap",
-          "prompt": "___ ___ the meeting start? It is not in my calendar. (when)",
+          "prompt": "___ ___ the meeting start? It's not in my calendar. (when)",
           "answer": "When does",
           "accept": [
             "When will"
@@ -1581,7 +1627,7 @@
       "title_en": "Subject questions, questions with preposition",
       "source_slug": "subject-questions-questions-preposition",
       "title_ru": "Вопросы к подлежащему и вопросы с предлогом",
-      "summary_ru": "Если вопросительное слово who, what или which само является подлежащим, вспомогательный глагол не нужен и порядок слов остаётся прямым: Who wrote this code? What happened? Сравните с вопросом к дополнению, где do, does или did обязательны: Who did you call? В вопросе к подлежащему в настоящем времени глагол стоит в третьем лице единственного числа: Who knows the answer? Who wants coffee? В прошедшем времени просто прошедшая форма: Who called you? Второе правило: если в ответе нужен предлог, в вопросе он уходит в самый конец: Who are you waiting for? What are you talking about? Where does he come from? В разговорной речи предлог перед вопросительным словом не ставят; в официальном стиле так можно только с whom: With whom did you speak?",
+      "summary_ru": "Если вопросительное слово who, what или which само является подлежащим, вспомогательный глагол не нужен и порядок слов остаётся прямым: Who broke the window? What happened? Сравните с вопросом к дополнению, где do, does или did обязательны: Who did you call? В вопросе к подлежащему в настоящем времени глагол стоит в третьем лице единственного числа: Who knows the answer? Who wants coffee? В прошедшем времени просто прошедшая форма: Who called you? Второе правило: если в ответе нужен предлог, в вопросе он уходит в самый конец: Who are you waiting for? What are you talking about? Where does he come from? В разговорной речи предлог перед вопросительным словом не ставят; в официальном стиле так можно только с whom: With whom did you speak?",
       "forms": [
         "Вопрос к подлежащему: Who / What + глагол (без do, does, did)",
         "Who called? / What happened? — прошедшее без did",
@@ -1590,11 +1636,11 @@
         "Предлог в конце: Who ... with? What ... about? Where ... from?"
       ],
       "examples": [
-        "Who wrote this code?",
+        "Who broke the window?",
         "What happened to the server?",
-        "Who did you call this morning?",
+        "Who did you meet at the party?",
         "Who are you waiting for?",
-        "What are you talking about?",
+        "What is this book about?",
         "Where does your new colleague come from?"
       ],
       "ru_interference": "Русский ставит предлог перед вопросительным словом: неверно 'With who did you speak?' -> верно 'Who did you speak with?'.",
@@ -1703,7 +1749,7 @@
         {
           "id": "a2_subject_questions_questions_preposition_09",
           "kind": "choice",
-          "prompt": "A: Who are you waiting ___?\nB: My sister. She is always late.",
+          "prompt": "A: Who are you waiting ___?\nB: My sister. She's always late.",
           "options": [
             "for",
             "to",
@@ -1747,6 +1793,15 @@
           ],
           "explanation_ru": "Who как подлежащее не требует did: Who made…?, Who taught…? — глагол сразу в прошедшей форме. В вопросе к дополнению (what she put) подлежащее she уже есть, поэтому нужен did.",
           "difficulty": 2
+        },
+        {
+          "id": "a2_subject_questions_questions_preposition_12",
+          "kind": "order",
+          "prompt": "go / who / you / with / did / ?",
+          "answer": "Who did you go with?",
+          "accept": [],
+          "explanation_ru": "Вопрос к дополнению с предлогом: who, затем did, подлежащее you и глагол go, а предлог with уходит в конец: Who did you go with?",
+          "difficulty": 3
         }
       ]
     },
@@ -1811,7 +1866,7 @@
         {
           "id": "a2_defining_relative_clauses_who_which_that_where_03",
           "kind": "choice",
-          "prompt": "That is the hotel ___ we stayed last summer.",
+          "prompt": "That's the hotel ___ we stayed last summer.",
           "options": [
             "where",
             "which",
@@ -1930,6 +1985,18 @@
           "explanation_ru": "Friend — человек, поэтому who или that; which ставится только для вещей и животных.",
           "difficulty": 2,
           "diagnostic": true
+        },
+        {
+          "id": "a2_defining_relative_clauses_who_which_that_where_12",
+          "kind": "order",
+          "prompt": "the man / who / next door / lives / is / a doctor / .",
+          "answer": "The man who lives next door is a doctor.",
+          "accept": [
+            "The man who is a doctor lives next door.",
+            "The man is a doctor who lives next door."
+          ],
+          "explanation_ru": "Придаточное who lives next door стоит сразу после слова the man, которое оно определяет, а сказуемое всего предложения is a doctor идёт после него.",
+          "difficulty": 3
         }
       ]
     },
@@ -1941,23 +2008,22 @@
       "title_en": "Reported speech / Indirect speech",
       "source_slug": "reported-speech-indirect-speech",
       "title_ru": "Косвенная речь",
-      "summary_ru": "Косвенная речь передаёт чужие слова без кавычек. Вводится она глаголами say и tell, но они работают по-разному: tell требует адресата (He told me...), а say идёт без него (He said...). Если вводящий глагол стоит в прошедшем времени, время в придаточном сдвигается на шаг назад: present simple становится past simple, present continuous становится past continuous, past simple становится past perfect. Модальные тоже меняются: will становится would, can становится could, must становится had to. Меняются и местоимения: 'I am busy' -> He said he was busy. Слова времени и места тоже сдвигаются: today -> that day, tomorrow -> the next day, here -> there. Союз that можно опустить: He said (that) he was late.",
+      "summary_ru": "Косвенная речь передаёт чужие слова без кавычек. Её вводят глаголы say и tell: tell требует адресата (He told me…), а say идёт без него (He said…). После says в настоящем времени время не меняется: «I'm tired» → She says she is tired. После said самые частые формы сдвигаются на шаг назад: am, is → was, are → were, will → would, can → could: «I'm busy» → He said he was busy. Past Simple после said обычно остаётся как есть: «I lost my keys» → She said she lost her keys. Если сказанное всё ещё правда, настоящее время можно оставить: He said he lives in Boston. Местоимения меняются по смыслу: I → he, my → his. Союз that можно опустить: He said (that) he was late. Полная система сдвига времён — на уровне B1.",
       "forms": [
         "say (that) + предложение / tell + кому + (that) + предложение",
-        "am, is, are -> was, were; do, does -> did",
-        "will -> would; can -> could; must -> had to",
-        "today -> that day; tomorrow -> the next day; here -> there",
-        "I, my -> he, his (местоимения меняются)"
+        "says + то же время: She says she is tired",
+        "said: am, is → was; are → were",
+        "said: will → would; can → could",
+        "I, my → he, his (местоимения по смыслу)"
       ],
       "examples": [
-        "'I am busy.' -> He said he was busy.",
-        "She told me she worked in Berlin.",
-        "He said he would call me later.",
-        "They said they could fix it that day.",
-        "'We finished the test.' -> She said they had finished the test.",
-        "She told us that the meeting was canceled."
+        "'We're lost,' they said. → They said they were lost.",
+        "She told me she worked at a bank.",
+        "He said he would call later.",
+        "They said they could come on Friday.",
+        "Mom says dinner is ready."
       ],
-      "ru_interference": "В русском время в косвенной речи не сдвигается: неверно 'He said he is busy' -> верно 'He said he was busy'.",
+      "ru_interference": "Русское «сказал мне» переводят через say: неверно 'She said me that she was tired' → верно 'She told me that she was tired' или 'She said that she was tired.' Tell всегда требует адресата, say идёт без него.",
       "prerequisites": [
         "a1_past_simple_regular_irregular",
         "a1_will_and_shall",
@@ -1967,7 +2033,7 @@
         {
           "id": "a2_reported_speech_indirect_speech_01",
           "kind": "choice",
-          "prompt": "'I am tired.' -> He said he ___ tired.",
+          "prompt": "'I'm tired,' Leo said last night. → Leo said he ___ tired.",
           "options": [
             "was",
             "is",
@@ -1975,13 +2041,13 @@
             "be"
           ],
           "correct_index": 0,
-          "explanation_ru": "После said время сдвигается назад: am становится was.",
+          "explanation_ru": "Слова сказаны вчера вечером и о тогдашнем состоянии, поэтому после said am сдвигается на шаг назад: was. Is оставляют, только если сказанное всё ещё правда прямо сейчас; were — для you, we, they, а be без изменения формы сказуемым не бывает.",
           "difficulty": 1
         },
         {
           "id": "a2_reported_speech_indirect_speech_02",
           "kind": "choice",
-          "prompt": "'I will call you.' -> She said she ___ call me.",
+          "prompt": "'I'll call you.' → She said she ___ call me, but she didn't.",
           "options": [
             "would",
             "will",
@@ -1989,7 +2055,7 @@
             "did"
           ],
           "correct_index": 0,
-          "explanation_ru": "Will в косвенной речи после прошедшего времени становится would.",
+          "explanation_ru": "Звонка так и не было — обещание целиком в прошлом, поэтому после said will становится would. Will оставляют, только если обещанное ещё впереди; после would частица to не ставится, а did превратило бы обещание в рассказ о сделанном.",
           "difficulty": 1
         },
         {
@@ -2032,7 +2098,7 @@
         {
           "id": "a2_reported_speech_indirect_speech_06",
           "kind": "gap",
-          "prompt": "Mei: \"I'm cooking dinner.\" → Mei says she ___ ___ dinner. (cook)",
+          "prompt": "Nadia: \"I'm cooking dinner.\" → Nadia says she ___ ___ dinner. (cook)",
           "answer": "is cooking",
           "accept": [],
           "explanation_ru": "После says (настоящее время) время не сдвигается: am cooking становится is cooking — меняется только лицо, I → she.",

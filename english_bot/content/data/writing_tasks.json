@@ -18,7 +18,7 @@
       "level": "A1",
       "title_ru": "Статус за день",
       "prompt_en": "Write a short end-of-day status for your team chat: what you finished today, what is still open, and what you plan to do tomorrow.",
-      "guidance_ru": "Пять-шесть коротких предложений, всего 30–50 слов. Что сделал сегодня — два предложения в past simple: I fixed two bugs. I tested the login page. Что не готово — одно-два: The report is not ready. I need more data. Что завтра — одно-два с will: Tomorrow I will finish the report. Коротко, но с деталями.",
+      "guidance_ru": "Пять-шесть коротких предложений, всего 30–50 слов. Что сделал сегодня — две задачи, по предложению на каждую: I fixed... Что ещё не готово и почему: The report is not ready because... Что сделаешь завтра — одно-два предложения: Tomorrow I will... Что уже закончено сегодня, пиши второй формой глагола: fixed, tested, sent. Что будет завтра — will + глагол без to: I will finish, а не I will to finish. Называй конкретные задачи, а не some tasks.",
       "words_min": 30,
       "words_max": 50,
       "focus": [
@@ -31,7 +31,7 @@
       "level": "A1",
       "title_ru": "Просьба о помощи",
       "prompt_en": "Write a message to a teammate. You cannot open the test server and you need help. Say what the problem is, what you already tried, and ask for help.",
-      "guidance_ru": "Начни с Hi и имени. Дальше пять-шесть коротких предложений, всего 30–50 слов. Проблема — I cannot open the test server. Что уже пробовал — два предложения: I tried another browser. I restarted my laptop. Зачем нужно — I need the server for my task today. Просьба в конце — Can you help me? Вопрос заканчивай вопросительным знаком.",
+      "guidance_ru": "Начни с Hi и имени. Дальше пять-шесть коротких предложений, всего 30–50 слов. В чём проблема: I cannot open... Что уже пробовал — два действия, по предложению на каждое: I tried... Зачем тебе сервер и к какому сроку. Просьба в конце: Can you...? Вопрос заканчивай вопросительным знаком. После can и cannot глагол идёт без to: I cannot open, а не I cannot to open.",
       "words_min": 30,
       "words_max": 50,
       "focus": [
@@ -44,7 +44,7 @@
       "level": "A1",
       "title_ru": "Короткий баг-репорт",
       "prompt_en": "Write a short bug report for the tracker. The mobile app closes when a user opens the payment page. Say what you did, what happened, and what you expected.",
-      "guidance_ru": "Пять-шесть коротких предложений, всего 30–50 слов, всё в past simple. Что сделал — два предложения: I opened the app. I went to the payment page. Что случилось — одно-два: The app closed. I lost my order. Чего ждал — одно: I expected to see the price. В конце — на чём проверял: I used an Android phone.",
+      "guidance_ru": "Пять-шесть коротких предложений, всего 30–50 слов. Что сделал — по шагам, два предложения: I opened... Что случилось: The app... Чего ждал: I expected to see... На чём проверял: какой телефон и какая версия приложения. Всё это уже произошло, поэтому глагол во второй форме: I opened, I went, the app closed — а не I open. Порядок слов в каждом предложении один: кто — действие — что: I tapped the Pay button.",
       "words_min": 30,
       "words_max": 50,
       "focus": [
@@ -53,11 +53,11 @@
       ]
     },
     {
-      "id": "a1_wr_desk_setup",
+      "id": "a1_wr_guest_note",
       "level": "A1",
       "title_ru": "Записка гостю о квартире",
       "prompt_en": "A friend is staying in your apartment while you are away. Write a short note: what is in the apartment, where the important things are, and one thing your friend needs to do.",
-      "guidance_ru": "Пять-семь коротких предложений, всего 30–50 слов. Начни с Hi, Mei! Welcome! Потом что есть в квартире: There is a big bed in the bedroom. There are clean towels in the bathroom. Потом где лежат важные вещи: The keys are on the table next to the door. The coffee is in the box above the sink. В конце одна просьба и подпись: Please water the plants. See you on Sunday! Про одну вещь — There is, про несколько — There are. Артикль не пропускай: a big bed, the table.",
+      "guidance_ru": "Пять-семь коротких предложений, всего 30–50 слов. Начни с приветствия гостю по имени. Что есть в квартире — два предложения: There is a... in the..., There are... in the... Где лежат важные вещи — ключи, кофе, пароль от Wi-Fi: The keys are on... Одна просьба: Please... В конце — когда вернёшься, и подпись. Про одну вещь — There is, про несколько — There are. Артикль не пропускай: a big bed, the table.",
       "words_min": 30,
       "words_max": 50,
       "focus": [
@@ -70,7 +70,7 @@
       "level": "A1",
       "title_ru": "Планы на выходные",
       "prompt_en": "Write a short message to a friend about your weekend: where you are going, who you are going with, and what you want to do there.",
-      "guidance_ru": "Пять коротких предложений, всего 30–50 слов: куда едешь, с кем и когда, что будете там делать, и в конце вопрос другу. Например: I am going to the lake with my brother on Saturday. We are going to swim and cook fish. The weather is going to be warm. What are you going to do this weekend?",
+      "guidance_ru": "Пять-шесть коротких предложений, всего 30–50 слов. Куда, с кем и когда: I am going to... with... on... Что будете там делать — два дела: We are going to... Что возьмёшь с собой или какая будет погода. В конце вопрос другу про его выходные. О том, что уже решил, пиши через am/is/are going to + глагол: we are going to swim, а не we going to swim.",
       "words_min": 30,
       "words_max": 50,
       "focus": [
@@ -83,7 +83,7 @@
       "level": "A1",
       "title_ru": "Позвать друга на выходные",
       "prompt_en": "Write a message to a friend and invite them to spend Saturday with you. Say where you want to go, what you can do there, when and where to meet, and what to bring.",
-      "guidance_ru": "Пять-семь коротких предложений, всего 30–50 слов. Начни с Hi, Carlos! Потом приглашение: Let's go to the park on Saturday. Что там можно делать: We can ride bikes and have a picnic. Где и когда встречаемся: Let's meet at the bus stop at eleven. Что взять: Bring some water and a hat. В конце вопрос: Are you free? После Let's и can глагол идёт без to: Let's go, а не Let's to go; we can swim, а не we can to swim.",
+      "guidance_ru": "Пять-семь коротких предложений, всего 30–50 слов. Начни с приветствия по имени. Потом приглашение: Let's go to... on Saturday. Что там можно делать — два дела: We can... Где и когда встречаетесь. Что взять с собой. В конце вопрос: Are you free? После Let's и can глагол идёт без to: Let's go, а не Let's to go; we can swim, а не we can to swim.",
       "words_min": 30,
       "words_max": 50,
       "focus": [
@@ -96,7 +96,7 @@
       "level": "A1",
       "title_ru": "Открытка из поездки",
       "prompt_en": "You are on vacation. Write a postcard to a friend: where you are, who you are with, what the place and the weather are like, and what you are doing right now.",
-      "guidance_ru": "Пять-семь коротких предложений, всего 30–50 слов. Начни с Dear Aisha, или Hi, Aisha! Где ты и с кем: I am in Kazan with my sister. Какое место и погода: The city is beautiful, and the food is great. It is sunny and hot. Что делаешь прямо сейчас: Right now I am sitting in a café by the river. В конце See you soon! и имя. То, что происходит в момент письма, пиши через am/is/are + -ing: I am sitting, we are walking, а не I sit.",
+      "guidance_ru": "Пять-семь коротких предложений, всего 30–50 слов. Начни с Dear и имени. Где ты и с кем: I am in... with... Какое там место и какая погода — два предложения. Что делаешь прямо сейчас: Right now I am... В конце See you soon! и имя. То, что происходит в момент письма, пиши через am/is/are + -ing: I am sitting, we are walking, а не I sit.",
       "words_min": 30,
       "words_max": 50,
       "focus": [
@@ -109,7 +109,7 @@
       "level": "A1",
       "title_ru": "Записка соседу",
       "prompt_en": "You are having a birthday party at home on Saturday evening. Write a note to your neighbor: say what is happening, when it starts and when it ends, and say sorry for the noise. Then invite them for a piece of cake.",
-      "guidance_ru": "Пять-семь коротких предложений, всего 30–50 слов. Начни с Dear neighbor, и скажи, кто ты: I am Diego from apartment 12. Что будет: It is my birthday, and I am having a party on Saturday. Время: It starts at 7 p.m. and ends at 11 p.m. Извинение: Sorry for the noise! Приглашение: Please come and have some cake with us. В конце Thank you! и имя. День недели — с on, час — с at: on Saturday, at 7 p.m.",
+      "guidance_ru": "Пять-семь коротких предложений, всего 30–50 слов. Начни с Dear neighbor, и скажи, кто ты и из какой квартиры. Что будет и по какому поводу: I am having a party on... Когда начнётся и когда закончится. Извинение за шум. Приглашение на торт: Please come and... В конце Thank you! и имя. День недели — с on, час — с at: on Saturday, at 7 p.m.",
       "words_min": 30,
       "words_max": 50,
       "focus": [
@@ -122,7 +122,7 @@
       "level": "A2",
       "title_ru": "Письменный стендап",
       "prompt_en": "Write your daily standup update for the team channel: what you did yesterday, what you are working on today, and anything that is blocking you.",
-      "guidance_ru": "Три блока по два предложения. Вчера — past simple. Сегодня — present continuous: I am testing the login form. Блокер — I am waiting for access to the test database. Называй конкретную задачу, а не общие слова вроде some tasks.",
+      "guidance_ru": "Три блока по два-три предложения, всего 50–80 слов. Вчера — две законченные задачи и их результат. Что закончено вчера, пиши второй формой глагола: I finished..., I sent... Сегодня — над чем работаешь и когда планируешь закончить. То, что идёт прямо сейчас, — am/is/are + -ing: I am testing... Блокер — что мешает и кто может помочь: I am waiting for... Называй конкретную задачу, а не общие слова вроде some tasks.",
       "words_min": 50,
       "words_max": 80,
       "focus": [
@@ -135,7 +135,7 @@
       "level": "A2",
       "title_ru": "Письмо о днях отпуска",
       "prompt_en": "Write an email to your manager. You want to take three days off next month. Give the exact dates, explain why you need them, and say who can cover your tasks.",
-      "guidance_ru": "Пять-шесть предложений: приветствие, просьба через I would like to take, точные даты, короткая причина, кто подхватит задачи, вежливое закрытие. Не пиши I want to take — для письма руководителю это слишком прямо.",
+      "guidance_ru": "Шесть-восемь предложений, всего 50–80 слов. Приветствие и просьба: I would like to take... Точные даты. Короткая причина. Кто подхватит задачи и что ты успеешь закончить до отпуска. Будешь ли на связи. Вежливое закрытие. Не пиши I want to take — для письма руководителю это слишком прямо; would like звучит как просьба, а не требование.",
       "words_min": 50,
       "words_max": 80,
       "focus": [
@@ -148,7 +148,7 @@
       "level": "A2",
       "title_ru": "Описание задачи в трекере",
       "prompt_en": "Write a task description for the tracker: the search on the help page is too slow. Explain the problem, why it matters for users, and what needs to change.",
-      "guidance_ru": "Один абзац из пяти-шести предложений: как работает сейчас, чем это мешает людям, что надо сделать — We need to. Зачем это нужно, объясняй через to: We need to cache the results to make the search faster. Одно предложение — одна мысль, не склеивай всё через and.",
+      "guidance_ru": "Один абзац из шести-семи предложений, всего 50–80 слов. Как работает сейчас — с цифрой: сколько секунд идёт поиск. Чем это мешает людям. Что надо сделать — We need to... Зачем это нужно, объясняй через to: We need to cache the results to make the search faster. В конце — как проверить, что стало лучше. Одно предложение — одна мысль, не склеивай всё через and.",
       "words_min": 50,
       "words_max": 80,
       "focus": [
@@ -161,7 +161,7 @@
       "level": "A2",
       "title_ru": "Приглашение на встречу",
       "prompt_en": "Write a message to two colleagues. You need thirty minutes to discuss the new release plan. Propose a time, say what you will discuss, and ask them to confirm.",
-      "guidance_ru": "Четыре-пять предложений: зачем встреча, предложение времени — Could we meet on Tuesday at 11? Что обсудим, просьба подтвердить. Дни недели с on, время с at.",
+      "guidance_ru": "Шесть-семь предложений, всего 50–80 слов. Зачем встреча — одно-два предложения. Время и место: Could we meet on... at...? Повестка из двух пунктов: First..., Second... Что подготовить заранее. Запасное время: If Tuesday does not work,... Просьба подтвердить. Дни недели — с on, час — с at: on Tuesday at 11.",
       "words_min": 50,
       "words_max": 80,
       "focus": [
@@ -174,7 +174,7 @@
       "level": "A2",
       "title_ru": "Впечатление от нового инструмента",
       "prompt_en": "Your team started using a new chat tool last month. Write a short post: what you like about it, what is worse than the old tool, and your advice for the team.",
-      "guidance_ru": "Три части: что нравится, что хуже прежнего инструмента, совет команде. Для сравнения бери faster than, easier than, more useful than — после than идёт то, с чем сравниваешь. Совет давай через should: We should turn off email notifications.",
+      "guidance_ru": "Четыре части по два предложения, всего 50–80 слов. Какой это инструмент и с какого времени команда им пользуется. Что нравится — с примером из работы. Что хуже прежнего инструмента. Совет команде. Для сравнения бери faster than, easier than, more useful than — после than идёт то, с чем сравниваешь. Совет давай через should: We should turn off email notifications.",
       "words_min": 50,
       "words_max": 80,
       "focus": [
@@ -187,7 +187,7 @@
       "level": "A2",
       "title_ru": "Пост о новом навыке",
       "prompt_en": "Write a short post for the team channel about something you learned recently outside work: what it is, how you started, and how often you practice.",
-      "guidance_ru": "Пять-шесть предложений: что за навык, как начал — past simple, как часто занимаешься — twice a week, usually. Наречие частоты ставь перед смысловым глаголом: I usually practice.",
+      "guidance_ru": "Шесть-семь предложений, всего 50–80 слов. Что за навык и почему ты его выбрал. Как начал — это уже в прошлом, поэтому вторая форма глагола: I started..., I found... Как часто занимаешься: twice a week, usually. Что уже получается и что пока трудно. Наречие частоты ставь перед смысловым глаголом: I usually practice, а не I practice usually.",
       "words_min": 50,
       "words_max": 80,
       "focus": [
@@ -200,7 +200,7 @@
       "level": "A2",
       "title_ru": "Ответ на приглашение",
       "prompt_en": "Your friend Priya invited you to her housewarming party next Saturday. Write a reply: thank her, say you are coming but you will be an hour late and explain why, offer to bring something, and ask two questions about the party.",
-      "guidance_ru": "Шесть-восемь предложений, всего 50–80 слов. Начни со спасибо: Hi Priya! Thanks so much for the invitation! Потом что придёшь, но опоздаешь, и почему: I'm coming, but I'll be about an hour late. I'm working until six on Saturday. Предложи помощь: I'll bring a salad for everyone. Два вопроса: Who else is coming? Is it OK if I bring my brother? В конце See you on Saturday! О том, что уже договорено на конкретный день, говори через am/is/are + -ing: I'm working on Saturday, а не I work. Решение, принятое прямо сейчас, — через I'll: I'll bring a salad.",
+      "guidance_ru": "Шесть-восемь предложений, всего 50–80 слов. Поблагодари за приглашение. Скажи, что придёшь, но опоздаешь: на сколько и почему? Что принесёшь или чем поможешь? Два вопроса о вечеринке: кто будет, что надеть, как добраться. В конце попрощайся. О том, что уже договорено на конкретный день, говори через am/is/are + -ing: I'm seeing the dentist on Friday, а не I see the dentist. Решение, принятое прямо сейчас, — через I'll: OK, I'll ask my boss.",
       "words_min": 50,
       "words_max": 80,
       "focus": [
@@ -209,11 +209,11 @@
       ]
     },
     {
-      "id": "a2_wr_last_weekend",
+      "id": "a2_wr_bad_day",
       "level": "A2",
-      "title_ru": "Как прошли выходные",
-      "prompt_en": "Write a message to a friend about last weekend: where you went and who with, what you did, one thing that went wrong, and how the weekend ended.",
-      "guidance_ru": "Шесть-восемь предложений, всего 50–80 слов, по порядку событий. Куда и с кем: On Saturday I went to the lake with two friends. Что делали — шаги связывай словами First, Then, After that: First we swam, then we made a fire. Что пошло не так: Suddenly it started to rain, and we all got wet. Чем закончилось: In the end we had dinner in a small café. I was tired but happy. Проверь неправильные глаголы: went, swam, got, had — не goed и не swimmed.",
+      "title_ru": "День, когда всё пошло не так",
+      "prompt_en": "Write a message to a friend about a recent day when everything went wrong: what went wrong first, two more problems that happened after that, who or what helped you, and how the day ended.",
+      "guidance_ru": "Шесть-восемь предложений, всего 50–80 слов, по порядку событий. Что пошло не так с самого утра: My alarm did not ring, so I woke up late. Ещё две неприятности, связанные словами Then и After that: I missed the bus. Then I left my keys at home. Кто или что помогло: My neighbor gave me a ride. Чем закончился день и как ты себя чувствовал: In the end, I laughed about it. День уже прошёл, поэтому глагол во второй форме; проверь неправильные: wake — woke, leave — left, lose — lost, forget — forgot, а не waked и forgetted. В отрицании вторая форма уходит в did: did not + начальная форма — my alarm did not ring, а не did not rang.",
       "words_min": 50,
       "words_max": 80,
       "focus": [
@@ -226,7 +226,7 @@
       "level": "A2",
       "title_ru": "Отзыв о кафе",
       "prompt_en": "Write a review of a café you visited recently for a maps app: what you ordered, the food and the prices, one problem, and whether you will go there again.",
-      "guidance_ru": "Шесть-восемь предложений, всего 50–80 слов. Название и первое впечатление: Green Cup is a small café near the park. Что заказал: I had a cheesecake and a latte. Что хорошо: It is the best cheesecake in our area, and the prices are fair. Что не очень: The music was too loud, and there were not enough seats. Итог: I will go there again, but not on a weekend. Too — «слишком, больше, чем нужно»: too loud. Enough — «достаточно», ставится после прилагательного, но перед существительным: big enough, enough seats.",
+      "guidance_ru": "Шесть-восемь предложений, всего 50–80 слов. Название, где находится и первое впечатление. Что заказал. Что хорошо — с одним сравнением через the best... in our area. Что плохо — через too или enough. Итог: вернёшься ли и когда туда лучше приходить. Too — «слишком, больше, чем нужно»: too slow, too expensive. Enough — «достаточно», ставится после прилагательного, но перед существительным: warm enough, enough tables.",
       "words_min": 50,
       "words_max": 80,
       "focus": [
@@ -235,11 +235,11 @@
       ]
     },
     {
-      "id": "b1_wr_incident_note",
+      "id": "b1_wr_landlord_leak",
       "level": "B1",
       "title_ru": "Сообщение арендодателю о протечке",
       "prompt_en": "Last night water came through the bathroom ceiling of the apartment you rent. Write a message to your landlord: what happened and when, what was damaged, what you have already done, and what you need from them now.",
-      "guidance_ru": "Три коротких абзаца, всего 80–120 слов. Первый — что случилось и когда: Last night at about eleven, water started to come through the bathroom ceiling. Что пострадало: The ceiling is wet, and the bathroom light does not work. Второй — что ты уже сделал; тут важен результат к этой минуте, поэтому have + третья форма: I have turned off the electricity in the bathroom, I have talked to the neighbors upstairs, and I have taken photos. Если называешь время — last night, at eleven, — только простое прошедшее: I called the neighbors at midnight, а не I have called at midnight. Третий — просьба со сроком: Could you send a plumber today or tomorrow? Тон вежливый, но конкретный: время, факты, просьба.",
+      "guidance_ru": "Три коротких абзаца, всего 80–120 слов. Первый — что случилось, когда и что пострадало: потолок, свет, вещи. Второй — что ты уже сделал. Здесь важен результат к этой минуте, поэтому have + третья форма: I have taken photos. Если называешь время — last night, at midnight, — только простое прошедшее: I called the neighbors at midnight, а не I have called at midnight. Третий — чего просишь и к какому сроку: Could you...? Тон вежливый, но конкретный: время, факты, просьба.",
       "words_min": 80,
       "words_max": 120,
       "focus": [
@@ -252,7 +252,7 @@
       "level": "B1",
       "title_ru": "Комментарий к пул-реквесту",
       "prompt_en": "Write a review comment on a teammate's pull request. The PR adds CSV export to the reports page. The main function is 150 lines long, and there are no tests for empty files. Say what works well, point out these two problems, and explain why each change matters.",
-      "guidance_ru": "Начни с того, что сделано хорошо. Дальше два замечания — длинная функция и нет тестов на пустые файлы, — каждое с причиной через because или so that. Формулируй как предложение, а не приказ: I would split this function, It might be better to. В конце задай автору вопрос.",
+      "guidance_ru": "Четыре коротких абзаца, всего 80–120 слов. Начни с того, что сделано хорошо, — конкретно, а не просто Good job. Дальше два замечания — длинная функция и нет тестов на пустые файлы, — на каждое два-три предложения: что именно, почему это важно, что предлагаешь. Причину связывай через because или so that. Формулируй как предложение, а не приказ: I would split this function, It might be better to... В конце задай автору вопрос.",
       "words_min": 80,
       "words_max": 120,
       "focus": [
@@ -265,7 +265,7 @@
       "level": "B1",
       "title_ru": "Заметка для нового коллеги",
       "prompt_en": "A new developer joins your team on Monday. Write a note explaining how to set up the project locally, what to read first, and who to ask when something breaks.",
-      "guidance_ru": "Три абзаца: шаги установки по порядку через First, Then, After that; что почитать; к кому идти с вопросами. Шаги пиши командой — Clone the repo. Советы через should и can.",
+      "guidance_ru": "Три абзаца, всего 80–120 слов. Первый — четыре-пять шагов установки по порядку через First, Then, After that; шаг пиши командой: Clone the repo. Второй — что почитать в первую очередь и зачем. Третий — к кому идти и с какими вопросами. Совет — should + глагол: You should read the README first; возможность — can: You can always ask Dmitry about the database.",
       "words_min": 80,
       "words_max": 120,
       "focus": [
@@ -278,7 +278,7 @@
       "level": "B1",
       "title_ru": "Письмо о переносе срока",
       "prompt_en": "Write an email to a project manager. Your feature will be one week late. Explain the reason, describe the new plan, and say how you will avoid the same problem next time.",
-      "guidance_ru": "Четыре части: главное в первом предложении — The feature will be ready a week later than planned. Потом причина, новый план с датой, что изменишь на будущее. Только факты, без оправданий на полстраницы.",
+      "guidance_ru": "Четыре части по два-три предложения, всего 80–120 слов. Главное в первом предложении: The feature will be ready a week later than planned. Потом причина, новый план с датой, что изменишь на будущее. Причину и следствие связывай через because и so: The API changed, so we have to rewrite the import. Только факты, без оправданий на полстраницы.",
       "words_min": 80,
       "words_max": 120,
       "focus": [
@@ -291,7 +291,7 @@
       "level": "B1",
       "title_ru": "Выбор между двумя инструментами",
       "prompt_en": "Your team must choose between two tools that do the same job, for example two task trackers or two libraries. Write a short message comparing them and recommend one, with reasons.",
-      "guidance_ru": "Абзац про первый вариант, абзац про второй, короткий вывод. Сравнивай по одним и тем же признакам: faster, more stable, easier to learn. Вариантов два, поэтому нужна сравнительная степень, а не превосходная: the faster option, не the fastest. В выводе бери I would go with — звучит мягче, чем We must use.",
+      "guidance_ru": "Абзац про первый вариант, абзац про второй — по три-четыре предложения — и короткий вывод, всего 80–120 слов. Сравнивай по одним и тем же признакам: скорость, стабильность, сколько времени нужно на обучение. Вариантов два, поэтому -er или more... than, а не форма с the -est или the most: the faster option, не the fastest. В выводе бери I would go with — звучит мягче, чем We must use.",
       "words_min": 80,
       "words_max": 120,
       "focus": [
@@ -304,7 +304,7 @@
       "level": "B1",
       "title_ru": "Мнение про удалённую работу",
       "prompt_en": "Write a post for the company blog about working from home: two real advantages, one honest problem, and what helps you stay productive.",
-      "guidance_ru": "Четыре коротких абзаца: твоя позиция, два плюса с примерами из своей практики, честный минус, вывод с советом. Связки: However, In my experience, а On the one hand ставь только в паре с On the other hand.",
+      "guidance_ru": "Четыре коротких абзаца по два-три предложения, всего 80–120 слов: твоя позиция, два плюса с примерами из своей практики, честный минус, вывод с советом. Связки: However, In my experience; On the one hand ставь только в паре с On the other hand.",
       "words_min": 80,
       "words_max": 120,
       "focus": [
@@ -317,7 +317,7 @@
       "level": "B1",
       "title_ru": "День, который запомнился",
       "prompt_en": "Write a short story about a day you will never forget: where you were, what you were doing when something unexpected happened, how you and the people around you reacted, and why you still remember it.",
-      "guidance_ru": "Четыре коротких абзаца, всего 80–120 слов. Начало — место и фон: It was a cold evening in March, and I was waiting for a train at a small station. Фон, который длился, — was/were + -ing, а неожиданное событие — простое прошедшее: I was reading a book when all the lights went out. Потом твоя реакция и что было дальше; связки Suddenly, At first, In the end. Последний абзац — почему помнишь до сих пор: I still remember it because… Один яркий эпизод с деталями лучше пересказа всего дня.",
+      "guidance_ru": "Четыре коротких абзаца, всего 80–120 слов. Начало — где ты был, когда и что делал. Фон, который длился, — was/were + -ing, а неожиданное событие — простое прошедшее: I was reading a book when all the lights went out. Потом твоя реакция и реакция людей вокруг, что было дальше; связки Suddenly, At first, In the end. Последний абзац — почему помнишь до сих пор: I still remember it because... Один яркий эпизод с деталями лучше пересказа всего дня.",
       "words_min": 80,
       "words_max": 120,
       "focus": [
@@ -330,7 +330,7 @@
       "level": "B1",
       "title_ru": "Отзыв о фильме или сериале",
       "prompt_en": "Write a review of a movie or series you watched recently for a movie website: what it is about without spoilers, what you liked, what you did not like, and who should watch it.",
-      "guidance_ru": "Четыре коротких абзаца, всего 80–120 слов. Первый — название, жанр и завязка без спойлеров; сюжет пересказывают в настоящем времени: The story follows a young chef who opens a restaurant in Chicago. Второй — что понравилось: актёры, музыка, конкретная сцена. Третий — что нет: The middle part is too slow. Четвёртый — кому смотреть: If you like quiet comedies, you will enjoy it. Чувство зрителя — через -ed, то, что его вызывает, — через -ing: I was bored, but the ending is surprising; не I was boring.",
+      "guidance_ru": "Четыре коротких абзаца, всего 80–120 слов. Первый — название, жанр и завязка без спойлеров; сюжет пересказывают в настоящем времени: The story follows a woman who... Второй — что понравилось: актёры, музыка, конкретная сцена. Третий — что нет и почему. Четвёртый — кому смотреть: If you like..., you will... Чувство зрителя — через -ed, то, что его вызывает, — через -ing: I was bored, but the ending is surprising; не I was boring.",
       "words_min": 80,
       "words_max": 120,
       "focus": [
@@ -343,7 +343,7 @@
       "level": "B1",
       "title_ru": "Совет другу в письме",
       "prompt_en": "Your friend Omar wrote to you: he is moving to your city next month, he does not know anyone there, and apartments look very expensive. Write a reply with advice on finding a place to live, meeting new people, and one thing he should not do.",
-      "guidance_ru": "Четыре коротких абзаца, всего 80–120 слов. Первый — тёплое начало и реакция на новость: Great news! I'm so happy you're moving here. Второй — жильё: You should look at the area near the river — it is cheaper and quieter. Третий — знакомства: Why don't you join a running club? If I were you, I would try a language exchange. Четвёртый — одно предостережение и прощание: Don't pay anything before you see the apartment. Let me know when you arrive! Чередуй should, could, why don't you, if I were you, а не should в каждой фразе. После if I were you — I would, а не I will.",
+      "guidance_ru": "Четыре коротких абзаца, всего 80–120 слов. Первый — тёплая реакция на новость. Второй — где искать жильё и как не переплатить. Третий — где знакомиться с людьми: клуб, курсы, волонтёрство. Четвёртый — одно предостережение и прощание. Чередуй should, could, why don't you, if I were you, а не should в каждой фразе. После if I were you — I would, а не I will: If I were you, I would buy a warm coat — winters here are long.",
       "words_min": 80,
       "words_max": 120,
       "focus": [
@@ -356,7 +356,7 @@
       "level": "B2",
       "title_ru": "Постмортем после сбоя",
       "prompt_en": "Write a postmortem summary for an outage that took the payment service down for forty minutes. Cover the timeline, the root cause, the customer impact, and the actions you committed to.",
-      "guidance_ru": "Четыре коротких блока; каждый можно начать заголовком отдельной строкой — Timeline, Root cause, Impact, Actions. Внутри: хронология, корневая причина, влияние на клиентов, что делаем дальше. Что случилось до сбоя — past perfect: the job had been failing since Monday. Пассив там, где важен факт, а не автор: The service was restored at 14:20. Про людей пиши нейтрально, без поиска виноватых.",
+      "guidance_ru": "Четыре коротких блока по два-три предложения, всего 120–180 слов; каждый можно начать заголовком отдельной строкой — Timeline, Root cause, Impact, Actions. Внутри: хронология, корневая причина, влияние на клиентов, что делаем дальше. Что началось раньше сбоя и уже шло к его моменту — had + третья форма или had been + -ing: the job had been failing since Monday. Пассив там, где важен факт, а не автор: The service was restored at 14:20. Про людей пиши нейтрально, без поиска виноватых.",
       "words_min": 120,
       "words_max": 180,
       "focus": [
@@ -369,7 +369,7 @@
       "level": "B2",
       "title_ru": "Предложение по рефакторингу",
       "prompt_en": "Write a proposal to your team lead: the reporting module should be rewritten. Explain the current pain, what you suggest, what it will cost in time, and what could go wrong.",
-      "guidance_ru": "Четыре абзаца: что болит сейчас, что предлагаешь, оценка сроков, риски и как их снизить. Риски через условные: If we postpone this, the cost will grow. Оценку смягчай: it would take roughly three weeks.",
+      "guidance_ru": "Четыре абзаца по два-три предложения, всего 120–180 слов: что болит сейчас, что предлагаешь, оценка сроков, риски и как их снизить. Риск описывай как следствие реального условия: после if — настоящее время, в главной части — will: If we postpone this, the cost will grow. Оценку смягчай: it would take roughly three weeks.",
       "words_min": 120,
       "words_max": 180,
       "focus": [
@@ -382,7 +382,7 @@
       "level": "B2",
       "title_ru": "Вежливое несогласие в ревью",
       "prompt_en": "A reviewer asked you to change an approach you believe is correct. Write a reply that acknowledges their point, explains your reasoning with evidence, and proposes a way to settle the question.",
-      "guidance_ru": "Три части: признать сильную сторону замечания, спокойно объяснить свою логику с цифрами или примером, предложить способ договориться. Смягчай: I see your point, I may be missing something, would it make sense to. Не защищайся и не переходи на личности.",
+      "guidance_ru": "Три части по три-четыре предложения, всего 120–180 слов: признать сильную сторону замечания, спокойно объяснить свою логику с цифрами или примером, предложить способ договориться. Смягчай: I see your point, I may be missing something, would it make sense to. Не защищайся и не переходи на личности.",
       "words_min": 120,
       "words_max": 180,
       "focus": [
@@ -395,7 +395,7 @@
       "level": "B2",
       "title_ru": "Заметки к релизу для бизнеса",
       "prompt_en": "Write release notes for a non-technical audience: three changes shipped this month, what each one means for the user, and one known limitation.",
-      "guidance_ru": "Вступление в одно-два предложения и три коротких блока по изменениям. Каждое изменение объясняй через пользу для человека, а не через технику: a new filter that shows only failed exports. Ограничение назови честно и укажи срок, когда его исправите.",
+      "guidance_ru": "Вступление в одно-два предложения, три коротких блока по изменениям и ограничение — по два-три предложения в каждом блоке, всего 120–180 слов. Каждое изменение объясняй через пользу для человека, а не через технику: a new filter that shows only failed exports. Ограничение назови честно и укажи срок, когда его исправите.",
       "words_min": 120,
       "words_max": 180,
       "focus": [
@@ -404,16 +404,17 @@
       ]
     },
     {
-      "id": "b2_wr_client_apology",
+      "id": "b2_wr_feature_request_reply",
       "level": "B2",
-      "title_ru": "Письмо клиенту о сбое",
-      "prompt_en": "Write an email to a client whose data export failed twice this week. Apologize, explain what happened without technical jargon, say what you have already fixed, and offer a concrete next step.",
-      "guidance_ru": "Четыре абзаца: извинение сразу, что произошло простыми словами, что уже исправлено — present perfect, конкретный следующий шаг с датой. Тон спокойный и уверенный, без sorry в каждой строке.",
+      "title_ru": "Ответ клиенту на просьбу о доработке",
+      "prompt_en": "A client has asked your team to email a weekly spreadsheet to twenty of their managers with their full customer list, including names, phone numbers, and home addresses. Your company's security policy does not allow personal data to be sent as email attachments. Write a reply: show that you understand why they need it, explain honestly why you cannot do it in that form, offer an alternative that solves most of the problem, and suggest a next step.",
+      "guidance_ru": "Четыре абзаца по два-три предложения, всего 120–180 слов. Первый — благодарность и задача клиента своими словами: он должен увидеть, что его поняли. Второй — отказ ясно и один раз, без жаргона: что запрещает политика и от чего она защищает, в том числе самих клиентов заказчика. Смягчай форму, но не размывай суть: Unfortunately, we are not able to send personal data as an attachment, because our security policy does not allow it. Третий — альтернатива, которая закрывает большую часть задачи, например письмо со ссылкой на отчёт, который открывается только после входа в систему, или таблица без имён, телефонов и адресов. Последний — следующий шаг с датой: короткий звонок, демонстрация. Тон спокойный и уверенный, без sorry в каждом абзаце.",
       "words_min": 120,
       "words_max": 180,
       "focus": [
-        "present perfect",
-        "formal register"
+        "formal register",
+        "softened refusals",
+        "offering alternatives"
       ]
     },
     {
@@ -421,7 +422,7 @@
       "level": "B2",
       "title_ru": "Отчёт после конференции",
       "prompt_en": "You attended a two-day tech conference. Write a report for your colleagues: the most useful talk, what you disagreed with, and two ideas the team could try.",
-      "guidance_ru": "Четыре абзаца: зачем ездил, самый полезный доклад с конкретным выводом, с чем не согласен и почему, две идеи для команды. Чужие мысли передавай косвенной речью: The speaker argued that the approach did not scale.",
+      "guidance_ru": "Четыре абзаца по два-три предложения, всего 120–180 слов: зачем ездил, самый полезный доклад с конкретным выводом, с чем не согласен и почему, две идеи для команды. Чужие мысли пересказывай через глагол речи и that; после argued, said, claimed время сдвигается на шаг в прошлое: The speaker argued that the approach did not scale.",
       "words_min": 120,
       "words_max": 180,
       "focus": [
@@ -475,7 +476,7 @@
       "level": "C1",
       "title_ru": "Раздел проектного документа",
       "prompt_en": "Write the decision section of a design document: the problem you are solving, two options you considered, the trade-offs of each, and the option you recommend with your reasoning.",
-      "guidance_ru": "Пять абзацев: проблема, вариант А, вариант Б, сравнение по одним и тем же критериям, рекомендация. Пиши для того, кто придёт через год и спросит, почему решили так. Вместо общих слов вроде better называй, что именно лучше и на сколько. Ключевые мысли сворачивай в именные группы: the main trade-off is operational cost.",
+      "guidance_ru": "Пять абзацев по два-три предложения, всего 180–250 слов: проблема, вариант А, вариант Б, сравнение по одним и тем же критериям, рекомендация. Пиши для того, кто придёт через год и спросит, почему решили так. Вместо общих слов вроде better называй, что именно лучше и на сколько. Ключевые мысли сворачивай в именные группы: the main trade-off is operational cost.",
       "words_min": 180,
       "words_max": 250,
       "focus": [
@@ -489,7 +490,7 @@
       "level": "C1",
       "title_ru": "Служебная записка о техдолге",
       "prompt_en": "Write a memo to leadership arguing that the team needs one quarter to pay down technical debt. Quantify the current cost, describe what you would do, and answer the objection that feature work will stop.",
-      "guidance_ru": "Вывод в первом абзаце, доказательства после него. Переводи техдолг в понятные бизнесу единицы: время, деньги, риск. Отдельный абзац на возражение и ответ. В финале конкретная просьба, а не общее пожелание.",
+      "guidance_ru": "Четыре-пять абзацев по три предложения, всего 180–250 слов. Вывод в первом абзаце, доказательства после него. Переводи техдолг в понятные бизнесу единицы: время, деньги, риск. Отдельный абзац на возражение и ответ. В финале конкретная просьба, а не общее пожелание.",
       "words_min": 180,
       "words_max": 250,
       "focus": [
@@ -503,7 +504,7 @@
       "level": "C1",
       "title_ru": "Обратная связь после собеседования",
       "prompt_en": "Write structured feedback after a technical interview: what the candidate did well, where they struggled, how they responded to hints, and your hiring recommendation with a confidence level.",
-      "guidance_ru": "Четыре части: сильные стороны с примерами из задачи, слабые места, реакция на подсказки, рекомендация с уровнем уверенности. Если собеседований не проводил, придумай кандидата: какая была задача, что он сделал, где застрял. Описывай поведение, а не личность: что кандидат сделал, а не какой он. Где данных мало, так и пиши.",
+      "guidance_ru": "Четыре части по три-четыре предложения, всего 180–250 слов: сильные стороны с примерами из задачи, слабые места, реакция на подсказки, рекомендация с уровнем уверенности. Если собеседований не проводил, придумай кандидата: какая была задача, что он сделал, где застрял. Описывай поведение, а не личность: что кандидат сделал, а не какой он. Где данных мало, так и пиши.",
       "words_min": 180,
       "words_max": 250,
       "focus": [
@@ -517,7 +518,7 @@
       "level": "C1",
       "title_ru": "Критика процесса и предложение",
       "prompt_en": "Your team's code review process has become a bottleneck. Write a message that diagnoses why, acknowledges what the process was designed to protect, and proposes a change that keeps those protections.",
-      "guidance_ru": "Пять абзацев: симптом с цифрами, разбор причин, признание того, что процесс защищал не зря, предложение, способ проверить результат через месяц. Разбирай устройство процесса, а не людей. Один раз усиль главный вывод инверсией: Not only has review time doubled, but it has also delayed two releases.",
+      "guidance_ru": "Пять абзацев по два-три предложения, всего 180–250 слов: симптом с цифрами, разбор причин, признание того, что процесс защищал не зря, предложение, способ проверить результат через месяц. Разбирай устройство процесса, а не людей. Один раз усиль главный вывод инверсией: Not only has review time doubled, but it has also delayed two releases.",
       "words_min": 180,
       "words_max": 250,
       "focus": [
@@ -531,7 +532,7 @@
       "level": "C1",
       "title_ru": "Публичное сообщение о крупном сбое",
       "prompt_en": "Write a public status update after a six-hour outage that affected all customers: what happened, what data was and was not affected, what you have done, and what you commit to next.",
-      "guidance_ru": "Четыре абзаца строго по порядку: факты, границы ущерба, выполненные действия, обязательства со сроками. Отдельным предложением скажи, что не пострадало. Никаких размытых формул вроде some users may have experienced issues. Текст должен одинаково читаться юристом и инженером.",
+      "guidance_ru": "Четыре абзаца по три-четыре предложения, всего 180–250 слов, строго по порядку: факты, границы ущерба, выполненные действия, обязательства со сроками. Отдельным предложением скажи, что не пострадало. Никаких размытых формул вроде some users may have experienced issues. Текст должен одинаково читаться юристом и инженером.",
       "words_min": 180,
       "words_max": 250,
       "focus": [
@@ -545,7 +546,7 @@
       "level": "C1",
       "title_ru": "Эссе о влиянии ИИ на профессию",
       "prompt_en": "Write an essay about how AI coding tools are changing what a software engineer is actually paid for. Take a clear position, support it, and deal seriously with the strongest counterargument.",
-      "guidance_ru": "Тезис в конце первого абзаца, два-три аргумента с примерами, сильный контраргумент и ответ на него, вывод без дословного повтора тезиса. Избегай штампов вроде in today's fast-changing world.",
+      "guidance_ru": "Четыре-пять абзацев, всего 180–250 слов. Тезис в конце первого абзаца, два-три аргумента с примерами, сильный контраргумент и ответ на него, вывод без дословного повтора тезиса. Избегай штампов вроде in today's fast-changing world.",
       "words_min": 180,
       "words_max": 250,
       "focus": [
@@ -601,7 +602,7 @@
       "level": "C2",
       "title_ru": "Стратегический документ по платформе",
       "prompt_en": "Write a strategy paper arguing whether your company should build an internal developer platform or keep letting each team choose its own tooling. Argue one side, model the costs of both, and define what would make you change your mind.",
-      "guidance_ru": "Пять-шесть абзацев: позиция, экономика обоих путей, что показывает отраслевой опыт, сильнейшее возражение и разбор, условия пересмотра решения. Держи один регистр от начала до конца, не срывайся в разговорные обороты.",
+      "guidance_ru": "Пять-шесть абзацев по три предложения, всего 250–350 слов: позиция, экономика обоих путей, что показывает отраслевой опыт, сильнейшее возражение и разбор, условия пересмотра решения. Держи один регистр от начала до конца, не срывайся в разговорные обороты.",
       "words_min": 250,
       "words_max": 350,
       "focus": [
@@ -611,17 +612,17 @@
       ]
     },
     {
-      "id": "c2_wr_blameless_essay",
+      "id": "c2_wr_talk_proposal",
       "level": "C2",
-      "title_ru": "Эссе о культуре разбора инцидентов",
-      "prompt_en": "Write an argumentative essay on blameless postmortems: whether removing individual blame genuinely improves reliability or quietly shields incompetence. Defend a nuanced position rather than a slogan.",
-      "guidance_ru": "Не скатывайся в лозунг. Раздели ответственность и обвинение, покажи, где принцип работает, а где ломается. Уступку формулируй сильно: сначала изложи чужой довод в лучшем виде, потом отвечай. В финале рабочий критерий, а не призыв.",
+      "title_ru": "Заявка на доклад для конференции",
+      "prompt_en": "Write a talk proposal for a large engineering conference, based on a change your team made: a new tool, a new process, or a new way of working, and what it taught you. Include a title, an abstract that makes a busy program committee want to read on, what attendees will be able to do after the talk, a short outline, and why you are the right person to give it.",
+      "guidance_ru": "Пять частей, всего 250–350 слов: заголовок, аннотация, что унесут слушатели, план, почему именно ты. Заголовок обещает конкретное, а не тему: не About testing, а что-то вроде What Deleting Half Our Tests Taught Us. Аннотация начинается с напряжения — проблемы или неудобного вывода, — а не с истории компании. Утверждения дозируй: где данных мало, так и скажи — in our experience, at least for teams of our size. Что унесут слушатели — глаголами действия: Attendees will be able to... План — четыре-пять пунктов. О себе — опыт, а не должность. Комитет читает сотни заявок: каждое предложение должно работать, а штампы вроде game-changer и deep dive снижают шансы.",
       "words_min": 250,
       "words_max": 350,
       "focus": [
-        "nuanced argumentation",
-        "steelmanning",
-        "abstract nominal style"
+        "persuasive concision",
+        "hedged claims",
+        "nominal style"
       ]
     },
     {
@@ -629,7 +630,7 @@
       "level": "C2",
       "title_ru": "Анализ: строить или покупать",
       "prompt_en": "Write a critical analysis of a build-versus-buy decision for your authentication stack. Weigh cost, control, security, hiring, and exit risk, then reach a recommendation you can defend.",
-      "guidance_ru": "Разбери пять критериев по одной схеме, чтобы их можно было сравнить. Отдельно назови, чего ты не знаешь и как проверить это дешевле всего. Рекомендация должна следовать из анализа, а не из вкуса. Вместо probably и maybe давай точные оговорки.",
+      "guidance_ru": "Семь коротких абзацев, всего 250–350 слов: вступление, по абзацу на каждый из пяти критериев и рекомендация. Разбери пять критериев по одной схеме, чтобы их можно было сравнить. Отдельно назови, чего ты не знаешь и как проверить это дешевле всего. Рекомендация должна следовать из анализа, а не из вкуса. Вместо probably и maybe давай точные оговорки.",
       "words_min": 250,
       "words_max": 350,
       "focus": [
@@ -643,7 +644,7 @@
       "level": "C2",
       "title_ru": "Ответ на предложенную политику",
       "prompt_en": "Management has proposed a new rule: all AI-generated code must be reviewed by two senior engineers. Write a persuasive response: engage with the real risk behind the policy, show where the rule backfires, and propose a better one.",
-      "guidance_ru": "Сначала покажи, что понял настоящий страх за политикой, иначе тебя не услышат. Дальше — где правило даст обратный эффект, с механизмом, а не с эмоцией. Предложи альтернативу, которую можно ввести в понедельник. Тон уверенный, но без высокомерия.",
+      "guidance_ru": "Четыре-пять абзацев по три-четыре предложения, всего 250–350 слов. Сначала покажи, что понял настоящий страх за политикой, иначе тебя не услышат. Дальше — где правило даст обратный эффект, с механизмом, а не с эмоцией. Предложи альтернативу, которую можно ввести в понедельник. Тон уверенный, но без высокомерия.",
       "words_min": 250,
       "words_max": 350,
       "focus": [
@@ -657,7 +658,7 @@
       "level": "C2",
       "title_ru": "Эссе об этике продуктовой аналитики",
       "prompt_en": "Write an essay on where product analytics stops being useful measurement and starts being surveillance. Draw a line you can defend, then test it against a hard case where it nearly breaks.",
-      "guidance_ru": "Проведи границу и сразу проверь её на неудобном примере, где твой критерий трещит. Держи разницу между тем, что законно, и тем, что правильно. Абстрактную лексику используй точно, без философского тумана.",
+      "guidance_ru": "Пять абзацев по три предложения, всего 250–350 слов. Проведи границу и сразу проверь её на неудобном примере, где твой критерий трещит. Держи разницу между тем, что законно, и тем, что правильно. Абстрактную лексику используй точно, без философского тумана.",
       "words_min": 250,
       "words_max": 350,
       "focus": [
@@ -671,7 +672,7 @@
       "level": "C2",
       "title_ru": "Брифинг для совета директоров",
       "prompt_en": "Write a briefing for the board on your security posture after a competitor suffered a major breach: your real exposure, what you are doing, what you have deliberately chosen not to do, and what you need from the board.",
-      "guidance_ru": "Первый абзац должен работать, даже если дальше не прочитают. Без технического жаргона, но и без упрощений, которые искажают суть. Отдельно объясни осознанные отказы: почему часть мер вы намеренно не берёте. Заканчивай конкретным запросом: деньги, люди, решение.",
+      "guidance_ru": "Пять абзацев по три предложения, всего 250–350 слов: суть, реальная уязвимость, что уже делаете, от чего осознанно отказались, запрос к совету. Первый абзац должен работать, даже если дальше не прочитают. Без технического жаргона, но и без упрощений, которые искажают суть. Отдельно объясни осознанные отказы: почему часть мер вы намеренно не берёте. Заканчивай конкретным запросом: деньги, люди, решение.",
       "words_min": 250,
       "words_max": 350,
       "focus": [

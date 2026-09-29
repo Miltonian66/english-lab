@@ -478,7 +478,7 @@
         {
           "id": "b1_comparative_superlative_adjectives_adverbs_09",
           "kind": "cloze",
-          "prompt": "My new apartment is ___ (small) than my old one. However, it is ___ (much / quiet) at night. I get to work ___ (quick) now because the station is closer. And it is ___ (cheap) place I have ever rented.",
+          "prompt": "My new apartment is ___ (small) than my old one. However, it is ___ (much / quiet) at night. I get to work ___ (quick) now because the station is closer. And it is the ___ (cheap) place I have ever rented.",
           "gaps": [
             [
               "smaller"
@@ -492,10 +492,10 @@
               "quicker"
             ],
             [
-              "the cheapest"
+              "cheapest"
             ]
           ],
-          "explanation_ru": "Короткие прилагательные получают -er и -est (smaller, quieter, the cheapest), much усиливает сравнение. Get to work quickly — это наречие, его сравнительная степень more quickly (в разговоре и quicker). После I have ever нужна превосходная степень с the.",
+          "explanation_ru": "Короткие прилагательные получают -er и -est (smaller, quieter, cheapest), much усиливает сравнение. Get to work quickly — это наречие, его сравнительная степень more quickly (в разговоре и quicker). После I have ever нужна превосходная степень: the cheapest place.",
           "difficulty": 2
         },
         {
@@ -527,6 +527,17 @@
           "explanation_ru": "«Как можно + сравнительная степень» передаётся оборотом as + обычная форма + as possible: as soon as possible, as quickly as possible. Сравнительная степень внутри as ... as не ставится, а how can sooner — калька.",
           "difficulty": 1,
           "diagnostic": true
+        },
+        {
+          "id": "b1_comparative_superlative_adjectives_adverbs_12",
+          "kind": "order",
+          "prompt": "the / new phone / is / much / lighter / than / the old one / .",
+          "answer": "The new phone is much lighter than the old one.",
+          "accept": [
+            "The old one is much lighter than the new phone."
+          ],
+          "explanation_ru": "Сравнительная степень lighter идёт после is, much усиливает её и стоит прямо перед ней, а than вводит то, с чем сравнивают.",
+          "difficulty": 1
         }
       ]
     },
@@ -702,21 +713,23 @@
       "title_en": "So, such, such a, so much, so many",
       "source_slug": "so-such-such-a-so-much-so-many",
       "title_ru": "So, such, such a, so much, so many",
-      "summary_ru": "So усиливает прилагательное или наречие: so tired, so quickly. Such стоит перед существительным, и если существительное исчисляемое в единственном числе, обязателен артикль: such a long day, such an interesting book. Перед множественным числом и перед неисчисляемыми существительными артикль не ставится: such nice people, such bad weather. Для количества используются so much с неисчисляемыми и so many с исчисляемыми во множественном числе: so much work, so many people. Все эти конструкции часто вводят следствие с помощью that: It was such a long meeting that I fell asleep. Порядок слов здесь жёсткий: варианты so a long day и such tired невозможны. Если следствие отрицательное («такой тяжёлый, что не смог поднять»), его часто сворачивают в too + прилагательное + to-инфинитив: The box was too heavy to lift.",
+      "summary_ru": "So усиливает прилагательное или наречие: so tired, so quickly. Such стоит перед существительным, и если существительное исчисляемое в единственном числе, обязателен артикль: such a long day, such an interesting book. Перед множественным числом и перед неисчисляемыми существительными артикль не ставится: such nice people, such bad weather. Для количества используются so much с неисчисляемыми и so many с исчисляемыми во множественном числе: so much work, so many people. Все эти конструкции часто вводят следствие с помощью that: It was such a long meeting that I fell asleep. Порядок слов здесь жёсткий: варианты so a long day и such tired невозможны. Если следствие отрицательное («такой тяжёлый, что не смог поднять»), его часто сворачивают в too + прилагательное + to-инфинитив: The box was too heavy to lift. Enough — «достаточно» — ставится после прилагательного: old enough to vote, not warm enough. Too — «слишком» — перед ним: too young to vote, поэтому too young = not old enough.",
       "forms": [
         "so + прилагательное или наречие: so tired, so slowly",
         "such a/an + (прилагательное) + исчисляемое ед. числа: such a long day",
         "such + (прилагательное) + мн. число или неисчисляемое: such nice people, such bad weather",
         "so much + неисчисляемое; so many + мн. число",
         "so / such ... that + следствие",
-        "too + прилагательное + to + V: too heavy to lift"
+        "too + прилагательное + to + V: too heavy to lift",
+        "прилагательное + enough (+ to V): old enough to vote; not warm enough",
+        "too + прилагательное = «слишком»; not + прилагательное + enough = «недостаточно»"
       ],
       "examples": [
         "It was such a long meeting that I fell asleep.",
         "There were so many people in the room.",
         "They are such friendly people.",
         "I was so tired that I went to bed at nine.",
-        "She has so much work that she never goes out."
+        "We had so much work that we skipped lunch."
       ],
       "ru_interference": "Русское «такой» покрывает и so, и such, поэтому so ставят перед существительным: неверно: It was so a long day. -> верно: It was such a long day. А «так много денег» даёт: неверно: so many money -> верно: so much money.",
       "prerequisites": [
@@ -783,19 +796,21 @@
         {
           "id": "b1_so_such_such_a_so_much_so_many_05",
           "kind": "gap",
-          "prompt": "She has ___ (so much / so many) work that she never goes out.",
+          "prompt": "She has ___ (так много) work that she never goes out.",
           "answer": "so much",
-          "accept": [],
-          "explanation_ru": "Work — неисчисляемое существительное, поэтому so much.",
+          "accept": [
+            "such a lot of"
+          ],
+          "explanation_ru": "Work — неисчисляемое существительное, поэтому «так много» — so much (или such a lot of). So many ставится только с множественным числом: so many tasks.",
           "difficulty": 2
         },
         {
           "id": "b1_so_such_such_a_so_much_so_many_06",
           "kind": "gap",
-          "prompt": "It was ___ (so / such / such a) boring movie that we left early.",
+          "prompt": "It was ___ (такой) boring movie that we left early.",
           "answer": "such a",
           "accept": [],
-          "explanation_ru": "Перед исчисляемым существительным movie в единственном числе нужен such a.",
+          "explanation_ru": "Перед сочетанием прилагательное + исчисляемое существительное в единственном числе (boring movie) нужен such a. Русское «такой» тянет к so, но so ставится только перед прилагательным без существительного: The movie was so boring.",
           "difficulty": 2
         },
         {
@@ -868,6 +883,32 @@
           "explanation_ru": "Перед прилагательным с существительным во множественном числе нужен such без артикля. So ставится только перед прилагательным без существительного (Her eyes are so beautiful), а a невозможен с eyes.",
           "difficulty": 1,
           "diagnostic": true
+        },
+        {
+          "id": "b1_so_such_such_a_so_much_so_many_12",
+          "kind": "choice",
+          "prompt": "Is your coffee ___ now, or should I heat it up a little more?",
+          "options": [
+            "hot enough",
+            "enough hot",
+            "too hot",
+            "hot too"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Enough ставится после прилагательного: hot enough — «достаточно горячий». Enough hot — калька с русского порядка слов, too hot — «слишком горячий» — не вяжется с предложением подогреть ещё, а too в конце значит «тоже».",
+          "difficulty": 2,
+          "diagnostic": true
+        },
+        {
+          "id": "b1_so_such_such_a_so_much_so_many_13",
+          "kind": "transform",
+          "prompt": "Rewrite using the word in capitals (do not change it): Jin is too young to drive a car. ENOUGH",
+          "answer": "Jin isn't old enough to drive a car.",
+          "accept": [
+            "Jin isn't old enough to drive."
+          ],
+          "explanation_ru": "Too young = not old enough: enough ставится после прилагательного, а само прилагательное меняется на противоположное. Enough old — калька с русского «достаточно взрослый».",
+          "difficulty": 3
         }
       ]
     },
@@ -902,17 +943,17 @@
         {
           "id": "b1_first_and_second_conditionals_01",
           "kind": "choice",
-          "prompt": "If it ___ tomorrow, we will stay at home.",
+          "prompt": "I don't think I'll get the job, but if I ___ it, I'd move to Boston.",
           "options": [
-            "will rain",
-            "rains",
-            "rained",
-            "would rain"
+            "got",
+            "get",
+            "will get",
+            "would get"
           ],
-          "correct_index": 1,
-          "explanation_ru": "Это первый тип: после if ставится present simple, хотя речь о будущем.",
-          "difficulty": 1,
-          "diagnostic": false
+          "correct_index": 0,
+          "explanation_ru": "Главная часть с 'd move и сомнение (I don't think I'll get it) показывают второй тип — маловероятное будущее: после if ставится past simple got. Get дал бы первый тип с will в главной части, а will и would после if не ставятся.",
+          "difficulty": 2,
+          "diagnostic": true
         },
         {
           "id": "b1_first_and_second_conditionals_02",
@@ -1435,20 +1476,23 @@
       "title_en": "Clauses of contrast, purpose and reason",
       "source_slug": "clauses-contrast-purpose-reason",
       "title_ru": "Уступка, цель и причина",
-      "summary_ru": "Уступка выражается двумя разными способами, и их нельзя смешивать. Although, even though и though вводят целое предложение с подлежащим и сказуемым, а despite и in spite of — только существительное или форму на -ing. However ничего не соединяет: оно начинает новое предложение и отделяется запятой. Цель выражается через to или in order to с инфинитивом, а если у цели другое подлежащее — через so that с придаточным. Причина вводится словом because перед предложением и оборотом because of перед существительным; as и since работают так же, как because. Результат вводит so: It was late, so we went home. Whereas противопоставляет две части одного предложения (I drink tea, whereas my sister drinks coffee), а as a result вводит следствие в начале нового предложения.",
+      "summary_ru": "Уступка выражается двумя разными способами, и их нельзя смешивать. Although, even though и though вводят целое предложение с подлежащим и сказуемым, а despite и in spite of — только существительное или форму на -ing. However ничего не соединяет: оно начинает новое предложение и отделяется запятой. Цель выражается через to или in order to с инфинитивом, а если у цели другое подлежащее — через so that с придаточным. Причина вводится словом because перед предложением и оборотом because of перед существительным; as и since работают так же, как because. Результат вводит so: It was late, so we went home. Whereas противопоставляет две части одного предложения (I drink tea, whereas my sister drinks coffee), а as a result вводит следствие в начале нового предложения. Связки последовательности и добавления тоже стоят в начале предложения с запятой: in addition и what's more добавляют довод в ту же сторону, on the one hand ... on the other hand сталкивают доводы за и против, а first, then, finally выстраивают порядок.",
       "forms": [
         "although / even though / though + подлежащее + сказуемое",
         "despite / in spite of + существительное или -ing",
         "to / in order to + инфинитив; so that + подлежащее + can/could/would",
         "because + предложение; because of + существительное",
         "however + запятая в начале нового предложения",
-        "whereas + предложение — контраст; As a result, ... — следствие"
+        "whereas + предложение — контраст; As a result, ... — следствие",
+        "In addition, ... / What's more, ... — ещё один довод",
+        "On the one hand, ... On the other hand, ... — доводы за и против",
+        "First, ... Then, ... Finally / In the end, ... — порядок и итог"
       ],
       "examples": [
         "Despite the bad weather, we finished the work outside.",
         "Although the team was small, they finished on time.",
         "We stayed at home because it was raining hard.",
-        "We were late because of the traffic.",
+        "The flight was delayed because of the fog.",
         "He turned off his phone so that he could focus on the task."
       ],
       "ru_interference": "Русские «несмотря на» и «из-за того что» дают лишнее of и лишнее придаточное: неверно: Despite of the noise, I finished the report. -> верно: Despite the noise, I finished the report. неверно: We were late because of it was raining. -> верно: We were late because it was raining.",
@@ -1516,19 +1560,24 @@
         {
           "id": "b1_clauses_contrast_purpose_reason_05",
           "kind": "gap",
-          "prompt": "___ (although / despite) the hotel was small, it was very comfortable.",
+          "prompt": "___ (хотя) the hotel was small, it was very comfortable.",
           "answer": "Although",
-          "accept": [],
-          "explanation_ru": "Дальше идёт целое предложение the hotel was small, а с предложением работает только although.",
+          "accept": [
+            "Even though",
+            "Though"
+          ],
+          "explanation_ru": "«Хотя» перед целым предложением (the hotel was small) — although, even though или though. Despite ставится только перед существительным или -ing: despite its small size.",
           "difficulty": 1
         },
         {
           "id": "b1_clauses_contrast_purpose_reason_06",
           "kind": "gap",
-          "prompt": "We were late ___ (because / because of) the traffic.",
+          "prompt": "We were late ___ (из-за) the traffic.",
           "answer": "because of",
-          "accept": [],
-          "explanation_ru": "После связки стоит существительное the traffic, поэтому нужен оборот because of.",
+          "accept": [
+            "due to"
+          ],
+          "explanation_ru": "После связки стоит существительное the traffic, поэтому нужен предлог because of (или due to). Because без of вводит целое предложение: because the traffic was bad.",
           "difficulty": 2
         },
         {
@@ -1578,7 +1627,8 @@
             [
               "Thanks to",
               "Because of",
-              "As a result of"
+              "As a result of",
+              "Due to"
             ]
           ],
           "explanation_ru": "So вводит следствие, although — уступку перед целым предложением, to (in order to) — цель с инфинитивом, а thanks to / because of — причину перед существительным all this effort.",
@@ -1628,6 +1678,54 @@
           "explanation_ru": "Вторая фраза — следствие аварии, а следствие в начале предложения вводит as a result. Although и despite this выражают противопоставление, а in order to — цель и требует инфинитива.",
           "difficulty": 1,
           "diagnostic": true
+        },
+        {
+          "id": "b1_clauses_contrast_purpose_reason_13",
+          "kind": "choice",
+          "prompt": "The new apartment is close to the metro. ___, it's much cheaper than our old one.",
+          "options": [
+            "In addition",
+            "On the other hand",
+            "However",
+            "Whereas"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Вторая фраза добавляет ещё один плюс, поэтому in addition — «кроме того». On the other hand и however вводят противопоставление, а whereas соединяет две части одного предложения и не стоит в начале с запятой.",
+          "difficulty": 2,
+          "diagnostic": true
+        },
+        {
+          "id": "b1_clauses_contrast_purpose_reason_14",
+          "kind": "cloze",
+          "prompt": "Should I move to a big city? ___ (с одной стороны), there are more jobs and the salaries are higher. ___ (кроме того), public transport is fast and cheap. ___ (с другой стороны), rents are very high, and the streets are noisy. ___ (в итоге), I've decided to stay in my small town for now.",
+          "gaps": [
+            [
+              "On the one hand",
+              "On one hand"
+            ],
+            [
+              "In addition",
+              "Also",
+              "Besides",
+              "What's more",
+              "Moreover",
+              "Furthermore",
+              "Plus"
+            ],
+            [
+              "On the other hand",
+              "However"
+            ],
+            [
+              "In the end",
+              "Finally",
+              "All in all",
+              "Overall",
+              "In conclusion"
+            ]
+          ],
+          "explanation_ru": "On the one hand ... on the other hand — «с одной стороны ... с другой стороны»; in addition (also, what's more) добавляет ещё один довод в ту же сторону; in the end (finally) подводит итог. Все эти связки стоят в начале предложения и отделяются запятой.",
+          "difficulty": 2
         }
       ]
     },
@@ -1646,12 +1744,13 @@
         "was / were able to + инфинитив — один успешный случай в прошлом",
         "will be able to + инфинитив — будущее",
         "have / has been able to + инфинитив — перфект",
-        "managed to + V — «удалось» в конкретной ситуации"
+        "managed to + V — «удалось» в конкретной ситуации",
+        "Could you (possibly) + V? — вежливая просьба"
       ],
       "examples": [
         "I will be able to help you tomorrow morning.",
         "When I was a child, I could swim very well.",
-        "After three attempts, he was able to open the file.",
+        "After a long search, she was able to find her keys.",
         "She hasn't been able to contact the client yet.",
         "We were not able to find the bug."
       ],
@@ -1720,7 +1819,7 @@
         {
           "id": "b1_can_could_be_able_to_05",
           "kind": "gap",
-          "prompt": "I'm sorry, I ___ (not/can, past) come to the meeting yesterday.",
+          "prompt": "I'm sorry, I ___ (not / can) come to the meeting yesterday.",
           "answer": "couldn't",
           "accept": [
             "could not",
@@ -1733,10 +1832,12 @@
         {
           "id": "b1_can_could_be_able_to_06",
           "kind": "gap",
-          "prompt": "After three attempts, he ___ (be able to, past) open the file.",
+          "prompt": "The file was damaged, but after three attempts he ___ (can) open it.",
           "answer": "was able to",
-          "accept": [],
-          "explanation_ru": "Единичный успех в прошлом: he требует формы was able to.",
+          "accept": [
+            "managed to"
+          ],
+          "explanation_ru": "Единичный успех в конкретной ситуации в прошлом — was able to (или managed to). Could здесь не подходит: в утверждении оно описывает только общую способность (When I was young, I could run fast).",
           "difficulty": 2
         },
         {
@@ -1746,9 +1847,10 @@
           "answer": "I will be able to send you the photos on Friday.",
           "accept": [
             "I'll be able to send you the photos on Friday.",
-            "I can send you the photos on Friday."
+            "I can send you the photos on Friday.",
+            "I will send you the photos on Friday."
           ],
-          "explanation_ru": "Два модальных слова подряд невозможны: у can нет будущего времени, поэтому will can заменяют на will be able to (или просто can, если возможность есть уже сейчас).",
+          "explanation_ru": "Два модальных слова подряд невозможны: у can нет будущего времени, поэтому will can заменяют на will be able to (или просто can, если возможность есть уже сейчас). Если важна не возможность, а само обещание, достаточно I will send.",
           "difficulty": 3
         },
         {
@@ -1809,6 +1911,21 @@
           ],
           "explanation_ru": "Речь о будущем (о субботе), а у can нет формы будущего времени, поэтому won't be able to. Am not able to тоже возможно, но звучит официальнее.",
           "difficulty": 1
+        },
+        {
+          "id": "b1_can_could_be_able_to_12",
+          "kind": "choice",
+          "prompt": "Как сказать по-английски (вежливо, незнакомому человеку): «Вы не могли бы говорить помедленнее?»",
+          "options": [
+            "Could you possibly speak more slowly?",
+            "You couldn't speak more slowly?",
+            "Could you possible speak more slowly?",
+            "Can you possibly to speak more slowly?"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Вежливая просьба — Could you (possibly) + V1? Possibly — наречие, оно стоит после подлежащего. Русское «Вы не могли бы» с отрицанием переносить не нужно: You couldn't...? звучит как недовольство. После can и could частица to не ставится.",
+          "difficulty": 2,
+          "diagnostic": true
         }
       ]
     },
@@ -1820,13 +1937,15 @@
       "title_en": "Had better... It's time...",
       "source_slug": "had-better-its-time",
       "title_ru": "Had better и It's time",
-      "summary_ru": "Had better даёт сильный совет в ситуации, когда бездействие приведёт к плохим последствиям. Форма одна для всех лиц и не меняется по времени: I had better, you had better, he had better. После had better идёт инфинитив без to, а отрицание строится как had better not: You'd better not tell anyone. В речи почти всегда используется сокращение 'd better. Оборот It's time означает, что действие уже пора начинать, и после него возможны два варианта: It's time to go и It's time for us to go с инфинитивом, либо It's time we went с подлежащим и past simple. Форма прошедшего времени после It's time не указывает на прошлое, она подчёркивает, что момент уже упущен.",
+      "summary_ru": "Had better даёт сильный совет в ситуации, когда бездействие приведёт к плохим последствиям. Форма одна для всех лиц и не меняется по времени: I had better, you had better, he had better. После had better идёт инфинитив без to, а отрицание строится как had better not: You'd better not tell anyone. В речи почти всегда используется сокращение 'd better. Оборот It's time означает, что действие уже пора начинать, и после него возможны два варианта: It's time to go и It's time for us to go с инфинитивом, либо It's time we went с подлежащим и past simple. Форма прошедшего времени после It's time не указывает на прошлое, она подчёркивает, что момент уже упущен. Рядом с советом стоят предложения: Why don't we + V? и How about + V-ing? — предложить сделать что-то вместе, Shall I + V? — предложить свою помощь.",
       "forms": [
         "had better ('d better) + инфинитив без to",
         "had better not + инфинитив без to",
         "It's time + to + инфинитив",
         "It's time for somebody + to + инфинитив",
-        "It's time + подлежащее + past simple: It's time we left"
+        "It's time + подлежащее + past simple: It's time we left",
+        "Why don't we + V? / How about + V-ing? — предложить сделать вместе",
+        "Shall I + V? — предложить помощь"
       ],
       "examples": [
         "You'd better take a taxi. The bus is too slow.",
@@ -1970,7 +2089,7 @@
         {
           "id": "b1_had_better_its_time_11",
           "kind": "cloze",
-          "prompt": "It's almost midnight, Lucas. It's time ___ (go) to bed. You have an exam tomorrow, so you'd better ___ (not/stay) up late. You'd better ___ (set) two alarms, just in case. Honestly, it's time ___ (for / to) you to start taking school seriously.",
+          "prompt": "It's almost midnight, Lucas. It's time ___ (go) to bed. You have an exam tomorrow, so you'd better ___ (not/stay) up late. You'd better ___ (set) two alarms, just in case. Honestly, it's time ___ you to start taking school seriously.",
           "gaps": [
             [
               "to go"
@@ -1987,6 +2106,53 @@
           ],
           "explanation_ru": "Без лица после It's time нужен инфинитив с to (to go), а если лицо названо — for + лицо + to. После had better всегда инфинитив без to, в том числе в отрицании: 'd better not stay.",
           "difficulty": 2
+        },
+        {
+          "id": "b1_had_better_its_time_12",
+          "kind": "choice",
+          "prompt": "A: I'm so bored tonight.\nB: ___ go to the movies? There's a new comedy at the mall.",
+          "options": [
+            "Why don't we",
+            "Why we don't",
+            "How about",
+            "What about to"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Предложение сделать что-то вместе — Why don't we + V1? Порядок как в обычном вопросе: don't перед we. How about и what about требуют формы на -ing (How about going...?), поэтому с голым go не работают.",
+          "difficulty": 2,
+          "diagnostic": true
+        },
+        {
+          "id": "b1_had_better_its_time_13",
+          "kind": "transform",
+          "prompt": "Переведи на английский: «Мне помочь тебе с сумками?»",
+          "answer": "Shall I help you with your bags?",
+          "accept": [
+            "Should I help you with your bags?",
+            "Do you want me to help you with your bags?",
+            "Can I help you with your bags?",
+            "Would you like me to help you with your bags?",
+            "Shall I help you with the bags?",
+            "Should I help you with the bags?",
+            "Do you want me to help you with the bags?",
+            "Can I help you with the bags?",
+            "Would you like me to help you with the bags?",
+            "Shall I help you carry your bags?",
+            "Should I help you carry your bags?",
+            "Do you want me to help you carry your bags?",
+            "Can I help you carry your bags?"
+          ],
+          "explanation_ru": "Предложение помощи — Shall I + V1? (в американской речи чаще Should I или Do you want me to...?). Русское «мне помочь?» тянет к Do I help, но do в таком вопросе не спрашивает о желании собеседника.",
+          "difficulty": 2
+        },
+        {
+          "id": "b1_had_better_its_time_14",
+          "kind": "gap",
+          "prompt": "We've been talking about this plan for months. It's time we ___ (make) a decision.",
+          "answer": "made",
+          "accept": [],
+          "explanation_ru": "После It's time + подлежащее глагол ставится в past simple, хотя речь о настоящем: It's time we made a decision. Прошедшая форма подчёркивает, что момент уже наступил. Без подлежащего было бы It's time to make a decision.",
+          "difficulty": 2
         }
       ]
     },
@@ -1998,21 +2164,22 @@
       "title_en": "Have to, must, should: Obligation, prohibition, necessity, advice",
       "source_slug": "have-to-must-should",
       "title_ru": "Have to, must, should: обязанность и совет",
-      "summary_ru": "Must выражает сильную обязанность, которую считает необходимой сам говорящий, и часто встречается в правилах и инструкциях. Have to передаёт обязанность, идущую извне: от работы, закона или расписания. Форма have to меняется по лицам и временам, а вопрос с ней строится через do: Do I have to take this test? У must нет прошедшего времени, поэтому в прошлом используется had to. Главная пара, где легко ошибиться, — mustn't и don't have to: mustn't означает запрет, а don't have to означает, что делать это не обязательно. Should и shouldn't дают совет, а не обязанность. После must и should инфинитив идёт без to, а have to сохраняет to всегда. Упрёк или сожаление о прошлом выражают should have / shouldn't have + третья форма: You should have asked me; had to здесь не подходит — он значит, что действие пришлось выполнить.",
+      "summary_ru": "Must выражает сильную обязанность, которую считает необходимой сам говорящий, и часто встречается в правилах и инструкциях. Have to передаёт обязанность, идущую извне: от работы, закона или расписания. Форма have to меняется по лицам и временам, а вопрос с ней строится через do: Do I have to take this test? У must нет прошедшего времени, поэтому в прошлом используется had to. Главная пара, где легко ошибиться, — mustn't и don't have to: mustn't означает запрет, а don't have to означает, что делать это не обязательно. Should и shouldn't дают совет, а не обязанность. После must и should инфинитив идёт без to, а have to сохраняет to всегда. Упрёк или сожаление о прошлом выражают should have / shouldn't have + третья форма: You should have asked me; had to здесь не подходит — он значит, что действие пришлось выполнить. Разрешение и запрет, в том числе в прошлом, передаёт be allowed to: We weren't allowed to talk during the test — «нам не разрешали разговаривать».",
       "forms": [
         "must + инфинитив без to — сильная обязанность",
         "have to / has to + инфинитив; вопрос: Do you have to ...?",
         "mustn't + инфинитив — запрет",
         "don't have to + инфинитив — не обязательно",
         "should / shouldn't + инфинитив — совет; had to — прошлое",
-        "should have / shouldn't have + V3 — упрёк или сожаление о прошлом"
+        "should have / shouldn't have + V3 — упрёк или сожаление о прошлом",
+        "be allowed to + V — разрешено; not allowed to — запрещено (в прошлом: wasn't / weren't allowed to)"
       ],
       "examples": [
         "It's Saturday, so I don't have to get up early.",
         "You mustn't smoke here. This is a hospital.",
         "We have to finish this before Friday.",
         "You should practice speaking more.",
-        "I had to work last weekend."
+        "She had to take a taxi because the metro was closed."
       ],
       "ru_interference": "Русское «не должен» одинаково переводит и запрет, и отсутствие необходимости: неверно: You mustn't come tomorrow, it is optional. -> верно: You don't have to come tomorrow, it is optional.",
       "prerequisites": [
@@ -2065,24 +2232,24 @@
         {
           "id": "b1_have_to_must_should_04",
           "kind": "choice",
-          "prompt": "We ___ finish this before Friday.",
+          "prompt": "The client needs the design on Friday morning, so we ___ finish it by Thursday night.",
           "options": [
             "have to",
-            "have",
-            "must to",
-            "has to"
+            "don't have to",
+            "mustn't",
+            "had better not"
           ],
           "correct_index": 0,
-          "explanation_ru": "Внешний срок передаётся оборотом have to; с we форма has to невозможна, а must не сочетается с to.",
+          "explanation_ru": "Срок задаёт клиент, то есть обязанность идёт извне, — have to. Don't have to значило бы «не обязательно», а mustn't и had better not — запрет и предостережение, что противоречит сроку.",
           "difficulty": 2
         },
         {
           "id": "b1_have_to_must_should_05",
           "kind": "gap",
-          "prompt": "I ___ (have to, past) work last weekend.",
+          "prompt": "I ___ (must) work last weekend, so I missed the party.",
           "answer": "had to",
           "accept": [],
-          "explanation_ru": "У must нет прошедшего времени, поэтому обязанность в прошлом выражается формой had to.",
+          "explanation_ru": "У must нет прошедшего времени, поэтому обязанность в прошлом выражается через had to. Musted не существует, а must have worked значило бы «наверное, работал» — догадку, а не обязанность.",
           "difficulty": 2
         },
         {
@@ -2179,6 +2346,42 @@
           "accept": [],
           "explanation_ru": "После should have всегда идёт третья форма глагола: should have called. Инфинитив call после have невозможен.",
           "difficulty": 2
+        },
+        {
+          "id": "b1_have_to_must_should_13",
+          "kind": "choice",
+          "prompt": "When I was a kid, I ___ stay up after nine, even on weekends.",
+          "options": [
+            "wasn't allowed to",
+            "mustn't",
+            "didn't have to",
+            "didn't allow to"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Запрет в прошлом — wasn't allowed to + V1 («мне не разрешали»). У mustn't нет прошедшего времени, didn't have to значило бы «было не обязательно», а didn't allow to — калька: allow требует дополнения (They didn't allow me to stay up).",
+          "difficulty": 2,
+          "diagnostic": true
+        },
+        {
+          "id": "b1_have_to_must_should_14",
+          "kind": "transform",
+          "prompt": "Переведи на английский: «Нам не разрешали пользоваться телефонами на уроках».",
+          "answer": "We weren't allowed to use our phones in class.",
+          "accept": [
+            "We weren't allowed to use phones in class.",
+            "We weren't allowed to use our phones during lessons.",
+            "We weren't allowed to use our phones in lessons.",
+            "We weren't allowed to use phones during lessons.",
+            "We weren't allowed to use phones in lessons.",
+            "We weren't allowed to use our phones during class.",
+            "We weren't allowed to use phones during class.",
+            "They didn't allow us to use our phones in class.",
+            "They didn't allow us to use phones in class.",
+            "We weren't allowed to use our cell phones in class.",
+            "We weren't allowed to use cell phones in class."
+          ],
+          "explanation_ru": "«Нам не разрешали» — безличная русская конструкция, по-английски подлежащим становится we: We weren't allowed to use. Вариант They didn't allow us to use тоже верен, а We didn't allow to use значит, что запрещали мы сами, и к тому же allow без дополнения не работает.",
+          "difficulty": 3
         }
       ]
     }

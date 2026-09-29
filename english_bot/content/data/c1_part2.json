@@ -9,14 +9,15 @@
       "title_en": "Advanced relative clauses: reduced, prepositional, of which/whom",
       "source_slug": "",
       "title_ru": "Продвинутые относительные придаточные",
-      "summary_ru": "На уровне C1 относительное придаточное редко остаётся в полной форме. Активное придаточное сокращается до причастия на -ing, причём и с be, и без него: the people who are waiting и the people who wait одинаково дают the people waiting. Пассивное придаточное сокращается до третьей формы: the letter that was sent превращается в the letter sent. В формальном стиле предлог ставится перед which или whom, а не в конце: the drawer in which he kept his letters, the extent to which. После предлога нельзя ставить that и нельзя опускать относительное местоимение. Количество оформляется схемой quantifier + of which / of whom: ten volunteers, two of whom had never been abroad. Whose работает и для людей, и для предметов: a village whose name I can't pronounce. Which после запятой может относиться ко всему предыдущему предложению: It rained all week, which spoiled our plans; здесь нельзя ни that, ни what. Связки in which case, by which time, at which point присоединяют следующее событие внутри одного предложения.",
+      "summary_ru": "На уровне C1 относительное придаточное редко остаётся в полной форме. Активное придаточное сокращается до причастия на -ing, причём и с be, и без него: the people who are waiting и the people who wait одинаково дают the people waiting. Пассивное придаточное сокращается до третьей формы: the letter that was sent превращается в the letter sent. В формальном стиле предлог ставится перед which или whom, а не в конце: the drawer in which he kept his letters, the extent to which. После предлога нельзя ставить that и нельзя опускать относительное местоимение. Количество оформляется схемой quantifier + of which / of whom: ten volunteers, two of whom had never been abroad. Whose работает и для людей, и для предметов: a village whose name I can't pronounce. Which после запятой может относиться ко всему предыдущему предложению: It rained all week, which spoiled our plans; здесь нельзя ни that, ни what. Связки in which case, by which time, at which point присоединяют следующее событие внутри одного предложения, а книжное whereby («по которому, посредством чего») вводит механизм или правило: an agreement whereby both sides share the costs.",
       "forms": [
         "noun + V-ing / V3 (сокращённое придаточное: the people waiting, the letter sent)",
         "preposition + which/whom + clause (the drawer in which he kept ...)",
         "quantifier + of which / of whom (six sisters, two of whom ...)",
         "noun + whose + noun (и о людях, и о предметах)",
         "..., which + глагол (о всём предыдущем предложении)",
-        "..., in which case / by which time / at which point + предложение"
+        "..., in which case / by which time / at which point + предложение",
+        "noun + whereby + clause (механизм, правило: a system whereby ...)"
       ],
       "examples": [
         "The nurse looking after my father is from Manila.",
@@ -35,16 +36,16 @@
         {
           "id": "c1_advanced_relative_clauses_reduced_prepositional_of_which_whom_01",
           "kind": "choice",
-          "prompt": "The bakery employs six people, two ___ whom are from Brazil.",
+          "prompt": "The choir has forty members, ___ are over seventy.",
           "options": [
-            "from",
-            "of",
-            "between",
-            "among"
+            "several of whom",
+            "several of them",
+            "several of which",
+            "from whom several"
           ],
-          "correct_index": 1,
-          "explanation_ru": "После количественного слова используется только of whom; from, between и among в этой схеме невозможны.",
-          "difficulty": 1,
+          "correct_index": 0,
+          "explanation_ru": "Количество + of whom присоединяет придаточное о людях: several of whom. Of them дал бы второе самостоятельное предложение без союза (нужна точка или and), of which говорят о предметах, а from whom several — калька с «из которых несколько».",
+          "difficulty": 2,
           "diagnostic": true
         },
         {
@@ -95,10 +96,10 @@
         {
           "id": "c1_advanced_relative_clauses_reduced_prepositional_of_which_whom_05",
           "kind": "gap",
-          "prompt": "The message ___ (send) at midnight never arrived.",
+          "prompt": "The invoice ___ (send — one word) to the client last week still hasn't been paid.",
           "answer": "sent",
           "accept": [],
-          "explanation_ru": "Смысл пассивный: сообщение отправили. Сокращённое придаточное which was sent даёт третью форму sent.",
+          "explanation_ru": "Смысл пассивный: счёт отправили. Сокращённое придаточное (which was sent) оставляет только третью форму sent.",
           "difficulty": 2
         },
         {
@@ -134,16 +135,16 @@
         {
           "id": "c1_advanced_relative_clauses_reduced_prepositional_of_which_whom_09",
           "kind": "choice",
-          "prompt": "The flight was delayed by six hours, ___ meant we missed our connection.",
+          "prompt": "The client finally approved the budget at 8 p.m. on Friday, ___ most of the team had already gone home.",
           "options": [
-            "which",
-            "that",
-            "what",
-            "it"
+            "by which time",
+            "in which case",
+            "whereby",
+            "during which"
           ],
           "correct_index": 0,
-          "explanation_ru": "Which после запятой может относиться ко всему предыдущему предложению («что и привело к…»). That после запятой не ставится, what — калька с русского «что», а it сделал бы два предложения без союза.",
-          "difficulty": 1,
+          "explanation_ru": "By which time — «а к тому времени»: присоединяет то, что уже успело произойти к моменту события (отсюда had already gone). In which case вводит последствие возможного условия, whereby — механизм или правило, during which — то, что длилось в течение периода, а восемь вечера — момент.",
+          "difficulty": 2,
           "diagnostic": true
         },
         {
@@ -185,6 +186,51 @@
           ],
           "explanation_ru": "1 — whose + существительное («чьё строительство»), и для предметов тоже. 2 — most of whom: количество + of whom о людях. 3 — предлог глагола depend on уходит в начало: on which. 4 — the extent to which — «степень, в которой». 5 — which о всём предыдущем предложении.",
           "difficulty": 3
+        },
+        {
+          "id": "c1_advanced_relative_clauses_reduced_prepositional_of_which_whom_12",
+          "kind": "choice",
+          "prompt": "The company has introduced a system ___ employees can swap shifts with each other through an app.",
+          "options": [
+            "whereby",
+            "by which time",
+            "at which point",
+            "in which case"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Whereby — книжное «по которому, посредством которого»: вводит придаточное с описанием механизма или правила (a system whereby…). By which time, at which point и in which case присоединяют следующее событие или условие и после существительного system смысла не дают.",
+          "difficulty": 2,
+          "diagnostic": true
+        },
+        {
+          "id": "c1_advanced_relative_clauses_reduced_prepositional_of_which_whom_13",
+          "kind": "cloze",
+          "prompt": "Fill each gap with a formal relative link. The storm hit the island on Tuesday night, ___ most tourists had already been evacuated. For weeks the authorities had used a system ___ every hotel reported the number of guests still inside. Rescue teams reached the northern village at dawn, ___ they discovered that the bridge had collapsed. Engineers may also have to close the coastal road, ___ the village will be cut off completely.",
+          "gaps": [
+            [
+              "by which time",
+              "when"
+            ],
+            [
+              "whereby",
+              "under which",
+              "by which",
+              "in which",
+              "through which"
+            ],
+            [
+              "at which point",
+              "whereupon",
+              "when",
+              "at which time",
+              "where"
+            ],
+            [
+              "in which case"
+            ]
+          ],
+          "explanation_ru": "1 — by which time: к моменту события что-то уже произошло (had already been evacuated). 2 — whereby (under which): механизм, по которому работала система. 3 — at which point: следующее событие сразу за предыдущим. 4 — in which case: «и в таком случае» — последствие возможного условия. Все четыре связки присоединяют продолжение внутри одного предложения.",
+          "difficulty": 3
         }
       ]
     },
@@ -221,15 +267,15 @@
         {
           "id": "c1_advanced_present_simple_and_present_continuous_01",
           "kind": "choice",
-          "prompt": "I ___ you're moving to Chicago — congratulations!",
+          "prompt": "I ___ you're running the Chicago Marathon this year — good luck!",
           "options": [
             "hear",
-            "am hearing",
             "was hearing",
-            "will hear"
+            "will hear",
+            "had heard"
           ],
           "correct_index": 0,
-          "explanation_ru": "I hear (I gather, I understand) в present simple сообщает услышанную новость: «я слышал, ты переезжаешь». Continuous здесь невозможен: слух — не процесс, а источник сведений.",
+          "explanation_ru": "I hear (I gather, I understand) в present simple сообщает новость, которая до вас дошла: «говорят, ты бежишь марафон». В разговоре встречается и I'm hearing (that)…, но нейтральная форма — I hear. Was hearing и had heard относят слух к прошлому и не вяжутся с новостью «сейчас», will hear — к будущему.",
           "difficulty": 1,
           "diagnostic": true
         },
@@ -304,13 +350,10 @@
         {
           "id": "c1_advanced_present_simple_and_present_continuous_07",
           "kind": "gap",
-          "prompt": "He ___ (constantly / ask) for exceptions to the rules.",
-          "answer": "is constantly asking",
-          "accept": [
-            "'s constantly asking",
-            "constantly asks"
-          ],
-          "explanation_ru": "Constantly с continuous передаёт раздражение; форма present simple с наречием тоже допустима и просто звучит нейтрально.",
+          "prompt": "Our biggest client ___ (change — use 'constantly' to sound irritated) the requirements, and the whole team is exhausted.",
+          "answer": "is constantly changing",
+          "accept": [],
+          "explanation_ru": "Always или constantly с continuous передают раздражение: «вечно всё меняет». Present simple (constantly changes) просто сообщил бы факт без оценки.",
           "difficulty": 3
         },
         {
@@ -330,7 +373,8 @@
           "prompt": "What a finish we ___ (see) here tonight! Ramos ___ (take) the ball, ___ (turn) past the defender and shoots — and it's in! The whole stadium ___ (go) wild. Ramos, who ___ (usually / not / score) with his left foot, can hardly believe it himself.",
           "gaps": [
             [
-              "are seeing"
+              "are seeing",
+              "have seen"
             ],
             [
               "takes"
@@ -349,7 +393,7 @@
               "usually does not score"
             ]
           ],
-          "explanation_ru": "Спортивный комментарий: мгновенные действия — present simple (takes, turns, shoots), происходящее вокруг — continuous (we're seeing, the stadium is going wild). Usually с отрицанием описывает обычное положение дел — simple.",
+          "explanation_ru": "Спортивный комментарий: мгновенные действия — present simple (takes, turns, shoots), происходящее вокруг — continuous (we're seeing, the stadium is going wild); про финиш можно сказать и we've seen. Usually с отрицанием описывает обычное положение дел — simple.",
           "difficulty": 2
         },
         {
@@ -448,16 +492,16 @@
         {
           "id": "c1_advanced_inversion_negative_adverbials_and_conditional_inversion_03",
           "kind": "choice",
-          "prompt": "Only when the kids were asleep ___ relax.",
+          "prompt": "Only when ___ did we realize how much work was still left.",
           "options": [
-            "could we finally",
-            "we could finally",
-            "finally we could",
-            "could finally we"
+            "the client sent the final specs",
+            "did the client send the final specs",
+            "sent the client the final specs",
+            "the client did send the final specs"
           ],
           "correct_index": 0,
-          "explanation_ru": "После only when + придаточное инверсия стоит в главной части: could we. В самом придаточном (when the kids were asleep) порядок прямой.",
-          "difficulty": 1,
+          "explanation_ru": "После only when инверсия стоит в главной части (did we realize), а само придаточное с when сохраняет прямой порядок: the client sent. Did the client send — лишняя инверсия в придаточном, sent the client ломает порядок слов, а эмфатическое did send здесь не к месту.",
+          "difficulty": 2,
           "diagnostic": true
         },
         {
@@ -633,15 +677,15 @@
         {
           "id": "c1_advanced_word_order_02",
           "kind": "choice",
-          "prompt": "She explained ___.",
+          "prompt": "In her email, the manager explained ___.",
           "options": [
-            "to us the reasons for her sudden decision",
-            "us the reasons for her sudden decision",
-            "the reasons us for her sudden decision",
-            "for us the reasons of her sudden decision"
+            "to the whole team why the budget had been cut",
+            "the whole team why the budget had been cut",
+            "why the budget had been cut to the whole team",
+            "to the whole team the reasons of the budget cut"
           ],
           "correct_index": 0,
-          "explanation_ru": "Explain не берёт двойного дополнения: explain to us. При длинном дополнении короткое to us идёт первым, а тяжёлая группа уходит в конец. Us без to — калька с «объяснила нам», reasons of — калька с «причины решения».",
+          "explanation_ru": "Explain не берёт двойного дополнения: explain to the team. Короткое to the whole team идёт первым, а тяжёлое придаточное why… уходит в конец; в обратном порядке to the whole team цепляется к cut («урезали до всей команды»). Explain the team без to — калька с «объяснила команде», reasons of — калька с «причины сокращения».",
           "difficulty": 2,
           "diagnostic": true
         },
@@ -687,33 +731,37 @@
         {
           "id": "c1_advanced_word_order_06",
           "kind": "gap",
-          "prompt": "I had never seen ___ (so / beautiful / a / sunset) before.",
-          "answer": "so beautiful a sunset",
-          "accept": [],
-          "explanation_ru": "После so, too и as прилагательное выходит перед артиклем: so beautiful a sunset. Порядок a so beautiful sunset невозможен; тот же смысл даёт such a beautiful sunset.",
+          "prompt": "Rewrite with 'so' instead of 'such': I've never had to deal with such a demanding client before. → I've never had to deal with ___ before.",
+          "answer": "so demanding a client",
+          "accept": [
+            "a client so demanding"
+          ],
+          "explanation_ru": "После so, too и as прилагательное выходит перед артиклем: so demanding a client — книжный вариант such a demanding client. Порядок a so demanding client невозможен; допустимо и a client so demanding.",
           "difficulty": 2
         },
         {
           "id": "c1_advanced_word_order_07",
           "kind": "correct",
-          "prompt": "The responsible person for the delay has been fired.",
-          "answer": "The person responsible for the delay has been fired.",
+          "prompt": "The responsible official for the new parking rules has resigned.",
+          "answer": "The official responsible for the new parking rules has resigned.",
           "accept": [
-            "The person who was responsible for the delay has been fired.",
-            "The person who is responsible for the delay has been fired."
+            "The official who was responsible for the new parking rules has resigned."
           ],
-          "explanation_ru": "Прилагательное с зависимыми словами (responsible for the delay) стоит после существительного: the person responsible for … Перед существительным responsible значит «ответственный по характеру».",
+          "explanation_ru": "Прилагательное с зависимыми словами (responsible for the new parking rules) стоит после существительного: the official responsible for … Перед существительным responsible значит «ответственный по характеру».",
           "difficulty": 2
         },
         {
           "id": "c1_advanced_word_order_08",
           "kind": "order",
-          "prompt": "could / hurt / you / easily / been / have / .",
-          "answer": "You could easily have been hurt.",
+          "prompt": "have / the accident / easily / avoided / could / been / .",
+          "answer": "The accident could easily have been avoided.",
           "accept": [
-            "You could have easily been hurt."
+            "The accident could have easily been avoided.",
+            "The accident could have been easily avoided.",
+            "The accident easily could have been avoided.",
+            "The accident could have been avoided easily."
           ],
-          "explanation_ru": "Наречие в цепочке вспомогательных стоит после первого из них: could easily have been hurt. В разговорной речи допустимо и could have easily been.",
+          "explanation_ru": "Нейтральная позиция наречия в цепочке вспомогательных — после первого из них: could easily have been avoided. В речи его ставят и ближе к причастию (could have been easily avoided) или перед модальным глаголом (easily could have been) или в конец (avoided easily), но не в начало предложения.",
           "difficulty": 3
         },
         {
@@ -723,11 +771,11 @@
           "options": [
             "Omar decided not to go.",
             "Omar didn't decide to go.",
-            "Omar decided to not going.",
-            "Omar not decided to go."
+            "Omar didn't decide whether to go.",
+            "Omar hasn't decided to go yet."
           ],
           "correct_index": 0,
-          "explanation_ru": "Not отрицает то, что стоит за ним: decided not to go — «решил не ехать». Didn't decide to go — «не принимал решения ехать», решения могло не быть вовсе. Остальные варианты неграмматичны.",
+          "explanation_ru": "Not отрицает то, что стоит за ним: decided not to go — «решил не ехать», решение принято. Didn't decide to go — «не принимал решения ехать», didn't decide whether to go — «так и не решил, ехать ли», а hasn't decided to go yet — решение ещё впереди.",
           "difficulty": 2,
           "diagnostic": true
         },
@@ -756,13 +804,14 @@
       "title_en": "Cleft sentences and fronting for information structure",
       "source_slug": "",
       "title_ru": "Расщеплённые предложения и фронтинг",
-      "summary_ru": "Расщеплённое предложение выделяет один элемент, не меняя интонации. It-cleft ставит фокус сразу после it is или it was, а остальное уходит в придаточное с that или who: It was in Lisbon that we met. Wh-cleft начинается с what, all, the thing, the last thing, the reason или where и ставит фокус после is или was: What I need is sleep; All I want is a quiet day; Where I disagree with you is the cost. Оборот all I need значит «только это и ничего больше»; после all относительное местоимение опускается или становится that, но what после all невозможно. Обратный wh-cleft подхватывает сказанное: That's what I mean; This is where it gets interesting. Разговорные рамки The thing is, … и It's not that …, it's (just) that … переносят фокус на настоящую причину. Схема the reason ... is that в письменной норме требует that, а не because.",
+      "summary_ru": "Расщеплённое предложение выделяет один элемент, не меняя интонации. It-cleft ставит фокус сразу после it is или it was, а остальное уходит в придаточное с that или who: It was in Kyoto that they got engaged. Wh-cleft начинается с what, all, the thing, the last thing, the reason или where и ставит фокус после is или was: What I need is sleep; All we need is time; Where the plan falls short is the budget. Оборот all I need значит «только это и ничего больше»; после all относительное местоимение опускается или становится that, но what после all невозможно. Обратный wh-cleft подхватывает сказанное: That's what I mean; This is where it gets interesting. Разговорные рамки The thing is, … и It's not that …, it's (just) that … переносят фокус на настоящую причину. Схема the reason ... is that в письменной норме требует that, а не because. Подлежащим бывает и целое придаточное: Whether we go depends on the weather (не If we go), What bothers me is the noise, The fact that she apologized changes nothing. That-придаточное в начале звучит книжно, поэтому в речи говорят The fact that … или выносят его в конец: It's obvious that …",
       "forms": [
         "It + be + фокус + that / who + придаточное",
         "What / All / The thing / The last thing + S + V + is / was + фокус",
         "That's / This is + what / where / why + ... (обратный wh-cleft)",
         "The thing is, + предложение; It's not that ..., it's that ...",
-        "The reason (why) + S + V + is that + предложение"
+        "The reason (why) + S + V + is that + предложение",
+        "Whether / What / The fact that + придаточное + глагол (придаточное-подлежащее)"
       ],
       "examples": [
         "It was my grandmother who taught me to swim.",
@@ -841,10 +890,14 @@
         {
           "id": "c1_cleft_sentences_and_fronting_for_information_structure_05",
           "kind": "gap",
-          "prompt": "Please don't make a fuss. The last ___ (thing / I / want) is to upset your parents.",
+          "prompt": "Please don't escalate this yet. The last ___ (= what I least want) is to upset the client right before the contract renewal.",
           "answer": "thing I want",
           "accept": [
-            "thing that I want"
+            "thing that I want",
+            "thing I want to do",
+            "thing that I want to do",
+            "thing I'd want",
+            "thing I would want"
           ],
           "explanation_ru": "The last thing I want is … — wh-cleft с фокусом в конце: «меньше всего я хочу…». Относительное местоимение после thing опускается или становится that, но не what.",
           "difficulty": 2
@@ -861,10 +914,12 @@
         {
           "id": "c1_cleft_sentences_and_fronting_for_information_structure_07",
           "kind": "gap",
-          "prompt": "He only had to sign the form. Rewrite: ___ (all / he / have to do) was sign the form.",
+          "prompt": "He only had to sign the form. → ___ was sign the form. (start with 'All')",
           "answer": "All he had to do",
           "accept": [
-            "All that he had to do"
+            "All that he had to do",
+            "All he needed to do",
+            "All that he needed to do"
           ],
           "explanation_ru": "All he had to do was + инфинитив без to — wh-cleft со значением «всего-то и нужно было». После all относительное местоимение опускается или становится that.",
           "difficulty": 3
@@ -900,15 +955,15 @@
         {
           "id": "c1_cleft_sentences_and_fronting_for_information_structure_10",
           "kind": "choice",
-          "prompt": "Where I disagree with you ___ the cost, not the design.",
+          "prompt": "A: So you don't like my plan for the garden at all?\nB: No, I like most of it. ___ is the timing — nothing will grow if you plant it all in July.",
           "options": [
-            "is",
-            "it is",
-            "that",
-            "being"
+            "Where I disagree with you",
+            "What I disagree with you",
+            "When I disagree with you",
+            "Whether I disagree with you"
           ],
           "correct_index": 0,
-          "explanation_ru": "Wh-cleft может начинаться с where: Where I disagree with you is the cost — «не согласен я с тобой в вопросе цены». Глагол be идёт сразу за придаточным; лишнее it или that ломает конструкцию.",
+          "explanation_ru": "Wh-cleft может начинаться с where: Where I disagree with you is the timing — «не согласен я с тобой в вопросе сроков». What потребовало бы предлога в конце (What I disagree with is…), а when и whether дают придаточные о времени и сомнении, которые не называют предмет несогласия.",
           "difficulty": 2,
           "diagnostic": true
         },
@@ -940,6 +995,49 @@
           ],
           "explanation_ru": "1, 3, 4 — wh-cleft: what / all + придаточное + was + фокус. 2 — it-cleft с человеком: It was my daughter who. 5 — обратный wh-cleft: that's what I keep telling. Формы «That what» и «All what» невозможны.",
           "difficulty": 3
+        },
+        {
+          "id": "c1_cleft_sentences_and_fronting_for_information_structure_12",
+          "kind": "correct",
+          "prompt": "If we can launch on Friday depends entirely on the test results.",
+          "answer": "Whether we can launch on Friday depends entirely on the test results.",
+          "accept": [
+            "Whether or not we can launch on Friday depends entirely on the test results."
+          ],
+          "explanation_ru": "Придаточное-подлежащее вводится whether, а не if: Whether we can launch… depends on… If в начале предложения читается как условие («если мы сможем…»), и фразе не хватает подлежащего.",
+          "difficulty": 2
+        },
+        {
+          "id": "c1_cleft_sentences_and_fronting_for_information_structure_13",
+          "kind": "choice",
+          "prompt": "___ the vendor missed the deadline three times in a row worries me more than the extra cost.",
+          "options": [
+            "The fact that",
+            "Whether",
+            "What",
+            "Because"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Придаточное с фактом в роли подлежащего вводится the fact that (или книжным that): «то, что поставщик трижды сорвал срок, беспокоит меня». Whether внесло бы сомнение («сорвал или нет»), what требует пропуска внутри придаточного (What worries me is…), а because не может быть подлежащим — калька с «из-за того, что».",
+          "difficulty": 2,
+          "diagnostic": true
+        },
+        {
+          "id": "c1_cleft_sentences_and_fronting_for_information_structure_14",
+          "kind": "transform",
+          "prompt": "Rewrite as a wh-cleft starting with 'What': The only important thing is that everyone gets home safely.",
+          "answer": "What matters is that everyone gets home safely.",
+          "accept": [
+            "What matters is everyone gets home safely.",
+            "What really matters is that everyone gets home safely.",
+            "What matters most is that everyone gets home safely.",
+            "What is important is that everyone gets home safely.",
+            "What is really important is that everyone gets home safely.",
+            "What counts is that everyone gets home safely.",
+            "What really counts is that everyone gets home safely."
+          ],
+          "explanation_ru": "Wh-cleft ставит фокус в конец: What matters is that … — «важно только то, что…». Придаточное с what само служит подлежащим, а после is идёт that-придаточное с главной мыслью.",
+          "difficulty": 2
         }
       ]
     },
@@ -976,7 +1074,7 @@
         {
           "id": "c1_emphatic_structures_do_did_what_clauses_it_clefts_01",
           "kind": "choice",
-          "prompt": "A: You forgot to lock the door again!\nB: I ___ lock it — somebody must have opened it after me.",
+          "prompt": "A: You forgot to feed the cat again!\nB: I ___ feed her this morning — she's just pretending to be hungry.",
           "options": [
             "did",
             "do",
@@ -984,22 +1082,22 @@
             "had"
           ],
           "correct_index": 0,
-          "explanation_ru": "Эмфатическое did подтверждает прошлый факт, в котором собеседник сомневается: I did lock it. Do относилось бы к настоящему, а was и had не сочетаются с голым инфинитивом.",
+          "explanation_ru": "Эмфатическое did подтверждает прошлый факт, в котором собеседник сомневается: I did feed her this morning. Do относилось бы к настоящему, а was и had не сочетаются с голым инфинитивом.",
           "difficulty": 1,
           "diagnostic": false
         },
         {
           "id": "c1_emphatic_structures_do_did_what_clauses_it_clefts_02",
           "kind": "choice",
-          "prompt": "This is ___ restaurant where my parents had their first date!",
+          "prompt": "We should have raised this at ___ start of the project, not two days before the deadline.",
           "options": [
             "the very",
-            "the same very",
-            "the exactly",
-            "very the"
+            "the same",
+            "the only",
+            "the real"
           ],
           "correct_index": 0,
-          "explanation_ru": "The very + существительное подчёркивает точное совпадение: «тот самый ресторан». Very стоит после артикля; the exactly и the same very — ошибки порядка и сочетаемости.",
+          "explanation_ru": "The very + существительное выделяет крайнюю точку или точное совпадение: at the very start — «в самом начале». The same — «тот же самый», the only — «единственный», the real — «настоящий»; ни одно из них не усиливает «самое начало».",
           "difficulty": 1,
           "diagnostic": true
         },
@@ -1036,25 +1134,27 @@
         {
           "id": "c1_emphatic_structures_do_did_what_clauses_it_clefts_05",
           "kind": "gap",
-          "prompt": "She says I never listen, but I ___ (listen, emphatic) — I just don't always agree.",
-          "answer": "do listen",
+          "prompt": "A: This contract is far too restrictive.\nB: I ___ (understand, emphatic) your concerns, but these terms are standard in our industry.",
+          "answer": "do understand",
           "accept": [],
-          "explanation_ru": "Эмфатическое do в настоящем: I do listen — «я же слушаю!». Смысловой глагол остаётся в первой форме.",
-          "difficulty": 1
+          "explanation_ru": "Эмфатическое do перед глаголом признаёт правоту собеседника перед возражением: I do understand your concerns, but… — «я правда понимаю, но…». Смысловой глагол остаётся в первой форме.",
+          "difficulty": 2
         },
         {
           "id": "c1_emphatic_structures_do_did_what_clauses_it_clefts_06",
           "kind": "correct",
-          "prompt": "Keep the emphatic 'did' and correct the sentence: I did understood the instructions, but I still got lost.",
-          "answer": "I did understand the instructions, but I still got lost.",
-          "accept": [],
-          "explanation_ru": "После эмфатического did смысловой глагол стоит в первой форме: did understand, а не did understood.",
+          "prompt": "Keep 'whatsoever' and correct the sentence: The investigation found whatsoever no evidence of fraud.",
+          "answer": "The investigation found no evidence whatsoever of fraud.",
+          "accept": [
+            "The investigation found no evidence of fraud whatsoever."
+          ],
+          "explanation_ru": "Whatsoever усиливает отрицание и стоит сразу после no + существительное (или в конце группы): no evidence whatsoever. Перед no оно не ставится — это калька с «вообще никаких».",
           "difficulty": 2
         },
         {
           "id": "c1_emphatic_structures_do_did_what_clauses_it_clefts_07",
           "kind": "gap",
-          "prompt": "We only realized how serious it was after the doctor called. Rewrite: It ___ (be / not / until) the doctor called that we realized how serious it was.",
+          "prompt": "We only realized how serious the problem was after the client called. → It ___ the client called that we realized how serious the problem was. (key word: until)",
           "answer": "was not until",
           "accept": [
             "wasn't until"
@@ -1065,16 +1165,16 @@
         {
           "id": "c1_emphatic_structures_do_did_what_clauses_it_clefts_08",
           "kind": "transform",
-          "prompt": "Add emphasis with do or did: She warned us about the storm.",
-          "answer": "She did warn us about the storm.",
+          "prompt": "Rewrite with emphatic 'do' to concede the point before disagreeing: Your novel has some wonderful moments, but the ending doesn't work.",
+          "answer": "Your novel does have some wonderful moments, but the ending doesn't work.",
           "accept": [],
-          "explanation_ru": "Эмфатическое did встаёт перед смысловым глаголом, а warned возвращается в первую форму warn.",
-          "difficulty": 2
+          "explanation_ru": "Эмфатическое does перед have признаёт достоинство перед возражением: «в романе действительно есть прекрасные моменты, но…». Has возвращается в первую форму have.",
+          "difficulty": 3
         },
         {
           "id": "c1_emphatic_structures_do_did_what_clauses_it_clefts_09",
           "kind": "cloze",
-          "prompt": "I know you think I forgot your birthday, but I ___ (remember, emphatic) — I just couldn't get to a phone. I was stuck at the airport in Denver with no signal ___ (an emphatic word after a negative noun phrase). It was the ___ (emphatic: exact) worst day of my whole trip. It ___ (be / not / until) I landed in Boston that I could call anyone. I ___ (hope, emphatic) you'll forgive me.",
+          "prompt": "I know you think I forgot your birthday, but I ___ (remember, emphatic) — I just couldn't get to a phone. I was stuck at the airport in Denver with no signal ___ (an emphatic word after a negative noun phrase). It was the ___ (emphatic: exact) worst day of my whole trip. It ___ (key word: until) I landed in Boston that I could call anyone. I ___ (hope, emphatic) you'll forgive me.",
           "gaps": [
             [
               "did remember"

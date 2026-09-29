@@ -378,6 +378,21 @@
           ],
           "explanation_ru": "После would rather — инфинитив без to (go, visit), второй вариант сравнения вводится словом than, а отрицание — not перед инфинитивом: would rather not argue.",
           "difficulty": 1
+        },
+        {
+          "id": "b1_would_rather_would_sooner_12",
+          "kind": "choice",
+          "prompt": "I'd rather you ___ my laptop without asking. I have important work files on it.",
+          "options": [
+            "didn't use",
+            "don't use",
+            "wouldn't use",
+            "not to use"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Когда предпочтение касается другого человека, после would rather идёт подлежащее и past simple, хотя речь о настоящем: I'd rather you didn't use. Настоящее don't use и would после you здесь не ставятся, а частица to после would rather не нужна ни с кем: I'd rather not lend it.",
+          "difficulty": 2,
+          "diagnostic": true
         }
       ]
     },
@@ -430,7 +445,7 @@
         {
           "id": "b1_an_the_no_article_02",
           "kind": "choice",
-          "prompt": "I was so tired that I ___ at nine.",
+          "prompt": "The kids were exhausted after a day at the beach, so they ___ early.",
           "options": [
             "went to bed",
             "went to the bed",
@@ -902,7 +917,8 @@
               "is being sold"
             ],
             [
-              "has already been moved"
+              "has already been moved",
+              "was already moved"
             ],
             [
               "will be installed",
@@ -913,7 +929,7 @@
               "must be cooked"
             ]
           ],
-          "explanation_ru": "Везде действие направлено на подлежащее, поэтому пассив, а время показывает be: is being sold — прямо сейчас, has already been moved — результат к настоящему, will be installed — будущее, must be cooked — модальный глагол + be + третья форма.",
+          "explanation_ru": "Везде действие направлено на подлежащее, поэтому пассив, а время показывает be: is being sold — прямо сейчас, has already been moved — результат к настоящему (в американской речи и was already moved), will be installed — будущее, must be cooked — модальный глагол + be + третья форма.",
           "difficulty": 3
         },
         {
@@ -940,6 +956,17 @@
             "The winners were chosen by the judges."
           ],
           "explanation_ru": "Исполнитель введён через by, значит нужен пассив, а в present perfect passive между have и третьей формой обязательно стоит been.",
+          "difficulty": 2
+        },
+        {
+          "id": "b1_passive_verb_forms_12",
+          "kind": "order",
+          "prompt": "been / to Denver / has / the / canceled / flight / because of the storm / .",
+          "answer": "The flight to Denver has been canceled because of the storm.",
+          "accept": [
+            "Because of the storm, the flight to Denver has been canceled."
+          ],
+          "explanation_ru": "Рейс отменили, а не он сам что-то отменил, поэтому пассив, а связь с настоящим даёт present perfect: has been canceled. Been обязательно стоит между has и третьей формой.",
           "difficulty": 2
         }
       ]
@@ -1293,9 +1320,10 @@
       "title_en": "B1 Phrasal verbs 3: Exercises and explanation",
       "source_slug": "b1-phrasal-verbs-3-exercises-and-explanation",
       "title_ru": "Фразовые глаголы B1: часть 3",
-      "summary_ru": "Третий набор фразовых глаголов уровня B1: set up, look up, come across, deal with, put up with, sort out, work out, go on, bring up. Set up значит «создать, основать» — компанию, систему или встречу. Look up — «посмотреть в словаре или справочнике»; дополнение можно поставить между частями: look it up. Come across значит «случайно наткнуться» на вещь или человека. Put up with состоит из трёх частей, и обе частицы обязательны: значение — «мириться, терпеть». Work out значит «вычислить, разобраться», а sort out — «уладить проблему». Bring up — «поднять тему» в разговоре, а go on — «продолжать».",
+      "summary_ru": "Третий набор фразовых глаголов уровня B1: set up, set off, look up, come across, deal with, put up with, sort out, work out, go on, bring up. Set up значит «создать, основать» — компанию, систему или встречу, а set off — «отправиться в путь»: We set off at six. Look up — «посмотреть в словаре или справочнике»; дополнение можно поставить между частями: look it up. Come across значит «случайно наткнуться» на вещь или человека. Put up with состоит из трёх частей, и обе частицы обязательны: значение — «мириться, терпеть». Work out значит «вычислить, разобраться», а sort out — «уладить проблему». Bring up — «поднять тему» в разговоре, а go on — «продолжать».",
       "forms": [
         "set up + дополнение — основать, настроить",
+        "set off — отправиться в путь",
         "look + дополнение + up — посмотреть в справочнике",
         "come across + дополнение — случайно найти",
         "put up with + дополнение — терпеть, мириться",
@@ -1429,7 +1457,7 @@
         {
           "id": "b1_b1_phrasal_verbs_3_exercises_and_explanation_10",
           "kind": "cloze",
-          "prompt": "Use phrasal verbs. When my parents retired, they ___ (= opened) a small guesthouse by the sea. At first they had to ___ (= handle) a lot of problems. They ___ (= tolerated) a leaking roof and noisy guests for two years. Now everything is ___ (sort) out, and they love their new life.",
+          "prompt": "Use phrasal verbs. When my parents retired, they ___ (= opened) a small guesthouse by the sea. At first they had to ___ (= handle) a lot of problems. They ___ (= tolerated) a leaking roof and noisy guests for two years. Now everything is ___ (= fixed), and they love their new life.",
           "gaps": [
             [
               "set up"
@@ -1441,10 +1469,12 @@
               "put up with"
             ],
             [
-              "sorted"
+              "sorted out",
+              "worked out",
+              "straightened out"
             ]
           ],
-          "explanation_ru": "Set up — основать дело, deal with — заниматься проблемой, put up with — терпеть, мириться, sort out — уладить. Во фразовом глаголе время меняет только первое слово: put up with (прошедшее совпадает с настоящим), sorted out.",
+          "explanation_ru": "Set up — основать дело, deal with — заниматься проблемой, put up with — терпеть, мириться, sort out — уладить: everything is sorted out. Во фразовом глаголе время меняет только первое слово: put up with (прошедшее совпадает с настоящим), sorted out.",
           "difficulty": 3
         }
       ]
@@ -1797,6 +1827,17 @@
           "explanation_ru": "Период, который начался в прошлом и продолжается сейчас, требует present perfect, а его начало вводит since. Русское настоящее «живу» здесь не переводится ни present simple, ни continuous.",
           "difficulty": 2,
           "diagnostic": true
+        },
+        {
+          "id": "b1_for_since_from_difference_12",
+          "kind": "transform",
+          "prompt": "Переведи на английский: «Мы знакомы с 2015 года».",
+          "answer": "We have known each other since 2015.",
+          "accept": [
+            "We have been acquainted since 2015."
+          ],
+          "explanation_ru": "Состояние, которое началось в прошлом и длится до сих пор, — present perfect: have known. Know не ставится в continuous, а точка отсчёта (2015) вводится через since. Русское «мы знакомы» — это we have known each other, а не we are familiar.",
+          "difficulty": 2
         }
       ]
     },
@@ -1913,7 +1954,9 @@
           "kind": "gap",
           "prompt": "She has two cats. One is white and ___ (other) is black.",
           "answer": "the other",
-          "accept": [],
+          "accept": [
+            "the other one"
+          ],
           "explanation_ru": "Из двух предметов второй всегда конкретный, поэтому нужен определённый артикль: the other.",
           "difficulty": 2
         },
@@ -1931,7 +1974,7 @@
         {
           "id": "b1_another_other_others_the_other_the_others_09",
           "kind": "cloze",
-          "prompt": "We have three kids. One loves soccer, and ___ two prefer music. Our son wants ___ guitar for his birthday, although he already has one. Some parents think music lessons are too expensive, but ___ say they are worth every cent. Are there any ___ activities you would recommend for kids?",
+          "prompt": "We have three kids. One loves soccer, and ___ two prefer music. Our son wants ___ guitar for his birthday, although he already has one. Some parents think music lessons are a waste of money, but ___ say they build confidence. Are there any ___ activities you would recommend for kids?",
           "gaps": [
             [
               "the other"

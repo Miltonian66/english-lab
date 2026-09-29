@@ -607,7 +607,8 @@
               "would"
             ],
             [
-              "got used to"
+              "got used to",
+              "became used to"
             ],
             [
               "usually wears"
@@ -640,7 +641,8 @@
             "When you were a kid, did you use to play the piano?"
           ],
           "explanation_ru": "В вопросе с used to работает вспомогательный did, а сам глагол теряет -d: Did you use to play? Did you used to — частая ошибка: прошедшее время уже выражено словом did.",
-          "difficulty": 2
+          "difficulty": 2,
+          "diagnostic": false
         },
         {
           "id": "b1_usually_used_to_be_used_to_get_used_to_14",
@@ -649,7 +651,8 @@
           "answer": "Did you use to live in the city center?",
           "accept": [],
           "explanation_ru": "Вопрос о прошлой привычке строится через did: Did + подлежащее + use to + инфинитив. После did форма use to пишется без -d.",
-          "difficulty": 2
+          "difficulty": 2,
+          "diagnostic": false
         }
       ]
     },
@@ -874,7 +877,7 @@
         {
           "id": "b1_gerund_or_infinitive_do_to_do_doing_15",
           "kind": "cloze",
-          "prompt": "My grandfather stopped ___ (smoke) twenty years ago, and he says it was the best decision of his life. He still remembers ___ (throw) his last pack of cigarettes into a lake. Now he always tells me: \"Remember ___ (take) care of your health.\" And every year he never forgets ___ (call) me on my birthday.",
+          "prompt": "My grandfather stopped ___ (smoke) twenty years ago, and he says it was the best decision of his life. He still remembers ___ (throw) his last pack of cigarettes into a lake. Now he always tells me: \"Remember ___ (take) care of your health.\" And he never forgets ___ (call) me on my birthday.",
           "gaps": [
             [
               "smoking"

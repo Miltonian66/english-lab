@@ -2372,7 +2372,8 @@
           "accept": [
             "do not have to",
             "don't need to",
-            "do not need to"
+            "do not need to",
+            "needn't"
           ],
           "explanation_ru": "Смысл — «платить не обязательно», а отсутствие необходимости передаёт don't have to (или don't need to). Mustn't значило бы запрет: платить нельзя.",
           "difficulty": 2
@@ -2387,7 +2388,8 @@
             "You don't have to answer this email, it is not important.",
             "You don't need to answer this email. It is not important.",
             "You don't need to answer this email, it is not important.",
-            "You needn't answer this email. It is not important."
+            "You needn't answer this email. It is not important.",
+            "You needn't answer this email, it is not important."
           ],
           "explanation_ru": "Mustn't означало бы запрет, а по смыслу письмо просто необязательно, поэтому don't have to.",
           "difficulty": 3

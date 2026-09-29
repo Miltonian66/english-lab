@@ -593,10 +593,13 @@
             "I usually travel to work by bus.",
             "I usually commute to work by bus.",
             "Usually I go to work by bus.",
-            "Usually I get to work by bus."
+            "Usually I get to work by bus.",
+            "Usually I travel to work by bus.",
+            "Usually I commute to work by bus."
           ],
           "explanation_ru": "Go to work и by bus — устойчивые сочетания без артикля: речь о привычном месте и о способе передвижения, а не о конкретном автобусе. The появляется, только когда автобус конкретный: I took the bus to work. Go to the work by the bus — ошибка в обоих местах.",
-          "difficulty": 2
+          "difficulty": 2,
+          "diagnostic": false
         }
       ]
     },
@@ -1019,7 +1022,10 @@
           "kind": "transform",
           "prompt": "Rewrite in the passive: Nobody wants people to forget them.",
           "answer": "Nobody wants to be forgotten.",
-          "accept": [],
+          "accept": [
+            "No one wants to be forgotten.",
+            "Nobody wants to be forgotten by people."
+          ],
           "explanation_ru": "Пассивный инфинитив — to be + третья форма: want to be forgotten. Подлежащее само испытывает действие, поэтому want to forget (самому забыть) не подходит, а being forgotten после want не ставится.",
           "difficulty": 3
         }
@@ -1205,7 +1211,9 @@
           "accept": [
             "I gave up sugar last year.",
             "Last year I gave up eating sugar.",
-            "Last year I gave up sugar."
+            "Last year I gave up sugar.",
+            "I gave sugar up last year.",
+            "Last year I gave sugar up."
           ],
           "explanation_ru": "Give up — «бросить привычку»; глагол после него стоит в форме на -ing: gave up eating sugar (или просто gave up sugar). Gave up to eat — ошибка: инфинитив после give up не ставится.",
           "difficulty": 2
@@ -1380,14 +1388,14 @@
         {
           "id": "b1_b1_phrasal_verbs_2_exercises_and_explanation_11",
           "kind": "transform",
-          "prompt": "Rewrite using a phrasal verb with 'turn': Maria refused the job offer because the salary was too low.",
-          "answer": "Maria turned down the job offer because the salary was too low.",
+          "prompt": "Rewrite using a phrasal verb with 'turn': Maria refused the invitation because she was too tired.",
+          "answer": "Maria turned down the invitation because she was too tired.",
           "accept": [
-            "Maria turned the job offer down because the salary was too low.",
-            "Because the salary was too low, Maria turned down the job offer.",
-            "Because the salary was too low, Maria turned the job offer down."
+            "Maria turned the invitation down because she was too tired.",
+            "Because she was too tired, Maria turned down the invitation.",
+            "Because she was too tired, Maria turned the invitation down."
           ],
-          "explanation_ru": "Turn down — «отклонить предложение»; существительное ставится после частицы или между частями: turned down the offer или turned the offer down. Turn off значит «выключить», а turn up — «появиться».",
+          "explanation_ru": "Turn down — «отклонить» предложение, приглашение или просьбу; существительное ставится после частицы или между частями: turned down the invitation или turned the invitation down. Turn off значит «выключить», а turn up — «появиться».",
           "difficulty": 2
         }
       ]
@@ -1560,10 +1568,10 @@
         {
           "id": "b1_b1_phrasal_verbs_3_exercises_and_explanation_11",
           "kind": "transform",
-          "prompt": "Rewrite using a phrasal verb with 'put': I can't tolerate his loud music anymore.",
-          "answer": "I can't put up with his loud music anymore.",
+          "prompt": "Rewrite using a phrasal verb with 'put': My sister has to tolerate a very noisy roommate.",
+          "answer": "My sister has to put up with a very noisy roommate.",
           "accept": [],
-          "explanation_ru": "Put up with — «терпеть, мириться» — состоит из трёх частей, и все они обязательны: put up with his music. Без with (put up his music) фраза теряет смысл «терпеть».",
+          "explanation_ru": "Put up with — «терпеть, мириться» — состоит из трёх частей, и все они обязательны: put up with a noisy roommate. Без with смысл меняется: put somebody up — «приютить у себя».",
           "difficulty": 2
         }
       ]

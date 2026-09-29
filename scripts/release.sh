@@ -7,6 +7,8 @@
 #   scripts/release.sh status   расхождение прода с origin/main, CI и сервис;
 #                               код выхода 0 — расхождения нет
 #   scripts/release.sh deploy   выкатить origin/main
+#   scripts/release.sh restart  перезапустить тот же код после смены .env;
+#                               отката нет, код не менялся
 #
 # RELEASE_SERVICE и RELEASE_REF переопределяют сервис и цель — только для
 # проверки самого скрипта на копии репозитория.
@@ -16,6 +18,8 @@ SERVICE=${RELEASE_SERVICE:-english-tutor-bot.service}
 TARGET_REF=${RELEASE_REF:-origin/main}
 UNIT=deploy/english-tutor-bot.service
 WORKFLOW=ci.yml
+# Справка печатается из этого файла, а не из боевого каталога, куда ниже cd.
+SELF=$(realpath "$0")
 PROD=$(git worktree list --porcelain | awk 'NR == 1 {print $2}')
 cd "$PROD"
 
@@ -132,8 +136,23 @@ cmd_deploy() {
     die "$(short "$target") не поднялся, прод возвращён на $(short "$prev"); main впереди прода — исправь через PR"
 }
 
+# .env читается только при старте сервиса, поэтому смена модели или ключа
+# требует перезапуска без нового коммита. Код не меняется, откатывать нечего:
+# не поднялся — ошибка в конфигурации, и её видно в журнале.
+cmd_restart() {
+    [[ -z $(git status --porcelain) ]] \
+        || die "в боевом каталоге правки — выясни их происхождение: scripts/release.sh status"
+    if restart; then
+        echo "release: сервис перезапущен на $(short "$(git rev-parse HEAD)"), на связи"
+        return
+    fi
+    journalctl --user -u "$SERVICE" -n 30 --no-pager -q >&2 || true
+    die "сервис не поднялся после перезапуска — проверь .env по журналу выше"
+}
+
 case ${1:-} in
     status) cmd_status ;;
     deploy) cmd_deploy ;;
-    *) sed -n '2,13p' "$0" | sed 's/^# \{0,1\}//'; exit 2 ;;
+    restart) cmd_restart ;;
+    *) sed -n '2,14p' "$SELF" | sed 's/^# \{0,1\}//'; exit 2 ;;
 esac

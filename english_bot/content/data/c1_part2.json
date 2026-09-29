@@ -497,10 +497,10 @@
             "the client sent the final specs",
             "did the client send the final specs",
             "sent the client the final specs",
-            "the client did send the final specs"
+            "the client sends the final specs"
           ],
           "correct_index": 0,
-          "explanation_ru": "После only when инверсия стоит в главной части (did we realize), а само придаточное с when сохраняет прямой порядок: the client sent. Did the client send — лишняя инверсия в придаточном, sent the client ломает порядок слов, а эмфатическое did send здесь не к месту.",
+          "explanation_ru": "После only when инверсия стоит в главной части (did we realize), а само придаточное с when сохраняет прямой порядок: the client sent. Did the client send — лишняя инверсия в придаточном, sent the client ломает порядок слов, а sends — настоящее время в рассказе о прошлом.",
           "difficulty": 2,
           "diagnostic": true
         },
@@ -742,12 +742,12 @@
         {
           "id": "c1_advanced_word_order_07",
           "kind": "correct",
-          "prompt": "The responsible official for the new parking rules has resigned.",
-          "answer": "The official responsible for the new parking rules has resigned.",
+          "prompt": "The responsible person for the new parking rules has resigned.",
+          "answer": "The person responsible for the new parking rules has resigned.",
           "accept": [
-            "The official who was responsible for the new parking rules has resigned."
+            "The person who was responsible for the new parking rules has resigned."
           ],
-          "explanation_ru": "Прилагательное с зависимыми словами (responsible for the new parking rules) стоит после существительного: the official responsible for … Перед существительным responsible значит «ответственный по характеру».",
+          "explanation_ru": "Прилагательное с зависимыми словами (responsible for the new parking rules) стоит после существительного: the person responsible for … Перед существительным responsible значит «ответственный по характеру, надёжный» (a responsible person).",
           "difficulty": 2
         },
         {

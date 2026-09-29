@@ -201,11 +201,11 @@
       "title_en": "Subtle aspect: perfect continuous forms in narrative and argument",
       "source_slug": "",
       "title_ru": "Тонкости аспекта: перфектно-длительные формы",
-      "summary_ru": "Перфектно-длительные формы сочетают связь с точкой отсчёта и протяжённость процесса, но на C2 важнее их оттенки в речи и аргументации. Вывод по следам и упрёк: Someone's been going through my files — видно, что процесс шёл. Недовольство повторяющимся: You've been borrowing my charger again. Долгое намерение как извинение: I've been meaning to ask you — «всё собирался»; в пересказе прошлого — had been meaning. Давний спор: Scientists have been questioning the model for decades подаёт полемику как незавершённую, а have questioned — как факт без длительности. Will have been + -ing бывает не только про будущее, но и уверенным предположением о том, что уже происходило: The guests will have been driving for six hours, so they'll be starving. Past perfect continuous в рассказе вскрывает то, что тянулось за кадром: It emerged that the firm had been quietly settling claims for years. Результат и счёт по-прежнему требуют простой формы (had settled forty claims). Пассив перфектно-длительных форм (has been being investigated) звучит тяжеловесно, поэтому используют оборот с under: has been under investigation, under review. Глаголы состояния в этих формах не употребляются.",
+      "summary_ru": "Перфектно-длительные формы сочетают связь с точкой отсчёта и протяжённость процесса, но на C2 важнее их оттенки в речи и аргументации. Вывод по следам и упрёк: Someone's been going through my files — видно, что процесс шёл. Недовольство повторяющимся: You've been borrowing my charger again. Долгое намерение как извинение: I've been meaning to ask you — «всё собирался»; в пересказе прошлого — had been meaning. Давний спор: и Scientists have been questioning the model for decades, и have long questioned подают полемику как продолжающуюся; continuous выдвигает сам процесс, простая форма звучит нейтральнее и в академическом тексте встречается чаще. Will have been + -ing бывает не только про будущее, но и уверенным предположением о том, что уже происходило: The guests will have been driving for six hours, so they'll be starving. Past perfect continuous в рассказе вскрывает то, что тянулось за кадром: It emerged that the firm had been quietly settling claims for years. Результат и счёт по-прежнему требуют простой формы (had settled forty claims). Пассив перфектно-длительных форм (has been being investigated) звучит тяжеловесно, поэтому используют оборот с under: has been under investigation, under review. Глаголы состояния в этих формах не употребляются.",
       "forms": [
         "have/has been + V-ing — процесс до сих пор; вывод по следам; упрёк (You've been … again)",
         "I've been meaning to … / had been meaning to … — долгое намерение, извинение",
-        "have long been + V-ing — давний незавершённый спор (have long argued — факт)",
+        "have long been + V-ing / have long + V3 — давний спор, который идёт до сих пор (continuous выдвигает процесс)",
         "will have been + V-ing — уверенное предположение о том, что уже происходило",
         "had been + V-ing — скрытый процесс до момента в прошлом; had + V3 — результат и счёт",
         "has been under investigation / under review вместо has been being + V3"
@@ -283,7 +283,7 @@
           "correct_index": 0,
           "explanation_ru": "Со since нужен перфект: The inquiry has been under way since March. Русское «идёт с марта» тянет настоящее время, но is under way since невозможно. Остальные предложения верны: переговоры до момента в прошлом, раздражение повтором (again), скрытый процесс, который обнаружился позже.",
           "difficulty": 2,
-          "diagnostic": true
+          "diagnostic": false
         },
         {
           "id": "c2_subtle_aspect_perfect_continuous_forms_in_narrative_and_argument_05",
@@ -360,12 +360,14 @@
         {
           "id": "c2_subtle_aspect_perfect_continuous_forms_in_narrative_and_argument_10",
           "kind": "transform",
-          "prompt": "Rewrite using 'long' and the present perfect continuous, to present the debate as still going on: 'For many years now, economists have argued that the tax is unfair.'",
+          "prompt": "Rewrite as one sentence, using 'long' and a perfect form: 'Economists began arguing many years ago that the tax is unfair, and they still argue this.'",
           "answer": "Economists have long been arguing that the tax is unfair.",
           "accept": [
-            "Economists have long been arguing the tax is unfair."
+            "Economists have long been arguing the tax is unfair.",
+            "Economists have long argued that the tax is unfair.",
+            "Economists have long argued the tax is unfair."
           ],
-          "explanation_ru": "Long в значении «давно» встаёт между have и been: have long been arguing. Перфектно-длительная форма подаёт спор как незавершённый, а for many years now сворачивается в одно long.",
+          "explanation_ru": "Began … and still argue — спор начался давно и идёт до сих пор: это перфект, а long в значении «давно» встаёт сразу после have — have long been arguing или have long argued. Обе формы подают спор как продолжающийся; continuous выдвигает сам процесс, простая форма нейтральнее. Long argued без have значило бы, что спор закончился.",
           "difficulty": 3
         },
         {
@@ -406,9 +408,9 @@
       "level": "C2",
       "band": "C2",
       "topic": "Verb patterns",
-      "title_en": "Verb patterns with contrastive meaning: remember/regret/stop/try",
+      "title_en": "Verb patterns with contrastive meaning: go on to, come to, stop short of, purport to",
       "source_slug": "",
-      "title_ru": "Глаголы с двумя значениями: remember, regret, stop, try",
+      "title_ru": "Глагольные модели со сдвигом смысла: go on to, come to, stop short of, purport to",
       "summary_ru": "На C2 выбор между -ing, to + инфинитивом и предлогом решает смысл. Go on + -ing — продолжать то же самое, go on to + V — перейти к следующему этапу, «в итоге стать»: After law school, he went on to found a charity. Come to + V — постепенная перемена взгляда (come to trust, come to accept), а не become to. Can't help + -ing и can't help but + голый инфинитив значат одно и то же — «не могу не…», но их не смешивают. Stop short of + -ing — «не дойти до…, не решиться на». Be known to + V — «за ним водится, бывает»: The mayor has been known to cycle to work. Be sure to + V выражает уверенность говорящего (The plan is sure to fail — так считает скептик), be sure of + -ing — уверенность самого подлежащего. Книжные глаголы с инфинитивом: purport to («выдавать себя за, якобы являться»), deign to («снизойти до»), venture to («осмелиться»). В показаниях и официальной речи после recall идёт -ing или having + V3: I don't recall agreeing to that. Базовые пары remember / forget / stop / try / regret разобраны на уровне B2.",
       "forms": [
         "go on + V-ing (продолжать то же) ↔ go on to + V (следующий этап)",

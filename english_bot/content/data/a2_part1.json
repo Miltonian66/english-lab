@@ -76,15 +76,15 @@
     {
      "id": "a2_comparative_superlative_adjectives_adverbs_04",
      "kind": "choice",
-     "prompt": "The weather today is ___ than yesterday.",
+     "prompt": "My sister drives ___ than I do — she's never had an accident.",
      "options": [
-      "bad",
-      "worse",
-      "worst",
-      "more bad"
+      "more well",
+      "better",
+      "best",
+      "more good"
      ],
      "correct_index": 1,
-     "explanation_ru": "У bad неправильная сравнительная форма worse; worst - превосходная и требует the.",
+     "explanation_ru": "Drive — действие, поэтому говорят о том, как водят, наречием well, а его сравнительная форма неправильная — better: She drives better than I do. More well и more good не говорят, а best — превосходная степень, она сравнивает со всеми и требует the.",
      "difficulty": 2
     },
     {
@@ -1510,17 +1510,17 @@
     {
      "id": "a2_should_shouldnt_02",
      "kind": "choice",
-     "prompt": "It's very hot in here. ___ I open the window?",
+     "prompt": "A: I have a job interview at a bank tomorrow. ___ wear a suit?\nB: Yes, I think you should.",
      "options": [
-      "Should",
-      "Do",
-      "Will",
-      "Must"
+      "Should I",
+      "Do I should",
+      "Should I to",
+      "Must I to"
      ],
      "correct_index": 0,
-     "explanation_ru": "Предлагая помощь или спрашивая совета, говорят Should I...? без do. Do I open...? спрашивает о привычке, Will I open...? - о будущем факте, а Must I...? - об обязанности.",
+     "explanation_ru": "Спрашивая совета, ставят should перед подлежащим, а глагол — сразу за ним, без to: Should I wear…? Should сам строит вопрос, поэтому do с ним не нужен (Do I should — ошибка), а после should и must частица to не ставится.",
      "difficulty": 1,
-     "diagnostic": false
+     "diagnostic": true
     },
     {
      "id": "a2_should_shouldnt_03",

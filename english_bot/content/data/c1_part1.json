@@ -232,7 +232,7 @@
       "title_en": "The subjunctive in English: Present and past",
       "source_slug": "the-subjunctive-in-english-present-and-past",
       "title_ru": "Сослагательное наклонение: настоящее и прошедшее",
-      "summary_ru": "Сослагательное наклонение в английском сохранилось в двух формах. Настоящее сослагательное — это инфинитив без to для всех лиц; оно стоит в придаточном после глаголов требования и совета (suggest, insist, demand, recommend, propose, require, order) и после оборотов it is essential / vital / important that. Отрицание строится как not + инфинитив, без вспомогательного do: that he not be told. В американском варианте это норма и устной, и письменной речи, в британском чаще пишут should + инфинитив. Важная тонкость: субъюнктив ставится, только когда речь о требовании или совете. Если insist значит «настаивать, что это правда», а suggest — «указывать на, свидетельствовать», нужна обычная форма: She insisted that the bill was correct; The study suggests that coffee is harmless. Прошедшее сослагательное — форма were для всех лиц после if, wish, as if, as though, I'd rather и it's time: она обозначает не прошлое, а нереальность. Тот же сдвиг назад действует после wish, if only и I'd rather + другой человек: past simple говорит о настоящем или будущем (I'd rather we didn't go), past perfect — о прошлом (I'd rather we hadn't gone). После it's (high / about) time + подлежащее — только past simple, хотя речь о настоящем: It's time we left. Застывшие формулы вроде be that as it may разбираются в отдельной теме уровня C2.",
+      "summary_ru": "Сослагательное наклонение в английском сохранилось в двух формах. Настоящее сослагательное — это инфинитив без to для всех лиц; оно стоит в придаточном после глаголов требования и совета (suggest, insist, demand, recommend, propose, require, order) и после оборотов it is essential / vital / important that. Отрицание строится как not + инфинитив, без вспомогательного do: that he not be told. В американском варианте это норма и устной, и письменной речи, в британском чаще пишут should + инфинитив. Важная тонкость: субъюнктив ставится, только когда речь о требовании или совете. Если insist значит «настаивать, что это правда», а suggest — «указывать на, свидетельствовать», нужна обычная форма: She insisted that the bill was correct; The study suggests that coffee is harmless. Прошедшее сослагательное — форма were для всех лиц после if, wish, as if, as though, I'd rather и it's time: она обозначает не прошлое, а нереальность. Тот же сдвиг назад действует после wish, if only и I'd rather + другой человек: past simple говорит о настоящем или будущем (I'd rather we didn't go), past perfect — о прошлом (I'd rather we hadn't gone). После it's (high / about) time + подлежащее — прошедшее время, обычно past simple, хотя речь о настоящем: It's time we left (It's time we were leaving тоже возможно). Застывшие формулы вроде be that as it may разбираются в отдельной теме уровня C2.",
       "forms": [
         "suggest / insist / demand / recommend / require + that + подлежащее + инфинитив без to",
         "It is essential / vital / important + that + подлежащее + инфинитив без to",
@@ -780,7 +780,7 @@
         {
           "id": "c1_advanced_modal_verbs_will_would_and_should_03",
           "kind": "choice",
-          "prompt": "A: The sales rep swears this is the best car in its class.\nB: Well, he ___ say that. He's paid on commission!",
+          "prompt": "A: The sales rep swears this is the best car in its class.\nB: Well, he ___ say that, wouldn't he? He's paid on commission!",
           "options": [
             "would",
             "will",
@@ -788,7 +788,7 @@
             "could"
           ],
           "correct_index": 0,
-          "explanation_ru": "Would say that — «ну конечно, что ещё он скажет»: предсказуемая реакция человека, которому это выгодно. Will say было бы прогнозом о будущем, should say — советом или обязанностью, could say — просто возможностью.",
+          "explanation_ru": "He would say that, wouldn't he? — устойчивая реплика «ну конечно, что ещё он скажет»: предсказуемая реакция человека, которому это выгодно; хвостик wouldn't he повторяет would. Will say было бы прогнозом о будущем, should say — советом или обязанностью, could say — просто возможностью.",
           "difficulty": 2,
           "diagnostic": true
         },
@@ -1064,7 +1064,7 @@
         {
           "id": "c1_hedging_and_tentative_language_softening_claims_05",
           "kind": "choice",
-          "prompt": "According to former workers, the factory ___ ignored repeated safety warnings, although its owners deny this.",
+          "prompt": "The factory ___ ignored repeated safety warnings, although nothing has been proven and its owners deny it.",
           "options": [
             "allegedly",
             "arguably",
@@ -1072,7 +1072,7 @@
             "undoubtedly"
           ],
           "correct_index": 0,
-          "explanation_ru": "Allegedly — «якобы, по утверждению»: так передают обвинение, которое не доказано и оспаривается. Arguably — «пожалуй, можно утверждать» (о мнениях и оценках), admittedly — «надо признать» (уступка от своего лица), undoubtedly — «несомненно», что противоречит словам владельцев.",
+          "explanation_ru": "Allegedly — «якобы, по утверждению»: так передают обвинение, которое не доказано и оспаривается. Источник при нём не называют: According to former workers … allegedly — двойное указание. Arguably — «пожалуй, можно утверждать» (о мнениях и оценках), admittedly — «надо признать» (уступка от своего лица), undoubtedly — «несомненно», что противоречит словам nothing has been proven.",
           "difficulty": 2,
           "diagnostic": true
         },
@@ -1487,7 +1487,7 @@
         {
           "id": "c1_collocation_and_register_formal_vs_informal_equivalents_05",
           "kind": "choice",
-          "prompt": "Formal rewrite: 'Can we ask for more time to finish the report?' → 'We would like to ___ an extension to the deadline.'",
+          "prompt": "Formal rewrite: 'Can we ask for more time to finish the report?' → 'We would like to ___ an extension of the deadline.'",
           "options": [
             "request",
             "demand",
@@ -1495,7 +1495,7 @@
             "solicit"
           ],
           "correct_index": 0,
-          "explanation_ru": "Request — формальный эквивалент ask for: вежливая просьба. Demand — «требовать», слишком резко для просьбы; require — «нуждаться, требовать как условие» (The job requires a license); solicit говорят о мнениях, предложениях и пожертвованиях (solicit feedback), а не о продлении срока.",
+          "explanation_ru": "Request — формальный эквивалент ask for: вежливая просьба (request an extension of the deadline). Demand — «требовать», слишком резко для просьбы; require — «нуждаться, требовать как условие» (The job requires a license); solicit говорят о мнениях, предложениях и пожертвованиях (solicit feedback), а не о продлении срока.",
           "difficulty": 2,
           "diagnostic": true
         },

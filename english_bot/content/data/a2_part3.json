@@ -470,12 +470,12 @@
         {
           "id": "a2_first_conditional_future_time_clauses_08",
           "kind": "order",
-          "prompt": "when / call / I'll / home / you / I / get / .",
-          "answer": "I'll call you when I get home.",
+          "prompt": "before / I'll / the lights / turn off / I / leave / .",
+          "answer": "I'll turn off the lights before I leave.",
           "accept": [
-            "When I get home, I'll call you."
+            "Before I leave, I'll turn off the lights."
           ],
-          "explanation_ru": "Будущее will стоит в главной части, а после when идёт Present Simple get; порядок частей можно поменять местами.",
+          "explanation_ru": "Будущее will стоит в главной части, а после before о будущем говорят в Present Simple: before I leave, не before I'll leave. Части можно поменять местами, тогда после придаточного ставят запятую.",
           "difficulty": 3
         },
         {
@@ -1347,12 +1347,12 @@
         {
           "id": "a2_present_continuous_future_arrangements_05",
           "kind": "gap",
-          "prompt": "A: ___ (you/come) to Omar's party tomorrow?\nB: Yes, I'll be there at eight.",
+          "prompt": "A: ___ (you/come) to Omar's party tomorrow?\nB: Yes, I am. Lena is picking me up at seven.",
           "answer": "Are you coming",
           "accept": [
             "Are you going to come"
           ],
-          "explanation_ru": "О договорённости на завтра спрашивают в Present Continuous: are перед подлежащим и глагол с -ing — Are you coming…? Подходит и Are you going to come…?",
+          "explanation_ru": "О договорённости на завтра спрашивают в Present Continuous: are перед подлежащим и глагол с -ing — Are you coming…? Краткий ответ Yes, I am показывает, что вопрос начинался с are; подходит и Are you going to come…? Will you come…? звучало бы как просьба или приглашение, и ответили бы Yes, I will.",
           "difficulty": 1
         },
         {

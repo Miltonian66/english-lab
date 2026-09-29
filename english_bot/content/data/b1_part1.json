@@ -713,7 +713,7 @@
       "title_en": "So, such, such a, so much, so many",
       "source_slug": "so-such-such-a-so-much-so-many",
       "title_ru": "So, such, such a, so much, so many",
-      "summary_ru": "So усиливает прилагательное или наречие: so tired, so quickly. Such стоит перед существительным, и если существительное исчисляемое в единственном числе, обязателен артикль: such a long day, such an interesting book. Перед множественным числом и перед неисчисляемыми существительными артикль не ставится: such nice people, such bad weather. Для количества используются so much с неисчисляемыми и so many с исчисляемыми во множественном числе: so much work, so many people. Все эти конструкции часто вводят следствие с помощью that: It was such a long meeting that I fell asleep. Порядок слов здесь жёсткий: варианты so a long day и such tired невозможны. Если следствие отрицательное («такой тяжёлый, что не смог поднять»), его часто сворачивают в too + прилагательное + to-инфинитив: The box was too heavy to lift. Enough — «достаточно» — ставится после прилагательного: old enough to drive, not warm enough. Too — «слишком» — перед ним: too young to drive, поэтому too young = not old enough.",
+      "summary_ru": "So усиливает прилагательное или наречие: so tired, so quickly. Such стоит перед существительным, и если существительное исчисляемое в единственном числе, обязателен артикль: such a long day, such an interesting book. Перед множественным числом и перед неисчисляемыми существительными артикль не ставится: such nice people, such bad weather. Для количества используются so much с неисчисляемыми и so many с исчисляемыми во множественном числе: so much work, so many people. Все эти конструкции часто вводят следствие с помощью that: It was such a long meeting that I fell asleep. Порядок слов здесь жёсткий: варианты so a long day и such tired невозможны. Если следствие отрицательное («такой тяжёлый, что не смог поднять»), его часто сворачивают в too + прилагательное + to-инфинитив: The box was too heavy to lift. Enough — «достаточно» — ставится после прилагательного: old enough to vote, not warm enough. Too — «слишком» — перед ним: too young to vote, поэтому too young = not old enough.",
       "forms": [
         "so + прилагательное или наречие: so tired, so slowly",
         "such a/an + (прилагательное) + исчисляемое ед. числа: such a long day",
@@ -721,7 +721,7 @@
         "so much + неисчисляемое; so many + мн. число",
         "so / such ... that + следствие",
         "too + прилагательное + to + V: too heavy to lift",
-        "прилагательное + enough (+ to V): old enough to drive; not hot enough",
+        "прилагательное + enough (+ to V): old enough to vote; not warm enough",
         "too + прилагательное = «слишком»; not + прилагательное + enough = «недостаточно»"
       ],
       "examples": [
@@ -729,7 +729,7 @@
         "There were so many people in the room.",
         "They are such friendly people.",
         "I was so tired that I went to bed at nine.",
-        "She has so much work that she never goes out."
+        "We had so much work that we skipped lunch."
       ],
       "ru_interference": "Русское «такой» покрывает и so, и such, поэтому so ставят перед существительным: неверно: It was so a long day. -> верно: It was such a long day. А «так много денег» даёт: неверно: so many money -> верно: so much money.",
       "prerequisites": [
@@ -887,7 +887,7 @@
         {
           "id": "b1_so_such_such_a_so_much_so_many_12",
           "kind": "choice",
-          "prompt": "Sorry, this coffee isn't ___. Could you heat it up a little?",
+          "prompt": "Is your coffee ___ now, or should I heat it up a little more?",
           "options": [
             "hot enough",
             "enough hot",
@@ -895,7 +895,7 @@
             "hot too"
           ],
           "correct_index": 0,
-          "explanation_ru": "Enough ставится после прилагательного: hot enough — «достаточно горячий». Enough hot — калька с русского порядка слов, too hot значило бы «слишком горячий» и противоречит просьбе подогреть, а too в конце значит «тоже».",
+          "explanation_ru": "Enough ставится после прилагательного: hot enough — «достаточно горячий». Enough hot — калька с русского порядка слов, too hot — «слишком горячий» — не вяжется с предложением подогреть ещё, а too в конце значит «тоже».",
           "difficulty": 2,
           "diagnostic": true
         },
@@ -1492,7 +1492,7 @@
         "Despite the bad weather, we finished the work outside.",
         "Although the team was small, they finished on time.",
         "We stayed at home because it was raining hard.",
-        "We were late because of the traffic.",
+        "The flight was delayed because of the fog.",
         "He turned off his phone so that he could focus on the task."
       ],
       "ru_interference": "Русские «несмотря на» и «из-за того что» дают лишнее of и лишнее придаточное: неверно: Despite of the noise, I finished the report. -> верно: Despite the noise, I finished the report. неверно: We were late because of it was raining. -> верно: We were late because it was raining.",
@@ -1700,7 +1700,8 @@
           "prompt": "Should I move to a big city? ___ (с одной стороны), there are more jobs and the salaries are higher. ___ (кроме того), public transport is fast and cheap. ___ (с другой стороны), rents are very high, and the streets are noisy. ___ (в итоге), I've decided to stay in my small town for now.",
           "gaps": [
             [
-              "On the one hand"
+              "On the one hand",
+              "On one hand"
             ],
             [
               "In addition",
@@ -1749,7 +1750,7 @@
       "examples": [
         "I will be able to help you tomorrow morning.",
         "When I was a child, I could swim very well.",
-        "After three attempts, he was able to open the file.",
+        "After a long search, she was able to find her keys.",
         "She hasn't been able to contact the client yet.",
         "We were not able to find the bug."
       ],
@@ -2135,7 +2136,11 @@
             "Should I help you with the bags?",
             "Do you want me to help you with the bags?",
             "Can I help you with the bags?",
-            "Would you like me to help you with the bags?"
+            "Would you like me to help you with the bags?",
+            "Shall I help you carry your bags?",
+            "Should I help you carry your bags?",
+            "Do you want me to help you carry your bags?",
+            "Can I help you carry your bags?"
           ],
           "explanation_ru": "Предложение помощи — Shall I + V1? (в американской речи чаще Should I или Do you want me to...?). Русское «мне помочь?» тянет к Do I help, но do в таком вопросе не спрашивает о желании собеседника.",
           "difficulty": 2
@@ -2143,10 +2148,10 @@
         {
           "id": "b1_had_better_its_time_14",
           "kind": "gap",
-          "prompt": "It's almost midnight, and we have work tomorrow. It's time we ___ (go) home.",
-          "answer": "went",
+          "prompt": "We've been talking about this plan for months. It's time we ___ (make) a decision.",
+          "answer": "made",
           "accept": [],
-          "explanation_ru": "После It's time + подлежащее глагол ставится в past simple, хотя речь о настоящем: It's time we went. Прошедшая форма подчёркивает, что момент уже наступил. Без подлежащего было бы It's time to go.",
+          "explanation_ru": "После It's time + подлежащее глагол ставится в past simple, хотя речь о настоящем: It's time we made a decision. Прошедшая форма подчёркивает, что момент уже наступил. Без подлежащего было бы It's time to make a decision.",
           "difficulty": 2
         }
       ]
@@ -2159,7 +2164,7 @@
       "title_en": "Have to, must, should: Obligation, prohibition, necessity, advice",
       "source_slug": "have-to-must-should",
       "title_ru": "Have to, must, should: обязанность и совет",
-      "summary_ru": "Must выражает сильную обязанность, которую считает необходимой сам говорящий, и часто встречается в правилах и инструкциях. Have to передаёт обязанность, идущую извне: от работы, закона или расписания. Форма have to меняется по лицам и временам, а вопрос с ней строится через do: Do I have to take this test? У must нет прошедшего времени, поэтому в прошлом используется had to. Главная пара, где легко ошибиться, — mustn't и don't have to: mustn't означает запрет, а don't have to означает, что делать это не обязательно. Should и shouldn't дают совет, а не обязанность. После must и should инфинитив идёт без to, а have to сохраняет to всегда. Упрёк или сожаление о прошлом выражают should have / shouldn't have + третья форма: You should have asked me; had to здесь не подходит — он значит, что действие пришлось выполнить. Разрешение и запрет, в том числе в прошлом, передаёт be allowed to: We weren't allowed to use phones — «нам не разрешали».",
+      "summary_ru": "Must выражает сильную обязанность, которую считает необходимой сам говорящий, и часто встречается в правилах и инструкциях. Have to передаёт обязанность, идущую извне: от работы, закона или расписания. Форма have to меняется по лицам и временам, а вопрос с ней строится через do: Do I have to take this test? У must нет прошедшего времени, поэтому в прошлом используется had to. Главная пара, где легко ошибиться, — mustn't и don't have to: mustn't означает запрет, а don't have to означает, что делать это не обязательно. Should и shouldn't дают совет, а не обязанность. После must и should инфинитив идёт без to, а have to сохраняет to всегда. Упрёк или сожаление о прошлом выражают should have / shouldn't have + третья форма: You should have asked me; had to здесь не подходит — он значит, что действие пришлось выполнить. Разрешение и запрет, в том числе в прошлом, передаёт be allowed to: We weren't allowed to talk during the test — «нам не разрешали разговаривать».",
       "forms": [
         "must + инфинитив без to — сильная обязанность",
         "have to / has to + инфинитив; вопрос: Do you have to ...?",
@@ -2174,7 +2179,7 @@
         "You mustn't smoke here. This is a hospital.",
         "We have to finish this before Friday.",
         "You should practice speaking more.",
-        "I had to work last weekend."
+        "She had to take a taxi because the metro was closed."
       ],
       "ru_interference": "Русское «не должен» одинаково переводит и запрет, и отсутствие необходимости: неверно: You mustn't come tomorrow, it is optional. -> верно: You don't have to come tomorrow, it is optional.",
       "prerequisites": [
@@ -2371,7 +2376,9 @@
             "We weren't allowed to use our phones during class.",
             "We weren't allowed to use phones during class.",
             "They didn't allow us to use our phones in class.",
-            "They didn't allow us to use phones in class."
+            "They didn't allow us to use phones in class.",
+            "We weren't allowed to use our cell phones in class.",
+            "We weren't allowed to use cell phones in class."
           ],
           "explanation_ru": "«Нам не разрешали» — безличная русская конструкция, по-английски подлежащим становится we: We weren't allowed to use. Вариант They didn't allow us to use тоже верен, а We didn't allow to use значит, что запрещали мы сами, и к тому же allow без дополнения не работает.",
           "difficulty": 3

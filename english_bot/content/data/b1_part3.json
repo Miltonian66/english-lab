@@ -431,7 +431,7 @@
         {
           "id": "b1_both_either_neither_05",
           "kind": "gap",
-          "prompt": "Neither of my colleagues ___ (drive) to work.",
+          "prompt": "Neither of my colleagues ___ (drive) to work: they both take the bus.",
           "answer": "drives",
           "accept": [
             "drive"
@@ -546,7 +546,7 @@
         "We don't have much time before the demo.",
         "How many tickets are still open?",
         "There is a lot of work this week.",
-        "I have a few questions about the API.",
+        "I need a few minutes to check the API.",
         "She knows very little about our product."
       ],
       "ru_interference": "Русское 'много' одинаково для всех существительных, поэтому появляется 'many work' вместо 'a lot of work'. Ещё одна ошибка — much в утверждении: 'I have much time' → 'I have a lot of time'.",
@@ -944,9 +944,11 @@
           "answer": "Neither have I",
           "accept": [
             "Nor have I",
-            "Me neither"
+            "Me neither",
+            "I haven't either",
+            "I haven't read it either"
           ],
-          "explanation_ru": "Согласие с отрицанием — Neither (Nor) + вспомогательный из реплики + подлежащее: haven't → Neither have I. Разговорный вариант — Me neither. So have I и Me too соглашаются только с утверждением.",
+          "explanation_ru": "Согласие с отрицанием — Neither (Nor) + вспомогательный из реплики + подлежащее: haven't → Neither have I. Разговорные варианты — Me neither и I haven't either. So have I и Me too соглашаются только с утверждением.",
           "difficulty": 2
         }
       ]
@@ -1148,7 +1150,7 @@
       "title_en": "Indirect speech / Reported speech",
       "source_slug": "reported-speech-indirect-speech",
       "title_ru": "Косвенная речь: он сказал, что...",
-      "summary_ru": "Когда мы передаём чужие слова после глагола в прошедшем времени, время внутри сдвигается на шаг назад: present simple становится past simple, present continuous — past continuous, past simple и present perfect — past perfect, will становится would, can становится could. Вместе со временем меняются местоимения и слова времени и места: tomorrow становится the next day, here становится there. Say используется без адресата, tell — только с адресатом: He said that... но He told me that... В косвенных вопросах прямой порядок слов, без do, does, did и без вопросительного знака: He asked where the office was. Для вопросов без вопросительного слова берут if или whether. Просьбы и приказы передаются через ask или tell плюс инфинитив с to, а отрицание ставится перед to: told us not to change it. По тем же правилам строятся вежливые вопросы: после Could you tell me ..., Do you know ... порядок слов прямой и нет do: Do you know where the station is? Вместо say и tell часто берут глагол, который называет само действие: remind и advise + дополнение + to (She reminded me to call), offer и promise + to (He offered to help), suggest + -ing или that (She suggested taking a break).",
+      "summary_ru": "Когда мы передаём чужие слова после глагола в прошедшем времени, время внутри сдвигается на шаг назад: present simple становится past simple, present continuous — past continuous, past simple и present perfect — past perfect, will становится would, can становится could. Вместе со временем меняются местоимения и слова времени и места: tomorrow становится the next day, here становится there. Say используется без адресата, tell — только с адресатом: He said that... но He told me that... В косвенных вопросах прямой порядок слов, без do, does, did и без вопросительного знака: He asked where the office was. Для вопросов без вопросительного слова берут if или whether. Просьбы и приказы передаются через ask или tell плюс инфинитив с to, а отрицание ставится перед to: told us not to change it. По тем же правилам строятся вежливые вопросы: после Could you tell me ..., Do you know ... порядок слов прямой и нет do: Do you know where the station is? Вместо say и tell часто берут глагол, который называет само действие: remind и advise + дополнение + to (She reminded me to call), offer и promise + to (He offered to help), suggest + -ing или that (She suggested ordering pizza).",
       "forms": [
         "say (that) + clause / tell somebody (that) + clause",
         "present -> past, past/present perfect -> past perfect",
@@ -1354,7 +1356,9 @@
           "answer": "Carla advised her brother to see a doctor.",
           "accept": [
             "Carla advised her brother that he should see a doctor.",
-            "Carla advised her brother to go to a doctor."
+            "Carla advised her brother to go to a doctor.",
+            "Carla advised her brother to go see a doctor.",
+            "Carla advised her brother to go to the doctor."
           ],
           "explanation_ru": "Совет в пересказе — advise + дополнение + to + V1: advised her brother to see. Should при этом исчезает: его смысл уже в глаголе advise.",
           "difficulty": 3
@@ -1555,7 +1559,9 @@
             "provided that",
             "providing",
             "so long as",
-            "if"
+            "if",
+            "providing that",
+            "on condition that"
           ],
           "explanation_ru": "«При условии, что» — as long as (или provided that): дам велосипед, если вернёшь к шести. Unless значит «если не» и перевернул бы смысл.",
           "difficulty": 2
@@ -1592,7 +1598,7 @@
       ],
       "examples": [
         "Look at those clouds - it is going to rain.",
-        "I am meeting the client at 3 p.m. tomorrow.",
+        "We are having dinner with the Garcias on Saturday.",
         "Don't worry, I will help you with the report.",
         "We are going to migrate the database next month.",
         "The train leaves at 7:15."
@@ -1952,7 +1958,8 @@
           "answer": "I have never been to Japan.",
           "accept": [
             "I have never been in Japan.",
-            "I have never visited Japan."
+            "I have never visited Japan.",
+            "I have never been to Japan before."
           ],
           "explanation_ru": "Опыт за всю жизнь без указания времени — present perfect: I have never been to Japan. Русское прошедшее «не был» тянет к I was never, но past simple требует конкретного момента в прошлом.",
           "difficulty": 2
@@ -2158,7 +2165,7 @@
         "I have fixed three bugs today.",
         "I have been fixing this bug all morning.",
         "She has known our CTO since 2015.",
-        "How long have you been waiting?",
+        "How long have you been learning English?",
         "They have been working on the report, but they haven't finished it."
       ],
       "ru_interference": "Русское настоящее время для длительности даёт ошибку 'I am working here for three years' вместо 'I have been working here for three years'. Глаголы состояния попадают в continuous: 'I have been knowing her since 2010' → 'I have known her since 2010'.",

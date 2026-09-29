@@ -362,15 +362,15 @@
       "title_en": "Position of adverbs and adverb phrases",
       "source_slug": "position-of-adverbs",
       "title_ru": "Место наречия в предложении",
-      "summary_ru": "У наречия в английском три возможные позиции: в начале предложения, в середине и в конце. В середине наречие стоит после вспомогательного глагола или после глагола be, но перед основным глаголом: he has never seen it, she is always late. В конце стоят наречия образа действия, места и времени, причём именно в этом порядке. Главный запрет: наречие нельзя ставить между глаголом и его прямым дополнением. В начало выносят наречия, которые оценивают всё предложение или связывают его с предыдущим: unfortunately, suddenly, however. Наречия частотности почти всегда занимают среднюю позицию. Наречия степени вроде very или quite стоят прямо перед тем словом, к которому относятся. Частица фразового глагола ведёт себя как наречие: существительное может стоять до неё или после (turn off the light, turn the light off), а местоимение — только между глаголом и частицей: turn it off. У неразделяемых глаголов вроде look into и deal with дополнение всегда идёт после предлога: look into it.",
+      "summary_ru": "У наречия в английском три возможные позиции: в начале предложения, в середине и в конце. В середине наречие стоит после вспомогательного глагола или после глагола be, но перед основным глаголом: he has never seen it, she is always late. В конце стоят наречия образа действия, места и времени, причём именно в этом порядке. Главный запрет: наречие нельзя ставить между глаголом и его прямым дополнением. В начало выносят наречия, которые оценивают всё предложение или связывают его с предыдущим: unfortunately, suddenly, however. Наречия частотности почти всегда занимают среднюю позицию. Наречия степени вроде very или quite стоят прямо перед тем словом, к которому относятся. Частица фразового глагола ведёт себя как наречие: существительное может стоять до неё или после (turn off the light, turn the light off), а местоимение — только между глаголом и частицей: turn it off. У неразделяемых глаголов вроде look into и deal with дополнение всегда идёт после предлога: deal with it.",
       "forms": [
         "начало: Suddenly, the server crashed.",
         "середина: подлежащее + вспомогательный глагол + наречие + основной глагол",
         "с to be: подлежащее + be + наречие",
         "конец: глагол + дополнение + образ действия + место + время",
         "запрещено: глагол + наречие + прямое дополнение",
-        "фразовый глагол + местоимение: turn it off, send it over (не turn off it)",
-        "неразделяемые глаголы: look into it, deal with it"
+        "фразовый глагол + местоимение: turn it off, pick it up (не turn off it)",
+        "неразделяемые глаголы: deal with it, get over it"
       ],
       "examples": [
         "She quickly closed the laptop.",
@@ -680,12 +680,12 @@
           "prompt": "My new laptop is ___ fast — it's actually the fastest computer I've ever had, and it cost less than my old one.",
           "options": [
             "pretty",
-            "fairly",
+            "not very",
             "a bit",
             "hardly"
           ],
           "correct_index": 0,
-          "explanation_ru": "Pretty в американской речи — «весьма, очень даже», и это совпадает с восторгом во второй части. Fairly — «в меру, сносно» — слишком слабое для «самого быстрого», a bit fast значит «быстроват» с оттенком недовольства, а hardly — «едва ли» — противоречит смыслу.",
+          "explanation_ru": "Pretty в американской речи — «весьма, очень даже», и это совпадает с восторгом во второй части. Not very — «не очень» — и hardly — «едва ли» — противоречат «самому быстрому компьютеру», а a bit fast значит «быстроват» с оттенком недовольства.",
           "difficulty": 2
         },
         {
@@ -853,7 +853,8 @@
           ],
           "correct_index": 0,
           "explanation_ru": "Между подлежащим breakfast и пропуском стоит длинный оборот с существительными, но сразу после пропуска идёт прилагательное good без существительного, поэтому so. Such и such a нужны только перед существительным, а too сочетается с to-инфинитивом (too good to miss), а не с that.",
-          "difficulty": 2
+          "difficulty": 2,
+          "diagnostic": false
         },
         {
           "id": "b2_so_such_a_so_much_so_many_04",
@@ -1359,7 +1360,10 @@
             "I would live in Seattle now if I had taken the job there.",
             "If I had taken the job in Seattle, I would be living there now.",
             "I would be living in Seattle now if I had taken the job there.",
-            "If I had taken the job in Seattle, I would live in Seattle now."
+            "If I had taken the job in Seattle, I would live in Seattle now.",
+            "I would live in Seattle now if I had taken the job.",
+            "I would be living in Seattle now if I had taken the job.",
+            "If I had taken the job in Seattle, I would be living in Seattle now."
           ],
           "explanation_ru": "Причина в прошлом (не взял работу) — if + past perfect; результат сейчас (не живу там) — would + V1 и now. Would have lived относило бы и результат к прошлому, а if I took — к воображаемому настоящему.",
           "difficulty": 3
@@ -2235,7 +2239,7 @@
       "examples": [
         "The release is likely to be delayed.",
         "It is unlikely that they will accept the offer.",
-        "If you work like that, you are bound to make mistakes.",
+        "If you work like that, you are bound to burn out.",
         "He will probably call you tomorrow.",
         "She probably won't come to the party.",
         "We will definitely finish before Friday."
@@ -2321,7 +2325,7 @@
         {
           "id": "b2_likely_unlikely_bound_definitely_probably_06",
           "kind": "gap",
-          "prompt": "We still have to run the whole test suite, so it's ___ (likely) that we'll finish today.",
+          "prompt": "We still have to run the whole test suite, and it takes about six hours, so it's ___ (likely) that we'll finish today.",
           "answer": "unlikely",
           "accept": [
             "not likely"

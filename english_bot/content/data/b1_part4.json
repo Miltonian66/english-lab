@@ -208,13 +208,13 @@
         "have/has + V3 — present perfect",
         "had + V3 — past perfect",
         "will + V, be going to + V, am/is/are + V-ing — будущее",
-        "Who / What + V2 — вопрос к подлежащему (Who called you?); Who / What + did + подлежащее + V — к дополнению (Who did you call?)"
+        "Who / What + V2 — вопрос к подлежащему (Who told you?); Who / What + did + подлежащее + V — к дополнению (Who did you tell?)"
       ],
       "examples": [
         "We released the new version last Friday.",
         "I have worked at this company since 2019.",
         "She was writing the report when the power went off.",
-        "When we arrived, the meeting had already started.",
+        "When we got to the station, the train had already left.",
         "I am meeting the client at four tomorrow."
       ],
       "ru_interference": "В русском три времени, поэтому present perfect заменяют настоящим или прошедшим: неверно I work here since 2019, верно I have worked here since 2019. И наоборот: неверно I have seen him yesterday, верно I saw him yesterday.",
@@ -406,7 +406,9 @@
             "Whom did you invite to your birthday?",
             "Who have you invited to your birthday party?",
             "Who have you invited to your birthday?",
-            "Who did you invite to the birthday party?"
+            "Who did you invite to the birthday party?",
+            "Who did you invite for your birthday?",
+            "Who have you invited for your birthday?"
           ],
           "explanation_ru": "«Кого» — дополнение, поэтому нужен вспомогательный did и обратный порядок: Who did you invite? Без did (Who invited you?) получится вопрос к подлежащему — «Кто пригласил тебя?».",
           "difficulty": 2

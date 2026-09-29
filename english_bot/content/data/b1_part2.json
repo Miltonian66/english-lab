@@ -387,10 +387,10 @@
             "didn't use",
             "don't use",
             "wouldn't use",
-            "not use"
+            "not to use"
           ],
           "correct_index": 0,
-          "explanation_ru": "Когда предпочтение касается другого человека, после would rather идёт подлежащее и past simple, хотя речь о настоящем: I'd rather you didn't use. Настоящее don't use и would после you здесь не ставятся, а would rather not + V говорят только о себе: I'd rather not lend it.",
+          "explanation_ru": "Когда предпочтение касается другого человека, после would rather идёт подлежащее и past simple, хотя речь о настоящем: I'd rather you didn't use. Настоящее don't use и would после you здесь не ставятся, а частица to после would rather не нужна ни с кем: I'd rather not lend it.",
           "difficulty": 2,
           "diagnostic": true
         }
@@ -1469,7 +1469,9 @@
               "put up with"
             ],
             [
-              "sorted out"
+              "sorted out",
+              "worked out",
+              "straightened out"
             ]
           ],
           "explanation_ru": "Set up — основать дело, deal with — заниматься проблемой, put up with — терпеть, мириться, sort out — уладить: everything is sorted out. Во фразовом глаголе время меняет только первое слово: put up with (прошедшее совпадает с настоящим), sorted out.",
@@ -1831,7 +1833,9 @@
           "kind": "transform",
           "prompt": "Переведи на английский: «Мы знакомы с 2015 года».",
           "answer": "We have known each other since 2015.",
-          "accept": [],
+          "accept": [
+            "We have been acquainted since 2015."
+          ],
           "explanation_ru": "Состояние, которое началось в прошлом и длится до сих пор, — present perfect: have known. Know не ставится в continuous, а точка отсчёта (2015) вводится через since. Русское «мы знакомы» — это we have known each other, а не we are familiar.",
           "difficulty": 2
         }

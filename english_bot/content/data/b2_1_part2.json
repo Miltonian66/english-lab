@@ -1601,7 +1601,7 @@
         "Wh-слово (подлежащее) + V: Who wrote this?",
         "Wh-слово (дополнение) + do / does / did + subject + V1",
         "Wh-слово + ... + предлог в конце: What are you looking for?",
-        "Negative question: Didn't you get my message?",
+        "Negative question: Didn't you see my email?",
         "Statement + question tag: You've seen it, haven't you?"
       ],
       "examples": [
@@ -1609,7 +1609,7 @@
         "Who did you ask about the deadline?",
         "What are you working on right now?",
         "Which team does he report to?",
-        "Didn't you get my message?",
+        "Didn't you see my email?",
         "You've already tested it, haven't you?"
       ],
       "ru_interference": "В русском вспомогательного глагола нет, поэтому его добавляют и в вопрос к подлежащему: «Who did write this code?» → «Who wrote this code?». А предлог по русской модели ставят в начало: «About what are you talking?» → «What are you talking about?».",
@@ -1794,14 +1794,14 @@
       "title_en": "Participles as adjectives: -ed/-ing adjectives",
       "source_slug": "participle-adjectives",
       "title_ru": "Прилагательные на -ed и -ing",
-      "summary_ru": "От многих глаголов образуются два прилагательных. Форма на -ing описывает источник чувства: свойство предмета, ситуации или человека, который вызывает эмоцию: The documentation is boring. Форма на -ed описывает того, кто испытывает чувство, обычно человека: I am bored. Обе формы могут стоять и перед существительным: a surprising result и a surprised look. Ошибка в выборе меняет смысл: I am boring значит «я скучный человек», а не «мне скучно». После форм на -ed часто идёт фиксированный предлог: interested in, worried about, excited about, surprised by, confused by, tired of. Слова look, face, voice, smile передают чувство самого человека, поэтому с ними идёт форма на -ed: a worried look, in a frightened voice. Перед другим прилагательным нужно наречие: surprisingly cheap, disappointingly slow. Так же работают менее частые пары: overwhelmed / overwhelming, frustrated / frustrating, relieved / relieving.",
+      "summary_ru": "От многих глаголов образуются два прилагательных. Форма на -ing описывает источник чувства: свойство предмета, ситуации или человека, который вызывает эмоцию: The documentation is boring. Форма на -ed описывает того, кто испытывает чувство, обычно человека: I am bored. Обе формы могут стоять и перед существительным: a surprising result и a surprised look. Ошибка в выборе меняет смысл: I am boring значит «я скучный человек», а не «мне скучно». После форм на -ed часто идёт фиксированный предлог: interested in, worried about, excited about, surprised by, confused by, tired of. Слова look, face, voice, smile передают чувство самого человека, поэтому с ними идёт форма на -ed: a worried look, in a bored voice. Перед другим прилагательным нужно наречие: surprisingly cheap, disappointingly slow. Так же работают менее частые пары: overwhelmed / overwhelming, frustrated / frustrating, fascinated / fascinating.",
       "forms": [
         "-ing прилагательное: источник чувства (a boring meeting)",
         "-ed прилагательное: состояние человека (I am bored)",
         "be + -ed + предлог: interested in, worried about, surprised by",
         "-ing / -ed + существительное: a surprising result / a surprised look",
-        "look / voice / face / smile + -ed: a worried look, a frightened voice",
-        "наречие от -ing перед прилагательным: surprisingly short, a surprising number of"
+        "look / voice / face / smile + -ed: a worried look, a bored voice",
+        "наречие от -ing перед прилагательным: surprisingly cheap, disappointingly slow"
       ],
       "examples": [
         "The release notes were confusing, so everyone was confused.",
@@ -2165,7 +2165,8 @@
           "answer": "I was wondering if you could send me the latest budget before Friday's meeting.",
           "accept": [
             "I was wondering if you could send me the latest budget before the meeting on Friday.",
-            "I was wondering if you can send me the latest budget before Friday's meeting."
+            "I was wondering if you can send me the latest budget before Friday's meeting.",
+            "I was wondering if you could send me the latest budget before the Friday meeting."
           ],
           "explanation_ru": "I was wondering if + подлежащее + could + V1 — самая мягкая форма просьбы в деловой переписке. После if порядок слов прямой (you could), как в любом косвенном вопросе, а was wondering и could делают просьбу вежливее, а не переносят её в прошлое.",
           "difficulty": 3
@@ -2406,7 +2407,8 @@
             "Our team lead told us not to merge anything until all the tests had passed.",
             "Our team lead told us not to merge anything until all the tests pass.",
             "Our team lead told us not to merge anything until all tests passed.",
-            "Our team lead told us not to merge anything until the tests passed."
+            "Our team lead told us not to merge anything until the tests passed.",
+            "Our team lead told us that we shouldn't merge anything until all the tests passed."
           ],
           "explanation_ru": "Команда в пересказе — tell + дополнение + (not) to + V1: told us not to merge. Повелительное don't в косвенной речи не сохраняется, а в придаточном время обычно сдвигается: pass → passed.",
           "difficulty": 3

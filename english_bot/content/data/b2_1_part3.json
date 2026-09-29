@@ -583,21 +583,25 @@
           "options": [
             "were going to",
             "are going to",
-            "had to",
+            "used to",
             "have been going to"
           ],
           "correct_index": 0,
-          "explanation_ru": "План в прошлом, который не осуществился, — was / were going to + V1 (будущее в прошедшем). Are going to говорит о нынешних планах, had to — о вынужденном действии, которое состоялось, а have been going to связывает намерение с настоящим, хотя суббота уже прошла.",
+          "explanation_ru": "План в прошлом, который не осуществился, — was / were going to + V1 (будущее в прошедшем). Are going to говорит о нынешних планах, used to — о прошлой привычке, а здесь одна конкретная поездка, а have been going to связывает намерение с настоящим, хотя суббота уже прошла.",
           "difficulty": 2,
           "diagnostic": true
         },
         {
           "id": "b2_narrative_tenses_14",
           "kind": "gap",
-          "prompt": "I ___ (call) you last night, but my phone died.",
+          "prompt": "I ___ (call — собирался) you last night, but my phone died.",
           "answer": "was going to call",
           "accept": [
-            "meant to call"
+            "meant to call",
+            "was planning to call",
+            "planned to call",
+            "intended to call",
+            "was about to call"
           ],
           "explanation_ru": "Намерение в прошлом, которое не выполнилось, — was going to + V1: was going to call — «собирался позвонить». Would call звучит как условие («позвонил бы»), а was calling описывало бы сам процесс звонка.",
           "difficulty": 2
@@ -625,7 +629,7 @@
         "I've written three reports this week.",
         "She's tired because she's been fixing the build all morning.",
         "We've known each other since university.",
-        "How long have you been waiting?"
+        "How long have you been living in Denver?"
       ],
       "ru_interference": "Русский описывает длящееся действие настоящим временем, и это переносится в английский. Неверно: I work here for five years. Верно: I have been working here for five years.",
       "prerequisites": [
@@ -1176,13 +1180,15 @@
         {
           "id": "b2_passive_voice_all_tenses_13",
           "kind": "transform",
-          "prompt": "Переведи на английский: «Отчёт отправят клиенту завтра утром».",
+          "prompt": "Переведи на английский, используя пассив: «Отчёт отправят клиенту завтра утром».",
           "answer": "The report will be sent to the client tomorrow morning.",
           "accept": [
             "The report is going to be sent to the client tomorrow morning.",
             "Tomorrow morning the report will be sent to the client.",
             "The report will be sent to the customer tomorrow morning.",
-            "The client will be sent the report tomorrow morning."
+            "The client will be sent the report tomorrow morning.",
+            "The report is going to be sent to the customer tomorrow morning.",
+            "The customer will be sent the report tomorrow morning."
           ],
           "explanation_ru": "Неопределённо-личное «отправят» (кто — неважно) переводится пассивом: подлежащим становится отчёт, а будущее время даёт will be + V3. The report will send значило бы, что отчёт сам кого-то отправит.",
           "difficulty": 2
@@ -1207,10 +1213,10 @@
       ],
       "examples": [
         "I used to drink a lot of coffee, but I stopped.",
-        "She isn't used to driving on the left.",
+        "She isn't used to driving in the snow.",
         "You'll soon get used to the new system.",
         "We didn't use to have a canteen here.",
-        "I'm slowly getting used to working from home."
+        "I'm slowly getting used to cooking for myself."
       ],
       "ru_interference": "Русское привык переводят инфинитивом, и после to ставят первую форму глагола. Неверно: I am used to work at night. Верно: I am used to working at night.",
       "prerequisites": [
@@ -1375,7 +1381,10 @@
             "You'll soon get used to working from home.",
             "You'll get used to working from home fast.",
             "You'll quickly get used to working remotely.",
-            "You'll get used to working from home very quickly."
+            "You'll get used to working from home very quickly.",
+            "You'll soon get used to working remotely.",
+            "You'll get used to working remotely quickly.",
+            "You'll quickly get used to working at home."
           ],
           "explanation_ru": "Процесс привыкания — get used to, и to здесь предлог, поэтому дальше форма на -ing: get used to working. Инфинитив work после этого to невозможен.",
           "difficulty": 2
@@ -1756,7 +1765,7 @@
         "as long as / provided (that) + present simple — «при условии, что»",
         "in case + present simple — «на случай, если»; even if — «даже если»",
         "Should + подлежащее + V1, ... — книжное «если вдруг»",
-        "повелительное + and / or: Leave now, or you'll miss it"
+        "повелительное + and / or: Hurry up, or you'll be late"
       ],
       "examples": [
         "If you heat water to 100 degrees, it boils.",
@@ -1891,20 +1900,23 @@
         {
           "id": "b2_zero_first_conditional_future_time_clauses_10",
           "kind": "cloze",
-          "prompt": "Our office has a simple remote-work policy. You can work from home on Fridays ___ (= only on condition that) you're online by nine. ___ (= if ... not) there's an urgent release, nobody has to come in. Keep your laptop charger in your bag ___ (= because it's possible that) the Wi-Fi at home goes down. And always lock your screen in a café, ___ (= otherwise) someone could read your messages.",
+          "prompt": "Our office has a simple remote-work policy. You can work from home on Fridays ___ (= only on condition that) you're online by nine. ___ (= if ... not) there's an urgent release, nobody has to come in. Keep your laptop charger in your bag ___ (= because it's possible that) the Wi-Fi at home goes down. And always lock your screen in a café, ___ (= if you don't) someone could read your messages.",
           "gaps": [
             [
               "as long as",
               "provided",
               "provided that",
               "providing",
-              "so long as"
+              "so long as",
+              "only if",
+              "on condition that"
             ],
             [
               "Unless"
             ],
             [
-              "in case"
+              "in case",
+              "just in case"
             ],
             [
               "or",
@@ -1955,7 +1967,7 @@
       "title_en": "Gerund or infinitive: Verb patterns",
       "source_slug": "gerund-or-infinitive",
       "title_ru": "Герундий или инфинитив после глагола",
-      "summary_ru": "Форма второго глагола зависит от первого, и эти сочетания надо запоминать группами. После enjoy, avoid, finish, mind, suggest, practice, keep идёт форма на -ing: I enjoy working with this team. После want, decide, hope, agree, offer, promise, learn, refuse идёт to плюс первая форма: She decided to apply for the job. Группа ask, tell, want, allow, expect требует дополнения перед инфинитивом: They asked me to review the code. После любого предлога, включая to в look forward to и be used to, ставится только -ing. У глаголов stop, remember, forget, try обе формы возможны, но смысл меняется: I stopped smoking означает бросил, а I stopped to smoke — остановился, чтобы покурить. Если сомневаетесь, проверяйте глагол в словаре по образцу verb pattern. Ещё три пары меняют смысл: regret to inform — «с сожалением сообщаю», regret telling — «жалею, что сказал»; mean to call — «собирался позвонить», mean moving — «означает переезд»; try to open — «стараюсь открыть», try restarting — «попробуй перезагрузить». Вежливая просьба Would you mind + -ing? буквально спрашивает «вы не возражаете?», поэтому согласие на неё — Not at all.",
+      "summary_ru": "Форма второго глагола зависит от первого, и эти сочетания надо запоминать группами. После enjoy, avoid, finish, mind, suggest, practice, keep идёт форма на -ing: I enjoy working with this team. После want, decide, hope, agree, offer, promise, learn, refuse идёт to плюс первая форма: She decided to apply for the job. Группа ask, tell, want, allow, expect требует дополнения перед инфинитивом: They asked me to review the code. После любого предлога, включая to в look forward to и be used to, ставится только -ing. У глаголов stop, remember, forget, try обе формы возможны, но смысл меняется: I stopped smoking означает бросил, а I stopped to smoke — остановился, чтобы покурить. Если сомневаетесь, проверяйте глагол в словаре по образцу verb pattern. Ещё три пары меняют смысл: regret to announce — «с сожалением объявляем», regret telling — «жалею, что сказал»; mean to call — «собирался позвонить», mean moving — «означает переезд»; try to open — «стараюсь открыть», try restarting — «попробуй перезагрузить». Вежливая просьба Would you mind + -ing? буквально спрашивает «вы не возражаете?», поэтому согласие на неё — Not at all.",
       "forms": [
         "enjoy/avoid/finish/mind/suggest + V-ing",
         "want/decide/hope/agree/offer + to + V1",
@@ -2189,7 +2201,8 @@
           "answer": "I meant to reply to your email yesterday, but I forgot.",
           "accept": [
             "I meant to answer your email yesterday, but I forgot.",
-            "I meant to reply to your email yesterday, but I forgot to."
+            "I meant to reply to your email yesterday, but I forgot to.",
+            "I meant to reply to your email yesterday but forgot."
           ],
           "explanation_ru": "Mean + to-инфинитив — «собираться, намереваться»: I meant to reply. Mean + -ing — «означать, влечь за собой»: The new job means moving to Denver. Намерение, которое не выполнилось, — только meant to.",
           "difficulty": 3

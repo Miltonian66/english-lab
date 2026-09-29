@@ -207,7 +207,8 @@
         "was/were + V-ing — past continuous",
         "have/has + V3 — present perfect",
         "had + V3 — past perfect",
-        "will + V, be going to + V, am/is/are + V-ing — будущее"
+        "will + V, be going to + V, am/is/are + V-ing — будущее",
+        "Who / What + V2 — вопрос к подлежащему (Who called you?); Who / What + did + подлежащее + V — к дополнению (Who did you call?)"
       ],
       "examples": [
         "We released the new version last Friday.",
@@ -255,7 +256,7 @@
         {
           "id": "b1_review_verb_tenses_b1_03",
           "kind": "choice",
-          "prompt": "When I got to the office, the meeting ___.",
+          "prompt": "When we got to the movie theater, the film ___.",
           "options": [
             "already starts",
             "has already started",
@@ -263,23 +264,23 @@
             "is already starting"
           ],
           "correct_index": 2,
-          "explanation_ru": "Собрание началось раньше другого прошедшего действия, а более раннее прошлое выражает past perfect.",
+          "explanation_ru": "Фильм начался раньше нашего прихода, а более раннее из двух прошедших действий выражает past perfect: had already started.",
           "difficulty": 2
         },
         {
           "id": "b1_review_verb_tenses_b1_04",
           "kind": "choice",
-          "prompt": "___ you finished the migration yet?",
+          "prompt": "___ the migration yet? The client keeps asking.",
           "options": [
-            "Did",
-            "Have",
-            "Are",
-            "Do"
+            "Have you finished",
+            "Do you finish",
+            "Had you finished",
+            "Will you finish"
           ],
-          "correct_index": 1,
-          "explanation_ru": "Finished здесь третья форма глагола, поэтому вопрос строится со вспомогательным have.",
+          "correct_index": 0,
+          "explanation_ru": "Yet в вопросе о результате к настоящему моменту — present perfect: Have you finished...? Had you finished относится ко времени до другого прошедшего момента, do you finish — к привычке, а will с yet в таком вопросе не сочетается.",
           "difficulty": 1,
-          "diagnostic": false
+          "diagnostic": true
         },
         {
           "id": "b1_review_verb_tenses_b1_05",
@@ -378,6 +379,37 @@
           "explanation_ru": "Законченный период в прошлом — past simple worked. Present perfect не сочетается с законченным прошлым, а until уже значит «пока не», поэтому второе отрицание weren't лишнее.",
           "difficulty": 2,
           "diagnostic": true
+        },
+        {
+          "id": "b1_review_verb_tenses_b1_12",
+          "kind": "choice",
+          "prompt": "A: I heard your phone ring at midnight. ___\nB: My sister. She wanted to borrow my car.",
+          "options": [
+            "Who called you?",
+            "Who did you call?",
+            "Who did call you?",
+            "Whom called you?"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Звонили тебе, а спрашивают о звонившем — это вопрос к подлежащему: Who called you? В нём нет did, порядок как в утверждении. Who did you call? — «Кому ты звонил?» — вопрос к дополнению и не подходит по смыслу, а whom не бывает подлежащим.",
+          "difficulty": 2,
+          "diagnostic": true
+        },
+        {
+          "id": "b1_review_verb_tenses_b1_13",
+          "kind": "transform",
+          "prompt": "Переведи на английский: «Кого ты пригласила на день рождения?»",
+          "answer": "Who did you invite to your birthday party?",
+          "accept": [
+            "Who did you invite to your birthday?",
+            "Whom did you invite to your birthday party?",
+            "Whom did you invite to your birthday?",
+            "Who have you invited to your birthday party?",
+            "Who have you invited to your birthday?",
+            "Who did you invite to the birthday party?"
+          ],
+          "explanation_ru": "«Кого» — дополнение, поэтому нужен вспомогательный did и обратный порядок: Who did you invite? Без did (Who invited you?) получится вопрос к подлежащему — «Кто пригласил тебя?».",
+          "difficulty": 2
         }
       ]
     },
@@ -767,6 +799,15 @@
           ],
           "explanation_ru": "Просьба в пересказе строится как ask + объект + (not) to-инфинитив: asked us not to park. Here в пересказе обычно меняется на there.",
           "difficulty": 3
+        },
+        {
+          "id": "b1_gerund_or_infinitive_do_to_do_doing_13",
+          "kind": "gap",
+          "prompt": "A: What should we do on Saturday?\nB: How about ___ (rent) bikes and riding along the river?",
+          "answer": "renting",
+          "accept": [],
+          "explanation_ru": "How about (What about) + V-ing — предложение что-то сделать: How about renting bikes? About — предлог, поэтому дальше форма на -ing, как и во второй части: riding.",
+          "difficulty": 1
         }
       ]
     },

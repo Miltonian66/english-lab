@@ -166,6 +166,7 @@ _WORDS = {"grey": "gray", "greys": "grays", "jewellery": "jewelry", "programme":
           "judgement": "judgment", "analyse": "analyze", "analysed": "analyzed",
           "analysing": "analyzing", "paralysed": "paralyzed", "cosy": "cozy", "cosier": "cozier",
           "spoilt": "spoiled", "unspoilt": "unspoiled", "learnt": "learned", "spelt": "spelled",
+          "whilst": "while", "amongst": "among", "amidst": "amid",
           "mum": "mom", "mums": "moms", "flat": "apartment", "flats": "apartments",
           "lift": "elevator", "lifts": "elevators", "queue": "line", "petrol": "gas",
           "trousers": "pants", "rubbish": "trash", "pavement": "sidewalk", "motorway": "highway",

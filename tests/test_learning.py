@@ -185,7 +185,8 @@ class AnswerTests(unittest.TestCase):
         tire = self._ex("gap", "We had a ___ tire on the way home.", "flat")
         self.assertTrue(matches(tire, "flat"))
         self.assertTrue(matches(self._ex("gap", "a ___ little cafe", "cozy"), "cosy"))
-        for british, american in (("meagre", "meager"), ("unspoilt", "unspoiled"), ("remodelling", "remodeling")):
+        for british, american in (("meagre", "meager"), ("unspoilt", "unspoiled"), ("remodelling", "remodeling"),
+                                  ("whilst", "while")):
             self.assertTrue(matches(self._ex("gap", "___", american), british), british)
 
     def test_british_have_for_possession_is_not_i_have(self) -> None:

@@ -23,7 +23,7 @@
         "Some chose the early session, others the late one.",
         "She owns shares in the firm, and so does her brother.",
         "Will the deal survive the vote? I suspect not.",
-        "Of the two proposals, the former is cheaper, the latter safer."
+        "Denver and Austin both bid for the games; the former had the money, the latter the stadiums."
       ],
       "ru_interference": "Русский спокойно сравнивает «зарплаты программистов выше, чем у дизайнеров», и получается сравнение зарплат с людьми: неверно «Programmers' salaries are higher than designers» → верно «…than those of designers» или «…than designers'». «Если нет» и «думаю, нет» переводят дословно: неверно «If no, …», «I think no» → верно «If not, …», «I think not». А в ответе на вопрос в пассиве теряют been: неверно «Has the invoice been paid? — It will have by now» → верно «It will have been by now».",
       "prerequisites": [
@@ -65,7 +65,7 @@
         {
           "id": "c2_ellipsis_substitution_and_anaphora_across_a_text_03",
           "kind": "choice",
-          "prompt": "The board will vote on the merger next week. Should it be approved, the two firms will combine their cloud divisions; ___, both will continue to operate independently.",
+          "prompt": "The board will vote on the merger next week. Should it be approved, the two firms will combine their cloud divisions; ___, the two divisions will continue to operate independently.",
           "options": [
             "if not",
             "if so",
@@ -120,7 +120,8 @@
           "accept": [
             "The auditors believed the figures were accurate, and the board did too.",
             "The auditors believed the figures were accurate, and the board did as well.",
-            "The auditors believed the figures were accurate, and the board believed so too."
+            "The auditors believed the figures were accurate, and the board believed so too.",
+            "The auditors believed the figures were accurate, and the board believed it too."
           ],
           "explanation_ru": "Do so заменяет только осознанное действие, а believe, know, own — состояния: для них берут простой вспомогательный — and so did the board или and the board did too.",
           "difficulty": 3
@@ -141,7 +142,7 @@
         {
           "id": "c2_ellipsis_substitution_and_anaphora_across_a_text_09",
           "kind": "cloze",
-          "prompt": "Two proposals are on the table for the payments service: a rewrite in Rust and a gradual refactor of the existing code. The ___ promises better performance; the latter, lower risk. We have been asked to choose by Friday, and we intend to ___. Can the refactor be finished before the holiday freeze? The vendor says ___; our own estimates say not. ___, we will need a fallback plan — and ___ a plan will cost money that is not in this year's budget.",
+          "prompt": "Two proposals are on the table for the payments service: a rewrite in Rust and a gradual refactor of the existing code. The ___ promises better performance; the latter, lower risk. We have been asked to choose by Friday, and we intend to ___ (two words; don't repeat 'choose'). Can the refactor be finished before the holiday freeze? The vendor says ___; our own estimates say not. ___, we will need a fallback plan — and ___ a plan will cost money that is not in this year's budget.",
           "gaps": [
             [
               "former"
@@ -154,7 +155,8 @@
             [
               "so",
               "it can",
-              "yes"
+              "yes",
+              "it can be"
             ],
             [
               "If not",
@@ -162,7 +164,10 @@
               "If it can't",
               "If it cannot",
               "If it isn't",
-              "If it is not"
+              "If it is not",
+              "In that case",
+              "If it can't be",
+              "If it cannot be"
             ],
             [
               "such"
@@ -207,7 +212,7 @@
       ],
       "examples": [
         "Someone's been going through my files — the drawer was left open.",
-        "I've been meaning to ask you about the new rota.",
+        "I've been meaning to ask you about the new schedule.",
         "Scientists have been questioning the model for decades.",
         "The guests will have been driving for six hours, so they'll be starving.",
         "It emerged that the firm had been quietly settling claims for years.",
@@ -242,11 +247,11 @@
           "options": [
             "will have been working",
             "will be working",
-            "would have worked",
+            "had been working",
             "are working"
           ],
           "correct_index": 0,
-          "explanation_ru": "Will have been + -ing здесь не про будущее, а уверенное предположение о том, что уже происходило: «наверняка проработали всю ночь». Will be working отнесло бы работу в будущее, are working противоречит тому, что инженеры спят, а would have worked — условие без условия.",
+          "explanation_ru": "Will have been + -ing здесь не про будущее, а уверенное предположение о том, что уже происходило: «наверняка проработали всю ночь». Will be working отнесло бы работу в будущее, are working противоречит тому, что инженеры спят, а had been working требует точки отсчёта в прошлом, которой в этой реплике нет.",
           "difficulty": 2,
           "diagnostic": true
         },
@@ -316,7 +321,8 @@
           "answer": "Someone must have been leaking our internal notes to them.",
           "accept": [
             "Someone must have been leaking our internal notes to the vendor.",
-            "Somebody must have been leaking our internal notes to them."
+            "Somebody must have been leaking our internal notes to them.",
+            "Somebody must have been leaking our internal notes to the vendor."
           ],
           "explanation_ru": "Уверенный вывод о процессе в прошлом — must have been + -ing: утечка шла какое-то время, и это видно по результату. Must have leaked говорил бы о разовом событии.",
           "difficulty": 3
@@ -467,7 +473,7 @@
             "tends"
           ],
           "correct_index": 0,
-          "explanation_ru": "Purport to be — «выдаёт себя за, якобы является»: так говорят о документах и заявлениях, подлинность которых не доказана. Pretend — «притворяться», для письма бессмысленно и калькирует русское «претендует»; intend — «намереваться», tend — «иметь склонность».",
+          "explanation_ru": "Purport to be — «выдаёт себя за, якобы является»: так говорят о документах и заявлениях, подлинность которых не доказана. Pretends — «притворяется»: так говорят о заведомой подделке, а подлинность письма ещё не проверена; к тому же это калька с русского «претендует»; intend — «намереваться», tend — «иметь склонность».",
           "difficulty": 2,
           "diagnostic": true
         },
@@ -527,7 +533,9 @@
           "accept": [
             "The committee criticized the minister harshly, but it stopped short of demanding her resignation.",
             "The committee harshly criticized the minister but stopped short of demanding her resignation.",
-            "The committee criticized the minister harshly but stopped short of calling for her resignation."
+            "The committee criticized the minister harshly but stopped short of calling for her resignation.",
+            "The committee harshly criticized the minister, but it stopped short of demanding her resignation.",
+            "The committee criticized the minister harshly but stopped short of demanding that she resign."
           ],
           "explanation_ru": "Stop short of + -ing — «не пойти дальше, не решиться на»: комитет критиковал, но до требования отставки не дошёл. После of — только -ing: stopped short of to demand невозможно.",
           "difficulty": 3

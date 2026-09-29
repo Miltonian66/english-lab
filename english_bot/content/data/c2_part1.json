@@ -39,10 +39,10 @@
             "Truth be",
             "Truth to be",
             "Truth being",
-            "The truth be"
+            "Truth was"
           ],
           "correct_index": 0,
-          "explanation_ru": "Truth be told — «по правде говоря»: застывшая формула с субъюнктивным be и без артикля. Truth to be told и truth being told — «починенные» по русской логике варианты, the truth be — лишний артикль: формулу не меняют.",
+          "explanation_ru": "Truth be told — «по правде говоря»: застывшая формула с субъюнктивным be. Truth to be told и truth being told — «починенные» по русской логике варианты, truth was — обычное прошедшее время: формулу не меняют.",
           "difficulty": 2,
           "diagnostic": true
         },
@@ -64,7 +64,7 @@
         {
           "id": "c2_the_subjunctive_and_formulaic_remnants_be_that_as_it_may_come_what_03",
           "kind": "choice",
-          "prompt": "My knee still hurts and the forecast says 95°F, but ___: I'm running that marathon in October.",
+          "prompt": "My knee still hurts and the forecast says 95°F, but ___: I'm running that marathon on Sunday.",
           "options": [
             "come what may",
             "heaven forbid",
@@ -761,11 +761,11 @@
           "options": [
             "This policy",
             "It",
-            "The company",
+            "The staff",
             "Remote work"
           ],
           "correct_index": 0,
-          "explanation_ru": "Существительное-обобщение с this подхватывает всё предыдущее предложение и делает его темой следующего: This policy. It грамматично, но по умолчанию тянется к the company («скопировали саму компанию»), а The company и Remote work называют не то, что копировали.",
+          "explanation_ru": "Существительное-обобщение с this подхватывает всё предыдущее предложение и делает его темой следующего: This policy. It грамматично, но по умолчанию тянется к the company («скопировали саму компанию»), а The staff и Remote work называют не то, что копировали.",
           "difficulty": 2,
           "diagnostic": true
         },
@@ -818,7 +818,9 @@
             "This refusal meant",
             "This veto meant",
             "That rejection meant",
-            "That decision meant"
+            "That decision meant",
+            "This move meant",
+            "This vote meant"
           ],
           "explanation_ru": "Действие предыдущего предложения (rejected) превращается в тему следующего через this + существительное-обобщение: This rejection (decision) meant … Время согласуется с рассказом — meant. Голое This meant грамматично, но неясно, что именно подхватывается.",
           "difficulty": 2
@@ -830,7 +832,9 @@
           "answer": "Launched in 2021, the app was downloaded by millions of users in its first month.",
           "accept": [
             "Launched in 2021, the app was downloaded by millions of users in the first month.",
-            "The app was launched in 2021, and millions of users downloaded it in its first month."
+            "The app was launched in 2021, and millions of users downloaded it in its first month.",
+            "When the app was launched in 2021, millions of users downloaded it in its first month.",
+            "After the app was launched in 2021, millions of users downloaded it in its first month."
           ],
           "explanation_ru": "Причастный оборот в начале описывает подлежащее: launched in 2021 относится к приложению, а не к пользователям. Поэтому тема (the app) должна стать подлежащим — через пассив: the app was downloaded by millions of users. Иначе выходит, что в 2021 году «запустили» пользователей.",
           "difficulty": 2
@@ -1120,7 +1124,7 @@
         "I see your point, but I'm not sure I agree.",
         "This is clearly the best option."
       ],
-      "ru_interference": "Русская прямота переносится буквально и звучит грубо: неверно «Send me the photos today» соседу или незнакомому → верно «Could you send me the photos today?». Калька «я хотел спросить, можете ли вы» даёт вопросительный порядок внутри вежливой рамки: неверно «Could you tell me where is the station?» → верно «Could you tell me where the station is?».",
+      "ru_interference": "Русская прямота переносится буквально и звучит грубо: неверно «Send me the photos today» соседу или незнакомому → верно «Could you send me the photos today?». Калька «не подскажете, где вокзал?» даёт вопросительный порядок внутри вежливой рамки: неверно «Could you tell me where is the station?» → верно «Could you tell me where the station is?».",
       "prerequisites": [
         "c1_hedging_and_tentative_language_softening_claims",
         "c1_advanced_modal_verbs_will_would_and_should"
@@ -1252,7 +1256,9 @@
               "would really appreciate",
               "would appreciate",
               "would greatly appreciate",
-              "would so appreciate"
+              "would so appreciate",
+              "would very much appreciate",
+              "would truly appreciate"
             ]
           ],
           "explanation_ru": "1 — прошедшее длительное смягчает просьбу. 2 — I'd hate to bother you — извинение за беспокойство. 3 — эмфатическое does seem усиливает жалобу, не повышая тона. 4 — at all смягчает вопрос-просьбу. 5 — would really appreciate — вежливая благодарность заранее.",
@@ -1375,7 +1381,7 @@
           "answer": "little-understood",
           "accept": [
             "poorly understood",
-            "poorly-understood"
+            "barely understood"
           ],
           "explanation_ru": "Составное определение перед существительным склеивается дефисом: little + причастие understood → a little-understood mechanism. Без дефиса little understood пишут после глагола (the mechanism is little understood); с наречием на -ly дефис обычно не нужен — a poorly understood mechanism.",
           "difficulty": 2
@@ -1401,7 +1407,10 @@
             "She showed us a letter which her grandfather had written.",
             "She showed us a letter that her grandfather wrote.",
             "She showed us a letter her grandfather wrote.",
-            "She showed us a letter which her grandfather wrote."
+            "She showed us a letter which her grandfather wrote.",
+            "She showed us a letter that was written by her grandfather.",
+            "She showed us a letter which was written by her grandfather.",
+            "She showed us a letter which had been written by her grandfather."
           ],
           "explanation_ru": "Определение с зависимыми словами (written by her grandfather) не помещается перед существительным и уходит после него. Русское «написанное дедушкой письмо» дословно не переносится; без зависимых слов возможно и a handwritten letter.",
           "difficulty": 2
@@ -1465,7 +1474,8 @@
             [
               "hundred-year-old",
               "100-year-old",
-              "century-old"
+              "century-old",
+              "one-hundred-year-old"
             ],
             [
               "melt-in-your-mouth"
@@ -1495,7 +1505,7 @@
         {
           "id": "c2_complex_noun_phrases_and_heavy_premodification_13",
           "kind": "cloze",
-          "prompt": "In her closing statement, the judge observed that ___ (privacy) is not a luxury but a right. She noted that ___ (privacy) of four million customers had been compromised by a single careless upgrade. The company's founder, who had already spent two years in ___ (prison) for fraud, was back in ___ (court) that very week. '___ (technology),' she concluded, 'moves faster than the law — but it does not stand above it.'",
+          "prompt": "In her ruling, the judge observed that ___ (privacy) is not a luxury but a right. She noted that ___ (privacy) of four million customers had been compromised by a single careless upgrade. The company's founder, who had already spent two years in ___ (prison) for fraud, was back in ___ (court) that very week. '___ (technology),' she concluded, 'moves faster than the law — but it does not stand above it.'",
           "gaps": [
             [
               "privacy"
@@ -1715,17 +1725,17 @@
       "title_en": "Figurative language and conventional metaphor",
       "source_slug": "",
       "title_ru": "Образность и конвенциональная метафора",
-      "summary_ru": "Большая часть английской образности не поэтическая, а конвенциональная: носители её просто не замечают. Количество и настроение измеряются по вертикали (spirits are high, prices plummeted), жизнь и дела — как путь (we're on the right track, at a crossroads), экономика и здоровье — как организм или корабль (the economy is on the mend, in the doldrums), шум из-за пустяка — как погода (a storm in a teacup). Такие метафоры застыли и не допускают вариаций: spill the beans, но не spill the bean; break the ice, но не break the ices; kill two birds with one stone, но не with one shot. Метафоричны и многие фразовые глаголы: roll out, scale up, spin off. Чужие идиомы при дословном переводе не работают («лить воду» в отчёте — pad a report, а не pour water), поэтому безопаснее использовать закреплённые английские выражения и проверять их сочетаемость.",
+      "summary_ru": "Большая часть английской образности не поэтическая, а конвенциональная: носители её просто не замечают. Количество и настроение измеряются по вертикали (spirits are high, prices plummeted), жизнь и дела — как путь (we're on the right track, at a crossroads), экономика и здоровье — как организм или корабль (the economy is on the mend, in the doldrums), шум из-за пустяка — как погода (a tempest in a teapot). Такие метафоры застыли и не допускают вариаций: spill the beans, но не spill the bean; break the ice, но не break the ices; kill two birds with one stone, но не with one shot. Метафоричны и многие фразовые глаголы: roll out, scale up, spin off. Чужие идиомы при дословном переводе не работают («лить воду» в отчёте — pad a report, а не pour water), поэтому безопаснее использовать закреплённые английские выражения и проверять их сочетаемость.",
       "forms": [
         "fixed idiom without variation: spill the beans / break the ice / hit the ground running",
         "plans as objects: on the back burner, set in stone",
         "up / down for quantity and mood: spirits are high, prices plummeted",
         "journey and health metaphors: on the right track, at a crossroads, on the mend",
-        "weather and water: a storm in a teacup, in the doldrums"
+        "weather and water: a tempest in a teapot, in the doldrums"
       ],
       "examples": [
         "Sooner or later, the city will have to face the music.",
-        "We're on the right track, but it's early days.",
+        "We're on the right track, but we're not there yet.",
         "The merger talks are on the back burner for now.",
         "House prices plummeted after the crash.",
         "The new manager hit the ground running.",
@@ -1946,12 +1956,12 @@
           "prompt": "Which is a correctly written headline announcing that the CEO will leave in June?",
           "options": [
             "CEO to step down in June",
-            "CEO steps down in June",
+            "CEO was to step down in June",
             "CEO stepped down in June",
             "The CEO is going to step down in June"
           ],
           "correct_index": 0,
-          "explanation_ru": "Будущее в заголовке передаёт инфинитив с to: CEO to step down. Настоящее простое (steps down) в заголовке значит, что это уже случилось, прошедшее stepped — не газетная форма, а полное предложение с the и is going to — обычная проза, не заголовок.",
+          "explanation_ru": "Будущее в заголовке передаёт инфинитив с to: CEO to step down. Was to step down — план в прошлом, который мог и сорваться, прошедшее stepped down сообщает о случившемся, а полное предложение с the и is going to — обычная проза, не заголовок.",
           "difficulty": 2,
           "diagnostic": true
         },
@@ -2015,7 +2025,9 @@
             "Dear Ms. Ortiz, Attached please find the signed contract for your records.",
             "Dear Ms. Ortiz, Attached you will find the signed contract for your records.",
             "Dear Ms. Ortiz, I have attached the signed contract for your records.",
-            "Dear Ms. Ortiz, The signed contract is attached for your records."
+            "Dear Ms. Ortiz, The signed contract is attached for your records.",
+            "Dear Ms. Ortiz, Please find the signed contract attached for your records.",
+            "Dear Ms. Ortiz, I am attaching the signed contract for your records."
           ],
           "explanation_ru": "Телеграфный пропуск глагола (Attached the contract) — примета чата или записки; в официальном письме нужна полная конструкция: Attached is… (причастие впереди, подлежащее после be) или Please find attached…",
           "difficulty": 2
@@ -2118,7 +2130,8 @@
             "That client in Boston, I just can't figure her out.",
             "That client in Boston, I just can't figure them out.",
             "That client in Boston — I just can't figure him out.",
-            "That client in Boston — I just can't figure her out."
+            "That client in Boston — I just can't figure her out.",
+            "That client in Boston — I just can't figure them out."
           ],
           "explanation_ru": "«Голова» выносит тему в начало отдельной группой, а в самом предложении её заменяет местоимение: That client in Boston, I just can't figure him out. С местоимением фразовый глагол разрывается — figure him out, а не figure out him.",
           "difficulty": 3
@@ -2150,7 +2163,7 @@
       "title_en": "Nuanced quantification, approximation and vague language",
       "source_slug": "",
       "title_ru": "Тонкая квантификация и приблизительность",
-      "summary_ru": "На высоком уровне количество в английском выражается не только числами. Quite a few значит «довольно много», а не «немного»; not a few — литота с тем же смыслом. Приблизительность передают about, around, roughly, in the region of, upwards of («более»), or so, give or take, суффикс -odd (twenty-odd people — «двадцать с лишним») и a good + единица времени (a good hour — «добрый час»). Эмфатические обороты no fewer than и as many as подчёркивают, что число велико, а as few as и as little as — что мало; по исчисляемости они выбираются так же, как many и much. Партитивы тоже различают оттенки: the lion's share (бо́льшая часть), a handful of (горстка), next to nothing (почти ничего), all but (почти: all but impossible), the best part of (почти весь: the best part of an hour). Расплывчатые выражения уместны в речи и журналистике, но в отчёте требуют уточнения цифрой. В разговоре точность размывают намеренно: -ish (fortyish), sort of / kind of, and stuff / and things, or something, or whatever — это признак непринуждённости, а не небрежности; stuff при этом неисчисляемое и -s не берёт.",
+      "summary_ru": "На высоком уровне количество в английском выражается не только числами. Quite a few значит «довольно много», а не «немного»; not a few — литота с тем же смыслом. Приблизительность передают about, around, roughly, in the region of, upwards of («более»), or so, give or take, суффикс -odd (twenty-odd people — «двадцать с лишним») и a good + единица времени (a good hour — «добрый час»). Эмфатические обороты no fewer than и as many as подчёркивают, что число велико, а as few as и as little as — что мало; по исчисляемости они выбираются так же, как many и much. Партитивы тоже различают оттенки: the lion's share (бо́льшая часть), a handful of (горстка), next to nothing (почти ничего), all but (почти: all but impossible), the better part of (почти весь: the better part of an hour). Расплывчатые выражения уместны в речи и журналистике, но в отчёте требуют уточнения цифрой. В разговоре точность размывают намеренно: -ish (fortyish), sort of / kind of, and stuff / and things, or something, or whatever — это признак непринуждённости, а не небрежности; stuff при этом неисчисляемое и -s не берёт.",
       "forms": [
         "quite a few / not a few (= довольно много) ↔ a few / few",
         "upwards of / in the region of / give or take + число; twenty-odd; a good hour",
@@ -2207,13 +2220,13 @@
           "kind": "choice",
           "prompt": "We spent ___ a year negotiating the contract — eleven months, to be exact.",
           "options": [
-            "the best part of",
+            "the better part of",
             "upwards of",
             "a good",
             "no less than"
           ],
           "correct_index": 0,
-          "explanation_ru": "The best part of — «бо́льшая часть, почти весь»: одиннадцать месяцев из двенадцати. Upwards of и a good значат «больше» и «не меньше года», no less than — «целый год, не меньше»: все три противоречат eleven months.",
+          "explanation_ru": "The better part of — «бо́льшая часть, почти весь»: одиннадцать месяцев из двенадцати. Upwards of и a good значат «больше» и «не меньше года», no less than — «целый год, не меньше»: все три противоречат eleven months.",
           "difficulty": 2,
           "diagnostic": true
         },
@@ -2332,7 +2345,8 @@
             ],
             [
               "or so",
-              "give or take"
+              "give or take",
+              "more or less"
             ],
             [
               "and stuff",
@@ -2351,7 +2365,8 @@
             ],
             [
               "or something",
-              "or whatever"
+              "or whatever",
+              "or something like that"
             ]
           ],
           "explanation_ru": "В живой речи точность намеренно размывают: seven-ish — «около семи», or so — «примерно», and stuff / and things — «и всё такое» (stuff неисчисляемое, stuffs — ошибка), kind of / sort of — смягчение, or something — «или что-то в этом роде». В отчёте или письме те же места требуют цифры и точного перечня.",

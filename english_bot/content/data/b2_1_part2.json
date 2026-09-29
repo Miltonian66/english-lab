@@ -130,7 +130,8 @@
           "accept": [
             "You need not have bought flowers.",
             "You needn't have bought the flowers.",
-            "You need not have bought the flowers."
+            "You need not have bought the flowers.",
+            "You needn't have bought any flowers."
           ],
           "explanation_ru": "Действие выполнено и было напрасным — это ровно значение needn't have + V3.",
           "difficulty": 3
@@ -361,7 +362,8 @@
           "prompt": "Rewrite using the word in capitals (do not change it): It was a mistake for us not to test the update before the release. SHOULD",
           "answer": "We should have tested the update before the release.",
           "accept": [
-            "We should have tested the update before releasing it."
+            "We should have tested the update before releasing it.",
+            "We should have tested the update before we released it."
           ],
           "explanation_ru": "Сожаление о том, что не сделали, — should have + V3 в утвердительной форме: We should have tested. Should test относилось бы к будущему, а should tested без have невозможно.",
           "difficulty": 3
@@ -643,16 +645,16 @@
         {
           "id": "b2_have_something_done_02",
           "kind": "choice",
-          "prompt": "We ___ the office cleaned every Friday.",
+          "prompt": "We don't clean the office ourselves — we ___ every Friday.",
           "options": [
-            "have",
-            "are",
-            "make",
-            "do"
+            "have it cleaned",
+            "have cleaned it",
+            "are cleaned",
+            "clean it"
           ],
           "correct_index": 0,
-          "explanation_ru": "Конструкция с причастием cleaned строится именно с глаголом have; make и do в этой схеме не употребляются.",
-          "difficulty": 1
+          "explanation_ru": "Работу делает кто-то другой — have + объект + V3: have it cleaned. Have cleaned it — present perfect («уже убрали сами»), clean it противоречит первой части, а are cleaned значило бы, что убирают нас.",
+          "difficulty": 2
         },
         {
           "id": "b2_have_something_done_03",
@@ -745,16 +747,16 @@
         {
           "id": "b2_have_something_done_10",
           "kind": "choice",
-          "prompt": "Marcus ___ his wallet stolen on the subway last night.",
+          "prompt": "Poor Marcus! He ___ on the subway last night, so he had to cancel all his cards.",
           "options": [
-            "had",
-            "was",
-            "did",
-            "made"
+            "had his wallet stolen",
+            "had stolen his wallet",
+            "stole his wallet",
+            "was stolen his wallet"
           ],
           "correct_index": 0,
-          "explanation_ru": "Have + объект + V3 описывает и неприятность, случившуюся с человеком: he had his wallet stolen. Was stolen требует другого подлежащего (His wallet was stolen), а do и make в этой схеме не употребляются.",
-          "difficulty": 1,
+          "explanation_ru": "Have + объект + V3 описывает и неприятность, которая случилась с человеком: had his wallet stolen — «у него украли кошелёк». Had stolen his wallet и stole his wallet значат, что он сам украл кошелёк, а was stolen his wallet — калька с «у него был украден».",
+          "difficulty": 2,
           "diagnostic": true
         },
         {
@@ -766,9 +768,13 @@
             "I am having my brakes checked tomorrow.",
             "I'm having my brakes checked by a mechanic tomorrow.",
             "I am having my brakes checked by a mechanic tomorrow.",
-            "Tomorrow I'm having my brakes checked."
+            "Tomorrow I'm having my brakes checked.",
+            "I'm having a mechanic check my brakes tomorrow.",
+            "I am having a mechanic check my brakes tomorrow.",
+            "Tomorrow I'm having a mechanic check my brakes.",
+            "Tomorrow I'm having my brakes checked by a mechanic."
           ],
-          "explanation_ru": "Договорённость на завтра — present continuous (I'm having), а работу делает механик — have + объект + V3: my brakes checked. Исполнителя можно добавить через by.",
+          "explanation_ru": "Договорённость на завтра — present continuous (I'm having), а работу делает механик — have + объект + V3: my brakes checked. Исполнителя можно добавить через by или поставить его объектом: I'm having a mechanic check my brakes (have + человек + V1).",
           "difficulty": 3
         },
         {
@@ -788,7 +794,9 @@
               "are having the garden cleaned up",
               "will have the garden cleaned up",
               "are getting the garden cleaned up",
-              "are going to have the garden cleaned up"
+              "are going to have the garden cleaned up",
+              "are going to get the garden cleaned up",
+              "will get the garden cleaned up"
             ],
             [
               "have had the photos taken",
@@ -996,7 +1004,8 @@
           "prompt": "Rewrite using the word in capitals (do not change it): People say that the actress is getting married next month. SAID",
           "answer": "The actress is said to be getting married next month.",
           "accept": [
-            "It is said that the actress is getting married next month."
+            "It is said that the actress is getting married next month.",
+            "It is said the actress is getting married next month."
           ],
           "explanation_ru": "Личная схема выносит the actress в подлежащее: is said + to be getting — продолженный инфинитив, потому что в исходном предложении is getting. Безличный вариант It is said that... тоже верен.",
           "difficulty": 3
@@ -1052,7 +1061,8 @@
           ],
           "correct_index": 0,
           "explanation_ru": "Mistake входит в устойчивое сочетание с make: make a mistake.",
-          "difficulty": 1
+          "difficulty": 1,
+          "diagnostic": false
         },
         {
           "id": "b2_do_or_make_which_is_it_02",
@@ -1206,6 +1216,22 @@
           "explanation_ru": "«Принять решение» — make up one's mind. Do up значит «застегнуть» или «отремонтировать», а take и do с mind в этом значении не сочетаются.",
           "difficulty": 2,
           "diagnostic": true
+        },
+        {
+          "id": "b2_do_or_make_which_is_it_13",
+          "kind": "transform",
+          "prompt": "Rewrite using the word in capitals (do not change it): His explanation was completely illogical. SENSE",
+          "answer": "His explanation made no sense at all.",
+          "accept": [
+            "His explanation made no sense.",
+            "His explanation made absolutely no sense.",
+            "His explanation didn't make any sense.",
+            "His explanation didn't make any sense at all.",
+            "His explanation didn't make sense.",
+            "His explanation didn't make sense at all."
+          ],
+          "explanation_ru": "«Иметь смысл» — make sense: make сочетается с тем, что возникает в результате (make a plan, make a difference, make sense), а do — с самой работой (do research). Отрицание — made no sense или didn't make (any) sense; do sense не бывает.",
+          "difficulty": 3
         }
       ]
     },
@@ -1320,7 +1346,9 @@
           "prompt": "However hardly we try, the plants in our garden keep dying.",
           "answer": "However hard we try, the plants in our garden keep dying.",
           "accept": [
-            "No matter how hard we try, the plants in our garden keep dying."
+            "No matter how hard we try, the plants in our garden keep dying.",
+            "The plants in our garden keep dying however hard we try.",
+            "The plants in our garden keep dying no matter how hard we try."
           ],
           "explanation_ru": "Hardly значит «едва»; в этой конструкции нужно наречие hard.",
           "difficulty": 3
@@ -1389,6 +1417,21 @@
           "explanation_ru": "Выбор из ограниченного набора (of the two laptops) — whichever. Whatever говорит о чём угодно без заданного списка и с of не сочетается.",
           "difficulty": 2,
           "diagnostic": true
+        },
+        {
+          "id": "b2_whatever_whenever_wherever_whoever_however_12",
+          "kind": "transform",
+          "prompt": "Rewrite using the word in capitals (do not change it): It doesn't matter how busy she is — she always calls her mom on Sundays. HOWEVER",
+          "answer": "However busy she is, she always calls her mom on Sundays.",
+          "accept": [
+            "She always calls her mom on Sundays, however busy she is.",
+            "However busy she may be, she always calls her mom on Sundays.",
+            "She always calls her mom on Sundays, however busy she may be.",
+            "However busy she gets, she always calls her mom on Sundays.",
+            "She always calls her mom on Sundays, however busy she gets."
+          ],
+          "explanation_ru": "However в значении «как бы ни» стоит вплотную к прилагательному: however busy she is — «как бы она ни была занята». После него обычный порядок слов; However she is busy значило бы «однако она занята».",
+          "difficulty": 3
         }
       ]
     },
@@ -1493,11 +1536,14 @@
         {
           "id": "b2_quantifiers_06",
           "kind": "gap",
-          "prompt": "Both ___ (we) work in the same department.",
-          "answer": "of us",
-          "accept": [],
-          "explanation_ru": "Перед местоимением квантификатор требует of, а само местоимение стоит в объектном падеже: both of us.",
-          "difficulty": 1
+          "prompt": "___ (both / we) work in the same department, so we often have lunch together.",
+          "answer": "Both of us",
+          "accept": [
+            "We both"
+          ],
+          "explanation_ru": "Перед местоимением both требует of и объектной формы: both of us. Второй верный порядок — местоимение-подлежащее, а both после него: we both. Both we так не говорят.",
+          "difficulty": 1,
+          "diagnostic": false
         },
         {
           "id": "b2_quantifiers_07",
@@ -1539,7 +1585,7 @@
         {
           "id": "b2_quantifiers_10",
           "kind": "cloze",
-          "prompt": "Complete with neither, most, no, all or none: Our family tried two campsites last summer, but ___ of them had hot water. At the second one there was ___ shop at all, so we drove to the village every day. The weather was great, though: it rained on ___ of the ten days. Still, ___ four of us enjoyed the trip, and we're going back next year.",
+          "prompt": "Complete with neither, most, no, all or none: Our family tried two campsites last summer, but ___ of them had hot water. At the second one there was ___ shop at all, so we drove to the village every day. The weather was great, though: ___ of the ten days was rainy. Still, ___ four of us enjoyed the trip, and we're going back next year.",
           "gaps": [
             [
               "neither"
@@ -1554,7 +1600,7 @@
               "all"
             ]
           ],
-          "explanation_ru": "Из двух кемпингов — neither; перед существительным shop при утвердительном was — no; «ни в один из десяти дней» — none of; вся семья из четырёх человек — all four of us.",
+          "explanation_ru": "Из двух кемпингов — neither; перед существительным shop при утвердительном was — no; «ни один из десяти дней» — none of, потому что дней больше двух; вся семья из четырёх человек — all four of us.",
           "difficulty": 2
         },
         {
@@ -1586,6 +1632,20 @@
           "explanation_ru": "Перед of ставится each, а every с of не сочетается (нужно every one of). Both и either говорят ровно о двух, а детей четверо.",
           "difficulty": 2,
           "diagnostic": true
+        },
+        {
+          "id": "b2_quantifiers_13",
+          "kind": "transform",
+          "prompt": "Rewrite starting with 'Neither': The two restaurants near our hotel were both closed on Monday.",
+          "answer": "Neither of the two restaurants near our hotel was open on Monday.",
+          "accept": [
+            "Neither of the restaurants near our hotel was open on Monday.",
+            "Neither restaurant near our hotel was open on Monday.",
+            "Neither of the two restaurants near our hotel were open on Monday.",
+            "Neither of the restaurants near our hotel were open on Monday."
+          ],
+          "explanation_ru": "Neither уже содержит отрицание — «ни один из двух», поэтому глагол утвердительный: was open, а не wasn't open. Перед the нужно of (neither of the restaurants), а без of — существительное в единственном числе: neither restaurant. После neither of в разговорной речи возможно и were.",
+          "difficulty": 3
         }
       ]
     },
@@ -1784,6 +1844,15 @@
           "explanation_ru": "Ошибка в does ... opens: после does смысловой глагол стоит в начальной форме — does the museum open. Who и which bus здесь подлежащие, поэтому do не нужен, а предлог for стоит в конце вопроса.",
           "difficulty": 3,
           "diagnostic": false
+        },
+        {
+          "id": "b2_questions_different_types_13",
+          "kind": "transform",
+          "prompt": "Ask a question about the part in brackets: Lena is worried about [her driving test].",
+          "answer": "What is Lena worried about?",
+          "accept": [],
+          "explanation_ru": "В вопросе к дополнению с предлогом предлог уходит в конец: What is Lena worried about? Начало About what… — калька с «О чём…», в живой речи так не спрашивают.",
+          "difficulty": 2
         }
       ]
     },
@@ -1964,6 +2033,15 @@
           "explanation_ru": "Фильм вызывает разочарование, а не испытывает его, поэтому disappointing. Disappointed описало бы зрителя, а существительное disappointment после a bit не ставится.",
           "difficulty": 1,
           "diagnostic": false
+        },
+        {
+          "id": "b2_participle_adjectives_12",
+          "kind": "transform",
+          "prompt": "Rewrite using the word in capitals (do not change it): The service at the new restaurant was very slow, and that disappointed us. DISAPPOINTINGLY",
+          "answer": "The service at the new restaurant was disappointingly slow.",
+          "accept": [],
+          "explanation_ru": "Перед прилагательным нужно наречие от -ing-формы: disappointingly slow — «медленный до разочарования». Такие наречия (surprisingly, disappointingly, shockingly) называют чувство, которое вызывает признак; disappointing slow — ошибка.",
+          "difficulty": 3
         }
       ]
     },
@@ -2115,7 +2193,8 @@
           "prompt": "Rewrite using the word in capitals (do not change it): 'Is the server down again?' I asked the admin. WHETHER",
           "answer": "I asked the admin whether the server was down again.",
           "accept": [
-            "I asked the admin whether or not the server was down again."
+            "I asked the admin whether or not the server was down again.",
+            "I asked the admin whether the server was down again or not."
           ],
           "explanation_ru": "Общий вопрос в пересказе вводится через whether (или if), порядок слов прямой (the server was), а время сдвигается назад: is → was.",
           "difficulty": 3
@@ -2167,7 +2246,9 @@
           "accept": [
             "I was wondering if you could send me the latest budget before the meeting on Friday.",
             "I was wondering if you can send me the latest budget before Friday's meeting.",
-            "I was wondering if you could send me the latest budget before the Friday meeting."
+            "I was wondering if you could send me the latest budget before the Friday meeting.",
+            "I was wondering if you could possibly send me the latest budget before Friday's meeting.",
+            "I was wondering if you would be able to send me the latest budget before Friday's meeting."
           ],
           "explanation_ru": "I was wondering if + подлежащее + could + V1 — самая мягкая форма просьбы в деловой переписке. После if порядок слов прямой (you could), как в любом косвенном вопросе, а was wondering и could делают просьбу вежливее, а не переносят её в прошлое. С can (I was wondering if you can…) фраза тоже звучит вежливо, но could мягче.",
           "difficulty": 3
@@ -2227,7 +2308,8 @@
           ],
           "correct_index": 0,
           "explanation_ru": "Refuse всегда сочетается с инфинитивом с to.",
-          "difficulty": 1
+          "difficulty": 1,
+          "diagnostic": false
         },
         {
           "id": "b2_reporting_verbs_02",
@@ -2409,7 +2491,12 @@
             "Our team lead told us not to merge anything until all the tests pass.",
             "Our team lead told us not to merge anything until all tests passed.",
             "Our team lead told us not to merge anything until the tests passed.",
-            "Our team lead told us that we shouldn't merge anything until all the tests passed."
+            "Our team lead told us that we shouldn't merge anything until all the tests passed.",
+            "Our team lead told us not to merge anything until all tests had passed.",
+            "Our team lead told us not to merge anything until the tests had passed.",
+            "Our team lead told us we shouldn't merge anything until all the tests passed.",
+            "Our team lead told us that we shouldn't merge anything until all the tests had passed.",
+            "Our team lead told us we shouldn't merge anything until all the tests had passed."
           ],
           "explanation_ru": "Команда в пересказе — tell + дополнение + (not) to + V1: told us not to merge. Повелительное don't в косвенной речи не сохраняется, а в придаточном время обычно сдвигается: pass → passed.",
           "difficulty": 3
@@ -2425,7 +2512,18 @@
             "She said that she was meeting the client there the following day.",
             "She said she was meeting the client there the day after.",
             "She said she was going to meet the client there the next day.",
-            "She said she was going to meet the client there the following day."
+            "She said she was going to meet the client there the following day.",
+            "She said that she was meeting the client there the day after.",
+            "She said that she was going to meet the client there the next day.",
+            "She said that she was going to meet the client there the following day.",
+            "She said she was going to meet the client there the day after.",
+            "She said that she was going to meet the client there the day after.",
+            "She said she would be meeting the client there the next day.",
+            "She said that she would be meeting the client there the next day.",
+            "She said she would be meeting the client there the following day.",
+            "She said that she would be meeting the client there the following day.",
+            "She said she would be meeting the client there the day after.",
+            "She said that she would be meeting the client there the day after."
           ],
           "explanation_ru": "Слова сказаны неделю назад, поэтому меняется всё, что привязано к моменту речи: am meeting → was meeting, here → there, tomorrow → the next day (the following day). Tomorrow остаётся, только если пересказываешь в тот же день.",
           "difficulty": 3

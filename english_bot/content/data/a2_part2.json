@@ -21,7 +21,7 @@
         "The plane took off ten minutes late.",
         "Please turn off the light.",
         "Please turn the light off.",
-        "It is too loud. Can you turn it off?",
+        "These shoes look nice. Can I try them on?",
         "She looks after her little brother every day.",
         "We ran out of paper this morning."
       ],
@@ -114,9 +114,11 @@
           "prompt": "The music is too loud. Can you turn off it?",
           "answer": "The music is too loud. Can you turn it off?",
           "accept": [
-            "Can you turn it off?"
+            "Can you turn it off?",
+            "The music is too loud. Can you turn it down?",
+            "Can you turn it down?"
           ],
-          "explanation_ru": "С местоимением порядок только turn it off; turn off it невозможно.",
+          "explanation_ru": "С местоимением порядок только turn it off: it стоит между глаголом и частицей, turn off it невозможно. Так же и turn it down — «сделай потише».",
           "difficulty": 3
         },
         {
@@ -133,7 +135,7 @@
         {
           "id": "a2_phrasal_verbs_transitive_and_intransitive_separable_and_inseparable_09",
           "kind": "cloze",
-          "prompt": "It was cold outside, so Hana put her coat ___. She looked ___ her keys for ten minutes. When she found them, she turned the lights ___ and left. Then her mom called: \"Your scarf is here! Come back and put ___!\"",
+          "prompt": "It was cold outside, so Hana put her coat ___. She looked ___ her keys for ten minutes. When she found them, she turned the lights ___ and left. Then her mom called: \"Your scarf is here! Come back and put ___ (it / on)!\"",
           "gaps": [
             [
               "on"
@@ -292,7 +294,9 @@
           "kind": "correct",
           "prompt": "I got to home very late yesterday.",
           "answer": "I got home very late yesterday.",
-          "accept": [],
+          "accept": [
+            "Yesterday I got home very late."
+          ],
           "explanation_ru": "Home — наречие места, поэтому предлог to перед ним не ставится.",
           "difficulty": 3
         },
@@ -338,6 +342,30 @@
           "explanation_ru": "Спросить дорогу — How do I get to…? Get to значит «добраться». Arrive требует at или in и не спрашивает о маршруте, а reach берёт дополнение без to.",
           "difficulty": 1,
           "diagnostic": true
+        },
+        {
+          "id": "a2_the_different_uses_of_the_verb_get_11",
+          "kind": "cloze",
+          "prompt": "Last Saturday Maya and her brother went hiking. In the afternoon they ___ (get) lost in the forest. It was ___ (get) dark, and they were cold and hungry. At nine they finally ___ (get) to the car. On the way back they stopped to ___ (get) some pizza, and they ___ (get) home at midnight.",
+          "gaps": [
+            [
+              "got"
+            ],
+            [
+              "getting"
+            ],
+            [
+              "got"
+            ],
+            [
+              "get"
+            ],
+            [
+              "got"
+            ]
+          ],
+          "explanation_ru": "Get меняет смысл по тому, что стоит после него: got lost — «заблудились», was getting dark — «темнело» (get + прилагательное), got to the car — «добрались до машины», get some pizza — «купить пиццу». Перед home предлог to не ставят: got home.",
+          "difficulty": 2
         }
       ]
     },
@@ -449,7 +477,9 @@
           "kind": "correct",
           "prompt": "In the end of the year we always clean the whole house.",
           "answer": "At the end of the year we always clean the whole house.",
-          "accept": [],
+          "accept": [
+            "We always clean the whole house at the end of the year."
+          ],
           "explanation_ru": "Перед of the year нужна форма at the end; in the end не сочетается с of.",
           "difficulty": 3
         },
@@ -458,7 +488,9 @@
           "kind": "correct",
           "prompt": "We got to the station on time to catch the last train.",
           "answer": "We got to the station in time to catch the last train.",
-          "accept": [],
+          "accept": [
+            "We got to the station just in time to catch the last train."
+          ],
           "explanation_ru": "Перед to + инфинитив со значением 'успеть' используется in time, а не on time.",
           "difficulty": 3
         },
@@ -494,6 +526,17 @@
           "explanation_ru": "«В конце концов, в итоге» — in the end без of. At the end требует продолжения of something (at the end of the day), а on the end и in the finish так не говорят.",
           "difficulty": 2,
           "diagnostic": true
+        },
+        {
+          "id": "a2_on_time_vs_in_time_at_the_end_vs_in_the_end_11",
+          "kind": "transform",
+          "prompt": "Переведи на английский: «Мы ушли в конце концерта.»",
+          "answer": "We left at the end of the concert.",
+          "accept": [
+            "At the end of the concert, we left."
+          ],
+          "explanation_ru": "«В конце чего-то» — точка в конце: at the end of + существительное, at the end of the concert. Русское «в» тянет к in, но in the end значит «в итоге» и с of не сочетается.",
+          "difficulty": 2
         }
       ]
     },
@@ -669,7 +712,7 @@
         {
           "id": "a2_prepositions_of_movement_11",
           "kind": "choice",
-          "prompt": "A: How do I get to the lake?\nB: Go ___ the hill and down the other side.",
+          "prompt": "A: How do I get to the lake?\nB: There's a small hill behind the school. Go ___ it, and you'll see the lake on the other side.",
           "options": [
             "over",
             "through",
@@ -677,7 +720,7 @@
             "into"
           ],
           "correct_index": 0,
-          "explanation_ru": "Перебраться через препятствие сверху, вверх и вниз — over. Through значило бы идти сквозь холм, along — вдоль, into — внутрь.",
+          "explanation_ru": "Перебраться через препятствие сверху, на другую сторону — over: go over the hill. Through значило бы идти сквозь холм (для этого нужен тоннель), along — вдоль него, into — внутрь.",
           "difficulty": 2,
           "diagnostic": true
         }
@@ -862,6 +905,25 @@
           "explanation_ru": "После can't нужна форма any-: anywhere. Nowhere дало бы двойное отрицание, somewhere в отрицании не используют, а everywhere меняет смысл («не вижу их повсюду»).",
           "difficulty": 2,
           "diagnostic": true
+        },
+        {
+          "id": "a2_something_anything_nothing_etc_12",
+          "kind": "transform",
+          "prompt": "Переведи на английский: «Я никому ничего не сказал.»",
+          "answer": "I didn't tell anybody anything.",
+          "accept": [
+            "I didn't tell anyone anything.",
+            "I told nobody anything.",
+            "I told no one anything.",
+            "I didn't say anything to anybody.",
+            "I didn't say anything to anyone.",
+            "I said nothing to anybody.",
+            "I said nothing to anyone.",
+            "I haven't told anybody anything.",
+            "I haven't told anyone anything."
+          ],
+          "explanation_ru": "В английском одно отрицание на предложение, сколько бы «ни-» ни было в русском: после didn't все слова идут с any-: I didn't tell anybody anything. Если отрицание несёт no-слово, глагол утвердительный: I told nobody anything. I didn't tell nobody nothing — калька с тройным отрицанием.",
+          "difficulty": 3
         }
       ]
     },
@@ -1020,6 +1082,27 @@
           "explanation_ru": "«Большинство людей» — most people без the. The most нужен только в превосходной степени прилагательного: the most delicious.",
           "difficulty": 2,
           "diagnostic": true
+        },
+        {
+          "id": "a2_most_most_of_the_most_11",
+          "kind": "cloze",
+          "prompt": "There are twenty students in my yoga class, and ___ (большинство) them are women. ___ (большинство) people are busy during the day, so the evening classes are ___ (popular) of all. ___ (большинство) my friends from the class live near the studio.",
+          "gaps": [
+            [
+              "most of"
+            ],
+            [
+              "Most"
+            ],
+            [
+              "the most popular"
+            ],
+            [
+              "Most of"
+            ]
+          ],
+          "explanation_ru": "Перед местоимением и перед my нужен of: most of them, most of my friends. О людях вообще — most без of: most people. Превосходная степень длинного прилагательного — the most popular, и the здесь обязателен.",
+          "difficulty": 2
         }
       ]
     },
@@ -1136,7 +1219,8 @@
           "accept": [
             "We have lots of work this week.",
             "We have so much work this week.",
-            "We have plenty of work this week."
+            "We have plenty of work this week.",
+            "This week we have a lot of work."
           ],
           "explanation_ru": "В утвердительном предложении much почти не используется, вместо него a lot of.",
           "difficulty": 3
@@ -1207,6 +1291,20 @@
           "explanation_ru": "People исчисляемые, а смысл «мало, почти нет» даёт few без артикля. A few значит «несколько, достаточно», а little и much — только с неисчисляемыми.",
           "difficulty": 2,
           "diagnostic": true
+        },
+        {
+          "id": "a2_much_many_little_few_some_any_12",
+          "kind": "transform",
+          "prompt": "Переведи на английский: «Сколько у тебя братьев и сестёр?»",
+          "answer": "How many brothers and sisters do you have?",
+          "accept": [
+            "How many siblings do you have?",
+            "How many brothers and sisters have you got?",
+            "How many siblings have you got?"
+          ],
+          "explanation_ru": "Brothers и sisters исчисляемые, поэтому how many, а не how much. «У тебя есть» — do you have, и do стоит перед подлежащим: How many brothers and sisters do you have?",
+          "difficulty": 2,
+          "diagnostic": false
         }
       ]
     },
@@ -1218,7 +1316,7 @@
       "title_en": "Too, too much, too many, enough",
       "source_slug": "too-too-much-too-many-enough",
       "title_ru": "Too, too much, too many и enough",
-      "summary_ru": "Too значит 'слишком' и ставится перед прилагательным или наречием: too expensive, too slowly. Перед существительным нужна другая форма: too much с неисчисляемыми (too much coffee, too much work) и too many с исчисляемыми во множественном числе (too many tabs, too many bugs). Enough значит 'достаточно' и ведёт себя по-разному: перед существительным оно стоит впереди (enough time, enough people), а с прилагательным и наречием — ПОСЛЕ него (big enough, fast enough). Обе конструкции часто продолжаются инфинитивом: too expensive to buy, old enough to drive. Отрицание строится обычным способом: We don't have enough time. Помните: too всегда несёт отрицательную оценку, а enough — нейтральную. Смягчить или усилить прилагательное помогают наречия степени: a bit (немного) cold, quite (довольно) interesting, really (очень) good.",
+      "summary_ru": "Too значит 'слишком' и ставится перед прилагательным или наречием: too expensive, too slowly. Перед существительным нужна другая форма: too much с неисчисляемыми (too much coffee, too much work) и too many с исчисляемыми во множественном числе (too many tabs, too many bugs). Enough значит 'достаточно' и ведёт себя по-разному: перед существительным оно стоит впереди (enough time, enough people), а с прилагательным и наречием — ПОСЛЕ него (big enough, fast enough). Обе конструкции часто продолжаются инфинитивом: too expensive to buy, old enough to drive. Отрицание строится обычным способом: We don't have enough time. Помните: too всегда несёт отрицательную оценку, а enough — нейтральную. Смягчить или усилить прилагательное помогают наречия степени: a bit (немного) cold, pretty (довольно) good, really (очень) tired. Quite в американской речи звучит ближе к «вполне, очень»: quite sure.",
       "forms": [
         "too + прилагательное / наречие: too slow",
         "too much + неисчисляемое; too many + исчисляемое мн. ч.",
@@ -1232,9 +1330,9 @@
         "There are too many tabs open in my browser.",
         "We don't have enough time to test it.",
         "The server isn't fast enough.",
-        "He is old enough to drive."
+        "She is tall enough to reach the top shelf."
       ],
-      "ru_interference": "Русский порядок слов даёт 'достаточно большой' перед прилагательным: неверно 'The room is enough big' -> верно 'The room is big enough'.",
+      "ru_interference": "Русский порядок слов даёт 'достаточно тёплая' перед прилагательным: неверно 'The water is enough warm' -> верно 'The water is warm enough'.",
       "prerequisites": [
         "a1_adjectives",
         "a1_much_many_lot_little_few"
@@ -1403,13 +1501,13 @@
           "kind": "choice",
           "prompt": "Как сказать по-английски: «Этот фильм довольно интересный.»?",
           "options": [
-            "This movie is quite interesting.",
-            "This movie is quite an interesting.",
+            "This movie is pretty interesting.",
             "This movie is enough interesting.",
-            "This movie is interesting quite."
+            "This movie is interesting pretty.",
+            "This movie is pretty much interesting."
           ],
           "correct_index": 0,
-          "explanation_ru": "«Довольно» перед прилагательным — quite: quite interesting (сильнее — really interesting). Артикль появляется только с существительным: quite an interesting movie. Enough ставят после прилагательного, а quite — перед ним.",
+          "explanation_ru": "«Довольно» перед прилагательным в американской речи — pretty: pretty interesting (сильнее — really interesting). Enough значит «достаточно» и ставится после прилагательного, pretty — перед ним, а pretty much значит «почти, практически» (pretty much done) и с interesting не сочетается.",
           "difficulty": 2,
           "diagnostic": true
         },
@@ -1591,7 +1689,8 @@
           "prompt": "Could you to tell me the way to the station?",
           "answer": "Could you tell me the way to the station?",
           "accept": [
-            "Can you tell me the way to the station?"
+            "Can you tell me the way to the station?",
+            "Could you please tell me the way to the station?"
           ],
           "explanation_ru": "Could you…? — вежливая просьба, и после could, как после can, глагол стоит без to.",
           "difficulty": 2
@@ -1627,7 +1726,7 @@
       "title_en": "Subject questions, questions with preposition",
       "source_slug": "subject-questions-questions-preposition",
       "title_ru": "Вопросы к подлежащему и вопросы с предлогом",
-      "summary_ru": "Если вопросительное слово who, what или which само является подлежащим, вспомогательный глагол не нужен и порядок слов остаётся прямым: Who broke the window? What happened? Сравните с вопросом к дополнению, где do, does или did обязательны: Who did you call? В вопросе к подлежащему в настоящем времени глагол стоит в третьем лице единственного числа: Who knows the answer? Who wants coffee? В прошедшем времени просто прошедшая форма: Who called you? Второе правило: если в ответе нужен предлог, в вопросе он уходит в самый конец: Who are you waiting for? What are you talking about? Where does he come from? В разговорной речи предлог перед вопросительным словом не ставят; в официальном стиле так можно только с whom: With whom did you speak?",
+      "summary_ru": "Если вопросительное слово who, what или which само является подлежащим, вспомогательный глагол не нужен и порядок слов остаётся прямым: Who broke the window? What happened? Сравните с вопросом к дополнению, где do, does или did обязательны: Who did you call? В вопросе к подлежащему в настоящем времени глагол стоит в третьем лице единственного числа: Who knows the answer? Who wants coffee? В прошедшем времени просто прошедшая форма: Who called you? Второе правило: если в ответе нужен предлог, в вопросе он уходит в самый конец: Who are you waiting for? What are you laughing at? Where is she from? В разговорной речи предлог перед вопросительным словом не ставят; в официальном стиле так можно только с whom: With whom did you speak?",
       "forms": [
         "Вопрос к подлежащему: Who / What + глагол (без do, does, did)",
         "Who called? / What happened? — прошедшее без did",
@@ -1639,11 +1738,11 @@
         "Who broke the window?",
         "What happened to the server?",
         "Who did you meet at the party?",
-        "Who are you waiting for?",
+        "Who is she talking to?",
         "What is this book about?",
-        "Where does your new colleague come from?"
+        "Which hotel did you stay at?"
       ],
-      "ru_interference": "Русский ставит предлог перед вопросительным словом: неверно 'With who did you speak?' -> верно 'Who did you speak with?'.",
+      "ru_interference": "Русский ставит предлог перед вопросительным словом: неверно 'For who is this gift?' -> верно 'Who is this gift for?'.",
       "prerequisites": [
         "a1_questions",
         "a1_past_simple_negatives_questions"
@@ -1710,8 +1809,10 @@
           "kind": "gap",
           "prompt": "Who ___ the key to the server room now? (have)",
           "answer": "has",
-          "accept": [],
-          "explanation_ru": "Who — подлежащее, поэтому does не нужен, а глагол стоит в третьем лице ед. числа: has.",
+          "accept": [
+            "has got"
+          ],
+          "explanation_ru": "Who — подлежащее, поэтому does не нужен, а глагол стоит в третьем лице ед. числа: Who has the key? В разговоре так же говорят Who has got (Who's got) the key?",
           "difficulty": 1
         },
         {
@@ -1931,7 +2032,11 @@
             "I like the store that we bought the sofa from.",
             "I like the store which we bought the sofa from.",
             "I like the store we bought the sofa from.",
-            "I like the store in which we bought the sofa."
+            "I like the store in which we bought the sofa.",
+            "I like the store we bought the sofa at.",
+            "I like the store that we bought the sofa at.",
+            "I like the store which we bought the sofa at.",
+            "I like the store at which we bought the sofa."
           ],
           "explanation_ru": "После store идёт полное предложение с местом действия, поэтому нужно where.",
           "difficulty": 3
@@ -2109,7 +2214,9 @@
           "kind": "correct",
           "prompt": "Diego said us a funny joke.",
           "answer": "Diego told us a funny joke.",
-          "accept": [],
+          "accept": [
+            "Diego told a funny joke to us."
+          ],
           "explanation_ru": "Шутку и историю рассказывают через tell: tell a joke, tell a story. К тому же say не берёт адресата us без предлога to.",
           "difficulty": 3
         },

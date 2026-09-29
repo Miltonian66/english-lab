@@ -178,13 +178,14 @@
       "title_en": "Distancing: Expressions and passive of reporting verbs",
       "source_slug": "distancing",
       "title_ru": "Дистанцирование: безличные и пассивные конструкции",
-      "summary_ru": "Дистанцирование нужно, когда мы передаём информацию, но не отвечаем за её достоверность: слухи, отчёты, оценки. Первая модель безличная: It is said / believed / thought / reported / expected + that + придаточное. Вторая модель личная: подлежащее + is или was said + to + инфинитив, при этом лицо или предмет выносится в начало. Если событие произошло раньше момента речи, после to ставим перфектный инфинитив: to have + V3. С оборотом there конструкция тоже работает: There are thought to be about 200 users left. Короче и мягче то же самое передают наречия apparently, allegedly, reportedly и глаголы seem и appear. Все эти формы типичны для новостей, отчётов об инцидентах и осторожной деловой переписки.",
+      "summary_ru": "Дистанцирование нужно, когда мы передаём информацию, но не отвечаем за её достоверность: слухи, отчёты, оценки. Первая модель безличная: It is said / believed / thought / reported / expected + that + придаточное. Вторая модель личная: подлежащее + is или was said + to + инфинитив, при этом лицо или предмет выносится в начало. Если событие произошло раньше момента речи, после to ставим перфектный инфинитив: to have + V3. С оборотом there конструкция тоже работает: There are thought to be about 200 users left. Короче и мягче то же самое передают наречия apparently, allegedly, reportedly и глаголы seem и appear. Процесс в прошлом передаёт to have been + V-ing: The suspect is said to have been hiding in the woods. Ещё осторожнее звучат it would appear that и tend to + инфинитив для обобщений: People tend to overestimate their free time. Все эти формы типичны для новостей, отчётов об инцидентах и осторожной деловой переписки.",
       "forms": [
         "It + is/was + said/believed/thought/reported + that + clause",
         "Subject + is/was + said/believed + to + infinitive",
         "Subject + is/was + said + to have + V3 (earlier action)",
         "There + is/are + thought/believed + to be + noun",
-        "seem/appear + to + infinitive; apparently / allegedly / reportedly"
+        "seem/appear + to + infinitive; apparently / allegedly / reportedly",
+        "It would appear that + clause; subject + tend to + infinitive; is said to have been + V-ing"
       ],
       "examples": [
         "It is said that the old bridge is unsafe.",
@@ -284,7 +285,8 @@
           "prompt": "The restaurant is said that it has lost its Michelin star.",
           "answer": "The restaurant is said to have lost its Michelin star.",
           "accept": [
-            "It is said that the restaurant has lost its Michelin star."
+            "It is said that the restaurant has lost its Michelin star.",
+            "It is said that the restaurant lost its Michelin star."
           ],
           "explanation_ru": "После is said идёт инфинитив, а не придаточное с that; действие раньше момента речи даёт to have lost.",
           "difficulty": 3
@@ -364,9 +366,19 @@
           "prompt": "Rewrite in a more cautious style for an email to a client, starting with 'The delay': We think a problem with our supplier caused the delay.",
           "answer": "The delay is thought to have been caused by a problem with our supplier.",
           "accept": [
-            "The delay is believed to have been caused by a problem with our supplier."
+            "The delay is believed to have been caused by a problem with our supplier.",
+            "The delay is thought to have been caused by an issue with our supplier.",
+            "The delay is believed to have been caused by an issue with our supplier.",
+            "The delay is understood to have been caused by a problem with our supplier.",
+            "The delay is understood to have been caused by an issue with our supplier.",
+            "The delay appears to have been caused by a problem with our supplier.",
+            "The delay appears to have been caused by an issue with our supplier.",
+            "The delay seems to have been caused by a problem with our supplier.",
+            "The delay seems to have been caused by an issue with our supplier.",
+            "The delay would appear to have been caused by a problem with our supplier.",
+            "The delay would appear to have been caused by an issue with our supplier."
           ],
-          "explanation_ru": "Личная модель дистанцирования смягчает утверждение в письме клиенту: The delay is thought to have been caused… Задержку вызвали раньше момента речи, и вызвали её (пассив), поэтому нужен перфектный пассивный инфинитив to have been caused.",
+          "explanation_ru": "Личная модель дистанцирования смягчает утверждение в письме клиенту: The delay is thought (believed) to have been caused… Так же осторожно звучат seems / appears to have been caused. Задержку вызвали раньше момента речи, и вызвали её (пассив), поэтому нужен перфектный пассивный инфинитив to have been caused.",
           "difficulty": 3
         },
         {
@@ -377,6 +389,52 @@
           "accept": [],
           "explanation_ru": "Личная модель: подлежащее + is believed + to have + V3. Корабль затонул раньше, чем об этом говорят, поэтому инфинитив перфектный.",
           "difficulty": 2
+        },
+        {
+          "id": "b2_distancing_15",
+          "kind": "choice",
+          "prompt": "The mayor ___ accepted money from a building company, but he denies everything and there has been no trial yet.",
+          "options": [
+            "allegedly",
+            "obviously",
+            "certainly",
+            "personally"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Allegedly — «якобы, как утверждают»: обвинение не доказано, и говорящий за него не отвечает (так же reportedly — «по сообщениям»). Obviously и certainly выражают уверенность, которой нет, раз суда не было, а personally — личное участие.",
+          "difficulty": 2
+        },
+        {
+          "id": "b2_distancing_16",
+          "kind": "transform",
+          "prompt": "Rewrite in a more cautious written style, starting with 'It would appear': Someone has broken into the garage.",
+          "answer": "It would appear that someone has broken into the garage.",
+          "accept": [
+            "It would appear someone has broken into the garage.",
+            "It would appear that someone broke into the garage.",
+            "It would appear someone broke into the garage."
+          ],
+          "explanation_ru": "It would appear (that) + придаточное — осторожнее, чем it appears: would ещё больше снимает с говорящего ответственность. Так пишут в отчётах и официальных письмах. Время придаточного не меняется: has broken in.",
+          "difficulty": 2
+        },
+        {
+          "id": "b2_distancing_17",
+          "kind": "cloze",
+          "prompt": "LOCAL NEWS. The driver of the bus ___ (say / drive) too fast when the accident happened, although he denies this. Several passengers ___ (report → adverb) heard a loud bang just before the crash. According to the police, drivers on this road ___ (tend) ignore the speed limit, especially at night.",
+          "gaps": [
+            [
+              "is said to have been driving",
+              "was said to have been driving"
+            ],
+            [
+              "reportedly"
+            ],
+            [
+              "tend to"
+            ]
+          ],
+          "explanation_ru": "Процесс в прошлом, о котором говорят сейчас, — to have been + V-ing: is said to have been driving. Reportedly — «по сообщениям»: говорящий передаёт чужие сведения. Tend to + инфинитив смягчает обобщение: «как правило, склонны».",
+          "difficulty": 3
         }
       ]
     },
@@ -471,10 +529,12 @@
         {
           "id": "b2_passive_verbs_with_two_objects_05",
           "kind": "gap",
-          "prompt": "The clients ___ (should / send) the updated contract last week, but nobody on our team remembered to do it.",
+          "prompt": "The on-call engineer ___ (should / send) an automatic alert at 2 a.m., but someone had muted the monitoring rule.",
           "answer": "should have been sent",
-          "accept": [],
-          "explanation_ru": "Клиентам должны были отправить договор, но не отправили: подлежащим пассива стали клиенты, а упрёк о прошлом — should have been + V3. Should have sent значило бы, что отправить должны были сами клиенты.",
+          "accept": [
+            "should've been sent"
+          ],
+          "explanation_ru": "Дежурному должны были отправить автоматическое оповещение, но не отправили: подлежащим пассива стал человек, которому отправляют (send someone an alert), а упрёк о прошлом — should have been + V3. Should have sent значило бы, что отправить должен был сам дежурный.",
           "difficulty": 3
         },
         {
@@ -522,7 +582,8 @@
               "was shown"
             ],
             [
-              "was offered"
+              "was offered",
+              "got offered"
             ],
             [
               "wasn't told",
@@ -563,7 +624,7 @@
         {
           "id": "b2_passive_verbs_with_two_objects_12",
           "kind": "choice",
-          "prompt": "The client meeting ___ until next week because half the team is sick.",
+          "prompt": "The release ___ until next week because QA found two critical bugs.",
           "options": [
             "has been put off",
             "has been put",
@@ -571,7 +632,7 @@
             "has been off put"
           ],
           "correct_index": 0,
-          "explanation_ru": "Put off — «отложить»; в пассиве частица off остаётся сразу после причастия: has been put off. Без off смысл теряется, has put off — актив (встреча сама что-то отложила), а частицу перед причастием не ставят.",
+          "explanation_ru": "Put off — «отложить»; релиз откладывают, поэтому пассив, и частица off остаётся сразу после причастия: has been put off. Без off смысл теряется, has put off — актив (релиз сам что-то отложил), а частицу перед причастием не ставят.",
           "difficulty": 2,
           "diagnostic": true
         },
@@ -620,17 +681,53 @@
           "prompt": "Переведи на английский: «Нам сказали, что офис закроется в пять».",
           "answer": "We were told that the office would close at five.",
           "accept": [
-            "We were told the office would close at five.",
             "We were told that the office would close at 5.",
-            "We were told the office would close at 5.",
+            "We were told that the office would close at 5 p.m.",
+            "We were told that the office would close at five o'clock.",
+            "We were told that the office would be closed at five.",
+            "We were told that the office would be closed at 5.",
+            "We were told that the office would be closed at 5 p.m.",
+            "We were told that the office would be closed at five o'clock.",
             "We were told that the office was going to close at five.",
-            "We were told the office was going to close at five.",
+            "We were told that the office was going to close at 5.",
+            "We were told that the office was going to close at 5 p.m.",
+            "We were told that the office was going to close at five o'clock.",
             "We were told that the office would be closing at five.",
-            "We were told the office would be closing at five.",
+            "We were told that the office would be closing at 5.",
+            "We were told that the office would be closing at 5 p.m.",
+            "We were told that the office would be closing at five o'clock.",
             "We were told that the office will close at five.",
-            "We were told the office will close at five.",
+            "We were told that the office will close at 5.",
+            "We were told that the office will close at 5 p.m.",
+            "We were told that the office will close at five o'clock.",
             "We were told that the office closes at five.",
-            "We were told the office closes at five."
+            "We were told that the office closes at 5.",
+            "We were told that the office closes at 5 p.m.",
+            "We were told that the office closes at five o'clock.",
+            "We were told the office would close at five.",
+            "We were told the office would close at 5.",
+            "We were told the office would close at 5 p.m.",
+            "We were told the office would close at five o'clock.",
+            "We were told the office would be closed at five.",
+            "We were told the office would be closed at 5.",
+            "We were told the office would be closed at 5 p.m.",
+            "We were told the office would be closed at five o'clock.",
+            "We were told the office was going to close at five.",
+            "We were told the office was going to close at 5.",
+            "We were told the office was going to close at 5 p.m.",
+            "We were told the office was going to close at five o'clock.",
+            "We were told the office would be closing at five.",
+            "We were told the office would be closing at 5.",
+            "We were told the office would be closing at 5 p.m.",
+            "We were told the office would be closing at five o'clock.",
+            "We were told the office will close at five.",
+            "We were told the office will close at 5.",
+            "We were told the office will close at 5 p.m.",
+            "We were told the office will close at five o'clock.",
+            "We were told the office closes at five.",
+            "We were told the office closes at 5.",
+            "We were told the office closes at 5 p.m.",
+            "We were told the office closes at five o'clock."
           ],
           "explanation_ru": "Русское «нам сказали» — пассив с лицом в роли подлежащего: We were told. We were said и To us was said — кальки: say не берёт лицо без to. Будущее из прошлого — would close (если закрытие ещё впереди, возможно и will close).",
           "difficulty": 3
@@ -645,13 +742,14 @@
       "title_en": "Get: Different meanings",
       "source_slug": "get",
       "title_ru": "Глагол get: основные значения",
-      "summary_ru": "Get - один из самых частотных глаголов английского, и его значение задаёт то, что стоит после него. Get + существительное значит 'получить, достать': I got your email. Get + прилагательное значит 'становиться': it gets dark, I got angry, we got tired. Get to + место значит 'добраться, прийти': we got to the office at eight. Get + дополнение + to + инфинитив значит 'уговорить кого-то что-то сделать'. Get + дополнение + причастие III означает, что работу делает кто-то другой: get the laptop repaired. Отдельно запоминаем get + V3 как разговорный пассив: get lost, get paid, get stuck, get fired. В неформальной речи get также значит 'понимать': I don't get it.",
+      "summary_ru": "Get - один из самых частотных глаголов английского, и его значение задаёт то, что стоит после него. Get + существительное значит 'получить, достать': I got your email. Get + прилагательное значит 'становиться': it gets dark, I got angry, we got tired. Get to + место значит 'добраться, прийти': we got to the office at eight. Get + дополнение + to + инфинитив значит 'уговорить кого-то что-то сделать' или 'заставить вещь работать': get the dishwasher to start. Get + дополнение + -ing — 'запустить, привести в движение': the host got the conversation going. Get + дополнение + причастие III означает, что работу делает кто-то другой: get the laptop repaired. Отдельно запоминаем get + V3 как разговорный пассив: get lost, get paid, get stuck, get fired. В неформальной речи get также значит 'понимать': I don't get it.",
       "forms": [
         "get + noun = receive, obtain",
         "get + adjective = become",
         "get to + place = arrive",
         "get + object + to + infinitive = persuade",
-        "get + object + V3 = have something done"
+        "get + object + V3 = have something done",
+        "get + object + -ing = start something moving: get the conversation going"
       ],
       "examples": [
         "I got your email this morning.",
@@ -683,16 +781,16 @@
         {
           "id": "b2_get_02",
           "kind": "choice",
-          "prompt": "We ___ to the airport an hour before the flight.",
+          "prompt": "The engine was completely dead, but after an hour my dad finally ___ the old car going.",
           "options": [
             "got",
-            "became",
-            "reached to",
-            "arrived to"
+            "made",
+            "turned",
+            "became"
           ],
           "correct_index": 0,
-          "explanation_ru": "Get to значит 'добраться до места'; reach и arrive такого предлога не берут.",
-          "difficulty": 1
+          "explanation_ru": "Get + дополнение + -ing — «запустить, заставить работать»: got the old car going. Make тоже значит «заставить», но берёт голый инфинитив (made it start), а turn и become такой модели не образуют.",
+          "difficulty": 2
         },
         {
           "id": "b2_get_03",
@@ -761,7 +859,9 @@
           "kind": "transform",
           "prompt": "Rewrite using the word in capitals (do not change it): I finally persuaded my manager to let me work from home on Fridays. GOT",
           "answer": "I finally got my manager to let me work from home on Fridays.",
-          "accept": [],
+          "accept": [
+            "Finally, I got my manager to let me work from home on Fridays."
+          ],
           "explanation_ru": "Get + человек + to + инфинитив = «уговорить, добиться, чтобы кто-то сделал»: got my dad to try. В отличие от make и let, здесь to обязателен.",
           "difficulty": 3
         },
@@ -805,16 +905,16 @@
         {
           "id": "b2_get_11",
           "kind": "choice",
-          "prompt": "Как сказать по-английски: «Становится холодно — давай зайдём внутрь»?",
+          "prompt": "Как сказать по-английски: «Никак не могу заставить принтер работать»?",
           "options": [
-            "It's getting cold — let's go inside.",
-            "It becomes cold — let's go inside.",
-            "It's becoming to cold — let's go inside.",
-            "It's making cold — let's go inside."
+            "I just can't get the printer to work.",
+            "I just can't get the printer work.",
+            "I just can't make the printer to work.",
+            "I just can't get the printer worked."
           ],
           "correct_index": 0,
-          "explanation_ru": "Изменение, которое происходит прямо сейчас, — get + прилагательное в continuous: it's getting cold. It becomes cold — калька со словарным «становиться» и не то время; make cold и become to не существуют.",
-          "difficulty": 1,
+          "explanation_ru": "«Заставить вещь работать» — get + предмет + to + инфинитив: get the printer to work. Make тоже возможно, но без to (make the printer work), поэтому make … to work — ошибка. Get the printer worked — модель get + V3, где работу над предметом делает кто-то другой, и смысла «заработал» она не даёт.",
+          "difficulty": 2,
           "diagnostic": true
         }
       ]
@@ -827,13 +927,14 @@
       "title_en": "50 common Noun + Preposition collocations",
       "source_slug": "50-common-noun-preposition-collocations",
       "title_ru": "Существительное + предлог: частотные сочетания",
-      "summary_ru": "У многих английских существительных предлог закреплён и не выводится из логики, поэтому его учат вместе со словом. С for идут reason, need, demand, responsibility, request, respect. С to идут solution, answer, alternative, access, reaction, damage, invitation, key. С in идут increase, rise, fall, drop, interest, difficulty, change. С of идут cause, advantage, lack, example, knowledge, cost, way. С on идут effect, impact, influence, opinion, report. Between используем, когда речь идёт о двух и более объектах: the difference between two libraries, the connection between the incidents. Предлог не меняется от артикля и от числа: a reason for, the reasons for.",
+      "summary_ru": "У многих английских существительных предлог закреплён и не выводится из логики, поэтому его учат вместе со словом. С for идут reason, need, demand, responsibility, request, respect. С to идут solution, answer, alternative, access, reaction, damage, invitation, key. С in идут increase, rise, fall, drop, interest, difficulty, change. С of идут cause, advantage, lack, example, knowledge, cost, way. С on идут effect, impact, influence, opinion, report. Отдельно запоминаем attitude toward (towards), approach to, emphasis on и relationship with. Between используем, когда речь идёт о двух и более объектах: the difference between two libraries, the connection between the incidents. Предлог не меняется от артикля и от числа: a reason for, the reasons for.",
       "forms": [
         "reason / need / demand / responsibility + for",
         "solution / answer / alternative / access / reaction + to",
         "increase / rise / fall / interest / difficulty + in",
         "cause / advantage / lack / example / knowledge + of",
-        "effect / impact / influence + on; difference / connection + between"
+        "effect / impact / influence + on; difference / connection + between",
+        "attitude toward / approach to / emphasis on / relationship with"
       ],
       "examples": [
         "Nobody could explain the reason for the delay.",
@@ -1001,6 +1102,83 @@
           "explanation_ru": "Answer (как и reply, response) сочетается с to: an answer to my letter. Answer on — калька с «ответ на»; кроме того, wait требует for перед тем, чего ждут.",
           "difficulty": 1,
           "diagnostic": true
+        },
+        {
+          "id": "b2_50_common_noun_preposition_collocations_12",
+          "kind": "order",
+          "prompt": "the hail / to / serious / caused / damage / our car / .",
+          "answer": "The hail caused serious damage to our car.",
+          "accept": [],
+          "explanation_ru": "Damage сочетается с to: damage to our car. Русский родительный падеж («повреждение машины») тянет к of, но damage of — ошибка. Прилагательное стоит перед существительным: serious damage.",
+          "difficulty": 2
+        },
+        {
+          "id": "b2_50_common_noun_preposition_collocations_13",
+          "kind": "transform",
+          "prompt": "Rewrite using the word in capitals (do not change it): Our yoga teacher emphasizes breathing a lot. EMPHASIS",
+          "answer": "Our yoga teacher puts a lot of emphasis on breathing.",
+          "accept": [
+            "Our yoga teacher puts great emphasis on breathing.",
+            "Our yoga teacher puts a strong emphasis on breathing.",
+            "Our yoga teacher puts a big emphasis on breathing.",
+            "Our yoga teacher puts a huge emphasis on breathing.",
+            "Our yoga teacher places a lot of emphasis on breathing.",
+            "Our yoga teacher places great emphasis on breathing.",
+            "Our yoga teacher places a strong emphasis on breathing.",
+            "Our yoga teacher places a big emphasis on breathing.",
+            "Our yoga teacher places a huge emphasis on breathing.",
+            "Our yoga teacher puts lots of emphasis on breathing.",
+            "Our yoga teacher puts a great deal of emphasis on breathing.",
+            "Our yoga teacher places a great deal of emphasis on breathing.",
+            "Our yoga teacher puts heavy emphasis on breathing.",
+            "Our yoga teacher places heavy emphasis on breathing."
+          ],
+          "explanation_ru": "Глагол emphasize идёт без предлога (emphasizes breathing), а существительное emphasis требует on: put (place) a lot of emphasis on breathing — «делать большой упор на». Emphasis in и emphasis to — ошибки.",
+          "difficulty": 3
+        },
+        {
+          "id": "b2_50_common_noun_preposition_collocations_14",
+          "kind": "choice",
+          "prompt": "Her attitude ___ work changed completely after she had kids.",
+          "options": [
+            "toward",
+            "for",
+            "on",
+            "at"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Attitude сочетается с toward (в британском towards, возможно и to): attitude toward work — «отношение к работе». Русское «отношение к» не подсказывает for, on или at, а с attitude они не употребляются.",
+          "difficulty": 2
+        },
+        {
+          "id": "b2_50_common_noun_preposition_collocations_15",
+          "kind": "gap",
+          "prompt": "Our new math teacher has a completely different approach ___ homework: she gives almost none. (one word)",
+          "answer": "to",
+          "accept": [],
+          "explanation_ru": "Approach («подход») берёт to: an approach to homework. Русское «подход к» совпадает, но под влиянием «метод для» или «подход в» часто ставят for и in — это ошибка.",
+          "difficulty": 2
+        },
+        {
+          "id": "b2_50_common_noun_preposition_collocations_16",
+          "kind": "cloze",
+          "prompt": "Dear Aunt Rosa, thank you so much for the invitation ___ Mia's graduation party. Sadly, I can't come: last week a tree fell on our house and did serious damage ___ the roof, and the repairs start on Saturday. I know how close your relationship ___ Mia is, so please give her a hug from me. I have huge respect ___ how hard she worked this year.",
+          "gaps": [
+            [
+              "to"
+            ],
+            [
+              "to"
+            ],
+            [
+              "with"
+            ],
+            [
+              "for"
+            ]
+          ],
+          "explanation_ru": "Invitation и damage берут to (an invitation to the party, damage to the roof), relationship — with (relationship with Mia), respect — for (respect for her work). Русские «приглашение на», «повреждение крыши» и «уважение к» подсказывают on, of и to — все три ошибочны.",
+          "difficulty": 2
         }
       ]
     },
@@ -1163,7 +1341,9 @@
           "kind": "transform",
           "prompt": "Rewrite using the word in capitals (do not change it): You don't need to buy tickets in advance. NEED",
           "answer": "There is no need to buy tickets in advance.",
-          "accept": [],
+          "accept": [
+            "There is no need for you to buy tickets in advance."
+          ],
           "explanation_ru": "There is no need to + V1 — «нет необходимости». Оборот вводится через there, как любое «существует / не существует»; it is no need — калька с безличного русского предложения.",
           "difficulty": 2
         },
@@ -1188,18 +1368,55 @@
           "prompt": "Переведи на английский: «Нет смысла переписывать отчёт — клиент его уже одобрил».",
           "answer": "There's no point in rewriting the report — the client has already approved it.",
           "accept": [
-            "There's no point rewriting the report — the client has already approved it.",
             "There's no point in rewriting the report — the client already approved it.",
-            "There's no point rewriting the report — the client already approved it.",
             "There's no point in rewriting the report — the client has approved it already.",
             "There's no point in rewriting the report because the client has already approved it.",
+            "There's no point in rewriting the report because the client already approved it.",
+            "There's no point in rewriting the report because the client has approved it already.",
+            "There's no point in rewriting the report as the client has already approved it.",
+            "There's no point in rewriting the report as the client already approved it.",
+            "There's no point in rewriting the report as the client has approved it already.",
+            "There's no point in rewriting the report since the client has already approved it.",
+            "There's no point in rewriting the report since the client already approved it.",
+            "There's no point in rewriting the report since the client has approved it already.",
             "There's no point in rewriting the report: the client has already approved it.",
+            "There's no point in rewriting the report: the client already approved it.",
+            "There's no point in rewriting the report: the client has approved it already.",
             "There's no point in rewriting the report; the client has already approved it.",
+            "There's no point in rewriting the report; the client already approved it.",
+            "There's no point in rewriting the report; the client has approved it already.",
             "There's no point in rewriting the report. The client has already approved it.",
+            "There's no point in rewriting the report. The client already approved it.",
+            "There's no point in rewriting the report. The client has approved it already.",
             "There's no point in rewriting the report, the client has already approved it.",
+            "There's no point in rewriting the report, the client already approved it.",
+            "There's no point in rewriting the report, the client has approved it already.",
+            "There's no point rewriting the report — the client has already approved it.",
+            "There's no point rewriting the report — the client already approved it.",
+            "There's no point rewriting the report — the client has approved it already.",
+            "There's no point rewriting the report because the client has already approved it.",
+            "There's no point rewriting the report because the client already approved it.",
+            "There's no point rewriting the report because the client has approved it already.",
+            "There's no point rewriting the report as the client has already approved it.",
+            "There's no point rewriting the report as the client already approved it.",
+            "There's no point rewriting the report as the client has approved it already.",
+            "There's no point rewriting the report since the client has already approved it.",
+            "There's no point rewriting the report since the client already approved it.",
+            "There's no point rewriting the report since the client has approved it already.",
+            "There's no point rewriting the report: the client has already approved it.",
+            "There's no point rewriting the report: the client already approved it.",
+            "There's no point rewriting the report: the client has approved it already.",
+            "There's no point rewriting the report; the client has already approved it.",
+            "There's no point rewriting the report; the client already approved it.",
+            "There's no point rewriting the report; the client has approved it already.",
+            "There's no point rewriting the report. The client has already approved it.",
+            "There's no point rewriting the report. The client already approved it.",
+            "There's no point rewriting the report. The client has approved it already.",
+            "There's no point rewriting the report, the client has already approved it.",
+            "There's no point rewriting the report, the client already approved it.",
+            "There's no point rewriting the report, the client has approved it already.",
             "It's pointless to rewrite the report — the client has already approved it.",
-            "It makes no sense to rewrite the report — the client has already approved it.",
-            "There's no point in rewriting the report since the client has already approved it."
+            "It makes no sense to rewrite the report — the client has already approved it."
           ],
           "explanation_ru": "«Нет смысла делать» — there is no point (in) + -ing: there's no point in rewriting. Безличное русское предложение тянет к it is no point, но существование «смысла» вводит только there, а после point нужен -ing, не инфинитив.",
           "difficulty": 3
@@ -1261,7 +1478,8 @@
           ],
           "correct_index": 0,
           "explanation_ru": "Общее правило для всех людей передаётся местоимением you.",
-          "difficulty": 1
+          "difficulty": 1,
+          "diagnostic": false
         },
         {
           "id": "b2_generic_pronouns_03",
@@ -1321,7 +1539,10 @@
           "accept": [
             "In Russia you cannot drive a car at 16.",
             "In Russia one can't drive a car at 16.",
-            "In Russia people can't drive a car at 16."
+            "In Russia people can't drive a car at 16.",
+            "In Russia you can't drive a car at sixteen.",
+            "In Russia one can't drive a car at sixteen.",
+            "In Russia people can't drive a car at sixteen."
           ],
           "explanation_ru": "Без подлежащего предложение невозможно: в обобщающем значении ставим you.",
           "difficulty": 3
@@ -1383,15 +1604,15 @@
         {
           "id": "b2_generic_pronouns_11",
           "kind": "choice",
-          "prompt": "Как сказать по-английски: «Никогда не знаешь, чем всё закончится»?",
+          "prompt": "Как сказать по-английски: «Каждый, кто сдал экзамен, получит свой сертификат по почте»?",
           "options": [
-            "You never know how it will end.",
-            "Never know how it will end.",
-            "One never know how it will end.",
-            "It never knows how it will end."
+            "Everyone who passed the exam will get their certificate by mail.",
+            "Everyone who passed the exam will get one's certificate by mail.",
+            "Everyone who passed the exam will get its certificate by mail.",
+            "Everyone who passed the exam will get theirs certificate by mail."
           ],
           "correct_index": 0,
-          "explanation_ru": "Русское обобщённо-личное «не знаешь» передаётся местоимением you. Без подлежащего предложение невозможно, one требует формы knows, а it не может обозначать человека.",
+          "explanation_ru": "После everyone, someone, each person современная норма — singular they: their certificate. One's сочетается только с подлежащим one, its говорят о предметах и животных, а theirs стоит без существительного (the certificate is theirs). Русское «свой» здесь всегда their.",
           "difficulty": 2,
           "diagnostic": true
         },
@@ -1543,10 +1764,16 @@
         {
           "id": "b2_reflexive_reciprocal_pronouns_08",
           "kind": "correct",
-          "prompt": "I feel myself much better today.",
-          "answer": "I feel much better today.",
-          "accept": [],
-          "explanation_ru": "Глагол feel в значении самочувствия не берёт возвратное местоимение.",
+          "prompt": "After graduation, my best friend and I promised that each other would call every week.",
+          "answer": "After graduation, my best friend and I promised each other that we would call every week.",
+          "accept": [
+            "After graduation, my best friend and I promised each other we would call every week.",
+            "After graduation, my best friend and I promised one another that we would call every week.",
+            "After graduation, my best friend and I promised one another we would call every week.",
+            "After graduation, my best friend and I promised that we would call each other every week.",
+            "After graduation, my best friend and I promised we would call each other every week."
+          ],
+          "explanation_ru": "Each other и one another бывают только дополнением (promised each other), но не подлежащим придаточного. Подлежащим становится we: promised each other that we would call. По-русски «пообещали друг другу» ставит «друг другу» рядом с глаголом — так и в английском.",
           "difficulty": 3
         },
         {
@@ -1616,6 +1843,56 @@
           "explanation_ru": "Каждый назвал своё имя — действие направлено на самого себя: introduced themselves. Introduced each other значило бы, что каждый представлял другого, yourselves обращено ко второму лицу, а them указывало бы на других людей.",
           "difficulty": 2,
           "diagnostic": false
+        },
+        {
+          "id": "b2_reflexive_reciprocal_pronouns_13",
+          "kind": "transform",
+          "prompt": "Переведи на английский: «Не вини себя — ты сделал всё, что мог».",
+          "answer": "Don't blame yourself — you did everything you could.",
+          "accept": [
+            "Don't blame yourself — you did all you could.",
+            "Don't blame yourself — you've done everything you could.",
+            "Don't blame yourself — you've done all you could.",
+            "Don't blame yourself. You did everything you could.",
+            "Don't blame yourself. You did all you could.",
+            "Don't blame yourself. You've done everything you could.",
+            "Don't blame yourself. You've done all you could.",
+            "Don't blame yourself; you did everything you could.",
+            "Don't blame yourself; you did all you could.",
+            "Don't blame yourself; you've done everything you could.",
+            "Don't blame yourself; you've done all you could.",
+            "Don't blame yourself, you did everything you could.",
+            "Don't blame yourself, you did all you could.",
+            "Don't blame yourself, you've done everything you could.",
+            "Don't blame yourself, you've done all you could.",
+            "Don't blame yourself — you did everything that you could.",
+            "Don't blame yourself — you've done everything that you could.",
+            "Don't blame yourself; you did everything that you could.",
+            "Don't blame yourself; you've done everything that you could.",
+            "Don't blame yourself, you did everything that you could.",
+            "Don't blame yourself, you've done everything that you could.",
+            "Don't blame yourself. You did everything that you could.",
+            "Don't blame yourself. You've done everything that you could.",
+            "Don't blame yourself — you did all that you could.",
+            "Don't blame yourself — you've done all that you could.",
+            "Don't blame yourself. You did all that you could.",
+            "Don't blame yourself. You've done all that you could.",
+            "Don't blame yourself; you did all that you could.",
+            "Don't blame yourself; you've done all that you could.",
+            "Don't blame yourself, you did all that you could.",
+            "Don't blame yourself, you've done all that you could."
+          ],
+          "explanation_ru": "«Винить себя» — blame + возвратное местоимение: don't blame yourself. Don't blame you сделало бы объектом кого-то другого, а действие направлено на само подлежащее. Русское «себя» одно на все лица, а в английском местоимение согласуется с подлежащим: yourself.",
+          "difficulty": 2
+        },
+        {
+          "id": "b2_reflexive_reciprocal_pronouns_14",
+          "kind": "order",
+          "prompt": "each other's / always / check / homework / we / .",
+          "answer": "We always check each other's homework.",
+          "accept": [],
+          "explanation_ru": "Each other's — притяжательная форма взаимного местоимения: каждый проверяет задание другого. Она стоит перед существительным, как my или your, а always — перед смысловым глаголом.",
+          "difficulty": 2
         }
       ]
     },
@@ -1729,7 +2006,9 @@
           "kind": "correct",
           "prompt": "Writing in simple language, the book is easy to read.",
           "answer": "Written in simple language, the book is easy to read.",
-          "accept": [],
+          "accept": [
+            "Having been written in simple language, the book is easy to read."
+          ],
           "explanation_ru": "Книга не пишет сама, её написали, поэтому нужна пассивная форма Written.",
           "difficulty": 3
         },
@@ -1739,7 +2018,9 @@
           "prompt": "Rewrite with a participle clause: Because I didn't have the key, I waited outside.",
           "answer": "Not having the key, I waited outside.",
           "accept": [
-            "Having no key, I waited outside."
+            "Having no key, I waited outside.",
+            "Not having a key, I waited outside.",
+            "Not having my key, I waited outside."
           ],
           "explanation_ru": "Причина сворачивается в причастный оборот, отрицание идёт словом not перед having.",
           "difficulty": 3
@@ -1771,10 +2052,10 @@
         {
           "id": "b2_participle_clauses_10",
           "kind": "transform",
-          "prompt": "Rewrite with a participle clause: The woman who is sitting next to the manager is our new client.",
-          "answer": "The woman sitting next to the manager is our new client.",
+          "prompt": "Rewrite with a participle clause: The man who is sitting next to Priya is our new developer.",
+          "answer": "The man sitting next to Priya is our new developer.",
           "accept": [],
-          "explanation_ru": "Определительное придаточное who is sitting сокращается до причастия sitting: оно описывает woman и заменяет who is. Sat здесь было бы прошедшим или пассивным значением.",
+          "explanation_ru": "Определительное придаточное who is sitting сокращается до причастия sitting: оно описывает man и заменяет who is. Sat здесь было бы прошедшим или пассивным значением.",
           "difficulty": 2
         },
         {
@@ -1795,11 +2076,11 @@
         {
           "id": "b2_participle_clauses_12",
           "kind": "gap",
-          "prompt": "The boy ___ (play) the violin on the street corner is only ten years old. (use a participle)",
-          "answer": "playing",
+          "prompt": "Once ___ (open), the sauce must be kept in the fridge and used within five days. (use a participle)",
+          "answer": "opened",
           "accept": [],
-          "explanation_ru": "Причастие на -ing заменяет определительное придаточное who is playing и описывает мальчика: The boy playing the violin. Played было бы пассивом («сыгранный»), plays — второе сказуемое.",
-          "difficulty": 1
+          "explanation_ru": "После once, when, if, unless можно оставить одно причастие, если подлежащее то же: Once opened = Once it has been opened. Соус открывают, а не он открывает, поэтому нужна пассивная форма V3 opened; opening значило бы, что соус открывает сам.",
+          "difficulty": 2
         },
         {
           "id": "b2_participle_clauses_13",
@@ -1812,7 +2093,30 @@
             "Having finished the report, she emailed it to the client.",
             "After finishing the report, she emailed it to the client.",
             "Having completed the report, she sent it to the client.",
-            "Having finished the report, she sent it to the customer."
+            "Having finished the report, she sent it to the customer.",
+            "Having finished the report, she sent it to her client.",
+            "Having finished the report, she emailed it to her client.",
+            "Having finished the report, she emailed it to the customer.",
+            "After finishing the report, she sent it to her client.",
+            "After finishing the report, she sent it to the customer.",
+            "After finishing the report, she emailed it to her client.",
+            "After finishing the report, she emailed it to the customer.",
+            "After having finished the report, she sent it to her client.",
+            "After having finished the report, she sent it to the customer.",
+            "After having finished the report, she emailed it to the client.",
+            "After having finished the report, she emailed it to her client.",
+            "After having finished the report, she emailed it to the customer.",
+            "Having completed the report, she sent it to her client.",
+            "Having completed the report, she sent it to the customer.",
+            "Having completed the report, she emailed it to the client.",
+            "Having completed the report, she emailed it to her client.",
+            "Having completed the report, she emailed it to the customer.",
+            "After completing the report, she sent it to the client.",
+            "After completing the report, she sent it to her client.",
+            "After completing the report, she sent it to the customer.",
+            "After completing the report, she emailed it to the client.",
+            "After completing the report, she emailed it to her client.",
+            "After completing the report, she emailed it to the customer."
           ],
           "explanation_ru": "Русское деепричастие «закончив» — действие, завершённое раньше главного, — передаётся having + V3: Having finished the report. Оборот должен относиться к подлежащему главной части (she), поэтому it was sent в главной части было бы ошибкой.",
           "difficulty": 3
@@ -1827,13 +2131,14 @@
       "title_en": "Relative clauses: Defining and non-defining",
       "source_slug": "relative-clauses",
       "title_ru": "Определительные придаточные: с запятыми и без",
-      "summary_ru": "Defining-придаточное отвечает на вопрос 'какой именно' и без него смысл теряется: The engineer who wrote this module has left. Оно не выделяется запятыми, допускает that вместо who и which, а если местоимение является дополнением, его можно опустить: The bug we fixed yesterday is back. Non-defining-придаточное добавляет побочную информацию, обязательно выделяется запятыми, that в нём невозможно, а местоимение опустить нельзя: My manager, who joined last year, speaks four languages. Which в non-defining может относиться ко всему предложению: The server crashed at three, which nobody noticed. Whose показывает принадлежность, where указывает на место, when на время. В разговорной речи предлог уходит в конец придаточного, а в формальном стиле встаёт перед whom или which.",
+      "summary_ru": "Defining-придаточное отвечает на вопрос 'какой именно' и без него смысл теряется: The engineer who wrote this module has left. Оно не выделяется запятыми, допускает that вместо who и which, а если местоимение является дополнением, его можно опустить: The bug we fixed yesterday is back. Non-defining-придаточное добавляет побочную информацию, обязательно выделяется запятыми, that в нём невозможно, а местоимение опустить нельзя: My manager, who joined last year, speaks four languages. Which в non-defining может относиться ко всему предложению: The server crashed at three, which nobody noticed. Whose показывает принадлежность, where указывает на место, when на время. В разговорной речи предлог уходит в конец придаточного, а в формальном стиле встаёт перед whom или which. После some, most, all, both, none и числительных в non-defining-придаточном ставится of whom о людях и of which о предметах: my cousins, two of whom work nights. Книжное whereby значит «при котором, согласно которому»: an agreement whereby each roommate buys their own food. The extent to which — «то, насколько»: предлог to стоит перед which.",
       "forms": [
         "defining: noun + who/that/which + verb (no commas)",
         "defining object: noun (+ who/that/which) + subject + verb (pronoun can be dropped)",
         "non-defining: noun, who/which/whose ... , (commas, never 'that')",
         "... , which + comment on the whole sentence",
-        "preposition + whom/which (formal) or preposition at the end"
+        "preposition + whom/which (formal) or preposition at the end",
+        "..., some / most / both of whom (people) / of which (things)"
       ],
       "examples": [
         "The engineer who wrote this module has left.",
@@ -1874,7 +2179,8 @@
           ],
           "correct_index": 0,
           "explanation_ru": "Defining-придаточное о предмете: подходит that; what в такой роли в английском не употребляется.",
-          "difficulty": 1
+          "difficulty": 1,
+          "diagnostic": false
         },
         {
           "id": "b2_relative_clauses_03",
@@ -1907,15 +2213,15 @@
         {
           "id": "b2_relative_clauses_05",
           "kind": "choice",
-          "prompt": "That's the café ___ my parents first met.",
+          "prompt": "We looked at ten apartments, most of ___ were far too expensive.",
           "options": [
-            "where",
             "which",
+            "whom",
             "that",
-            "when"
+            "what"
           ],
           "correct_index": 0,
-          "explanation_ru": "Придаточное указывает на место действия, а which и that потребовали бы предлога in.",
+          "explanation_ru": "После количественного слова (most, some, all, none, both) в non-defining-придаточном ставится of which о предметах и of whom о людях: most of which were too expensive. Whom о квартирах не говорят, that после предлога и в придаточном с запятой невозможен, а what не относится к существительному.",
           "difficulty": 2
         },
         {
@@ -1943,12 +2249,10 @@
         {
           "id": "b2_relative_clauses_08",
           "kind": "correct",
-          "prompt": "The man which called you is waiting downstairs.",
-          "answer": "The man who called you is waiting downstairs.",
-          "accept": [
-            "The man that called you is waiting downstairs."
-          ],
-          "explanation_ru": "Which не употребляется с людьми, нужно who или that.",
+          "prompt": "I have two older sisters, both of who are doctors.",
+          "answer": "I have two older sisters, both of whom are doctors.",
+          "accept": [],
+          "explanation_ru": "После предлога о людях нужна форма whom: both of whom, some of whom, most of whom. Who после of не ставят, а both of them после запятой без союза склеило бы два самостоятельных предложения.",
           "difficulty": 3
         },
         {
@@ -2021,17 +2325,16 @@
         {
           "id": "b2_relative_clauses_13",
           "kind": "choice",
-          "prompt": "We've just hired Maya, ___ experience with mobile apps impressed the whole team.",
+          "prompt": "We've set up a system ___ every pull request needs two approvals before it can be merged.",
           "options": [
+            "whereby",
+            "which",
             "whose",
-            "who's",
-            "who",
-            "which"
+            "what"
           ],
           "correct_index": 0,
-          "explanation_ru": "Опыт принадлежит Майе — нужна притяжательная форма whose («чей»). Who's = who is, who без глагола не выражает принадлежность, а which не относится к людям. Запятая показывает, что это дополнительная информация о человеке.",
-          "difficulty": 2,
-          "diagnostic": false
+          "explanation_ru": "Whereby — книжное «при котором, согласно которому»: вводит придаточное о том, как устроены система, правило или договорённость. Which потребовало бы пропуска в придаточном (the system which we set up), whose выражает принадлежность, а what не присоединяется к существительному. В разговоре то же говорят через where или in which.",
+          "difficulty": 2
         },
         {
           "id": "b2_relative_clauses_14",
@@ -2042,6 +2345,52 @@
             "The phone I bought last month broke already."
           ],
           "explanation_ru": "Местоимение-дополнение в defining-придаточном можно опустить: the phone (that) I bought last month. Придаточное стоит сразу после существительного, а сказуемое главного предложения — после придаточного.",
+          "difficulty": 2
+        },
+        {
+          "id": "b2_relative_clauses_15",
+          "kind": "cloze",
+          "prompt": "Our book club has twelve members, most of ___ are retired teachers. We meet in a small café, the owner of ___ lets us stay after closing time. We read about thirty books a year, some of ___ are hard to find in English. What surprises me most is the extent to ___ the club has changed my reading habits.",
+          "gaps": [
+            [
+              "whom"
+            ],
+            [
+              "which"
+            ],
+            [
+              "which"
+            ],
+            [
+              "which"
+            ]
+          ],
+          "explanation_ru": "После количественного слова или существительного с of в non-defining-придаточном ставится of whom о людях и of which о предметах: most of whom, the owner of which, some of which. The extent to which — «то, насколько»: предлог to стоит перед which. That и who после предлога невозможны.",
+          "difficulty": 3
+        },
+        {
+          "id": "b2_relative_clauses_16",
+          "kind": "transform",
+          "prompt": "Rewrite as one sentence using 'some of whom': I invited twenty people to my birthday party. Some of them didn't come.",
+          "answer": "I invited twenty people to my birthday party, some of whom didn't come.",
+          "accept": [
+            "I invited 20 people to my birthday party, some of whom didn't come."
+          ],
+          "explanation_ru": "Второе предложение становится non-defining-придаточным: some of them → some of whom, после запятой. Them после запятой дал бы два предложения, склеенных запятой, а who после of не ставят.",
+          "difficulty": 3
+        },
+        {
+          "id": "b2_relative_clauses_17",
+          "kind": "choice",
+          "prompt": "Scientists still disagree about the extent ___ air pollution affects children's memory.",
+          "options": [
+            "to which",
+            "which",
+            "of which",
+            "in that"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "The extent to which — «то, насколько»: предлог to закреплён за extent (to a large extent) и в придаточном встаёт перед which. Which без предлога оставляет to без места, of which значит «из которых», а после предлога that не ставят.",
           "difficulty": 2
         }
       ]
@@ -2161,18 +2510,20 @@
           "kind": "correct",
           "prompt": "By next June, my parents will be married for forty years.",
           "answer": "By next June, my parents will have been married for forty years.",
-          "accept": [],
+          "accept": [
+            "By next June, my parents will have been married for 40 years."
+          ],
           "explanation_ru": "By + момент в будущем + for + период — нужна future perfect: will have been married. Will be married описывает состояние в будущем, но не подводит итог к сроку.",
           "difficulty": 3
         },
         {
           "id": "b2_future_forms_expressing_future_time_08",
           "kind": "transform",
-          "prompt": "Rewrite using the word in capitals (do not change it): I plan to sell my old car next month. GOING",
-          "answer": "I'm going to sell my old car next month.",
+          "prompt": "Rewrite with the future continuous (will be + -ing): I'm going to see Priya at the gym tomorrow anyway, so I can give her your keys.",
+          "answer": "I'll be seeing Priya at the gym tomorrow anyway, so I can give her your keys.",
           "accept": [],
-          "explanation_ru": "Заранее принятое намерение передаётся be going to + V1: I'm going to sell. Will чаще выражает решение, принятое в момент речи.",
-          "difficulty": 2
+          "explanation_ru": "Future continuous описывает то, что и так случится в обычном ходе событий, без особого намерения: I'll be seeing Priya anyway — «я её всё равно увижу». Поэтому им удобно предлагать помощь, не навязываясь. Will see звучало бы как решение, принятое сейчас.",
+          "difficulty": 3
         },
         {
           "id": "b2_future_forms_expressing_future_time_09",
@@ -2230,21 +2581,21 @@
         {
           "id": "b2_future_forms_expressing_future_time_12",
           "kind": "correct",
-          "prompt": "Will you be join us for lunch tomorrow?",
-          "answer": "Will you be joining us for lunch tomorrow?",
-          "accept": [
-            "Will you join us for lunch tomorrow?"
-          ],
-          "explanation_ru": "Future continuous строится как will be + V-ing: Will you be joining us? Такой вопрос вежливо уточняет планы. После be смысловой глагол не может стоять в начальной форме.",
+          "prompt": "By the time your on-call shift starts, I will finish the database migration.",
+          "answer": "By the time your on-call shift starts, I will have finished the database migration.",
+          "accept": [],
+          "explanation_ru": "By the time + момент в будущем — действие завершится раньше, поэтому нужен future perfect: will have finished. Will finish описывает само действие, а не результат к сроку. В придаточном после by the time будущее время не ставится (starts).",
           "difficulty": 2
         },
         {
           "id": "b2_future_forms_expressing_future_time_13",
           "kind": "order",
-          "prompt": "you / be / will / the car / using / tonight / ?",
-          "answer": "Will you be using the car tonight?",
-          "accept": [],
-          "explanation_ru": "Future continuous в вопросе — вежливый способ узнать о чужих планах: Will you be using…? Will выходит перед подлежащим, а be + V-ing остаётся после него.",
+          "prompt": "this time tomorrow / will / be / flying / to Denver / we / .",
+          "answer": "This time tomorrow we will be flying to Denver.",
+          "accept": [
+            "We will be flying to Denver this time tomorrow."
+          ],
+          "explanation_ru": "Future continuous — действие будет в процессе в конкретный момент будущего: this time tomorrow we will be flying («завтра в это время мы будем лететь»). Will стоит после подлежащего, за ним be + V-ing; обстоятельство времени — в начале или в конце.",
           "difficulty": 2
         }
       ]
@@ -2257,20 +2608,21 @@
       "title_en": "Future in the past",
       "source_slug": "future-in-the-past",
       "title_ru": "Будущее в прошедшем",
-      "summary_ru": "Когда мы смотрим на будущее из точки в прошлом, все формы будущего сдвигаются назад. Will превращается в would: He said he would send the report by Friday. Be going to превращается в was или were going to и часто описывает несостоявшийся план: I was going to call you, but I forgot. Present continuous для договорённости превращается в past continuous: She was meeting the client at nine. Оборот be about to переходит в was или were about to: We were about to leave when the alarm went off. Формальное be to становится was или were to: The migration was to start on Monday. Эти формы обязательны в косвенной речи и в рассказе о прошлых планах. Оборот was supposed to добавляет оттенок невыполненного обязательства.",
+      "summary_ru": "Когда мы смотрим на будущее из точки в прошлом, все формы будущего сдвигаются назад. Will превращается в would: He said he would send the report by Friday. Be going to превращается в was или were going to и часто описывает несостоявшийся план: I was going to call you, but I forgot. Present continuous для договорённости превращается в past continuous: She was meeting the client at nine. Оборот be about to переходит в was или were about to: We were about to leave when the alarm went off. Книжный синоним — was или were on the point of + -ing. Формальное be to становится was или were to: The migration was to start on Monday. Was to have + V3 подчёркивает, что официальный план сорвался: The release was to have shipped in May. Эти формы обязательны в косвенной речи и в рассказе о прошлых планах. Оборот was supposed to добавляет оттенок невыполненного обязательства.",
       "forms": [
         "would + V (will becomes would)",
         "was/were going to + V (plan, often unrealized)",
         "was/were about to + V (immediate future in the past)",
         "past continuous for arranged events: I was meeting him at six",
-        "was/were to + V (formal, arranged)"
+        "was/were to + V (formal, arranged)",
+        "was/were to have + V3 (formal plan that did not happen)"
       ],
       "examples": [
         "He said he would send the report by Friday.",
         "I was going to call you, but my phone died.",
         "We were about to leave when the alarm went off.",
         "She was meeting the client at nine, so she left early.",
-        "The wedding was to take place in June, but it was postponed."
+        "The concert was to start at eight, but the band arrived late."
       ],
       "ru_interference": "В русском после 'сказал, что' стоит обычное будущее время ('сказал, что позвонит'), поэтому в английском ошибочно остаётся will. Неверно: He said he will send the file. Верно: He said he would send the file.",
       "prerequisites": [
@@ -2361,7 +2713,9 @@
           "prompt": "Last week he said he will come to the barbecue, but he never did.",
           "answer": "Last week he said he would come to the barbecue, but he never did.",
           "accept": [
-            "Last week he said he was going to come to the barbecue, but he never did."
+            "Last week he said he was going to come to the barbecue, but he never did.",
+            "Last week he said that he would come to the barbecue, but he never did.",
+            "Last week he said that he was going to come to the barbecue, but he never did."
           ],
           "explanation_ru": "В косвенной речи после said будущее сдвигается: will становится would.",
           "difficulty": 3
@@ -2369,10 +2723,34 @@
         {
           "id": "b2_future_in_the_past_08",
           "kind": "transform",
-          "prompt": "Rewrite in the past: I am going to buy a new bike.",
-          "answer": "I was going to buy a new bike.",
-          "accept": [],
-          "explanation_ru": "Форма am going to переходит в was going to при сдвиге в прошлое.",
+          "prompt": "Report this in the past, starting with 'She said': 'I'm meeting the landlord at six, and I'll call you afterward.'",
+          "answer": "She said she was meeting the landlord at six and would call me afterward.",
+          "accept": [
+            "She said that she was meeting the landlord at six and would call me afterward.",
+            "She said that she was meeting the landlord at six and would call me afterwards.",
+            "She said that she was meeting the landlord at six and she would call me afterward.",
+            "She said that she was meeting the landlord at six and she would call me afterwards.",
+            "She said that she was meeting the landlord at six and that she would call me afterward.",
+            "She said that she was meeting the landlord at six and that she would call me afterwards.",
+            "She said that she was going to meet the landlord at six and would call me afterward.",
+            "She said that she was going to meet the landlord at six and would call me afterwards.",
+            "She said that she was going to meet the landlord at six and she would call me afterward.",
+            "She said that she was going to meet the landlord at six and she would call me afterwards.",
+            "She said that she was going to meet the landlord at six and that she would call me afterward.",
+            "She said that she was going to meet the landlord at six and that she would call me afterwards.",
+            "She said she was meeting the landlord at six and would call me afterwards.",
+            "She said she was meeting the landlord at six and she would call me afterward.",
+            "She said she was meeting the landlord at six and she would call me afterwards.",
+            "She said she was meeting the landlord at six and that she would call me afterward.",
+            "She said she was meeting the landlord at six and that she would call me afterwards.",
+            "She said she was going to meet the landlord at six and would call me afterward.",
+            "She said she was going to meet the landlord at six and would call me afterwards.",
+            "She said she was going to meet the landlord at six and she would call me afterward.",
+            "She said she was going to meet the landlord at six and she would call me afterwards.",
+            "She said she was going to meet the landlord at six and that she would call me afterward.",
+            "She said she was going to meet the landlord at six and that she would call me afterwards."
+          ],
+          "explanation_ru": "В косвенной речи после said оба будущих сдвигаются в прошлое: договорённость I'm meeting → she was meeting, решение I'll call → she would call. Местоимения меняются по смыслу: I → she, you → me.",
           "difficulty": 3
         },
         {
@@ -2401,11 +2779,13 @@
         {
           "id": "b2_future_in_the_past_10",
           "kind": "transform",
-          "prompt": "Rewrite using the word in capitals (do not change it): I had planned to call the client this morning, but I forgot. GOING",
-          "answer": "I was going to call the client this morning, but I forgot.",
-          "accept": [],
-          "explanation_ru": "Несостоявшийся план в прошлом — was going to + V1: I was going to call…, but… Форма be переходит в прошедшее время, а смысловой глагол остаётся инфинитивом.",
-          "difficulty": 2
+          "prompt": "Rewrite with 'was to have' + past participle (an official plan that did not happen): The new developer was supposed to start on Monday, but her visa was delayed.",
+          "answer": "The new developer was to have started on Monday, but her visa was delayed.",
+          "accept": [
+            "The new developer was to have begun on Monday, but her visa was delayed."
+          ],
+          "explanation_ru": "Was / were to have + V3 — официальный план в прошлом, который не состоялся: the new developer was to have started on Monday («должна была выйти, но не вышла»). Перфектный инфинитив сам сообщает, что план сорвался; was to start этого не подчёркивает.",
+          "difficulty": 3
         },
         {
           "id": "b2_future_in_the_past_11",
@@ -2425,17 +2805,51 @@
         {
           "id": "b2_future_in_the_past_12",
           "kind": "choice",
-          "prompt": "The contract ___ be signed last Monday, but the client asked for another week.",
+          "prompt": "According to the release plan, version 4.0 ___ go live last Monday, but QA found a blocker the day before.",
           "options": [
             "was to",
             "is to",
-            "would to",
-            "was going"
+            "was bound to",
+            "must"
           ],
           "correct_index": 0,
-          "explanation_ru": "Официальная договорённость в прошлом — was to + инфинитив: the contract was to be signed («договор должны были подписать»). Is to говорит о будущем и с last Monday не сочетается, would после себя to не берёт, а was going без to не образует конструкцию.",
+          "explanation_ru": "Официальный план в прошлом — was to + инфинитив: version 4.0 was to go live last Monday («по плану должна была выйти»). Is to говорит о настоящем плане и с last Monday не сочетается, was bound to значит «неизбежно», а релиз так и не вышел, у must нет прошедшей формы.",
           "difficulty": 2,
           "diagnostic": true
+        },
+        {
+          "id": "b2_future_in_the_past_13",
+          "kind": "cloze",
+          "prompt": "My cousin's wedding ___ (be to have / take place) in June, but the venue burned down in May. The organizers promised that they ___ (find) a new place within a month, but by August they ___ (be on the point of / cancel) everything. Then an old friend offered them his farm.",
+          "gaps": [
+            [
+              "was to have taken place"
+            ],
+            [
+              "would find",
+              "were going to find"
+            ],
+            [
+              "were on the point of canceling",
+              "had been on the point of canceling"
+            ]
+          ],
+          "explanation_ru": "Was to have + V3 — официальный план, который сорвался: was to have taken place. В косвенной речи после promised will сдвигается в would. Were on the point of + -ing — «вот-вот, чуть было не» в прошлом: после of нужна форма на -ing.",
+          "difficulty": 3
+        },
+        {
+          "id": "b2_future_in_the_past_14",
+          "kind": "choice",
+          "prompt": "Как сказать по-английски: «Она пообещала, что позвонит, как только приземлится»?",
+          "options": [
+            "She promised she would call as soon as she landed.",
+            "She promised she would call as soon as she would land.",
+            "She promised she will call as soon as she will land.",
+            "She promised she calls as soon as she lands."
+          ],
+          "correct_index": 0,
+          "explanation_ru": "После promised будущее сдвигается: will call → would call. В придаточном времени после as soon as would не ставят — там простое прошедшее landed, как в настоящем было бы lands. Русское «позвонит» и «приземлится» в будущем тянет к will, но после прошедшего глагола сообщения это ошибка.",
+          "difficulty": 2
         }
       ]
     }

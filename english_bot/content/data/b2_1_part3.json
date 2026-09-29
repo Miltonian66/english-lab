@@ -106,7 +106,8 @@
           "answer": "don't you",
           "accept": [],
           "explanation_ru": "В present simple без вспомогательного хвост строится с do; подлежащее you сохраняется.",
-          "difficulty": 1
+          "difficulty": 1,
+          "diagnostic": false
         },
         {
           "id": "b2_auxiliary_verbs_different_uses_07",
@@ -190,7 +191,7 @@
       "title_en": "Future continuous and future perfect",
       "source_slug": "future-continuous-and-future-perfect",
       "title_ru": "Future continuous и future perfect",
-      "summary_ru": "Future continuous (will be doing) показывает действие в процессе в конкретный момент будущего: This time tomorrow I'll be flying to Berlin. Его типичные маркеры — at eight o'clock tomorrow и this time next week. Future perfect (will have done) показывает действие, законченное до момента в будущем, и обычно идёт с by, by the time, before: By Friday we will have finished the migration. Future perfect continuous (will have been doing) подчёркивает длительность к моменту в будущем: By May she'll have been working here for ten years. В придаточных времени с when, by the time, after используется настоящее время, а will остаётся только в главной части. Разница проста: continuous отвечает на вопрос что будет происходить, perfect — что уже будет сделано.",
+      "summary_ru": "Future continuous (will be doing) показывает действие в процессе в конкретный момент будущего: This time tomorrow I'll be flying to Berlin. Его типичные маркеры — at eight o'clock tomorrow и this time next week. Вопрос Will you be + -ing? вежливо узнаёт о планах собеседника и не звучит просьбой: Will you be working late today? Future perfect (will have done) показывает действие, законченное до момента в будущем, и обычно идёт с by, by the time, before: By Friday we will have finished the migration. Future perfect continuous (will have been doing) подчёркивает длительность к моменту в будущем: By May she'll have been working here for ten years. В придаточных времени с when, by the time, after используется настоящее время, а will остаётся только в главной части. Разница проста: continuous отвечает на вопрос что будет происходить, perfect — что уже будет сделано.",
       "forms": [
         "will be + V-ing",
         "will have + V3",
@@ -335,7 +336,8 @@
           "answer": "The team will have finished the migration by the end of the sprint.",
           "accept": [
             "The team will have finished the migration before the end of the sprint.",
-            "By the end of the sprint, the team will have finished the migration."
+            "By the end of the sprint, the team will have finished the migration.",
+            "Before the end of the sprint, the team will have finished the migration."
           ],
           "explanation_ru": "Действие, законченное к сроку в будущем, — future perfect will have + V3, а срок обычно вводится через by.",
           "difficulty": 3
@@ -376,6 +378,34 @@
           "explanation_ru": "После by the time будущее выражается present simple (you arrive), а ужин закончится раньше — future perfect will have had. Will have dinner описывало бы сам ужин, а until значит «до тех пор, пока» и меняет смысл.",
           "difficulty": 2,
           "diagnostic": true
+        },
+        {
+          "id": "b2_future_continuous_and_future_perfect_13",
+          "kind": "transform",
+          "prompt": "Переведи на английский вежливый вопрос, используя future continuous: «Ты сегодня вечером будешь брать машину?»",
+          "answer": "Will you be using the car tonight?",
+          "accept": [
+            "Will you be taking the car tonight?",
+            "Will you be needing the car tonight?",
+            "Are you going to be using the car tonight?",
+            "Are you going to be taking the car tonight?",
+            "Will you be using the car this evening?",
+            "Will you be taking the car this evening?",
+            "Will you be needing the car this evening?",
+            "Are you going to be using the car this evening?",
+            "Are you going to be taking the car this evening?"
+          ],
+          "explanation_ru": "Future continuous (will be + -ing) спрашивает о чужих планах, ни на что не намекая: Will you be using the car tonight? Will you use the car? звучит как просьба или требование, поэтому вежливый вопрос строят через will be + -ing.",
+          "difficulty": 2
+        },
+        {
+          "id": "b2_future_continuous_and_future_perfect_14",
+          "kind": "order",
+          "prompt": "be / you / will / staying / for dinner / ?",
+          "answer": "Will you be staying for dinner?",
+          "accept": [],
+          "explanation_ru": "Will you be staying for dinner? — вежливый вопрос о планах гостя: future continuous не звучит ни приглашением, ни давлением. Порядок: will + подлежащее + be + -ing.",
+          "difficulty": 2
         }
       ]
     },
@@ -731,7 +761,9 @@
           "kind": "transform",
           "prompt": "Ask about duration with the present perfect continuous: She is studying Japanese.",
           "answer": "How long has she been studying Japanese?",
-          "accept": [],
+          "accept": [
+            "How long has she been studying Japanese for?"
+          ],
           "explanation_ru": "Вопрос о длительности строится по схеме How long + has + подлежащее + been + V-ing.",
           "difficulty": 3
         },
@@ -773,7 +805,11 @@
           "accept": [
             "I have been learning the guitar for three years now.",
             "I have been learning guitar for three years.",
-            "I have been learning guitar for three years now."
+            "I have been learning guitar for three years now.",
+            "I have been learning the guitar for the past three years.",
+            "I have been learning the guitar for the last three years.",
+            "I have been learning guitar for the past three years.",
+            "I have been learning guitar for the last three years."
           ],
           "explanation_ru": "Действие началось в прошлом и продолжается — present perfect continuous с for + отрезок. Started ... ago и still исчезают: их смысл берёт на себя have been learning.",
           "difficulty": 3
@@ -951,7 +987,8 @@
             ],
             [
               "will be flying",
-              "am flying"
+              "am flying",
+              "am going to be flying"
             ]
           ],
           "explanation_ru": "Сейчас — present continuous; last Tuesday — past simple; результат к настоящему — present perfect; до поездки в прошлом — past perfect; процесс в момент будущего — future continuous.",
@@ -1075,7 +1112,8 @@
           ],
           "correct_index": 1,
           "explanation_ru": "Будущий пассив строится как will be плюс третья форма.",
-          "difficulty": 1
+          "difficulty": 1,
+          "diagnostic": false
         },
         {
           "id": "b2_passive_voice_all_tenses_05",
@@ -1111,7 +1149,9 @@
           "kind": "transform",
           "prompt": "Rewrite in the passive: They are building a new terminal at the airport.",
           "answer": "A new terminal is being built at the airport.",
-          "accept": [],
+          "accept": [
+            "At the airport, a new terminal is being built."
+          ],
           "explanation_ru": "Present continuous в пассиве превращается в is being плюс третью форму, а неопределённое they исчезает.",
           "difficulty": 3
         },
@@ -1165,17 +1205,17 @@
         {
           "id": "b2_passive_voice_all_tenses_12",
           "kind": "choice",
-          "prompt": "A: Where's your car?\nB: It ___ at the garage — they said it'll be ready on Friday.",
+          "prompt": "A: Is the new bridge open yet?\nB: Not yet, but by the end of the year it ___.",
           "options": [
-            "is being repaired",
-            "is repairing",
-            "has repaired",
-            "repairs"
+            "will have been completed",
+            "will have completed",
+            "will be completing",
+            "has been completed"
           ],
           "correct_index": 0,
-          "explanation_ru": "Машину ремонтируют сейчас, и делает это мастерская — present continuous passive is being + V3. Активные формы значили бы, что машина сама что-то чинит.",
-          "difficulty": 1,
-          "diagnostic": false
+          "explanation_ru": "К моменту в будущем (by the end of the year) работа будет завершена — future perfect, а мост не строит себя сам, поэтому пассив: will have been + V3. Will have completed значило бы, что мост сам что-то закончит, will be completing — процесс, а has been completed противоречит ответу Not yet.",
+          "difficulty": 2,
+          "diagnostic": true
         },
         {
           "id": "b2_passive_voice_all_tenses_13",
@@ -1188,7 +1228,12 @@
             "The report will be sent to the customer tomorrow morning.",
             "The client will be sent the report tomorrow morning.",
             "The report is going to be sent to the customer tomorrow morning.",
-            "The customer will be sent the report tomorrow morning."
+            "The customer will be sent the report tomorrow morning.",
+            "Tomorrow morning the report will be sent to the customer.",
+            "Tomorrow morning the report is going to be sent to the client.",
+            "The client is going to be sent the report tomorrow morning.",
+            "Tomorrow morning the report is going to be sent to the customer.",
+            "The customer is going to be sent the report tomorrow morning."
           ],
           "explanation_ru": "Неопределённо-личное «отправят» (кто — неважно) переводится пассивом: подлежащим становится отчёт, а будущее время даёт will be + V3. The report will send значило бы, что отчёт сам кого-то отправит.",
           "difficulty": 2
@@ -1725,7 +1770,8 @@
           "answer": "When we were kids, we would often play in the street until dark.",
           "accept": [
             "When we were kids, we would play in the street until dark.",
-            "We would often play in the street until dark when we were kids."
+            "We would often play in the street until dark when we were kids.",
+            "We would play in the street until dark when we were kids."
           ],
           "explanation_ru": "Повторяющееся действие в прошлом можно передать через would + V1; often стоит после would. После would глагол в начальной форме: play, а не played.",
           "difficulty": 3
@@ -1877,7 +1923,8 @@
           "accept": [
             "Unless you back up your files, you'll lose them.",
             "You will lose your files unless you back them up.",
-            "Unless you back your files up, you will lose them."
+            "Unless you back your files up, you will lose them.",
+            "Unless you back them up, you will lose your files."
           ],
           "explanation_ru": "Unless уже содержит отрицание, поэтому don't убирается.",
           "difficulty": 3
@@ -2090,7 +2137,10 @@
             "I remember turning the oven off.",
             "I remember that I turned off the oven.",
             "I remember that I turned the oven off.",
-            "I remember having turned off the oven."
+            "I remember having turned off the oven.",
+            "I remember I turned off the oven.",
+            "I remember I turned the oven off.",
+            "I remember having turned the oven off."
           ],
           "explanation_ru": "Remember + -ing — воспоминание о том, что уже сделано: I remember turning off the oven. Remember + to-инфинитив значит «не забыть сделать» и говорит о действии, которое ещё впереди.",
           "difficulty": 3
@@ -2202,7 +2252,9 @@
           "accept": [
             "I meant to answer your email yesterday, but I forgot.",
             "I meant to reply to your email yesterday, but I forgot to.",
-            "I meant to reply to your email yesterday but forgot."
+            "I meant to reply to your email yesterday but forgot.",
+            "I meant to answer your email yesterday but forgot.",
+            "I meant to answer your email yesterday, but I forgot to."
           ],
           "explanation_ru": "Mean + to-инфинитив — «собираться, намереваться»: I meant to reply. Mean + -ing — «означать, влечь за собой»: The new job means moving to Denver. Намерение, которое не выполнилось, — только meant to.",
           "difficulty": 3
@@ -2274,7 +2326,8 @@
           ],
           "correct_index": 1,
           "explanation_ru": "После sound в значении впечатления ставится прилагательное, а не наречие.",
-          "difficulty": 1
+          "difficulty": 1,
+          "diagnostic": false
         },
         {
           "id": "b2_verbs_of_the_senses_02",
@@ -2378,10 +2431,10 @@
         {
           "id": "b2_verbs_of_the_senses_10",
           "kind": "cloze",
-          "prompt": "The new café on our street looks ___ (lovely), and the coffee smells ___ (amazing). But yesterday my cake tasted ___ (as if / it / be) made last week, and the waiter seemed ___ (be) half asleep.",
+          "prompt": "The new café on our street looks ___ (wonderful / wonderfully), and the coffee smells ___ (amazing / amazingly). But yesterday my cake tasted ___ (as if / it / be) made last week, and the waiter seemed ___ (be) half asleep. When I complained, he just looked at me ___ (strange / strangely).",
           "gaps": [
             [
-              "lovely"
+              "wonderful"
             ],
             [
               "amazing"
@@ -2393,27 +2446,31 @@
               "as if it was",
               "as though it was",
               "like it was",
-              "as if it were"
+              "as if it were",
+              "as though it were"
             ],
             [
               "to be"
+            ],
+            [
+              "strangely"
             ]
           ],
-          "explanation_ru": "После look и smell ставится прилагательное, а не наречие: lovely, amazing. Перед целым предложением — as if (as though, like). Seem сочетается с инфинитивом: seemed to be.",
+          "explanation_ru": "Look и smell в значении «выглядеть, пахнуть» — связки, после них прилагательное: looks wonderful, smells amazing. Перед целым предложением — as if (as though, like): tasted as if it had been made. Seem сочетается с инфинитивом: seemed to be. А look at — действие «смотреть», и его описывает наречие: looked at me strangely.",
           "difficulty": 3
         },
         {
           "id": "b2_verbs_of_the_senses_11",
           "kind": "choice",
-          "prompt": "Your plan ___ like a lot of work for very little money.",
+          "prompt": "Your plan ___ a lot of work for very little money.",
           "options": [
-            "is sounding",
-            "sounds as",
-            "sounds that",
-            "sounds"
+            "sounds like",
+            "sounds as if",
+            "is sounding like",
+            "sounds as"
           ],
-          "correct_index": 3,
-          "explanation_ru": "Перед существительным после sound идёт like: sounds like a lot of work. В значении впечатления sound не ставится в continuous, а as и that перед like лишние.",
+          "correct_index": 0,
+          "explanation_ru": "Дальше идёт существительное (a lot of work), а не целое предложение, поэтому нужен like: sounds like a lot of work. As if требует предложения с подлежащим и глаголом (sounds as if it will take ages), as перед существительным в этом значении не ставится, а в значении впечатления sound не бывает в continuous.",
           "difficulty": 2,
           "diagnostic": true
         },

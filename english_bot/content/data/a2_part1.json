@@ -110,7 +110,9 @@
      "kind": "correct",
      "prompt": "This is the more expensive bike in the store.",
      "answer": "This is the most expensive bike in the store.",
-     "accept": [],
+     "accept": [
+      "This bike is the most expensive in the store."
+     ],
      "explanation_ru": "Значение здесь - один из всех в магазине, значит нужна превосходная степень the most, а не сравнительная more.",
      "difficulty": 3
     },
@@ -119,8 +121,10 @@
      "kind": "order",
      "prompt": "oldest / this / the / is / building / in the city / .",
      "answer": "This is the oldest building in the city.",
-     "accept": [],
-     "explanation_ru": "Порядок такой: подлежащее, глагол, the + превосходная степень, существительное, затем обстоятельство места.",
+     "accept": [
+      "This building is the oldest in the city."
+     ],
+     "explanation_ru": "Превосходная степень идёт с the и стоит перед существительным: the oldest building, а обстоятельство места — в конце: This is the oldest building in the city. Можно собрать и This building is the oldest in the city: здание уже названо в подлежащем, поэтому после the oldest существительное не повторяют.",
      "difficulty": 3
     },
     {
@@ -212,10 +216,10 @@
       "I'm bored.",
       "I'm boring.",
       "It's bored to me.",
-      "Me is boring."
+      "I feel boring."
      ],
      "correct_index": 0,
-     "explanation_ru": "О своём чувстве говорят через -ed: I'm bored. I'm boring значит «я скучный человек». Русское безличное «мне скучно» подталкивает к me и it, но в английском подлежащее — тот, кто скучает.",
+     "explanation_ru": "О своём чувстве говорят через -ed: I'm bored. I'm boring и I feel boring значат, что скучный ты сам — «я скучный человек», «чувствую себя скучным». Русское безличное «мне скучно» подталкивает к it, но в английском подлежащее — тот, кто скучает.",
      "difficulty": 2,
      "diagnostic": true
     },
@@ -227,6 +231,54 @@
      "accept": [],
      "explanation_ru": "Чувство человека передаёт форма на -ed: interested in — «интересуется». Interesting описывало бы сами динозавров: dinosaurs are interesting.",
      "difficulty": 2
+    },
+    {
+     "id": "a2_comparative_superlative_adjectives_adverbs_16",
+     "kind": "choice",
+     "prompt": "Taking the bus is slower, but it's ___ expensive than a taxi.",
+     "options": [
+      "less",
+      "fewer",
+      "more little",
+      "the least"
+     ],
+     "correct_index": 0,
+     "explanation_ru": "Сравнение «в меньшую сторону» — less + прилагательное + than: less expensive than a taxi («не так дорого, дешевле»). Fewer ставят перед исчисляемыми существительными (fewer cars), more little не говорят, а the least — превосходная степень, и с than она не сочетается.",
+     "difficulty": 2
+    },
+    {
+     "id": "a2_comparative_superlative_adjectives_adverbs_17",
+     "kind": "choice",
+     "prompt": "You look ___. Did you sleep badly last night?",
+     "options": [
+      "tired",
+      "tiredly",
+      "tiring",
+      "tire"
+     ],
+     "correct_index": 0,
+     "explanation_ru": "После look в значении «выглядеть» описывают человека, а не действие, поэтому прилагательное: You look tired. Так же с feel, sound, seem: I feel tired, it sounds good. Tiredly — наречие, tiring значит «утомительный», а tire — глагол.",
+     "difficulty": 2
+    },
+    {
+     "id": "a2_comparative_superlative_adjectives_adverbs_18",
+     "kind": "correct",
+     "prompt": "Leila worked hardly all weekend, so she's very tired now.",
+     "answer": "Leila worked hard all weekend, so she's very tired now.",
+     "accept": [],
+     "explanation_ru": "Наречие от hard совпадает с прилагательным: work hard — «работать усердно». Hardly — другое слово, оно значит «едва, почти не»: Leila hardly worked значило бы, что она почти не работала, а тогда не с чего устать.",
+     "difficulty": 3
+    },
+    {
+     "id": "a2_comparative_superlative_adjectives_adverbs_19",
+     "kind": "transform",
+     "prompt": "Rewrite with the verb 'teach' and adverbs: Mateo is a careful and patient teacher.",
+     "answer": "Mateo teaches carefully and patiently.",
+     "accept": [
+      "Mateo teaches patiently and carefully."
+     ],
+     "explanation_ru": "Прилагательное описывает существительное (a careful teacher), а наречие — действие: teaches carefully. Наречие образуется через -ly: careful → carefully, patient → patiently.",
+     "difficulty": 3
     }
    ]
   },
@@ -237,7 +289,7 @@
    "topic": "Conditionals",
    "title_en": "Second conditional",
    "source_slug": "second-conditional",
-   "title_ru": "Второе условное предложение",
+   "title_ru": "Второе условное предложение (знакомство)",
    "summary_ru": "Это первое знакомство с темой: на A2 достаточно узнавать и строить самую частую форму, а полный разбор второго условного — на уровне B1. Второе условное говорит о воображаемом: о том, чего сейчас нет или что вряд ли случится. После if стоит прошедшее время, а в другой части — would и глагол без to: If I had more time, I'd read more. Прошедшее время здесь не про прошлое, а про нереальность: времени у меня нет. В речи would сокращается до 'd. Для совета есть готовая формула If I were you, I'd…: «на твоём месте я бы…». Would в часть с if не ставят, хотя по-русски «бы» есть в обеих частях.",
    "forms": [
     "If + past simple, would + V1: If I had time, I'd help",
@@ -520,9 +572,10 @@
      "prompt": "I use this website ___ (learn) English.",
      "answer": "to learn",
      "accept": [
-      "for learning"
+      "for learning",
+      "in order to learn"
      ],
-     "explanation_ru": "Возможны два варианта: to и глагол или for и форма на -ing; смешивать их нельзя.",
+     "explanation_ru": "Цель можно выразить двумя способами: to и глагол (to learn, строже — in order to learn) или for и форма на -ing (for learning). Смешивать их нельзя: for to learn и for learn невозможны.",
      "difficulty": 2
     },
     {
@@ -665,13 +718,13 @@
      "kind": "choice",
      "prompt": "I'll send the file ___ I get to the office.",
      "options": [
-      "as soon",
       "as soon as",
-      "as soon that",
-      "as long"
+      "until",
+      "during",
+      "because of"
      ],
-     "correct_index": 1,
-     "explanation_ru": "Целая связка выглядит как as soon as; усечённых вариантов as soon и as soon that не существует.",
+     "correct_index": 0,
+     "explanation_ru": "Файл уйдёт сразу, как только я доберусь до офиса: as soon as + предложение с подлежащим и глаголом. Until значит «до тех пор, пока» и не сочетается с разовой отправкой, а during и because of ставят только перед существительным (during the trip, because of the rain), а не перед предложением.",
      "difficulty": 2
     },
     {
@@ -703,9 +756,14 @@
      "prompt": "Although the price was high, but we bought it.",
      "answer": "Although the price was high, we bought it.",
      "accept": [
-      "The price was high, but we bought it."
+      "The price was high, but we bought it.",
+      "Even though the price was high, we bought it.",
+      "Though the price was high, we bought it.",
+      "We bought it although the price was high.",
+      "We bought it even though the price was high.",
+      "The price was high. However, we bought it."
      ],
-     "explanation_ru": "Although и but выражают одно и то же противопоставление, поэтому вместе не ставятся.",
+     "explanation_ru": "Although и but выражают одно и то же противопоставление, поэтому вместе не ставятся: оставь одно из них — Although the price was high, we bought it или The price was high, but we bought it. Although можно заменить на even though или though.",
      "difficulty": 3
     },
     {
@@ -782,6 +840,18 @@
      "explanation_ru": "Until уже значит «до того момента, как», поэтому русское «пока не» не даёт второго отрицания: until you call. После until о будущем говорят в Present Simple, а while значит «в то время как».",
      "difficulty": 2,
      "diagnostic": true
+    },
+    {
+     "id": "a2_however_although_time_connectors_12",
+     "kind": "transform",
+     "prompt": "Join the sentences with 'although': Leo was very tired. He finished the marathon.",
+     "answer": "Although Leo was very tired, he finished the marathon.",
+     "accept": [
+      "Although he was very tired, Leo finished the marathon.",
+      "Leo finished the marathon although he was very tired."
+     ],
+     "explanation_ru": "Although присоединяет уступку, и вторая часть идёт без but: Although Leo was very tired, he finished the marathon. Русская пара «хотя…, но…» тянет за собой but, но although уже выражает противопоставление. Части можно поменять местами: Leo finished the marathon although he was very tired.",
+     "difficulty": 3
     }
    ]
   },
@@ -805,7 +875,7 @@
     "I no longer use that app.",
     "She doesn't live in Moscow anymore.",
     "We don't need this server any longer.",
-    "He is no longer on our team.",
+    "The store is no longer open on Sundays.",
     "They don't send paper letters anymore."
    ],
    "ru_interference": "Русское больше не переносят целиком и получают двойное отрицание: неверно He doesn't work here no longer. Верно: He doesn't work here any longer или He no longer works here.",
@@ -900,7 +970,8 @@
      "answer": "He doesn't work here any longer.",
      "accept": [
       "He doesn't work here anymore.",
-      "He no longer works here."
+      "He no longer works here.",
+      "He doesn't work here any more."
      ],
      "explanation_ru": "В предложении два отрицания сразу; нужно оставить одно.",
      "difficulty": 3
@@ -932,10 +1003,33 @@
     {
      "id": "a2_no_longer_any_longer_anymore_10",
      "kind": "gap",
-     "prompt": "Use no longer. A: Is Diego still your neighbor?\nB: No, he ___ (live) next door. He moved to Chile.",
-     "answer": "no longer lives",
+     "prompt": "A: Is Diego still your neighbor?\nB: No, he ___ (no longer / be) our neighbor. He moved to Chile.",
+     "answer": "is no longer",
      "accept": [],
-     "explanation_ru": "No longer стоит перед смысловым глаголом, а сам глагол остаётся утвердительным и получает -s: no longer lives. Doesn't no longer live было бы двойным отрицанием.",
+     "explanation_ru": "С глаголом be no longer стоит после него: he is no longer our neighbor. Перед смысловым глаголом — наоборот: he no longer lives here. Сам глагол остаётся утвердительным: отрицание уже внутри no longer.",
+     "difficulty": 2
+    },
+    {
+     "id": "a2_no_longer_any_longer_anymore_11",
+     "kind": "cloze",
+     "prompt": "Nina moved from Denver to a small town last year, and her life is very different now. She ___ (not/drive) to work anymore: her office is five minutes away. She ___ (no longer / need) a big car, so she sold it. Her kids ___ (not/be) bored on weekends anymore — they play outside all day. And Nina ___ (no longer / miss) the noise of the big city.",
+     "gaps": [
+      [
+       "doesn't drive",
+       "does not drive"
+      ],
+      [
+       "no longer needs"
+      ],
+      [
+       "aren't",
+       "are not"
+      ],
+      [
+       "no longer misses"
+      ]
+     ],
+     "explanation_ru": "Anymore стоит в конце и требует отрицательного глагола: doesn't drive … anymore, aren't … anymore. No longer стоит перед смысловым глаголом, а глагол остаётся утвердительным и получает -s: no longer needs, no longer misses. Doesn't no longer need было бы двойным отрицанием.",
      "difficulty": 2
     }
    ]
@@ -1123,6 +1217,17 @@
      "explanation_ru": "Опасно — значит нельзя: запрет выражает mustn't. Don't have to означало бы «можно не плавать», у must нет отрицания через do, а после must частица to не ставится.",
      "difficulty": 1,
      "diagnostic": true
+    },
+    {
+     "id": "a2_have_to_dont_have_to_must_mustnt_12",
+     "kind": "transform",
+     "prompt": "Rewrite with 'don't have to': It isn't necessary to take off your shoes.",
+     "answer": "You don't have to take off your shoes.",
+     "accept": [
+      "You don't have to take your shoes off."
+     ],
+     "explanation_ru": "«Не обязательно, можно не делать» — don't have to + глагол: You don't have to take off your shoes. Mustn't значил бы запрет: снимать обувь нельзя. Русское «не надо» покрывает оба смысла, а в английском это разные конструкции.",
+     "difficulty": 3
     }
    ]
   },
@@ -1146,7 +1251,7 @@
     "It may rain later, so take an umbrella.",
     "I might be late for the meeting.",
     "She may not know about the change.",
-    "May I come in?",
+    "May I sit here?",
     "They might be working from home today."
    ],
    "ru_interference": "Русское может быть переводят наречием maybe или добавляют to: неверно He maybe come tomorrow и He may to come tomorrow. Верно: He may come tomorrow.",
@@ -1250,8 +1355,10 @@
      "kind": "transform",
      "prompt": "Rewrite using 'might': Perhaps she is at home.",
      "answer": "She might be at home.",
-     "accept": [],
-     "explanation_ru": "Наречие perhaps заменяется на might, а глагол is становится инфинитивом be.",
+     "accept": [
+      "She might be home."
+     ],
+     "explanation_ru": "Наречие perhaps заменяется на might, а глагол is становится инфинитивом be: She might be at home (в американской речи часто без at: She might be home).",
      "difficulty": 3
     },
     {
@@ -1292,10 +1399,33 @@
      "accept": [
       "Can you help me with my bags, please?",
       "Would you help me with my bags, please?",
-      "Will you help me with my bags, please?"
+      "Will you help me with my bags, please?",
+      "Could you please help me with my bags?",
+      "Can you please help me with my bags?",
+      "Would you please help me with my bags?"
      ],
      "explanation_ru": "May вежливо спрашивает разрешения только для себя: May I…? Когда просят другого человека, говорят Could you…? или Can you…?; could звучит вежливее.",
      "difficulty": 3
+    },
+    {
+     "id": "a2_may_and_might_whats_the_difference_12",
+     "kind": "cloze",
+     "prompt": "Use may or might.\nLeo: Hi, Mrs. Lopez. ___ (I / come) in?\nMrs. Lopez: Of course, Leo. Is your brother coming to the party tonight?\nLeo: I'm not sure. He ___ (come) later, but he ___ (not/have) time: he has an exam tomorrow.",
+     "gaps": [
+      [
+       "May I come"
+      ],
+      [
+       "might come",
+       "may come"
+      ],
+      [
+       "might not have",
+       "may not have"
+      ]
+     ],
+     "explanation_ru": "Вежливо спросить разрешения для себя — May I + глагол без to: May I come in? Возможность, в которой говорящий не уверен, — may или might: he might come. Отрицание стоит сразу после модального глагола: might not have, а не doesn't might have.",
+     "difficulty": 2
     }
    ]
   },
@@ -1672,7 +1802,10 @@
       "Shall I help?",
       "May I help you?",
       "Do you want some help?",
-      "Would you like some help?"
+      "Would you like some help?",
+      "Do you want my help?",
+      "Would you like my help?",
+      "Want some help?"
      ],
      "explanation_ru": "Помощь предлагают вопросом Do you want me to help you? или Should I help you? После want нужна схема want + кто + to + глагол: want me to help. Русское «хочешь, я помогу» не переводится как Do you want I help you.",
      "difficulty": 3
@@ -1692,7 +1825,7 @@
     "subject pronoun + verb: She works here.",
     "verb / preposition + object pronoun: I called her.",
     "possessive adjective + noun: my laptop",
-    "possessive pronoun without a noun: This laptop is mine.",
+    "possessive pronoun without a noun: The blue one is mine.",
     "its = possessive, it's = it is",
     "reflexive: myself, yourself, herself, ourselves, themselves: I cut myself"
    ],
@@ -1703,7 +1836,7 @@
     "Their kids go to my school.",
     "The company changed its name last year."
    ],
-   "ru_interference": "В русском притяжательное слово выглядит одинаково и перед существительным, и вместо него - мой ноутбук, ноутбук мой, поэтому появляется неверное This book is my. Верно: This book is mine. Ещё одна ошибка - пропуск притяжательного там, где русский обходится без него: неверно She washed hands, верно She washed her hands.",
+   "ru_interference": "В русском притяжательное слово выглядит одинаково и перед существительным, и вместо него - твой ноутбук, ноутбук твой, поэтому появляется неверное Is this laptop your? Верно: Is this laptop yours? Ещё одна ошибка - пропуск притяжательного там, где русский обходится без него: неверно She washed hands, верно She washed her hands.",
    "prerequisites": [
     "a1_object_pronouns",
     "a1_possessive_adjectives",
@@ -1789,8 +1922,10 @@
      "kind": "correct",
      "prompt": "This car is my.",
      "answer": "This car is mine.",
-     "accept": [],
-     "explanation_ru": "Без существительного после местоимения используется форма mine.",
+     "accept": [
+      "This is my car."
+     ],
+     "explanation_ru": "Без существительного после местоимения нужна самостоятельная форма mine: This car is mine. My ставится только перед существительным: This is my car.",
      "difficulty": 3
     },
     {
@@ -1798,7 +1933,9 @@
      "kind": "correct",
      "prompt": "She showed we her new office.",
      "answer": "She showed us her new office.",
-     "accept": [],
+     "accept": [
+      "She showed her new office to us."
+     ],
      "explanation_ru": "После глагола showed нужна форма дополнения us, а не подлежащего we.",
      "difficulty": 3
     },
@@ -1876,6 +2013,44 @@
       "Did you enjoy yourselves at the party?"
      ],
      "explanation_ru": "Enjoy всегда требует дополнения: enjoy the party или enjoy yourself — «хорошо провести время». Русское «тебе понравилось?» подталкивает оставить enjoy без дополнения.",
+     "difficulty": 3
+    },
+    {
+     "id": "a2_subject_pronouns_object_pronouns_possessive_pronouns_possessive_adj_14",
+     "kind": "transform",
+     "prompt": "Переведи на английский: «Он дал мне свой номер.»",
+     "answer": "He gave me his number.",
+     "accept": [
+      "He gave me his phone number.",
+      "He gave his number to me.",
+      "He gave his phone number to me.",
+      "He gave me his cell number.",
+      "He gave me his cell phone number."
+     ],
+     "explanation_ru": "Русское «свой» в английском меняется по лицу: он — his, она — her, я — my, поэтому «он дал свой номер» — he gave his number. Лицо после gave стоит в объектной форме: gave me.",
+     "difficulty": 2
+    },
+    {
+     "id": "a2_subject_pronouns_object_pronouns_possessive_pronouns_possessive_adj_15",
+     "kind": "choice",
+     "prompt": "A: Do you like these red shoes?\nB: Not really. I prefer the black ___.",
+     "options": [
+      "ones",
+      "one",
+      "them",
+      "it"
+     ],
+     "correct_index": 0,
+     "explanation_ru": "Чтобы не повторять существительное, после прилагательного ставят one или ones: the black ones = the black shoes. Shoes — множественное число, поэтому ones; one заменяет единственное (the black one). Them и it после прилагательного не ставятся.",
+     "difficulty": 2
+    },
+    {
+     "id": "a2_subject_pronouns_object_pronouns_possessive_pronouns_possessive_adj_16",
+     "kind": "correct",
+     "prompt": "Yesterday I bought a lamp and a chair. A chair is really comfortable.",
+     "answer": "Yesterday I bought a lamp and a chair. The chair is really comfortable.",
+     "accept": [],
+     "explanation_ru": "Впервые предмет называют с a: I bought a chair. Когда о нём говорят второй раз, собеседник уже знает, какой он, поэтому the: the chair. It здесь было бы непонятно: куплены два предмета.",
      "difficulty": 3
     }
    ]
@@ -2048,9 +2223,20 @@
       "do"
      ],
      "correct_index": 0,
-     "explanation_ru": "Приём пищи — have breakfast, have lunch, have dinner, без артикля. Make breakfast значило бы «готовить завтрак», do с едой не сочетается, а артикль появляется только с прилагательным: a big breakfast.",
+     "explanation_ru": "Приём пищи — have: have breakfast, have lunch, have dinner, и без артикля. Do с едой не сочетается, а артикль появляется только с прилагательным: a big breakfast.",
      "difficulty": 1,
      "diagnostic": true
+    },
+    {
+     "id": "a2_do_vs_make_difference_12",
+     "kind": "transform",
+     "prompt": "Переведи на английский, используя do или make: «Кто сделал эту полку?»",
+     "answer": "Who made this shelf?",
+     "accept": [
+      "Who made the shelf?"
+     ],
+     "explanation_ru": "Полка — созданная вещь, результат работы, поэтому make: Who made this shelf? Do относится к работе и делам (do homework, do the dishes), а не к тому, что создают. Who здесь подлежащее, поэтому did не нужен.",
+     "difficulty": 2
     }
    ]
   },
@@ -2073,7 +2259,7 @@
    "examples": [
     "I go to the office three days a week.",
     "She went home early yesterday.",
-    "We often go shopping on Saturday.",
+    "My parents go dancing every Friday.",
     "She goes for a run every morning.",
     "We went to Chicago by car."
    ],
@@ -2165,7 +2351,10 @@
      "kind": "correct",
      "prompt": "I go to home at six every day.",
      "answer": "I go home at six every day.",
-     "accept": [],
+     "accept": [
+      "Every day I go home at six.",
+      "I go home every day at six."
+     ],
      "explanation_ru": "Home здесь наречие, поэтому предлог to лишний.",
      "difficulty": 3
     },
@@ -2174,7 +2363,9 @@
      "kind": "correct",
      "prompt": "Yesterday they went to fishing.",
      "answer": "Yesterday they went fishing.",
-     "accept": [],
+     "accept": [
+      "They went fishing yesterday."
+     ],
      "explanation_ru": "После go занятие идёт в форме на -ing без предлога.",
      "difficulty": 3
     },
@@ -2236,12 +2427,12 @@
      "prompt": "Как сказать по-английски: «Я сейчас на работе, а дети дома.»?",
      "options": [
       "I'm at work now, and the kids are at home.",
-      "I'm on the work now, and the kids are at the home.",
-      "I'm at the work now, and the kids are in home.",
-      "I'm on work now, and the kids are home at."
+      "I'm at the work now, and the kids are at home.",
+      "I'm on work now, and the kids are at the home.",
+      "I'm at work now, and the kids are in home."
      ],
      "correct_index": 0,
-     "explanation_ru": "«На работе» — at work, «дома» — at home: в этих устойчивых сочетаниях артикль не ставят. Русское «на» подталкивает к on, но on work так не говорят.",
+     "explanation_ru": "«На работе» — at work, «дома» — at home: в этих устойчивых сочетаниях артикль не ставят, поэтому at the work и at the home неверны. Русское «на» подталкивает к on, а «в доме» — к in, но on work и in home так не говорят.",
      "difficulty": 2,
      "diagnostic": false
     },
@@ -2259,6 +2450,56 @@
      "explanation_ru": "Go to work — устойчивое сочетание без артикля, как go to school и go to bed: I go to work by bus. Остальное верно: солнце одно, поэтому the sun; have breakfast — без артикля, at home — «дома».",
      "difficulty": 2,
      "diagnostic": false
+    },
+    {
+     "id": "a2_use_verb_go_english_14",
+     "kind": "transform",
+     "prompt": "Переведи на английский, используя go: «Вчера я поехал домой на автобусе.»",
+     "answer": "Yesterday I went home by bus.",
+     "accept": [
+      "I went home by bus yesterday.",
+      "Yesterday I went home on the bus.",
+      "I went home on the bus yesterday."
+     ],
+     "explanation_ru": "Перед home предлог to не ставится: went home, хотя по-русски «поехал домой» тянет к to home. Транспорт — by bus без артикля (или on the bus). Прошедшая форма go — went.",
+     "difficulty": 3
+    },
+    {
+     "id": "a2_use_verb_go_english_15",
+     "kind": "cloze",
+     "prompt": "It's Monday evening. Dad is still ___ (на работе), and Mom is ___ (дома) with my little brother. We usually ___ (ужинаем) at seven, and at ten I go ___ (спать).",
+     "gaps": [
+      [
+       "at work"
+      ],
+      [
+       "at home",
+       "home"
+      ],
+      [
+       "have dinner",
+       "eat dinner"
+      ],
+      [
+       "to bed"
+      ]
+     ],
+     "explanation_ru": "В устойчивых сочетаниях артикль не ставят: at work, at home (в американской речи и просто home), have dinner, go to bed. At the work, have a dinner и go to the bed — кальки: с артиклем говорят только о конкретном месте или ужине — the bed by the window, a big dinner.",
+     "difficulty": 2
+    },
+    {
+     "id": "a2_use_verb_go_english_16",
+     "kind": "choice",
+     "prompt": "Как сказать по-английски: «Я нашёл этот рецепт в интернете.»?",
+     "options": [
+      "I found this recipe on the internet.",
+      "I found this recipe on internet.",
+      "I found this recipe in internet.",
+      "I found this recipe in an internet."
+     ],
+     "correct_index": 0,
+     "explanation_ru": "Интернет один на всех, поэтому с ним ставят the, как с the sun и the moon. «В интернете» — on the internet: предлог on, а не калька in. Без артикля и с an так не говорят.",
+     "difficulty": 2
     }
    ]
   }

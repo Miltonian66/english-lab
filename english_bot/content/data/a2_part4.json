@@ -116,7 +116,9 @@
           "kind": "correct",
           "prompt": "I know this tool very well, and I'm thinking it's the best one.",
           "answer": "I know this tool very well, and I think it's the best one.",
-          "accept": [],
+          "accept": [
+            "I know this tool very well, and I think that it's the best one."
+          ],
           "explanation_ru": "Think здесь значит «считать», то есть состояние, поэтому Present Simple: I think. Форма I am thinking значила бы «обдумываю».",
           "difficulty": 3
         },
@@ -313,7 +315,7 @@
         {
           "id": "a2_used_to_10",
           "kind": "cloze",
-          "prompt": "Use used to. When my grandpa was young, he ___ (live) on a farm. He ___ (get) up at five every day. He ___ (not/have) a car, so he walked everywhere. Did you ___ (visit) him there?",
+          "prompt": "Use used to. When my grandpa was young, he ___ (live) on a farm. He ___ (get) up at five every day to feed the cows. He ___ (not/have) a car, so he walked everywhere. Once I asked him, \"Did you ___ (help) your parents with the animals?\" \"Every single day!\" he said.",
           "gaps": [
             [
               "used to live"
@@ -326,10 +328,10 @@
               "did not use to have"
             ],
             [
-              "use to visit"
+              "use to help"
             ]
           ],
-          "explanation_ru": "Прошлые привычки и состояния — used to + начальная форма. В отрицании и вопросе прошлое показывает did, поэтому used теряет -d: didn't use to have, Did you use to visit…?",
+          "explanation_ru": "Прошлые привычки и состояния — used to + начальная форма. В отрицании и вопросе прошлое показывает did, поэтому used теряет -d: didn't use to have, Did you use to help…?",
           "difficulty": 3
         },
         {
@@ -725,7 +727,7 @@
       "forms": [
         "So + auxiliary + subject: So am I / So do I / So did we",
         "Neither (Nor) + auxiliary + subject: Neither do I / Neither have I",
-        "Present or Past Simple takes do / does / did: I like it. - So do I.",
+        "Present or Past Simple takes do / does / did: I love pizza. - So does Mia.",
         "The auxiliary repeats the first sentence: can - So can I, was - So was I",
         "NOT: So I am, Neither I do, Neither don't I"
       ],
@@ -835,8 +837,10 @@
           "kind": "order",
           "prompt": "and / so / do / I / my / colleagues / like / remote / work / .",
           "answer": "My colleagues like remote work and so do I.",
-          "accept": [],
-          "explanation_ru": "Первая часть в Present Simple без вспомогательного глагола, поэтому в короткой части появляется do с обратным порядком.",
+          "accept": [
+            "I like remote work and so do my colleagues."
+          ],
+          "explanation_ru": "Первая часть в Present Simple без вспомогательного глагола, поэтому в короткой части появляется do с обратным порядком: and so do I. Части можно поменять: I like remote work and so do my colleagues — тогда do повторяет like для colleagues.",
           "difficulty": 3
         },
         {

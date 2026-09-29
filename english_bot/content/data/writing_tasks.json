@@ -81,14 +81,14 @@
     {
       "id": "a1_wr_invite_friend",
       "level": "A1",
-      "title_ru": "Позвать друга на выходные",
-      "prompt_en": "Write a message to a friend and invite them to spend Saturday with you. Say where you want to go, what you can do there, when and where to meet, and what to bring.",
-      "guidance_ru": "Пять-семь коротких предложений, всего 30–50 слов. Начни с приветствия по имени. Потом приглашение: Let's go to... on Saturday. Что там можно делать — два дела: We can... Где и когда встречаетесь. Что взять с собой. В конце вопрос: Are you free? После Let's и can глагол идёт без to: Let's go, а не Let's to go; we can swim, а не we can to swim.",
+      "title_ru": "Позвать друга на ужин",
+      "prompt_en": "You have just moved to a new apartment. Write a message to a friend and invite them to dinner at your place on Friday. Say what time to come, give your address and explain how to get there from the metro, say what is for dinner, and ask them to bring one thing.",
+      "guidance_ru": "Пять-семь коротких предложений, всего 30–50 слов. Начни с приветствия по имени и новости о квартире. Потом приглашение — день и время: Can you come to dinner on...? Адрес и дорогу от метро дай короткими командами: Take..., then turn... Что будет на ужин. Попроси принести одну вещь: Can you bring...? В конце попрощайся. В команде глагол стоит первым и в начальной форме, без to: Turn left at the bank, а не To turn left. Просьбу начинай с Can you + глагол без to: can you bring, а не can you to bring.",
       "words_min": 30,
       "words_max": 50,
       "focus": [
-        "let's for suggestions",
-        "can for possibility"
+        "imperatives",
+        "can you for requests"
       ]
     },
     {
@@ -213,7 +213,7 @@
       "level": "A2",
       "title_ru": "День, когда всё пошло не так",
       "prompt_en": "Write a message to a friend about a recent day when everything went wrong: what went wrong first, two more problems that happened after that, who or what helped you, and how the day ended.",
-      "guidance_ru": "Шесть-восемь предложений, всего 50–80 слов, по порядку событий. Что пошло не так с самого утра: My alarm did not ring, so I woke up late. Ещё две неприятности, связанные словами Then и After that: I missed the bus. Then I left my keys at home. Кто или что помогло: My neighbor gave me a ride. Чем закончился день и как ты себя чувствовал: In the end, I laughed about it. День уже прошёл, поэтому глагол во второй форме; проверь неправильные: wake — woke, leave — left, lose — lost, forget — forgot, а не waked и forgetted. В отрицании вторая форма уходит в did: did not + начальная форма — my alarm did not ring, а не did not rang.",
+      "guidance_ru": "Шесть-восемь предложений, всего 50–80 слов, по порядку событий. Поздоровайся и скажи, какой это был день: Last Thursday was... Дальше ответь по порядку: что пошло не так первым? Какие ещё две неприятности случились потом? Связывай их словами Then и After that. Кто или что тебе помогло? Чем кончился день и что ты почувствовал? В конце попрощайся. День уже прошёл, поэтому глагол во второй форме; проверь неправильные: wake — woke, leave — left, lose — lost, forget — forgot, а не waked и forgetted. В отрицании вторая форма уходит в did: did not + начальная форма — I did not hear the phone, а не did not heard.",
       "words_min": 50,
       "words_max": 80,
       "focus": [
@@ -380,9 +380,9 @@
     {
       "id": "b2_wr_review_disagreement",
       "level": "B2",
-      "title_ru": "Вежливое несогласие в ревью",
-      "prompt_en": "A reviewer asked you to change an approach you believe is correct. Write a reply that acknowledges their point, explains your reasoning with evidence, and proposes a way to settle the question.",
-      "guidance_ru": "Три части по три-четыре предложения, всего 120–180 слов: признать сильную сторону замечания, спокойно объяснить свою логику с цифрами или примером, предложить способ договориться. Смягчай: I see your point, I may be missing something, would it make sense to. Не защищайся и не переходи на личности.",
+      "title_ru": "Вежливое несогласие с редактором",
+      "prompt_en": "You wrote an article for your company's blog about how your team cut its meeting time in half. It opens with a short story: one Tuesday you counted six hours of meetings and wrote ten lines of code. The editor left this comment: \"Cut the story and start with the numbers. Readers are busy.\" You agree with most of her other edits, but you think the story is the strongest part of the article. Write a reply: accept the edits you agree with, explain why you want to keep the opening, and suggest a way to decide.",
+      "guidance_ru": "Четыре части по три-четыре предложения, всего 120–180 слов. Начни с благодарности и прими правки, с которыми согласен, — назови их конкретно: заголовок, лишний абзац, длинные фразы. Потом признай, в чём редактор права: читатели действительно торопятся. Уступку оформляй придаточным с although или while: While I agree that most readers skim, ... Дальше объясни, почему хочешь оставить историю, — фактом, а не вкусом: что сказали коллеги, которые читали черновик, как читают другие статьи блога. Смягчай: I may be wrong, but..., It seems to me that... В конце предложи, как решить спор, — компромисс или проверку: Would it make sense to...? Не защищайся и не переходи на личности.",
       "words_min": 120,
       "words_max": 180,
       "focus": [
@@ -490,7 +490,7 @@
       "level": "C1",
       "title_ru": "Служебная записка о техдолге",
       "prompt_en": "Write a memo to leadership arguing that the team needs one quarter to pay down technical debt. Quantify the current cost, describe what you would do, and answer the objection that feature work will stop.",
-      "guidance_ru": "Четыре-пять абзацев по три предложения, всего 180–250 слов. Вывод в первом абзаце, доказательства после него. Переводи техдолг в понятные бизнесу единицы: время, деньги, риск. Отдельный абзац на возражение и ответ. В финале конкретная просьба, а не общее пожелание.",
+      "guidance_ru": "Четыре-пять абзацев по три предложения, всего 180–250 слов. Вывод в первом абзаце, доказательства после него. Переводи техдолг в понятные бизнесу единицы: время, деньги, риск. Цену бездействия и выгоду плана показывай условными предложениями: If we keep postponing this, every new feature will take longer than the last; If we had fixed the test suite a year ago, we wouldn't be losing ten hours a week now. Отдельный абзац на возражение и ответ: признай его прямо, а поворот начни с however — It is true that new features will slow down for a quarter; however, ... В финале конкретная просьба, а не общее пожелание.",
       "words_min": 180,
       "words_max": 250,
       "focus": [
@@ -532,7 +532,7 @@
       "level": "C1",
       "title_ru": "Публичное сообщение о крупном сбое",
       "prompt_en": "Write a public status update after a six-hour outage that affected all customers: what happened, what data was and was not affected, what you have done, and what you commit to next.",
-      "guidance_ru": "Четыре абзаца по три-четыре предложения, всего 180–250 слов, строго по порядку: факты, границы ущерба, выполненные действия, обязательства со сроками. Отдельным предложением скажи, что не пострадало. Никаких размытых формул вроде some users may have experienced issues. Текст должен одинаково читаться юристом и инженером.",
+      "guidance_ru": "Четыре абзаца по три-четыре предложения, всего 180–250 слов, строго по порядку: факты, границы ущерба, выполненные действия, обязательства со сроками. Где важен результат, а не исполнитель, — пассив: Service was fully restored at 14:20 UTC. Отдельным предложением скажи, что не пострадало: No payment data was accessed. Вместо размытых формул вроде some users may have experienced issues — точные числа, время и доля клиентов: between 08:10 and 14:20 UTC, about 3% of orders. Обязательство — через will и дату, без hope и try: By June 30, we will... Текст должен одинаково читаться юристом и инженером.",
       "words_min": 180,
       "words_max": 250,
       "focus": [
@@ -546,7 +546,7 @@
       "level": "C1",
       "title_ru": "Эссе о влиянии ИИ на профессию",
       "prompt_en": "Write an essay about how AI coding tools are changing what a software engineer is actually paid for. Take a clear position, support it, and deal seriously with the strongest counterargument.",
-      "guidance_ru": "Четыре-пять абзацев, всего 180–250 слов. Тезис в конце первого абзаца, два-три аргумента с примерами, сильный контраргумент и ответ на него, вывод без дословного повтора тезиса. Избегай штампов вроде in today's fast-changing world.",
+      "guidance_ru": "Четыре-пять абзацев по три-четыре предложения, всего 180–250 слов. Тезис в конце первого абзаца, два-три аргумента с примерами, сильный контраргумент и ответ на него, вывод без дословного повтора тезиса. Ход мысли держи точными связками вместо also и but: противопоставление — Far from making engineers unnecessary, ...; уступка и поворот к ответу — Granted, ... Even so, ...; оговорка — That is not to say that... Избегай штампов вроде in today's fast-changing world.",
       "words_min": 180,
       "words_max": 250,
       "focus": [
@@ -644,7 +644,7 @@
       "level": "C2",
       "title_ru": "Ответ на предложенную политику",
       "prompt_en": "Management has proposed a new rule: all AI-generated code must be reviewed by two senior engineers. Write a persuasive response: engage with the real risk behind the policy, show where the rule backfires, and propose a better one.",
-      "guidance_ru": "Четыре-пять абзацев по три-четыре предложения, всего 250–350 слов. Сначала покажи, что понял настоящий страх за политикой, иначе тебя не услышат. Дальше — где правило даст обратный эффект, с механизмом, а не с эмоцией. Предложи альтернативу, которую можно ввести в понедельник. Тон уверенный, но без высокомерия.",
+      "guidance_ru": "Четыре-пять абзацев по три-четыре предложения, всего 250–350 слов. Сначала покажи, что понял настоящий страх за политикой, иначе тебя не услышат: I share the concern behind this proposal. Главную мысль выделяй конструкцией What … is или It is … that: What the rule really protects against is unreviewed code reaching production. Дальше — где правило даст обратный эффект, с механизмом, а не с эмоцией. Степень уверенности передавай модальным глаголом, и разной: a second review might catch a few more bugs, but it will certainly slow every release, and a two-line config change need not wait for it. Предложи альтернативу, которую можно ввести в понедельник. Тон уверенный, но без высокомерия.",
       "words_min": 250,
       "words_max": 350,
       "focus": [
@@ -658,7 +658,7 @@
       "level": "C2",
       "title_ru": "Эссе об этике продуктовой аналитики",
       "prompt_en": "Write an essay on where product analytics stops being useful measurement and starts being surveillance. Draw a line you can defend, then test it against a hard case where it nearly breaks.",
-      "guidance_ru": "Пять абзацев по три предложения, всего 250–350 слов. Проведи границу и сразу проверь её на неудобном примере, где твой критерий трещит. Держи разницу между тем, что законно, и тем, что правильно. Абстрактную лексику используй точно, без философского тумана.",
+      "guidance_ru": "Пять абзацев по три предложения, всего 250–350 слов. Проведи границу и сразу проверь её на неудобном примере, где твой критерий трещит. Неудобный случай вводи гипотетически — инверсией или через suppose: Were a banking app to record how long users hesitate before a transfer, would that still be measurement? Suppose the data were never shared — would the line hold? Держи разницу между тем, что законно, и тем, что правильно. Абстрактную лексику используй точно, без философского тумана: вместо privacy issues — consent, purpose, proportionality, what users can reasonably expect. Регистр ровный, без разговорных a lot of и stuff.",
       "words_min": 250,
       "words_max": 350,
       "focus": [

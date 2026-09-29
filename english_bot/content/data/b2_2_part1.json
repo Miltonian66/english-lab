@@ -119,7 +119,10 @@
             "The new phone is a lot better than the old one.",
             "The new phone is considerably better than the old one.",
             "The new phone is way better than the old one.",
-            "The new phone is better than the old one."
+            "The new phone is better than the old one.",
+            "The new phone is significantly better than the old one.",
+            "The new phone is so much better than the old one.",
+            "The new phone is a great deal better than the old one."
           ],
           "explanation_ru": "Very не сочетается со сравнительной степенью, нужен усилитель much, far или a lot.",
           "difficulty": 3
@@ -174,7 +177,9 @@
           "kind": "transform",
           "prompt": "Rewrite using the word in capitals (do not change it): The hotel was much less comfortable than the photos suggested. NEARLY",
           "answer": "The hotel was not nearly as comfortable as the photos suggested.",
-          "accept": [],
+          "accept": [
+            "The hotel was not nearly so comfortable as the photos suggested."
+          ],
           "explanation_ru": "Much less comfortable than = not nearly as comfortable as: отрицательное as … as с усилителем not nearly показывает большую разницу. Без not смысл меняется на «почти такой же».",
           "difficulty": 3
         },
@@ -218,7 +223,20 @@
             "This laptop costs three times more than my old laptop.",
             "This laptop costs three times as much as my old one did.",
             "This laptop costs three times more than my old one did.",
-            "This laptop is three times the price of my old one."
+            "This laptop is three times the price of my old one.",
+            "This laptop costs three times what my old one did.",
+            "This laptop costs three times as much as my old one cost.",
+            "This laptop costs three times more than my old one cost.",
+            "This laptop costs three times what my old one cost.",
+            "This laptop costs three times as much as my old laptop did.",
+            "This laptop costs three times more than my old laptop did.",
+            "This laptop costs three times what my old laptop did.",
+            "This laptop costs three times as much as my old laptop cost.",
+            "This laptop costs three times more than my old laptop cost.",
+            "This laptop costs three times what my old laptop cost.",
+            "This laptop is three times as expensive as my old laptop.",
+            "This laptop is three times more expensive than my old laptop.",
+            "This laptop is three times the price of my old laptop."
           ],
           "explanation_ru": "Кратность ставится перед сравнением: three times as much as (или three times more than). Русское «в три раза» не даёт предлога in, а после as … as нужен второй as, а не than. Повтор laptop заменяет one: my old one.",
           "difficulty": 3
@@ -321,7 +339,7 @@
         {
           "id": "b2_compound_adjectives_in_english_04",
           "kind": "choice",
-          "prompt": "The client asked for a ___ change to the contract, but the team handled it calmly.",
+          "prompt": "The product owner asked for a ___ change right before the release, but the team handled it calmly.",
           "options": [
             "last minute's",
             "last-minutes",
@@ -335,12 +353,10 @@
         {
           "id": "b2_compound_adjectives_in_english_05",
           "kind": "gap",
-          "prompt": "Our kids' school has a ___ (four / day) break at the end of October.",
-          "answer": "four-day",
-          "accept": [
-            "4-day"
-          ],
-          "explanation_ru": "Перед существительным число и существительное соединяются дефисом, а day остаётся в единственном числе.",
+          "prompt": "My grandmother is surprisingly ___ (open / mind) — you can talk to her about anything.",
+          "answer": "open-minded",
+          "accept": [],
+          "explanation_ru": "Модель прилагательное + существительное + -ed описывает черту человека: open-minded («непредубеждённый»), так же kind-hearted, short-sighted. Окончание -ed обязательно: open-mind — не прилагательное.",
           "difficulty": 2
         },
         {
@@ -431,10 +447,12 @@
         {
           "id": "b2_compound_adjectives_in_english_12",
           "kind": "order",
-          "prompt": "booked / a / trip / three-day / we / for the whole family / .",
-          "answer": "We booked a three-day trip for the whole family.",
-          "accept": [],
-          "explanation_ru": "Составное прилагательное three-day стоит между артиклем и существительным, как обычное прилагательное, и day в нём остаётся в единственном числе.",
+          "prompt": "an / ice-cold / after the hike / lemonade / I / drank / .",
+          "answer": "After the hike I drank an ice-cold lemonade.",
+          "accept": [
+            "I drank an ice-cold lemonade after the hike."
+          ],
+          "explanation_ru": "Модель существительное + прилагательное: ice-cold = cold as ice («ледяной»), так же world-famous, duty-free. Составное прилагательное стоит между артиклем и существительным, как обычное: an ice-cold lemonade; артикль an — потому что ice начинается с гласного звука.",
           "difficulty": 2
         }
       ]
@@ -556,7 +574,9 @@
           "prompt": "Never I have eaten such spicy food in my life.",
           "answer": "Never have I eaten such spicy food in my life.",
           "accept": [
-            "I have never eaten such spicy food in my life."
+            "I have never eaten such spicy food in my life.",
+            "Never in my life have I eaten such spicy food.",
+            "I have never in my life eaten such spicy food."
           ],
           "explanation_ru": "После never в начале предложения have ставится перед подлежащим I; без инверсии never стоит после have: I have never eaten.",
           "difficulty": 2
@@ -566,7 +586,9 @@
           "kind": "transform",
           "prompt": "Rewrite with inversion: I had hardly sat down to dinner when the phone rang.",
           "answer": "Hardly had I sat down to dinner when the phone rang.",
-          "accept": [],
+          "accept": [
+            "Hardly had I sat down to dinner before the phone rang."
+          ],
           "explanation_ru": "Hardly выносится в начало, после него идёт had, затем подлежащее; вторая часть остаётся с when.",
           "difficulty": 3
         },
@@ -618,9 +640,17 @@
           "accept": [
             "No sooner had the concert started than it began to rain.",
             "No sooner had the concert started than it started to rain.",
-            "No sooner had the concert started than it began raining."
+            "No sooner had the concert started than it began raining.",
+            "No sooner had the concert started than the rain started.",
+            "No sooner had the concert started than it started raining.",
+            "No sooner had the concert begun than the rain began.",
+            "No sooner had the concert begun than the rain started.",
+            "No sooner had the concert begun than it began to rain.",
+            "No sooner had the concert begun than it started to rain.",
+            "No sooner had the concert begun than it began raining.",
+            "No sooner had the concert begun than it started raining."
           ],
-          "explanation_ru": "No sooner … than: после No sooner инверсия с past perfect (had the concert started), а вторая часть вводится словом than, не when.",
+          "explanation_ru": "No sooner … than: после No sooner инверсия с past perfect (had the concert started), а вторая часть вводится словом than, не when. Во второй части подойдёт любой естественный вариант: than the rain began, than it started raining, than it began to rain.",
           "difficulty": 3
         },
         {
@@ -656,12 +686,15 @@
         {
           "id": "b2_inversion_negative_adverbials_14",
           "kind": "transform",
-          "prompt": "Rewrite starting with 'Not until': We didn't realize how serious the problem was until the client called us.",
-          "answer": "Not until the client called us did we realize how serious the problem was.",
+          "prompt": "Rewrite starting with 'Not until': We didn't realize how serious the bug was until users started complaining.",
+          "answer": "Not until users started complaining did we realize how serious the bug was.",
           "accept": [
-            "Not until the client had called us did we realize how serious the problem was."
+            "Not until users had started complaining did we realize how serious the bug was.",
+            "Not until users started to complain did we realize how serious the bug was.",
+            "Not until users began complaining did we realize how serious the bug was.",
+            "Not until users began to complain did we realize how serious the bug was."
           ],
-          "explanation_ru": "Not until + момент выносится в начало, а инверсия делается в главной части: did we realize. Внутри until-части порядок обычный (the client called us), а отрицание didn't уходит — его смысл уже несёт not until.",
+          "explanation_ru": "Not until + момент выносится в начало, а инверсия делается в главной части: did we realize. Внутри until-части порядок обычный (users started complaining), а отрицание didn't уходит — его смысл уже несёт not until.",
           "difficulty": 3
         },
         {
@@ -810,12 +843,13 @@
         {
           "id": "b2_all_conditionals_mixed_conditionals_alternatives_if_inversion_08",
           "kind": "transform",
-          "prompt": "Rewrite without 'if': If you had sent me the report earlier, I would have checked the numbers.",
-          "answer": "Had you sent me the report earlier, I would have checked the numbers.",
+          "prompt": "Rewrite without 'if': If you had sent me the pull request earlier, I would have reviewed it properly.",
+          "answer": "Had you sent me the pull request earlier, I would have reviewed it properly.",
           "accept": [
-            "I would have checked the numbers had you sent me the report earlier."
+            "I would have reviewed it properly had you sent me the pull request earlier.",
+            "Had you sent the pull request to me earlier, I would have reviewed it properly."
           ],
-          "explanation_ru": "При отказе от if вспомогательный had выходит на первое место, а порядок остальных слов сохраняется.",
+          "explanation_ru": "При отказе от if вспомогательный had выходит на первое место (Had you sent), а порядок остальных слов сохраняется; главная часть остаётся с would have + V3.",
           "difficulty": 3
         },
         {
@@ -982,7 +1016,9 @@
           "kind": "correct",
           "prompt": "If I had studied harder at school, I would have been a programmer now.",
           "answer": "If I had studied harder at school, I would be a programmer now.",
-          "accept": [],
+          "accept": [
+            "Had I studied harder at school, I would be a programmer now."
+          ],
           "explanation_ru": "Со словом now результат относится к настоящему, поэтому have been здесь лишнее.",
           "difficulty": 3
         },
@@ -993,7 +1029,8 @@
           "answer": "If I had slept last night, I wouldn't be tired now.",
           "accept": [
             "If I had slept last night, I would not be tired now.",
-            "I wouldn't be tired now if I had slept last night."
+            "I wouldn't be tired now if I had slept last night.",
+            "Had I slept last night, I wouldn't be tired now."
           ],
           "explanation_ru": "Причина в прошлом даёт Past Perfect в части с if, а следствие в настоящем — wouldn't be.",
           "difficulty": 3
@@ -1007,7 +1044,9 @@
             "If I had learnt to swim as a child, I wouldn't be afraid of deep water now.",
             "I wouldn't be afraid of deep water now if I had learned to swim as a child.",
             "I wouldn't be afraid of deep water now if I had learnt to swim as a child.",
-            "Had I learned to swim as a child, I wouldn't be afraid of deep water now."
+            "Had I learned to swim as a child, I wouldn't be afraid of deep water now.",
+            "Had I learnt to swim as a child, I wouldn't be afraid of deep water now.",
+            "I wouldn't be afraid of deep water now had I learned to swim as a child."
           ],
           "explanation_ru": "Прошлое условие (не научился в детстве) — if + past perfect, настоящий результат (боюсь сейчас) — wouldn't + V1. Wouldn't have been относил бы результат к прошлому и спорил бы с now.",
           "difficulty": 3
@@ -1162,7 +1201,8 @@
           "answer": "unless",
           "accept": [],
           "explanation_ru": "Значение если не передаётся одним словом unless, после которого глагол стоит в утвердительной форме.",
-          "difficulty": 1
+          "difficulty": 1,
+          "diagnostic": false
         },
         {
           "id": "b2_unless_even_if_provided_as_long_conditionals_06",
@@ -1254,7 +1294,8 @@
           "answer": "You can borrow my bike as long as you bring it back by six.",
           "accept": [
             "As long as you bring it back by six, you can borrow my bike.",
-            "You can borrow my bike so long as you bring it back by six."
+            "You can borrow my bike so long as you bring it back by six.",
+            "So long as you bring it back by six, you can borrow my bike."
           ],
           "explanation_ru": "As long as = «при условии, что»: заменяет but only if. В условной части будущее время выражается present simple, will не ставится.",
           "difficulty": 2
@@ -1295,13 +1336,14 @@
       "title_en": "Clauses of contrast, purpose, reason and result",
       "source_slug": "clauses-contrast-purpose-reason-result",
       "title_ru": "Придаточные уступки, цели, причины и результата",
-      "summary_ru": "Уступку вводят although, though, even though плюс придаточное с подлежащим и глаголом, а despite и in spite of — только существительное или форму на -ing. После despite предлог of не ставится. Цель выражается через in order to и so as to плюс инфинитив, либо через so that плюс придаточное с модальным глаголом. Причину вводят because, as, since плюс придаточное и because of, due to плюс существительное. Результат передают конструкции so плюс прилагательное плюс that и such a плюс существительное плюс that, а также вводные therefore и as a result. Важно помнить, что although и but не используются в одном предложении одновременно.",
+      "summary_ru": "Уступку вводят although, though, even though плюс придаточное с подлежащим и глаголом, а despite и in spite of — только существительное или форму на -ing. После despite предлог of не ставится. Цель выражается через in order to и so as to плюс инфинитив, либо через so that плюс придаточное с модальным глаголом. Причину вводят because, as, since плюс придаточное и because of, due to плюс существительное. Результат передают конструкции so плюс прилагательное плюс that и such a плюс существительное плюс that, а также вводные therefore и as a result. Книжный уровень добавляет much as (= although, «как бы ни»), whereas и while (противопоставление двух фактов), no matter how / however + прилагательное («как бы ни»), for fear of + -ing («чтобы не, боясь») и in order that + придаточное. Важно помнить, что although и but не используются в одном предложении одновременно.",
       "forms": [
         "although / though / even though + clause",
         "despite / in spite of + noun или -ing",
         "in order to / so as to + V1; so that + clause",
         "because / as / since + clause; because of / due to + noun",
-        "so + adjective + that; such a + noun + that"
+        "so + adjective + that; such a + noun + that",
+        "much as / whereas + clause; for fear of + -ing; in order that + clause"
       ],
       "examples": [
         "Although the apartment was small, it was very bright.",
@@ -1320,43 +1362,43 @@
         {
           "id": "b2_clauses_contrast_purpose_reason_result_01",
           "kind": "choice",
-          "prompt": "___ the rain, we went for a walk in the park.",
+          "prompt": "___ I love my job, I'm not willing to work every weekend.",
           "options": [
-            "Despite of",
-            "Although",
+            "Much as",
+            "As long as",
             "Despite",
-            "Even though"
+            "So that"
           ],
-          "correct_index": 2,
-          "explanation_ru": "Перед существительным the rain нужен предлог despite без of; although и even though требуют придаточного с глаголом.",
-          "difficulty": 1
+          "correct_index": 0,
+          "explanation_ru": "Much as + придаточное = although, но с оттенком «как бы я ни …»: признаём факт и всё равно возражаем. As long as вводит условие («при условии, что»), so that — цель, и обе меняют смысл; despite требует существительного или -ing, а не придаточного.",
+          "difficulty": 2
         },
         {
           "id": "b2_clauses_contrast_purpose_reason_result_02",
           "kind": "choice",
-          "prompt": "___ it was raining, we went for a walk in the park.",
+          "prompt": "My brother loves big cities, ___ I'd rather live somewhere quiet.",
           "options": [
-            "Despite",
-            "In spite of",
-            "Because of",
-            "Although"
+            "whereas",
+            "despite",
+            "so that",
+            "in case"
           ],
-          "correct_index": 3,
-          "explanation_ru": "Перед придаточным it was raining нужен союз although; despite, in spite of и because of сочетаются только с существительным.",
-          "difficulty": 1
+          "correct_index": 0,
+          "explanation_ru": "Whereas противопоставляет два факта о разных людях или вещах: брат любит большие города, а я — тишину (так же while). Despite требует существительного, so that вводит цель, in case — «на случай, если».",
+          "difficulty": 2
         },
         {
           "id": "b2_clauses_contrast_purpose_reason_result_03",
           "kind": "choice",
-          "prompt": "We left the stadium early ___ avoid the traffic.",
+          "prompt": "My grandfather never lends money to friends ___ losing them.",
           "options": [
-            "for",
-            "in order to",
-            "so that",
-            "because of"
+            "for fear of",
+            "so as not to",
+            "in order not to",
+            "so that not"
           ],
-          "correct_index": 1,
-          "explanation_ru": "Цель перед инфинитивом вводится через in order to; so that требует придаточного с подлежащим, а for и because of — существительного.",
+          "correct_index": 0,
+          "explanation_ru": "For fear of + -ing — «чтобы не, боясь, что»: цель-опасение, после которой идёт форма на -ing (for fear of losing them). So as not to и in order not to тоже выражают отрицательную цель, но требуют инфинитива (so as not to lose them), а so that not такой конструкции не образует.",
           "difficulty": 2
         },
         {
@@ -1371,16 +1413,17 @@
           ],
           "correct_index": 2,
           "explanation_ru": "Перед прилагательным в конструкции результата стоит so … that: so long that. Such употребляется с существительным (such a long meeting that), а too и very с that не сочетаются.",
-          "difficulty": 2
+          "difficulty": 2,
+          "diagnostic": false
         },
         {
           "id": "b2_clauses_contrast_purpose_reason_result_05",
           "kind": "gap",
-          "prompt": "I turned off my notifications so ___ nobody could disturb me during the interview.",
-          "answer": "that",
+          "prompt": "I turned off my notifications ___ nobody would disturb me during the interview. (formal purpose + clause; three words)",
+          "answer": "in order that",
           "accept": [],
-          "explanation_ru": "Цель с придаточным вводится оборотом so that, после которого идёт подлежащее и модальный глагол.",
-          "difficulty": 1
+          "explanation_ru": "In order that + придаточное — книжный вариант so that: цель с новым подлежащим (nobody) и модальным would или could. In order to здесь невозможно: после него идёт инфинитив, а не подлежащее с глаголом.",
+          "difficulty": 2
         },
         {
           "id": "b2_clauses_contrast_purpose_reason_result_06",
@@ -1392,17 +1435,24 @@
             "owing to"
           ],
           "explanation_ru": "Перед существительным the storm нужен предлог because of, а не союз because.",
-          "difficulty": 2
+          "difficulty": 2,
+          "diagnostic": false
         },
         {
           "id": "b2_clauses_contrast_purpose_reason_result_07",
           "kind": "correct",
-          "prompt": "Although it was expensive, but we bought it.",
-          "answer": "Although it was expensive, we bought it.",
+          "prompt": "Despite the flight was delayed by three hours, we made it to the wedding on time.",
+          "answer": "Although the flight was delayed by three hours, we made it to the wedding on time.",
           "accept": [
-            "It was expensive, but we bought it."
+            "Even though the flight was delayed by three hours, we made it to the wedding on time.",
+            "Though the flight was delayed by three hours, we made it to the wedding on time.",
+            "Despite the fact that the flight was delayed by three hours, we made it to the wedding on time.",
+            "In spite of the fact that the flight was delayed by three hours, we made it to the wedding on time.",
+            "Despite the flight being delayed by three hours, we made it to the wedding on time.",
+            "In spite of the flight being delayed by three hours, we made it to the wedding on time.",
+            "Despite the three-hour delay, we made it to the wedding on time."
           ],
-          "explanation_ru": "Although и but выражают одну и ту же уступку, поэтому в одном предложении остаётся только один из них.",
+          "explanation_ru": "Despite — предлог: после него идёт существительное или -ing, а не придаточное с подлежащим и глаголом. Исправить можно тремя способами: although + придаточное, despite the fact that + придаточное или despite + the flight being delayed.",
           "difficulty": 3
         },
         {
@@ -1414,7 +1464,12 @@
             "In spite of being tired, he finished the marathon.",
             "Despite his tiredness, he finished the marathon.",
             "He finished the marathon despite being tired.",
-            "Despite the fact that he was tired, he finished the marathon."
+            "Despite the fact that he was tired, he finished the marathon.",
+            "He finished the marathon despite the fact that he was tired.",
+            "He finished the marathon despite his tiredness.",
+            "Despite the fact he was tired, he finished the marathon.",
+            "Despite feeling tired, he finished the marathon.",
+            "He finished the marathon despite feeling tired."
           ],
           "explanation_ru": "После despite нужна форма на -ing или существительное, поэтому придаточное превращается в being tired.",
           "difficulty": 3
@@ -1426,7 +1481,8 @@
           "gaps": [
             [
               "so that",
-              "so"
+              "so",
+              "in order that"
             ],
             [
               "Despite",
@@ -1458,7 +1514,8 @@
             "The company picnic was postponed due to terrible weather.",
             "Due to the terrible weather, the company picnic was postponed.",
             "Due to terrible weather, the company picnic was postponed.",
-            "The company picnic was postponed due to the fact that the weather was terrible."
+            "The company picnic was postponed due to the fact that the weather was terrible.",
+            "Due to the fact that the weather was terrible, the company picnic was postponed."
           ],
           "explanation_ru": "Due to, как because of, ставится перед существительным: due to the terrible weather. Перед целым придаточным нужно because или due to the fact that.",
           "difficulty": 2
@@ -1477,6 +1534,42 @@
           "explanation_ru": "Русское «чтобы не опоздать» нельзя передать через for + -ing: нужно so as not to be late или so that we wouldn't be late. Остальные предложения верны: in spite of + существительное, so as to + V1, such a + существительное + that.",
           "difficulty": 2,
           "diagnostic": true
+        },
+        {
+          "id": "b2_clauses_contrast_purpose_reason_result_12",
+          "kind": "choice",
+          "prompt": "___ my sister spends every dollar she earns, I save almost half of my salary.",
+          "options": [
+            "While",
+            "Despite",
+            "Unless",
+            "So that"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "While в начале предложения может значить не «пока», а «тогда как»: противопоставляет два факта о разных людях, как whereas. Despite требует существительного, unless вводит условие («если не»), so that — цель.",
+          "difficulty": 2
+        },
+        {
+          "id": "b2_clauses_contrast_purpose_reason_result_13",
+          "kind": "transform",
+          "prompt": "Rewrite using the words in capitals (do not change them): However hard I try, I can't remember people's names. NO MATTER",
+          "answer": "No matter how hard I try, I can't remember people's names.",
+          "accept": [
+            "I can't remember people's names no matter how hard I try."
+          ],
+          "explanation_ru": "No matter how + прилагательное или наречие + придаточное = however + прилагательное: «как бы … ни». После how сразу идёт hard, а подлежащее и глагол — потом: no matter how hard I try. No matter how I try hard — ошибка порядка.",
+          "difficulty": 3
+        },
+        {
+          "id": "b2_clauses_contrast_purpose_reason_result_14",
+          "kind": "gap",
+          "prompt": "___ (как бы ты ни устал) you are, always take off your makeup before bed.",
+          "answer": "However tired",
+          "accept": [
+            "No matter how tired"
+          ],
+          "explanation_ru": "However + прилагательное + подлежащее + глагол — «как бы ни»: however tired you are = no matter how tired you are. Прилагательное стоит сразу после however, а не в конце (however you are tired — ошибка).",
+          "difficulty": 2
         }
       ]
     },
@@ -1521,7 +1614,8 @@
           ],
           "correct_index": 0,
           "explanation_ru": "В начале нового предложения контраст вводит наречие however; although, despite и whereas не могут начинать самостоятельное предложение с запятой.",
-          "difficulty": 1
+          "difficulty": 1,
+          "diagnostic": false
         },
         {
           "id": "b2_discourse_markers_02",
@@ -1600,7 +1694,9 @@
           "answer": "The vendor's proposal is good. However, it is over our budget.",
           "accept": [
             "The vendor's proposal is good; however, it is over our budget.",
-            "The vendor's proposal is good, but it is over our budget."
+            "The vendor's proposal is good, but it is over our budget.",
+            "The vendor's proposal is good. It is, however, over our budget.",
+            "The vendor's proposal is good, although it is over our budget."
           ],
           "explanation_ru": "However не союз: он начинает новое предложение после точки или точки с запятой и отделяется запятой; союзом внутри предложения служит but.",
           "difficulty": 2
@@ -1612,7 +1708,8 @@
           "answer": "The hotel lost our booking. Therefore, we had to find another place to stay.",
           "accept": [
             "The hotel lost our booking; therefore, we had to find another place to stay.",
-            "The hotel lost our booking. We therefore had to find another place to stay."
+            "The hotel lost our booking. We therefore had to find another place to stay.",
+            "The hotel lost our booking; we therefore had to find another place to stay."
           ],
           "explanation_ru": "Союз so заменяется наречием therefore, которое начинает отдельное предложение и отделяется запятой.",
           "difficulty": 3
@@ -1680,7 +1777,10 @@
             "The museum was very crowded; nevertheless, we enjoyed our visit.",
             "The museum was very crowded. We nevertheless enjoyed our visit.",
             "The museum was very crowded, but we nevertheless enjoyed our visit.",
-            "The museum was very crowded, but nevertheless we enjoyed our visit."
+            "The museum was very crowded, but nevertheless we enjoyed our visit.",
+            "The museum was very crowded; we nevertheless enjoyed our visit.",
+            "The museum was very crowded. We enjoyed our visit nevertheless.",
+            "The museum was very crowded; we enjoyed our visit nevertheless."
           ],
           "explanation_ru": "Nevertheless — наречие-связка, а не союз: оно открывает новое предложение после точки или точки с запятой. Although при этом убирают, иначе уступка выражена дважды; запятая перед nevertheless не может соединить два предложения.",
           "difficulty": 3
@@ -1900,7 +2000,9 @@
           "answer": "I like tea and my wife does too.",
           "accept": [
             "I like tea and so does my wife.",
-            "I like tea and my wife likes it too."
+            "I like tea and my wife likes it too.",
+            "I like tea and my wife does as well.",
+            "I like tea and my wife likes it as well."
           ],
           "explanation_ru": "Смысловой глагол не повторяется без дополнения: вместо likes нужен вспомогательный does.",
           "difficulty": 3
@@ -1908,12 +2010,16 @@
         {
           "id": "b2_ellipsis_and_substitution_08",
           "kind": "transform",
-          "prompt": "Rewrite using 'do so' to avoid repeating: The manager asked everyone to sign the new contract by Friday, and most people signed the new contract on Monday.",
-          "answer": "The manager asked everyone to sign the new contract by Friday, and most people did so on Monday.",
+          "prompt": "Rewrite using 'do so' to avoid repeating: The team lead asked everyone to install the security update by Friday, and most people installed the security update on Monday.",
+          "answer": "The team lead asked everyone to install the security update by Friday, and most people did so on Monday.",
           "accept": [
-            "The manager asked everyone to sign the new contract by Friday, and most did so on Monday."
+            "The team lead asked everyone to install the security update by Friday, and most did so on Monday.",
+            "The team lead asked everyone to install the security update by Friday, and most of them did so on Monday.",
+            "The team lead asked everyone to install the security update by Friday, but most people did so on Monday.",
+            "The team lead asked everyone to install the security update by Friday, but most did so on Monday.",
+            "The team lead asked everyone to install the security update by Friday, but most of them did so on Monday."
           ],
-          "explanation_ru": "Do so заменяет всю глагольную группу (signed the new contract) и звучит нейтрально-письменно, как и положено в деловом тексте. Обстоятельство времени (on Monday) остаётся после do so.",
+          "explanation_ru": "Do so заменяет всю глагольную группу (installed the security update) и звучит нейтрально-письменно, как и положено в рабочей переписке. Подлежащим может быть most people, most или most of them, а обстоятельство времени (on Monday) остаётся после do so.",
           "difficulty": 3
         },
         {
@@ -2026,7 +2132,7 @@
         {
           "id": "b2_modal_verbs_permission_obligation_prohibition_necessity_02",
           "kind": "choice",
-          "prompt": "Looking back, we ___ have booked such a big room for the team workshop — only twelve people came.",
+          "prompt": "From a sprint retrospective report: In hindsight, we ___ have booked such a large room for the workshop, as only twelve people attended.",
           "options": [
             "needn't",
             "mustn't",
@@ -2034,7 +2140,7 @@
             "hadn't to"
           ],
           "correct_index": 0,
-          "explanation_ru": "Needn't have + V3 — действие совершили, а оно оказалось лишним: большой зал забронировали зря. В разговорном американском то же чаще говорят didn't need to book или didn't have to book. Mustn't have не выражает ненужность, didn't need требует to, а hadn't to не существует.",
+          "explanation_ru": "Needn't have + V3 — действие совершили, а оно оказалось лишним: большой зал забронировали зря. Это книжная форма, уместная в письменном отчёте; в разговорном американском то же обычно говорят didn't need to book или shouldn't have booked. Mustn't have не выражает ненужность, didn't need требует to (didn't need to book), а hadn't to не существует.",
           "difficulty": 2
         },
         {
@@ -2049,7 +2155,8 @@
           ],
           "correct_index": 1,
           "explanation_ru": "Оборот be allowed to строится с формой глагола be, поэтому вопрос начинается с Are.",
-          "difficulty": 1
+          "difficulty": 1,
+          "diagnostic": false
         },
         {
           "id": "b2_modal_verbs_permission_obligation_prohibition_necessity_04",
@@ -2101,7 +2208,8 @@
           "answer": "You mustn't park here; it is forbidden.",
           "accept": [
             "You can't park here; it is forbidden.",
-            "You are not allowed to park here; it is forbidden."
+            "You are not allowed to park here; it is forbidden.",
+            "You may not park here; it is forbidden."
           ],
           "explanation_ru": "Слово forbidden указывает на запрет, а don't have to означает всего лишь отсутствие необходимости.",
           "difficulty": 3
@@ -2319,7 +2427,10 @@
           "answer": "He can't be at home; his car isn't in the driveway.",
           "accept": [
             "He must not be at home; his car isn't in the driveway.",
-            "He couldn't be at home; his car isn't in the driveway."
+            "He couldn't be at home; his car isn't in the driveway.",
+            "He can't be home; his car isn't in the driveway.",
+            "He must not be home; his car isn't in the driveway.",
+            "He couldn't be home; his car isn't in the driveway."
           ],
           "explanation_ru": "Doesn't have to значит «нет необходимости», а здесь вывод по фактам: машины нет — значит, его точно нет дома. Уверенный отрицательный вывод — can't be; в американском так же говорят must not be.",
           "difficulty": 2
@@ -2327,13 +2438,13 @@
         {
           "id": "b2_speculation_deduction_08",
           "kind": "transform",
-          "prompt": "Rewrite with a modal of deduction: I'm sure the manager didn't read my email.",
-          "answer": "The manager can't have read my email.",
+          "prompt": "Rewrite with a modal of deduction: I'm sure the reviewer didn't read my pull request. (He approved it in ten seconds.)",
+          "answer": "The reviewer can't have read my pull request.",
           "accept": [
-            "The manager couldn't have read my email.",
-            "The manager must not have read my email."
+            "The reviewer couldn't have read my pull request.",
+            "The reviewer must not have read my pull request."
           ],
-          "explanation_ru": "Уверенность в том, что действие не произошло, передаётся через can't have плюс третья форма; в американском так же говорят must not have heard.",
+          "explanation_ru": "Уверенность в том, что действие не произошло, передаётся через can't have + V3: одобрил за десять секунд — значит, точно не читал. В американском так же говорят must not have read, верно и couldn't have read. Can't read без have относилось бы к настоящему.",
           "difficulty": 3
         },
         {
@@ -2384,7 +2495,12 @@
           "prompt": "Rewrite using the word in capitals (do not change it): I'm sure Fatima didn't take your umbrella; she had her own. CAN'T",
           "answer": "Fatima can't have taken your umbrella; she had her own.",
           "accept": [
-            "Fatima can't have taken your umbrella. She had her own."
+            "Fatima can't have taken your umbrella. She had her own.",
+            "Fatima can't have taken your umbrella — she had her own.",
+            "Fatima can't have taken your umbrella, she had her own.",
+            "Fatima can't have taken your umbrella because she had her own.",
+            "Fatima can't have taken your umbrella since she had her own.",
+            "Fatima can't have taken your umbrella as she had her own."
           ],
           "explanation_ru": "Уверенность, что в прошлом чего-то не было, — can't have + V3 (taken). Can't take относится к настоящему, а после have нужна третья форма, не вторая.",
           "difficulty": 2

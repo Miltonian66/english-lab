@@ -178,13 +178,14 @@
       "title_en": "Adjectives without noun",
       "source_slug": "adjectives-without-noun",
       "title_ru": "Прилагательные без существительного",
-      "summary_ru": "Прилагательное может использоваться без существительного, если из контекста ясно, о ком или о чём речь. Конструкция the плюс прилагательное обозначает всю группу людей и требует глагола во множественном числе: the rich are, the unemployed need. Так же работают названия наций на -ch, -sh, -ese, -ss: the French, the British, the Chinese, the Swiss. Остальные нации требуют существительного во множественном числе: the Germans, the Russians, the Americans. Прилагательное в превосходной степени тоже обходится без существительного: this one is the cheapest. Чтобы не повторять исчисляемое существительное, используют one или ones: I want the blue one. Абстрактные понятия строятся по той же модели: the impossible, the unknown.",
+      "summary_ru": "Прилагательное может использоваться без существительного, если из контекста ясно, о ком или о чём речь. Конструкция the плюс прилагательное обозначает всю группу людей и требует глагола во множественном числе: the rich are, the unemployed need. Так же работают названия наций на -ch, -sh, -ese, -ss: the French, the British, the Chinese, the Swiss. Остальные нации требуют существительного во множественном числе: the Germans, the Russians, the Americans. Прилагательное в превосходной степени тоже обходится без существительного: this one is the cheapest. Чтобы не повторять исчисляемое существительное, используют one или ones: I want the blue one. Абстрактные понятия строятся по той же модели: the impossible, the unknown. Не путай эту модель с абстрактным существительным: poverty, unemployment, education в общем смысле идут без артикля, а the появляется, когда понятие уточнено: the education my parents got. С the употребляются и единственные в своём роде учреждения: the police, the army.",
       "forms": [
         "the + прилагательное = группа людей, глагол во множественном числе",
         "the + French / British / Chinese / Swiss = нация целиком",
         "the + Germans / Russians / Americans (существительное во множественном числе)",
         "the + превосходная степень без существительного",
-        "one / ones вместо повторяемого исчисляемого существительного"
+        "one / ones вместо повторяемого исчисляемого существительного",
+        "без артикля — абстрактное понятие в общем смысле (poverty, unemployment); the — уточнённое понятие (the education my parents got) и единственное учреждение (the police)"
       ],
       "examples": [
         "The rich are getting richer every year.",
@@ -226,7 +227,8 @@
           ],
           "correct_index": 1,
           "explanation_ru": "The rich значит все богатые люди, поэтому глагол стоит во множественном числе.",
-          "difficulty": 1
+          "difficulty": 1,
+          "diagnostic": false
         },
         {
           "id": "b2_adjectives_without_noun_03",
@@ -351,6 +353,39 @@
           "accept": [],
           "explanation_ru": "Чтобы не повторять исчисляемое существительное в единственном числе (jacket), ставят one: the green one. Прилагательное само по себе без one здесь не употребляется.",
           "difficulty": 1
+        },
+        {
+          "id": "b2_adjectives_without_noun_13",
+          "kind": "cloze",
+          "prompt": "Add the where it is needed: In our town, ___ (unemployment) has doubled in five years, and ___ (unemployed) now wait months for help. ___ (government) has promised new jobs, but for many families ___ (poverty) is still part of daily life. My grandmother says that ___ (poverty) of the 1930s was much worse.",
+          "gaps": [
+            [
+              "unemployment"
+            ],
+            [
+              "the unemployed"
+            ],
+            [
+              "The government"
+            ],
+            [
+              "poverty"
+            ],
+            [
+              "the poverty"
+            ]
+          ],
+          "explanation_ru": "Абстрактное понятие в общем смысле идёт без артикля: unemployment has doubled, poverty is part of daily life. The + прилагательное — группа людей: the unemployed. The government — единственное в своём роде учреждение. Когда понятие уточнено (of the 1930s), артикль возвращается: the poverty of the 1930s.",
+          "difficulty": 3
+        },
+        {
+          "id": "b2_adjectives_without_noun_14",
+          "kind": "correct",
+          "prompt": "The poverty is the main reason why the young leave the countryside.",
+          "answer": "Poverty is the main reason why the young leave the countryside.",
+          "accept": [],
+          "explanation_ru": "Poverty здесь — явление вообще, поэтому без артикля, как абстрактные love или education. А the young остаётся: the + прилагательное обозначает всю группу людей.",
+          "difficulty": 3
         }
       ]
     },
@@ -430,7 +465,7 @@
           "correct_index": 1,
           "explanation_ru": "Also занимает среднюю позицию — перед смысловым глаголом: she also speaks. «Говорит также португальский» тянет поставить also после глагола, но между глаголом и дополнением наречие не встаёт; too стоит только в конце и с also не сочетается.",
           "difficulty": 1,
-          "diagnostic": true
+          "diagnostic": false
         },
         {
           "id": "b2_position_of_adverbs_04",
@@ -479,7 +514,9 @@
           "kind": "transform",
           "prompt": "Put the adverb in the right place: (always) You can call me if you need anything at night.",
           "answer": "You can always call me if you need anything at night.",
-          "accept": [],
+          "accept": [
+            "If you need anything at night, you can always call me."
+          ],
           "explanation_ru": "С модальным глаголом наречие средней позиции стоит после него и перед смысловым глаголом: can always call. Здесь always значит «в любой момент», а не частоту; порядок always can для нейтральной речи не подходит.",
           "difficulty": 2
         },
@@ -539,7 +576,9 @@
           "accept": [
             "My brother barely ever calls our parents.",
             "My brother rarely if ever calls our parents.",
-            "My brother scarcely ever calls our parents."
+            "My brother scarcely ever calls our parents.",
+            "My brother seldom if ever calls our parents.",
+            "Hardly ever does my brother call our parents."
           ],
           "explanation_ru": "Hardly ever — «почти никогда», наречие частотности в средней позиции перед смысловым глаголом. Оно уже отрицательное, поэтому глагол остаётся утвердительным: hardly ever calls, а не doesn't hardly ever call.",
           "difficulty": 3
@@ -693,13 +732,13 @@
           "kind": "choice",
           "prompt": "My Spanish is ___ good: I can order food and ask for directions, but I can't follow the news.",
           "options": [
-            "absolutely",
-            "quite a",
-            "such",
-            "fairly"
+            "extremely",
+            "incredibly",
+            "fairly",
+            "exceptionally"
           ],
-          "correct_index": 3,
-          "explanation_ru": "Контекст описывает средний уровень с оговоркой «но не более того», а это ровно смысл fairly. Absolutely сочетается только с неградуируемыми словами (absolutely perfect), quite a требует существительного после прилагательного, such без существительного не употребляется.",
+          "correct_index": 2,
+          "explanation_ru": "Все четыре слова встают перед good, поэтому выбор только по смыслу. Контекст описывает средний уровень с оговоркой «но не более того» — это ровно fairly («вполне, в меру»). Extremely, incredibly и exceptionally поднимают признак до «чрезвычайно», а это противоречит второй части про новости.",
           "difficulty": 2,
           "diagnostic": true
         },
@@ -722,7 +761,8 @@
           "accept": [
             "It was a pretty good presentation.",
             "It was a fairly good presentation.",
-            "It was a rather good presentation."
+            "It was a rather good presentation.",
+            "It was rather a good presentation."
           ],
           "explanation_ru": "Quite не может стоять после артикля, поэтому оно выносится перед a; можно и заменить его на pretty, fairly или rather, которые после артикля стоять могут.",
           "difficulty": 3
@@ -778,6 +818,15 @@
           "explanation_ru": "Ошибка в a quite cold night: quite не встаёт после артикля, нужно quite a cold night. Pretty ставится после артикля, quite — перед ним, rather — в обеих позициях.",
           "difficulty": 3,
           "diagnostic": false
+        },
+        {
+          "id": "b2_pretty_rather_quite_fairly_intensifiers_12",
+          "kind": "order",
+          "prompt": "quite / we / a / weekend / had / busy / .",
+          "answer": "We had quite a busy weekend.",
+          "accept": [],
+          "explanation_ru": "Quite ставится перед артиклем: quite a busy weekend. Порядок a quite busy строят по образцу a very busy, но quite так не встаёт; после артикля ставят fairly и pretty: a pretty busy weekend.",
+          "difficulty": 2
         }
       ]
     },
@@ -789,7 +838,7 @@
       "title_en": "So, such (a), so much, so many",
       "source_slug": "so-such-a-so-much-so-many",
       "title_ru": "So, such (a), so much, so many",
-      "summary_ru": "So и such усиливают признак, но сочетаются с разными частями речи. So ставится перед прилагательным или наречием, за которым нет существительного: so slow, so quickly. Such ставится перед существительным, с прилагательным или без него: such a problem, such good news. С исчисляемым существительным в единственном числе обязателен артикль: such a long meeting. Перед множественным числом и неисчисляемыми артикль не нужен: such interesting people, such bad weather. Для количества используются so much и so little с неисчисляемыми, so many и so few с множественным числом. Обе конструкции часто продолжаются придаточным результата с that: it was so cold that we went home.",
+      "summary_ru": "So и such усиливают признак, но сочетаются с разными частями речи. So ставится перед прилагательным или наречием, за которым нет существительного: so slow, so quickly. Such ставится перед существительным, с прилагательным или без него: such a problem, such good news. С исчисляемым существительным в единственном числе обязателен артикль: such a long meeting. Перед множественным числом и неисчисляемыми артикль не нужен: such interesting people, such bad weather. Для количества используются so much и so little с неисчисляемыми, so many и so few с множественным числом. Обе конструкции часто продолжаются придаточным результата с that: it was so cold that we went home. В книжной речи so с прилагательным или such выносят в начало предложения, и тогда глагол встаёт перед подлежащим: So loud was the music that we left early. Such was the noise that nobody slept.",
       "forms": [
         "so + прилагательное или наречие",
         "such + a/an + (прилагательное) + исчисляемое существительное в единственном числе",
@@ -797,7 +846,8 @@
         "so much / so little + неисчисляемое; so many / so few + множественное число",
         "so / such ... that + результат",
         "such a lot of + любое существительное = so much / so many",
-        "so + прилагательное ... that — даже если прилагательное отделено от подлежащего вставкой"
+        "so + прилагательное ... that — даже если прилагательное отделено от подлежащего вставкой",
+        "So + прилагательное + be + подлежащее + that / Such + be + существительное + that — книжная инверсия"
       ],
       "examples": [
         "The build is so slow that nobody uses it.",
@@ -830,16 +880,16 @@
         {
           "id": "b2_so_such_a_so_much_so_many_02",
           "kind": "choice",
-          "prompt": "___ people came to the meeting that we had to postpone the vote.",
+          "prompt": "___ the demand for tickets that the band added a second concert.",
           "options": [
-            "So few",
-            "So little",
-            "Such few",
-            "So less"
+            "Such was",
+            "So was",
+            "So great",
+            "Such a"
           ],
           "correct_index": 0,
-          "explanation_ru": "«Так мало» с исчисляемым множественным числом — so few people. So little ставится с неисчисляемыми (so little time), а such few и so less не употребляются.",
-          "difficulty": 2
+          "explanation_ru": "Such was + существительное + that — книжное «спрос был таким, что…»: such заменяет прилагательное и выносится вперёд, а глагол встаёт перед подлежащим. So перед was требует прилагательного (So great was the demand), без was предложение остаётся без глагола, а such a не сочетается с неисчисляемым demand.",
+          "difficulty": 3
         },
         {
           "id": "b2_so_such_a_so_much_so_many_03",
@@ -882,10 +932,10 @@
         {
           "id": "b2_so_such_a_so_much_so_many_06",
           "kind": "gap",
-          "prompt": "The online course had ___ (= very few) students that the company canceled it after a month.",
-          "answer": "so few",
+          "prompt": "The children on the tour asked ___ (= такие) difficult questions that the guide had to call a colleague for help.",
+          "answer": "such",
           "accept": [],
-          "explanation_ru": "«Так мало» с исчисляемым множественным числом (students) — so few. So little ставится с неисчисляемыми (so little time), а such few не употребляется.",
+          "explanation_ru": "Перед прилагательным с существительным во множественном числе — such без артикля: such difficult questions. So ставится только перед прилагательным без существительного (so difficult), а such a — только перед исчисляемым в единственном числе (such a difficult question).",
           "difficulty": 2
         },
         {
@@ -917,7 +967,10 @@
           "answer": "It was such strong coffee that I couldn't sleep.",
           "accept": [
             "It was such a strong coffee that I couldn't sleep.",
-            "That was such strong coffee that I couldn't sleep."
+            "That was such strong coffee that I couldn't sleep.",
+            "It was such strong coffee I couldn't sleep.",
+            "It was such a strong coffee I couldn't sleep.",
+            "I had such strong coffee that I couldn't sleep."
           ],
           "explanation_ru": "Such стоит перед существительным (с прилагательным): such strong coffee. Coffee как вещество неисчисляемое, поэтому артикль не нужен; a coffee возможно в значении «чашка кофе». So сочетается только с прилагательным без существительного.",
           "difficulty": 3
@@ -925,14 +978,14 @@
         {
           "id": "b2_so_such_a_so_much_so_many_10",
           "kind": "cloze",
-          "prompt": "Our week in Kyoto was ___ amazing experience that we're already planning to go back. There were ___ temples and gardens that we saw only a fraction of them. Our little guesthouse was ___ quiet, even on a Saturday night, that we slept ten hours. On the last day we had ___ time left that we had to skip the souvenir shopping.",
+          "prompt": "Complete with so, such, so much or so little (add a/an where needed): Our week in Kyoto was ___ amazing experience that we're already planning to go back. There was ___ to see that we managed only a fraction of the temples. Our little guesthouse, with its paper walls and tiny moss garden, was ___ quiet that we slept ten hours every night. On the last day we had ___ time left that we had to skip the souvenir shopping.",
           "gaps": [
             [
               "such an"
             ],
             [
-              "so many",
-              "such a lot of"
+              "so much",
+              "such a lot"
             ],
             [
               "so"
@@ -941,8 +994,8 @@
               "so little"
             ]
           ],
-          "explanation_ru": "Перед исчисляемым существительным в единственном числе — such a(n): such an amazing experience. Temples and gardens — множественное число: so many (или such a lot of). Перед прилагательным quiet, даже если между ним и подлежащим вставлен оборот, — so. Time неисчисляемое, и «так мало» — so little.",
-          "difficulty": 2
+          "explanation_ru": "Перед исчисляемым существительным в единственном числе — such a(n): such an amazing experience. «Так много» без существительного — so much (или such a lot): so much to see. Перед прилагательным quiet — so, даже когда его отделяет от подлежащего длинная вставка. Time неисчисляемое, и «так мало» — so little.",
+          "difficulty": 3
         },
         {
           "id": "b2_so_such_a_so_much_so_many_11",
@@ -958,6 +1011,17 @@
           "explanation_ru": "Time неисчисляемое, поэтому «так мало» — so little; so few ставится только перед множественным числом. Such a little time — ошибка с артиклем при неисчисляемом существительном, а so little не ставится после существительного.",
           "difficulty": 2,
           "diagnostic": false
+        },
+        {
+          "id": "b2_so_such_a_so_much_so_many_12",
+          "kind": "transform",
+          "prompt": "Rewrite starting with 'So': The exam was so difficult that half the class failed.",
+          "answer": "So difficult was the exam that half the class failed.",
+          "accept": [
+            "So difficult was the exam that half of the class failed."
+          ],
+          "explanation_ru": "So + прилагательное в начале предложения требует инверсии: So difficult was the exam that… — глагол встаёт перед подлежащим, как в вопросе. Это книжный, подчёркнутый вариант обычного The exam was so difficult that…",
+          "difficulty": 3
         }
       ]
     },
@@ -1091,7 +1155,25 @@
             "The older you are, the harder it is to learn a language.",
             "The older you get, the more difficult it is to learn a language.",
             "The older you get, the more difficult it becomes to learn a language.",
-            "The older you get, the harder it gets to learn a language."
+            "The older you get, the harder it gets to learn a language.",
+            "The older you get, the more difficult it gets to learn a language.",
+            "The older you are, the harder it becomes to learn a language.",
+            "The older you are, the harder it gets to learn a language.",
+            "The older you are, the more difficult it is to learn a language.",
+            "The older you are, the more difficult it becomes to learn a language.",
+            "The older you are, the more difficult it gets to learn a language.",
+            "The older you become, the harder it is to learn a language.",
+            "The older you become, the harder it becomes to learn a language.",
+            "The older you become, the harder it gets to learn a language.",
+            "The older you become, the more difficult it is to learn a language.",
+            "The older you become, the more difficult it becomes to learn a language.",
+            "The older you become, the more difficult it gets to learn a language.",
+            "The older you get, the harder learning a language is.",
+            "The older you get, the harder learning a language becomes.",
+            "The older you get, the harder learning a language gets.",
+            "The older you get, the more difficult learning a language is.",
+            "The older you get, the more difficult learning a language becomes.",
+            "The older you get, the more difficult learning a language gets."
           ],
           "explanation_ru": "«Чем ..., тем ...» — the + сравнительная степень в обеих частях, после неё обычный порядок слов: the older you get, the harder it is. As you get older передаёт тот же смысл, но конструкция должна строиться вокруг the.",
           "difficulty": 3
@@ -1144,12 +1226,13 @@
       "title_en": "Second and third conditionals: Unreal conditionals",
       "source_slug": "second-third-conditionals",
       "title_ru": "Второй и третий типы условных предложений",
-      "summary_ru": "Второе и третье условные предложения описывают нереальные ситуации. Второй тип относится к настоящему или будущему: if плюс past simple в придаточном и would плюс инфинитив в главном. Третий тип относится к прошлому, которое уже нельзя изменить: if плюс past perfect и would have плюс третья форма глагола. Вместо would можно использовать could и might, если нужен оттенок возможности. В придаточном с if форма would не употребляется. С глаголом be во втором типе для всех лиц предпочтителен вариант were: if I were you. Возможен смешанный тип: условие в прошлом, а следствие в настоящем: if I had taken that job, I would live in Berlin now.",
+      "summary_ru": "Второе и третье условные предложения описывают нереальные ситуации. Второй тип относится к настоящему или будущему: if плюс past simple в придаточном и would плюс инфинитив в главном. Третий тип относится к прошлому, которое уже нельзя изменить: if плюс past perfect и would have плюс третья форма глагола. Вместо would можно использовать could и might, если нужен оттенок возможности. В придаточном с if форма would не употребляется. С глаголом be во втором типе для всех лиц предпочтителен вариант were: if I were you. Возможен смешанный тип: условие в прошлом, а следствие в настоящем: if I had taken that job, I would live in Berlin now. Бывает и обратный смешанный тип: постоянное условие в настоящем, а следствие в прошлом: if I spoke French, I would have understood the tour guide yesterday.",
       "forms": [
         "If + past simple, ... would / could / might + инфинитив",
         "If + past perfect, ... would / could / might have + третья форма глагола",
         "If I were you, I would ...",
         "смешанный тип: If + past perfect, ... would + инфинитив",
+        "обратный смешанный тип: If + past simple, ... would have + третья форма глагола",
         "would никогда не ставится в части с if"
       ],
       "examples": [
@@ -1233,7 +1316,10 @@
           "accept": [
             "If I had known about the meeting, I would have come to it.",
             "If I'd known about the meeting, I would have come.",
-            "I would have come if I had known about the meeting."
+            "I would have come if I had known about the meeting.",
+            "I would have come to the meeting if I had known about it.",
+            "Had I known about the meeting, I would have come.",
+            "Had I known about the meeting, I would have come to it."
           ],
           "explanation_ru": "Оба факта в прошлом, поэтому условие идёт в past perfect, а следствие с would have плюс третья форма.",
           "difficulty": 3
@@ -1278,7 +1364,8 @@
             "I could have called you if I had had your number.",
             "If I had had your number, I would have called you.",
             "I would have called you if I had had your number.",
-            "Had I had your number, I could have called you."
+            "Had I had your number, I could have called you.",
+            "Had I had your number, I would have called you."
           ],
           "explanation_ru": "Оба факта в прошлом — третий тип: if + past perfect (had had — had плюс третья форма have), в главной части could have / would have + V3. Одно had — это второй тип о настоящем.",
           "difficulty": 3
@@ -1363,9 +1450,42 @@
             "If I had taken the job in Seattle, I would live in Seattle now.",
             "I would live in Seattle now if I had taken the job.",
             "I would be living in Seattle now if I had taken the job.",
-            "If I had taken the job in Seattle, I would be living in Seattle now."
+            "If I had taken the job in Seattle, I would be living in Seattle now.",
+            "Had I taken the job in Seattle, I would live there now.",
+            "Had I taken the job in Seattle, I would be living there now."
           ],
           "explanation_ru": "Причина в прошлом (не взял работу) — if + past perfect; результат сейчас (не живу там) — would + V1 и now. Would have lived относило бы и результат к прошлому, а if I took — к воображаемому настоящему.",
+          "difficulty": 3
+        },
+        {
+          "id": "b2_second_third_conditionals_15",
+          "kind": "transform",
+          "prompt": "Rewrite as a mixed conditional (the first fact is still true now): I'm afraid of heights, so I didn't go up the Eiffel Tower yesterday.",
+          "answer": "If I weren't afraid of heights, I would have gone up the Eiffel Tower yesterday.",
+          "accept": [
+            "I would have gone up the Eiffel Tower yesterday if I weren't afraid of heights.",
+            "If I wasn't afraid of heights, I would have gone up the Eiffel Tower yesterday.",
+            "I would have gone up the Eiffel Tower yesterday if I wasn't afraid of heights.",
+            "If I weren't afraid of heights, I could have gone up the Eiffel Tower yesterday.",
+            "I could have gone up the Eiffel Tower yesterday if I weren't afraid of heights.",
+            "If I wasn't afraid of heights, I could have gone up the Eiffel Tower yesterday.",
+            "I could have gone up the Eiffel Tower yesterday if I wasn't afraid of heights."
+          ],
+          "explanation_ru": "Страх высоты — постоянная черта, верная и сейчас, поэтому условие строится как во втором типе: if + past simple, If I weren't afraid of heights. Результат относится к вчерашнему дню, поэтому would have + V3, как в третьем: I would have gone up. Это обратное смешанное условное: нереальное настоящее → нереальное прошлое. If I hadn't been afraid означало бы, что страх был только вчера.",
+          "difficulty": 3
+        },
+        {
+          "id": "b2_second_third_conditionals_16",
+          "kind": "choice",
+          "prompt": "If Mateo ___ an exam tomorrow morning, he would have come to the party last night.",
+          "options": [
+            "didn't have",
+            "hadn't had",
+            "doesn't have",
+            "wouldn't have"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Условие касается завтрашнего экзамена — это нереальное настоящее, поэтому past simple: If Mateo didn't have. Результат относится ко вчерашнему вечеру — would have come. Hadn't had сдвинуло бы условие в прошлое и противоречит tomorrow, doesn't have — реальное условие, а would в части с if не ставится.",
           "difficulty": 3
         }
       ]
@@ -1577,6 +1697,24 @@
           "accept": [],
           "explanation_ru": "Сожаление о сказанном в прошлом — wish + past perfect: I wish I hadn't said that. Первое I — подлежащее при wish, второе — в придаточном.",
           "difficulty": 2
+        },
+        {
+          "id": "b2_wishes_regrets_14",
+          "kind": "transform",
+          "prompt": "Переведи на английский, используя wish: «Хоть бы этот дождь уже прекратился!»",
+          "answer": "I wish it would stop raining!",
+          "accept": [
+            "I wish it would stop raining already!",
+            "I wish the rain would stop!",
+            "I wish the rain would stop already!",
+            "I wish this rain would stop!",
+            "I wish this rain would stop already!",
+            "I wish it would finally stop raining!",
+            "I wish the rain would finally stop!",
+            "I wish this rain would finally stop!"
+          ],
+          "explanation_ru": "Wish + would — желание, чтобы ситуация или чужое поведение изменились, часто с раздражением: I wish it would stop raining. Will и настоящее время после wish не ставятся, а wish + past simple (I wish it stopped) описывало бы положение дел, а не перемену.",
+          "difficulty": 2
         }
       ]
     },
@@ -1640,7 +1778,8 @@
           ],
           "correct_index": 1,
           "explanation_ru": "Утвердительное предложение о завершённом действии требует already в средней позиции.",
-          "difficulty": 1
+          "difficulty": 1,
+          "diagnostic": false
         },
         {
           "id": "b2_already_still_yet_whats_the_difference_03",
@@ -1713,7 +1852,8 @@
           "answer": "I have not finished my work yet.",
           "accept": [
             "I haven't finished my work yet.",
-            "I still haven't finished my work."
+            "I still haven't finished my work.",
+            "I have not yet finished my work."
           ],
           "explanation_ru": "В отрицательном предложении вместо already используется yet в конце.",
           "difficulty": 3
@@ -1923,7 +2063,8 @@
             "Even though the traffic was bad, we arrived early.",
             "Though the traffic was bad, we arrived early.",
             "In spite of the fact that the traffic was bad, we arrived early.",
-            "Despite the traffic being bad, we arrived early."
+            "Despite the traffic being bad, we arrived early.",
+            "In spite of the traffic being bad, we arrived early."
           ],
           "explanation_ru": "После despite не может стоять предложение с глаголом, нужно существительное или оборот the fact that.",
           "difficulty": 3
@@ -1969,7 +2110,12 @@
             "The match was postponed owing to the fact that it had snowed heavily.",
             "Owing to heavy snow, the match was postponed.",
             "The match was postponed owing to heavy snowfall.",
-            "The match was postponed owing to the heavy snowfall."
+            "The match was postponed owing to the heavy snowfall.",
+            "Owing to the heavy snowfall, the match was postponed.",
+            "Owing to heavy snowfall, the match was postponed.",
+            "The match was postponed owing to a heavy snowfall.",
+            "Owing to a heavy snowfall, the match was postponed.",
+            "Owing to the fact that it had snowed heavily, the match was postponed."
           ],
           "explanation_ru": "Owing to (как и due to) — предлог причины, после него нужно существительное, а не предложение: owing to the heavy snow. Owing to it had snowed — ошибка.",
           "difficulty": 3
@@ -2368,7 +2514,8 @@
           "answer": "Prices are bound to go up after the holidays.",
           "accept": [
             "The prices are bound to go up after the holidays.",
-            "After the holidays, prices are bound to go up."
+            "After the holidays, prices are bound to go up.",
+            "After the holidays, the prices are bound to go up."
           ],
           "explanation_ru": "Be bound to + V1 — «наверняка, неизбежно»: подлежащее выносится вперёд, а it's almost certain that исчезает. Без are и без to конструкция не работает.",
           "difficulty": 3
@@ -2412,7 +2559,8 @@
               "probably won't be",
               "probably will not be",
               "will probably not be",
-              "probably aren't going to be"
+              "probably aren't going to be",
+              "are probably not going to be"
             ]
           ],
           "explanation_ru": "Likely и bound работают как be + прилагательное + to + V1 (в американской речи встречается и will likely reach). Definitely в утверждении стоит после will, а probably в отрицании — перед won't (или между will и not).",

@@ -89,14 +89,14 @@
         {
           "id": "a2_will_vs_be_going_to_05",
           "kind": "gap",
-          "prompt": "Sara ___ (start) a new job on Monday. She signed the contract last week.",
-          "answer": "is going to start",
+          "prompt": "A: Why did you buy so much flour?\nB: I ___ (bake) a cake for Sara's birthday.",
+          "answer": "am going to bake",
           "accept": [
-            "'s going to start",
-            "is starting",
-            "starts"
+            "'m going to bake",
+            "am baking",
+            "'m baking"
           ],
-          "explanation_ru": "План принят заранее (контракт уже подписан), поэтому be going to: is going to start; подходит и Present Continuous is starting, а о начале работы по графику — и starts. Will звучал бы как решение, принятое прямо сейчас.",
+          "explanation_ru": "Мука уже куплена — значит, решение испечь торт принято заранее, до разговора. Это план: be going to (am going to bake) или Present Continuous (am baking). Will bake звучало бы как решение, которое появилось прямо сейчас, а оно появилось ещё до покупки.",
           "difficulty": 1
         },
         {
@@ -413,12 +413,12 @@
           "prompt": "If we don't fix this bug today, the client ___ angry.",
           "options": [
             "will be",
-            "will being",
-            "will is",
-            "be"
+            "is",
+            "would be",
+            "was"
           ],
           "correct_index": 0,
-          "explanation_ru": "Условие уже стоит в Present Simple, значит результат идёт с will плюс начальная форма be; остальные сочетания форм не существуют.",
+          "explanation_ru": "Условие в Present Simple (don't fix) говорит о реальном будущем, поэтому результат — will + начальная форма: will be. Is описывал бы то, что бывает всегда, would be — воображаемую ситуацию второго условного, а was — прошлое.",
           "difficulty": 2
         },
         {
@@ -462,7 +462,8 @@
           "prompt": "If you will come early, we will start at eight.",
           "answer": "If you come early, we will start at eight.",
           "accept": [
-            "If you come early, we'll start at eight."
+            "If you come early, we'll start at eight.",
+            "We will start at eight if you come early."
           ],
           "explanation_ru": "В условной части will не ставят: остаётся Present Simple come, а will сохраняется только в результате.",
           "difficulty": 3
@@ -660,7 +661,9 @@
           "kind": "correct",
           "prompt": "While she was driving home, the engine was stopping.",
           "answer": "While she was driving home, the engine stopped.",
-          "accept": [],
+          "accept": [
+            "The engine stopped while she was driving home."
+          ],
           "explanation_ru": "Короткое событие, прервавшее фон, ставится в Past Simple: stopped, а не was stopping.",
           "difficulty": 3
         },
@@ -736,7 +739,7 @@
       "topic": "Tenses",
       "title_en": "Past perfect",
       "source_slug": "past-perfect",
-      "title_ru": "Past Perfect: прошедшее до прошедшего",
+      "title_ru": "Past Perfect: прошедшее до прошедшего (знакомство)",
       "summary_ru": "Это первое знакомство с темой: на A2 достаточно узнавать и строить самую простую форму, а полный разбор Past Perfect вместе с другими прошедшими временами — на уровне B1. Past Perfect показывает, что одно действие в прошлом случилось раньше другого: I wasn't hungry because I had eaten a big lunch. Форма одна для всех лиц: had плюс третья форма глагола, в речи — короткое 'd. Отрицание — hadn't плюс третья форма. Более позднее действие стоит в обычном Past Simple. Если события идут по порядку, Past Perfect не нужен: I got home and cooked dinner.",
       "forms": [
         "had + V3: had left, had gone",
@@ -1194,7 +1197,9 @@
           "kind": "correct",
           "prompt": "The letters sent last week.",
           "answer": "The letters were sent last week.",
-          "accept": [],
+          "accept": [
+            "Last week the letters were sent."
+          ],
           "explanation_ru": "Без глагола be в предложении нет сказуемого; пассив требует were перед третьей формой sent.",
           "difficulty": 3
         },
@@ -1374,7 +1379,9 @@
           "answer": "I'm meeting my sister at ten tomorrow.",
           "accept": [
             "I am meeting my sister at ten tomorrow.",
-            "I am going to meet my sister at ten tomorrow."
+            "I am going to meet my sister at ten tomorrow.",
+            "I'm meeting my sister tomorrow at ten.",
+            "Tomorrow I'm meeting my sister at ten."
           ],
           "explanation_ru": "Форма на -ing не работает без глагола be: нужен am или короткое 'm.",
           "difficulty": 3
@@ -1399,12 +1406,12 @@
           "prompt": "The museum tour ___ at 10:30 tomorrow, so don't be late.",
           "options": [
             "starts",
-            "is start",
-            "will starting",
+            "started",
+            "has started",
             "start"
           ],
           "correct_index": 0,
-          "explanation_ru": "Расписание, которое от нас не зависит (экскурсии, поезда, фильмы), описывает Present Simple даже о будущем: the tour starts. Is start и will starting — смешение форм, start не подходит к единственному числу.",
+          "explanation_ru": "Расписание, которое от нас не зависит (экскурсии, поезда, фильмы), описывает Present Simple даже о будущем: the tour starts at 10:30 tomorrow. Started и has started говорят о прошлом, а речь о завтра; start не подходит к единственному числу the tour.",
           "difficulty": 2,
           "diagnostic": true
         },
@@ -1575,7 +1582,9 @@
           "kind": "correct",
           "prompt": "I have called him two hours ago.",
           "answer": "I called him two hours ago.",
-          "accept": [],
+          "accept": [
+            "Two hours ago I called him."
+          ],
           "explanation_ru": "Two hours ago называет законченный момент, и Present Perfect с ним не сочетается.",
           "difficulty": 3
         },
@@ -1742,8 +1751,7 @@
           "prompt": "He ___ (work) here since 2020.",
           "answer": "has worked",
           "accept": [
-            "has been working",
-            "'s worked"
+            "has been working"
           ],
           "explanation_ru": "Since 2020 показывает период до настоящего момента, поэтому нужен Present Perfect, а не настоящее время.",
           "difficulty": 2
@@ -1848,6 +1856,17 @@
           ],
           "explanation_ru": "С длительностью (ten years) нужен for, а since — с точкой начала: since 2016, since school.",
           "difficulty": 2
+        },
+        {
+          "id": "a2_present_perfect_14",
+          "kind": "transform",
+          "prompt": "Переведи на английский: «Как долго ты здесь живёшь?»",
+          "answer": "How long have you lived here?",
+          "accept": [
+            "How long have you been living here?"
+          ],
+          "explanation_ru": "О том, что началось в прошлом и длится до сих пор, спрашивают в Present Perfect: How long have you lived here? Русское настоящее «живёшь» тянет к How long do you live here?, но так не говорят: Present Simple не показывает длительность до настоящего момента.",
+          "difficulty": 3
         }
       ]
     },
@@ -2147,7 +2166,8 @@
           "answer": "My bike was stolen last week.",
           "accept": [
             "My bike was stolen last week by someone.",
-            "Last week my bike was stolen."
+            "Last week my bike was stolen.",
+            "My bike was stolen by someone last week."
           ],
           "explanation_ru": "Исполнитель неизвестен, поэтому дополнение становится подлежащим и берёт форму was stolen.",
           "difficulty": 3

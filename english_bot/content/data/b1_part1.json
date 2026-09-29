@@ -149,10 +149,10 @@
             "I was bored at this lecture.",
             "I was boring at this lecture.",
             "It was bored for me at this lecture.",
-            "Me was boring at this lecture."
+            "To me was boring at this lecture."
           ],
           "correct_index": 0,
-          "explanation_ru": "Скучно было мне, то есть я испытывал чувство, — нужна форма bored. I was boring значило бы «я был скучным» для других. Русское безличное «мне было» не переводится через me или it: подлежащим становится I.",
+          "explanation_ru": "Скучно было мне, то есть я испытывал чувство, — нужна форма bored. I was boring значило бы «я был скучным» для других. Русское безличное «мне было скучно» не переводится ни через to me, ни через it: подлежащим становится I.",
           "difficulty": 1,
           "diagnostic": true
         },
@@ -218,15 +218,15 @@
         {
           "id": "b1_adjective_preposition_02",
           "kind": "choice",
-          "prompt": "He is married ___ a doctor.",
+          "prompt": "Omar is a little jealous ___ his brother's success.",
           "options": [
-            "with",
-            "on",
             "to",
-            "at"
+            "of",
+            "for",
+            "on"
           ],
-          "correct_index": 2,
-          "explanation_ru": "Married требует предлога to, хотя по-русски мы говорим «женат на».",
+          "correct_index": 1,
+          "explanation_ru": "Jealous сочетается только с of: jealous of his brother, jealous of her new car. Русское «завидовать кому-то» подталкивает к to, но такого сочетания нет.",
           "difficulty": 1
         },
         {
@@ -241,7 +241,8 @@
           ],
           "correct_index": 2,
           "explanation_ru": "Interested сочетается только с предлогом in.",
-          "difficulty": 1
+          "difficulty": 1,
+          "diagnostic": false
         },
         {
           "id": "b1_adjective_preposition_04",
@@ -458,7 +459,9 @@
           "prompt": "This recipe is more easier than the last one.",
           "answer": "This recipe is easier than the last one.",
           "accept": [
-            "This recipe is much easier than the last one."
+            "This recipe is much easier than the last one.",
+            "This recipe is a lot easier than the last one.",
+            "This recipe is far easier than the last one."
           ],
           "explanation_ru": "Нельзя совмещать more и -er: у короткого easy остаётся только форма easier.",
           "difficulty": 3
@@ -470,7 +473,8 @@
           "answer": "Omar is not as tall as Diego.",
           "accept": [
             "Omar is not as tall as Diego is.",
-            "Omar is not so tall as Diego."
+            "Omar is not so tall as Diego.",
+            "Omar is not so tall as Diego is."
           ],
           "explanation_ru": "Сравнительная степень с than переворачивается в not as ... as: подлежащим становится тот, кто ниже, а прилагательное остаётся в исходной форме tall, без -er.",
           "difficulty": 3
@@ -508,9 +512,39 @@
             "That is the best pizza I have ever eaten.",
             "This is the best pizza I have ever had.",
             "It is the best pizza I have ever had.",
-            "That is the best pizza I have ever had."
+            "That is the best pizza I have ever had.",
+            "This is the best pizza I have ever tried.",
+            "This is the best pizza that I have ever eaten.",
+            "This is the best pizza that I have ever had.",
+            "This is the best pizza that I have ever tried.",
+            "It is the best pizza I have ever tried.",
+            "It is the best pizza that I have ever eaten.",
+            "It is the best pizza that I have ever had.",
+            "It is the best pizza that I have ever tried.",
+            "That is the best pizza I have ever tried.",
+            "That is the best pizza that I have ever eaten.",
+            "That is the best pizza that I have ever had.",
+            "That is the best pizza that I have ever tried.",
+            "This was the best pizza I have ever eaten.",
+            "This was the best pizza I have ever had.",
+            "This was the best pizza I have ever tried.",
+            "This was the best pizza that I have ever eaten.",
+            "This was the best pizza that I have ever had.",
+            "This was the best pizza that I have ever tried.",
+            "It was the best pizza I have ever eaten.",
+            "It was the best pizza I have ever had.",
+            "It was the best pizza I have ever tried.",
+            "It was the best pizza that I have ever eaten.",
+            "It was the best pizza that I have ever had.",
+            "It was the best pizza that I have ever tried.",
+            "That was the best pizza I have ever eaten.",
+            "That was the best pizza I have ever had.",
+            "That was the best pizza I have ever tried.",
+            "That was the best pizza that I have ever eaten.",
+            "That was the best pizza that I have ever had.",
+            "That was the best pizza that I have ever tried."
           ],
-          "explanation_ru": "«Никогда не ел такой ...» превращается в превосходную степень с ever: the best pizza I have ever eaten. Good — better — the best, поэтому такой вкусной = the best.",
+          "explanation_ru": "«Никогда не ел такой ...» превращается в превосходную степень с ever: the best pizza (that) I have ever eaten. Good — better — the best, поэтому «такая вкусная» = the best. That перед I можно поставить или опустить.",
           "difficulty": 3
         },
         {
@@ -521,10 +555,10 @@
             "Come as soon as possible.",
             "Come as sooner as possible.",
             "Come so soon as possible.",
-            "Come how can sooner."
+            "Come sooner as possible."
           ],
           "correct_index": 0,
-          "explanation_ru": "«Как можно + сравнительная степень» передаётся оборотом as + обычная форма + as possible: as soon as possible, as quickly as possible. Сравнительная степень внутри as ... as не ставится, а how can sooner — калька.",
+          "explanation_ru": "«Как можно + сравнительная степень» передаётся оборотом as + обычная форма + as possible: as soon as possible, as quickly as possible. Русское «скорее» тянет к sooner, но сравнительная степень в этом обороте не ставится, первое as обязательно, а so вместо него здесь не используется.",
           "difficulty": 1,
           "diagnostic": true
         },
@@ -702,6 +736,27 @@
           "correct_index": 2,
           "explanation_ru": "В составном прилагательном перед существительным year не получает -s: a two-year-old son. Остальные варианты построены верно: four-star, ten-page, thirty-minute.",
           "difficulty": 3
+        },
+        {
+          "id": "b1_compound_adjectives_with_numbers_a_two_day_trip_12",
+          "kind": "cloze",
+          "prompt": "Last summer my family took a ___ (two / week) vacation in Mexico. On the first day we took a ___ (five / hour) bus ride to Oaxaca. Our guide was a cheerful ___ (sixty / year / old) man who knew everything about the region. My little sister is only ___ (seven / year / old), but she loved every museum we visited.",
+          "gaps": [
+            [
+              "two-week"
+            ],
+            [
+              "five-hour"
+            ],
+            [
+              "sixty-year-old"
+            ],
+            [
+              "seven years old"
+            ]
+          ],
+          "explanation_ru": "Перед существительным число и единица измерения соединяются дефисом, и единица остаётся в единственном числе: a two-week vacation, a five-hour ride, a sixty-year-old man. После глагола be возраст — обычная фраза во множественном числе и без дефисов: she is seven years old.",
+          "difficulty": 2
         }
       ]
     },
@@ -759,10 +814,10 @@
             "so much",
             "so many",
             "such many",
-            "many so"
+            "so a lot of"
           ],
           "correct_index": 1,
-          "explanation_ru": "People — исчисляемое во множественном числе, поэтому so many.",
+          "explanation_ru": "People — исчисляемое во множественном числе, поэтому so many. So much ставится с неисчисляемыми, such many не существует, а «так много» через a lot of строится только с such: such a lot of people, но не so a lot of.",
           "difficulty": 1
         },
         {
@@ -819,7 +874,9 @@
           "prompt": "He is such tired that he can't work.",
           "answer": "He is so tired that he can't work.",
           "accept": [
-            "He is so tired that he cannot work."
+            "He is so tired that he cannot work.",
+            "He is so tired he can't work.",
+            "He is so tired he cannot work."
           ],
           "explanation_ru": "Перед прилагательным без существительного используется so, а не such.",
           "difficulty": 3
@@ -863,7 +920,8 @@
             [
               "so much",
               "a lot of",
-              "lots of"
+              "lots of",
+              "such a lot of"
             ]
           ],
           "explanation_ru": "Such (a / an) ставится перед группой с существительным: such an amazing experience. So — перед прилагательным без существительного: so good. Перед исчисляемым во множественном числе — so many, перед неисчисляемым money — so much.",
@@ -1226,9 +1284,17 @@
             "If I had time, I'd help you.",
             "If I had time, I could help you.",
             "I would help you if I had time.",
-            "I could help you if I had time."
+            "I could help you if I had time.",
+            "If I had time, I would be able to help you.",
+            "I would be able to help you if I had time.",
+            "If I had the time, I would help you.",
+            "I would help you if I had the time.",
+            "If I had the time, I could help you.",
+            "I could help you if I had the time.",
+            "If I had the time, I would be able to help you.",
+            "I would be able to help you if I had the time."
           ],
-          "explanation_ru": "Реальная ситуация переворачивается в нереальную: настоящее время меняется на past simple, а результат получает would (или could, раз речь о возможности).",
+          "explanation_ru": "Реальная ситуация переворачивается в нереальную: настоящее время меняется на past simple (If I had time или the time), а результат получает would (или could, would be able to, раз речь о возможности).",
           "difficulty": 3
         },
         {
@@ -1409,7 +1475,11 @@
           "accept": [
             "If I had set an alarm, I wouldn't have missed the bus.",
             "I would not have missed the bus if I had set an alarm.",
-            "I wouldn't have missed the bus if I had set an alarm."
+            "I wouldn't have missed the bus if I had set an alarm.",
+            "If I had set an alarm, I would have caught the bus.",
+            "I would have caught the bus if I had set an alarm.",
+            "If I had set an alarm, I could have caught the bus.",
+            "I could have caught the bus if I had set an alarm."
           ],
           "explanation_ru": "Реальное прошлое переворачивается: отрицание становится утверждением в had set, а результат — отрицанием с would have.",
           "difficulty": 3
@@ -1541,7 +1611,8 @@
           ],
           "correct_index": 1,
           "explanation_ru": "Цель выражается инфинитивом с to; вариант in order get неверен, потому что после in order тоже нужен to.",
-          "difficulty": 1
+          "difficulty": 1,
+          "diagnostic": false
         },
         {
           "id": "b1_clauses_contrast_purpose_reason_04",
@@ -1659,9 +1730,13 @@
             "Despite the fact that it was raining, we went for a walk.",
             "We went for a walk despite the fact that it was raining.",
             "Despite the rainy weather, we went for a walk.",
-            "We went for a walk despite the rainy weather."
+            "We went for a walk despite the rainy weather.",
+            "Despite it raining, we went for a walk.",
+            "We went for a walk despite it raining.",
+            "Despite the fact it was raining, we went for a walk.",
+            "We went for a walk despite the fact it was raining."
           ],
-          "explanation_ru": "После despite нужно существительное, а не целое предложение: it was raining превращается в the rain (или the fact that it was raining). Despite it was raining — ошибка.",
+          "explanation_ru": "После despite нужно существительное или форма на -ing, а не целое предложение: it was raining превращается в the rain, it raining или the fact (that) it was raining. Despite it was raining — ошибка.",
           "difficulty": 3
         },
         {
@@ -1710,7 +1785,8 @@
               "What's more",
               "Moreover",
               "Furthermore",
-              "Plus"
+              "Plus",
+              "Additionally"
             ],
             [
               "On the other hand",
@@ -1721,7 +1797,8 @@
               "Finally",
               "All in all",
               "Overall",
-              "In conclusion"
+              "In conclusion",
+              "Ultimately"
             ]
           ],
           "explanation_ru": "On the one hand ... on the other hand — «с одной стороны ... с другой стороны»; in addition (also, what's more) добавляет ещё один довод в ту же сторону; in the end (finally) подводит итог. Все эти связки стоят в начале предложения и отделяются запятой.",
@@ -1766,12 +1843,12 @@
           "prompt": "I ___ help you tomorrow morning.",
           "options": [
             "will can",
-            "can will",
+            "will be able",
             "will be able to",
             "will able to"
           ],
           "correct_index": 2,
-          "explanation_ru": "У can нет формы будущего времени, поэтому используется will be able to.",
+          "explanation_ru": "У can нет формы будущего времени, поэтому используется will be able to. Два модальных слова подряд (will can) невозможны, а в обороте be able to нельзя терять ни be, ни to.",
           "difficulty": 1
         },
         {
@@ -1800,7 +1877,8 @@
           ],
           "correct_index": 1,
           "explanation_ru": "Общая способность в прошлом передаётся словом could; форма was able без to неполная.",
-          "difficulty": 1
+          "difficulty": 1,
+          "diagnostic": false
         },
         {
           "id": "b1_can_could_be_able_to_04",
@@ -1870,32 +1948,34 @@
             "I finally managed to open this jar.",
             "I finally succeeded to open this jar.",
             "I finally could to open this jar.",
-            "Finally it succeeded me to open this jar."
+            "I finally managed opening this jar."
           ],
           "correct_index": 0,
-          "explanation_ru": "Единичный успех в прошлом («удалось») передаётся managed to или was able to. Succeed требует in + -ing (succeeded in opening), после could частица to не ставится, а безличной конструкции «мне удалось» в английском нет.",
+          "explanation_ru": "Единичный успех в прошлом («удалось») передаётся managed to или was able to. После manage нужен to-инфинитив, а не -ing, succeed требует in + -ing (succeeded in opening), а после could частица to не ставится.",
           "difficulty": 2,
           "diagnostic": true
         },
         {
           "id": "b1_can_could_be_able_to_10",
           "kind": "cloze",
-          "prompt": "When Hana was five, she ___ (can) already read. Last year, after months of training, she ___ (be able to) run a marathon. She ___ (be able to) speak three languages since she was a teenager. Next year she hopes she ___ (be able to) play the piano too.",
+          "prompt": "When Hana was five, she ___ (can) already read. Last year, after months of training, she ___ (can) run a marathon. She ___ (can) speak three languages since she was a teenager. Next year she hopes to ___ (can) play the piano too.",
           "gaps": [
             [
-              "could"
+              "could",
+              "was able to"
             ],
             [
-              "was able to"
+              "was able to",
+              "managed to"
             ],
             [
               "has been able to"
             ],
             [
-              "will be able to"
+              "be able to"
             ]
           ],
-          "explanation_ru": "Общее умение в прошлом — could; единичный успех после тренировок — was able to; с since нужен перфект, а у can его нет — has been able to; будущего у can тоже нет — will be able to.",
+          "explanation_ru": "Общее умение в прошлом — could (или was able to). Единичный успех после тренировок — was able to (managed to): could здесь не подходит. С since нужен перфект, а у can его нет — has been able to. После hopes to нужен инфинитив, которого у can тоже нет, — be able to.",
           "difficulty": 2
         },
         {
@@ -2138,9 +2218,43 @@
             "Shall I help you carry your bags?",
             "Should I help you carry your bags?",
             "Do you want me to help you carry your bags?",
-            "Can I help you carry your bags?"
+            "Can I help you carry your bags?",
+            "Shall I help you with your luggage?",
+            "Shall I help you with the luggage?",
+            "Shall I help you carry your luggage?",
+            "Shall I help you carry the bags?",
+            "Shall I help you carry the luggage?",
+            "Should I help you with your luggage?",
+            "Should I help you with the luggage?",
+            "Should I help you carry your luggage?",
+            "Should I help you carry the bags?",
+            "Should I help you carry the luggage?",
+            "Can I help you with your luggage?",
+            "Can I help you with the luggage?",
+            "Can I help you carry your luggage?",
+            "Can I help you carry the bags?",
+            "Can I help you carry the luggage?",
+            "May I help you with your bags?",
+            "May I help you with your luggage?",
+            "May I help you with the bags?",
+            "May I help you with the luggage?",
+            "May I help you carry your bags?",
+            "May I help you carry your luggage?",
+            "May I help you carry the bags?",
+            "May I help you carry the luggage?",
+            "Do you want me to help you with your luggage?",
+            "Do you want me to help you with the luggage?",
+            "Do you want me to help you carry your luggage?",
+            "Do you want me to help you carry the bags?",
+            "Do you want me to help you carry the luggage?",
+            "Would you like me to help you with your luggage?",
+            "Would you like me to help you with the luggage?",
+            "Would you like me to help you carry your bags?",
+            "Would you like me to help you carry your luggage?",
+            "Would you like me to help you carry the bags?",
+            "Would you like me to help you carry the luggage?"
           ],
-          "explanation_ru": "Предложение помощи — Shall I + V1? (в американской речи чаще Should I или Do you want me to...?). Русское «мне помочь?» тянет к Do I help, но do в таком вопросе не спрашивает о желании собеседника.",
+          "explanation_ru": "Предложение помощи — Shall I + V1? (в американской речи чаще Should I, Can I или Do you want me to...?), а «с сумками» — help you with your bags или help you carry your bags. Русское «мне помочь?» тянет к Do I help, но do в таком вопросе не спрашивает о желании собеседника.",
           "difficulty": 2
         },
         {
@@ -2221,10 +2335,10 @@
             "should to",
             "should",
             "must to",
-            "have"
+            "ought"
           ],
           "correct_index": 1,
-          "explanation_ru": "Это совет, поэтому should, и после него инфинитив идёт без to.",
+          "explanation_ru": "Это совет, поэтому should, и после него инфинитив идёт без to. Ought, наоборот, требует to (ought to practice), а must to не существует.",
           "difficulty": 1
         },
         {
@@ -2253,12 +2367,15 @@
         {
           "id": "b1_have_to_must_should_06",
           "kind": "gap",
-          "prompt": "You ___ (not/have to) pay for the museum on Sundays; it is free.",
+          "prompt": "You ___ (не нужно) pay for the museum on Sundays; it is free.",
           "answer": "don't have to",
           "accept": [
-            "do not have to"
+            "do not have to",
+            "don't need to",
+            "do not need to",
+            "needn't"
           ],
-          "explanation_ru": "Отрицание have to строится через вспомогательный глагол do и означает, что действие необязательно.",
+          "explanation_ru": "Смысл — «платить не обязательно», а отсутствие необходимости передаёт don't have to (или don't need to). Mustn't значило бы запрет: платить нельзя.",
           "difficulty": 2
         },
         {
@@ -2270,7 +2387,9 @@
             "You do not have to answer this email. It is not important.",
             "You don't have to answer this email, it is not important.",
             "You don't need to answer this email. It is not important.",
-            "You don't need to answer this email, it is not important."
+            "You don't need to answer this email, it is not important.",
+            "You needn't answer this email. It is not important.",
+            "You needn't answer this email, it is not important."
           ],
           "explanation_ru": "Mustn't означало бы запрет, а по смыслу письмо просто необязательно, поэтому don't have to.",
           "difficulty": 3
@@ -2316,24 +2435,32 @@
         {
           "id": "b1_have_to_must_should_11",
           "kind": "cloze",
-          "prompt": "Last week I flew to Spain, and everything went wrong. I ___ (should / check) the baggage rules before the trip. My bag was too heavy, so I ___ (have to / pay) forty euros extra. Next time I ___ (must / remember) to weigh my bag at home. Luckily, you ___ (not / have to) lend me your suitcase: I've bought a lighter one.",
+          "prompt": "Use modal verbs. Last week I flew to Spain, and everything went wrong. I ___ (check — надо было, а я не проверил) the baggage rules before the trip. My bag was too heavy, so I ___ (pay — пришлось) forty euros extra. Next time I ___ (remember — обязательно) to weigh my bag at home. Luckily, you ___ (не нужно) lend me your suitcase: I've bought a lighter one.",
           "gaps": [
             [
-              "should have checked"
+              "should have checked",
+              "ought to have checked"
             ],
             [
               "had to pay"
             ],
             [
-              "must remember"
+              "must remember",
+              "have to remember",
+              "will have to remember",
+              "need to remember",
+              "will need to remember"
             ],
             [
               "don't have to",
               "do not have to",
-              "don't need to"
+              "don't need to",
+              "won't have to",
+              "won't need to",
+              "needn't"
             ]
           ],
-          "explanation_ru": "Упрёк себе о прошлом — should have checked; вынужденное действие в прошлом — had to pay (у must нет прошедшего времени); твёрдое намерение — must remember; отсутствие необходимости — don't have to.",
+          "explanation_ru": "Упрёк себе о прошлом («надо было, а я не сделал») — should have checked; had to check значило бы, что проверять пришлось. Вынужденное действие в прошлом — had to pay: у must нет прошедшего времени. Твёрдое намерение — must remember (или have to remember). Отсутствие необходимости — don't have to (don't need to), а mustn't означало бы запрет.",
           "difficulty": 3
         },
         {
@@ -2376,7 +2503,37 @@
             "They didn't allow us to use our phones in class.",
             "They didn't allow us to use phones in class.",
             "We weren't allowed to use our cell phones in class.",
-            "We weren't allowed to use cell phones in class."
+            "We weren't allowed to use cell phones in class.",
+            "We weren't allowed to use our phones in classes.",
+            "We weren't allowed to use our phones during classes.",
+            "We weren't allowed to use our phones in the classroom.",
+            "We weren't allowed to use phones in classes.",
+            "We weren't allowed to use phones during classes.",
+            "We weren't allowed to use phones in the classroom.",
+            "We weren't allowed to use our cell phones during class.",
+            "We weren't allowed to use our cell phones in classes.",
+            "We weren't allowed to use our cell phones during classes.",
+            "We weren't allowed to use our cell phones in lessons.",
+            "We weren't allowed to use our cell phones during lessons.",
+            "We weren't allowed to use our cell phones in the classroom.",
+            "We weren't allowed to use cell phones during class.",
+            "We weren't allowed to use cell phones in classes.",
+            "We weren't allowed to use cell phones during classes.",
+            "We weren't allowed to use cell phones in lessons.",
+            "We weren't allowed to use cell phones during lessons.",
+            "We weren't allowed to use cell phones in the classroom.",
+            "They didn't allow us to use our phones during class.",
+            "They didn't allow us to use our phones in classes.",
+            "They didn't allow us to use our phones during classes.",
+            "They didn't allow us to use our phones in lessons.",
+            "They didn't allow us to use our phones during lessons.",
+            "They didn't allow us to use our phones in the classroom.",
+            "They didn't allow us to use phones during class.",
+            "They didn't allow us to use phones in classes.",
+            "They didn't allow us to use phones during classes.",
+            "They didn't allow us to use phones in lessons.",
+            "They didn't allow us to use phones during lessons.",
+            "They didn't allow us to use phones in the classroom."
           ],
           "explanation_ru": "«Нам не разрешали» — безличная русская конструкция, по-английски подлежащим становится we: We weren't allowed to use. Вариант They didn't allow us to use тоже верен, а We didn't allow to use значит, что запрещали мы сами, и к тому же allow без дополнения не работает.",
           "difficulty": 3

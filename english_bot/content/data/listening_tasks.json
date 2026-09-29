@@ -533,7 +533,7 @@
       "speakers": {"Grace": "female", "Martin": "male"},
       "title_ru": "Интервью с писателем",
       "script_en": "Grace: Martin, your first novel came out when you were in your fifties, so people tend to assume it took you decades to write.\nMartin: Ha, they do. The truth is, I carried the idea around for about twenty years, but the actual writing took just under three. No, let me be honest, closer to four, if you count the rewrite my editor insisted on.\nGrace: The rewrite being the new ending?\nMartin: Right. In the original, the brother survives. My editor said, you know, the book had earned something darker, and she was right, annoyingly.\nGrace: And the sequel?\nMartin: Half-drafted. Don't hold your breath.",
-      "question_en": "Including the rewrite, how long did the actual writing take?",
+      "question_en": "How long did Martin spend on the writing itself?",
       "options": ["Just under three years", "Close to four years", "About twenty years", "Several decades"],
       "correct_index": 1,
       "explanation_ru": "Мартин сначала говорит just under three, но сразу поправляется: closer to four, if you count the rewrite. Twenty years он носил идею в голове, а decades — предположение публики, которое он опровергает."
@@ -627,10 +627,10 @@
       "speakers": {"Sergio": "male", "Alicia": "female"},
       "title_ru": "Реакция совета",
       "script_en": "Sergio: So? How did it go with the board, Alicia? You look, I don't know, half relieved.\nAlicia: That's about right. They loved the ambition, or at least they said so. Asked us to tighten up the timeline, which is fine.\nSergio: That sounds good.\nAlicia: Wait. They also pushed the funding decision to next quarter and asked for a version that needs half the capital. Half! And the chief risk officer's now sitting in on every review.\nSergio: Did anyone actually say no?\nAlicia: Nobody rejected anything outright. But our next slot's been cut from an hour to twenty minutes. No, sorry, to fifteen. I checked the invite this morning.\nSergio: Hmm. Fifteen minutes isn't a presentation; that's a status update.",
-      "question_en": "Which detail best shows the board's doubts about the money?",
-      "options": ["They delayed the funding and asked for a half-capital plan", "They praised the ambition and asked for a tighter timeline", "Nobody on the board rejected the plan outright", "The next presentation was cut to fifteen minutes"],
+      "question_en": "What does Alicia's news suggest about the board's attitude to the funding?",
+      "options": ["They aren't ready to commit the full amount yet", "They've decided to fund only half of it", "They'll release the money once the risk officer agrees", "They accept the cost but have doubts about the timeline"],
       "correct_index": 0,
-      "explanation_ru": "О сомнениях именно в деньгах говорит одно: совет pushed the funding decision to next quarter и попросил вариант, который needs half the capital. Похвала ambition и просьба ужать timeline — знаки интереса, то, что никто не сказал «нет», тоже не о деньгах, а слот, урезанный до пятнадцати минут (No, sorry, to fifteen), говорит об охлаждении к проекту вообще, а не о бюджете."
+      "explanation_ru": "Прямо этого никто не говорит, но совет pushed the funding decision to next quarter — решения о деньгах ещё нет — и попросил вариант, который needs half the capital, — полную сумму давать не готов. Половину он не выделял, а только просил такой вариант. Директор по рискам теперь sitting in on every review, но условием для денег это не названо. А сроки совет просил ужать, и Алисия спокойна: which is fine, — сомнения в деньгах, а не в сроках."
     },
     {
       "id": "c2_ls_reorg_subtext",

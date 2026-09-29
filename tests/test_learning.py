@@ -185,6 +185,9 @@ class AnswerTests(unittest.TestCase):
         tire = self._ex("gap", "We had a ___ tire on the way home.", "flat")
         self.assertTrue(matches(tire, "flat"))
         self.assertTrue(matches(self._ex("gap", "a ___ little cafe", "cozy"), "cosy"))
+        for british, american in (("meagre", "meager"), ("unspoilt", "unspoiled"), ("remodelling", "remodeling"),
+                                  ("whilst", "while")):
+            self.assertTrue(matches(self._ex("gap", "___", american), british), british)
 
     def test_british_have_for_possession_is_not_i_have(self) -> None:
         """«I've a dog» в General American не говорят; «I've got a dog» — да."""
@@ -558,7 +561,7 @@ class PracticeTests(unittest.TestCase):
 
         for word, forms in (
             ("child", ["children"]), ("advice", []), ("person", ["people"]), ("species", []),
-            ("amenities", []), ("bias", ["biases"]),
+            ("amenities", []), ("bias", ["biases"]), ("chores", []), ("bus", ["buses"]),
         ):
             card = Card()
             card.word = word  # type: ignore[attr-defined]
@@ -692,6 +695,14 @@ class PracticeTests(unittest.TestCase):
         question = pr.resolve(f"ex:{exercise.id}", CURRICULUM, self.rng)
         assert question is not None
         self.assertIn("вместо пропуска", pr.task_hint(question))
+
+    def test_translation_asks_for_a_translation(self) -> None:
+        exercise = next(
+            e for e, _ in CURRICULUM.exercises.values() if e.kind == "transform" and e.prompt.startswith("Переведи")
+        )
+        question = pr.resolve(f"ex:{exercise.id}", CURRICULUM, self.rng)
+        assert question is not None
+        self.assertEqual(pr.task_hint(question), "Пришли перевод целиком.")
 
     def test_gap_without_a_gap_does_not_promise_one(self) -> None:
         """Часть заданий несёт инструкцию в условии — вторая ей противоречила бы."""

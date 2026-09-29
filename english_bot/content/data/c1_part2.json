@@ -105,7 +105,7 @@
         {
           "id": "c1_advanced_relative_clauses_reduced_prepositional_of_which_whom_06",
           "kind": "gap",
-          "prompt": "My grandmother had five sisters, two ___ emigrated to Canada. (quantifier + preposition + relative pronoun)",
+          "prompt": "My grandmother had five sisters, two ___ emigrated to Canada. (preposition + relative pronoun)",
           "answer": "of whom",
           "accept": [],
           "explanation_ru": "Количество плюс относительное местоимение оформляется как of whom (о людях) или of which (о предметах); from whom здесь невозможно.",
@@ -118,7 +118,8 @@
           "answer": "We visited six castles, two of which were closed.",
           "accept": [
             "We visited six castles, of which two were closed.",
-            "We visited six castles, and two of them were closed."
+            "We visited six castles, and two of them were closed.",
+            "We visited six castles; two of them were closed."
           ],
           "explanation_ru": "Кальку с русского «из которых» надо заменить на английскую схему two of which.",
           "difficulty": 2
@@ -209,7 +210,8 @@
           "gaps": [
             [
               "by which time",
-              "when"
+              "when",
+              "by which point"
             ],
             [
               "whereby",
@@ -229,7 +231,7 @@
               "in which case"
             ]
           ],
-          "explanation_ru": "1 — by which time: к моменту события что-то уже произошло (had already been evacuated). 2 — whereby (under which): механизм, по которому работала система. 3 — at which point: следующее событие сразу за предыдущим. 4 — in which case: «и в таком случае» — последствие возможного условия. Все четыре связки присоединяют продолжение внутри одного предложения.",
+          "explanation_ru": "1 — by which time (by which point): к моменту события что-то уже произошло (had already been evacuated). 2 — whereby (under which): механизм, по которому работала система. 3 — at which point: следующее событие сразу за предыдущим. 4 — in which case: «и в таком случае» — последствие возможного условия. Все четыре связки присоединяют продолжение внутри одного предложения.",
           "difficulty": 3
         }
       ]
@@ -307,7 +309,7 @@
           "correct_index": 0,
           "explanation_ru": "Be expecting (a baby) — «ждать ребёнка»: глагол состояния expect в continuous меняет значение. Expects a baby звучит как «рассчитывает, что будет ребёнок», а wait требует for и беременности не означает.",
           "difficulty": 1,
-          "diagnostic": true
+          "diagnostic": false
         },
         {
           "id": "c1_advanced_present_simple_and_present_continuous_04",
@@ -362,7 +364,9 @@
           "prompt": "Rewrite as the opening line of a formal email: I write to ask about the invoice.",
           "answer": "I am writing to ask about the invoice.",
           "accept": [
-            "I'm writing to ask about the invoice."
+            "I'm writing to ask about the invoice.",
+            "I am writing to inquire about the invoice.",
+            "I am writing to enquire about the invoice."
           ],
           "explanation_ru": "Начало письма описывает то, что происходит в момент написания, поэтому нужен present continuous.",
           "difficulty": 3
@@ -384,7 +388,8 @@
             ],
             [
               "is going",
-              "goes"
+              "goes",
+              "has gone"
             ],
             [
               "doesn't usually score",
@@ -393,7 +398,7 @@
               "usually does not score"
             ]
           ],
-          "explanation_ru": "Спортивный комментарий: мгновенные действия — present simple (takes, turns, shoots), происходящее вокруг — continuous (we're seeing, the stadium is going wild); про финиш можно сказать и we've seen. Usually с отрицанием описывает обычное положение дел — simple.",
+          "explanation_ru": "Спортивный комментарий: мгновенные действия — present simple (takes, turns, shoots), происходящее вокруг — continuous (we're seeing, the stadium is going wild) или результат к этой секунде (has gone wild); про финиш можно сказать и we've seen. Usually с отрицанием описывает обычное положение дел — simple.",
           "difficulty": 2
         },
         {
@@ -551,7 +556,7 @@
         {
           "id": "c1_advanced_inversion_negative_adverbials_and_conditional_inversion_08",
           "kind": "order",
-          "prompt": "not / until / the plane landed / did / realize / we / our mistake / .",
+          "prompt": "not until / the plane landed / did / realize / we / our mistake / .",
           "answer": "Not until the plane landed did we realize our mistake.",
           "accept": [],
           "explanation_ru": "Not until + придаточное в начале: инверсия в главной части (did we realize), а само придаточное остаётся с прямым порядком.",
@@ -611,7 +616,8 @@
               "had the water risen"
             ],
             [
-              "had residents received"
+              "had residents received",
+              "had the residents received"
             ],
             [
               "did the evacuation begin"
@@ -793,6 +799,40 @@
           "explanation_ru": "Describe, как и explain, не берёт двойного дополнения: describe the man to me или describe to me the man you saw. Остальные предложения верны: постпозиция involved, explained to us + длинное дополнение, too cold a night.",
           "difficulty": 2,
           "diagnostic": true
+        },
+        {
+          "id": "c1_advanced_word_order_11",
+          "kind": "cloze",
+          "prompt": "Put the words in brackets in the correct order. My grandparents have finally sold ___ (they / the house / lived in / had) for forty years. It was ___ (big / a / house / too) for two people, and they had started to find ___ (hard / the stairs / to climb). The buyers explained ___ (to us / they / why / needed) so much space: they have five children. Everyone ___ (in / involved / the sale) seems happy with the price.",
+          "gaps": [
+            [
+              "the house they had lived in"
+            ],
+            [
+              "too big a house",
+              "a house too big"
+            ],
+            [
+              "the stairs hard to climb"
+            ],
+            [
+              "to us why they needed"
+            ],
+            [
+              "involved in the sale"
+            ]
+          ],
+          "explanation_ru": "1 — определительное без that, предлог in остаётся в конце: the house they had lived in. 2 — too + прилагательное + a + существительное: too big a house (или a house too big). 3 — find + дополнение + прилагательное + to-инфинитив. 4 — explain to someone why…: без to человек при explain не стоит, а в косвенном вопросе порядок прямой — why they needed. 5 — причастие с зависимыми ставится после существительного: everyone involved in the sale.",
+          "difficulty": 3
+        },
+        {
+          "id": "c1_advanced_word_order_12",
+          "kind": "order",
+          "prompt": "explain / could / you / to me / why / the train / is / late / ?",
+          "answer": "Could you explain to me why the train is late?",
+          "accept": [],
+          "explanation_ru": "Explain не берёт человека без предлога: explain to me, а не explain me. Короткое to me идёт перед длинным косвенным вопросом, а в самом вопросе после why порядок прямой: why the train is late, без is перед подлежащим.",
+          "difficulty": 2
         }
       ]
     },
@@ -907,7 +947,9 @@
           "kind": "correct",
           "prompt": "That what surprised me most was the silence.",
           "answer": "What surprised me most was the silence.",
-          "accept": [],
+          "accept": [
+            "The thing that surprised me most was the silence."
+          ],
           "explanation_ru": "Русское «то, что» даёт лишнее that: в wh-cleft одно what и вводит придаточное, и служит его подлежащим.",
           "difficulty": 2
         },
@@ -1038,6 +1080,17 @@
           ],
           "explanation_ru": "Wh-cleft ставит фокус в конец: What matters is that … — «важно только то, что…». Придаточное с what само служит подлежащим, а после is идёт that-придаточное с главной мыслью.",
           "difficulty": 2
+        },
+        {
+          "id": "c1_cleft_sentences_and_fronting_for_information_structure_15",
+          "kind": "order",
+          "prompt": "what / really / annoyed / me / was / the way / he / spoke / to the waiter / .",
+          "answer": "What really annoyed me was the way he spoke to the waiter.",
+          "accept": [
+            "The way he spoke to the waiter was what really annoyed me."
+          ],
+          "explanation_ru": "Wh-cleft: What really annoyed me — «больше всего меня разозлило», затем was и выделенная часть в конце, где на неё падает ударение. Обратный порядок The way he spoke to the waiter was what really annoyed me тоже верен и выносит выделенное вперёд. Наречие really стоит перед глаголом внутри what-части.",
+          "difficulty": 2
         }
       ]
     },
@@ -1092,13 +1145,13 @@
           "prompt": "We should have raised this at ___ start of the project, not two days before the deadline.",
           "options": [
             "the very",
-            "the same",
-            "the only",
-            "the real"
+            "the utmost",
+            "the sheer",
+            "the mere"
           ],
           "correct_index": 0,
-          "explanation_ru": "The very + существительное выделяет крайнюю точку или точное совпадение: at the very start — «в самом начале». The same — «тот же самый», the only — «единственный», the real — «настоящий»; ни одно из них не усиливает «самое начало».",
-          "difficulty": 1,
+          "explanation_ru": "The very + существительное выделяет крайнюю точку: at the very start — «в самом начале». The utmost — «предельный» (the utmost care), the sheer — «чистый, явный» (the sheer size), the mere — «одно лишь» (the mere thought): все три усиливают, но со start не сочетаются.",
+          "difficulty": 2,
           "diagnostic": true
         },
         {

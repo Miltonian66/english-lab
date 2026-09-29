@@ -35,7 +35,7 @@
         {
           "id": "c2_ellipsis_substitution_and_anaphora_across_a_text_01",
           "kind": "choice",
-          "prompt": "The postmortem considered two explanations for the outage: a faulty configuration change and a failing disk on the database server. ___ was confirmed within hours; the latter was ruled out only after a week of analysis.",
+          "prompt": "The inquiry into the crash considered two possible causes: an error by the driver and a failure of the brakes. ___ was confirmed within hours; the latter was ruled out only after a week of tests.",
           "options": [
             "The former",
             "The latter",
@@ -43,29 +43,29 @@
             "It"
           ],
           "correct_index": 0,
-          "explanation_ru": "The former / the latter делят два названных варианта: первый — изменение конфигурации, второй — диск. Раз во второй части уже стоит the latter, в первой речь о первом варианте — The former. This и It грамматичны, но тянутся к последнему названному (диску) или ко всей мысли, и абзац становится противоречивым; The latter дважды — логическая ошибка.",
+          "explanation_ru": "The former / the latter делят два названных варианта: первый — ошибка водителя, второй — тормоза. Раз во второй части уже стоит the latter, в первой речь о первом варианте — The former. This и It грамматичны, но тянутся к последнему названному (тормозам) или ко всей мысли, и абзац становится противоречивым; The latter дважды — логическая ошибка.",
           "difficulty": 2,
           "diagnostic": true
         },
         {
           "id": "c2_ellipsis_substitution_and_anaphora_across_a_text_02",
           "kind": "choice",
-          "prompt": "Which sentence can only mean that the CFO consults the legal team less often than the CTO does?",
+          "prompt": "Which sentence can only mean that Leo calls their grandmother less often than his sister Mia does?",
           "options": [
-            "Our CTO consults the legal team more often than the CFO does.",
-            "Our CTO consults the legal team more often than the CFO.",
-            "Our CTO consults the legal team more often than she does the CFO.",
-            "Our CTO consults the legal team more often than she consults the CFO."
+            "Mia calls their grandmother more often than Leo does.",
+            "Mia calls their grandmother more often than Leo.",
+            "Mia calls their grandmother more often than she does Leo.",
+            "Mia calls their grandmother more often than she calls Leo."
           ],
           "correct_index": 0,
-          "explanation_ru": "Вспомогательный does после the CFO показывает, что финдиректор — подлежащее опущенной части: than the CFO does = than the CFO consults the team. Без does фраза двусмысленна: the CFO может оказаться и тем, с кем советуются. Than she does the CFO и than she consults the CFO прямо значат другое — CTO советуется с финдиректором реже, чем с юристами.",
+          "explanation_ru": "Вспомогательный does после Leo показывает, что Лео — подлежащее опущенной части: than Leo does = than Leo calls her. Без does фраза двусмысленна: Лео может оказаться и тем, кому звонит Миа. Than she does Leo и than she calls Leo прямо значат другое — Миа звонит брату реже, чем бабушке.",
           "difficulty": 2,
           "diagnostic": true
         },
         {
           "id": "c2_ellipsis_substitution_and_anaphora_across_a_text_03",
           "kind": "choice",
-          "prompt": "The board will vote on the merger next week. Should it be approved, the two firms will combine their cloud divisions; ___, the two divisions will continue to operate independently.",
+          "prompt": "The league will vote on the new rule next week. Should it be approved, teams will be allowed five substitutes; ___, the limit will stay at three.",
           "options": [
             "if not",
             "if so",
@@ -73,32 +73,32 @@
             "even so"
           ],
           "correct_index": 0,
-          "explanation_ru": "If not заменяет целое условие с отрицанием: if not = if it is not approved. If so значило бы «если одобрят» и противоречило бы второй части, even so — «тем не менее» — ломает логику «одобрят — объединятся, иначе — нет». If yes — калька с «если да»: условие так заменяют только so и not.",
+          "explanation_ru": "If not заменяет целое условие с отрицанием: if not = if it is not approved. If so значило бы «если одобрят» и противоречило бы второй части, even so — «тем не менее» — ломает логику «одобрят — пять замен, иначе — три». If yes — калька с «если да»: условие так заменяют только so и not.",
           "difficulty": 2,
           "diagnostic": true
         },
         {
           "id": "c2_ellipsis_substitution_and_anaphora_across_a_text_04",
           "kind": "choice",
-          "prompt": "Salaries for junior developers in Lisbon have risen sharply since 2021. Even so, they remain well below ___ in Munich.",
+          "prompt": "The salaries of nurses in Lisbon have risen sharply since 2021. Even so, they remain well below ___ in Munich.",
           "options": [
-            "those of junior developers",
-            "junior developers",
-            "that of junior developers",
-            "the ones of junior developers"
+            "those of nurses",
+            "nurses",
+            "that of nurses",
+            "the ones of nurses"
           ],
           "correct_index": 0,
-          "explanation_ru": "Сравнивать можно только однородное: зарплаты — с зарплатами. Those of junior developers = the salaries of junior developers, и множественное those согласуется с salaries. Голое junior developers сравнивает зарплаты с людьми — частая логическая ошибка, that of не согласуется по числу, the ones of — калька с «те, что у…».",
+          "explanation_ru": "Сравнивать можно только однородное: зарплаты — с зарплатами. Those of nurses = the salaries of nurses, и множественное those согласуется с salaries. Голое nurses сравнивает зарплаты с людьми — частая логическая ошибка, that of не согласуется по числу, the ones of — калька с «те, что у…».",
           "difficulty": 2,
           "diagnostic": true
         },
         {
           "id": "c2_ellipsis_substitution_and_anaphora_across_a_text_05",
           "kind": "gap",
-          "prompt": "A: Was the customer data encrypted before the migration?\nB: It should have ___, but nobody checked. (one word)",
+          "prompt": "A: Was the gas turned off before the builders started work?\nB: It should have ___, but nobody checked. (one word)",
           "answer": "been",
           "accept": [],
-          "explanation_ru": "Если вопрос в пассиве, в кратком ответе после модального с have остаётся been: It should have been (encrypted). Без been опущенная часть восстанавливалась бы как активное should have encrypted — подлежащее it при этом превращается в того, кто шифрует.",
+          "explanation_ru": "Если вопрос в пассиве, в кратком ответе после модального с have остаётся been: It should have been (turned off). Без been опущенная часть восстанавливалась бы как активное should have turned off — подлежащее it при этом превращается в того, кто выключает.",
           "difficulty": 2
         },
         {
@@ -142,7 +142,7 @@
         {
           "id": "c2_ellipsis_substitution_and_anaphora_across_a_text_09",
           "kind": "cloze",
-          "prompt": "Two proposals are on the table for the payments service: a rewrite in Rust and a gradual refactor of the existing code. The ___ promises better performance; the latter, lower risk. We have been asked to choose by Friday, and we intend to ___ (two words; don't repeat 'choose'). Can the refactor be finished before the holiday freeze? The vendor says ___; our own estimates say not. ___, we will need a fallback plan — and ___ a plan will cost money that is not in this year's budget.",
+          "prompt": "Two proposals are on the table for the old town hall: a modern extension and a careful restoration of the existing building. The ___ promises more space; the latter, lower costs. The council has been asked to choose by Friday, and it intends to ___ (two words; don't repeat 'choose'). Can the restoration be finished before winter? The architects say ___; the builders say not. ___, the town will need somewhere else to hold its meetings — and ___ a solution will cost money that is not in this year's budget.",
           "gaps": [
             [
               "former"
@@ -173,7 +173,7 @@
               "such"
             ]
           ],
-          "explanation_ru": "1 — the former / the latter: первый и второй из двух вариантов. 2 — do so заменяет осознанное действие (choose by Friday). 3 — so заменяет целое придаточное (that it can be finished) и стоит в паре с say not. 4 — if not: «если нет» одной короткой заменой. 5 — such a plan: such + a + существительное подхватывает только что названную мысль.",
+          "explanation_ru": "1 — the former / the latter: первый и второй из двух вариантов. 2 — do so заменяет осознанное действие (choose by Friday). 3 — so заменяет целое придаточное (that it can be finished) и стоит в паре с say not. 4 — if not: «если нет» одной короткой заменой. 5 — such a solution: such + a + существительное подхватывает только что названную мысль.",
           "difficulty": 3
         },
         {
@@ -183,11 +183,11 @@
           "options": [
             "Some voted for the merger, others against it.",
             "We were asked to withdraw the claim, and we did so the next day.",
-            "Is the vendor still in business? If not, we'll have to migrate our data.",
-            "The panel compared Python, Go and Rust and preferred the latter."
+            "Is the bridge open yet? If not, we'll take the ferry.",
+            "The judges tasted three cakes — chocolate, lemon and carrot — and preferred the latter."
           ],
           "correct_index": 3,
-          "explanation_ru": "The latter указывает на второй из ДВУХ названных; из трёх и более выбирают the last или называют прямо: preferred Rust. Остальные предложения верны: гэппинг (others against it), do so о действии, if not вместо целого условия.",
+          "explanation_ru": "The latter указывает на второй из ДВУХ названных; из трёх и более выбирают the last или называют прямо: preferred the carrot cake. Остальные предложения верны: гэппинг (others against it), do so о действии, if not вместо целого условия.",
           "difficulty": 2,
           "diagnostic": true
         }
@@ -243,7 +243,7 @@
         {
           "id": "c2_subtle_aspect_perfect_continuous_forms_in_narrative_and_argument_02",
           "kind": "choice",
-          "prompt": "Don't wake the on-call engineers yet — they ___ all night on the server outage and must be exhausted.",
+          "prompt": "Don't wake the firefighters yet — they ___ all night on the forest fire and must be exhausted.",
           "options": [
             "will have been working",
             "will be working",
@@ -251,7 +251,7 @@
             "are working"
           ],
           "correct_index": 0,
-          "explanation_ru": "Will have been + -ing здесь не про будущее, а уверенное предположение о том, что уже происходило: «наверняка проработали всю ночь». Will be working отнесло бы работу в будущее, are working противоречит тому, что инженеры спят, а had been working требует точки отсчёта в прошлом, которой в этой реплике нет.",
+          "explanation_ru": "Will have been + -ing здесь не про будущее, а уверенное предположение о том, что уже происходило: «наверняка боролись с огнём всю ночь». Will be working отнесло бы работу в будущее, are working противоречит тому, что пожарные спят, а had been working требует точки отсчёта в прошлом, которой в этой реплике нет.",
           "difficulty": 2,
           "diagnostic": true
         },
@@ -260,10 +260,10 @@
           "kind": "choice",
           "prompt": "Which sentence presents the criticism as a campaign that started long ago and is still going on?",
           "options": [
-            "Critics have been arguing for years that the app's algorithm is biased.",
-            "Critics argued for years that the app's algorithm was biased.",
-            "Critics had argued for years that the app's algorithm was biased.",
-            "Critics have argued that the app's algorithm is biased."
+            "Critics have been arguing for years that the stadium deal is unfair to taxpayers.",
+            "Critics argued for years that the stadium deal was unfair to taxpayers.",
+            "Critics had argued for years that the stadium deal was unfair to taxpayers.",
+            "Critics have argued that the stadium deal is unfair to taxpayers."
           ],
           "correct_index": 0,
           "explanation_ru": "Have been arguing for years — спор начался давно и продолжается сейчас. Argued for years — период, который закончился в прошлом, had argued — до другого момента в прошлом, have argued без срока сообщает только, что такое утверждение звучало, без длительности.",
@@ -278,7 +278,7 @@
             "The inquiry is under way since March, but no one has been charged.",
             "By then, the two firms had been negotiating for months.",
             "You've been leaving the office lights on again.",
-            "It turned out the intern had been quietly fixing other people's bugs."
+            "It turned out the neighbor had been quietly feeding our cat."
           ],
           "correct_index": 0,
           "explanation_ru": "Со since нужен перфект: The inquiry has been under way since March. Русское «идёт с марта» тянет настоящее время, но is under way since невозможно. Остальные предложения верны: переговоры до момента в прошлом, раздражение повтором (again), скрытый процесс, который обнаружился позже.",
@@ -297,34 +297,51 @@
         {
           "id": "c2_subtle_aspect_perfect_continuous_forms_in_narrative_and_argument_06",
           "kind": "gap",
-          "prompt": "The alert fired at 3:12 a.m., but the logs showed that the server's disk ___ (fill up) steadily since midnight.",
+          "prompt": "The flood alarm went off at 3:12 a.m., but the security camera showed that the basement ___ (fill up) with water steadily since midnight.",
           "answer": "had been filling up",
           "accept": [
             "had been filling"
           ],
-          "explanation_ru": "Разбор инцидента восстанавливает то, что тянулось за кадром до момента в прошлом (alert fired): had been filling up since midnight. Had filled up значило бы, что диск уже заполнился, а was filling up не сочетается со since.",
+          "explanation_ru": "Рассказ восстанавливает то, что тянулось за кадром до момента в прошлом (alarm went off): had been filling up since midnight. Had filled up значило бы, что подвал уже заполнился, а was filling up не сочетается со since.",
           "difficulty": 2
         },
         {
           "id": "c2_subtle_aspect_perfect_continuous_forms_in_narrative_and_argument_07",
           "kind": "correct",
-          "prompt": "By the time the auditors arrived, the finance team has been shredding documents for days.",
-          "answer": "By the time the auditors arrived, the finance team had been shredding documents for days.",
-          "accept": [],
-          "explanation_ru": "Точка отсчёта в прошлом (by the time the auditors arrived) требует past perfect continuous: had been shredding. Present perfect continuous привязан к моменту речи и в рассказе о прошлом невозможен.",
-          "difficulty": 2
+          "prompt": "Historians have been debating the causes of the war since the 1950s and have been reaching no consensus.",
+          "answer": "Historians have been debating the causes of the war since the 1950s and have reached no consensus.",
+          "accept": [
+            "Historians have been debating the causes of the war since the 1950s and have not reached a consensus.",
+            "Historians have been debating the causes of the war since the 1950s and have not reached any consensus.",
+            "Historians have been debating the causes of the war since the 1950s and have yet to reach a consensus.",
+            "Historians have been debating the causes of the war since the 1950s and have still not reached a consensus.",
+            "Historians have been debating the causes of the war since the 1950s and still have not reached a consensus.",
+            "Historians have been debating the causes of the war since the 1950s but have reached no consensus.",
+            "Historians have been debating the causes of the war since the 1950s but have not reached a consensus.",
+            "Historians have been debating the causes of the war since the 1950s but have yet to reach a consensus.",
+            "Historians have been debating the causes of the war since the 1950s and have not yet reached a consensus.",
+            "Historians have been debating the causes of the war since the 1950s and have never reached a consensus.",
+            "Historians have been debating the causes of the war since the 1950s and have failed to reach a consensus.",
+            "Historians have been debating the causes of the war since the 1950s and have not reached consensus.",
+            "Historians have been debating the causes of the war since the 1950s but have still not reached a consensus.",
+            "Historians have been debating the causes of the war since the 1950s but still have not reached a consensus.",
+            "Historians have been debating the causes of the war since the 1950s but have never reached a consensus.",
+            "Historians have been debating the causes of the war since the 1950s but have failed to reach a consensus."
+          ],
+          "explanation_ru": "Reach — мгновенный результат, а не процесс: have been reaching описывало бы повторяющиеся достижения и с no consensus не сочетается. Процесс спора — have been debating, итог к сегодняшнему дню — простой перфект: have reached no consensus (или have yet to reach one).",
+          "difficulty": 3
         },
         {
           "id": "c2_subtle_aspect_perfect_continuous_forms_in_narrative_and_argument_08",
           "kind": "transform",
-          "prompt": "Rewrite the second sentence as a confident inference, using 'must' and the perfect continuous: 'The vendor knew our budget ceiling to the dollar. I'm sure someone was leaking our internal notes to them.'",
-          "answer": "Someone must have been leaking our internal notes to them.",
+          "prompt": "Rewrite the second sentence as a confident inference, using 'must' and the perfect continuous: 'The other team knew every one of our set plays. I'm sure someone was passing our playbook to them.'",
+          "answer": "Someone must have been passing our playbook to them.",
           "accept": [
-            "Someone must have been leaking our internal notes to the vendor.",
-            "Somebody must have been leaking our internal notes to them.",
-            "Somebody must have been leaking our internal notes to the vendor."
+            "Somebody must have been passing our playbook to them.",
+            "Someone must have been passing our playbook to the other team.",
+            "Somebody must have been passing our playbook to the other team."
           ],
-          "explanation_ru": "Уверенный вывод о процессе в прошлом — must have been + -ing: утечка шла какое-то время, и это видно по результату. Must have leaked говорил бы о разовом событии.",
+          "explanation_ru": "Уверенный вывод о процессе в прошлом — must have been + -ing: утечка шла какое-то время, и это видно по результату. Must have passed говорил бы о разовом событии.",
           "difficulty": 3
         },
         {
@@ -360,20 +377,20 @@
         {
           "id": "c2_subtle_aspect_perfect_continuous_forms_in_narrative_and_argument_10",
           "kind": "transform",
-          "prompt": "Rewrite as one sentence, using 'long' and a perfect form: 'Economists began arguing many years ago that the tax is unfair, and they still argue this.'",
+          "prompt": "Rewrite as one sentence, using the adverb 'long' (not the phrase 'for a long time') and a perfect form: 'Economists began arguing many years ago that the tax is unfair, and they still argue this.'",
           "answer": "Economists have long been arguing that the tax is unfair.",
           "accept": [
             "Economists have long been arguing the tax is unfair.",
             "Economists have long argued that the tax is unfair.",
             "Economists have long argued the tax is unfair."
           ],
-          "explanation_ru": "Began … and still argue — спор начался давно и идёт до сих пор: это перфект, а long в значении «давно» встаёт сразу после have — have long been arguing или have long argued. Обе формы подают спор как продолжающийся; continuous выдвигает сам процесс, простая форма нейтральнее. Long argued без have значило бы, что спор закончился.",
+          "explanation_ru": "Began … and still argue — спор начался давно и идёт до сих пор: это перфект, а long в значении «давно» встаёт сразу после have — have long been arguing или have long argued. Обе формы подают спор как продолжающийся; continuous выдвигает сам процесс, простая форма нейтральнее. Have argued for a long time тоже верно, но проще: книжное long после have — примета аргументативного текста. Long argued без have значило бы, что спор закончился.",
           "difficulty": 3
         },
         {
           "id": "c2_subtle_aspect_perfect_continuous_forms_in_narrative_and_argument_11",
           "kind": "cloze",
-          "prompt": "For a decade, tech executives ___ (insist) that self-regulation works. That claim is now hard to sustain. A leaked audit shows that the company's own safety team ___ (flag) the same risks since 2019 — and that management ___ (reject) all forty of its recommendations. 'We ___ (mean) to act on this for some time,' a spokesperson said on Tuesday, a line critics ___ (hear) many times before.",
+          "prompt": "For a decade, the club's owners ___ (insist) that the old stadium is perfectly safe. That claim is now hard to sustain. A leaked report shows that the club's own safety officer ___ (flag) the same risks since 2019 — and that the board ___ (reject) all forty of his recommendations. 'We ___ (mean) to act on this for some time,' a spokesperson said on Tuesday, a line fans ___ (hear) many times before.",
           "gaps": [
             [
               "have been insisting",
@@ -437,7 +454,7 @@
         {
           "id": "c2_verb_patterns_with_contrastive_meaning_remember_regret_stop_try_01",
           "kind": "choice",
-          "prompt": "She started out as a support engineer and ___ the company's first chief technology officer.",
+          "prompt": "She started out washing dishes in a small diner and ___ one of the best-known chefs in Chicago.",
           "options": [
             "went on to become",
             "went on becoming",
@@ -508,7 +525,7 @@
         {
           "id": "c2_verb_patterns_with_contrastive_meaning_remember_regret_stop_try_06",
           "kind": "gap",
-          "prompt": "It was only after she had left the startup that she ___ (appreciate; use 'come' to show a gradual change) how much her first manager had taught her.",
+          "prompt": "It was only after she had left home that she ___ (appreciate; use 'come' to show a gradual change) how much her parents had done for her.",
           "answer": "came to appreciate",
           "accept": [],
           "explanation_ru": "Come to + V описывает постепенную перемену взгляда: came to appreciate — «со временем начала ценить». Became to — калька с «стала ценить», а come appreciating невозможно.",
@@ -537,7 +554,13 @@
             "The committee harshly criticized the minister but stopped short of demanding her resignation.",
             "The committee criticized the minister harshly but stopped short of calling for her resignation.",
             "The committee harshly criticized the minister, but it stopped short of demanding her resignation.",
-            "The committee criticized the minister harshly but stopped short of demanding that she resign."
+            "The committee criticized the minister harshly but stopped short of demanding that she resign.",
+            "The committee criticized the minister harshly, but it stopped short of calling for her resignation.",
+            "The committee criticized the minister harshly, but it stopped short of demanding that she resign.",
+            "The committee harshly criticized the minister but stopped short of calling for her resignation.",
+            "The committee harshly criticized the minister but stopped short of demanding that she resign.",
+            "The committee harshly criticized the minister, but it stopped short of calling for her resignation.",
+            "The committee harshly criticized the minister, but it stopped short of demanding that she resign."
           ],
           "explanation_ru": "Stop short of + -ing — «не пойти дальше, не решиться на»: комитет критиковал, но до требования отставки не дошёл. После of — только -ing: stopped short of to demand невозможно.",
           "difficulty": 3
@@ -649,17 +672,17 @@
         {
           "id": "c2_fronting_and_marked_word_order_for_information_structure_02",
           "kind": "choice",
-          "prompt": "At the end of the garden ___ an old wooden shed.",
+          "prompt": "We finally spotted the old shed. At the end of the garden ___, half hidden by ivy.",
           "options": [
-            "stood",
             "it stood",
             "stood it",
-            "did stand"
+            "did it stand",
+            "was it standing"
           ],
           "correct_index": 0,
-          "explanation_ru": "После обстоятельства места идёт полная инверсия без вспомогательного: глагол, затем подлежащее an old wooden shed.",
+          "explanation_ru": "После обстоятельства места полная инверсия (At the end of the garden stood an old shed) бывает только с существительным-подлежащим, несущим новую информацию. Местоимение it — уже известное, в конец оно не уходит: At the end of the garden it stood. Did it stand и was it standing — инверсия после отрицательных наречий, к обстоятельству места она не относится.",
           "difficulty": 2,
-          "diagnostic": true
+          "diagnostic": false
         },
         {
           "id": "c2_fronting_and_marked_word_order_for_information_structure_03",
@@ -778,6 +801,17 @@
             ]
           ],
           "explanation_ru": "1–2 — полная инверсия после обстоятельства места с глаголами положения (lay — прошедшее от lie, stood). 3 — so + прилагательное + be + подлежащее + that. 4 — фронтинг причастия: Gone were (are) the crowds. 5 — вынесенное дополнение (this kind of silence) без инверсии.",
+          "difficulty": 3
+        },
+        {
+          "id": "c2_fronting_and_marked_word_order_for_information_structure_11",
+          "kind": "transform",
+          "prompt": "Rewrite, starting with 'Into the courtroom': The defendant's mother walked into the courtroom, holding a photograph of her son.",
+          "answer": "Into the courtroom walked the defendant's mother, holding a photograph of her son.",
+          "accept": [
+            "Into the courtroom, holding a photograph of her son, walked the defendant's mother."
+          ],
+          "explanation_ru": "После вынесенного вперёд обстоятельства места глагол движения встаёт перед длинным подлежащим: Into the courtroom walked the defendant's mother. Так самое весомое — кто вошёл — оказывается в конце, как в повествовании и репортаже. Без инверсии (Into the courtroom the defendant's mother walked) фраза звучит неуклюже.",
           "difficulty": 3
         }
       ]

@@ -13,10 +13,7 @@
         "ahead of schedule",
         "behind schedule"
       ],
-      "topic": "work",
-      "accept": [
-        "timetable"
-      ]
+      "topic": "work"
     },
     {
       "id": "b1_v_deadline",
@@ -998,7 +995,10 @@
         "feel nervous",
         "get nervous"
       ],
-      "topic": "feelings"
+      "topic": "feelings",
+      "accept": [
+        "anxious"
+      ]
     },
     {
       "id": "b1_v_upset",
@@ -1310,7 +1310,11 @@
         "work properly",
         "do something properly"
       ],
-      "topic": "home"
+      "topic": "home",
+      "accept": [
+        "correctly",
+        "right"
+      ]
     },
     {
       "id": "b1_v_however",
@@ -1944,6 +1948,42 @@
       "topic": "people",
       "accept": [
         "spend time"
+      ]
+    },
+    {
+      "id": "b1_v_in_case",
+      "level": "B1",
+      "word": "in case",
+      "pos": "conjunction",
+      "ipa_us": "/ɪn ˈkeɪs/",
+      "translation_ru": "на случай если",
+      "example_en": "I always pack a snack in case my son gets hungry on the road.",
+      "collocations": [
+        "just in case",
+        "in case it rains",
+        "in case something goes wrong"
+      ],
+      "topic": "food",
+      "accept": [
+        "just in case"
+      ]
+    },
+    {
+      "id": "b1_v_so_that",
+      "level": "B1",
+      "word": "so that",
+      "pos": "conjunction",
+      "ipa_us": "/ˈsoʊ ðət/",
+      "translation_ru": "чтобы (с целью)",
+      "example_en": "Grandpa sat in the front row so that he could hear the music better.",
+      "collocations": [
+        "so that we can",
+        "so that nobody forgets"
+      ],
+      "topic": "people",
+      "accept": [
+        "so",
+        "in order that"
       ]
     }
   ]

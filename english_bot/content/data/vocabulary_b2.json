@@ -577,23 +577,6 @@
       "topic": "people"
     },
     {
-      "id": "b2_v_vendor",
-      "level": "B2",
-      "word": "vendor",
-      "pos": "noun",
-      "ipa_us": "/ˈvɛndɚ/",
-      "translation_ru": "поставщик, продавец",
-      "example_en": "We are comparing three vendors before we sign anything.",
-      "collocations": [
-        "a software vendor",
-        "choose a vendor"
-      ],
-      "topic": "money",
-      "accept": [
-        "supplier"
-      ]
-    },
-    {
       "id": "b2_v_negotiate",
       "level": "B2",
       "word": "negotiate",
@@ -606,20 +589,6 @@
         "negotiate a price"
       ],
       "topic": "money"
-    },
-    {
-      "id": "b2_v_outsource",
-      "level": "B2",
-      "word": "outsource",
-      "pos": "verb",
-      "ipa_us": "/ˈaʊtˌsɔrs/",
-      "translation_ru": "передавать на подряд, отдавать на сторону",
-      "example_en": "They decided to outsource testing to a smaller company.",
-      "collocations": [
-        "outsource development",
-        "outsource a service"
-      ],
-      "topic": "work"
     },
     {
       "id": "b2_v_efficiency",
@@ -646,20 +615,6 @@
       "collocations": [
         "improve reliability",
         "the reliability of a system"
-      ],
-      "topic": "tech"
-    },
-    {
-      "id": "b2_v_framework",
-      "level": "B2",
-      "word": "framework",
-      "pos": "noun",
-      "ipa_us": "/ˈfreɪmˌwɝk/",
-      "translation_ru": "фреймворк, структура",
-      "example_en": "We picked a lighter framework for the internal tool.",
-      "collocations": [
-        "a testing framework",
-        "a legal framework"
       ],
       "topic": "tech"
     },
@@ -968,12 +923,12 @@
       "level": "B2",
       "word": "on short notice",
       "pos": "phrase",
-      "ipa_us": "/ət ˌʃɔrt ˈnoʊtɪs/",
+      "ipa_us": "/ɑn ˌʃɔrt ˈnoʊtɪs/",
       "translation_ru": "в короткий срок, без предупреждения",
       "example_en": "My sister had to find a babysitter on short notice.",
       "collocations": [
-        "available at short notice",
-        "cancel at short notice"
+        "available on short notice",
+        "cancel on short notice"
       ],
       "topic": "people",
       "accept": [
@@ -1064,7 +1019,7 @@
       "word": "keep track of",
       "pos": "phrase",
       "ipa_us": "/ˌkip ˈtræk əv/",
-      "translation_ru": "отслеживать, вести учёт",
+      "translation_ru": "отслеживать, вести учёт, следить за (не теряя счёта)",
       "example_en": "I use an app to keep track of how much money I spend.",
       "collocations": [
         "keep track of time",
@@ -1072,7 +1027,8 @@
       ],
       "topic": "money",
       "accept": [
-        "track"
+        "track",
+        "monitor"
       ]
     },
     {
@@ -1173,7 +1129,11 @@
         "eager to help",
         "eager to start"
       ],
-      "topic": "feelings"
+      "topic": "feelings",
+      "accept": [
+        "keen",
+        "excited"
+      ]
     },
     {
       "id": "b2_v_cautious",
@@ -1929,6 +1889,23 @@
       "accept": [
         "admire",
         "respect"
+      ]
+    },
+    {
+      "id": "b2_v_whereas",
+      "level": "B2",
+      "word": "whereas",
+      "pos": "conjunction",
+      "ipa_us": "/wɛrˈæz/",
+      "translation_ru": "тогда как (при сравнении)",
+      "example_en": "My husband loves hot summers, whereas I feel best when it snows.",
+      "collocations": [
+        "whereas in the past",
+        "whereas others prefer"
+      ],
+      "topic": "nature",
+      "accept": [
+        "while"
       ]
     }
   ]

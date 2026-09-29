@@ -733,7 +733,8 @@
       ],
       "topic": "travel",
       "accept": [
-        "trip"
+        "trip",
+        "way"
       ]
     },
     {
@@ -821,7 +822,10 @@
         "a crowded street",
         "a crowded train"
       ],
-      "topic": "travel"
+      "topic": "travel",
+      "accept": [
+        "busy"
+      ]
     },
     {
       "id": "a2_v_headache",

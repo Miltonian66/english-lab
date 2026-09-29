@@ -9,7 +9,7 @@
    "title_en": "Would you like...? I'd like...",
    "source_slug": "would-like",
    "title_ru": "Would like: вежливое «я хотел бы»",
-   "summary_ru": "Would like — вежливый способ сказать, что вы хотите, и предложить что-то другому. Форма одна для всех лиц: I would like, he would like, they would like. В речи почти всегда используют сокращение: I'd like, she'd like. После would like идёт существительное (I'd like a coffee) или to + глагол (I'd like to ask a question). Вопрос строится через Would: Would you like some tea? Would you like to join us? Отрицание: I wouldn't like to live there. Обычный ответ на предложение — Yes, please или No, thank you. Would like мягче и вежливее, чем want, поэтому в рабочем общении выбирайте его.",
+   "summary_ru": "Would like — вежливый способ сказать, что вы хотите, и предложить что-то другому. Форма одна для всех лиц: I would like, he would like, they would like. В речи почти всегда используют сокращение: I'd like, she'd like. После would like идёт существительное (I'd like a coffee) или to + глагол (I'd like to ask a question). Вопрос строится через Would: Would you like more rice? Would you like to join us? Отрицание: I wouldn't like to live there. Обычный ответ на предложение — Yes, please или No, thank you. Would like мягче и вежливее, чем want, поэтому в рабочем общении выбирайте его.",
    "forms": [
     "I/you/he/she/we/they + would like + существительное",
     "would like + to + глагол",
@@ -18,13 +18,13 @@
     "Отрицание: I wouldn't like ..."
    ],
    "examples": [
-    "I'd like a cup of coffee, please.",
+    "I'd like a table for two, please.",
     "Would you like something to drink?",
     "She would like to work on our team.",
     "Would you like to join the call?",
     "I wouldn't like to be famous."
    ],
-   "ru_interference": "Русские говорят прямое I want tea вместо вежливого I'd like tea и теряют to перед глаголом: неверно «I would like drink tea» → верно «I would like to drink tea».",
+   "ru_interference": "Русские говорят прямое I want tea вместо вежливого I'd like tea и теряют to перед глаголом: неверно «I would like go home» → верно «I would like to go home».",
    "prerequisites": [],
    "exercises": [
     {
@@ -58,7 +58,7 @@
     {
      "id": "a1_would_like_03",
      "kind": "choice",
-     "prompt": "She ___ a new bike for her birthday.",
+     "prompt": "She ___ a puppy for her birthday.",
      "options": [
       "would like",
       "would like to",
@@ -385,7 +385,7 @@
    "title_en": "At, in, on: Prepositions of time",
    "source_slug": "at-in-on-prepositions-time",
    "title_ru": "At, in, on: предлоги времени",
-   "summary_ru": "Предлог зависит от того, насколько точный отрезок времени вы называете. At — точное время и моменты: at 8 o'clock, at midnight, at night, at lunchtime. On — дни недели и даты: on Monday, on July 4, on my birthday, on Friday morning. In — длинные отрезки: месяцы, годы, сезоны и части суток: in May, in 2024, in winter, in the morning. Запомните исключение: in the morning, in the afternoon, in the evening, но at night. Со словами today, tomorrow, yesterday, next week, every day предлог не ставится вообще. Правило легко запомнить как лестницу: at — самый маленький отрезок, on — день, in — всё большое.",
+   "summary_ru": "Предлог зависит от того, насколько точный отрезок времени вы называете. At — точное время и моменты: at 8 o'clock, at midnight, at night, at lunchtime. On — дни недели и даты: on Monday, on July 4, on my birthday, on Friday morning. Даты по-американски пишут без окончания — July 4, June 21, — а читают порядковым числом: July fourth, June twenty-first. In — длинные отрезки: месяцы, годы, сезоны и части суток: in May, in 2024, in winter, in the morning. Запомните исключение: in the morning, in the afternoon, in the evening, но at night. Со словами today, tomorrow, yesterday, next week, every day предлог не ставится вообще. Правило легко запомнить как лестницу: at — самый маленький отрезок, on — день, in — всё большое.",
    "forms": [
     "at + точное время: at 8 o'clock, at night",
     "on + день или дата: on Monday, on July 4",
@@ -503,7 +503,7 @@
     {
      "id": "a1_at_in_on_prepositions_time_09",
      "kind": "choice",
-     "prompt": "My birthday is ___ May 3rd.",
+     "prompt": "My birthday is ___ May 3.",
      "options": [
       "in",
       "at",
@@ -512,7 +512,7 @@
      ],
      "correct_index": 2,
      "diagnostic": true,
-     "explanation_ru": "С конкретной датой используется on: on May 3rd, как и с днями недели. In ставят с месяцем без числа (in May), а at — с точным временем.",
+     "explanation_ru": "С конкретной датой используется on: on May 3 (читается May third), как и с днями недели. In ставят с месяцем без числа (in May), а at — с точным временем.",
      "difficulty": 1
     },
     {
@@ -551,14 +551,11 @@
     {
      "id": "a1_at_in_on_prepositions_time_12",
      "kind": "gap",
-     "prompt": "A: When is your birthday?\nB: It is on June ___ (21).",
-     "answer": "21st",
-     "accept": [
-      "twenty-first",
-      "twenty first"
-     ],
-     "explanation_ru": "Задание просит порядковую форму числа: в дате его читают как June twenty-first, а пишут 21st. Окончание зависит от последней цифры: 1st, 2nd, 3rd, поэтому 21st, 22nd, 23rd; остальные числа, в том числе 11th, 12th и 13th, получают -th.",
-     "difficulty": 3
+     "prompt": "A: When is your sister's wedding?\nB: It's ___ June 21.",
+     "answer": "on",
+     "accept": [],
+     "explanation_ru": "Перед датой, как перед днём недели, стоит on: on June 21. In ставят с месяцем без числа (in June), а at — с точным временем (at four o'clock). По-американски дату пишут June 21, а читают порядковым числом: June twenty-first.",
+     "difficulty": 1
     },
     {
      "id": "a1_at_in_on_prepositions_time_13",
@@ -788,7 +785,7 @@
     "They work with them every day.",
     "We saw it on the server yesterday."
    ],
-   "ru_interference": "Местоимение запоминают в словарной форме I, he, she и ставят её и после глагола, и после предлога: неверно «I see he every day» и «She works with I» → верно «I see him every day» и «She works with me».",
+   "ru_interference": "Местоимение запоминают в словарной форме I, he, she и ставят её и после глагола, и после предлога: неверно «I see he every day» и «Please call I back» → верно «I see him every day» и «Please call me back».",
    "prerequisites": [],
    "exercises": [
     {
@@ -927,6 +924,42 @@
      "diagnostic": true,
      "explanation_ru": "После глагола helps нужна объектная форма me, а не I. В остальных предложениях объектные формы me, them, her стоят верно — после глагола или предлога.",
      "difficulty": 2
+    },
+    {
+     "id": "a1_object_pronouns_12",
+     "kind": "cloze",
+     "prompt": "My grandma lives with ___ (we). Every Sunday ___ (she) makes pancakes for my brother and ___ (I). My brother loves pancakes, and he always eats ___ (they) all!",
+     "gaps": [
+      [
+       "us"
+      ],
+      [
+       "she"
+      ],
+      [
+       "me"
+      ],
+      [
+       "them"
+      ]
+     ],
+     "explanation_ru": "После предлога и после глагола нужна объектная форма: with us, for my brother and me, eats them. Перед глаголом стоит подлежащее в субъектной форме: she makes. «Для брата и меня» — for my brother and me, а не and I: после for оба слова — дополнения.",
+     "difficulty": 2
+    },
+    {
+     "id": "a1_object_pronouns_13",
+     "kind": "transform",
+     "prompt": "Переведи на английский: «Мы часто видим их в парке.»",
+     "answer": "We often see them in the park.",
+     "accept": [
+      "We often see them at the park.",
+      "We see them in the park often.",
+      "We see them at the park often.",
+      "We see them often in the park.",
+      "We see them often at the park."
+     ],
+     "explanation_ru": "«Их» после глагола see — объектная форма them: see them. They стоит только перед глаголом, как подлежащее. Often — перед смысловым глаголом: we often see.",
+     "difficulty": 2
     }
    ]
   },
@@ -938,7 +971,7 @@
    "title_en": "There is, there are / there was, there were",
    "source_slug": "there-is-there-are",
    "title_ru": "There is / there are, there was / there were",
-   "summary_ru": "Конструкция there is / there are сообщает, что что-то существует или находится где-то. Слово there здесь не значит «там», это формальное подлежащее, и его нельзя убрать. Форма глагола зависит от следующего существительного: there is + единственное число, there are + множественное. В прошедшем времени используются there was и there were. Отрицание: there isn't, there aren't, there wasn't, there weren't; часто с any. Вопрос строится перестановкой: Is there ...? Are there ...? Was there ...? Обстоятельство места обычно ставится в конец: There are five people in the room.",
+   "summary_ru": "Конструкция there is / there are сообщает, что что-то существует или находится где-то. Слово there здесь не значит «там», это формальное подлежащее, и его нельзя убрать. Форма глагола зависит от следующего существительного: there is + единственное число, there are + множественное. В прошедшем времени используются there was и there were. Отрицание: there isn't, there aren't, there wasn't, there weren't; часто с any. Вопрос строится перестановкой: Is there ...? Are there ...? Was there ...? Обстоятельство места обычно ставится в конец: There are two cats in the yard.",
    "forms": [
     "There is + существительное в единственном числе",
     "There are + существительное во множественном числе",
@@ -954,7 +987,7 @@
     "There was a bug in the code.",
     "There were two meetings yesterday."
    ],
-   "ru_interference": "В русском бытийное предложение начинается с места и обходится без подлежащего («В моём офисе три компьютера»), поэтому there теряется: неверно «In my office are three computers» → верно «There are three computers in my office».",
+   "ru_interference": "В русском бытийное предложение начинается с места и обходится без подлежащего («В холодильнике две бутылки молока»), поэтому there теряется: неверно «In the fridge are two bottles of milk» → верно «There are two bottles of milk in the fridge».",
    "prerequisites": [],
    "exercises": [
     {
@@ -1147,9 +1180,9 @@
     "It's snowing in the mountains.",
     "It is nine o'clock.",
     "There are two free rooms. It is easy to book them.",
-    "It's already June!"
+    "It's a long way to the station."
    ],
-   "ru_interference": "Русские безличные фразы «холодно» и «есть» смешиваются: неверно «There is cold today» → верно «It is cold today»; неверно «There is difficult to answer» → верно «It is difficult to answer».",
+   "ru_interference": "Русские безличные фразы «холодно» и «есть» смешиваются: неверно «There is hot in here» → верно «It is hot in here»; неверно «There is difficult to answer» → верно «It is difficult to answer».",
    "prerequisites": [],
    "exercises": [
     {
@@ -1169,15 +1202,15 @@
     {
      "id": "a1_there_it_02",
      "kind": "choice",
-     "prompt": "___ are three meeting rooms on this floor.",
+     "prompt": "___ three meeting rooms on this floor.",
      "options": [
-      "It",
-      "There",
-      "This",
-      "He"
+      "It is",
+      "There are",
+      "Is",
+      "Have"
      ],
      "correct_index": 1,
-     "explanation_ru": "Сообщение о существовании объектов вводится через there are.",
+     "explanation_ru": "Сообщение о существовании объектов вводится через there are: rooms во множественном числе. It is указывает на уже известный предмет, а без подлежащего (Is…, Have…) английское предложение не строится. Have говорит о владельце и требует его как подлежащее (We have three meeting rooms), а «на этаже есть…» — это there are.",
      "difficulty": 1
     },
     {
@@ -1231,8 +1264,11 @@
      "kind": "correct",
      "prompt": "It is many people in the park today.",
      "answer": "There are many people in the park today.",
-     "accept": [],
-     "explanation_ru": "Сообщение о том, что где-то есть люди или предметы, вводится через there, а не it; people — множественное число, поэтому there are.",
+     "accept": [
+      "There are a lot of people in the park today.",
+      "There are lots of people in the park today."
+     ],
+     "explanation_ru": "Сообщение о том, что где-то есть люди или предметы, вводится через there, а не it; people — множественное число, поэтому there are. В утверждении вместо many естественно звучит и a lot of: There are a lot of people in the park today.",
      "difficulty": 3
     },
     {
@@ -1284,14 +1320,14 @@
      "kind": "choice",
      "prompt": "Как сказать по-английски: «Уже поздно»?",
      "options": [
-      "There is late.",
-      "It's late.",
-      "Is late.",
-      "Late is."
+      "There is already late.",
+      "It's already late.",
+      "Is already late.",
+      "Now is late."
      ],
      "correct_index": 1,
      "diagnostic": true,
-     "explanation_ru": "Безличное русское «поздно» в английском требует формального подлежащего it: It's late. There is сообщает о существовании предмета, а предложение без подлежащего невозможно.",
+     "explanation_ru": "Безличное русское «поздно» в английском требует формального подлежащего it: It's already late. There is сообщает о существовании предмета, без подлежащего (Is already late) английское предложение невозможно, а now — наречие, подлежащим оно не бывает.",
      "difficulty": 1
     },
     {
@@ -1319,7 +1355,7 @@
    "title_en": "This, that, these, those",
    "source_slug": "this-that-these-those",
    "title_ru": "This, that, these, those",
-   "summary_ru": "Эти четыре слова указывают на предметы и различаются по числу и по расстоянию. This — один предмет рядом, these — несколько предметов рядом. That — один предмет далеко, those — несколько предметов далеко. Расстояние может быть и во времени: this week — текущая неделя, that year — тот год в прошлом, о котором идёт речь. Перед существительным артикль уже не нужен: this laptop, а не this the laptop. В роли подлежащего форма глагола меняется: This is my desk, но These are my keys. По телефону о себе говорят This is Anna, а не I am Anna.",
+   "summary_ru": "Эти четыре слова указывают на предметы и различаются по числу и по расстоянию. This — один предмет рядом, these — несколько предметов рядом. That — один предмет далеко, those — несколько предметов далеко. Расстояние может быть и во времени: this week — текущая неделя, that year — тот год в прошлом, о котором идёт речь. Перед существительным артикль уже не нужен: this laptop, а не this the laptop. В роли подлежащего форма глагола меняется: This is a good idea, но These are good ideas. По телефону о себе говорят This is Anna, а не I am Anna.",
    "forms": [
     "this + существительное в единственном числе (рядом)",
     "these + существительное во множественном числе (рядом)",
@@ -1332,7 +1368,7 @@
     "These files are new.",
     "That building is our office.",
     "Those people work in sales.",
-    "Is this your phone?"
+    "Is this seat free?"
    ],
    "ru_interference": "Русское «это» одинаково для любого числа, поэтому множественное число теряется: неверно «This are my keys» → верно «These are my keys».",
    "prerequisites": [],
@@ -1414,12 +1450,13 @@
     {
      "id": "a1_this_that_these_those_07",
      "kind": "correct",
-     "prompt": "This are my cousins.",
-     "answer": "These are my cousins.",
+     "prompt": "This apples are very sweet.",
+     "answer": "These apples are very sweet.",
      "accept": [
-      "Those are my cousins."
+      "Those apples are very sweet.",
+      "This apple is very sweet."
      ],
-     "explanation_ru": "Cousins и are — множественное число, поэтому нужно These (или Those, если родственники далеко): this сочетается только с единственным числом.",
+     "explanation_ru": "Apples и are — множественное число, поэтому these (или those, если яблоки далеко); this сочетается только с единственным числом: this apple is.",
      "difficulty": 3
     },
     {
@@ -1460,6 +1497,40 @@
      "diagnostic": true,
      "explanation_ru": "Boy — единственное число, поэтому нужно that, а не those: That boy is my cousin. Those сочетается только с множественным числом.",
      "difficulty": 2
+    },
+    {
+     "id": "a1_this_that_these_those_11",
+     "kind": "cloze",
+     "prompt": "Mom: Look at ___ (this / these) shoes here. They're only $20!\nLily: I like ___ (that / those) red boots over there more.\nMom: OK. And ___ (this / these) jacket? Do you like it?\nLily: No. But ___ (that / those) hat on the shelf is nice.",
+     "gaps": [
+      [
+       "these"
+      ],
+      [
+       "those"
+      ],
+      [
+       "this"
+      ],
+      [
+       "that"
+      ]
+     ],
+     "explanation_ru": "This и these — рядом, that и those — далеко (over there, on the shelf). Для одного предмета — this и that (this jacket, that hat), для нескольких — these и those (these shoes, those boots).",
+     "difficulty": 2
+    },
+    {
+     "id": "a1_this_that_these_those_12",
+     "kind": "transform",
+     "prompt": "Переведи на английский: «Те цветы очень красивые.»",
+     "answer": "Those flowers are very beautiful.",
+     "accept": [
+      "Those flowers are really beautiful.",
+      "Those flowers are very pretty.",
+      "Those flowers are really pretty."
+     ],
+     "explanation_ru": "«Те» — несколько предметов далеко, поэтому those, и глагол во множественном числе: those flowers are. That сочетается только с одним предметом, а these значит «эти», то есть рядом.",
+     "difficulty": 2
     }
    ]
   },
@@ -1471,7 +1542,7 @@
    "title_en": "A, some, any: Countable and uncountable nouns",
    "source_slug": "a-some-any-countable-uncountable",
    "title_ru": "A, some, any: исчисляемые и неисчисляемые",
-   "summary_ru": "Существительные делятся на исчисляемые (можно посчитать: a file, two files) и неисчисляемые (water, money, time, information, work). Перед исчисляемым в единственном числе ставится a или an. Some используется в утверждениях с множественным числом и с неисчисляемыми: some files, some water. Any используется в вопросах и отрицаниях: Do you have any questions? I don't have any time. Some также используется, когда что-то предлагают или просят: Would you like some tea? Can I have some water? Неисчисляемые слова не имеют множественного числа и не берут a: some information, а не an information. Перед неисчисляемым нельзя ставить числительное без меры: a glass of water, a piece of advice.",
+   "summary_ru": "Существительные делятся на исчисляемые (можно посчитать: a file, two files) и неисчисляемые (water, money, time, information, work). Перед исчисляемым в единственном числе ставится a или an. Some используется в утверждениях с множественным числом и с неисчисляемыми: some files, some water. Any используется в вопросах и отрицаниях: Do you have any questions? I don't have any time. Some также используется, когда что-то предлагают или просят: Would you like some tea? Can I have some water? Неисчисляемые слова не имеют множественного числа и не берут a: some information, а не an information. Перед неисчисляемым нельзя ставить числительное без меры: a glass of water, a cup of coffee, a bottle of juice, a piece of advice.",
    "forms": [
     "a / an + исчисляемое в единственном числе",
     "some + множественное число или неисчисляемое (утверждение)",
@@ -1581,7 +1652,9 @@
      "kind": "order",
      "prompt": "any / there / isn't / sugar / tea / in / my / .",
      "answer": "There isn't any sugar in my tea.",
-     "accept": [],
+     "accept": [
+      "In my tea there isn't any sugar."
+     ],
      "explanation_ru": "Схема: there isn't + any + неисчисляемое + обстоятельство места.",
      "difficulty": 3
     },
@@ -1632,6 +1705,15 @@
      ],
      "explanation_ru": "Bowl — исчисляемое в единственном числе, поэтому a. Eggs во множественном числе в утверждении — some. В отрицании с неисчисляемым milk — any.",
      "difficulty": 3
+    },
+    {
+     "id": "a1_a_some_any_countable_uncountable_12",
+     "kind": "gap",
+     "prompt": "Can we have two ___ (стакан) water, please?",
+     "answer": "glasses of",
+     "accept": [],
+     "explanation_ru": "Water неисчисляемое, поэтому его считают мерой: a glass of water, two glasses of water. Множественное число получает мера, а не water; у glass окончание -es. Two waters или two glass water так не говорят.",
+     "difficulty": 2
     }
    ]
   },
@@ -1684,10 +1766,10 @@
       "many",
       "a few",
       "much",
-      "few of"
+      "a lot"
      ],
      "correct_index": 2,
-     "explanation_ru": "Time неисчисляемое, и в отрицании с ним используется much.",
+     "explanation_ru": "Time неисчисляемое, и в отрицании с ним используется much. Many и a few — для исчисляемых, а после a lot перед существительным обязательно of: a lot of time.",
      "difficulty": 1
     },
     {
@@ -1817,7 +1899,7 @@
    "title_en": "Questions: Word order and question words",
    "source_slug": "questions",
    "title_ru": "Вопросы: порядок слов и вопросительные слова",
-   "summary_ru": "В английском вопросе порядок слов жёсткий: вспомогательный глагол стоит перед подлежащим. С глаголом be вспомогательный не нужен, be сам выходит вперёд: Are you ready? Where is he? С обычными глаголами используются do, does и did, а смысловой глагол остаётся в начальной форме: Where do you work? What did she say? Вопросительное слово ставится перед вспомогательным: who, what, where, when, why, how, how much, how many. Если вопросительное слово само является подлежащим, вспомогательный глагол не нужен: Who made this cake? После did или does смысловой глагол не получает окончаний -s и -ed. Просто поднять интонацию, как в русском, недостаточно.",
+   "summary_ru": "В английском вопросе порядок слов жёсткий: вспомогательный глагол стоит перед подлежащим. С глаголом be вспомогательный не нужен, be сам выходит вперёд: Are you ready? Where is he? С обычными глаголами используются do, does и did, а смысловой глагол остаётся в начальной форме: When do you get up? What did she say? Вопросительное слово ставится перед вспомогательным: who, what, where, when, why, how, how much, how many. Если вопросительное слово само является подлежащим, вспомогательный глагол не нужен: Who made this cake? После did или does смысловой глагол не получает окончаний -s и -ed. Просто поднять интонацию, как в русском, недостаточно.",
    "forms": [
     "Вопросительное слово + do/does/did + подлежащее + глагол",
     "Be: Are you ready? Where is she?",
@@ -1826,14 +1908,14 @@
     "После do/does/did глагол без окончаний"
    ],
    "examples": [
-    "Where do you live?",
-    "What time does the meeting start?",
+    "Why do you study English?",
+    "What time does the bank open?",
     "When did the project finish?",
     "Are you at the office now?",
     "Who made this cake?",
     "How much does it cost?"
    ],
-   "ru_interference": "В русском вопрос отличается только интонацией, поэтому вспомогательный глагол теряется: неверно «Where you work?» → верно «Where do you work?».",
+   "ru_interference": "В русском вопрос отличается только интонацией, поэтому вспомогательный глагол теряется: неверно «When you finish work?» → верно «When do you finish work?».",
    "prerequisites": [],
    "exercises": [
     {
@@ -1981,11 +2063,34 @@
     {
      "id": "a1_questions_13",
      "kind": "transform",
-     "prompt": "Переведи на английский: «Где работает твоя сестра?»",
-     "answer": "Where does your sister work?",
-     "accept": [],
-     "explanation_ru": "Вопросительное слово, затем does (сестра — третье лицо), подлежащее и глагол в начальной форме: Where does your sister work? Русский порядок «где твоя сестра работает» без does и с -s у глагола в английском вопросе невозможен.",
+     "prompt": "Переведи на английский: «Как ты добираешься до работы?»",
+     "answer": "How do you get to work?",
+     "accept": [
+      "How do you go to work?",
+      "How do you travel to work?",
+      "How do you get to the office?",
+      "How do you commute to work?"
+     ],
+     "explanation_ru": "О привычном действии спрашивают в Present Simple, поэтому нужен do: How do you get to work? Порядок: вопросительное слово, do, подлежащее, глагол в начальной форме. Без do (How you get…?) вопрос не строится; «добираться» — get to: get to work, get home.",
      "difficulty": 3
+    },
+    {
+     "id": "a1_questions_14",
+     "kind": "cloze",
+     "prompt": "A: Where ___ (you / live)?\nB: In Denver.\nA: ___ (почему) did you move there?\nB: For my job.\nA: ___ (какой из двух) city do you like more, Denver or Chicago?\nB: Denver!",
+     "gaps": [
+      [
+       "do you live"
+      ],
+      [
+       "Why"
+      ],
+      [
+       "Which"
+      ]
+     ],
+     "explanation_ru": "Вопросительное слово, затем вспомогательный do или did и подлежащее: Where do you live? Why did you move? О причине спрашивают why. Когда выбирают из известных вариантов (Denver or Chicago), говорят which: Which city do you like more?",
+     "difficulty": 2
     }
    ]
   },
@@ -1997,7 +2102,7 @@
    "title_en": "'Will' and 'shall': Future",
    "source_slug": "will-and-shall",
    "title_ru": "Will и shall: будущее время",
-   "summary_ru": "Will выражает будущее действие и не меняет форму по лицам: I will, he will, they will. После will глагол стоит в начальной форме без to и без окончаний. В речи почти всегда используют сокращения: I'll, we'll, he'll. Отрицание — will not, сокращённо won't: He won't come tomorrow. Вопрос строится перестановкой: Will you help me? Will часто используется для решений, принятых прямо сейчас, обещаний и предположений о будущем. Shall в американской речи почти не звучит: предлагая помощь, говорят Should I…? или Do you want me to…?, а Shall I…? воспринимается как формальный или британский вариант.",
+   "summary_ru": "Will выражает будущее действие и не меняет форму по лицам: I will, he will, they will. После will глагол стоит в начальной форме без to и без окончаний. В речи почти всегда используют сокращения: I'll, we'll, he'll. Отрицание — will not, сокращённо won't: She won't be late. Вопрос строится перестановкой: Will you help me? Will часто используется для решений, принятых прямо сейчас, обещаний и предположений о будущем. Shall в американской речи почти не звучит: предлагая помощь, говорят Should I…? или Do you want me to…?, а Shall I…? воспринимается как формальный или британский вариант.",
    "forms": [
     "will + глагол без to (для всех лиц)",
     "Сокращение: I'll, he'll, we'll",
@@ -2006,13 +2111,13 @@
     "Should I ...? / Do you want me to ...? — предложение помощи (Shall I ...? — формально)"
    ],
    "examples": [
-    "I will send the report tomorrow.",
+    "I'll text you after the game.",
     "She will not be at the office on Friday.",
     "Will you help me with this bug?",
     "Do you want me to call a taxi?",
     "We'll finish the task next week."
    ],
-   "ru_interference": "Русское «буду звонить» тянет за собой лишнее to, а вместо будущего часто ставят настоящее: неверно «I will to call you» и «Tomorrow I call you» → верно «I will call you» и «I will call you tomorrow».",
+   "ru_interference": "Русское «буду звонить» тянет за собой лишнее to, а вместо будущего часто ставят настоящее: неверно «They will to buy a new car» и «Next year we move to Texas» → верно «They will buy a new car» и «We will move to Texas next year».",
    "prerequisites": [],
    "exercises": [
     {

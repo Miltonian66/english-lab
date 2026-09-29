@@ -129,7 +129,9 @@
             "This cannot be his car.",
             "It cannot be his car.",
             "This car can't be his.",
-            "That can't be his car."
+            "That can't be his car.",
+            "That car can't be his.",
+            "That car cannot be his."
           ],
           "explanation_ru": "Уверенность в том, что что-то невозможно, выражается через can't + be.",
           "difficulty": 3
@@ -164,7 +166,7 @@
         {
           "id": "b1_modal_verbs_of_deduction_11",
           "kind": "cloze",
-          "prompt": "Someone ate the whole cake while we were out. It ___ (can't / be) the dog, because the kitchen door was closed. It ___ (must / be) my brother: he was home alone all afternoon. He ___ (might / share) it with his friends, of course. Whoever it was, they ___ (must / be) very hungry!",
+          "prompt": "Use modal verbs. Someone ate the whole cake while we were out. It ___ (be — точно нет) the dog, because the kitchen door was closed. It ___ (be — почти наверняка) my brother: he was home alone all afternoon. He ___ (share — возможно) it with his friends, of course. Whoever it was, they ___ (be — наверняка) very hungry!",
           "gaps": [
             [
               "can't have been",
@@ -183,7 +185,7 @@
               "must have been"
             ]
           ],
-          "explanation_ru": "Выводы о прошлом строятся как модальный глагол + have + третья форма: can't have been (точно нет), must have been (почти наверняка), might have shared (возможно).",
+          "explanation_ru": "Выводы о прошлом строятся как модальный глагол + have + третья форма, а сам модальный глагол выбирается по степени уверенности: точно нет — can't have been, почти наверняка — must have been, возможно — might (may, could) have shared. Mustn't для вывода не используется: он выражает запрет.",
           "difficulty": 3
         },
         {
@@ -282,10 +284,10 @@
             "don't talk",
             "not talk",
             "not to talk",
-            "no talk"
+            "not talking"
           ],
           "correct_index": 1,
-          "explanation_ru": "Отрицание после would rather образуется словом not перед инфинитивом без to.",
+          "explanation_ru": "Отрицание после would rather образуется словом not перед инфинитивом без to: I'd rather not talk. Вспомогательный do здесь не нужен, а ни to, ни форма на -ing после would rather не ставятся.",
           "difficulty": 2
         },
         {
@@ -450,24 +452,25 @@
             "went to bed",
             "went to the bed",
             "went to a bed",
-            "went in the bed"
+            "went to beds"
           ],
           "correct_index": 0,
-          "explanation_ru": "Go to bed — устойчивое сочетание: речь о сне, а не о конкретной кровати, поэтому артикль не нужен. Так же go to school, go to work, go home.",
-          "difficulty": 1
+          "explanation_ru": "Go to bed — устойчивое сочетание: речь о сне, а не о конкретной кровати, поэтому артикль не нужен, и bed не меняется, даже если спать идут несколько человек (went to beds — ошибка). Так же go to school, go to work, go home.",
+          "difficulty": 1,
+          "diagnostic": false
         },
         {
           "id": "b1_an_the_no_article_03",
           "kind": "choice",
-          "prompt": "In general, ___ cats sleep about sixteen hours a day.",
+          "prompt": "Don't worry if your kitten naps all day: ___ cats sleep about sixteen hours a day.",
           "options": [
-            "The",
-            "A",
-            "An",
+            "the",
+            "a",
+            "an",
             "no article"
           ],
           "correct_index": 3,
-          "explanation_ru": "Речь о кошках вообще, а не о конкретных, поэтому множественное число идёт без артикля.",
+          "explanation_ru": "Речь о кошках вообще, а не о конкретных, поэтому множественное число идёт без артикля: cats sleep. The cats значило бы определённых кошек, о которых уже шла речь, а a и an с множественным числом невозможны.",
           "difficulty": 3
         },
         {
@@ -579,6 +582,24 @@
           "explanation_ru": "Речь о молоке и детях вообще, поэтому неисчисляемое milk и множественное children идут без артикля. The сделал бы их конкретными («это молоко», «эти дети»), а a с неисчисляемым существительным невозможен.",
           "difficulty": 1,
           "diagnostic": true
+        },
+        {
+          "id": "b1_an_the_no_article_12",
+          "kind": "transform",
+          "prompt": "Переведи на английский, используя by: «Я обычно езжу на работу на автобусе».",
+          "answer": "I usually go to work by bus.",
+          "accept": [
+            "I usually get to work by bus.",
+            "I usually travel to work by bus.",
+            "I usually commute to work by bus.",
+            "Usually I go to work by bus.",
+            "Usually I get to work by bus.",
+            "Usually I travel to work by bus.",
+            "Usually I commute to work by bus."
+          ],
+          "explanation_ru": "Go to work и by bus — устойчивые сочетания без артикля: речь о привычном месте и о способе передвижения, а не о конкретном автобусе. The появляется, только когда автобус конкретный: I took the bus to work. Go to the work by the bus — ошибка в обоих местах.",
+          "difficulty": 2,
+          "diagnostic": false
         }
       ]
     },
@@ -633,10 +654,10 @@
             "fixed",
             "was fixed",
             "was fixing",
-            "has fix"
+            "has been fixed"
           ],
           "correct_index": 1,
-          "explanation_ru": "Подлежащее испытывает действие, а маркер last week требует прошедшего времени: was fixed.",
+          "explanation_ru": "Подлежащее испытывает действие, а маркер last week требует прошедшего времени: was fixed. Has been fixed с last week не сочетается, а fixed и was fixing — активные формы: баг будто сам что-то чинил.",
           "difficulty": 1
         },
         {
@@ -704,7 +725,8 @@
           "prompt": "Rewrite in the passive: They built this church in 1850.",
           "answer": "This church was built in 1850.",
           "accept": [
-            "This church was built by them in 1850."
+            "This church was built by them in 1850.",
+            "In 1850 this church was built."
           ],
           "explanation_ru": "Дополнение this church становится подлежащим, а неважный исполнитель they просто исчезает.",
           "difficulty": 3
@@ -717,10 +739,10 @@
             "have it cut",
             "have cut it",
             "cut it",
-            "am cut it"
+            "make a haircut"
           ],
           "correct_index": 0,
-          "explanation_ru": "Когда работу за нас делает другой человек, используется have + объект + третья форма: have it cut. Have cut it — present perfect («я сам подстриг»), а cut it значит, что стрижёшься сам.",
+          "explanation_ru": "Когда работу за нас делает другой человек, используется have + объект + третья форма: have it cut. Have cut it — present perfect («я сам подстриг»), cut it значит, что стрижёшься сам, а make a haircut — калька с русского «делаю стрижку»: по-английски get a haircut или have my hair cut.",
           "difficulty": 2,
           "diagnostic": true
         },
@@ -918,7 +940,8 @@
             ],
             [
               "has already been moved",
-              "was already moved"
+              "was already moved",
+              "has been moved already"
             ],
             [
               "will be installed",
@@ -968,6 +991,43 @@
           ],
           "explanation_ru": "Рейс отменили, а не он сам что-то отменил, поэтому пассив, а связь с настоящим даёт present perfect: has been canceled. Been обязательно стоит между has и третьей формой.",
           "difficulty": 2
+        },
+        {
+          "id": "b1_passive_verb_forms_13",
+          "kind": "choice",
+          "prompt": "Omar was upset about ___ from the team before the final.",
+          "options": [
+            "being dropped",
+            "be dropped",
+            "to be dropped",
+            "dropping"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "После предлога нужна форма на -ing, а раз действие совершают над Омаром, она пассивная: being dropped. Dropping значило бы, что он сам кого-то исключил, а инфинитив после предлога about не ставится.",
+          "difficulty": 2
+        },
+        {
+          "id": "b1_passive_verb_forms_14",
+          "kind": "gap",
+          "prompt": "All the rooms have ___ (clean) before the guests arrive.",
+          "answer": "to be cleaned",
+          "accept": [
+            "to get cleaned"
+          ],
+          "explanation_ru": "После have to нужен пассивный инфинитив to be + третья форма: комнаты не убирают себя сами — их должны убрать. To clean сделал бы комнаты исполнителем действия.",
+          "difficulty": 2
+        },
+        {
+          "id": "b1_passive_verb_forms_15",
+          "kind": "transform",
+          "prompt": "Rewrite in the passive: Nobody wants people to forget them.",
+          "answer": "Nobody wants to be forgotten.",
+          "accept": [
+            "No one wants to be forgotten.",
+            "Nobody wants to be forgotten by people."
+          ],
+          "explanation_ru": "Пассивный инфинитив — to be + третья форма: want to be forgotten. Подлежащее само испытывает действие, поэтому want to forget (самому забыть) не подходит, а being forgotten после want не ставится.",
+          "difficulty": 3
         }
       ]
     },
@@ -1142,6 +1202,21 @@
           "accept": [],
           "explanation_ru": "Give up значит «сдаваться, бросать попытки»; в этом значении дополнение не нужно.",
           "difficulty": 1
+        },
+        {
+          "id": "b1_b1_phrasal_verbs_1_exercises_explanation_12",
+          "kind": "transform",
+          "prompt": "Rewrite using a phrasal verb with 'give': I stopped eating sugar last year.",
+          "answer": "I gave up eating sugar last year.",
+          "accept": [
+            "I gave up sugar last year.",
+            "Last year I gave up eating sugar.",
+            "Last year I gave up sugar.",
+            "I gave sugar up last year.",
+            "Last year I gave sugar up."
+          ],
+          "explanation_ru": "Give up — «бросить привычку»; глагол после него стоит в форме на -ing: gave up eating sugar (или просто gave up sugar). Gave up to eat — ошибка: инфинитив после give up не ставится.",
+          "difficulty": 2
         }
       ]
     },
@@ -1309,6 +1384,19 @@
           "explanation_ru": "Get on (well) with somebody — ладить с кем-то: без with фразовый глагол не присоединяет человека. Остальные фразы верны: call off — отменить, break down — сломаться, turn up — появиться.",
           "difficulty": 2,
           "diagnostic": true
+        },
+        {
+          "id": "b1_b1_phrasal_verbs_2_exercises_and_explanation_11",
+          "kind": "transform",
+          "prompt": "Rewrite using a phrasal verb with 'turn': Maria refused the invitation because she was too tired.",
+          "answer": "Maria turned down the invitation because she was too tired.",
+          "accept": [
+            "Maria turned the invitation down because she was too tired.",
+            "Because she was too tired, Maria turned down the invitation.",
+            "Because she was too tired, Maria turned the invitation down."
+          ],
+          "explanation_ru": "Turn down — «отклонить» предложение, приглашение или просьбу; существительное ставится после частицы или между частями: turned down the invitation или turned the invitation down. Turn off значит «выключить», а turn up — «появиться».",
+          "difficulty": 2
         }
       ]
     },
@@ -1476,6 +1564,15 @@
           ],
           "explanation_ru": "Set up — основать дело, deal with — заниматься проблемой, put up with — терпеть, мириться, sort out — уладить: everything is sorted out. Во фразовом глаголе время меняет только первое слово: put up with (прошедшее совпадает с настоящим), sorted out.",
           "difficulty": 3
+        },
+        {
+          "id": "b1_b1_phrasal_verbs_3_exercises_and_explanation_11",
+          "kind": "transform",
+          "prompt": "Rewrite using a phrasal verb with 'put': My sister has to tolerate a very noisy roommate.",
+          "answer": "My sister has to put up with a very noisy roommate.",
+          "accept": [],
+          "explanation_ru": "Put up with — «терпеть, мириться» — состоит из трёх частей, и все они обязательны: put up with a noisy roommate. Без with смысл меняется: put somebody up — «приютить у себя».",
+          "difficulty": 2
         }
       ]
     },
@@ -1510,15 +1607,15 @@
         {
           "id": "b1_during_for_while_01",
           "kind": "choice",
-          "prompt": "I fell asleep ___ the movie.",
+          "prompt": "My phone was stolen ___ my stay in Lisbon.",
           "options": [
             "during",
-            "for",
             "while",
+            "for",
             "since"
           ],
           "correct_index": 0,
-          "explanation_ru": "После пропуска стоит существительное и речь о том, когда это случилось, поэтому нужен during.",
+          "explanation_ru": "My stay — существительное, а не предложение, поэтому нужен предлог during («во время»). While требует подлежащего и сказуемого (while I was staying in Lisbon), for называет длительность, а since — точку отсчёта.",
           "difficulty": 1
         },
         {
@@ -1533,7 +1630,8 @@
           ],
           "correct_index": 1,
           "explanation_ru": "Здесь названа длительность ожидания, а «как долго» вводит только for.",
-          "difficulty": 1
+          "difficulty": 1,
+          "diagnostic": false
         },
         {
           "id": "b1_during_for_while_03",
@@ -1602,8 +1700,10 @@
           "kind": "correct",
           "prompt": "During I was reading, my brother was playing games.",
           "answer": "While I was reading, my brother was playing games.",
-          "accept": [],
-          "explanation_ru": "Перед целым предложением нужен союз while; during может стоять только перед существительным.",
+          "accept": [
+            "When I was reading, my brother was playing games."
+          ],
+          "explanation_ru": "Перед целым предложением нужен союз while (или when); during может стоять только перед существительным: during the film.",
           "difficulty": 3
         },
         {
@@ -1644,6 +1744,21 @@
           "explanation_ru": "Перед целым предложением (I was waiting) ставится while, а during — только перед существительным. Wait требует предлога for: wait for the bus.",
           "difficulty": 2,
           "diagnostic": true
+        },
+        {
+          "id": "b1_during_for_while_11",
+          "kind": "transform",
+          "prompt": "Rewrite using 'during': While we were having dinner, the lights went out.",
+          "answer": "During dinner, the lights went out.",
+          "accept": [
+            "The lights went out during dinner.",
+            "During our dinner, the lights went out.",
+            "The lights went out during our dinner.",
+            "During the dinner, the lights went out.",
+            "The lights went out during the dinner."
+          ],
+          "explanation_ru": "During — предлог, после него идёт существительное, а не целое предложение: while we were having dinner превращается в during dinner. During we were having dinner — ошибка: подлежащее и сказуемое после during не ставятся.",
+          "difficulty": 3
         }
       ]
     },
@@ -1679,7 +1794,7 @@
         {
           "id": "b1_for_since_from_difference_01",
           "kind": "choice",
-          "prompt": "I have known him ___ ten years.",
+          "prompt": "We haven't had a real vacation ___ ages.",
           "options": [
             "since",
             "for",
@@ -1687,7 +1802,7 @@
             "during"
           ],
           "correct_index": 1,
-          "explanation_ru": "Десять лет — это длительность, а не точка, поэтому нужен for.",
+          "explanation_ru": "Ages здесь — длительность («целую вечность»), а не момент, поэтому for ages. Since ages — частая ошибка: since ставится только перед точкой отсчёта (since June, since 2020).",
           "difficulty": 1
         },
         {
@@ -1716,7 +1831,8 @@
           ],
           "correct_index": 0,
           "explanation_ru": "После from идёт парный предлог to, который задаёт конец промежутка.",
-          "difficulty": 1
+          "difficulty": 1,
+          "diagnostic": false
         },
         {
           "id": "b1_for_since_from_difference_04",
@@ -1767,13 +1883,12 @@
         {
           "id": "b1_for_since_from_difference_08",
           "kind": "correct",
-          "prompt": "I live in this city from 2015.",
-          "answer": "I have lived in this city since 2015.",
+          "prompt": "She plays in the city orchestra from 2018.",
+          "answer": "She has played in the city orchestra since 2018.",
           "accept": [
-            "I've lived in this city since 2015.",
-            "I have been living in this city since 2015."
+            "She has been playing in the city orchestra since 2018."
           ],
-          "explanation_ru": "Начало периода, который длится до сих пор, вводится через since и требует перфектного времени.",
+          "explanation_ru": "Начало периода, который длится до сих пор, вводится через since и требует перфекта: has played (has been playing) since 2018. Настоящее время с from — калька с русского «играет с 2018 года».",
           "difficulty": 3
         },
         {
@@ -1834,7 +1949,8 @@
           "prompt": "Переведи на английский: «Мы знакомы с 2015 года».",
           "answer": "We have known each other since 2015.",
           "accept": [
-            "We have been acquainted since 2015."
+            "We have been acquainted since 2015.",
+            "We have known one another since 2015."
           ],
           "explanation_ru": "Состояние, которое началось в прошлом и длится до сих пор, — present perfect: have known. Know не ставится в continuous, а точка отсчёта (2015) вводится через since. Русское «мы знакомы» — это we have known each other, а не we are familiar.",
           "difficulty": 2
@@ -1882,7 +1998,8 @@
           ],
           "correct_index": 1,
           "explanation_ru": "Перед исчисляемым существительным в единственном числе в значении «ещё один» ставится another.",
-          "difficulty": 1
+          "difficulty": 1,
+          "diagnostic": false
         },
         {
           "id": "b1_another_other_others_the_other_the_others_02",
@@ -2000,10 +2117,10 @@
             "Please give me another week.",
             "Please give me other week.",
             "Please give me an other week.",
-            "Please give me one more other week."
+            "Please give me more one week."
           ],
           "correct_index": 0,
-          "explanation_ru": "«Ещё один» с исчисляемым в единственном числе — another, одним словом. Other перед единственным числом без артикля не стоит, а an other раздельно не пишут.",
+          "explanation_ru": "«Ещё один» с исчисляемым в единственном числе — another, одним словом (или one more week). Other перед единственным числом без артикля не стоит, an other раздельно не пишут, а more one — неверный порядок слов.",
           "difficulty": 1,
           "diagnostic": true
         },
@@ -2020,6 +2137,20 @@
           "correct_index": 3,
           "explanation_ru": "Сестёр ровно две, значит вторая — конкретная: the other is a doctor. Another значит «ещё один из многих» и подходит, только когда вариантов больше двух.",
           "difficulty": 3
+        },
+        {
+          "id": "b1_another_other_others_the_other_the_others_12",
+          "kind": "transform",
+          "prompt": "Переведи на английский, используя слово other в нужной форме: «Двое из нас остались, а остальные ушли домой».",
+          "answer": "Two of us stayed, and the others went home.",
+          "accept": [
+            "Two of us stayed, but the others went home.",
+            "Two of us stayed, while the others went home.",
+            "Two of us stayed, and the other people went home.",
+            "Two of us stayed, but the other people went home."
+          ],
+          "explanation_ru": "«Остальные» из известной группы без существительного — the others: the, потому что группа известна, и -s, потому что others заменяет other people. Others без the значило бы «какие-то другие люди», а the other — одного человека.",
+          "difficulty": 2
         }
       ]
     },
@@ -2056,15 +2187,15 @@
         {
           "id": "b1_reflexive_pronouns_myself_yourself_01",
           "kind": "choice",
-          "prompt": "Be careful with that knife. I cut ___ with it yesterday.",
+          "prompt": "A: Did Lucas like the summer camp?\nB: Yes, he really enjoyed ___ there.",
           "options": [
-            "me",
-            "myself",
-            "mine",
-            "my"
+            "himself",
+            "him",
+            "hisself",
+            "themselves"
           ],
-          "correct_index": 1,
-          "explanation_ru": "Подлежащее и дополнение — одно лицо, поэтому нужна возвратная форма myself.",
+          "correct_index": 0,
+          "explanation_ru": "Enjoy в значении «хорошо провести время» требует возвратного местоимения: he enjoyed himself. Enjoyed him значило бы «ему понравился кто-то другой», themselves не совпадает с he по числу, а формы hisself нет.",
           "difficulty": 1
         },
         {
@@ -2112,7 +2243,7 @@
         {
           "id": "b1_reflexive_pronouns_myself_yourself_05",
           "kind": "choice",
-          "prompt": "How are you today? I ___ much better now, thanks.",
+          "prompt": "A: How are you today?\nB: I ___ much better now, thanks.",
           "options": [
             "feel myself",
             "feel",
@@ -2158,10 +2289,10 @@
             "Help yourself!",
             "Treat yourself!",
             "Help you!",
-            "Take yourself!"
+            "Help yourselves!"
           ],
           "correct_index": 0,
-          "explanation_ru": "Help yourself — устойчивое приглашение брать еду самому. Treat yourself значит «побалуй себя», а без возвратного местоимения или с take фраза теряет смысл.",
+          "explanation_ru": "Help yourself — устойчивое приглашение брать еду самому; гостю одному — yourself, нескольким — help yourselves. Treat yourself значит «побалуй себя», а help you без возвратного местоимения — «помочь тебе».",
           "difficulty": 1,
           "diagnostic": true
         },
@@ -2189,6 +2320,40 @@
           "correct_index": 3,
           "explanation_ru": "Meet в значении «встретиться» не требует возвратного местоимения: Let's meet at the cafe. Русское -ся не переводится через ourselves. В остальных фразах возвратная форма нужна: teach yourself, enjoy yourself, hurt yourself.",
           "difficulty": 3
+        },
+        {
+          "id": "b1_reflexive_pronouns_myself_yourself_12",
+          "kind": "cloze",
+          "prompt": "Last weekend my roommate Mia and I painted our apartment ___ (сами). We helped ___ (друг другу) move the heavy furniture. On the second day I fell off the ladder, but luckily I didn't hurt ___. In the evening we ordered pizza and really enjoyed ___.",
+          "gaps": [
+            [
+              "ourselves",
+              "by ourselves"
+            ],
+            [
+              "each other",
+              "one another"
+            ],
+            [
+              "myself"
+            ],
+            [
+              "ourselves"
+            ]
+          ],
+          "explanation_ru": "Ourselves в конце фразы — «сами, без чужой помощи» (by ourselves — то же самое). Взаимное действие «друг другу» — each other, а не ourselves. Hurt и enjoy о себе требуют возвратного местоимения: didn't hurt myself, enjoyed ourselves («хорошо провели время»).",
+          "difficulty": 2
+        },
+        {
+          "id": "b1_reflexive_pronouns_myself_yourself_13",
+          "kind": "order",
+          "prompt": "my grandmother / herself / taught / to speak / Spanish / at seventy / .",
+          "answer": "My grandmother taught herself to speak Spanish at seventy.",
+          "accept": [
+            "At seventy, my grandmother taught herself to speak Spanish."
+          ],
+          "explanation_ru": "Teach yourself — «научиться самому, без учителя»: подлежащее и дополнение — одно лицо, поэтому herself стоит сразу после taught, а дальше идёт to-инфинитив: taught herself to speak.",
+          "difficulty": 2
         }
       ]
     }

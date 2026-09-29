@@ -52,10 +52,10 @@
             "all",
             "all of",
             "every",
-            "whole"
+            "everyone"
           ],
           "correct_index": 0,
-          "explanation_ru": "Между подлежащим-местоимением и смысловым глаголом ставится голое all без of; every и whole так использовать нельзя.",
+          "explanation_ru": "Между подлежащим-местоимением и смысловым глаголом ставится голое all без of: We all agreed. Every и everyone так не используются: «мы все» — we all, а не we everyone.",
           "difficulty": 1
         },
         {
@@ -164,6 +164,17 @@
           "explanation_ru": "Both ставится после подлежащего-местоимения и перед смысловым глаголом: We both love. Both we — калька русского порядка слов, а глагол после we остаётся без -s.",
           "difficulty": 1,
           "diagnostic": true
+        },
+        {
+          "id": "b1_all_both_11",
+          "kind": "transform",
+          "prompt": "Rewrite as one sentence with 'both ... and': My brother likes jazz. My sister likes jazz too.",
+          "answer": "Both my brother and my sister like jazz.",
+          "accept": [
+            "Both my brother and sister like jazz."
+          ],
+          "explanation_ru": "Both ... and соединяет два подлежащих, поэтому глагол после них стоит во множественном числе: Both my brother and my sister like jazz. Likes с -s — ошибка: подлежащих два, а too в конце уже не нужно.",
+          "difficulty": 2
         }
       ]
     },
@@ -228,7 +239,7 @@
         {
           "id": "b1_any_no_none_03",
           "kind": "choice",
-          "prompt": "How many fish did you catch yesterday? ___.",
+          "prompt": "A: How many fish did you catch yesterday?\nB: ___. They just weren't biting.",
           "options": [
             "None",
             "No",
@@ -292,7 +303,9 @@
           "kind": "transform",
           "prompt": "Rewrite with 'no': There aren't any free rooms today.",
           "answer": "There are no free rooms today.",
-          "accept": [],
+          "accept": [
+            "Today there are no free rooms."
+          ],
           "explanation_ru": "При замене not any на no глагол становится утвердительным: aren't any → are no.",
           "difficulty": 3
         },
@@ -340,6 +353,27 @@
           "explanation_ru": "«Никто из» группы — none of: None of us knew. Nobody и no не сочетаются с of, а второе отрицание (didn't) после none ставить нельзя.",
           "difficulty": 2,
           "diagnostic": true
+        },
+        {
+          "id": "b1_any_no_none_12",
+          "kind": "cloze",
+          "prompt": "I wanted to buy tickets for the concert, but there were ___ tickets left on the website. I called the box office, but they didn't have ___ either. The woman told me that ___ (никто) of the people with tickets had asked for a refund. I have ___ idea what to do now!",
+          "gaps": [
+            [
+              "no"
+            ],
+            [
+              "any"
+            ],
+            [
+              "none"
+            ],
+            [
+              "no"
+            ]
+          ],
+          "explanation_ru": "No ставится перед существительным при утвердительном глаголе: there were no tickets, I have no idea. Any — при отрицательном глаголе: didn't have any (здесь без существительного). None — без существительного или перед of: none of the people. Двух отрицаний в одном предложении не бывает: didn't have none — ошибка.",
+          "difficulty": 2
         }
       ]
     },
@@ -411,7 +445,7 @@
             "All"
           ],
           "correct_index": 0,
-          "explanation_ru": "Вторая часть предложения говорит, что оба лифта сломаны, поэтому нужно neither; both of и all of требуют глагола are.",
+          "explanation_ru": "Вторая часть предложения говорит, что оба лифта сломаны, поэтому нужно neither — «ни один из двух». Either значит «любой из двух» и противоречит словам both of them are broken, а both и all требуют глагола are.",
           "difficulty": 2
         },
         {
@@ -466,7 +500,8 @@
           "answer": "Neither the printer nor the scanner works.",
           "accept": [
             "Neither the printer nor the scanner work.",
-            "Neither the printer nor the scanner is working."
+            "Neither the printer nor the scanner is working.",
+            "Neither the printer nor the scanner are working."
           ],
           "explanation_ru": "Два отрицания сворачиваются в конструкцию neither ... nor с утвердительным глаголом.",
           "difficulty": 3
@@ -649,7 +684,8 @@
           "prompt": "Rewrite in the negative with 'much': We have a lot of free space in the car.",
           "answer": "We don't have much free space in the car.",
           "accept": [
-            "We do not have much free space in the car."
+            "We do not have much free space in the car.",
+            "We haven't got much free space in the car."
           ],
           "explanation_ru": "В отрицательном предложении a lot of обычно заменяется на much с неисчисляемым существительным.",
           "difficulty": 3
@@ -746,6 +782,31 @@
           "explanation_ru": "Furniture — неисчисляемое («мебель» как масса), поэтому much furniture, без -s и без артикля a. Отдельный предмет — a piece of furniture.",
           "difficulty": 2,
           "diagnostic": true
+        },
+        {
+          "id": "b1_much_many_lot_little_no_15",
+          "kind": "choice",
+          "prompt": "The news about the new bridge ___ really good for our town.",
+          "options": [
+            "is",
+            "are",
+            "were",
+            "have been"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "News — неисчисляемое существительное, несмотря на -s на конце, поэтому глагол стоит в единственном числе: The news is good. Русское «новости» во множественном числе тянет к are.",
+          "difficulty": 2
+        },
+        {
+          "id": "b1_much_many_lot_little_no_16",
+          "kind": "correct",
+          "prompt": "We bought some new equipments for the gym.",
+          "answer": "We bought some new equipment for the gym.",
+          "accept": [
+            "We bought new equipment for the gym."
+          ],
+          "explanation_ru": "Equipment — неисчисляемое, у него нет множественного числа: some new equipment, а один предмет — a piece of equipment. Так же ведут себя news, advice, furniture и information.",
+          "difficulty": 2
         }
       ]
     },
@@ -946,9 +1007,12 @@
             "Nor have I",
             "Me neither",
             "I haven't either",
-            "I haven't read it either"
+            "I haven't read it either",
+            "Me either",
+            "I haven't yet either",
+            "I haven't read it yet either"
           ],
-          "explanation_ru": "Согласие с отрицанием — Neither (Nor) + вспомогательный из реплики + подлежащее: haven't → Neither have I. Разговорные варианты — Me neither и I haven't either. So have I и Me too соглашаются только с утверждением.",
+          "explanation_ru": "Согласие с отрицанием — Neither (Nor) + вспомогательный из реплики + подлежащее: haven't → Neither have I. Разговорные варианты — Me neither (в американской речи и Me either) и I haven't either. So have I и Me too соглашаются только с утверждением.",
           "difficulty": 2
         }
       ]
@@ -1139,6 +1203,49 @@
           ],
           "explanation_ru": "Определительное придаточное who lives next door стоит сразу после слова, к которому относится (the woman), и запятыми не выделяется: без него непонятно, о какой женщине речь.",
           "difficulty": 2
+        },
+        {
+          "id": "b1_defining_and_non_defining_relative_clauses_13",
+          "kind": "choice",
+          "prompt": "Lucas forgot my birthday again, ___.",
+          "options": [
+            "which really upset me",
+            "that really upset me",
+            "what really upset me",
+            "it really upset me"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Which после запятой может относиться ко всему предыдущему предложению: забыл про день рождения — и это меня расстроило. That после запятой не ставится, what не может относиться к сказанному раньше, а it без союза превращает фразу в два предложения, склеенных запятой.",
+          "difficulty": 2
+        },
+        {
+          "id": "b1_defining_and_non_defining_relative_clauses_14",
+          "kind": "transform",
+          "prompt": "Join the sentences with 'which': The train was two hours late. This meant that we missed the wedding.",
+          "answer": "The train was two hours late, which meant that we missed the wedding.",
+          "accept": [
+            "The train was two hours late, which meant we missed the wedding."
+          ],
+          "explanation_ru": "Which после запятой заменяет всё предыдущее предложение, и this больше не нужно: …late, which meant… That и what в такой роли не используются, а запятая перед which обязательна.",
+          "difficulty": 3
+        },
+        {
+          "id": "b1_defining_and_non_defining_relative_clauses_15",
+          "kind": "gap",
+          "prompt": "The friend with ___ I traveled to Peru is getting married next month.",
+          "answer": "whom",
+          "accept": [],
+          "explanation_ru": "После предлога о человеке ставится whom, о предмете — which: with whom, in which. Who и that сразу после предлога не употребляются; в разговоре предлог обычно уходит в конец: the friend I traveled with.",
+          "difficulty": 3
+        },
+        {
+          "id": "b1_defining_and_non_defining_relative_clauses_16",
+          "kind": "order",
+          "prompt": "in which / the town / I grew up / is / very small / .",
+          "answer": "The town in which I grew up is very small.",
+          "accept": [],
+          "explanation_ru": "Предлог может стоять перед which: the town in which I grew up (это формальнее, чем the town I grew up in). Придаточное стоит сразу после the town, а сказуемое главного предложения is very small — после придаточного.",
+          "difficulty": 2
         }
       ]
     },
@@ -1223,10 +1330,10 @@
             "not to change",
             "not change",
             "don't change",
-            "to not changing"
+            "not changing"
           ],
           "correct_index": 0,
-          "explanation_ru": "Запрет в косвенной речи передаётся как tell somebody not to do something.",
+          "explanation_ru": "Запрет в косвенной речи передаётся как tell somebody not to do something: not стоит перед to. Без to (not change, don't change) и с формой на -ing конструкция не работает.",
           "difficulty": 2
         },
         {
@@ -1256,9 +1363,12 @@
           "answer": "He told me that he was busy.",
           "accept": [
             "He said that he was busy.",
-            "He said to me that he was busy."
+            "He said to me that he was busy.",
+            "He told me he was busy.",
+            "He said he was busy.",
+            "He said to me he was busy."
           ],
-          "explanation_ru": "Say не берёт дополнение без предлога: нужно told me или said to me.",
+          "explanation_ru": "Say не берёт дополнение без предлога: нужно told me или said to me (или просто said). That после say и tell можно опустить: He told me he was busy.",
           "difficulty": 2
         },
         {
@@ -1267,7 +1377,8 @@
           "prompt": "She asked me where do I work.",
           "answer": "She asked me where I worked.",
           "accept": [
-            "She asked me where I work."
+            "She asked me where I work.",
+            "She asked where I worked."
           ],
           "explanation_ru": "В косвенном вопросе прямой порядок слов и нет вспомогательного do.",
           "difficulty": 3
@@ -1358,7 +1469,14 @@
             "Carla advised her brother that he should see a doctor.",
             "Carla advised her brother to go to a doctor.",
             "Carla advised her brother to go see a doctor.",
-            "Carla advised her brother to go to the doctor."
+            "Carla advised her brother to go to the doctor.",
+            "Carla advised her brother to see the doctor.",
+            "Carla advised her brother to go see the doctor.",
+            "Carla advised her brother to go and see a doctor.",
+            "Carla advised her brother to go and see the doctor.",
+            "Carla advised her brother to visit a doctor.",
+            "Carla advised her brother to visit the doctor.",
+            "Carla advised her brother that he should see the doctor."
           ],
           "explanation_ru": "Совет в пересказе — advise + дополнение + to + V1: advised her brother to see. Should при этом исчезает: его смысл уже в глаголе advise.",
           "difficulty": 3
@@ -1507,7 +1625,9 @@
           "accept": [
             "Unless you have a ticket, you cannot enter.",
             "You can't enter unless you have a ticket.",
-            "You cannot enter unless you have a ticket."
+            "You cannot enter unless you have a ticket.",
+            "Unless you have got a ticket, you can't enter.",
+            "You can't enter unless you have got a ticket."
           ],
           "explanation_ru": "Unless уже значит 'если не', поэтому отрицание из придаточного убирается.",
           "difficulty": 3
@@ -1812,7 +1932,8 @@
           ],
           "correct_index": 0,
           "explanation_ru": "Есть точное время в прошлом (yesterday), поэтому нужен past simple, а present perfect с такой датой невозможен.",
-          "difficulty": 1
+          "difficulty": 1,
+          "diagnostic": false
         },
         {
           "id": "b1_past_simple_present_perfect_02",
@@ -1959,9 +2080,35 @@
           "accept": [
             "I have never been in Japan.",
             "I have never visited Japan.",
-            "I have never been to Japan before."
+            "I have never been to Japan before.",
+            "I have never visited Japan before.",
+            "I have never been in Japan before."
           ],
           "explanation_ru": "Опыт за всю жизнь без указания времени — present perfect: I have never been to Japan. Русское прошедшее «не был» тянет к I was never, но past simple требует конкретного момента в прошлом.",
+          "difficulty": 2,
+          "diagnostic": false
+        },
+        {
+          "id": "b1_past_simple_present_perfect_13",
+          "kind": "choice",
+          "prompt": "A: Where's Kenji? I need to talk to him.\nB: He's ___ to the bank. He'll be back in twenty minutes.",
+          "options": [
+            "gone",
+            "been",
+            "went",
+            "go"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Has gone to — ушёл туда и ещё не вернулся, поэтому его нет на месте. Has been to значило бы, что он уже сходил и вернулся, а это противоречит he'll be back. Went и go после has не ставятся.",
+          "difficulty": 2
+        },
+        {
+          "id": "b1_past_simple_present_perfect_14",
+          "kind": "gap",
+          "prompt": "A: You look so relaxed!\nB: I've just ___ to the spa. I got back an hour ago.",
+          "answer": "been",
+          "accept": [],
+          "explanation_ru": "Have been to — сходил и вернулся: I got back an hour ago. Have gone to значило бы, что человек всё ещё там, а он стоит перед собеседником.",
           "difficulty": 2
         }
       ]
@@ -2142,6 +2289,21 @@
           "correct_index": 2,
           "explanation_ru": "Игра началась раньше нашего прихода, поэтому нужен past perfect: the game had already started. В остальных фразах времена выбраны верно.",
           "difficulty": 3
+        },
+        {
+          "id": "b1_past_simple_past_continuous_past_perfect_12",
+          "kind": "transform",
+          "prompt": "Rewrite as one sentence with 'when' and the past perfect: The guests left. Then Nora got home from work.",
+          "answer": "When Nora got home from work, the guests had already left.",
+          "accept": [
+            "When Nora got home from work, the guests had left.",
+            "When Nora got home from work, the guests had left already.",
+            "The guests had already left when Nora got home from work.",
+            "The guests had left when Nora got home from work.",
+            "The guests had left already when Nora got home from work."
+          ],
+          "explanation_ru": "Гости ушли раньше, чем Нора пришла, поэтому более раннее действие стоит в past perfect (had left), а позднее — в past simple (got home). When Nora got home, the guests left значило бы, что гости ушли в момент её прихода.",
+          "difficulty": 3
         }
       ]
     },
@@ -2225,10 +2387,10 @@
             "have had",
             "have been having",
             "are having",
-            "have has"
+            "have"
           ],
           "correct_index": 0,
-          "explanation_ru": "Have в значении 'иметь' — глагол состояния, поэтому continuous невозможен, нужна форма have had.",
+          "explanation_ru": "Have в значении «иметь» — глагол состояния, поэтому continuous невозможен, а период for two years требует перфекта: have had. We have this car for two years — калька русского настоящего «у нас эта машина два года».",
           "difficulty": 2
         },
         {
@@ -2294,7 +2456,7 @@
         {
           "id": "b1_present_perfect_simple_present_perfect_continuous_10",
           "kind": "cloze",
-          "prompt": "Diego ___ (learn) Japanese for two years. So far he ___ (read) three novels in Japanese. Recently he ___ (watch) a lot of anime to practice his listening. He ___ (visit) Japan twice, and he wants to go again.",
+          "prompt": "Diego ___ (learn) Japanese for two years. So far he ___ (read) three novels in Japanese. Lately he ___ (watch) a lot of anime to practice his listening. He ___ (visit) Japan twice, and he wants to go again.",
           "gaps": [
             [
               "has been learning"
@@ -2310,7 +2472,7 @@
               "has visited"
             ]
           ],
-          "explanation_ru": "Процесс, который длится до сих пор (for two years, recently), — present perfect continuous; количество законченных результатов (three novels, twice) — present perfect simple.",
+          "explanation_ru": "Процесс, который длится до сих пор (for two years, lately), — present perfect continuous; количество законченных результатов (three novels, twice) — present perfect simple.",
           "difficulty": 3
         },
         {
@@ -2327,6 +2489,28 @@
           "explanation_ru": "Действие началось час назад и всё ещё идёт — present perfect continuous с for: I've been trying for an hour. Русское настоящее «пытаюсь» не переводится present simple или continuous, а since ставится перед моментом, а не перед длительностью.",
           "difficulty": 2,
           "diagnostic": true
+        },
+        {
+          "id": "b1_present_perfect_simple_present_perfect_continuous_12",
+          "kind": "transform",
+          "prompt": "Переведи на английский: «Я жду тебя уже сорок минут!»",
+          "answer": "I've been waiting for you for forty minutes!",
+          "accept": [
+            "I have been waiting for you for forty minutes now!",
+            "I have been waiting for you for forty minutes already!",
+            "I have been waiting for you for 40 minutes!",
+            "I have been waiting for you for 40 minutes now!",
+            "I have been waiting for you for 40 minutes already!",
+            "I have waited for you for forty minutes!",
+            "I have waited for you for forty minutes now!",
+            "I have waited for you for forty minutes already!",
+            "I have waited for you for 40 minutes!",
+            "I have waited for you for 40 minutes now!",
+            "I have waited for you for 40 minutes already!",
+            "I have been waiting forty minutes for you!"
+          ],
+          "explanation_ru": "Действие началось сорок минут назад и всё ещё идёт — present perfect continuous с for: I've been waiting for forty minutes. Русское настоящее «жду» тянет к I am waiting или I wait, но при длительности до настоящего момента нужен перфект; wait к тому же требует for перед тем, кого ждут.",
+          "difficulty": 3
         }
       ]
     }

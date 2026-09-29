@@ -184,7 +184,7 @@
             "This coat belongs to my sister.",
             "The kids are growing so fast these days.",
             "Look, it's snowing!",
-            "I'm owning two cars and a motorbike."
+            "I'm owning two cars and a motorcycle."
           ],
           "correct_index": 3,
           "explanation_ru": "Own — глагол обладания, в continuous он не употребляется: I own two cars. Grow в значении изменения и snow в момент речи стоят в continuous верно.",
@@ -322,7 +322,10 @@
             "After she had finished the report, she went home.",
             "She went home when she had finished the report.",
             "She went home after she had finished the report.",
-            "She had finished the report before she went home."
+            "She had finished the report before she went home.",
+            "By the time she went home, she had finished the report.",
+            "By the time she went home, she had already finished the report.",
+            "She had already finished the report when she went home."
           ],
           "explanation_ru": "Более раннее действие ставится в past perfect, а последующее остаётся в past simple.",
           "difficulty": 3
@@ -408,9 +411,24 @@
             "Who have you invited to your birthday?",
             "Who did you invite to the birthday party?",
             "Who did you invite for your birthday?",
-            "Who have you invited for your birthday?"
+            "Who have you invited for your birthday?",
+            "Who did you invite to the party?",
+            "Who did you invite to your party?",
+            "Who have you invited to the birthday party?",
+            "Who have you invited to the party?",
+            "Who have you invited to your party?",
+            "Whom did you invite to the birthday party?",
+            "Whom did you invite to the party?",
+            "Whom did you invite to your party?",
+            "Whom did you invite for your birthday?",
+            "Whom have you invited to your birthday party?",
+            "Whom have you invited to your birthday?",
+            "Whom have you invited to the birthday party?",
+            "Whom have you invited to the party?",
+            "Whom have you invited to your party?",
+            "Whom have you invited for your birthday?"
           ],
-          "explanation_ru": "«Кого» — дополнение, поэтому нужен вспомогательный did и обратный порядок: Who did you invite? Без did (Who invited you?) получится вопрос к подлежащему — «Кто пригласил тебя?».",
+          "explanation_ru": "«Кого» — дополнение, поэтому нужен вспомогательный глагол и обратный порядок: Who did you invite? (или Who have you invited?, если важен результат к празднику). Без вспомогательного (Who invited you?) получится вопрос к подлежащему — «Кто пригласил тебя?».",
           "difficulty": 2
         }
       ]
@@ -505,20 +523,24 @@
         {
           "id": "b1_usually_used_to_be_used_to_get_used_to_05",
           "kind": "gap",
-          "prompt": "The office was very noisy at first, but I soon ___ (get used to) it.",
+          "prompt": "The office was very noisy at first, but I soon ___ (привыкнуть) it.",
           "answer": "got used to",
-          "accept": [],
-          "explanation_ru": "Речь о процессе привыкания, который завершился в прошлом, поэтому get принимает форму got.",
+          "accept": [
+            "became used to"
+          ],
+          "explanation_ru": "Речь о процессе привыкания, который завершился в прошлом, — get used to в прошедшем времени: got used to it. Used to без get значило бы «раньше регулярно», а was used to описывает уже готовое состояние, а не момент привыкания.",
           "difficulty": 2
         },
         {
           "id": "b1_usually_used_to_be_used_to_get_used_to_06",
           "kind": "gap",
-          "prompt": "We ___ (use to) have breakfast together every Sunday, but now we don't.",
+          "prompt": "We ___ (раньше регулярно) have breakfast together every Sunday, but now we don't.",
           "answer": "used to",
-          "accept": [],
-          "explanation_ru": "В утвердительном предложении прошлая привычка выражается формой used to.",
-          "difficulty": 1
+          "accept": [
+            "would"
+          ],
+          "explanation_ru": "Прошлая привычка, которой больше нет, — used to + инфинитив: we used to have. Для повторяющегося действия подходит и would. Were used to значило бы «привыкли» и потребовало бы формы на -ing.",
+          "difficulty": 2
         },
         {
           "id": "b1_usually_used_to_be_used_to_get_used_to_07",
@@ -535,7 +557,9 @@
           "prompt": "Rewrite with used to: We lived near the sea, but we don't now.",
           "answer": "We used to live near the sea.",
           "accept": [
-            "We used to live near the sea, but we don't now."
+            "We used to live near the sea, but we don't now.",
+            "We used to live near the sea, but we don't anymore.",
+            "We used to live near the sea, but now we don't."
           ],
           "explanation_ru": "Used to само показывает, что действие относится только к прошлому, поэтому вторая часть необязательна.",
           "difficulty": 3
@@ -572,23 +596,25 @@
         {
           "id": "b1_usually_used_to_be_used_to_get_used_to_11",
           "kind": "cloze",
-          "prompt": "When Carlos moved from Brazil to Chicago, he ___ (not / be used to) the cold. In Brazil he ___ (use to) go to the beach every weekend. After two winters, he finally ___ (get used to) the snow. Now he ___ (usually / wear) three layers of clothes and never complains.",
+          "prompt": "When Carlos moved from Brazil to Chicago, he ___ (не привык) the cold. In Brazil he ___ (раньше регулярно) go to the beach every weekend. After two winters, he finally ___ (привык) the snow. Now he ___ (wear — обычно) three layers of clothes and never complains.",
           "gaps": [
             [
               "wasn't used to",
               "was not used to"
             ],
             [
-              "used to"
+              "used to",
+              "would"
             ],
             [
-              "got used to"
+              "got used to",
+              "became used to"
             ],
             [
               "usually wears"
             ]
           ],
-          "explanation_ru": "Be used to — «быть привычным» (wasn't used to the cold), used to + инфинитив — прошлая привычка, get used to — процесс привыкания (got used to — привык в итоге), а нынешняя регулярность — usually + present simple.",
+          "explanation_ru": "Be used to — «быть привычным», это состояние: wasn't used to the cold. Used to + инфинитив (или would) — прошлая привычка, которой больше нет. Get used to — процесс привыкания: got used to — «в итоге привык». Нынешняя регулярность — usually + present simple: usually wears.",
           "difficulty": 3
         },
         {
@@ -605,6 +631,28 @@
           "explanation_ru": "«Привыкла» о нынешнем состоянии — be used to, где to — предлог, поэтому после него форма на -ing: I'm used to cooking. I used to cook значило бы «раньше готовила».",
           "difficulty": 2,
           "diagnostic": true
+        },
+        {
+          "id": "b1_usually_used_to_be_used_to_get_used_to_13",
+          "kind": "transform",
+          "prompt": "Make a question with 'used to': You played the piano when you were a kid.",
+          "answer": "Did you use to play the piano when you were a kid?",
+          "accept": [
+            "When you were a kid, did you use to play the piano?"
+          ],
+          "explanation_ru": "В вопросе с used to работает вспомогательный did, а сам глагол теряет -d: Did you use to play? Did you used to — частая ошибка: прошедшее время уже выражено словом did.",
+          "difficulty": 2,
+          "diagnostic": false
+        },
+        {
+          "id": "b1_usually_used_to_be_used_to_get_used_to_14",
+          "kind": "order",
+          "prompt": "you / did / use to / live / in the city center / ?",
+          "answer": "Did you use to live in the city center?",
+          "accept": [],
+          "explanation_ru": "Вопрос о прошлой привычке строится через did: Did + подлежащее + use to + инфинитив. После did форма use to пишется без -d.",
+          "difficulty": 2,
+          "diagnostic": false
         }
       ]
     },
@@ -651,7 +699,8 @@
           ],
           "correct_index": 2,
           "explanation_ru": "После enjoy всегда идёт только форма на -ing.",
-          "difficulty": 1
+          "difficulty": 1,
+          "diagnostic": false
         },
         {
           "id": "b1_gerund_or_infinitive_do_to_do_doing_02",
@@ -810,6 +859,98 @@
           "accept": [],
           "explanation_ru": "How about (What about) + V-ing — предложение что-то сделать: How about renting bikes? About — предлог, поэтому дальше форма на -ing, как и во второй части: riding.",
           "difficulty": 1
+        },
+        {
+          "id": "b1_gerund_or_infinitive_do_to_do_doing_14",
+          "kind": "choice",
+          "prompt": "After three hours on the road, we stopped ___ a coffee at a gas station.",
+          "options": [
+            "to get",
+            "getting",
+            "get",
+            "for getting"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Stop + to-инфинитив — остановиться, чтобы сделать что-то другое: stopped to get a coffee. Stop + -ing значит «перестать»: stopped getting coffee — «перестали брать кофе». Голый инфинитив и for + -ing в значении цели после stop не ставятся.",
+          "difficulty": 2
+        },
+        {
+          "id": "b1_gerund_or_infinitive_do_to_do_doing_15",
+          "kind": "cloze",
+          "prompt": "My grandfather stopped ___ (smoke) twenty years ago, and he says it was the best decision of his life. He still remembers ___ (throw) his last pack of cigarettes into a lake. Now he always tells me: \"Remember ___ (take) care of your health.\" And he never forgets ___ (call) me on my birthday.",
+          "gaps": [
+            [
+              "smoking"
+            ],
+            [
+              "throwing",
+              "having thrown"
+            ],
+            [
+              "to take"
+            ],
+            [
+              "to call"
+            ]
+          ],
+          "explanation_ru": "Stop + -ing — бросить занятие (stopped smoking), а stop + to — остановиться, чтобы что-то сделать. Remember + -ing — помнить то, что уже было (remembers throwing). Remember + to и forget + to — не забыть сделать то, что ещё предстоит (remember to take, never forgets to call).",
+          "difficulty": 3
+        },
+        {
+          "id": "b1_gerund_or_infinitive_do_to_do_doing_16",
+          "kind": "choice",
+          "prompt": "I clearly remember ___ the door this morning, but now it's open!",
+          "options": [
+            "locking",
+            "to lock",
+            "lock",
+            "locked"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Remember + -ing — помнить действие, которое уже произошло: I remember locking the door («помню, как запирал»). Remember to lock — «не забыть запереть» — говорит о том, что ещё предстоит, и не вяжется с this morning.",
+          "difficulty": 2
+        },
+        {
+          "id": "b1_gerund_or_infinitive_do_to_do_doing_17",
+          "kind": "transform",
+          "prompt": "Rewrite using 'let': Our teacher allowed us to leave early.",
+          "answer": "Our teacher let us leave early.",
+          "accept": [],
+          "explanation_ru": "Let + дополнение + инфинитив без to: let us leave. Allow, наоборот, требует to: allowed us to leave. Let us to leave — ошибка: частица to после let не ставится.",
+          "difficulty": 2
+        },
+        {
+          "id": "b1_gerund_or_infinitive_do_to_do_doing_18",
+          "kind": "transform",
+          "prompt": "Переведи на английский: «Мама не разрешала мне смотреть телевизор после ужина».",
+          "answer": "My mom didn't let me watch TV after dinner.",
+          "accept": [
+            "My mom didn't let me watch television after dinner.",
+            "My mom didn't allow me to watch TV after dinner.",
+            "My mom didn't allow me to watch television after dinner.",
+            "My mom wouldn't let me watch TV after dinner.",
+            "My mom wouldn't let me watch television after dinner.",
+            "My mom wouldn't allow me to watch TV after dinner.",
+            "My mom wouldn't allow me to watch television after dinner.",
+            "My mother didn't let me watch TV after dinner.",
+            "My mother didn't let me watch television after dinner.",
+            "My mother didn't allow me to watch TV after dinner.",
+            "My mother didn't allow me to watch television after dinner.",
+            "My mother wouldn't let me watch TV after dinner.",
+            "My mother wouldn't let me watch television after dinner.",
+            "My mother wouldn't allow me to watch TV after dinner.",
+            "My mother wouldn't allow me to watch television after dinner.",
+            "Mom didn't let me watch TV after dinner.",
+            "Mom didn't let me watch television after dinner.",
+            "Mom didn't allow me to watch TV after dinner.",
+            "Mom didn't allow me to watch television after dinner.",
+            "Mom wouldn't let me watch TV after dinner.",
+            "Mom wouldn't let me watch television after dinner.",
+            "Mom wouldn't allow me to watch TV after dinner.",
+            "Mom wouldn't allow me to watch television after dinner."
+          ],
+          "explanation_ru": "«Не разрешала» — didn't let me + инфинитив без to или didn't allow me + to-инфинитив (wouldn't let me — «никак не разрешала»). Смешивать конструкции нельзя: let me to watch и allow me watch — ошибки.",
+          "difficulty": 3
         }
       ]
     },
@@ -847,15 +988,15 @@
         {
           "id": "b1_verb_preposition_01",
           "kind": "choice",
-          "prompt": "Sorry, I can't hear you. I am ___ music with headphones.",
+          "prompt": "Could you ___ how this coffee machine works?",
           "options": [
-            "listening",
-            "listening to",
-            "listening on",
-            "hearing to"
+            "explain me",
+            "explain to me",
+            "explain me about",
+            "say me"
           ],
           "correct_index": 1,
-          "explanation_ru": "Listen всегда требует предлога to перед дополнением.",
+          "explanation_ru": "Explain требует предлога to перед человеком: explain to me, explain it to her. Русское «объясни мне» без предлога тянет к explain me, но так не говорят; explain me about — та же калька, а say вообще не берёт человека без to: say to me или tell me.",
           "difficulty": 1
         },
         {
@@ -912,10 +1053,10 @@
         {
           "id": "b1_verb_preposition_06",
           "kind": "gap",
-          "prompt": "He insisted ___ (preposition + pay) for dinner.",
+          "prompt": "He insisted ___ (pay) for dinner.",
           "answer": "on paying",
           "accept": [],
-          "explanation_ru": "Insist управляет предлогом on, а после предлога глагол принимает форму на -ing.",
+          "explanation_ru": "Insist управляет предлогом on, а после предлога глагол принимает форму на -ing: insisted on paying. Insisted to pay — калька с русского «настоял, чтобы заплатить».",
           "difficulty": 2
         },
         {

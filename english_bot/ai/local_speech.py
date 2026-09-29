@@ -39,6 +39,7 @@ DEFAULT_MALE_VOICES = ("en_US-ryan-medium", "en_US-joe-medium")
 # Пауза между репликами диалога: без неё собеседники сливаются.
 TURN_PAUSE_SECONDS = 0.35
 SLOW_LENGTH_SCALE = 1.45  # растягивает слоги, не меняя высоту голоса
+GENTLE_LENGTH_SCALE = 1.25  # аудирование A1–A2: на десятую часть спокойнее, слоги не растянуты
 # piper обрывает звук ровно на последнем сэмпле: без полей слово в Telegram
 # щёлкает на старте и рубится на конце. Десятая доля секунды это снимает.
 PAD_SECONDS = 0.1
@@ -171,12 +172,15 @@ class LocalSpeaker:
             self._voices[name] = PiperVoice.load(path)
         return self._voices[name]
 
-    def _wav(self, text: str, voice_name: str | None = None, slow: bool = False) -> bytes:
+    def _wav(
+        self, text: str, voice_name: str | None = None, slow: bool = False, gentle: bool = False
+    ) -> bytes:
         voice = self._load(voice_name)
         try:
             from piper.config import SynthesisConfig
 
-            config = SynthesisConfig(length_scale=SLOW_LENGTH_SCALE) if slow else None
+            scale = SLOW_LENGTH_SCALE if slow else GENTLE_LENGTH_SCALE if gentle else None
+            config = SynthesisConfig(length_scale=scale) if scale else None
             buffer = io.BytesIO()
             with wave.open(buffer, "wb") as wav_file:
                 voice.synthesize_wav(text, wav_file, syn_config=config)
@@ -198,17 +202,18 @@ class LocalSpeaker:
         destination.chmod(0o600)
         return destination
 
-    def synthesize(self, text: str, slow: bool = False) -> Path:
+    def synthesize(self, text: str, slow: bool = False, gentle: bool = False) -> Path:
         cleaned = text.strip()
         if not cleaned:
             raise SpeechError("нечего озвучивать")
         cleaned = cleaned[:900]
 
         self.cache_dir.mkdir(parents=True, exist_ok=True)
-        destination = self.cache_dir / cache_name(cleaned, f"piper-{self.voice}", slow)
+        tag = f"piper-{self.voice}" + ("-gentle" if gentle else "")
+        destination = self.cache_dir / cache_name(cleaned, tag, slow)
         if destination.exists() and destination.stat().st_size > 0:
             return destination
-        return self._store(destination, self._wav(cleaned, slow=slow))
+        return self._store(destination, self._wav(cleaned, slow=slow, gentle=gentle))
 
     def _pools(self) -> dict[str, list[str]]:
         def present(names: tuple[str, ...]) -> list[str]:
@@ -217,7 +222,10 @@ class LocalSpeaker:
         return {"female": present(self.female_voices), "male": present(self.male_voices)}
 
     def synthesize_dialogue(
-        self, lines: list[tuple[str, str]], genders: dict[str, str] | None = None
+        self,
+        lines: list[tuple[str, str]],
+        genders: dict[str, str] | None = None,
+        gentle: bool = False,
     ) -> Path:
         """Реплики голосами по полу говорящих (`tts.assign_voices`).
 
@@ -232,14 +240,14 @@ class LocalSpeaker:
 
         self.cache_dir.mkdir(parents=True, exist_ok=True)
         tag = "piper-dialogue-" + ",".join(f"{name}={voice}" for name, voice in voices.items())
-        destination = self.cache_dir / cache_name(script, tag, False)
+        destination = self.cache_dir / cache_name(script, tag + ("-gentle" if gentle else ""), False)
         if destination.exists() and destination.stat().st_size > 0:
             return destination
 
         params = None
         frames: list[bytes] = []
         for index, (speaker, text) in enumerate(turns):
-            with wave.open(io.BytesIO(self._wav(text, voices[speaker])), "rb") as source:
+            with wave.open(io.BytesIO(self._wav(text, voices[speaker], gentle=gentle)), "rb") as source:
                 current = (source.getnchannels(), source.getsampwidth(), source.getframerate())
                 if params is None:
                     params = current

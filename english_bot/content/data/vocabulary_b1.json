@@ -425,13 +425,16 @@
       "word": "pressure",
       "pos": "noun",
       "ipa_us": "/ˈprɛʃɚ/",
-      "translation_ru": "давление, нагрузка",
+      "translation_ru": "давление (стресс, спешка)",
       "example_en": "I don't work well under pressure late in the evening.",
       "collocations": [
         "under pressure",
         "put pressure on someone"
       ],
-      "topic": "feelings"
+      "topic": "feelings",
+      "accept": [
+        "stress"
+      ]
     },
     {
       "id": "b1_v_mood",

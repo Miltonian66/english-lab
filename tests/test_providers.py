@@ -614,6 +614,22 @@ class LocalSpeechTests(unittest.TestCase):
         self.assertNotEqual(normal, slow)
         self.assertGreater(slow.stat().st_size, normal.stat().st_size)
 
+    def test_gentle_pace_is_between_normal_and_slow(self) -> None:
+        """Аудирование A1–A2: спокойнее обычного, но не по слогам."""
+        import av
+
+        def seconds(path: Path) -> float:
+            with av.open(str(path)) as container:
+                return container.duration / 1_000_000
+
+        text = "We usually have dinner at seven, but today we are going to a restaurant."
+        normal = self.speaker.synthesize(text)
+        gentle = self.speaker.synthesize(text, gentle=True)
+        slow = self.speaker.synthesize(text, slow=True)
+        self.assertNotEqual(normal, gentle)
+        self.assertLess(seconds(normal), seconds(gentle))
+        self.assertLess(seconds(gentle), seconds(slow))
+
     def test_round_trip_synthesis_then_transcription(self) -> None:
         spoken = "I have lived here for five years."
         audio = self.speaker.synthesize(spoken)

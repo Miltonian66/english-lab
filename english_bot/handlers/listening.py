@@ -19,6 +19,9 @@ from ..telegram_api import TelegramError, inline
 LOGGER = logging.getLogger(__name__)
 LETTERS = "ABCD"
 MAX_PLAYS = 3
+# A1–A2 слышат запись спокойнее обычного темпа: на беглой речи начинающий
+# теряет слова, которые знает, и задание проверяет уже не понимание.
+GENTLE_LEVELS = frozenset({"A1", "A2"})
 
 # Внутренние метки банка по-английски; в русском интерфейсе они читаются как
 # отладочный вывод.
@@ -62,10 +65,11 @@ def _listening_job(job: Job, ctx: Context, ticket: Ticket, code: str) -> None:
     try:
         # Диалог звучит двумя голосами: одним голосом собеседников не различить.
         turns = split_dialogue(task.script_en)
+        gentle = task.level in GENTLE_LEVELS
         audio: Path = (
-            ctx.speaker.synthesize_dialogue(turns, dict(task.speakers))
+            ctx.speaker.synthesize_dialogue(turns, dict(task.speakers), gentle=gentle)
             if turns and hasattr(ctx.speaker, "synthesize_dialogue")
-            else ctx.speaker.synthesize(spoken_text(task.script_en))
+            else ctx.speaker.synthesize(spoken_text(task.script_en), gentle=gentle)
         )
     except SpeechError as exc:
         LOGGER.warning("Не удалось подготовить аудирование: %s", exc)

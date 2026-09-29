@@ -1963,7 +1963,10 @@
         "in case it rains",
         "in case something goes wrong"
       ],
-      "topic": "food"
+      "topic": "food",
+      "accept": [
+        "just in case"
+      ]
     },
     {
       "id": "b1_v_so_that",

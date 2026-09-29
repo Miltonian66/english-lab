@@ -1030,7 +1030,8 @@
       ],
       "topic": "money",
       "accept": [
-        "track"
+        "track",
+        "monitor"
       ]
     },
     {

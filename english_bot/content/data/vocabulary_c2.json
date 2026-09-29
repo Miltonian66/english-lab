@@ -325,8 +325,7 @@
       "topic": "people",
       "accept": [
         "nitpick",
-        "squabble",
-        "argue"
+        "squabble"
       ]
     },
     {
@@ -2334,9 +2333,7 @@
       ],
       "topic": "people",
       "accept": [
-        "squabble",
-        "argue",
-        "fight"
+        "squabble"
       ]
     },
     {

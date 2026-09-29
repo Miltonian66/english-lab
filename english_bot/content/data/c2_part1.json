@@ -749,7 +749,22 @@
             "We finally sold the car. It had been sitting in the garage for years. The buyer, a retired mechanic, said it was in great shape.",
             "We finally sold the car — it had been sitting in the garage for years. The buyer, a retired mechanic, said it was in great shape.",
             "We finally sold the car—it had been sitting in the garage for years. The buyer, a retired mechanic, said it was in great shape.",
-            "We finally sold the car, which had been sitting in the garage for years. The buyer, a retired mechanic, said it was in great shape."
+            "We finally sold the car, which had been sitting in the garage for years. The buyer, a retired mechanic, said it was in great shape.",
+            "We finally sold the car; it had been sitting in the garage for years. The buyer — a retired mechanic — said it was in great shape.",
+            "We finally sold the car; it had been sitting in the garage for years. The buyer—a retired mechanic—said it was in great shape.",
+            "We finally sold the car; it had been sitting in the garage for years. The buyer (a retired mechanic) said it was in great shape.",
+            "We finally sold the car. It had been sitting in the garage for years. The buyer — a retired mechanic — said it was in great shape.",
+            "We finally sold the car. It had been sitting in the garage for years. The buyer—a retired mechanic—said it was in great shape.",
+            "We finally sold the car. It had been sitting in the garage for years. The buyer (a retired mechanic) said it was in great shape.",
+            "We finally sold the car — it had been sitting in the garage for years. The buyer — a retired mechanic — said it was in great shape.",
+            "We finally sold the car — it had been sitting in the garage for years. The buyer—a retired mechanic—said it was in great shape.",
+            "We finally sold the car — it had been sitting in the garage for years. The buyer (a retired mechanic) said it was in great shape.",
+            "We finally sold the car—it had been sitting in the garage for years. The buyer — a retired mechanic — said it was in great shape.",
+            "We finally sold the car—it had been sitting in the garage for years. The buyer—a retired mechanic—said it was in great shape.",
+            "We finally sold the car—it had been sitting in the garage for years. The buyer (a retired mechanic) said it was in great shape.",
+            "We finally sold the car, which had been sitting in the garage for years. The buyer — a retired mechanic — said it was in great shape.",
+            "We finally sold the car, which had been sitting in the garage for years. The buyer—a retired mechanic—said it was in great shape.",
+            "We finally sold the car, which had been sitting in the garage for years. The buyer (a retired mechanic) said it was in great shape."
           ],
           "explanation_ru": "Два самостоятельных предложения нельзя склеить запятой: нужна точка с запятой, точка или тире (the car; it had been…), либо придаточное (the car, which had been…). Приложение a retired mechanic выделяется запятыми с обеих сторон: без второй запятой оно не отделено от сказуемого said.",
           "difficulty": 3
@@ -2235,8 +2250,7 @@
               "However",
               "Nevertheless",
               "That said",
-              "Nonetheless",
-              "Still"
+              "Nonetheless"
             ],
             [
               "caution"

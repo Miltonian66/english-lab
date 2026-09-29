@@ -682,7 +682,7 @@
           "correct_index": 0,
           "explanation_ru": "После обстоятельства места полная инверсия (At the end of the garden stood an old shed) бывает только с существительным-подлежащим, несущим новую информацию. Местоимение it — уже известное, в конец оно не уходит: At the end of the garden it stood. Did it stand и was it standing — инверсия после отрицательных наречий, к обстоятельству места она не относится.",
           "difficulty": 2,
-          "diagnostic": true
+          "diagnostic": false
         },
         {
           "id": "c2_fronting_and_marked_word_order_for_information_structure_03",

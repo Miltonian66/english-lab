@@ -679,7 +679,8 @@
           "answer": "Her brother, who works in Seattle, is visiting us next week.",
           "accept": [
             "Her brother — who works in Seattle — is visiting us next week.",
-            "Her brother (who works in Seattle) is visiting us next week."
+            "Her brother (who works in Seattle) is visiting us next week.",
+            "Her brother—who works in Seattle—is visiting us next week."
           ],
           "explanation_ru": "Описательное придаточное выделяется запятыми с обеих сторон; без них оно читается как определительное — будто братьев несколько.",
           "difficulty": 3
@@ -717,7 +718,7 @@
         {
           "id": "c2_punctuation_with_grammatical_consequences_11",
           "kind": "cloze",
-          "prompt": "Every summer the ___ (the Garcia family — possessive) garden hosts our street party. This year Ana and ___ (Luis — the shed belongs to both of them) old shed became a bar, and the ___ (children — possessive) games took over the lawn. After a ___ (well / deserve) rest in the fall, the Garcias plan to have their old sofa ___ (covered again — make the meaning clear) before next year's party.",
+          "prompt": "Every summer the ___ (Garcia — the whole family; plural possessive) garden hosts our street party. This year Ana and ___ (Luis — the shed belongs to both of them) old shed became a bar, and the ___ (children — possessive) games took over the lawn. After a ___ (well / deserve) rest in the fall, the Garcias plan to have their old sofa ___ (covered again — make the meaning clear) before next year's party.",
           "gaps": [
             [
               "Garcias'"
@@ -855,7 +856,11 @@
             "The pier's destruction",
             "The old pier's destruction",
             "Its destruction",
-            "This destruction"
+            "This destruction",
+            "The destruction of the pier by the storm",
+            "The destruction of the old pier by the storm",
+            "The storm's destruction of the pier",
+            "The storm's destruction of the old pier"
           ],
           "explanation_ru": "Новое первого предложения (шторм разрушил пирс) становится темой второго через отглагольное существительное: the destruction of the pier (или its destruction). Абзац связывается без повтора глагола, а подлежащее сразу отсылает к уже известному.",
           "difficulty": 2
@@ -1809,9 +1814,11 @@
           "accept": [
             "On the way home, she paid a brief visit to her grandmother.",
             "She paid her grandmother a brief visit on the way home.",
-            "She paid a brief visit to her grandmother on the way home."
+            "She paid a brief visit to her grandmother on the way home.",
+            "On the way home, she briefly paid her grandmother a visit.",
+            "On the way home, she briefly paid a visit to her grandmother."
           ],
-          "explanation_ru": "Pay с ослабленным значением закреплён за visit, attention, a compliment, tribute: pay someone a visit или pay a visit to someone — как русское «нанести визит». Наречие briefly перед существительным превращается в прилагательное brief. Do a visit — калька с «сделать».",
+          "explanation_ru": "Pay с ослабленным значением закреплён за visit, attention, a compliment, tribute: pay someone a visit или pay a visit to someone — как русское «нанести визит». Наречие briefly перед существительным превращается в прилагательное brief (можно оставить и наречие: briefly paid her grandmother a visit). Do a visit — калька с «сделать».",
           "difficulty": 2
         }
       ]
@@ -2018,7 +2025,7 @@
             "The committee shot down every one of her arguments quickly.",
             "The committee quickly shot every one of her arguments down."
           ],
-          "explanation_ru": "Спор в английском описывают словами войны: доводы атакуют, защищают и сбивают — shoot down an argument (idea, proposal) значит резко отвергнуть. Прошедшее — shot down; при длинном дополнении частица down остаётся рядом с глаголом.",
+          "explanation_ru": "Спор в английском описывают словами войны: доводы атакуют, защищают и сбивают — shoot down an argument (idea, proposal) значит резко отвергнуть. Прошедшее — shot down; при длинном дополнении частицу down обычно ставят сразу после глагола: shot down every one of her arguments.",
           "difficulty": 2
         }
       ]
@@ -2127,7 +2134,9 @@
             "It is widely agreed",
             "It is widely considered",
             "It has been widely argued",
-            "It has been widely suggested"
+            "It has been widely suggested",
+            "It is widely argued",
+            "It is widely felt"
           ],
           "explanation_ru": "Академический регистр убирает расплывчатое «многие думают» и строит безличный пассив: It is widely believed (thought, held) that… Мнение подаётся как общее, без указания на конкретных людей; lots of people и think остаются в разговорной речи.",
           "difficulty": 2
@@ -2219,7 +2228,8 @@
               "indicate",
               "seem to suggest",
               "appear to suggest",
-              "appear to indicate"
+              "appear to indicate",
+              "seem to indicate"
             ],
             [
               "However",
@@ -2532,7 +2542,8 @@
           "answer": "The new stadium will cost in the region of $400 million.",
           "accept": [
             "The new stadium will cost something in the region of $400 million.",
-            "The new stadium will cost in the region of 400 million dollars."
+            "The new stadium will cost in the region of 400 million dollars.",
+            "The new stadium will cost somewhere in the region of $400 million."
           ],
           "explanation_ru": "In the region of + число — формальное «порядка, около»: так пишут в отчётах и новостях. About и around нейтральны, а or so и -ish — разговорные. Предлог in и артикль the в обороте обязательны: in region of и on the region of невозможны.",
           "difficulty": 2

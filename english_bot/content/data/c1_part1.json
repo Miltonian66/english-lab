@@ -661,7 +661,8 @@
             "The forecast promised sunshine, but even so, we packed our umbrellas.",
             "The forecast promised sunshine, but we packed our umbrellas anyway.",
             "Although the forecast promised sunshine, we packed our umbrellas.",
-            "Though the forecast promised sunshine, we packed our umbrellas."
+            "Though the forecast promised sunshine, we packed our umbrellas.",
+            "The forecast promised sunshine, yet we packed our umbrellas."
           ],
           "explanation_ru": "Even though — союз «хотя»: он вводит придаточное внутри одного предложения и отдельно не стоит. «И всё же» в начале новой части — после точки или точки с запятой — это even so, nevertheless, still или all the same; можно и вернуть союз на место: Although the forecast promised sunshine, we packed our umbrellas.",
           "difficulty": 2
@@ -669,7 +670,7 @@
         {
           "id": "c1_advanced_discourse_markers_and_cohesion_09",
           "kind": "cloze",
-          "prompt": "Many cities are experimenting with car-free centers. ___ (concession: 'it is true that'), shop owners often fear losing customers at first. ___ (contrast: 'despite this'), most studies show that the number of shoppers actually rises once the cars are gone. People linger longer and, ___ (adding a stronger point), they spend more. Out-of-town malls, ___ (comparing two different things), tend to lose visitors when parking becomes harder. ___ (rephrasing), people go where they feel comfortable, not just where they can park.",
+          "prompt": "Many cities are experimenting with car-free centers. ___ (concession: 'it is true that'), shop owners often fear losing customers at first. ___ (contrast: «и всё же»), most studies show that the number of shoppers actually rises once the cars are gone. People linger longer and, ___ (adding a stronger point), they spend more. Out-of-town malls, ___ (comparing two different things), tend to lose visitors when parking becomes harder. ___ (rephrasing), people go where they feel comfortable, not just where they can park.",
           "gaps": [
             [
               "Admittedly",
@@ -772,7 +773,9 @@
             "The salary is great. That said, we'd be far from family.",
             "Then again, we'd be far from family.",
             "Mind you, we'd be far from family.",
-            "That said, we'd be far from family."
+            "That said, we'd be far from family.",
+            "The salary is great; mind you, we'd be far from family.",
+            "The salary is great; that said, we'd be far from family."
           ],
           "explanation_ru": "Then again и mind you — разговорные маркеры второй мысли: говорящий называет довод «за» и тут же добавляет «против» (then again — «хотя, с другой стороны», mind you — «правда, учти»). That said годится и в речи, и в письме. «But on the other hand» в одной реплике тяжеловесно: маркеру не нужен второй союз.",
           "difficulty": 2
@@ -1179,7 +1182,10 @@
             "One could argue that the new bike lanes have failed to reduce traffic.",
             "One might argue that the new bike lanes have failed to reduce traffic.",
             "You could argue that the new bike lanes have failed to reduce traffic.",
-            "Some might argue that the new bike lanes have failed to reduce traffic."
+            "Some might argue that the new bike lanes have failed to reduce traffic.",
+            "It can be argued the new bike lanes have failed to reduce traffic.",
+            "It might be argued the new bike lanes have failed to reduce traffic.",
+            "It may be argued the new bike lanes have failed to reduce traffic."
           ],
           "explanation_ru": "Русское безличное «можно утверждать» переводят как it can argue, но it не может спорить. Безличное смягчение строится пассивом с модальным глаголом: It could be argued that… (или one could argue that…). Так автор выдвигает спорный тезис, не приписывая его себе.",
           "difficulty": 3
@@ -1728,7 +1734,8 @@
           "answer": "The council rejected the plan for a new stadium on the grounds that it would increase traffic.",
           "accept": [
             "The council rejected the plan for a new stadium on the grounds that the stadium would increase traffic.",
-            "On the grounds that it would increase traffic, the council rejected the plan for a new stadium."
+            "On the grounds that it would increase traffic, the council rejected the plan for a new stadium.",
+            "The plan for a new stadium was rejected by the council on the grounds that it would increase traffic."
           ],
           "explanation_ru": "On the grounds that + предложение — формальное «на том основании, что»: причина, которую официально называет сам субъект. В разговоре хватило бы because they said…; перед существительным берут on the grounds of: on the grounds of cost.",
           "difficulty": 2
@@ -1922,7 +1929,9 @@
             "It didn't dawn on me until later that she had been joking.",
             "It didn't dawn on me that she had been joking until later.",
             "Only later did it dawn on me that she had been joking.",
-            "Later it dawned on me that she had been joking."
+            "Later it dawned on me that she had been joking.",
+            "Not until later did it dawn on me that she had been joking.",
+            "It didn't dawn on me till later that she had been joking."
           ],
           "explanation_ru": "Dawn on строится безлично: It dawned on me that … — «до меня дошло». Подлежащее — it, а человек стоит после on. Отрицание с until из исходного сохраняется: It didn't dawn on me until later…; only later даёт тот же смысл, а с инверсией — Only later did it dawn on me….",
           "difficulty": 2

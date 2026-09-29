@@ -9,7 +9,7 @@
       "title_en": "The subjunctive and formulaic remnants: be that as it may, come what may",
       "source_slug": "",
       "title_ru": "Сослагательное наклонение и застывшие формулы",
-      "summary_ru": "Английское сослагательное наклонение почти исчезло, но на C2 важны его застывшие остатки. Мандативный субъюнктив после demand, insist, recommend (that he be told) разобран на уровне C1; здесь — формулы, которые не изменяются вообще: be that as it may («как бы то ни было»), come what may («будь что будет»), suffice it to say («достаточно сказать»), far be it from me to… («не мне…»), truth be told («по правде говоря»), so be it («так тому и быть»), if need be («если понадобится»), as it were («так сказать»), perish the thought («даже думать не хочу»), heaven forbid, woe betide, the powers that be. Субъюнктивное be живёт и в уступке: be it big or small, be they rich or poor — «будь то…». В этих формулах глагол стоит в голой форме, часто с инверсией, и заменить его на is, may, was или добавить -s нельзя: ошибка сразу слышна.",
+      "summary_ru": "Английское сослагательное наклонение почти исчезло, но на C2 важны его застывшие остатки. Мандативный субъюнктив после demand, insist, recommend (that he be told) разобран на уровне C1; здесь — формулы, которые не изменяются вообще: be that as it may («как бы то ни было»), come what may («будь что будет»), suffice it to say («достаточно сказать»), far be it from me to… («не мне…»), truth be told («по правде говоря»), so be it («так тому и быть»), if need be («если понадобится»), as it were («так сказать»), perish the thought («даже думать не хочу»), heaven forbid, woe betide, the powers that be. Субъюнктивное be живёт и в уступке: be it rain or shine, be they rich or poor — «будь то…». В этих формулах глагол стоит в голой форме, часто с инверсией, и заменить его на is, may, was или добавить -s нельзя: ошибка сразу слышна.",
       "forms": [
         "Be that as it may / Come what may / Suffice it to say (голая форма, инверсия)",
         "Far be it from me + to + инфинитив; Truth be told; So be it",
@@ -37,43 +37,43 @@
           "prompt": "___ told, I never liked the place.",
           "options": [
             "Truth be",
-            "Truth is being",
             "Truth to be",
-            "Truth was"
+            "Truth being",
+            "The truth be"
           ],
           "correct_index": 0,
-          "explanation_ru": "Truth be told — «по правде говоря»: застывшая формула с субъюнктивным be. Is being, to be и was её разрушают.",
+          "explanation_ru": "Truth be told — «по правде говоря»: застывшая формула с субъюнктивным be и без артикля. Truth to be told и truth being told — «починенные» по русской логике варианты, the truth be — лишний артикль: формулу не меняют.",
           "difficulty": 2,
           "diagnostic": true
         },
         {
           "id": "c2_the_subjunctive_and_formulaic_remnants_be_that_as_it_may_come_what_02",
           "kind": "choice",
-          "prompt": "A: Maybe we should invite your ex to the wedding.\nB: ___ the thought!",
+          "prompt": "A: Maybe we should invite your ex to the wedding.\nB: ___! I'd rather cancel the whole thing.",
           "options": [
-            "Perish",
-            "Perishing",
-            "Perished",
-            "Perishes"
+            "Perish the thought",
+            "Hold that thought",
+            "Food for thought",
+            "Great minds think alike"
           ],
           "correct_index": 0,
-          "explanation_ru": "Perish the thought — «даже думать об этом не хочу»: субъюнктив-пожелание в голой форме, без -s, -ing и прошедшего времени.",
+          "explanation_ru": "Perish the thought — «даже думать об этом не хочу»: застывшее пожелание в форме субъюнктива. Hold that thought — «погоди, запомни мысль», food for thought — «пища для размышлений», great minds think alike — «мы мыслим одинаково»: все выражения реальны, но ужас перед идеей передаёт только perish the thought.",
           "difficulty": 2,
           "diagnostic": true
         },
         {
           "id": "c2_the_subjunctive_and_formulaic_remnants_be_that_as_it_may_come_what_03",
           "kind": "choice",
-          "prompt": "___ what may, I'm running that marathon in October.",
+          "prompt": "My knee still hurts and the forecast says 95°F, but ___: I'm running that marathon in October.",
           "options": [
-            "Come",
-            "Comes",
-            "Came",
-            "Coming"
+            "come what may",
+            "heaven forbid",
+            "as it were",
+            "the powers that be"
           ],
           "correct_index": 0,
-          "explanation_ru": "В формуле come what may глагол сохраняет голую форму субъюнктива: ни -s, ни прошедшего времени, ни -ing здесь быть не может.",
-          "difficulty": 1,
+          "explanation_ru": "Come what may — «будь что будет, несмотря ни на что»: решимость вопреки обстоятельствам. Heaven forbid — «не дай бог», as it were — «так сказать», the powers that be — «власти предержащие»: формулы реальны, но по смыслу сюда встаёт только come what may.",
+          "difficulty": 2,
           "diagnostic": true
         },
         {
@@ -105,8 +105,10 @@
           "kind": "gap",
           "prompt": "We can always sleep in the car, ___ (= if necessary — a fixed formula with 'be').",
           "answer": "if need be",
-          "accept": [],
-          "explanation_ru": "If need be — «если понадобится»: need здесь существительное, а be — субъюнктив. If need is — ошибка; нейтральная замена — if necessary.",
+          "accept": [
+            "if needs be"
+          ],
+          "explanation_ru": "If need be — «если понадобится»: need здесь существительное, а be — субъюнктив. Британский вариант — if needs be; if need is — ошибка, а нейтральная замена — if necessary.",
           "difficulty": 2
         },
         {
@@ -377,9 +379,9 @@
       "title_en": "Irony, understatement and litotes",
       "source_slug": "",
       "title_ru": "Ирония, преуменьшение и литота",
-      "summary_ru": "Литота — утверждение через отрицание противоположного: not unreasonable значит «вполне разумно», not without merit — «не лишено смысла». Это не двойное отрицание в русском смысле, а способ сказать «да» осторожно и вежливо. Рядом стоят застывшие обороты с no: no small feat, no mean achievement, no accident. Преуменьшение (understatement) описывает катастрофу мягкими словами: less than ideal, a slight problem, not exactly a triumph. Ирония строится на контрасте между словами и очевидной ситуацией и в письменной речи распознаётся только по контексту. Важно помнить: в стандартном английском обычное двойное отрицание запрещено, а литота — исключение по форме, а не разрешение отрицать дважды.",
+      "summary_ru": "Литота — утверждение через отрицание противоположного: not unwelcome значит «вполне кстати», not without merit — «не лишено смысла». Это не двойное отрицание в русском смысле, а способ сказать «да» осторожно и вежливо. Рядом стоят застывшие обороты с no: no small feat, no mean achievement, no accident. Преуменьшение (understatement) описывает катастрофу мягкими словами: less than ideal, a slight problem, not exactly a triumph. Ирония строится на контрасте между словами и очевидной ситуацией и в письменной речи распознаётся только по контексту. Важно помнить: в стандартном английском обычное двойное отрицание запрещено, а литота — исключение по форме, а не разрешение отрицать дважды.",
       "forms": [
-        "not + un-/in-/im- + adjective (not unreasonable)",
+        "not + un-/in-/im- + adjective (not unwelcome)",
         "not exactly / not the most + adjective",
         "no small + noun / no mean + noun",
         "hardly / scarcely + noun phrase (hardly the outcome we wanted)",
@@ -388,9 +390,9 @@
       "examples": [
         "The renovation was not unsuccessful, but it cost a fortune.",
         "Losing our luggage on the first day was less than ideal.",
-        "Finishing a marathon in this heat is no mean feat.",
+        "Keeping the team together through the merger was no small task.",
         "The instructions are not exactly clear.",
-        "Their plan is not without merit, though the timeline is fantasy."
+        "The film is not without its charms."
       ],
       "ru_interference": "В русском двойное отрицание нормально, поэтому литоту и no путают с not: неверно «It is not small achievement» → верно «It is no small achievement»; а к «hardly» добавляют второе отрицание: неверно «It wasn't hardly a success». И наоборот, литоту «not unhelpful» читают как отрицание, хотя она означает «в общем-то полезно».",
       "prerequisites": [
@@ -401,16 +403,16 @@
         {
           "id": "c2_irony_understatement_and_litotes_01",
           "kind": "choice",
-          "prompt": "Getting the whole family to agree on a vacation spot was ___ small achievement.",
+          "prompt": "'Getting three rival vendors to sign a joint contract was no small achievement.' What does the speaker mean?",
           "options": [
-            "no",
-            "not",
-            "none",
-            "nor"
+            "It was a considerable achievement.",
+            "It was a very small achievement.",
+            "It was not really an achievement at all.",
+            "It was an achievement of doubtful value."
           ],
           "correct_index": 0,
-          "explanation_ru": "Перед существительным с прилагательным отрицание выражается словом no: no small achievement. Формы not, none и nor в этой позиции невозможны.",
-          "difficulty": 1,
+          "explanation_ru": "No small + существительное — литота: отрицание «маленького» даёт «весьма значительное». No здесь не «никакого», а способ сдержанно похвалить; сомнение или ирония в формуле не заложены.",
+          "difficulty": 2,
           "diagnostic": true
         },
         {
@@ -469,11 +471,13 @@
         {
           "id": "c2_irony_understatement_and_litotes_06",
           "kind": "gap",
-          "prompt": "Delays are not ___ (common) on this line; expect at least one a week.",
-          "answer": "uncommon",
-          "accept": [],
-          "explanation_ru": "Not uncommon означает «встречается нередко»; вторая часть предложения требует именно литоты.",
-          "difficulty": 1
+          "prompt": "Three failed deploys in one afternoon: it was ___ the smooth launch the team had promised. (one word; an understatement meaning 'not at all')",
+          "answer": "hardly",
+          "accept": [
+            "scarcely"
+          ],
+          "explanation_ru": "Hardly + именная группа — преуменьшение: «вряд ли это можно назвать гладким запуском», то есть провал. Второе отрицание не нужно: wasn't hardly — двойное отрицание, а not at all перед the smooth launch звучит прямо, без иронии.",
+          "difficulty": 2
         },
         {
           "id": "c2_irony_understatement_and_litotes_07",
@@ -554,14 +558,14 @@
       "title_en": "Punctuation with grammatical consequences",
       "source_slug": "",
       "title_ru": "Пунктуация, меняющая грамматику и смысл",
-      "summary_ru": "На C2 пунктуация — часть смысла: одна запятая меняет, кто, сколько и почему. Запятые вокруг придаточного делают его описательным: My sister, who lives in Denver, … — сестра одна; без запятых придаточное определительное, и сестёр несколько. The passengers, who wore life jackets, survived — выжили все; без запятых — только те, кто был в жилетах. После вводного придаточного запятая предотвращает ложное прочтение: While the children were eating, the dog… However без запятой значит «как бы ни»: However you cook it, … ; с запятой — «однако». Запятая перед because снимает двусмысленность отрицания: He didn't leave, because he was scared — он остался. Последовательная (оксфордская) запятая показывает, что элементы списка разные: the twins, Maria, and Carlos. Апостроф показывает число владельцев: my sister's friend (сестра одна) — my sisters' friend (общий друг сестёр). Составное определение перед существительным пишется через дефис (a well-known writer), но после глагола — без него: the writer is well known.",
+      "summary_ru": "На C2 пунктуация — часть смысла: одна запятая меняет, кто, сколько и почему. Запятые вокруг придаточного делают его описательным: My cousin, who lives in Ohio, … — кузина одна; без запятых придаточное определительное, и кузин несколько. The passengers, who wore life jackets, survived — выжили все; без запятых — только те, кто был в жилетах. После вводного придаточного запятая предотвращает ложное прочтение: While the children were eating, the dog… However без запятой значит «как бы ни»: However you look at it, … ; «однако» между двумя предложениями требует точки с запятой перед ним и запятой после: …; however, … . Запятая перед because снимает двусмысленность отрицания: She didn't sign, because she distrusted the terms — она не подписала. Последовательная (оксфордская) запятая показывает, что элементы списка разные: my parents, Ana, and Luis. Апостроф показывает число владельцев: the manager's office (один) — the managers' office (общий); при общем владении двух лиц 's ставят один раз, в конце: Ben and Zoe's house. Составное определение перед существительным пишется через дефис (a well-known writer); после глагола дефис обычно опускают (the writer is well known). Дефис различает и слова: re-cover («обтянуть заново») ≠ recover («выздороветь»), re-form ≠ reform.",
       "forms": [
         "noun + , who/which ... , = описательное (все / единственный); без запятых = определительное (часть)",
         "Introductory clause + , + main clause (While we were eating, the dog ...)",
-        "However + adjective/clause, ... («как бы ни») ↔ However, ... («однако»)",
+        "However + adjective/clause, ... («как бы ни») ↔ ...; however, ... («однако»)",
         "..., because ... (причина уже отрицаемого факта) ↔ ... not ... because ... (двусмысленно)",
         "A, B, and C (три отдельных элемента) ↔ A, B and C (B и C могут пояснять A)",
-        "sister's (один владелец) ↔ sisters' (несколько владельцев)"
+        "manager's (один владелец) ↔ managers' (несколько); Ben and Zoe's (общее) ↔ Ben's and Zoe's (у каждого своё)"
       ],
       "examples": [
         "My brother, who lives in Chicago, is a pilot.",
@@ -597,13 +601,13 @@
           "kind": "choice",
           "prompt": "Which sentence means 'in whatever way you cook it'?",
           "options": [
-            "However you cook it, this fish tastes wonderful.",
-            "However, you cook it, and this fish tastes wonderful.",
-            "However; you cook it this fish tastes wonderful.",
-            "However you cook it this fish, tastes wonderful."
+            "However you cook this fish, it tastes wonderful.",
+            "However, you cook this fish, and it tastes wonderful.",
+            "However, if you cook this fish, it tastes wonderful.",
+            "You cook this fish; however, it tastes wonderful."
           ],
           "correct_index": 0,
-          "explanation_ru": "However без запятой после него — «как бы ни»: However you cook it, … С запятой However, … значит «однако». Точка с запятой и запятая между подлежащим и сказуемым здесь невозможны.",
+          "explanation_ru": "However без запятой после него — «как бы ни»: However you cook this fish, … С запятой However значит «однако» и противопоставляет две мысли, а смысла «каким бы способом» уже нет.",
           "difficulty": 2,
           "diagnostic": true
         },
@@ -614,27 +618,27 @@
           "options": [
             "Omar didn't leave, because he was scared.",
             "Omar didn't leave because he was scared.",
-            "Omar, didn't leave because he was scared.",
-            "Omar didn't leave because, he was scared."
+            "Omar didn't leave just because he was scared.",
+            "Omar left, but not because he was scared."
           ],
           "correct_index": 0,
-          "explanation_ru": "Запятая перед because отделяет причину от уже отрицаемого факта: «он не ушёл — потому что боялся». Без запятой фраза двусмысленна и может значить «ушёл, но не из-за страха». Запятая после подлежащего или после because — ошибка.",
+          "explanation_ru": "Запятая перед because отделяет причину от уже отрицаемого факта: «он не ушёл — потому что боялся». Без запятой фраза двусмысленна и может значить «ушёл, но не из-за страха»; с just because она скорее значит «ушёл, но не только из-за страха», а последний вариант прямо говорит, что Омар ушёл.",
           "difficulty": 2,
           "diagnostic": true
         },
         {
           "id": "c2_punctuation_with_grammatical_consequences_04",
           "kind": "choice",
-          "prompt": "The renovation took three ___ work.",
+          "prompt": "Which phrase refers to ONE startup that Mia and Leo own together?",
           "options": [
-            "days'",
-            "days",
-            "day's",
-            "days's"
+            "Mia and Leo's startup",
+            "Mia's and Leo's startups",
+            "Mia and Leo's startups",
+            "Mia's startup and Leo's"
           ],
           "correct_index": 0,
-          "explanation_ru": "Множественное притяжательное во временном обороте пишется с апострофом после -s: three days' work.",
-          "difficulty": 3,
+          "explanation_ru": "При общем владении 's ставят один раз, после последнего имени: Mia and Leo's startup — один стартап на двоих. Mia's and Leo's startups — у каждого свой, Mia and Leo's startups — несколько общих, Mia's startup and Leo's — два разных стартапа.",
+          "difficulty": 2,
           "diagnostic": true
         },
         {
@@ -649,10 +653,10 @@
         {
           "id": "c2_punctuation_with_grammatical_consequences_06",
           "kind": "gap",
-          "prompt": "The writer is ___ (well / know) in France but almost unknown in the United States.",
-          "answer": "well known",
+          "prompt": "After a bitter dispute over pricing, the vendor refused to ___ (sign again) the contract on the old terms.",
+          "answer": "re-sign",
           "accept": [],
-          "explanation_ru": "После глагола составное определение пишется без дефиса: the writer is well known. Дефис нужен только перед существительным: a well-known writer.",
+          "explanation_ru": "Дефис здесь меняет слово: re-sign — «подписать заново», а resign — «уйти в отставку». С re- дефис ставят, когда слитное написание совпало бы с другим словом (re-cover — recover, re-form — reform).",
           "difficulty": 2
         },
         {
@@ -680,26 +684,26 @@
           "options": [
             "We invited the twins, Maria, and Carlos.",
             "We invited the twins, Maria and Carlos.",
-            "We invited the twins Maria, and Carlos.",
-            "We invited, the twins, Maria and Carlos."
+            "We invited the twins — Maria and Carlos.",
+            "We invited the twins: Maria and Carlos."
           ],
           "correct_index": 0,
-          "explanation_ru": "Запятая перед and (последовательная, «оксфордская») показывает, что Maria и Carlos — отдельные гости. Без неё the twins, Maria and Carlos можно прочитать как пояснение: близнецы — это Мария и Карлос.",
+          "explanation_ru": "Запятая перед and (последовательная, «оксфордская») показывает, что Maria и Carlos — отдельные гости. Без неё the twins, Maria and Carlos можно прочитать как пояснение, а тире и двоеточие прямо говорят, что близнецы — это и есть Мария и Карлос.",
           "difficulty": 2,
           "diagnostic": true
         },
         {
           "id": "c2_punctuation_with_grammatical_consequences_10",
           "kind": "choice",
-          "prompt": "Which sentence says that ALL the passengers were rescued?",
+          "prompt": "Which sentence is correctly punctuated and means 'the tests passed, but the build still failed'?",
           "options": [
-            "The passengers, who were wearing life jackets, were rescued.",
-            "The passengers who were wearing life jackets were rescued.",
-            "The passengers who were wearing life jackets, were rescued.",
-            "The passengers, that were wearing life jackets, were rescued."
+            "The tests passed; however, the build failed.",
+            "The tests passed, however the build failed.",
+            "However the tests passed, the build failed.",
+            "The tests passed however, the build failed."
           ],
           "correct_index": 0,
-          "explanation_ru": "Запятые делают придаточное описательным: спасли всех пассажиров, и все они были в жилетах. Без запятых — определительное: спасли только тех, кто был в жилетах. Одна запятая и that после запятой — ошибки.",
+          "explanation_ru": "However в значении «однако» между двумя самостоятельными предложениями требует точки с запятой (или точки) перед ним и запятой после: …; however, … . С одной запятой предложения слипаются, However без запятой в начале значит «как бы ни» (как бы ни прошли тесты), а запятая после however приклеивает его к первой части.",
           "difficulty": 2,
           "diagnostic": true
         }
@@ -713,7 +717,7 @@
       "title_en": "Thematic progression: given and new information",
       "source_slug": "",
       "title_ru": "Тема и рема: известное и новое в предложении",
-      "summary_ru": "В русском порядок слов свободный, и новое само ставится в конец. В английском порядок жёсткий, поэтому ту же работу делают грамматические конструкции, и на C2 выбор между ними — вопрос связности текста. Принцип: известное — в начало, новое и тяжёлое — в конец. Чтобы продолжить разговор о том же предмете, его оставляют подлежащим, при необходимости через пассив: The tower was built for the 1889 fair. It was designed by… Новый предмет вводят конструкцией there is. Громоздкое придаточное не ставят в начало, а выносят в конец через вводное it: It shocked everyone that the museum would close. Сказанное в предыдущем предложении подхватывают существительным-обобщением с this: This decision, This trend, The destruction of the pier. Хорошо связанный абзац читается как цепочка, где новое одного предложения становится темой следующего.",
+      "summary_ru": "В русском порядок слов свободный, и новое само ставится в конец. В английском порядок жёсткий, поэтому ту же работу делают грамматические конструкции, и на C2 выбор между ними — вопрос связности текста. Принцип: известное — в начало, новое и тяжёлое — в конец. Чтобы продолжить разговор о том же предмете, его оставляют подлежащим, при необходимости через пассив: The tower was built for the 1889 fair. It was designed by… Новый предмет вводят конструкцией there is. Громоздкое придаточное не ставят в начало, а выносят в конец через вводное it: It worried investors that the founder had quietly sold his shares. Сказанное в предыдущем предложении подхватывают существительным-обобщением с this: This decision, This trend, The closure of the mine. Хорошо связанный абзац читается как цепочка, где новое одного предложения становится темой следующего. Связность ломают две вещи: местоимение, у которого два возможных антецедента (the lawyer called the client after she…), и причастный оборот в начале, чьё подразумеваемое подлежащее не совпадает с настоящим (Built in 1890, visitors…).",
       "forms": [
         "given information first, new information last (end-focus)",
         "Passive to keep the topic as subject: It was designed by ...",
@@ -723,12 +727,12 @@
       ],
       "examples": [
         "The bridge opened in 1937. It was designed by a local engineer.",
-        "The council banned cars downtown. This decision divided the city.",
-        "It surprised everyone that the café closed after fifty years.",
+        "Sales fell for a third year. This decline forced the board to act.",
+        "It is hardly surprising that the talks collapsed.",
         "Several shops have closed this year. This trend worries local officials.",
         "There has been a sharp rise in bike thefts this summer."
       ],
-      "ru_interference": "Русская модель «Мост спроектировал инженер» переносится буквально и меняет смысл: неверно «The bridge designed an engineer» → верно «The bridge was designed by an engineer». «Такое решение» переводят без артикля: неверно «Such decision» → верно «Such a decision» или «This decision». А тяжёлое придаточное оставляют в начале: «That the museum would close shocked everyone» грамматично, но в тексте естественнее «It shocked everyone that…».",
+      "ru_interference": "Русская модель «Мост спроектировал инженер» переносится буквально и меняет смысл: неверно «The bridge designed an engineer» → верно «The bridge was designed by an engineer». «Такое решение» переводят без артикля: неверно «Such decision» → верно «Such a decision» или «This decision». А тяжёлое придаточное оставляют в начале: «That the founder had left worried investors» грамматично, но в тексте естественнее «It worried investors that…».",
       "prerequisites": [
         "c1_cleft_sentences_and_fronting_for_information_structure",
         "c1_impersonal_and_complex_passive_reporting_structures",
@@ -742,27 +746,27 @@
           "options": [
             "It was designed by the engineering firm of Gustave Eiffel.",
             "The engineering firm of Gustave Eiffel designed it.",
-            "Gustave Eiffel's engineering firm, it designed it.",
-            "Designed it was by Gustave Eiffel's firm."
+            "Gustave Eiffel's engineering firm was the one that designed it.",
+            "What Gustave Eiffel's engineering firm designed was the tower."
           ],
           "correct_index": 0,
-          "explanation_ru": "Тема абзаца — башня, поэтому она остаётся подлежащим (it), а новое — кто проектировал — уходит в конец через пассив с by. Активный вариант грамматичен, но ставит новое в начало и рвёт цепочку; два других неграмматичны.",
+          "explanation_ru": "Тема абзаца — башня, поэтому она остаётся подлежащим (it), а новое — кто проектировал — уходит в конец через пассив с by. Активный вариант и вариант с the one that грамматичны, но ставят новое (фирму) в начало и рвут цепочку, а what-конструкция делает новым саму башню, хотя о ней уже шла речь.",
           "difficulty": 2,
           "diagnostic": true
         },
         {
           "id": "c2_thematic_progression_given_and_new_information_02",
           "kind": "choice",
-          "prompt": "The city banned cars from the old town in 2019. ___ has since been copied by several other European capitals.",
+          "prompt": "In 2023, the company stopped allowing staff to work fully remotely. ___ has since been copied by several other tech firms.",
           "options": [
-            "This decision",
-            "That the decision",
-            "Such decision",
-            "The decision what"
+            "This policy",
+            "It",
+            "The company",
+            "Remote work"
           ],
           "correct_index": 0,
-          "explanation_ru": "Существительное-обобщение с this подхватывает всё предыдущее предложение и делает его темой следующего: This decision. Such требует артикля (such a decision), а that the decision и the decision what неграмматичны.",
-          "difficulty": 1,
+          "explanation_ru": "Существительное-обобщение с this подхватывает всё предыдущее предложение и делает его темой следующего: This policy. It грамматично, но по умолчанию тянется к the company («скопировали саму компанию»), а The company и Remote work называют не то, что копировали.",
+          "difficulty": 2,
           "diagnostic": true
         },
         {
@@ -807,23 +811,28 @@
         {
           "id": "c2_thematic_progression_given_and_new_information_06",
           "kind": "gap",
-          "prompt": "The council rejected the plan in May. ___ (this / rejection / mean) that construction was delayed by a year.",
+          "prompt": "The council rejected the plan in May. ___ (mean) that construction was delayed by a year. (start with 'this' and a noun that sums up the first sentence)",
           "answer": "This rejection meant",
           "accept": [
-            "That rejection meant"
+            "This decision meant",
+            "This refusal meant",
+            "This veto meant",
+            "That rejection meant",
+            "That decision meant"
           ],
-          "explanation_ru": "This + существительное-обобщение превращает действие предыдущего предложения в тему следующего: This rejection meant … Время согласуется с рассказом — meant.",
+          "explanation_ru": "Действие предыдущего предложения (rejected) превращается в тему следующего через this + существительное-обобщение: This rejection (decision) meant … Время согласуется с рассказом — meant. Голое This meant грамматично, но неясно, что именно подхватывается.",
           "difficulty": 2
         },
         {
           "id": "c2_thematic_progression_given_and_new_information_07",
           "kind": "correct",
-          "prompt": "The mistake noticed a sharp-eyed reader.",
-          "answer": "The mistake was noticed by a sharp-eyed reader.",
+          "prompt": "Launched in 2021, millions of users downloaded the app in its first month.",
+          "answer": "Launched in 2021, the app was downloaded by millions of users in its first month.",
           "accept": [
-            "A sharp-eyed reader noticed the mistake."
+            "Launched in 2021, the app was downloaded by millions of users in the first month.",
+            "The app was launched in 2021, and millions of users downloaded it in its first month."
           ],
-          "explanation_ru": "При русском порядке «ошибку заметил читатель» английское предложение получает обратный смысл: нужен пассив (тема остаётся подлежащим) или прямой активный порядок.",
+          "explanation_ru": "Причастный оборот в начале описывает подлежащее: launched in 2021 относится к приложению, а не к пользователям. Поэтому тема (the app) должна стать подлежащим — через пассив: the app was downloaded by millions of users. Иначе выходит, что в 2021 году «запустили» пользователей.",
           "difficulty": 2
         },
         {
@@ -866,6 +875,36 @@
           ],
           "explanation_ru": "Пекарня уже названа, поэтому она (it) становится подлежащим, а новое — кто ею управляет — уходит в конец через пассив с by.",
           "difficulty": 2
+        },
+        {
+          "id": "c2_thematic_progression_given_and_new_information_11",
+          "kind": "choice",
+          "prompt": "Put the sentences of this postmortem summary in the most cohesive order: (1) Nobody, however, had tested it under peak traffic. (2) At 9:40 a.m., the team deployed a new caching layer to speed up checkout. (3) That traffic arrived at noon, and within minutes response times had doubled. (4) The rollback that followed took another two hours.",
+          "options": [
+            "2 – 1 – 3 – 4",
+            "2 – 3 – 1 – 4",
+            "1 – 2 – 3 – 4",
+            "2 – 3 – 4 – 1"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Каждое предложение опирается на уже названное: (2) вводит новый слой кэша, (1) подхватывает его местоимением it и вводит пиковый трафик, (3) начинается с That traffic — это и есть связка, (4) — последствия. В других порядках it или that traffic отсылают в пустоту.",
+          "difficulty": 2,
+          "diagnostic": true
+        },
+        {
+          "id": "c2_thematic_progression_given_and_new_information_12",
+          "kind": "choice",
+          "prompt": "Which version makes it clear that the client, not the lawyer, rejected the offer? (Both are women.)",
+          "options": [
+            "After the client had rejected the offer, the lawyer called her.",
+            "The lawyer called the client after she had rejected the offer.",
+            "The lawyer called the client once she had rejected the offer.",
+            "The client was called by the lawyer after she had rejected the offer."
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Если в предложении две женщины, she может отсылать к любой из них. Однозначно только там, где клиентка названа существительным в той части, где сказано, кто отказался: After the client had rejected the offer… Союз once и пассив двусмысленность не снимают.",
+          "difficulty": 2,
+          "diagnostic": true
         }
       ]
     },
@@ -877,7 +916,7 @@
       "title_en": "Advanced modality: epistemic and deontic nuance",
       "source_slug": "",
       "title_ru": "Тонкая модальность: вероятность и долженствование",
-      "summary_ru": "Один и тот же модальный глагол читается двумя способами. Эпистемическое чтение — про вероятность и вывод: The neighbors must be away (я делаю вывод). Деонтическое — про обязанность и разрешение: Guests must check out by noon (таково правило). На C2 важны тонкие оттенки. Might have / could have + V3 описывает то, что могло случиться, но не случилось: You could have been hurt! Should have + V3 бывает не только упрёком, но и несбывшимся ожиданием: They should have arrived by now. Was to have + V3 — план, который сорвался: The ceremony was to have taken place in May; а was (never) to + инфинитив — судьба, взгляд из будущего: He was never to see his village again. Might as well — «пожалуй, стоит (раз уж иначе никак)». В юридических текстах обязанность и запрет передаёт shall: The tenant shall not sublet. Отрицательный вывод — can't have, couldn't have, в американском английском и must not have; отсутствие обязанности — don't have to и needn't.",
+      "summary_ru": "Один и тот же модальный глагол читается двумя способами. Эпистемическое чтение — про вероятность и вывод: The neighbors must be away (я делаю вывод). Деонтическое — про обязанность и разрешение: Guests must check out by noon (таково правило). На C2 важны тонкие оттенки. Might have / could have + V3 описывает то, что могло случиться, но не случилось: You could have been hurt! Should have + V3 бывает не только упрёком, но и несбывшимся ожиданием: The results should have been published by now. Was to have + V3 — план, который сорвался: The ceremony was to have taken place in May; а was (never) to + инфинитив — судьба, взгляд из будущего: She was never to return to Odessa. Might as well — «пожалуй, стоит (раз уж иначе никак)». В юридических текстах обязанность и запрет передаёт shall: The licensee shall not modify the software. Отрицательный вывод — can't have, couldn't have, в американском английском и must not have; отсутствие обязанности — don't have to и needn't.",
       "forms": [
         "must / can't / might / could + have + V3 (вывод о прошлом; несбывшаяся возможность)",
         "should have + V3 (упрёк или несбывшееся ожидание)",
@@ -886,12 +925,12 @@
         "shall (not) + V в юридическом тексте"
       ],
       "examples": [
-        "The neighbors must be away — their car hasn't moved in days.",
+        "The lights are off — they must have gone to bed.",
         "Guests must check out by noon.",
         "You could have been seriously hurt!",
         "The ceremony was to have taken place in May.",
-        "The museum is closed, so we might as well go home.",
-        "The tenant shall keep the apartment in good condition."
+        "Since you're here, you may as well stay for dinner.",
+        "The supplier shall notify the buyer of any delay."
       ],
       "ru_interference": "Русское «должен» покрывает и must, и should, и вывод, и обязанность, а «не должен» сливает запрет с отсутствием обязанности: неверно «You must not come if you are busy» в значении «можешь не приходить» → верно «You don't have to come if you are busy». Вторая калька — can вместо may там, где речь о вероятности конкретного события: неверно «It can rain tomorrow» → верно «It may rain tomorrow».",
       "prerequisites": [
@@ -963,14 +1002,14 @@
         {
           "id": "c2_advanced_modality_epistemic_and_deontic_nuance_05",
           "kind": "gap",
-          "prompt": "The last bus has gone, so we ___ (as well / walk) home.",
-          "answer": "might as well walk",
+          "prompt": "The last bus has gone, so we ___ walk home. (= there's no better option, so let's do it; use 'as well')",
+          "answer": "might as well",
           "accept": [
-            "may as well walk",
-            "might just as well walk",
-            "may just as well walk"
+            "may as well",
+            "might just as well",
+            "may just as well"
           ],
-          "explanation_ru": "Might (may) as well + инфинитив — «пожалуй, стоит, раз уж ничего лучше не остаётся». Модальный глагол обязателен: as well walk без него неграмматично.",
+          "explanation_ru": "Might (may) as well + инфинитив — «пожалуй, стоит, раз уж ничего лучше не остаётся». Модальный глагол обязателен: as well walk без него неграмматично, а should walk — просто совет, без оттенка «раз иначе никак».",
           "difficulty": 2
         },
         {
@@ -1038,7 +1077,8 @@
               "could not have gone off"
             ],
             [
-              "was to have returned"
+              "was to have returned",
+              "was to return"
             ],
             [
               "might have been",
@@ -1064,7 +1104,7 @@
       "title_en": "Pragmatic force: softening, boosting and distancing",
       "source_slug": "",
       "title_ru": "Прагматика: смягчение, усиление, дистанцирование",
-      "summary_ru": "На уровне C2 важна не только грамматическая правильность, но и сила высказывания. Смягчители (hedges) снижают категоричность: would seem, tend to, somewhat, arguably, I'm not sure I'd go that far. Усилители (boosters) повышают её: clearly, undeniably, by far. Дистанцирование снимает с говорящего ответственность за факт: reportedly, allegedly, be said to, according to. Прошедшее время ради вежливости — I was wondering whether you could … — звучит мягче, чем I wonder; после такой рамки порядок слов прямой, как в косвенном вопросе. Отрицательный вопрос Wouldn't it be better to …? предлагает, а не спрашивает. Голый императив в просьбе к незнакомому человеку звучит резче, чем русское «пришлите», поэтому просьбу оформляют вопросом с could или would и смягчают словами just, possibly, a little.",
+      "summary_ru": "На уровне C2 важна не только грамматическая правильность, но и сила высказывания. Смягчители (hedges) снижают категоричность: would seem, tend to, somewhat, arguably, I see it slightly differently. Усилители (boosters) повышают её: clearly, undeniably, by far. Дистанцирование снимает с говорящего ответственность за факт: reportedly, allegedly, be said to, according to. Прошедшее время ради вежливости — I was wondering whether you could … — звучит мягче, чем I wonder; после такой рамки порядок слов прямой, как в косвенном вопросе. Отрицательный вопрос Wouldn't it be better to …? предлагает, а не спрашивает. Голый императив в просьбе к незнакомому человеку звучит резче, чем русское «пришлите», поэтому просьбу оформляют вопросом с could или would и смягчают словами just, possibly, a little.",
       "forms": [
         "It would seem / appear that + clause; X would appear to be ...",
         "reportedly / allegedly (дистанция) ↔ clearly / undeniably (усиление)",
@@ -1075,12 +1115,12 @@
       "examples": [
         "The numbers would seem to suggest a decline.",
         "The couple have reportedly split up.",
-        "I was wondering whether you could water my plants next week.",
-        "Wouldn't it be better to leave a little earlier?",
+        "I was wondering if you might be free on Thursday.",
+        "Might it be worth waiting until Monday?",
         "I see your point, but I'm not sure I agree.",
         "This is clearly the best option."
       ],
-      "ru_interference": "Русская прямота переносится буквально и звучит грубо: неверно «Send me the photos today» соседу или незнакомому → верно «Could you send me the photos today?». Калька «я хотел спросить, можете ли вы» даёт вопросительный порядок внутри вежливой рамки: неверно «I was wondering whether could you help me» → верно «I was wondering whether you could help me».",
+      "ru_interference": "Русская прямота переносится буквально и звучит грубо: неверно «Send me the photos today» соседу или незнакомому → верно «Could you send me the photos today?». Калька «я хотел спросить, можете ли вы» даёт вопросительный порядок внутри вежливой рамки: неверно «Could you tell me where is the station?» → верно «Could you tell me where the station is?».",
       "prerequisites": [
         "c1_hedging_and_tentative_language_softening_claims",
         "c1_advanced_modal_verbs_will_would_and_should"
@@ -1149,16 +1189,18 @@
         {
           "id": "c2_pragmatic_force_softening_boosting_and_distancing_05",
           "kind": "gap",
-          "prompt": "I ___ ___ (wonder, past continuous for politeness) whether you had a moment to look at this.",
+          "prompt": "I ___ (wonder — make the request sound less direct) whether you had a moment to look at this.",
           "answer": "was wondering",
-          "accept": [],
-          "explanation_ru": "Прошедшее длительное отодвигает просьбу во времени и тем самым смягчает её.",
+          "accept": [
+            "was just wondering"
+          ],
+          "explanation_ru": "Прошедшее длительное отодвигает просьбу во времени и тем самым смягчает её: I was wondering whether… звучит мягче, чем I wonder… и тем более чем прямой вопрос.",
           "difficulty": 2
         },
         {
           "id": "c2_pragmatic_force_softening_boosting_and_distancing_06",
           "kind": "gap",
-          "prompt": "___ (would / it / not / be) better to wait until the rain stops?",
+          "prompt": "___ (a negative question with 'would' that suggests rather than asks) safer to test the update on staging first?",
           "answer": "Wouldn't it be",
           "accept": [
             "Would it not be"
@@ -1192,7 +1234,7 @@
         {
           "id": "c2_pragmatic_force_softening_boosting_and_distancing_09",
           "kind": "cloze",
-          "prompt": "Dear Mr. Alvarez, I hope you're well. I ___ (wonder — polite past continuous) whether you'd had a chance to look at the leak in our bathroom. I'd hate ___ (bother) you again, but the problem ___ (emphatic: seem) to be getting worse. Would it be ___ (a softener: 'in any way') possible to send a plumber this week? I ___ (really / appreciate) it. Best wishes, Aisha",
+          "prompt": "Dear Mr. Alvarez, I hope you're well. I ___ (wonder — polite past continuous) whether you'd had a chance to look at the leak in our bathroom. I'd hate ___ (bother) you again, but the problem ___ (emphatic: seem) to be getting worse. Would it be ___ (a softener: 'in any way') possible to send a plumber this week? I ___ (appreciate — thank in advance, politely) it. Best wishes, Aisha",
           "gaps": [
             [
               "was wondering"
@@ -1207,7 +1249,10 @@
               "at all"
             ],
             [
-              "would really appreciate"
+              "would really appreciate",
+              "would appreciate",
+              "would greatly appreciate",
+              "would so appreciate"
             ]
           ],
           "explanation_ru": "1 — прошедшее длительное смягчает просьбу. 2 — I'd hate to bother you — извинение за беспокойство. 3 — эмфатическое does seem усиливает жалобу, не повышая тона. 4 — at all смягчает вопрос-просьбу. 5 — would really appreciate — вежливая благодарность заранее.",
@@ -1238,24 +1283,25 @@
       "title_en": "Complex noun phrases and heavy premodification",
       "source_slug": "",
       "title_ru": "Сложные именные группы и тяжёлая препозиция",
-      "summary_ru": "Английская именная группа строится справа налево: главное слово стоит в конце, а всё остальное выстраивается перед ним. Существительное в роли определения не ставится во множественное число и не берёт апостроф: a three-day trip, a climate change adaptation plan. Составное определение перед существительным пишется через дефис: a little-known poet, a hard-to-find book, melt-in-your-mouth pastries; но после наречия на -ly дефиса нет: a reasonably priced hotel. Притяжательное 's присоединяется ко всей группе: the man next door's car, the Queen of England's hat. Особые определители: the then president («тогдашний»), a would-be robber («несостоявшийся»). Всё, что тяжелее двух-трёх слов, уходит направо в постпозицию — придаточным, причастным оборотом или предлогом: a man in his forties seen leaving the bank. Русские цепочки родительных падежей в английском обычно сворачиваются в цепочку существительных.",
+      "summary_ru": "Английская именная группа строится справа налево: главное слово стоит в конце, а всё остальное выстраивается перед ним. Существительное в роли определения не ставится во множественное число и не берёт апостроф: a three-day trip, a data protection training course. Составное определение перед существительным пишется через дефис: a little-known poet, a hard-to-beat price, a once-in-a-lifetime chance; но после наречия на -ly дефиса нет: a beautifully written novel. Притяжательное 's присоединяется ко всей группе: the guy across the street's truck, the Queen of England's hat. Особые определители: the then president («тогдашний»), a would-be novelist («несостоявшийся, начинающий»). Всё, что тяжелее двух-трёх слов, уходит направо в постпозицию — придаточным, причастным оборотом или предлогом: a man in his forties seen leaving the bank. Русские цепочки родительных падежей в английском обычно сворачиваются в цепочку существительных. Определитель тоже несёт смысл: о целом классе как изобретении или виде говорят the + единственное число (The printing press spread literacy), абстрактное понятие в общем смысле идёт без артикля (Freedom has a price), а уточнённое of-оборотом — с the (the freedom of the press). Учреждение по назначению обходится без артикля (in school, in prison, in court), а the указывает на здание.",
       "forms": [
         "determiner + opinion + size + age + color + noun modifier + head noun",
-        "hyphenated modifier: a little-known poet, a hard-to-find book (но: a reasonably priced hotel)",
-        "noun + noun + noun compound: the youth unemployment rate",
-        "group genitive: the man next door's car",
+        "hyphenated modifier: a little-known poet, a hard-to-beat price (но: a beautifully written novel)",
+        "noun + noun + noun compound: the data protection authority",
+        "group genitive: the guy across the street's truck",
         "the then + noun; a would-be + noun",
-        "head noun + participle / relative clause / prepositional phrase (postmodification)"
+        "head noun + participle / relative clause / prepositional phrase (postmodification)",
+        "generic the + singular (the printing press); zero article: abstract nouns, in prison / in court"
       ],
       "examples": [
         "We stayed in a remote fishing village.",
         "She found a rare first edition at a flea market.",
-        "The government finally unveiled its pension reform plan.",
+        "They run a small family law practice.",
         "My sister-in-law's apartment is huge.",
         "The then mayor refused to comment.",
         "It is a beautifully written novel."
       ],
-      "ru_interference": "Русская цепочка родительных падежей переносится дословно: неверно «the size of the pool of the hotel» → верно «the hotel pool size». Определяющее существительное к тому же ставят во множественное число: неверно «a three-days trip» → верно «a three-day trip»; а 's прицепляют не к той части группы: неверно «the man's next door car» → верно «the man next door's car».",
+      "ru_interference": "Русская цепочка родительных падежей переносится дословно: неверно «the size of the pool of the hotel» → верно «the hotel pool size». Определяющее существительное к тому же ставят во множественное число: неверно «a three-days trip» → верно «a three-day trip»; а 's прицепляют не к той части группы: неверно «the guy's across the street truck» → верно «the guy across the street's truck». Артикль при абстрактном понятии ставят по привычке: неверно «The history teaches us…» → верно «History teaches us…».",
       "prerequisites": [
         "c1_nominalisation_for_formal_and_academic_register",
         "b2_compound_nouns_possessive_forms",
@@ -1325,19 +1371,22 @@
         {
           "id": "c2_complex_noun_phrases_and_heavy_premodification_05",
           "kind": "gap",
-          "prompt": "It was a ___ (little / know) fact that the museum had once been a prison.",
-          "answer": "little-known",
-          "accept": [],
-          "explanation_ru": "Составное определение перед существительным пишется через дефис: a little-known fact. Без дефиса little known пишут только после глагола: the fact is little known.",
+          "prompt": "The drug acts through a ___ (hardly anyone understands it) mechanism that researchers are only beginning to map.",
+          "answer": "little-understood",
+          "accept": [
+            "poorly understood",
+            "poorly-understood"
+          ],
+          "explanation_ru": "Составное определение перед существительным склеивается дефисом: little + причастие understood → a little-understood mechanism. Без дефиса little understood пишут после глагола (the mechanism is little understood); с наречием на -ly дефис обычно не нужен — a poorly understood mechanism.",
           "difficulty": 2
         },
         {
           "id": "c2_complex_noun_phrases_and_heavy_premodification_06",
           "kind": "gap",
-          "prompt": "They live in a ___ (hard / to / find) village high in the mountains.",
+          "prompt": "They live in a ___ (= that is hard to find) village high in the mountains.",
           "answer": "hard-to-find",
           "accept": [],
-          "explanation_ru": "Целая фраза в роли определения перед существительным связывается дефисами в одно слово.",
+          "explanation_ru": "Целая фраза в роли определения перед существительным связывается дефисами в одно слово: a village that is hard to find → a hard-to-find village.",
           "difficulty": 2
         },
         {
@@ -1348,7 +1397,11 @@
           "accept": [
             "She showed us a letter that her grandfather had written.",
             "She showed us a letter her grandfather had written.",
-            "She showed us a letter that had been written by her grandfather."
+            "She showed us a letter that had been written by her grandfather.",
+            "She showed us a letter which her grandfather had written.",
+            "She showed us a letter that her grandfather wrote.",
+            "She showed us a letter her grandfather wrote.",
+            "She showed us a letter which her grandfather wrote."
           ],
           "explanation_ru": "Определение с зависимыми словами (written by her grandfather) не помещается перед существительным и уходит после него. Русское «написанное дедушкой письмо» дословно не переносится; без зависимых слов возможно и a handwritten letter.",
           "difficulty": 2
@@ -1360,7 +1413,9 @@
           "answer": "the urban youth unemployment rate",
           "accept": [
             "urban youth unemployment rate",
-            "the youth unemployment rate in cities"
+            "the youth unemployment rate in cities",
+            "the youth unemployment rate in urban areas",
+            "the city youth unemployment rate"
           ],
           "explanation_ru": "Цепочка предлогов сворачивается в цепочку существительных справа налево: главное слово rate — в конце, перед ним unemployment, youth и urban.",
           "difficulty": 3
@@ -1372,11 +1427,11 @@
           "options": [
             "would-be",
             "will-be",
-            "wanted-be",
-            "to-be"
+            "to-be",
+            "then"
           ],
           "correct_index": 0,
-          "explanation_ru": "Would-be — «несостоявшийся, потенциальный»: грабитель, который только собирался грабить. Will-be и wanted-be не существуют, а -to-be ставится после существительного (a bride-to-be).",
+          "explanation_ru": "Would-be — «несостоявшийся, потенциальный»: грабитель, который только собирался грабить. Will-be не существует, -to-be ставится после существительного (a bride-to-be), а the then — «тогдашний» (the then mayor), это не про несостоявшееся.",
           "difficulty": 1,
           "diagnostic": true
         },
@@ -1398,7 +1453,7 @@
         {
           "id": "c2_complex_noun_phrases_and_heavy_premodification_11",
           "kind": "cloze",
-          "prompt": "A ___ (family / run) Italian bakery in Brooklyn has just won the city's top food prize. The owner, a ___ (sixty / two / year / old) former opera singer, still bakes everything in a ___ (hundred / year / old) wood-fired oven. The judges praised her ___ (melt / in / your / mouth) pastries and her ___ (reasonable / price) coffee.",
+          "prompt": "A ___ (run by a family) Italian bakery in Brooklyn has just won the city's top food prize. The owner, a ___ (she is 62) former opera singer, still bakes everything in a ___ (the oven is a century old) wood-fired oven. The judges praised her ___ (they melt in your mouth) pastries and her ___ (its price is reasonable) coffee.",
           "gaps": [
             [
               "family-run"
@@ -1421,6 +1476,45 @@
           ],
           "explanation_ru": "Составные определения перед существительным пишутся через дефис и в единственном числе: family-run, sixty-two-year-old, hundred-year-old, melt-in-your-mouth. Исключение — наречие на -ly: reasonably priced пишется без дефиса.",
           "difficulty": 3
+        },
+        {
+          "id": "c2_complex_noun_phrases_and_heavy_premodification_12",
+          "kind": "choice",
+          "prompt": "In her keynote, the historian argued that ___ has changed office work more than any other invention.",
+          "options": [
+            "the smartphone",
+            "a smartphone",
+            "smartphone",
+            "the smartphones"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Когда речь о целом классе как об изобретении или виде (изменил работу, был изобретён, вымирает), берут the + единственное число: the smartphone, the printing press. A smartphone — «какой-нибудь один смартфон», с утверждением о классе он не сочетается; голое smartphone невозможно, а the smartphones — конкретные смартфоны из контекста.",
+          "difficulty": 2,
+          "diagnostic": true
+        },
+        {
+          "id": "c2_complex_noun_phrases_and_heavy_premodification_13",
+          "kind": "cloze",
+          "prompt": "In her closing statement, the judge observed that ___ (privacy) is not a luxury but a right. She noted that ___ (privacy) of four million customers had been compromised by a single careless upgrade. The company's founder, who had already spent two years in ___ (prison) for fraud, was back in ___ (court) that very week. '___ (technology),' she concluded, 'moves faster than the law — but it does not stand above it.'",
+          "gaps": [
+            [
+              "privacy"
+            ],
+            [
+              "the privacy"
+            ],
+            [
+              "prison"
+            ],
+            [
+              "court"
+            ],
+            [
+              "Technology"
+            ]
+          ],
+          "explanation_ru": "1 и 5 — абстрактное понятие в общем смысле идёт без артикля: privacy, technology. 2 — то же существительное, уточнённое of-оборотом, получает the: the privacy of four million customers. 3–4 — учреждение по назначению без артикля: in prison (отбывал срок), in court (на заседании); the prison, the court означали бы здание.",
+          "difficulty": 3
         }
       ]
     },
@@ -1442,7 +1536,7 @@
       ],
       "examples": [
         "It is too early to draw any conclusions.",
-        "Rising prices pose a real risk to small businesses.",
+        "The virus poses little risk to healthy adults.",
         "Parents bear responsibility for their children's safety.",
         "Please pay close attention to the instructions.",
         "It is highly unlikely that the museum will reopen this year.",
@@ -1525,12 +1619,13 @@
         {
           "id": "c2_collocational_precision_and_delexical_verbs_06",
           "kind": "gap",
-          "prompt": "The jury took nine hours to ___ (arrive at) a verdict.",
+          "prompt": "The jury took nine hours to ___ (one verb = 'arrive at') a verdict.",
           "answer": "reach",
           "accept": [
-            "return"
+            "return",
+            "deliver"
           ],
-          "explanation_ru": "Verdict сочетается с reach (прийти к вердикту) или, о присяжных в суде, с return. Make a verdict и take a verdict — кальки.",
+          "explanation_ru": "Verdict сочетается с reach (прийти к вердикту), а о присяжных в суде — ещё с return и deliver (вынести). Make a verdict и take a verdict — кальки.",
           "difficulty": 2
         },
         {
@@ -1620,23 +1715,23 @@
       "title_en": "Figurative language and conventional metaphor",
       "source_slug": "",
       "title_ru": "Образность и конвенциональная метафора",
-      "summary_ru": "Большая часть английской образности не поэтическая, а конвенциональная: носители её просто не замечают. Количество и настроение измеряются по вертикали (sales are up, morale is low, prices plummeted), жизнь и дела — как путь (we're on the right track, not out of the woods yet), экономика и здоровье — как организм или корабль (the economy is on the mend, in the doldrums), неожиданное — как погода (a bolt from the blue). Такие метафоры застыли и не допускают вариаций: bite the bullet, но не bite the bullets; move the needle, но не push the needle; beat around the bush, но не the bushes. Метафоричны и многие фразовые глаголы: roll out, scale up, spin off. Чужие идиомы при дословном переводе не работают («вставлять палки в колёса» — throw a wrench in the works), поэтому безопаснее использовать закреплённые английские выражения и проверять их сочетаемость.",
+      "summary_ru": "Большая часть английской образности не поэтическая, а конвенциональная: носители её просто не замечают. Количество и настроение измеряются по вертикали (spirits are high, prices plummeted), жизнь и дела — как путь (we're on the right track, at a crossroads), экономика и здоровье — как организм или корабль (the economy is on the mend, in the doldrums), шум из-за пустяка — как погода (a storm in a teacup). Такие метафоры застыли и не допускают вариаций: spill the beans, но не spill the bean; break the ice, но не break the ices; kill two birds with one stone, но не with one shot. Метафоричны и многие фразовые глаголы: roll out, scale up, spin off. Чужие идиомы при дословном переводе не работают («лить воду» в отчёте — pad a report, а не pour water), поэтому безопаснее использовать закреплённые английские выражения и проверять их сочетаемость.",
       "forms": [
-        "fixed idiom without variation: bite the bullet / move the needle / beat around the bush",
-        "kick the can down the road (postpone a decision)",
-        "up / down for quantity and mood: prices plummeted, morale is low",
-        "journey and health metaphors: on the mend, out of the woods, on the right track",
-        "weather and water: a bolt from the blue, in the doldrums"
+        "fixed idiom without variation: spill the beans / break the ice / hit the ground running",
+        "plans as objects: on the back burner, set in stone",
+        "up / down for quantity and mood: spirits are high, prices plummeted",
+        "journey and health metaphors: on the right track, at a crossroads, on the mend",
+        "weather and water: a storm in a teacup, in the doldrums"
       ],
       "examples": [
-        "It's time to bite the bullet and sell the house.",
-        "We're on the right track, but we're not out of the woods yet.",
-        "His resignation came as a complete surprise to everyone.",
-        "Unemployment has plummeted since the factory reopened.",
-        "The ad campaign did little to move the needle.",
-        "Sales are up, but morale is low."
+        "Sooner or later, the city will have to face the music.",
+        "We're on the right track, but it's early days.",
+        "The merger talks are on the back burner for now.",
+        "House prices plummeted after the crash.",
+        "The new manager hit the ground running.",
+        "Spirits are high after the win."
       ],
-      "ru_interference": "Русские идиомы переводят дословно, и получается бессмыслица: неверно «He always puts sticks in the wheels» → верно «He always throws a wrench in the works»; неверно «It is a big minus of this plan» → верно «It is a serious drawback of this plan». Застывшие английские идиомы к тому же «исправляют»: неверно «bite the bullets», «beat around the bushes».",
+      "ru_interference": "Русские идиомы переводят дословно, и получается бессмыслица: неверно «Let's not pour water into the report» → верно «Let's not pad the report»; неверно «He hung noodles on my ears» → верно «He was feeding me a line». Застывшие английские идиомы к тому же «исправляют»: неверно «spill the bean», «kill two birds with one shot».",
       "prerequisites": [
         "c1_idiomatic_multi_word_verbs_at_c1",
         "c1_collocation_and_register_formal_vs_informal_equivalents"
@@ -1645,16 +1740,16 @@
         {
           "id": "c2_figurative_language_and_conventional_metaphor_01",
           "kind": "choice",
-          "prompt": "It was time to bite the ___ and sell the old family house.",
+          "prompt": "Nobody wanted to cut the budget, but in the end the board had to ___ and close the Warsaw office.",
           "options": [
-            "bullet",
-            "bullets",
-            "metal",
-            "stone"
+            "bite the bullet",
+            "bite the dust",
+            "jump the gun",
+            "pass the buck"
           ],
           "correct_index": 0,
-          "explanation_ru": "Идиома bite the bullet застыла: существительное стоит в единственном числе и не заменяется.",
-          "difficulty": 1,
+          "explanation_ru": "Bite the bullet — «стиснуть зубы и сделать неприятное, но необходимое». Bite the dust — «провалиться, выйти из строя», jump the gun — «поспешить раньше времени», pass the buck — «переложить ответственность»: все идиомы реальны, но к решению закрыть офис подходит только первая.",
+          "difficulty": 2,
           "diagnostic": true
         },
         {
@@ -1675,16 +1770,16 @@
         {
           "id": "c2_figurative_language_and_conventional_metaphor_03",
           "kind": "choice",
-          "prompt": "We started with the ___ fruit: three quick repairs that cost almost nothing.",
+          "prompt": "In the first sprint we went for the ___: three quick fixes that cost almost nothing.",
           "options": [
-            "low-hanging",
-            "low-hung",
-            "down-hanging",
-            "short-hanging"
+            "low-hanging fruit",
+            "tip of the iceberg",
+            "lion's share",
+            "icing on the cake"
           ],
           "correct_index": 0,
-          "explanation_ru": "Устойчивое выражение — low-hanging fruit; другие формы причастия в нём не существуют.",
-          "difficulty": 1,
+          "explanation_ru": "Low-hanging fruit — «то, что легко достать»: быстрые и дешёвые победы. Tip of the iceberg — видимая малая часть большой проблемы, lion's share — бо́льшая часть, icing on the cake — приятное дополнение: идиомы реальны, но смысл «лёгкие задачи» только у первой.",
+          "difficulty": 2,
           "diagnostic": true
         },
         {
@@ -1807,13 +1902,14 @@
       "title_en": "Register shifting: academic, journalistic and colloquial English",
       "source_slug": "",
       "title_ru": "Смена регистра: академический, газетный, разговорный",
-      "summary_ru": "Одну и ту же мысль английский оформляет тремя разными способами. Академический регистр любит отглагольные существительные, пассив, смягчение и латинские корни, избегает сокращений и разговорных фразовых глаголов: examine вместо look into, carry out вместо do. Газетный заголовок работает по своей грамматике: артикли и вспомогательные глаголы выбрасываются, настоящее время обозначает недавнее прошлое, пассив сокращается до причастия, а инфинитив с to — будущее: Two hikers rescued after night on mountain; Mayor to step down. У заголовков и свой словарь коротких глаголов: slam (резко критиковать), vow (обещать), quit (уйти), probe (расследовать). Разговорный регистр держится на сокращениях, фразовых глаголах и эллипсисе начала фразы: (Do you) Want some coffee? (Have you) Left them in the car? Главная ошибка на C2 — не незнание слов, а смешение регистров в одном сообщении.",
+      "summary_ru": "Одну и ту же мысль английский оформляет тремя разными способами. Академический регистр любит отглагольные существительные, пассив, смягчение и латинские корни, избегает сокращений и разговорных фразовых глаголов: examine вместо look into, carry out вместо do. Газетный заголовок работает по своей грамматике: артикли и вспомогательные глаголы выбрасываются, настоящее время обозначает недавнее прошлое, пассив сокращается до причастия, а инфинитив с to — будущее: Two hikers rescued after night on mountain; Senator to retire. У заголовков и свой словарь коротких глаголов: slam (резко критиковать), vow (обещать), quit (уйти), probe (расследовать). Разговорный регистр держится на сокращениях, фразовых глаголах и эллипсисе начала фразы: (Do you) Want some coffee? (Have you) Seen my charger? Живая речь выносит тему вперёд («голова»: That new boss of yours — I can't read him at all) или договаривает её в конце («хвост»: Great city, Chicago). Главная ошибка на C2 — не незнание слов, а смешение регистров в одном сообщении; умение переписать фразу в обе стороны (look into ↔ examine, postpone ↔ push back) важнее знания отдельных слов.",
       "forms": [
-        "Academic: nominalization + passive (The survey was not carried out owing to ...)",
+        "Academic: nominalization + passive (The trial was halted owing to ...)",
         "Academic: Latinate verb instead of phrasal verb (examine, investigate, not look into)",
         "Headline: no articles, no auxiliaries; present simple for the past; V3 for the passive",
         "Headline: to-infinitive for the future; short verbs slam / vow / quit / probe",
-        "Colloquial: contraction + phrasal verb + ellipsis (Want some coffee? Sounds good.)"
+        "Colloquial: contraction + phrasal verb + ellipsis (Want some coffee? Sounds good.)",
+        "Colloquial: head (That boss of yours — I …) and tail (Great city, Chicago.)"
       ],
       "examples": [
         "The phenomenon was examined in three separate studies.",
@@ -1832,31 +1928,32 @@
         {
           "id": "c2_register_shifting_academic_journalistic_and_colloquial_english_01",
           "kind": "choice",
-          "prompt": "Which sentence belongs to an academic article?",
+          "prompt": "Which sentence is appropriate in the conclusion of an academic article?",
           "options": [
-            "We looked into the problem and it's pretty clear now.",
-            "The phenomenon was investigated and several contributing factors were identified.",
-            "So we checked it out — loads of reasons.",
-            "Gonna look into it more later."
+            "These findings suggest that sleep quality declines as screen time increases.",
+            "These findings prove that screens totally wreck teenagers' sleep.",
+            "These findings kind of show that sleep gets worse with more screen time.",
+            "As you can see, sleep gets worse the more you stare at a screen."
           ],
-          "correct_index": 1,
-          "explanation_ru": "Академический регистр — пассив, латинские глаголы и номинализация (contributing factors); остальные варианты построены на сокращениях, фразовых глаголах и разговорных словах.",
-          "difficulty": 1,
-          "diagnostic": false
+          "correct_index": 0,
+          "explanation_ru": "Академический вывод осторожен (suggest, а не prove), безличен и нейтрален по лексике (declines as … increases). Prove с totally wreck — преувеличение и разговорная лексика, kind of — разговорное смягчение, as you can see и you stare — обращение к читателю и бытовой глагол.",
+          "difficulty": 2,
+          "diagnostic": true
         },
         {
           "id": "c2_register_shifting_academic_journalistic_and_colloquial_english_02",
           "kind": "choice",
-          "prompt": "Which line is correctly written as a newspaper headline?",
+          "prompt": "Which is a correctly written headline announcing that the CEO will leave in June?",
           "options": [
-            "The CEO is going to step down in June",
             "CEO to step down in June",
-            "CEO will stepping down in June",
-            "The CEO steps down in the June"
+            "CEO steps down in June",
+            "CEO stepped down in June",
+            "The CEO is going to step down in June"
           ],
-          "correct_index": 1,
-          "explanation_ru": "В заголовке артикли и вспомогательные глаголы опускаются, а будущее передаётся инфинитивом с to.",
-          "difficulty": 2
+          "correct_index": 0,
+          "explanation_ru": "Будущее в заголовке передаёт инфинитив с to: CEO to step down. Настоящее простое (steps down) в заголовке значит, что это уже случилось, прошедшее stepped — не газетная форма, а полное предложение с the и is going to — обычная проза, не заголовок.",
+          "difficulty": 2,
+          "diagnostic": true
         },
         {
           "id": "c2_register_shifting_academic_journalistic_and_colloquial_english_03",
@@ -1876,17 +1973,17 @@
         {
           "id": "c2_register_shifting_academic_journalistic_and_colloquial_english_04",
           "kind": "choice",
-          "prompt": "Which line would sound out of place in a casual text to a friend?",
+          "prompt": "Which sentence keeps one register throughout a formal letter to an applicant?",
           "options": [
-            "Running late, be there in 10!",
-            "Pursuant to our earlier conversation, I shall arrive at seven.",
-            "Can't make it tonight, sorry!",
-            "Wanna grab lunch tomorrow?"
+            "We regret to inform you that your application was unsuccessful.",
+            "We regret to inform you that your application didn't make the cut.",
+            "We regret to inform you that, sadly, things didn't work out.",
+            "We regret to inform you that your application was a no-go."
           ],
-          "correct_index": 1,
-          "explanation_ru": "Pursuant to и I shall — канцелярский регистр, в дружеском сообщении звучат как пародия. Остальные строки естественны для чата: эллипсис, сокращения, разговорные слова.",
-          "difficulty": 1,
-          "diagnostic": false
+          "correct_index": 0,
+          "explanation_ru": "Формула We regret to inform you задаёт официальный регистр, и продолжение должно ему соответствовать: was unsuccessful. Didn't make the cut, things didn't work out и a no-go — разговорные обороты: каждый по отдельности уместен, но в одной фразе с канцелярской формулой звучит как сбой тона.",
+          "difficulty": 2,
+          "diagnostic": true
         },
         {
           "id": "c2_register_shifting_academic_journalistic_and_colloquial_english_05",
@@ -1911,13 +2008,16 @@
         {
           "id": "c2_register_shifting_academic_journalistic_and_colloquial_english_07",
           "kind": "correct",
-          "prompt": "Dear Professor Kim, I'm gonna submit my essay on Friday.",
-          "answer": "Dear Professor Kim, I will submit my essay on Friday.",
+          "prompt": "Dear Ms. Ortiz, Attached the signed contract for your records.",
+          "answer": "Dear Ms. Ortiz, Attached is the signed contract for your records.",
           "accept": [
-            "Dear Professor Kim, I am going to submit my essay on Friday.",
-            "Dear Professor Kim, I will be submitting my essay on Friday."
+            "Dear Ms. Ortiz, Please find attached the signed contract for your records.",
+            "Dear Ms. Ortiz, Attached please find the signed contract for your records.",
+            "Dear Ms. Ortiz, Attached you will find the signed contract for your records.",
+            "Dear Ms. Ortiz, I have attached the signed contract for your records.",
+            "Dear Ms. Ortiz, The signed contract is attached for your records."
           ],
-          "explanation_ru": "Формальное обращение и разговорное gonna несовместимы в одном письме.",
+          "explanation_ru": "Телеграфный пропуск глагола (Attached the contract) — примета чата или записки; в официальном письме нужна полная конструкция: Attached is… (причастие впереди, подлежащее после be) или Please find attached…",
           "difficulty": 2
         },
         {
@@ -1931,10 +2031,17 @@
             "The survey was not carried out owing to a lack of funding.",
             "The survey was not carried out owing to lack of funding.",
             "The survey was not carried out owing to insufficient funding.",
+            "The survey was not carried out owing to a shortage of funds.",
+            "The survey was not carried out owing to financial constraints.",
+            "The survey was not carried out owing to budget constraints.",
+            "The survey was not carried out owing to budgetary constraints.",
             "The survey could not be carried out owing to a lack of funds.",
             "The survey could not be carried out owing to lack of funds.",
             "The survey could not be carried out owing to insufficient funds.",
-            "The survey could not be carried out owing to a lack of funding."
+            "The survey could not be carried out owing to a lack of funding.",
+            "The survey could not be carried out owing to a shortage of funds.",
+            "The survey could not be carried out owing to financial constraints.",
+            "The survey could not be carried out owing to budget constraints."
           ],
           "explanation_ru": "Формальный вариант строится на пассиве с carry out и предложной причине owing to + существительное вместо разговорного придаточного because we ran out of money.",
           "difficulty": 3
@@ -1978,14 +2085,60 @@
           "prompt": "A: Have you seen my keys anywhere?\nB: ___ in the car?",
           "options": [
             "Left them",
-            "Them left",
+            "Have left them",
             "Leaving them",
-            "Did left them"
+            "Did leave them"
           ],
           "correct_index": 0,
-          "explanation_ru": "Разговорный эллипсис: вспомогательный и подлежащее в начале вопроса опускаются — (Have you) Left them in the car? Форма глагола при этом сохраняется. Did left — ошибка формы, остальные варианты ломают порядок.",
+          "explanation_ru": "Разговорный эллипсис убирает вспомогательный и подлежащее вместе: (Have you) Left them in the car? Форма причастия при этом сохраняется. Have left без you — полуобрывок, leaving them спрашивает о другом (оставляешь сейчас?), а did leave — ошибка формы.",
           "difficulty": 1,
           "diagnostic": true
+        },
+        {
+          "id": "c2_register_shifting_academic_journalistic_and_colloquial_english_11",
+          "kind": "choice",
+          "prompt": "Which line sounds most like relaxed spoken English rather than writing?",
+          "options": [
+            "She's really sharp, that new intern of yours.",
+            "That new intern of yours is really sharp.",
+            "Your new intern is exceptionally intelligent.",
+            "It is your new intern who is really sharp."
+          ],
+          "correct_index": 0,
+          "explanation_ru": "«Хвост» — повтор подлежащего в конце (…, that new intern of yours) — примета живой речи: сначала оценка, потом уточнение, о ком речь. Нейтральный порядок годится и для письма, exceptionally intelligent — формальный регистр, а it-конструкция выделяет, кто именно, — это письменный приём контраста.",
+          "difficulty": 2,
+          "diagnostic": true
+        },
+        {
+          "id": "c2_register_shifting_academic_journalistic_and_colloquial_english_12",
+          "kind": "transform",
+          "prompt": "Rewrite as a speaker might say it, putting 'that client in Boston' first as a 'head' and referring back to it with a pronoun: I just can't figure out that client in Boston.",
+          "answer": "That client in Boston, I just can't figure him out.",
+          "accept": [
+            "That client in Boston, I just can't figure her out.",
+            "That client in Boston, I just can't figure them out.",
+            "That client in Boston — I just can't figure him out.",
+            "That client in Boston — I just can't figure her out."
+          ],
+          "explanation_ru": "«Голова» выносит тему в начало отдельной группой, а в самом предложении её заменяет местоимение: That client in Boston, I just can't figure him out. С местоимением фразовый глагол разрывается — figure him out, а не figure out him.",
+          "difficulty": 3
+        },
+        {
+          "id": "c2_register_shifting_academic_journalistic_and_colloquial_english_13",
+          "kind": "transform",
+          "prompt": "Rewrite in casual spoken English, using a contraction and a phrasal verb with 'put': We will postpone the meeting until Friday.",
+          "answer": "We'll put off the meeting until Friday.",
+          "accept": [
+            "We'll put the meeting off until Friday.",
+            "We're putting off the meeting until Friday.",
+            "We're putting the meeting off until Friday.",
+            "We'll put off the meeting till Friday.",
+            "We'll put the meeting off till Friday.",
+            "We're going to put off the meeting until Friday.",
+            "We're going to put the meeting off until Friday."
+          ],
+          "explanation_ru": "Разговорный регистр заменяет латинский глагол (postpone) фразовым (put off) и сокращает will: We'll put off the meeting. Дополнение-существительное может стоять и между частями глагола: put the meeting off.",
+          "difficulty": 2
         }
       ]
     },
@@ -1997,7 +2150,7 @@
       "title_en": "Nuanced quantification, approximation and vague language",
       "source_slug": "",
       "title_ru": "Тонкая квантификация и приблизительность",
-      "summary_ru": "На высоком уровне количество в английском выражается не только числами. Quite a few значит «довольно много», а не «немного»; not a few — литота с тем же смыслом. Приблизительность передают about, around, roughly, in the region of, upwards of («более»), or so, give or take, суффикс -odd (twenty-odd people — «двадцать с лишним») и a good + единица времени (a good hour — «добрый час»). Эмфатические обороты no fewer than и as many as подчёркивают, что число велико, а as few as и as little as — что мало; по исчисляемости они выбираются так же, как many и much. Партитивы тоже различают оттенки: the lion's share (бо́льшая часть), a handful of (горстка), next to nothing (почти ничего), all but (почти: all but impossible). Расплывчатые выражения уместны в речи и журналистике, но в отчёте требуют уточнения цифрой.",
+      "summary_ru": "На высоком уровне количество в английском выражается не только числами. Quite a few значит «довольно много», а не «немного»; not a few — литота с тем же смыслом. Приблизительность передают about, around, roughly, in the region of, upwards of («более»), or so, give or take, суффикс -odd (twenty-odd people — «двадцать с лишним») и a good + единица времени (a good hour — «добрый час»). Эмфатические обороты no fewer than и as many as подчёркивают, что число велико, а as few as и as little as — что мало; по исчисляемости они выбираются так же, как many и much. Партитивы тоже различают оттенки: the lion's share (бо́льшая часть), a handful of (горстка), next to nothing (почти ничего), all but (почти: all but impossible), the best part of (почти весь: the best part of an hour). Расплывчатые выражения уместны в речи и журналистике, но в отчёте требуют уточнения цифрой. В разговоре точность размывают намеренно: -ish (fortyish), sort of / kind of, and stuff / and things, or something, or whatever — это признак непринуждённости, а не небрежности; stuff при этом неисчисляемое и -s не берёт.",
       "forms": [
         "quite a few / not a few (= довольно много) ↔ a few / few",
         "upwards of / in the region of / give or take + число; twenty-odd; a good hour",
@@ -2013,7 +2166,7 @@
         "We stayed a week or so.",
         "Quite a few guests left before the speeches."
       ],
-      "ru_interference": "Русские «довольно много» и «несколько» легко спутать, поэтому quite a few понимают как «немного» — а это «довольно много». Эмфатические обороты выбирают по привычке, а не по исчисляемости: неверно «as much as 50,000 people» → верно «as many as 50,000 people»; а к -odd добавляют -s: неверно «twenty-odds» → верно «twenty-odd».",
+      "ru_interference": "Русские «довольно много» и «несколько» легко спутать, поэтому quite a few понимают как «немного» — а это «довольно много». Эмфатические обороты выбирают по привычке, а не по исчисляемости: неверно «as much as 50,000 people» → верно «as many as 50,000 people»; а к -odd добавляют -s: неверно «thirty-odds» → верно «thirty-odd».",
       "prerequisites": [
         "b2_quantifiers",
         "c1_collocation_and_register_formal_vs_informal_equivalents"
@@ -2022,16 +2175,16 @@
         {
           "id": "c2_nuanced_quantification_approximation_and_vague_language_01",
           "kind": "choice",
-          "prompt": "'Quite a few people left before the end of the play.' This means that ___.",
+          "prompt": "'Not a few investors have privately questioned the valuation.' What does this mean?",
           "options": [
-            "a fairly large number of people left",
-            "very few people left",
-            "only one or two people left",
-            "nobody left"
+            "A fair number of investors have questioned it.",
+            "Hardly any investors have questioned it.",
+            "Only a handful of investors have questioned it.",
+            "Almost all the investors have questioned it."
           ],
           "correct_index": 0,
-          "explanation_ru": "Quite a few — «довольно много», хотя похоже на «немного». Very few и only one or two — противоположный смысл.",
-          "difficulty": 1,
+          "explanation_ru": "Not a few — литота: «немало», то есть довольно много. Русскоязычные читают not как «ни одного» или a few как «немного» и получают противоположный смысл. Almost all — преувеличение: not a few говорит о заметном числе, но не о большинстве.",
+          "difficulty": 2,
           "diagnostic": true
         },
         {
@@ -2040,28 +2193,28 @@
           "prompt": "The survey received ___ 4,000 responses, far more than expected.",
           "options": [
             "no fewer than",
-            "no less of",
-            "not fewer as",
-            "no more than"
+            "no more than",
+            "as few as",
+            "barely"
           ],
           "correct_index": 0,
-          "explanation_ru": "No fewer than + число подчёркивает, что его много: «ни много ни мало 4000». No more than значит «всего лишь» и противоречит far more than expected; no less of и not fewer as неграмматичны.",
+          "explanation_ru": "No fewer than + число подчёркивает, что его много: «ни много ни мало 4000». No more than и as few as, наоборот, подчёркивают, что мало, а barely — «едва»: все три противоречат far more than expected.",
           "difficulty": 2,
           "diagnostic": true
         },
         {
           "id": "c2_nuanced_quantification_approximation_and_vague_language_03",
           "kind": "choice",
-          "prompt": "The renovation took ___ of six months, far longer than anyone planned.",
+          "prompt": "We spent ___ a year negotiating the contract — eleven months, to be exact.",
           "options": [
-            "upwards",
-            "upwardly",
-            "up",
-            "above"
+            "the best part of",
+            "upwards of",
+            "a good",
+            "no less than"
           ],
           "correct_index": 0,
-          "explanation_ru": "Оборот приблизительности пишется как upwards of + число и означает «более чем»; наречие upwardly, предлог above и голое up в эту схему не встают.",
-          "difficulty": 1,
+          "explanation_ru": "The best part of — «бо́льшая часть, почти весь»: одиннадцать месяцев из двенадцати. Upwards of и a good значат «больше» и «не меньше года», no less than — «целый год, не меньше»: все три противоречат eleven months.",
+          "difficulty": 2,
           "diagnostic": true
         },
         {
@@ -2084,8 +2237,10 @@
           "kind": "gap",
           "prompt": "We waited a ___ (an adjective meaning 'at least, not less than'; not 'full') hour before anyone came to help.",
           "answer": "good",
-          "accept": [],
-          "explanation_ru": "A good + единица времени или расстояния — «добрый, целый, не меньше»: a good hour, a good ten miles.",
+          "accept": [
+            "solid"
+          ],
+          "explanation_ru": "A good + единица времени или расстояния — «добрый, целый, не меньше»: a good hour, a good ten miles. В американской речи в том же значении говорят и a solid hour.",
           "difficulty": 2
         },
         {
@@ -2165,6 +2320,42 @@
           "explanation_ru": "Next to nothing — «почти ничего». Near to nothing — калька, almost anything значит «почти что угодно», а nearly nothing at all of money — нагромождение.",
           "difficulty": 2,
           "diagnostic": true
+        },
+        {
+          "id": "c2_nuanced_quantification_approximation_and_vague_language_11",
+          "kind": "cloze",
+          "prompt": "Voice message: 'Hi, it's Dana. Running a bit late — I'll be there at seven-___ (casual 'about seven'). The client meeting went on for three hours ___ (casual 'approximately'), and we talked about budgets, hiring ___ (casual 'and similar things'). It was ___ (casual hedge = 'a little') exhausting, to be honest. Grab me a sandwich ___ (casual 'or something similar'), would you?'",
+          "gaps": [
+            [
+              "ish",
+              "-ish"
+            ],
+            [
+              "or so",
+              "give or take"
+            ],
+            [
+              "and stuff",
+              "and things",
+              "and stuff like that",
+              "and things like that",
+              "and whatnot",
+              "and all that"
+            ],
+            [
+              "kind of",
+              "sort of",
+              "kinda",
+              "a bit",
+              "a little"
+            ],
+            [
+              "or something",
+              "or whatever"
+            ]
+          ],
+          "explanation_ru": "В живой речи точность намеренно размывают: seven-ish — «около семи», or so — «примерно», and stuff / and things — «и всё такое» (stuff неисчисляемое, stuffs — ошибка), kind of / sort of — смягчение, or something — «или что-то в этом роде». В отчёте или письме те же места требуют цифры и точного перечня.",
+          "difficulty": 2
         }
       ]
     }

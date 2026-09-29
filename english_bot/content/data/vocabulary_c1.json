@@ -797,8 +797,7 @@
       "topic": "feelings",
       "accept": [
         "assess",
-        "judge",
-        "measure"
+        "judge"
       ]
     },
     {
@@ -942,7 +941,8 @@
       "accept": [
         "relieve",
         "ease",
-        "soothe"
+        "soothe",
+        "lessen"
       ]
     },
     {
@@ -1842,7 +1842,10 @@
         "much as I would like to",
         "much as we admire"
       ],
-      "topic": "people"
+      "topic": "people",
+      "accept": [
+        "as much as"
+      ]
     },
     {
       "id": "c1_v_provided_that",
@@ -2160,7 +2163,7 @@
       "pos": "phrase",
       "ipa_us": "/ˌgɛt ðə ˈhæŋ əv/",
       "translation_ru": "освоиться, набить руку",
-      "example_en": "After a few days you get the hang of driving on the right.",
+      "example_en": "After a few days you get the hang of driving on the left.",
       "collocations": [
         "get the hang of it",
         "get the hang of a tool"

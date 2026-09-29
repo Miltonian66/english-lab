@@ -11,7 +11,7 @@ from english_bot.content.schema import Exercise
 from english_bot.learning import placement as pl
 from english_bot.learning import practice as pr
 from english_bot.learning import srs
-from english_bot.learning.answers import grade, matches, normalize, parse_choice
+from english_bot.learning.answers import american_spelling, grade, matches, normalize, parse_choice
 
 
 CURRICULUM = load_curriculum()
@@ -160,6 +160,34 @@ class AnswerTests(unittest.TestCase):
         self.assertTrue(matches(exercise, "I usd to play tennis every day."))
         order = self._ex("order", "than / older / she / is / me / .", "She is older than me.")
         self.assertFalse(matches(order, "She is older then me."))
+
+    def test_british_spelling_is_accepted_with_an_american_note(self) -> None:
+        gap = self._ex("gap", "The flight was ___ (cancel) because of the storm.", "canceled")
+        result = grade(gap, "cancelled")
+        self.assertTrue(result.correct)
+        self.assertIn("cancelled → canceled", result.note)
+        order = self._ex("transform", "Rewrite: My favourite colour is blue.", "My favorite color is blue.")
+        self.assertTrue(matches(order, "My favourite colour is blue."))
+        self.assertFalse(matches(gap, "canceld"))
+        self.assertEqual(american_spelling("I will organise it and realise the plan")[0],
+                         "I will organize it and realize the plan")
+        self.assertEqual(american_spelling("advise and exercise")[1], [])
+
+    def test_british_have_for_possession_is_not_i_have(self) -> None:
+        """«I've a dog» в General American не говорят; «I've got a dog» — да."""
+        exercise = self._ex("transform", "Rewrite: I have got a dog.", "I have a dog.",
+                            accept=("I've got a dog.",))
+        self.assertFalse(matches(exercise, "I've a dog."))
+        self.assertTrue(matches(exercise, "I've got a dog."))
+        perfect = self._ex("gap", "I ___ (be) here since noon.", "have been")
+        self.assertTrue(matches(perfect, "'ve been"))
+
+    def test_task_that_asks_for_a_contraction_rejects_the_full_form(self) -> None:
+        exercise = self._ex("transform",
+                            "Rewrite in casual spoken English, using a contraction: We will postpone it.",
+                            "We'll put it off.")
+        self.assertTrue(matches(exercise, "We'll put it off"))
+        self.assertFalse(matches(exercise, "We will put it off."))
 
     def test_apostrophe_is_grammar_not_a_typo(self) -> None:
         """«a customs' officer» — ошибка притяжательной формы, а не описка."""

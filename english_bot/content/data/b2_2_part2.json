@@ -178,13 +178,14 @@
       "title_en": "Distancing: Expressions and passive of reporting verbs",
       "source_slug": "distancing",
       "title_ru": "Дистанцирование: безличные и пассивные конструкции",
-      "summary_ru": "Дистанцирование нужно, когда мы передаём информацию, но не отвечаем за её достоверность: слухи, отчёты, оценки. Первая модель безличная: It is said / believed / thought / reported / expected + that + придаточное. Вторая модель личная: подлежащее + is или was said + to + инфинитив, при этом лицо или предмет выносится в начало. Если событие произошло раньше момента речи, после to ставим перфектный инфинитив: to have + V3. С оборотом there конструкция тоже работает: There are thought to be about 200 users left. Короче и мягче то же самое передают наречия apparently, allegedly, reportedly и глаголы seem и appear. Все эти формы типичны для новостей, отчётов об инцидентах и осторожной деловой переписки.",
+      "summary_ru": "Дистанцирование нужно, когда мы передаём информацию, но не отвечаем за её достоверность: слухи, отчёты, оценки. Первая модель безличная: It is said / believed / thought / reported / expected + that + придаточное. Вторая модель личная: подлежащее + is или was said + to + инфинитив, при этом лицо или предмет выносится в начало. Если событие произошло раньше момента речи, после to ставим перфектный инфинитив: to have + V3. С оборотом there конструкция тоже работает: There are thought to be about 200 users left. Короче и мягче то же самое передают наречия apparently, allegedly, reportedly и глаголы seem и appear. Процесс в прошлом передаёт to have been + V-ing: The driver is said to have been speeding. Ещё осторожнее звучат it would appear that и tend to + инфинитив для обобщений: Users tend to ignore warnings. Все эти формы типичны для новостей, отчётов об инцидентах и осторожной деловой переписки.",
       "forms": [
         "It + is/was + said/believed/thought/reported + that + clause",
         "Subject + is/was + said/believed + to + infinitive",
         "Subject + is/was + said + to have + V3 (earlier action)",
         "There + is/are + thought/believed + to be + noun",
-        "seem/appear + to + infinitive; apparently / allegedly / reportedly"
+        "seem/appear + to + infinitive; apparently / allegedly / reportedly",
+        "It would appear that + clause; subject + tend to + infinitive; is said to have been + V-ing"
       ],
       "examples": [
         "It is said that the old bridge is unsafe.",
@@ -388,6 +389,52 @@
           "accept": [],
           "explanation_ru": "Личная модель: подлежащее + is believed + to have + V3. Корабль затонул раньше, чем об этом говорят, поэтому инфинитив перфектный.",
           "difficulty": 2
+        },
+        {
+          "id": "b2_distancing_15",
+          "kind": "choice",
+          "prompt": "The mayor ___ accepted money from a building company, but he denies everything and there has been no trial yet.",
+          "options": [
+            "allegedly",
+            "obviously",
+            "certainly",
+            "personally"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Allegedly — «якобы, как утверждают»: обвинение не доказано, и говорящий за него не отвечает (так же reportedly — «по сообщениям»). Obviously и certainly выражают уверенность, которой нет, раз суда не было, а personally — личное участие.",
+          "difficulty": 2
+        },
+        {
+          "id": "b2_distancing_16",
+          "kind": "transform",
+          "prompt": "Rewrite in a more cautious written style, starting with 'It would appear': Someone has broken into the garage.",
+          "answer": "It would appear that someone has broken into the garage.",
+          "accept": [
+            "It would appear someone has broken into the garage.",
+            "It would appear that someone broke into the garage.",
+            "It would appear someone broke into the garage."
+          ],
+          "explanation_ru": "It would appear (that) + придаточное — осторожнее, чем it appears: would ещё больше снимает с говорящего ответственность. Так пишут в отчётах и официальных письмах. Время придаточного не меняется: has broken in.",
+          "difficulty": 2
+        },
+        {
+          "id": "b2_distancing_17",
+          "kind": "cloze",
+          "prompt": "LOCAL NEWS. The driver of the bus ___ (say / drive) too fast when the accident happened, although he denies this. Several passengers ___ (report → adverb) heard a loud bang just before the crash. According to the police, drivers on this road ___ (tend) ignore the speed limit, especially at night.",
+          "gaps": [
+            [
+              "is said to have been driving",
+              "was said to have been driving"
+            ],
+            [
+              "reportedly"
+            ],
+            [
+              "tend to"
+            ]
+          ],
+          "explanation_ru": "Процесс в прошлом, о котором говорят сейчас, — to have been + V-ing: is said to have been driving. Reportedly — «по сообщениям»: говорящий передаёт чужие сведения. Tend to + инфинитив смягчает обобщение: «как правило, склонны».",
+          "difficulty": 3
         }
       ]
     },
@@ -880,13 +927,14 @@
       "title_en": "50 common Noun + Preposition collocations",
       "source_slug": "50-common-noun-preposition-collocations",
       "title_ru": "Существительное + предлог: частотные сочетания",
-      "summary_ru": "У многих английских существительных предлог закреплён и не выводится из логики, поэтому его учат вместе со словом. С for идут reason, need, demand, responsibility, request, respect. С to идут solution, answer, alternative, access, reaction, damage, invitation, key. С in идут increase, rise, fall, drop, interest, difficulty, change. С of идут cause, advantage, lack, example, knowledge, cost, way. С on идут effect, impact, influence, opinion, report. Between используем, когда речь идёт о двух и более объектах: the difference between two libraries, the connection between the incidents. Предлог не меняется от артикля и от числа: a reason for, the reasons for.",
+      "summary_ru": "У многих английских существительных предлог закреплён и не выводится из логики, поэтому его учат вместе со словом. С for идут reason, need, demand, responsibility, request, respect. С to идут solution, answer, alternative, access, reaction, damage, invitation, key. С in идут increase, rise, fall, drop, interest, difficulty, change. С of идут cause, advantage, lack, example, knowledge, cost, way. С on идут effect, impact, influence, opinion, report. Отдельно запоминаем attitude toward (towards), approach to, emphasis on и relationship with. Between используем, когда речь идёт о двух и более объектах: the difference between two libraries, the connection between the incidents. Предлог не меняется от артикля и от числа: a reason for, the reasons for.",
       "forms": [
         "reason / need / demand / responsibility + for",
         "solution / answer / alternative / access / reaction + to",
         "increase / rise / fall / interest / difficulty + in",
         "cause / advantage / lack / example / knowledge + of",
-        "effect / impact / influence + on; difference / connection + between"
+        "effect / impact / influence + on; difference / connection + between",
+        "attitude toward / approach to / emphasis on / relationship with"
       ],
       "examples": [
         "Nobody could explain the reason for the delay.",
@@ -1082,6 +1130,50 @@
           ],
           "explanation_ru": "Глагол emphasize идёт без предлога (emphasizes breathing), а существительное emphasis требует on: put (place) a lot of emphasis on breathing — «делать большой упор на». Emphasis in и emphasis to — ошибки.",
           "difficulty": 3
+        },
+        {
+          "id": "b2_50_common_noun_preposition_collocations_14",
+          "kind": "choice",
+          "prompt": "Her attitude ___ work changed completely after she had kids.",
+          "options": [
+            "toward",
+            "for",
+            "on",
+            "at"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Attitude сочетается с toward (в британском towards, возможно и to): attitude toward work — «отношение к работе». Русское «отношение к» не подсказывает for, on или at, а с attitude они не употребляются.",
+          "difficulty": 2
+        },
+        {
+          "id": "b2_50_common_noun_preposition_collocations_15",
+          "kind": "gap",
+          "prompt": "Our new math teacher has a completely different approach ___ homework: she gives almost none. (one word)",
+          "answer": "to",
+          "accept": [],
+          "explanation_ru": "Approach («подход») берёт to: an approach to homework. Русское «подход к» совпадает, но под влиянием «метод для» или «подход в» часто ставят for и in — это ошибка.",
+          "difficulty": 2
+        },
+        {
+          "id": "b2_50_common_noun_preposition_collocations_16",
+          "kind": "cloze",
+          "prompt": "Dear Aunt Rosa, thank you so much for the invitation ___ Mia's graduation party. Sadly, I can't come: last week's storm did serious damage ___ our roof, and the repairs start on Saturday. I know how close your relationship ___ Mia is, so please give her a hug from me. I have huge respect ___ how hard she worked this year.",
+          "gaps": [
+            [
+              "to"
+            ],
+            [
+              "to"
+            ],
+            [
+              "with"
+            ],
+            [
+              "for"
+            ]
+          ],
+          "explanation_ru": "Invitation и damage берут to (an invitation to the party, damage to the roof), relationship — with (relationship with Mia), respect — for (respect for her work). Русские «приглашение на», «повреждение крыши» и «уважение к» подсказывают on, of и to — все три ошибочны.",
+          "difficulty": 2
         }
       ]
     },
@@ -2026,7 +2118,7 @@
       "title_en": "Relative clauses: Defining and non-defining",
       "source_slug": "relative-clauses",
       "title_ru": "Определительные придаточные: с запятыми и без",
-      "summary_ru": "Defining-придаточное отвечает на вопрос 'какой именно' и без него смысл теряется: The engineer who wrote this module has left. Оно не выделяется запятыми, допускает that вместо who и which, а если местоимение является дополнением, его можно опустить: The bug we fixed yesterday is back. Non-defining-придаточное добавляет побочную информацию, обязательно выделяется запятыми, that в нём невозможно, а местоимение опустить нельзя: My manager, who joined last year, speaks four languages. Which в non-defining может относиться ко всему предложению: The server crashed at three, which nobody noticed. Whose показывает принадлежность, where указывает на место, when на время. В разговорной речи предлог уходит в конец придаточного, а в формальном стиле встаёт перед whom или which. После some, most, all, both, none и числительных в non-defining-придаточном ставится of whom о людях и of which о предметах: two sisters, both of whom are doctors. Книжное whereby значит «при котором, согласно которому»: a system whereby every change is reviewed.",
+      "summary_ru": "Defining-придаточное отвечает на вопрос 'какой именно' и без него смысл теряется: The engineer who wrote this module has left. Оно не выделяется запятыми, допускает that вместо who и which, а если местоимение является дополнением, его можно опустить: The bug we fixed yesterday is back. Non-defining-придаточное добавляет побочную информацию, обязательно выделяется запятыми, that в нём невозможно, а местоимение опустить нельзя: My manager, who joined last year, speaks four languages. Which в non-defining может относиться ко всему предложению: The server crashed at three, which nobody noticed. Whose показывает принадлежность, where указывает на место, when на время. В разговорной речи предлог уходит в конец придаточного, а в формальном стиле встаёт перед whom или which. После some, most, all, both, none и числительных в non-defining-придаточном ставится of whom о людях и of which о предметах: two sisters, both of whom are doctors. Книжное whereby значит «при котором, согласно которому»: a system whereby every change is reviewed. The extent to which — «то, насколько»: предлог to стоит перед which.",
       "forms": [
         "defining: noun + who/that/which + verb (no commas)",
         "defining object: noun (+ who/that/which) + subject + verb (pronoun can be dropped)",
@@ -2240,6 +2332,52 @@
             "The phone I bought last month broke already."
           ],
           "explanation_ru": "Местоимение-дополнение в defining-придаточном можно опустить: the phone (that) I bought last month. Придаточное стоит сразу после существительного, а сказуемое главного предложения — после придаточного.",
+          "difficulty": 2
+        },
+        {
+          "id": "b2_relative_clauses_15",
+          "kind": "cloze",
+          "prompt": "Our book club has twelve members, most of ___ are retired teachers. We meet in a small café, the owner of ___ lets us stay after closing time. We read about thirty books a year, some of ___ are hard to find in English. What surprises me most is the extent to ___ the club has changed my reading habits.",
+          "gaps": [
+            [
+              "whom"
+            ],
+            [
+              "which"
+            ],
+            [
+              "which"
+            ],
+            [
+              "which"
+            ]
+          ],
+          "explanation_ru": "После количественного слова или существительного с of в non-defining-придаточном ставится of whom о людях и of which о предметах: most of whom, the owner of which, some of which. The extent to which — «то, насколько»: предлог to стоит перед which. That и who после предлога невозможны.",
+          "difficulty": 3
+        },
+        {
+          "id": "b2_relative_clauses_16",
+          "kind": "transform",
+          "prompt": "Rewrite as one sentence using 'some of whom': I invited twenty people to my birthday party. Some of them didn't come.",
+          "answer": "I invited twenty people to my birthday party, some of whom didn't come.",
+          "accept": [
+            "I invited 20 people to my birthday party, some of whom didn't come."
+          ],
+          "explanation_ru": "Второе предложение становится non-defining-придаточным: some of them → some of whom, после запятой. Them после запятой дал бы два предложения, склеенных запятой, а who после of не ставят.",
+          "difficulty": 3
+        },
+        {
+          "id": "b2_relative_clauses_17",
+          "kind": "choice",
+          "prompt": "Scientists still disagree about the extent ___ air pollution affects children's memory.",
+          "options": [
+            "to which",
+            "which",
+            "of which",
+            "in that"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "The extent to which — «то, насколько»: предлог to закреплён за extent (to a large extent) и в придаточном встаёт перед which. Which без предлога оставляет to без места, of which значит «из которых», а после предлога that не ставят.",
           "difficulty": 2
         }
       ]
@@ -2457,13 +2595,14 @@
       "title_en": "Future in the past",
       "source_slug": "future-in-the-past",
       "title_ru": "Будущее в прошедшем",
-      "summary_ru": "Когда мы смотрим на будущее из точки в прошлом, все формы будущего сдвигаются назад. Will превращается в would: He said he would send the report by Friday. Be going to превращается в was или were going to и часто описывает несостоявшийся план: I was going to call you, but I forgot. Present continuous для договорённости превращается в past continuous: She was meeting the client at nine. Оборот be about to переходит в was или were about to: We were about to leave when the alarm went off. Формальное be to становится was или were to: The migration was to start on Monday. Эти формы обязательны в косвенной речи и в рассказе о прошлых планах. Оборот was supposed to добавляет оттенок невыполненного обязательства.",
+      "summary_ru": "Когда мы смотрим на будущее из точки в прошлом, все формы будущего сдвигаются назад. Will превращается в would: He said he would send the report by Friday. Be going to превращается в was или were going to и часто описывает несостоявшийся план: I was going to call you, but I forgot. Present continuous для договорённости превращается в past continuous: She was meeting the client at nine. Оборот be about to переходит в was или were about to: We were about to leave when the alarm went off. Формальное be to становится was или were to: The migration was to start on Monday. Was to have + V3 подчёркивает, что официальный план сорвался: The release was to have shipped in May. Эти формы обязательны в косвенной речи и в рассказе о прошлых планах. Оборот was supposed to добавляет оттенок невыполненного обязательства.",
       "forms": [
         "would + V (will becomes would)",
         "was/were going to + V (plan, often unrealized)",
         "was/were about to + V (immediate future in the past)",
         "past continuous for arranged events: I was meeting him at six",
-        "was/were to + V (formal, arranged)"
+        "was/were to + V (formal, arranged)",
+        "was/were to have + V3 (formal plan that did not happen)"
       ],
       "examples": [
         "He said he would send the report by Friday.",
@@ -2664,6 +2803,40 @@
           "explanation_ru": "Официальный план в прошлом — was to + инфинитив: version 4.0 was to go live last Monday («по плану должна была выйти»). Is to говорит о настоящем плане и с last Monday не сочетается, was bound to значит «неизбежно», а релиз так и не вышел, у must нет прошедшей формы.",
           "difficulty": 2,
           "diagnostic": true
+        },
+        {
+          "id": "b2_future_in_the_past_13",
+          "kind": "cloze",
+          "prompt": "My cousin's wedding ___ (be to have / take place) in June, but the venue burned down in May. The organizers promised that they ___ (find) a new place within a month, but by August they ___ (be on the point of / cancel) everything. Then an old friend offered them his farm.",
+          "gaps": [
+            [
+              "was to have taken place"
+            ],
+            [
+              "would find",
+              "were going to find"
+            ],
+            [
+              "were on the point of canceling",
+              "had been on the point of canceling"
+            ]
+          ],
+          "explanation_ru": "Was to have + V3 — официальный план, который сорвался: was to have taken place. В косвенной речи после promised will сдвигается в would. Were on the point of + -ing — «вот-вот, чуть было не» в прошлом: после of нужна форма на -ing.",
+          "difficulty": 3
+        },
+        {
+          "id": "b2_future_in_the_past_14",
+          "kind": "choice",
+          "prompt": "Как сказать по-английски: «Она пообещала, что позвонит, как только приземлится»?",
+          "options": [
+            "She promised she would call as soon as she landed.",
+            "She promised she would call as soon as she would land.",
+            "She promised she will call as soon as she will land.",
+            "She promised she calls as soon as she lands."
+          ],
+          "correct_index": 0,
+          "explanation_ru": "После promised будущее сдвигается: will call → would call. В придаточном времени после as soon as would не ставят — там простое прошедшее landed, как в настоящем было бы lands. Русское «позвонит» и «приземлится» в будущем тянет к will, но после прошедшего глагола сообщения это ошибка.",
+          "difficulty": 2
         }
       ]
     }

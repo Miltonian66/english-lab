@@ -405,14 +405,15 @@
       "title_en": "Other ways to express future: Be about to, be due to, etc.",
       "source_slug": "ways-express-future",
       "title_ru": "Другие способы говорить о будущем",
-      "summary_ru": "Кроме will, be going to и Present Continuous, у будущего есть несколько специальных конструкций. Be about to + инфинитив означает «вот-вот», действие начнётся через считаные секунды или минуты, поэтому оно не сочетается с указанием даты. Be due to + инфинитив означает «должно произойти по расписанию или плану»: The release is due to ship on Friday. Be to + инфинитив звучит официально и передаёт распоряжение или согласованный план: All staff are to complete the training. Be bound to значит «неизбежно произойдёт», be likely to — «вероятно», be set to — «намечено, ожидается» (частый оборот новостей: prices are set to rise). В прошедшем времени was/were about to описывает то, что почти случилось, но не случилось: I was about to send the email when I noticed the typo. После этих оборотов идёт инфинитив с to (to start, to ship), а не форма на -ing. Исключение — be on the point of и be on the verge of («вот-вот, чуть было не»): после предлога of нужна форма на -ing: I was on the point of giving up.",
+      "summary_ru": "Кроме will, be going to и Present Continuous, у будущего есть несколько специальных конструкций. Be about to + инфинитив означает «вот-вот», действие начнётся через считаные секунды или минуты, поэтому оно не сочетается с указанием даты. Be due to + инфинитив означает «должно произойти по расписанию или плану»: The release is due to ship on Friday. Be to + инфинитив звучит официально и передаёт распоряжение или согласованный план: All staff are to complete the training. Be bound to значит «неизбежно произойдёт», be likely to — «вероятно», be set to — «намечено, ожидается» (частый оборот новостей: prices are set to rise). В прошедшем времени was/were about to описывает то, что почти случилось, но не случилось: I was about to send the email when I noticed the typo. После этих оборотов идёт инфинитив с to (to start, to ship), а не форма на -ing. Исключение — be on the point of и be on the verge of («вот-вот, чуть было не»): после предлога of нужна форма на -ing или существительное: I was on the point of giving up, scientists are on the verge of a breakthrough.",
       "forms": [
         "be about to + инфинитив: The build is about to finish.",
         "be due to + инфинитив: The release is due to ship on Friday.",
         "be to + инфинитив (официально): All staff are to sign the policy.",
         "be bound to / be likely to + инфинитив: It's bound to break.",
         "was/were about to + инфинитив (несостоявшееся): I was about to call you.",
-        "be on the point of / be on the verge of + -ing: I was on the point of leaving."
+        "be on the point of / be on the verge of + -ing: I was on the point of leaving.",
+        "be set to / be likely to + infinitive; be on the verge of + noun or -ing"
       ],
       "examples": [
         "Don't restart the server — the backup is about to finish.",
@@ -627,6 +628,43 @@
           "explanation_ru": "Be to + инфинитив — официальное правило или распоряжение: visitors are to wear a badge («обязаны носить»). Be due to — «по расписанию», be about to — «вот-вот», be likely to — «вероятно»; требования ни одно из них не выражает.",
           "difficulty": 2,
           "diagnostic": true
+        },
+        {
+          "id": "b2_ways_express_future_16",
+          "kind": "choice",
+          "prompt": "After ten years of research, the team is ___ a major breakthrough in cancer treatment.",
+          "options": [
+            "on the verge of",
+            "about to",
+            "due to",
+            "bound to"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "Be on the verge of + существительное или -ing — «на пороге, вот-вот»: on the verge of a breakthrough. About to, due to и bound to требуют инфинитива (bound to make a breakthrough), а не существительного.",
+          "difficulty": 2
+        },
+        {
+          "id": "b2_ways_express_future_17",
+          "kind": "transform",
+          "prompt": "Rewrite using the word in capitals (do not change it): The new subway line will open in March, officials say. SET",
+          "answer": "The new subway line is set to open in March, officials say.",
+          "accept": [
+            "Officials say the new subway line is set to open in March.",
+            "Officials say that the new subway line is set to open in March.",
+            "The new subway line is set to be opened in March, officials say.",
+            "Officials say the new subway line is set to be opened in March."
+          ],
+          "explanation_ru": "Be set to + инфинитив — «намечено, ожидается»: так в новостях сообщают о запланированном событии. Перед set нужен be (is set), а после — инфинитив с to: is set to open.",
+          "difficulty": 2
+        },
+        {
+          "id": "b2_ways_express_future_18",
+          "kind": "gap",
+          "prompt": "Experts say that summers here ___ (be likely / get) even hotter over the next ten years.",
+          "answer": "are likely to get",
+          "accept": [],
+          "explanation_ru": "Be likely to + инфинитив — «вероятно»: summers are likely to get hotter. Подлежащее summers во множественном числе, поэтому are; после likely — to + начальная форма.",
+          "difficulty": 2
         }
       ]
     },

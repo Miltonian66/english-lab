@@ -1337,7 +1337,7 @@
       "title_en": "Clauses of contrast, purpose, reason and result",
       "source_slug": "clauses-contrast-purpose-reason-result",
       "title_ru": "Придаточные уступки, цели, причины и результата",
-      "summary_ru": "Уступку вводят although, though, even though плюс придаточное с подлежащим и глаголом, а despite и in spite of — только существительное или форму на -ing. После despite предлог of не ставится. Цель выражается через in order to и so as to плюс инфинитив, либо через so that плюс придаточное с модальным глаголом. Причину вводят because, as, since плюс придаточное и because of, due to плюс существительное. Результат передают конструкции so плюс прилагательное плюс that и such a плюс существительное плюс that, а также вводные therefore и as a result. Книжный уровень добавляет much as (= although, «как бы ни»), whereas (противопоставление двух фактов), for fear of + -ing («чтобы не, боясь») и in order that + придаточное. Важно помнить, что although и but не используются в одном предложении одновременно.",
+      "summary_ru": "Уступку вводят although, though, even though плюс придаточное с подлежащим и глаголом, а despite и in spite of — только существительное или форму на -ing. После despite предлог of не ставится. Цель выражается через in order to и so as to плюс инфинитив, либо через so that плюс придаточное с модальным глаголом. Причину вводят because, as, since плюс придаточное и because of, due to плюс существительное. Результат передают конструкции so плюс прилагательное плюс that и such a плюс существительное плюс that, а также вводные therefore и as a result. Книжный уровень добавляет much as (= although, «как бы ни»), whereas и while (противопоставление двух фактов), no matter how / however + прилагательное («как бы ни»), for fear of + -ing («чтобы не, боясь») и in order that + придаточное. Важно помнить, что although и but не используются в одном предложении одновременно.",
       "forms": [
         "although / though / even though + clause",
         "despite / in spite of + noun или -ing",
@@ -1535,6 +1535,42 @@
           "explanation_ru": "Русское «чтобы не опоздать» нельзя передать через for + -ing: нужно so as not to be late или so that we wouldn't be late. Остальные предложения верны: in spite of + существительное, so as to + V1, such a + существительное + that.",
           "difficulty": 2,
           "diagnostic": true
+        },
+        {
+          "id": "b2_clauses_contrast_purpose_reason_result_12",
+          "kind": "choice",
+          "prompt": "___ my sister spends every dollar she earns, I save almost half of my salary.",
+          "options": [
+            "While",
+            "Despite",
+            "Unless",
+            "So that"
+          ],
+          "correct_index": 0,
+          "explanation_ru": "While в начале предложения может значить не «пока», а «тогда как»: противопоставляет два факта о разных людях, как whereas. Despite требует существительного, unless вводит условие («если не»), so that — цель.",
+          "difficulty": 2
+        },
+        {
+          "id": "b2_clauses_contrast_purpose_reason_result_13",
+          "kind": "transform",
+          "prompt": "Rewrite using the words in capitals (do not change them): However hard I try, I can't remember people's names. NO MATTER",
+          "answer": "No matter how hard I try, I can't remember people's names.",
+          "accept": [
+            "I can't remember people's names no matter how hard I try."
+          ],
+          "explanation_ru": "No matter how + прилагательное или наречие + придаточное = however + прилагательное: «как бы … ни». После how сразу идёт hard, а подлежащее и глагол — потом: no matter how hard I try. No matter how I try hard — ошибка порядка.",
+          "difficulty": 3
+        },
+        {
+          "id": "b2_clauses_contrast_purpose_reason_result_14",
+          "kind": "gap",
+          "prompt": "___ (however / tired) you are, always take off your makeup before bed.",
+          "answer": "However tired",
+          "accept": [
+            "No matter how tired"
+          ],
+          "explanation_ru": "However + прилагательное + подлежащее + глагол — «как бы ни»: however tired you are = no matter how tired you are. Прилагательное стоит сразу после however, а не в конце (however you are tired — ошибка).",
+          "difficulty": 2
         }
       ]
     },

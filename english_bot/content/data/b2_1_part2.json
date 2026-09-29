@@ -1228,7 +1228,8 @@
             "His explanation didn't make any sense.",
             "His explanation didn't make any sense at all.",
             "His explanation didn't make sense.",
-            "His explanation didn't make sense at all."
+            "His explanation didn't make sense at all.",
+            "His explanation made no sense whatsoever."
           ],
           "explanation_ru": "«Иметь смысл» — make sense: make сочетается с тем, что возникает в результате (make a plan, make a difference, make sense), а do — с самой работой (do research). Отрицание — made no sense или didn't make (any) sense; do sense не бывает.",
           "difficulty": 3
@@ -1428,7 +1429,9 @@
             "However busy she may be, she always calls her mom on Sundays.",
             "She always calls her mom on Sundays, however busy she may be.",
             "However busy she gets, she always calls her mom on Sundays.",
-            "She always calls her mom on Sundays, however busy she gets."
+            "She always calls her mom on Sundays, however busy she gets.",
+            "However busy she might be, she always calls her mom on Sundays.",
+            "She always calls her mom on Sundays, however busy she might be."
           ],
           "explanation_ru": "However в значении «как бы ни» стоит вплотную к прилагательному: however busy she is — «как бы она ни была занята». После него обычный порядок слов; However she is busy значило бы «однако она занята».",
           "difficulty": 3
@@ -1642,7 +1645,10 @@
             "Neither of the restaurants near our hotel was open on Monday.",
             "Neither restaurant near our hotel was open on Monday.",
             "Neither of the two restaurants near our hotel were open on Monday.",
-            "Neither of the restaurants near our hotel were open on Monday."
+            "Neither of the restaurants near our hotel were open on Monday.",
+            "Neither of the two restaurants near our hotel opened on Monday.",
+            "Neither of the restaurants near our hotel opened on Monday.",
+            "Neither restaurant near our hotel opened on Monday."
           ],
           "explanation_ru": "Neither уже содержит отрицание — «ни один из двух», поэтому глагол утвердительный: was open, а не wasn't open. Перед the нужно of (neither of the restaurants), а без of — существительное в единственном числе: neither restaurant. После neither of в разговорной речи возможно и were.",
           "difficulty": 3
@@ -1852,7 +1858,8 @@
           "answer": "What is Lena worried about?",
           "accept": [],
           "explanation_ru": "В вопросе к дополнению с предлогом предлог уходит в конец: What is Lena worried about? Начало About what… — калька с «О чём…», в живой речи так не спрашивают.",
-          "difficulty": 2
+          "difficulty": 2,
+          "diagnostic": false
         }
       ]
     },
@@ -2037,10 +2044,12 @@
         {
           "id": "b2_participle_adjectives_12",
           "kind": "transform",
-          "prompt": "Rewrite using the word in capitals (do not change it): The service at the new restaurant was very slow, and that disappointed us. DISAPPOINTINGLY",
-          "answer": "The service at the new restaurant was disappointingly slow.",
-          "accept": [],
-          "explanation_ru": "Перед прилагательным нужно наречие от -ing-формы: disappointingly slow — «медленный до разочарования». Такие наречия (surprisingly, disappointingly, shockingly) называют чувство, которое вызывает признак; disappointing slow — ошибка.",
+          "prompt": "Rewrite with a word formed from the word in capitals, placed right before 'predictable': The ending of the movie was very predictable, and that disappointed us. DISAPPOINT",
+          "answer": "The ending of the movie was disappointingly predictable.",
+          "accept": [
+            "The movie's ending was disappointingly predictable."
+          ],
+          "explanation_ru": "Перед прилагательным нужно наречие, а разочарование вызывает сама концовка, поэтому основа на -ing: disappointingly predictable — «разочаровывающе предсказуемый». Disappointedly значит «разочарованно» и описывает того, кто сам разочарован, а disappointing predictable — прилагательное там, где нужно наречие.",
           "difficulty": 3
         }
       ]

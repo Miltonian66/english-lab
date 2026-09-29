@@ -791,7 +791,7 @@
           "prompt": "quite / we / a / weekend / had / busy / .",
           "answer": "We had quite a busy weekend.",
           "accept": [],
-          "explanation_ru": "Quite ставится перед артиклем: quite a busy weekend. Порядок a quite busy — калька с «довольно напряжённые выходные»; после артикля встают fairly и pretty: a pretty busy weekend.",
+          "explanation_ru": "Quite ставится перед артиклем: quite a busy weekend. Порядок a quite busy строят по образцу a very busy, но quite так не встаёт; после артикля ставят fairly и pretty: a pretty busy weekend.",
           "difficulty": 2
         }
       ]
@@ -804,7 +804,7 @@
       "title_en": "So, such (a), so much, so many",
       "source_slug": "so-such-a-so-much-so-many",
       "title_ru": "So, such (a), so much, so many",
-      "summary_ru": "So и such усиливают признак, но сочетаются с разными частями речи. So ставится перед прилагательным или наречием, за которым нет существительного: so slow, so quickly. Such ставится перед существительным, с прилагательным или без него: such a problem, such good news. С исчисляемым существительным в единственном числе обязателен артикль: such a long meeting. Перед множественным числом и неисчисляемыми артикль не нужен: such interesting people, such bad weather. Для количества используются so much и so little с неисчисляемыми, so many и so few с множественным числом. Обе конструкции часто продолжаются придаточным результата с that: it was so cold that we went home.",
+      "summary_ru": "So и such усиливают признак, но сочетаются с разными частями речи. So ставится перед прилагательным или наречием, за которым нет существительного: so slow, so quickly. Such ставится перед существительным, с прилагательным или без него: such a problem, such good news. С исчисляемым существительным в единственном числе обязателен артикль: such a long meeting. Перед множественным числом и неисчисляемыми артикль не нужен: such interesting people, such bad weather. Для количества используются so much и so little с неисчисляемыми, so many и so few с множественным числом. Обе конструкции часто продолжаются придаточным результата с that: it was so cold that we went home. В книжной речи so с прилагательным или such выносят в начало предложения, и тогда глагол встаёт перед подлежащим: So loud was the music that we left early. Such was the noise that nobody slept.",
       "forms": [
         "so + прилагательное или наречие",
         "such + a/an + (прилагательное) + исчисляемое существительное в единственном числе",
@@ -812,7 +812,8 @@
         "so much / so little + неисчисляемое; so many / so few + множественное число",
         "so / such ... that + результат",
         "such a lot of + любое существительное = so much / so many",
-        "so + прилагательное ... that — даже если прилагательное отделено от подлежащего вставкой"
+        "so + прилагательное ... that — даже если прилагательное отделено от подлежащего вставкой",
+        "So + прилагательное + be + подлежащее + that / Such + be + существительное + that — книжная инверсия"
       ],
       "examples": [
         "The build is so slow that nobody uses it.",
@@ -1282,7 +1283,8 @@
             "If I'd known about the meeting, I would have come.",
             "I would have come if I had known about the meeting.",
             "I would have come to the meeting if I had known about it.",
-            "Had I known about the meeting, I would have come."
+            "Had I known about the meeting, I would have come.",
+            "Had I known about the meeting, I would have come to it."
           ],
           "explanation_ru": "Оба факта в прошлом, поэтому условие идёт в past perfect, а следствие с would have плюс третья форма.",
           "difficulty": 3

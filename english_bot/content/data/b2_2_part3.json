@@ -55,7 +55,7 @@
             "Were"
           ],
           "correct_index": 0,
-          "explanation_ru": "Have time — смысловой глагол («иметь время»), поэтому вопрос в прошедшем строится через did: Did you have time? Had you time — устаревший британский вариант, Have you… требовало бы had (Have you had time?) и не сочетается с yesterday, а were с have не образует вопрос.",
+          "explanation_ru": "Have time — смысловой глагол («иметь время»), поэтому вопрос в прошедшем строится через did: Did you have time? Had you have time — двойной have, так не бывает. Have you… требовало бы had (Have you had time?) и не сочетается с yesterday, а were с have не образует вопрос.",
           "difficulty": 1,
           "diagnostic": false
         },
@@ -100,13 +100,15 @@
         {
           "id": "b2_have_auxiliary_main_verb_06",
           "kind": "gap",
-          "prompt": "We ___ (not / have) enough chairs at the party last year, so we borrowed ten more.",
-          "answer": "didn't have",
+          "prompt": "We ___ (not / have) the car serviced before the trip, and it broke down halfway to Denver.",
+          "answer": "hadn't had",
           "accept": [
+            "had not had",
+            "didn't have",
             "did not have"
           ],
-          "explanation_ru": "Have в значении «иметь» — смысловой глагол, поэтому отрицание в прошедшем строится через did not.",
-          "difficulty": 2
+          "explanation_ru": "Have + предмет + V3 — каузатив: машину обслуживают в сервисе. Have здесь смысловой, поэтому в past simple отрицание строится через did (didn't have the car serviced), а в past perfect — hadn't had: не сделали этого до поездки.",
+          "difficulty": 3
         },
         {
           "id": "b2_have_auxiliary_main_verb_07",
@@ -183,10 +185,10 @@
         {
           "id": "b2_have_auxiliary_main_verb_12",
           "kind": "gap",
-          "prompt": "It was a long day: by lunchtime I ___ (already / have) four client meetings.",
+          "prompt": "It was a rough on-call day: by lunchtime I ___ (already / have) three incident calls.",
           "answer": "had already had",
           "accept": [],
-          "explanation_ru": "Past perfect от смыслового have — had had: первый had — вспомогательный (время), второй — смысловой («провести встречи»). Already стоит между ними. Два had подряд — не ошибка.",
+          "explanation_ru": "Past perfect от смыслового have — had had: первый had — вспомогательный (время), второй — смысловой («провести звонки»). Already стоит между ними. Два had подряд — не ошибка.",
           "difficulty": 3
         },
         {
@@ -248,7 +250,8 @@
           ],
           "correct_index": 0,
           "explanation_ru": "Точный момент в прошлом плюс процесс — Past Continuous; остальные формы относятся к настоящему и с «yesterday» невозможны.",
-          "difficulty": 1
+          "difficulty": 1,
+          "diagnostic": false
         },
         {
           "id": "b2_narrative_tenses_used_to_would_02",
@@ -402,13 +405,14 @@
       "title_en": "Other ways to express future: Be about to, be due to, etc.",
       "source_slug": "ways-express-future",
       "title_ru": "Другие способы говорить о будущем",
-      "summary_ru": "Кроме will, be going to и Present Continuous, у будущего есть несколько специальных конструкций. Be about to + инфинитив означает «вот-вот», действие начнётся через считаные секунды или минуты, поэтому оно не сочетается с указанием даты. Be due to + инфинитив означает «должно произойти по расписанию или плану»: The release is due to ship on Friday. Be to + инфинитив звучит официально и передаёт распоряжение или согласованный план: All staff are to complete the training. Be bound to значит «неизбежно произойдёт», be likely to — «вероятно», be set to — «готово начаться». В прошедшем времени was/were about to описывает то, что почти случилось, но не случилось: I was about to send the email when I noticed the typo. После всех этих оборотов идёт инфинитив с to (to start, to ship), а не форма на -ing.",
+      "summary_ru": "Кроме will, be going to и Present Continuous, у будущего есть несколько специальных конструкций. Be about to + инфинитив означает «вот-вот», действие начнётся через считаные секунды или минуты, поэтому оно не сочетается с указанием даты. Be due to + инфинитив означает «должно произойти по расписанию или плану»: The release is due to ship on Friday. Be to + инфинитив звучит официально и передаёт распоряжение или согласованный план: All staff are to complete the training. Be bound to значит «неизбежно произойдёт», be likely to — «вероятно», be set to — «намечено, ожидается» (частый оборот новостей: prices are set to rise). В прошедшем времени was/were about to описывает то, что почти случилось, но не случилось: I was about to send the email when I noticed the typo. После этих оборотов идёт инфинитив с to (to start, to ship), а не форма на -ing. Исключение — be on the point of и be on the verge of («вот-вот, чуть было не»): после предлога of нужна форма на -ing: I was on the point of giving up.",
       "forms": [
         "be about to + инфинитив: The build is about to finish.",
         "be due to + инфинитив: The release is due to ship on Friday.",
         "be to + инфинитив (официально): All staff are to sign the policy.",
         "be bound to / be likely to + инфинитив: It's bound to break.",
-        "was/were about to + инфинитив (несостоявшееся): I was about to call you."
+        "was/were about to + инфинитив (несостоявшееся): I was about to call you.",
+        "be on the point of / be on the verge of + -ing: I was on the point of leaving."
       ],
       "examples": [
         "Don't restart the server — the backup is about to finish.",
@@ -426,21 +430,21 @@
         {
           "id": "b2_ways_express_future_01",
           "kind": "choice",
-          "prompt": "Don't leave yet — the fireworks are about to ___.",
+          "prompt": "Traffic ___ to be heavy on Friday afternoon, so leave early if you can.",
           "options": [
-            "starting",
-            "start",
-            "started",
-            "starts"
+            "is likely",
+            "is about",
+            "is due",
+            "is probable"
           ],
-          "correct_index": 1,
-          "explanation_ru": "После be about to идёт инфинитив: are about to start, а не starting, started или starts.",
-          "difficulty": 1
+          "correct_index": 0,
+          "explanation_ru": "Be likely to + инфинитив — «вероятно»: traffic is likely to be heavy. Be about to — «вот-вот» и с указанием времени не сочетается, be due to — «по расписанию», а пробки по расписанию не бывают. Probable не берёт инфинитив после подлежащего-предмета: говорят it's probable that traffic will be heavy.",
+          "difficulty": 2
         },
         {
           "id": "b2_ways_express_future_02",
           "kind": "choice",
-          "prompt": "I ___ send the email to the client when I noticed a mistake in the price.",
+          "prompt": "I ___ merge the pull request when I noticed a failing test.",
           "options": [
             "was about to",
             "am about to",
@@ -448,7 +452,7 @@
             "about to"
           ],
           "correct_index": 0,
-          "explanation_ru": "Действие почти произошло в прошлом, поэтому нужна прошедшая форма be плюс about to.",
+          "explanation_ru": "Действие почти произошло в прошлом, но не случилось: was about to + инфинитив. Am about to — настоящее, was about без to и about to без be конструкцию не образуют.",
           "difficulty": 1
         },
         {
@@ -468,7 +472,7 @@
         {
           "id": "b2_ways_express_future_04",
           "kind": "choice",
-          "prompt": "With so many people invited, the party is ___ to get noisy.",
+          "prompt": "With forty guests and a live band, the party is ___ to get noisy later tonight.",
           "options": [
             "bound",
             "due",
@@ -476,19 +480,19 @@
             "being"
           ],
           "correct_index": 0,
-          "explanation_ru": "Be bound to — «обязательно, неизбежно случится»: при таком числе гостей шум неизбежен. Due to требует расписания, about to — ближайшей минуты, being to не существует.",
+          "explanation_ru": "Be bound to — «обязательно, неизбежно случится»: при таком числе гостей шум неизбежен. Due to требует расписания, about to значит «вот-вот» и не сочетается с указанием времени (later tonight), being to не существует.",
           "difficulty": 2
         },
         {
           "id": "b2_ways_express_future_05",
           "kind": "gap",
-          "prompt": "Hurry up — the movie ___ (be about to / start) and our friends are already inside.",
-          "answer": "is about to start",
+          "prompt": "My sister ___ (be on the point of / give up) her job search when she finally got an offer.",
+          "answer": "was on the point of giving up",
           "accept": [
-            "'s about to start"
+            "had been on the point of giving up"
           ],
-          "explanation_ru": "Событие начнётся прямо сейчас, поэтому be about to в настоящем времени.",
-          "difficulty": 2
+          "explanation_ru": "Be on the point of + -ing — «вот-вот, чуть было не»: was on the point of giving up значит, что почти сдалась, но не сдалась. После of нужна форма на -ing, а не инфинитив; то же с be on the verge of.",
+          "difficulty": 3
         },
         {
           "id": "b2_ways_express_future_06",
@@ -514,7 +518,8 @@
           "prompt": "Rewrite with 'be due to': The plane arrives at 7:40 according to the schedule.",
           "answer": "The plane is due to arrive at 7:40 according to the schedule.",
           "accept": [
-            "The plane is due to arrive at 7:40."
+            "The plane is due to arrive at 7:40.",
+            "According to the schedule, the plane is due to arrive at 7:40."
           ],
           "explanation_ru": "Расписание передаётся конструкцией be due to + инфинитив.",
           "difficulty": 3
@@ -554,7 +559,9 @@
           "kind": "transform",
           "prompt": "Rewrite using the word in capitals (do not change it): The ferry will almost certainly be late in this fog. BOUND",
           "answer": "The ferry is bound to be late in this fog.",
-          "accept": [],
+          "accept": [
+            "In this fog, the ferry is bound to be late."
+          ],
           "explanation_ru": "Be bound to + инфинитив = «почти наверняка, неизбежно». Bound — прилагательное, поэтому перед ним нужен be, а после — инфинитив с to.",
           "difficulty": 2
         },
@@ -576,11 +583,11 @@
         {
           "id": "b2_ways_express_future_12",
           "kind": "gap",
-          "prompt": "Quick, get your camera — the bride and groom ___ (be about to / cut) the cake!",
-          "answer": "are about to cut",
+          "prompt": "Ticket prices ___ (be set to / rise) by 10 percent in January, the transit authority announced.",
+          "answer": "are set to rise",
           "accept": [],
-          "explanation_ru": "Be about to + инфинитив — действие случится через секунды. Подлежащее the bride and groom — во множественном числе, поэтому are; после about to не ставят -ing.",
-          "difficulty": 1
+          "explanation_ru": "Be set to + инфинитив — «намечено, ожидается», частый оборот новостей: prices are set to rise. Подлежащее prices во множественном числе, поэтому are, а после to — начальная форма rise.",
+          "difficulty": 2
         },
         {
           "id": "b2_ways_express_future_13",
@@ -698,7 +705,7 @@
         {
           "id": "b2_unreal_uses_past_tenses_04",
           "kind": "choice",
-          "prompt": "I'd rather you ___ me before you promise the client a new deadline.",
+          "prompt": "I'd rather you ___ me before you merge anything into the main branch.",
           "options": [
             "asked",
             "to ask",
@@ -819,7 +826,13 @@
             "I wish I had agreed to take that job.",
             "I wish I hadn't turned down that job.",
             "I wish I hadn't refused that job.",
-            "If only I had said yes to that job."
+            "If only I had said yes to that job.",
+            "If only I hadn't turned down that job.",
+            "If only I hadn't refused that job.",
+            "I wish I hadn't turned that job down.",
+            "If only I hadn't turned that job down.",
+            "I wish I had said yes to that job offer.",
+            "If only I had taken that job offer."
           ],
           "explanation_ru": "Русское «жаль, что не…» становится желанием противоположного: I wish I had taken — «хотел бы, чтобы я согласился». О прошлом после wish нужен past perfect; I wish I didn't refuse перевернуло бы смысл, а I wish I took говорило бы о настоящем.",
           "difficulty": 3
@@ -901,7 +914,7 @@
         {
           "id": "b2_gerunds_infinitives_complex_forms_04",
           "kind": "choice",
-          "prompt": "Olga seems ___ on the client presentation right now — let's not disturb her.",
+          "prompt": "Olga seems ___ on a production issue right now — let's not disturb her.",
           "options": [
             "to work",
             "to be working",
@@ -924,12 +937,12 @@
         {
           "id": "b2_gerunds_infinitives_complex_forms_06",
           "kind": "gap",
-          "prompt": "After ___ (be) repaired for a month, the old church was finally reopened.",
-          "answer": "having been",
+          "prompt": "After ___ (be) closed for repairs for a month, the old church finally reopened to visitors.",
+          "answer": "being",
           "accept": [
-            "being"
+            "having been"
           ],
-          "explanation_ru": "Церковь ремонтировали, значит после предлога after нужна пассивная форма герундия: having been repaired (или being repaired).",
+          "explanation_ru": "Церковь закрывали, а не она закрывала, поэтому после предлога after нужен пассивный герундий: being closed. Having been closed подчёркивает, что закрытие закончилось раньше открытия, — тоже верно.",
           "difficulty": 2
         },
         {
@@ -939,7 +952,8 @@
           "answer": "The workers insisted on being paid in cash every Friday.",
           "accept": [
             "The workers insisted on getting paid in cash every Friday.",
-            "The workers insisted that they be paid in cash every Friday."
+            "The workers insisted that they be paid in cash every Friday.",
+            "The workers insisted that they should be paid in cash every Friday."
           ],
           "explanation_ru": "Insist on требует герундия, а платят рабочим, а не они платят, — нужен пассивный герундий being paid. Paying значило бы, что платят сами рабочие; insist to не употребляется.",
           "difficulty": 3
@@ -1067,12 +1081,13 @@
           ],
           "correct_index": 0,
           "explanation_ru": "Повторяемый глагол see опускается, но to остаётся обязательно.",
-          "difficulty": 1
+          "difficulty": 1,
+          "diagnostic": false
         },
         {
           "id": "b2_reduced_infinitives_omitting_the_infinitive_phrase_after_to_02",
           "kind": "choice",
-          "prompt": "I didn't want to present the project to the client, but I ___.",
+          "prompt": "I didn't want to take the on-call shift over the holidays, but I ___.",
           "options": [
             "had to",
             "had",
@@ -1080,7 +1095,7 @@
             "have to"
           ],
           "correct_index": 0,
-          "explanation_ru": "Прошедшее время требует had to, а глагол present не повторяется: одного to достаточно.",
+          "explanation_ru": "Прошедшее время требует had to, а повтор take the on-call shift не нужен: одного to достаточно. Had без to — это другой глагол, must не имеет прошедшей формы, have to — настоящее.",
           "difficulty": 1
         },
         {
@@ -1135,12 +1150,12 @@
         {
           "id": "b2_reduced_infinitives_omitting_the_infinitive_phrase_after_to_07",
           "kind": "correct",
-          "prompt": "I asked my colleague to help with the report, but she didn't want.",
-          "answer": "I asked my colleague to help with the report, but she didn't want to.",
+          "prompt": "I asked my teammate to pair with me on the bug fix, but she didn't want.",
+          "answer": "I asked my teammate to pair with me on the bug fix, but she didn't want to.",
           "accept": [
-            "I asked my colleague to help with the report, but she didn't want to help."
+            "I asked my teammate to pair with me on the bug fix, but she didn't want to pair with me."
           ],
-          "explanation_ru": "После want обязательно остаётся to, даже если сам глагол опущен.",
+          "explanation_ru": "После want обязательно остаётся to, даже если сам глагол опущен: she didn't want to. Без to предложение обрывается.",
           "difficulty": 3
         },
         {
@@ -1151,7 +1166,9 @@
           "accept": [
             "He wanted to fix the fence today, but he didn't have the time to.",
             "He wanted to fix the fence today, but he didn't have time.",
-            "He wanted to fix the fence today, but he didn't have the time."
+            "He wanted to fix the fence today, but he didn't have the time.",
+            "He wanted to fix the fence today but didn't have time to.",
+            "He wanted to fix the fence today but didn't have the time to."
           ],
           "explanation_ru": "Повторяющийся инфинитив сворачивается до одного to: didn't have time to. После have time его можно убрать и совсем: …but he didn't have time.",
           "difficulty": 3
@@ -1159,7 +1176,7 @@
         {
           "id": "b2_reduced_infinitives_omitting_the_infinitive_phrase_after_to_09",
           "kind": "cloze",
-          "prompt": "My friend Zoe asked me to go skydiving with her. At first I didn't want ___, but she kept asking. She isn't an instructor, but she hopes ___ one day, so she knows a lot about it. In the end I jumped, although I really didn't need ___. I'm not a brave person, and I never will ___!",
+          "prompt": "My friend Zoe asked me to go skydiving with her. At first I didn't want ___, but she kept asking. She isn't an instructor, but she hopes ___ one day, so she knows a lot about it. In the end I jumped, but only because the instructor told me ___. I'm not a brave person, and I never will ___!",
           "gaps": [
             [
               "to"
@@ -1174,7 +1191,7 @@
               "be"
             ]
           ],
-          "explanation_ru": "Повторяющийся глагол после want, need, hope опускают, но to остаётся. Be не опускается: hopes to be (one). После модального will нет to, поэтому остаётся голое be.",
+          "explanation_ru": "Повторяющийся глагол после want, hope, tell someone опускают, но to остаётся: didn't want to, told me to. Be не опускается: hopes to be (one). После модального will нет to, поэтому остаётся голое be.",
           "difficulty": 3
         },
         {
@@ -1321,7 +1338,8 @@
             "He suggested using a different library.",
             "He suggested I use a different library.",
             "He suggested that I should use a different library.",
-            "He suggested I should use a different library."
+            "He suggested I should use a different library.",
+            "He suggested to me that I use a different library."
           ],
           "explanation_ru": "Suggest не берёт дополнение с инфинитивом: нужно придаточное или герундий.",
           "difficulty": 3
@@ -1417,27 +1435,40 @@
         {
           "id": "b2_verb_object_infinitive_gerund_14",
           "kind": "transform",
-          "prompt": "Переведи на английский: «Пробки помешали мне приехать на собеседование вовремя».",
+          "prompt": "Переведи на английский, используя prevent: «Пробки помешали мне приехать на собеседование вовремя».",
           "answer": "The traffic prevented me from getting to the interview on time.",
           "accept": [
-            "Traffic prevented me from getting to the interview on time.",
-            "Traffic jams prevented me from getting to the interview on time.",
-            "The traffic jams prevented me from getting to the interview on time.",
-            "The traffic prevented me from arriving at the interview on time.",
-            "Traffic prevented me from arriving at the interview on time.",
-            "The traffic prevented me from coming to the interview on time.",
-            "Traffic prevented me from coming to the interview on time.",
-            "The traffic kept me from getting to the interview on time.",
-            "Traffic kept me from getting to the interview on time.",
-            "The traffic stopped me from getting to the interview on time.",
-            "Traffic stopped me from getting to the interview on time.",
-            "The traffic prevented me from making it to the interview on time.",
-            "Traffic prevented me from making it to the interview on time.",
-            "The traffic jam prevented me from getting to the interview on time.",
             "The traffic prevented me from getting to my interview on time.",
-            "Traffic prevented me from getting to my interview on time."
+            "The traffic prevented me from arriving at the interview on time.",
+            "The traffic prevented me from arriving at my interview on time.",
+            "The traffic prevented me from making it to the interview on time.",
+            "The traffic prevented me from making it to my interview on time.",
+            "Traffic prevented me from getting to the interview on time.",
+            "Traffic prevented me from getting to my interview on time.",
+            "Traffic prevented me from arriving at the interview on time.",
+            "Traffic prevented me from arriving at my interview on time.",
+            "Traffic prevented me from making it to the interview on time.",
+            "Traffic prevented me from making it to my interview on time.",
+            "Traffic jams prevented me from getting to the interview on time.",
+            "Traffic jams prevented me from getting to my interview on time.",
+            "Traffic jams prevented me from arriving at the interview on time.",
+            "Traffic jams prevented me from arriving at my interview on time.",
+            "Traffic jams prevented me from making it to the interview on time.",
+            "Traffic jams prevented me from making it to my interview on time.",
+            "The traffic jams prevented me from getting to the interview on time.",
+            "The traffic jams prevented me from getting to my interview on time.",
+            "The traffic jams prevented me from arriving at the interview on time.",
+            "The traffic jams prevented me from arriving at my interview on time.",
+            "The traffic jams prevented me from making it to the interview on time.",
+            "The traffic jams prevented me from making it to my interview on time.",
+            "The traffic jam prevented me from getting to the interview on time.",
+            "The traffic jam prevented me from getting to my interview on time.",
+            "The traffic jam prevented me from arriving at the interview on time.",
+            "The traffic jam prevented me from arriving at my interview on time.",
+            "The traffic jam prevented me from making it to the interview on time.",
+            "The traffic jam prevented me from making it to my interview on time."
           ],
-          "explanation_ru": "«Помешать сделать» — prevent / keep / stop + человек + from + -ing: prevented me from getting. Инфинитив после prevent невозможен (prevented me to get — калька с русского), а from обязателен.",
+          "explanation_ru": "«Помешать сделать» — prevent + человек + from + -ing: prevented me from getting. Инфинитив после prevent невозможен (prevented me to get — калька с русского), а from обязателен. Та же модель у keep и stop: kept me from getting.",
           "difficulty": 3
         }
       ]
@@ -1485,7 +1516,8 @@
           ],
           "correct_index": 0,
           "explanation_ru": "It-cleft начинается с формального подлежащего it; that, this или he на этом месте невозможны.",
-          "difficulty": 1
+          "difficulty": 1,
+          "diagnostic": false
         },
         {
           "id": "b2_cleft_sentences_02",
@@ -1541,7 +1573,7 @@
         {
           "id": "b2_cleft_sentences_06",
           "kind": "gap",
-          "prompt": "___ I don't understand is why nobody told the client about the delay.",
+          "prompt": "___ I don't understand is why nobody warned the on-call engineer about the late-night deploy.",
           "answer": "What",
           "accept": [
             "The thing that",
@@ -1567,7 +1599,9 @@
           "prompt": "Emphasize 'the seat belt' with an it-cleft: The seat belt saved him from serious injury.",
           "answer": "It was the seat belt that saved him from serious injury.",
           "accept": [
-            "It was the seat belt which saved him from serious injury."
+            "It was the seat belt which saved him from serious injury.",
+            "It was the seatbelt that saved him from serious injury.",
+            "It was the seatbelt which saved him from serious injury."
           ],
           "explanation_ru": "Выделяемая часть ставится после it was, остальное присоединяется через that.",
           "difficulty": 3
@@ -1623,7 +1657,7 @@
         {
           "id": "b2_cleft_sentences_12",
           "kind": "choice",
-          "prompt": "The reason ___ we lost the client is that we missed three deadlines in a row.",
+          "prompt": "The reason ___ the release was rolled back is that two tests had been switched off.",
           "options": [
             "why",
             "because",
@@ -1647,7 +1681,10 @@
             "It wasn't the price that worried the client, but the delivery time.",
             "It was the delivery time that worried the client, not the price.",
             "It was the delivery time, not the price, that worried the client.",
-            "What worried the client wasn't the price; it was the delivery time."
+            "What worried the client wasn't the price; it was the delivery time.",
+            "What worried the client wasn't the price, it was the delivery time.",
+            "What worried the client wasn't the price. It was the delivery time.",
+            "What worried the client was the delivery time, not the price."
           ],
           "explanation_ru": "Противопоставление двух фокусов — It wasn't X that…; it was Y: сначала отрицаемая часть с that-придаточным, потом верная. Придаточное во второй части не повторяют.",
           "difficulty": 3
@@ -1657,8 +1694,10 @@
           "kind": "order",
           "prompt": "the reason / I / called / is / that / I / wanted / to apologize / .",
           "answer": "The reason I called is that I wanted to apologize.",
-          "accept": [],
-          "explanation_ru": "Причина выносится в фокус: The reason (why) I called + is that + придаточное. Why после reason можно опустить, а that после is в письменной речи нужен.",
+          "accept": [
+            "The reason that I called is I wanted to apologize."
+          ],
+          "explanation_ru": "Причина выносится в фокус: The reason (why / that) I called + is that + придаточное. Why после reason можно опустить, а that после is в письменной речи нужен; в разговоре встречается и The reason that I called is I wanted to apologize.",
           "difficulty": 3
         }
       ]
@@ -1742,15 +1781,15 @@
         {
           "id": "c1_impersonal_and_complex_passive_reporting_structures_04",
           "kind": "choice",
-          "prompt": "The missing climbers are thought ___ in a cave until the storm passes.",
+          "prompt": "The band is said ___ a new album in Nashville at the moment.",
           "options": [
-            "to be sheltering",
-            "to shelter",
-            "to have sheltered",
-            "sheltering"
+            "to be recording",
+            "to record",
+            "to have recorded",
+            "recording"
           ],
           "correct_index": 0,
-          "explanation_ru": "Действие, которое, по мнению других, идёт прямо сейчас, передаёт длительный инфинитив to be + V-ing: are thought to be sheltering. To shelter звучит как привычка, to have sheltered — как завершённое действие.",
+          "explanation_ru": "Действие, которое, по словам других, идёт прямо сейчас (at the moment), передаёт длительный инфинитив to be + V-ing: is said to be recording. To record звучит как привычка или план, to have recorded — как уже законченное, а recording после is said без to невозможно.",
           "difficulty": 2,
           "diagnostic": true
         },
@@ -1777,19 +1816,22 @@
         {
           "id": "c1_impersonal_and_complex_passive_reporting_structures_07",
           "kind": "correct",
-          "prompt": "Is said that the new library will open in May.",
-          "answer": "It is said that the new library will open in May.",
-          "accept": [],
-          "explanation_ru": "Английское предложение не бывает без подлежащего: перед is said обязательно нужно формальное it.",
+          "prompt": "It is expected the new library to open in May.",
+          "answer": "The new library is expected to open in May.",
+          "accept": [
+            "It is expected that the new library will open in May.",
+            "It is expected that the new library is going to open in May."
+          ],
+          "explanation_ru": "Безличная модель It is expected требует that-придаточного, а личная — подлежащего + is expected + to: The new library is expected to open. Смешивать их (It is expected the library to open) нельзя.",
           "difficulty": 3
         },
         {
           "id": "c1_impersonal_and_complex_passive_reporting_structures_08",
           "kind": "transform",
-          "prompt": "Rewrite starting with 'The fire': People believe that the fire started in the kitchen.",
-          "answer": "The fire is believed to have started in the kitchen.",
+          "prompt": "Rewrite starting with 'There': People think that there were two people in the car at the time of the crash.",
+          "answer": "There are thought to have been two people in the car at the time of the crash.",
           "accept": [],
-          "explanation_ru": "Подлежащее придаточного выносится вперёд, believe ставится в пассив, а прошедшее started передаётся перфектным инфинитивом to have started.",
+          "explanation_ru": "С there личная модель сохраняет there на месте подлежащего: There are thought + to have been. Прошлое were передаётся перфектным инфинитивом to have been, а are согласуется с two people.",
           "difficulty": 3
         },
         {
@@ -1873,15 +1915,15 @@
         {
           "id": "c1_ellipsis_and_substitution_in_extended_discourse_01",
           "kind": "choice",
-          "prompt": "A: I haven't finished my essay yet.\nB: ___ have I.",
+          "prompt": "A: I couldn't sleep at all last night.\nB: Neither ___ I — the party next door went on until three.",
           "options": [
-            "Neither",
-            "Either",
-            "So",
-            "Also"
+            "could",
+            "did",
+            "couldn't",
+            "was"
           ],
           "correct_index": 0,
-          "explanation_ru": "После отрицательной реплики согласие вводится словом neither (или nor); so используется только после утвердительной.",
+          "explanation_ru": "После neither повторяют тот же вспомогательный или модальный глагол, что в реплике, но в утвердительной форме: couldn't sleep → Neither could I. Did подменяет модальный глагол, couldn't дало бы двойное отрицание, was к could не относится.",
           "difficulty": 1,
           "diagnostic": false
         },
@@ -1968,18 +2010,19 @@
         {
           "id": "c1_ellipsis_and_substitution_in_extended_discourse_08",
           "kind": "transform",
-          "prompt": "Rewrite the second clause with ellipsis: I wanted to join the team meeting, but I wasn't able to join the team meeting.",
-          "answer": "I wanted to join the team meeting, but I wasn't able to.",
+          "prompt": "Rewrite the second clause with ellipsis: I wanted to join the incident review, but I wasn't able to join the incident review.",
+          "answer": "I wanted to join the incident review, but I wasn't able to.",
           "accept": [
-            "I wanted to join the team meeting, but I couldn't."
+            "I wanted to join the incident review, but I couldn't.",
+            "I wanted to join the incident review, but I was unable to."
           ],
-          "explanation_ru": "Повторяющаяся группа после to опускается, а сама частица to остаётся как маркер усечённого инфинитива.",
+          "explanation_ru": "Повторяющаяся группа после to опускается, а сама частица to остаётся как маркер усечённого инфинитива: wasn't able to, was unable to. После модального could повторять нечего: but I couldn't.",
           "difficulty": 3
         },
         {
           "id": "c1_ellipsis_and_substitution_in_extended_discourse_09",
           "kind": "cloze",
-          "prompt": "A: Have you ever been to Iceland?\nB: No, but I'd love ___. My sister has, though.\nA: So ___ my parents — they went last winter.\nB: Did they see the northern lights?\nA: I think ___. They said the trip was expensive, but they didn't mind.\nB: Neither ___ I, if I could see the lights!",
+          "prompt": "A: Have you ever been to Iceland?\nB: No, but I'd love ___. My sister has, though.\nA: So ___ my parents — they've been twice.\nB: Did they see the northern lights?\nA: I think ___. They said the trip was expensive, but they didn't mind.\nB: Neither ___ I, if I could see the lights!",
           "gaps": [
             [
               "to",
@@ -1995,7 +2038,7 @@
               "would"
             ]
           ],
-          "explanation_ru": "В диалоге повтор заменяют: I'd love to (без глагола), So have my parents (вспомогательный из have been), I think so (вместо придаточного), Neither would I (из didn't mind + условие if I could).",
+          "explanation_ru": "В диалоге повтор заменяют: I'd love to (без глагола), So have my parents (вспомогательный из has been), I think so (вместо придаточного), Neither would I (из didn't mind + условие if I could).",
           "difficulty": 3
         },
         {
@@ -2157,12 +2200,12 @@
         {
           "id": "c1_advanced_past_simple_past_continuous_past_perfect_08",
           "kind": "order",
-          "prompt": "the client / already / had / signed / when / the contract / I / called / .",
-          "answer": "The client had already signed the contract when I called.",
+          "prompt": "the on-call engineer / already / had / rolled back / when / the release / I / logged in / .",
+          "answer": "The on-call engineer had already rolled back the release when I logged in.",
           "accept": [
-            "When I called, the client had already signed the contract."
+            "When I logged in, the on-call engineer had already rolled back the release."
           ],
-          "explanation_ru": "Договор подписали раньше звонка — past perfect с already между had и V3; более позднее действие после when — past simple (called).",
+          "explanation_ru": "Релиз откатили раньше, чем я подключился, — past perfect с already между had и V3; более позднее действие после when — past simple (logged in).",
           "difficulty": 3
         },
         {
@@ -2321,15 +2364,11 @@
         {
           "id": "c1_the_perfect_tenses_forms_and_uses_06",
           "kind": "correct",
-          "prompt": "We live in this apartment since 2019.",
-          "answer": "We have lived in this apartment since 2019.",
-          "accept": [
-            "We've lived in this apartment since 2019.",
-            "We have been living in this apartment since 2019.",
-            "We've been living in this apartment since 2019."
-          ],
-          "explanation_ru": "Since требует перфекта: период тянется от 2019 года до настоящего момента.",
-          "difficulty": 2
+          "prompt": "My neighbor seems to forget his keys again — he's been sitting on the stairs for an hour.",
+          "answer": "My neighbor seems to have forgotten his keys again — he's been sitting on the stairs for an hour.",
+          "accept": [],
+          "explanation_ru": "После seem, appear, be said действие, которое уже случилось к моменту речи, передаёт перфектный инфинитив: seems to have forgotten. Простой to forget описывал бы привычку («он, похоже, вечно забывает»), а здесь речь об одном случае: ключи уже забыты, и сосед час сидит на лестнице.",
+          "difficulty": 3
         },
         {
           "id": "c1_the_perfect_tenses_forms_and_uses_07",
@@ -2350,7 +2389,9 @@
           "prompt": "Rewrite with a perfect participle: After we had interviewed all the candidates, we offered the job to Rosa.",
           "answer": "Having interviewed all the candidates, we offered the job to Rosa.",
           "accept": [
-            "After having interviewed all the candidates, we offered the job to Rosa."
+            "After having interviewed all the candidates, we offered the job to Rosa.",
+            "Having interviewed all the candidates, we offered Rosa the job.",
+            "After having interviewed all the candidates, we offered Rosa the job."
           ],
           "explanation_ru": "Придаточное с одинаковым подлежащим сворачивается в having + V3, а союз и подлежащее исчезают.",
           "difficulty": 3
@@ -2503,13 +2544,13 @@
           "id": "c1_advanced_modal_verbs_can_be_able_to_may_might_05",
           "kind": "gap",
           "prompt": "We ___ (not / be able to) reach my grandmother all morning — her phone is off.",
-          "answer": "weren't able to",
+          "answer": "haven't been able to",
           "accept": [
-            "were not able to",
-            "haven't been able to",
-            "have not been able to"
+            "have not been able to",
+            "weren't able to",
+            "were not able to"
           ],
-          "explanation_ru": "Be able to принимает обычные глагольные формы, поэтому отрицание строится как weren't able to.",
+          "explanation_ru": "У can нет перфекта, поэтому период до настоящего момента (всё утро, телефон выключен до сих пор) передаёт be able to в present perfect: haven't been able to. Weren't able to возможно, если утро уже закончилось.",
           "difficulty": 1
         },
         {
@@ -2531,7 +2572,8 @@
           "prompt": "Yesterday we could fix the leaky faucet in half an hour.",
           "answer": "Yesterday we were able to fix the leaky faucet in half an hour.",
           "accept": [
-            "Yesterday we managed to fix the leaky faucet in half an hour."
+            "Yesterday we managed to fix the leaky faucet in half an hour.",
+            "Yesterday we succeeded in fixing the leaky faucet in half an hour."
           ],
           "explanation_ru": "Could не используется для единичного успеха в прошлом: нужен was / were able to или managed to.",
           "difficulty": 3

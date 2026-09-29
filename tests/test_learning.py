@@ -141,6 +141,12 @@ class AnswerTests(unittest.TestCase):
         self.assertFalse(matches(exercise, "polite"))
         self.assertFalse(matches(exercise, "clients very"))
 
+    def test_fragment_works_after_an_instruction(self) -> None:
+        exercise = self._ex("correct", "Keep 'will' and correct the sentence: I will can send the photos.",
+                            "I will be able to send the photos.")
+        self.assertTrue(matches(exercise, "will be able to"))
+        self.assertFalse(matches(exercise, "be able"))
+
     def test_fragment_must_cover_a_deletion(self) -> None:
         exercise = self._ex("correct", "I can to send the report.", "I can send the report.")
         self.assertTrue(matches(exercise, "can send"))

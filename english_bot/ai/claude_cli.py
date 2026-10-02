@@ -10,6 +10,11 @@ Claude Code системный промпт передаётся отдельн�
 оставляет на диске переписку ученика, а список запрещённых инструментов не даёт
 агенту читать файлы и ходить в сеть. Ключ не нужен — работает подписка,
 поэтому провайдер не тратит деньги, но отвечает медленнее API.
+
+Вместо подписки владельца запросы можно пустить через совместимый шлюз:
+`CLAUDE_BASE_URL` и `CLAUDE_AUTH_TOKEN` уходят в подпроцесс как
+`ANTHROPIC_BASE_URL` и `ANTHROPIC_AUTH_TOKEN`. Имена у бота свои, чтобы шлюз
+включался только явной настройкой, а не забытой переменной окружения.
 """
 
 from __future__ import annotations
@@ -41,9 +46,17 @@ ENV_ALLOWLIST: tuple[str, ...] = (
 )
 
 
-def child_env() -> dict[str, str]:
-    """Окружение подпроцесса: только разрешённые переменные, без секретов платформы."""
-    return {name: os.environ[name] for name in ENV_ALLOWLIST if name in os.environ}
+def child_env(base_url: str = "", auth_token: str = "") -> dict[str, str]:
+    """Окружение подпроцесса: только разрешённые переменные, без секретов платформы.
+
+    Шлюз добавляется явно и только парой: адрес без токена отправил бы запросы
+    шлюзу от имени подписки владельца.
+    """
+    env = {name: os.environ[name] for name in ENV_ALLOWLIST if name in os.environ}
+    if base_url and auth_token:
+        env["ANTHROPIC_BASE_URL"] = base_url
+        env["ANTHROPIC_AUTH_TOKEN"] = auth_token
+    return env
 
 
 class ClaudeError(RuntimeError):
@@ -86,12 +99,16 @@ class ClaudeRunner:
         effort: str = "low",
         timeout: int = 180,
         attempts: int = 2,
+        base_url: str = "",
+        auth_token: str = "",
     ):
         self.binary = binary
         self.model = model
         self.effort = effort
         self.timeout = timeout
         self.attempts = max(1, attempts)
+        self.base_url = base_url
+        self.auth_token = auth_token
 
     def run(self, system: str, prompt: str) -> str:
         """Запускает агента, при разовом сбое повторяет.
@@ -141,7 +158,7 @@ class ClaudeRunner:
                     text=True,
                     timeout=self.timeout,
                     cwd=sandbox,
-                    env=child_env(),
+                    env=child_env(self.base_url, self.auth_token),
                 )
             except subprocess.TimeoutExpired as exc:
                 raise ClaudeError(f"claude не ответил за {self.timeout} с") from exc

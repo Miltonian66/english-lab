@@ -61,6 +61,8 @@ class Settings:
     claude_model: str
     claude_effort: str
     claude_timeout: int
+    claude_base_url: str
+    claude_auth_token: str
     speech_backend: str
     models_dir: Path
     whisper_model: str
@@ -139,6 +141,16 @@ class Settings:
         if claude_effort not in CLAUDE_EFFORTS:
             raise RuntimeError(f"CLAUDE_EFFORT должен быть одним из {', '.join(CLAUDE_EFFORTS)}")
 
+        # Шлюз задаётся парой: адрес без токена ушёл бы от имени подписки
+        # владельца, токен без адреса ничего не значит. Только https — токен
+        # идёт в заголовке каждого запроса.
+        claude_base_url = os.environ.get("CLAUDE_BASE_URL", "").strip().rstrip("/")
+        claude_auth_token = os.environ.get("CLAUDE_AUTH_TOKEN", "").strip()
+        if bool(claude_base_url) != bool(claude_auth_token):
+            raise RuntimeError("CLAUDE_BASE_URL и CLAUDE_AUTH_TOKEN задаются только вместе")
+        if claude_base_url and not claude_base_url.startswith("https://"):
+            raise RuntimeError("CLAUDE_BASE_URL должен начинаться с https://")
+
         return cls(
             telegram_token=token,
             claim_code=claim_code,
@@ -158,6 +170,8 @@ class Settings:
             claude_model=os.environ.get("CLAUDE_MODEL", "sonnet").strip(),
             claude_effort=claude_effort,
             claude_timeout=_int_env("CLAUDE_TIMEOUT", 180, 30, 900),
+            claude_base_url=claude_base_url,
+            claude_auth_token=claude_auth_token,
             speech_backend=backend,
             models_dir=_project_path(os.environ.get("MODELS_DIR", "data/models")),
             whisper_model=os.environ.get("WHISPER_MODEL", "small.en").strip() or "small.en",

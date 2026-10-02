@@ -302,6 +302,22 @@ class ClaudeRunnerTests(unittest.TestCase):
         self.assertIn("HOME=", seen)  # без него CLI не найдёт учётку подписки
         self.assertIn("PATH=", seen)
 
+    def test_gateway_reaches_the_agent_only_when_configured(self) -> None:
+        """Шлюз включается настройкой бота, а не забытой ANTHROPIC_* в окружении."""
+        self.fake = FakeCli(self.spy_script, name="claude")
+        os.environ.update({"ANTHROPIC_BASE_URL": "https://чужой", "ANTHROPIC_AUTH_TOKEN": "чужой-токен"})
+        try:
+            ClaudeRunner().run("система", "промпт")
+            self.assertNotIn("ANTHROPIC", self.env_path.read_text())
+            ClaudeRunner(base_url="https://gw.example", auth_token="токен-шлюза").run("система", "промпт")
+        finally:
+            for key in ("ANTHROPIC_BASE_URL", "ANTHROPIC_AUTH_TOKEN"):
+                os.environ.pop(key, None)
+        seen = self.env_path.read_text()
+        self.assertIn("ANTHROPIC_BASE_URL=https://gw.example", seen)
+        self.assertIn("ANTHROPIC_AUTH_TOKEN=токен-шлюза", seen)
+        self.assertNotIn("чужой", seen)
+
     def test_nonzero_exit_reports_the_tail_of_output(self) -> None:
         self.fake = FakeCli(FAKE_CLAUDE_FAIL, name="claude")
         with self.assertRaises(ClaudeError) as caught:
@@ -342,7 +358,8 @@ class SettingsSwitchTests(unittest.TestCase):
         self._saved = dict(os.environ)
         os.environ.update({"TELEGRAM_BOT_TOKEN": "t", "BOT_CLAIM_CODE": "c"})
         for key in ("LLM_PROVIDER", "SPEECH_BACKEND", "CODEX_EFFORT", "CLAUDE_EFFORT",
-                    "CLAUDE_BINARY", "CLAUDE_MODEL", "OPENAI_API_KEY", "ANTHROPIC_API_KEY"):
+                    "CLAUDE_BINARY", "CLAUDE_MODEL", "OPENAI_API_KEY", "ANTHROPIC_API_KEY",
+                    "CLAUDE_BASE_URL", "CLAUDE_AUTH_TOKEN"):
             os.environ.pop(key, None)
 
     def tearDown(self) -> None:
@@ -372,6 +389,28 @@ class SettingsSwitchTests(unittest.TestCase):
         self.assertEqual((llm.provider, llm.model), ("claude", "sonnet"))
         assert llm.claude is not None
         self.assertEqual(llm.claude.model, "sonnet")
+
+    def test_claude_gateway_is_passed_to_the_runner(self) -> None:
+        os.environ.update({"LLM_PROVIDER": "claude", "CLAUDE_BASE_URL": "https://gw.example/",
+                           "CLAUDE_AUTH_TOKEN": "t"})
+        fake = FakeCli(FAKE_CLAUDE_MIN, name="claude")
+        try:
+            llm = _build_llm(Settings.from_env())
+        finally:
+            fake.close()
+        assert llm is not None and llm.claude is not None
+        self.assertEqual((llm.claude.base_url, llm.claude.auth_token), ("https://gw.example", "t"))
+
+    def test_claude_gateway_needs_both_parts_and_https(self) -> None:
+        """Адрес без токена ушёл бы от имени подписки, токен по http — в открытую."""
+        for env in ({"CLAUDE_BASE_URL": "https://gw.example"}, {"CLAUDE_AUTH_TOKEN": "t"},
+                    {"CLAUDE_BASE_URL": "http://gw.example", "CLAUDE_AUTH_TOKEN": "t"}):
+            with self.subTest(env=env):
+                for key in ("CLAUDE_BASE_URL", "CLAUDE_AUTH_TOKEN"):
+                    os.environ.pop(key, None)
+                os.environ.update({"LLM_PROVIDER": "claude", **env})
+                with self.assertRaises(RuntimeError):
+                    Settings.from_env()
 
     def test_missing_cli_binary_disables_the_provider(self) -> None:
         """Обещать ИИ без бинарника — значит падать на каждом обращении."""

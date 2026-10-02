@@ -15,6 +15,7 @@ import sys
 import time
 from concurrent.futures import Future
 from typing import Any, Callable
+from urllib.parse import urlparse
 
 from .ai import claude_cli, codex_cli
 from .ai.claude_cli import ClaudeRunner
@@ -195,6 +196,8 @@ def _build_llm(settings: Settings) -> LLM | None:
                 model=settings.claude_model,
                 effort=settings.claude_effort,
                 timeout=settings.claude_timeout,
+                base_url=settings.claude_base_url,
+                auth_token=settings.claude_auth_token,
             ),
         )
     if settings.llm_provider == "anthropic":
@@ -407,12 +410,16 @@ class EnglishLabBot:
                 "Контент загружен с ошибками (%d) — часть тем недоступна",
                 len(self.curriculum.load_errors),
             )
+        provider = self.settings.llm_provider if self.llm else "выключен"
+        if self.llm and self.settings.llm_provider == "claude" and self.settings.claude_base_url:
+            # Только хост: токен шлюза в журнал не попадает.
+            provider += f" через {urlparse(self.settings.claude_base_url).hostname}"
         LOGGER.info(
             "Запущен как @%s · %d тем, %d упражнений · ИИ: %s · речь: %s",
             username,
             len(self.curriculum.points),
             len(self.curriculum.exercises),
-            self.settings.llm_provider if self.llm else "выключен",
+            provider,
             self.settings.speech_backend if self.transcriber else "выключена",
         )
         return identity
